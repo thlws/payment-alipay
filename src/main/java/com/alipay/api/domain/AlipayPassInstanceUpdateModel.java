@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝pass更新卡券实例接口
  *
  * @author auto create
- * @since 1.0, 2016-07-29 00:44:01
+ * @since 1.0, 2017-07-24 12:08:25
  */
 public class AlipayPassInstanceUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3394821558458686165L;
+	private static final long serialVersionUID = 7768886781872353749L;
 
 	/**
 	 * 代理商代替商户发放卡券后，再代替商户更新卡券时，此值为商户的pid/appid
@@ -20,7 +20,7 @@ public class AlipayPassInstanceUpdateModel extends AlipayObject {
 	private String channelId;
 
 	/**
-	 * 商户指定卡券唯一值
+	 * 商户指定卡券唯一值，卡券JSON模板中fileInfo->serialNumber字段对应的值
 	 */
 	@ApiField("serial_number")
 	private String serialNumber;
@@ -32,7 +32,7 @@ public class AlipayPassInstanceUpdateModel extends AlipayObject {
 	private String status;
 
 	/**
-	 * 模版动态参数信息【支付宝pass模版参数键值对JSON字符串】
+	 * 模版动态参数信息：对应模板中$变量名$的动态参数，见模板创建接口返回值中的tpl_params字段
 	 */
 	@ApiField("tpl_params")
 	private String tplParams;
@@ -44,7 +44,7 @@ public class AlipayPassInstanceUpdateModel extends AlipayObject {
 	private String verifyCode;
 
 	/**
-	 * 核销方式，目前支持：wave（声波方式）、qrcode（二维码方式）、barcode（条码方式）、input（文本方式，即手工输入方式）。pass和verify_type不能同时为空
+	 * 核销方式，目前支持：wave（声波方式）、qrcode（二维码方式）、barcode（条码方式）、input（文本方式，即手工输入方式）。verify_code和verify_type需同时传入
 	 */
 	@ApiField("verify_type")
 	private String verifyType;

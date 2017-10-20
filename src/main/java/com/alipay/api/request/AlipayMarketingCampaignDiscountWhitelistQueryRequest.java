@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.campaign.discount.whitelist.query request
  * 
  * @author auto create
- * @since 1.0, 2016-11-10 14:14:01
+ * @since 1.0, 2017-03-03 16:48:04
  */
 public class AlipayMarketingCampaignDiscountWhitelistQueryRequest implements AlipayRequest<AlipayMarketingCampaignDiscountWhitelistQueryResponse> {
 

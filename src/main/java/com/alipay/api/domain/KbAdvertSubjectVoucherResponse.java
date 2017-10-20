@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑广告系统标的（券）
  *
  * @author auto create
- * @since 1.0, 2016-11-21 17:14:16
+ * @since 1.0, 2017-07-11 13:44:23
  */
 public class KbAdvertSubjectVoucherResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 4454571872989853115L;
+	private static final long serialVersionUID = 1463769653552495945L;
 
 	/**
 	 * 品牌名称
@@ -60,6 +60,13 @@ public class KbAdvertSubjectVoucherResponse extends AlipayObject {
 	private String logo;
 
 	/**
+	 * 使用须知
+	 */
+	@ApiListField("manuals")
+	@ApiField("kbadvert_voucher_manual")
+	private List<KbadvertVoucherManual> manuals;
+
+	/**
 	 * 商家名称
 	 */
 	@ApiField("merchant_name")
@@ -72,11 +79,24 @@ public class KbAdvertSubjectVoucherResponse extends AlipayObject {
 	private String partnerId;
 
 	/**
+	 * BUY：购买模式
+OBTAIN：认领
+	 */
+	@ApiField("purchase_mode")
+	private String purchaseMode;
+
+	/**
 	 * 门店ID列表
 	 */
 	@ApiListField("shop_ids")
 	@ApiField("string")
 	private List<String> shopIds;
+
+	/**
+	 * 起步金额
+	 */
+	@ApiField("threshold_amount")
+	private String thresholdAmount;
 
 	/**
 	 * 总库存
@@ -95,6 +115,12 @@ public class KbAdvertSubjectVoucherResponse extends AlipayObject {
 	 */
 	@ApiField("voucher_name")
 	private String voucherName;
+
+	/**
+	 * 以元为单位
+	 */
+	@ApiField("voucher_org_value")
+	private String voucherOrgValue;
 
 	/**
 	 * 券类型
@@ -160,6 +186,13 @@ NO_LIMIT_CASH-全场代金券
 		this.logo = logo;
 	}
 
+	public List<KbadvertVoucherManual> getManuals() {
+		return this.manuals;
+	}
+	public void setManuals(List<KbadvertVoucherManual> manuals) {
+		this.manuals = manuals;
+	}
+
 	public String getMerchantName() {
 		return this.merchantName;
 	}
@@ -174,11 +207,25 @@ NO_LIMIT_CASH-全场代金券
 		this.partnerId = partnerId;
 	}
 
+	public String getPurchaseMode() {
+		return this.purchaseMode;
+	}
+	public void setPurchaseMode(String purchaseMode) {
+		this.purchaseMode = purchaseMode;
+	}
+
 	public List<String> getShopIds() {
 		return this.shopIds;
 	}
 	public void setShopIds(List<String> shopIds) {
 		this.shopIds = shopIds;
+	}
+
+	public String getThresholdAmount() {
+		return this.thresholdAmount;
+	}
+	public void setThresholdAmount(String thresholdAmount) {
+		this.thresholdAmount = thresholdAmount;
 	}
 
 	public String getTotalInventory() {
@@ -200,6 +247,13 @@ NO_LIMIT_CASH-全场代金券
 	}
 	public void setVoucherName(String voucherName) {
 		this.voucherName = voucherName;
+	}
+
+	public String getVoucherOrgValue() {
+		return this.voucherOrgValue;
+	}
+	public void setVoucherOrgValue(String voucherOrgValue) {
+		this.voucherOrgValue = voucherOrgValue;
 	}
 
 	public String getVoucherType() {

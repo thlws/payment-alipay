@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 贷款费用信息
  *
  * @author auto create
- * @since 1.0, 2016-12-05 14:46:04
+ * @since 1.0, 2017-05-19 11:45:39
  */
 public class LoanChargeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6531669633135676258L;
+	private static final long serialVersionUID = 4515316535298641866L;
 
 	/**
 	 * 费用编码

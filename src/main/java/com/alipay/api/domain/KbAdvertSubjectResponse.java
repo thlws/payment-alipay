@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑广告系统标的
  *
  * @author auto create
- * @since 1.0, 2016-11-21 17:14:39
+ * @since 1.0, 2017-01-17 10:33:12
  */
 public class KbAdvertSubjectResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 6132975412321775565L;
+	private static final long serialVersionUID = 8137371427366354343L;
 
 	/**
 	 * 分佣规则

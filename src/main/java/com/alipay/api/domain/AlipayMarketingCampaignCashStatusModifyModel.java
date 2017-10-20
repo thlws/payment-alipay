@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 更改现金活动状态
  *
  * @author auto create
- * @since 1.0, 2016-10-10 19:27:23
+ * @since 1.0, 2017-07-14 11:53:01
  */
 public class AlipayMarketingCampaignCashStatusModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4249653679713237914L;
+	private static final long serialVersionUID = 2614628365149775417L;
 
 	/**
-	 * 修改后的活动状态, PAUSE或者READY
+	 * 修改后的活动状态, PAUSE或者READY或者CLOSED
 	 */
 	@ApiField("camp_status")
 	private String campStatus;

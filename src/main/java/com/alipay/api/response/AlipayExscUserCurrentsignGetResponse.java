@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.exsc.user.currentsign.get response.
  * 
  * @author auto create
- * @since 1.0, 2014-10-30 22:34:50
+ * @since 1.0, 2017-03-29 17:12:42
  */
 public class AlipayExscUserCurrentsignGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6744393536318246272L;
+	private static final long serialVersionUID = 5515391148394293973L;
 
 	/** 
 	 * 返回结果的业务类型。当前签约绑卡业务类型 （current_sign）

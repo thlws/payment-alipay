@@ -11,11 +11,17 @@ import com.alipay.api.internal.mapping.ApiListField;
 修改路由策略到R
  *
  * @author auto create
- * @since 1.0, 2016-12-01 10:02:10
+ * @since 1.0, 2017-09-29 10:50:10
  */
 public class AlipayTradePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3744185422297786753L;
+	private static final long serialVersionUID = 4683166725429795913L;
+
+	/**
+	 * 代扣业务需要传入协议相关信息
+	 */
+	@ApiField("agreement_params")
+	private AgreementParams agreementParams;
 
 	/**
 	 * 支付宝的店铺编号
@@ -24,13 +30,13 @@ public class AlipayTradePayModel extends AlipayObject {
 	private String alipayStoreId;
 
 	/**
-	 * 支付授权码
+	 * 支付授权码，25~30开头的长度为16~24位的数字，实际字符串长度以开发者获取的付款码长度为准
 	 */
 	@ApiField("auth_code")
 	private String authCode;
 
 	/**
-	 * 预授权号，预授权转交易请求中传入
+	 * 预授权号，预授权转交易请求中传入，适用于预授权转交易业务使用，目前只支持FUND_TRADE_FAST_PAY（资金订单即时到帐交易）、境外预授权产品（OVERSEAS_AUTH_PAY）两个产品。
 	 */
 	@ApiField("auth_no")
 	private String authNo;
@@ -42,11 +48,35 @@ public class AlipayTradePayModel extends AlipayObject {
 	private String body;
 
 	/**
+	 * 商户传入业务信息，具体值要和支付宝约定，应用于安全，营销等参数直传场景，格式为json格式
+	 */
+	@ApiField("business_params")
+	private String businessParams;
+
+	/**
+	 * 买家的支付宝用户id，如果为空，会从传入了码值信息中获取买家ID
+	 */
+	@ApiField("buyer_id")
+	private String buyerId;
+
+	/**
+	 * 禁用支付渠道,多个渠道以逗号分割，如同时禁用信用支付类型和积分，则disable_pay_channels="credit_group,point"
+	 */
+	@ApiField("disable_pay_channels")
+	private String disablePayChannels;
+
+	/**
 	 * 参与优惠计算的金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]。
 如果该值未传入，但传入了【订单总金额】和【不可打折金额】，则该值默认为【订单总金额】-【不可打折金额】
 	 */
 	@ApiField("discountable_amount")
 	private String discountableAmount;
+
+	/**
+	 * 外部指定买家
+	 */
+	@ApiField("ext_user_info")
+	private ExtUserInfo extUserInfo;
 
 	/**
 	 * 业务扩展参数
@@ -80,6 +110,12 @@ public class AlipayTradePayModel extends AlipayObject {
 	private String outTradeNo;
 
 	/**
+	 * 销售产品码
+	 */
+	@ApiField("product_code")
+	private String productCode;
+
+	/**
 	 * 描述分账信息，Json格式，其它说明详见分账说明
 	 */
 	@ApiField("royalty_info")
@@ -106,7 +142,7 @@ public class AlipayTradePayModel extends AlipayObject {
 	private String storeId;
 
 	/**
-	 * 二级商户信息,当前只对特殊银行机构特定场景下使用此字段
+	 * 间连受理商户信息体，当前只对特殊银行机构特定场景下使用此字段
 	 */
 	@ApiField("sub_merchant")
 	private SubMerchant subMerchant;
@@ -130,7 +166,7 @@ public class AlipayTradePayModel extends AlipayObject {
 	private String timeoutExpress;
 
 	/**
-	 * 订单总金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]。
+	 * 订单总金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]
 如果同时传入【可打折金额】和【不可打折金额】，该参数可以不用传入；
 如果同时传入了【可打折金额】，【不可打折金额】，【订单总金额】三者，则必须满足如下条件：【订单总金额】=【可打折金额】+【不可打折金额】
 	 */
@@ -142,6 +178,13 @@ public class AlipayTradePayModel extends AlipayObject {
 	 */
 	@ApiField("undiscountable_amount")
 	private String undiscountableAmount;
+
+	public AgreementParams getAgreementParams() {
+		return this.agreementParams;
+	}
+	public void setAgreementParams(AgreementParams agreementParams) {
+		this.agreementParams = agreementParams;
+	}
 
 	public String getAlipayStoreId() {
 		return this.alipayStoreId;
@@ -171,11 +214,39 @@ public class AlipayTradePayModel extends AlipayObject {
 		this.body = body;
 	}
 
+	public String getBusinessParams() {
+		return this.businessParams;
+	}
+	public void setBusinessParams(String businessParams) {
+		this.businessParams = businessParams;
+	}
+
+	public String getBuyerId() {
+		return this.buyerId;
+	}
+	public void setBuyerId(String buyerId) {
+		this.buyerId = buyerId;
+	}
+
+	public String getDisablePayChannels() {
+		return this.disablePayChannels;
+	}
+	public void setDisablePayChannels(String disablePayChannels) {
+		this.disablePayChannels = disablePayChannels;
+	}
+
 	public String getDiscountableAmount() {
 		return this.discountableAmount;
 	}
 	public void setDiscountableAmount(String discountableAmount) {
 		this.discountableAmount = discountableAmount;
+	}
+
+	public ExtUserInfo getExtUserInfo() {
+		return this.extUserInfo;
+	}
+	public void setExtUserInfo(ExtUserInfo extUserInfo) {
+		this.extUserInfo = extUserInfo;
 	}
 
 	public ExtendParams getExtendParams() {
@@ -211,6 +282,13 @@ public class AlipayTradePayModel extends AlipayObject {
 	}
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
+	}
+
+	public String getProductCode() {
+		return this.productCode;
+	}
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
 	}
 
 	public RoyaltyInfo getRoyaltyInfo() {

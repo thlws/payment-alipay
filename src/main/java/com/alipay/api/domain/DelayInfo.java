@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 延迟生效信息
  *
  * @author auto create
- * @since 1.0, 2016-10-31 12:00:30
+ * @since 1.0, 2017-06-05 11:25:25
  */
 public class DelayInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2426311431979593763L;
+	private static final long serialVersionUID = 1864576291329395537L;
 
 	/**
 	 * 延迟类型，目前支持以下类型

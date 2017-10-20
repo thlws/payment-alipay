@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 店铺商品产品系统业务流水信息接口模型
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:39
+ * @since 1.0, 2017-02-07 16:46:17
  */
 public class BizOrderQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 6485565223199735734L;
+	private static final long serialVersionUID = 6129189356971541252L;
 
 	/**
 	 * 操作动作。

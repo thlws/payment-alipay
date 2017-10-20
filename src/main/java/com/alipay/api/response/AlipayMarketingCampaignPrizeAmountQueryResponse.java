@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.prize.amount.query response.
  * 
  * @author auto create
- * @since 1.0, 2016-11-10 14:13:42
+ * @since 1.0, 2017-03-23 14:22:01
  */
 public class AlipayMarketingCampaignPrizeAmountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4694635651773599423L;
+	private static final long serialVersionUID = 5712614555139217669L;
 
 	/** 
 	 * 奖品剩余数量，数值

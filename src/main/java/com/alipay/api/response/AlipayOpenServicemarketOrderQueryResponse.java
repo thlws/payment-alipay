@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.servicemarket.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2016-06-16 21:01:19
+ * @since 1.0, 2017-07-31 17:29:32
  */
 public class AlipayOpenServicemarketOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4443174275338523362L;
+	private static final long serialVersionUID = 6567852917452118163L;
 
 	/** 
 	 * 订购服务商品ID
@@ -35,6 +35,12 @@ public class AlipayOpenServicemarketOrderQueryResponse extends AlipayResponse {
 	@ApiListField("order_items")
 	@ApiField("order_item")
 	private List<OrderItem> orderItems;
+
+	/** 
+	 * 用于区分同一个服务的不同版本
+	 */
+	@ApiField("specifications")
+	private String specifications;
 
 	/** 
 	 * MERCHANT_ORDED（待服务商接单）
@@ -67,6 +73,13 @@ public class AlipayOpenServicemarketOrderQueryResponse extends AlipayResponse {
 	}
 	public List<OrderItem> getOrderItems( ) {
 		return this.orderItems;
+	}
+
+	public void setSpecifications(String specifications) {
+		this.specifications = specifications;
+	}
+	public String getSpecifications( ) {
+		return this.specifications;
 	}
 
 	public void setStatus(String status) {

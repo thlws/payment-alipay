@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 优惠活动白名单设置
  *
  * @author auto create
- * @since 1.0, 2016-11-10 14:13:49
+ * @since 1.0, 2017-03-03 16:47:53
  */
 public class AlipayMarketingCampaignDiscountWhitelistUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5114627154286477676L;
+	private static final long serialVersionUID = 2632652531818193179L;
 
 	/**
 	 * 活动id

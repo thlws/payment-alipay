@@ -9,17 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 招商信息
  *
  * @author auto create
- * @since 1.0, 2016-10-31 13:30:36
+ * @since 1.0, 2017-09-30 11:20:29
  */
 public class RecruitInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7763611723888628853L;
+	private static final long serialVersionUID = 8423624884819615862L;
 
 	/**
 	 * 招商结束时间
 	 */
 	@ApiField("end_time")
 	private Date endTime;
+
+	/**
+	 * 是否参与门店参与了招商
+	 */
+	@ApiField("exclude_constraint_shops")
+	private Boolean excludeConstraintShops;
 
 	/**
 	 * 招商方案id
@@ -44,6 +50,13 @@ public class RecruitInfo extends AlipayObject {
 	}
 	public void setEndTime(Date endTime) {
 		this.endTime = endTime;
+	}
+
+	public Boolean getExcludeConstraintShops() {
+		return this.excludeConstraintShops;
+	}
+	public void setExcludeConstraintShops(Boolean excludeConstraintShops) {
+		this.excludeConstraintShops = excludeConstraintShops;
 	}
 
 	public String getPlanId() {

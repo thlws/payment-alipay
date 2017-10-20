@@ -7,28 +7,28 @@ import com.alipay.api.internal.mapping.ApiField;
  * 洗车保养服务商品
  *
  * @author auto create
- * @since 1.0, 2016-11-16 10:03:28
+ * @since 1.0, 2017-04-12 11:49:05
  */
 public class MaitainShopProduct extends AlipayObject {
 
-	private static final long serialVersionUID = 7394833167527612158L;
+	private static final long serialVersionUID = 7366573896944965755L;
 
 	/**
-	 * 销售价格（分），服务售卖价格，展示给用户。无优惠时的下单支付金额。
+	 * 销售价格（元），服务售卖价格，展示给用户。无优惠时的下单支付金额。
 新增：必填； 修改：可空
 	 */
 	@ApiField("off_price")
-	private Long offPrice;
+	private String offPrice;
 
 	/**
-	 * 原始价格（分），服务商品原始价格，可以和销售价格相同。
+	 * 原始价格（元），服务商品原始价格，可以和销售价格相同。
 新增：必填； 修改：可空
 	 */
 	@ApiField("orig_price")
-	private Long origPrice;
+	private String origPrice;
 
 	/**
-	 * ISV 优惠活动ID
+	 * ISV 优惠活动ID（由ISV自行生成，保证其唯一）
 新增：可空； 修改：可空
 (out_privilege_id、privilege_start_time、privilege_close_time、privilege_tags、privilege_price必须同时存在)
 	 */
@@ -52,12 +52,12 @@ public class MaitainShopProduct extends AlipayObject {
 	private String privilegeCloseTime;
 
 	/**
-	 * 优惠价格（分），ISV上传优惠价格，上传后立刻生效。有效期间为下单支付金额。
+	 * 优惠价格（元），ISV上传优惠价格，上传后立刻生效。有效期间为下单支付金额。
 新增：可空； 修改：可空
 (out_privilege_id、privilege_start_time、privilege_close_time、privilege_tags、privilege_price必须同时存在)
 	 */
 	@ApiField("privilege_price")
-	private Long privilegePrice;
+	private String privilegePrice;
 
 	/**
 	 * 优惠截止时间。格式"yyyy-MM-dd HH:mm:ss"
@@ -139,17 +139,17 @@ public class MaitainShopProduct extends AlipayObject {
 	@ApiField("status")
 	private String status;
 
-	public Long getOffPrice() {
+	public String getOffPrice() {
 		return this.offPrice;
 	}
-	public void setOffPrice(Long offPrice) {
+	public void setOffPrice(String offPrice) {
 		this.offPrice = offPrice;
 	}
 
-	public Long getOrigPrice() {
+	public String getOrigPrice() {
 		return this.origPrice;
 	}
-	public void setOrigPrice(Long origPrice) {
+	public void setOrigPrice(String origPrice) {
 		this.origPrice = origPrice;
 	}
 
@@ -174,10 +174,10 @@ public class MaitainShopProduct extends AlipayObject {
 		this.privilegeCloseTime = privilegeCloseTime;
 	}
 
-	public Long getPrivilegePrice() {
+	public String getPrivilegePrice() {
 		return this.privilegePrice;
 	}
-	public void setPrivilegePrice(Long privilegePrice) {
+	public void setPrivilegePrice(String privilegePrice) {
 		this.privilegePrice = privilegePrice;
 	}
 

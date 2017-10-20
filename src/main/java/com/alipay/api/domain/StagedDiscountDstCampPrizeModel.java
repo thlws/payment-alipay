@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 阶梯优惠
  *
  * @author auto create
- * @since 1.0, 2016-11-10 14:13:39
+ * @since 1.0, 2017-03-03 16:47:49
  */
 public class StagedDiscountDstCampPrizeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8145499633979352972L;
+	private static final long serialVersionUID = 8623742364928253492L;
 
 	/**
 	 * 折扣预算ID

@@ -8,14 +8,18 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pass.template.update response.
  * 
  * @author auto create
- * @since 1.0, 2016-07-29 00:37:05
+ * @since 1.0, 2017-07-24 12:08:09
  */
 public class AlipayPassTemplateUpdateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1329166546672838196L;
+	private static final long serialVersionUID = 1533153919138274959L;
 
 	/** 
-	 * 接口调用返回结果信息
+	 * 接口调用返回结果信息(json字串):
+errorCode：处理结果码（错误码）；
+errorMsg：处理结果说明（错误说明）；
+tpl_id：模板编号，预期在调发券接口时必须传入；
+tpl_params：动态参数（变量）列表，预期在调发券接口时传入；
 	 */
 	@ApiField("result")
 	private String result;

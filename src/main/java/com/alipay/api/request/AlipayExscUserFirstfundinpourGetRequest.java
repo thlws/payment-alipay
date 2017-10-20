@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.exsc.user.firstfundinpour.get request
  * 
  * @author auto create
- * @since 1.0, 2014-10-30 22:35:08
+ * @since 1.0, 2017-04-07 16:23:40
  */
 public class AlipayExscUserFirstfundinpourGetRequest implements AlipayRequest<AlipayExscUserFirstfundinpourGetResponse> {
 

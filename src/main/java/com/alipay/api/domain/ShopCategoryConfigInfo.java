@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 门店类目配置信息
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:39
+ * @since 1.0, 2017-02-07 16:47:06
  */
 public class ShopCategoryConfigInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4427144681612457372L;
+	private static final long serialVersionUID = 3276755491637364449L;
 
 	/**
 	 * 类目ID

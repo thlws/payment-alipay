@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 分页查询Leads、门店、商品相关操作流水信息
  *
  * @author auto create
- * @since 1.0, 2016-08-02 21:47:43
+ * @since 1.0, 2017-07-06 11:11:37
  */
 public class AlipayOfflineMarketApplyorderBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5568949716826344293L;
+	private static final long serialVersionUID = 6812687216734417379L;
 
 	/**
 	 * 操作动作

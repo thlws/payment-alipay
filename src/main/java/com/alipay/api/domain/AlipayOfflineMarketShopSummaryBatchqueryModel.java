@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 门店摘要信息批量查询接口
  *
  * @author auto create
- * @since 1.0, 2016-11-19 11:59:28
+ * @since 1.0, 2017-02-17 14:20:04
  */
 public class AlipayOfflineMarketShopSummaryBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1243932719342575738L;
+	private static final long serialVersionUID = 5222885333632274568L;
 
 	/**
 	 * 表示接口业务的调用方身份：ISV、 服务商身份标识。传入ISV代表系统集成商身份。传入PROVIDER代表服务商。
@@ -37,6 +37,7 @@ BRAND_RELATION ： 品牌商关联店铺
 MALL_SELF ：MALL自己的门店
 MALL_RELATION：MALL关联下的门店
 MERCHANT_SELF:商户自己的门店
+KB_PROMOTER：口碑客推广者
 	 */
 	@ApiField("query_type")
 	private String queryType;

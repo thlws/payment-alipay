@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.antifraud.verify response.
  * 
  * @author auto create
- * @since 1.0, 2016-11-24 11:21:55
+ * @since 1.0, 2017-09-12 13:51:52
  */
 public class ZhimaCreditAntifraudVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1575616898917122592L;
+	private static final long serialVersionUID = 7442448539439527251L;
 
 	/** 
 	 * 芝麻信用对于每一次请求返回的业务号。后续可以通过此业务号进行对账
@@ -23,7 +23,7 @@ public class ZhimaCreditAntifraudVerifyResponse extends AlipayResponse {
 	private String bizNo;
 
 	/** 
-	 * 风险因素code列表
+	 * <a href="https://doc.open.alipay.com/docs/doc.htm?treeId=272&articleId=105917&docType=1">验证code列表</a>
 	 */
 	@ApiListField("verify_code")
 	@ApiField("string")

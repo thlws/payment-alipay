@@ -7,17 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业关注名单
  *
  * @author auto create
- * @since 1.0, 2016-09-21 18:43:10
+ * @since 1.0, 2017-08-04 10:54:31
  */
 public class ZhimaCreditWatchlistiiGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5169973761299355914L;
-
-	/**
-	 * alipay_user_id, 支付宝用户的唯一userId, 用户通过蚂蚁开放平台授权给商户系统后，商户系统可以获得该userId
-	 */
-	@ApiField("alipay_user_id")
-	private String alipayUserId;
+	private static final long serialVersionUID = 4351475532323252676L;
 
 	/**
 	 * 产品码，直接使用［示例］给出的值
@@ -30,13 +24,6 @@ public class ZhimaCreditWatchlistiiGetModel extends AlipayObject {
 	 */
 	@ApiField("transaction_id")
 	private String transactionId;
-
-	public String getAlipayUserId() {
-		return this.alipayUserId;
-	}
-	public void setAlipayUserId(String alipayUserId) {
-		this.alipayUserId = alipayUserId;
-	}
 
 	public String getProductCode() {
 		return this.productCode;

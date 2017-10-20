@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销抽奖活动查询
  *
  * @author auto create
- * @since 1.0, 2016-11-10 14:13:07
+ * @since 1.0, 2017-03-23 14:22:15
  */
 public class AlipayMarketingCampaignDrawcampQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4695759547171124528L;
+	private static final long serialVersionUID = 7655546278281266984L;
 
 	/**
 	 * 抽奖活动id，通过alipay.marketing.campaign.drawcamp.create接口返回

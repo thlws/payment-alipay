@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 抹零优惠模型
  *
  * @author auto create
- * @since 1.0, 2016-11-10 14:13:39
+ * @since 1.0, 2017-03-03 16:47:49
  */
 public class ResetZeroDstCampPrizeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6655249632781474818L;
+	private static final long serialVersionUID = 8639139497732182415L;
 
 	/**
 	 * 折扣预算ID

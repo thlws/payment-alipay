@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.cplife.notice.publish response.
  * 
  * @author auto create
- * @since 1.0, 2016-11-24 16:14:39
+ * @since 1.0, 2017-03-02 18:17:16
  */
 public class AlipayEcoCplifeNoticePublishResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7396764764194228618L;
+	private static final long serialVersionUID = 4112442651899197966L;
 
 	/** 
 	 * 支付宝平台统一生产的通知公告唯一ID标示.

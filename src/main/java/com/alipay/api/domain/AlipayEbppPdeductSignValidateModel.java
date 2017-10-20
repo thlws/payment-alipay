@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 缴费直连代扣签约前置校验
  *
  * @author auto create
- * @since 1.0, 2016-11-30 14:31:02
+ * @since 1.0, 2017-08-04 11:19:34
  */
 public class AlipayEbppPdeductSignValidateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3139844725619573187L;
+	private static final long serialVersionUID = 2755919845537271132L;
 
 	/**
 	 * 机构签约代扣来源渠道

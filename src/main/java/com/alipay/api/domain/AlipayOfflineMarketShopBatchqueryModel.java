@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 系统商通过该接口可以查询所有门店的外部门店编号（系统商的门店编号）
  *
  * @author auto create
- * @since 1.0, 2016-11-08 17:52:29
+ * @since 1.0, 2017-07-19 16:55:51
  */
 public class AlipayOfflineMarketShopBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2867695148749656555L;
+	private static final long serialVersionUID = 4246622126629386988L;
 
 	/**
 	 * 页码，第一页传入"1"，默认500个结果为一页。此参数必须是大于0的正整数，为0时将查询报错。

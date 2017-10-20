@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.info.share response.
  * 
  * @author auto create
- * @since 1.0, 2016-12-08 00:31:54
+ * @since 1.0, 2017-09-06 14:48:15
  */
 public class AlipayUserInfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6648837638481633658L;
+	private static final long serialVersionUID = 1632485228637942957L;
 
 	/** 
 	 * 详细地址。
@@ -59,7 +59,9 @@ public class AlipayUserInfoShareResponse extends AlipayResponse {
 7:警官证
 8:台胞证
 9:营业执照
-10其它证件
+10:其它证件
+11:港澳居民来往内地通行证
+12:台湾居民来往大陆通行证
 	 */
 	@ApiField("cert_type")
 	private String certType;
@@ -69,6 +71,12 @@ public class AlipayUserInfoShareResponse extends AlipayResponse {
 	 */
 	@ApiField("city")
 	private String city;
+
+	/** 
+	 * 国家码
+	 */
+	@ApiField("country_code")
+	private String countryCode;
 
 	/** 
 	 * 收货地址列表
@@ -194,6 +202,12 @@ T--被冻结；F--未冻结
 	private String licenseNo;
 
 	/** 
+	 * 支付宝会员等级
+	 */
+	@ApiField("member_grade")
+	private String memberGrade;
+
+	/** 
 	 * 手机号码。
 	 */
 	@ApiField("mobile")
@@ -247,6 +261,12 @@ T--被冻结；F--未冻结
 	 */
 	@ApiField("province")
 	private String province;
+
+	/** 
+	 * 淘宝id
+	 */
+	@ApiField("taobao_id")
+	private String taobaoId;
 
 	/** 
 	 * 支付宝用户的userId
@@ -330,6 +350,13 @@ W代表已注册，未激活的账户
 	}
 	public String getCity( ) {
 		return this.city;
+	}
+
+	public void setCountryCode(String countryCode) {
+		this.countryCode = countryCode;
+	}
+	public String getCountryCode( ) {
+		return this.countryCode;
 	}
 
 	public void setDeliverAddresses(List<AlipayUserDeliverAddress> deliverAddresses) {
@@ -465,6 +492,13 @@ W代表已注册，未激活的账户
 		return this.licenseNo;
 	}
 
+	public void setMemberGrade(String memberGrade) {
+		this.memberGrade = memberGrade;
+	}
+	public String getMemberGrade( ) {
+		return this.memberGrade;
+	}
+
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
@@ -526,6 +560,13 @@ W代表已注册，未激活的账户
 	}
 	public String getProvince( ) {
 		return this.province;
+	}
+
+	public void setTaobaoId(String taobaoId) {
+		this.taobaoId = taobaoId;
+	}
+	public String getTaobaoId( ) {
+		return this.taobaoId;
 	}
 
 	public void setUserId(String userId) {

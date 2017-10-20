@@ -392,6 +392,44 @@ public class AlipaySignature {
 
         return bizContent;
     }
+    
+    /**
+     * 验签并解密
+     * <p>
+     * <b>目前适用于公众号</b><br>
+     * params参数示例：
+     * <br>{
+     *    <br>biz_content=M0qGiGz+8kIpxe8aF4geWJdBn0aBTuJRQItLHo9R7o5JGhpic/MIUjvXo2BLB++BbkSq2OsJCEQFDZ0zK5AJYwvBgeRX30gvEj6eXqXRt16/IkB9HzAccEqKmRHrZJ7PjQWE0KfvDAHsJqFIeMvEYk1Zei2QkwSQPlso7K0oheo/iT+HYE8aTATnkqD/ByD9iNDtGg38pCa2xnnns63abKsKoV8h0DfHWgPH62urGY7Pye3r9FCOXA2Ykm8X4/Bl1bWFN/PFCEJHWe/HXj8KJKjWMO6ttsoV0xRGfeyUO8agu6t587Dl5ux5zD/s8Lbg5QXygaOwo3Fz1G8EqmGhi4+soEIQb8DBYanQOS3X+m46tVqBGMw8Oe+hsyIMpsjwF4HaPKMr37zpW3fe7xOMuimbZ0wq53YP/jhQv6XWodjT3mL0H5ACqcsSn727B5ztquzCPiwrqyjUHjJQQefFTzOse8snaWNQTUsQS7aLsHq0FveGpSBYORyA90qPdiTjXIkVP7mAiYiAIWW9pCEC7F3XtViKTZ8FRMM9ySicfuAlf3jtap6v2KPMtQv70X+hlmzO/IXB6W0Ep8DovkF5rB4r/BJYJLw/6AS0LZM9w5JfnAZhfGM2rKzpfNsgpOgEZS1WleG4I2hoQC0nxg9IcP0Hs+nWIPkEUcYNaiXqeBc=,
+     *    <br>sign=rlqgA8O+RzHBVYLyHmrbODVSANWPXf3pSrr82OCO/bm3upZiXSYrX5fZr6UBmG6BZRAydEyTIguEW6VRuAKjnaO/sOiR9BsSrOdXbD5Rhos/Xt7/mGUWbTOt/F+3W0/XLuDNmuYg1yIC/6hzkg44kgtdSTsQbOC9gWM7ayB4J4c=,
+     *    sign_type=RSA,
+     *    <br>charset=UTF-8
+     * <br>}
+     * </p>
+     * @param params
+     * @param alipayPublicKey 支付宝公钥
+     * @param cusPrivateKey   商户私钥
+     * @param isCheckSign     是否验签
+     * @param isDecrypt       是否解密
+     * @return 解密后明文，验签失败则异常抛出
+     * @throws AlipayApiException 
+     */
+    public static String checkSignAndDecrypt(Map<String, String> params, String alipayPublicKey,
+                                             String cusPrivateKey, boolean isCheckSign,
+                                             boolean isDecrypt, String signType) throws AlipayApiException {
+        String charset = params.get("charset");
+        String bizContent = params.get("biz_content");
+        if (isCheckSign) {
+            if (!rsaCheckV2(params, alipayPublicKey, charset,signType)) {
+                throw new AlipayApiException("rsaCheck failure:rsaParams=" + params);
+            }
+        }
+
+        if (isDecrypt) {
+            return rsaDecrypt(bizContent, cusPrivateKey, charset);
+        }
+
+        return bizContent;
+    }
 
     /**
      * 加密并签名<br>
@@ -439,6 +477,63 @@ public class AlipaySignature {
             String sign = rsaSign(bizContent, cusPrivateKey, charset);
             sb.append("<sign>" + sign + "</sign>");
             sb.append("<sign_type>RSA</sign_type>");
+            sb.append("</alipay>");
+        } else {// 不加密，不加签
+            sb.append(bizContent);
+        }
+        return sb.toString();
+    }
+    
+    /**
+     * 加密并签名<br>
+     * <b>目前适用于公众号</b>
+     * @param bizContent      待加密、签名内容
+     * @param alipayPublicKey 支付宝公钥
+     * @param cusPrivateKey   商户私钥
+     * @param charset         字符集，如UTF-8, GBK, GB2312
+     * @param isEncrypt       是否加密，true-加密  false-不加密
+     * @param isSign          是否签名，true-签名  false-不签名
+     * @return 加密、签名后xml内容字符串
+     * <p>
+     * 返回示例：
+     * <alipay>
+     *  <response>密文</response>
+     *  <encryption_type>RSA</encryption_type>
+     *  <sign>sign</sign>
+     *  <sign_type>RSA</sign_type>
+     * </alipay>
+     * </p>
+     * @throws AlipayApiException 
+     */
+    public static String encryptAndSign(String bizContent, String alipayPublicKey,
+                                        String cusPrivateKey, String charset, boolean isEncrypt,
+                                        boolean isSign,String signType) throws AlipayApiException {
+        StringBuilder sb = new StringBuilder();
+        if (StringUtils.isEmpty(charset)) {
+            charset = AlipayConstants.CHARSET_GBK;
+        }
+        sb.append("<?xml version=\"1.0\" encoding=\"" + charset + "\"?>");
+        if (isEncrypt) {// 加密
+            sb.append("<alipay>");
+            String encrypted = rsaEncrypt(bizContent, alipayPublicKey, charset);
+            sb.append("<response>" + encrypted + "</response>");
+            sb.append("<encryption_type>RSA</encryption_type>");
+            if (isSign) {
+                String sign = rsaSign(encrypted, cusPrivateKey, charset, signType);
+                sb.append("<sign>" + sign + "</sign>");
+                sb.append("<sign_type>");
+                sb.append(signType);
+                sb.append("</sign_type>");
+            }
+            sb.append("</alipay>");
+        } else if (isSign) {// 不加密，但需要签名
+            sb.append("<alipay>");
+            sb.append("<response>" + bizContent + "</response>");
+            String sign = rsaSign(bizContent, cusPrivateKey, charset, signType);
+            sb.append("<sign>" + sign + "</sign>");
+            sb.append("<sign_type>");
+            sb.append(signType);
+            sb.append("</sign_type>");
             sb.append("</alipay>");
         } else {// 不加密，不加签
             sb.append(bizContent);

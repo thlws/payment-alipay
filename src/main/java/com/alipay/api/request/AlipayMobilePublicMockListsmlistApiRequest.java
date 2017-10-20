@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.mobile.public.mock.listsmlist.api request
  * 
  * @author auto create
- * @since 1.0, 2016-03-30 19:35:58
+ * @since 1.0, 2017-04-14 20:33:04
  */
 public class AlipayMobilePublicMockListsmlistApiRequest implements AlipayRequest<AlipayMobilePublicMockListsmlistApiResponse> {
 

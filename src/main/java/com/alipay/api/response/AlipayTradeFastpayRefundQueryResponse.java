@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.fastpay.refund.query response.
  * 
  * @author auto create
- * @since 1.0, 2016-12-08 00:41:43
+ * @since 1.0, 2017-09-28 19:04:35
  */
 public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4458824777674187772L;
+	private static final long serialVersionUID = 5285536751258362141L;
+
+	/** 
+	 * 行业特殊信息（例如在医保卡支付退款中，医保局向商户返回医疗信息）。
+	 */
+	@ApiField("industry_sepc_detail")
+	private String industrySepcDetail;
 
 	/** 
 	 * 本笔退款对应的退款请求号
@@ -49,6 +55,13 @@ public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;
+
+	public void setIndustrySepcDetail(String industrySepcDetail) {
+		this.industrySepcDetail = industrySepcDetail;
+	}
+	public String getIndustrySepcDetail( ) {
+		return this.industrySepcDetail;
+	}
 
 	public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;

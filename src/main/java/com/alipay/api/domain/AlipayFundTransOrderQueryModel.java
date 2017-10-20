@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询转账订单接口
  *
  * @author auto create
- * @since 1.0, 2016-07-19 22:59:05
+ * @since 1.0, 2017-02-09 15:07:43
  */
 public class AlipayFundTransOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1826221169333137856L;
+	private static final long serialVersionUID = 3839221681246428255L;
 
 	/**
 	 * 支付宝转账单据号：和商户转账唯一订单号不能同时为空。当和商户转账唯一订单号同时提供时，将用本参数进行查询，忽略商户转账唯一订单号。

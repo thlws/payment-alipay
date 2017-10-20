@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 优惠立减活动子时间段模型足戒用
  *
  * @author auto create
- * @since 1.0, 2016-11-10 14:13:39
+ * @since 1.0, 2017-03-03 16:47:49
  */
 public class DateAreaModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8148269359416919197L;
+	private static final long serialVersionUID = 7189769646648383628L;
 
 	/**
 	 * 开始时间

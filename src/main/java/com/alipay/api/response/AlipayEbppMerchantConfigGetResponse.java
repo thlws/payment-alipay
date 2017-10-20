@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.merchant.config.get response.
  * 
  * @author auto create
- * @since 1.0, 2016-10-31 11:11:13
+ * @since 1.0, 2017-04-07 17:12:49
  */
 public class AlipayEbppMerchantConfigGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4856225614385498895L;
+	private static final long serialVersionUID = 5858652759382546548L;
 
 	/** 
 	 * 商户机构配置信息

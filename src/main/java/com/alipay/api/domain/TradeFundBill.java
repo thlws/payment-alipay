@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易支付的渠道属性
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:42
+ * @since 1.0, 2017-06-06 18:11:24
  */
 public class TradeFundBill extends AlipayObject {
 
-	private static final long serialVersionUID = 6497388393845431735L;
+	private static final long serialVersionUID = 8862824915992381799L;
 
 	/**
 	 * 该支付工具类型所使用的金额
@@ -24,6 +24,12 @@ public class TradeFundBill extends AlipayObject {
 	 */
 	@ApiField("fund_channel")
 	private String fundChannel;
+
+	/**
+	 * 渠道所使用的资金类型,目前只在资金渠道(fund_channel)是银行卡渠道(BANKCARD)的情况下才返回该信息(DEBIT_CARD:借记卡,CREDIT_CARD:信用卡,MIXED_CARD:借贷合一卡)
+	 */
+	@ApiField("fund_type")
+	private String fundType;
 
 	/**
 	 * 渠道实际付款金额
@@ -43,6 +49,13 @@ public class TradeFundBill extends AlipayObject {
 	}
 	public void setFundChannel(String fundChannel) {
 		this.fundChannel = fundChannel;
+	}
+
+	public String getFundType() {
+		return this.fundType;
+	}
+	public void setFundType(String fundType) {
+		this.fundType = fundType;
 	}
 
 	public String getRealAmount() {

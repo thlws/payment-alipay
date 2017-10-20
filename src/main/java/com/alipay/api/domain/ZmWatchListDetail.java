@@ -1,57 +1,55 @@
 package com.alipay.api.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 行业关注名单详情
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:39
+ * @since 1.0, 2017-08-11 14:25:03
  */
 public class ZmWatchListDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8288296673361545831L;
+	private static final long serialVersionUID = 7735419531935493287L;
 
 	/**
-	 * 行业编码，例如：
-AA	金融（信贷类）；
-AB	公检法 ；
-AC	金融（支付类）；
-AD	租车行业；
-AE	酒店行业；
-AF	电商行业；
-AG	租房行业；
-AH	运营商；
-AI	保险行业；
-AJ	公共事业。
-该列表动态更新，更新前芝麻将进行通知。
+	 * 风险信息行业编码
 	 */
 	@ApiField("biz_code")
 	private String bizCode;
 
 	/**
-	 * 风险编码，编码由芝麻进行维护和升级，会存在新增编码的可能，更新前芝麻会进行通知。
+	 * 风险编码
 	 */
 	@ApiField("code")
 	private String code;
 
 	/**
-	 * 行业关注名单记录扩展信息
+	 * 扩展信息
 	 */
-	@ApiField("extend_info")
-	private ZmWatchListExtendInfo extendInfo;
+	@ApiListField("extend_info")
+	@ApiField("zm_watch_list_extend_info")
+	private List<ZmWatchListExtendInfo> extendInfo;
 
 	/**
-	 * 数据更新时间
+	 * 风险等级
+	 */
+	@ApiField("level")
+	private Long level;
+
+	/**
+	 * 数据刷新时间
 	 */
 	@ApiField("refresh_time")
 	private Date refreshTime;
 
 	/**
-	 * 对于借款贷款信用消费等，该字段标识是否结清。true，已经结清；false，未结清。
+	 * 结清状态
 	 */
 	@ApiField("settlement")
 	private Boolean settlement;
@@ -69,7 +67,7 @@ AJ	公共事业。
 	private String status;
 
 	/**
-	 * 行业名单风险类型，编码由芝麻进行维护和升级，会存在新增编码的可能，更新前芝麻将会进行通知。
+	 * 行业名单风险类型
 	 */
 	@ApiField("type")
 	private String type;
@@ -88,11 +86,18 @@ AJ	公共事业。
 		this.code = code;
 	}
 
-	public ZmWatchListExtendInfo getExtendInfo() {
+	public List<ZmWatchListExtendInfo> getExtendInfo() {
 		return this.extendInfo;
 	}
-	public void setExtendInfo(ZmWatchListExtendInfo extendInfo) {
+	public void setExtendInfo(List<ZmWatchListExtendInfo> extendInfo) {
 		this.extendInfo = extendInfo;
+	}
+
+	public Long getLevel() {
+		return this.level;
+	}
+	public void setLevel(Long level) {
+		this.level = level;
 	}
 
 	public Date getRefreshTime() {

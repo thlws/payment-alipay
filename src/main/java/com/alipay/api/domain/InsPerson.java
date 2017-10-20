@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险干系人
  *
  * @author auto create
- * @since 1.0, 2016-11-14 11:45:28
+ * @since 1.0, 2017-07-18 15:48:09
  */
 public class InsPerson extends AlipayObject {
 
-	private static final long serialVersionUID = 6233843364672341361L;
+	private static final long serialVersionUID = 7161958785486238822L;
 
 	/**
 	 * 地址
@@ -77,10 +77,22 @@ public class InsPerson extends AlipayObject {
 	private String gender;
 
 	/**
+	 * 国籍
+	 */
+	@ApiField("nationality")
+	private String nationality;
+
+	/**
 	 * 电话号码
 	 */
 	@ApiField("phone")
 	private String phone;
+
+	/**
+	 * 张三
+	 */
+	@ApiField("pronounce_name")
+	private String pronounceName;
 
 	/**
 	 * 支付宝会员ID;如果是投保人则必填
@@ -158,11 +170,25 @@ public class InsPerson extends AlipayObject {
 		this.gender = gender;
 	}
 
+	public String getNationality() {
+		return this.nationality;
+	}
+	public void setNationality(String nationality) {
+		this.nationality = nationality;
+	}
+
 	public String getPhone() {
 		return this.phone;
 	}
 	public void setPhone(String phone) {
 		this.phone = phone;
+	}
+
+	public String getPronounceName() {
+		return this.pronounceName;
+	}
+	public void setPronounceName(String pronounceName) {
+		this.pronounceName = pronounceName;
 	}
 
 	public String getUserId() {

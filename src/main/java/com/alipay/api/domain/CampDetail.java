@@ -11,11 +11,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 活动详情
  *
  * @author auto create
- * @since 1.0, 2016-10-31 13:30:36
+ * @since 1.0, 2017-09-30 11:20:37
  */
 public class CampDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3723791278497214967L;
+	private static final long serialVersionUID = 4894789399214477149L;
+
+	/**
+	 * 活动工单列表
+	 */
+	@ApiListField("activity_orders")
+	@ApiField("activity_order_d_t_o")
+	private List<ActivityOrderDTO> activityOrders;
 
 	/**
 	 * 活动子状态，如审核中
@@ -108,6 +115,13 @@ public class CampDetail extends AlipayObject {
 	 */
 	@ApiField("type")
 	private String type;
+
+	public List<ActivityOrderDTO> getActivityOrders() {
+		return this.activityOrders;
+	}
+	public void setActivityOrders(List<ActivityOrderDTO> activityOrders) {
+		this.activityOrders = activityOrders;
+	}
 
 	public String getAuditStatus() {
 		return this.auditStatus;

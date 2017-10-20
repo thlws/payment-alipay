@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 券的使用规则信息
  *
  * @author auto create
- * @since 1.0, 2016-10-31 12:00:30
+ * @since 1.0, 2017-09-28 10:50:32
  */
 public class UseRule extends AlipayObject {
 
-	private static final long serialVersionUID = 8852747862357579356L;
+	private static final long serialVersionUID = 4387835535911786352L;
 
 	/**
 	 * 扩展属性，无需设置
@@ -29,10 +29,31 @@ public class UseRule extends AlipayObject {
 	private ForbbidenTime forbiddenTime;
 
 	/**
+	 * 优惠券的使用支付渠道限制规
+则，
+不受支付渠道限制
+:USE_NO_LIMIT;
+仅限口碑储值卡支付时可用
+:USE_ON_CURRENT_PAY_C
+HANNEL;
+口碑储值卡支付时不可用
+:NOT_ALLOWED_USE;
+【备注】支付渠道限制不允许修改
+	 */
+	@ApiField("limit_rule")
+	private String limitRule;
+
+	/**
 	 * 券核销的最低消费门槛，单位元
 	 */
 	@ApiField("min_consume")
 	private String minConsume;
+
+	/**
+	 * 券买单跳转链接
+	 */
+	@ApiField("pay_redirect_url")
+	private String payRedirectUrl;
 
 	/**
 	 * 券适用门店列表
@@ -65,11 +86,25 @@ public class UseRule extends AlipayObject {
 		this.forbiddenTime = forbiddenTime;
 	}
 
+	public String getLimitRule() {
+		return this.limitRule;
+	}
+	public void setLimitRule(String limitRule) {
+		this.limitRule = limitRule;
+	}
+
 	public String getMinConsume() {
 		return this.minConsume;
 	}
 	public void setMinConsume(String minConsume) {
 		this.minConsume = minConsume;
+	}
+
+	public String getPayRedirectUrl() {
+		return this.payRedirectUrl;
+	}
+	public void setPayRedirectUrl(String payRedirectUrl) {
+		this.payRedirectUrl = payRedirectUrl;
 	}
 
 	public List<String> getSuitShops() {

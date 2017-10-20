@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 审核规则
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:41
+ * @since 1.0, 2017-04-20 15:17:50
  */
 public class AlipayItemAuditRule extends AlipayObject {
 
-	private static final long serialVersionUID = 8312984773111735466L;
+	private static final long serialVersionUID = 4676482452924593655L;
 
 	/**
 	 * 审核类型，商户授权模式此字段不需要填写。

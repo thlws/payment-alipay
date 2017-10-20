@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品券模板
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:40
+ * @since 1.0, 2017-04-20 15:17:55
  */
 public class AlipayItemVoucherTemplete extends AlipayObject {
 
-	private static final long serialVersionUID = 2127725166629591575L;
+	private static final long serialVersionUID = 1781196711831278314L;
 
 	/**
 	 * 延迟生效时间（手动领取条件下，可跟valid_period组合使用）

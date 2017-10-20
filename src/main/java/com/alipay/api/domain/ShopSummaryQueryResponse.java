@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 门店查询摘要信息接口模型
  *
  * @author auto create
- * @since 1.0, 2016-11-19 11:59:28
+ * @since 1.0, 2017-02-17 14:20:04
  */
 public class ShopSummaryQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 4316648626167862332L;
+	private static final long serialVersionUID = 6615316796522875595L;
 
 	/**
 	 * 门店地址
@@ -70,6 +70,18 @@ public class ShopSummaryQueryResponse extends AlipayObject {
 	 */
 	@ApiField("is_show")
 	private String isShow;
+
+	/**
+	 * 纬度，只有在query_type=KB_PROMOTER非空
+	 */
+	@ApiField("latitude")
+	private String latitude;
+
+	/**
+	 * 经度，只有在query_type=KB_PROMOTER非空
+	 */
+	@ApiField("longitude")
+	private String longitude;
 
 	/**
 	 * 门店首图
@@ -180,6 +192,20 @@ public class ShopSummaryQueryResponse extends AlipayObject {
 	}
 	public void setIsShow(String isShow) {
 		this.isShow = isShow;
+	}
+
+	public String getLatitude() {
+		return this.latitude;
+	}
+	public void setLatitude(String latitude) {
+		this.latitude = latitude;
+	}
+
+	public String getLongitude() {
+		return this.longitude;
+	}
+	public void setLongitude(String longitude) {
+		this.longitude = longitude;
 	}
 
 	public String getMainImage() {

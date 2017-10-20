@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 自定义数据报表创建及更新接口
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:10
+ * @since 1.0, 2017-03-10 17:56:42
  */
 public class KoubeiMarketingDataCustomreportSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2832794248248766975L;
+	private static final long serialVersionUID = 6747212864639612841L;
 
 	/**
 	 * 自定义报表规则条件信息

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.marketing.campaign.crowd.create response.
  * 
  * @author auto create
- * @since 1.0, 2016-08-29 14:52:57
+ * @since 1.0, 2017-08-30 14:58:36
  */
 public class KoubeiMarketingCampaignCrowdCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4896836617636632186L;
+	private static final long serialVersionUID = 2729677912856677586L;
 
 	/** 
 	 * 返回的人群组的唯一标识

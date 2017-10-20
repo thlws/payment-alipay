@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户通过该接口进行交易的创建下单
  *
  * @author auto create
- * @since 1.0, 2016-08-09 15:24:49
+ * @since 1.0, 2017-06-14 15:07:45
  */
 public class AlipayTradeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7775228554624481963L;
+	private static final long serialVersionUID = 2681561922637978567L;
 
 	/**
 	 * 支付宝的店铺编号
@@ -41,12 +41,26 @@ public class AlipayTradeCreateModel extends AlipayObject {
 	private String buyerLogonId;
 
 	/**
+	 * 禁用渠道,用户不可用指定渠道支付
+注，与enable_pay_channels互斥
+	 */
+	@ApiField("disable_pay_channels")
+	private String disablePayChannels;
+
+	/**
 	 * 可打折金额.
 参与优惠计算的金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]
 如果该值未传入，但传入了【订单总金额】，【不可打折金额】则该值默认为【订单总金额】-【不可打折金额】
 	 */
 	@ApiField("discountable_amount")
 	private String discountableAmount;
+
+	/**
+	 * 可用渠道,用户只能在指定渠道范围内支付
+注，与disable_pay_channels互斥
+	 */
+	@ApiField("enable_pay_channels")
+	private String enablePayChannels;
 
 	/**
 	 * 业务扩展参数
@@ -61,6 +75,12 @@ public class AlipayTradeCreateModel extends AlipayObject {
 	@ApiListField("goods_detail")
 	@ApiField("goods_detail")
 	private List<GoodsDetail> goodsDetail;
+
+	/**
+	 * 商户原始订单号，最大长度限制32位
+	 */
+	@ApiField("merchant_order_no")
+	private String merchantOrderNo;
 
 	/**
 	 * 商户操作员编号
@@ -160,11 +180,25 @@ public class AlipayTradeCreateModel extends AlipayObject {
 		this.buyerLogonId = buyerLogonId;
 	}
 
+	public String getDisablePayChannels() {
+		return this.disablePayChannels;
+	}
+	public void setDisablePayChannels(String disablePayChannels) {
+		this.disablePayChannels = disablePayChannels;
+	}
+
 	public String getDiscountableAmount() {
 		return this.discountableAmount;
 	}
 	public void setDiscountableAmount(String discountableAmount) {
 		this.discountableAmount = discountableAmount;
+	}
+
+	public String getEnablePayChannels() {
+		return this.enablePayChannels;
+	}
+	public void setEnablePayChannels(String enablePayChannels) {
+		this.enablePayChannels = enablePayChannels;
 	}
 
 	public ExtendParams getExtendParams() {
@@ -179,6 +213,13 @@ public class AlipayTradeCreateModel extends AlipayObject {
 	}
 	public void setGoodsDetail(List<GoodsDetail> goodsDetail) {
 		this.goodsDetail = goodsDetail;
+	}
+
+	public String getMerchantOrderNo() {
+		return this.merchantOrderNo;
+	}
+	public void setMerchantOrderNo(String merchantOrderNo) {
+		this.merchantOrderNo = merchantOrderNo;
 	}
 
 	public String getOperatorId() {

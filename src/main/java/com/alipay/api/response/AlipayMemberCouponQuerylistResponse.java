@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.member.coupon.querylist response.
  * 
  * @author auto create
- * @since 1.0, 2014-11-19 15:53:19
+ * @since 1.0, 2017-04-14 11:46:40
  */
 public class AlipayMemberCouponQuerylistResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6472992743558135788L;
+	private static final long serialVersionUID = 7227165175888958333L;
 
 	/** 
 	 * 券信息数组.

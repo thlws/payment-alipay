@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.marketing.data.member.report.query response.
  * 
  * @author auto create
- * @since 1.0, 2016-05-28 22:41:49
+ * @since 1.0, 2017-06-23 09:40:18
  */
 public class KoubeiMarketingDataMemberReportQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1646226144449236172L;
+	private static final long serialVersionUID = 3622996878627666271L;
 
 	/** 
 	 * 查询成功时返回json格式数据

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 招商pid和pid对应的门第列表
  *
  * @author auto create
- * @since 1.0, 2016-10-31 12:00:31
+ * @since 1.0, 2017-06-05 11:25:25
  */
 public class PidShopInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7569987353736112391L;
+	private static final long serialVersionUID = 4175687219133525159L;
 
 	/**
 	 * 商户pid

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.exsc.user.firstfundinpour.get response.
  * 
  * @author auto create
- * @since 1.0, 2014-10-30 22:35:08
+ * @since 1.0, 2017-04-07 16:23:40
  */
 public class AlipayExscUserFirstfundinpourGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1744323552388328112L;
+	private static final long serialVersionUID = 6512632868156718974L;
 
 	/** 
 	 * 返回结果的业务类型。首次资金流入业务类型 （first_fund_inpour）

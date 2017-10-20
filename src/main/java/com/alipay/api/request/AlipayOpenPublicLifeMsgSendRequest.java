@@ -14,7 +14,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.life.msg.send request
  * 
  * @author auto create
- * @since 1.0, 2016-12-08 12:08:17
+ * @since 1.0, 2017-01-11 11:21:11
  */
 public class AlipayOpenPublicLifeMsgSendRequest implements AlipayUploadRequest<AlipayOpenPublicLifeMsgSendResponse> {
 
@@ -91,6 +91,11 @@ deadline（int）：文章的失效时间，单位秒
 	* 视频资源来源id（视频类消息必填），取值限定youku, miaopai, taobao, sina中的一个
 	 */
 	private String videoSource;
+
+	/** 
+	* 视频的临时链接（优酷来源的视频消息，该字段不能为空）
+	 */
+	private String videoTemporaryUrl;
 
 	/** 
 	* 生活号视频类消息视频id或url（视频类消息必填，根据来源区分）
@@ -181,6 +186,13 @@ deadline（int）：文章的失效时间，单位秒
 		return this.videoSource;
 	}
 
+	public void setVideoTemporaryUrl(String videoTemporaryUrl) {
+		this.videoTemporaryUrl = videoTemporaryUrl;
+	}
+	public String getVideoTemporaryUrl() {
+		return this.videoTemporaryUrl;
+	}
+
 	public void setVideoUrl(String videoUrl) {
 		this.videoUrl = videoUrl;
 	}
@@ -259,6 +271,7 @@ deadline（int）：文章的失效时间，单位秒
 		txtParams.put("video_samples", this.videoSamples);
 		txtParams.put("video_size", this.videoSize);
 		txtParams.put("video_source", this.videoSource);
+		txtParams.put("video_temporary_url", this.videoTemporaryUrl);
 		txtParams.put("video_url", this.videoUrl);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);

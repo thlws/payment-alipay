@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.marketing.data.smartactivity.config response.
  * 
  * @author auto create
- * @since 1.0, 2016-12-05 17:22:34
+ * @since 1.0, 2017-07-26 11:31:50
  */
 public class KoubeiMarketingDataSmartactivityConfigResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1866433112133272195L;
+	private static final long serialVersionUID = 3537488553862623539L;
 
 	/** 
 	 * 活动类型
@@ -42,6 +42,24 @@ GUESS_SEND 口令送
 	private String crowdGroup;
 
 	/** 
+	 * 扩展信息，对于拉新的会返回commission_rate(口碑客分佣比例)，对于方案组的会返回SMART_PROMO_GROUP_ID(方案组ID),SMART_PROMO_PLAN_ID方案ID，多个方案竖线分隔，consume_code表示消费送活动形式，包含RULES/USRLEVEL两个枚举值，分别表示按照用户规则和会员分层来创建活动组
+	 */
+	@ApiField("ext_info")
+	private String extInfo;
+
+	/** 
+	 * 商品ID，只有在诊断码为SUPER_ITEM表示菜品营销时此字段才可能有值，多个值之间使用竖线|分隔
+	 */
+	@ApiField("item_id")
+	private String itemId;
+
+	/** 
+	 * 商品名称，只有在诊断码为SUPER_ITEM表示菜品营销时此字段才可能有值，多个值之间使用竖线|分隔
+	 */
+	@ApiField("item_name")
+	private String itemName;
+
+	/** 
 	 * 奖品面额门槛（阶梯状），消费满不同的金额可以使用不同的券,单位：分
 	 */
 	@ApiField("min_consume")
@@ -55,6 +73,12 @@ GUESS_SEND 口令送
 	 */
 	@ApiField("min_cost")
 	private String minCost;
+
+	/** 
+	 * 营销类型，只有在诊断码为SUPER_ITEM表示菜品营销时此字段才可能有值，多个值之间使用竖线|分隔
+	 */
+	@ApiField("pro_type")
+	private String proType;
 
 	/** 
 	 * 目前支持以下类型：
@@ -106,6 +130,27 @@ RATE：折扣券
 		return this.crowdGroup;
 	}
 
+	public void setExtInfo(String extInfo) {
+		this.extInfo = extInfo;
+	}
+	public String getExtInfo( ) {
+		return this.extInfo;
+	}
+
+	public void setItemId(String itemId) {
+		this.itemId = itemId;
+	}
+	public String getItemId( ) {
+		return this.itemId;
+	}
+
+	public void setItemName(String itemName) {
+		this.itemName = itemName;
+	}
+	public String getItemName( ) {
+		return this.itemName;
+	}
+
 	public void setMinConsume(String minConsume) {
 		this.minConsume = minConsume;
 	}
@@ -118,6 +163,13 @@ RATE：折扣券
 	}
 	public String getMinCost( ) {
 		return this.minCost;
+	}
+
+	public void setProType(String proType) {
+		this.proType = proType;
+	}
+	public String getProType( ) {
+		return this.proType;
 	}
 
 	public void setVoucherType(String voucherType) {

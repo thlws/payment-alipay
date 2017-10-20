@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券的描述信息
  *
  * @author auto create
- * @since 1.0, 2016-10-31 12:00:30
+ * @since 1.0, 2017-06-05 11:25:25
  */
 public class DisplayConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 1121349985636398669L;
+	private static final long serialVersionUID = 5513184642961366812L;
 
 	/**
 	 * 券的宣传语

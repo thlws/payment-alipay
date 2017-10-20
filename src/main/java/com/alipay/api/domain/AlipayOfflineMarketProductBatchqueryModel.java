@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通过该接口可以查询商户录入的所有商品编号
  *
  * @author auto create
- * @since 1.0, 2016-05-26 13:25:45
+ * @since 1.0, 2017-02-27 13:05:16
  */
 public class AlipayOfflineMarketProductBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6374376138935947582L;
+	private static final long serialVersionUID = 4487492427399391151L;
 
 	/**
 	 * 操作人角色，默认商户操作:MERCHANT；服务商操作：PROVIDER。支付宝内部使用，外部商户不需填写此字段。

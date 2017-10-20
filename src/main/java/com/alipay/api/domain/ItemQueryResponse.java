@@ -7,14 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 查询信息
+ * trade_voucher商品查询信息
  *
  * @author auto create
- * @since 1.0, 2016-12-12 15:41:11
+ * @since 1.0, 2017-08-04 12:34:29
  */
 public class ItemQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 8738542859255512665L;
+	private static final long serialVersionUID = 4748975181183381462L;
+
+	/**
+	 * 口碑商品所属的后台类目id，后台类目数据来源：开放接口koubei.item.category.children.batchquery（查询后台类目树接口）
+	 */
+	@ApiField("category_id")
+	private String categoryId;
 
 	/**
 	 * 首图
@@ -59,6 +65,12 @@ public class ItemQueryResponse extends AlipayObject {
 	 */
 	@ApiField("item_type")
 	private String itemType;
+
+	/**
+	 * 备注
+	 */
+	@ApiField("memo")
+	private String memo;
 
 	/**
 	 * 标准商品为原价，必填。非标准商品请勿填写，填写无效。价格单位为元
@@ -106,15 +118,21 @@ public class ItemQueryResponse extends AlipayObject {
 	/**
 	 * 交易凭证类商品模板信息
 	 */
-	@ApiListField("trade_voucher_item_template")
-	@ApiField("koubei_trade_voucher_item_templete")
-	private List<KoubeiTradeVoucherItemTemplete> tradeVoucherItemTemplate;
+	@ApiField("trade_voucher_item_template")
+	private KoubeiTradeVoucherItemTemplete tradeVoucherItemTemplate;
 
 	/**
 	 * 商品顺序权重
 	 */
 	@ApiField("weight")
 	private Long weight;
+
+	public String getCategoryId() {
+		return this.categoryId;
+	}
+	public void setCategoryId(String categoryId) {
+		this.categoryId = categoryId;
+	}
 
 	public String getCover() {
 		return this.cover;
@@ -163,6 +181,13 @@ public class ItemQueryResponse extends AlipayObject {
 	}
 	public void setItemType(String itemType) {
 		this.itemType = itemType;
+	}
+
+	public String getMemo() {
+		return this.memo;
+	}
+	public void setMemo(String memo) {
+		this.memo = memo;
 	}
 
 	public String getOriginalPrice() {
@@ -214,10 +239,10 @@ public class ItemQueryResponse extends AlipayObject {
 		this.subject = subject;
 	}
 
-	public List<KoubeiTradeVoucherItemTemplete> getTradeVoucherItemTemplate() {
+	public KoubeiTradeVoucherItemTemplete getTradeVoucherItemTemplate() {
 		return this.tradeVoucherItemTemplate;
 	}
-	public void setTradeVoucherItemTemplate(List<KoubeiTradeVoucherItemTemplete> tradeVoucherItemTemplate) {
+	public void setTradeVoucherItemTemplate(KoubeiTradeVoucherItemTemplete tradeVoucherItemTemplate) {
 		this.tradeVoucherItemTemplate = tradeVoucherItemTemplate;
 	}
 

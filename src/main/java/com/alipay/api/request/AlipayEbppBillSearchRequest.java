@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.bill.search request
  * 
  * @author auto create
- * @since 1.0, 2016-09-20 14:23:46
+ * @since 1.0, 2017-04-07 17:13:40
  */
 public class AlipayEbppBillSearchRequest implements AlipayRequest<AlipayEbppBillSearchResponse> {
 

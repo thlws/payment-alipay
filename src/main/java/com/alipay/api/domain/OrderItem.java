@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单明细
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:39
+ * @since 1.0, 2017-09-27 19:44:40
  */
 public class OrderItem extends AlipayObject {
 
-	private static final long serialVersionUID = 6789495753726757737L;
+	private static final long serialVersionUID = 8733957499261977119L;
 
 	/**
 	 * 店铺所在具体位置
@@ -38,6 +38,12 @@ public class OrderItem extends AlipayObject {
 	private String city;
 
 	/**
+	 * 城市编码
+	 */
+	@ApiField("city_code")
+	private String cityCode;
+
+	/**
 	 * 订购的服务商品ID
 	 */
 	@ApiField("commodity_id")
@@ -60,6 +66,18 @@ public class OrderItem extends AlipayObject {
 	 */
 	@ApiField("expire_date")
 	private String expireDate;
+
+	/**
+	 * 商户名称
+	 */
+	@ApiField("merchant_name")
+	private String merchantName;
+
+	/**
+	 * 商户PID
+	 */
+	@ApiField("merchant_pid")
+	private String merchantPid;
 
 	/**
 	 * 上架时间
@@ -137,6 +155,13 @@ public class OrderItem extends AlipayObject {
 		this.city = city;
 	}
 
+	public String getCityCode() {
+		return this.cityCode;
+	}
+	public void setCityCode(String cityCode) {
+		this.cityCode = cityCode;
+	}
+
 	public String getCommodityId() {
 		return this.commodityId;
 	}
@@ -163,6 +188,20 @@ public class OrderItem extends AlipayObject {
 	}
 	public void setExpireDate(String expireDate) {
 		this.expireDate = expireDate;
+	}
+
+	public String getMerchantName() {
+		return this.merchantName;
+	}
+	public void setMerchantName(String merchantName) {
+		this.merchantName = merchantName;
+	}
+
+	public String getMerchantPid() {
+		return this.merchantPid;
+	}
+	public void setMerchantPid(String merchantPid) {
+		this.merchantPid = merchantPid;
 	}
 
 	public String getOnlineTime() {

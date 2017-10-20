@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 物业费账单数据批量上传
  *
  * @author auto create
- * @since 1.0, 2016-08-11 11:51:37
+ * @since 1.0, 2017-01-14 11:37:38
  */
 public class AlipayEcoCplifeBillBatchUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2378695724173825519L;
+	private static final long serialVersionUID = 4361918871778112766L;
 
 	/**
 	 * 每次上传物业费账单，都需要提供一个批次号。对于每一个合作伙伴，传递的每一个批次号都必须保证唯一性，同时对于批次号内的账单明细数据必须保证唯一性；
@@ -24,14 +24,14 @@ public class AlipayEcoCplifeBillBatchUploadModel extends AlipayObject {
 	private String batchId;
 
 	/**
-	 * 账单应收条目明细集合，同一小区内条目明细不允许重复；一次接口请求最多支持50条明细。
+	 * 账单应收条目明细集合，同一小区内条目明细不允许重复；一次接口请求最多支持1000条明细。
 	 */
 	@ApiListField("bill_set")
 	@ApiField("c_p_bill_set")
 	private List<CPBillSet> billSet;
 
 	/**
-	 * 支付宝社区物业平台小区ID，用户通过支付宝社区物业平台物业查询获取。
+	 * 支付宝社区小区统一编号，必须在物业账号名下存在。
 	 */
 	@ApiField("community_id")
 	private String communityId;

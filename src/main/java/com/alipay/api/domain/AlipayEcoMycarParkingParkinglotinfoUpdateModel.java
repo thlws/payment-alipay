@@ -7,50 +7,50 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改停车场信息
  *
  * @author auto create
- * @since 1.0, 2016-12-06 21:04:47
+ * @since 1.0, 2017-09-26 15:51:34
  */
 public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7132448299894529155L;
+	private static final long serialVersionUID = 2263368617855489317L;
 
 	/**
-	 * 城市编号（国家统一标准编码）
+	 * 城市编号（国家统一标准编码），请务必填写正确，详见 <a href="http://park-cityid.oss-cn-hangzhou.aliyuncs.com/%E5%9F%8E%E5%B8%82%E7%BC%96%E7%A0%81%28%E5%9B%BD%E6%A0%87%E7%A0%81%29.xls">点此下载</a>
 	 */
 	@ApiField("city_id")
 	private String cityId;
 
 	/**
-	 * 联系人支付宝账户
+	 * 停车场联系人支付宝账户，如果有则填入
 	 */
 	@ApiField("contact_alipay")
 	private String contactAlipay;
 
 	/**
-	 * 联系人邮箱
+	 * 停车场联系人邮箱，如果有则填入
 	 */
 	@ApiField("contact_email")
 	private String contactEmail;
 
 	/**
-	 * 联系人手机
+	 * 停车场联系人手机，如果有则填入
 	 */
 	@ApiField("contact_mobile")
 	private String contactMobile;
 
 	/**
-	 * 联系人
+	 * 停车场联系人，如果有则填入
 	 */
 	@ApiField("contact_name")
 	private String contactName;
 
 	/**
-	 * 联系人座机
+	 * 停车场联系人座机，如果有则填入
 	 */
 	@ApiField("contact_tel")
 	private String contactTel;
 
 	/**
-	 * 联系人微信
+	 * 停车场联系人微信，如果有则填入
 	 */
 	@ApiField("contact_weixin")
 	private String contactWeixin;
@@ -62,19 +62,19 @@ public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject
 	private String equipmentName;
 
 	/**
-	 * 维度；最长15位字符（包括小数点）， 注：高德坐标系
+	 * 纬度，最长15位字符(包括小数点)，注：高德坐标系。经纬度是门店搜索和活动推荐的重要参数，录入时请确保经纬度参数的准确。高德经纬度查询：http://lbs.amap.com/console/show/picker
 	 */
 	@ApiField("latitude")
 	private String latitude;
 
 	/**
-	 * 经度；最长15位字符（包括小数点）， 注：高德坐标系
+	 * 经度，最长15位字符(包括小数点)，注：高德坐标系。经纬度是门店搜索和活动推荐的重要参数，录入时请确保经纬度参数的准确。高德经纬度查询：http://lbs.amap.com/console/show/picker
 	 */
 	@ApiField("longitude")
 	private String longitude;
 
 	/**
-	 * ISV停车场ID，由ISV提供，同一个isv或商户范围内唯一
+	 * ISV停车场ID，由ISV提供，同一个ISV或商户范围内唯一
 	 */
 	@ApiField("out_parking_id")
 	private String outParkingId;
@@ -134,7 +134,7 @@ public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject
 	private String parkingType;
 
 	/**
-	 * 支付方式（1为支付宝在线缴费，2为支付宝代扣缴费
+	 * 支付方式（1为支付宝在线缴费，2为支付宝代扣缴费，3当面付)，如支持多种方式以','进行间隔
 	 */
 	@ApiField("pay_type")
 	private String payType;

@@ -3,9 +3,11 @@ package com.alipay.api.response;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.TemplateActionInfoDTO;
 import com.alipay.api.domain.TemplateCardLevelConfDTO;
 import com.alipay.api.domain.TemplateColumnInfoDTO;
 import com.alipay.api.domain.TemplateFieldRuleDTO;
+import com.alipay.api.domain.TemplateMdcodeNotifyConfDTO;
 import com.alipay.api.domain.TemplateOpenCardConfDTO;
 import com.alipay.api.domain.PubChannelDTO;
 import com.alipay.api.domain.TemplateBenefitInfoDTO;
@@ -17,23 +19,34 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.card.template.query response.
  * 
  * @author auto create
- * @since 1.0, 2016-10-18 15:46:32
+ * @since 1.0, 2017-08-24 15:51:59
  */
 public class AlipayMarketingCardTemplateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6532238168792479559L;
+	private static final long serialVersionUID = 2849164487692229684L;
 
 	/** 
-	 * 业务卡号前缀，由商户自定义
+	 * 业务卡号前缀，由商户指定
+支付宝业务卡号生成规则：biz_no_prefix(商户指定)卡号前缀 + biz_no_suffix(实时生成）卡号后缀
 	 */
 	@ApiField("biz_no_prefix")
 	private String bizNoPrefix;
 
 	/** 
-	 * 卡号长度
+	 * 业务卡号后缀的长度
+支付宝业务卡号生成规则：biz_no_prefix(商户指定)卡号前缀 + biz_no_suffix(实时生成）卡号后缀
 	 */
 	@ApiField("biz_no_suffix_len")
 	private String bizNoSuffixLen;
+
+	/** 
+	 * 卡行动点配置；
+行动点，即用户可点击跳转的区块，类似按钮控件的交互；
+单张卡最多4个行动点。
+	 */
+	@ApiListField("card_action_list")
+	@ApiField("template_action_info_d_t_o")
+	private List<TemplateActionInfoDTO> cardActionList;
 
 	/** 
 	 * 卡等级配置
@@ -63,6 +76,14 @@ OUT_MEMBER_CARD：外部权益卡
 	@ApiListField("field_rule_list")
 	@ApiField("template_field_rule_d_t_o")
 	private List<TemplateFieldRuleDTO> fieldRuleList;
+
+	/** 
+	 * 商户动态码通知参数配置：
+当write_off_type指定为商户动态码mdbarcode或mdqrcode时不为空；
+在此字段配置用户打开会员卡时支付宝通知商户生成动态码（发码）的通知参数，如接收通知地址等。
+	 */
+	@ApiField("mdcode_notify_conf")
+	private TemplateMdcodeNotifyConfDTO mdcodeNotifyConf;
 
 	/** 
 	 * 会员卡用户领卡配置，在门店等渠道露出领卡入口时，需要部署的商户领卡H5页面地址
@@ -120,6 +141,13 @@ OUT_MEMBER_CARD：外部权益卡
 		return this.bizNoSuffixLen;
 	}
 
+	public void setCardActionList(List<TemplateActionInfoDTO> cardActionList) {
+		this.cardActionList = cardActionList;
+	}
+	public List<TemplateActionInfoDTO> getCardActionList( ) {
+		return this.cardActionList;
+	}
+
 	public void setCardLevelConfs(List<TemplateCardLevelConfDTO> cardLevelConfs) {
 		this.cardLevelConfs = cardLevelConfs;
 	}
@@ -146,6 +174,13 @@ OUT_MEMBER_CARD：外部权益卡
 	}
 	public List<TemplateFieldRuleDTO> getFieldRuleList( ) {
 		return this.fieldRuleList;
+	}
+
+	public void setMdcodeNotifyConf(TemplateMdcodeNotifyConfDTO mdcodeNotifyConf) {
+		this.mdcodeNotifyConf = mdcodeNotifyConf;
+	}
+	public TemplateMdcodeNotifyConfDTO getMdcodeNotifyConf( ) {
+		return this.mdcodeNotifyConf;
 	}
 
 	public void setOpenCardConf(TemplateOpenCardConfDTO openCardConf) {

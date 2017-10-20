@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pass.sync.add request
  * 
  * @author auto create
- * @since 1.0, 2016-07-01 15:31:18
+ * @since 1.0, 2016-12-16 16:35:12
  */
 public class AlipayPassSyncAddRequest implements AlipayRequest<AlipayPassSyncAddResponse> {
 

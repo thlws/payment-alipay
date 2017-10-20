@@ -10,7 +10,7 @@ import com.alipay.trade.model.result.*;
 import com.alipay.trade.service.AlipayTradeService;
 import com.alipay.trade.utils.Utils;
 import com.alipay.trade.config.Constants;
-import payment.alipay.utils.JsonUtil;
+import org.thlws.payment.alipay.utils.JsonUtil;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

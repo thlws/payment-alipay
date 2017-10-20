@@ -1,19 +1,28 @@
 package com.alipay.api.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 活动基本信息
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:39
+ * @since 1.0, 2017-09-30 11:20:43
  */
 public class CampBaseDto extends AlipayObject {
 
-	private static final long serialVersionUID = 4175874128841623842L;
+	private static final long serialVersionUID = 2587318275388212745L;
+
+	/**
+	 * 活动工单列表
+	 */
+	@ApiListField("activity_orders")
+	@ApiField("activity_order_d_t_o")
+	private List<ActivityOrderDTO> activityOrders;
 
 	/**
 	 * 活动审核状态，AUDITING为审核中,REJECT为驳回，不返回为成功
@@ -68,6 +77,13 @@ public class CampBaseDto extends AlipayObject {
 	 */
 	@ApiField("type")
 	private String type;
+
+	public List<ActivityOrderDTO> getActivityOrders() {
+		return this.activityOrders;
+	}
+	public void setActivityOrders(List<ActivityOrderDTO> activityOrders) {
+		this.activityOrders = activityOrders;
+	}
 
 	public String getAuditStatus() {
 		return this.auditStatus;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 阶梯优惠折扣幅度模型
  *
  * @author auto create
- * @since 1.0, 2016-11-10 14:13:39
+ * @since 1.0, 2017-03-03 16:47:49
  */
 public class DiscountRateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4893894998372137275L;
+	private static final long serialVersionUID = 8222693435776353323L;
 
 	/**
 	 * 折扣方式

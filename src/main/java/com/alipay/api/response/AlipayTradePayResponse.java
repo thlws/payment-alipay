@@ -13,11 +13,28 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.pay response.
  * 
  * @author auto create
- * @since 1.0, 2016-12-08 00:37:26
+ * @since 1.0, 2017-09-29 10:50:10
  */
 public class AlipayTradePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1154883976392515419L;
+	private static final long serialVersionUID = 3346397886988961644L;
+
+	/** 
+	 * 异步支付模式，先享后付业务会返回该参数，目前有三种值：
+ASYNC_DELAY_PAY(异步延时付款);
+ASYNC_REALTIME_PAY(异步准实时付款);
+SYNC_DIRECT_PAY(同步直接扣款);
+	 */
+	@ApiField("async_payment_mode")
+	private String asyncPaymentMode;
+
+	/** 
+	 * 商户传入业务信息，具体值要和支付宝约定
+将商户传入信息分发给相应系统，应用于安全，营销等参数直传场景
+格式为json格式
+	 */
+	@ApiField("business_params")
+	private String businessParams;
 
 	/** 
 	 * 买家支付宝账号
@@ -69,7 +86,7 @@ public class AlipayTradePayResponse extends AlipayResponse {
 	private String invoiceAmount;
 
 	/** 
-	 * 买家支付宝用户号,该参数已废弃，请不要使用。
+	 * 买家支付宝用户号,该参数已废弃，请不要使用
 	 */
 	@ApiField("open_id")
 	private String openId;
@@ -116,6 +133,20 @@ public class AlipayTradePayResponse extends AlipayResponse {
 	@ApiListField("voucher_detail_list")
 	@ApiField("voucher_detail")
 	private List<VoucherDetail> voucherDetailList;
+
+	public void setAsyncPaymentMode(String asyncPaymentMode) {
+		this.asyncPaymentMode = asyncPaymentMode;
+	}
+	public String getAsyncPaymentMode( ) {
+		return this.asyncPaymentMode;
+	}
+
+	public void setBusinessParams(String businessParams) {
+		this.businessParams = businessParams;
+	}
+	public String getBusinessParams( ) {
+		return this.businessParams;
+	}
 
 	public void setBuyerLogonId(String buyerLogonId) {
 		this.buyerLogonId = buyerLogonId;

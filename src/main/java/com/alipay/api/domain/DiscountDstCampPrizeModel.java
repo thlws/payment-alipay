@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 优惠立减奖品折扣模式
  *
  * @author auto create
- * @since 1.0, 2016-11-10 14:13:39
+ * @since 1.0, 2017-03-03 16:47:49
  */
 public class DiscountDstCampPrizeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2431522246846326813L;
+	private static final long serialVersionUID = 7277314248877316165L;
 
 	/**
 	 * 预算id,商户先调预算创建接口得到预算id,传入

@@ -389,15 +389,7 @@ public class DefaultAlipayClient implements AlipayClient {
         try {
             Map<String, String> sortedMap = AlipaySignature.getSortedMap(requestHolder);
             String sortedQuery = WebUtils.buildQuery(sortedMap, charset);
-            String sign = requestHolder.getProtocalMustParams().get(AlipayConstants.SIGN);
             urlSb.append(sortedQuery);
-            if (sign != null & sign.length() > 0) {
-                Map<String, String> signMap = new HashMap<String, String>();
-                signMap.put(AlipayConstants.SIGN, sign);
-                String signQuery = WebUtils.buildQuery(signMap, charset);
-                urlSb.append("&");
-                urlSb.append(signQuery);
-            }
         } catch (IOException e) {
             throw new AlipayApiException(e);
         }

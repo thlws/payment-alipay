@@ -7,15 +7,16 @@ import com.alipay.api.internal.mapping.ApiField;
  * 单笔转账到支付宝账户接口
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:18
+ * @since 1.0, 2017-07-13 10:44:03
  */
 public class AlipayFundTransToaccountTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8567218842255393474L;
+	private static final long serialVersionUID = 8233165765611189548L;
 
 	/**
 	 * 转账金额，单位：元。
-只支持2位小数，小数点前最大支持13位，金额必须大于0。
+只支持2位小数，小数点前最大支持13位，金额必须大于等于0.1元。 
+最大转账金额以实际签约的限额为准。
 	 */
 	@ApiField("amount")
 	private String amount;
@@ -64,15 +65,14 @@ public class AlipayFundTransToaccountTransferModel extends AlipayObject {
 	private String payerRealName;
 
 	/**
-	 * 付款方显示姓名（最长支持100个英文/50个汉字）。
-如果不传，则默认显示该账户在支付宝登记的实名。收款方可见。
+	 * 付款方姓名（最长支持100个英文/50个汉字）。显示在收款方的账单详情页。如果该字段不传，则默认显示付款方的支付宝认证姓名或单位名称。
 	 */
 	@ApiField("payer_show_name")
 	private String payerShowName;
 
 	/**
 	 * 转账备注（支持200个英文/100个汉字）。
-当付款方为企业账户，且转账金额达到（大于等于）50000元，remark不能为空。收款方可见，会展示在收款用户的账单中。
+当付款方为企业账户，且转账金额达到（大于等于）50000元，remark不能为空。收款方可见，会展示在收款用户的收支详情中。
 	 */
 	@ApiField("remark")
 	private String remark;

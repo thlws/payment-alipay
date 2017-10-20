@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 发票抬头模型
+ * 发票抬头
  *
  * @author auto create
- * @since 1.0, 2016-11-24 16:25:46
+ * @since 1.0, 2017-03-15 15:25:34
  */
 public class InvoiceTitleModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5146254317893216274L;
+	private static final long serialVersionUID = 4754591978724784112L;
 
 	/**
 	 * 是否默认
@@ -21,6 +21,14 @@ true：默认抬头
 	 */
 	@ApiField("is_default")
 	private Boolean isDefault;
+
+	/**
+	 * 支付宝用户登录名（脱敏后登录名）
+该字段输出接口只限
+alipay.ebpp.invoice.title.dynamic.get
+	 */
+	@ApiField("logon_id")
+	private String logonId;
 
 	/**
 	 * 开户行账号
@@ -69,12 +77,14 @@ CORPORATION（公司抬头）
 
 	/**
 	 * 支付宝用户id
+说明：动态码获取抬头时接口（alipay.ebpp.invoice.title.dynamic.get ）用户id返回结果为加密后密文
+其他情况用户id来源于用户授权
 	 */
 	@ApiField("user_id")
 	private String userId;
 
 	/**
-	 * 用户手机号
+	 * 联系电话，支持手机和固话两种格式
 	 */
 	@ApiField("user_mobile")
 	private String userMobile;
@@ -84,6 +94,13 @@ CORPORATION（公司抬头）
 	}
 	public void setIsDefault(Boolean isDefault) {
 		this.isDefault = isDefault;
+	}
+
+	public String getLogonId() {
+		return this.logonId;
+	}
+	public void setLogonId(String logonId) {
+		this.logonId = logonId;
 	}
 
 	public String getOpenBankAccount() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 随机立减折扣幅度模型
  *
  * @author auto create
- * @since 1.0, 2016-11-10 14:13:39
+ * @since 1.0, 2017-03-03 16:47:49
  */
 public class DiscountRandomModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5164462236338237655L;
+	private static final long serialVersionUID = 8373556519448226677L;
 
 	/**
 	 * 最高优惠金额

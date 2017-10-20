@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.cityfacilitator.voucher.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2016-07-07 13:14:52
+ * @since 1.0, 2017-06-21 15:08:33
  */
 public class AlipayCommerceCityfacilitatorVoucherConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6257965819235134756L;
+	private static final long serialVersionUID = 5396422142798655479L;
 
 	/** 
 	 * 订单金额，元为单位

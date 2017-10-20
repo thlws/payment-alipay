@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取数据反馈模板
  *
  * @author auto create
- * @since 1.0, 2016-09-21 18:40:24
+ * @since 1.0, 2017-02-16 15:46:19
  */
 public class ZhimaDataFeedbackurlQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7223443578492944341L;
+	private static final long serialVersionUID = 6517968184385611255L;
 
 	/**
 	 * 在支付宝商户版注册支付宝账号id

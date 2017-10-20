@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 手机网站支付接口2.0
  *
  * @author auto create
- * @since 1.0, 2016-11-17 11:46:00
+ * @since 1.0, 2017-09-05 11:49:31
  */
 public class AlipayTradeWapPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7558131418246516862L;
+	private static final long serialVersionUID = 2185314677273937966L;
 
 	/**
 	 * 针对用户授权接口，获取用户相关数据时，用于标识用户授权关系
@@ -24,6 +24,12 @@ public class AlipayTradeWapPayModel extends AlipayObject {
 	 */
 	@ApiField("body")
 	private String body;
+
+	/**
+	 * 商户传入业务信息，具体值要和支付宝约定，应用于安全，营销等参数直传场景，格式为json格式
+	 */
+	@ApiField("business_params")
+	private String businessParams;
 
 	/**
 	 * 禁用渠道，用户不可用指定渠道支付
@@ -54,6 +60,12 @@ public class AlipayTradeWapPayModel extends AlipayObject {
 	private String goodsType;
 
 	/**
+	 * 开票信息
+	 */
+	@ApiField("invoice_info")
+	private InvoiceInfo invoiceInfo;
+
+	/**
 	 * 商户网站唯一订单号
 	 */
 	@ApiField("out_trade_no")
@@ -79,16 +91,54 @@ public class AlipayTradeWapPayModel extends AlipayObject {
 	private String promoParams;
 
 	/**
+	 * 用户付款中途退出返回商户网站的地址
+	 */
+	@ApiField("quit_url")
+	private String quitUrl;
+
+	/**
+	 * 描述分账信息，Json格式，详见分账参数说明
+	 */
+	@ApiField("royalty_info")
+	private RoyaltyInfo royaltyInfo;
+
+	/**
 	 * 收款支付宝用户ID。 如果该值为空，则默认为商户签约账号对应的支付宝用户ID
 	 */
 	@ApiField("seller_id")
 	private String sellerId;
 
 	/**
+	 * 指定渠道，目前仅支持传入pcredit
+若由于用户原因渠道不可用，用户可选择是否用其他渠道支付。
+注：该参数不可与花呗分期参数同时传入
+	 */
+	@ApiField("specified_channel")
+	private String specifiedChannel;
+
+	/**
+	 * 商户门店编号
+	 */
+	@ApiField("store_id")
+	private String storeId;
+
+	/**
+	 * 间连受理商户信息体，当前只对特殊银行机构特定场景下使用此字段
+	 */
+	@ApiField("sub_merchant")
+	private SubMerchant subMerchant;
+
+	/**
 	 * 商品的标题/交易标题/订单标题/订单关键字等。
 	 */
 	@ApiField("subject")
 	private String subject;
+
+	/**
+	 * 绝对超时时间，格式为yyyy-MM-dd HH:mm。
+	 */
+	@ApiField("time_expire")
+	private String timeExpire;
 
 	/**
 	 * 该笔订单允许的最晚付款时间，逾期将关闭交易。取值范围：1m～15d。m-分钟，h-小时，d-天，1c-当天（1c-当天的情况下，无论交易何时创建，都在0点关闭）。 该参数数值不接受小数点， 如 1.5h，可转换为 90m。
@@ -114,6 +164,13 @@ public class AlipayTradeWapPayModel extends AlipayObject {
 	}
 	public void setBody(String body) {
 		this.body = body;
+	}
+
+	public String getBusinessParams() {
+		return this.businessParams;
+	}
+	public void setBusinessParams(String businessParams) {
+		this.businessParams = businessParams;
 	}
 
 	public String getDisablePayChannels() {
@@ -144,6 +201,13 @@ public class AlipayTradeWapPayModel extends AlipayObject {
 		this.goodsType = goodsType;
 	}
 
+	public InvoiceInfo getInvoiceInfo() {
+		return this.invoiceInfo;
+	}
+	public void setInvoiceInfo(InvoiceInfo invoiceInfo) {
+		this.invoiceInfo = invoiceInfo;
+	}
+
 	public String getOutTradeNo() {
 		return this.outTradeNo;
 	}
@@ -172,6 +236,20 @@ public class AlipayTradeWapPayModel extends AlipayObject {
 		this.promoParams = promoParams;
 	}
 
+	public String getQuitUrl() {
+		return this.quitUrl;
+	}
+	public void setQuitUrl(String quitUrl) {
+		this.quitUrl = quitUrl;
+	}
+
+	public RoyaltyInfo getRoyaltyInfo() {
+		return this.royaltyInfo;
+	}
+	public void setRoyaltyInfo(RoyaltyInfo royaltyInfo) {
+		this.royaltyInfo = royaltyInfo;
+	}
+
 	public String getSellerId() {
 		return this.sellerId;
 	}
@@ -179,11 +257,39 @@ public class AlipayTradeWapPayModel extends AlipayObject {
 		this.sellerId = sellerId;
 	}
 
+	public String getSpecifiedChannel() {
+		return this.specifiedChannel;
+	}
+	public void setSpecifiedChannel(String specifiedChannel) {
+		this.specifiedChannel = specifiedChannel;
+	}
+
+	public String getStoreId() {
+		return this.storeId;
+	}
+	public void setStoreId(String storeId) {
+		this.storeId = storeId;
+	}
+
+	public SubMerchant getSubMerchant() {
+		return this.subMerchant;
+	}
+	public void setSubMerchant(SubMerchant subMerchant) {
+		this.subMerchant = subMerchant;
+	}
+
 	public String getSubject() {
 		return this.subject;
 	}
 	public void setSubject(String subject) {
 		this.subject = subject;
+	}
+
+	public String getTimeExpire() {
+		return this.timeExpire;
+	}
+	public void setTimeExpire(String timeExpire) {
+		this.timeExpire = timeExpire;
 	}
 
 	public String getTimeoutExpress() {

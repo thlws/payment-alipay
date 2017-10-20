@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 申请流水撤销
  *
  * @author auto create
- * @since 1.0, 2016-07-04 15:53:02
+ * @since 1.0, 2017-07-06 11:11:47
  */
 public class AlipayOfflineMarketShopApplyorderCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6112686855254934416L;
+	private static final long serialVersionUID = 3765225522938649882L;
 
 	/**
 	 * 撤销申请流水的原因

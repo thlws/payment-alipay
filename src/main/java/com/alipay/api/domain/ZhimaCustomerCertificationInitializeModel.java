@@ -7,17 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 认证初始化
  *
  * @author auto create
- * @since 1.0, 2016-11-24 11:35:11
+ * @since 1.0, 2017-04-24 09:46:23
  */
 public class ZhimaCustomerCertificationInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7246487964283375892L;
+	private static final long serialVersionUID = 2829574368414323336L;
 
 	/**
 	 * 认证场景码,常用的场景码有:
-FACE:人脸认证,
-BANK_CARD:银行卡认证,
-ZFB_PASSWORD:支付宝帐号和支付密码密码认证
+FACE:人脸认证
+
+
 签约的协议决定了可以使用那些场景
 	 */
 	@ApiField("biz_code")

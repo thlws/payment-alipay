@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 操作的店铺对象信息
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:41
+ * @since 1.0, 2017-03-07 22:15:22
  */
 public class OuterShopDO extends AlipayObject {
 
-	private static final long serialVersionUID = 4129378835764158463L;
+	private static final long serialVersionUID = 4883137673318494317L;
 
 	/**
 	 * 合作商户ID

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.cdp.advertise.query response.
  * 
  * @author auto create
- * @since 1.0, 2016-07-18 16:41:57
+ * @since 1.0, 2017-08-18 15:36:18
  */
 public class AlipayMarketingCdpAdvertiseQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6239414572731384546L;
+	private static final long serialVersionUID = 1551443799665816952L;
 
 	/** 
 	 * 用户点击广告后，跳转URL地址, 协议必须为HTTPS。广告类型为PIC时，需要设置该值。对于类型为URL不生效
@@ -22,7 +22,7 @@ public class AlipayMarketingCdpAdvertiseQueryResponse extends AlipayResponse {
 	private String actionUrl;
 
 	/** 
-	 * 广告位标识码，目前开放的广告位是钱包APP/口碑TAB/商家详情页中，传值：CDP_OPEN_MERCHANT
+	 * 广告位标识码，目前广告位只支持在支付宝钱包中显示，口碑app暂不支持。传值：CDP_OPEN_MERCHANT
 	 */
 	@ApiField("ad_code")
 	private String adCode;
@@ -32,6 +32,18 @@ public class AlipayMarketingCdpAdvertiseQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("ad_rules")
 	private String adRules;
+
+	/** 
+	 * 广告消失机制，CLOSE_AFTER_CLICK：总共点击一定次数消失
+	 */
+	@ApiField("behavior")
+	private String behavior;
+
+	/** 
+	 * 广告扩展字段
+	 */
+	@ApiField("biz_ext_info")
+	private String bizExtInfo;
 
 	/** 
 	 * 广告内容。如果广告类型是HTML5，则传入H5链接地址，建议为https协议。最大尺寸不得超过1242px＊242px，小屏幕将按分辨率宽度同比例放大缩小；如果类型是图片，则传入图片ID标识，如何获取图片ID参考图片上传接口：alipay.offline.material.image.upload。图片尺寸为1242px＊290px。图片大小不能超过50kb。
@@ -88,6 +100,20 @@ public class AlipayMarketingCdpAdvertiseQueryResponse extends AlipayResponse {
 	}
 	public String getAdRules( ) {
 		return this.adRules;
+	}
+
+	public void setBehavior(String behavior) {
+		this.behavior = behavior;
+	}
+	public String getBehavior( ) {
+		return this.behavior;
+	}
+
+	public void setBizExtInfo(String bizExtInfo) {
+		this.bizExtInfo = bizExtInfo;
+	}
+	public String getBizExtInfo( ) {
+		return this.bizExtInfo;
 	}
 
 	public void setContent(String content) {
