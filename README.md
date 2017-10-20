@@ -23,7 +23,7 @@
 	<li>普通项目</li>
 </ul>
 
-<p>点击下载 <a href="www.baidu.com">payment-alipay-2.0.0.jar</a></p>
+<p>点击下载 <a href="https://gitee.com/thlws/payment-alipay/attach_files/download?i=100309&amp;u=http%3A%2F%2Ffiles.git.oschina.net%2Fgroup1%2FM00%2F02%2F20%2FPaAvDFnp3yGAN3zbAFiNPijtMUA849.jar%3Ftoken%3Da7d9f46090507199f39a96b562fbd296%26ts%3D1508499233%26attname%3Dpayment-alipay-2.0.0.jar">payment-alipay-2.0.0.jar</a></p>
 
 <h3>条码支付</h3>
 
