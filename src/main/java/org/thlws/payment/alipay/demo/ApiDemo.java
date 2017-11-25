@@ -78,10 +78,9 @@ public class ApiDemo {
         list.add(GoodsDetail.newInstance("g01","name1",10,1));
         list.add(GoodsDetail.newInstance("g02","name2",12,3));
         input.setGoodsDetailList(list);
-
         input.setAuthCode("289296533713001450");
-
-        alipayCore.pay(input);
+        AlipayTradeOutput output = alipayCore.pay(input);
+        //output就是支付结果,具体请参考相关属性说明
     }
 
 
