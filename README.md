@@ -39,7 +39,7 @@ _JDK版本 >= 1.6 即可._
 _目前没有全部支持微信官方的支付方式,截止目前支持 公众号支付、刷卡支付、扫码支付 三种._
 
 - 有没有支付相关文档？<br>
-_[https://docs.open.alipay.com/api](https://docs.open.alipay.com/api)
+_ [https://docs.open.alipay.com/api](https://docs.open.alipay.com/api)
 
 ## 打赏一下
 ![](imgs/award.png)
