@@ -1,74 +1,45 @@
 ## 简介说明
-- 支付宝”支付相信很多开发者朋友在工作中遇到过这样的需求，虽说支付宝提供了SDK示例，基本可以直接拿过来使用，但支付宝分的比较详细，例如：当面付、手机网站支付、电脑网站支付等，需要下载各自的SDK并加入到自己的项目中，如果是maven项目，还需要把SDK上传到公司内部的maven私有库，显得比较繁琐，所以考虑上面的问题，整合支付宝多种支付场景的项目来了，如你所见 它叫 payment-alipay 。
+- 基于支付宝官方SDK,封装支付相关接口, 整合多种支付场景于一体，降低接入门槛。
 
 
-## 条码支付
-- AlipayCore.pay(AlipayTradeInput input)
+## 详细教程
+- 支付宝官方文档：[https://docs.open.alipay.com/api](https://docs.open.alipay.com/api)
+
+## 项目说明
+1. 用于支付宝支付，基于Java语言实现的依赖库；
+2. 接口参数全部封装，使用者仅需创建对象并设置参数；
+
+## 依赖安装
+- Maven
 ```
-AlipayTradeInput input = new AlipayTradeInput();
-input.setSellerId(partner_id);
-input.setTotalAmount("0.01");
-input.setStoreId("0000102678762");
-input.setOperatorId("operator01");
-input.setBody("test pay");
-input.setDiscountableAmount("0");
-input.setUndiscountableAmount("0");
-input.setOutTradeNo(System.currentTimeMillis()+"");
-input.setSubject("subject01");
-List<GoodsDetail> list = new ArrayList<GoodsDetail>();
-list.add(GoodsDetail.newInstance("g01","name1",10,1));
-list.add(GoodsDetail.newInstance("g02","name2",12,3));
-input.setGoodsDetailList(list);
-input.setAuthCode("289296533713001450");
-AlipayTradeOutput output = alipayCore.pay(input);
-//output就是支付结果,具体请参考相关属性说明
+<dependency>
+    <groupId>org.thlws</groupId>
+    <artifactId>payment-alipay</artifactId>
+    <version>1.0.0</version>
+</dependency>
 ```
-
-
-## 退款操作
-- AlipayCore.refund(AlipayRefundInput input) </em></p>
+- Gradle
 ```
-AlipayRefundInput input = new AlipayRefundInput();
-input.setOutTradeNo("1508487673867");
-input.setTradeNo("2017102021001004515315574686");
-input.setRefundAmount("0.01");
-input.setRefundReason("测试退款");
-input.setStoreId("0000102678762");
-input.setTerminalId("10007");
-AlipayRefundOutput output = alipayCore.refund(input);
-//output 就是退款结果
+compile 'org.thlws:payment-alipay:1.0.0'
 ```
 
-## 查询操作
-- AlipayCore.query(String outTradeNo)
-```
-AlipayQueryOutput output = alipayCore.query("5113811987100800791");
-```
+## 源码测试
+1. ```git clone https://github.com/thlws/payment-alipay.git```
+2. 导入到 Eclipse 或 Intellij IDEA
+3. 运行 Junit Class AlipayTest (支付相关接口)
 
-## H5支付
-- AlipayCore.pay_in_h5(AlipayH5Input input)
-```
-AlipayH5Input input = new AlipayH5Input();
-AlipayH5Input.BizContent bizContent = new AlipayH5Input.BizContent();
-bizContent.setTotal_amount("0.01");
-bizContent.setSubject("测试H5支付");
-bizContent.setSeller_id(partner_id);
-bizContent.setProduct_code("p0001");
-bizContent.setOut_trade_no(System.currentTimeMillis()+"");
-String html = alipayCore.pay_in_h5(input);
-//html结果直接显示在页面即可
-```
+## FAQ
+- 能不能直接 dependency 添加依赖?<br>
+_已发布至公有仓库，添加方式如上._
 
-## 其他接口
-- AlipayCore.cancel(String outTradeNo)//撤销支付
-- AlipayCore.precreate(AlipayQrcodeInput input)//订单预创建
+- 是否有JDK版本要求?<br>
+_JDK版本 >= 1.6 即可._
 
+- 该项目到底支持哪几种微信支付？<br>
+_目前没有全部支持微信官方的支付方式,截止目前支持 公众号支付、刷卡支付、扫码支付 三种._
 
-## 其他说明
+- 有没有支付相关文档？<br>
+_[https://docs.open.alipay.com/api](https://docs.open.alipay.com/api)
 
- 使用如上接口前，必须先行初始化AlipayCore，初始化需要如下3个参数</p>
-- appid 支付宝应用ID
-- private_key 应用私钥
-- alipay_public_key 支付宝公钥
-
-
+## 打赏一下
+![](imgs/award.png)

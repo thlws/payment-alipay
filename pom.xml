@@ -6,81 +6,49 @@
 
     <groupId>org.thlws.payment</groupId>
     <artifactId>payment-alipay</artifactId>
-    <version>2.0.0</version>
+    <version>1.0.0</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <!--<java_home>/Library/Java/JavaVirtualMachines/1.6.0_65-b14-462.jdk/Contents/Home</java_home>-->
-        <java_home>/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home</java_home>
-
+        <version.gson>2.3.1</version.gson>
+        <version.zxing>2.2</version.zxing>
+        <version.commons-beanutils>1.8.3</version.commons-beanutils>
+        <version.commons-lang>2.6</version.commons-lang>
     </properties>
 
     <dependencies>
+
         <dependency>
-            <groupId>commons-codec</groupId>
-            <artifactId>commons-codec</artifactId>
-            <version>1.10</version>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>commons-configuration</groupId>
-            <artifactId>commons-configuration</artifactId>
-            <version>1.10</version>
-        </dependency>
+
         <dependency>
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
-            <version>2.6</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
-            <version>2.3.1</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.zxing</groupId>
-            <artifactId>core</artifactId>
-            <version>2.2</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.zxing</groupId>
-            <artifactId>javase</artifactId>
-            <version>2.2</version>
-        </dependency>
-        <dependency><!-- hamcrest.org -->
-            <groupId>org.hamcrest</groupId>
-            <artifactId>hamcrest-core</artifactId>
-            <version>1.3</version>
-        </dependency>
-        <dependency>
-            <groupId>commons-logging</groupId>
-            <artifactId>commons-logging</artifactId>
-            <version>1.1.1</version>
+            <version>${version.commons-lang}</version>
         </dependency>
         <dependency>
             <groupId>commons-beanutils</groupId>
             <artifactId>commons-beanutils</artifactId>
-            <version>1.8.3</version>
+            <version>${version.commons-beanutils}</version>
         </dependency>
         <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>1.2.14</version>
-        </dependency>
-
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>1.1.3</version>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>${version.gson}</version>
         </dependency>
         <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-core</artifactId>
-            <version>1.1.3</version>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>core</artifactId>
+            <version>${version.zxing}</version>
         </dependency>
         <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-access</artifactId>
-            <version>1.1.3</version>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>javase</artifactId>
+            <version>${version.zxing}</version>
         </dependency>
 
         <!-- servlet -->
@@ -108,31 +76,6 @@
                     </execution>
                 </executions>
             </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.9.1</version>
-                <configuration>
-                    <show>private</show>
-                    <nohelp>true</nohelp>
-                    <aggregate>true</aggregate>
-                    <charset>UTF-8</charset>
-                    <encoding>UTF-8</encoding>
-                    <docencoding>UTF-8</docencoding>
-                    <javadocExecutable>${java_home}/bin/javadoc</javadocExecutable>
-                    <!-- Mac 平台有效 -->
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>attach-javadocs</id>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -201,7 +144,7 @@
     <repositories>
         <repository>
             <id>enjar-maven</id>
-            <url>http://140.206.97.227:8081/nexus/content/groups/public/</url>
+            <url>http://140.206.97.227:7979/nexus/content/groups/public/</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -218,7 +161,7 @@
     <pluginRepositories>
         <pluginRepository>
             <id>enjar-maven-plugin</id>
-            <url>http://140.206.97.227:8081/nexus/content/groups/public/</url>
+            <url>http://140.206.97.227:7979/nexus/content/groups/public/</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -232,13 +175,13 @@
         <repository>
             <!-- 这里的ID要和setting的id一致 -->
             <id>maven-repository-releases</id>
-            <url>http://140.206.97.227:8081/nexus/content/repositories/releases/</url>
+            <url>http://140.206.97.227:7979/nexus/content/repositories/releases/</url>
         </repository>
         <snapshotRepository>
 
             <!-- 这里的ID要和setting的id一致 -->
             <id>maven-repository-snapshots</id>
-            <url>http://140.206.97.227:8081/nexus/content/repositories/snapshots/</url>
+            <url>http://140.206.97.227:7979/nexus/content/repositories/snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 

@@ -25,6 +25,17 @@ public class JsonUtil {
         return prettyJson;
     }
 
+    public static String beanToJsontring(Object bean) {
+        return new Gson().toJson(bean);
+    }
+
+//    public static String beanToJsontring(String json,Class cls) {
+//        Gson gson = new Gson();
+//        Person p = gson.fromJson(json, cls);
+//    }
+
+
+
     public static void main(String[] args) {
         AlipayH5Input input = new AlipayH5Input();
         AlipayH5Input.BizContent bizContent = new AlipayH5Input.BizContent();
