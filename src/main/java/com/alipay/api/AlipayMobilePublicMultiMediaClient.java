@@ -42,8 +42,9 @@ import com.alipay.api.internal.util.json.JSONWriter;
 
 /**
  * 多媒体文件客户端
+ *
  * @author yikai.hu
- * @version $Id: AlipayMobilePublicMultiMediaClient.java, v 0.1 Aug 15, 2014 10:19:01 AM yikai.hu Exp $
+ * @version $Id : AlipayMobilePublicMultiMediaClient.java, v 0.1 Aug 15, 2014 10:19:01 AM yikai.hu Exp $
  */
 public class AlipayMobilePublicMultiMediaClient implements AlipayClient {
 
@@ -81,18 +82,42 @@ public class AlipayMobilePublicMultiMediaClient implements AlipayClient {
         Security.setProperty("jdk.certpath.disabledAlgorithms", "");
     }
 
+    /**
+     * Instantiates a new Alipay mobile public multi media client.
+     *
+     * @param serverUrl  the server url
+     * @param appId      the app id
+     * @param privateKey the private key
+     */
     public AlipayMobilePublicMultiMediaClient(String serverUrl, String appId, String privateKey) {
         this.serverUrl = serverUrl;
         this.appId = appId;
         this.privateKey = privateKey;
     }
 
+    /**
+     * Instantiates a new Alipay mobile public multi media client.
+     *
+     * @param serverUrl  the server url
+     * @param appId      the app id
+     * @param privateKey the private key
+     * @param format     the format
+     */
     public AlipayMobilePublicMultiMediaClient(String serverUrl, String appId, String privateKey,
                                               String format) {
         this(serverUrl, appId, privateKey);
         this.format = format;
     }
 
+    /**
+     * Instantiates a new Alipay mobile public multi media client.
+     *
+     * @param serverUrl  the server url
+     * @param appId      the app id
+     * @param privateKey the private key
+     * @param format     the format
+     * @param charset    the charset
+     */
     public AlipayMobilePublicMultiMediaClient(String serverUrl, String appId, String privateKey,
                                               String format, String charset) {
         this(serverUrl, appId, privateKey);
@@ -100,6 +125,16 @@ public class AlipayMobilePublicMultiMediaClient implements AlipayClient {
         this.charset = charset;
     }
 
+    /**
+     * Instantiates a new Alipay mobile public multi media client.
+     *
+     * @param serverUrl  the server url
+     * @param appId      the app id
+     * @param privateKey the private key
+     * @param format     the format
+     * @param charset    the charset
+     * @param signType   the sign type
+     */
     public AlipayMobilePublicMultiMediaClient(String serverUrl, String appId, String privateKey,
                                               String format, String charset, String signType) {
         this(serverUrl, appId, privateKey, format, charset);
@@ -123,9 +158,7 @@ public class AlipayMobilePublicMultiMediaClient implements AlipayClient {
         return execute(request, accessToken, null);
     }
 
-    /** 
-     * @see com.alipay.api.AlipayClient#execute(com.alipay.api.AlipayRequest, java.lang.String, java.lang.String, java.lang.String)
-     */
+
     public <T extends AlipayResponse> T execute(AlipayRequest<T> request, String accessToken,
                                                 String appAuthToken) throws AlipayApiException {
 
@@ -138,6 +171,15 @@ public class AlipayMobilePublicMultiMediaClient implements AlipayClient {
         return doGet(request, appAuthToken);
     }
 
+    /**
+     * Do get t.
+     *
+     * @param <T>          the type parameter
+     * @param request      the request
+     * @param appAuthToken the app auth token
+     * @return the t
+     * @throws AlipayApiException the alipay api exception
+     */
     public <T extends AlipayResponse> T doGet(AlipayRequest<T> request,
                                               String appAuthToken) throws AlipayApiException {
 
@@ -216,15 +258,17 @@ public class AlipayMobilePublicMultiMediaClient implements AlipayClient {
     }
 
     /**
-     * 
-     * @param url
-     * @param params
-     * @param charset
-     * @param connectTimeout
-     * @param readTimeout
-     * @return
-     * @throws IOException
-     * @throws AlipayApiException 
+     * Do get alipay mobile public multi media download response.
+     *
+     * @param url            the url
+     * @param requestHolder  the request holder
+     * @param charset        the charset
+     * @param connectTimeout the connect timeout
+     * @param readTimeout    the read timeout
+     * @param output         the output
+     * @return alipay mobile public multi media download response
+     * @throws AlipayApiException the alipay api exception
+     * @throws IOException        the io exception
      */
     @SuppressWarnings("unchecked")
     public static AlipayMobilePublicMultiMediaDownloadResponse doGet(String url,
@@ -342,6 +386,13 @@ public class AlipayMobilePublicMultiMediaClient implements AlipayClient {
         return conn;
     }
 
+    /**
+     * Gets response as string.
+     *
+     * @param conn the conn
+     * @return the response as string
+     * @throws IOException the io exception
+     */
     protected static String getResponseAsString(HttpURLConnection conn) throws IOException {
         String charset = getResponseCharset(conn.getContentType());
         InputStream es = conn.getErrorStream();
@@ -432,6 +483,14 @@ public class AlipayMobilePublicMultiMediaClient implements AlipayClient {
         return new URL(strUrl);
     }
 
+    /**
+     * Build query string.
+     *
+     * @param params  the params
+     * @param charset the charset
+     * @return the string
+     * @throws IOException the io exception
+     */
     public static String buildQuery(Map<String, String> params, String charset) throws IOException {
         if (params == null || params.isEmpty()) {
             return null;
@@ -460,9 +519,10 @@ public class AlipayMobilePublicMultiMediaClient implements AlipayClient {
     }
 
     /**
-     * 
-     * @param query
-     * @return
+     * Split url query map.
+     *
+     * @param query the query
+     * @return map map
      */
     public static Map<String, String> splitUrlQuery(String query) {
         Map<String, String> result = new HashMap<String, String>();

@@ -34,9 +34,7 @@ public class AlipayOperatorMobileBindResponse extends AlipayResponse {
 	private String mobileNo;
 
 	/** 
-	 * 绑定状态：
-&#61548;	S表示绑定成功
-&#61548;	F表示绑定失败
+	 * 绑定状态
 	 */
 	@ApiField("status")
 	private String status;

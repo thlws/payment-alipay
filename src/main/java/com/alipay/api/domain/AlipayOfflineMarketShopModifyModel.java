@@ -68,8 +68,8 @@ public class AlipayOfflineMarketShopModifyModel extends AlipayObject {
 	private String brandName;
 
 	/**
-	 * 许可证，各行业所需的证照资质参见<a href="https://doc.open.alipay.com/doc2/detail.htm?treeId=205&articleId=104497&docType=1">商户入驻要求</a>；该字段只能上传一张许可证，一张以外的许可证、除营业执照和许可证之外其他证照请放在其他资质字段上传。
-	 */
+	 * 许可证，各行业所需的证照资质
+	  */
 	@ApiField("business_certificate")
 	private String businessCertificate;
 
@@ -87,13 +87,12 @@ public class AlipayOfflineMarketShopModifyModel extends AlipayObject {
 
 	/**
 	 * 废弃字段，不支持修改类目。
-类目id，请参考<a href="https://doc.open.alipay.com/doc2/detail.htm?treeId=205&articleId=104497&docType=1">商户入驻要求</a>。
 	 */
 	@ApiField("category_id")
 	private String categoryId;
 
 	/**
-	 * 城市编码，国标码，详见国家统计局数据 <a href="http://aopsdkdownload.cn-hangzhou.alipay-pub.aliyun-inc.com/doc/2016.xls">点此下载</a>。
+	 * 城市编码，国标码，详见国家统计局数据
 	 */
 	@ApiField("city_code")
 	private String cityCode;
@@ -105,7 +104,7 @@ public class AlipayOfflineMarketShopModifyModel extends AlipayObject {
 	private String contactNumber;
 
 	/**
-	 * 区县编码，国标码，详见国家统计局数据 <a href="http://aopsdkdownload.cn-hangzhou.alipay-pub.aliyun-inc.com/doc/2016.xls">点此下载</a>。
+	 * 区县编码，国标码，详见国家统计局数据 。
 	 */
 	@ApiField("district_code")
 	private String districtCode;
@@ -135,8 +134,8 @@ public class AlipayOfflineMarketShopModifyModel extends AlipayObject {
 	private String latitude;
 
 	/**
-	 * 门店营业执照图片，各行业所需的证照资质参见：https://doc.open.alipay.com/doc2/detail.htm?spm=a219a.7629140.0.0.NBvQVP&treeId=78&articleId=104497&docType=1。
-	 */
+	 * 门店营业执照图片，各行业所需的证照资质
+	 * */
 	@ApiField("licence")
 	private String licence;
 
@@ -171,8 +170,7 @@ public class AlipayOfflineMarketShopModifyModel extends AlipayObject {
 	private String mainImage;
 
 	/**
-	 * 主门店名  比如：肯德基；主店名里不要包含分店名，如“万塘路店”。主店名长度不能超过20个字符。【xxx店】、(xxx店)、（xxx店）、[xxx店]、<xxx店>、xxx店，等类似的主店名都是不合法的，如果需要录入分店，请填写到branch_shop_name字段中。
-	 */
+	 * 主门店名  */
 	@ApiField("main_shop_name")
 	private String mainShopName;
 
@@ -244,7 +242,7 @@ online_pay：在线买单。ISV不可以指定此字段，ISV泛行业开店默�
 	private String payType;
 
 	/**
-	 * 省份编码，国标码，详见国家统计局数据 <a href="http://aopsdkdownload.cn-hangzhou.alipay-pub.aliyun-inc.com/doc/2016.xls">点此下载”</a>。
+	 * 省份编码，国标码，详见国家统计局数据
 	 */
 	@ApiField("province_code")
 	private String provinceCode;

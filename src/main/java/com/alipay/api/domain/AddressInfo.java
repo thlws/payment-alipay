@@ -20,39 +20,30 @@ public class AddressInfo extends AlipayObject {
 	private String address;
 
 	/**
-	 * 商户所在城市编码，城市编码是与国家统计局一致，请查询:
-http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/
-国标省市区号下载：http://aopsdkdownload.cn-hangzhou.alipay-pub.aliyun-inc.com/doc/2016.xls?spm=a219a.7629140.0.0.qRW4KQ&file=2016.xls
-	 */
+	 * 商户所在城市编码，城市编码是与国家统计局一致 */
 	@ApiField("city_code")
 	private String cityCode;
 
 	/**
-	 * 商户所在区县编码，区县编码是与国家统计局一致，请查询: http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/ 国标省市区号下载：http://aopsdkdownload.cn-hangzhou.alipay-pub.aliyun-inc.com/doc/2016.xls?spm=a219a.7629140.0.0.qRW4KQ&file=2016.xls
-	 */
+	 * 商户所在区县编码，区县编码是与国家统计局一致 */
 	@ApiField("district_code")
 	private String districtCode;
 
 	/**
 	 * 纬度，浮点型,小数点后最多保留6位
-如需要录入经纬度，请以高德坐标系为准，录入时请确保经纬度参数准确。高德经纬度查询：http://lbs.amap.com/console/show/picker
-	 */
+如需要录入经纬度，请以高德坐标系为准，录入时请确保经纬度参数准确。*/
 	@ApiField("latitude")
 	private String latitude;
 
 	/**
 	 * 经度，浮点型, 小数点后最多保留6位。
-如需要录入经纬度，请以高德坐标系为准，录入时请确保经纬度参数准确。高德经纬度查询：http://lbs.amap.com/console/show/picker
-	 */
+如需要录入经纬度，请以高德坐标系为准，录入时请确保经纬度参数准确。*/
 	@ApiField("longitude")
 	private String longitude;
 
 	/**
 	 * 商户所在省份编码，
-省份编码是与国家统计局一致，请查询:
-http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/
-国标省市区号下载：http://aopsdkdownload.cn-hangzhou.alipay-pub.aliyun-inc.com/doc/2016.xls?spm=a219a.7629140.0.0.qRW4KQ&file=2016.xls
-	 */
+省份编码是与国家统计局一致 */
 	@ApiField("province_code")
 	private String provinceCode;
 

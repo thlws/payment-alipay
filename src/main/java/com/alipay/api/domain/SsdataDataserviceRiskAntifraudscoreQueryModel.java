@@ -14,8 +14,7 @@ public class SsdataDataserviceRiskAntifraudscoreQueryModel extends AlipayObject 
 	private static final long serialVersionUID = 8876264285751667546L;
 
 	/**
-	 * 地址信息。省+市+区/县+详细地址，其中 省+市+区/县可以为空，长度不超过256，不要包含特殊字符，如","，"\"，"|"，"&"，"^"
-	 */
+	 * 地址信息 */
 	@ApiField("address")
 	private String address;
 
@@ -68,8 +67,7 @@ public class SsdataDataserviceRiskAntifraudscoreQueryModel extends AlipayObject 
 	private String mobile;
 
 	/**
-	 * 姓名。长度不超过64，姓名中不要包含特殊字符，如","，"\"，"|"，"&"，"^"
-	 */
+	 * 姓名*/
 	@ApiField("name")
 	private String name;
 

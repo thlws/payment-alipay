@@ -28,7 +28,8 @@ import com.alipay.api.AlipayConstants;
 import com.alipay.api.internal.util.codec.Base64;
 
 /**
- * 
+ * The type Alipay signature.
+ *
  * @author runzhi
  */
 public class AlipaySignature {
@@ -39,10 +40,22 @@ public class AlipaySignature {
     /** RSA最大解密密文大小   */
     private static final int MAX_DECRYPT_BLOCK = 128;
 
+    /**
+     * Gets signature content.
+     *
+     * @param requestHolder the request holder
+     * @return the signature content
+     */
     public static String getSignatureContent(RequestParametersHolder requestHolder) {
         return getSignContent(getSortedMap(requestHolder));
     }
 
+    /**
+     * Gets sorted map.
+     *
+     * @param requestHolder the request holder
+     * @return the sorted map
+     */
     public static Map<String, String> getSortedMap(RequestParametersHolder requestHolder) {
         Map<String, String> sortedParams = new TreeMap<String, String>();
         AlipayHashMap appParams = requestHolder.getApplicationParams();
@@ -62,9 +75,10 @@ public class AlipaySignature {
     }
 
     /**
-     * 
-     * @param sortedParams
-     * @return
+     * Gets sign content.
+     *
+     * @param sortedParams the sorted params
+     * @return sign content
      */
     public static String getSignContent(Map<String, String> sortedParams) {
         StringBuffer content = new StringBuffer();
@@ -83,13 +97,14 @@ public class AlipaySignature {
     }
 
     /**
-     *  rsa内容签名
-     * 
-     * @param content
-     * @param privateKey
-     * @param charset
-     * @return
-     * @throws AlipayApiException
+     * rsa内容签名
+     *
+     * @param content    the content
+     * @param privateKey the private key
+     * @param charset    the charset
+     * @param signType   the sign type
+     * @return string string
+     * @throws AlipayApiException the alipay api exception
      */
     public static String rsaSign(String content, String privateKey, String charset,
                                  String signType) throws AlipayApiException {
@@ -109,12 +124,12 @@ public class AlipaySignature {
 
     /**
      * sha256WithRsa 加签
-     * 
-     * @param content
-     * @param privateKey
-     * @param charset
-     * @return
-     * @throws AlipayApiException
+     *
+     * @param content    the content
+     * @param privateKey the private key
+     * @param charset    the charset
+     * @return string string
+     * @throws AlipayApiException the alipay api exception
      */
     public static String rsa256Sign(String content, String privateKey,
                                     String charset) throws AlipayApiException {
@@ -145,12 +160,12 @@ public class AlipaySignature {
 
     /**
      * sha1WithRsa 加签
-     * 
-     * @param content
-     * @param privateKey
-     * @param charset
-     * @return
-     * @throws AlipayApiException
+     *
+     * @param content    the content
+     * @param privateKey the private key
+     * @param charset    the charset
+     * @return string string
+     * @throws AlipayApiException the alipay api exception
      */
     public static String rsaSign(String content, String privateKey,
                                  String charset) throws AlipayApiException {
@@ -179,6 +194,15 @@ public class AlipaySignature {
         }
     }
 
+    /**
+     * Rsa sign string.
+     *
+     * @param params     the params
+     * @param privateKey the private key
+     * @param charset    the charset
+     * @return the string
+     * @throws AlipayApiException the alipay api exception
+     */
     public static String rsaSign(Map<String, String> params, String privateKey,
                                  String charset) throws AlipayApiException {
         String signContent = getSignContent(params);
@@ -187,6 +211,14 @@ public class AlipaySignature {
 
     }
 
+    /**
+     * Gets private key from pkcs 8.
+     *
+     * @param algorithm the algorithm
+     * @param ins       the ins
+     * @return the private key from pkcs 8
+     * @throws Exception the exception
+     */
     public static PrivateKey getPrivateKeyFromPKCS8(String algorithm,
                                                     InputStream ins) throws Exception {
         if (ins == null || StringUtils.isEmpty(algorithm)) {
@@ -202,6 +234,12 @@ public class AlipaySignature {
         return keyFactory.generatePrivate(new PKCS8EncodedKeySpec(encodedKey));
     }
 
+    /**
+     * Gets sign check content v 1.
+     *
+     * @param params the params
+     * @return the sign check content v 1
+     */
     public static String getSignCheckContentV1(Map<String, String> params) {
         if (params == null) {
             return null;
@@ -223,6 +261,12 @@ public class AlipaySignature {
         return content.toString();
     }
 
+    /**
+     * Gets sign check content v 2.
+     *
+     * @param params the params
+     * @return the sign check content v 2
+     */
     public static String getSignCheckContentV2(Map<String, String> params) {
         if (params == null) {
             return null;
@@ -243,6 +287,15 @@ public class AlipaySignature {
         return content.toString();
     }
 
+    /**
+     * Rsa check v 1 boolean.
+     *
+     * @param params    the params
+     * @param publicKey the public key
+     * @param charset   the charset
+     * @return the boolean
+     * @throws AlipayApiException the alipay api exception
+     */
     public static boolean rsaCheckV1(Map<String, String> params, String publicKey,
                                      String charset) throws AlipayApiException {
         String sign = params.get("sign");
@@ -250,7 +303,17 @@ public class AlipaySignature {
 
         return rsaCheckContent(content, sign, publicKey, charset);
     }
-    
+
+    /**
+     * Rsa check v 1 boolean.
+     *
+     * @param params    the params
+     * @param publicKey the public key
+     * @param charset   the charset
+     * @param signType  the sign type
+     * @return the boolean
+     * @throws AlipayApiException the alipay api exception
+     */
     public static boolean rsaCheckV1(Map<String, String> params, String publicKey,
             String charset,String signType) throws AlipayApiException {
 		String sign = params.get("sign");
@@ -259,6 +322,15 @@ public class AlipaySignature {
 		return rsaCheck(content, sign, publicKey, charset,signType);
     }
 
+    /**
+     * Rsa check v 2 boolean.
+     *
+     * @param params    the params
+     * @param publicKey the public key
+     * @param charset   the charset
+     * @return the boolean
+     * @throws AlipayApiException the alipay api exception
+     */
     public static boolean rsaCheckV2(Map<String, String> params, String publicKey,
                                      String charset) throws AlipayApiException {
         String sign = params.get("sign");
@@ -266,7 +338,17 @@ public class AlipaySignature {
 
         return rsaCheckContent(content, sign, publicKey, charset);
     }
-    
+
+    /**
+     * Rsa check v 2 boolean.
+     *
+     * @param params    the params
+     * @param publicKey the public key
+     * @param charset   the charset
+     * @param signType  the sign type
+     * @return the boolean
+     * @throws AlipayApiException the alipay api exception
+     */
     public static boolean rsaCheckV2(Map<String, String> params, String publicKey,
             String charset,String signType) throws AlipayApiException {
 		String sign = params.get("sign");
@@ -275,6 +357,17 @@ public class AlipaySignature {
 		return rsaCheck(content, sign, publicKey, charset,signType);
 	}
 
+    /**
+     * Rsa check boolean.
+     *
+     * @param content   the content
+     * @param sign      the sign
+     * @param publicKey the public key
+     * @param charset   the charset
+     * @param signType  the sign type
+     * @return the boolean
+     * @throws AlipayApiException the alipay api exception
+     */
     public static boolean rsaCheck(String content, String sign, String publicKey, String charset,
                                    String signType) throws AlipayApiException {
 
@@ -293,6 +386,16 @@ public class AlipaySignature {
 
     }
 
+    /**
+     * Rsa 256 check content boolean.
+     *
+     * @param content   the content
+     * @param sign      the sign
+     * @param publicKey the public key
+     * @param charset   the charset
+     * @return the boolean
+     * @throws AlipayApiException the alipay api exception
+     */
     public static boolean rsa256CheckContent(String content, String sign, String publicKey,
                                              String charset) throws AlipayApiException {
         try {
@@ -317,6 +420,16 @@ public class AlipaySignature {
         }
     }
 
+    /**
+     * Rsa check content boolean.
+     *
+     * @param content   the content
+     * @param sign      the sign
+     * @param publicKey the public key
+     * @param charset   the charset
+     * @return the boolean
+     * @throws AlipayApiException the alipay api exception
+     */
     public static boolean rsaCheckContent(String content, String sign, String publicKey,
                                           String charset) throws AlipayApiException {
         try {
@@ -341,6 +454,14 @@ public class AlipaySignature {
         }
     }
 
+    /**
+     * Gets public key from x 509.
+     *
+     * @param algorithm the algorithm
+     * @param ins       the ins
+     * @return the public key from x 509
+     * @throws Exception the exception
+     */
     public static PublicKey getPublicKeyFromX509(String algorithm,
                                                  InputStream ins) throws Exception {
         KeyFactory keyFactory = KeyFactory.getInstance(algorithm);
@@ -361,19 +482,20 @@ public class AlipaySignature {
      * <b>目前适用于公众号</b><br>
      * params参数示例：
      * <br>{
-     *    <br>biz_content=M0qGiGz+8kIpxe8aF4geWJdBn0aBTuJRQItLHo9R7o5JGhpic/MIUjvXo2BLB++BbkSq2OsJCEQFDZ0zK5AJYwvBgeRX30gvEj6eXqXRt16/IkB9HzAccEqKmRHrZJ7PjQWE0KfvDAHsJqFIeMvEYk1Zei2QkwSQPlso7K0oheo/iT+HYE8aTATnkqD/ByD9iNDtGg38pCa2xnnns63abKsKoV8h0DfHWgPH62urGY7Pye3r9FCOXA2Ykm8X4/Bl1bWFN/PFCEJHWe/HXj8KJKjWMO6ttsoV0xRGfeyUO8agu6t587Dl5ux5zD/s8Lbg5QXygaOwo3Fz1G8EqmGhi4+soEIQb8DBYanQOS3X+m46tVqBGMw8Oe+hsyIMpsjwF4HaPKMr37zpW3fe7xOMuimbZ0wq53YP/jhQv6XWodjT3mL0H5ACqcsSn727B5ztquzCPiwrqyjUHjJQQefFTzOse8snaWNQTUsQS7aLsHq0FveGpSBYORyA90qPdiTjXIkVP7mAiYiAIWW9pCEC7F3XtViKTZ8FRMM9ySicfuAlf3jtap6v2KPMtQv70X+hlmzO/IXB6W0Ep8DovkF5rB4r/BJYJLw/6AS0LZM9w5JfnAZhfGM2rKzpfNsgpOgEZS1WleG4I2hoQC0nxg9IcP0Hs+nWIPkEUcYNaiXqeBc=,
-     *    <br>sign=rlqgA8O+RzHBVYLyHmrbODVSANWPXf3pSrr82OCO/bm3upZiXSYrX5fZr6UBmG6BZRAydEyTIguEW6VRuAKjnaO/sOiR9BsSrOdXbD5Rhos/Xt7/mGUWbTOt/F+3W0/XLuDNmuYg1yIC/6hzkg44kgtdSTsQbOC9gWM7ayB4J4c=,
-     *    sign_type=RSA,
-     *    <br>charset=UTF-8
+     * <br>biz_content=M0qGiGz+8kIpxe8aF4geWJdBn0aBTuJRQItLHo9R7o5JGhpic/MIUjvXo2BLB++BbkSq2OsJCEQFDZ0zK5AJYwvBgeRX30gvEj6eXqXRt16/IkB9HzAccEqKmRHrZJ7PjQWE0KfvDAHsJqFIeMvEYk1Zei2QkwSQPlso7K0oheo/iT+HYE8aTATnkqD/ByD9iNDtGg38pCa2xnnns63abKsKoV8h0DfHWgPH62urGY7Pye3r9FCOXA2Ykm8X4/Bl1bWFN/PFCEJHWe/HXj8KJKjWMO6ttsoV0xRGfeyUO8agu6t587Dl5ux5zD/s8Lbg5QXygaOwo3Fz1G8EqmGhi4+soEIQb8DBYanQOS3X+m46tVqBGMw8Oe+hsyIMpsjwF4HaPKMr37zpW3fe7xOMuimbZ0wq53YP/jhQv6XWodjT3mL0H5ACqcsSn727B5ztquzCPiwrqyjUHjJQQefFTzOse8snaWNQTUsQS7aLsHq0FveGpSBYORyA90qPdiTjXIkVP7mAiYiAIWW9pCEC7F3XtViKTZ8FRMM9ySicfuAlf3jtap6v2KPMtQv70X+hlmzO/IXB6W0Ep8DovkF5rB4r/BJYJLw/6AS0LZM9w5JfnAZhfGM2rKzpfNsgpOgEZS1WleG4I2hoQC0nxg9IcP0Hs+nWIPkEUcYNaiXqeBc=,
+     * <br>sign=rlqgA8O+RzHBVYLyHmrbODVSANWPXf3pSrr82OCO/bm3upZiXSYrX5fZr6UBmG6BZRAydEyTIguEW6VRuAKjnaO/sOiR9BsSrOdXbD5Rhos/Xt7/mGUWbTOt/F+3W0/XLuDNmuYg1yIC/6hzkg44kgtdSTsQbOC9gWM7ayB4J4c=,
+     * sign_type=RSA,
+     * <br>charset=UTF-8
      * <br>}
      * </p>
-     * @param params
+     *
+     * @param params          the params
      * @param alipayPublicKey 支付宝公钥
      * @param cusPrivateKey   商户私钥
      * @param isCheckSign     是否验签
      * @param isDecrypt       是否解密
-     * @return 解密后明文，验签失败则异常抛出
-     * @throws AlipayApiException 
+     * @return 解密后明文 ，验签失败则异常抛出
+     * @throws AlipayApiException the alipay api exception
      */
     public static String checkSignAndDecrypt(Map<String, String> params, String alipayPublicKey,
                                              String cusPrivateKey, boolean isCheckSign,
@@ -392,26 +514,28 @@ public class AlipaySignature {
 
         return bizContent;
     }
-    
+
     /**
      * 验签并解密
      * <p>
      * <b>目前适用于公众号</b><br>
      * params参数示例：
      * <br>{
-     *    <br>biz_content=M0qGiGz+8kIpxe8aF4geWJdBn0aBTuJRQItLHo9R7o5JGhpic/MIUjvXo2BLB++BbkSq2OsJCEQFDZ0zK5AJYwvBgeRX30gvEj6eXqXRt16/IkB9HzAccEqKmRHrZJ7PjQWE0KfvDAHsJqFIeMvEYk1Zei2QkwSQPlso7K0oheo/iT+HYE8aTATnkqD/ByD9iNDtGg38pCa2xnnns63abKsKoV8h0DfHWgPH62urGY7Pye3r9FCOXA2Ykm8X4/Bl1bWFN/PFCEJHWe/HXj8KJKjWMO6ttsoV0xRGfeyUO8agu6t587Dl5ux5zD/s8Lbg5QXygaOwo3Fz1G8EqmGhi4+soEIQb8DBYanQOS3X+m46tVqBGMw8Oe+hsyIMpsjwF4HaPKMr37zpW3fe7xOMuimbZ0wq53YP/jhQv6XWodjT3mL0H5ACqcsSn727B5ztquzCPiwrqyjUHjJQQefFTzOse8snaWNQTUsQS7aLsHq0FveGpSBYORyA90qPdiTjXIkVP7mAiYiAIWW9pCEC7F3XtViKTZ8FRMM9ySicfuAlf3jtap6v2KPMtQv70X+hlmzO/IXB6W0Ep8DovkF5rB4r/BJYJLw/6AS0LZM9w5JfnAZhfGM2rKzpfNsgpOgEZS1WleG4I2hoQC0nxg9IcP0Hs+nWIPkEUcYNaiXqeBc=,
-     *    <br>sign=rlqgA8O+RzHBVYLyHmrbODVSANWPXf3pSrr82OCO/bm3upZiXSYrX5fZr6UBmG6BZRAydEyTIguEW6VRuAKjnaO/sOiR9BsSrOdXbD5Rhos/Xt7/mGUWbTOt/F+3W0/XLuDNmuYg1yIC/6hzkg44kgtdSTsQbOC9gWM7ayB4J4c=,
-     *    sign_type=RSA,
-     *    <br>charset=UTF-8
+     * <br>biz_content=M0qGiGz+8kIpxe8aF4geWJdBn0aBTuJRQItLHo9R7o5JGhpic/MIUjvXo2BLB++BbkSq2OsJCEQFDZ0zK5AJYwvBgeRX30gvEj6eXqXRt16/IkB9HzAccEqKmRHrZJ7PjQWE0KfvDAHsJqFIeMvEYk1Zei2QkwSQPlso7K0oheo/iT+HYE8aTATnkqD/ByD9iNDtGg38pCa2xnnns63abKsKoV8h0DfHWgPH62urGY7Pye3r9FCOXA2Ykm8X4/Bl1bWFN/PFCEJHWe/HXj8KJKjWMO6ttsoV0xRGfeyUO8agu6t587Dl5ux5zD/s8Lbg5QXygaOwo3Fz1G8EqmGhi4+soEIQb8DBYanQOS3X+m46tVqBGMw8Oe+hsyIMpsjwF4HaPKMr37zpW3fe7xOMuimbZ0wq53YP/jhQv6XWodjT3mL0H5ACqcsSn727B5ztquzCPiwrqyjUHjJQQefFTzOse8snaWNQTUsQS7aLsHq0FveGpSBYORyA90qPdiTjXIkVP7mAiYiAIWW9pCEC7F3XtViKTZ8FRMM9ySicfuAlf3jtap6v2KPMtQv70X+hlmzO/IXB6W0Ep8DovkF5rB4r/BJYJLw/6AS0LZM9w5JfnAZhfGM2rKzpfNsgpOgEZS1WleG4I2hoQC0nxg9IcP0Hs+nWIPkEUcYNaiXqeBc=,
+     * <br>sign=rlqgA8O+RzHBVYLyHmrbODVSANWPXf3pSrr82OCO/bm3upZiXSYrX5fZr6UBmG6BZRAydEyTIguEW6VRuAKjnaO/sOiR9BsSrOdXbD5Rhos/Xt7/mGUWbTOt/F+3W0/XLuDNmuYg1yIC/6hzkg44kgtdSTsQbOC9gWM7ayB4J4c=,
+     * sign_type=RSA,
+     * <br>charset=UTF-8
      * <br>}
      * </p>
-     * @param params
+     *
+     * @param params          the params
      * @param alipayPublicKey 支付宝公钥
      * @param cusPrivateKey   商户私钥
      * @param isCheckSign     是否验签
      * @param isDecrypt       是否解密
-     * @return 解密后明文，验签失败则异常抛出
-     * @throws AlipayApiException 
+     * @param signType        the sign type
+     * @return 解密后明文 ，验签失败则异常抛出
+     * @throws AlipayApiException the alipay api exception
      */
     public static String checkSignAndDecrypt(Map<String, String> params, String alipayPublicKey,
                                              String cusPrivateKey, boolean isCheckSign,
@@ -434,23 +558,15 @@ public class AlipaySignature {
     /**
      * 加密并签名<br>
      * <b>目前适用于公众号</b>
+     *
      * @param bizContent      待加密、签名内容
      * @param alipayPublicKey 支付宝公钥
      * @param cusPrivateKey   商户私钥
      * @param charset         字符集，如UTF-8, GBK, GB2312
      * @param isEncrypt       是否加密，true-加密  false-不加密
      * @param isSign          是否签名，true-签名  false-不签名
-     * @return 加密、签名后xml内容字符串
-     * <p>
-     * 返回示例：
-     * <alipay>
-     *  <response>密文</response>
-     *  <encryption_type>RSA</encryption_type>
-     *  <sign>sign</sign>
-     *  <sign_type>RSA</sign_type>
-     * </alipay>
-     * </p>
-     * @throws AlipayApiException 
+     * @return 加密 、签名后xml内容字符串
+     * @throws AlipayApiException the alipay api exception
      */
     public static String encryptAndSign(String bizContent, String alipayPublicKey,
                                         String cusPrivateKey, String charset, boolean isEncrypt,
@@ -483,27 +599,20 @@ public class AlipaySignature {
         }
         return sb.toString();
     }
-    
+
     /**
      * 加密并签名<br>
      * <b>目前适用于公众号</b>
+     *
      * @param bizContent      待加密、签名内容
      * @param alipayPublicKey 支付宝公钥
      * @param cusPrivateKey   商户私钥
      * @param charset         字符集，如UTF-8, GBK, GB2312
      * @param isEncrypt       是否加密，true-加密  false-不加密
      * @param isSign          是否签名，true-签名  false-不签名
-     * @return 加密、签名后xml内容字符串
-     * <p>
-     * 返回示例：
-     * <alipay>
-     *  <response>密文</response>
-     *  <encryption_type>RSA</encryption_type>
-     *  <sign>sign</sign>
-     *  <sign_type>RSA</sign_type>
-     * </alipay>
-     * </p>
-     * @throws AlipayApiException 
+     * @param signType        the sign type
+     * @return 加密 、签名后xml内容字符串
+     * @throws AlipayApiException the alipay api exception
      */
     public static String encryptAndSign(String bizContent, String alipayPublicKey,
                                         String cusPrivateKey, String charset, boolean isEncrypt,
@@ -543,12 +652,12 @@ public class AlipaySignature {
 
     /**
      * 公钥加密
-     * 
+     *
      * @param content   待加密内容
      * @param publicKey 公钥
      * @param charset   字符集，如UTF-8, GBK, GB2312
-     * @return 密文内容
-     * @throws AlipayApiException
+     * @return 密文内容 string
+     * @throws AlipayApiException the alipay api exception
      */
     public static String rsaEncrypt(String content, String publicKey,
                                     String charset) throws AlipayApiException {
@@ -588,12 +697,12 @@ public class AlipaySignature {
 
     /**
      * 私钥解密
-     * 
+     *
      * @param content    待解密内容
      * @param privateKey 私钥
      * @param charset    字符集，如UTF-8, GBK, GB2312
-     * @return 明文内容
-     * @throws AlipayApiException
+     * @return 明文内容 string
+     * @throws AlipayApiException the alipay api exception
      */
     public static String rsaDecrypt(String content, String privateKey,
                                     String charset) throws AlipayApiException {

@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 /**
  * 数据结构列表属性注解。
- * 
+ *
  * @author carver.gu
  * @since 1.0, Apr 11, 2010
  */
@@ -15,7 +15,10 @@ import java.lang.annotation.Target;
 @Target(value = { ElementType.FIELD })
 public @interface ApiListField {
 
-    /** JSON列表属性映射名称 **/
-	public String value() default "";
+    /**
+     * JSON列表属性映射名称
+     * @return the string
+     */
+    public String value() default "";
 
 }

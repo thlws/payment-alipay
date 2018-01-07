@@ -17,7 +17,7 @@ import com.alipay.api.internal.util.json.JSONValidatingReader;
 
 /**
  * 系统工具类。
- * 
+ *
  * @author carver.gu
  * @since 1.0, Sep 12, 2009
  */
@@ -29,7 +29,7 @@ public abstract class AlipayUtils {
 
     /**
      * 获取文件的真实后缀名。目前只支持JPG, GIF, PNG, BMP四种图片文件。
-     * 
+     *
      * @param bytes 文件字节流
      * @return JPG, GIF, PNG or null
      */
@@ -53,9 +53,9 @@ public abstract class AlipayUtils {
 
     /**
      * 获取文件的真实媒体类型。目前只支持JPG, GIF, PNG, BMP四种图片文件。
-     * 
+     *
      * @param bytes 文件字节流
-     * @return 媒体类型(MEME-TYPE)
+     * @return 媒体类型(MEME - TYPE) mime type
      */
     public static String getMimeType(byte[] bytes) {
         String suffix = getFileSuffix(bytes);
@@ -78,10 +78,10 @@ public abstract class AlipayUtils {
 
     /**
      * 清除字典中值为空的项。
-     * 
+     *
      * @param <V> 泛型
      * @param map 待清除的字典
-     * @return 清除后的字典
+     * @return 清除后的字典 map
      */
     public static <V> Map<String, V> cleanupMap(Map<String, V> map) {
         if (map == null || map.isEmpty()) {
@@ -102,9 +102,9 @@ public abstract class AlipayUtils {
 
     /**
      * 把JSON字符串转化为Map结构。
-     * 
+     *
      * @param body JSON字符串
-     * @return Map结构
+     * @return Map结构 map
      */
     public static Map<?, ?> parseJson(String body) {
         JSONReader jr = new JSONValidatingReader();
@@ -118,11 +118,12 @@ public abstract class AlipayUtils {
 
     /**
      * 把JSON字符串解释为对象结构。
-     * 
-     * @param <T> API响应类型
-     * @param json JSON字符串
+     *
+     * @param <T>   API响应类型
+     * @param json  JSON字符串
      * @param clazz API响应类
-     * @return API响应对象
+     * @return API响应对象 t
+     * @throws AlipayApiException the alipay api exception
      */
     public static <T extends AlipayResponse> T parseResponse(String json, Class<T> clazz)
                                                                                          throws AlipayApiException {
@@ -132,6 +133,8 @@ public abstract class AlipayUtils {
 
     /**
      * 获取本机的网络IP
+     *
+     * @return the local net work ip
      */
     public static String getLocalNetWorkIp() {
         if (localIp != null) {

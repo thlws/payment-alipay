@@ -14,11 +14,18 @@ import org.thlws.payment.alipay.utils.JsonUtil;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+
 /**
  * Created by liuyangkly on 15/10/28.
  */
 abstract class AbsAlipayTradeService extends AbsAlipayService implements AlipayTradeService {
+    /**
+     * The constant executorService.
+     */
     protected static ExecutorService executorService = Executors.newCachedThreadPool();
+    /**
+     * The Client.
+     */
     protected AlipayClient client;
 
     @Override
@@ -41,6 +48,12 @@ abstract class AbsAlipayTradeService extends AbsAlipayService implements AlipayT
         return result;
     }
 
+    /**
+     * Trade query alipay trade query response.
+     *
+     * @param builder the builder
+     * @return the alipay trade query response
+     */
     protected AlipayTradeQueryResponse tradeQuery(AlipayTradeQueryRequestBuilder builder) {
         validateBuilder(builder);
 
@@ -158,7 +171,16 @@ abstract class AbsAlipayTradeService extends AbsAlipayService implements AlipayT
     }
 
 
-    // 根据查询结果queryResponse判断交易是否支付成功，如果支付成功则更新result并返回，如果不成功则调用撤销
+    /**
+     * Check query and cancel alipay f 2 f pay result.
+     *
+     * @param outTradeNo    the out trade no
+     * @param appAuthToken  the app auth token
+     * @param result        the result
+     * @param queryResponse the query response
+     * @return the alipay f 2 f pay result
+     */
+// 根据查询结果queryResponse判断交易是否支付成功，如果支付成功则更新result并返回，如果不成功则调用撤销
     protected AlipayF2FPayResult checkQueryAndCancel(String outTradeNo, String appAuthToken, AlipayF2FPayResult result,
                                                    AlipayTradeQueryResponse queryResponse) {
         if (querySuccess(queryResponse)) {
@@ -183,7 +205,13 @@ abstract class AbsAlipayTradeService extends AbsAlipayService implements AlipayT
     }
 
 
-    // 根据外部订单号outTradeNo撤销订单
+    /**
+     * Trade cancel alipay trade cancel response.
+     *
+     * @param builder the builder
+     * @return the alipay trade cancel response
+     */
+// 根据外部订单号outTradeNo撤销订单
     protected AlipayTradeCancelResponse tradeCancel(AlipayTradeCancelRequestBuilder builder) {
         validateBuilder(builder);
 
@@ -215,7 +243,13 @@ abstract class AbsAlipayTradeService extends AbsAlipayService implements AlipayT
         return result;
     }
 
-    // 轮询查询订单支付结果
+    /**
+     * Loop query result alipay trade query response.
+     *
+     * @param builder the builder
+     * @return the alipay trade query response
+     */
+// 轮询查询订单支付结果
     protected AlipayTradeQueryResponse loopQueryResult(AlipayTradeQueryRequestBuilder builder) {
         AlipayTradeQueryResponse queryResult = null;
         for (int i = 0; i < Constants.max_query_retry; i++) {
@@ -232,7 +266,13 @@ abstract class AbsAlipayTradeService extends AbsAlipayService implements AlipayT
         return queryResult;
     }
 
-    // 判断是否停止查询
+    /**
+     * Stop query boolean.
+     *
+     * @param response the response
+     * @return the boolean
+     */
+// 判断是否停止查询
     protected boolean stopQuery(AlipayTradeQueryResponse response) {
         if (Constants.SUCCESS.equals(response.getCode())) {
             if ("TRADE_FINISHED".equals(response.getTradeStatus()) ||
@@ -245,7 +285,13 @@ abstract class AbsAlipayTradeService extends AbsAlipayService implements AlipayT
         return false;
     }
 
-    // 根据外部订单号outTradeNo撤销订单
+    /**
+     * Cancel pay result alipay trade cancel response.
+     *
+     * @param builder the builder
+     * @return the alipay trade cancel response
+     */
+// 根据外部订单号outTradeNo撤销订单
     protected AlipayTradeCancelResponse cancelPayResult(AlipayTradeCancelRequestBuilder builder) {
         AlipayTradeCancelResponse response = tradeCancel(builder);
         if (cancelSuccess(response)) {
@@ -262,7 +308,12 @@ abstract class AbsAlipayTradeService extends AbsAlipayService implements AlipayT
         return response;
     }
 
-    // 异步撤销
+    /**
+     * Async cancel.
+     *
+     * @param builder the builder
+     */
+// 异步撤销
     protected void asyncCancel(final AlipayTradeCancelRequestBuilder builder) {
         executorService.submit(new Runnable() {
             @Override
@@ -281,7 +332,13 @@ abstract class AbsAlipayTradeService extends AbsAlipayService implements AlipayT
         });
     }
 
-    // 将查询应答转换为支付应答
+    /**
+     * To pay response alipay trade pay response.
+     *
+     * @param response the response
+     * @return the alipay trade pay response
+     */
+// 将查询应答转换为支付应答
     protected AlipayTradePayResponse toPayResponse(AlipayTradeQueryResponse response) {
         AlipayTradePayResponse payResponse = new AlipayTradePayResponse();
         // 只有查询明确返回成功才能将返回码设置为10000，否则均为失败
@@ -308,7 +365,13 @@ abstract class AbsAlipayTradeService extends AbsAlipayService implements AlipayT
         return payResponse;
     }
 
-    // 撤销需要重试
+    /**
+     * Need retry boolean.
+     *
+     * @param response the response
+     * @return the boolean
+     */
+// 撤销需要重试
     protected boolean needRetry(AlipayTradeCancelResponse response) {
         return response == null ||
                 "Y".equals(response.getRetryFlag());
@@ -317,8 +380,8 @@ abstract class AbsAlipayTradeService extends AbsAlipayService implements AlipayT
     /***
      * 查询返回“支付成功”
      * Modified by Hanley 新增查询成功状态 TRADE_CLOSED-[line 310 已注释]
-     * @param response
-     * @return
+     * @param response the response
+     * @return boolean
      */
     protected boolean querySuccess(AlipayTradeQueryResponse response) {
         return response != null &&
@@ -329,13 +392,25 @@ abstract class AbsAlipayTradeService extends AbsAlipayService implements AlipayT
                 );
     }
 
-    // 撤销返回“撤销成功”
+    /**
+     * Cancel success boolean.
+     *
+     * @param response the response
+     * @return the boolean
+     */
+// 撤销返回“撤销成功”
     protected boolean cancelSuccess(AlipayTradeCancelResponse response) {
         return response != null &&
                 Constants.SUCCESS.equals(response.getCode());
     }
 
-    // 交易异常，或发生系统错误
+    /**
+     * Trade error boolean.
+     *
+     * @param response the response
+     * @return the boolean
+     */
+// 交易异常，或发生系统错误
     protected boolean tradeError(AlipayResponse response) {
         return response == null ||
                 Constants.ERROR.equals(response.getCode());

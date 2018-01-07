@@ -7,7 +7,6 @@ import java.io.Serializable;
 /**
  * 支付宝扫码支付Response Bean,用户打开支付宝APP扫描Qrcode
  * @author Hanley Tang
- * @email hanley@hanley.cn
  * @version 1.0
  */
 public class AlipayQrcodeOutput implements Serializable{

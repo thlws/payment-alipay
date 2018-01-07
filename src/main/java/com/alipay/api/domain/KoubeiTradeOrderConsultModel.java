@@ -42,21 +42,21 @@ public class KoubeiTradeOrderConsultModel extends AlipayObject {
 	private String shopId;
 
 	/**
-	 * 订单总金额，单位元，精确到小数点后两位，取值范围[0.01,999999999]
-如果同时传入了【不可打折金额】，【订单总金额】两者，则必须满足【不可打折金额】<=【订单总金额】
+	 * 订单总金额，单位元，精确到小数点后两位
 	 */
 	@ApiField("total_amount")
 	private String totalAmount;
 
 	/**
-	 * 不参与优惠计算的金额，单位为元，精确到小数点后两位，取值范围[0,999999999]
-如果同时传入了【不可打折金额】、【订单总金额】，则必须满足【不可打折金额】<=【订单总金额】
+	 * <pre>
+	 * 不参与优惠计算的金额
+	 * </pre>
 	 */
 	@ApiField("undiscountable_amount")
 	private String undiscountableAmount;
 
 	/**
-	 * 支付宝用户Id
+	 * 支付宝用户Ido
 	 */
 	@ApiField("user_id")
 	private String userId;

@@ -14,10 +14,9 @@ import com.alipay.api.AlipayApiException;
 import com.alipay.api.internal.util.codec.Base64;
 
 /**
- *  加密工具
- * 
+ * 加密工具
+ *
  * @author jiehua
- * @version $Id: AlipayEncrypt.java, v 0.1 2016-3-28 下午5:14:12 jiehua Exp $
  */
 public class AlipayEncrypt {
 
@@ -31,14 +30,14 @@ public class AlipayEncrypt {
     private static final byte[] AES_IV          = initIv(AES_CBC_PCK_ALG);
 
     /**
-     *   加密
-     * 
-     * @param content
-     * @param encryptType
-     * @param encryptKey
-     * @param charset
-     * @return
-     * @throws AlipayApiException
+     * 加密
+     *
+     * @param content     the content
+     * @param encryptType the encrypt type
+     * @param encryptKey  the encrypt key
+     * @param charset     the charset
+     * @return string string
+     * @throws AlipayApiException the alipay api exception
      */
     public static String encryptContent(String content, String encryptType, String encryptKey,
                                         String charset) throws AlipayApiException {
@@ -55,14 +54,14 @@ public class AlipayEncrypt {
     }
 
     /**
-     *  解密
-     * 
-     * @param content
-     * @param encryptType
-     * @param encryptKey
-     * @param charset
-     * @return
-     * @throws AlipayApiException
+     * 解密
+     *
+     * @param content     the content
+     * @param encryptType the encrypt type
+     * @param encryptKey  the encrypt key
+     * @param charset     the charset
+     * @return string string
+     * @throws AlipayApiException the alipay api exception
      */
     public static String decryptContent(String content, String encryptType, String encryptKey,
                                         String charset) throws AlipayApiException {

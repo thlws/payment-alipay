@@ -32,7 +32,7 @@ import com.alipay.api.FileItem;
 
 /**
  * 网络工具类。
- * 
+ *
  * @author carver.gu
  * @since 1.0, Sep 12, 2009
  */
@@ -90,11 +90,13 @@ public abstract class WebUtils {
 
     /**
      * 执行HTTP POST请求。
-     * 
-     * @param url 请求地址
-     * @param params 请求参数
-     * @return 响应字符串
-     * @throws IOException
+     *
+     * @param url            请求地址
+     * @param params         请求参数
+     * @param connectTimeout the connect timeout
+     * @param readTimeout    the read timeout
+     * @return 响应字符串 string
+     * @throws IOException the io exception
      */
     public static String doPost(String url, Map<String, String> params, int connectTimeout,
                                 int readTimeout) throws IOException {
@@ -103,12 +105,14 @@ public abstract class WebUtils {
 
     /**
      * 执行HTTP POST请求。
-     * 
-     * @param url 请求地址
-     * @param params 请求参数
-     * @param charset 字符集，如UTF-8, GBK, GB2312
-     * @return 响应字符串
-     * @throws IOException
+     *
+     * @param url            请求地址
+     * @param params         请求参数
+     * @param charset        字符集，如UTF-8, GBK, GB2312
+     * @param connectTimeout the connect timeout
+     * @param readTimeout    the read timeout
+     * @return 响应字符串 string
+     * @throws IOException the io exception
      */
     public static String doPost(String url, Map<String, String> params, String charset,
                                 int connectTimeout, int readTimeout) throws IOException {
@@ -123,12 +127,14 @@ public abstract class WebUtils {
 
     /**
      * 执行HTTP POST请求。
-     * 
-     * @param url 请求地址
-     * @param ctype 请求类型
-     * @param content 请求字节数组
-     * @return 响应字符串
-     * @throws IOException
+     *
+     * @param url            请求地址
+     * @param ctype          请求类型
+     * @param content        请求字节数组
+     * @param connectTimeout the connect timeout
+     * @param readTimeout    the read timeout
+     * @return 响应字符串 string
+     * @throws IOException the io exception
      */
     public static String doPost(String url, String ctype, byte[] content, int connectTimeout,
                                 int readTimeout) throws IOException {
@@ -170,12 +176,14 @@ public abstract class WebUtils {
 
     /**
      * 执行带文件上传的HTTP POST请求。
-     * 
-     * @param url 请求地址
-     * @param textParams 文本请求参数
-     * @param fileParams 文件请求参数
-     * @return 响应字符串
-     * @throws IOException
+     *
+     * @param url            请求地址
+     * @param params         the params
+     * @param fileParams     文件请求参数
+     * @param connectTimeout the connect timeout
+     * @param readTimeout    the read timeout
+     * @return 响应字符串 string
+     * @throws IOException the io exception
      */
     public static String doPost(String url, Map<String, String> params,
                                 Map<String, FileItem> fileParams, int connectTimeout,
@@ -189,13 +197,15 @@ public abstract class WebUtils {
 
     /**
      * 执行带文件上传的HTTP POST请求。
-     * 
-     * @param url 请求地址
-     * @param textParams 文本请求参数
-     * @param fileParams 文件请求参数
-     * @param charset 字符集，如UTF-8, GBK, GB2312
-     * @return 响应字符串
-     * @throws IOException
+     *
+     * @param url            请求地址
+     * @param params         the params
+     * @param fileParams     文件请求参数
+     * @param charset        字符集，如UTF-8, GBK, GB2312
+     * @param connectTimeout the connect timeout
+     * @param readTimeout    the read timeout
+     * @return 响应字符串 string
+     * @throws IOException the io exception
      */
     public static String doPost(String url, Map<String, String> params,
                                 Map<String, FileItem> fileParams, String charset,
@@ -292,11 +302,11 @@ public abstract class WebUtils {
 
     /**
      * 执行HTTP GET请求。
-     * 
-     * @param url 请求地址
+     *
+     * @param url    请求地址
      * @param params 请求参数
-     * @return 响应字符串
-     * @throws IOException
+     * @return 响应字符串 string
+     * @throws IOException the io exception
      */
     public static String doGet(String url, Map<String, String> params) throws IOException {
         return doGet(url, params, DEFAULT_CHARSET);
@@ -304,12 +314,12 @@ public abstract class WebUtils {
 
     /**
      * 执行HTTP GET请求。
-     * 
-     * @param url 请求地址
-     * @param params 请求参数
+     *
+     * @param url     请求地址
+     * @param params  请求参数
      * @param charset 字符集，如UTF-8, GBK, GB2312
-     * @return 响应字符串
-     * @throws IOException
+     * @return 响应字符串 string
+     * @throws IOException the io exception
      */
     public static String doGet(String url, Map<String, String> params,
                                String charset) throws IOException {
@@ -388,6 +398,14 @@ public abstract class WebUtils {
         return new URL(strUrl);
     }
 
+    /**
+     * Build query string.
+     *
+     * @param params  the params
+     * @param charset the charset
+     * @return the string
+     * @throws IOException the io exception
+     */
     public static String buildQuery(Map<String, String> params, String charset) throws IOException {
         if (params == null || params.isEmpty()) {
             return null;
@@ -415,6 +433,13 @@ public abstract class WebUtils {
         return query.toString();
     }
 
+    /**
+     * Gets response as string.
+     *
+     * @param conn the conn
+     * @return the response as string
+     * @throws IOException the io exception
+     */
     protected static String getResponseAsString(HttpURLConnection conn) throws IOException {
         String charset = getResponseCharset(conn.getContentType());
         InputStream es = conn.getErrorStream();
@@ -473,9 +498,9 @@ public abstract class WebUtils {
 
     /**
      * 使用默认的UTF-8字符集反编码请求参数值。
-     * 
+     *
      * @param value 参数值
-     * @return 反编码后的参数值
+     * @return 反编码后的参数值 string
      */
     public static String decode(String value) {
         return decode(value, DEFAULT_CHARSET);
@@ -483,9 +508,9 @@ public abstract class WebUtils {
 
     /**
      * 使用默认的UTF-8字符集编码请求参数值。
-     * 
+     *
      * @param value 参数值
-     * @return 编码后的参数值
+     * @return 编码后的参数值 string
      */
     public static String encode(String value) {
         return encode(value, DEFAULT_CHARSET);
@@ -493,10 +518,10 @@ public abstract class WebUtils {
 
     /**
      * 使用指定的字符集反编码请求参数值。
-     * 
-     * @param value 参数值
+     *
+     * @param value   参数值
      * @param charset 字符集
-     * @return 反编码后的参数值
+     * @return 反编码后的参数值 string
      */
     public static String decode(String value, String charset) {
         String result = null;
@@ -512,10 +537,10 @@ public abstract class WebUtils {
 
     /**
      * 使用指定的字符集编码请求参数值。
-     * 
-     * @param value 参数值
+     *
+     * @param value   参数值
      * @param charset 字符集
-     * @return 编码后的参数值
+     * @return 编码后的参数值 string
      */
     public static String encode(String value, String charset) {
         String result = null;
@@ -542,9 +567,9 @@ public abstract class WebUtils {
 
     /**
      * 从URL中提取所有的参数。
-     * 
+     *
      * @param query URL地址
-     * @return 参数映射
+     * @return 参数映射 map
      */
     public static Map<String, String> splitUrlQuery(String query) {
         Map<String, String> result = new HashMap<String, String>();
@@ -562,10 +587,24 @@ public abstract class WebUtils {
         return result;
     }
 
+    /**
+     * Build form string.
+     *
+     * @param baseUrl       the base url
+     * @param requestHolder the request holder
+     * @return the string
+     */
     public String buildForm(String baseUrl, RequestParametersHolder requestHolder) {
         return null;
     }
 
+    /**
+     * Build form string.
+     *
+     * @param baseUrl    the base url
+     * @param parameters the parameters
+     * @return the string
+     */
     public static String buildForm(String baseUrl, Map<String, String> parameters) {
         java.lang.StringBuffer sb = new StringBuffer();
         sb.append("<form name=\"punchout_form\" method=\"post\" action=\"");

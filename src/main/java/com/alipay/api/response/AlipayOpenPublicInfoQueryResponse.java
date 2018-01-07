@@ -74,7 +74,7 @@ public class AlipayOpenPublicInfoQueryResponse extends AlipayResponse {
 
 	/** 
 	 * 商家经营类目，详情可参考
-<a href="https://doc.open.alipay.com/docs/doc.htm?spm=a219a.7629140.0.0.INIZWb&articleId=105364&docType=1">商家经营类目</a>
+<a href="https://doc.open.alipay.com/docs/doc.htm?spm=a219a.7629140.0.0.INIZWbarticleId=105364docType=1">商家经营类目</a>
 	 */
 	@ApiField("mcc_code_desc")
 	private String mccCodeDesc;

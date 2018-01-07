@@ -7,10 +7,10 @@ package com.alipay.api;
 import java.io.Serializable;
 
 /**
- * 
- * 
+ * The type Response encrypt item.
+ *
  * @author jiehua
- * @version $Id: EncryptReponseItem.java, v 0.1 2016-3-28 下午6:20:04 jiehua Exp $
+ * @version $Id : EncryptReponseItem.java, v 0.1 2016-3-28 下午6:20:04 jiehua Exp $
  */
 public class ResponseEncryptItem implements Serializable {
 
@@ -28,8 +28,10 @@ public class ResponseEncryptItem implements Serializable {
     private String            realContent;
 
     /**
-     * @param respContent
-     * @param realContent
+     * Instantiates a new Response encrypt item.
+     *
+     * @param respContent the resp content
+     * @param realContent the real content
      */
     public ResponseEncryptItem(String respContent, String realContent) {
         super();
@@ -39,7 +41,7 @@ public class ResponseEncryptItem implements Serializable {
 
     /**
      * Getter method for property <tt>respContent</tt>.
-     * 
+     *
      * @return property value of respContent
      */
     public String getRespContent() {
@@ -48,7 +50,7 @@ public class ResponseEncryptItem implements Serializable {
 
     /**
      * Getter method for property <tt>realContent</tt>.
-     * 
+     *
      * @return property value of realContent
      */
     public String getRealContent() {

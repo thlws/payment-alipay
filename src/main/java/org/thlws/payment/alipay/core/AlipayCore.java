@@ -16,9 +16,9 @@ import org.thlws.payment.alipay.utils.JsonUtil;
 
 /**
  * 支付宝支付核心处理入口,封装支付常用API，包括当面付、新版网页支付、退款操作、订单查询;
- * 使用任何方法前,需先行设置ClientBuilder中核心参数,并调用build方法初始化.
- * @see <a href="https://docs.open.alipay.com/api">https://docs.open.alipay.com/api</a>
- * @see <a href="https://docs.open.alipay.com/">https://docs.open.alipay.com/</a>
+ * 使用任何方法前,需先行设置ClientBuilder中核心参数,并调用build方法初始化.<br>
+ * https://docs.open.alipay.com/api
+ *
  * <pre>
  *  AlipayCore.ClientBuilder clientBuilder = new AlipayCore.ClientBuilder();
  *  AlipayCore alipayCore = clientBuilder.setAlipay_public_key("xxx").setApp_id("xxx").setPrivate_key("xxx").build();

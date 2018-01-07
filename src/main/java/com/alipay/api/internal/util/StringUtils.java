@@ -2,7 +2,7 @@ package com.alipay.api.internal.util;
 
 /**
  * 字符串工具类。
- * 
+ *
  * @author carver.gu
  * @since 1.0, Sep 12, 2009
  */
@@ -18,11 +18,11 @@ public abstract class StringUtils {
      * <li>SysUtils.isEmpty("   ") = true</li>
      * <li>SysUtils.isEmpty("abc") = false</li>
      * </ul>
-     * 
+     *
      * @param value 待检查的字符串
-     * @return true/false
+     * @return true /false
      */
-	public static boolean isEmpty(String value) {
+    public static boolean isEmpty(String value) {
 		int strLen;
 		if (value == null || (strLen = value.length()) == 0) {
 			return true;
@@ -37,8 +37,11 @@ public abstract class StringUtils {
 
     /**
      * 检查对象是否为数字型字符串,包含负数开头的。
+     *
+     * @param obj the obj
+     * @return the boolean
      */
-	public static boolean isNumeric(Object obj) {
+    public static boolean isNumeric(Object obj) {
 		if (obj == null) {
 			return false;
 		}
@@ -61,8 +64,11 @@ public abstract class StringUtils {
 
     /**
      * 检查指定的字符串列表是否不为空。
+     *
+     * @param values the values
+     * @return the boolean
      */
-	public static boolean areNotEmpty(String... values) {
+    public static boolean areNotEmpty(String... values) {
 		boolean result = true;
 		if (values == null || values.length == 0) {
 			result = false;
@@ -76,8 +82,11 @@ public abstract class StringUtils {
 
     /**
      * 把通用字符编码的字符串转化为汉字编码。
+     *
+     * @param unicode the unicode
+     * @return the string
      */
-	public static String unicodeToChinese(String unicode) {
+    public static String unicodeToChinese(String unicode) {
 		StringBuilder out = new StringBuilder();
 		if (!isEmpty(unicode)) {
 			for (int i = 0; i < unicode.length(); i++) {
@@ -89,8 +98,11 @@ public abstract class StringUtils {
 
     /**
      * 过滤不可见字符
+     *
+     * @param input the input
+     * @return the string
      */
-	public static String stripNonValidXMLCharacters(String input) {
+    public static String stripNonValidXMLCharacters(String input) {
 		if (input == null || ("".equals(input)))
 			return "";
 		StringBuilder out = new StringBuilder();

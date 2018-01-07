@@ -9,7 +9,6 @@ import org.thlws.payment.alipay.utils.JsonUtil;
 /**
  * 支付宝扫码支付Bean,用户打开支付宝APP扫描Qrcode
  * @author Hanley Tang
- * @email hanley@hanley.cn
  * @version 1.0
  */
 public class AlipayQrcodeInput implements Serializable{

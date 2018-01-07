@@ -23,12 +23,15 @@ import com.alipay.api.internal.util.StringUtils;
 
 /**
  * 转换工具类。
- * 
+ *
  * @author carver.gu
  * @since 1.0, Apr 11, 2010
  */
 public class Converters {
-    // 是否对JSON返回的数据类型进行校验，默认不校验。给内部测试JSON返回时用的开关。
+    /**
+     * The Is check json type.
+     */
+// 是否对JSON返回的数据类型进行校验，默认不校验。给内部测试JSON返回时用的开关。
     //规则：返回的"基本"类型只有String,Long,Boolean,Date,采取严格校验方式，如果类型不匹配，报错
     public static boolean            isCheckJsonType = false;
 
@@ -65,12 +68,12 @@ public class Converters {
 
     /**
      * 使用指定 的读取器去转换字符串为对象。
-     * 
-     * @param <T> 领域泛型
-     * @param clazz 领域类型
+     *
+     * @param <T>    领域泛型
+     * @param clazz  领域类型
      * @param reader 读取器
-     * @return 领域对象
-     * @throws ApiException
+     * @return 领域对象 t
+     * @throws AlipayApiException the alipay api exception
      */
     public static <T> T convert(Class<T> clazz, Reader reader) throws AlipayApiException {
         T rsp = null;

@@ -26,7 +26,7 @@ import com.alipay.api.internal.util.json.JSONValidatingReader;
 
 /**
  * JSON格式转换器。
- * 
+ *
  * @author carver.gu
  * @since 1.0, Apr 11, 2010
  */
@@ -51,12 +51,12 @@ public class JsonConverter implements Converter {
 
     /**
      * 把JSON格式的数据转换为对象。
-     * 
-     * @param <T> 泛型领域对象
-     * @param json JSON格式的数据
+     *
+     * @param <T>   泛型领域对象
+     * @param json  JSON格式的数据
      * @param clazz 泛型领域类型
-     * @return 领域对象
-     * @throws TopException
+     * @return 领域对象 t
+     * @throws AlipayApiException the alipay api exception
      */
     public <T> T fromJson(final Map<?, ?> json, Class<T> clazz) throws AlipayApiException {
         return Converters.convert(clazz, new Reader() {

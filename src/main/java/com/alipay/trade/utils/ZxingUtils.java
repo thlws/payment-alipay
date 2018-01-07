@@ -44,15 +44,28 @@ public class ZxingUtils {
         }
     }
 
-    /** 将内容contents生成长宽均为width的图片，图片路径由imgPath指定
+    /**
+     * 将内容contents生成长宽均为width的图片，图片路径由imgPath指定
+     *
+     * @param contents the contents
+     * @param width    the width
+     * @param imgPath  the img path
+     * @return the qr code imge
      */
     public static File getQRCodeImge(String contents, int width, String imgPath) {
         return getQRCodeImge(contents, width, width, imgPath);
     }
 
-    /** 将内容contents生成长为width，宽为width的图片，图片路径由imgPath指定
+    /**
+     * 将内容contents生成长为width，宽为width的图片，图片路径由imgPath指定
+     *
+     * @param contents the contents
+     * @param width    the width
+     * @param height   the height
+     * @param imgPath  the img path
+     * @return the qr code imge
      */
-	public static File getQRCodeImge(String contents, int width, int height, String imgPath) {
+    public static File getQRCodeImge(String contents, int width, int height, String imgPath) {
 		try {
             Map<EncodeHintType, Object> hints = new Hashtable<EncodeHintType, Object>();
             hints.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.M);
@@ -71,6 +84,11 @@ public class ZxingUtils {
 		}
 	}
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         getQRCodeImge("hanley",250,250,"/zone/hanley.png");
     }

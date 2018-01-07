@@ -45,7 +45,7 @@ public class SsdataDataserviceRiskAntifraudintegrationQueryResponse extends Alip
 	private String uniqueId;
 
 	/** 
-	 * <a href="https://doc.open.alipay.com/docs/doc.htm?treeId=272&articleId=105917&docType=1">验证code列表</a>
+	 * <a href="https://doc.open.alipay.com/docs/doc.htm?treeId=272articleId=105917docType=1">验证code列表</a>
 	 */
 	@ApiField("verify_code")
 	private String verifyCode;

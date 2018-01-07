@@ -14,7 +14,7 @@ public class ZhimaCreditAntifraudVerifyModel extends AlipayObject {
 	private static final long serialVersionUID = 8453537716418127766L;
 
 	/**
-	 * 地址信息。省+市+区/县+详细地址，长度不超过256，不要包含特殊字符，如","，"\"，"|"，"&"，"^"
+	 * 地址信息。
 	 */
 	@ApiField("address")
 	private String address;
@@ -56,7 +56,7 @@ public class ZhimaCreditAntifraudVerifyModel extends AlipayObject {
 	private String ip;
 
 	/**
-	 * 物理地址。支持格式如下：xx:xx:xx:xx:xx:xx，xx-xx-xx-xx-xx-xx，xxxxxxxxxxxx，x取值范围[0,9]之间的整数及A，B，C，D，E，F
+	 * 物理地址。
 	 */
 	@ApiField("mac")
 	private String mac;
@@ -68,7 +68,7 @@ public class ZhimaCreditAntifraudVerifyModel extends AlipayObject {
 	private String mobile;
 
 	/**
-	 * 姓名，长度不超过64，姓名中不含",","/u0001"，"|","&","^","\\"
+	 * 姓名，长度不超过64
 	 */
 	@ApiField("name")
 	private String name;
