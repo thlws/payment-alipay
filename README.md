@@ -15,12 +15,12 @@
 <dependency>
     <groupId>org.thlws</groupId>
     <artifactId>payment-alipay</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 </dependency>
 ```
 - Gradle
 ```
-compile 'org.thlws:payment-alipay:1.0.0'
+compile 'org.thlws:payment-alipay:1.0.1'
 ```
 
 ## 源码测试
