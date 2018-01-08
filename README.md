@@ -36,7 +36,7 @@ _已发布至公有仓库，添加方式如上._
 _JDK版本 >= 1.6 即可._
 
 - 有没有支付相关文档？<br>
-_ [https://docs.open.alipay.com/api](https://docs.open.alipay.com/api)
+_[https://docs.open.alipay.com/api](https://docs.open.alipay.com/api)_
 
 ## 打赏一下
 ![](imgs/award.png)
