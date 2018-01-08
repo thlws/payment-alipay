@@ -33,6 +33,15 @@ compile 'org.thlws:payment-alipay:1.0.1'
 2. 导入到 Eclipse 或 Intellij IDEA
 3. 运行 Junit Class AlipayTest (支付相关接口)
 
+## 项目依赖
+- [https://github.com/zxing/zxing](https://github.com/zxing/zxing)
+- [https://github.com/google/gson](https://github.com/google/gson)
+- [http://commons.apache.org/proper/commons-lang/](http://commons.apache.org/proper/commons-lang/)
+- [http://commons.apache.org/proper/commons-beanutils/](http://commons.apache.org/proper/commons-beanutils/)
+
+## 更新日志
+- v1.0.0 支付宝支付依赖库发布;
+
 ## FAQ
 - 能不能直接 dependency 添加依赖?<br>
 _已发布至公有仓库，添加方式如上._
