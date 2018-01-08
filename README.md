@@ -1,13 +1,18 @@
-## 简介说明
-- 基于支付宝官方SDK,封装支付相关接口, 整合多种支付场景于一体，降低接入门槛。
+## 项目介绍
+- payment是一系列基于Java实现的支付类库，包含支付宝、微信、翼支付等，其目的是以最简单的方式完成各种支付方式接入。
 
+## 支付类库
+- [https://gitee.com/thlws/payment-alipay](https://gitee.com/thlws/payment-alipay)
+- [https://gitee.com/thlws/payment-wechat](https://gitee.com/thlws/payment-wechat)
+- [https://gitee.com/thlws/payment-bestpay](https://gitee.com/thlws/payment-bestpay)
 
 ## 详细教程
-- 支付宝官方文档：[https://docs.open.alipay.com/api](https://docs.open.alipay.com/api)
+- 支付宝-官方文档：[https://docs.open.alipay.com/api](https://docs.open.alipay.com/api)
 
-## 项目说明
+## 功能说明
 1. 用于支付宝支付，基于Java语言实现的依赖库；
 2. 接口参数全部封装，使用者仅需创建对象并设置参数；
+3. 封装官方SDK，整合多种支付场景于一体，降低接入门槛；
 
 ## 依赖安装
 - Maven
