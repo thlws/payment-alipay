@@ -1,5 +1,6 @@
 package com.alipay.trade.service.impl;
 
+import com.alipay.api.AlipayConstants;
 import com.alipay.api.DefaultAlipayClient;
 import com.alipay.api.request.AlipayTradePayRequest;
 import com.alipay.api.response.AlipayTradePayResponse;
@@ -29,6 +30,7 @@ public class AlipayTradeServiceImpl extends AbsAlipayTradeService {
         private String format;
         private String charset;
         private String alipayPublicKey;
+        private String signType;
 
         /***
          * Modified By Hanley
@@ -51,9 +53,18 @@ public class AlipayTradeServiceImpl extends AbsAlipayTradeService {
             if (StringUtils.isEmpty(charset)) {
                 charset = "utf-8";
             }
-            if (StringUtils.isEmpty(alipayPublicKey)) {
-                throw new NullPointerException("alipayPublicKey should not be NULL!");
+//            if (StringUtils.isEmpty(alipayPublicKey)) {
+//                throw new NullPointerException("alipayPublicKey should not be NULL!");
+//            }
+            if (StringUtils.isEmpty(signType)) {
+                throw new NullPointerException("signType should not be NULL!");
+            }else{
+                if(signType.equalsIgnoreCase(AlipayConstants.SIGN_TYPE_RSA2) && StringUtils.isEmpty(alipayPublicKey)){
+                    throw new NullPointerException("please set alipay_public_key first,when the sign_type is RSA2!");
+                }
             }
+
+
 
             return new AlipayTradeServiceImpl(this);
         }
@@ -177,6 +188,24 @@ public class AlipayTradeServiceImpl extends AbsAlipayTradeService {
         public String getPrivateKey() {
             return privateKey;
         }
+
+        /**
+         * Gets sign type.
+         *
+         * @return the sign type
+         */
+        public String getSignType() {
+            return signType;
+        }
+
+        /**
+         * Sets sign type.
+         *
+         * @param signType the sign type
+         */
+        public void setSignType(String signType) {
+            this.signType = signType;
+        }
     }
 
     /**
@@ -200,12 +229,12 @@ public class AlipayTradeServiceImpl extends AbsAlipayTradeService {
         if (StringUtils.isEmpty(builder.getCharset())) {
             throw new NullPointerException("charset should not be NULL!");
         }
-        if (StringUtils.isEmpty(builder.getAlipayPublicKey())) {
-            throw new NullPointerException("alipayPublicKey should not be NULL!");
-        }
+//        if (StringUtils.isEmpty(builder.getAlipayPublicKey())) {
+//            throw new NullPointerException("alipayPublicKey should not be NULL!");
+//        }
 
         client = new DefaultAlipayClient(builder.getGatewayUrl(), builder.getAppid(), builder.getPrivateKey(),
-                builder.getFormat(), builder.getCharset(), builder.getAlipayPublicKey());
+                builder.getFormat(), builder.getCharset(), builder.getAlipayPublicKey(),builder.getSignType());
     }
 
 

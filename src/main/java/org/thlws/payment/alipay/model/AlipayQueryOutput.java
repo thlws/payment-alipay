@@ -15,6 +15,10 @@ public class AlipayQueryOutput {
     private boolean isSuccess;
     private String desc;
 
+    private String              subCode;
+    private String              subMsg;
+
+
     /**
      * 支付宝店铺编号
      */
@@ -289,6 +293,22 @@ public class AlipayQueryOutput {
 
     public void setVoucherDetailList(List<VoucherDetail> voucherDetailList) {
         this.voucherDetailList = voucherDetailList;
+    }
+
+    public String getSubCode() {
+        return subCode;
+    }
+
+    public void setSubCode(String subCode) {
+        this.subCode = subCode;
+    }
+
+    public String getSubMsg() {
+        return subMsg;
+    }
+
+    public void setSubMsg(String subMsg) {
+        this.subMsg = subMsg;
     }
 
     @Override

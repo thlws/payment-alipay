@@ -14,6 +14,10 @@ public class AlipayRefundOutput {
     private boolean isSuccess;
     private String desc;
 
+    private String              subCode;
+    private String              subMsg;
+
+
     /**
      * 用户的登录id
      */
@@ -171,6 +175,22 @@ public class AlipayRefundOutput {
 
     public void setTradeNo(String tradeNo) {
         this.tradeNo = tradeNo;
+    }
+
+    public String getSubCode() {
+        return subCode;
+    }
+
+    public void setSubCode(String subCode) {
+        this.subCode = subCode;
+    }
+
+    public String getSubMsg() {
+        return subMsg;
+    }
+
+    public void setSubMsg(String subMsg) {
+        this.subMsg = subMsg;
     }
 
     @Override

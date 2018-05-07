@@ -1,6 +1,7 @@
 package org.thlws.payment.alipay.core;
 
 import com.alipay.api.AlipayClient;
+import com.alipay.api.AlipayConstants;
 import com.alipay.api.DefaultAlipayClient;
 import com.alipay.api.request.AlipayTradeWapPayRequest;
 import com.alipay.trade.model.ExtendParams;
@@ -52,8 +53,7 @@ public class AlipayCore {
      * @param builder the builder
      */
     public AlipayCore(ClientBuilder builder) {
-        if (StringUtils.isEmpty(builder.getAlipay_public_key()))
-            throw new NullPointerException("alipay_public_key should not be NULL!");
+
         if (StringUtils.isEmpty(builder.getApp_id()))
             throw new NullPointerException("appid should not be NULL!");
         if (StringUtils.isEmpty(builder.getPrivate_key()))
@@ -66,6 +66,7 @@ public class AlipayCore {
         alipayTradebuilder.setFormat("json");
         alipayTradebuilder.setGatewayUrl("https://openapi.alipay.com/gateway.do");
         alipayTradebuilder.setPrivateKey(builder.getPrivate_key());
+        alipayTradebuilder.setSignType(builder.getSign_type());
         tradeService = alipayTradebuilder.build();
     }
 
@@ -76,18 +77,32 @@ public class AlipayCore {
         private String private_key;//商户私钥
         private String alipay_public_key;//支付宝公钥
         private String app_id;//支付宝应用ID
+        private String sign_type;
 
         /***
          * 参数构件第二步,构件supper class instance.
+         * Modified by Hanley
          * @return alipay core
          */
         public AlipayCore build() {
-            if (StringUtils.isEmpty(alipay_public_key))
-                throw new NullPointerException("please set alipay_public_key first!");
+
+//            if (StringUtils.isEmpty(alipay_public_key))
+//                throw new NullPointerException("please set alipay_public_key first!");
+
             if (StringUtils.isEmpty(app_id))
                 throw new NullPointerException("please set appid first!");
             if (StringUtils.isEmpty(private_key))
-                throw new NullPointerException("please set private first!");
+                throw new NullPointerException("please set private_key first!");
+            if (StringUtils.isEmpty(sign_type)){
+                throw new NullPointerException("please set sign_type first!");
+            }else{
+                if(sign_type.equalsIgnoreCase(AlipayConstants.SIGN_TYPE_RSA2) && StringUtils.isEmpty(alipay_public_key)){
+                    throw new NullPointerException("please set alipay_public_key first,when the sign_type is RSA2!");
+                }
+            }
+
+
+
             return new AlipayCore(this);
         }
 
@@ -149,6 +164,25 @@ public class AlipayCore {
          */
         public String getApp_id() {
             return app_id;
+        }
+
+        /**
+         * Gets sign type.
+         *
+         * @return the sign type
+         */
+        public String getSign_type() {
+            return sign_type;
+        }
+
+        /**
+         * Sets sign type.
+         *
+         * @param sign_type the sign type
+         */
+        public ClientBuilder setSign_type(String sign_type) {
+            this.sign_type = sign_type;
+            return this;
         }
     }
 
@@ -234,12 +268,18 @@ public class AlipayCore {
                     break;
                 case FAILED:
                     output.setDesc("支付宝预下单失败!");
+                    output.setSubCode(result.getResponse().getSubCode());
+                    output.setSubMsg(result.getResponse().getSubMsg());
                     break;
                 case UNKNOWN:
                     output.setDesc("系统异常，预下单状态未知!");
+                    output.setSubCode(result.getResponse().getSubCode());
+                    output.setSubMsg(result.getResponse().getSubMsg());
                     break;
                 default:
                     output.setDesc("不支持的交易状态，交易返回异常!");
+                    output.setSubCode(result.getResponse().getSubCode());
+                    output.setSubMsg(result.getResponse().getSubMsg());
                     break;
             }
         } catch (Exception e) {
@@ -282,7 +322,9 @@ public class AlipayCore {
                     .setGoodsDetailList(input.getGoodsDetailList());
 
             AlipayF2FPayResult result = tradeService.tradePay(builder);
+
             output.setSuccess(result.isTradeSuccess());
+
             switch (result.getTradeStatus()) {
                 case SUCCESS:
                     BeanUtilsBean copyBean = BeanUtilsBean.getInstance();
@@ -291,15 +333,21 @@ public class AlipayCore {
                     break;
                 case FAILED:
                     output.setDesc("支付宝支付失败");
+                    output.setSubCode(result.getResponse().getSubCode());
+                    output.setSubMsg(result.getResponse().getSubMsg());
                     break;
-
                 case UNKNOWN:
                     output.setDesc("系统异常，订单状态未知!");
+                    output.setSubCode(result.getResponse().getSubCode());
+                    output.setSubMsg(result.getResponse().getSubMsg());
                     break;
                 default:
                     output.setDesc("不支持的交易状态，交易返回异常!");
+                    output.setSubCode(result.getResponse().getSubCode());
+                    output.setSubMsg(result.getResponse().getSubMsg());
                     break;
             }
+
         } catch (Exception e) {
             System.err.println("当面付.条码支付 失败:" + e.getMessage());
             throw new Exception("当面付.条码支付 失败:" + e.getMessage());
@@ -342,13 +390,18 @@ public class AlipayCore {
                     break;
                 case FAILED:
                     output.setDesc("查询返回该订单支付失败或被关闭!");
+                    output.setSubCode(result.getResponse().getSubCode());
+                    output.setSubMsg(result.getResponse().getSubMsg());
                     break;
                 case UNKNOWN:
                     output.setDesc("系统异常，订单支付状态未知!");
+                    output.setSubCode(result.getResponse().getSubCode());
+                    output.setSubMsg(result.getResponse().getSubMsg());
                     break;
-
                 default:
                     output.setDesc("不支持的交易状态，交易返回异常!");
+                    output.setSubCode(result.getResponse().getSubCode());
+                    output.setSubMsg(result.getResponse().getSubMsg());
                     break;
             }
         } catch (Exception e) {
@@ -413,12 +466,18 @@ public class AlipayCore {
                     break;
                 case FAILED:
                     output.setDesc("支付宝退款失败");
+                    output.setSubCode(result.getResponse().getSubCode());
+                    output.setSubMsg(result.getResponse().getSubMsg());
                     break;
                 case UNKNOWN:
                     output.setDesc("系统异常，订单退款状态未知!");
+                    output.setSubCode(result.getResponse().getSubCode());
+                    output.setSubMsg(result.getResponse().getSubMsg());
                     break;
                 default:
                     output.setDesc("不支持的交易状态，交易返回异常!");
+                    output.setSubCode(result.getResponse().getSubCode());
+                    output.setSubMsg(result.getResponse().getSubMsg());
                     break;
             }
         } catch (Exception e) {
@@ -455,12 +514,18 @@ public class AlipayCore {
                     break;
                 case FAILED:
                     output.setDesc("支付宝撤销失败");
+                    output.setSubCode(result.getResponse().getSubCode());
+                    output.setSubMsg(result.getResponse().getSubMsg());
                     break;
                 case UNKNOWN:
                     output.setDesc("系统异常，订单撤销状态未知!");
+                    output.setSubCode(result.getResponse().getSubCode());
+                    output.setSubMsg(result.getResponse().getSubMsg());
                     break;
                 default:
                     output.setDesc("不支持的交易状态，交易返回异常!");
+                    output.setSubCode(result.getResponse().getSubCode());
+                    output.setSubMsg(result.getResponse().getSubMsg());
                     break;
             }
         } catch (Exception e) {

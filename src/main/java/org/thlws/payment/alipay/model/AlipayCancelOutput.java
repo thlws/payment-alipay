@@ -10,6 +10,10 @@ public class AlipayCancelOutput {
     private boolean isSuccess;
     private String desc;
 
+    private String              subCode;
+    private String              subMsg;
+
+
     /**
      * 本次撤销触发的交易动作
      *close：关闭交易，无退款
@@ -78,6 +82,22 @@ public class AlipayCancelOutput {
 
     public void setDesc(String desc) {
         this.desc = desc;
+    }
+
+    public String getSubCode() {
+        return subCode;
+    }
+
+    public void setSubCode(String subCode) {
+        this.subCode = subCode;
+    }
+
+    public String getSubMsg() {
+        return subMsg;
+    }
+
+    public void setSubMsg(String subMsg) {
+        this.subMsg = subMsg;
     }
 
     @Override
