@@ -41,6 +41,73 @@ compile 'org.thlws:payment-alipay:1.0.2'
 2. 导入到 Eclipse 或 Intellij IDEA
 3. 运行 Junit Class AlipayTest (支付相关接口)
 
+### 如何使用
+1.初始化 AlipayCore
+```
+  AlipayCore.ClientBuilder clientBuilder = new AlipayCore.ClientBuilder();
+  //sign_type=rsa时，可不传 支付宝公钥 alipay_public_key
+  //alipayCore = clientBuilder.setApp_id(appid).setPrivate_key(private_key).setSign_type(AlipayConstants.SIGN_TYPE_RSA).build();
+
+  //sign_type=rsa2时，必须传 支付宝公钥 alipay_public_key
+  AlipayCore alipayCore = clientBuilder.setAlipay_public_key(alipay_public_key_0).setApp_id(appid_0).setPrivate_key(private_key_0).setSign_type(AlipayConstants.SIGN_TYPE_RSA2).build();
+    
+```
+
+2.调用接口
+```
+//支付接口
+public void test_pay(){
+    try {
+        AlipayTradeInput input = new AlipayTradeInput();
+        input.setSellerId(partner_id_0);
+        input.setTotalAmount("0.01");
+        input.setStoreId("00001025104487");
+        input.setOperatorId("hanley001");
+        input.setBody("测试支付");
+        input.setDiscountableAmount("0");
+        input.setUndiscountableAmount("0");
+        input.setOutTradeNo(System.currentTimeMillis()+"");
+        input.setSubject("测试买单");
+        List<GoodsDetail> list = new ArrayList<GoodsDetail>();
+        list.add(GoodsDetail.newInstance("g01","name1",10,1));
+        list.add(GoodsDetail.newInstance("g02","name2",12,3));
+        input.setGoodsDetailList(list);
+        input.setAuthCode("286000230527782820");
+        AlipayTradeOutput output = alipayCore.pay(input);
+        assertTrue(output.isSuccess());
+        //output就是支付结果,具体请参考相关属性说明
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
+```
+
+```
+//退款接口
+public void  test_refund(){
+    try {
+        AlipayRefundInput input = new AlipayRefundInput();
+        //input.setOutTradeNo("1508487673867");
+        input.setTradeNo("2018050721001004510538867002");
+        input.setRefundAmount("0.01");
+        input.setRefundReason("测试退款");
+        input.setStoreId("00001025104487");
+        input.setTerminalId("10007");
+        AlipayRefundOutput output = alipayCore.refund(input);
+        System.out.println("output="+JsonUtil.format(output));
+        assertTrue(output.isSuccess());
+        //output 就是退款结果
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
+```
+
+```
+
+```
+
+
 ### 项目依赖
 - [https://github.com/zxing/zxing](https://github.com/zxing/zxing)
 - [https://github.com/google/gson](https://github.com/google/gson)

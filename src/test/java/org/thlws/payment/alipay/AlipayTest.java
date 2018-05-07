@@ -74,15 +74,12 @@ public class AlipayTest {
      */
     @Before
     public  void init(){
-        System.out.printf("init.....");
         AlipayCore.ClientBuilder clientBuilder = new AlipayCore.ClientBuilder();
-
         //sign_type=rsa时，可不传 支付宝公钥 alipay_public_key
-//        alipayCore = clientBuilder.setApp_id(appid).setPrivate_key(private_key).setSign_type(AlipayConstants.SIGN_TYPE_RSA).build();
-
+        //alipayCore = clientBuilder.setApp_id(appid).setPrivate_key(private_key).setSign_type(AlipayConstants.SIGN_TYPE_RSA).build();
 
         //sign_type=rsa2时，必须传 支付宝公钥 alipay_public_key
-        alipayCore = clientBuilder.setAlipay_public_key(alipay_public_key_0).setApp_id(appid_0).setPrivate_key(private_key_0).setSign_type(AlipayConstants.SIGN_TYPE_RSA2).build();
+        AlipayCore alipayCore = clientBuilder.setAlipay_public_key(alipay_public_key_0).setApp_id(appid_0).setPrivate_key(private_key_0).setSign_type(AlipayConstants.SIGN_TYPE_RSA2).build();
     }
 
 
