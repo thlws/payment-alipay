@@ -90,29 +90,27 @@ compile 'org.thlws:payment-alipay:1.0.2'
 ```
 
 ```
-//退款接口
-public void  test_refund(){
-    try {
-        AlipayRefundInput input = new AlipayRefundInput();
-        //input.setOutTradeNo("1508487673867");
-        input.setTradeNo("2018050721001004510538867002");
-        input.setRefundAmount("0.01");
-        input.setRefundReason("测试退款");
-        input.setStoreId("00001025104487");
-        input.setTerminalId("10007");
-        AlipayRefundOutput output = alipayCore.refund(input);
-        System.out.println("output="+JsonUtil.format(output));
-        assertTrue(output.isSuccess());
-        //output 就是退款结果
-    } catch (Exception e) {
-        e.printStackTrace();
-    }
-}
+ //退款接口
+ public void  test_refund(){
+    
+     try {
+         AlipayRefundInput input = new AlipayRefundInput();
+         //input.setOutTradeNo("1508487673867");
+         input.setTradeNo("2018050721001004510538867002");
+         input.setRefundAmount("0.01");
+         input.setRefundReason("测试退款");
+         input.setStoreId("00001025104487");
+         input.setTerminalId("10007");
+         AlipayRefundOutput output = alipayCore.refund(input);
+         System.out.println("output="+JsonUtil.format(output));
+         assertTrue(output.isSuccess());
+         //output 就是退款结果
+     } catch (Exception e) {
+         e.printStackTrace();
+     }
+ }
 ```
 
-```
-
-```
 
 
 ### 项目依赖
