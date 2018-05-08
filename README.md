@@ -130,4 +130,4 @@ _JDK版本 >= 1.6 即可._
 _[https://docs.open.alipay.com/api](https://docs.open.alipay.com/api)_
 
 ## 打赏一下
-![](imgs/award.png)
+![](imgs/alipay.jpeg) ![](imgs/wechat.jpeg)
