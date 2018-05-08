@@ -79,7 +79,7 @@ public class AlipayTest {
         //alipayCore = clientBuilder.setApp_id(appid).setPrivate_key(private_key).setSign_type(AlipayConstants.SIGN_TYPE_RSA).build();
 
         //sign_type=rsa2时，必须传 支付宝公钥 alipay_public_key
-        AlipayCore alipayCore = clientBuilder.setAlipay_public_key(alipay_public_key_0).setApp_id(appid_0).setPrivate_key(private_key_0).setSign_type(AlipayConstants.SIGN_TYPE_RSA2).build();
+        alipayCore = clientBuilder.setAlipay_public_key(alipay_public_key_0).setApp_id(appid_0).setPrivate_key(private_key_0).setSign_type(AlipayConstants.SIGN_TYPE_RSA2).build();
     }
 
 
@@ -115,21 +115,27 @@ public class AlipayTest {
     public void test_pay(){
 
         try {
+
             AlipayTradeInput input = new AlipayTradeInput();
-            input.setSellerId(partner_id_0);
+
+            //必须参数
             input.setTotalAmount("0.01");
             input.setStoreId("00001025104487");
             input.setOperatorId("hanley001");
-            input.setBody("测试支付");
-//            input.setDiscountableAmount("0");
-//            input.setUndiscountableAmount("0");
+            input.setAuthCode("289055913572087398");
             input.setOutTradeNo(System.currentTimeMillis()+"");
             input.setSubject("测试买单");
+
+//            如下为可选参数，全部参数请查看 AlipayTradeInput
+//            input.setBody("测试支付");
+//            input.setDiscountableAmount("0");
+//            input.setUndiscountableAmount("0");
+//            input.setSellerId(partner_id_0);
 //            List<GoodsDetail> list = new ArrayList<GoodsDetail>();
 //            list.add(GoodsDetail.newInstance("g01","name1",10,1));
 //            list.add(GoodsDetail.newInstance("g02","name2",12,3));
 //            input.setGoodsDetailList(list);
-            input.setAuthCode("286000230527782820");
+
             AlipayTradeOutput output = alipayCore.pay(input);
             assertTrue(output.isSuccess());
             //output就是支付结果,具体请参考相关属性说明
@@ -148,7 +154,7 @@ public class AlipayTest {
         try {
             AlipayRefundInput input = new AlipayRefundInput();
 //            input.setOutTradeNo("1508487673867");
-            input.setTradeNo("2018050721001004510538867002");
+            input.setTradeNo("2018050821001004510542662624");
             input.setRefundAmount("0.01");
             input.setRefundReason("测试退款");
             input.setStoreId("00001025104487");

@@ -55,31 +55,38 @@ compile 'org.thlws:payment-alipay:1.0.2'
 
 2.调用接口
 ```
-//支付接口
-public void test_pay(){
-    try {
-        AlipayTradeInput input = new AlipayTradeInput();
-        input.setSellerId(partner_id_0);
-        input.setTotalAmount("0.01");
-        input.setStoreId("00001025104487");
-        input.setOperatorId("hanley001");
-        input.setBody("测试支付");
-        input.setDiscountableAmount("0");
-        input.setUndiscountableAmount("0");
-        input.setOutTradeNo(System.currentTimeMillis()+"");
-        input.setSubject("测试买单");
-        List<GoodsDetail> list = new ArrayList<GoodsDetail>();
-        list.add(GoodsDetail.newInstance("g01","name1",10,1));
-        list.add(GoodsDetail.newInstance("g02","name2",12,3));
-        input.setGoodsDetailList(list);
-        input.setAuthCode("286000230527782820");
-        AlipayTradeOutput output = alipayCore.pay(input);
-        assertTrue(output.isSuccess());
-        //output就是支付结果,具体请参考相关属性说明
-    } catch (Exception e) {
-        e.printStackTrace();
-    }
-}
+//支付接口[当面付]
+ public void test_pay(){
+
+     try {
+         AlipayTradeInput input = new AlipayTradeInput();
+
+         //必须参数
+         input.setTotalAmount("0.01");
+         input.setStoreId("00001025104487");
+         input.setOperatorId("hanley001");
+         input.setAuthCode("289055913572087398");
+         input.setOutTradeNo(System.currentTimeMillis()+"");
+         input.setSubject("测试买单");
+         
+ //         如下为可选参数，全部参数请查看 AlipayTradeInput 
+ //         input.setBody("测试支付");
+ //         input.setDiscountableAmount("0");
+ //         input.setUndiscountableAmount("0");
+ //         input.setSellerId(partner_id_0);
+ //         List<GoodsDetail> list = new ArrayList<GoodsDetail>();
+ //         list.add(GoodsDetail.newInstance("g01","name1",10,1));
+ //         list.add(GoodsDetail.newInstance("g02","name2",12,3));
+ //         input.setGoodsDetailList(list);
+
+         AlipayTradeOutput output = alipayCore.pay(input);
+         assertTrue(output.isSuccess());
+         //output就是支付结果,具体请参考相关属性说明
+     } catch (Exception e) {
+         e.printStackTrace();
+     }
+ }
+
 ```
 
 ```
