@@ -63,7 +63,7 @@ public class AlipayTest {
     public static String key = "rtsqsqp9wk59t9b82y5af7g7yzp75l60";
 
 
-
+    //RSA2 秘钥长度为2048
     public static  String private_key_0 = "MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCvt3gRX0IIkGVaCCUWAj8icw05Npj6bj+04Qn6nKgfwaTCSQ9IfzbhanLLXljq3JUA+6M/8VuzbCoM/COyJ+wFK8t4QnyTp0XuxjyD4Q1otLWEtkvqwTyDOQtQ+L4jp+voJxEqlP+W7GaOw/k620zjWCppVOh+RTiWynjG+cnzmiccMwp2SH4GOAhYoKFz3MqYgcBcx70ZltBCcvrGQIJ8tNwh/B60b5aErEBfYERhAiJbh85srmy6DebjR5MPm42O3/RaswMsG9Dt+Lqi07KWXfjviv28FUqjwQXGpsudBwIUPxMo4pI1KfONaSJcSx0sl9wX1qXdgeBFObZp1rg7AgMBAAECggEAWUtK4MkfrWpzlsT806pgmwkMdz6fjuPny+twPsLNTRYCvBiUg6riILsPivlvBisCLXWzCBOHHi6hT+fx298duaL/yyU+WWpvx19F8V60ibkLZV2eRrXcInMipQtC1KvI3ji8KH9/QxrvIy3DwX0gHYf4RX64hzJ2B2rs5XCaiAe98MpY5QDe2cYxxSGuqmyQmVlJ9+udQoQUF7K90k1PbImnF4XvQbuo2xNqIvOzn71HS5+Fckv5wwAZU8eq21wEO4Uc2XkBM5fNxZxa5qS/QUf7vqGn99uLxQYWBIVUS00OEtctC+gmYAYdwyrr01eYnHiFmI3qcmLSMB29KfJUgQKBgQDm6QIla1DgoXUUd3dunAL+UaS+WG+oMr/96ZDDTNV0m21bdWLk5XPRNhyCS0eYbS9KQ/2Z+llKpT/nxe+Aa9jaoFPFnvv4sGI2pW1i/jA53TYaShiJFhKW4KobJIPVAmGOxeNXF8j8hEgnQUqTa9sLvvZcnswYrMhOKAy0PH+JMwKBgQDCzzMItuQnLnwlS5SpP8//RX71N4aXxothC8dsoMAWWhtiKgIFawh66KIHFaZ88cmQ3/VRw+yfmT+qeApLEWnIFuCccxtg+F2okePzkbN56CSiJY8vJgOogReR0NisEYEJC4kOgbebaJeHuLZ04Qm2I8SIoI4Qelq2MD1TSk7k2QKBgG+HP5gfO1Mj6M7X3QG5rOB1QqMFR/jvejgDpf4OkFLf93PjQL7Z7JSyFBcCkTQYGG1AZa8HcjVRl4o02jcm3/jI021yGrXFS8qlIC5eI6DvLYCJJUyhMp1ZKhAuFNa/batt/R5FyLfelJMRQBnwUD5eH9QghuesHJtTUL+FMPxtAoGBAIFDNxvLL2yIPbwJgKUlQICjvnA73cUL6yQDytnbeFnchFsIgLrToJbdkdWdmhFB5nuI/6C3nmTwLPySFlJlRYmNFJD7F+mqI4tc8qKFxU9YqCYnQfEJClhfACKzL3JNUw+LZfAIRqqKJjHacMbxI56F8TyvPFTWuyY0sBx6LAtRAoGBAITw3IHr+ho7SMyj2RSWbBStkO6VwOtT2cnnFLgER9Er4/Fx0dMVizOwtf0wWlzFNb0NyvDshkIBAiODAZNw8WBlfyjLx2WzVEbv8jIpn1FwvtgOWpxDysn8nXYKnUW4MI5htDW7P1Wht+0PXBMhl56HaqW3z4Q/ttYneS1wrr2u";
     private static String appid_0 = "2018013002112467";
     public static String partner_id_0 = "2088522278337421";
@@ -145,6 +145,56 @@ public class AlipayTest {
     }
 
 
+
+    /***
+     * H5网页支付接口（手机网站支付）
+     */
+    @Test
+    public void test_pay_in_h5(){
+
+        try {
+            AlipayH5Input input = new AlipayH5Input();
+            AlipayH5Input.BizContent bizContent = new AlipayH5Input.BizContent();
+            bizContent.setTotal_amount("0.01");
+            bizContent.setSubject("测试H5(手机网页)支付");
+            //bizContent.setSeller_id(partner_id);
+            bizContent.setProduct_code("p0001");
+            bizContent.setOut_trade_no(System.currentTimeMillis()+"");
+            String html = alipayCore.pay_in_h5(input);
+            assertNotNull(html);
+            //html结果直接显示在页面即可
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    /***
+     * 电脑网页支付接口[待测试]
+     */
+    @Test
+    public void test_pay_in_pc(){
+
+        try {
+            AlipayPcInput input = new AlipayPcInput();
+            input.setNotify_url("异步通知地址,支付宝通知支付结果");
+            input.setReturn_url("同步返回地址,完成支付后自动转向的地址");
+            AlipayPcInput.BizContent bizContent = new AlipayPcInput.BizContent();
+            bizContent.setTotal_amount("0.01");
+            bizContent.setSubject("测试电脑网站支付");
+            bizContent.setBody("测试");
+            bizContent.setProduct_code("p0001");
+            bizContent.setOut_trade_no(System.currentTimeMillis()+"");
+            String html = alipayCore.pay_in_pc(input);
+            assertNotNull(html);
+            //html结果直接显示在页面即可
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
+
     /***
      * 统一收单交易退款接口
      */
@@ -184,27 +234,6 @@ public class AlipayTest {
     }
 
 
-    /***
-     * H5网页支付接口
-     */
-    @Test
-    public void test_pay_in_h5(){
-
-        try {
-            AlipayH5Input input = new AlipayH5Input();
-            AlipayH5Input.BizContent bizContent = new AlipayH5Input.BizContent();
-            bizContent.setTotal_amount("0.01");
-            bizContent.setSubject("测试H5支付");
-            bizContent.setSeller_id(partner_id);
-            bizContent.setProduct_code("p0001");
-            bizContent.setOut_trade_no(System.currentTimeMillis()+"");
-            String html = alipayCore.pay_in_h5(input);
-            assertNotNull(html);
-            //html结果直接显示在页面即可
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
 
 
     /***

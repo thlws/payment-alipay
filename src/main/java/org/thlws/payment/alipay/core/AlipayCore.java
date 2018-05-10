@@ -3,6 +3,7 @@ package org.thlws.payment.alipay.core;
 import com.alipay.api.AlipayClient;
 import com.alipay.api.AlipayConstants;
 import com.alipay.api.DefaultAlipayClient;
+import com.alipay.api.request.AlipayTradePagePayRequest;
 import com.alipay.api.request.AlipayTradeWapPayRequest;
 import com.alipay.trade.model.ExtendParams;
 import com.alipay.trade.model.builder.*;
@@ -216,6 +217,38 @@ public class AlipayCore {
             throw  new Exception("支付宝网页支付数据产生失败:" + e.getMessage());
         } finally {
             System.out.println("pay_in_h5 output=\n" + form);
+        }
+
+        return form;
+    }
+
+    /***
+     * 支付宝电脑网站支付，该操作会跳转到支付宝的支付页面中完成支付动作，以 异步/同步 的形式告知支付结果
+     * @param input 支付参数对象
+     * @return 返回支付宝页面,直接输出在页面中
+     * @throws Exception 程序异常
+     */
+    public String pay_in_pc(AlipayPcInput input) throws Exception{
+
+        System.out.println("pay_in_pc input=\n" + input.toString());
+        String form = "<font style='color: red'>请求支付宝超时,请稍后再试!</font>";
+
+        try {
+            if (null == builder)
+                throw new Exception("Please set AlipayCore.ClientBuider first.");
+            String biz_content = JsonUtil.beanToJsontring(input.getBizContent());
+            AlipayClient alipayClient = new DefaultAlipayClient("https://openapi.alipay.com/gateway.do",
+                    builder.getApp_id(), builder.getPrivate_key(), "json", "utf-8", builder.getAlipay_public_key());
+            AlipayTradePagePayRequest alipayRequest = new AlipayTradePagePayRequest();// 创建API对应的request
+            alipayRequest.setReturnUrl(input.getReturn_url());
+            alipayRequest.setNotifyUrl(input.getNotify_url());// 在公共参数中设置回跳和通知地址
+            alipayRequest.setBizContent(biz_content);// 填充业务参数
+            form = alipayClient.pageExecute(alipayRequest).getBody(); // 调用SDK生成表单
+        } catch (Exception e) {
+            System.err.println("支付宝网站支付数据产生失败:" + e.getMessage());
+            throw  new Exception("支付完整页支付数据产生失败:" + e.getMessage());
+        } finally {
+            System.out.println("pay_in_pc output=\n" + form);
         }
 
         return form;
