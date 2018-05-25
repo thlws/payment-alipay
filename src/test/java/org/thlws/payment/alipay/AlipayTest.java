@@ -78,6 +78,9 @@ public class AlipayTest {
         //sign_type=rsa时，可不传 支付宝公钥 alipay_public_key
         //alipayCore = clientBuilder.setApp_id(appid).setPrivate_key(private_key).setSign_type(AlipayConstants.SIGN_TYPE_RSA).build();
 
+        //alipayCore = clientBuilder.setApp_id(Params.appid_ln).setPrivate_key(Params.private_key_nl).setSign_type(AlipayConstants.SIGN_TYPE_RSA).build();
+
+
         //sign_type=rsa2时，必须传 支付宝公钥 alipay_public_key
         alipayCore = clientBuilder.setAlipay_public_key(alipay_public_key_0).setApp_id(appid_0).setPrivate_key(private_key_0).setSign_type(AlipayConstants.SIGN_TYPE_RSA2).build();
     }
@@ -204,8 +207,8 @@ public class AlipayTest {
         try {
             AlipayRefundInput input = new AlipayRefundInput();
 //            input.setOutTradeNo("1508487673867");
-            input.setTradeNo("2018050821001004510542662624");
-            input.setRefundAmount("0.01");
+            input.setTradeNo("2018052421001004500261233926");
+            input.setRefundAmount("1.00");
             input.setRefundReason("测试退款");
             input.setStoreId("00001025104487");
             input.setTerminalId("10007");

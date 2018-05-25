@@ -298,21 +298,29 @@ public class AlipayCore {
                     output.setDesc("支付宝预下单成功");
                     output.setOutTradeNo(result.getResponse().getOutTradeNo());
                     output.setQrCode(result.getResponse().getQrCode());
+                    output.setCode(result.getResponse().getCode());
+                    output.setMsg(result.getResponse().getMsg());
                     break;
                 case FAILED:
                     output.setDesc("支付宝预下单失败!");
                     output.setSubCode(result.getResponse().getSubCode());
                     output.setSubMsg(result.getResponse().getSubMsg());
+                    output.setCode(result.getResponse().getCode());
+                    output.setMsg(result.getResponse().getMsg());
                     break;
                 case UNKNOWN:
                     output.setDesc("系统异常，预下单状态未知!");
                     output.setSubCode(result.getResponse().getSubCode());
                     output.setSubMsg(result.getResponse().getSubMsg());
+                    output.setCode(result.getResponse().getCode());
+                    output.setMsg(result.getResponse().getMsg());
                     break;
                 default:
                     output.setDesc("不支持的交易状态，交易返回异常!");
                     output.setSubCode(result.getResponse().getSubCode());
                     output.setSubMsg(result.getResponse().getSubMsg());
+                    output.setCode(result.getResponse().getCode());
+                    output.setMsg(result.getResponse().getMsg());
                     break;
             }
         } catch (Exception e) {
@@ -363,21 +371,29 @@ public class AlipayCore {
                     BeanUtilsBean copyBean = BeanUtilsBean.getInstance();
                     copyBean.copyProperties(output, result.getResponse());
                     output.setDesc("支付宝支付成功");
+                    output.setCode(result.getResponse().getCode());
+                    output.setMsg(result.getResponse().getMsg());
                     break;
                 case FAILED:
                     output.setDesc("支付宝支付失败");
                     output.setSubCode(result.getResponse().getSubCode());
                     output.setSubMsg(result.getResponse().getSubMsg());
+                    output.setCode(result.getResponse().getCode());
+                    output.setMsg(result.getResponse().getMsg());
                     break;
                 case UNKNOWN:
                     output.setDesc("系统异常，订单状态未知!");
                     output.setSubCode(result.getResponse().getSubCode());
                     output.setSubMsg(result.getResponse().getSubMsg());
+                    output.setCode(result.getResponse().getCode());
+                    output.setMsg(result.getResponse().getMsg());
                     break;
                 default:
                     output.setDesc("不支持的交易状态，交易返回异常!");
                     output.setSubCode(result.getResponse().getSubCode());
                     output.setSubMsg(result.getResponse().getSubMsg());
+                    output.setCode(result.getResponse().getCode());
+                    output.setMsg(result.getResponse().getMsg());
                     break;
             }
 
@@ -420,21 +436,29 @@ public class AlipayCore {
             switch (result.getTradeStatus()) {
                 case SUCCESS:
                     output.setDesc("查询返回该订单支付成功");
+                    output.setCode(result.getResponse().getCode());
+                    output.setMsg(result.getResponse().getMsg());
                     break;
                 case FAILED:
                     output.setDesc("查询返回该订单支付失败或被关闭!");
                     output.setSubCode(result.getResponse().getSubCode());
                     output.setSubMsg(result.getResponse().getSubMsg());
+                    output.setCode(result.getResponse().getCode());
+                    output.setMsg(result.getResponse().getMsg());
                     break;
                 case UNKNOWN:
                     output.setDesc("系统异常，订单支付状态未知!");
                     output.setSubCode(result.getResponse().getSubCode());
                     output.setSubMsg(result.getResponse().getSubMsg());
+                    output.setCode(result.getResponse().getCode());
+                    output.setMsg(result.getResponse().getMsg());
                     break;
                 default:
                     output.setDesc("不支持的交易状态，交易返回异常!");
                     output.setSubCode(result.getResponse().getSubCode());
                     output.setSubMsg(result.getResponse().getSubMsg());
+                    output.setCode(result.getResponse().getCode());
+                    output.setMsg(result.getResponse().getMsg());
                     break;
             }
         } catch (Exception e) {
@@ -496,21 +520,29 @@ public class AlipayCore {
                     BeanUtilsBean copyBean = BeanUtilsBean.getInstance();
                     copyBean.copyProperties(output, result.getResponse());
                     output.setDesc("支付宝退款成功");
+                    output.setCode(result.getResponse().getCode());
+                    output.setMsg(result.getResponse().getMsg());
                     break;
                 case FAILED:
                     output.setDesc("支付宝退款失败");
                     output.setSubCode(result.getResponse().getSubCode());
                     output.setSubMsg(result.getResponse().getSubMsg());
+                    output.setCode(result.getResponse().getCode());
+                    output.setMsg(result.getResponse().getMsg());
                     break;
                 case UNKNOWN:
                     output.setDesc("系统异常，订单退款状态未知!");
                     output.setSubCode(result.getResponse().getSubCode());
                     output.setSubMsg(result.getResponse().getSubMsg());
+                    output.setCode(result.getResponse().getCode());
+                    output.setMsg(result.getResponse().getMsg());
                     break;
                 default:
                     output.setDesc("不支持的交易状态，交易返回异常!");
                     output.setSubCode(result.getResponse().getSubCode());
                     output.setSubMsg(result.getResponse().getSubMsg());
+                    output.setCode(result.getResponse().getCode());
+                    output.setMsg(result.getResponse().getMsg());
                     break;
             }
         } catch (Exception e) {
@@ -544,21 +576,29 @@ public class AlipayCore {
                     BeanUtilsBean copyBean = BeanUtilsBean.getInstance();
                     copyBean.copyProperties(output, result.getResponse());
                     output.setDesc("支付宝撤销成功");
+                    output.setCode(result.getResponse().getCode());
+                    output.setMsg(result.getResponse().getMsg());
                     break;
                 case FAILED:
                     output.setDesc("支付宝撤销失败");
                     output.setSubCode(result.getResponse().getSubCode());
                     output.setSubMsg(result.getResponse().getSubMsg());
+                    output.setCode(result.getResponse().getCode());
+                    output.setMsg(result.getResponse().getMsg());
                     break;
                 case UNKNOWN:
                     output.setDesc("系统异常，订单撤销状态未知!");
                     output.setSubCode(result.getResponse().getSubCode());
                     output.setSubMsg(result.getResponse().getSubMsg());
+                    output.setCode(result.getResponse().getCode());
+                    output.setMsg(result.getResponse().getMsg());
                     break;
                 default:
                     output.setDesc("不支持的交易状态，交易返回异常!");
                     output.setSubCode(result.getResponse().getSubCode());
                     output.setSubMsg(result.getResponse().getSubMsg());
+                    output.setCode(result.getResponse().getCode());
+                    output.setMsg(result.getResponse().getMsg());
                     break;
             }
         } catch (Exception e) {

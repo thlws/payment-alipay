@@ -15,8 +15,26 @@ public class AlipayTradeOutput {
     private boolean isSuccess;
     private String desc;
 
+    private String              code;
+    private String              msg;
     private String              subCode;
     private String              subMsg;
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public String getMsg() {
+        return msg;
+    }
+
+    public void setMsg(String msg) {
+        this.msg = msg;
+    }
 
     /**
      * 买家支付宝账号
