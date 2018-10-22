@@ -12,6 +12,15 @@ public class AlipayRefundInput {
     private String refundAmount;// (必填)
     private String storeId;// (选填) 商户门店编号，通过门店号和商家后台可以配置精准到门店的折扣信息，详询支付宝技术支持
     private String refundReason;//(选填)
+    private String outRequestNo;//可选,部分退款时 必须
+
+    public String getOutRequestNo() {
+        return outRequestNo;
+    }
+
+    public void setOutRequestNo(String outRequestNo) {
+        this.outRequestNo = outRequestNo;
+    }
 
     public String getTerminalId() {
         return terminalId;

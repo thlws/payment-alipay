@@ -69,6 +69,14 @@ public class AlipayTest {
     public static String partner_id_0 = "2088522278337421";
     public  static String alipay_public_key_0 = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlgm+W+vV8PiFPsLR0UAcdsi15CBZXYWfHlTh9dU3XHd4f+keE6fGGzKbkW3ULHKAUBecwWHYFsnK6rzAt/kpsDsafZQzSMVGhMhLK3u49oOVV6hRl14Xc2QNTqxDRgiEt2QeBaAi7emEthkm4FhcASvvf1T7CtaGT4PCvrIxw1ipf4W9FpnKgdA6ydQ6GSuix/McFIu4S/7t7nD17mNlOJz7IwZNGqNt5FUQ4HlKsa8KPA08cEsLxsHrVkc0r4Fn/OnH1POYEmUyWXcC+sPtNFtiiOPR1KFjMZ91Rlg1ImQNSiOkRCH23p9OKNDf99Ue2MvIQRNX1XcQWKJv4eRQzQIDAQAB";
 
+
+
+    //RSA2 秘钥长度为2048
+    public static  String private_key_ci = "MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCuVBRIRrH3lUsLjp93koaH1Ngg1WvGFXFOD8ac0aqQzuBWU+jZViZ0v8DFfBVjW6pJQ/e84i0Lh2JpFuWVLVh9YgjIv0mNQ83iC1n3Ab28gg8p1783/5QSEmNjg6+vCySJAxctqjbE0tqWhsAtM7O+38Oro91B3Gicn3GzFJQ9VydrwMda+hd5U5FYP2sNSf6cNHS6A5PasKhMaQOCGiQhW40kD7u5TklyzAiXT7t18aq8J6VlGlPe31tX8iFLiSCV87v7COH7krXHKhpNoM/SWf8Z+rlbUe2pbkuX38JsPt3l80fooTf7sYhj0I4LnjIg/Aoh8QE1sMuASSbGCS+VAgMBAAECggEABQDiyCRHTVzal41TZGIvPEzOmzqk6j2JT/1B7RRTee6GH9QutbY0SluKk+B42K4z2AB8Zs5zDoanO27tzfdMN+UNbX2YBdbxXNCIl39US8nL156anWfXfyFJ+vw3maWPOeN90dC127ZVkcZyU5nNSegwPIfqfM5vrjchU0t+6be/gZAyIocA6PaRxPWSf567ANs7jguedeMPdVVdvee6rY1ROhKwdyLP2kls4pKzXv3FSQcbs/alyfqhZWvcWdNebjvFTJszsipjPFGOnIQmxzxOZbPEF++nyiM2OeOoO36bDVBFsXtfttm8qsxs+tWQwGRsJEW0h2a3qBMI4+hpYQKBgQDh0YbN76tcW255XMiGsHIazfct4Ji6JYCkqBPTiVa9NingCL+aCC/4sqKoKN8FNlvWaTR4YmpT4tAYpeyW40vcLqYZT+0gbucWkbBTWB0o2qmkEeIczr4IZON0QW1rV9clpXWpl4HR1qxvFq3zxXDRcnAUqSK9o8ajUlwbJoH1bQKBgQDFoMy6lGPnFLYKTPDF/JdLbqqkuAy87BmlrkqylrVw0MquJHFm/UujNmSOS+2FbmI17wAkSl0Dku9c0bKNTtPBquqeq5Wol/SEB4C6Sr5oCaRtz92Sp48rYuRYEoy6AI6Rv0osKg2t+UVnE42bDiq2SwkYoG5Xj9b1lFBD+bhRyQKBgDZZNEWKIkb3Jm6FGyn3e27iFVRwUrGyZvS6ExN9YWfmikuGL38F623CqI0qUQqzG4VOCrfSj96inwzfmkJycAaNH6LF7r84kduHstVMRrBXeC6psy7VvzzL80Y+nPQRzxEbcmcftLnpHdUas0ERSubN0RXX4ymbKiqSnuJV8T89AoGAP0x8pnom8XnJwMzaBaAc2XVNxMqKkexRXqbPmBn7bXICqPpVNDaHBnTCim05W5Z6cGnnsrf6yM1ES4eC2A3ad1qGIWI14jUhhTRd/8025V3JQ77jajiu+6eGGct/NYg+IeKSIEkr7oA7wYMaxQIpng+0jyW7keIpaKkjeFJAvjkCgYBnu5KAZWBHuv/nr+P43zFTYylMZhoKN3IqT4PO5f06xiWxTX3zn9k5Fg/M7WdzgHak7H/MgSoQoftVfFgD5YWklUNh4AXjprdf4oSMIzM88QHTFplHh2hFLnplJrP6qGCsW2MUWQR0CF/uNdOaDp/AYOUCAqnI/WWzd3ceFxj0FQ==";
+    private static String appid_ci = "2018082461122382";
+    public  static String alipay_public_key_ci = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlpmpIhPr7pqm+v9wHQTd3xD7Wo1Ko7VTkMBgkw/V9jKd8h9vpUSKnx8la4SlJBY2Rcn72YXwMB3fjvh9MhrxY0yGsGJzwcpFjYa9z/ivwxke8uuyT9jVtDGWIMeVPPChaRF5pEyb6kJ6jDsdrp34GnNYthrblWqUKuw7QvRfvpARwl/Gp3pczwcPRWnkHrcnoZzU6YndLSVAqT+gmFia0DJ2H4S27r8igegbfbOpTJc+n+YuN734LLvcaoKINR9CbRPSkF5JOMmuwWThBdKBU5VwT/mrLwbIxdZkLcZ/w/17NZMHy963efhwIqTOEAup6WTD27sJi+MLjIkD9B4/6QIDAQAB";
+
+
     /**
      * 初始化函数.
      */
@@ -82,7 +90,7 @@ public class AlipayTest {
 
 
         //sign_type=rsa2时，必须传 支付宝公钥 alipay_public_key
-        alipayCore = clientBuilder.setAlipay_public_key(alipay_public_key_0).setApp_id(appid_0).setPrivate_key(private_key_0).setSign_type(AlipayConstants.SIGN_TYPE_RSA2).build();
+        alipayCore = clientBuilder.setAlipay_public_key(alipay_public_key_ci).setApp_id(appid_ci).setPrivate_key(private_key_ci).setSign_type(AlipayConstants.SIGN_TYPE_RSA2).build();
     }
 
 
@@ -101,7 +109,7 @@ public class AlipayTest {
             input.setOperatorId("990001");
             input.setStoreId("0001025104489");
             input.setTotalAmount("0.01");
-            input.setSellerId(partner_id);
+//            input.setSellerId(partner_id);
             AlipayQrcodeOutput output = alipayCore.precreate(input);
             System.out.println("output="+JsonUtil.format(output));
             assertTrue(output.isSuccess());
@@ -122,12 +130,12 @@ public class AlipayTest {
             AlipayTradeInput input = new AlipayTradeInput();
 
             //必须参数
-            input.setTotalAmount("0.01");
+            input.setTotalAmount("0.1");
             input.setStoreId("00001025104487");
             input.setOperatorId("hanley001");
-            input.setAuthCode("289055913572087398");
+            input.setAuthCode("288128652645994662");
             input.setOutTradeNo(System.currentTimeMillis()+"");
-            input.setSubject("测试买单");
+            input.setSubject("CI测试买单");
 
 //            如下为可选参数，全部参数请查看 AlipayTradeInput
 //            input.setBody("测试支付");
@@ -202,16 +210,17 @@ public class AlipayTest {
      * 统一收单交易退款接口
      */
     @Test
-    public void  test_refund(){
+    public void  builder(){
 
         try {
             AlipayRefundInput input = new AlipayRefundInput();
 //            input.setOutTradeNo("1508487673867");
-            input.setTradeNo("2018052421001004500261233926");
-            input.setRefundAmount("1.00");
-            input.setRefundReason("测试退款");
+            input.setTradeNo("2018062821001004510561182960");
+            input.setRefundAmount("0.05");
+            input.setRefundReason("测试部分退款");
             input.setStoreId("00001025104487");
             input.setTerminalId("10007");
+            input.setOutRequestNo(System.currentTimeMillis()+"");
             AlipayRefundOutput output = alipayCore.refund(input);
             System.out.println("output="+JsonUtil.format(output));
             assertTrue(output.isSuccess());

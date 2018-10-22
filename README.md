@@ -123,6 +123,7 @@ compile 'org.thlws:payment-alipay:1.0.2'
 - v1.0.0 支付宝支付依赖库发布;
 - v1.0.1 日常bug修复;
 - v1.0.2 新增RSA2签名方式（RSA2时，支付宝公钥为必须参数）;
+- v1.0.3 返回参数新增code & msg;
 
 ### FAQ
 - 能不能直接 dependency 添加依赖?<br>

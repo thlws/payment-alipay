@@ -505,6 +505,9 @@ public class AlipayCore {
                 builder.setRefundReason(input.getRefundReason());
             if (StringUtils.isNotBlank(input.getStoreId()))
                 builder.setStoreId(input.getStoreId());
+            if (StringUtils.isNotBlank(input.getOutRequestNo()))
+                builder.setOutRequestNo(input.getOutRequestNo());
+
 
             //trade_no , out_trade_no 不能同时存在,否则支付宝会报错ACQ.TRADE_STATUS_ERROR.交易状态不合法
             if (StringUtils.isNotBlank(builder.getOutTradeNo()) && StringUtils.isNotBlank(builder.getTradeNo())){
