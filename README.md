@@ -1,6 +1,9 @@
-## 项目介绍
-- payment是一系列基于Java实现的支付类库，包含支付宝、微信、翼支付等，其目的是以最简单的方式完成各种支付方式接入。
-- 目前支付类库各自独立，使用时需单独引用，详见“支付类库”各自主页说明，后续不排除对所有支付类库整体打包，请留意文档更新。
+支付宝支付
+============
+[![](https://img.shields.io/badge/release-v1.0.4-blue.svg)](https://github.com/thlws/payment-alipay)   [![](https://img.shields.io/badge/license-Apache--2-yellowgreen.svg)](https://www.apache.org/licenses/LICENSE-2.0.html) [![](https://img.shields.io/badge/maven%20central-v1.0.4-brightgreen.svg)](https://search.maven.org/artifact/org.thlws/payment-alipay/1.0.4/jar)
+
+payment是一系列基于Java实现的支付类库，包含支付宝、微信、翼支付等，其目的是以最简单的方式完成各种支付方式接入。
+目前支付类库各自独立，使用时需单独引用，详见“支付类库”各自主页说明，后续不排除对所有支付类库整体打包，请留意文档更新。
 
 ### 支付类库
 - [https://gitee.com/thlws/payment-alipay](https://gitee.com/thlws/payment-alipay)
@@ -9,7 +12,9 @@
 
 ### 在线交流
 - 邮箱：hanley@thlws.com   
-- QQ群：693169203  <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=521df1fba7ef96db15c898e48feb26b6a82f6c2a60612154181b301febb30494"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="thlws" title="thlws"></a>
+- QQ群：693169203 <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=521df1fba7ef96db15c898e48feb26b6a82f6c2a60612154181b301febb30494">![](https://img.shields.io/badge/QQ-Tencent-red.svg) </a>
+ 
+- 
 
 ## 支付宝支付
 
@@ -57,7 +62,6 @@ compile 'org.thlws:payment-alipay:1.0.4'
 ```
 //支付接口[当面付]
  public void test_pay(){
-
      try {
          AlipayTradeInput input = new AlipayTradeInput();
 
@@ -69,16 +73,6 @@ compile 'org.thlws:payment-alipay:1.0.4'
          input.setOutTradeNo(System.currentTimeMillis()+"");
          input.setSubject("测试买单");
          
- //         如下为可选参数，全部参数请查看 AlipayTradeInput 
- //         input.setBody("测试支付");
- //         input.setDiscountableAmount("0");
- //         input.setUndiscountableAmount("0");
- //         input.setSellerId(partner_id_0);
- //         List<GoodsDetail> list = new ArrayList<GoodsDetail>();
- //         list.add(GoodsDetail.newInstance("g01","name1",10,1));
- //         list.add(GoodsDetail.newInstance("g02","name2",12,3));
- //         input.setGoodsDetailList(list);
-
          AlipayTradeOutput output = alipayCore.pay(input);
          assertTrue(output.isSuccess());
          //output就是支付结果,具体请参考相关属性说明
@@ -127,11 +121,11 @@ compile 'org.thlws:payment-alipay:1.0.4'
 - v1.0.4 升级支付宝依赖至201809版本
 
 ### FAQ
-- 能不能直接 dependency 添加依赖?<br>
+- 能直接 dependency 添加依赖?<br>
 _已发布至公有仓库，添加方式如上._
 
 - 是否有JDK版本要求?<br>
 _JDK版本 >= 1.6 即可._
 
-- 有没有支付相关文档？<br>
+- 支付相关文档？<br>
 _[https://docs.open.alipay.com/api](https://docs.open.alipay.com/api)_
