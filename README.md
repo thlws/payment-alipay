@@ -16,8 +16,10 @@
 - v1.0.3 返回参数新增code & msg;
 - v1.0.4 升级支付宝依赖至201809版本
 
-### 官方文档
-- [https://docs.open.alipay.com/api](https://docs.open.alipay.com/api)
+### 在线文档
+- [API 文档](https://apidoc.gitee.com/thlws/payment-alipay)
+- [支付宝开发平台](https://docs.open.alipay.com/api)
+
 
 ### 在线交流
 - 邮箱：hanley@thlws.com 
