@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量查询支付宝小区编号
  *
  * @author auto create
- * @since 1.0, 2017-01-14 11:36:39
+ * @since 1.0, 2018-06-09 20:14:53
  */
 public class AlipayEcoCplifeCommunityBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7512491967787472521L;
+	private static final long serialVersionUID = 1539173743225367747L;
 
 	/**
 	 * 分页查询的当前页码数，分页从1开始计数。
@@ -39,24 +39,57 @@ OFFLINE - 下线
 	@ApiField("status")
 	private String status;
 
-	public Long getPageNum() {
+    /**
+     * Gets page num.
+     *
+     * @return the page num
+     */
+    public Long getPageNum() {
 		return this.pageNum;
 	}
-	public void setPageNum(Long pageNum) {
+
+    /**
+     * Sets page num.
+     *
+     * @param pageNum the page num
+     */
+    public void setPageNum(Long pageNum) {
 		this.pageNum = pageNum;
 	}
 
-	public Long getPageSize() {
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public Long getPageSize() {
 		return this.pageSize;
 	}
-	public void setPageSize(Long pageSize) {
+
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 

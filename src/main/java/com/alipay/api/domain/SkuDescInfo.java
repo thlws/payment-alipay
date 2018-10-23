@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SkuDescInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3893642926558545962L;
+	private static final long serialVersionUID = 3166559872762567479L;
 
 	/**
 	 * 城市行政代码，用于不同城市定价时使用，默认价格使用-1
@@ -31,24 +31,57 @@ public class SkuDescInfo extends AlipayObject {
 	@ApiField("out_sku_id")
 	private String outSkuId;
 
-	public String getCity() {
+    /**
+     * Gets city.
+     *
+     * @return the city
+     */
+    public String getCity() {
 		return this.city;
 	}
-	public void setCity(String city) {
+
+    /**
+     * Sets city.
+     *
+     * @param city the city
+     */
+    public void setCity(String city) {
 		this.city = city;
 	}
 
-	public String getOutPvId() {
+    /**
+     * Gets out pv id.
+     *
+     * @return the out pv id
+     */
+    public String getOutPvId() {
 		return this.outPvId;
 	}
-	public void setOutPvId(String outPvId) {
+
+    /**
+     * Sets out pv id.
+     *
+     * @param outPvId the out pv id
+     */
+    public void setOutPvId(String outPvId) {
 		this.outPvId = outPvId;
 	}
 
-	public String getOutSkuId() {
+    /**
+     * Gets out sku id.
+     *
+     * @return the out sku id
+     */
+    public String getOutSkuId() {
 		return this.outSkuId;
 	}
-	public void setOutSkuId(String outSkuId) {
+
+    /**
+     * Sets out sku id.
+     *
+     * @param outSkuId the out sku id
+     */
+    public void setOutSkuId(String outSkuId) {
 		this.outSkuId = outSkuId;
 	}
 

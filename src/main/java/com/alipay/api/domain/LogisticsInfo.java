@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LogisticsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5626846767883522675L;
+	private static final long serialVersionUID = 2817217324971546442L;
 
 	/**
 	 * 物流公司code
@@ -31,24 +31,57 @@ public class LogisticsInfo extends AlipayObject {
 	@ApiField("logistics_no")
 	private String logisticsNo;
 
-	public String getLogisticsCode() {
+    /**
+     * Gets logistics code.
+     *
+     * @return the logistics code
+     */
+    public String getLogisticsCode() {
 		return this.logisticsCode;
 	}
-	public void setLogisticsCode(String logisticsCode) {
+
+    /**
+     * Sets logistics code.
+     *
+     * @param logisticsCode the logistics code
+     */
+    public void setLogisticsCode(String logisticsCode) {
 		this.logisticsCode = logisticsCode;
 	}
 
-	public String getLogisticsName() {
+    /**
+     * Gets logistics name.
+     *
+     * @return the logistics name
+     */
+    public String getLogisticsName() {
 		return this.logisticsName;
 	}
-	public void setLogisticsName(String logisticsName) {
+
+    /**
+     * Sets logistics name.
+     *
+     * @param logisticsName the logistics name
+     */
+    public void setLogisticsName(String logisticsName) {
 		this.logisticsName = logisticsName;
 	}
 
-	public String getLogisticsNo() {
+    /**
+     * Gets logistics no.
+     *
+     * @return the logistics no
+     */
+    public String getLogisticsNo() {
 		return this.logisticsNo;
 	}
-	public void setLogisticsNo(String logisticsNo) {
+
+    /**
+     * Sets logistics no.
+     *
+     * @param logisticsNo the logistics no
+     */
+    public void setLogisticsNo(String logisticsNo) {
 		this.logisticsNo = logisticsNo;
 	}
 

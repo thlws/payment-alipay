@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MerchantApplyResultRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 6211392344879338988L;
+	private static final long serialVersionUID = 8788188256912392113L;
 
 	/**
 	 * 签约产品名称
@@ -43,38 +43,93 @@ public class MerchantApplyResultRecord extends AlipayObject {
 	@ApiField("result_type")
 	private String resultType;
 
-	public String getProdName() {
+    /**
+     * Gets prod name.
+     *
+     * @return the prod name
+     */
+    public String getProdName() {
 		return this.prodName;
 	}
-	public void setProdName(String prodName) {
+
+    /**
+     * Sets prod name.
+     *
+     * @param prodName the prod name
+     */
+    public void setProdName(String prodName) {
 		this.prodName = prodName;
 	}
 
-	public String getPropInputKey() {
+    /**
+     * Gets prop input key.
+     *
+     * @return the prop input key
+     */
+    public String getPropInputKey() {
 		return this.propInputKey;
 	}
-	public void setPropInputKey(String propInputKey) {
+
+    /**
+     * Sets prop input key.
+     *
+     * @param propInputKey the prop input key
+     */
+    public void setPropInputKey(String propInputKey) {
 		this.propInputKey = propInputKey;
 	}
 
-	public String getResultMsg() {
+    /**
+     * Gets result msg.
+     *
+     * @return the result msg
+     */
+    public String getResultMsg() {
 		return this.resultMsg;
 	}
-	public void setResultMsg(String resultMsg) {
+
+    /**
+     * Sets result msg.
+     *
+     * @param resultMsg the result msg
+     */
+    public void setResultMsg(String resultMsg) {
 		this.resultMsg = resultMsg;
 	}
 
-	public String getResultStatus() {
+    /**
+     * Gets result status.
+     *
+     * @return the result status
+     */
+    public String getResultStatus() {
 		return this.resultStatus;
 	}
-	public void setResultStatus(String resultStatus) {
+
+    /**
+     * Sets result status.
+     *
+     * @param resultStatus the result status
+     */
+    public void setResultStatus(String resultStatus) {
 		this.resultStatus = resultStatus;
 	}
 
-	public String getResultType() {
+    /**
+     * Gets result type.
+     *
+     * @return the result type
+     */
+    public String getResultType() {
 		return this.resultType;
 	}
-	public void setResultType(String resultType) {
+
+    /**
+     * Sets result type.
+     *
+     * @param resultType the result type
+     */
+    public void setResultType(String resultType) {
 		this.resultType = resultType;
 	}
 

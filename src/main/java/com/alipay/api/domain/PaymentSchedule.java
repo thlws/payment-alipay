@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PaymentSchedule extends AlipayObject {
 
-	private static final long serialVersionUID = 1262323734447397922L;
+	private static final long serialVersionUID = 8384587491154395336L;
 
 	/**
 	 * 还款日
@@ -69,66 +69,165 @@ public class PaymentSchedule extends AlipayObject {
 	@ApiField("unpaid_principal_total")
 	private String unpaidPrincipalTotal;
 
-	public Date getDate() {
+    /**
+     * Gets date.
+     *
+     * @return the date
+     */
+    public Date getDate() {
 		return this.date;
 	}
-	public void setDate(Date date) {
+
+    /**
+     * Sets date.
+     *
+     * @param date the date
+     */
+    public void setDate(Date date) {
 		this.date = date;
 	}
 
-	public String getRepaidInterestTotal() {
+    /**
+     * Gets repaid interest total.
+     *
+     * @return the repaid interest total
+     */
+    public String getRepaidInterestTotal() {
 		return this.repaidInterestTotal;
 	}
-	public void setRepaidInterestTotal(String repaidInterestTotal) {
+
+    /**
+     * Sets repaid interest total.
+     *
+     * @param repaidInterestTotal the repaid interest total
+     */
+    public void setRepaidInterestTotal(String repaidInterestTotal) {
 		this.repaidInterestTotal = repaidInterestTotal;
 	}
 
-	public String getRepaidPenaltyTotal() {
+    /**
+     * Gets repaid penalty total.
+     *
+     * @return the repaid penalty total
+     */
+    public String getRepaidPenaltyTotal() {
 		return this.repaidPenaltyTotal;
 	}
-	public void setRepaidPenaltyTotal(String repaidPenaltyTotal) {
+
+    /**
+     * Sets repaid penalty total.
+     *
+     * @param repaidPenaltyTotal the repaid penalty total
+     */
+    public void setRepaidPenaltyTotal(String repaidPenaltyTotal) {
 		this.repaidPenaltyTotal = repaidPenaltyTotal;
 	}
 
-	public String getRepaidPrincipalTotal() {
+    /**
+     * Gets repaid principal total.
+     *
+     * @return the repaid principal total
+     */
+    public String getRepaidPrincipalTotal() {
 		return this.repaidPrincipalTotal;
 	}
-	public void setRepaidPrincipalTotal(String repaidPrincipalTotal) {
+
+    /**
+     * Sets repaid principal total.
+     *
+     * @param repaidPrincipalTotal the repaid principal total
+     */
+    public void setRepaidPrincipalTotal(String repaidPrincipalTotal) {
 		this.repaidPrincipalTotal = repaidPrincipalTotal;
 	}
 
-	public Date getStartDate() {
+    /**
+     * Gets start date.
+     *
+     * @return the start date
+     */
+    public Date getStartDate() {
 		return this.startDate;
 	}
-	public void setStartDate(Date startDate) {
+
+    /**
+     * Sets start date.
+     *
+     * @param startDate the start date
+     */
+    public void setStartDate(Date startDate) {
 		this.startDate = startDate;
 	}
 
-	public Long getTerm() {
+    /**
+     * Gets term.
+     *
+     * @return the term
+     */
+    public Long getTerm() {
 		return this.term;
 	}
-	public void setTerm(Long term) {
+
+    /**
+     * Sets term.
+     *
+     * @param term the term
+     */
+    public void setTerm(Long term) {
 		this.term = term;
 	}
 
-	public String getUnpaidInterestTotal() {
+    /**
+     * Gets unpaid interest total.
+     *
+     * @return the unpaid interest total
+     */
+    public String getUnpaidInterestTotal() {
 		return this.unpaidInterestTotal;
 	}
-	public void setUnpaidInterestTotal(String unpaidInterestTotal) {
+
+    /**
+     * Sets unpaid interest total.
+     *
+     * @param unpaidInterestTotal the unpaid interest total
+     */
+    public void setUnpaidInterestTotal(String unpaidInterestTotal) {
 		this.unpaidInterestTotal = unpaidInterestTotal;
 	}
 
-	public String getUnpaidPenaltyTotal() {
+    /**
+     * Gets unpaid penalty total.
+     *
+     * @return the unpaid penalty total
+     */
+    public String getUnpaidPenaltyTotal() {
 		return this.unpaidPenaltyTotal;
 	}
-	public void setUnpaidPenaltyTotal(String unpaidPenaltyTotal) {
+
+    /**
+     * Sets unpaid penalty total.
+     *
+     * @param unpaidPenaltyTotal the unpaid penalty total
+     */
+    public void setUnpaidPenaltyTotal(String unpaidPenaltyTotal) {
 		this.unpaidPenaltyTotal = unpaidPenaltyTotal;
 	}
 
-	public String getUnpaidPrincipalTotal() {
+    /**
+     * Gets unpaid principal total.
+     *
+     * @return the unpaid principal total
+     */
+    public String getUnpaidPrincipalTotal() {
 		return this.unpaidPrincipalTotal;
 	}
-	public void setUnpaidPrincipalTotal(String unpaidPrincipalTotal) {
+
+    /**
+     * Sets unpaid principal total.
+     *
+     * @param unpaidPrincipalTotal the unpaid principal total
+     */
+    public void setUnpaidPrincipalTotal(String unpaidPrincipalTotal) {
 		this.unpaidPrincipalTotal = unpaidPrincipalTotal;
 	}
 

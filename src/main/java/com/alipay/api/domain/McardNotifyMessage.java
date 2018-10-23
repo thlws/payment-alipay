@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class McardNotifyMessage extends AlipayObject {
 
-	private static final long serialVersionUID = 1311548442645673428L;
+	private static final long serialVersionUID = 4356258963312436394L;
 
 	/**
 	 * 用户提醒信息，按如下格式拼装，需要ISV提供change_reason。
@@ -37,24 +37,57 @@ LEVEL_UPDATE：等级变更消息
 	@ApiField("message_type")
 	private String messageType;
 
-	public String getChangeReason() {
+    /**
+     * Gets change reason.
+     *
+     * @return the change reason
+     */
+    public String getChangeReason() {
 		return this.changeReason;
 	}
-	public void setChangeReason(String changeReason) {
+
+    /**
+     * Sets change reason.
+     *
+     * @param changeReason the change reason
+     */
+    public void setChangeReason(String changeReason) {
 		this.changeReason = changeReason;
 	}
 
-	public String getExtInfo() {
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo() {
 		return this.extInfo;
 	}
-	public void setExtInfo(String extInfo) {
+
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
-	public String getMessageType() {
+    /**
+     * Gets message type.
+     *
+     * @return the message type
+     */
+    public String getMessageType() {
 		return this.messageType;
 	}
-	public void setMessageType(String messageType) {
+
+    /**
+     * Sets message type.
+     *
+     * @param messageType the message type
+     */
+    public void setMessageType(String messageType) {
 		this.messageType = messageType;
 	}
 

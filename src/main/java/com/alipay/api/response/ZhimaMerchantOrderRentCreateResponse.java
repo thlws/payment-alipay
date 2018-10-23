@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: zhima.merchant.order.rent.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-26 12:58:09
+ * @since 1.0, 2018-07-02 11:47:49
  */
 public class ZhimaMerchantOrderRentCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7767145525863781188L;
+	private static final long serialVersionUID = 1293335628592444219L;
 
 	/** 
 	 * 是否准入：
@@ -46,38 +46,93 @@ N-不准入
 	@ApiField("user_id")
 	private String userId;
 
-	public void setAdmitState(String admitState) {
+    /**
+     * Sets admit state.
+     *
+     * @param admitState the admit state
+     */
+    public void setAdmitState(String admitState) {
 		this.admitState = admitState;
 	}
-	public String getAdmitState( ) {
+
+    /**
+     * Gets admit state.
+     *
+     * @return the admit state
+     */
+    public String getAdmitState( ) {
 		return this.admitState;
 	}
 
-	public void setInvokeState(String invokeState) {
+    /**
+     * Sets invoke state.
+     *
+     * @param invokeState the invoke state
+     */
+    public void setInvokeState(String invokeState) {
 		this.invokeState = invokeState;
 	}
-	public String getInvokeState( ) {
+
+    /**
+     * Gets invoke state.
+     *
+     * @return the invoke state
+     */
+    public String getInvokeState( ) {
 		return this.invokeState;
 	}
 
-	public void setOrderNo(String orderNo) {
+    /**
+     * Sets order no.
+     *
+     * @param orderNo the order no
+     */
+    public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
-	public String getOrderNo( ) {
+
+    /**
+     * Gets order no.
+     *
+     * @return the order no
+     */
+    public String getOrderNo( ) {
 		return this.orderNo;
 	}
 
-	public void setOutOrderNo(String outOrderNo) {
+    /**
+     * Sets out order no.
+     *
+     * @param outOrderNo the out order no
+     */
+    public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
 	}
-	public String getOutOrderNo( ) {
+
+    /**
+     * Gets out order no.
+     *
+     * @return the out order no
+     */
+    public String getOutOrderNo( ) {
 		return this.outOrderNo;
 	}
 
-	public void setUserId(String userId) {
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public String getUserId( ) {
+
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId( ) {
 		return this.userId;
 	}
 

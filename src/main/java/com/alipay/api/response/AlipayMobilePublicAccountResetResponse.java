@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.public.account.reset response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-12-19 20:52:24
  */
 public class AlipayMobilePublicAccountResetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6368688461616136431L;
+	private static final long serialVersionUID = 6557975938886544421L;
 
 	/** 
 	 * 这是新账户绑定成功后产生的协议号
@@ -32,10 +32,21 @@ public class AlipayMobilePublicAccountResetResponse extends AlipayResponse {
 	@ApiField("msg")
 	private String msg;
 
-	public void setAgreementId(String agreementId) {
+    /**
+     * Sets agreement id.
+     *
+     * @param agreementId the agreement id
+     */
+    public void setAgreementId(String agreementId) {
 		this.agreementId = agreementId;
 	}
-	public String getAgreementId( ) {
+
+    /**
+     * Gets agreement id.
+     *
+     * @return the agreement id
+     */
+    public String getAgreementId( ) {
 		return this.agreementId;
 	}
 

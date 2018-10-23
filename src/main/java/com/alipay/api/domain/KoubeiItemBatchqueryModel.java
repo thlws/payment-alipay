@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑商品查询
  *
  * @author auto create
- * @since 1.0, 2017-08-31 21:06:54
+ * @since 1.0, 2018-06-15 08:34:59
  */
 public class KoubeiItemBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4751398498818972759L;
+	private static final long serialVersionUID = 3215444746614254391L;
 
 	/**
 	 * 服务商、服务商员工、商户、商户员工等口碑角色操作时必填，对应为《koubei.member.data.oauth.query》中的auth_code，默认有效期24小时；
@@ -43,38 +43,93 @@ public class KoubeiItemBatchqueryModel extends AlipayObject {
 	@ApiField("page_size")
 	private Long pageSize;
 
-	public String getAuthCode() {
+    /**
+     * Gets auth code.
+     *
+     * @return the auth code
+     */
+    public String getAuthCode() {
 		return this.authCode;
 	}
-	public void setAuthCode(String authCode) {
+
+    /**
+     * Sets auth code.
+     *
+     * @param authCode the auth code
+     */
+    public void setAuthCode(String authCode) {
 		this.authCode = authCode;
 	}
 
-	public String getItemIds() {
+    /**
+     * Gets item ids.
+     *
+     * @return the item ids
+     */
+    public String getItemIds() {
 		return this.itemIds;
 	}
-	public void setItemIds(String itemIds) {
+
+    /**
+     * Sets item ids.
+     *
+     * @param itemIds the item ids
+     */
+    public void setItemIds(String itemIds) {
 		this.itemIds = itemIds;
 	}
 
-	public KoubeiOperationContext getOperationContext() {
+    /**
+     * Gets operation context.
+     *
+     * @return the operation context
+     */
+    public KoubeiOperationContext getOperationContext() {
 		return this.operationContext;
 	}
-	public void setOperationContext(KoubeiOperationContext operationContext) {
+
+    /**
+     * Sets operation context.
+     *
+     * @param operationContext the operation context
+     */
+    public void setOperationContext(KoubeiOperationContext operationContext) {
 		this.operationContext = operationContext;
 	}
 
-	public String getPageNo() {
+    /**
+     * Gets page no.
+     *
+     * @return the page no
+     */
+    public String getPageNo() {
 		return this.pageNo;
 	}
-	public void setPageNo(String pageNo) {
+
+    /**
+     * Sets page no.
+     *
+     * @param pageNo the page no
+     */
+    public void setPageNo(String pageNo) {
 		this.pageNo = pageNo;
 	}
 
-	public Long getPageSize() {
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public Long getPageSize() {
 		return this.pageSize;
 	}
-	public void setPageSize(Long pageSize) {
+
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}
 

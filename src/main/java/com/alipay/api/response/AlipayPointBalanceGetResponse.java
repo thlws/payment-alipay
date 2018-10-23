@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.point.balance.get response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-04-14 19:01:40
  */
 public class AlipayPointBalanceGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4142278954321471878L;
+	private static final long serialVersionUID = 1871797328256423113L;
 
 	/** 
 	 * 用户的集分宝余额
@@ -20,10 +20,21 @@ public class AlipayPointBalanceGetResponse extends AlipayResponse {
 	@ApiField("point_amount")
 	private Long pointAmount;
 
-	public void setPointAmount(Long pointAmount) {
+    /**
+     * Sets point amount.
+     *
+     * @param pointAmount the point amount
+     */
+    public void setPointAmount(Long pointAmount) {
 		this.pointAmount = pointAmount;
 	}
-	public Long getPointAmount( ) {
+
+    /**
+     * Gets point amount.
+     *
+     * @return the point amount
+     */
+    public Long getPointAmount( ) {
 		return this.pointAmount;
 	}
 

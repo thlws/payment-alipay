@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ScheduleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6237372394143188315L;
+	private static final long serialVersionUID = 2588993889159449575L;
 
 	/**
 	 * 根据定义的间隔长度跟单位，将date的时间切分，例如将2016-11-29整天按30分钟为一段切分为48段： 111111111111111111111111111111111110000011111111 ， 其中0表示不可用，1表示可用
@@ -25,17 +25,39 @@ public class ScheduleInfo extends AlipayObject {
 	@ApiField("date")
 	private String date;
 
-	public String getBitmap() {
+    /**
+     * Gets bitmap.
+     *
+     * @return the bitmap
+     */
+    public String getBitmap() {
 		return this.bitmap;
 	}
-	public void setBitmap(String bitmap) {
+
+    /**
+     * Sets bitmap.
+     *
+     * @param bitmap the bitmap
+     */
+    public void setBitmap(String bitmap) {
 		this.bitmap = bitmap;
 	}
 
-	public String getDate() {
+    /**
+     * Gets date.
+     *
+     * @return the date
+     */
+    public String getDate() {
 		return this.date;
 	}
-	public void setDate(String date) {
+
+    /**
+     * Sets date.
+     *
+     * @param date the date
+     */
+    public void setDate(String date) {
 		this.date = date;
 	}
 

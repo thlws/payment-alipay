@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.zdatafront.datatransfered.send request
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-05-18 11:27:33
  */
@@ -33,24 +33,57 @@ public class AlipayZdatafrontDatatransferedSendRequest implements AlipayRequest<
 	 */
 	private String typeId;
 
-	public void setData(String data) {
+    /**
+     * Sets data.
+     *
+     * @param data the data
+     */
+    public void setData(String data) {
 		this.data = data;
 	}
-	public String getData() {
+
+    /**
+     * Gets data.
+     *
+     * @return the data
+     */
+    public String getData() {
 		return this.data;
 	}
 
-	public void setIdentity(String identity) {
+    /**
+     * Sets identity.
+     *
+     * @param identity the identity
+     */
+    public void setIdentity(String identity) {
 		this.identity = identity;
 	}
-	public String getIdentity() {
+
+    /**
+     * Gets identity.
+     *
+     * @return the identity
+     */
+    public String getIdentity() {
 		return this.identity;
 	}
 
-	public void setTypeId(String typeId) {
+    /**
+     * Sets type id.
+     *
+     * @param typeId the type id
+     */
+    public void setTypeId(String typeId) {
 		this.typeId = typeId;
 	}
-	public String getTypeId() {
+
+    /**
+     * Gets type id.
+     *
+     * @return the type id
+     */
+    public String getTypeId() {
 		return this.typeId;
 	}
 	private String terminalType;
@@ -124,7 +157,13 @@ public class AlipayZdatafrontDatatransferedSendRequest implements AlipayRequest<
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

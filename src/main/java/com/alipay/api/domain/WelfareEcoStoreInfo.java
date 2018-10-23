@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class WelfareEcoStoreInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8519831976647232579L;
+	private static final long serialVersionUID = 6798744225154371851L;
 
 	/**
 	 * 门店具体位置（中文）
@@ -37,31 +37,75 @@ public class WelfareEcoStoreInfo extends AlipayObject {
 	@ApiField("name")
 	private String name;
 
-	public String getAddress() {
+    /**
+     * Gets address.
+     *
+     * @return the address
+     */
+    public String getAddress() {
 		return this.address;
 	}
-	public void setAddress(String address) {
+
+    /**
+     * Sets address.
+     *
+     * @param address the address
+     */
+    public void setAddress(String address) {
 		this.address = address;
 	}
 
-	public String getBrand() {
+    /**
+     * Gets brand.
+     *
+     * @return the brand
+     */
+    public String getBrand() {
 		return this.brand;
 	}
-	public void setBrand(String brand) {
+
+    /**
+     * Sets brand.
+     *
+     * @param brand the brand
+     */
+    public void setBrand(String brand) {
 		this.brand = brand;
 	}
 
-	public String getCode() {
+    /**
+     * Gets code.
+     *
+     * @return the code
+     */
+    public String getCode() {
 		return this.code;
 	}
-	public void setCode(String code) {
+
+    /**
+     * Sets code.
+     *
+     * @param code the code
+     */
+    public void setCode(String code) {
 		this.code = code;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 

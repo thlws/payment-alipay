@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 活动修改接口
  *
  * @author auto create
- * @since 1.0, 2017-09-29 18:11:22
+ * @since 1.0, 2018-04-16 17:49:48
  */
 public class KoubeiMarketingCampaignActivityModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2864196779792731645L;
+	private static final long serialVersionUID = 3435638935186349982L;
 
 	/**
 	 * 是否自动续期活动，仅当活动下券的有效期均为相对有效期时才能设置成Y
@@ -120,115 +120,291 @@ public class KoubeiMarketingCampaignActivityModifyModel extends AlipayObject {
 	@ApiField("type")
 	private String type;
 
-	public String getAutoDelayFlag() {
+    /**
+     * Gets auto delay flag.
+     *
+     * @return the auto delay flag
+     */
+    public String getAutoDelayFlag() {
 		return this.autoDelayFlag;
 	}
-	public void setAutoDelayFlag(String autoDelayFlag) {
+
+    /**
+     * Sets auto delay flag.
+     *
+     * @param autoDelayFlag the auto delay flag
+     */
+    public void setAutoDelayFlag(String autoDelayFlag) {
 		this.autoDelayFlag = autoDelayFlag;
 	}
 
-	public BudgetInfo getBudgetInfo() {
+    /**
+     * Gets budget info.
+     *
+     * @return the budget info
+     */
+    public BudgetInfo getBudgetInfo() {
 		return this.budgetInfo;
 	}
-	public void setBudgetInfo(BudgetInfo budgetInfo) {
+
+    /**
+     * Sets budget info.
+     *
+     * @param budgetInfo the budget info
+     */
+    public void setBudgetInfo(BudgetInfo budgetInfo) {
 		this.budgetInfo = budgetInfo;
 	}
 
-	public String getCampId() {
+    /**
+     * Gets camp id.
+     *
+     * @return the camp id
+     */
+    public String getCampId() {
 		return this.campId;
 	}
-	public void setCampId(String campId) {
+
+    /**
+     * Sets camp id.
+     *
+     * @param campId the camp id
+     */
+    public void setCampId(String campId) {
 		this.campId = campId;
 	}
 
-	public ConstraintInfo getConstraintInfo() {
+    /**
+     * Gets constraint info.
+     *
+     * @return the constraint info
+     */
+    public ConstraintInfo getConstraintInfo() {
 		return this.constraintInfo;
 	}
-	public void setConstraintInfo(ConstraintInfo constraintInfo) {
+
+    /**
+     * Sets constraint info.
+     *
+     * @param constraintInfo the constraint info
+     */
+    public void setConstraintInfo(ConstraintInfo constraintInfo) {
 		this.constraintInfo = constraintInfo;
 	}
 
-	public String getDesc() {
+    /**
+     * Gets desc.
+     *
+     * @return the desc
+     */
+    public String getDesc() {
 		return this.desc;
 	}
-	public void setDesc(String desc) {
+
+    /**
+     * Sets desc.
+     *
+     * @param desc the desc
+     */
+    public void setDesc(String desc) {
 		this.desc = desc;
 	}
 
-	public Date getEndTime() {
+    /**
+     * Gets end time.
+     *
+     * @return the end time
+     */
+    public Date getEndTime() {
 		return this.endTime;
 	}
-	public void setEndTime(Date endTime) {
+
+    /**
+     * Sets end time.
+     *
+     * @param endTime the end time
+     */
+    public void setEndTime(Date endTime) {
 		this.endTime = endTime;
 	}
 
-	public String getExtInfo() {
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo() {
 		return this.extInfo;
 	}
-	public void setExtInfo(String extInfo) {
+
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getOperatorId() {
+    /**
+     * Gets operator id.
+     *
+     * @return the operator id
+     */
+    public String getOperatorId() {
 		return this.operatorId;
 	}
-	public void setOperatorId(String operatorId) {
+
+    /**
+     * Sets operator id.
+     *
+     * @param operatorId the operator id
+     */
+    public void setOperatorId(String operatorId) {
 		this.operatorId = operatorId;
 	}
 
-	public String getOperatorType() {
+    /**
+     * Gets operator type.
+     *
+     * @return the operator type
+     */
+    public String getOperatorType() {
 		return this.operatorType;
 	}
-	public void setOperatorType(String operatorType) {
+
+    /**
+     * Sets operator type.
+     *
+     * @param operatorType the operator type
+     */
+    public void setOperatorType(String operatorType) {
 		this.operatorType = operatorType;
 	}
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
-	public List<PromoTool> getPromoTools() {
+    /**
+     * Gets promo tools.
+     *
+     * @return the promo tools
+     */
+    public List<PromoTool> getPromoTools() {
 		return this.promoTools;
 	}
-	public void setPromoTools(List<PromoTool> promoTools) {
+
+    /**
+     * Sets promo tools.
+     *
+     * @param promoTools the promo tools
+     */
+    public void setPromoTools(List<PromoTool> promoTools) {
 		this.promoTools = promoTools;
 	}
 
-	public List<PublishChannel> getPublishChannels() {
+    /**
+     * Gets publish channels.
+     *
+     * @return the publish channels
+     */
+    public List<PublishChannel> getPublishChannels() {
 		return this.publishChannels;
 	}
-	public void setPublishChannels(List<PublishChannel> publishChannels) {
+
+    /**
+     * Sets publish channels.
+     *
+     * @param publishChannels the publish channels
+     */
+    public void setPublishChannels(List<PublishChannel> publishChannels) {
 		this.publishChannels = publishChannels;
 	}
 
-	public RecruitTool getRecruitTool() {
+    /**
+     * Gets recruit tool.
+     *
+     * @return the recruit tool
+     */
+    public RecruitTool getRecruitTool() {
 		return this.recruitTool;
 	}
-	public void setRecruitTool(RecruitTool recruitTool) {
+
+    /**
+     * Sets recruit tool.
+     *
+     * @param recruitTool the recruit tool
+     */
+    public void setRecruitTool(RecruitTool recruitTool) {
 		this.recruitTool = recruitTool;
 	}
 
-	public Date getStartTime() {
+    /**
+     * Gets start time.
+     *
+     * @return the start time
+     */
+    public Date getStartTime() {
 		return this.startTime;
 	}
-	public void setStartTime(Date startTime) {
+
+    /**
+     * Sets start time.
+     *
+     * @param startTime the start time
+     */
+    public void setStartTime(Date startTime) {
 		this.startTime = startTime;
 	}
 
-	public String getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
-	public void setType(String type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
 

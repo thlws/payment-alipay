@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PromoOperatorInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7181591334139971935L;
+	private static final long serialVersionUID = 8636733744999919371L;
 
 	/**
 	 * 操作人id
@@ -25,17 +25,39 @@ public class PromoOperatorInfo extends AlipayObject {
 	@ApiField("operator_type")
 	private String operatorType;
 
-	public String getOperatorId() {
+    /**
+     * Gets operator id.
+     *
+     * @return the operator id
+     */
+    public String getOperatorId() {
 		return this.operatorId;
 	}
-	public void setOperatorId(String operatorId) {
+
+    /**
+     * Sets operator id.
+     *
+     * @param operatorId the operator id
+     */
+    public void setOperatorId(String operatorId) {
 		this.operatorId = operatorId;
 	}
 
-	public String getOperatorType() {
+    /**
+     * Gets operator type.
+     *
+     * @return the operator type
+     */
+    public String getOperatorType() {
 		return this.operatorType;
 	}
-	public void setOperatorType(String operatorType) {
+
+    /**
+     * Sets operator type.
+     *
+     * @param operatorType the operator type
+     */
+    public void setOperatorType(String operatorType) {
 		this.operatorType = operatorType;
 	}
 

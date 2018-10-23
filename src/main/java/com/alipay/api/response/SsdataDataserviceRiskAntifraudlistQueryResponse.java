@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: ssdata.dataservice.risk.antifraudlist.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-09-27 11:41:38
  */
 public class SsdataDataserviceRiskAntifraudlistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6516556283435934492L;
+	private static final long serialVersionUID = 3264256162265551292L;
 
 	/** 
 	 * 蚁盾对于每一次请求返回的业务号。后续可以通过此业务号进行对账
@@ -38,31 +38,75 @@ public class SsdataDataserviceRiskAntifraudlistQueryResponse extends AlipayRespo
 	@ApiField("unique_id")
 	private String uniqueId;
 
-	public void setBizNo(String bizNo) {
+    /**
+     * Sets biz no.
+     *
+     * @param bizNo the biz no
+     */
+    public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
 	}
-	public String getBizNo( ) {
+
+    /**
+     * Gets biz no.
+     *
+     * @return the biz no
+     */
+    public String getBizNo( ) {
 		return this.bizNo;
 	}
 
-	public void setHit(String hit) {
+    /**
+     * Sets hit.
+     *
+     * @param hit the hit
+     */
+    public void setHit(String hit) {
 		this.hit = hit;
 	}
-	public String getHit( ) {
+
+    /**
+     * Gets hit.
+     *
+     * @return the hit
+     */
+    public String getHit( ) {
 		return this.hit;
 	}
 
-	public void setRiskCode(String riskCode) {
+    /**
+     * Sets risk code.
+     *
+     * @param riskCode the risk code
+     */
+    public void setRiskCode(String riskCode) {
 		this.riskCode = riskCode;
 	}
-	public String getRiskCode( ) {
+
+    /**
+     * Gets risk code.
+     *
+     * @return the risk code
+     */
+    public String getRiskCode( ) {
 		return this.riskCode;
 	}
 
-	public void setUniqueId(String uniqueId) {
+    /**
+     * Sets unique id.
+     *
+     * @param uniqueId the unique id
+     */
+    public void setUniqueId(String uniqueId) {
 		this.uniqueId = uniqueId;
 	}
-	public String getUniqueId( ) {
+
+    /**
+     * Gets unique id.
+     *
+     * @return the unique id
+     */
+    public String getUniqueId( ) {
 		return this.uniqueId;
 	}
 

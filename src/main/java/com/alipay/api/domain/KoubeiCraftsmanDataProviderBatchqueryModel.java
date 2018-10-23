@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiCraftsmanDataProviderBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5459858161197736146L;
+	private static final long serialVersionUID = 5557175249669218115L;
 
 	/**
 	 * 服务商、服务商员工、商户、商户员工等口碑角色操作时必填，对应为《koubei.member.data.oauth.query》中的auth_code，默认有效期24小时；isv自身角色操作的时候，无需传该参数
@@ -66,59 +66,147 @@ public class KoubeiCraftsmanDataProviderBatchqueryModel extends AlipayObject {
 	@ApiField("shop_id")
 	private String shopId;
 
-	public String getAuthCode() {
+    /**
+     * Gets auth code.
+     *
+     * @return the auth code
+     */
+    public String getAuthCode() {
 		return this.authCode;
 	}
-	public void setAuthCode(String authCode) {
+
+    /**
+     * Sets auth code.
+     *
+     * @param authCode the auth code
+     */
+    public void setAuthCode(String authCode) {
 		this.authCode = authCode;
 	}
 
-	public List<String> getCraftsmanIds() {
+    /**
+     * Gets craftsman ids.
+     *
+     * @return the craftsman ids
+     */
+    public List<String> getCraftsmanIds() {
 		return this.craftsmanIds;
 	}
-	public void setCraftsmanIds(List<String> craftsmanIds) {
+
+    /**
+     * Sets craftsman ids.
+     *
+     * @param craftsmanIds the craftsman ids
+     */
+    public void setCraftsmanIds(List<String> craftsmanIds) {
 		this.craftsmanIds = craftsmanIds;
 	}
 
-	public List<String> getOutCraftsmanIds() {
+    /**
+     * Gets out craftsman ids.
+     *
+     * @return the out craftsman ids
+     */
+    public List<String> getOutCraftsmanIds() {
 		return this.outCraftsmanIds;
 	}
-	public void setOutCraftsmanIds(List<String> outCraftsmanIds) {
+
+    /**
+     * Sets out craftsman ids.
+     *
+     * @param outCraftsmanIds the out craftsman ids
+     */
+    public void setOutCraftsmanIds(List<String> outCraftsmanIds) {
 		this.outCraftsmanIds = outCraftsmanIds;
 	}
 
-	public String getPageNo() {
+    /**
+     * Gets page no.
+     *
+     * @return the page no
+     */
+    public String getPageNo() {
 		return this.pageNo;
 	}
-	public void setPageNo(String pageNo) {
+
+    /**
+     * Sets page no.
+     *
+     * @param pageNo the page no
+     */
+    public void setPageNo(String pageNo) {
 		this.pageNo = pageNo;
 	}
 
-	public String getPageSize() {
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public String getPageSize() {
 		return this.pageSize;
 	}
-	public void setPageSize(String pageSize) {
+
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(String pageSize) {
 		this.pageSize = pageSize;
 	}
 
-	public String getQrCodeShopId() {
+    /**
+     * Gets qr code shop id.
+     *
+     * @return the qr code shop id
+     */
+    public String getQrCodeShopId() {
 		return this.qrCodeShopId;
 	}
-	public void setQrCodeShopId(String qrCodeShopId) {
+
+    /**
+     * Sets qr code shop id.
+     *
+     * @param qrCodeShopId the qr code shop id
+     */
+    public void setQrCodeShopId(String qrCodeShopId) {
 		this.qrCodeShopId = qrCodeShopId;
 	}
 
-	public Boolean getRecommend() {
+    /**
+     * Gets recommend.
+     *
+     * @return the recommend
+     */
+    public Boolean getRecommend() {
 		return this.recommend;
 	}
-	public void setRecommend(Boolean recommend) {
+
+    /**
+     * Sets recommend.
+     *
+     * @param recommend the recommend
+     */
+    public void setRecommend(Boolean recommend) {
 		this.recommend = recommend;
 	}
 
-	public String getShopId() {
+    /**
+     * Gets shop id.
+     *
+     * @return the shop id
+     */
+    public String getShopId() {
 		return this.shopId;
 	}
-	public void setShopId(String shopId) {
+
+    /**
+     * Sets shop id.
+     *
+     * @param shopId the shop id
+     */
+    public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 

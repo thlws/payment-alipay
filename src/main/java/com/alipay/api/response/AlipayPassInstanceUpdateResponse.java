@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.pass.instance.update response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-24 12:08:25
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayPassInstanceUpdateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3218142826114369861L;
+	private static final long serialVersionUID = 7172463335423869245L;
 
 	/** 
 	 * 接口调用返回结果信息
@@ -26,17 +26,39 @@ public class AlipayPassInstanceUpdateResponse extends AlipayResponse {
 	@ApiField("success")
 	private String success;
 
-	public void setResult(String result) {
+    /**
+     * Sets result.
+     *
+     * @param result the result
+     */
+    public void setResult(String result) {
 		this.result = result;
 	}
-	public String getResult( ) {
+
+    /**
+     * Gets result.
+     *
+     * @return the result
+     */
+    public String getResult( ) {
 		return this.result;
 	}
 
-	public void setSuccess(String success) {
+    /**
+     * Sets success.
+     *
+     * @param success the success
+     */
+    public void setSuccess(String success) {
 		this.success = success;
 	}
-	public String getSuccess( ) {
+
+    /**
+     * Gets success.
+     *
+     * @return the success
+     */
+    public String getSuccess( ) {
 		return this.success;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CommonDescInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6587893637729813232L;
+	private static final long serialVersionUID = 2228799152345881315L;
 
 	/**
 	 * 图片URL地址，最大不超过60K，必须使用https
@@ -25,17 +25,39 @@ public class CommonDescInfo extends AlipayObject {
 	@ApiField("text")
 	private String text;
 
-	public String getImg() {
+    /**
+     * Gets img.
+     *
+     * @return the img
+     */
+    public String getImg() {
 		return this.img;
 	}
-	public void setImg(String img) {
+
+    /**
+     * Sets img.
+     *
+     * @param img the img
+     */
+    public void setImg(String img) {
 		this.img = img;
 	}
 
-	public String getText() {
+    /**
+     * Gets text.
+     *
+     * @return the text
+     */
+    public String getText() {
 		return this.text;
 	}
-	public void setText(String text) {
+
+    /**
+     * Sets text.
+     *
+     * @param text the text
+     */
+    public void setText(String text) {
 		this.text = text;
 	}
 

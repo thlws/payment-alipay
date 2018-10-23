@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TicketTransInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3891813976572319954L;
+	private static final long serialVersionUID = 2664498222216625574L;
 
 	/**
 	 * 流水创建时间
@@ -39,31 +39,75 @@ public class TicketTransInfo extends AlipayObject {
 	@ApiField("ticket_trans_type")
 	private String ticketTransType;
 
-	public Date getCreateTime() {
+    /**
+     * Gets create time.
+     *
+     * @return the create time
+     */
+    public Date getCreateTime() {
 		return this.createTime;
 	}
-	public void setCreateTime(Date createTime) {
+
+    /**
+     * Sets create time.
+     *
+     * @param createTime the create time
+     */
+    public void setCreateTime(Date createTime) {
 		this.createTime = createTime;
 	}
 
-	public Date getLastModifyTime() {
+    /**
+     * Gets last modify time.
+     *
+     * @return the last modify time
+     */
+    public Date getLastModifyTime() {
 		return this.lastModifyTime;
 	}
-	public void setLastModifyTime(Date lastModifyTime) {
+
+    /**
+     * Sets last modify time.
+     *
+     * @param lastModifyTime the last modify time
+     */
+    public void setLastModifyTime(Date lastModifyTime) {
 		this.lastModifyTime = lastModifyTime;
 	}
 
-	public String getTicketTransId() {
+    /**
+     * Gets ticket trans id.
+     *
+     * @return the ticket trans id
+     */
+    public String getTicketTransId() {
 		return this.ticketTransId;
 	}
-	public void setTicketTransId(String ticketTransId) {
+
+    /**
+     * Sets ticket trans id.
+     *
+     * @param ticketTransId the ticket trans id
+     */
+    public void setTicketTransId(String ticketTransId) {
 		this.ticketTransId = ticketTransId;
 	}
 
-	public String getTicketTransType() {
+    /**
+     * Gets ticket trans type.
+     *
+     * @return the ticket trans type
+     */
+    public String getTicketTransType() {
 		return this.ticketTransType;
 	}
-	public void setTicketTransType(String ticketTransType) {
+
+    /**
+     * Sets ticket trans type.
+     *
+     * @param ticketTransType the ticket trans type
+     */
+    public void setTicketTransType(String ticketTransType) {
 		this.ticketTransType = ticketTransType;
 	}
 

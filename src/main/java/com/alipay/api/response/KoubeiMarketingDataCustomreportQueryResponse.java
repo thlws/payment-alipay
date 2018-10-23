@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.data.customreport.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-26 11:32:05
+ * @since 1.0, 2018-07-26 14:03:45
  */
 public class KoubeiMarketingDataCustomreportQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4211186616673325458L;
+	private static final long serialVersionUID = 3749118394219315377L;
 
 	/** 
 	 * 数据量
@@ -30,17 +30,39 @@ public class KoubeiMarketingDataCustomreportQueryResponse extends AlipayResponse
 	@ApiField("report_data_item")
 	private List<ReportDataItem> reportData;
 
-	public void setCount(String count) {
+    /**
+     * Sets count.
+     *
+     * @param count the count
+     */
+    public void setCount(String count) {
 		this.count = count;
 	}
-	public String getCount( ) {
+
+    /**
+     * Gets count.
+     *
+     * @return the count
+     */
+    public String getCount( ) {
 		return this.count;
 	}
 
-	public void setReportData(List<ReportDataItem> reportData) {
+    /**
+     * Sets report data.
+     *
+     * @param reportData the report data
+     */
+    public void setReportData(List<ReportDataItem> reportData) {
 		this.reportData = reportData;
 	}
-	public List<ReportDataItem> getReportData( ) {
+
+    /**
+     * Gets report data.
+     *
+     * @return the report data
+     */
+    public List<ReportDataItem> getReportData( ) {
 		return this.reportData;
 	}
 

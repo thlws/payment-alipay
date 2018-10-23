@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物业社区平台小区房屋信息
  *
  * @author auto create
- * @since 1.0, 2016-11-18 16:09:00
+ * @since 1.0, 2018-06-09 20:16:50
  */
 public class CplifeRoomInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4677575221262837596L;
+	private static final long serialVersionUID = 4438738361239254434L;
 
 	/**
 	 * 房间的完整门牌地址
@@ -49,45 +49,111 @@ public class CplifeRoomInfo extends AlipayObject {
 	@ApiField("unit")
 	private String unit;
 
-	public String getAddress() {
+    /**
+     * Gets address.
+     *
+     * @return the address
+     */
+    public String getAddress() {
 		return this.address;
 	}
-	public void setAddress(String address) {
+
+    /**
+     * Sets address.
+     *
+     * @param address the address
+     */
+    public void setAddress(String address) {
 		this.address = address;
 	}
 
-	public String getBuilding() {
+    /**
+     * Gets building.
+     *
+     * @return the building
+     */
+    public String getBuilding() {
 		return this.building;
 	}
-	public void setBuilding(String building) {
+
+    /**
+     * Sets building.
+     *
+     * @param building the building
+     */
+    public void setBuilding(String building) {
 		this.building = building;
 	}
 
-	public String getGroup() {
+    /**
+     * Gets group.
+     *
+     * @return the group
+     */
+    public String getGroup() {
 		return this.group;
 	}
-	public void setGroup(String group) {
+
+    /**
+     * Sets group.
+     *
+     * @param group the group
+     */
+    public void setGroup(String group) {
 		this.group = group;
 	}
 
-	public String getOutRoomId() {
+    /**
+     * Gets out room id.
+     *
+     * @return the out room id
+     */
+    public String getOutRoomId() {
 		return this.outRoomId;
 	}
-	public void setOutRoomId(String outRoomId) {
+
+    /**
+     * Sets out room id.
+     *
+     * @param outRoomId the out room id
+     */
+    public void setOutRoomId(String outRoomId) {
 		this.outRoomId = outRoomId;
 	}
 
-	public String getRoom() {
+    /**
+     * Gets room.
+     *
+     * @return the room
+     */
+    public String getRoom() {
 		return this.room;
 	}
-	public void setRoom(String room) {
+
+    /**
+     * Sets room.
+     *
+     * @param room the room
+     */
+    public void setRoom(String room) {
 		this.room = room;
 	}
 
-	public String getUnit() {
+    /**
+     * Gets unit.
+     *
+     * @return the unit
+     */
+    public String getUnit() {
 		return this.unit;
 	}
-	public void setUnit(String unit) {
+
+    /**
+     * Sets unit.
+     *
+     * @param unit the unit
+     */
+    public void setUnit(String unit) {
 		this.unit = unit;
 	}
 

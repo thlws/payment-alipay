@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class InsSumInsured extends AlipayObject {
 
-	private static final long serialVersionUID = 2472865339827965953L;
+	private static final long serialVersionUID = 5897531157584764514L;
 
 	/**
 	 * 保额默认值;单位分
@@ -47,38 +47,93 @@ public class InsSumInsured extends AlipayObject {
 	@ApiField("number")
 	private List<Long> sumInsureds;
 
-	public Long getDefaultValue() {
+    /**
+     * Gets default value.
+     *
+     * @return the default value
+     */
+    public Long getDefaultValue() {
 		return this.defaultValue;
 	}
-	public void setDefaultValue(Long defaultValue) {
+
+    /**
+     * Sets default value.
+     *
+     * @param defaultValue the default value
+     */
+    public void setDefaultValue(Long defaultValue) {
 		this.defaultValue = defaultValue;
 	}
 
-	public Long getMaxValue() {
+    /**
+     * Gets max value.
+     *
+     * @return the max value
+     */
+    public Long getMaxValue() {
 		return this.maxValue;
 	}
-	public void setMaxValue(Long maxValue) {
+
+    /**
+     * Sets max value.
+     *
+     * @param maxValue the max value
+     */
+    public void setMaxValue(Long maxValue) {
 		this.maxValue = maxValue;
 	}
 
-	public Long getMinValue() {
+    /**
+     * Gets min value.
+     *
+     * @return the min value
+     */
+    public Long getMinValue() {
 		return this.minValue;
 	}
-	public void setMinValue(Long minValue) {
+
+    /**
+     * Sets min value.
+     *
+     * @param minValue the min value
+     */
+    public void setMinValue(Long minValue) {
 		this.minValue = minValue;
 	}
 
-	public String getSumInsuredType() {
+    /**
+     * Gets sum insured type.
+     *
+     * @return the sum insured type
+     */
+    public String getSumInsuredType() {
 		return this.sumInsuredType;
 	}
-	public void setSumInsuredType(String sumInsuredType) {
+
+    /**
+     * Sets sum insured type.
+     *
+     * @param sumInsuredType the sum insured type
+     */
+    public void setSumInsuredType(String sumInsuredType) {
 		this.sumInsuredType = sumInsuredType;
 	}
 
-	public List<Long> getSumInsureds() {
+    /**
+     * Gets sum insureds.
+     *
+     * @return the sum insureds
+     */
+    public List<Long> getSumInsureds() {
 		return this.sumInsureds;
 	}
-	public void setSumInsureds(List<Long> sumInsureds) {
+
+    /**
+     * Sets sum insureds.
+     *
+     * @param sumInsureds the sum insureds
+     */
+    public void setSumInsureds(List<Long> sumInsureds) {
 		this.sumInsureds = sumInsureds;
 	}
 

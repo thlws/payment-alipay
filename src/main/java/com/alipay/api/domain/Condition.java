@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class Condition extends AlipayObject {
 
-	private static final long serialVersionUID = 6637741648294255192L;
+	private static final long serialVersionUID = 4158226725191393998L;
 
 	/**
 	 * 字段名称，目前支持以下字段：
@@ -35,24 +35,57 @@ status：活动状态
 	@ApiField("operator")
 	private String operator;
 
-	public String getFieldName() {
+    /**
+     * Gets field name.
+     *
+     * @return the field name
+     */
+    public String getFieldName() {
 		return this.fieldName;
 	}
-	public void setFieldName(String fieldName) {
+
+    /**
+     * Sets field name.
+     *
+     * @param fieldName the field name
+     */
+    public void setFieldName(String fieldName) {
 		this.fieldName = fieldName;
 	}
 
-	public String getFieldValue() {
+    /**
+     * Gets field value.
+     *
+     * @return the field value
+     */
+    public String getFieldValue() {
 		return this.fieldValue;
 	}
-	public void setFieldValue(String fieldValue) {
+
+    /**
+     * Sets field value.
+     *
+     * @param fieldValue the field value
+     */
+    public void setFieldValue(String fieldValue) {
 		this.fieldValue = fieldValue;
 	}
 
-	public String getOperator() {
+    /**
+     * Gets operator.
+     *
+     * @return the operator
+     */
+    public String getOperator() {
 		return this.operator;
 	}
-	public void setOperator(String operator) {
+
+    /**
+     * Sets operator.
+     *
+     * @param operator the operator
+     */
+    public void setOperator(String operator) {
 		this.operator = operator;
 	}
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁电子发票平台用户发票抬头列表获取
  *
  * @author auto create
- * @since 1.0, 2017-06-07 16:24:17
+ * @since 1.0, 2018-07-02 10:28:56
  */
 public class AlipayEbppInvoiceTitleListGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5576462816576266162L;
+	private static final long serialVersionUID = 6526171717191953296L;
 
 	/**
 	 * 支付宝用户id
@@ -19,10 +19,21 @@ public class AlipayEbppInvoiceTitleListGetModel extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
-	public String getUserId() {
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
-	public void setUserId(String userId) {
+
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
 

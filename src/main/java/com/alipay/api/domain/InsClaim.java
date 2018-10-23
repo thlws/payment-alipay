@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 赔案
  *
  * @author auto create
- * @since 1.0, 2017-07-18 15:48:09
+ * @since 1.0, 2018-05-17 11:02:07
  */
 public class InsClaim extends AlipayObject {
 
-	private static final long serialVersionUID = 5616219727162143226L;
+	private static final long serialVersionUID = 8857835216275497524L;
 
 	/**
 	 * 理赔因子;标准json 格式
@@ -66,59 +66,147 @@ public class InsClaim extends AlipayObject {
 	@ApiField("reject_reason")
 	private String rejectReason;
 
-	public String getBizData() {
+    /**
+     * Gets biz data.
+     *
+     * @return the biz data
+     */
+    public String getBizData() {
 		return this.bizData;
 	}
-	public void setBizData(String bizData) {
+
+    /**
+     * Sets biz data.
+     *
+     * @param bizData the biz data
+     */
+    public void setBizData(String bizData) {
 		this.bizData = bizData;
 	}
 
-	public Long getClaimFee() {
+    /**
+     * Gets claim fee.
+     *
+     * @return the claim fee
+     */
+    public Long getClaimFee() {
 		return this.claimFee;
 	}
-	public void setClaimFee(Long claimFee) {
+
+    /**
+     * Sets claim fee.
+     *
+     * @param claimFee the claim fee
+     */
+    public void setClaimFee(Long claimFee) {
 		this.claimFee = claimFee;
 	}
 
-	public String getClaimNo() {
+    /**
+     * Gets claim no.
+     *
+     * @return the claim no
+     */
+    public String getClaimNo() {
 		return this.claimNo;
 	}
-	public void setClaimNo(String claimNo) {
+
+    /**
+     * Sets claim no.
+     *
+     * @param claimNo the claim no
+     */
+    public void setClaimNo(String claimNo) {
 		this.claimNo = claimNo;
 	}
 
-	public Date getClaimPayTime() {
+    /**
+     * Gets claim pay time.
+     *
+     * @return the claim pay time
+     */
+    public Date getClaimPayTime() {
 		return this.claimPayTime;
 	}
-	public void setClaimPayTime(Date claimPayTime) {
+
+    /**
+     * Sets claim pay time.
+     *
+     * @param claimPayTime the claim pay time
+     */
+    public void setClaimPayTime(Date claimPayTime) {
 		this.claimPayTime = claimPayTime;
 	}
 
-	public List<ClaimProgress> getClaimProgress() {
+    /**
+     * Gets claim progress.
+     *
+     * @return the claim progress
+     */
+    public List<ClaimProgress> getClaimProgress() {
 		return this.claimProgress;
 	}
-	public void setClaimProgress(List<ClaimProgress> claimProgress) {
+
+    /**
+     * Sets claim progress.
+     *
+     * @param claimProgress the claim progress
+     */
+    public void setClaimProgress(List<ClaimProgress> claimProgress) {
 		this.claimProgress = claimProgress;
 	}
 
-	public String getClaimStatus() {
+    /**
+     * Gets claim status.
+     *
+     * @return the claim status
+     */
+    public String getClaimStatus() {
 		return this.claimStatus;
 	}
-	public void setClaimStatus(String claimStatus) {
+
+    /**
+     * Sets claim status.
+     *
+     * @param claimStatus the claim status
+     */
+    public void setClaimStatus(String claimStatus) {
 		this.claimStatus = claimStatus;
 	}
 
-	public String getOutRequestNo() {
+    /**
+     * Gets out request no.
+     *
+     * @return the out request no
+     */
+    public String getOutRequestNo() {
 		return this.outRequestNo;
 	}
-	public void setOutRequestNo(String outRequestNo) {
+
+    /**
+     * Sets out request no.
+     *
+     * @param outRequestNo the out request no
+     */
+    public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
 	}
 
-	public String getRejectReason() {
+    /**
+     * Gets reject reason.
+     *
+     * @return the reject reason
+     */
+    public String getRejectReason() {
 		return this.rejectReason;
 	}
-	public void setRejectReason(String rejectReason) {
+
+    /**
+     * Sets reject reason.
+     *
+     * @param rejectReason the reject reason
+     */
+    public void setRejectReason(String rejectReason) {
 		this.rejectReason = rejectReason;
 	}
 

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class FengdieTemplate extends AlipayObject {
 
-	private static final long serialVersionUID = 2131925753593134869L;
+	private static final long serialVersionUID = 4568982685718742921L;
 
 	/**
 	 * 模板包唯一id，上传模板时自动生成
@@ -53,45 +53,111 @@ public class FengdieTemplate extends AlipayObject {
 	@ApiField("title")
 	private String title;
 
-	public Long getId() {
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
+    public Long getId() {
 		return this.id;
 	}
-	public void setId(Long id) {
+
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
+    public void setId(Long id) {
 		this.id = id;
 	}
 
-	public List<String> getMaintainer() {
+    /**
+     * Gets maintainer.
+     *
+     * @return the maintainer
+     */
+    public List<String> getMaintainer() {
 		return this.maintainer;
 	}
-	public void setMaintainer(List<String> maintainer) {
+
+    /**
+     * Sets maintainer.
+     *
+     * @param maintainer the maintainer
+     */
+    public void setMaintainer(List<String> maintainer) {
 		this.maintainer = maintainer;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getSnapshot() {
+    /**
+     * Gets snapshot.
+     *
+     * @return the snapshot
+     */
+    public String getSnapshot() {
 		return this.snapshot;
 	}
-	public void setSnapshot(String snapshot) {
+
+    /**
+     * Sets snapshot.
+     *
+     * @param snapshot the snapshot
+     */
+    public void setSnapshot(String snapshot) {
 		this.snapshot = snapshot;
 	}
 
-	public String getSummary() {
+    /**
+     * Gets summary.
+     *
+     * @return the summary
+     */
+    public String getSummary() {
 		return this.summary;
 	}
-	public void setSummary(String summary) {
+
+    /**
+     * Sets summary.
+     *
+     * @param summary the summary
+     */
+    public void setSummary(String summary) {
 		this.summary = summary;
 	}
 
-	public String getTitle() {
+    /**
+     * Gets title.
+     *
+     * @return the title
+     */
+    public String getTitle() {
 		return this.title;
 	}
-	public void setTitle(String title) {
+
+    /**
+     * Sets title.
+     *
+     * @param title the title
+     */
+    public void setTitle(String title) {
 		this.title = title;
 	}
 

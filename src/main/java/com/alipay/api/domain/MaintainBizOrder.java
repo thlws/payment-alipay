@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MaintainBizOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 8178822933598339932L;
+	private static final long serialVersionUID = 1212391916914541715L;
 
 	/**
 	 * 原始金额。服务对应原始价格。对应划掉的服务价格。金额单位(元)，保留两位小数。
@@ -78,38 +78,93 @@ public class MaintainBizOrder extends AlipayObject {
 	@ApiField("service_category_id")
 	private Long serviceCategoryId;
 
-	public String getOriginCost() {
+    /**
+     * Gets origin cost.
+     *
+     * @return the origin cost
+     */
+    public String getOriginCost() {
 		return this.originCost;
 	}
-	public void setOriginCost(String originCost) {
+
+    /**
+     * Sets origin cost.
+     *
+     * @param originCost the origin cost
+     */
+    public void setOriginCost(String originCost) {
 		this.originCost = originCost;
 	}
 
-	public String getOutProductId() {
+    /**
+     * Gets out product id.
+     *
+     * @return the out product id
+     */
+    public String getOutProductId() {
 		return this.outProductId;
 	}
-	public void setOutProductId(String outProductId) {
+
+    /**
+     * Sets out product id.
+     *
+     * @param outProductId the out product id
+     */
+    public void setOutProductId(String outProductId) {
 		this.outProductId = outProductId;
 	}
 
-	public String getRealCost() {
+    /**
+     * Gets real cost.
+     *
+     * @return the real cost
+     */
+    public String getRealCost() {
 		return this.realCost;
 	}
-	public void setRealCost(String realCost) {
+
+    /**
+     * Sets real cost.
+     *
+     * @param realCost the real cost
+     */
+    public void setRealCost(String realCost) {
 		this.realCost = realCost;
 	}
 
-	public Long getSaleNum() {
+    /**
+     * Gets sale num.
+     *
+     * @return the sale num
+     */
+    public Long getSaleNum() {
 		return this.saleNum;
 	}
-	public void setSaleNum(Long saleNum) {
+
+    /**
+     * Sets sale num.
+     *
+     * @param saleNum the sale num
+     */
+    public void setSaleNum(Long saleNum) {
 		this.saleNum = saleNum;
 	}
 
-	public Long getServiceCategoryId() {
+    /**
+     * Gets service category id.
+     *
+     * @return the service category id
+     */
+    public Long getServiceCategoryId() {
 		return this.serviceCategoryId;
 	}
-	public void setServiceCategoryId(Long serviceCategoryId) {
+
+    /**
+     * Sets service category id.
+     *
+     * @param serviceCategoryId the service category id
+     */
+    public void setServiceCategoryId(Long serviceCategoryId) {
 		this.serviceCategoryId = serviceCategoryId;
 	}
 

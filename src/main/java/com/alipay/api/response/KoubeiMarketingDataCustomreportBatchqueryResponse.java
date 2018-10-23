@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.data.customreport.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-11-17 11:57:57
+ * @since 1.0, 2018-07-26 14:04:05
  */
 public class KoubeiMarketingDataCustomreportBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7667318777263337176L;
+	private static final long serialVersionUID = 2819131423842642189L;
 
 	/** 
 	 * 分页输出自定义开放数据规则列表
@@ -24,10 +24,21 @@ public class KoubeiMarketingDataCustomreportBatchqueryResponse extends AlipayRes
 	@ApiField("custom_report_condition")
 	private List<CustomReportCondition> reportConditionList;
 
-	public void setReportConditionList(List<CustomReportCondition> reportConditionList) {
+    /**
+     * Sets report condition list.
+     *
+     * @param reportConditionList the report condition list
+     */
+    public void setReportConditionList(List<CustomReportCondition> reportConditionList) {
 		this.reportConditionList = reportConditionList;
 	}
-	public List<CustomReportCondition> getReportConditionList( ) {
+
+    /**
+     * Gets report condition list.
+     *
+     * @return the report condition list
+     */
+    public List<CustomReportCondition> getReportConditionList( ) {
 		return this.reportConditionList;
 	}
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 中再核保查询结果
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:39
+ * @since 1.0, 2018-01-22 10:52:15
  */
 public class AlipayChinareModelResult extends AlipayObject {
 
-	private static final long serialVersionUID = 8384943133624553743L;
+	private static final long serialVersionUID = 2748885559538142998L;
 
 	/**
 	 * 体检记录id
@@ -37,31 +37,75 @@ public class AlipayChinareModelResult extends AlipayObject {
 	@ApiField("trans_id")
 	private String transId;
 
-	public String getId() {
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
+    public String getId() {
 		return this.id;
 	}
-	public void setId(String id) {
+
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
+    public void setId(String id) {
 		this.id = id;
 	}
 
-	public String getRuleId() {
+    /**
+     * Gets rule id.
+     *
+     * @return the rule id
+     */
+    public String getRuleId() {
 		return this.ruleId;
 	}
-	public void setRuleId(String ruleId) {
+
+    /**
+     * Sets rule id.
+     *
+     * @param ruleId the rule id
+     */
+    public void setRuleId(String ruleId) {
 		this.ruleId = ruleId;
 	}
 
-	public String getRuleResult() {
+    /**
+     * Gets rule result.
+     *
+     * @return the rule result
+     */
+    public String getRuleResult() {
 		return this.ruleResult;
 	}
-	public void setRuleResult(String ruleResult) {
+
+    /**
+     * Sets rule result.
+     *
+     * @param ruleResult the rule result
+     */
+    public void setRuleResult(String ruleResult) {
 		this.ruleResult = ruleResult;
 	}
 
-	public String getTransId() {
+    /**
+     * Gets trans id.
+     *
+     * @return the trans id
+     */
+    public String getTransId() {
 		return this.transId;
 	}
-	public void setTransId(String transId) {
+
+    /**
+     * Sets trans id.
+     *
+     * @param transId the trans id
+     */
+    public void setTransId(String transId) {
 		this.transId = transId;
 	}
 

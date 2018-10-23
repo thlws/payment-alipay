@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ConsumeRecordAOPModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1269711346986623225L;
+	private static final long serialVersionUID = 3428853683729796756L;
 
 	/**
 	 * 接入渠道
@@ -295,7 +295,7 @@ public class ConsumeRecordAOPModel extends AlipayObject {
 	private String payChannel;
 
 	/**
-	 * 代付人 亲密付人姓名
+	 * 代付人&亲密付人姓名
 	 */
 	@ApiField("peerpayer_real_name")
 	private String peerpayerRealName;
@@ -330,367 +330,939 @@ public class ConsumeRecordAOPModel extends AlipayObject {
 	@ApiField("trade_from")
 	private String tradeFrom;
 
-	public String getAccessChannel() {
+    /**
+     * Gets access channel.
+     *
+     * @return the access channel
+     */
+    public String getAccessChannel() {
 		return this.accessChannel;
 	}
-	public void setAccessChannel(String accessChannel) {
+
+    /**
+     * Sets access channel.
+     *
+     * @param accessChannel the access channel
+     */
+    public void setAccessChannel(String accessChannel) {
 		this.accessChannel = accessChannel;
 	}
 
-	public String getAdditionalStatus() {
+    /**
+     * Gets additional status.
+     *
+     * @return the additional status
+     */
+    public String getAdditionalStatus() {
 		return this.additionalStatus;
 	}
-	public void setAdditionalStatus(String additionalStatus) {
+
+    /**
+     * Sets additional status.
+     *
+     * @param additionalStatus the additional status
+     */
+    public void setAdditionalStatus(String additionalStatus) {
 		this.additionalStatus = additionalStatus;
 	}
 
-	public List<String> getBizActions() {
+    /**
+     * Gets biz actions.
+     *
+     * @return the biz actions
+     */
+    public List<String> getBizActions() {
 		return this.bizActions;
 	}
-	public void setBizActions(List<String> bizActions) {
+
+    /**
+     * Sets biz actions.
+     *
+     * @param bizActions the biz actions
+     */
+    public void setBizActions(List<String> bizActions) {
 		this.bizActions = bizActions;
 	}
 
-	public String getBizExtraNo() {
+    /**
+     * Gets biz extra no.
+     *
+     * @return the biz extra no
+     */
+    public String getBizExtraNo() {
 		return this.bizExtraNo;
 	}
-	public void setBizExtraNo(String bizExtraNo) {
+
+    /**
+     * Sets biz extra no.
+     *
+     * @param bizExtraNo the biz extra no
+     */
+    public void setBizExtraNo(String bizExtraNo) {
 		this.bizExtraNo = bizExtraNo;
 	}
 
-	public String getBizInNo() {
+    /**
+     * Gets biz in no.
+     *
+     * @return the biz in no
+     */
+    public String getBizInNo() {
 		return this.bizInNo;
 	}
-	public void setBizInNo(String bizInNo) {
+
+    /**
+     * Sets biz in no.
+     *
+     * @param bizInNo the biz in no
+     */
+    public void setBizInNo(String bizInNo) {
 		this.bizInNo = bizInNo;
 	}
 
-	public String getBizMemo() {
+    /**
+     * Gets biz memo.
+     *
+     * @return the biz memo
+     */
+    public String getBizMemo() {
 		return this.bizMemo;
 	}
-	public void setBizMemo(String bizMemo) {
+
+    /**
+     * Sets biz memo.
+     *
+     * @param bizMemo the biz memo
+     */
+    public void setBizMemo(String bizMemo) {
 		this.bizMemo = bizMemo;
 	}
 
-	public String getBizOrig() {
+    /**
+     * Gets biz orig.
+     *
+     * @return the biz orig
+     */
+    public String getBizOrig() {
 		return this.bizOrig;
 	}
-	public void setBizOrig(String bizOrig) {
+
+    /**
+     * Sets biz orig.
+     *
+     * @param bizOrig the biz orig
+     */
+    public void setBizOrig(String bizOrig) {
 		this.bizOrig = bizOrig;
 	}
 
-	public String getBizOutNo() {
+    /**
+     * Gets biz out no.
+     *
+     * @return the biz out no
+     */
+    public String getBizOutNo() {
 		return this.bizOutNo;
 	}
-	public void setBizOutNo(String bizOutNo) {
+
+    /**
+     * Sets biz out no.
+     *
+     * @param bizOutNo the biz out no
+     */
+    public void setBizOutNo(String bizOutNo) {
 		this.bizOutNo = bizOutNo;
 	}
 
-	public String getBizState() {
+    /**
+     * Gets biz state.
+     *
+     * @return the biz state
+     */
+    public String getBizState() {
 		return this.bizState;
 	}
-	public void setBizState(String bizState) {
+
+    /**
+     * Sets biz state.
+     *
+     * @param bizState the biz state
+     */
+    public void setBizState(String bizState) {
 		this.bizState = bizState;
 	}
 
-	public String getBizSubType() {
+    /**
+     * Gets biz sub type.
+     *
+     * @return the biz sub type
+     */
+    public String getBizSubType() {
 		return this.bizSubType;
 	}
-	public void setBizSubType(String bizSubType) {
+
+    /**
+     * Sets biz sub type.
+     *
+     * @param bizSubType the biz sub type
+     */
+    public void setBizSubType(String bizSubType) {
 		this.bizSubType = bizSubType;
 	}
 
-	public String getBizType() {
+    /**
+     * Gets biz type.
+     *
+     * @return the biz type
+     */
+    public String getBizType() {
 		return this.bizType;
 	}
-	public void setBizType(String bizType) {
+
+    /**
+     * Sets biz type.
+     *
+     * @param bizType the biz type
+     */
+    public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
-	public String getCategoryId() {
+    /**
+     * Gets category id.
+     *
+     * @return the category id
+     */
+    public String getCategoryId() {
 		return this.categoryId;
 	}
-	public void setCategoryId(String categoryId) {
+
+    /**
+     * Sets category id.
+     *
+     * @param categoryId the category id
+     */
+    public void setCategoryId(String categoryId) {
 		this.categoryId = categoryId;
 	}
 
-	public String getConsumeFee() {
+    /**
+     * Gets consume fee.
+     *
+     * @return the consume fee
+     */
+    public String getConsumeFee() {
 		return this.consumeFee;
 	}
-	public void setConsumeFee(String consumeFee) {
+
+    /**
+     * Sets consume fee.
+     *
+     * @param consumeFee the consume fee
+     */
+    public void setConsumeFee(String consumeFee) {
 		this.consumeFee = consumeFee;
 	}
 
-	public String getConsumeRefundStatus() {
+    /**
+     * Gets consume refund status.
+     *
+     * @return the consume refund status
+     */
+    public String getConsumeRefundStatus() {
 		return this.consumeRefundStatus;
 	}
-	public void setConsumeRefundStatus(String consumeRefundStatus) {
+
+    /**
+     * Sets consume refund status.
+     *
+     * @param consumeRefundStatus the consume refund status
+     */
+    public void setConsumeRefundStatus(String consumeRefundStatus) {
 		this.consumeRefundStatus = consumeRefundStatus;
 	}
 
-	public String getConsumeSite() {
+    /**
+     * Gets consume site.
+     *
+     * @return the consume site
+     */
+    public String getConsumeSite() {
 		return this.consumeSite;
 	}
-	public void setConsumeSite(String consumeSite) {
+
+    /**
+     * Sets consume site.
+     *
+     * @param consumeSite the consume site
+     */
+    public void setConsumeSite(String consumeSite) {
 		this.consumeSite = consumeSite;
 	}
 
-	public String getConsumeStatus() {
+    /**
+     * Gets consume status.
+     *
+     * @return the consume status
+     */
+    public String getConsumeStatus() {
 		return this.consumeStatus;
 	}
-	public void setConsumeStatus(String consumeStatus) {
+
+    /**
+     * Sets consume status.
+     *
+     * @param consumeStatus the consume status
+     */
+    public void setConsumeStatus(String consumeStatus) {
 		this.consumeStatus = consumeStatus;
 	}
 
-	public String getConsumeTitle() {
+    /**
+     * Gets consume title.
+     *
+     * @return the consume title
+     */
+    public String getConsumeTitle() {
 		return this.consumeTitle;
 	}
-	public void setConsumeTitle(String consumeTitle) {
+
+    /**
+     * Sets consume title.
+     *
+     * @param consumeTitle the consume title
+     */
+    public void setConsumeTitle(String consumeTitle) {
 		this.consumeTitle = consumeTitle;
 	}
 
-	public String getConsumeType() {
+    /**
+     * Gets consume type.
+     *
+     * @return the consume type
+     */
+    public String getConsumeType() {
 		return this.consumeType;
 	}
-	public void setConsumeType(String consumeType) {
+
+    /**
+     * Sets consume type.
+     *
+     * @param consumeType the consume type
+     */
+    public void setConsumeType(String consumeType) {
 		this.consumeType = consumeType;
 	}
 
-	public String getCurrency() {
+    /**
+     * Gets currency.
+     *
+     * @return the currency
+     */
+    public String getCurrency() {
 		return this.currency;
 	}
-	public void setCurrency(String currency) {
+
+    /**
+     * Sets currency.
+     *
+     * @param currency the currency
+     */
+    public void setCurrency(String currency) {
 		this.currency = currency;
 	}
 
-	public Date getDeleteOverTime() {
+    /**
+     * Gets delete over time.
+     *
+     * @return the delete over time
+     */
+    public Date getDeleteOverTime() {
 		return this.deleteOverTime;
 	}
-	public void setDeleteOverTime(Date deleteOverTime) {
+
+    /**
+     * Sets delete over time.
+     *
+     * @param deleteOverTime the delete over time
+     */
+    public void setDeleteOverTime(Date deleteOverTime) {
 		this.deleteOverTime = deleteOverTime;
 	}
 
-	public Date getDeleteTime() {
+    /**
+     * Gets delete time.
+     *
+     * @return the delete time
+     */
+    public Date getDeleteTime() {
 		return this.deleteTime;
 	}
-	public void setDeleteTime(Date deleteTime) {
+
+    /**
+     * Sets delete time.
+     *
+     * @param deleteTime the delete time
+     */
+    public void setDeleteTime(Date deleteTime) {
 		this.deleteTime = deleteTime;
 	}
 
-	public String getDeleteType() {
+    /**
+     * Gets delete type.
+     *
+     * @return the delete type
+     */
+    public String getDeleteType() {
 		return this.deleteType;
 	}
-	public void setDeleteType(String deleteType) {
+
+    /**
+     * Sets delete type.
+     *
+     * @param deleteType the delete type
+     */
+    public void setDeleteType(String deleteType) {
 		this.deleteType = deleteType;
 	}
 
-	public String getDepositbackStatus() {
+    /**
+     * Gets depositback status.
+     *
+     * @return the depositback status
+     */
+    public String getDepositbackStatus() {
 		return this.depositbackStatus;
 	}
-	public void setDepositbackStatus(String depositbackStatus) {
+
+    /**
+     * Sets depositback status.
+     *
+     * @param depositbackStatus the depositback status
+     */
+    public void setDepositbackStatus(String depositbackStatus) {
 		this.depositbackStatus = depositbackStatus;
 	}
 
-	public String getFlagLocked() {
+    /**
+     * Gets flag locked.
+     *
+     * @return the flag locked
+     */
+    public String getFlagLocked() {
 		return this.flagLocked;
 	}
-	public void setFlagLocked(String flagLocked) {
+
+    /**
+     * Sets flag locked.
+     *
+     * @param flagLocked the flag locked
+     */
+    public void setFlagLocked(String flagLocked) {
 		this.flagLocked = flagLocked;
 	}
 
-	public String getFlagRefund() {
+    /**
+     * Gets flag refund.
+     *
+     * @return the flag refund
+     */
+    public String getFlagRefund() {
 		return this.flagRefund;
 	}
-	public void setFlagRefund(String flagRefund) {
+
+    /**
+     * Sets flag refund.
+     *
+     * @param flagRefund the flag refund
+     */
+    public void setFlagRefund(String flagRefund) {
 		this.flagRefund = flagRefund;
 	}
 
-	public Date getGmtBizCreate() {
+    /**
+     * Gets gmt biz create.
+     *
+     * @return the gmt biz create
+     */
+    public Date getGmtBizCreate() {
 		return this.gmtBizCreate;
 	}
-	public void setGmtBizCreate(Date gmtBizCreate) {
+
+    /**
+     * Sets gmt biz create.
+     *
+     * @param gmtBizCreate the gmt biz create
+     */
+    public void setGmtBizCreate(Date gmtBizCreate) {
 		this.gmtBizCreate = gmtBizCreate;
 	}
 
-	public Date getGmtBizModified() {
+    /**
+     * Gets gmt biz modified.
+     *
+     * @return the gmt biz modified
+     */
+    public Date getGmtBizModified() {
 		return this.gmtBizModified;
 	}
-	public void setGmtBizModified(Date gmtBizModified) {
+
+    /**
+     * Sets gmt biz modified.
+     *
+     * @param gmtBizModified the gmt biz modified
+     */
+    public void setGmtBizModified(Date gmtBizModified) {
 		this.gmtBizModified = gmtBizModified;
 	}
 
-	public Date getGmtCreate() {
+    /**
+     * Gets gmt create.
+     *
+     * @return the gmt create
+     */
+    public Date getGmtCreate() {
 		return this.gmtCreate;
 	}
-	public void setGmtCreate(Date gmtCreate) {
+
+    /**
+     * Sets gmt create.
+     *
+     * @param gmtCreate the gmt create
+     */
+    public void setGmtCreate(Date gmtCreate) {
 		this.gmtCreate = gmtCreate;
 	}
 
-	public Date getGmtModified() {
+    /**
+     * Gets gmt modified.
+     *
+     * @return the gmt modified
+     */
+    public Date getGmtModified() {
 		return this.gmtModified;
 	}
-	public void setGmtModified(Date gmtModified) {
+
+    /**
+     * Sets gmt modified.
+     *
+     * @param gmtModified the gmt modified
+     */
+    public void setGmtModified(Date gmtModified) {
 		this.gmtModified = gmtModified;
 	}
 
-	public Date getGmtReceivePay() {
+    /**
+     * Gets gmt receive pay.
+     *
+     * @return the gmt receive pay
+     */
+    public Date getGmtReceivePay() {
 		return this.gmtReceivePay;
 	}
-	public void setGmtReceivePay(Date gmtReceivePay) {
+
+    /**
+     * Sets gmt receive pay.
+     *
+     * @param gmtReceivePay the gmt receive pay
+     */
+    public void setGmtReceivePay(Date gmtReceivePay) {
 		this.gmtReceivePay = gmtReceivePay;
 	}
 
-	public Date getGmtSendPay() {
+    /**
+     * Gets gmt send pay.
+     *
+     * @return the gmt send pay
+     */
+    public Date getGmtSendPay() {
 		return this.gmtSendPay;
 	}
-	public void setGmtSendPay(Date gmtSendPay) {
+
+    /**
+     * Sets gmt send pay.
+     *
+     * @param gmtSendPay the gmt send pay
+     */
+    public void setGmtSendPay(Date gmtSendPay) {
 		this.gmtSendPay = gmtSendPay;
 	}
 
-	public Boolean getHasFundItem() {
+    /**
+     * Gets has fund item.
+     *
+     * @return the has fund item
+     */
+    public Boolean getHasFundItem() {
 		return this.hasFundItem;
 	}
-	public void setHasFundItem(Boolean hasFundItem) {
+
+    /**
+     * Sets has fund item.
+     *
+     * @param hasFundItem the has fund item
+     */
+    public void setHasFundItem(Boolean hasFundItem) {
 		this.hasFundItem = hasFundItem;
 	}
 
-	public Boolean getHasNewFundItem() {
+    /**
+     * Gets has new fund item.
+     *
+     * @return the has new fund item
+     */
+    public Boolean getHasNewFundItem() {
 		return this.hasNewFundItem;
 	}
-	public void setHasNewFundItem(Boolean hasNewFundItem) {
+
+    /**
+     * Sets has new fund item.
+     *
+     * @param hasNewFundItem the has new fund item
+     */
+    public void setHasNewFundItem(Boolean hasNewFundItem) {
 		this.hasNewFundItem = hasNewFundItem;
 	}
 
-	public String getInOut() {
+    /**
+     * Gets in out.
+     *
+     * @return the in out
+     */
+    public String getInOut() {
 		return this.inOut;
 	}
-	public void setInOut(String inOut) {
+
+    /**
+     * Sets in out.
+     *
+     * @param inOut the in out
+     */
+    public void setInOut(String inOut) {
 		this.inOut = inOut;
 	}
 
-	public String getOppositeCardNo() {
+    /**
+     * Gets opposite card no.
+     *
+     * @return the opposite card no
+     */
+    public String getOppositeCardNo() {
 		return this.oppositeCardNo;
 	}
-	public void setOppositeCardNo(String oppositeCardNo) {
+
+    /**
+     * Sets opposite card no.
+     *
+     * @param oppositeCardNo the opposite card no
+     */
+    public void setOppositeCardNo(String oppositeCardNo) {
 		this.oppositeCardNo = oppositeCardNo;
 	}
 
-	public String getOppositeLoginId() {
+    /**
+     * Gets opposite login id.
+     *
+     * @return the opposite login id
+     */
+    public String getOppositeLoginId() {
 		return this.oppositeLoginId;
 	}
-	public void setOppositeLoginId(String oppositeLoginId) {
+
+    /**
+     * Sets opposite login id.
+     *
+     * @param oppositeLoginId the opposite login id
+     */
+    public void setOppositeLoginId(String oppositeLoginId) {
 		this.oppositeLoginId = oppositeLoginId;
 	}
 
-	public String getOppositeName() {
+    /**
+     * Gets opposite name.
+     *
+     * @return the opposite name
+     */
+    public String getOppositeName() {
 		return this.oppositeName;
 	}
-	public void setOppositeName(String oppositeName) {
+
+    /**
+     * Sets opposite name.
+     *
+     * @param oppositeName the opposite name
+     */
+    public void setOppositeName(String oppositeName) {
 		this.oppositeName = oppositeName;
 	}
 
-	public String getOppositeNickName() {
+    /**
+     * Gets opposite nick name.
+     *
+     * @return the opposite nick name
+     */
+    public String getOppositeNickName() {
 		return this.oppositeNickName;
 	}
-	public void setOppositeNickName(String oppositeNickName) {
+
+    /**
+     * Sets opposite nick name.
+     *
+     * @param oppositeNickName the opposite nick name
+     */
+    public void setOppositeNickName(String oppositeNickName) {
 		this.oppositeNickName = oppositeNickName;
 	}
 
-	public String getOrigConsumeTitle() {
+    /**
+     * Gets orig consume title.
+     *
+     * @return the orig consume title
+     */
+    public String getOrigConsumeTitle() {
 		return this.origConsumeTitle;
 	}
-	public void setOrigConsumeTitle(String origConsumeTitle) {
+
+    /**
+     * Sets orig consume title.
+     *
+     * @param origConsumeTitle the orig consume title
+     */
+    public void setOrigConsumeTitle(String origConsumeTitle) {
 		this.origConsumeTitle = origConsumeTitle;
 	}
 
-	public String getOwnerCardNo() {
+    /**
+     * Gets owner card no.
+     *
+     * @return the owner card no
+     */
+    public String getOwnerCardNo() {
 		return this.ownerCardNo;
 	}
-	public void setOwnerCardNo(String ownerCardNo) {
+
+    /**
+     * Sets owner card no.
+     *
+     * @param ownerCardNo the owner card no
+     */
+    public void setOwnerCardNo(String ownerCardNo) {
 		this.ownerCardNo = ownerCardNo;
 	}
 
-	public String getOwnerCustomerId() {
+    /**
+     * Gets owner customer id.
+     *
+     * @return the owner customer id
+     */
+    public String getOwnerCustomerId() {
 		return this.ownerCustomerId;
 	}
-	public void setOwnerCustomerId(String ownerCustomerId) {
+
+    /**
+     * Sets owner customer id.
+     *
+     * @param ownerCustomerId the owner customer id
+     */
+    public void setOwnerCustomerId(String ownerCustomerId) {
 		this.ownerCustomerId = ownerCustomerId;
 	}
 
-	public String getOwnerLoginId() {
+    /**
+     * Gets owner login id.
+     *
+     * @return the owner login id
+     */
+    public String getOwnerLoginId() {
 		return this.ownerLoginId;
 	}
-	public void setOwnerLoginId(String ownerLoginId) {
+
+    /**
+     * Sets owner login id.
+     *
+     * @param ownerLoginId the owner login id
+     */
+    public void setOwnerLoginId(String ownerLoginId) {
 		this.ownerLoginId = ownerLoginId;
 	}
 
-	public String getOwnerName() {
+    /**
+     * Gets owner name.
+     *
+     * @return the owner name
+     */
+    public String getOwnerName() {
 		return this.ownerName;
 	}
-	public void setOwnerName(String ownerName) {
+
+    /**
+     * Sets owner name.
+     *
+     * @param ownerName the owner name
+     */
+    public void setOwnerName(String ownerName) {
 		this.ownerName = ownerName;
 	}
 
-	public String getOwnerNick() {
+    /**
+     * Gets owner nick.
+     *
+     * @return the owner nick
+     */
+    public String getOwnerNick() {
 		return this.ownerNick;
 	}
-	public void setOwnerNick(String ownerNick) {
+
+    /**
+     * Sets owner nick.
+     *
+     * @param ownerNick the owner nick
+     */
+    public void setOwnerNick(String ownerNick) {
 		this.ownerNick = ownerNick;
 	}
 
-	public String getPartnerId() {
+    /**
+     * Gets partner id.
+     *
+     * @return the partner id
+     */
+    public String getPartnerId() {
 		return this.partnerId;
 	}
-	public void setPartnerId(String partnerId) {
+
+    /**
+     * Sets partner id.
+     *
+     * @param partnerId the partner id
+     */
+    public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}
 
-	public String getPayChannel() {
+    /**
+     * Gets pay channel.
+     *
+     * @return the pay channel
+     */
+    public String getPayChannel() {
 		return this.payChannel;
 	}
-	public void setPayChannel(String payChannel) {
+
+    /**
+     * Sets pay channel.
+     *
+     * @param payChannel the pay channel
+     */
+    public void setPayChannel(String payChannel) {
 		this.payChannel = payChannel;
 	}
 
-	public String getPeerpayerRealName() {
+    /**
+     * Gets peerpayer real name.
+     *
+     * @return the peerpayer real name
+     */
+    public String getPeerpayerRealName() {
 		return this.peerpayerRealName;
 	}
-	public void setPeerpayerRealName(String peerpayerRealName) {
+
+    /**
+     * Sets peerpayer real name.
+     *
+     * @param peerpayerRealName the peerpayer real name
+     */
+    public void setPeerpayerRealName(String peerpayerRealName) {
 		this.peerpayerRealName = peerpayerRealName;
 	}
 
-	public String getProduct() {
+    /**
+     * Gets product.
+     *
+     * @return the product
+     */
+    public String getProduct() {
 		return this.product;
 	}
-	public void setProduct(String product) {
+
+    /**
+     * Sets product.
+     *
+     * @param product the product
+     */
+    public void setProduct(String product) {
 		this.product = product;
 	}
 
-	public String getRefundFee() {
+    /**
+     * Gets refund fee.
+     *
+     * @return the refund fee
+     */
+    public String getRefundFee() {
 		return this.refundFee;
 	}
-	public void setRefundFee(String refundFee) {
+
+    /**
+     * Sets refund fee.
+     *
+     * @param refundFee the refund fee
+     */
+    public void setRefundFee(String refundFee) {
 		this.refundFee = refundFee;
 	}
 
-	public String getServiceFee() {
+    /**
+     * Gets service fee.
+     *
+     * @return the service fee
+     */
+    public String getServiceFee() {
 		return this.serviceFee;
 	}
-	public void setServiceFee(String serviceFee) {
+
+    /**
+     * Sets service fee.
+     *
+     * @param serviceFee the service fee
+     */
+    public void setServiceFee(String serviceFee) {
 		this.serviceFee = serviceFee;
 	}
 
-	public String getTotalRefundFee() {
+    /**
+     * Gets total refund fee.
+     *
+     * @return the total refund fee
+     */
+    public String getTotalRefundFee() {
 		return this.totalRefundFee;
 	}
-	public void setTotalRefundFee(String totalRefundFee) {
+
+    /**
+     * Sets total refund fee.
+     *
+     * @param totalRefundFee the total refund fee
+     */
+    public void setTotalRefundFee(String totalRefundFee) {
 		this.totalRefundFee = totalRefundFee;
 	}
 
-	public String getTradeFrom() {
+    /**
+     * Gets trade from.
+     *
+     * @return the trade from
+     */
+    public String getTradeFrom() {
 		return this.tradeFrom;
 	}
-	public void setTradeFrom(String tradeFrom) {
+
+    /**
+     * Sets trade from.
+     *
+     * @param tradeFrom the trade from
+     */
+    public void setTradeFrom(String tradeFrom) {
 		this.tradeFrom = tradeFrom;
 	}
 

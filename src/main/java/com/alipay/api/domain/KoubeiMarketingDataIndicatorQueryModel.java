@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMarketingDataIndicatorQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5793783357415388713L;
+	private static final long serialVersionUID = 8842294278544167187L;
 
 	/**
 	 * 开始日期,格式:yyyyMMdd
@@ -58,45 +58,111 @@ store_Ids：为门店ID，多个门店使用逗号分隔
 	@ApiField("page_size")
 	private String pageSize;
 
-	public String getBeginDate() {
+    /**
+     * Gets begin date.
+     *
+     * @return the begin date
+     */
+    public String getBeginDate() {
 		return this.beginDate;
 	}
-	public void setBeginDate(String beginDate) {
+
+    /**
+     * Sets begin date.
+     *
+     * @param beginDate the begin date
+     */
+    public void setBeginDate(String beginDate) {
 		this.beginDate = beginDate;
 	}
 
-	public String getBizType() {
+    /**
+     * Gets biz type.
+     *
+     * @return the biz type
+     */
+    public String getBizType() {
 		return this.bizType;
 	}
-	public void setBizType(String bizType) {
+
+    /**
+     * Sets biz type.
+     *
+     * @param bizType the biz type
+     */
+    public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
-	public String getEndDate() {
+    /**
+     * Gets end date.
+     *
+     * @return the end date
+     */
+    public String getEndDate() {
 		return this.endDate;
 	}
-	public void setEndDate(String endDate) {
+
+    /**
+     * Sets end date.
+     *
+     * @param endDate the end date
+     */
+    public void setEndDate(String endDate) {
 		this.endDate = endDate;
 	}
 
-	public String getExtInfo() {
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo() {
 		return this.extInfo;
 	}
-	public void setExtInfo(String extInfo) {
+
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
-	public String getPageNum() {
+    /**
+     * Gets page num.
+     *
+     * @return the page num
+     */
+    public String getPageNum() {
 		return this.pageNum;
 	}
-	public void setPageNum(String pageNum) {
+
+    /**
+     * Sets page num.
+     *
+     * @param pageNum the page num
+     */
+    public void setPageNum(String pageNum) {
 		this.pageNum = pageNum;
 	}
 
-	public String getPageSize() {
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public String getPageSize() {
 		return this.pageSize;
 	}
-	public void setPageSize(String pageSize) {
+
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(String pageSize) {
 		this.pageSize = pageSize;
 	}
 

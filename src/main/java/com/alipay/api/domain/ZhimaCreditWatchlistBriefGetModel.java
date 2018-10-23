@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业关注名单普惠版
  *
  * @author auto create
- * @since 1.0, 2017-05-09 16:11:51
+ * @since 1.0, 2017-11-23 14:20:59
  */
 public class ZhimaCreditWatchlistBriefGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3279937744335798445L;
+	private static final long serialVersionUID = 4877793939256427983L;
 
 	/**
 	 * 与参数cert_type对应，分别为：证件号完整值(例：420983190001010001) 或支付宝uid（例：2088102165398450）
@@ -43,38 +43,93 @@ public class ZhimaCreditWatchlistBriefGetModel extends AlipayObject {
 	@ApiField("transaction_id")
 	private String transactionId;
 
-	public String getCertNo() {
+    /**
+     * Gets cert no.
+     *
+     * @return the cert no
+     */
+    public String getCertNo() {
 		return this.certNo;
 	}
-	public void setCertNo(String certNo) {
+
+    /**
+     * Sets cert no.
+     *
+     * @param certNo the cert no
+     */
+    public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}
 
-	public String getCertType() {
+    /**
+     * Gets cert type.
+     *
+     * @return the cert type
+     */
+    public String getCertType() {
 		return this.certType;
 	}
-	public void setCertType(String certType) {
+
+    /**
+     * Sets cert type.
+     *
+     * @param certType the cert type
+     */
+    public void setCertType(String certType) {
 		this.certType = certType;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getProductCode() {
+    /**
+     * Gets product code.
+     *
+     * @return the product code
+     */
+    public String getProductCode() {
 		return this.productCode;
 	}
-	public void setProductCode(String productCode) {
+
+    /**
+     * Sets product code.
+     *
+     * @param productCode the product code
+     */
+    public void setProductCode(String productCode) {
 		this.productCode = productCode;
 	}
 
-	public String getTransactionId() {
+    /**
+     * Gets transaction id.
+     *
+     * @return the transaction id
+     */
+    public String getTransactionId() {
 		return this.transactionId;
 	}
-	public void setTransactionId(String transactionId) {
+
+    /**
+     * Sets transaction id.
+     *
+     * @param transactionId the transaction id
+     */
+    public void setTransactionId(String transactionId) {
 		this.transactionId = transactionId;
 	}
 

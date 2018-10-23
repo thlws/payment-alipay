@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiCateringTablelistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8898743156924598612L;
+	private static final long serialVersionUID = 6292324399322713999L;
 
 	/**
 	 * 门店id
@@ -19,10 +19,21 @@ public class KoubeiCateringTablelistQueryModel extends AlipayObject {
 	@ApiField("shop_id")
 	private String shopId;
 
-	public String getShopId() {
+    /**
+     * Gets shop id.
+     *
+     * @return the shop id
+     */
+    public String getShopId() {
 		return this.shopId;
 	}
-	public void setShopId(String shopId) {
+
+    /**
+     * Sets shop id.
+     *
+     * @param shopId the shop id
+     */
+    public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 

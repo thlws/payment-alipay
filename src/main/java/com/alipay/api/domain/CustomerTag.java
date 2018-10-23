@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CustomerTag extends AlipayObject {
 
-	private static final long serialVersionUID = 4245421135646385551L;
+	private static final long serialVersionUID = 3218361722175862411L;
 
 	/**
 	 * 字段名称
@@ -37,31 +37,75 @@ public class CustomerTag extends AlipayObject {
 	@ApiField("name")
 	private String name;
 
-	public String getColName() {
+    /**
+     * Gets col name.
+     *
+     * @return the col name
+     */
+    public String getColName() {
 		return this.colName;
 	}
-	public void setColName(String colName) {
+
+    /**
+     * Sets col name.
+     *
+     * @param colName the col name
+     */
+    public void setColName(String colName) {
 		this.colName = colName;
 	}
 
-	public String getColumnType() {
+    /**
+     * Gets column type.
+     *
+     * @return the column type
+     */
+    public String getColumnType() {
 		return this.columnType;
 	}
-	public void setColumnType(String columnType) {
+
+    /**
+     * Sets column type.
+     *
+     * @param columnType the column type
+     */
+    public void setColumnType(String columnType) {
 		this.columnType = columnType;
 	}
 
-	public String getId() {
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
+    public String getId() {
 		return this.id;
 	}
-	public void setId(String id) {
+
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
+    public void setId(String id) {
 		this.id = id;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 

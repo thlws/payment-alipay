@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.acquire.close response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2014-06-12 17:17:06
  */
 public class AlipayAcquireCloseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2649752513461472821L;
+	private static final long serialVersionUID = 4155132315713322146L;
 
 	/** 
 	 * 对返回响应码进行原因说明
@@ -58,45 +58,111 @@ NKNOWN：结果未知
 	@ApiField("trade_no")
 	private String tradeNo;
 
-	public void setDetailErrorCode(String detailErrorCode) {
+    /**
+     * Sets detail error code.
+     *
+     * @param detailErrorCode the detail error code
+     */
+    public void setDetailErrorCode(String detailErrorCode) {
 		this.detailErrorCode = detailErrorCode;
 	}
-	public String getDetailErrorCode( ) {
+
+    /**
+     * Gets detail error code.
+     *
+     * @return the detail error code
+     */
+    public String getDetailErrorCode( ) {
 		return this.detailErrorCode;
 	}
 
-	public void setDetailErrorDes(String detailErrorDes) {
+    /**
+     * Sets detail error des.
+     *
+     * @param detailErrorDes the detail error des
+     */
+    public void setDetailErrorDes(String detailErrorDes) {
 		this.detailErrorDes = detailErrorDes;
 	}
-	public String getDetailErrorDes( ) {
+
+    /**
+     * Gets detail error des.
+     *
+     * @return the detail error des
+     */
+    public String getDetailErrorDes( ) {
 		return this.detailErrorDes;
 	}
 
-	public void setIsSuccess(String isSuccess) {
+    /**
+     * Sets is success.
+     *
+     * @param isSuccess the is success
+     */
+    public void setIsSuccess(String isSuccess) {
 		this.isSuccess = isSuccess;
 	}
-	public String getIsSuccess( ) {
+
+    /**
+     * Gets is success.
+     *
+     * @return the is success
+     */
+    public String getIsSuccess( ) {
 		return this.isSuccess;
 	}
 
-	public void setOutTradeNo(String outTradeNo) {
+    /**
+     * Sets out trade no.
+     *
+     * @param outTradeNo the out trade no
+     */
+    public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
-	public String getOutTradeNo( ) {
+
+    /**
+     * Gets out trade no.
+     *
+     * @return the out trade no
+     */
+    public String getOutTradeNo( ) {
 		return this.outTradeNo;
 	}
 
-	public void setResultCode(String resultCode) {
+    /**
+     * Sets result code.
+     *
+     * @param resultCode the result code
+     */
+    public void setResultCode(String resultCode) {
 		this.resultCode = resultCode;
 	}
-	public String getResultCode( ) {
+
+    /**
+     * Gets result code.
+     *
+     * @return the result code
+     */
+    public String getResultCode( ) {
 		return this.resultCode;
 	}
 
-	public void setTradeNo(String tradeNo) {
+    /**
+     * Sets trade no.
+     *
+     * @param tradeNo the trade no
+     */
+    public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
-	public String getTradeNo( ) {
+
+    /**
+     * Gets trade no.
+     *
+     * @return the trade no
+     */
+    public String getTradeNo( ) {
 		return this.tradeNo;
 	}
 

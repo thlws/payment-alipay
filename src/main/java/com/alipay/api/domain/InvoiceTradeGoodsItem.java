@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InvoiceTradeGoodsItem extends AlipayObject {
 
-	private static final long serialVersionUID = 3748763859582296516L;
+	private static final long serialVersionUID = 1465242872454399565L;
 
 	/**
 	 * 商品类目
@@ -61,59 +61,147 @@ public class InvoiceTradeGoodsItem extends AlipayObject {
 	@ApiField("unit")
 	private String unit;
 
-	public String getCategory() {
+    /**
+     * Gets category.
+     *
+     * @return the category
+     */
+    public String getCategory() {
 		return this.category;
 	}
-	public void setCategory(String category) {
+
+    /**
+     * Sets category.
+     *
+     * @param category the category
+     */
+    public void setCategory(String category) {
 		this.category = category;
 	}
 
-	public String getGoodsName() {
+    /**
+     * Gets goods name.
+     *
+     * @return the goods name
+     */
+    public String getGoodsName() {
 		return this.goodsName;
 	}
-	public void setGoodsName(String goodsName) {
+
+    /**
+     * Sets goods name.
+     *
+     * @param goodsName the goods name
+     */
+    public void setGoodsName(String goodsName) {
 		this.goodsName = goodsName;
 	}
 
-	public String getGoodsNo() {
+    /**
+     * Gets goods no.
+     *
+     * @return the goods no
+     */
+    public String getGoodsNo() {
 		return this.goodsNo;
 	}
-	public void setGoodsNo(String goodsNo) {
+
+    /**
+     * Sets goods no.
+     *
+     * @param goodsNo the goods no
+     */
+    public void setGoodsNo(String goodsNo) {
 		this.goodsNo = goodsNo;
 	}
 
-	public String getGoodsSumAmount() {
+    /**
+     * Gets goods sum amount.
+     *
+     * @return the goods sum amount
+     */
+    public String getGoodsSumAmount() {
 		return this.goodsSumAmount;
 	}
-	public void setGoodsSumAmount(String goodsSumAmount) {
+
+    /**
+     * Sets goods sum amount.
+     *
+     * @param goodsSumAmount the goods sum amount
+     */
+    public void setGoodsSumAmount(String goodsSumAmount) {
 		this.goodsSumAmount = goodsSumAmount;
 	}
 
-	public String getPrice() {
+    /**
+     * Gets price.
+     *
+     * @return the price
+     */
+    public String getPrice() {
 		return this.price;
 	}
-	public void setPrice(String price) {
+
+    /**
+     * Sets price.
+     *
+     * @param price the price
+     */
+    public void setPrice(String price) {
 		this.price = price;
 	}
 
-	public String getQuantity() {
+    /**
+     * Gets quantity.
+     *
+     * @return the quantity
+     */
+    public String getQuantity() {
 		return this.quantity;
 	}
-	public void setQuantity(String quantity) {
+
+    /**
+     * Sets quantity.
+     *
+     * @param quantity the quantity
+     */
+    public void setQuantity(String quantity) {
 		this.quantity = quantity;
 	}
 
-	public String getSpecification() {
+    /**
+     * Gets specification.
+     *
+     * @return the specification
+     */
+    public String getSpecification() {
 		return this.specification;
 	}
-	public void setSpecification(String specification) {
+
+    /**
+     * Sets specification.
+     *
+     * @param specification the specification
+     */
+    public void setSpecification(String specification) {
 		this.specification = specification;
 	}
 
-	public String getUnit() {
+    /**
+     * Gets unit.
+     *
+     * @return the unit
+     */
+    public String getUnit() {
 		return this.unit;
 	}
-	public void setUnit(String unit) {
+
+    /**
+     * Sets unit.
+     *
+     * @param unit the unit
+     */
+    public void setUnit(String unit) {
 		this.unit = unit;
 	}
 

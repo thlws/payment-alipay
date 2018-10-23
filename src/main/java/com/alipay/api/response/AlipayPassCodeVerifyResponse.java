@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.pass.code.verify response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2014-06-12 17:16:11
  */
 public class AlipayPassCodeVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7716297671841439869L;
+	private static final long serialVersionUID = 2164941351411771925L;
 
 	/** 
 	 * 返回核销流水号及操作结果
@@ -32,10 +32,21 @@ public class AlipayPassCodeVerifyResponse extends AlipayResponse {
 	@ApiField("success")
 	private Boolean success;
 
-	public void setBizResult(String bizResult) {
+    /**
+     * Sets biz result.
+     *
+     * @param bizResult the biz result
+     */
+    public void setBizResult(String bizResult) {
 		this.bizResult = bizResult;
 	}
-	public String getBizResult( ) {
+
+    /**
+     * Gets biz result.
+     *
+     * @return the biz result
+     */
+    public String getBizResult( ) {
 		return this.bizResult;
 	}
 
@@ -46,10 +57,21 @@ public class AlipayPassCodeVerifyResponse extends AlipayResponse {
 		return this.errorCode;
 	}
 
-	public void setSuccess(Boolean success) {
+    /**
+     * Sets success.
+     *
+     * @param success the success
+     */
+    public void setSuccess(Boolean success) {
 		this.success = success;
 	}
-	public Boolean getSuccess( ) {
+
+    /**
+     * Gets success.
+     *
+     * @return the success
+     */
+    public Boolean getSuccess( ) {
 		return this.success;
 	}
 

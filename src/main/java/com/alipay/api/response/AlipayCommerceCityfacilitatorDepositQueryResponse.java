@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.commerce.cityfacilitator.deposit.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2015-12-15 11:37:56
  */
 public class AlipayCommerceCityfacilitatorDepositQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3115521876552767827L;
+	private static final long serialVersionUID = 4611295623615686984L;
 
 	/** 
 	 * 待圈存明细
@@ -24,10 +24,21 @@ public class AlipayCommerceCityfacilitatorDepositQueryResponse extends AlipayRes
 	@ApiField("recharge_bill")
 	private List<RechargeBill> rechargeBills;
 
-	public void setRechargeBills(List<RechargeBill> rechargeBills) {
+    /**
+     * Sets recharge bills.
+     *
+     * @param rechargeBills the recharge bills
+     */
+    public void setRechargeBills(List<RechargeBill> rechargeBills) {
 		this.rechargeBills = rechargeBills;
 	}
-	public List<RechargeBill> getRechargeBills( ) {
+
+    /**
+     * Gets recharge bills.
+     *
+     * @return the recharge bills
+     */
+    public List<RechargeBill> getRechargeBills( ) {
 		return this.rechargeBills;
 	}
 

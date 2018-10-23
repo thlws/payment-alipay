@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.system.oauth.token response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-25 16:00:34
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipaySystemOauthTokenResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2531889386262738788L;
+	private static final long serialVersionUID = 4724455858631684217L;
 
 	/** 
 	 * 访问令牌。通过该令牌调用需要授权类接口
@@ -56,52 +56,129 @@ public class AlipaySystemOauthTokenResponse extends AlipayResponse {
 	@ApiField("user_id")
 	private String userId;
 
-	public void setAccessToken(String accessToken) {
+    /**
+     * Sets access token.
+     *
+     * @param accessToken the access token
+     */
+    public void setAccessToken(String accessToken) {
 		this.accessToken = accessToken;
 	}
-	public String getAccessToken( ) {
+
+    /**
+     * Gets access token.
+     *
+     * @return the access token
+     */
+    public String getAccessToken( ) {
 		return this.accessToken;
 	}
 
-	public void setAlipayUserId(String alipayUserId) {
+    /**
+     * Sets alipay user id.
+     *
+     * @param alipayUserId the alipay user id
+     */
+    public void setAlipayUserId(String alipayUserId) {
 		this.alipayUserId = alipayUserId;
 	}
-	public String getAlipayUserId( ) {
+
+    /**
+     * Gets alipay user id.
+     *
+     * @return the alipay user id
+     */
+    public String getAlipayUserId( ) {
 		return this.alipayUserId;
 	}
 
-	public void setAuthTokenType(String authTokenType) {
+    /**
+     * Sets auth token type.
+     *
+     * @param authTokenType the auth token type
+     */
+    public void setAuthTokenType(String authTokenType) {
 		this.authTokenType = authTokenType;
 	}
-	public String getAuthTokenType( ) {
+
+    /**
+     * Gets auth token type.
+     *
+     * @return the auth token type
+     */
+    public String getAuthTokenType( ) {
 		return this.authTokenType;
 	}
 
-	public void setExpiresIn(String expiresIn) {
+    /**
+     * Sets expires in.
+     *
+     * @param expiresIn the expires in
+     */
+    public void setExpiresIn(String expiresIn) {
 		this.expiresIn = expiresIn;
 	}
-	public String getExpiresIn( ) {
+
+    /**
+     * Gets expires in.
+     *
+     * @return the expires in
+     */
+    public String getExpiresIn( ) {
 		return this.expiresIn;
 	}
 
-	public void setReExpiresIn(String reExpiresIn) {
+    /**
+     * Sets re expires in.
+     *
+     * @param reExpiresIn the re expires in
+     */
+    public void setReExpiresIn(String reExpiresIn) {
 		this.reExpiresIn = reExpiresIn;
 	}
-	public String getReExpiresIn( ) {
+
+    /**
+     * Gets re expires in.
+     *
+     * @return the re expires in
+     */
+    public String getReExpiresIn( ) {
 		return this.reExpiresIn;
 	}
 
-	public void setRefreshToken(String refreshToken) {
+    /**
+     * Sets refresh token.
+     *
+     * @param refreshToken the refresh token
+     */
+    public void setRefreshToken(String refreshToken) {
 		this.refreshToken = refreshToken;
 	}
-	public String getRefreshToken( ) {
+
+    /**
+     * Gets refresh token.
+     *
+     * @return the refresh token
+     */
+    public String getRefreshToken( ) {
 		return this.refreshToken;
 	}
 
-	public void setUserId(String userId) {
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public String getUserId( ) {
+
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId( ) {
 		return this.userId;
 	}
 

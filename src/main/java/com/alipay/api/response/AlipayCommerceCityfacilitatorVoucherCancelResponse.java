@@ -5,13 +5,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.commerce.cityfacilitator.voucher.cancel response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-06-21 15:07:46
  */
 public class AlipayCommerceCityfacilitatorVoucherCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1834977325646814634L;
+	private static final long serialVersionUID = 7319834977761836863L;
 
 	
 

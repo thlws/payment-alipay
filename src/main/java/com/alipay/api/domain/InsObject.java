@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险标的
  *
  * @author auto create
- * @since 1.0, 2017-07-18 15:36:51
+ * @since 1.0, 2018-06-28 20:24:40
  */
 public class InsObject extends AlipayObject {
 
-	private static final long serialVersionUID = 1154484447135542254L;
+	private static final long serialVersionUID = 2646542619347867491L;
 
 	/**
 	 * 标的物的标识id
@@ -31,24 +31,57 @@ public class InsObject extends AlipayObject {
 	@ApiField("type")
 	private Long type;
 
-	public String getInsuredObjectId() {
+    /**
+     * Gets insured object id.
+     *
+     * @return the insured object id
+     */
+    public String getInsuredObjectId() {
 		return this.insuredObjectId;
 	}
-	public void setInsuredObjectId(String insuredObjectId) {
+
+    /**
+     * Sets insured object id.
+     *
+     * @param insuredObjectId the insured object id
+     */
+    public void setInsuredObjectId(String insuredObjectId) {
 		this.insuredObjectId = insuredObjectId;
 	}
 
-	public String getInsuredObjectInfo() {
+    /**
+     * Gets insured object info.
+     *
+     * @return the insured object info
+     */
+    public String getInsuredObjectInfo() {
 		return this.insuredObjectInfo;
 	}
-	public void setInsuredObjectInfo(String insuredObjectInfo) {
+
+    /**
+     * Sets insured object info.
+     *
+     * @param insuredObjectInfo the insured object info
+     */
+    public void setInsuredObjectInfo(String insuredObjectInfo) {
 		this.insuredObjectInfo = insuredObjectInfo;
 	}
 
-	public Long getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public Long getType() {
 		return this.type;
 	}
-	public void setType(Long type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(Long type) {
 		this.type = type;
 	}
 

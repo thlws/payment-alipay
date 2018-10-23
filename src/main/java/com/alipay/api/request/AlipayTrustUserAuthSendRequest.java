@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.trust.user.auth.send request
- * 
+ *
  * @author auto create
  * @since 1.0, 2015-05-15 09:36:22
  */
@@ -23,10 +23,21 @@ public class AlipayTrustUserAuthSendRequest implements AlipayRequest<AlipayTrust
 	 */
 	private String aliTrustUserInfo;
 
-	public void setAliTrustUserInfo(String aliTrustUserInfo) {
+    /**
+     * Sets ali trust user info.
+     *
+     * @param aliTrustUserInfo the ali trust user info
+     */
+    public void setAliTrustUserInfo(String aliTrustUserInfo) {
 		this.aliTrustUserInfo = aliTrustUserInfo;
 	}
-	public String getAliTrustUserInfo() {
+
+    /**
+     * Gets ali trust user info.
+     *
+     * @return the ali trust user info
+     */
+    public String getAliTrustUserInfo() {
 		return this.aliTrustUserInfo;
 	}
 	private String terminalType;
@@ -98,7 +109,13 @@ public class AlipayTrustUserAuthSendRequest implements AlipayRequest<AlipayTrust
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

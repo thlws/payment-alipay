@@ -10,9 +10,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.account.exrate.traderequest.create request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-20 10:41:44
+ * @since 1.0, 2018-04-13 17:35:02
  */
 public class AlipayAccountExrateTraderequestCreateRequest implements AlipayRequest<AlipayAccountExrateTraderequestCreateResponse> {
 
@@ -24,10 +24,21 @@ public class AlipayAccountExrateTraderequestCreateRequest implements AlipayReque
 	 */
 	private String bizContent;
 
-	public void setBizContent(String bizContent) {
+    /**
+     * Sets biz content.
+     *
+     * @param bizContent the biz content
+     */
+    public void setBizContent(String bizContent) {
 		this.bizContent = bizContent;
 	}
-	public String getBizContent() {
+
+    /**
+     * Gets biz content.
+     *
+     * @return the biz content
+     */
+    public String getBizContent() {
 		return this.bizContent;
 	}
 	private String terminalType;
@@ -99,7 +110,13 @@ public class AlipayAccountExrateTraderequestCreateRequest implements AlipayReque
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

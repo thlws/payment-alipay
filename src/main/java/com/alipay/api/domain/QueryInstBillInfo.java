@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class QueryInstBillInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1258699541298635567L;
+	private static final long serialVersionUID = 8515247259826984783L;
 
 	/**
 	 * 账单金额
@@ -113,115 +113,291 @@ public class QueryInstBillInfo extends AlipayObject {
 	@ApiField("sub_order_type")
 	private String subOrderType;
 
-	public String getAmount() {
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public String getAmount() {
 		return this.amount;
 	}
-	public void setAmount(String amount) {
+
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
-	public String getBalance() {
+    /**
+     * Gets balance.
+     *
+     * @return the balance
+     */
+    public String getBalance() {
 		return this.balance;
 	}
-	public void setBalance(String balance) {
+
+    /**
+     * Sets balance.
+     *
+     * @param balance the balance
+     */
+    public void setBalance(String balance) {
 		this.balance = balance;
 	}
 
-	public String getBillDate() {
+    /**
+     * Gets bill date.
+     *
+     * @return the bill date
+     */
+    public String getBillDate() {
 		return this.billDate;
 	}
-	public void setBillDate(String billDate) {
+
+    /**
+     * Sets bill date.
+     *
+     * @param billDate the bill date
+     */
+    public void setBillDate(String billDate) {
 		this.billDate = billDate;
 	}
 
-	public List<QueryInstBillDetail> getBillDetail() {
+    /**
+     * Gets bill detail.
+     *
+     * @return the bill detail
+     */
+    public List<QueryInstBillDetail> getBillDetail() {
 		return this.billDetail;
 	}
-	public void setBillDetail(List<QueryInstBillDetail> billDetail) {
+
+    /**
+     * Sets bill detail.
+     *
+     * @param billDetail the bill detail
+     */
+    public void setBillDetail(List<QueryInstBillDetail> billDetail) {
 		this.billDetail = billDetail;
 	}
 
-	public String getBillFines() {
+    /**
+     * Gets bill fines.
+     *
+     * @return the bill fines
+     */
+    public String getBillFines() {
 		return this.billFines;
 	}
-	public void setBillFines(String billFines) {
+
+    /**
+     * Sets bill fines.
+     *
+     * @param billFines the bill fines
+     */
+    public void setBillFines(String billFines) {
 		this.billFines = billFines;
 	}
 
-	public String getBillKey() {
+    /**
+     * Gets bill key.
+     *
+     * @return the bill key
+     */
+    public String getBillKey() {
 		return this.billKey;
 	}
-	public void setBillKey(String billKey) {
+
+    /**
+     * Sets bill key.
+     *
+     * @param billKey the bill key
+     */
+    public void setBillKey(String billKey) {
 		this.billKey = billKey;
 	}
 
-	public String getBillUserName() {
+    /**
+     * Gets bill user name.
+     *
+     * @return the bill user name
+     */
+    public String getBillUserName() {
 		return this.billUserName;
 	}
-	public void setBillUserName(String billUserName) {
+
+    /**
+     * Sets bill user name.
+     *
+     * @param billUserName the bill user name
+     */
+    public void setBillUserName(String billUserName) {
 		this.billUserName = billUserName;
 	}
 
-	public String getChargeInst() {
+    /**
+     * Gets charge inst.
+     *
+     * @return the charge inst
+     */
+    public String getChargeInst() {
 		return this.chargeInst;
 	}
-	public void setChargeInst(String chargeInst) {
+
+    /**
+     * Sets charge inst.
+     *
+     * @param chargeInst the charge inst
+     */
+    public void setChargeInst(String chargeInst) {
 		this.chargeInst = chargeInst;
 	}
 
-	public String getChargeUniqId() {
+    /**
+     * Gets charge uniq id.
+     *
+     * @return the charge uniq id
+     */
+    public String getChargeUniqId() {
 		return this.chargeUniqId;
 	}
-	public void setChargeUniqId(String chargeUniqId) {
+
+    /**
+     * Sets charge uniq id.
+     *
+     * @param chargeUniqId the charge uniq id
+     */
+    public void setChargeUniqId(String chargeUniqId) {
 		this.chargeUniqId = chargeUniqId;
 	}
 
-	public String getChargeoffInst() {
+    /**
+     * Gets chargeoff inst.
+     *
+     * @return the chargeoff inst
+     */
+    public String getChargeoffInst() {
 		return this.chargeoffInst;
 	}
-	public void setChargeoffInst(String chargeoffInst) {
+
+    /**
+     * Sets chargeoff inst.
+     *
+     * @param chargeoffInst the chargeoff inst
+     */
+    public void setChargeoffInst(String chargeoffInst) {
 		this.chargeoffInst = chargeoffInst;
 	}
 
-	public String getCompanyId() {
+    /**
+     * Gets company id.
+     *
+     * @return the company id
+     */
+    public String getCompanyId() {
 		return this.companyId;
 	}
-	public void setCompanyId(String companyId) {
+
+    /**
+     * Sets company id.
+     *
+     * @param companyId the company id
+     */
+    public void setCompanyId(String companyId) {
 		this.companyId = companyId;
 	}
 
-	public String getExtend() {
+    /**
+     * Gets extend.
+     *
+     * @return the extend
+     */
+    public String getExtend() {
 		return this.extend;
 	}
-	public void setExtend(String extend) {
+
+    /**
+     * Sets extend.
+     *
+     * @param extend the extend
+     */
+    public void setExtend(String extend) {
 		this.extend = extend;
 	}
 
-	public String getOrderType() {
+    /**
+     * Gets order type.
+     *
+     * @return the order type
+     */
+    public String getOrderType() {
 		return this.orderType;
 	}
-	public void setOrderType(String orderType) {
+
+    /**
+     * Sets order type.
+     *
+     * @param orderType the order type
+     */
+    public void setOrderType(String orderType) {
 		this.orderType = orderType;
 	}
 
-	public String getOutId() {
+    /**
+     * Gets out id.
+     *
+     * @return the out id
+     */
+    public String getOutId() {
 		return this.outId;
 	}
-	public void setOutId(String outId) {
+
+    /**
+     * Sets out id.
+     *
+     * @param outId the out id
+     */
+    public void setOutId(String outId) {
 		this.outId = outId;
 	}
 
-	public String getReturnMessage() {
+    /**
+     * Gets return message.
+     *
+     * @return the return message
+     */
+    public String getReturnMessage() {
 		return this.returnMessage;
 	}
-	public void setReturnMessage(String returnMessage) {
+
+    /**
+     * Sets return message.
+     *
+     * @param returnMessage the return message
+     */
+    public void setReturnMessage(String returnMessage) {
 		this.returnMessage = returnMessage;
 	}
 
-	public String getSubOrderType() {
+    /**
+     * Gets sub order type.
+     *
+     * @return the sub order type
+     */
+    public String getSubOrderType() {
 		return this.subOrderType;
 	}
-	public void setSubOrderType(String subOrderType) {
+
+    /**
+     * Sets sub order type.
+     *
+     * @param subOrderType the sub order type
+     */
+    public void setSubOrderType(String subOrderType) {
 		this.subOrderType = subOrderType;
 	}
 

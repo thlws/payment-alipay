@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.security.info.analysis request
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-03-04 14:55:20
  */
@@ -133,164 +133,417 @@ public class AlipaySecurityInfoAnalysisRequest implements AlipayRequest<AlipaySe
 	 */
 	private String userrIdentityNo;
 
-	public void setEnvClientBaseBand(String envClientBaseBand) {
+    /**
+     * Sets env client base band.
+     *
+     * @param envClientBaseBand the env client base band
+     */
+    public void setEnvClientBaseBand(String envClientBaseBand) {
 		this.envClientBaseBand = envClientBaseBand;
 	}
-	public String getEnvClientBaseBand() {
+
+    /**
+     * Gets env client base band.
+     *
+     * @return the env client base band
+     */
+    public String getEnvClientBaseBand() {
 		return this.envClientBaseBand;
 	}
 
-	public void setEnvClientBaseStation(String envClientBaseStation) {
+    /**
+     * Sets env client base station.
+     *
+     * @param envClientBaseStation the env client base station
+     */
+    public void setEnvClientBaseStation(String envClientBaseStation) {
 		this.envClientBaseStation = envClientBaseStation;
 	}
-	public String getEnvClientBaseStation() {
+
+    /**
+     * Gets env client base station.
+     *
+     * @return the env client base station
+     */
+    public String getEnvClientBaseStation() {
 		return this.envClientBaseStation;
 	}
 
-	public void setEnvClientCoordinates(String envClientCoordinates) {
+    /**
+     * Sets env client coordinates.
+     *
+     * @param envClientCoordinates the env client coordinates
+     */
+    public void setEnvClientCoordinates(String envClientCoordinates) {
 		this.envClientCoordinates = envClientCoordinates;
 	}
-	public String getEnvClientCoordinates() {
+
+    /**
+     * Gets env client coordinates.
+     *
+     * @return the env client coordinates
+     */
+    public String getEnvClientCoordinates() {
 		return this.envClientCoordinates;
 	}
 
-	public void setEnvClientImei(String envClientImei) {
+    /**
+     * Sets env client imei.
+     *
+     * @param envClientImei the env client imei
+     */
+    public void setEnvClientImei(String envClientImei) {
 		this.envClientImei = envClientImei;
 	}
-	public String getEnvClientImei() {
+
+    /**
+     * Gets env client imei.
+     *
+     * @return the env client imei
+     */
+    public String getEnvClientImei() {
 		return this.envClientImei;
 	}
 
-	public void setEnvClientImsi(String envClientImsi) {
+    /**
+     * Sets env client imsi.
+     *
+     * @param envClientImsi the env client imsi
+     */
+    public void setEnvClientImsi(String envClientImsi) {
 		this.envClientImsi = envClientImsi;
 	}
-	public String getEnvClientImsi() {
+
+    /**
+     * Gets env client imsi.
+     *
+     * @return the env client imsi
+     */
+    public String getEnvClientImsi() {
 		return this.envClientImsi;
 	}
 
-	public void setEnvClientIosUdid(String envClientIosUdid) {
+    /**
+     * Sets env client ios udid.
+     *
+     * @param envClientIosUdid the env client ios udid
+     */
+    public void setEnvClientIosUdid(String envClientIosUdid) {
 		this.envClientIosUdid = envClientIosUdid;
 	}
-	public String getEnvClientIosUdid() {
+
+    /**
+     * Gets env client ios udid.
+     *
+     * @return the env client ios udid
+     */
+    public String getEnvClientIosUdid() {
 		return this.envClientIosUdid;
 	}
 
-	public void setEnvClientIp(String envClientIp) {
+    /**
+     * Sets env client ip.
+     *
+     * @param envClientIp the env client ip
+     */
+    public void setEnvClientIp(String envClientIp) {
 		this.envClientIp = envClientIp;
 	}
-	public String getEnvClientIp() {
+
+    /**
+     * Gets env client ip.
+     *
+     * @return the env client ip
+     */
+    public String getEnvClientIp() {
 		return this.envClientIp;
 	}
 
-	public void setEnvClientMac(String envClientMac) {
+    /**
+     * Sets env client mac.
+     *
+     * @param envClientMac the env client mac
+     */
+    public void setEnvClientMac(String envClientMac) {
 		this.envClientMac = envClientMac;
 	}
-	public String getEnvClientMac() {
+
+    /**
+     * Gets env client mac.
+     *
+     * @return the env client mac
+     */
+    public String getEnvClientMac() {
 		return this.envClientMac;
 	}
 
-	public void setEnvClientScreen(String envClientScreen) {
+    /**
+     * Sets env client screen.
+     *
+     * @param envClientScreen the env client screen
+     */
+    public void setEnvClientScreen(String envClientScreen) {
 		this.envClientScreen = envClientScreen;
 	}
-	public String getEnvClientScreen() {
+
+    /**
+     * Gets env client screen.
+     *
+     * @return the env client screen
+     */
+    public String getEnvClientScreen() {
 		return this.envClientScreen;
 	}
 
-	public void setEnvClientUuid(String envClientUuid) {
+    /**
+     * Sets env client uuid.
+     *
+     * @param envClientUuid the env client uuid
+     */
+    public void setEnvClientUuid(String envClientUuid) {
 		this.envClientUuid = envClientUuid;
 	}
-	public String getEnvClientUuid() {
+
+    /**
+     * Gets env client uuid.
+     *
+     * @return the env client uuid
+     */
+    public String getEnvClientUuid() {
 		return this.envClientUuid;
 	}
 
-	public void setJsTokenId(String jsTokenId) {
+    /**
+     * Sets js token id.
+     *
+     * @param jsTokenId the js token id
+     */
+    public void setJsTokenId(String jsTokenId) {
 		this.jsTokenId = jsTokenId;
 	}
-	public String getJsTokenId() {
+
+    /**
+     * Gets js token id.
+     *
+     * @return the js token id
+     */
+    public String getJsTokenId() {
 		return this.jsTokenId;
 	}
 
-	public void setPartnerId(String partnerId) {
+    /**
+     * Sets partner id.
+     *
+     * @param partnerId the partner id
+     */
+    public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}
-	public String getPartnerId() {
+
+    /**
+     * Gets partner id.
+     *
+     * @return the partner id
+     */
+    public String getPartnerId() {
 		return this.partnerId;
 	}
 
-	public void setSceneCode(String sceneCode) {
+    /**
+     * Sets scene code.
+     *
+     * @param sceneCode the scene code
+     */
+    public void setSceneCode(String sceneCode) {
 		this.sceneCode = sceneCode;
 	}
-	public String getSceneCode() {
+
+    /**
+     * Gets scene code.
+     *
+     * @return the scene code
+     */
+    public String getSceneCode() {
 		return this.sceneCode;
 	}
 
-	public void setUserAccountNo(String userAccountNo) {
+    /**
+     * Sets user account no.
+     *
+     * @param userAccountNo the user account no
+     */
+    public void setUserAccountNo(String userAccountNo) {
 		this.userAccountNo = userAccountNo;
 	}
-	public String getUserAccountNo() {
+
+    /**
+     * Gets user account no.
+     *
+     * @return the user account no
+     */
+    public String getUserAccountNo() {
 		return this.userAccountNo;
 	}
 
-	public void setUserBindBankcard(String userBindBankcard) {
+    /**
+     * Sets user bind bankcard.
+     *
+     * @param userBindBankcard the user bind bankcard
+     */
+    public void setUserBindBankcard(String userBindBankcard) {
 		this.userBindBankcard = userBindBankcard;
 	}
-	public String getUserBindBankcard() {
+
+    /**
+     * Gets user bind bankcard.
+     *
+     * @return the user bind bankcard
+     */
+    public String getUserBindBankcard() {
 		return this.userBindBankcard;
 	}
 
-	public void setUserBindBankcardType(String userBindBankcardType) {
+    /**
+     * Sets user bind bankcard type.
+     *
+     * @param userBindBankcardType the user bind bankcard type
+     */
+    public void setUserBindBankcardType(String userBindBankcardType) {
 		this.userBindBankcardType = userBindBankcardType;
 	}
-	public String getUserBindBankcardType() {
+
+    /**
+     * Gets user bind bankcard type.
+     *
+     * @return the user bind bankcard type
+     */
+    public String getUserBindBankcardType() {
 		return this.userBindBankcardType;
 	}
 
-	public void setUserBindMobile(String userBindMobile) {
+    /**
+     * Sets user bind mobile.
+     *
+     * @param userBindMobile the user bind mobile
+     */
+    public void setUserBindMobile(String userBindMobile) {
 		this.userBindMobile = userBindMobile;
 	}
-	public String getUserBindMobile() {
+
+    /**
+     * Gets user bind mobile.
+     *
+     * @return the user bind mobile
+     */
+    public String getUserBindMobile() {
 		return this.userBindMobile;
 	}
 
-	public void setUserIdentityType(String userIdentityType) {
+    /**
+     * Sets user identity type.
+     *
+     * @param userIdentityType the user identity type
+     */
+    public void setUserIdentityType(String userIdentityType) {
 		this.userIdentityType = userIdentityType;
 	}
-	public String getUserIdentityType() {
+
+    /**
+     * Gets user identity type.
+     *
+     * @return the user identity type
+     */
+    public String getUserIdentityType() {
 		return this.userIdentityType;
 	}
 
-	public void setUserRealName(String userRealName) {
+    /**
+     * Sets user real name.
+     *
+     * @param userRealName the user real name
+     */
+    public void setUserRealName(String userRealName) {
 		this.userRealName = userRealName;
 	}
-	public String getUserRealName() {
+
+    /**
+     * Gets user real name.
+     *
+     * @return the user real name
+     */
+    public String getUserRealName() {
 		return this.userRealName;
 	}
 
-	public void setUserRegDate(String userRegDate) {
+    /**
+     * Sets user reg date.
+     *
+     * @param userRegDate the user reg date
+     */
+    public void setUserRegDate(String userRegDate) {
 		this.userRegDate = userRegDate;
 	}
-	public String getUserRegDate() {
+
+    /**
+     * Gets user reg date.
+     *
+     * @return the user reg date
+     */
+    public String getUserRegDate() {
 		return this.userRegDate;
 	}
 
-	public void setUserRegEmail(String userRegEmail) {
+    /**
+     * Sets user reg email.
+     *
+     * @param userRegEmail the user reg email
+     */
+    public void setUserRegEmail(String userRegEmail) {
 		this.userRegEmail = userRegEmail;
 	}
-	public String getUserRegEmail() {
+
+    /**
+     * Gets user reg email.
+     *
+     * @return the user reg email
+     */
+    public String getUserRegEmail() {
 		return this.userRegEmail;
 	}
 
-	public void setUserRegMobile(String userRegMobile) {
+    /**
+     * Sets user reg mobile.
+     *
+     * @param userRegMobile the user reg mobile
+     */
+    public void setUserRegMobile(String userRegMobile) {
 		this.userRegMobile = userRegMobile;
 	}
-	public String getUserRegMobile() {
+
+    /**
+     * Gets user reg mobile.
+     *
+     * @return the user reg mobile
+     */
+    public String getUserRegMobile() {
 		return this.userRegMobile;
 	}
 
-	public void setUserrIdentityNo(String userrIdentityNo) {
+    /**
+     * Sets userr identity no.
+     *
+     * @param userrIdentityNo the userr identity no
+     */
+    public void setUserrIdentityNo(String userrIdentityNo) {
 		this.userrIdentityNo = userrIdentityNo;
 	}
-	public String getUserrIdentityNo() {
+
+    /**
+     * Gets userr identity no.
+     *
+     * @return the userr identity no
+     */
+    public String getUserrIdentityNo() {
 		return this.userrIdentityNo;
 	}
 	private String terminalType;
@@ -384,7 +637,13 @@ public class AlipaySecurityInfoAnalysisRequest implements AlipayRequest<AlipaySe
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.transfer.thirdparty.bill.create request
- * 
+ *
  * @author auto create
  * @since 1.0, 2014-06-25 17:00:56
  */
@@ -85,87 +85,219 @@ public class AlipayTransferThirdpartyBillCreateRequest implements AlipayRequest<
 	 */
 	private String title;
 
-	public void setAmount(String amount) {
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(String amount) {
 		this.amount = amount;
 	}
-	public String getAmount() {
+
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public String getAmount() {
 		return this.amount;
 	}
 
-	public void setCurrency(String currency) {
+    /**
+     * Sets currency.
+     *
+     * @param currency the currency
+     */
+    public void setCurrency(String currency) {
 		this.currency = currency;
 	}
-	public String getCurrency() {
+
+    /**
+     * Gets currency.
+     *
+     * @return the currency
+     */
+    public String getCurrency() {
 		return this.currency;
 	}
 
-	public void setExtParam(String extParam) {
+    /**
+     * Sets ext param.
+     *
+     * @param extParam the ext param
+     */
+    public void setExtParam(String extParam) {
 		this.extParam = extParam;
 	}
-	public String getExtParam() {
+
+    /**
+     * Gets ext param.
+     *
+     * @return the ext param
+     */
+    public String getExtParam() {
 		return this.extParam;
 	}
 
-	public void setMemo(String memo) {
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
-	public String getMemo() {
+
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo() {
 		return this.memo;
 	}
 
-	public void setPartnerId(String partnerId) {
+    /**
+     * Sets partner id.
+     *
+     * @param partnerId the partner id
+     */
+    public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}
-	public String getPartnerId() {
+
+    /**
+     * Gets partner id.
+     *
+     * @return the partner id
+     */
+    public String getPartnerId() {
 		return this.partnerId;
 	}
 
-	public void setPayeeAccount(String payeeAccount) {
+    /**
+     * Sets payee account.
+     *
+     * @param payeeAccount the payee account
+     */
+    public void setPayeeAccount(String payeeAccount) {
 		this.payeeAccount = payeeAccount;
 	}
-	public String getPayeeAccount() {
+
+    /**
+     * Gets payee account.
+     *
+     * @return the payee account
+     */
+    public String getPayeeAccount() {
 		return this.payeeAccount;
 	}
 
-	public void setPayeeType(String payeeType) {
+    /**
+     * Sets payee type.
+     *
+     * @param payeeType the payee type
+     */
+    public void setPayeeType(String payeeType) {
 		this.payeeType = payeeType;
 	}
-	public String getPayeeType() {
+
+    /**
+     * Gets payee type.
+     *
+     * @return the payee type
+     */
+    public String getPayeeType() {
 		return this.payeeType;
 	}
 
-	public void setPayerAccount(String payerAccount) {
+    /**
+     * Sets payer account.
+     *
+     * @param payerAccount the payer account
+     */
+    public void setPayerAccount(String payerAccount) {
 		this.payerAccount = payerAccount;
 	}
-	public String getPayerAccount() {
+
+    /**
+     * Gets payer account.
+     *
+     * @return the payer account
+     */
+    public String getPayerAccount() {
 		return this.payerAccount;
 	}
 
-	public void setPayerType(String payerType) {
+    /**
+     * Sets payer type.
+     *
+     * @param payerType the payer type
+     */
+    public void setPayerType(String payerType) {
 		this.payerType = payerType;
 	}
-	public String getPayerType() {
+
+    /**
+     * Gets payer type.
+     *
+     * @return the payer type
+     */
+    public String getPayerType() {
 		return this.payerType;
 	}
 
-	public void setPaymentId(String paymentId) {
+    /**
+     * Sets payment id.
+     *
+     * @param paymentId the payment id
+     */
+    public void setPaymentId(String paymentId) {
 		this.paymentId = paymentId;
 	}
-	public String getPaymentId() {
+
+    /**
+     * Gets payment id.
+     *
+     * @return the payment id
+     */
+    public String getPaymentId() {
 		return this.paymentId;
 	}
 
-	public void setPaymentSource(String paymentSource) {
+    /**
+     * Sets payment source.
+     *
+     * @param paymentSource the payment source
+     */
+    public void setPaymentSource(String paymentSource) {
 		this.paymentSource = paymentSource;
 	}
-	public String getPaymentSource() {
+
+    /**
+     * Gets payment source.
+     *
+     * @return the payment source
+     */
+    public String getPaymentSource() {
 		return this.paymentSource;
 	}
 
-	public void setTitle(String title) {
+    /**
+     * Sets title.
+     *
+     * @param title the title
+     */
+    public void setTitle(String title) {
 		this.title = title;
 	}
-	public String getTitle() {
+
+    /**
+     * Gets title.
+     *
+     * @return the title
+     */
+    public String getTitle() {
 		return this.title;
 	}
 	private String terminalType;
@@ -248,7 +380,13 @@ public class AlipayTransferThirdpartyBillCreateRequest implements AlipayRequest<
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

@@ -7,13 +7,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.code.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-02-28 11:13:54
+ * @since 1.0, 2018-06-14 11:34:41
  */
 public class AlipayMobileCodeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1384479355374785648L;
+	private static final long serialVersionUID = 2871997897432586661L;
 
 	/** 
 	 * 业务关联的id，如订单号,userId
@@ -98,94 +98,237 @@ stop:停止
 	@ApiField("user_id")
 	private String userId;
 
-	public void setBizLinkedId(String bizLinkedId) {
+    /**
+     * Sets biz linked id.
+     *
+     * @param bizLinkedId the biz linked id
+     */
+    public void setBizLinkedId(String bizLinkedId) {
 		this.bizLinkedId = bizLinkedId;
 	}
-	public String getBizLinkedId( ) {
+
+    /**
+     * Gets biz linked id.
+     *
+     * @return the biz linked id
+     */
+    public String getBizLinkedId( ) {
 		return this.bizLinkedId;
 	}
 
-	public void setBizType(String bizType) {
+    /**
+     * Sets biz type.
+     *
+     * @param bizType the biz type
+     */
+    public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
-	public String getBizType( ) {
+
+    /**
+     * Gets biz type.
+     *
+     * @return the biz type
+     */
+    public String getBizType( ) {
 		return this.bizType;
 	}
 
-	public void setCodeStatus(String codeStatus) {
+    /**
+     * Sets code status.
+     *
+     * @param codeStatus the code status
+     */
+    public void setCodeStatus(String codeStatus) {
 		this.codeStatus = codeStatus;
 	}
-	public String getCodeStatus( ) {
+
+    /**
+     * Gets code status.
+     *
+     * @return the code status
+     */
+    public String getCodeStatus( ) {
 		return this.codeStatus;
 	}
 
-	public void setContextStr(String contextStr) {
+    /**
+     * Sets context str.
+     *
+     * @param contextStr the context str
+     */
+    public void setContextStr(String contextStr) {
 		this.contextStr = contextStr;
 	}
-	public String getContextStr( ) {
+
+    /**
+     * Gets context str.
+     *
+     * @return the context str
+     */
+    public String getContextStr( ) {
 		return this.contextStr;
 	}
 
-	public void setDynamicImgUrl(String dynamicImgUrl) {
+    /**
+     * Sets dynamic img url.
+     *
+     * @param dynamicImgUrl the dynamic img url
+     */
+    public void setDynamicImgUrl(String dynamicImgUrl) {
 		this.dynamicImgUrl = dynamicImgUrl;
 	}
-	public String getDynamicImgUrl( ) {
+
+    /**
+     * Gets dynamic img url.
+     *
+     * @return the dynamic img url
+     */
+    public String getDynamicImgUrl( ) {
 		return this.dynamicImgUrl;
 	}
 
-	public void setExpireDate(String expireDate) {
+    /**
+     * Sets expire date.
+     *
+     * @param expireDate the expire date
+     */
+    public void setExpireDate(String expireDate) {
 		this.expireDate = expireDate;
 	}
-	public String getExpireDate( ) {
+
+    /**
+     * Gets expire date.
+     *
+     * @return the expire date
+     */
+    public String getExpireDate( ) {
 		return this.expireDate;
 	}
 
-	public void setIsDirect(String isDirect) {
+    /**
+     * Sets is direct.
+     *
+     * @param isDirect the is direct
+     */
+    public void setIsDirect(String isDirect) {
 		this.isDirect = isDirect;
 	}
-	public String getIsDirect( ) {
+
+    /**
+     * Gets is direct.
+     *
+     * @return the is direct
+     */
+    public String getIsDirect( ) {
 		return this.isDirect;
 	}
 
-	public void setMemo(String memo) {
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
-	public String getMemo( ) {
+
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo( ) {
 		return this.memo;
 	}
 
-	public void setQrCode(String qrCode) {
+    /**
+     * Sets qr code.
+     *
+     * @param qrCode the qr code
+     */
+    public void setQrCode(String qrCode) {
 		this.qrCode = qrCode;
 	}
-	public String getQrCode( ) {
+
+    /**
+     * Gets qr code.
+     *
+     * @return the qr code
+     */
+    public String getQrCode( ) {
 		return this.qrCode;
 	}
 
-	public void setQrToken(String qrToken) {
+    /**
+     * Sets qr token.
+     *
+     * @param qrToken the qr token
+     */
+    public void setQrToken(String qrToken) {
 		this.qrToken = qrToken;
 	}
-	public String getQrToken( ) {
+
+    /**
+     * Gets qr token.
+     *
+     * @return the qr token
+     */
+    public String getQrToken( ) {
 		return this.qrToken;
 	}
 
-	public void setSourceId(String sourceId) {
+    /**
+     * Sets source id.
+     *
+     * @param sourceId the source id
+     */
+    public void setSourceId(String sourceId) {
 		this.sourceId = sourceId;
 	}
-	public String getSourceId( ) {
+
+    /**
+     * Gets source id.
+     *
+     * @return the source id
+     */
+    public String getSourceId( ) {
 		return this.sourceId;
 	}
 
-	public void setStartDate(Date startDate) {
+    /**
+     * Sets start date.
+     *
+     * @param startDate the start date
+     */
+    public void setStartDate(Date startDate) {
 		this.startDate = startDate;
 	}
-	public Date getStartDate( ) {
+
+    /**
+     * Gets start date.
+     *
+     * @return the start date
+     */
+    public Date getStartDate( ) {
 		return this.startDate;
 	}
 
-	public void setUserId(String userId) {
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public String getUserId( ) {
+
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId( ) {
 		return this.userId;
 	}
 

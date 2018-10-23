@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发放规则
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @since 1.0, 2018-08-22 11:32:24
  */
 public class GetRuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5186841792233129925L;
+	private static final long serialVersionUID = 1462114541326121232L;
 
 	/**
 	 * 截至时间
@@ -33,24 +33,57 @@ public class GetRuleInfo extends AlipayObject {
 	@ApiField("start_time")
 	private Date startTime;
 
-	public Date getEndTime() {
+    /**
+     * Gets end time.
+     *
+     * @return the end time
+     */
+    public Date getEndTime() {
 		return this.endTime;
 	}
-	public void setEndTime(Date endTime) {
+
+    /**
+     * Sets end time.
+     *
+     * @param endTime the end time
+     */
+    public void setEndTime(Date endTime) {
 		this.endTime = endTime;
 	}
 
-	public PeriodInfo getGetCountLimit() {
+    /**
+     * Gets get count limit.
+     *
+     * @return the get count limit
+     */
+    public PeriodInfo getGetCountLimit() {
 		return this.getCountLimit;
 	}
-	public void setGetCountLimit(PeriodInfo getCountLimit) {
+
+    /**
+     * Sets get count limit.
+     *
+     * @param getCountLimit the get count limit
+     */
+    public void setGetCountLimit(PeriodInfo getCountLimit) {
 		this.getCountLimit = getCountLimit;
 	}
 
-	public Date getStartTime() {
+    /**
+     * Gets start time.
+     *
+     * @return the start time
+     */
+    public Date getStartTime() {
 		return this.startTime;
 	}
-	public void setStartTime(Date startTime) {
+
+    /**
+     * Sets start time.
+     *
+     * @param startTime the start time
+     */
+    public void setStartTime(Date startTime) {
 		this.startTime = startTime;
 	}
 

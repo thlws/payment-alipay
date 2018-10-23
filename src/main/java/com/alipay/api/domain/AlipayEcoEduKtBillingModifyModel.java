@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 教育缴费账单状态同步接口
  *
  * @author auto create
- * @since 1.0, 2017-08-03 10:58:19
+ * @since 1.0, 2017-11-06 11:48:51
  */
 public class AlipayEcoEduKtBillingModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4149497672217728152L;
+	private static final long serialVersionUID = 4623425724269251769L;
 
 	/**
 	 * 退款时，支付宝返回的用户的登录id
@@ -80,80 +80,201 @@ public class AlipayEcoEduKtBillingModifyModel extends AlipayObject {
 	@ApiField("trade_no")
 	private String tradeNo;
 
-	public String getBuyerLogonId() {
+    /**
+     * Gets buyer logon id.
+     *
+     * @return the buyer logon id
+     */
+    public String getBuyerLogonId() {
 		return this.buyerLogonId;
 	}
-	public void setBuyerLogonId(String buyerLogonId) {
+
+    /**
+     * Sets buyer logon id.
+     *
+     * @param buyerLogonId the buyer logon id
+     */
+    public void setBuyerLogonId(String buyerLogonId) {
 		this.buyerLogonId = buyerLogonId;
 	}
 
-	public String getBuyerUserId() {
+    /**
+     * Gets buyer user id.
+     *
+     * @return the buyer user id
+     */
+    public String getBuyerUserId() {
 		return this.buyerUserId;
 	}
-	public void setBuyerUserId(String buyerUserId) {
+
+    /**
+     * Sets buyer user id.
+     *
+     * @param buyerUserId the buyer user id
+     */
+    public void setBuyerUserId(String buyerUserId) {
 		this.buyerUserId = buyerUserId;
 	}
 
-	public String getFundChange() {
+    /**
+     * Gets fund change.
+     *
+     * @return the fund change
+     */
+    public String getFundChange() {
 		return this.fundChange;
 	}
-	public void setFundChange(String fundChange) {
+
+    /**
+     * Sets fund change.
+     *
+     * @param fundChange the fund change
+     */
+    public void setFundChange(String fundChange) {
 		this.fundChange = fundChange;
 	}
 
-	public String getGmtRefund() {
+    /**
+     * Gets gmt refund.
+     *
+     * @return the gmt refund
+     */
+    public String getGmtRefund() {
 		return this.gmtRefund;
 	}
-	public void setGmtRefund(String gmtRefund) {
+
+    /**
+     * Sets gmt refund.
+     *
+     * @param gmtRefund the gmt refund
+     */
+    public void setGmtRefund(String gmtRefund) {
 		this.gmtRefund = gmtRefund;
 	}
 
-	public String getOutRequestNo() {
+    /**
+     * Gets out request no.
+     *
+     * @return the out request no
+     */
+    public String getOutRequestNo() {
 		return this.outRequestNo;
 	}
-	public void setOutRequestNo(String outRequestNo) {
+
+    /**
+     * Sets out request no.
+     *
+     * @param outRequestNo the out request no
+     */
+    public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
 	}
 
-	public String getOutTradeNo() {
+    /**
+     * Gets out trade no.
+     *
+     * @return the out trade no
+     */
+    public String getOutTradeNo() {
 		return this.outTradeNo;
 	}
-	public void setOutTradeNo(String outTradeNo) {
+
+    /**
+     * Sets out trade no.
+     *
+     * @param outTradeNo the out trade no
+     */
+    public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
 
-	public String getRefundAmount() {
+    /**
+     * Gets refund amount.
+     *
+     * @return the refund amount
+     */
+    public String getRefundAmount() {
 		return this.refundAmount;
 	}
-	public void setRefundAmount(String refundAmount) {
+
+    /**
+     * Sets refund amount.
+     *
+     * @param refundAmount the refund amount
+     */
+    public void setRefundAmount(String refundAmount) {
 		this.refundAmount = refundAmount;
 	}
 
-	public String getRefundDetailItemList() {
+    /**
+     * Gets refund detail item list.
+     *
+     * @return the refund detail item list
+     */
+    public String getRefundDetailItemList() {
 		return this.refundDetailItemList;
 	}
-	public void setRefundDetailItemList(String refundDetailItemList) {
+
+    /**
+     * Sets refund detail item list.
+     *
+     * @param refundDetailItemList the refund detail item list
+     */
+    public void setRefundDetailItemList(String refundDetailItemList) {
 		this.refundDetailItemList = refundDetailItemList;
 	}
 
-	public String getRefundReason() {
+    /**
+     * Gets refund reason.
+     *
+     * @return the refund reason
+     */
+    public String getRefundReason() {
 		return this.refundReason;
 	}
-	public void setRefundReason(String refundReason) {
+
+    /**
+     * Sets refund reason.
+     *
+     * @param refundReason the refund reason
+     */
+    public void setRefundReason(String refundReason) {
 		this.refundReason = refundReason;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 
-	public String getTradeNo() {
+    /**
+     * Gets trade no.
+     *
+     * @return the trade no
+     */
+    public String getTradeNo() {
 		return this.tradeNo;
 	}
-	public void setTradeNo(String tradeNo) {
+
+    /**
+     * Sets trade no.
+     *
+     * @param tradeNo the trade no
+     */
+    public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
 

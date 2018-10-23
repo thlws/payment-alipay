@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PublicMessageInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2322986842931318579L;
+	private static final long serialVersionUID = 7843544677952428975L;
 
 	/**
 	 * 消息id
@@ -37,31 +37,75 @@ public class PublicMessageInfo extends AlipayObject {
 	@ApiField("status_desc")
 	private String statusDesc;
 
-	public String getMessageId() {
+    /**
+     * Gets message id.
+     *
+     * @return the message id
+     */
+    public String getMessageId() {
 		return this.messageId;
 	}
-	public void setMessageId(String messageId) {
+
+    /**
+     * Sets message id.
+     *
+     * @param messageId the message id
+     */
+    public void setMessageId(String messageId) {
 		this.messageId = messageId;
 	}
 
-	public String getSendTime() {
+    /**
+     * Gets send time.
+     *
+     * @return the send time
+     */
+    public String getSendTime() {
 		return this.sendTime;
 	}
-	public void setSendTime(String sendTime) {
+
+    /**
+     * Sets send time.
+     *
+     * @param sendTime the send time
+     */
+    public void setSendTime(String sendTime) {
 		this.sendTime = sendTime;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 
-	public String getStatusDesc() {
+    /**
+     * Gets status desc.
+     *
+     * @return the status desc
+     */
+    public String getStatusDesc() {
 		return this.statusDesc;
 	}
-	public void setStatusDesc(String statusDesc) {
+
+    /**
+     * Sets status desc.
+     *
+     * @param statusDesc the status desc
+     */
+    public void setStatusDesc(String statusDesc) {
 		this.statusDesc = statusDesc;
 	}
 

@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.security.prod.signature.task.apply response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-20 10:18:47
+ * @since 1.0, 2017-12-20 15:24:35
  */
 public class AlipaySecurityProdSignatureTaskApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3381313249721927154L;
+	private static final long serialVersionUID = 7332951346378685162L;
 
 	/** 
 	 * 签约订单id，关联了若干个签约任务id。
@@ -30,17 +30,39 @@ public class AlipaySecurityProdSignatureTaskApplyResponse extends AlipayResponse
 	@ApiField("sign_task_result")
 	private List<SignTaskResult> taskList;
 
-	public void setOrderId(String orderId) {
+    /**
+     * Sets order id.
+     *
+     * @param orderId the order id
+     */
+    public void setOrderId(String orderId) {
 		this.orderId = orderId;
 	}
-	public String getOrderId( ) {
+
+    /**
+     * Gets order id.
+     *
+     * @return the order id
+     */
+    public String getOrderId( ) {
 		return this.orderId;
 	}
 
-	public void setTaskList(List<SignTaskResult> taskList) {
+    /**
+     * Sets task list.
+     *
+     * @param taskList the task list
+     */
+    public void setTaskList(List<SignTaskResult> taskList) {
 		this.taskList = taskList;
 	}
-	public List<SignTaskResult> getTaskList( ) {
+
+    /**
+     * Gets task list.
+     *
+     * @return the task list
+     */
+    public List<SignTaskResult> getTaskList( ) {
 		return this.taskList;
 	}
 

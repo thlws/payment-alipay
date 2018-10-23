@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceCityfacilitatorFunctionQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3533186486684688121L;
+	private static final long serialVersionUID = 7699839582684128655L;
 
 	/**
 	 * 城市国家标准编码
@@ -25,17 +25,39 @@ public class AlipayCommerceCityfacilitatorFunctionQueryModel extends AlipayObjec
 	@ApiField("device_code")
 	private String deviceCode;
 
-	public String getCityCode() {
+    /**
+     * Gets city code.
+     *
+     * @return the city code
+     */
+    public String getCityCode() {
 		return this.cityCode;
 	}
-	public void setCityCode(String cityCode) {
+
+    /**
+     * Sets city code.
+     *
+     * @param cityCode the city code
+     */
+    public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
 	}
 
-	public String getDeviceCode() {
+    /**
+     * Gets device code.
+     *
+     * @return the device code
+     */
+    public String getDeviceCode() {
 		return this.deviceCode;
 	}
-	public void setDeviceCode(String deviceCode) {
+
+    /**
+     * Sets device code.
+     *
+     * @param deviceCode the device code
+     */
+    public void setDeviceCode(String deviceCode) {
 		this.deviceCode = deviceCode;
 	}
 

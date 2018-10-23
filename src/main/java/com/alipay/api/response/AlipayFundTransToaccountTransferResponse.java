@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.fund.trans.toaccount.transfer response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-13 10:44:03
+ * @since 1.0, 2018-09-06 14:20:01
  */
 public class AlipayFundTransToaccountTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2231422621438267947L;
+	private static final long serialVersionUID = 4693511879296651773L;
 
 	/** 
 	 * 支付宝转账单据号，成功一定返回，失败可能不返回也可能返回。
@@ -32,24 +32,57 @@ public class AlipayFundTransToaccountTransferResponse extends AlipayResponse {
 	@ApiField("pay_date")
 	private String payDate;
 
-	public void setOrderId(String orderId) {
+    /**
+     * Sets order id.
+     *
+     * @param orderId the order id
+     */
+    public void setOrderId(String orderId) {
 		this.orderId = orderId;
 	}
-	public String getOrderId( ) {
+
+    /**
+     * Gets order id.
+     *
+     * @return the order id
+     */
+    public String getOrderId( ) {
 		return this.orderId;
 	}
 
-	public void setOutBizNo(String outBizNo) {
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
-	public String getOutBizNo( ) {
+
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo( ) {
 		return this.outBizNo;
 	}
 
-	public void setPayDate(String payDate) {
+    /**
+     * Sets pay date.
+     *
+     * @param payDate the pay date
+     */
+    public void setPayDate(String payDate) {
 		this.payDate = payDate;
 	}
-	public String getPayDate( ) {
+
+    /**
+     * Gets pay date.
+     *
+     * @return the pay date
+     */
+    public String getPayDate( ) {
 		return this.payDate;
 	}
 

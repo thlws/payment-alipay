@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCdpRecommendQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8379132481284214226L;
+	private static final long serialVersionUID = 2845666155516914152L;
 
 	/**
 	 * 广告标识码
@@ -31,24 +31,57 @@ public class AlipayMarketingCdpRecommendQueryModel extends AlipayObject {
 	@ApiField("logon_id")
 	private String logonId;
 
-	public String getAdCode() {
+    /**
+     * Gets ad code.
+     *
+     * @return the ad code
+     */
+    public String getAdCode() {
 		return this.adCode;
 	}
-	public void setAdCode(String adCode) {
+
+    /**
+     * Sets ad code.
+     *
+     * @param adCode the ad code
+     */
+    public void setAdCode(String adCode) {
 		this.adCode = adCode;
 	}
 
-	public String getExtInfo() {
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo() {
 		return this.extInfo;
 	}
-	public void setExtInfo(String extInfo) {
+
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
-	public String getLogonId() {
+    /**
+     * Gets logon id.
+     *
+     * @return the logon id
+     */
+    public String getLogonId() {
 		return this.logonId;
 	}
-	public void setLogonId(String logonId) {
+
+    /**
+     * Sets logon id.
+     *
+     * @param logonId the logon id
+     */
+    public void setLogonId(String logonId) {
 		this.logonId = logonId;
 	}
 

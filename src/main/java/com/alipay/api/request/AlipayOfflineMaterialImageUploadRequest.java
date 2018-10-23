@@ -11,9 +11,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.offline.material.image.upload request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-06 12:01:21
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayOfflineMaterialImageUploadRequest implements AlipayUploadRequest<AlipayOfflineMaterialImageUploadResponse> {
 
@@ -40,31 +40,75 @@ public class AlipayOfflineMaterialImageUploadRequest implements AlipayUploadRequ
 	 */
 	private String imageType;
 
-	public void setImageContent(FileItem imageContent) {
+    /**
+     * Sets image content.
+     *
+     * @param imageContent the image content
+     */
+    public void setImageContent(FileItem imageContent) {
 		this.imageContent = imageContent;
 	}
-	public FileItem getImageContent() {
+
+    /**
+     * Gets image content.
+     *
+     * @return the image content
+     */
+    public FileItem getImageContent() {
 		return this.imageContent;
 	}
 
-	public void setImageName(String imageName) {
+    /**
+     * Sets image name.
+     *
+     * @param imageName the image name
+     */
+    public void setImageName(String imageName) {
 		this.imageName = imageName;
 	}
-	public String getImageName() {
+
+    /**
+     * Gets image name.
+     *
+     * @return the image name
+     */
+    public String getImageName() {
 		return this.imageName;
 	}
 
-	public void setImagePid(String imagePid) {
+    /**
+     * Sets image pid.
+     *
+     * @param imagePid the image pid
+     */
+    public void setImagePid(String imagePid) {
 		this.imagePid = imagePid;
 	}
-	public String getImagePid() {
+
+    /**
+     * Gets image pid.
+     *
+     * @return the image pid
+     */
+    public String getImagePid() {
 		return this.imagePid;
 	}
 
-	public void setImageType(String imageType) {
+    /**
+     * Sets image type.
+     *
+     * @param imageType the image type
+     */
+    public void setImageType(String imageType) {
 		this.imageType = imageType;
 	}
-	public String getImageType() {
+
+    /**
+     * Gets image type.
+     *
+     * @return the image type
+     */
+    public String getImageType() {
 		return this.imageType;
 	}
 	private String terminalType;
@@ -136,8 +180,14 @@ public class AlipayOfflineMaterialImageUploadRequest implements AlipayUploadRequ
 		}
 		return txtParams;
 	}
-	
-	public void putOtherTextParam(String key, String value) {
+
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

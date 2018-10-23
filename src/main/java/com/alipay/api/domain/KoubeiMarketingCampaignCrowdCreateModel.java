@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑商户人群组创建接口
  *
  * @author auto create
- * @since 1.0, 2017-08-30 14:58:36
+ * @since 1.0, 2018-07-26 14:03:29
  */
 public class KoubeiMarketingCampaignCrowdCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5284548495214989254L;
+	private static final long serialVersionUID = 2243847959526634671L;
 
 	/**
 	 * 圈人的条件
@@ -46,38 +46,93 @@ value:标签值
 	@ApiField("out_biz_no")
 	private String outBizNo;
 
-	public String getConditions() {
+    /**
+     * Gets conditions.
+     *
+     * @return the conditions
+     */
+    public String getConditions() {
 		return this.conditions;
 	}
-	public void setConditions(String conditions) {
+
+    /**
+     * Sets conditions.
+     *
+     * @param conditions the conditions
+     */
+    public void setConditions(String conditions) {
 		this.conditions = conditions;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getOperatorId() {
+    /**
+     * Gets operator id.
+     *
+     * @return the operator id
+     */
+    public String getOperatorId() {
 		return this.operatorId;
 	}
-	public void setOperatorId(String operatorId) {
+
+    /**
+     * Sets operator id.
+     *
+     * @param operatorId the operator id
+     */
+    public void setOperatorId(String operatorId) {
 		this.operatorId = operatorId;
 	}
 
-	public String getOperatorType() {
+    /**
+     * Gets operator type.
+     *
+     * @return the operator type
+     */
+    public String getOperatorType() {
 		return this.operatorType;
 	}
-	public void setOperatorType(String operatorType) {
+
+    /**
+     * Sets operator type.
+     *
+     * @param operatorType the operator type
+     */
+    public void setOperatorType(String operatorType) {
 		this.operatorType = operatorType;
 	}
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 

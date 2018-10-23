@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MoreInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6323614278172328263L;
+	private static final long serialVersionUID = 4474925521985953585L;
 
 	/**
 	 * 选择opennative的时候必须填写descs的内容
@@ -41,31 +41,75 @@ public class MoreInfoDTO extends AlipayObject {
 	@ApiField("url")
 	private String url;
 
-	public List<String> getDescs() {
+    /**
+     * Gets descs.
+     *
+     * @return the descs
+     */
+    public List<String> getDescs() {
 		return this.descs;
 	}
-	public void setDescs(List<String> descs) {
+
+    /**
+     * Sets descs.
+     *
+     * @param descs the descs
+     */
+    public void setDescs(List<String> descs) {
 		this.descs = descs;
 	}
 
-	public String getParams() {
+    /**
+     * Gets params.
+     *
+     * @return the params
+     */
+    public String getParams() {
 		return this.params;
 	}
-	public void setParams(String params) {
+
+    /**
+     * Sets params.
+     *
+     * @param params the params
+     */
+    public void setParams(String params) {
 		this.params = params;
 	}
 
-	public String getTitle() {
+    /**
+     * Gets title.
+     *
+     * @return the title
+     */
+    public String getTitle() {
 		return this.title;
 	}
-	public void setTitle(String title) {
+
+    /**
+     * Sets title.
+     *
+     * @param title the title
+     */
+    public void setTitle(String title) {
 		this.title = title;
 	}
 
-	public String getUrl() {
+    /**
+     * Gets url.
+     *
+     * @return the url
+     */
+    public String getUrl() {
 		return this.url;
 	}
-	public void setUrl(String url) {
+
+    /**
+     * Sets url.
+     *
+     * @param url the url
+     */
+    public void setUrl(String url) {
 		this.url = url;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class Text extends AlipayObject {
 
-	private static final long serialVersionUID = 1245667693458611828L;
+	private static final long serialVersionUID = 2597677163739435699L;
 
 	/**
 	 * 文本消息的内容
@@ -25,17 +25,39 @@ public class Text extends AlipayObject {
 	@ApiField("title")
 	private String title;
 
-	public String getContent() {
+    /**
+     * Gets content.
+     *
+     * @return the content
+     */
+    public String getContent() {
 		return this.content;
 	}
-	public void setContent(String content) {
+
+    /**
+     * Sets content.
+     *
+     * @param content the content
+     */
+    public void setContent(String content) {
 		this.content = content;
 	}
 
-	public String getTitle() {
+    /**
+     * Gets title.
+     *
+     * @return the title
+     */
+    public String getTitle() {
 		return this.title;
 	}
-	public void setTitle(String title) {
+
+    /**
+     * Sets title.
+     *
+     * @param title the title
+     */
+    public void setTitle(String title) {
 		this.title = title;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ErrorMatcher extends AlipayObject {
 
-	private static final long serialVersionUID = 4249498325238792169L;
+	private static final long serialVersionUID = 2537876335116691359L;
 
 	/**
 	 * 失败原因
@@ -25,17 +25,39 @@ public class ErrorMatcher extends AlipayObject {
 	@ApiField("matcher")
 	private Matcher matcher;
 
-	public String getErrorMsg() {
+    /**
+     * Gets error msg.
+     *
+     * @return the error msg
+     */
+    public String getErrorMsg() {
 		return this.errorMsg;
 	}
-	public void setErrorMsg(String errorMsg) {
+
+    /**
+     * Sets error msg.
+     *
+     * @param errorMsg the error msg
+     */
+    public void setErrorMsg(String errorMsg) {
 		this.errorMsg = errorMsg;
 	}
 
-	public Matcher getMatcher() {
+    /**
+     * Gets matcher.
+     *
+     * @return the matcher
+     */
+    public Matcher getMatcher() {
 		return this.matcher;
 	}
-	public void setMatcher(Matcher matcher) {
+
+    /**
+     * Sets matcher.
+     *
+     * @param matcher the matcher
+     */
+    public void setMatcher(Matcher matcher) {
 		this.matcher = matcher;
 	}
 

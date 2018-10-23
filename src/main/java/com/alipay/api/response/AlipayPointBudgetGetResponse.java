@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.point.budget.get response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-04-14 18:54:17
  */
 public class AlipayPointBudgetGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5816923816172521444L;
+	private static final long serialVersionUID = 3171244764431651656L;
 
 	/** 
 	 * 还可以发放的集分宝个数
@@ -20,10 +20,21 @@ public class AlipayPointBudgetGetResponse extends AlipayResponse {
 	@ApiField("budget_amount")
 	private Long budgetAmount;
 
-	public void setBudgetAmount(Long budgetAmount) {
+    /**
+     * Sets budget amount.
+     *
+     * @param budgetAmount the budget amount
+     */
+    public void setBudgetAmount(Long budgetAmount) {
 		this.budgetAmount = budgetAmount;
 	}
-	public Long getBudgetAmount( ) {
+
+    /**
+     * Gets budget amount.
+     *
+     * @return the budget amount
+     */
+    public Long getBudgetAmount( ) {
 		return this.budgetAmount;
 	}
 

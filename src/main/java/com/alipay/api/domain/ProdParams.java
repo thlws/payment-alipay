@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ProdParams extends AlipayObject {
 
-	private static final long serialVersionUID = 7112594259594696215L;
+	private static final long serialVersionUID = 4161954437391268266L;
 
 	/**
 	 * 预授权业务信息
@@ -19,10 +19,21 @@ public class ProdParams extends AlipayObject {
 	@ApiField("auth_biz_params")
 	private String authBizParams;
 
-	public String getAuthBizParams() {
+    /**
+     * Gets auth biz params.
+     *
+     * @return the auth biz params
+     */
+    public String getAuthBizParams() {
 		return this.authBizParams;
 	}
-	public void setAuthBizParams(String authBizParams) {
+
+    /**
+     * Sets auth biz params.
+     *
+     * @param authBizParams the auth biz params
+     */
+    public void setAuthBizParams(String authBizParams) {
 		this.authBizParams = authBizParams;
 	}
 

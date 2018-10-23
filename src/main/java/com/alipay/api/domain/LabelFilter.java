@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class LabelFilter extends AlipayObject {
 
-	private static final long serialVersionUID = 3378845979721116294L;
+	private static final long serialVersionUID = 2154224438997297584L;
 
 	/**
 	 * 标签组名，商户自定义的标签固定为label_id_list，支付宝开放的标签详见<a href="http://aopsdkdownload.cn-hangzhou.alipay-pub.aliyun-inc.com/doc/FirstPartOfTagsFromAlipay.xlsx">支付宝开放标签</a>
@@ -35,24 +35,57 @@ public class LabelFilter extends AlipayObject {
 	@ApiField("string")
 	private List<String> values;
 
-	public String getColumnName() {
+    /**
+     * Gets column name.
+     *
+     * @return the column name
+     */
+    public String getColumnName() {
 		return this.columnName;
 	}
-	public void setColumnName(String columnName) {
+
+    /**
+     * Sets column name.
+     *
+     * @param columnName the column name
+     */
+    public void setColumnName(String columnName) {
 		this.columnName = columnName;
 	}
 
-	public String getOp() {
+    /**
+     * Gets op.
+     *
+     * @return the op
+     */
+    public String getOp() {
 		return this.op;
 	}
-	public void setOp(String op) {
+
+    /**
+     * Sets op.
+     *
+     * @param op the op
+     */
+    public void setOp(String op) {
 		this.op = op;
 	}
 
-	public List<String> getValues() {
+    /**
+     * Gets values.
+     *
+     * @return the values
+     */
+    public List<String> getValues() {
 		return this.values;
 	}
-	public void setValues(List<String> values) {
+
+    /**
+     * Sets values.
+     *
+     * @param values the values
+     */
+    public void setValues(List<String> values) {
 		this.values = values;
 	}
 

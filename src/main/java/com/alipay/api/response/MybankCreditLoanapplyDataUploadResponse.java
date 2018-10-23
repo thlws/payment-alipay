@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: mybank.credit.loanapply.data.upload response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-05-11 14:09:08
+ * @since 1.0, 2018-07-02 09:59:31
  */
 public class MybankCreditLoanapplyDataUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8165694419288661127L;
+	private static final long serialVersionUID = 1586983532771557621L;
 
 	/** 
 	 * 数据在网商银行内部系统的唯一ID。由网商银行融资平台的系统生成，返回给外部机构。
@@ -20,10 +20,21 @@ public class MybankCreditLoanapplyDataUploadResponse extends AlipayResponse {
 	@ApiField("data_id")
 	private String dataId;
 
-	public void setDataId(String dataId) {
+    /**
+     * Sets data id.
+     *
+     * @param dataId the data id
+     */
+    public void setDataId(String dataId) {
 		this.dataId = dataId;
 	}
-	public String getDataId( ) {
+
+    /**
+     * Gets data id.
+     *
+     * @return the data id
+     */
+    public String getDataId( ) {
 		return this.dataId;
 	}
 

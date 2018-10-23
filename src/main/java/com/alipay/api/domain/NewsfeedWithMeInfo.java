@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NewsfeedWithMeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4741247325276326871L;
+	private static final long serialVersionUID = 1522324169838649778L;
 
 	/**
 	 * 登录ID
@@ -25,17 +25,39 @@ public class NewsfeedWithMeInfo extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
-	public String getLoginId() {
+    /**
+     * Gets login id.
+     *
+     * @return the login id
+     */
+    public String getLoginId() {
 		return this.loginId;
 	}
-	public void setLoginId(String loginId) {
+
+    /**
+     * Sets login id.
+     *
+     * @param loginId the login id
+     */
+    public void setLoginId(String loginId) {
 		this.loginId = loginId;
 	}
 
-	public String getUserId() {
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
-	public void setUserId(String userId) {
+
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
 

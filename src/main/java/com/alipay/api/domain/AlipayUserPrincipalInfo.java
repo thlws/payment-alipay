@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserPrincipalInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2216124575494915583L;
+	private static final long serialVersionUID = 1733289547577659929L;
 
 	/**
 	 * 用户电子邮箱
@@ -31,24 +31,57 @@ public class AlipayUserPrincipalInfo extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
-	public String getEmail() {
+    /**
+     * Gets email.
+     *
+     * @return the email
+     */
+    public String getEmail() {
 		return this.email;
 	}
-	public void setEmail(String email) {
+
+    /**
+     * Sets email.
+     *
+     * @param email the email
+     */
+    public void setEmail(String email) {
 		this.email = email;
 	}
 
-	public String getMobile() {
+    /**
+     * Gets mobile.
+     *
+     * @return the mobile
+     */
+    public String getMobile() {
 		return this.mobile;
 	}
-	public void setMobile(String mobile) {
+
+    /**
+     * Sets mobile.
+     *
+     * @param mobile the mobile
+     */
+    public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
 
-	public String getUserId() {
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
-	public void setUserId(String userId) {
+
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
 

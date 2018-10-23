@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.member.data.oauth.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-05-10 16:11:45
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class KoubeiMemberDataOauthQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1471712562529228168L;
+	private static final long serialVersionUID = 7199991593367347843L;
 
 	/** 
 	 * 扩展信息, 目前保留未用
@@ -38,31 +38,75 @@ public class KoubeiMemberDataOauthQueryResponse extends AlipayResponse {
 	@ApiField("operator_type")
 	private String operatorType;
 
-	public void setExtInfo(String extInfo) {
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
-	public String getExtInfo( ) {
+
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo( ) {
 		return this.extInfo;
 	}
 
-	public void setOperatorId(String operatorId) {
+    /**
+     * Sets operator id.
+     *
+     * @param operatorId the operator id
+     */
+    public void setOperatorId(String operatorId) {
 		this.operatorId = operatorId;
 	}
-	public String getOperatorId( ) {
+
+    /**
+     * Gets operator id.
+     *
+     * @return the operator id
+     */
+    public String getOperatorId( ) {
 		return this.operatorId;
 	}
 
-	public void setOperatorPartnerId(String operatorPartnerId) {
+    /**
+     * Sets operator partner id.
+     *
+     * @param operatorPartnerId the operator partner id
+     */
+    public void setOperatorPartnerId(String operatorPartnerId) {
 		this.operatorPartnerId = operatorPartnerId;
 	}
-	public String getOperatorPartnerId( ) {
+
+    /**
+     * Gets operator partner id.
+     *
+     * @return the operator partner id
+     */
+    public String getOperatorPartnerId( ) {
 		return this.operatorPartnerId;
 	}
 
-	public void setOperatorType(String operatorType) {
+    /**
+     * Sets operator type.
+     *
+     * @param operatorType the operator type
+     */
+    public void setOperatorType(String operatorType) {
 		this.operatorType = operatorType;
 	}
-	public String getOperatorType( ) {
+
+    /**
+     * Gets operator type.
+     *
+     * @return the operator type
+     */
+    public String getOperatorType( ) {
 		return this.operatorType;
 	}
 

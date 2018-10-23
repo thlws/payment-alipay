@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: mybank.finance.yulibao.trans.history.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-11-18 16:07:59
+ * @since 1.0, 2018-08-08 17:33:03
  */
 public class MybankFinanceYulibaoTransHistoryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8348419179452545247L;
+	private static final long serialVersionUID = 4443835364663634957L;
 
 	/** 
 	 * 历史交易记录查询的当前页码
@@ -42,31 +42,75 @@ public class MybankFinanceYulibaoTransHistoryQueryResponse extends AlipayRespons
 	@ApiField("total_item_count")
 	private String totalItemCount;
 
-	public void setCurrentPage(Long currentPage) {
+    /**
+     * Sets current page.
+     *
+     * @param currentPage the current page
+     */
+    public void setCurrentPage(Long currentPage) {
 		this.currentPage = currentPage;
 	}
-	public Long getCurrentPage( ) {
+
+    /**
+     * Gets current page.
+     *
+     * @return the current page
+     */
+    public Long getCurrentPage( ) {
 		return this.currentPage;
 	}
 
-	public void setHasNextPage(Boolean hasNextPage) {
+    /**
+     * Sets has next page.
+     *
+     * @param hasNextPage the has next page
+     */
+    public void setHasNextPage(Boolean hasNextPage) {
 		this.hasNextPage = hasNextPage;
 	}
-	public Boolean getHasNextPage( ) {
+
+    /**
+     * Gets has next page.
+     *
+     * @return the has next page
+     */
+    public Boolean getHasNextPage( ) {
 		return this.hasNextPage;
 	}
 
-	public void setHistoryTransDetailInfos(List<YLBTransDetailInfo> historyTransDetailInfos) {
+    /**
+     * Sets history trans detail infos.
+     *
+     * @param historyTransDetailInfos the history trans detail infos
+     */
+    public void setHistoryTransDetailInfos(List<YLBTransDetailInfo> historyTransDetailInfos) {
 		this.historyTransDetailInfos = historyTransDetailInfos;
 	}
-	public List<YLBTransDetailInfo> getHistoryTransDetailInfos( ) {
+
+    /**
+     * Gets history trans detail infos.
+     *
+     * @return the history trans detail infos
+     */
+    public List<YLBTransDetailInfo> getHistoryTransDetailInfos( ) {
 		return this.historyTransDetailInfos;
 	}
 
-	public void setTotalItemCount(String totalItemCount) {
+    /**
+     * Sets total item count.
+     *
+     * @param totalItemCount the total item count
+     */
+    public void setTotalItemCount(String totalItemCount) {
 		this.totalItemCount = totalItemCount;
 	}
-	public String getTotalItemCount( ) {
+
+    /**
+     * Gets total item count.
+     *
+     * @return the total item count
+     */
+    public String getTotalItemCount( ) {
 		return this.totalItemCount;
 	}
 

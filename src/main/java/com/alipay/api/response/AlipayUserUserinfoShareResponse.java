@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.user.userinfo.share response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-09-20 16:36:18
+ * @since 1.0, 2018-09-18 19:56:59
  */
 public class AlipayUserUserinfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1157446157383463312L;
+	private static final long serialVersionUID = 7767292561337627198L;
 
 	/** 
 	 * 详细地址。
@@ -281,283 +281,723 @@ W代表已注册，未激活的账户
 	@ApiField("zip")
 	private String zip;
 
-	public void setAddress(String address) {
+    /**
+     * Sets address.
+     *
+     * @param address the address
+     */
+    public void setAddress(String address) {
 		this.address = address;
 	}
-	public String getAddress( ) {
+
+    /**
+     * Gets address.
+     *
+     * @return the address
+     */
+    public String getAddress( ) {
 		return this.address;
 	}
 
-	public void setAddressCode(String addressCode) {
+    /**
+     * Sets address code.
+     *
+     * @param addressCode the address code
+     */
+    public void setAddressCode(String addressCode) {
 		this.addressCode = addressCode;
 	}
-	public String getAddressCode( ) {
+
+    /**
+     * Gets address code.
+     *
+     * @return the address code
+     */
+    public String getAddressCode( ) {
 		return this.addressCode;
 	}
 
-	public void setAlipayUserId(String alipayUserId) {
+    /**
+     * Sets alipay user id.
+     *
+     * @param alipayUserId the alipay user id
+     */
+    public void setAlipayUserId(String alipayUserId) {
 		this.alipayUserId = alipayUserId;
 	}
-	public String getAlipayUserId( ) {
+
+    /**
+     * Gets alipay user id.
+     *
+     * @return the alipay user id
+     */
+    public String getAlipayUserId( ) {
 		return this.alipayUserId;
 	}
 
-	public void setArea(String area) {
+    /**
+     * Sets area.
+     *
+     * @param area the area
+     */
+    public void setArea(String area) {
 		this.area = area;
 	}
-	public String getArea( ) {
+
+    /**
+     * Gets area.
+     *
+     * @return the area
+     */
+    public String getArea( ) {
 		return this.area;
 	}
 
-	public void setAvatar(String avatar) {
+    /**
+     * Sets avatar.
+     *
+     * @param avatar the avatar
+     */
+    public void setAvatar(String avatar) {
 		this.avatar = avatar;
 	}
-	public String getAvatar( ) {
+
+    /**
+     * Gets avatar.
+     *
+     * @return the avatar
+     */
+    public String getAvatar( ) {
 		return this.avatar;
 	}
 
-	public void setBalanceFreezeType(String balanceFreezeType) {
+    /**
+     * Sets balance freeze type.
+     *
+     * @param balanceFreezeType the balance freeze type
+     */
+    public void setBalanceFreezeType(String balanceFreezeType) {
 		this.balanceFreezeType = balanceFreezeType;
 	}
-	public String getBalanceFreezeType( ) {
+
+    /**
+     * Gets balance freeze type.
+     *
+     * @return the balance freeze type
+     */
+    public String getBalanceFreezeType( ) {
 		return this.balanceFreezeType;
 	}
 
-	public void setBirthday(String birthday) {
+    /**
+     * Sets birthday.
+     *
+     * @param birthday the birthday
+     */
+    public void setBirthday(String birthday) {
 		this.birthday = birthday;
 	}
-	public String getBirthday( ) {
+
+    /**
+     * Gets birthday.
+     *
+     * @return the birthday
+     */
+    public String getBirthday( ) {
 		return this.birthday;
 	}
 
-	public void setCertNo(String certNo) {
+    /**
+     * Sets cert no.
+     *
+     * @param certNo the cert no
+     */
+    public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}
-	public String getCertNo( ) {
+
+    /**
+     * Gets cert no.
+     *
+     * @return the cert no
+     */
+    public String getCertNo( ) {
 		return this.certNo;
 	}
 
-	public void setCertTypeValue(String certTypeValue) {
+    /**
+     * Sets cert type value.
+     *
+     * @param certTypeValue the cert type value
+     */
+    public void setCertTypeValue(String certTypeValue) {
 		this.certTypeValue = certTypeValue;
 	}
-	public String getCertTypeValue( ) {
+
+    /**
+     * Gets cert type value.
+     *
+     * @return the cert type value
+     */
+    public String getCertTypeValue( ) {
 		return this.certTypeValue;
 	}
 
-	public void setCity(String city) {
+    /**
+     * Sets city.
+     *
+     * @param city the city
+     */
+    public void setCity(String city) {
 		this.city = city;
 	}
-	public String getCity( ) {
+
+    /**
+     * Gets city.
+     *
+     * @return the city
+     */
+    public String getCity( ) {
 		return this.city;
 	}
 
-	public void setDefaultDeliverAddress(String defaultDeliverAddress) {
+    /**
+     * Sets default deliver address.
+     *
+     * @param defaultDeliverAddress the default deliver address
+     */
+    public void setDefaultDeliverAddress(String defaultDeliverAddress) {
 		this.defaultDeliverAddress = defaultDeliverAddress;
 	}
-	public String getDefaultDeliverAddress( ) {
+
+    /**
+     * Gets default deliver address.
+     *
+     * @return the default deliver address
+     */
+    public String getDefaultDeliverAddress( ) {
 		return this.defaultDeliverAddress;
 	}
 
-	public void setDeliverAddressList(List<DeliverAddress> deliverAddressList) {
+    /**
+     * Sets deliver address list.
+     *
+     * @param deliverAddressList the deliver address list
+     */
+    public void setDeliverAddressList(List<DeliverAddress> deliverAddressList) {
 		this.deliverAddressList = deliverAddressList;
 	}
-	public List<DeliverAddress> getDeliverAddressList( ) {
+
+    /**
+     * Gets deliver address list.
+     *
+     * @return the deliver address list
+     */
+    public List<DeliverAddress> getDeliverAddressList( ) {
 		return this.deliverAddressList;
 	}
 
-	public void setDeliverArea(String deliverArea) {
+    /**
+     * Sets deliver area.
+     *
+     * @param deliverArea the deliver area
+     */
+    public void setDeliverArea(String deliverArea) {
 		this.deliverArea = deliverArea;
 	}
-	public String getDeliverArea( ) {
+
+    /**
+     * Gets deliver area.
+     *
+     * @return the deliver area
+     */
+    public String getDeliverArea( ) {
 		return this.deliverArea;
 	}
 
-	public void setDeliverCity(String deliverCity) {
+    /**
+     * Sets deliver city.
+     *
+     * @param deliverCity the deliver city
+     */
+    public void setDeliverCity(String deliverCity) {
 		this.deliverCity = deliverCity;
 	}
-	public String getDeliverCity( ) {
+
+    /**
+     * Gets deliver city.
+     *
+     * @return the deliver city
+     */
+    public String getDeliverCity( ) {
 		return this.deliverCity;
 	}
 
-	public void setDeliverFullname(String deliverFullname) {
+    /**
+     * Sets deliver fullname.
+     *
+     * @param deliverFullname the deliver fullname
+     */
+    public void setDeliverFullname(String deliverFullname) {
 		this.deliverFullname = deliverFullname;
 	}
-	public String getDeliverFullname( ) {
+
+    /**
+     * Gets deliver fullname.
+     *
+     * @return the deliver fullname
+     */
+    public String getDeliverFullname( ) {
 		return this.deliverFullname;
 	}
 
-	public void setDeliverMobile(String deliverMobile) {
+    /**
+     * Sets deliver mobile.
+     *
+     * @param deliverMobile the deliver mobile
+     */
+    public void setDeliverMobile(String deliverMobile) {
 		this.deliverMobile = deliverMobile;
 	}
-	public String getDeliverMobile( ) {
+
+    /**
+     * Gets deliver mobile.
+     *
+     * @return the deliver mobile
+     */
+    public String getDeliverMobile( ) {
 		return this.deliverMobile;
 	}
 
-	public void setDeliverPhone(String deliverPhone) {
+    /**
+     * Sets deliver phone.
+     *
+     * @param deliverPhone the deliver phone
+     */
+    public void setDeliverPhone(String deliverPhone) {
 		this.deliverPhone = deliverPhone;
 	}
-	public String getDeliverPhone( ) {
+
+    /**
+     * Gets deliver phone.
+     *
+     * @return the deliver phone
+     */
+    public String getDeliverPhone( ) {
 		return this.deliverPhone;
 	}
 
-	public void setDeliverProvince(String deliverProvince) {
+    /**
+     * Sets deliver province.
+     *
+     * @param deliverProvince the deliver province
+     */
+    public void setDeliverProvince(String deliverProvince) {
 		this.deliverProvince = deliverProvince;
 	}
-	public String getDeliverProvince( ) {
+
+    /**
+     * Gets deliver province.
+     *
+     * @return the deliver province
+     */
+    public String getDeliverProvince( ) {
 		return this.deliverProvince;
 	}
 
-	public void setEmail(String email) {
+    /**
+     * Sets email.
+     *
+     * @param email the email
+     */
+    public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getEmail( ) {
+
+    /**
+     * Gets email.
+     *
+     * @return the email
+     */
+    public String getEmail( ) {
 		return this.email;
 	}
 
-	public void setFamilyName(String familyName) {
+    /**
+     * Sets family name.
+     *
+     * @param familyName the family name
+     */
+    public void setFamilyName(String familyName) {
 		this.familyName = familyName;
 	}
-	public String getFamilyName( ) {
+
+    /**
+     * Gets family name.
+     *
+     * @return the family name
+     */
+    public String getFamilyName( ) {
 		return this.familyName;
 	}
 
-	public void setFirmName(String firmName) {
+    /**
+     * Sets firm name.
+     *
+     * @param firmName the firm name
+     */
+    public void setFirmName(String firmName) {
 		this.firmName = firmName;
 	}
-	public String getFirmName( ) {
+
+    /**
+     * Gets firm name.
+     *
+     * @return the firm name
+     */
+    public String getFirmName( ) {
 		return this.firmName;
 	}
 
-	public void setGender(String gender) {
+    /**
+     * Sets gender.
+     *
+     * @param gender the gender
+     */
+    public void setGender(String gender) {
 		this.gender = gender;
 	}
-	public String getGender( ) {
+
+    /**
+     * Gets gender.
+     *
+     * @return the gender
+     */
+    public String getGender( ) {
 		return this.gender;
 	}
 
-	public void setIsBalanceFrozen(String isBalanceFrozen) {
+    /**
+     * Sets is balance frozen.
+     *
+     * @param isBalanceFrozen the is balance frozen
+     */
+    public void setIsBalanceFrozen(String isBalanceFrozen) {
 		this.isBalanceFrozen = isBalanceFrozen;
 	}
-	public String getIsBalanceFrozen( ) {
+
+    /**
+     * Gets is balance frozen.
+     *
+     * @return the is balance frozen
+     */
+    public String getIsBalanceFrozen( ) {
 		return this.isBalanceFrozen;
 	}
 
-	public void setIsBankAuth(String isBankAuth) {
+    /**
+     * Sets is bank auth.
+     *
+     * @param isBankAuth the is bank auth
+     */
+    public void setIsBankAuth(String isBankAuth) {
 		this.isBankAuth = isBankAuth;
 	}
-	public String getIsBankAuth( ) {
+
+    /**
+     * Gets is bank auth.
+     *
+     * @return the is bank auth
+     */
+    public String getIsBankAuth( ) {
 		return this.isBankAuth;
 	}
 
-	public void setIsCertified(String isCertified) {
+    /**
+     * Sets is certified.
+     *
+     * @param isCertified the is certified
+     */
+    public void setIsCertified(String isCertified) {
 		this.isCertified = isCertified;
 	}
-	public String getIsCertified( ) {
+
+    /**
+     * Gets is certified.
+     *
+     * @return the is certified
+     */
+    public String getIsCertified( ) {
 		return this.isCertified;
 	}
 
-	public void setIsCertifyGradeA(String isCertifyGradeA) {
+    /**
+     * Sets is certify grade a.
+     *
+     * @param isCertifyGradeA the is certify grade a
+     */
+    public void setIsCertifyGradeA(String isCertifyGradeA) {
 		this.isCertifyGradeA = isCertifyGradeA;
 	}
-	public String getIsCertifyGradeA( ) {
+
+    /**
+     * Gets is certify grade a.
+     *
+     * @return the is certify grade a
+     */
+    public String getIsCertifyGradeA( ) {
 		return this.isCertifyGradeA;
 	}
 
-	public void setIsIdAuth(String isIdAuth) {
+    /**
+     * Sets is id auth.
+     *
+     * @param isIdAuth the is id auth
+     */
+    public void setIsIdAuth(String isIdAuth) {
 		this.isIdAuth = isIdAuth;
 	}
-	public String getIsIdAuth( ) {
+
+    /**
+     * Gets is id auth.
+     *
+     * @return the is id auth
+     */
+    public String getIsIdAuth( ) {
 		return this.isIdAuth;
 	}
 
-	public void setIsLicenceAuth(String isLicenceAuth) {
+    /**
+     * Sets is licence auth.
+     *
+     * @param isLicenceAuth the is licence auth
+     */
+    public void setIsLicenceAuth(String isLicenceAuth) {
 		this.isLicenceAuth = isLicenceAuth;
 	}
-	public String getIsLicenceAuth( ) {
+
+    /**
+     * Gets is licence auth.
+     *
+     * @return the is licence auth
+     */
+    public String getIsLicenceAuth( ) {
 		return this.isLicenceAuth;
 	}
 
-	public void setIsMobileAuth(String isMobileAuth) {
+    /**
+     * Sets is mobile auth.
+     *
+     * @param isMobileAuth the is mobile auth
+     */
+    public void setIsMobileAuth(String isMobileAuth) {
 		this.isMobileAuth = isMobileAuth;
 	}
-	public String getIsMobileAuth( ) {
+
+    /**
+     * Gets is mobile auth.
+     *
+     * @return the is mobile auth
+     */
+    public String getIsMobileAuth( ) {
 		return this.isMobileAuth;
 	}
 
-	public void setIsStudentCertified(String isStudentCertified) {
+    /**
+     * Sets is student certified.
+     *
+     * @param isStudentCertified the is student certified
+     */
+    public void setIsStudentCertified(String isStudentCertified) {
 		this.isStudentCertified = isStudentCertified;
 	}
-	public String getIsStudentCertified( ) {
+
+    /**
+     * Gets is student certified.
+     *
+     * @return the is student certified
+     */
+    public String getIsStudentCertified( ) {
 		return this.isStudentCertified;
 	}
 
-	public void setMobile(String mobile) {
+    /**
+     * Sets mobile.
+     *
+     * @param mobile the mobile
+     */
+    public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
-	public String getMobile( ) {
+
+    /**
+     * Gets mobile.
+     *
+     * @return the mobile
+     */
+    public String getMobile( ) {
 		return this.mobile;
 	}
 
-	public void setNickName(String nickName) {
+    /**
+     * Sets nick name.
+     *
+     * @param nickName the nick name
+     */
+    public void setNickName(String nickName) {
 		this.nickName = nickName;
 	}
-	public String getNickName( ) {
+
+    /**
+     * Gets nick name.
+     *
+     * @return the nick name
+     */
+    public String getNickName( ) {
 		return this.nickName;
 	}
 
-	public void setPhone(String phone) {
+    /**
+     * Sets phone.
+     *
+     * @param phone the phone
+     */
+    public void setPhone(String phone) {
 		this.phone = phone;
 	}
-	public String getPhone( ) {
+
+    /**
+     * Gets phone.
+     *
+     * @return the phone
+     */
+    public String getPhone( ) {
 		return this.phone;
 	}
 
-	public void setProvince(String province) {
+    /**
+     * Sets province.
+     *
+     * @param province the province
+     */
+    public void setProvince(String province) {
 		this.province = province;
 	}
-	public String getProvince( ) {
+
+    /**
+     * Gets province.
+     *
+     * @return the province
+     */
+    public String getProvince( ) {
 		return this.province;
 	}
 
-	public void setRealName(String realName) {
+    /**
+     * Sets real name.
+     *
+     * @param realName the real name
+     */
+    public void setRealName(String realName) {
 		this.realName = realName;
 	}
-	public String getRealName( ) {
+
+    /**
+     * Gets real name.
+     *
+     * @return the real name
+     */
+    public String getRealName( ) {
 		return this.realName;
 	}
 
-	public void setReducedBirthday(String reducedBirthday) {
+    /**
+     * Sets reduced birthday.
+     *
+     * @param reducedBirthday the reduced birthday
+     */
+    public void setReducedBirthday(String reducedBirthday) {
 		this.reducedBirthday = reducedBirthday;
 	}
-	public String getReducedBirthday( ) {
+
+    /**
+     * Gets reduced birthday.
+     *
+     * @return the reduced birthday
+     */
+    public String getReducedBirthday( ) {
 		return this.reducedBirthday;
 	}
 
-	public void setUserId(String userId) {
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public String getUserId( ) {
+
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId( ) {
 		return this.userId;
 	}
 
-	public void setUserStatus(String userStatus) {
+    /**
+     * Sets user status.
+     *
+     * @param userStatus the user status
+     */
+    public void setUserStatus(String userStatus) {
 		this.userStatus = userStatus;
 	}
-	public String getUserStatus( ) {
+
+    /**
+     * Gets user status.
+     *
+     * @return the user status
+     */
+    public String getUserStatus( ) {
 		return this.userStatus;
 	}
 
-	public void setUserTypeValue(String userTypeValue) {
+    /**
+     * Sets user type value.
+     *
+     * @param userTypeValue the user type value
+     */
+    public void setUserTypeValue(String userTypeValue) {
 		this.userTypeValue = userTypeValue;
 	}
-	public String getUserTypeValue( ) {
+
+    /**
+     * Gets user type value.
+     *
+     * @return the user type value
+     */
+    public String getUserTypeValue( ) {
 		return this.userTypeValue;
 	}
 
-	public void setZip(String zip) {
+    /**
+     * Sets zip.
+     *
+     * @param zip the zip
+     */
+    public void setZip(String zip) {
 		this.zip = zip;
 	}
-	public String getZip( ) {
+
+    /**
+     * Gets zip.
+     *
+     * @return the zip
+     */
+    public String getZip( ) {
 		return this.zip;
 	}
 

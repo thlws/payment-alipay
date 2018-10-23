@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayItemLimitPeriodInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6519544291346376966L;
+	private static final long serialVersionUID = 2185984563879248876L;
 
 	/**
 	 * 区间范围枚举，分为：
@@ -44,24 +44,57 @@ ALL（整个销售周期）
 	@ApiField("number")
 	private List<Long> value;
 
-	public String getRule() {
+    /**
+     * Gets rule.
+     *
+     * @return the rule
+     */
+    public String getRule() {
 		return this.rule;
 	}
-	public void setRule(String rule) {
+
+    /**
+     * Sets rule.
+     *
+     * @param rule the rule
+     */
+    public void setRule(String rule) {
 		this.rule = rule;
 	}
 
-	public String getUnit() {
+    /**
+     * Gets unit.
+     *
+     * @return the unit
+     */
+    public String getUnit() {
 		return this.unit;
 	}
-	public void setUnit(String unit) {
+
+    /**
+     * Sets unit.
+     *
+     * @param unit the unit
+     */
+    public void setUnit(String unit) {
 		this.unit = unit;
 	}
 
-	public List<Long> getValue() {
+    /**
+     * Gets value.
+     *
+     * @return the value
+     */
+    public List<Long> getValue() {
 		return this.value;
 	}
-	public void setValue(List<Long> value) {
+
+    /**
+     * Sets value.
+     *
+     * @param value the value
+     */
+    public void setValue(List<Long> value) {
 		this.value = value;
 	}
 

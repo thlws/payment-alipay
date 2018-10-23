@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 自定义数据报表列表分页查询接口
  *
  * @author auto create
- * @since 1.0, 2016-08-29 14:52:33
+ * @since 1.0, 2018-07-26 14:04:05
  */
 public class KoubeiMarketingDataCustomreportBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7824618588554923821L;
+	private static final long serialVersionUID = 7615779885538766971L;
 
 	/**
 	 * 当前页号，默认为1
@@ -25,17 +25,39 @@ public class KoubeiMarketingDataCustomreportBatchqueryModel extends AlipayObject
 	@ApiField("page_size")
 	private String pageSize;
 
-	public String getPageNo() {
+    /**
+     * Gets page no.
+     *
+     * @return the page no
+     */
+    public String getPageNo() {
 		return this.pageNo;
 	}
-	public void setPageNo(String pageNo) {
+
+    /**
+     * Sets page no.
+     *
+     * @param pageNo the page no
+     */
+    public void setPageNo(String pageNo) {
 		this.pageNo = pageNo;
 	}
 
-	public String getPageSize() {
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public String getPageSize() {
 		return this.pageSize;
 	}
-	public void setPageSize(String pageSize) {
+
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(String pageSize) {
 		this.pageSize = pageSize;
 	}
 

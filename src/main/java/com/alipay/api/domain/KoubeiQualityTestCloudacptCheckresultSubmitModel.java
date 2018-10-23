@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiQualityTestCloudacptCheckresultSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8187757545555829898L;
+	private static final long serialVersionUID = 6698792257492971575L;
 
 	/**
 	 * 活动id
@@ -55,52 +55,129 @@ public class KoubeiQualityTestCloudacptCheckresultSubmitModel extends AlipayObje
 	@ApiField("uid")
 	private String uid;
 
-	public String getActivityId() {
+    /**
+     * Gets activity id.
+     *
+     * @return the activity id
+     */
+    public String getActivityId() {
 		return this.activityId;
 	}
-	public void setActivityId(String activityId) {
+
+    /**
+     * Sets activity id.
+     *
+     * @param activityId the activity id
+     */
+    public void setActivityId(String activityId) {
 		this.activityId = activityId;
 	}
 
-	public String getAuthCode() {
+    /**
+     * Gets auth code.
+     *
+     * @return the auth code
+     */
+    public String getAuthCode() {
 		return this.authCode;
 	}
-	public void setAuthCode(String authCode) {
+
+    /**
+     * Sets auth code.
+     *
+     * @param authCode the auth code
+     */
+    public void setAuthCode(String authCode) {
 		this.authCode = authCode;
 	}
 
-	public String getBatchId() {
+    /**
+     * Gets batch id.
+     *
+     * @return the batch id
+     */
+    public String getBatchId() {
 		return this.batchId;
 	}
-	public void setBatchId(String batchId) {
+
+    /**
+     * Sets batch id.
+     *
+     * @param batchId the batch id
+     */
+    public void setBatchId(String batchId) {
 		this.batchId = batchId;
 	}
 
-	public String getEndTime() {
+    /**
+     * Gets end time.
+     *
+     * @return the end time
+     */
+    public String getEndTime() {
 		return this.endTime;
 	}
-	public void setEndTime(String endTime) {
+
+    /**
+     * Sets end time.
+     *
+     * @param endTime the end time
+     */
+    public void setEndTime(String endTime) {
 		this.endTime = endTime;
 	}
 
-	public String getPid() {
+    /**
+     * Gets pid.
+     *
+     * @return the pid
+     */
+    public String getPid() {
 		return this.pid;
 	}
-	public void setPid(String pid) {
+
+    /**
+     * Sets pid.
+     *
+     * @param pid the pid
+     */
+    public void setPid(String pid) {
 		this.pid = pid;
 	}
 
-	public String getStartTime() {
+    /**
+     * Gets start time.
+     *
+     * @return the start time
+     */
+    public String getStartTime() {
 		return this.startTime;
 	}
-	public void setStartTime(String startTime) {
+
+    /**
+     * Sets start time.
+     *
+     * @param startTime the start time
+     */
+    public void setStartTime(String startTime) {
 		this.startTime = startTime;
 	}
 
-	public String getUid() {
+    /**
+     * Gets uid.
+     *
+     * @return the uid
+     */
+    public String getUid() {
 		return this.uid;
 	}
-	public void setUid(String uid) {
+
+    /**
+     * Sets uid.
+     *
+     * @param uid the uid
+     */
+    public void setUid(String uid) {
 		this.uid = uid;
 	}
 

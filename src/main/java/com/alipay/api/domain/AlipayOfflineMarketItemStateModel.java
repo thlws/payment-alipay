@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通过此接口，商户可以出传入item_id与上下架标识，对商户创建的商品进行上架或下架处理
  *
  * @author auto create
- * @since 1.0, 2017-04-20 15:17:50
+ * @since 1.0, 2018-07-12 12:22:37
  */
 public class AlipayOfflineMarketItemStateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5757284734525158683L;
+	private static final long serialVersionUID = 3391213588244154524L;
 
 	/**
 	 * 审核规则。支付宝内部使用，外部商户不需填写此字段。
@@ -55,52 +55,129 @@ public class AlipayOfflineMarketItemStateModel extends AlipayObject {
 	@ApiField("state_type")
 	private String stateType;
 
-	public AlipayItemAuditRule getAuditRule() {
+    /**
+     * Gets audit rule.
+     *
+     * @return the audit rule
+     */
+    public AlipayItemAuditRule getAuditRule() {
 		return this.auditRule;
 	}
-	public void setAuditRule(AlipayItemAuditRule auditRule) {
+
+    /**
+     * Sets audit rule.
+     *
+     * @param auditRule the audit rule
+     */
+    public void setAuditRule(AlipayItemAuditRule auditRule) {
 		this.auditRule = auditRule;
 	}
 
-	public String getItemId() {
+    /**
+     * Gets item id.
+     *
+     * @return the item id
+     */
+    public String getItemId() {
 		return this.itemId;
 	}
-	public void setItemId(String itemId) {
+
+    /**
+     * Sets item id.
+     *
+     * @param itemId the item id
+     */
+    public void setItemId(String itemId) {
 		this.itemId = itemId;
 	}
 
-	public String getMemo() {
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo() {
 		return this.memo;
 	}
-	public void setMemo(String memo) {
+
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
-	public String getOperateNotifyUrl() {
+    /**
+     * Gets operate notify url.
+     *
+     * @return the operate notify url
+     */
+    public String getOperateNotifyUrl() {
 		return this.operateNotifyUrl;
 	}
-	public void setOperateNotifyUrl(String operateNotifyUrl) {
+
+    /**
+     * Sets operate notify url.
+     *
+     * @param operateNotifyUrl the operate notify url
+     */
+    public void setOperateNotifyUrl(String operateNotifyUrl) {
 		this.operateNotifyUrl = operateNotifyUrl;
 	}
 
-	public AlipayItemOperationContext getOperationContext() {
+    /**
+     * Gets operation context.
+     *
+     * @return the operation context
+     */
+    public AlipayItemOperationContext getOperationContext() {
 		return this.operationContext;
 	}
-	public void setOperationContext(AlipayItemOperationContext operationContext) {
+
+    /**
+     * Sets operation context.
+     *
+     * @param operationContext the operation context
+     */
+    public void setOperationContext(AlipayItemOperationContext operationContext) {
 		this.operationContext = operationContext;
 	}
 
-	public String getRequestId() {
+    /**
+     * Gets request id.
+     *
+     * @return the request id
+     */
+    public String getRequestId() {
 		return this.requestId;
 	}
-	public void setRequestId(String requestId) {
+
+    /**
+     * Sets request id.
+     *
+     * @param requestId the request id
+     */
+    public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
 
-	public String getStateType() {
+    /**
+     * Gets state type.
+     *
+     * @return the state type
+     */
+    public String getStateType() {
 		return this.stateType;
 	}
-	public void setStateType(String stateType) {
+
+    /**
+     * Sets state type.
+     *
+     * @param stateType the state type
+     */
+    public void setStateType(String stateType) {
 		this.stateType = stateType;
 	}
 

@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.voucher.list.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-19 11:28:18
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayMarketingVoucherListQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5595531584787694661L;
+	private static final long serialVersionUID = 6817187654171231246L;
 
 	/** 
 	 * 券列表，一定不为null，但是size可以为0
@@ -24,10 +24,21 @@ public class AlipayMarketingVoucherListQueryResponse extends AlipayResponse {
 	@ApiField("voucher_lite_info")
 	private List<VoucherLiteInfo> vouchers;
 
-	public void setVouchers(List<VoucherLiteInfo> vouchers) {
+    /**
+     * Sets vouchers.
+     *
+     * @param vouchers the vouchers
+     */
+    public void setVouchers(List<VoucherLiteInfo> vouchers) {
 		this.vouchers = vouchers;
 	}
-	public List<VoucherLiteInfo> getVouchers( ) {
+
+    /**
+     * Gets vouchers.
+     *
+     * @return the vouchers
+     */
+    public List<VoucherLiteInfo> getVouchers( ) {
 		return this.vouchers;
 	}
 

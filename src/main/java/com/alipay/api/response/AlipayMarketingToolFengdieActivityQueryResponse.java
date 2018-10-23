@@ -7,13 +7,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.tool.fengdie.activity.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-20 10:29:11
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayMarketingToolFengdieActivityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8785955347379189957L;
+	private static final long serialVersionUID = 5291393538187776314L;
 
 	/** 
 	 * H5应用详情
@@ -21,10 +21,21 @@ public class AlipayMarketingToolFengdieActivityQueryResponse extends AlipayRespo
 	@ApiField("activity")
 	private FengdieActivity activity;
 
-	public void setActivity(FengdieActivity activity) {
+    /**
+     * Sets activity.
+     *
+     * @param activity the activity
+     */
+    public void setActivity(FengdieActivity activity) {
 		this.activity = activity;
 	}
-	public FengdieActivity getActivity( ) {
+
+    /**
+     * Gets activity.
+     *
+     * @return the activity
+     */
+    public FengdieActivity getActivity( ) {
 		return this.activity;
 	}
 

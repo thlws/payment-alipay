@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序发送模板消息
  *
  * @author auto create
- * @since 1.0, 2017-09-14 13:48:10
+ * @since 1.0, 2018-09-18 17:30:38
  */
 public class AlipayOpenAppMiniTemplatemessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4318299155482131638L;
+	private static final long serialVersionUID = 2116289433897257786L;
 
 	/**
 	 * 开发者需要发送模板消息中的自定义部分来替换模板的占位符
@@ -43,38 +43,93 @@ public class AlipayOpenAppMiniTemplatemessageSendModel extends AlipayObject {
 	@ApiField("user_template_id")
 	private String userTemplateId;
 
-	public String getData() {
+    /**
+     * Gets data.
+     *
+     * @return the data
+     */
+    public String getData() {
 		return this.data;
 	}
-	public void setData(String data) {
+
+    /**
+     * Sets data.
+     *
+     * @param data the data
+     */
+    public void setData(String data) {
 		this.data = data;
 	}
 
-	public String getFormId() {
+    /**
+     * Gets form id.
+     *
+     * @return the form id
+     */
+    public String getFormId() {
 		return this.formId;
 	}
-	public void setFormId(String formId) {
+
+    /**
+     * Sets form id.
+     *
+     * @param formId the form id
+     */
+    public void setFormId(String formId) {
 		this.formId = formId;
 	}
 
-	public String getPage() {
+    /**
+     * Gets page.
+     *
+     * @return the page
+     */
+    public String getPage() {
 		return this.page;
 	}
-	public void setPage(String page) {
+
+    /**
+     * Sets page.
+     *
+     * @param page the page
+     */
+    public void setPage(String page) {
 		this.page = page;
 	}
 
-	public String getToUserId() {
+    /**
+     * Gets to user id.
+     *
+     * @return the to user id
+     */
+    public String getToUserId() {
 		return this.toUserId;
 	}
-	public void setToUserId(String toUserId) {
+
+    /**
+     * Sets to user id.
+     *
+     * @param toUserId the to user id
+     */
+    public void setToUserId(String toUserId) {
 		this.toUserId = toUserId;
 	}
 
-	public String getUserTemplateId() {
+    /**
+     * Gets user template id.
+     *
+     * @return the user template id
+     */
+    public String getUserTemplateId() {
 		return this.userTemplateId;
 	}
-	public void setUserTemplateId(String userTemplateId) {
+
+    /**
+     * Sets user template id.
+     *
+     * @param userTemplateId the user template id
+     */
+    public void setUserTemplateId(String userTemplateId) {
 		this.userTemplateId = userTemplateId;
 	}
 

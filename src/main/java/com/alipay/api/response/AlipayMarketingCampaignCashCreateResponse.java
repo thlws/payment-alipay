@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.campaign.cash.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-14 11:53:08
+ * @since 1.0, 2018-07-19 14:27:27
  */
 public class AlipayMarketingCampaignCashCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1459897552977186484L;
+	private static final long serialVersionUID = 1866466972776677664L;
 
 	/** 
 	 * 生成的现金红包活动号
@@ -32,24 +32,57 @@ public class AlipayMarketingCampaignCashCreateResponse extends AlipayResponse {
 	@ApiField("pay_url")
 	private String payUrl;
 
-	public void setCrowdNo(String crowdNo) {
+    /**
+     * Sets crowd no.
+     *
+     * @param crowdNo the crowd no
+     */
+    public void setCrowdNo(String crowdNo) {
 		this.crowdNo = crowdNo;
 	}
-	public String getCrowdNo( ) {
+
+    /**
+     * Gets crowd no.
+     *
+     * @return the crowd no
+     */
+    public String getCrowdNo( ) {
 		return this.crowdNo;
 	}
 
-	public void setOriginCrowdNo(String originCrowdNo) {
+    /**
+     * Sets origin crowd no.
+     *
+     * @param originCrowdNo the origin crowd no
+     */
+    public void setOriginCrowdNo(String originCrowdNo) {
 		this.originCrowdNo = originCrowdNo;
 	}
-	public String getOriginCrowdNo( ) {
+
+    /**
+     * Gets origin crowd no.
+     *
+     * @return the origin crowd no
+     */
+    public String getOriginCrowdNo( ) {
 		return this.originCrowdNo;
 	}
 
-	public void setPayUrl(String payUrl) {
+    /**
+     * Sets pay url.
+     *
+     * @param payUrl the pay url
+     */
+    public void setPayUrl(String payUrl) {
 		this.payUrl = payUrl;
 	}
-	public String getPayUrl( ) {
+
+    /**
+     * Gets pay url.
+     *
+     * @return the pay url
+     */
+    public String getPayUrl( ) {
 		return this.payUrl;
 	}
 

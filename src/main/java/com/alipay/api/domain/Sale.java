@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 促销信息集合，JSON格式
  *
  * @author auto create
- * @since 1.0, 2017-07-13 14:24:14
+ * @since 1.0, 2018-06-25 14:51:27
  */
 public class Sale extends AlipayObject {
 
-	private static final long serialVersionUID = 4614112746262987384L;
+	private static final long serialVersionUID = 4713584559634872463L;
 
 	/**
 	 * 促销描述内容，有活动的情况下必填
@@ -37,31 +37,75 @@ public class Sale extends AlipayObject {
 	@ApiField("status")
 	private String status;
 
-	public String getDescribe() {
+    /**
+     * Gets describe.
+     *
+     * @return the describe
+     */
+    public String getDescribe() {
 		return this.describe;
 	}
-	public void setDescribe(String describe) {
+
+    /**
+     * Sets describe.
+     *
+     * @param describe the describe
+     */
+    public void setDescribe(String describe) {
 		this.describe = describe;
 	}
 
-	public String getEndTime() {
+    /**
+     * Gets end time.
+     *
+     * @return the end time
+     */
+    public String getEndTime() {
 		return this.endTime;
 	}
-	public void setEndTime(String endTime) {
+
+    /**
+     * Sets end time.
+     *
+     * @param endTime the end time
+     */
+    public void setEndTime(String endTime) {
 		this.endTime = endTime;
 	}
 
-	public String getStartTime() {
+    /**
+     * Gets start time.
+     *
+     * @return the start time
+     */
+    public String getStartTime() {
 		return this.startTime;
 	}
-	public void setStartTime(String startTime) {
+
+    /**
+     * Sets start time.
+     *
+     * @param startTime the start time
+     */
+    public void setStartTime(String startTime) {
 		this.startTime = startTime;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AliTrustRiskIdentify extends AlipayObject {
 
-	private static final long serialVersionUID = 3551578533254861955L;
+	private static final long serialVersionUID = 2216112819112482858L;
 
 	/**
 	 * 芝麻信用风险名单详情列表
@@ -35,24 +35,57 @@ public class AliTrustRiskIdentify extends AlipayObject {
 	@ApiField("risk_tag")
 	private String riskTag;
 
-	public List<ZhimaRiskDetail> getDetails() {
+    /**
+     * Gets details.
+     *
+     * @return the details
+     */
+    public List<ZhimaRiskDetail> getDetails() {
 		return this.details;
 	}
-	public void setDetails(List<ZhimaRiskDetail> details) {
+
+    /**
+     * Sets details.
+     *
+     * @param details the details
+     */
+    public void setDetails(List<ZhimaRiskDetail> details) {
 		this.details = details;
 	}
 
-	public String getIsRisk() {
+    /**
+     * Gets is risk.
+     *
+     * @return the is risk
+     */
+    public String getIsRisk() {
 		return this.isRisk;
 	}
-	public void setIsRisk(String isRisk) {
+
+    /**
+     * Sets is risk.
+     *
+     * @param isRisk the is risk
+     */
+    public void setIsRisk(String isRisk) {
 		this.isRisk = isRisk;
 	}
 
-	public String getRiskTag() {
+    /**
+     * Gets risk tag.
+     *
+     * @return the risk tag
+     */
+    public String getRiskTag() {
 		return this.riskTag;
 	}
-	public void setRiskTag(String riskTag) {
+
+    /**
+     * Sets risk tag.
+     *
+     * @param riskTag the risk tag
+     */
+    public void setRiskTag(String riskTag) {
 		this.riskTag = riskTag;
 	}
 

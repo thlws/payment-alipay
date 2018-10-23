@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CommentReplyOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8211929933713622698L;
+	private static final long serialVersionUID = 1347352458139129929L;
 
 	/**
 	 * 回复内容，最多500字，不区分中英文
@@ -33,24 +33,57 @@ public class CommentReplyOpenModel extends AlipayObject {
 	@ApiField("reply_publish_time")
 	private Date replyPublishTime;
 
-	public String getContent() {
+    /**
+     * Gets content.
+     *
+     * @return the content
+     */
+    public String getContent() {
 		return this.content;
 	}
-	public void setContent(String content) {
+
+    /**
+     * Sets content.
+     *
+     * @param content the content
+     */
+    public void setContent(String content) {
 		this.content = content;
 	}
 
-	public String getOperatorId() {
+    /**
+     * Gets operator id.
+     *
+     * @return the operator id
+     */
+    public String getOperatorId() {
 		return this.operatorId;
 	}
-	public void setOperatorId(String operatorId) {
+
+    /**
+     * Sets operator id.
+     *
+     * @param operatorId the operator id
+     */
+    public void setOperatorId(String operatorId) {
 		this.operatorId = operatorId;
 	}
 
-	public Date getReplyPublishTime() {
+    /**
+     * Gets reply publish time.
+     *
+     * @return the reply publish time
+     */
+    public Date getReplyPublishTime() {
 		return this.replyPublishTime;
 	}
-	public void setReplyPublishTime(Date replyPublishTime) {
+
+    /**
+     * Sets reply publish time.
+     *
+     * @param replyPublishTime the reply publish time
+     */
+    public void setReplyPublishTime(Date replyPublishTime) {
 		this.replyPublishTime = replyPublishTime;
 	}
 

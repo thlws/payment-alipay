@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMarketingDataBizadviserMyreportQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5662923517344377836L;
+	private static final long serialVersionUID = 8516194132682112859L;
 
 	/**
 	 * 非必须参数，uniq_key不同，参数也不同：
@@ -76,24 +76,57 @@ loginCount时查询登录次数；
 	@ApiField("user_id")
 	private String userId;
 
-	public String getReqParameters() {
+    /**
+     * Gets req parameters.
+     *
+     * @return the req parameters
+     */
+    public String getReqParameters() {
 		return this.reqParameters;
 	}
-	public void setReqParameters(String reqParameters) {
+
+    /**
+     * Sets req parameters.
+     *
+     * @param reqParameters the req parameters
+     */
+    public void setReqParameters(String reqParameters) {
 		this.reqParameters = reqParameters;
 	}
 
-	public String getUniqKey() {
+    /**
+     * Gets uniq key.
+     *
+     * @return the uniq key
+     */
+    public String getUniqKey() {
 		return this.uniqKey;
 	}
-	public void setUniqKey(String uniqKey) {
+
+    /**
+     * Sets uniq key.
+     *
+     * @param uniqKey the uniq key
+     */
+    public void setUniqKey(String uniqKey) {
 		this.uniqKey = uniqKey;
 	}
 
-	public String getUserId() {
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
-	public void setUserId(String userId) {
+
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
 

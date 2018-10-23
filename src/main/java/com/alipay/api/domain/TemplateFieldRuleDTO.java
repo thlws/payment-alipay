@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TemplateFieldRuleDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2159184584721366358L;
+	private static final long serialVersionUID = 3535682623574982447L;
 
 	/**
 	 * 字段名称，现在支持如下几个Key（暂不支持自定义）
@@ -42,24 +42,57 @@ ASSIGN_FROM_REQUEST：在开卡Reuqest请求中按rule_value取值，现在和fi
 	@ApiField("rule_value")
 	private String ruleValue;
 
-	public String getFieldName() {
+    /**
+     * Gets field name.
+     *
+     * @return the field name
+     */
+    public String getFieldName() {
 		return this.fieldName;
 	}
-	public void setFieldName(String fieldName) {
+
+    /**
+     * Sets field name.
+     *
+     * @param fieldName the field name
+     */
+    public void setFieldName(String fieldName) {
 		this.fieldName = fieldName;
 	}
 
-	public String getRuleName() {
+    /**
+     * Gets rule name.
+     *
+     * @return the rule name
+     */
+    public String getRuleName() {
 		return this.ruleName;
 	}
-	public void setRuleName(String ruleName) {
+
+    /**
+     * Sets rule name.
+     *
+     * @param ruleName the rule name
+     */
+    public void setRuleName(String ruleName) {
 		this.ruleName = ruleName;
 	}
 
-	public String getRuleValue() {
+    /**
+     * Gets rule value.
+     *
+     * @return the rule value
+     */
+    public String getRuleValue() {
 		return this.ruleValue;
 	}
-	public void setRuleValue(String ruleValue) {
+
+    /**
+     * Sets rule value.
+     *
+     * @param ruleValue the rule value
+     */
+    public void setRuleValue(String ruleValue) {
 		this.ruleValue = ruleValue;
 	}
 

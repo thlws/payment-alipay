@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.commerce.lottery.presentlist.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-24 14:37:51
+ * @since 1.0, 2018-03-30 15:00:00
  */
 public class AlipayCommerceLotteryPresentlistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8469755271231511733L;
+	private static final long serialVersionUID = 7884448467263168432L;
 
 	/** 
 	 * 列表内容
@@ -30,17 +30,39 @@ public class AlipayCommerceLotteryPresentlistQueryResponse extends AlipayRespons
 	@ApiField("total_result")
 	private Long totalResult;
 
-	public void setResults(List<LotteryPresent> results) {
+    /**
+     * Sets results.
+     *
+     * @param results the results
+     */
+    public void setResults(List<LotteryPresent> results) {
 		this.results = results;
 	}
-	public List<LotteryPresent> getResults( ) {
+
+    /**
+     * Gets results.
+     *
+     * @return the results
+     */
+    public List<LotteryPresent> getResults( ) {
 		return this.results;
 	}
 
-	public void setTotalResult(Long totalResult) {
+    /**
+     * Sets total result.
+     *
+     * @param totalResult the total result
+     */
+    public void setTotalResult(Long totalResult) {
 		this.totalResult = totalResult;
 	}
-	public Long getTotalResult( ) {
+
+    /**
+     * Gets total result.
+     *
+     * @return the total result
+     */
+    public Long getTotalResult( ) {
 		return this.totalResult;
 	}
 

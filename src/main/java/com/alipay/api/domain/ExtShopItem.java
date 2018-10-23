@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ExtShopItem extends AlipayObject {
 
-	private static final long serialVersionUID = 6821993848253812787L;
+	private static final long serialVersionUID = 5562387618742856169L;
 
 	/**
 	 * 品牌编码
@@ -97,101 +97,255 @@ public class ExtShopItem extends AlipayObject {
 	@ApiField("title")
 	private String title;
 
-	public String getBrandCode() {
+    /**
+     * Gets brand code.
+     *
+     * @return the brand code
+     */
+    public String getBrandCode() {
 		return this.brandCode;
 	}
-	public void setBrandCode(String brandCode) {
+
+    /**
+     * Sets brand code.
+     *
+     * @param brandCode the brand code
+     */
+    public void setBrandCode(String brandCode) {
 		this.brandCode = brandCode;
 	}
 
-	public String getCategoryCode() {
+    /**
+     * Gets category code.
+     *
+     * @return the category code
+     */
+    public String getCategoryCode() {
 		return this.categoryCode;
 	}
-	public void setCategoryCode(String categoryCode) {
+
+    /**
+     * Sets category code.
+     *
+     * @param categoryCode the category code
+     */
+    public void setCategoryCode(String categoryCode) {
 		this.categoryCode = categoryCode;
 	}
 
-	public Long getCount() {
+    /**
+     * Gets count.
+     *
+     * @return the count
+     */
+    public Long getCount() {
 		return this.count;
 	}
-	public void setCount(Long count) {
+
+    /**
+     * Sets count.
+     *
+     * @param count the count
+     */
+    public void setCount(Long count) {
 		this.count = count;
 	}
 
-	public String getCountry() {
+    /**
+     * Gets country.
+     *
+     * @return the country
+     */
+    public String getCountry() {
 		return this.country;
 	}
-	public void setCountry(String country) {
+
+    /**
+     * Sets country.
+     *
+     * @param country the country
+     */
+    public void setCountry(String country) {
 		this.country = country;
 	}
 
-	public String getDescription() {
+    /**
+     * Gets description.
+     *
+     * @return the description
+     */
+    public String getDescription() {
 		return this.description;
 	}
-	public void setDescription(String description) {
+
+    /**
+     * Sets description.
+     *
+     * @param description the description
+     */
+    public void setDescription(String description) {
 		this.description = description;
 	}
 
-	public String getExtGoodsInfo() {
+    /**
+     * Gets ext goods info.
+     *
+     * @return the ext goods info
+     */
+    public String getExtGoodsInfo() {
 		return this.extGoodsInfo;
 	}
-	public void setExtGoodsInfo(String extGoodsInfo) {
+
+    /**
+     * Sets ext goods info.
+     *
+     * @param extGoodsInfo the ext goods info
+     */
+    public void setExtGoodsInfo(String extGoodsInfo) {
 		this.extGoodsInfo = extGoodsInfo;
 	}
 
-	public String getId() {
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
+    public String getId() {
 		return this.id;
 	}
-	public void setId(String id) {
+
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
+    public void setId(String id) {
 		this.id = id;
 	}
 
-	public String getItemCode() {
+    /**
+     * Gets item code.
+     *
+     * @return the item code
+     */
+    public String getItemCode() {
 		return this.itemCode;
 	}
-	public void setItemCode(String itemCode) {
+
+    /**
+     * Sets item code.
+     *
+     * @param itemCode the item code
+     */
+    public void setItemCode(String itemCode) {
 		this.itemCode = itemCode;
 	}
 
-	public String getKbShopId() {
+    /**
+     * Gets kb shop id.
+     *
+     * @return the kb shop id
+     */
+    public String getKbShopId() {
 		return this.kbShopId;
 	}
-	public void setKbShopId(String kbShopId) {
+
+    /**
+     * Sets kb shop id.
+     *
+     * @param kbShopId the kb shop id
+     */
+    public void setKbShopId(String kbShopId) {
 		this.kbShopId = kbShopId;
 	}
 
-	public String getPicture() {
+    /**
+     * Gets picture.
+     *
+     * @return the picture
+     */
+    public String getPicture() {
 		return this.picture;
 	}
-	public void setPicture(String picture) {
+
+    /**
+     * Sets picture.
+     *
+     * @param picture the picture
+     */
+    public void setPicture(String picture) {
 		this.picture = picture;
 	}
 
-	public Long getPrice() {
+    /**
+     * Gets price.
+     *
+     * @return the price
+     */
+    public Long getPrice() {
 		return this.price;
 	}
-	public void setPrice(Long price) {
+
+    /**
+     * Sets price.
+     *
+     * @param price the price
+     */
+    public void setPrice(Long price) {
 		this.price = price;
 	}
 
-	public String getSpecification() {
+    /**
+     * Gets specification.
+     *
+     * @return the specification
+     */
+    public String getSpecification() {
 		return this.specification;
 	}
-	public void setSpecification(String specification) {
+
+    /**
+     * Sets specification.
+     *
+     * @param specification the specification
+     */
+    public void setSpecification(String specification) {
 		this.specification = specification;
 	}
 
-	public String getSystemProviderId() {
+    /**
+     * Gets system provider id.
+     *
+     * @return the system provider id
+     */
+    public String getSystemProviderId() {
 		return this.systemProviderId;
 	}
-	public void setSystemProviderId(String systemProviderId) {
+
+    /**
+     * Sets system provider id.
+     *
+     * @param systemProviderId the system provider id
+     */
+    public void setSystemProviderId(String systemProviderId) {
 		this.systemProviderId = systemProviderId;
 	}
 
-	public String getTitle() {
+    /**
+     * Gets title.
+     *
+     * @return the title
+     */
+    public String getTitle() {
 		return this.title;
 	}
-	public void setTitle(String title) {
+
+    /**
+     * Sets title.
+     *
+     * @param title the title
+     */
+    public void setTitle(String title) {
 		this.title = title;
 	}
 

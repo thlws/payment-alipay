@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VerifyParams extends AlipayObject {
 
-	private static final long serialVersionUID = 2569954593325878124L;
+	private static final long serialVersionUID = 5264919329946593932L;
 
 	/**
 	 * 用户证件号后4位
@@ -19,10 +19,21 @@ public class VerifyParams extends AlipayObject {
 	@ApiField("cert_no")
 	private String certNo;
 
-	public String getCertNo() {
+    /**
+     * Gets cert no.
+     *
+     * @return the cert no
+     */
+    public String getCertNo() {
 		return this.certNo;
 	}
-	public void setCertNo(String certNo) {
+
+    /**
+     * Sets cert no.
+     *
+     * @param certNo the cert no
+     */
+    public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}
 

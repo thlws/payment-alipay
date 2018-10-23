@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.tool.points.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-10-09 11:45:18
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class KoubeiMarketingToolPointsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4874741896651926271L;
+	private static final long serialVersionUID = 7578824363832727966L;
 
 	/** 
 	 * 可用集点
@@ -32,24 +32,57 @@ public class KoubeiMarketingToolPointsQueryResponse extends AlipayResponse {
 	@ApiField("total_points")
 	private String totalPoints;
 
-	public void setAvailablePoints(String availablePoints) {
+    /**
+     * Sets available points.
+     *
+     * @param availablePoints the available points
+     */
+    public void setAvailablePoints(String availablePoints) {
 		this.availablePoints = availablePoints;
 	}
-	public String getAvailablePoints( ) {
+
+    /**
+     * Gets available points.
+     *
+     * @return the available points
+     */
+    public String getAvailablePoints( ) {
 		return this.availablePoints;
 	}
 
-	public void setFreezedPoints(String freezedPoints) {
+    /**
+     * Sets freezed points.
+     *
+     * @param freezedPoints the freezed points
+     */
+    public void setFreezedPoints(String freezedPoints) {
 		this.freezedPoints = freezedPoints;
 	}
-	public String getFreezedPoints( ) {
+
+    /**
+     * Gets freezed points.
+     *
+     * @return the freezed points
+     */
+    public String getFreezedPoints( ) {
 		return this.freezedPoints;
 	}
 
-	public void setTotalPoints(String totalPoints) {
+    /**
+     * Sets total points.
+     *
+     * @param totalPoints the total points
+     */
+    public void setTotalPoints(String totalPoints) {
 		this.totalPoints = totalPoints;
 	}
-	public String getTotalPoints( ) {
+
+    /**
+     * Gets total points.
+     *
+     * @return the total points
+     */
+    public String getTotalPoints( ) {
 		return this.totalPoints;
 	}
 

@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.cplife.roominfo.upload response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-24 11:43:11
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayEcoCplifeRoominfoUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6482347319796261152L;
+	private static final long serialVersionUID = 4511241634567398169L;
 
 	/** 
 	 * 业主所在物业小区ID(支付宝平台唯一小区ID标示)
@@ -30,17 +30,39 @@ public class AlipayEcoCplifeRoominfoUploadResponse extends AlipayResponse {
 	@ApiField("cplife_room_info_resp")
 	private List<CplifeRoomInfoResp> roomInfoSet;
 
-	public void setCommunityId(String communityId) {
+    /**
+     * Sets community id.
+     *
+     * @param communityId the community id
+     */
+    public void setCommunityId(String communityId) {
 		this.communityId = communityId;
 	}
-	public String getCommunityId( ) {
+
+    /**
+     * Gets community id.
+     *
+     * @return the community id
+     */
+    public String getCommunityId( ) {
 		return this.communityId;
 	}
 
-	public void setRoomInfoSet(List<CplifeRoomInfoResp> roomInfoSet) {
+    /**
+     * Sets room info set.
+     *
+     * @param roomInfoSet the room info set
+     */
+    public void setRoomInfoSet(List<CplifeRoomInfoResp> roomInfoSet) {
 		this.roomInfoSet = roomInfoSet;
 	}
-	public List<CplifeRoomInfoResp> getRoomInfoSet( ) {
+
+    /**
+     * Gets room info set.
+     *
+     * @return the room info set
+     */
+    public List<CplifeRoomInfoResp> getRoomInfoSet( ) {
 		return this.roomInfoSet;
 	}
 

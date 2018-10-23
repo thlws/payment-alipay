@@ -10,9 +10,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.eco.edu.kt.billing.send request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-08-03 10:58:34
+ * @since 1.0, 2018-09-19 11:07:49
  */
 public class AlipayEcoEduKtBillingSendRequest implements AlipayRequest<AlipayEcoEduKtBillingSendResponse> {
 
@@ -24,10 +24,21 @@ public class AlipayEcoEduKtBillingSendRequest implements AlipayRequest<AlipayEco
 	 */
 	private String bizContent;
 
-	public void setBizContent(String bizContent) {
+    /**
+     * Sets biz content.
+     *
+     * @param bizContent the biz content
+     */
+    public void setBizContent(String bizContent) {
 		this.bizContent = bizContent;
 	}
-	public String getBizContent() {
+
+    /**
+     * Gets biz content.
+     *
+     * @return the biz content
+     */
+    public String getBizContent() {
 		return this.bizContent;
 	}
 	private String terminalType;
@@ -99,7 +110,13 @@ public class AlipayEcoEduKtBillingSendRequest implements AlipayRequest<AlipayEco
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

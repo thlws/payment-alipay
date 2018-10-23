@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DrawndnVo extends AlipayObject {
 
-	private static final long serialVersionUID = 7218639218669365874L;
+	private static final long serialVersionUID = 7589633235836679834L;
 
 	/**
 	 * 实收利息，单位为元，小数点保留2位
@@ -123,129 +123,327 @@ public class DrawndnVo extends AlipayObject {
 	@ApiField("status")
 	private String status;
 
-	public String getActualCollectedInterest() {
+    /**
+     * Gets actual collected interest.
+     *
+     * @return the actual collected interest
+     */
+    public String getActualCollectedInterest() {
 		return this.actualCollectedInterest;
 	}
-	public void setActualCollectedInterest(String actualCollectedInterest) {
+
+    /**
+     * Sets actual collected interest.
+     *
+     * @param actualCollectedInterest the actual collected interest
+     */
+    public void setActualCollectedInterest(String actualCollectedInterest) {
 		this.actualCollectedInterest = actualCollectedInterest;
 	}
 
-	public String getBalance() {
+    /**
+     * Gets balance.
+     *
+     * @return the balance
+     */
+    public String getBalance() {
 		return this.balance;
 	}
-	public void setBalance(String balance) {
+
+    /**
+     * Sets balance.
+     *
+     * @param balance the balance
+     */
+    public void setBalance(String balance) {
 		this.balance = balance;
 	}
 
-	public String getCollectedPrincipalAndInterest() {
+    /**
+     * Gets collected principal and interest.
+     *
+     * @return the collected principal and interest
+     */
+    public String getCollectedPrincipalAndInterest() {
 		return this.collectedPrincipalAndInterest;
 	}
-	public void setCollectedPrincipalAndInterest(String collectedPrincipalAndInterest) {
+
+    /**
+     * Sets collected principal and interest.
+     *
+     * @param collectedPrincipalAndInterest the collected principal and interest
+     */
+    public void setCollectedPrincipalAndInterest(String collectedPrincipalAndInterest) {
 		this.collectedPrincipalAndInterest = collectedPrincipalAndInterest;
 	}
 
-	public String getCreditNo() {
+    /**
+     * Gets credit no.
+     *
+     * @return the credit no
+     */
+    public String getCreditNo() {
 		return this.creditNo;
 	}
-	public void setCreditNo(String creditNo) {
+
+    /**
+     * Sets credit no.
+     *
+     * @param creditNo the credit no
+     */
+    public void setCreditNo(String creditNo) {
 		this.creditNo = creditNo;
 	}
 
-	public Date getDrawndnDate() {
+    /**
+     * Gets drawndn date.
+     *
+     * @return the drawndn date
+     */
+    public Date getDrawndnDate() {
 		return this.drawndnDate;
 	}
-	public void setDrawndnDate(Date drawndnDate) {
+
+    /**
+     * Sets drawndn date.
+     *
+     * @param drawndnDate the drawndn date
+     */
+    public void setDrawndnDate(Date drawndnDate) {
 		this.drawndnDate = drawndnDate;
 	}
 
-	public String getDrawndnNo() {
+    /**
+     * Gets drawndn no.
+     *
+     * @return the drawndn no
+     */
+    public String getDrawndnNo() {
 		return this.drawndnNo;
 	}
-	public void setDrawndnNo(String drawndnNo) {
+
+    /**
+     * Sets drawndn no.
+     *
+     * @param drawndnNo the drawndn no
+     */
+    public void setDrawndnNo(String drawndnNo) {
 		this.drawndnNo = drawndnNo;
 	}
 
-	public Date getDueDate() {
+    /**
+     * Gets due date.
+     *
+     * @return the due date
+     */
+    public Date getDueDate() {
 		return this.dueDate;
 	}
-	public void setDueDate(Date dueDate) {
+
+    /**
+     * Sets due date.
+     *
+     * @param dueDate the due date
+     */
+    public void setDueDate(Date dueDate) {
 		this.dueDate = dueDate;
 	}
 
-	public String getFiveTierClassification() {
+    /**
+     * Gets five tier classification.
+     *
+     * @return the five tier classification
+     */
+    public String getFiveTierClassification() {
 		return this.fiveTierClassification;
 	}
-	public void setFiveTierClassification(String fiveTierClassification) {
+
+    /**
+     * Sets five tier classification.
+     *
+     * @param fiveTierClassification the five tier classification
+     */
+    public void setFiveTierClassification(String fiveTierClassification) {
 		this.fiveTierClassification = fiveTierClassification;
 	}
 
-	public String getInterest() {
+    /**
+     * Gets interest.
+     *
+     * @return the interest
+     */
+    public String getInterest() {
 		return this.interest;
 	}
-	public void setInterest(String interest) {
+
+    /**
+     * Sets interest.
+     *
+     * @param interest the interest
+     */
+    public void setInterest(String interest) {
 		this.interest = interest;
 	}
 
-	public String getInterestRate() {
+    /**
+     * Gets interest rate.
+     *
+     * @return the interest rate
+     */
+    public String getInterestRate() {
 		return this.interestRate;
 	}
-	public void setInterestRate(String interestRate) {
+
+    /**
+     * Sets interest rate.
+     *
+     * @param interestRate the interest rate
+     */
+    public void setInterestRate(String interestRate) {
 		this.interestRate = interestRate;
 	}
 
-	public String getLendingAmount() {
+    /**
+     * Gets lending amount.
+     *
+     * @return the lending amount
+     */
+    public String getLendingAmount() {
 		return this.lendingAmount;
 	}
-	public void setLendingAmount(String lendingAmount) {
+
+    /**
+     * Sets lending amount.
+     *
+     * @param lendingAmount the lending amount
+     */
+    public void setLendingAmount(String lendingAmount) {
 		this.lendingAmount = lendingAmount;
 	}
 
-	public Long getOverduceTerms() {
+    /**
+     * Gets overduce terms.
+     *
+     * @return the overduce terms
+     */
+    public Long getOverduceTerms() {
 		return this.overduceTerms;
 	}
-	public void setOverduceTerms(Long overduceTerms) {
+
+    /**
+     * Sets overduce terms.
+     *
+     * @param overduceTerms the overduce terms
+     */
+    public void setOverduceTerms(Long overduceTerms) {
 		this.overduceTerms = overduceTerms;
 	}
 
-	public Long getOverdueDays() {
+    /**
+     * Gets overdue days.
+     *
+     * @return the overdue days
+     */
+    public Long getOverdueDays() {
 		return this.overdueDays;
 	}
-	public void setOverdueDays(Long overdueDays) {
+
+    /**
+     * Sets overdue days.
+     *
+     * @param overdueDays the overdue days
+     */
+    public void setOverdueDays(Long overdueDays) {
 		this.overdueDays = overdueDays;
 	}
 
-	public String getOverdueInterest() {
+    /**
+     * Gets overdue interest.
+     *
+     * @return the overdue interest
+     */
+    public String getOverdueInterest() {
 		return this.overdueInterest;
 	}
-	public void setOverdueInterest(String overdueInterest) {
+
+    /**
+     * Sets overdue interest.
+     *
+     * @param overdueInterest the overdue interest
+     */
+    public void setOverdueInterest(String overdueInterest) {
 		this.overdueInterest = overdueInterest;
 	}
 
-	public String getOverdueInterestPenalty() {
+    /**
+     * Gets overdue interest penalty.
+     *
+     * @return the overdue interest penalty
+     */
+    public String getOverdueInterestPenalty() {
 		return this.overdueInterestPenalty;
 	}
-	public void setOverdueInterestPenalty(String overdueInterestPenalty) {
+
+    /**
+     * Sets overdue interest penalty.
+     *
+     * @param overdueInterestPenalty the overdue interest penalty
+     */
+    public void setOverdueInterestPenalty(String overdueInterestPenalty) {
 		this.overdueInterestPenalty = overdueInterestPenalty;
 	}
 
-	public String getOverduePrincipal() {
+    /**
+     * Gets overdue principal.
+     *
+     * @return the overdue principal
+     */
+    public String getOverduePrincipal() {
 		return this.overduePrincipal;
 	}
-	public void setOverduePrincipal(String overduePrincipal) {
+
+    /**
+     * Sets overdue principal.
+     *
+     * @param overduePrincipal the overdue principal
+     */
+    public void setOverduePrincipal(String overduePrincipal) {
 		this.overduePrincipal = overduePrincipal;
 	}
 
-	public String getOverduePrincipalPenalty() {
+    /**
+     * Gets overdue principal penalty.
+     *
+     * @return the overdue principal penalty
+     */
+    public String getOverduePrincipalPenalty() {
 		return this.overduePrincipalPenalty;
 	}
-	public void setOverduePrincipalPenalty(String overduePrincipalPenalty) {
+
+    /**
+     * Sets overdue principal penalty.
+     *
+     * @param overduePrincipalPenalty the overdue principal penalty
+     */
+    public void setOverduePrincipalPenalty(String overduePrincipalPenalty) {
 		this.overduePrincipalPenalty = overduePrincipalPenalty;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 

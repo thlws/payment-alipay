@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SupportFunction extends AlipayObject {
 
-	private static final long serialVersionUID = 7565653474876469873L;
+	private static final long serialVersionUID = 6517575247379371826L;
 
 	/**
 	 * 卡名称
@@ -41,31 +41,75 @@ public class SupportFunction extends AlipayObject {
 	@ApiField("goto_url")
 	private String gotoUrl;
 
-	public String getCardName() {
+    /**
+     * Gets card name.
+     *
+     * @return the card name
+     */
+    public String getCardName() {
 		return this.cardName;
 	}
-	public void setCardName(String cardName) {
+
+    /**
+     * Sets card name.
+     *
+     * @param cardName the card name
+     */
+    public void setCardName(String cardName) {
 		this.cardName = cardName;
 	}
 
-	public String getCardType() {
+    /**
+     * Gets card type.
+     *
+     * @return the card type
+     */
+    public String getCardType() {
 		return this.cardType;
 	}
-	public void setCardType(String cardType) {
+
+    /**
+     * Sets card type.
+     *
+     * @param cardType the card type
+     */
+    public void setCardType(String cardType) {
 		this.cardType = cardType;
 	}
 
-	public List<String> getFunctionType() {
+    /**
+     * Gets function type.
+     *
+     * @return the function type
+     */
+    public List<String> getFunctionType() {
 		return this.functionType;
 	}
-	public void setFunctionType(List<String> functionType) {
+
+    /**
+     * Sets function type.
+     *
+     * @param functionType the function type
+     */
+    public void setFunctionType(List<String> functionType) {
 		this.functionType = functionType;
 	}
 
-	public String getGotoUrl() {
+    /**
+     * Gets goto url.
+     *
+     * @return the goto url
+     */
+    public String getGotoUrl() {
 		return this.gotoUrl;
 	}
-	public void setGotoUrl(String gotoUrl) {
+
+    /**
+     * Sets goto url.
+     *
+     * @param gotoUrl the goto url
+     */
+    public void setGotoUrl(String gotoUrl) {
 		this.gotoUrl = gotoUrl;
 	}
 

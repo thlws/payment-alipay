@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoMycarTradeRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8686793379182415823L;
+	private static final long serialVersionUID = 4563148884859965242L;
 
 	/**
 	 * 渠道平台
@@ -37,31 +37,75 @@ public class AlipayEcoMycarTradeRefundModel extends AlipayObject {
 	@ApiField("trade_no")
 	private String tradeNo;
 
-	public String getIsv() {
+    /**
+     * Gets isv.
+     *
+     * @return the isv
+     */
+    public String getIsv() {
 		return this.isv;
 	}
-	public void setIsv(String isv) {
+
+    /**
+     * Sets isv.
+     *
+     * @param isv the isv
+     */
+    public void setIsv(String isv) {
 		this.isv = isv;
 	}
 
-	public String getRefundFee() {
+    /**
+     * Gets refund fee.
+     *
+     * @return the refund fee
+     */
+    public String getRefundFee() {
 		return this.refundFee;
 	}
-	public void setRefundFee(String refundFee) {
+
+    /**
+     * Sets refund fee.
+     *
+     * @param refundFee the refund fee
+     */
+    public void setRefundFee(String refundFee) {
 		this.refundFee = refundFee;
 	}
 
-	public String getRefundReason() {
+    /**
+     * Gets refund reason.
+     *
+     * @return the refund reason
+     */
+    public String getRefundReason() {
 		return this.refundReason;
 	}
-	public void setRefundReason(String refundReason) {
+
+    /**
+     * Sets refund reason.
+     *
+     * @param refundReason the refund reason
+     */
+    public void setRefundReason(String refundReason) {
 		this.refundReason = refundReason;
 	}
 
-	public String getTradeNo() {
+    /**
+     * Gets trade no.
+     *
+     * @return the trade no
+     */
+    public String getTradeNo() {
 		return this.tradeNo;
 	}
-	public void setTradeNo(String tradeNo) {
+
+    /**
+     * Sets trade no.
+     *
+     * @param tradeNo the trade no
+     */
+    public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
 

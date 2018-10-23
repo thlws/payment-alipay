@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaMerchantBorrowEntityUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8786743469599227248L;
+	private static final long serialVersionUID = 3342276863356568399L;
 
 	/**
 	 * 地址描述
@@ -106,108 +106,273 @@ public class ZhimaMerchantBorrowEntityUploadModel extends AlipayObject {
 	@ApiField("upload_time")
 	private String uploadTime;
 
-	public String getAddressDesc() {
+    /**
+     * Gets address desc.
+     *
+     * @return the address desc
+     */
+    public String getAddressDesc() {
 		return this.addressDesc;
 	}
-	public void setAddressDesc(String addressDesc) {
+
+    /**
+     * Sets address desc.
+     *
+     * @param addressDesc the address desc
+     */
+    public void setAddressDesc(String addressDesc) {
 		this.addressDesc = addressDesc;
 	}
 
-	public String getCanBorrow() {
+    /**
+     * Gets can borrow.
+     *
+     * @return the can borrow
+     */
+    public String getCanBorrow() {
 		return this.canBorrow;
 	}
-	public void setCanBorrow(String canBorrow) {
+
+    /**
+     * Sets can borrow.
+     *
+     * @param canBorrow the can borrow
+     */
+    public void setCanBorrow(String canBorrow) {
 		this.canBorrow = canBorrow;
 	}
 
-	public String getCanBorrowCnt() {
+    /**
+     * Gets can borrow cnt.
+     *
+     * @return the can borrow cnt
+     */
+    public String getCanBorrowCnt() {
 		return this.canBorrowCnt;
 	}
-	public void setCanBorrowCnt(String canBorrowCnt) {
+
+    /**
+     * Sets can borrow cnt.
+     *
+     * @param canBorrowCnt the can borrow cnt
+     */
+    public void setCanBorrowCnt(String canBorrowCnt) {
 		this.canBorrowCnt = canBorrowCnt;
 	}
 
-	public String getCategoryCode() {
+    /**
+     * Gets category code.
+     *
+     * @return the category code
+     */
+    public String getCategoryCode() {
 		return this.categoryCode;
 	}
-	public void setCategoryCode(String categoryCode) {
+
+    /**
+     * Sets category code.
+     *
+     * @param categoryCode the category code
+     */
+    public void setCategoryCode(String categoryCode) {
 		this.categoryCode = categoryCode;
 	}
 
-	public String getCollectRent() {
+    /**
+     * Gets collect rent.
+     *
+     * @return the collect rent
+     */
+    public String getCollectRent() {
 		return this.collectRent;
 	}
-	public void setCollectRent(String collectRent) {
+
+    /**
+     * Sets collect rent.
+     *
+     * @param collectRent the collect rent
+     */
+    public void setCollectRent(String collectRent) {
 		this.collectRent = collectRent;
 	}
 
-	public String getContactNumber() {
+    /**
+     * Gets contact number.
+     *
+     * @return the contact number
+     */
+    public String getContactNumber() {
 		return this.contactNumber;
 	}
-	public void setContactNumber(String contactNumber) {
+
+    /**
+     * Sets contact number.
+     *
+     * @param contactNumber the contact number
+     */
+    public void setContactNumber(String contactNumber) {
 		this.contactNumber = contactNumber;
 	}
 
-	public String getEntityCode() {
+    /**
+     * Gets entity code.
+     *
+     * @return the entity code
+     */
+    public String getEntityCode() {
 		return this.entityCode;
 	}
-	public void setEntityCode(String entityCode) {
+
+    /**
+     * Sets entity code.
+     *
+     * @param entityCode the entity code
+     */
+    public void setEntityCode(String entityCode) {
 		this.entityCode = entityCode;
 	}
 
-	public String getEntityName() {
+    /**
+     * Gets entity name.
+     *
+     * @return the entity name
+     */
+    public String getEntityName() {
 		return this.entityName;
 	}
-	public void setEntityName(String entityName) {
+
+    /**
+     * Sets entity name.
+     *
+     * @param entityName the entity name
+     */
+    public void setEntityName(String entityName) {
 		this.entityName = entityName;
 	}
 
-	public String getLatitude() {
+    /**
+     * Gets latitude.
+     *
+     * @return the latitude
+     */
+    public String getLatitude() {
 		return this.latitude;
 	}
-	public void setLatitude(String latitude) {
+
+    /**
+     * Sets latitude.
+     *
+     * @param latitude the latitude
+     */
+    public void setLatitude(String latitude) {
 		this.latitude = latitude;
 	}
 
-	public String getLongitude() {
+    /**
+     * Gets longitude.
+     *
+     * @return the longitude
+     */
+    public String getLongitude() {
 		return this.longitude;
 	}
-	public void setLongitude(String longitude) {
+
+    /**
+     * Sets longitude.
+     *
+     * @param longitude the longitude
+     */
+    public void setLongitude(String longitude) {
 		this.longitude = longitude;
 	}
 
-	public String getOfficeHoursDesc() {
+    /**
+     * Gets office hours desc.
+     *
+     * @return the office hours desc
+     */
+    public String getOfficeHoursDesc() {
 		return this.officeHoursDesc;
 	}
-	public void setOfficeHoursDesc(String officeHoursDesc) {
+
+    /**
+     * Sets office hours desc.
+     *
+     * @param officeHoursDesc the office hours desc
+     */
+    public void setOfficeHoursDesc(String officeHoursDesc) {
 		this.officeHoursDesc = officeHoursDesc;
 	}
 
-	public String getProductCode() {
+    /**
+     * Gets product code.
+     *
+     * @return the product code
+     */
+    public String getProductCode() {
 		return this.productCode;
 	}
-	public void setProductCode(String productCode) {
+
+    /**
+     * Sets product code.
+     *
+     * @param productCode the product code
+     */
+    public void setProductCode(String productCode) {
 		this.productCode = productCode;
 	}
 
-	public String getRentDesc() {
+    /**
+     * Gets rent desc.
+     *
+     * @return the rent desc
+     */
+    public String getRentDesc() {
 		return this.rentDesc;
 	}
-	public void setRentDesc(String rentDesc) {
+
+    /**
+     * Sets rent desc.
+     *
+     * @param rentDesc the rent desc
+     */
+    public void setRentDesc(String rentDesc) {
 		this.rentDesc = rentDesc;
 	}
 
-	public String getTotalBorrowCnt() {
+    /**
+     * Gets total borrow cnt.
+     *
+     * @return the total borrow cnt
+     */
+    public String getTotalBorrowCnt() {
 		return this.totalBorrowCnt;
 	}
-	public void setTotalBorrowCnt(String totalBorrowCnt) {
+
+    /**
+     * Sets total borrow cnt.
+     *
+     * @param totalBorrowCnt the total borrow cnt
+     */
+    public void setTotalBorrowCnt(String totalBorrowCnt) {
 		this.totalBorrowCnt = totalBorrowCnt;
 	}
 
-	public String getUploadTime() {
+    /**
+     * Gets upload time.
+     *
+     * @return the upload time
+     */
+    public String getUploadTime() {
 		return this.uploadTime;
 	}
-	public void setUploadTime(String uploadTime) {
+
+    /**
+     * Sets upload time.
+     *
+     * @param uploadTime the upload time
+     */
+    public void setUploadTime(String uploadTime) {
 		this.uploadTime = uploadTime;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InvolvedEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 7722312613598155936L;
+	private static final long serialVersionUID = 8271144526496326377L;
 
 	/**
 	 * 实体身份编码-个人是身份证号码、企业是工商注册号、会员是会员编号-具体的数字编号
@@ -40,31 +40,75 @@ public class InvolvedEntity extends AlipayObject {
 	@ApiField("type")
 	private String type;
 
-	public String getCode() {
+    /**
+     * Gets code.
+     *
+     * @return the code
+     */
+    public String getCode() {
 		return this.code;
 	}
-	public void setCode(String code) {
+
+    /**
+     * Sets code.
+     *
+     * @param code the code
+     */
+    public void setCode(String code) {
 		this.code = code;
 	}
 
-	public String getCodeType() {
+    /**
+     * Gets code type.
+     *
+     * @return the code type
+     */
+    public String getCodeType() {
 		return this.codeType;
 	}
-	public void setCodeType(String codeType) {
+
+    /**
+     * Sets code type.
+     *
+     * @param codeType the code type
+     */
+    public void setCodeType(String codeType) {
 		this.codeType = codeType;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
-	public void setType(String type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
 

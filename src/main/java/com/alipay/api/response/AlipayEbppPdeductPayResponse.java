@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ebpp.pdeduct.pay response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-07 16:45:48
+ * @since 1.0, 2018-08-07 17:07:48
  */
 public class AlipayEbppPdeductPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5481767899195243744L;
+	private static final long serialVersionUID = 5218672467433924227L;
 
 	/** 
 	 * 支付宝代扣协议ID
@@ -39,6 +39,18 @@ public class AlipayEbppPdeductPayResponse extends AlipayResponse {
 	private String outOrderNo;
 
 	/** 
+	 * 针对于支付失败时，给的对应错误明细，如果判断外围的错误码是INVOKE_PAYACCEPTANCE_EXCEPTION需要近一步再结合着结果模型中的result_code, result_msg来判断
+	 */
+	@ApiField("result_code")
+	private String resultCode;
+
+	/** 
+	 * 针对于支付失败时，给的对应错误明细，如果判断外围的错误码是INVOKE_PAYACCEPTANCE_EXCEPTION需要近一步再结合着结果模型中的result_code, result_msg来判断
+	 */
+	@ApiField("result_msg")
+	private String resultMsg;
+
+	/** 
 	 * 订单支付状态。
 0：未知
 1：成功
@@ -47,38 +59,129 @@ public class AlipayEbppPdeductPayResponse extends AlipayResponse {
 	@ApiField("result_status")
 	private String resultStatus;
 
-	public void setAgreementId(String agreementId) {
+    /**
+     * Sets agreement id.
+     *
+     * @param agreementId the agreement id
+     */
+    public void setAgreementId(String agreementId) {
 		this.agreementId = agreementId;
 	}
-	public String getAgreementId( ) {
+
+    /**
+     * Gets agreement id.
+     *
+     * @return the agreement id
+     */
+    public String getAgreementId( ) {
 		return this.agreementId;
 	}
 
-	public void setBillNo(String billNo) {
+    /**
+     * Sets bill no.
+     *
+     * @param billNo the bill no
+     */
+    public void setBillNo(String billNo) {
 		this.billNo = billNo;
 	}
-	public String getBillNo( ) {
+
+    /**
+     * Gets bill no.
+     *
+     * @return the bill no
+     */
+    public String getBillNo( ) {
 		return this.billNo;
 	}
 
-	public void setExtendField(String extendField) {
+    /**
+     * Sets extend field.
+     *
+     * @param extendField the extend field
+     */
+    public void setExtendField(String extendField) {
 		this.extendField = extendField;
 	}
-	public String getExtendField( ) {
+
+    /**
+     * Gets extend field.
+     *
+     * @return the extend field
+     */
+    public String getExtendField( ) {
 		return this.extendField;
 	}
 
-	public void setOutOrderNo(String outOrderNo) {
+    /**
+     * Sets out order no.
+     *
+     * @param outOrderNo the out order no
+     */
+    public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
 	}
-	public String getOutOrderNo( ) {
+
+    /**
+     * Gets out order no.
+     *
+     * @return the out order no
+     */
+    public String getOutOrderNo( ) {
 		return this.outOrderNo;
 	}
 
-	public void setResultStatus(String resultStatus) {
+    /**
+     * Sets result code.
+     *
+     * @param resultCode the result code
+     */
+    public void setResultCode(String resultCode) {
+		this.resultCode = resultCode;
+	}
+
+    /**
+     * Gets result code.
+     *
+     * @return the result code
+     */
+    public String getResultCode( ) {
+		return this.resultCode;
+	}
+
+    /**
+     * Sets result msg.
+     *
+     * @param resultMsg the result msg
+     */
+    public void setResultMsg(String resultMsg) {
+		this.resultMsg = resultMsg;
+	}
+
+    /**
+     * Gets result msg.
+     *
+     * @return the result msg
+     */
+    public String getResultMsg( ) {
+		return this.resultMsg;
+	}
+
+    /**
+     * Sets result status.
+     *
+     * @param resultStatus the result status
+     */
+    public void setResultStatus(String resultStatus) {
 		this.resultStatus = resultStatus;
 	}
-	public String getResultStatus( ) {
+
+    /**
+     * Gets result status.
+     *
+     * @return the result status
+     */
+    public String getResultStatus( ) {
 		return this.resultStatus;
 	}
 

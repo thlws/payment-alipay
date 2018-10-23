@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BrandLevelInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3323273948551596468L;
+	private static final long serialVersionUID = 5763198132432448976L;
 
 	/**
 	 * 品牌编码
@@ -31,24 +31,57 @@ public class BrandLevelInfo extends AlipayObject {
 	@ApiField("brand_name")
 	private String brandName;
 
-	public String getBrandCode() {
+    /**
+     * Gets brand code.
+     *
+     * @return the brand code
+     */
+    public String getBrandCode() {
 		return this.brandCode;
 	}
-	public void setBrandCode(String brandCode) {
+
+    /**
+     * Sets brand code.
+     *
+     * @param brandCode the brand code
+     */
+    public void setBrandCode(String brandCode) {
 		this.brandCode = brandCode;
 	}
 
-	public Long getBrandLevel() {
+    /**
+     * Gets brand level.
+     *
+     * @return the brand level
+     */
+    public Long getBrandLevel() {
 		return this.brandLevel;
 	}
-	public void setBrandLevel(Long brandLevel) {
+
+    /**
+     * Sets brand level.
+     *
+     * @param brandLevel the brand level
+     */
+    public void setBrandLevel(Long brandLevel) {
 		this.brandLevel = brandLevel;
 	}
 
-	public String getBrandName() {
+    /**
+     * Gets brand name.
+     *
+     * @return the brand name
+     */
+    public String getBrandName() {
 		return this.brandName;
 	}
-	public void setBrandName(String brandName) {
+
+    /**
+     * Sets brand name.
+     *
+     * @param brandName the brand name
+     */
+    public void setBrandName(String brandName) {
 		this.brandName = brandName;
 	}
 

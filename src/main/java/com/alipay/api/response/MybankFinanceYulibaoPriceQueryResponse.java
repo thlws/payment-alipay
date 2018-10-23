@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: mybank.finance.yulibao.price.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-11-18 16:08:17
+ * @since 1.0, 2018-08-08 17:34:58
  */
 public class MybankFinanceYulibaoPriceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5657771639631296678L;
+	private static final long serialVersionUID = 1444836313654481789L;
 
 	/** 
 	 * 余利宝行情信息列表
@@ -24,10 +24,21 @@ public class MybankFinanceYulibaoPriceQueryResponse extends AlipayResponse {
 	@ApiField("y_l_b_price_detail_info")
 	private List<YLBPriceDetailInfo> ylbPriceDetailInfos;
 
-	public void setYlbPriceDetailInfos(List<YLBPriceDetailInfo> ylbPriceDetailInfos) {
+    /**
+     * Sets ylb price detail infos.
+     *
+     * @param ylbPriceDetailInfos the ylb price detail infos
+     */
+    public void setYlbPriceDetailInfos(List<YLBPriceDetailInfo> ylbPriceDetailInfos) {
 		this.ylbPriceDetailInfos = ylbPriceDetailInfos;
 	}
-	public List<YLBPriceDetailInfo> getYlbPriceDetailInfos( ) {
+
+    /**
+     * Gets ylb price detail infos.
+     *
+     * @return the ylb price detail infos
+     */
+    public List<YLBPriceDetailInfo> getYlbPriceDetailInfos( ) {
 		return this.ylbPriceDetailInfos;
 	}
 

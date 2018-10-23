@@ -9,9 +9,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.micropay.order.direct.pay request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-02-15 16:27:00
+ * @since 1.0, 2018-02-06 10:34:09
  */
 public class AlipayMicropayOrderDirectPayRequest implements AlipayRequest<AlipayMicropayOrderDirectPayResponse> {
 
@@ -43,38 +43,93 @@ public class AlipayMicropayOrderDirectPayRequest implements AlipayRequest<Alipay
 	 */
 	private String transferOutOrderNo;
 
-	public void setAlipayOrderNo(String alipayOrderNo) {
+    /**
+     * Sets alipay order no.
+     *
+     * @param alipayOrderNo the alipay order no
+     */
+    public void setAlipayOrderNo(String alipayOrderNo) {
 		this.alipayOrderNo = alipayOrderNo;
 	}
-	public String getAlipayOrderNo() {
+
+    /**
+     * Gets alipay order no.
+     *
+     * @return the alipay order no
+     */
+    public String getAlipayOrderNo() {
 		return this.alipayOrderNo;
 	}
 
-	public void setAmount(String amount) {
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(String amount) {
 		this.amount = amount;
 	}
-	public String getAmount() {
+
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public String getAmount() {
 		return this.amount;
 	}
 
-	public void setMemo(String memo) {
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
-	public String getMemo() {
+
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo() {
 		return this.memo;
 	}
 
-	public void setReceiveUserId(String receiveUserId) {
+    /**
+     * Sets receive user id.
+     *
+     * @param receiveUserId the receive user id
+     */
+    public void setReceiveUserId(String receiveUserId) {
 		this.receiveUserId = receiveUserId;
 	}
-	public String getReceiveUserId() {
+
+    /**
+     * Gets receive user id.
+     *
+     * @return the receive user id
+     */
+    public String getReceiveUserId() {
 		return this.receiveUserId;
 	}
 
-	public void setTransferOutOrderNo(String transferOutOrderNo) {
+    /**
+     * Sets transfer out order no.
+     *
+     * @param transferOutOrderNo the transfer out order no
+     */
+    public void setTransferOutOrderNo(String transferOutOrderNo) {
 		this.transferOutOrderNo = transferOutOrderNo;
 	}
-	public String getTransferOutOrderNo() {
+
+    /**
+     * Gets transfer out order no.
+     *
+     * @return the transfer out order no
+     */
+    public String getTransferOutOrderNo() {
 		return this.transferOutOrderNo;
 	}
 	private String terminalType;
@@ -150,7 +205,13 @@ public class AlipayMicropayOrderDirectPayRequest implements AlipayRequest<Alipay
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

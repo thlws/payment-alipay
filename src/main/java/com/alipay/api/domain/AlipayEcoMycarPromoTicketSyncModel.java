@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEcoMycarPromoTicketSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6825239215878361975L;
+	private static final long serialVersionUID = 8895864862744464528L;
 
 	/**
 	 * 营销活动ID
@@ -35,24 +35,57 @@ public class AlipayEcoMycarPromoTicketSyncModel extends AlipayObject {
 	@ApiField("source_type")
 	private String sourceType;
 
-	public String getActiveId() {
+    /**
+     * Gets active id.
+     *
+     * @return the active id
+     */
+    public String getActiveId() {
 		return this.activeId;
 	}
-	public void setActiveId(String activeId) {
+
+    /**
+     * Sets active id.
+     *
+     * @param activeId the active id
+     */
+    public void setActiveId(String activeId) {
 		this.activeId = activeId;
 	}
 
-	public List<CodeNOList> getCodeNoList() {
+    /**
+     * Gets code no list.
+     *
+     * @return the code no list
+     */
+    public List<CodeNOList> getCodeNoList() {
 		return this.codeNoList;
 	}
-	public void setCodeNoList(List<CodeNOList> codeNoList) {
+
+    /**
+     * Sets code no list.
+     *
+     * @param codeNoList the code no list
+     */
+    public void setCodeNoList(List<CodeNOList> codeNoList) {
 		this.codeNoList = codeNoList;
 	}
 
-	public String getSourceType() {
+    /**
+     * Gets source type.
+     *
+     * @return the source type
+     */
+    public String getSourceType() {
 		return this.sourceType;
 	}
-	public void setSourceType(String sourceType) {
+
+    /**
+     * Sets source type.
+     *
+     * @param sourceType the source type
+     */
+    public void setSourceType(String sourceType) {
 		this.sourceType = sourceType;
 	}
 

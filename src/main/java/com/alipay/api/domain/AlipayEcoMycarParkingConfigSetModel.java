@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 停车ISV系统配置接口
  *
  * @author auto create
- * @since 1.0, 2017-07-20 09:54:35
+ * @since 1.0, 2018-06-25 14:52:49
  */
 public class AlipayEcoMycarParkingConfigSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6621663915184779175L;
+	private static final long serialVersionUID = 7326594543697621142L;
 
 	/**
 	 * 签约支付宝账号
@@ -47,38 +47,93 @@ public class AlipayEcoMycarParkingConfigSetModel extends AlipayObject {
 	@ApiField("merchant_service_phone")
 	private String merchantServicePhone;
 
-	public String getAccountNo() {
+    /**
+     * Gets account no.
+     *
+     * @return the account no
+     */
+    public String getAccountNo() {
 		return this.accountNo;
 	}
-	public void setAccountNo(String accountNo) {
+
+    /**
+     * Sets account no.
+     *
+     * @param accountNo the account no
+     */
+    public void setAccountNo(String accountNo) {
 		this.accountNo = accountNo;
 	}
 
-	public List<InterfaceInfoList> getInterfaceInfoList() {
+    /**
+     * Gets interface info list.
+     *
+     * @return the interface info list
+     */
+    public List<InterfaceInfoList> getInterfaceInfoList() {
 		return this.interfaceInfoList;
 	}
-	public void setInterfaceInfoList(List<InterfaceInfoList> interfaceInfoList) {
+
+    /**
+     * Sets interface info list.
+     *
+     * @param interfaceInfoList the interface info list
+     */
+    public void setInterfaceInfoList(List<InterfaceInfoList> interfaceInfoList) {
 		this.interfaceInfoList = interfaceInfoList;
 	}
 
-	public String getMerchantLogo() {
+    /**
+     * Gets merchant logo.
+     *
+     * @return the merchant logo
+     */
+    public String getMerchantLogo() {
 		return this.merchantLogo;
 	}
-	public void setMerchantLogo(String merchantLogo) {
+
+    /**
+     * Sets merchant logo.
+     *
+     * @param merchantLogo the merchant logo
+     */
+    public void setMerchantLogo(String merchantLogo) {
 		this.merchantLogo = merchantLogo;
 	}
 
-	public String getMerchantName() {
+    /**
+     * Gets merchant name.
+     *
+     * @return the merchant name
+     */
+    public String getMerchantName() {
 		return this.merchantName;
 	}
-	public void setMerchantName(String merchantName) {
+
+    /**
+     * Sets merchant name.
+     *
+     * @param merchantName the merchant name
+     */
+    public void setMerchantName(String merchantName) {
 		this.merchantName = merchantName;
 	}
 
-	public String getMerchantServicePhone() {
+    /**
+     * Gets merchant service phone.
+     *
+     * @return the merchant service phone
+     */
+    public String getMerchantServicePhone() {
 		return this.merchantServicePhone;
 	}
-	public void setMerchantServicePhone(String merchantServicePhone) {
+
+    /**
+     * Sets merchant service phone.
+     *
+     * @param merchantServicePhone the merchant service phone
+     */
+    public void setMerchantServicePhone(String merchantServicePhone) {
 		this.merchantServicePhone = merchantServicePhone;
 	}
 

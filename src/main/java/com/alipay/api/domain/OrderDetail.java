@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OrderDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6527354489523457429L;
+	private static final long serialVersionUID = 3459868912383225591L;
 
 	/**
 	 * 订单明细的应用唯一标识（16位纯数字），指商家的app_id。
@@ -85,80 +85,201 @@ public class OrderDetail extends AlipayObject {
 	@ApiField("total_amount")
 	private String totalAmount;
 
-	public String getAppId() {
+    /**
+     * Gets app id.
+     *
+     * @return the app id
+     */
+    public String getAppId() {
 		return this.appId;
 	}
-	public void setAppId(String appId) {
+
+    /**
+     * Sets app id.
+     *
+     * @param appId the app id
+     */
+    public void setAppId(String appId) {
 		this.appId = appId;
 	}
 
-	public String getBody() {
+    /**
+     * Gets body.
+     *
+     * @return the body
+     */
+    public String getBody() {
 		return this.body;
 	}
-	public void setBody(String body) {
+
+    /**
+     * Sets body.
+     *
+     * @param body the body
+     */
+    public void setBody(String body) {
 		this.body = body;
 	}
 
-	public List<GoodsDetail> getGoodsDetail() {
+    /**
+     * Gets goods detail.
+     *
+     * @return the goods detail
+     */
+    public List<GoodsDetail> getGoodsDetail() {
 		return this.goodsDetail;
 	}
-	public void setGoodsDetail(List<GoodsDetail> goodsDetail) {
+
+    /**
+     * Sets goods detail.
+     *
+     * @param goodsDetail the goods detail
+     */
+    public void setGoodsDetail(List<GoodsDetail> goodsDetail) {
 		this.goodsDetail = goodsDetail;
 	}
 
-	public String getOutTradeNo() {
+    /**
+     * Gets out trade no.
+     *
+     * @return the out trade no
+     */
+    public String getOutTradeNo() {
 		return this.outTradeNo;
 	}
-	public void setOutTradeNo(String outTradeNo) {
+
+    /**
+     * Sets out trade no.
+     *
+     * @param outTradeNo the out trade no
+     */
+    public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
 
-	public String getPassbackParams() {
+    /**
+     * Gets passback params.
+     *
+     * @return the passback params
+     */
+    public String getPassbackParams() {
 		return this.passbackParams;
 	}
-	public void setPassbackParams(String passbackParams) {
+
+    /**
+     * Sets passback params.
+     *
+     * @param passbackParams the passback params
+     */
+    public void setPassbackParams(String passbackParams) {
 		this.passbackParams = passbackParams;
 	}
 
-	public String getProductCode() {
+    /**
+     * Gets product code.
+     *
+     * @return the product code
+     */
+    public String getProductCode() {
 		return this.productCode;
 	}
-	public void setProductCode(String productCode) {
+
+    /**
+     * Sets product code.
+     *
+     * @param productCode the product code
+     */
+    public void setProductCode(String productCode) {
 		this.productCode = productCode;
 	}
 
-	public String getSellerId() {
+    /**
+     * Gets seller id.
+     *
+     * @return the seller id
+     */
+    public String getSellerId() {
 		return this.sellerId;
 	}
-	public void setSellerId(String sellerId) {
+
+    /**
+     * Sets seller id.
+     *
+     * @param sellerId the seller id
+     */
+    public void setSellerId(String sellerId) {
 		this.sellerId = sellerId;
 	}
 
-	public String getSellerLogonId() {
+    /**
+     * Gets seller logon id.
+     *
+     * @return the seller logon id
+     */
+    public String getSellerLogonId() {
 		return this.sellerLogonId;
 	}
-	public void setSellerLogonId(String sellerLogonId) {
+
+    /**
+     * Sets seller logon id.
+     *
+     * @param sellerLogonId the seller logon id
+     */
+    public void setSellerLogonId(String sellerLogonId) {
 		this.sellerLogonId = sellerLogonId;
 	}
 
-	public String getShowUrl() {
+    /**
+     * Gets show url.
+     *
+     * @return the show url
+     */
+    public String getShowUrl() {
 		return this.showUrl;
 	}
-	public void setShowUrl(String showUrl) {
+
+    /**
+     * Sets show url.
+     *
+     * @param showUrl the show url
+     */
+    public void setShowUrl(String showUrl) {
 		this.showUrl = showUrl;
 	}
 
-	public String getSubject() {
+    /**
+     * Gets subject.
+     *
+     * @return the subject
+     */
+    public String getSubject() {
 		return this.subject;
 	}
-	public void setSubject(String subject) {
+
+    /**
+     * Sets subject.
+     *
+     * @param subject the subject
+     */
+    public void setSubject(String subject) {
 		this.subject = subject;
 	}
 
-	public String getTotalAmount() {
+    /**
+     * Gets total amount.
+     *
+     * @return the total amount
+     */
+    public String getTotalAmount() {
 		return this.totalAmount;
 	}
-	public void setTotalAmount(String totalAmount) {
+
+    /**
+     * Sets total amount.
+     *
+     * @param totalAmount the total amount
+     */
+    public void setTotalAmount(String totalAmount) {
 		this.totalAmount = totalAmount;
 	}
 

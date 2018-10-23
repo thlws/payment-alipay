@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCampaignPrizeAmountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6255718134452937894L;
+	private static final long serialVersionUID = 2519888993222874519L;
 
 	/**
 	 * 活动id
@@ -25,17 +25,39 @@ public class AlipayMarketingCampaignPrizeAmountQueryModel extends AlipayObject {
 	@ApiField("prize_id")
 	private String prizeId;
 
-	public String getCampId() {
+    /**
+     * Gets camp id.
+     *
+     * @return the camp id
+     */
+    public String getCampId() {
 		return this.campId;
 	}
-	public void setCampId(String campId) {
+
+    /**
+     * Sets camp id.
+     *
+     * @param campId the camp id
+     */
+    public void setCampId(String campId) {
 		this.campId = campId;
 	}
 
-	public String getPrizeId() {
+    /**
+     * Gets prize id.
+     *
+     * @return the prize id
+     */
+    public String getPrizeId() {
 		return this.prizeId;
 	}
-	public void setPrizeId(String prizeId) {
+
+    /**
+     * Sets prize id.
+     *
+     * @param prizeId the prize id
+     */
+    public void setPrizeId(String prizeId) {
 		this.prizeId = prizeId;
 	}
 

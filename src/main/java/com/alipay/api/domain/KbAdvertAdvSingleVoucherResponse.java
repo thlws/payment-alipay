@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KbAdvertAdvSingleVoucherResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 1654851878158921789L;
+	private static final long serialVersionUID = 2728826251413693497L;
 
 	/**
 	 * 广告内容模型
@@ -35,24 +35,57 @@ public class KbAdvertAdvSingleVoucherResponse extends AlipayObject {
 	@ApiField("voucher")
 	private KbAdvertSubjectVoucherResponse voucher;
 
-	public List<KbAdvertAdvContentResponse> getAdvContentList() {
+    /**
+     * Gets adv content list.
+     *
+     * @return the adv content list
+     */
+    public List<KbAdvertAdvContentResponse> getAdvContentList() {
 		return this.advContentList;
 	}
-	public void setAdvContentList(List<KbAdvertAdvContentResponse> advContentList) {
+
+    /**
+     * Sets adv content list.
+     *
+     * @param advContentList the adv content list
+     */
+    public void setAdvContentList(List<KbAdvertAdvContentResponse> advContentList) {
 		this.advContentList = advContentList;
 	}
 
-	public KbAdvertAdvContent getContent() {
+    /**
+     * Gets content.
+     *
+     * @return the content
+     */
+    public KbAdvertAdvContent getContent() {
 		return this.content;
 	}
-	public void setContent(KbAdvertAdvContent content) {
+
+    /**
+     * Sets content.
+     *
+     * @param content the content
+     */
+    public void setContent(KbAdvertAdvContent content) {
 		this.content = content;
 	}
 
-	public KbAdvertSubjectVoucherResponse getVoucher() {
+    /**
+     * Gets voucher.
+     *
+     * @return the voucher
+     */
+    public KbAdvertSubjectVoucherResponse getVoucher() {
 		return this.voucher;
 	}
-	public void setVoucher(KbAdvertSubjectVoucherResponse voucher) {
+
+    /**
+     * Sets voucher.
+     *
+     * @param voucher the voucher
+     */
+    public void setVoucher(KbAdvertSubjectVoucherResponse voucher) {
 		this.voucher = voucher;
 	}
 

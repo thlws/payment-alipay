@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.member.coupon.querylist response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-04-14 11:46:40
  */
 public class AlipayMemberCouponQuerylistResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7227165175888958333L;
+	private static final long serialVersionUID = 1674272624171846665L;
 
 	/** 
 	 * 券信息数组.
@@ -60,10 +60,21 @@ public class AlipayMemberCouponQuerylistResponse extends AlipayResponse {
 	@ApiField("total_num")
 	private String totalNum;
 
-	public void setCouponList(List<Coupon> couponList) {
+    /**
+     * Sets coupon list.
+     *
+     * @param couponList the coupon list
+     */
+    public void setCouponList(List<Coupon> couponList) {
 		this.couponList = couponList;
 	}
-	public List<Coupon> getCouponList( ) {
+
+    /**
+     * Gets coupon list.
+     *
+     * @return the coupon list
+     */
+    public List<Coupon> getCouponList( ) {
 		return this.couponList;
 	}
 
@@ -74,31 +85,75 @@ public class AlipayMemberCouponQuerylistResponse extends AlipayResponse {
 		return this.errorCode;
 	}
 
-	public void setErrorMsg(String errorMsg) {
+    /**
+     * Sets error msg.
+     *
+     * @param errorMsg the error msg
+     */
+    public void setErrorMsg(String errorMsg) {
 		this.errorMsg = errorMsg;
 	}
-	public String getErrorMsg( ) {
+
+    /**
+     * Gets error msg.
+     *
+     * @return the error msg
+     */
+    public String getErrorMsg( ) {
 		return this.errorMsg;
 	}
 
-	public void setListSize(String listSize) {
+    /**
+     * Sets list size.
+     *
+     * @param listSize the list size
+     */
+    public void setListSize(String listSize) {
 		this.listSize = listSize;
 	}
-	public String getListSize( ) {
+
+    /**
+     * Gets list size.
+     *
+     * @return the list size
+     */
+    public String getListSize( ) {
 		return this.listSize;
 	}
 
-	public void setSuccessCode(String successCode) {
+    /**
+     * Sets success code.
+     *
+     * @param successCode the success code
+     */
+    public void setSuccessCode(String successCode) {
 		this.successCode = successCode;
 	}
-	public String getSuccessCode( ) {
+
+    /**
+     * Gets success code.
+     *
+     * @return the success code
+     */
+    public String getSuccessCode( ) {
 		return this.successCode;
 	}
 
-	public void setTotalNum(String totalNum) {
+    /**
+     * Sets total num.
+     *
+     * @param totalNum the total num
+     */
+    public void setTotalNum(String totalNum) {
 		this.totalNum = totalNum;
 	}
-	public String getTotalNum( ) {
+
+    /**
+     * Gets total num.
+     *
+     * @return the total num
+     */
+    public String getTotalNum( ) {
 		return this.totalNum;
 	}
 

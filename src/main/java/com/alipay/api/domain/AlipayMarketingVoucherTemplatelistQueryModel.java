@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询券模板列表
  *
  * @author auto create
- * @since 1.0, 2017-06-19 11:27:56
+ * @since 1.0, 2018-06-20 18:10:24
  */
 public class AlipayMarketingVoucherTemplatelistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2299998764645369486L;
+	private static final long serialVersionUID = 7422792595326423526L;
 
 	/**
 	 * 模板创建结束时间，格式为：yyyy-MM-dd HH:mm:ss
@@ -39,31 +39,75 @@ public class AlipayMarketingVoucherTemplatelistQueryModel extends AlipayObject {
 	@ApiField("page_size")
 	private Long pageSize;
 
-	public Date getCreateEndTime() {
+    /**
+     * Gets create end time.
+     *
+     * @return the create end time
+     */
+    public Date getCreateEndTime() {
 		return this.createEndTime;
 	}
-	public void setCreateEndTime(Date createEndTime) {
+
+    /**
+     * Sets create end time.
+     *
+     * @param createEndTime the create end time
+     */
+    public void setCreateEndTime(Date createEndTime) {
 		this.createEndTime = createEndTime;
 	}
 
-	public Date getCreateStartTime() {
+    /**
+     * Gets create start time.
+     *
+     * @return the create start time
+     */
+    public Date getCreateStartTime() {
 		return this.createStartTime;
 	}
-	public void setCreateStartTime(Date createStartTime) {
+
+    /**
+     * Sets create start time.
+     *
+     * @param createStartTime the create start time
+     */
+    public void setCreateStartTime(Date createStartTime) {
 		this.createStartTime = createStartTime;
 	}
 
-	public Long getPageNum() {
+    /**
+     * Gets page num.
+     *
+     * @return the page num
+     */
+    public Long getPageNum() {
 		return this.pageNum;
 	}
-	public void setPageNum(Long pageNum) {
+
+    /**
+     * Sets page num.
+     *
+     * @param pageNum the page num
+     */
+    public void setPageNum(Long pageNum) {
 		this.pageNum = pageNum;
 	}
 
-	public Long getPageSize() {
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public Long getPageSize() {
 		return this.pageSize;
 	}
-	public void setPageSize(Long pageSize) {
+
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}
 

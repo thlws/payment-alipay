@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.mycar.maintain.data.update response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-09-15 16:29:17
  */
 public class AlipayEcoMycarMaintainDataUpdateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8823824991392514529L;
+	private static final long serialVersionUID = 1214951989367553336L;
 
 	/** 
 	 * 具体返回的处理结果
@@ -20,10 +20,21 @@ public class AlipayEcoMycarMaintainDataUpdateResponse extends AlipayResponse {
 	@ApiField("info")
 	private String info;
 
-	public void setInfo(String info) {
+    /**
+     * Sets info.
+     *
+     * @param info the info
+     */
+    public void setInfo(String info) {
 		this.info = info;
 	}
-	public String getInfo( ) {
+
+    /**
+     * Gets info.
+     *
+     * @return the info
+     */
+    public String getInfo( ) {
 		return this.info;
 	}
 

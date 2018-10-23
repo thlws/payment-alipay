@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.public.appinfo.update response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-01-06 21:23:43
  */
 public class AlipayMobilePublicAppinfoUpdateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1486588789174411124L;
+	private static final long serialVersionUID = 3757714164733865447L;
 
 	/** 
 	 * 结果码

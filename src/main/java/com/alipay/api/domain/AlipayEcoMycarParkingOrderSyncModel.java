@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoMycarParkingOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4418912626112267868L;
+	private static final long serialVersionUID = 3334494767819847445L;
 
 	/**
 	 * 车牌
@@ -103,108 +103,273 @@ public class AlipayEcoMycarParkingOrderSyncModel extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
-	public String getCarNumber() {
+    /**
+     * Gets car number.
+     *
+     * @return the car number
+     */
+    public String getCarNumber() {
 		return this.carNumber;
 	}
-	public void setCarNumber(String carNumber) {
+
+    /**
+     * Sets car number.
+     *
+     * @param carNumber the car number
+     */
+    public void setCarNumber(String carNumber) {
 		this.carNumber = carNumber;
 	}
 
-	public String getCardNumber() {
+    /**
+     * Gets card number.
+     *
+     * @return the card number
+     */
+    public String getCardNumber() {
 		return this.cardNumber;
 	}
-	public void setCardNumber(String cardNumber) {
+
+    /**
+     * Sets card number.
+     *
+     * @param cardNumber the card number
+     */
+    public void setCardNumber(String cardNumber) {
 		this.cardNumber = cardNumber;
 	}
 
-	public String getInDuration() {
+    /**
+     * Gets in duration.
+     *
+     * @return the in duration
+     */
+    public String getInDuration() {
 		return this.inDuration;
 	}
-	public void setInDuration(String inDuration) {
+
+    /**
+     * Sets in duration.
+     *
+     * @param inDuration the in duration
+     */
+    public void setInDuration(String inDuration) {
 		this.inDuration = inDuration;
 	}
 
-	public String getInTime() {
+    /**
+     * Gets in time.
+     *
+     * @return the in time
+     */
+    public String getInTime() {
 		return this.inTime;
 	}
-	public void setInTime(String inTime) {
+
+    /**
+     * Sets in time.
+     *
+     * @param inTime the in time
+     */
+    public void setInTime(String inTime) {
 		this.inTime = inTime;
 	}
 
-	public String getOrderNo() {
+    /**
+     * Gets order no.
+     *
+     * @return the order no
+     */
+    public String getOrderNo() {
 		return this.orderNo;
 	}
-	public void setOrderNo(String orderNo) {
+
+    /**
+     * Sets order no.
+     *
+     * @param orderNo the order no
+     */
+    public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
 
-	public String getOrderStatus() {
+    /**
+     * Gets order status.
+     *
+     * @return the order status
+     */
+    public String getOrderStatus() {
 		return this.orderStatus;
 	}
-	public void setOrderStatus(String orderStatus) {
+
+    /**
+     * Sets order status.
+     *
+     * @param orderStatus the order status
+     */
+    public void setOrderStatus(String orderStatus) {
 		this.orderStatus = orderStatus;
 	}
 
-	public String getOrderTime() {
+    /**
+     * Gets order time.
+     *
+     * @return the order time
+     */
+    public String getOrderTime() {
 		return this.orderTime;
 	}
-	public void setOrderTime(String orderTime) {
+
+    /**
+     * Sets order time.
+     *
+     * @param orderTime the order time
+     */
+    public void setOrderTime(String orderTime) {
 		this.orderTime = orderTime;
 	}
 
-	public String getOutOrderNo() {
+    /**
+     * Gets out order no.
+     *
+     * @return the out order no
+     */
+    public String getOutOrderNo() {
 		return this.outOrderNo;
 	}
-	public void setOutOrderNo(String outOrderNo) {
+
+    /**
+     * Sets out order no.
+     *
+     * @param outOrderNo the out order no
+     */
+    public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
 	}
 
-	public String getOutParkingId() {
+    /**
+     * Gets out parking id.
+     *
+     * @return the out parking id
+     */
+    public String getOutParkingId() {
 		return this.outParkingId;
 	}
-	public void setOutParkingId(String outParkingId) {
+
+    /**
+     * Sets out parking id.
+     *
+     * @param outParkingId the out parking id
+     */
+    public void setOutParkingId(String outParkingId) {
 		this.outParkingId = outParkingId;
 	}
 
-	public String getParkingId() {
+    /**
+     * Gets parking id.
+     *
+     * @return the parking id
+     */
+    public String getParkingId() {
 		return this.parkingId;
 	}
-	public void setParkingId(String parkingId) {
+
+    /**
+     * Sets parking id.
+     *
+     * @param parkingId the parking id
+     */
+    public void setParkingId(String parkingId) {
 		this.parkingId = parkingId;
 	}
 
-	public String getParkingName() {
+    /**
+     * Gets parking name.
+     *
+     * @return the parking name
+     */
+    public String getParkingName() {
 		return this.parkingName;
 	}
-	public void setParkingName(String parkingName) {
+
+    /**
+     * Sets parking name.
+     *
+     * @param parkingName the parking name
+     */
+    public void setParkingName(String parkingName) {
 		this.parkingName = parkingName;
 	}
 
-	public String getPayMoney() {
+    /**
+     * Gets pay money.
+     *
+     * @return the pay money
+     */
+    public String getPayMoney() {
 		return this.payMoney;
 	}
-	public void setPayMoney(String payMoney) {
+
+    /**
+     * Sets pay money.
+     *
+     * @param payMoney the pay money
+     */
+    public void setPayMoney(String payMoney) {
 		this.payMoney = payMoney;
 	}
 
-	public String getPayTime() {
+    /**
+     * Gets pay time.
+     *
+     * @return the pay time
+     */
+    public String getPayTime() {
 		return this.payTime;
 	}
-	public void setPayTime(String payTime) {
+
+    /**
+     * Sets pay time.
+     *
+     * @param payTime the pay time
+     */
+    public void setPayTime(String payTime) {
 		this.payTime = payTime;
 	}
 
-	public String getPayType() {
+    /**
+     * Gets pay type.
+     *
+     * @return the pay type
+     */
+    public String getPayType() {
 		return this.payType;
 	}
-	public void setPayType(String payType) {
+
+    /**
+     * Sets pay type.
+     *
+     * @param payType the pay type
+     */
+    public void setPayType(String payType) {
 		this.payType = payType;
 	}
 
-	public String getUserId() {
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
-	public void setUserId(String userId) {
+
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
 

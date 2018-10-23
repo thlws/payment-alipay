@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMarketingDataDishdiagnoseBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2177946763247798993L;
+	private static final long serialVersionUID = 5378792694729872592L;
 
 	/**
 	 * 查询菜品类型：001是明星菜品，002是潜力菜品，003是其他菜品（除明星菜品和潜力菜品之外的其他一律作为其他菜品 编号为003）。
@@ -38,31 +38,75 @@ public class KoubeiMarketingDataDishdiagnoseBatchqueryModel extends AlipayObject
 	@ApiField("report_date")
 	private String reportDate;
 
-	public String getItemDiagnoseType() {
+    /**
+     * Gets item diagnose type.
+     *
+     * @return the item diagnose type
+     */
+    public String getItemDiagnoseType() {
 		return this.itemDiagnoseType;
 	}
-	public void setItemDiagnoseType(String itemDiagnoseType) {
+
+    /**
+     * Sets item diagnose type.
+     *
+     * @param itemDiagnoseType the item diagnose type
+     */
+    public void setItemDiagnoseType(String itemDiagnoseType) {
 		this.itemDiagnoseType = itemDiagnoseType;
 	}
 
-	public Long getPageNo() {
+    /**
+     * Gets page no.
+     *
+     * @return the page no
+     */
+    public Long getPageNo() {
 		return this.pageNo;
 	}
-	public void setPageNo(Long pageNo) {
+
+    /**
+     * Sets page no.
+     *
+     * @param pageNo the page no
+     */
+    public void setPageNo(Long pageNo) {
 		this.pageNo = pageNo;
 	}
 
-	public Long getPageSize() {
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public Long getPageSize() {
 		return this.pageSize;
 	}
-	public void setPageSize(Long pageSize) {
+
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}
 
-	public String getReportDate() {
+    /**
+     * Gets report date.
+     *
+     * @return the report date
+     */
+    public String getReportDate() {
 		return this.reportDate;
 	}
-	public void setReportDate(String reportDate) {
+
+    /**
+     * Sets report date.
+     *
+     * @param reportDate the report date
+     */
+    public void setReportDate(String reportDate) {
 		this.reportDate = reportDate;
 	}
 

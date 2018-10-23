@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 到位订单取消
  *
  * @author auto create
- * @since 1.0, 2017-03-20 14:00:28
+ * @since 1.0, 2018-03-23 13:21:44
  */
 public class AlipayDaoweiOrderCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7567788766333628976L;
+	private static final long serialVersionUID = 7111758469955689452L;
 
 	/**
 	 * 到位业务订单号。用户在到位下单时，由到位系统生成的32位全局唯一数字 id。
@@ -26,17 +26,39 @@ public class AlipayDaoweiOrderCancelModel extends AlipayObject {
 	@ApiField("reason")
 	private String reason;
 
-	public String getOrderNo() {
+    /**
+     * Gets order no.
+     *
+     * @return the order no
+     */
+    public String getOrderNo() {
 		return this.orderNo;
 	}
-	public void setOrderNo(String orderNo) {
+
+    /**
+     * Sets order no.
+     *
+     * @param orderNo the order no
+     */
+    public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
 
-	public String getReason() {
+    /**
+     * Gets reason.
+     *
+     * @return the reason
+     */
+    public String getReason() {
 		return this.reason;
 	}
-	public void setReason(String reason) {
+
+    /**
+     * Sets reason.
+     *
+     * @param reason the reason
+     */
+    public void setReason(String reason) {
 		this.reason = reason;
 	}
 

@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ecapiprod.drawndn.paymentschedule.get response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-03-29 11:34:20
  */
 public class AlipayEcapiprodDrawndnPaymentscheduleGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7741327748972342585L;
+	private static final long serialVersionUID = 2134538697754447745L;
 
 	/** 
 	 * 返回的支用还款计划集合
@@ -30,17 +30,39 @@ public class AlipayEcapiprodDrawndnPaymentscheduleGetResponse extends AlipayResp
 	@ApiField("request_id")
 	private String requestId;
 
-	public void setPaymentSchedules(List<PaymentSchedule> paymentSchedules) {
+    /**
+     * Sets payment schedules.
+     *
+     * @param paymentSchedules the payment schedules
+     */
+    public void setPaymentSchedules(List<PaymentSchedule> paymentSchedules) {
 		this.paymentSchedules = paymentSchedules;
 	}
-	public List<PaymentSchedule> getPaymentSchedules( ) {
+
+    /**
+     * Gets payment schedules.
+     *
+     * @return the payment schedules
+     */
+    public List<PaymentSchedule> getPaymentSchedules( ) {
 		return this.paymentSchedules;
 	}
 
-	public void setRequestId(String requestId) {
+    /**
+     * Sets request id.
+     *
+     * @param requestId the request id
+     */
+    public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
-	public String getRequestId( ) {
+
+    /**
+     * Gets request id.
+     *
+     * @return the request id
+     */
+    public String getRequestId( ) {
 		return this.requestId;
 	}
 

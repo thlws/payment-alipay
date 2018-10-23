@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.pcredit.huabei.promo.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-03-03 17:48:05
  */
 public class AlipayPcreditHuabeiPromoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5421436763254819912L;
+	private static final long serialVersionUID = 8218639319818434447L;
 
 	/** 
 	 * 花呗颜值分
@@ -20,10 +20,21 @@ public class AlipayPcreditHuabeiPromoQueryResponse extends AlipayResponse {
 	@ApiField("facescore")
 	private String facescore;
 
-	public void setFacescore(String facescore) {
+    /**
+     * Sets facescore.
+     *
+     * @param facescore the facescore
+     */
+    public void setFacescore(String facescore) {
 		this.facescore = facescore;
 	}
-	public String getFacescore( ) {
+
+    /**
+     * Gets facescore.
+     *
+     * @return the facescore
+     */
+    public String getFacescore( ) {
 		return this.facescore;
 	}
 

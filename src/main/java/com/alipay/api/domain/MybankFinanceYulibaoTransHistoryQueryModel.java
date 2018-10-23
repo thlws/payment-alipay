@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankFinanceYulibaoTransHistoryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4682179929335919483L;
+	private static final long serialVersionUID = 4277898839432443236L;
 
 	/**
 	 * 查询交易的结束时间，必须是格式为yyyyMMdd的日期字符串，且日期要大于等于start_date，时间最大跨度为30天，如start_date为20160808，则end_date最大值为20160906。
@@ -43,38 +43,93 @@ public class MybankFinanceYulibaoTransHistoryQueryModel extends AlipayObject {
 	@ApiField("start_date")
 	private String startDate;
 
-	public String getEndDate() {
+    /**
+     * Gets end date.
+     *
+     * @return the end date
+     */
+    public String getEndDate() {
 		return this.endDate;
 	}
-	public void setEndDate(String endDate) {
+
+    /**
+     * Sets end date.
+     *
+     * @param endDate the end date
+     */
+    public void setEndDate(String endDate) {
 		this.endDate = endDate;
 	}
 
-	public String getFundCode() {
+    /**
+     * Gets fund code.
+     *
+     * @return the fund code
+     */
+    public String getFundCode() {
 		return this.fundCode;
 	}
-	public void setFundCode(String fundCode) {
+
+    /**
+     * Sets fund code.
+     *
+     * @param fundCode the fund code
+     */
+    public void setFundCode(String fundCode) {
 		this.fundCode = fundCode;
 	}
 
-	public Long getPage() {
+    /**
+     * Gets page.
+     *
+     * @return the page
+     */
+    public Long getPage() {
 		return this.page;
 	}
-	public void setPage(Long page) {
+
+    /**
+     * Sets page.
+     *
+     * @param page the page
+     */
+    public void setPage(Long page) {
 		this.page = page;
 	}
 
-	public Long getPageSize() {
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public Long getPageSize() {
 		return this.pageSize;
 	}
-	public void setPageSize(Long pageSize) {
+
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}
 
-	public String getStartDate() {
+    /**
+     * Gets start date.
+     *
+     * @return the start date
+     */
+    public String getStartDate() {
 		return this.startDate;
 	}
-	public void setStartDate(String startDate) {
+
+    /**
+     * Sets start date.
+     *
+     * @param startDate the start date
+     */
+    public void setStartDate(String startDate) {
 		this.startDate = startDate;
 	}
 

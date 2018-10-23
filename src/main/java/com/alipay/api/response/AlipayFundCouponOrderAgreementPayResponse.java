@@ -7,13 +7,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.fund.coupon.order.agreement.pay response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-07 20:52:38
+ * @since 1.0, 2018-08-13 12:40:58
  */
 public class AlipayFundCouponOrderAgreementPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2141854778788729416L;
+	private static final long serialVersionUID = 4724969422422649239L;
 
 	/** 
 	 * 本次支付的金额，单位为：元（人民币），精确到小数点后两位
@@ -61,52 +61,129 @@ CLOSED：关闭
 	@ApiField("status")
 	private String status;
 
-	public void setAmount(String amount) {
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(String amount) {
 		this.amount = amount;
 	}
-	public String getAmount( ) {
+
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public String getAmount( ) {
 		return this.amount;
 	}
 
-	public void setAuthNo(String authNo) {
+    /**
+     * Sets auth no.
+     *
+     * @param authNo the auth no
+     */
+    public void setAuthNo(String authNo) {
 		this.authNo = authNo;
 	}
-	public String getAuthNo( ) {
+
+    /**
+     * Gets auth no.
+     *
+     * @return the auth no
+     */
+    public String getAuthNo( ) {
 		return this.authNo;
 	}
 
-	public void setGmtTrans(Date gmtTrans) {
+    /**
+     * Sets gmt trans.
+     *
+     * @param gmtTrans the gmt trans
+     */
+    public void setGmtTrans(Date gmtTrans) {
 		this.gmtTrans = gmtTrans;
 	}
-	public Date getGmtTrans( ) {
+
+    /**
+     * Gets gmt trans.
+     *
+     * @return the gmt trans
+     */
+    public Date getGmtTrans( ) {
 		return this.gmtTrans;
 	}
 
-	public void setOperationId(String operationId) {
+    /**
+     * Sets operation id.
+     *
+     * @param operationId the operation id
+     */
+    public void setOperationId(String operationId) {
 		this.operationId = operationId;
 	}
-	public String getOperationId( ) {
+
+    /**
+     * Gets operation id.
+     *
+     * @return the operation id
+     */
+    public String getOperationId( ) {
 		return this.operationId;
 	}
 
-	public void setOutOrderNo(String outOrderNo) {
+    /**
+     * Sets out order no.
+     *
+     * @param outOrderNo the out order no
+     */
+    public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
 	}
-	public String getOutOrderNo( ) {
+
+    /**
+     * Gets out order no.
+     *
+     * @return the out order no
+     */
+    public String getOutOrderNo( ) {
 		return this.outOrderNo;
 	}
 
-	public void setOutRequestNo(String outRequestNo) {
+    /**
+     * Sets out request no.
+     *
+     * @param outRequestNo the out request no
+     */
+    public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
 	}
-	public String getOutRequestNo( ) {
+
+    /**
+     * Gets out request no.
+     *
+     * @return the out request no
+     */
+    public String getOutRequestNo( ) {
 		return this.outRequestNo;
 	}
 
-	public void setStatus(String status) {
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
-	public String getStatus( ) {
+
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus( ) {
 		return this.status;
 	}
 

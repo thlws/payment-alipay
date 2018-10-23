@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AreaInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5637967378579236379L;
+	private static final long serialVersionUID = 4523758221793627387L;
 
 	/**
 	 * 城市
@@ -25,17 +25,39 @@ public class AreaInfo extends AlipayObject {
 	@ApiField("province")
 	private String province;
 
-	public String getCity() {
+    /**
+     * Gets city.
+     *
+     * @return the city
+     */
+    public String getCity() {
 		return this.city;
 	}
-	public void setCity(String city) {
+
+    /**
+     * Sets city.
+     *
+     * @param city the city
+     */
+    public void setCity(String city) {
 		this.city = city;
 	}
 
-	public String getProvince() {
+    /**
+     * Gets province.
+     *
+     * @return the province
+     */
+    public String getProvince() {
 		return this.province;
 	}
-	public void setProvince(String province) {
+
+    /**
+     * Sets province.
+     *
+     * @param province the province
+     */
+    public void setProvince(String province) {
 		this.province = province;
 	}
 

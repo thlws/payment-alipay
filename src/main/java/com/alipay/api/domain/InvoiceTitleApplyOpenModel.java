@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InvoiceTitleApplyOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6619797587428958713L;
+	private static final long serialVersionUID = 4826988243322654414L;
 
 	/**
 	 * 购买方地址
@@ -49,45 +49,111 @@ public class InvoiceTitleApplyOpenModel extends AlipayObject {
 	@ApiField("title_name")
 	private String titleName;
 
-	public String getPayerAddress() {
+    /**
+     * Gets payer address.
+     *
+     * @return the payer address
+     */
+    public String getPayerAddress() {
 		return this.payerAddress;
 	}
-	public void setPayerAddress(String payerAddress) {
+
+    /**
+     * Sets payer address.
+     *
+     * @param payerAddress the payer address
+     */
+    public void setPayerAddress(String payerAddress) {
 		this.payerAddress = payerAddress;
 	}
 
-	public String getPayerBankAccount() {
+    /**
+     * Gets payer bank account.
+     *
+     * @return the payer bank account
+     */
+    public String getPayerBankAccount() {
 		return this.payerBankAccount;
 	}
-	public void setPayerBankAccount(String payerBankAccount) {
+
+    /**
+     * Sets payer bank account.
+     *
+     * @param payerBankAccount the payer bank account
+     */
+    public void setPayerBankAccount(String payerBankAccount) {
 		this.payerBankAccount = payerBankAccount;
 	}
 
-	public String getPayerBankName() {
+    /**
+     * Gets payer bank name.
+     *
+     * @return the payer bank name
+     */
+    public String getPayerBankName() {
 		return this.payerBankName;
 	}
-	public void setPayerBankName(String payerBankName) {
+
+    /**
+     * Sets payer bank name.
+     *
+     * @param payerBankName the payer bank name
+     */
+    public void setPayerBankName(String payerBankName) {
 		this.payerBankName = payerBankName;
 	}
 
-	public String getPayerRegisterNo() {
+    /**
+     * Gets payer register no.
+     *
+     * @return the payer register no
+     */
+    public String getPayerRegisterNo() {
 		return this.payerRegisterNo;
 	}
-	public void setPayerRegisterNo(String payerRegisterNo) {
+
+    /**
+     * Sets payer register no.
+     *
+     * @param payerRegisterNo the payer register no
+     */
+    public void setPayerRegisterNo(String payerRegisterNo) {
 		this.payerRegisterNo = payerRegisterNo;
 	}
 
-	public String getPayerTel() {
+    /**
+     * Gets payer tel.
+     *
+     * @return the payer tel
+     */
+    public String getPayerTel() {
 		return this.payerTel;
 	}
-	public void setPayerTel(String payerTel) {
+
+    /**
+     * Sets payer tel.
+     *
+     * @param payerTel the payer tel
+     */
+    public void setPayerTel(String payerTel) {
 		this.payerTel = payerTel;
 	}
 
-	public String getTitleName() {
+    /**
+     * Gets title name.
+     *
+     * @return the title name
+     */
+    public String getTitleName() {
 		return this.titleName;
 	}
-	public void setTitleName(String titleName) {
+
+    /**
+     * Sets title name.
+     *
+     * @param titleName the title name
+     */
+    public void setTitleName(String titleName) {
 		this.titleName = titleName;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicAccountCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1597774155546699453L;
+	private static final long serialVersionUID = 3613435771314386817L;
 
 	/**
 	 * 账户添加成功，在支付宝与其对应的协议号。如果账户重复添加，接口保证幂等依然视为添加成功，返回此前该账户在支付宝对应的协议号。其他异常该字段不存在。
@@ -49,45 +49,111 @@ public class AlipayOpenPublicAccountCreateModel extends AlipayObject {
 	@ApiField("remark")
 	private String remark;
 
-	public String getAgreementId() {
+    /**
+     * Gets agreement id.
+     *
+     * @return the agreement id
+     */
+    public String getAgreementId() {
 		return this.agreementId;
 	}
-	public void setAgreementId(String agreementId) {
+
+    /**
+     * Sets agreement id.
+     *
+     * @param agreementId the agreement id
+     */
+    public void setAgreementId(String agreementId) {
 		this.agreementId = agreementId;
 	}
 
-	public String getBindAccountNo() {
+    /**
+     * Gets bind account no.
+     *
+     * @return the bind account no
+     */
+    public String getBindAccountNo() {
 		return this.bindAccountNo;
 	}
-	public void setBindAccountNo(String bindAccountNo) {
+
+    /**
+     * Sets bind account no.
+     *
+     * @param bindAccountNo the bind account no
+     */
+    public void setBindAccountNo(String bindAccountNo) {
 		this.bindAccountNo = bindAccountNo;
 	}
 
-	public String getDisplayName() {
+    /**
+     * Gets display name.
+     *
+     * @return the display name
+     */
+    public String getDisplayName() {
 		return this.displayName;
 	}
-	public void setDisplayName(String displayName) {
+
+    /**
+     * Sets display name.
+     *
+     * @param displayName the display name
+     */
+    public void setDisplayName(String displayName) {
 		this.displayName = displayName;
 	}
 
-	public String getFromUserId() {
+    /**
+     * Gets from user id.
+     *
+     * @return the from user id
+     */
+    public String getFromUserId() {
 		return this.fromUserId;
 	}
-	public void setFromUserId(String fromUserId) {
+
+    /**
+     * Sets from user id.
+     *
+     * @param fromUserId the from user id
+     */
+    public void setFromUserId(String fromUserId) {
 		this.fromUserId = fromUserId;
 	}
 
-	public String getRealName() {
+    /**
+     * Gets real name.
+     *
+     * @return the real name
+     */
+    public String getRealName() {
 		return this.realName;
 	}
-	public void setRealName(String realName) {
+
+    /**
+     * Sets real name.
+     *
+     * @param realName the real name
+     */
+    public void setRealName(String realName) {
 		this.realName = realName;
 	}
 
-	public String getRemark() {
+    /**
+     * Gets remark.
+     *
+     * @return the remark
+     */
+    public String getRemark() {
 		return this.remark;
 	}
-	public void setRemark(String remark) {
+
+    /**
+     * Sets remark.
+     *
+     * @param remark the remark
+     */
+    public void setRemark(String remark) {
 		this.remark = remark;
 	}
 

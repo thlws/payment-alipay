@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SsdataDataserviceRiskAlixiaohaoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5552778966217212958L;
+	private static final long serialVersionUID = 2683943171835451114L;
 
 	/**
 	 * 电话号码
@@ -19,10 +19,21 @@ public class SsdataDataserviceRiskAlixiaohaoQueryModel extends AlipayObject {
 	@ApiField("mobile_no")
 	private String mobileNo;
 
-	public String getMobileNo() {
+    /**
+     * Gets mobile no.
+     *
+     * @return the mobile no
+     */
+    public String getMobileNo() {
 		return this.mobileNo;
 	}
-	public void setMobileNo(String mobileNo) {
+
+    /**
+     * Sets mobile no.
+     *
+     * @param mobileNo the mobile no
+     */
+    public void setMobileNo(String mobileNo) {
 		this.mobileNo = mobileNo;
 	}
 

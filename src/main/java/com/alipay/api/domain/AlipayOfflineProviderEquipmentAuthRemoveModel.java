@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineProviderEquipmentAuthRemoveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3515474289718635914L;
+	private static final long serialVersionUID = 2321276611122489239L;
 
 	/**
 	 * 机具编号
@@ -49,45 +49,111 @@ public class AlipayOfflineProviderEquipmentAuthRemoveModel extends AlipayObject 
 	@ApiField("operator_id")
 	private String operatorId;
 
-	public String getDeviceId() {
+    /**
+     * Gets device id.
+     *
+     * @return the device id
+     */
+    public String getDeviceId() {
 		return this.deviceId;
 	}
-	public void setDeviceId(String deviceId) {
+
+    /**
+     * Sets device id.
+     *
+     * @param deviceId the device id
+     */
+    public void setDeviceId(String deviceId) {
 		this.deviceId = deviceId;
 	}
 
-	public String getDeviceType() {
+    /**
+     * Gets device type.
+     *
+     * @return the device type
+     */
+    public String getDeviceType() {
 		return this.deviceType;
 	}
-	public void setDeviceType(String deviceType) {
+
+    /**
+     * Sets device type.
+     *
+     * @param deviceType the device type
+     */
+    public void setDeviceType(String deviceType) {
 		this.deviceType = deviceType;
 	}
 
-	public String getExtInfo() {
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo() {
 		return this.extInfo;
 	}
-	public void setExtInfo(String extInfo) {
+
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
-	public String getMerchantPid() {
+    /**
+     * Gets merchant pid.
+     *
+     * @return the merchant pid
+     */
+    public String getMerchantPid() {
 		return this.merchantPid;
 	}
-	public void setMerchantPid(String merchantPid) {
+
+    /**
+     * Sets merchant pid.
+     *
+     * @param merchantPid the merchant pid
+     */
+    public void setMerchantPid(String merchantPid) {
 		this.merchantPid = merchantPid;
 	}
 
-	public String getOperator() {
+    /**
+     * Gets operator.
+     *
+     * @return the operator
+     */
+    public String getOperator() {
 		return this.operator;
 	}
-	public void setOperator(String operator) {
+
+    /**
+     * Sets operator.
+     *
+     * @param operator the operator
+     */
+    public void setOperator(String operator) {
 		this.operator = operator;
 	}
 
-	public String getOperatorId() {
+    /**
+     * Gets operator id.
+     *
+     * @return the operator id
+     */
+    public String getOperatorId() {
 		return this.operatorId;
 	}
-	public void setOperatorId(String operatorId) {
+
+    /**
+     * Sets operator id.
+     *
+     * @param operatorId the operator id
+     */
+    public void setOperatorId(String operatorId) {
 		this.operatorId = operatorId;
 	}
 

@@ -5,18 +5,19 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.TradeFundBill;
+import com.alipay.api.domain.PresetPayToolInfo;
 
 import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.trade.refund response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-19 20:31:51
+ * @since 1.0, 2018-09-14 12:00:21
  */
 public class AlipayTradeRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2771221314987939551L;
+	private static final long serialVersionUID = 7178383685532584977L;
 
 	/** 
 	 * 用户的登录id
@@ -55,6 +56,30 @@ public class AlipayTradeRefundResponse extends AlipayResponse {
 	private String outTradeNo;
 
 	/** 
+	 * 本次退款金额中买家退款金额
+	 */
+	@ApiField("present_refund_buyer_amount")
+	private String presentRefundBuyerAmount;
+
+	/** 
+	 * 本次退款金额中平台优惠退款金额
+	 */
+	@ApiField("present_refund_discount_amount")
+	private String presentRefundDiscountAmount;
+
+	/** 
+	 * 本次退款金额中商家优惠退款金额
+	 */
+	@ApiField("present_refund_mdiscount_amount")
+	private String presentRefundMdiscountAmount;
+
+	/** 
+	 * 退款币种信息
+	 */
+	@ApiField("refund_currency")
+	private String refundCurrency;
+
+	/** 
 	 * 退款使用的资金渠道
 	 */
 	@ApiListField("refund_detail_item_list")
@@ -66,6 +91,12 @@ public class AlipayTradeRefundResponse extends AlipayResponse {
 	 */
 	@ApiField("refund_fee")
 	private String refundFee;
+
+	/** 
+	 * 退回的前置资产列表
+	 */
+	@ApiField("refund_preset_paytool_list")
+	private PresetPayToolInfo refundPresetPaytoolList;
 
 	/** 
 	 * 本次商户实际退回金额
@@ -86,80 +117,291 @@ public class AlipayTradeRefundResponse extends AlipayResponse {
 	@ApiField("trade_no")
 	private String tradeNo;
 
-	public void setBuyerLogonId(String buyerLogonId) {
+    /**
+     * Sets buyer logon id.
+     *
+     * @param buyerLogonId the buyer logon id
+     */
+    public void setBuyerLogonId(String buyerLogonId) {
 		this.buyerLogonId = buyerLogonId;
 	}
-	public String getBuyerLogonId( ) {
+
+    /**
+     * Gets buyer logon id.
+     *
+     * @return the buyer logon id
+     */
+    public String getBuyerLogonId( ) {
 		return this.buyerLogonId;
 	}
 
-	public void setBuyerUserId(String buyerUserId) {
+    /**
+     * Sets buyer user id.
+     *
+     * @param buyerUserId the buyer user id
+     */
+    public void setBuyerUserId(String buyerUserId) {
 		this.buyerUserId = buyerUserId;
 	}
-	public String getBuyerUserId( ) {
+
+    /**
+     * Gets buyer user id.
+     *
+     * @return the buyer user id
+     */
+    public String getBuyerUserId( ) {
 		return this.buyerUserId;
 	}
 
-	public void setFundChange(String fundChange) {
+    /**
+     * Sets fund change.
+     *
+     * @param fundChange the fund change
+     */
+    public void setFundChange(String fundChange) {
 		this.fundChange = fundChange;
 	}
-	public String getFundChange( ) {
+
+    /**
+     * Gets fund change.
+     *
+     * @return the fund change
+     */
+    public String getFundChange( ) {
 		return this.fundChange;
 	}
 
-	public void setGmtRefundPay(Date gmtRefundPay) {
+    /**
+     * Sets gmt refund pay.
+     *
+     * @param gmtRefundPay the gmt refund pay
+     */
+    public void setGmtRefundPay(Date gmtRefundPay) {
 		this.gmtRefundPay = gmtRefundPay;
 	}
-	public Date getGmtRefundPay( ) {
+
+    /**
+     * Gets gmt refund pay.
+     *
+     * @return the gmt refund pay
+     */
+    public Date getGmtRefundPay( ) {
 		return this.gmtRefundPay;
 	}
 
-	public void setOpenId(String openId) {
+    /**
+     * Sets open id.
+     *
+     * @param openId the open id
+     */
+    public void setOpenId(String openId) {
 		this.openId = openId;
 	}
-	public String getOpenId( ) {
+
+    /**
+     * Gets open id.
+     *
+     * @return the open id
+     */
+    public String getOpenId( ) {
 		return this.openId;
 	}
 
-	public void setOutTradeNo(String outTradeNo) {
+    /**
+     * Sets out trade no.
+     *
+     * @param outTradeNo the out trade no
+     */
+    public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
-	public String getOutTradeNo( ) {
+
+    /**
+     * Gets out trade no.
+     *
+     * @return the out trade no
+     */
+    public String getOutTradeNo( ) {
 		return this.outTradeNo;
 	}
 
-	public void setRefundDetailItemList(List<TradeFundBill> refundDetailItemList) {
+    /**
+     * Sets present refund buyer amount.
+     *
+     * @param presentRefundBuyerAmount the present refund buyer amount
+     */
+    public void setPresentRefundBuyerAmount(String presentRefundBuyerAmount) {
+		this.presentRefundBuyerAmount = presentRefundBuyerAmount;
+	}
+
+    /**
+     * Gets present refund buyer amount.
+     *
+     * @return the present refund buyer amount
+     */
+    public String getPresentRefundBuyerAmount( ) {
+		return this.presentRefundBuyerAmount;
+	}
+
+    /**
+     * Sets present refund discount amount.
+     *
+     * @param presentRefundDiscountAmount the present refund discount amount
+     */
+    public void setPresentRefundDiscountAmount(String presentRefundDiscountAmount) {
+		this.presentRefundDiscountAmount = presentRefundDiscountAmount;
+	}
+
+    /**
+     * Gets present refund discount amount.
+     *
+     * @return the present refund discount amount
+     */
+    public String getPresentRefundDiscountAmount( ) {
+		return this.presentRefundDiscountAmount;
+	}
+
+    /**
+     * Sets present refund mdiscount amount.
+     *
+     * @param presentRefundMdiscountAmount the present refund mdiscount amount
+     */
+    public void setPresentRefundMdiscountAmount(String presentRefundMdiscountAmount) {
+		this.presentRefundMdiscountAmount = presentRefundMdiscountAmount;
+	}
+
+    /**
+     * Gets present refund mdiscount amount.
+     *
+     * @return the present refund mdiscount amount
+     */
+    public String getPresentRefundMdiscountAmount( ) {
+		return this.presentRefundMdiscountAmount;
+	}
+
+    /**
+     * Sets refund currency.
+     *
+     * @param refundCurrency the refund currency
+     */
+    public void setRefundCurrency(String refundCurrency) {
+		this.refundCurrency = refundCurrency;
+	}
+
+    /**
+     * Gets refund currency.
+     *
+     * @return the refund currency
+     */
+    public String getRefundCurrency( ) {
+		return this.refundCurrency;
+	}
+
+    /**
+     * Sets refund detail item list.
+     *
+     * @param refundDetailItemList the refund detail item list
+     */
+    public void setRefundDetailItemList(List<TradeFundBill> refundDetailItemList) {
 		this.refundDetailItemList = refundDetailItemList;
 	}
-	public List<TradeFundBill> getRefundDetailItemList( ) {
+
+    /**
+     * Gets refund detail item list.
+     *
+     * @return the refund detail item list
+     */
+    public List<TradeFundBill> getRefundDetailItemList( ) {
 		return this.refundDetailItemList;
 	}
 
-	public void setRefundFee(String refundFee) {
+    /**
+     * Sets refund fee.
+     *
+     * @param refundFee the refund fee
+     */
+    public void setRefundFee(String refundFee) {
 		this.refundFee = refundFee;
 	}
-	public String getRefundFee( ) {
+
+    /**
+     * Gets refund fee.
+     *
+     * @return the refund fee
+     */
+    public String getRefundFee( ) {
 		return this.refundFee;
 	}
 
-	public void setSendBackFee(String sendBackFee) {
+    /**
+     * Sets refund preset paytool list.
+     *
+     * @param refundPresetPaytoolList the refund preset paytool list
+     */
+    public void setRefundPresetPaytoolList(PresetPayToolInfo refundPresetPaytoolList) {
+		this.refundPresetPaytoolList = refundPresetPaytoolList;
+	}
+
+    /**
+     * Gets refund preset paytool list.
+     *
+     * @return the refund preset paytool list
+     */
+    public PresetPayToolInfo getRefundPresetPaytoolList( ) {
+		return this.refundPresetPaytoolList;
+	}
+
+    /**
+     * Sets send back fee.
+     *
+     * @param sendBackFee the send back fee
+     */
+    public void setSendBackFee(String sendBackFee) {
 		this.sendBackFee = sendBackFee;
 	}
-	public String getSendBackFee( ) {
+
+    /**
+     * Gets send back fee.
+     *
+     * @return the send back fee
+     */
+    public String getSendBackFee( ) {
 		return this.sendBackFee;
 	}
 
-	public void setStoreName(String storeName) {
+    /**
+     * Sets store name.
+     *
+     * @param storeName the store name
+     */
+    public void setStoreName(String storeName) {
 		this.storeName = storeName;
 	}
-	public String getStoreName( ) {
+
+    /**
+     * Gets store name.
+     *
+     * @return the store name
+     */
+    public String getStoreName( ) {
 		return this.storeName;
 	}
 
-	public void setTradeNo(String tradeNo) {
+    /**
+     * Sets trade no.
+     *
+     * @param tradeNo the trade no
+     */
+    public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
-	public String getTradeNo( ) {
+
+    /**
+     * Gets trade no.
+     *
+     * @return the trade no
+     */
+    public String getTradeNo( ) {
 		return this.tradeNo;
 	}
 

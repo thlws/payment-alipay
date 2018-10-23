@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoMycarParkingCardidQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2122422724879467746L;
+	private static final long serialVersionUID = 4353984879138288866L;
 
 	/**
 	 * 如果商户订单号为空，停车场id和车牌号不能为空，商户订单号优先查询
@@ -37,31 +37,75 @@ public class AlipayEcoMycarParkingCardidQueryModel extends AlipayObject {
 	@ApiField("transaction_no")
 	private String transactionNo;
 
-	public String getCarNumber() {
+    /**
+     * Gets car number.
+     *
+     * @return the car number
+     */
+    public String getCarNumber() {
 		return this.carNumber;
 	}
-	public void setCarNumber(String carNumber) {
+
+    /**
+     * Sets car number.
+     *
+     * @param carNumber the car number
+     */
+    public void setCarNumber(String carNumber) {
 		this.carNumber = carNumber;
 	}
 
-	public String getParkingId() {
+    /**
+     * Gets parking id.
+     *
+     * @return the parking id
+     */
+    public String getParkingId() {
 		return this.parkingId;
 	}
-	public void setParkingId(String parkingId) {
+
+    /**
+     * Sets parking id.
+     *
+     * @param parkingId the parking id
+     */
+    public void setParkingId(String parkingId) {
 		this.parkingId = parkingId;
 	}
 
-	public String getSelTime() {
+    /**
+     * Gets sel time.
+     *
+     * @return the sel time
+     */
+    public String getSelTime() {
 		return this.selTime;
 	}
-	public void setSelTime(String selTime) {
+
+    /**
+     * Sets sel time.
+     *
+     * @param selTime the sel time
+     */
+    public void setSelTime(String selTime) {
 		this.selTime = selTime;
 	}
 
-	public String getTransactionNo() {
+    /**
+     * Gets transaction no.
+     *
+     * @return the transaction no
+     */
+    public String getTransactionNo() {
 		return this.transactionNo;
 	}
-	public void setTransactionNo(String transactionNo) {
+
+    /**
+     * Sets transaction no.
+     *
+     * @param transactionNo the transaction no
+     */
+    public void setTransactionNo(String transactionNo) {
 		this.transactionNo = transactionNo;
 	}
 

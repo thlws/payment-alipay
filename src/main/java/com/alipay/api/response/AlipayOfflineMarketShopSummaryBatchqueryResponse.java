@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.market.shop.summary.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-02-17 14:20:04
+ * @since 1.0, 2018-07-11 16:55:00
  */
 public class AlipayOfflineMarketShopSummaryBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7545636673788443167L;
+	private static final long serialVersionUID = 2584757936656287611L;
 
 	/** 
 	 * 当前页码
@@ -48,38 +48,93 @@ public class AlipayOfflineMarketShopSummaryBatchqueryResponse extends AlipayResp
 	@ApiField("total_page_no")
 	private String totalPageNo;
 
-	public void setCurrentPageNo(String currentPageNo) {
+    /**
+     * Sets current page no.
+     *
+     * @param currentPageNo the current page no
+     */
+    public void setCurrentPageNo(String currentPageNo) {
 		this.currentPageNo = currentPageNo;
 	}
-	public String getCurrentPageNo( ) {
+
+    /**
+     * Gets current page no.
+     *
+     * @return the current page no
+     */
+    public String getCurrentPageNo( ) {
 		return this.currentPageNo;
 	}
 
-	public void setPageSize(String pageSize) {
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(String pageSize) {
 		this.pageSize = pageSize;
 	}
-	public String getPageSize( ) {
+
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public String getPageSize( ) {
 		return this.pageSize;
 	}
 
-	public void setShopSummaryInfos(List<ShopSummaryQueryResponse> shopSummaryInfos) {
+    /**
+     * Sets shop summary infos.
+     *
+     * @param shopSummaryInfos the shop summary infos
+     */
+    public void setShopSummaryInfos(List<ShopSummaryQueryResponse> shopSummaryInfos) {
 		this.shopSummaryInfos = shopSummaryInfos;
 	}
-	public List<ShopSummaryQueryResponse> getShopSummaryInfos( ) {
+
+    /**
+     * Gets shop summary infos.
+     *
+     * @return the shop summary infos
+     */
+    public List<ShopSummaryQueryResponse> getShopSummaryInfos( ) {
 		return this.shopSummaryInfos;
 	}
 
-	public void setTotalItems(String totalItems) {
+    /**
+     * Sets total items.
+     *
+     * @param totalItems the total items
+     */
+    public void setTotalItems(String totalItems) {
 		this.totalItems = totalItems;
 	}
-	public String getTotalItems( ) {
+
+    /**
+     * Gets total items.
+     *
+     * @return the total items
+     */
+    public String getTotalItems( ) {
 		return this.totalItems;
 	}
 
-	public void setTotalPageNo(String totalPageNo) {
+    /**
+     * Sets total page no.
+     *
+     * @param totalPageNo the total page no
+     */
+    public void setTotalPageNo(String totalPageNo) {
 		this.totalPageNo = totalPageNo;
 	}
-	public String getTotalPageNo( ) {
+
+    /**
+     * Gets total page no.
+     *
+     * @return the total page no
+     */
+    public String getTotalPageNo( ) {
 		return this.totalPageNo;
 	}
 

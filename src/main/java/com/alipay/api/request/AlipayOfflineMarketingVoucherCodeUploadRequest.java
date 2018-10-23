@@ -11,9 +11,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.offline.marketing.voucher.code.upload request
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-23 17:58:11
+ * @since 1.0, 2018-08-22 11:31:56
  */
 public class AlipayOfflineMarketingVoucherCodeUploadRequest implements AlipayUploadRequest<AlipayOfflineMarketingVoucherCodeUploadResponse> {
 
@@ -35,24 +35,57 @@ public class AlipayOfflineMarketingVoucherCodeUploadRequest implements AlipayUpl
 	 */
 	private FileItem fileContent;
 
-	public void setExtendParams(String extendParams) {
+    /**
+     * Sets extend params.
+     *
+     * @param extendParams the extend params
+     */
+    public void setExtendParams(String extendParams) {
 		this.extendParams = extendParams;
 	}
-	public String getExtendParams() {
+
+    /**
+     * Gets extend params.
+     *
+     * @return the extend params
+     */
+    public String getExtendParams() {
 		return this.extendParams;
 	}
 
-	public void setFileCharset(String fileCharset) {
+    /**
+     * Sets file charset.
+     *
+     * @param fileCharset the file charset
+     */
+    public void setFileCharset(String fileCharset) {
 		this.fileCharset = fileCharset;
 	}
-	public String getFileCharset() {
+
+    /**
+     * Gets file charset.
+     *
+     * @return the file charset
+     */
+    public String getFileCharset() {
 		return this.fileCharset;
 	}
 
-	public void setFileContent(FileItem fileContent) {
+    /**
+     * Sets file content.
+     *
+     * @param fileContent the file content
+     */
+    public void setFileContent(FileItem fileContent) {
 		this.fileContent = fileContent;
 	}
-	public FileItem getFileContent() {
+
+    /**
+     * Gets file content.
+     *
+     * @return the file content
+     */
+    public FileItem getFileContent() {
 		return this.fileContent;
 	}
 	private String terminalType;
@@ -123,8 +156,14 @@ public class AlipayOfflineMarketingVoucherCodeUploadRequest implements AlipayUpl
 		}
 		return txtParams;
 	}
-	
-	public void putOtherTextParam(String key, String value) {
+
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

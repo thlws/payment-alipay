@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户智能活动配置方案接口
  *
  * @author auto create
- * @since 1.0, 2017-07-26 11:31:50
+ * @since 1.0, 2018-07-26 14:02:41
  */
 public class KoubeiMarketingDataSmartactivityConfigModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3198217179476738732L;
+	private static final long serialVersionUID = 5612331181994393467L;
 
 	/**
 	 * 诊断结果CODE，目前有如下四个值
@@ -24,10 +24,21 @@ SUPER_ITEM  建议打造单品爆款(适用于菜品营销)
 	@ApiField("diagnose_code")
 	private String diagnoseCode;
 
-	public String getDiagnoseCode() {
+    /**
+     * Gets diagnose code.
+     *
+     * @return the diagnose code
+     */
+    public String getDiagnoseCode() {
 		return this.diagnoseCode;
 	}
-	public void setDiagnoseCode(String diagnoseCode) {
+
+    /**
+     * Sets diagnose code.
+     *
+     * @param diagnoseCode the diagnose code
+     */
+    public void setDiagnoseCode(String diagnoseCode) {
 		this.diagnoseCode = diagnoseCode;
 	}
 

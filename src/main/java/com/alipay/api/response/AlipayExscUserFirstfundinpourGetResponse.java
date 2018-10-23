@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.exsc.user.firstfundinpour.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-07 16:23:40
+ * @since 1.0, 2017-12-07 16:30:37
  */
 public class AlipayExscUserFirstfundinpourGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6512632868156718974L;
+	private static final long serialVersionUID = 5471434322397198915L;
 
 	/** 
 	 * 返回结果的业务类型。首次资金流入业务类型 （first_fund_inpour）
@@ -28,17 +28,39 @@ public class AlipayExscUserFirstfundinpourGetResponse extends AlipayResponse {
 	@ApiField("success")
 	private Boolean success;
 
-	public void setBizType(String bizType) {
+    /**
+     * Sets biz type.
+     *
+     * @param bizType the biz type
+     */
+    public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
-	public String getBizType( ) {
+
+    /**
+     * Gets biz type.
+     *
+     * @return the biz type
+     */
+    public String getBizType( ) {
 		return this.bizType;
 	}
 
-	public void setSuccess(Boolean success) {
+    /**
+     * Sets success.
+     *
+     * @param success the success
+     */
+    public void setSuccess(Boolean success) {
 		this.success = success;
 	}
-	public Boolean getSuccess( ) {
+
+    /**
+     * Gets success.
+     *
+     * @return the success
+     */
+    public Boolean getSuccess( ) {
 		return this.success;
 	}
 

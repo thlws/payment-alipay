@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMarketingToolIsvMerchantQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5582222771589562425L;
+	private static final long serialVersionUID = 3813621434882942548L;
 
 	/**
 	 * 页码
@@ -25,17 +25,39 @@ public class KoubeiMarketingToolIsvMerchantQueryModel extends AlipayObject {
 	@ApiField("page_size")
 	private String pageSize;
 
-	public String getPageNum() {
+    /**
+     * Gets page num.
+     *
+     * @return the page num
+     */
+    public String getPageNum() {
 		return this.pageNum;
 	}
-	public void setPageNum(String pageNum) {
+
+    /**
+     * Sets page num.
+     *
+     * @param pageNum the page num
+     */
+    public void setPageNum(String pageNum) {
 		this.pageNum = pageNum;
 	}
 
-	public String getPageSize() {
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public String getPageSize() {
 		return this.pageSize;
 	}
-	public void setPageSize(String pageSize) {
+
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(String pageSize) {
 		this.pageSize = pageSize;
 	}
 

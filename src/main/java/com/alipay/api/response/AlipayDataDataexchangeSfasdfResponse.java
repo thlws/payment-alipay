@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.data.dataexchange.sfasdf response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-03-18 20:58:13
  */
 public class AlipayDataDataexchangeSfasdfResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2162497865175299674L;
+	private static final long serialVersionUID = 3632723243173988287L;
 
 	/** 
 	 * dsfagshdj
@@ -58,45 +58,111 @@ public class AlipayDataDataexchangeSfasdfResponse extends AlipayResponse {
 	@ApiField("alipay_item_goods_list")
 	private List<AlipayItemGoodsList> wrty;
 
-	public void setAzxfghd(List<String> azxfghd) {
+    /**
+     * Sets azxfghd.
+     *
+     * @param azxfghd the azxfghd
+     */
+    public void setAzxfghd(List<String> azxfghd) {
 		this.azxfghd = azxfghd;
 	}
-	public List<String> getAzxfghd( ) {
+
+    /**
+     * Gets azxfghd.
+     *
+     * @return the azxfghd
+     */
+    public List<String> getAzxfghd( ) {
 		return this.azxfghd;
 	}
 
-	public void setGfdhsdasafg(List<String> gfdhsdasafg) {
+    /**
+     * Sets gfdhsdasafg.
+     *
+     * @param gfdhsdasafg the gfdhsdasafg
+     */
+    public void setGfdhsdasafg(List<String> gfdhsdasafg) {
 		this.gfdhsdasafg = gfdhsdasafg;
 	}
-	public List<String> getGfdhsdasafg( ) {
+
+    /**
+     * Gets gfdhsdasafg.
+     *
+     * @return the gfdhsdasafg
+     */
+    public List<String> getGfdhsdasafg( ) {
 		return this.gfdhsdasafg;
 	}
 
-	public void setGfhjfdsa(List<String> gfhjfdsa) {
+    /**
+     * Sets gfhjfdsa.
+     *
+     * @param gfhjfdsa the gfhjfdsa
+     */
+    public void setGfhjfdsa(List<String> gfhjfdsa) {
 		this.gfhjfdsa = gfhjfdsa;
 	}
-	public List<String> getGfhjfdsa( ) {
+
+    /**
+     * Gets gfhjfdsa.
+     *
+     * @return the gfhjfdsa
+     */
+    public List<String> getGfhjfdsa( ) {
 		return this.gfhjfdsa;
 	}
 
-	public void setGhjfdsafgh(List<String> ghjfdsafgh) {
+    /**
+     * Sets ghjfdsafgh.
+     *
+     * @param ghjfdsafgh the ghjfdsafgh
+     */
+    public void setGhjfdsafgh(List<String> ghjfdsafgh) {
 		this.ghjfdsafgh = ghjfdsafgh;
 	}
-	public List<String> getGhjfdsafgh( ) {
+
+    /**
+     * Gets ghjfdsafgh.
+     *
+     * @return the ghjfdsafgh
+     */
+    public List<String> getGhjfdsafgh( ) {
 		return this.ghjfdsafgh;
 	}
 
-	public void setSdvsdv(String sdvsdv) {
+    /**
+     * Sets sdvsdv.
+     *
+     * @param sdvsdv the sdvsdv
+     */
+    public void setSdvsdv(String sdvsdv) {
 		this.sdvsdv = sdvsdv;
 	}
-	public String getSdvsdv( ) {
+
+    /**
+     * Gets sdvsdv.
+     *
+     * @return the sdvsdv
+     */
+    public String getSdvsdv( ) {
 		return this.sdvsdv;
 	}
 
-	public void setWrty(List<AlipayItemGoodsList> wrty) {
+    /**
+     * Sets wrty.
+     *
+     * @param wrty the wrty
+     */
+    public void setWrty(List<AlipayItemGoodsList> wrty) {
 		this.wrty = wrty;
 	}
-	public List<AlipayItemGoodsList> getWrty( ) {
+
+    /**
+     * Gets wrty.
+     *
+     * @return the wrty
+     */
+    public List<AlipayItemGoodsList> getWrty( ) {
 		return this.wrty;
 	}
 

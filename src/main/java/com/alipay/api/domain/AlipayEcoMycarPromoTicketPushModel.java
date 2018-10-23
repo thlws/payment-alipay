@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoMycarPromoTicketPushModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8226764826998497744L;
+	private static final long serialVersionUID = 2115723569816158253L;
 
 	/**
 	 * 核销流水
@@ -37,31 +37,75 @@ public class AlipayEcoMycarPromoTicketPushModel extends AlipayObject {
 	@ApiField("ticket_id")
 	private String ticketId;
 
-	public String getApplyNo() {
+    /**
+     * Gets apply no.
+     *
+     * @return the apply no
+     */
+    public String getApplyNo() {
 		return this.applyNo;
 	}
-	public void setApplyNo(String applyNo) {
+
+    /**
+     * Sets apply no.
+     *
+     * @param applyNo the apply no
+     */
+    public void setApplyNo(String applyNo) {
 		this.applyNo = applyNo;
 	}
 
-	public String getApplyStatus() {
+    /**
+     * Gets apply status.
+     *
+     * @return the apply status
+     */
+    public String getApplyStatus() {
 		return this.applyStatus;
 	}
-	public void setApplyStatus(String applyStatus) {
+
+    /**
+     * Sets apply status.
+     *
+     * @param applyStatus the apply status
+     */
+    public void setApplyStatus(String applyStatus) {
 		this.applyStatus = applyStatus;
 	}
 
-	public String getCodeNo() {
+    /**
+     * Gets code no.
+     *
+     * @return the code no
+     */
+    public String getCodeNo() {
 		return this.codeNo;
 	}
-	public void setCodeNo(String codeNo) {
+
+    /**
+     * Sets code no.
+     *
+     * @param codeNo the code no
+     */
+    public void setCodeNo(String codeNo) {
 		this.codeNo = codeNo;
 	}
 
-	public String getTicketId() {
+    /**
+     * Gets ticket id.
+     *
+     * @return the ticket id
+     */
+    public String getTicketId() {
 		return this.ticketId;
 	}
-	public void setTicketId(String ticketId) {
+
+    /**
+     * Sets ticket id.
+     *
+     * @param ticketId the ticket id
+     */
+    public void setTicketId(String ticketId) {
 		this.ticketId = ticketId;
 	}
 

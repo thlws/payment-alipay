@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMarketingDataActivityReportQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5262325883865685285L;
+	private static final long serialVersionUID = 2717452442225323327L;
 
 	/**
 	 * 查询报表数据的业务日期列表，精确到天，格式为yyyymmdd，支持列表格式，数据按天返回
@@ -25,17 +25,39 @@ public class KoubeiMarketingDataActivityReportQueryModel extends AlipayObject {
 	@ApiField("camp_id")
 	private String campId;
 
-	public String getBizDate() {
+    /**
+     * Gets biz date.
+     *
+     * @return the biz date
+     */
+    public String getBizDate() {
 		return this.bizDate;
 	}
-	public void setBizDate(String bizDate) {
+
+    /**
+     * Sets biz date.
+     *
+     * @param bizDate the biz date
+     */
+    public void setBizDate(String bizDate) {
 		this.bizDate = bizDate;
 	}
 
-	public String getCampId() {
+    /**
+     * Gets camp id.
+     *
+     * @return the camp id
+     */
+    public String getCampId() {
 		return this.campId;
 	}
-	public void setCampId(String campId) {
+
+    /**
+     * Sets camp id.
+     *
+     * @param campId the camp id
+     */
+    public void setCampId(String campId) {
 		this.campId = campId;
 	}
 

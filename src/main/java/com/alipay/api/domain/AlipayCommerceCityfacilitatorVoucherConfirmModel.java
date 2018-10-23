@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceCityfacilitatorVoucherConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7424441374443536267L;
+	private static final long serialVersionUID = 6618412874864919599L;
 
 	/**
 	 * 金额，元为单位
@@ -103,108 +103,273 @@ public class AlipayCommerceCityfacilitatorVoucherConfirmModel extends AlipayObje
 	@ApiField("trade_no")
 	private String tradeNo;
 
-	public String getAmount() {
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public String getAmount() {
 		return this.amount;
 	}
-	public void setAmount(String amount) {
+
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
-	public String getBizInfoExt() {
+    /**
+     * Gets biz info ext.
+     *
+     * @return the biz info ext
+     */
+    public String getBizInfoExt() {
 		return this.bizInfoExt;
 	}
-	public void setBizInfoExt(String bizInfoExt) {
+
+    /**
+     * Sets biz info ext.
+     *
+     * @param bizInfoExt the biz info ext
+     */
+    public void setBizInfoExt(String bizInfoExt) {
 		this.bizInfoExt = bizInfoExt;
 	}
 
-	public String getBizRequestId() {
+    /**
+     * Gets biz request id.
+     *
+     * @return the biz request id
+     */
+    public String getBizRequestId() {
 		return this.bizRequestId;
 	}
-	public void setBizRequestId(String bizRequestId) {
+
+    /**
+     * Sets biz request id.
+     *
+     * @param bizRequestId the biz request id
+     */
+    public void setBizRequestId(String bizRequestId) {
 		this.bizRequestId = bizRequestId;
 	}
 
-	public String getCityCode() {
+    /**
+     * Gets city code.
+     *
+     * @return the city code
+     */
+    public String getCityCode() {
 		return this.cityCode;
 	}
-	public void setCityCode(String cityCode) {
+
+    /**
+     * Sets city code.
+     *
+     * @param cityCode the city code
+     */
+    public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
 	}
 
-	public String getEndStation() {
+    /**
+     * Gets end station.
+     *
+     * @return the end station
+     */
+    public String getEndStation() {
 		return this.endStation;
 	}
-	public void setEndStation(String endStation) {
+
+    /**
+     * Sets end station.
+     *
+     * @param endStation the end station
+     */
+    public void setEndStation(String endStation) {
 		this.endStation = endStation;
 	}
 
-	public String getExchangeIds() {
+    /**
+     * Gets exchange ids.
+     *
+     * @return the exchange ids
+     */
+    public String getExchangeIds() {
 		return this.exchangeIds;
 	}
-	public void setExchangeIds(String exchangeIds) {
+
+    /**
+     * Sets exchange ids.
+     *
+     * @param exchangeIds the exchange ids
+     */
+    public void setExchangeIds(String exchangeIds) {
 		this.exchangeIds = exchangeIds;
 	}
 
-	public String getOperateTime() {
+    /**
+     * Gets operate time.
+     *
+     * @return the operate time
+     */
+    public String getOperateTime() {
 		return this.operateTime;
 	}
-	public void setOperateTime(String operateTime) {
+
+    /**
+     * Sets operate time.
+     *
+     * @param operateTime the operate time
+     */
+    public void setOperateTime(String operateTime) {
 		this.operateTime = operateTime;
 	}
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
-	public String getQuantity() {
+    /**
+     * Gets quantity.
+     *
+     * @return the quantity
+     */
+    public String getQuantity() {
 		return this.quantity;
 	}
-	public void setQuantity(String quantity) {
+
+    /**
+     * Sets quantity.
+     *
+     * @param quantity the quantity
+     */
+    public void setQuantity(String quantity) {
 		this.quantity = quantity;
 	}
 
-	public String getSellerId() {
+    /**
+     * Gets seller id.
+     *
+     * @return the seller id
+     */
+    public String getSellerId() {
 		return this.sellerId;
 	}
-	public void setSellerId(String sellerId) {
+
+    /**
+     * Sets seller id.
+     *
+     * @param sellerId the seller id
+     */
+    public void setSellerId(String sellerId) {
 		this.sellerId = sellerId;
 	}
 
-	public String getStartStation() {
+    /**
+     * Gets start station.
+     *
+     * @return the start station
+     */
+    public String getStartStation() {
 		return this.startStation;
 	}
-	public void setStartStation(String startStation) {
+
+    /**
+     * Sets start station.
+     *
+     * @param startStation the start station
+     */
+    public void setStartStation(String startStation) {
 		this.startStation = startStation;
 	}
 
-	public String getTicketNo() {
+    /**
+     * Gets ticket no.
+     *
+     * @return the ticket no
+     */
+    public String getTicketNo() {
 		return this.ticketNo;
 	}
-	public void setTicketNo(String ticketNo) {
+
+    /**
+     * Sets ticket no.
+     *
+     * @param ticketNo the ticket no
+     */
+    public void setTicketNo(String ticketNo) {
 		this.ticketNo = ticketNo;
 	}
 
-	public String getTicketPrice() {
+    /**
+     * Gets ticket price.
+     *
+     * @return the ticket price
+     */
+    public String getTicketPrice() {
 		return this.ticketPrice;
 	}
-	public void setTicketPrice(String ticketPrice) {
+
+    /**
+     * Sets ticket price.
+     *
+     * @param ticketPrice the ticket price
+     */
+    public void setTicketPrice(String ticketPrice) {
 		this.ticketPrice = ticketPrice;
 	}
 
-	public String getTicketType() {
+    /**
+     * Gets ticket type.
+     *
+     * @return the ticket type
+     */
+    public String getTicketType() {
 		return this.ticketType;
 	}
-	public void setTicketType(String ticketType) {
+
+    /**
+     * Sets ticket type.
+     *
+     * @param ticketType the ticket type
+     */
+    public void setTicketType(String ticketType) {
 		this.ticketType = ticketType;
 	}
 
-	public String getTradeNo() {
+    /**
+     * Gets trade no.
+     *
+     * @return the trade no
+     */
+    public String getTradeNo() {
 		return this.tradeNo;
 	}
-	public void setTradeNo(String tradeNo) {
+
+    /**
+     * Sets trade no.
+     *
+     * @param tradeNo the trade no
+     */
+    public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
 

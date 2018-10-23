@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.edu.kt.billing.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-08-03 10:58:42
+ * @since 1.0, 2018-09-19 11:07:27
  */
 public class AlipayEcoEduKtBillingQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2379398114475464742L;
+	private static final long serialVersionUID = 6757386967738545776L;
 
 	/** 
 	 * NOT_PAY  待缴费
@@ -31,17 +31,39 @@ ISV_CLOSED 账单关闭
 	@ApiField("out_trade_no")
 	private String outTradeNo;
 
-	public void setOrderStatus(String orderStatus) {
+    /**
+     * Sets order status.
+     *
+     * @param orderStatus the order status
+     */
+    public void setOrderStatus(String orderStatus) {
 		this.orderStatus = orderStatus;
 	}
-	public String getOrderStatus( ) {
+
+    /**
+     * Gets order status.
+     *
+     * @return the order status
+     */
+    public String getOrderStatus( ) {
 		return this.orderStatus;
 	}
 
-	public void setOutTradeNo(String outTradeNo) {
+    /**
+     * Sets out trade no.
+     *
+     * @param outTradeNo the out trade no
+     */
+    public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
-	public String getOutTradeNo( ) {
+
+    /**
+     * Gets out trade no.
+     *
+     * @return the out trade no
+     */
+    public String getOutTradeNo( ) {
 		return this.outTradeNo;
 	}
 

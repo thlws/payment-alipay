@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.ecapiprod.drawndn.drawndnlist.query request
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-03-29 11:34:45
  */
@@ -43,38 +43,93 @@ public class AlipayEcapiprodDrawndnDrawndnlistQueryRequest implements AlipayRequ
 	 */
 	private String orgCode;
 
-	public void setCreditNo(String creditNo) {
+    /**
+     * Sets credit no.
+     *
+     * @param creditNo the credit no
+     */
+    public void setCreditNo(String creditNo) {
 		this.creditNo = creditNo;
 	}
-	public String getCreditNo() {
+
+    /**
+     * Gets credit no.
+     *
+     * @return the credit no
+     */
+    public String getCreditNo() {
 		return this.creditNo;
 	}
 
-	public void setEntityCode(String entityCode) {
+    /**
+     * Sets entity code.
+     *
+     * @param entityCode the entity code
+     */
+    public void setEntityCode(String entityCode) {
 		this.entityCode = entityCode;
 	}
-	public String getEntityCode() {
+
+    /**
+     * Gets entity code.
+     *
+     * @return the entity code
+     */
+    public String getEntityCode() {
 		return this.entityCode;
 	}
 
-	public void setEntityName(String entityName) {
+    /**
+     * Sets entity name.
+     *
+     * @param entityName the entity name
+     */
+    public void setEntityName(String entityName) {
 		this.entityName = entityName;
 	}
-	public String getEntityName() {
+
+    /**
+     * Gets entity name.
+     *
+     * @return the entity name
+     */
+    public String getEntityName() {
 		return this.entityName;
 	}
 
-	public void setIsvCode(String isvCode) {
+    /**
+     * Sets isv code.
+     *
+     * @param isvCode the isv code
+     */
+    public void setIsvCode(String isvCode) {
 		this.isvCode = isvCode;
 	}
-	public String getIsvCode() {
+
+    /**
+     * Gets isv code.
+     *
+     * @return the isv code
+     */
+    public String getIsvCode() {
 		return this.isvCode;
 	}
 
-	public void setOrgCode(String orgCode) {
+    /**
+     * Sets org code.
+     *
+     * @param orgCode the org code
+     */
+    public void setOrgCode(String orgCode) {
 		this.orgCode = orgCode;
 	}
-	public String getOrgCode() {
+
+    /**
+     * Gets org code.
+     *
+     * @return the org code
+     */
+    public String getOrgCode() {
 		return this.orgCode;
 	}
 	private String terminalType;
@@ -150,7 +205,13 @@ public class AlipayEcapiprodDrawndnDrawndnlistQueryRequest implements AlipayRequ
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

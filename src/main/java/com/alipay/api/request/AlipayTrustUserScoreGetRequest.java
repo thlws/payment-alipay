@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.trust.user.score.get request
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-01-04 10:16:11
  */
@@ -85,7 +85,13 @@ public class AlipayTrustUserScoreGetRequest implements AlipayRequest<AlipayTrust
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

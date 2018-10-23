@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class TableInfoResult extends AlipayObject {
 
-	private static final long serialVersionUID = 4491958751645459271L;
+	private static final long serialVersionUID = 3714446549181616391L;
 
 	/**
 	 * 返回TableListResult集合
@@ -23,10 +23,21 @@ public class TableInfoResult extends AlipayObject {
 	@ApiField("table_list_result")
 	private List<TableListResult> tableInfoList;
 
-	public List<TableListResult> getTableInfoList() {
+    /**
+     * Gets table info list.
+     *
+     * @return the table info list
+     */
+    public List<TableListResult> getTableInfoList() {
 		return this.tableInfoList;
 	}
-	public void setTableInfoList(List<TableListResult> tableInfoList) {
+
+    /**
+     * Sets table info list.
+     *
+     * @param tableInfoList the table info list
+     */
+    public void setTableInfoList(List<TableListResult> tableInfoList) {
 		this.tableInfoList = tableInfoList;
 	}
 

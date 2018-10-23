@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.menu.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-05-25 11:39:51
+ * @since 1.0, 2018-07-25 13:52:27
  */
 public class AlipayOpenPublicMenuBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6824522993141817739L;
+	private static final long serialVersionUID = 3793534158161868593L;
 
 	/** 
 	 * 菜单数量，包括默认菜单和个性化菜单
@@ -30,17 +30,39 @@ public class AlipayOpenPublicMenuBatchqueryResponse extends AlipayResponse {
 	@ApiField("query_menu")
 	private List<QueryMenu> menus;
 
-	public void setCount(String count) {
+    /**
+     * Sets count.
+     *
+     * @param count the count
+     */
+    public void setCount(String count) {
 		this.count = count;
 	}
-	public String getCount( ) {
+
+    /**
+     * Gets count.
+     *
+     * @return the count
+     */
+    public String getCount( ) {
 		return this.count;
 	}
 
-	public void setMenus(List<QueryMenu> menus) {
+    /**
+     * Sets menus.
+     *
+     * @param menus the menus
+     */
+    public void setMenus(List<QueryMenu> menus) {
 		this.menus = menus;
 	}
-	public List<QueryMenu> getMenus( ) {
+
+    /**
+     * Gets menus.
+     *
+     * @return the menus
+     */
+    public List<QueryMenu> getMenus( ) {
 		return this.menus;
 	}
 

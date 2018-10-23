@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.flashsales.stock.sync.update response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2014-08-22 15:32:32
  */
 public class AlipayFlashsalesStockSyncUpdateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8267911869852667476L;
+	private static final long serialVersionUID = 4149696464264524184L;
 
 	/** 
 	 * 成功时返回的业务参数信息。
@@ -32,10 +32,21 @@ public class AlipayFlashsalesStockSyncUpdateResponse extends AlipayResponse {
 	@ApiField("success")
 	private String success;
 
-	public void setBizResult(String bizResult) {
+    /**
+     * Sets biz result.
+     *
+     * @param bizResult the biz result
+     */
+    public void setBizResult(String bizResult) {
 		this.bizResult = bizResult;
 	}
-	public String getBizResult( ) {
+
+    /**
+     * Gets biz result.
+     *
+     * @return the biz result
+     */
+    public String getBizResult( ) {
 		return this.bizResult;
 	}
 
@@ -46,10 +57,21 @@ public class AlipayFlashsalesStockSyncUpdateResponse extends AlipayResponse {
 		return this.errorCode;
 	}
 
-	public void setSuccess(String success) {
+    /**
+     * Sets success.
+     *
+     * @param success the success
+     */
+    public void setSuccess(String success) {
 		this.success = success;
 	}
-	public String getSuccess( ) {
+
+    /**
+     * Gets success.
+     *
+     * @return the success
+     */
+    public String getSuccess( ) {
 		return this.success;
 	}
 

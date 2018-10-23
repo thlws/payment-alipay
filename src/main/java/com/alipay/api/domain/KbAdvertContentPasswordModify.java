@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KbAdvertContentPasswordModify extends AlipayObject {
 
-	private static final long serialVersionUID = 4626798531485156376L;
+	private static final long serialVersionUID = 2274184735192184968L;
 
 	/**
 	 * 口令红包背景图的django ID
@@ -37,31 +37,75 @@ public class KbAdvertContentPasswordModify extends AlipayObject {
 	@ApiField("voucher_logo_id")
 	private String voucherLogoId;
 
-	public String getBackgroundImgId() {
+    /**
+     * Gets background img id.
+     *
+     * @return the background img id
+     */
+    public String getBackgroundImgId() {
 		return this.backgroundImgId;
 	}
-	public void setBackgroundImgId(String backgroundImgId) {
+
+    /**
+     * Sets background img id.
+     *
+     * @param backgroundImgId the background img id
+     */
+    public void setBackgroundImgId(String backgroundImgId) {
 		this.backgroundImgId = backgroundImgId;
 	}
 
-	public String getBrandName() {
+    /**
+     * Gets brand name.
+     *
+     * @return the brand name
+     */
+    public String getBrandName() {
 		return this.brandName;
 	}
-	public void setBrandName(String brandName) {
+
+    /**
+     * Sets brand name.
+     *
+     * @param brandName the brand name
+     */
+    public void setBrandName(String brandName) {
 		this.brandName = brandName;
 	}
 
-	public String getPassword() {
+    /**
+     * Gets password.
+     *
+     * @return the password
+     */
+    public String getPassword() {
 		return this.password;
 	}
-	public void setPassword(String password) {
+
+    /**
+     * Sets password.
+     *
+     * @param password the password
+     */
+    public void setPassword(String password) {
 		this.password = password;
 	}
 
-	public String getVoucherLogoId() {
+    /**
+     * Gets voucher logo id.
+     *
+     * @return the voucher logo id
+     */
+    public String getVoucherLogoId() {
 		return this.voucherLogoId;
 	}
-	public void setVoucherLogoId(String voucherLogoId) {
+
+    /**
+     * Sets voucher logo id.
+     *
+     * @param voucherLogoId the voucher logo id
+     */
+    public void setVoucherLogoId(String voucherLogoId) {
 		this.voucherLogoId = voucherLogoId;
 	}
 

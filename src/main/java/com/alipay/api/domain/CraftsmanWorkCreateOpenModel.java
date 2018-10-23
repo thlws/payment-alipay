@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CraftsmanWorkCreateOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4489585728683732765L;
+	private static final long serialVersionUID = 4587986167166158551L;
 
 	/**
 	 * 视频资源必传，视频时长，单位(秒)
@@ -43,38 +43,93 @@ public class CraftsmanWorkCreateOpenModel extends AlipayObject {
 	@ApiField("title")
 	private String title;
 
-	public Long getDuration() {
+    /**
+     * Gets duration.
+     *
+     * @return the duration
+     */
+    public Long getDuration() {
 		return this.duration;
 	}
-	public void setDuration(Long duration) {
+
+    /**
+     * Sets duration.
+     *
+     * @param duration the duration
+     */
+    public void setDuration(Long duration) {
 		this.duration = duration;
 	}
 
-	public String getMediaId() {
+    /**
+     * Gets media id.
+     *
+     * @return the media id
+     */
+    public String getMediaId() {
 		return this.mediaId;
 	}
-	public void setMediaId(String mediaId) {
+
+    /**
+     * Sets media id.
+     *
+     * @param mediaId the media id
+     */
+    public void setMediaId(String mediaId) {
 		this.mediaId = mediaId;
 	}
 
-	public String getMediaType() {
+    /**
+     * Gets media type.
+     *
+     * @return the media type
+     */
+    public String getMediaType() {
 		return this.mediaType;
 	}
-	public void setMediaType(String mediaType) {
+
+    /**
+     * Sets media type.
+     *
+     * @param mediaType the media type
+     */
+    public void setMediaType(String mediaType) {
 		this.mediaType = mediaType;
 	}
 
-	public String getOutWorkId() {
+    /**
+     * Gets out work id.
+     *
+     * @return the out work id
+     */
+    public String getOutWorkId() {
 		return this.outWorkId;
 	}
-	public void setOutWorkId(String outWorkId) {
+
+    /**
+     * Sets out work id.
+     *
+     * @param outWorkId the out work id
+     */
+    public void setOutWorkId(String outWorkId) {
 		this.outWorkId = outWorkId;
 	}
 
-	public String getTitle() {
+    /**
+     * Gets title.
+     *
+     * @return the title
+     */
+    public String getTitle() {
 		return this.title;
 	}
-	public void setTitle(String title) {
+
+    /**
+     * Sets title.
+     *
+     * @param title the title
+     */
+    public void setTitle(String title) {
 		this.title = title;
 	}
 

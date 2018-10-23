@@ -9,9 +9,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.user.userinfo.share request
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-09-20 16:36:18
+ * @since 1.0, 2018-09-18 19:56:59
  */
 public class AlipayUserUserinfoShareRequest implements AlipayRequest<AlipayUserUserinfoShareResponse> {
 
@@ -85,7 +85,13 @@ public class AlipayUserUserinfoShareRequest implements AlipayRequest<AlipayUserU
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

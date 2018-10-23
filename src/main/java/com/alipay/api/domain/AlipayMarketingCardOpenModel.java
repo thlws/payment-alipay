@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCardOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6228393914424241296L;
+	private static final long serialVersionUID = 3615795318924733716L;
 
 	/**
 	 * 外部卡信息(biz_card_no无需填写)
@@ -63,52 +63,129 @@ open_card_channel用于区分渠道类型，例如取值为"SHOP"（门店），
 	@ApiField("out_serial_no")
 	private String outSerialNo;
 
-	public MerchantCard getCardExtInfo() {
+    /**
+     * Gets card ext info.
+     *
+     * @return the card ext info
+     */
+    public MerchantCard getCardExtInfo() {
 		return this.cardExtInfo;
 	}
-	public void setCardExtInfo(MerchantCard cardExtInfo) {
+
+    /**
+     * Sets card ext info.
+     *
+     * @param cardExtInfo the card ext info
+     */
+    public void setCardExtInfo(MerchantCard cardExtInfo) {
 		this.cardExtInfo = cardExtInfo;
 	}
 
-	public String getCardTemplateId() {
+    /**
+     * Gets card template id.
+     *
+     * @return the card template id
+     */
+    public String getCardTemplateId() {
 		return this.cardTemplateId;
 	}
-	public void setCardTemplateId(String cardTemplateId) {
+
+    /**
+     * Sets card template id.
+     *
+     * @param cardTemplateId the card template id
+     */
+    public void setCardTemplateId(String cardTemplateId) {
 		this.cardTemplateId = cardTemplateId;
 	}
 
-	public CardUserInfo getCardUserInfo() {
+    /**
+     * Gets card user info.
+     *
+     * @return the card user info
+     */
+    public CardUserInfo getCardUserInfo() {
 		return this.cardUserInfo;
 	}
-	public void setCardUserInfo(CardUserInfo cardUserInfo) {
+
+    /**
+     * Sets card user info.
+     *
+     * @param cardUserInfo the card user info
+     */
+    public void setCardUserInfo(CardUserInfo cardUserInfo) {
 		this.cardUserInfo = cardUserInfo;
 	}
 
-	public MerchantMenber getMemberExtInfo() {
+    /**
+     * Gets member ext info.
+     *
+     * @return the member ext info
+     */
+    public MerchantMenber getMemberExtInfo() {
 		return this.memberExtInfo;
 	}
-	public void setMemberExtInfo(MerchantMenber memberExtInfo) {
+
+    /**
+     * Sets member ext info.
+     *
+     * @param memberExtInfo the member ext info
+     */
+    public void setMemberExtInfo(MerchantMenber memberExtInfo) {
 		this.memberExtInfo = memberExtInfo;
 	}
 
-	public String getOpenCardChannel() {
+    /**
+     * Gets open card channel.
+     *
+     * @return the open card channel
+     */
+    public String getOpenCardChannel() {
 		return this.openCardChannel;
 	}
-	public void setOpenCardChannel(String openCardChannel) {
+
+    /**
+     * Sets open card channel.
+     *
+     * @param openCardChannel the open card channel
+     */
+    public void setOpenCardChannel(String openCardChannel) {
 		this.openCardChannel = openCardChannel;
 	}
 
-	public String getOpenCardChannelId() {
+    /**
+     * Gets open card channel id.
+     *
+     * @return the open card channel id
+     */
+    public String getOpenCardChannelId() {
 		return this.openCardChannelId;
 	}
-	public void setOpenCardChannelId(String openCardChannelId) {
+
+    /**
+     * Sets open card channel id.
+     *
+     * @param openCardChannelId the open card channel id
+     */
+    public void setOpenCardChannelId(String openCardChannelId) {
 		this.openCardChannelId = openCardChannelId;
 	}
 
-	public String getOutSerialNo() {
+    /**
+     * Gets out serial no.
+     *
+     * @return the out serial no
+     */
+    public String getOutSerialNo() {
 		return this.outSerialNo;
 	}
-	public void setOutSerialNo(String outSerialNo) {
+
+    /**
+     * Sets out serial no.
+     *
+     * @param outSerialNo the out serial no
+     */
+    public void setOutSerialNo(String outSerialNo) {
 		this.outSerialNo = outSerialNo;
 	}
 

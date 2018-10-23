@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPcreditLoanApplyCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2394772453757184337L;
+	private static final long serialVersionUID = 1769612533488682948L;
 
 	/**
 	 * 申贷金额，单位为元
@@ -49,45 +49,111 @@ public class AlipayPcreditLoanApplyCreateModel extends AlipayObject {
 	@ApiField("scene")
 	private String scene;
 
-	public String getApplyAmt() {
+    /**
+     * Gets apply amt.
+     *
+     * @return the apply amt
+     */
+    public String getApplyAmt() {
 		return this.applyAmt;
 	}
-	public void setApplyAmt(String applyAmt) {
+
+    /**
+     * Sets apply amt.
+     *
+     * @param applyAmt the apply amt
+     */
+    public void setApplyAmt(String applyAmt) {
 		this.applyAmt = applyAmt;
 	}
 
-	public String getCertNo() {
+    /**
+     * Gets cert no.
+     *
+     * @return the cert no
+     */
+    public String getCertNo() {
 		return this.certNo;
 	}
-	public void setCertNo(String certNo) {
+
+    /**
+     * Sets cert no.
+     *
+     * @param certNo the cert no
+     */
+    public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
-	public Long getRatio() {
+    /**
+     * Gets ratio.
+     *
+     * @return the ratio
+     */
+    public Long getRatio() {
 		return this.ratio;
 	}
-	public void setRatio(Long ratio) {
+
+    /**
+     * Sets ratio.
+     *
+     * @param ratio the ratio
+     */
+    public void setRatio(Long ratio) {
 		this.ratio = ratio;
 	}
 
-	public String getScene() {
+    /**
+     * Gets scene.
+     *
+     * @return the scene
+     */
+    public String getScene() {
 		return this.scene;
 	}
-	public void setScene(String scene) {
+
+    /**
+     * Sets scene.
+     *
+     * @param scene the scene
+     */
+    public void setScene(String scene) {
 		this.scene = scene;
 	}
 

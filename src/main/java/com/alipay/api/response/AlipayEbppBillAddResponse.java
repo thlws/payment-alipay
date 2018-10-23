@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ebpp.bill.add response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-30 10:52:35
+ * @since 1.0, 2018-08-01 17:06:55
  */
 public class AlipayEbppBillAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8898174477571191831L;
+	private static final long serialVersionUID = 5486158183531366969L;
 
 	/** 
 	 * 支付宝的业务订单号，具有唯一性。
@@ -93,94 +93,237 @@ public class AlipayEbppBillAddResponse extends AlipayResponse {
 	@ApiField("sub_order_type")
 	private String subOrderType;
 
-	public void setAlipayOrderNo(String alipayOrderNo) {
+    /**
+     * Sets alipay order no.
+     *
+     * @param alipayOrderNo the alipay order no
+     */
+    public void setAlipayOrderNo(String alipayOrderNo) {
 		this.alipayOrderNo = alipayOrderNo;
 	}
-	public String getAlipayOrderNo( ) {
+
+    /**
+     * Gets alipay order no.
+     *
+     * @return the alipay order no
+     */
+    public String getAlipayOrderNo( ) {
 		return this.alipayOrderNo;
 	}
 
-	public void setBankBillNo(String bankBillNo) {
+    /**
+     * Sets bank bill no.
+     *
+     * @param bankBillNo the bank bill no
+     */
+    public void setBankBillNo(String bankBillNo) {
 		this.bankBillNo = bankBillNo;
 	}
-	public String getBankBillNo( ) {
+
+    /**
+     * Gets bank bill no.
+     *
+     * @return the bank bill no
+     */
+    public String getBankBillNo( ) {
 		return this.bankBillNo;
 	}
 
-	public void setBillDate(String billDate) {
+    /**
+     * Sets bill date.
+     *
+     * @param billDate the bill date
+     */
+    public void setBillDate(String billDate) {
 		this.billDate = billDate;
 	}
-	public String getBillDate( ) {
+
+    /**
+     * Gets bill date.
+     *
+     * @return the bill date
+     */
+    public String getBillDate( ) {
 		return this.billDate;
 	}
 
-	public void setBillKey(String billKey) {
+    /**
+     * Sets bill key.
+     *
+     * @param billKey the bill key
+     */
+    public void setBillKey(String billKey) {
 		this.billKey = billKey;
 	}
-	public String getBillKey( ) {
+
+    /**
+     * Gets bill key.
+     *
+     * @return the bill key
+     */
+    public String getBillKey( ) {
 		return this.billKey;
 	}
 
-	public void setChargeInst(String chargeInst) {
+    /**
+     * Sets charge inst.
+     *
+     * @param chargeInst the charge inst
+     */
+    public void setChargeInst(String chargeInst) {
 		this.chargeInst = chargeInst;
 	}
-	public String getChargeInst( ) {
+
+    /**
+     * Gets charge inst.
+     *
+     * @return the charge inst
+     */
+    public String getChargeInst( ) {
 		return this.chargeInst;
 	}
 
-	public void setChargeInstName(String chargeInstName) {
+    /**
+     * Sets charge inst name.
+     *
+     * @param chargeInstName the charge inst name
+     */
+    public void setChargeInstName(String chargeInstName) {
 		this.chargeInstName = chargeInstName;
 	}
-	public String getChargeInstName( ) {
+
+    /**
+     * Gets charge inst name.
+     *
+     * @return the charge inst name
+     */
+    public String getChargeInstName( ) {
 		return this.chargeInstName;
 	}
 
-	public void setExtendField(String extendField) {
+    /**
+     * Sets extend field.
+     *
+     * @param extendField the extend field
+     */
+    public void setExtendField(String extendField) {
 		this.extendField = extendField;
 	}
-	public String getExtendField( ) {
+
+    /**
+     * Gets extend field.
+     *
+     * @return the extend field
+     */
+    public String getExtendField( ) {
 		return this.extendField;
 	}
 
-	public void setMerchantOrderNo(String merchantOrderNo) {
+    /**
+     * Sets merchant order no.
+     *
+     * @param merchantOrderNo the merchant order no
+     */
+    public void setMerchantOrderNo(String merchantOrderNo) {
 		this.merchantOrderNo = merchantOrderNo;
 	}
-	public String getMerchantOrderNo( ) {
+
+    /**
+     * Gets merchant order no.
+     *
+     * @return the merchant order no
+     */
+    public String getMerchantOrderNo( ) {
 		return this.merchantOrderNo;
 	}
 
-	public void setOrderType(String orderType) {
+    /**
+     * Sets order type.
+     *
+     * @param orderType the order type
+     */
+    public void setOrderType(String orderType) {
 		this.orderType = orderType;
 	}
-	public String getOrderType( ) {
+
+    /**
+     * Gets order type.
+     *
+     * @return the order type
+     */
+    public String getOrderType( ) {
 		return this.orderType;
 	}
 
-	public void setOwnerName(String ownerName) {
+    /**
+     * Sets owner name.
+     *
+     * @param ownerName the owner name
+     */
+    public void setOwnerName(String ownerName) {
 		this.ownerName = ownerName;
 	}
-	public String getOwnerName( ) {
+
+    /**
+     * Gets owner name.
+     *
+     * @return the owner name
+     */
+    public String getOwnerName( ) {
 		return this.ownerName;
 	}
 
-	public void setPayAmount(String payAmount) {
+    /**
+     * Sets pay amount.
+     *
+     * @param payAmount the pay amount
+     */
+    public void setPayAmount(String payAmount) {
 		this.payAmount = payAmount;
 	}
-	public String getPayAmount( ) {
+
+    /**
+     * Gets pay amount.
+     *
+     * @return the pay amount
+     */
+    public String getPayAmount( ) {
 		return this.payAmount;
 	}
 
-	public void setServiceAmount(String serviceAmount) {
+    /**
+     * Sets service amount.
+     *
+     * @param serviceAmount the service amount
+     */
+    public void setServiceAmount(String serviceAmount) {
 		this.serviceAmount = serviceAmount;
 	}
-	public String getServiceAmount( ) {
+
+    /**
+     * Gets service amount.
+     *
+     * @return the service amount
+     */
+    public String getServiceAmount( ) {
 		return this.serviceAmount;
 	}
 
-	public void setSubOrderType(String subOrderType) {
+    /**
+     * Sets sub order type.
+     *
+     * @param subOrderType the sub order type
+     */
+    public void setSubOrderType(String subOrderType) {
 		this.subOrderType = subOrderType;
 	}
-	public String getSubOrderType( ) {
+
+    /**
+     * Gets sub order type.
+     *
+     * @return the sub order type
+     */
+    public String getSubOrderType( ) {
 		return this.subOrderType;
 	}
 

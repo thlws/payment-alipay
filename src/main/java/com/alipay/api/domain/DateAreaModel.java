@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DateAreaModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7189769646648383628L;
+	private static final long serialVersionUID = 2357716972453842683L;
 
 	/**
 	 * 开始时间
@@ -25,17 +25,39 @@ public class DateAreaModel extends AlipayObject {
 	@ApiField("end_date")
 	private String endDate;
 
-	public String getBeginDate() {
+    /**
+     * Gets begin date.
+     *
+     * @return the begin date
+     */
+    public String getBeginDate() {
 		return this.beginDate;
 	}
-	public void setBeginDate(String beginDate) {
+
+    /**
+     * Sets begin date.
+     *
+     * @param beginDate the begin date
+     */
+    public void setBeginDate(String beginDate) {
 		this.beginDate = beginDate;
 	}
 
-	public String getEndDate() {
+    /**
+     * Gets end date.
+     *
+     * @return the end date
+     */
+    public String getEndDate() {
 		return this.endDate;
 	}
-	public void setEndDate(String endDate) {
+
+    /**
+     * Sets end date.
+     *
+     * @param endDate the end date
+     */
+    public void setEndDate(String endDate) {
 		this.endDate = endDate;
 	}
 

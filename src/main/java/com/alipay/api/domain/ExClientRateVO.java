@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ExClientRateVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1278681594452245527L;
+	private static final long serialVersionUID = 2321174752778439182L;
 
 	/**
 	 * 协议编号
@@ -237,262 +237,669 @@ public class ExClientRateVO extends AlipayObject {
 	@ApiField("valid_time")
 	private String validTime;
 
-	public String getAgreementId() {
+    /**
+     * Gets agreement id.
+     *
+     * @return the agreement id
+     */
+    public String getAgreementId() {
 		return this.agreementId;
 	}
-	public void setAgreementId(String agreementId) {
+
+    /**
+     * Sets agreement id.
+     *
+     * @param agreementId the agreement id
+     */
+    public void setAgreementId(String agreementId) {
 		this.agreementId = agreementId;
 	}
 
-	public String getBaseCcy() {
+    /**
+     * Gets base ccy.
+     *
+     * @return the base ccy
+     */
+    public String getBaseCcy() {
 		return this.baseCcy;
 	}
-	public void setBaseCcy(String baseCcy) {
+
+    /**
+     * Sets base ccy.
+     *
+     * @param baseCcy the base ccy
+     */
+    public void setBaseCcy(String baseCcy) {
 		this.baseCcy = baseCcy;
 	}
 
-	public String getBidRate() {
+    /**
+     * Gets bid rate.
+     *
+     * @return the bid rate
+     */
+    public String getBidRate() {
 		return this.bidRate;
 	}
-	public void setBidRate(String bidRate) {
+
+    /**
+     * Sets bid rate.
+     *
+     * @param bidRate the bid rate
+     */
+    public void setBidRate(String bidRate) {
 		this.bidRate = bidRate;
 	}
 
-	public String getClientBidRate() {
+    /**
+     * Gets client bid rate.
+     *
+     * @return the client bid rate
+     */
+    public String getClientBidRate() {
 		return this.clientBidRate;
 	}
-	public void setClientBidRate(String clientBidRate) {
+
+    /**
+     * Sets client bid rate.
+     *
+     * @param clientBidRate the client bid rate
+     */
+    public void setClientBidRate(String clientBidRate) {
 		this.clientBidRate = clientBidRate;
 	}
 
-	public String getClientId() {
+    /**
+     * Gets client id.
+     *
+     * @return the client id
+     */
+    public String getClientId() {
 		return this.clientId;
 	}
-	public void setClientId(String clientId) {
+
+    /**
+     * Sets client id.
+     *
+     * @param clientId the client id
+     */
+    public void setClientId(String clientId) {
 		this.clientId = clientId;
 	}
 
-	public String getClientOfferRate() {
+    /**
+     * Gets client offer rate.
+     *
+     * @return the client offer rate
+     */
+    public String getClientOfferRate() {
 		return this.clientOfferRate;
 	}
-	public void setClientOfferRate(String clientOfferRate) {
+
+    /**
+     * Sets client offer rate.
+     *
+     * @param clientOfferRate the client offer rate
+     */
+    public void setClientOfferRate(String clientOfferRate) {
 		this.clientOfferRate = clientOfferRate;
 	}
 
-	public String getCurrencyPair() {
+    /**
+     * Gets currency pair.
+     *
+     * @return the currency pair
+     */
+    public String getCurrencyPair() {
 		return this.currencyPair;
 	}
-	public void setCurrencyPair(String currencyPair) {
+
+    /**
+     * Sets currency pair.
+     *
+     * @param currencyPair the currency pair
+     */
+    public void setCurrencyPair(String currencyPair) {
 		this.currencyPair = currencyPair;
 	}
 
-	public String getExpiryTime() {
+    /**
+     * Gets expiry time.
+     *
+     * @return the expiry time
+     */
+    public String getExpiryTime() {
 		return this.expiryTime;
 	}
-	public void setExpiryTime(String expiryTime) {
+
+    /**
+     * Sets expiry time.
+     *
+     * @param expiryTime the expiry time
+     */
+    public void setExpiryTime(String expiryTime) {
 		this.expiryTime = expiryTime;
 	}
 
-	public String getGenerateDate() {
+    /**
+     * Gets generate date.
+     *
+     * @return the generate date
+     */
+    public String getGenerateDate() {
 		return this.generateDate;
 	}
-	public void setGenerateDate(String generateDate) {
+
+    /**
+     * Sets generate date.
+     *
+     * @param generateDate the generate date
+     */
+    public void setGenerateDate(String generateDate) {
 		this.generateDate = generateDate;
 	}
 
-	public Date getGenerateTime() {
+    /**
+     * Gets generate time.
+     *
+     * @return the generate time
+     */
+    public Date getGenerateTime() {
 		return this.generateTime;
 	}
-	public void setGenerateTime(Date generateTime) {
+
+    /**
+     * Sets generate time.
+     *
+     * @param generateTime the generate time
+     */
+    public void setGenerateTime(Date generateTime) {
 		this.generateTime = generateTime;
 	}
 
-	public String getGuaranteed() {
+    /**
+     * Gets guaranteed.
+     *
+     * @return the guaranteed
+     */
+    public String getGuaranteed() {
 		return this.guaranteed;
 	}
-	public void setGuaranteed(String guaranteed) {
+
+    /**
+     * Sets guaranteed.
+     *
+     * @param guaranteed the guaranteed
+     */
+    public void setGuaranteed(String guaranteed) {
 		this.guaranteed = guaranteed;
 	}
 
-	public String getMaturityDate() {
+    /**
+     * Gets maturity date.
+     *
+     * @return the maturity date
+     */
+    public String getMaturityDate() {
 		return this.maturityDate;
 	}
-	public void setMaturityDate(String maturityDate) {
+
+    /**
+     * Sets maturity date.
+     *
+     * @param maturityDate the maturity date
+     */
+    public void setMaturityDate(String maturityDate) {
 		this.maturityDate = maturityDate;
 	}
 
-	public Long getMaximumBidAmount() {
+    /**
+     * Gets maximum bid amount.
+     *
+     * @return the maximum bid amount
+     */
+    public Long getMaximumBidAmount() {
 		return this.maximumBidAmount;
 	}
-	public void setMaximumBidAmount(Long maximumBidAmount) {
+
+    /**
+     * Sets maximum bid amount.
+     *
+     * @param maximumBidAmount the maximum bid amount
+     */
+    public void setMaximumBidAmount(Long maximumBidAmount) {
 		this.maximumBidAmount = maximumBidAmount;
 	}
 
-	public Long getMaximumOfferAmount() {
+    /**
+     * Gets maximum offer amount.
+     *
+     * @return the maximum offer amount
+     */
+    public Long getMaximumOfferAmount() {
 		return this.maximumOfferAmount;
 	}
-	public void setMaximumOfferAmount(Long maximumOfferAmount) {
+
+    /**
+     * Sets maximum offer amount.
+     *
+     * @param maximumOfferAmount the maximum offer amount
+     */
+    public void setMaximumOfferAmount(Long maximumOfferAmount) {
 		this.maximumOfferAmount = maximumOfferAmount;
 	}
 
-	public String getMidRate() {
+    /**
+     * Gets mid rate.
+     *
+     * @return the mid rate
+     */
+    public String getMidRate() {
 		return this.midRate;
 	}
-	public void setMidRate(String midRate) {
+
+    /**
+     * Sets mid rate.
+     *
+     * @param midRate the mid rate
+     */
+    public void setMidRate(String midRate) {
 		this.midRate = midRate;
 	}
 
-	public String getMinimumBidAmount() {
+    /**
+     * Gets minimum bid amount.
+     *
+     * @return the minimum bid amount
+     */
+    public String getMinimumBidAmount() {
 		return this.minimumBidAmount;
 	}
-	public void setMinimumBidAmount(String minimumBidAmount) {
+
+    /**
+     * Sets minimum bid amount.
+     *
+     * @param minimumBidAmount the minimum bid amount
+     */
+    public void setMinimumBidAmount(String minimumBidAmount) {
 		this.minimumBidAmount = minimumBidAmount;
 	}
 
-	public String getMinimumOfferAmount() {
+    /**
+     * Gets minimum offer amount.
+     *
+     * @return the minimum offer amount
+     */
+    public String getMinimumOfferAmount() {
 		return this.minimumOfferAmount;
 	}
-	public void setMinimumOfferAmount(String minimumOfferAmount) {
+
+    /**
+     * Sets minimum offer amount.
+     *
+     * @param minimumOfferAmount the minimum offer amount
+     */
+    public void setMinimumOfferAmount(String minimumOfferAmount) {
 		this.minimumOfferAmount = minimumOfferAmount;
 	}
 
-	public String getOfferRate() {
+    /**
+     * Gets offer rate.
+     *
+     * @return the offer rate
+     */
+    public String getOfferRate() {
 		return this.offerRate;
 	}
-	public void setOfferRate(String offerRate) {
+
+    /**
+     * Sets offer rate.
+     *
+     * @param offerRate the offer rate
+     */
+    public void setOfferRate(String offerRate) {
 		this.offerRate = offerRate;
 	}
 
-	public String getOnOffShore() {
+    /**
+     * Gets on off shore.
+     *
+     * @return the on off shore
+     */
+    public String getOnOffShore() {
 		return this.onOffShore;
 	}
-	public void setOnOffShore(String onOffShore) {
+
+    /**
+     * Sets on off shore.
+     *
+     * @param onOffShore the on off shore
+     */
+    public void setOnOffShore(String onOffShore) {
 		this.onOffShore = onOffShore;
 	}
 
-	public String getOriginRateInst() {
+    /**
+     * Gets origin rate inst.
+     *
+     * @return the origin rate inst
+     */
+    public String getOriginRateInst() {
 		return this.originRateInst;
 	}
-	public void setOriginRateInst(String originRateInst) {
+
+    /**
+     * Sets origin rate inst.
+     *
+     * @param originRateInst the origin rate inst
+     */
+    public void setOriginRateInst(String originRateInst) {
 		this.originRateInst = originRateInst;
 	}
 
-	public String getOriginRateRef() {
+    /**
+     * Gets origin rate ref.
+     *
+     * @return the origin rate ref
+     */
+    public String getOriginRateRef() {
 		return this.originRateRef;
 	}
-	public void setOriginRateRef(String originRateRef) {
+
+    /**
+     * Sets origin rate ref.
+     *
+     * @param originRateRef the origin rate ref
+     */
+    public void setOriginRateRef(String originRateRef) {
 		this.originRateRef = originRateRef;
 	}
 
-	public String getPeriod() {
+    /**
+     * Gets period.
+     *
+     * @return the period
+     */
+    public String getPeriod() {
 		return this.period;
 	}
-	public void setPeriod(String period) {
+
+    /**
+     * Sets period.
+     *
+     * @param period the period
+     */
+    public void setPeriod(String period) {
 		this.period = period;
 	}
 
-	public String getProfileId() {
+    /**
+     * Gets profile id.
+     *
+     * @return the profile id
+     */
+    public String getProfileId() {
 		return this.profileId;
 	}
-	public void setProfileId(String profileId) {
+
+    /**
+     * Sets profile id.
+     *
+     * @param profileId the profile id
+     */
+    public void setProfileId(String profileId) {
 		this.profileId = profileId;
 	}
 
-	public String getQuoteCcy() {
+    /**
+     * Gets quote ccy.
+     *
+     * @return the quote ccy
+     */
+    public String getQuoteCcy() {
 		return this.quoteCcy;
 	}
-	public void setQuoteCcy(String quoteCcy) {
+
+    /**
+     * Sets quote ccy.
+     *
+     * @param quoteCcy the quote ccy
+     */
+    public void setQuoteCcy(String quoteCcy) {
 		this.quoteCcy = quoteCcy;
 	}
 
-	public String getRateRef() {
+    /**
+     * Gets rate ref.
+     *
+     * @return the rate ref
+     */
+    public String getRateRef() {
 		return this.rateRef;
 	}
-	public void setRateRef(String rateRef) {
+
+    /**
+     * Sets rate ref.
+     *
+     * @param rateRef the rate ref
+     */
+    public void setRateRef(String rateRef) {
 		this.rateRef = rateRef;
 	}
 
-	public String getRateTime() {
+    /**
+     * Gets rate time.
+     *
+     * @return the rate time
+     */
+    public String getRateTime() {
 		return this.rateTime;
 	}
-	public void setRateTime(String rateTime) {
+
+    /**
+     * Sets rate time.
+     *
+     * @param rateTime the rate time
+     */
+    public void setRateTime(String rateTime) {
 		this.rateTime = rateTime;
 	}
 
-	public String getRateType() {
+    /**
+     * Gets rate type.
+     *
+     * @return the rate type
+     */
+    public String getRateType() {
 		return this.rateType;
 	}
-	public void setRateType(String rateType) {
+
+    /**
+     * Sets rate type.
+     *
+     * @param rateType the rate type
+     */
+    public void setRateType(String rateType) {
 		this.rateType = rateType;
 	}
 
-	public String getSpBid() {
+    /**
+     * Gets sp bid.
+     *
+     * @return the sp bid
+     */
+    public String getSpBid() {
 		return this.spBid;
 	}
-	public void setSpBid(String spBid) {
+
+    /**
+     * Sets sp bid.
+     *
+     * @param spBid the sp bid
+     */
+    public void setSpBid(String spBid) {
 		this.spBid = spBid;
 	}
 
-	public String getSpMid() {
+    /**
+     * Gets sp mid.
+     *
+     * @return the sp mid
+     */
+    public String getSpMid() {
 		return this.spMid;
 	}
-	public void setSpMid(String spMid) {
+
+    /**
+     * Sets sp mid.
+     *
+     * @param spMid the sp mid
+     */
+    public void setSpMid(String spMid) {
 		this.spMid = spMid;
 	}
 
-	public String getSpOffer() {
+    /**
+     * Gets sp offer.
+     *
+     * @return the sp offer
+     */
+    public String getSpOffer() {
 		return this.spOffer;
 	}
-	public void setSpOffer(String spOffer) {
+
+    /**
+     * Sets sp offer.
+     *
+     * @param spOffer the sp offer
+     */
+    public void setSpOffer(String spOffer) {
 		this.spOffer = spOffer;
 	}
 
-	public String getStandardProductRateId() {
+    /**
+     * Gets standard product rate id.
+     *
+     * @return the standard product rate id
+     */
+    public String getStandardProductRateId() {
 		return this.standardProductRateId;
 	}
-	public void setStandardProductRateId(String standardProductRateId) {
+
+    /**
+     * Sets standard product rate id.
+     *
+     * @param standardProductRateId the standard product rate id
+     */
+    public void setStandardProductRateId(String standardProductRateId) {
 		this.standardProductRateId = standardProductRateId;
 	}
 
-	public String getStartTime() {
+    /**
+     * Gets start time.
+     *
+     * @return the start time
+     */
+    public String getStartTime() {
 		return this.startTime;
 	}
-	public void setStartTime(String startTime) {
+
+    /**
+     * Sets start time.
+     *
+     * @param startTime the start time
+     */
+    public void setStartTime(String startTime) {
 		this.startTime = startTime;
 	}
 
-	public String getSubAgreementId() {
+    /**
+     * Gets sub agreement id.
+     *
+     * @return the sub agreement id
+     */
+    public String getSubAgreementId() {
 		return this.subAgreementId;
 	}
-	public void setSubAgreementId(String subAgreementId) {
+
+    /**
+     * Sets sub agreement id.
+     *
+     * @param subAgreementId the sub agreement id
+     */
+    public void setSubAgreementId(String subAgreementId) {
 		this.subAgreementId = subAgreementId;
 	}
 
-	public String getThresholdTime() {
+    /**
+     * Gets threshold time.
+     *
+     * @return the threshold time
+     */
+    public String getThresholdTime() {
 		return this.thresholdTime;
 	}
-	public void setThresholdTime(String thresholdTime) {
+
+    /**
+     * Sets threshold time.
+     *
+     * @param thresholdTime the threshold time
+     */
+    public void setThresholdTime(String thresholdTime) {
 		this.thresholdTime = thresholdTime;
 	}
 
-	public String getTimeZone() {
+    /**
+     * Gets time zone.
+     *
+     * @return the time zone
+     */
+    public String getTimeZone() {
 		return this.timeZone;
 	}
-	public void setTimeZone(String timeZone) {
+
+    /**
+     * Sets time zone.
+     *
+     * @param timeZone the time zone
+     */
+    public void setTimeZone(String timeZone) {
 		this.timeZone = timeZone;
 	}
 
-	public String getTransactionCcyType() {
+    /**
+     * Gets transaction ccy type.
+     *
+     * @return the transaction ccy type
+     */
+    public String getTransactionCcyType() {
 		return this.transactionCcyType;
 	}
-	public void setTransactionCcyType(String transactionCcyType) {
+
+    /**
+     * Sets transaction ccy type.
+     *
+     * @param transactionCcyType the transaction ccy type
+     */
+    public void setTransactionCcyType(String transactionCcyType) {
 		this.transactionCcyType = transactionCcyType;
 	}
 
-	public String getValidTime() {
+    /**
+     * Gets valid time.
+     *
+     * @return the valid time
+     */
+    public String getValidTime() {
 		return this.validTime;
 	}
-	public void setValidTime(String validTime) {
+
+    /**
+     * Sets valid time.
+     *
+     * @param validTime the valid time
+     */
+    public void setValidTime(String validTime) {
 		this.validTime = validTime;
 	}
 

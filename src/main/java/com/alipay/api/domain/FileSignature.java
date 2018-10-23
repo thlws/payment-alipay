@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签约文件签章描述信息
  *
  * @author auto create
- * @since 1.0, 2017-09-20 10:18:47
+ * @since 1.0, 2017-12-20 15:24:35
  */
 public class FileSignature extends AlipayObject {
 
-	private static final long serialVersionUID = 6467656694926961857L;
+	private static final long serialVersionUID = 3421822677989559757L;
 
 	/**
 	 * 签约主体证件号，关联principal对象
@@ -54,45 +54,111 @@ public class FileSignature extends AlipayObject {
 	@ApiField("signature_type")
 	private Long signatureType;
 
-	public String getCertNo() {
+    /**
+     * Gets cert no.
+     *
+     * @return the cert no
+     */
+    public String getCertNo() {
 		return this.certNo;
 	}
-	public void setCertNo(String certNo) {
+
+    /**
+     * Sets cert no.
+     *
+     * @param certNo the cert no
+     */
+    public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}
 
-	public String getSealId() {
+    /**
+     * Gets seal id.
+     *
+     * @return the seal id
+     */
+    public String getSealId() {
 		return this.sealId;
 	}
-	public void setSealId(String sealId) {
+
+    /**
+     * Sets seal id.
+     *
+     * @param sealId the seal id
+     */
+    public void setSealId(String sealId) {
 		this.sealId = sealId;
 	}
 
-	public SealPosition getSealPosition() {
+    /**
+     * Gets seal position.
+     *
+     * @return the seal position
+     */
+    public SealPosition getSealPosition() {
 		return this.sealPosition;
 	}
-	public void setSealPosition(SealPosition sealPosition) {
+
+    /**
+     * Sets seal position.
+     *
+     * @param sealPosition the seal position
+     */
+    public void setSealPosition(SealPosition sealPosition) {
 		this.sealPosition = sealPosition;
 	}
 
-	public Long getSealType() {
+    /**
+     * Gets seal type.
+     *
+     * @return the seal type
+     */
+    public Long getSealType() {
 		return this.sealType;
 	}
-	public void setSealType(Long sealType) {
+
+    /**
+     * Sets seal type.
+     *
+     * @param sealType the seal type
+     */
+    public void setSealType(Long sealType) {
 		this.sealType = sealType;
 	}
 
-	public String getSignReason() {
+    /**
+     * Gets sign reason.
+     *
+     * @return the sign reason
+     */
+    public String getSignReason() {
 		return this.signReason;
 	}
-	public void setSignReason(String signReason) {
+
+    /**
+     * Sets sign reason.
+     *
+     * @param signReason the sign reason
+     */
+    public void setSignReason(String signReason) {
 		this.signReason = signReason;
 	}
 
-	public Long getSignatureType() {
+    /**
+     * Gets signature type.
+     *
+     * @return the signature type
+     */
+    public Long getSignatureType() {
 		return this.signatureType;
 	}
-	public void setSignatureType(Long signatureType) {
+
+    /**
+     * Sets signature type.
+     *
+     * @param signatureType the signature type
+     */
+    public void setSignatureType(Long signatureType) {
 		this.signatureType = signatureType;
 	}
 

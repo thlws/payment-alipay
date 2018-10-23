@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class FengdieActivityCreateData extends AlipayObject {
 
-	private static final long serialVersionUID = 8486587171157389243L;
+	private static final long serialVersionUID = 8565134886787146587L;
 
 	/**
 	 * H5应用的名称，用户自定义，最终用于生成URL。生成URL的规则“域名/p/f/${name}/页面名称.html”
@@ -41,31 +41,75 @@ public class FengdieActivityCreateData extends AlipayObject {
 	@ApiField("title")
 	private String title;
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getOfflineTime() {
+    /**
+     * Gets offline time.
+     *
+     * @return the offline time
+     */
+    public String getOfflineTime() {
 		return this.offlineTime;
 	}
-	public void setOfflineTime(String offlineTime) {
+
+    /**
+     * Sets offline time.
+     *
+     * @param offlineTime the offline time
+     */
+    public void setOfflineTime(String offlineTime) {
 		this.offlineTime = offlineTime;
 	}
 
-	public List<FengdieActivityCreatePageData> getPage() {
+    /**
+     * Gets page.
+     *
+     * @return the page
+     */
+    public List<FengdieActivityCreatePageData> getPage() {
 		return this.page;
 	}
-	public void setPage(List<FengdieActivityCreatePageData> page) {
+
+    /**
+     * Sets page.
+     *
+     * @param page the page
+     */
+    public void setPage(List<FengdieActivityCreatePageData> page) {
 		this.page = page;
 	}
 
-	public String getTitle() {
+    /**
+     * Gets title.
+     *
+     * @return the title
+     */
+    public String getTitle() {
 		return this.title;
 	}
-	public void setTitle(String title) {
+
+    /**
+     * Sets title.
+     *
+     * @param title the title
+     */
+    public void setTitle(String title) {
 		this.title = title;
 	}
 

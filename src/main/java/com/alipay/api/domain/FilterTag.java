@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 自定义报表过滤标签
  *
  * @author auto create
- * @since 1.0, 2017-07-26 11:32:05
+ * @since 1.0, 2018-07-26 14:03:45
  */
 public class FilterTag extends AlipayObject {
 
-	private static final long serialVersionUID = 4588965361786577271L;
+	private static final long serialVersionUID = 3658959988485888823L;
 
 	/**
 	 * 过滤条件的标签code
@@ -26,17 +26,39 @@ public class FilterTag extends AlipayObject {
 	@ApiField("filter_items")
 	private String filterItems;
 
-	public String getCode() {
+    /**
+     * Gets code.
+     *
+     * @return the code
+     */
+    public String getCode() {
 		return this.code;
 	}
-	public void setCode(String code) {
+
+    /**
+     * Sets code.
+     *
+     * @param code the code
+     */
+    public void setCode(String code) {
 		this.code = code;
 	}
 
-	public String getFilterItems() {
+    /**
+     * Gets filter items.
+     *
+     * @return the filter items
+     */
+    public String getFilterItems() {
 		return this.filterItems;
 	}
-	public void setFilterItems(String filterItems) {
+
+    /**
+     * Sets filter items.
+     *
+     * @param filterItems the filter items
+     */
+    public void setFilterItems(String filterItems) {
 		this.filterItems = filterItems;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCampaignDrawcampQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7655546278281266984L;
+	private static final long serialVersionUID = 8369928998828597486L;
 
 	/**
 	 * 抽奖活动id，通过alipay.marketing.campaign.drawcamp.create接口返回
@@ -19,10 +19,21 @@ public class AlipayMarketingCampaignDrawcampQueryModel extends AlipayObject {
 	@ApiField("camp_id")
 	private String campId;
 
-	public String getCampId() {
+    /**
+     * Gets camp id.
+     *
+     * @return the camp id
+     */
+    public String getCampId() {
 		return this.campId;
 	}
-	public void setCampId(String campId) {
+
+    /**
+     * Sets camp id.
+     *
+     * @param campId the camp id
+     */
+    public void setCampId(String campId) {
 		this.campId = campId;
 	}
 

@@ -10,9 +10,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: koubei.marketing.data.activity.report.query request
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-09-20 14:23:46
+ * @since 1.0, 2017-12-07 16:53:34
  */
 public class KoubeiMarketingDataActivityReportQueryRequest implements AlipayRequest<KoubeiMarketingDataActivityReportQueryResponse> {
 
@@ -24,10 +24,21 @@ public class KoubeiMarketingDataActivityReportQueryRequest implements AlipayRequ
 	 */
 	private String bizContent;
 
-	public void setBizContent(String bizContent) {
+    /**
+     * Sets biz content.
+     *
+     * @param bizContent the biz content
+     */
+    public void setBizContent(String bizContent) {
 		this.bizContent = bizContent;
 	}
-	public String getBizContent() {
+
+    /**
+     * Gets biz content.
+     *
+     * @return the biz content
+     */
+    public String getBizContent() {
 		return this.bizContent;
 	}
 	private String terminalType;
@@ -99,7 +110,13 @@ public class KoubeiMarketingDataActivityReportQueryRequest implements AlipayRequ
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

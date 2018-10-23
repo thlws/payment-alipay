@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class DiscountDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8172731291624795687L;
+	private static final long serialVersionUID = 6447391346211284836L;
 
 	/**
 	 * 优惠金额
@@ -59,52 +59,129 @@ public class DiscountDetail extends AlipayObject {
 	@ApiField("name")
 	private String name;
 
-	public String getDiscountAmount() {
+    /**
+     * Gets discount amount.
+     *
+     * @return the discount amount
+     */
+    public String getDiscountAmount() {
 		return this.discountAmount;
 	}
-	public void setDiscountAmount(String discountAmount) {
+
+    /**
+     * Sets discount amount.
+     *
+     * @param discountAmount the discount amount
+     */
+    public void setDiscountAmount(String discountAmount) {
 		this.discountAmount = discountAmount;
 	}
 
-	public List<String> getDiscountDesc() {
+    /**
+     * Gets discount desc.
+     *
+     * @return the discount desc
+     */
+    public List<String> getDiscountDesc() {
 		return this.discountDesc;
 	}
-	public void setDiscountDesc(List<String> discountDesc) {
+
+    /**
+     * Sets discount desc.
+     *
+     * @param discountDesc the discount desc
+     */
+    public void setDiscountDesc(List<String> discountDesc) {
 		this.discountDesc = discountDesc;
 	}
 
-	public String getDiscountType() {
+    /**
+     * Gets discount type.
+     *
+     * @return the discount type
+     */
+    public String getDiscountType() {
 		return this.discountType;
 	}
-	public void setDiscountType(String discountType) {
+
+    /**
+     * Sets discount type.
+     *
+     * @param discountType the discount type
+     */
+    public void setDiscountType(String discountType) {
 		this.discountType = discountType;
 	}
 
-	public String getId() {
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
+    public String getId() {
 		return this.id;
 	}
-	public void setId(String id) {
+
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
+    public void setId(String id) {
 		this.id = id;
 	}
 
-	public String getIsHit() {
+    /**
+     * Gets is hit.
+     *
+     * @return the is hit
+     */
+    public String getIsHit() {
 		return this.isHit;
 	}
-	public void setIsHit(String isHit) {
+
+    /**
+     * Sets is hit.
+     *
+     * @param isHit the is hit
+     */
+    public void setIsHit(String isHit) {
 		this.isHit = isHit;
 	}
 
-	public String getIsPurchased() {
+    /**
+     * Gets is purchased.
+     *
+     * @return the is purchased
+     */
+    public String getIsPurchased() {
 		return this.isPurchased;
 	}
-	public void setIsPurchased(String isPurchased) {
+
+    /**
+     * Sets is purchased.
+     *
+     * @param isPurchased the is purchased
+     */
+    public void setIsPurchased(String isPurchased) {
 		this.isPurchased = isPurchased;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 

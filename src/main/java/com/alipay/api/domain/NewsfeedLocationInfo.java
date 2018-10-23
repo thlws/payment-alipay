@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NewsfeedLocationInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2124269676698222231L;
+	private static final long serialVersionUID = 6676359699882167987L;
 
 	/**
 	 * 地理信息
@@ -31,24 +31,57 @@ public class NewsfeedLocationInfo extends AlipayObject {
 	@ApiField("lon")
 	private String lon;
 
-	public String getAdCode() {
+    /**
+     * Gets ad code.
+     *
+     * @return the ad code
+     */
+    public String getAdCode() {
 		return this.adCode;
 	}
-	public void setAdCode(String adCode) {
+
+    /**
+     * Sets ad code.
+     *
+     * @param adCode the ad code
+     */
+    public void setAdCode(String adCode) {
 		this.adCode = adCode;
 	}
 
-	public String getLat() {
+    /**
+     * Gets lat.
+     *
+     * @return the lat
+     */
+    public String getLat() {
 		return this.lat;
 	}
-	public void setLat(String lat) {
+
+    /**
+     * Sets lat.
+     *
+     * @param lat the lat
+     */
+    public void setLat(String lat) {
 		this.lat = lat;
 	}
 
-	public String getLon() {
+    /**
+     * Gets lon.
+     *
+     * @return the lon
+     */
+    public String getLon() {
 		return this.lon;
 	}
-	public void setLon(String lon) {
+
+    /**
+     * Sets lon.
+     *
+     * @param lon the lon
+     */
+    public void setLon(String lon) {
 		this.lon = lon;
 	}
 

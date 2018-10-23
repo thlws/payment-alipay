@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LicenseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6229855137142657638L;
+	private static final long serialVersionUID = 1196122223835541295L;
 
 	/**
 	 * 证书的认证机构
@@ -91,66 +91,165 @@ OTHER：其他
 	@ApiField("type")
 	private String type;
 
-	public String getAgency() {
+    /**
+     * Gets agency.
+     *
+     * @return the agency
+     */
+    public String getAgency() {
 		return this.agency;
 	}
-	public void setAgency(String agency) {
+
+    /**
+     * Sets agency.
+     *
+     * @param agency the agency
+     */
+    public void setAgency(String agency) {
 		this.agency = agency;
 	}
 
-	public String getGmtExpire() {
+    /**
+     * Gets gmt expire.
+     *
+     * @return the gmt expire
+     */
+    public String getGmtExpire() {
 		return this.gmtExpire;
 	}
-	public void setGmtExpire(String gmtExpire) {
+
+    /**
+     * Sets gmt expire.
+     *
+     * @param gmtExpire the gmt expire
+     */
+    public void setGmtExpire(String gmtExpire) {
 		this.gmtExpire = gmtExpire;
 	}
 
-	public String getGmtStart() {
+    /**
+     * Gets gmt start.
+     *
+     * @return the gmt start
+     */
+    public String getGmtStart() {
 		return this.gmtStart;
 	}
-	public void setGmtStart(String gmtStart) {
+
+    /**
+     * Sets gmt start.
+     *
+     * @param gmtStart the gmt start
+     */
+    public void setGmtStart(String gmtStart) {
 		this.gmtStart = gmtStart;
 	}
 
-	public String getLicenseId() {
+    /**
+     * Gets license id.
+     *
+     * @return the license id
+     */
+    public String getLicenseId() {
 		return this.licenseId;
 	}
-	public void setLicenseId(String licenseId) {
+
+    /**
+     * Sets license id.
+     *
+     * @param licenseId the license id
+     */
+    public void setLicenseId(String licenseId) {
 		this.licenseId = licenseId;
 	}
 
-	public String getLicenseName() {
+    /**
+     * Gets license name.
+     *
+     * @return the license name
+     */
+    public String getLicenseName() {
 		return this.licenseName;
 	}
-	public void setLicenseName(String licenseName) {
+
+    /**
+     * Sets license name.
+     *
+     * @param licenseName the license name
+     */
+    public void setLicenseName(String licenseName) {
 		this.licenseName = licenseName;
 	}
 
-	public String getPicUrl() {
+    /**
+     * Gets pic url.
+     *
+     * @return the pic url
+     */
+    public String getPicUrl() {
 		return this.picUrl;
 	}
-	public void setPicUrl(String picUrl) {
+
+    /**
+     * Sets pic url.
+     *
+     * @param picUrl the pic url
+     */
+    public void setPicUrl(String picUrl) {
 		this.picUrl = picUrl;
 	}
 
-	public String getResult() {
+    /**
+     * Gets result.
+     *
+     * @return the result
+     */
+    public String getResult() {
 		return this.result;
 	}
-	public void setResult(String result) {
+
+    /**
+     * Sets result.
+     *
+     * @param result the result
+     */
+    public void setResult(String result) {
 		this.result = result;
 	}
 
-	public String getSequence() {
+    /**
+     * Gets sequence.
+     *
+     * @return the sequence
+     */
+    public String getSequence() {
 		return this.sequence;
 	}
-	public void setSequence(String sequence) {
+
+    /**
+     * Sets sequence.
+     *
+     * @param sequence the sequence
+     */
+    public void setSequence(String sequence) {
 		this.sequence = sequence;
 	}
 
-	public String getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
-	public void setType(String type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
 

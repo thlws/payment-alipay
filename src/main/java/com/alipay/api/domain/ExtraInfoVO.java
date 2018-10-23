@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ExtraInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3332975385257292894L;
+	private static final long serialVersionUID = 8566318863658945698L;
 
 	/**
 	 * 是否是taomaomao好友关系
@@ -31,24 +31,57 @@ public class ExtraInfoVO extends AlipayObject {
 	@ApiField("taobao_id")
 	private String taobaoId;
 
-	public Boolean getMaomaoFriend() {
+    /**
+     * Gets maomao friend.
+     *
+     * @return the maomao friend
+     */
+    public Boolean getMaomaoFriend() {
 		return this.maomaoFriend;
 	}
-	public void setMaomaoFriend(Boolean maomaoFriend) {
+
+    /**
+     * Sets maomao friend.
+     *
+     * @param maomaoFriend the maomao friend
+     */
+    public void setMaomaoFriend(Boolean maomaoFriend) {
 		this.maomaoFriend = maomaoFriend;
 	}
 
-	public Boolean getMaomaoRegister() {
+    /**
+     * Gets maomao register.
+     *
+     * @return the maomao register
+     */
+    public Boolean getMaomaoRegister() {
 		return this.maomaoRegister;
 	}
-	public void setMaomaoRegister(Boolean maomaoRegister) {
+
+    /**
+     * Sets maomao register.
+     *
+     * @param maomaoRegister the maomao register
+     */
+    public void setMaomaoRegister(Boolean maomaoRegister) {
 		this.maomaoRegister = maomaoRegister;
 	}
 
-	public String getTaobaoId() {
+    /**
+     * Gets taobao id.
+     *
+     * @return the taobao id
+     */
+    public String getTaobaoId() {
 		return this.taobaoId;
 	}
-	public void setTaobaoId(String taobaoId) {
+
+    /**
+     * Sets taobao id.
+     *
+     * @param taobaoId the taobao id
+     */
+    public void setTaobaoId(String taobaoId) {
 		this.taobaoId = taobaoId;
 	}
 

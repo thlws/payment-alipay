@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KbOrderFundsVoucherModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3155655379836211162L;
+	private static final long serialVersionUID = 8516891747838341442L;
 
 	/**
 	 * 资金流入账户,打款动作存在该字段
@@ -57,52 +57,129 @@ public class KbOrderFundsVoucherModel extends AlipayObject {
 	@ApiField("trans_type")
 	private String transType;
 
-	public String getAccount() {
+    /**
+     * Gets account.
+     *
+     * @return the account
+     */
+    public String getAccount() {
 		return this.account;
 	}
-	public void setAccount(String account) {
+
+    /**
+     * Sets account.
+     *
+     * @param account the account
+     */
+    public void setAccount(String account) {
 		this.account = account;
 	}
 
-	public String getAmount() {
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public String getAmount() {
 		return this.amount;
 	}
-	public void setAmount(String amount) {
+
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
-	public String getFundsVoucherNo() {
+    /**
+     * Gets funds voucher no.
+     *
+     * @return the funds voucher no
+     */
+    public String getFundsVoucherNo() {
 		return this.fundsVoucherNo;
 	}
-	public void setFundsVoucherNo(String fundsVoucherNo) {
+
+    /**
+     * Sets funds voucher no.
+     *
+     * @param fundsVoucherNo the funds voucher no
+     */
+    public void setFundsVoucherNo(String fundsVoucherNo) {
 		this.fundsVoucherNo = fundsVoucherNo;
 	}
 
-	public Date getGmtCreate() {
+    /**
+     * Gets gmt create.
+     *
+     * @return the gmt create
+     */
+    public Date getGmtCreate() {
 		return this.gmtCreate;
 	}
-	public void setGmtCreate(Date gmtCreate) {
+
+    /**
+     * Sets gmt create.
+     *
+     * @param gmtCreate the gmt create
+     */
+    public void setGmtCreate(Date gmtCreate) {
 		this.gmtCreate = gmtCreate;
 	}
 
-	public String getShopId() {
+    /**
+     * Gets shop id.
+     *
+     * @return the shop id
+     */
+    public String getShopId() {
 		return this.shopId;
 	}
-	public void setShopId(String shopId) {
+
+    /**
+     * Sets shop id.
+     *
+     * @param shopId the shop id
+     */
+    public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 
-	public String getStoreId() {
+    /**
+     * Gets store id.
+     *
+     * @return the store id
+     */
+    public String getStoreId() {
 		return this.storeId;
 	}
-	public void setStoreId(String storeId) {
+
+    /**
+     * Sets store id.
+     *
+     * @param storeId the store id
+     */
+    public void setStoreId(String storeId) {
 		this.storeId = storeId;
 	}
 
-	public String getTransType() {
+    /**
+     * Gets trans type.
+     *
+     * @return the trans type
+     */
+    public String getTransType() {
 		return this.transType;
 	}
-	public void setTransType(String transType) {
+
+    /**
+     * Sets trans type.
+     *
+     * @param transType the trans type
+     */
+    public void setTransType(String transType) {
 		this.transType = transType;
 	}
 

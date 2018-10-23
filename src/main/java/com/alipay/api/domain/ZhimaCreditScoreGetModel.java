@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻信用评分
  *
  * @author auto create
- * @since 1.0, 2017-06-12 14:16:29
+ * @since 1.0, 2018-03-14 21:12:51
  */
 public class ZhimaCreditScoreGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2275791152351528939L;
+	private static final long serialVersionUID = 6231218294288272323L;
 
 	/**
 	 * 产品码，直接使用［示例］给出的值
@@ -25,17 +25,39 @@ public class ZhimaCreditScoreGetModel extends AlipayObject {
 	@ApiField("transaction_id")
 	private String transactionId;
 
-	public String getProductCode() {
+    /**
+     * Gets product code.
+     *
+     * @return the product code
+     */
+    public String getProductCode() {
 		return this.productCode;
 	}
-	public void setProductCode(String productCode) {
+
+    /**
+     * Sets product code.
+     *
+     * @param productCode the product code
+     */
+    public void setProductCode(String productCode) {
 		this.productCode = productCode;
 	}
 
-	public String getTransactionId() {
+    /**
+     * Gets transaction id.
+     *
+     * @return the transaction id
+     */
+    public String getTransactionId() {
 		return this.transactionId;
 	}
-	public void setTransactionId(String transactionId) {
+
+    /**
+     * Sets transaction id.
+     *
+     * @param transactionId the transaction id
+     */
+    public void setTransactionId(String transactionId) {
 		this.transactionId = transactionId;
 	}
 

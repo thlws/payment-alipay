@@ -7,13 +7,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.card.open response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-04 19:47:19
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayMarketingCardOpenResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1153519766698593958L;
+	private static final long serialVersionUID = 8552526631212717569L;
 
 	/** 
 	 * 商户卡信息（包括支付宝分配的业务卡号）
@@ -42,24 +42,57 @@ open_card_channel用于区分渠道类型，例如取值为"SHOP"（门店），
 	@ApiField("open_card_channel_id")
 	private String openCardChannelId;
 
-	public void setCardInfo(MerchantCard cardInfo) {
+    /**
+     * Sets card info.
+     *
+     * @param cardInfo the card info
+     */
+    public void setCardInfo(MerchantCard cardInfo) {
 		this.cardInfo = cardInfo;
 	}
-	public MerchantCard getCardInfo( ) {
+
+    /**
+     * Gets card info.
+     *
+     * @return the card info
+     */
+    public MerchantCard getCardInfo( ) {
 		return this.cardInfo;
 	}
 
-	public void setOpenCardChannel(String openCardChannel) {
+    /**
+     * Sets open card channel.
+     *
+     * @param openCardChannel the open card channel
+     */
+    public void setOpenCardChannel(String openCardChannel) {
 		this.openCardChannel = openCardChannel;
 	}
-	public String getOpenCardChannel( ) {
+
+    /**
+     * Gets open card channel.
+     *
+     * @return the open card channel
+     */
+    public String getOpenCardChannel( ) {
 		return this.openCardChannel;
 	}
 
-	public void setOpenCardChannelId(String openCardChannelId) {
+    /**
+     * Sets open card channel id.
+     *
+     * @param openCardChannelId the open card channel id
+     */
+    public void setOpenCardChannelId(String openCardChannelId) {
 		this.openCardChannelId = openCardChannelId;
 	}
-	public String getOpenCardChannelId( ) {
+
+    /**
+     * Gets open card channel id.
+     *
+     * @return the open card channel id
+     */
+    public String getOpenCardChannelId( ) {
 		return this.openCardChannelId;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KbAdvertModifyChannelRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 1332583348696768927L;
+	private static final long serialVersionUID = 8737282669141344156L;
 
 	/**
 	 * 渠道ID（渠道创建接口中，返回的channelID）
@@ -31,24 +31,57 @@ public class KbAdvertModifyChannelRequest extends AlipayObject {
 	@ApiField("name")
 	private String name;
 
-	public String getChannelId() {
+    /**
+     * Gets channel id.
+     *
+     * @return the channel id
+     */
+    public String getChannelId() {
 		return this.channelId;
 	}
-	public void setChannelId(String channelId) {
+
+    /**
+     * Sets channel id.
+     *
+     * @param channelId the channel id
+     */
+    public void setChannelId(String channelId) {
 		this.channelId = channelId;
 	}
 
-	public String getMemo() {
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo() {
 		return this.memo;
 	}
-	public void setMemo(String memo) {
+
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 

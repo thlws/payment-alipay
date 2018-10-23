@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MedicalHospitalReportList extends AlipayObject {
 
-	private static final long serialVersionUID = 3882915678857766549L;
+	private static final long serialVersionUID = 7151262895284567941L;
 
 	/**
 	 * 报告产出日期 格式为yyyy-MM-dd HH:mm:ss。
@@ -47,38 +47,93 @@ EXAM_REPORT检验报告
 	@ApiField("report_type")
 	private String reportType;
 
-	public Date getReportDate() {
+    /**
+     * Gets report date.
+     *
+     * @return the report date
+     */
+    public Date getReportDate() {
 		return this.reportDate;
 	}
-	public void setReportDate(Date reportDate) {
+
+    /**
+     * Sets report date.
+     *
+     * @param reportDate the report date
+     */
+    public void setReportDate(Date reportDate) {
 		this.reportDate = reportDate;
 	}
 
-	public String getReportDesc() {
+    /**
+     * Gets report desc.
+     *
+     * @return the report desc
+     */
+    public String getReportDesc() {
 		return this.reportDesc;
 	}
-	public void setReportDesc(String reportDesc) {
+
+    /**
+     * Sets report desc.
+     *
+     * @param reportDesc the report desc
+     */
+    public void setReportDesc(String reportDesc) {
 		this.reportDesc = reportDesc;
 	}
 
-	public String getReportLink() {
+    /**
+     * Gets report link.
+     *
+     * @return the report link
+     */
+    public String getReportLink() {
 		return this.reportLink;
 	}
-	public void setReportLink(String reportLink) {
+
+    /**
+     * Sets report link.
+     *
+     * @param reportLink the report link
+     */
+    public void setReportLink(String reportLink) {
 		this.reportLink = reportLink;
 	}
 
-	public String getReportName() {
+    /**
+     * Gets report name.
+     *
+     * @return the report name
+     */
+    public String getReportName() {
 		return this.reportName;
 	}
-	public void setReportName(String reportName) {
+
+    /**
+     * Sets report name.
+     *
+     * @param reportName the report name
+     */
+    public void setReportName(String reportName) {
 		this.reportName = reportName;
 	}
 
-	public String getReportType() {
+    /**
+     * Gets report type.
+     *
+     * @return the report type
+     */
+    public String getReportType() {
 		return this.reportType;
 	}
-	public void setReportType(String reportType) {
+
+    /**
+     * Sets report type.
+     *
+     * @param reportType the report type
+     */
+    public void setReportType(String reportType) {
 		this.reportType = reportType;
 	}
 

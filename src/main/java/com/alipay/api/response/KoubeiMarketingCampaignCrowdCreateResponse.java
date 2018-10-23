@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.campaign.crowd.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-08-30 14:58:36
+ * @since 1.0, 2018-07-26 14:03:29
  */
 public class KoubeiMarketingCampaignCrowdCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2729677912856677586L;
+	private static final long serialVersionUID = 3817411241244136744L;
 
 	/** 
 	 * 返回的人群组的唯一标识
@@ -20,10 +20,21 @@ public class KoubeiMarketingCampaignCrowdCreateResponse extends AlipayResponse {
 	@ApiField("crowd_group_id")
 	private String crowdGroupId;
 
-	public void setCrowdGroupId(String crowdGroupId) {
+    /**
+     * Sets crowd group id.
+     *
+     * @param crowdGroupId the crowd group id
+     */
+    public void setCrowdGroupId(String crowdGroupId) {
 		this.crowdGroupId = crowdGroupId;
 	}
-	public String getCrowdGroupId( ) {
+
+    /**
+     * Gets crowd group id.
+     *
+     * @return the crowd group id
+     */
+    public String getCrowdGroupId( ) {
 		return this.crowdGroupId;
 	}
 

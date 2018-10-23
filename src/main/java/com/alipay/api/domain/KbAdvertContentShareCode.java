@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KbAdvertContentShareCode extends AlipayObject {
 
-	private static final long serialVersionUID = 4497131373363624444L;
+	private static final long serialVersionUID = 6116475257828129439L;
 
 	/**
 	 * 吱口令内容详情
@@ -19,10 +19,21 @@ public class KbAdvertContentShareCode extends AlipayObject {
 	@ApiField("share_code_desc")
 	private String shareCodeDesc;
 
-	public String getShareCodeDesc() {
+    /**
+     * Gets share code desc.
+     *
+     * @return the share code desc
+     */
+    public String getShareCodeDesc() {
 		return this.shareCodeDesc;
 	}
-	public void setShareCodeDesc(String shareCodeDesc) {
+
+    /**
+     * Sets share code desc.
+     *
+     * @param shareCodeDesc the share code desc
+     */
+    public void setShareCodeDesc(String shareCodeDesc) {
 		this.shareCodeDesc = shareCodeDesc;
 	}
 

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 统一收单下单并支付页面接口
  *
  * @author auto create
- * @since 1.0, 2017-09-05 11:49:37
+ * @since 1.0, 2018-09-07 18:15:00
  */
 public class AlipayTradePagePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8646317372716261726L;
+	private static final long serialVersionUID = 5668645557253692374L;
 
 	/**
 	 * 签约参数，支付后签约场景使用
@@ -35,18 +35,26 @@ public class AlipayTradePagePayModel extends AlipayObject {
 	private String businessParams;
 
 	/**
-	 * 禁用渠道,用户不可用指定渠道支付
+	 * 禁用渠道,用户不可用指定渠道支付，多个渠道以逗号分割
 注，与enable_pay_channels互斥
+渠道列表：https://docs.open.alipay.com/common/wifww7
 	 */
 	@ApiField("disable_pay_channels")
 	private String disablePayChannels;
 
 	/**
-	 * 可用渠道,用户只能在指定渠道范围内支付
+	 * 可用渠道,用户只能在指定渠道范围内支付，多个渠道以逗号分割
 注，与disable_pay_channels互斥
+渠道列表：https://docs.open.alipay.com/common/wifww7
 	 */
 	@ApiField("enable_pay_channels")
 	private String enablePayChannels;
+
+	/**
+	 * 外部指定买家
+	 */
+	@ApiField("ext_user_info")
+	private ExtUserInfo extUserInfo;
 
 	/**
 	 * 业务扩展参数
@@ -55,7 +63,7 @@ public class AlipayTradePagePayModel extends AlipayObject {
 	private ExtendParams extendParams;
 
 	/**
-	 * 订单包含的商品列表信息，Json格式，其它说明详见商品明细说明
+	 * 订单包含的商品列表信息，json格式，其它说明详见商品明细说明
 	 */
 	@ApiListField("goods_detail")
 	@ApiField("goods_detail")
@@ -143,10 +151,16 @@ public class AlipayTradePagePayModel extends AlipayObject {
 	private String requestFromUrl;
 
 	/**
-	 * 描述分账信息，Json格式，详见分账参数说明
+	 * 描述分账信息，json格式，详见分账参数说明
 	 */
 	@ApiField("royalty_info")
 	private RoyaltyInfo royaltyInfo;
+
+	/**
+	 * 描述结算信息，json格式，详见结算参数说明
+	 */
+	@ApiField("settle_info")
+	private SettleInfo settleInfo;
 
 	/**
 	 * 商户门店编号
@@ -184,171 +198,471 @@ public class AlipayTradePagePayModel extends AlipayObject {
 	@ApiField("total_amount")
 	private String totalAmount;
 
-	public AgreementSignParams getAgreementSignParams() {
+    /**
+     * Gets agreement sign params.
+     *
+     * @return the agreement sign params
+     */
+    public AgreementSignParams getAgreementSignParams() {
 		return this.agreementSignParams;
 	}
-	public void setAgreementSignParams(AgreementSignParams agreementSignParams) {
+
+    /**
+     * Sets agreement sign params.
+     *
+     * @param agreementSignParams the agreement sign params
+     */
+    public void setAgreementSignParams(AgreementSignParams agreementSignParams) {
 		this.agreementSignParams = agreementSignParams;
 	}
 
-	public String getBody() {
+    /**
+     * Gets body.
+     *
+     * @return the body
+     */
+    public String getBody() {
 		return this.body;
 	}
-	public void setBody(String body) {
+
+    /**
+     * Sets body.
+     *
+     * @param body the body
+     */
+    public void setBody(String body) {
 		this.body = body;
 	}
 
-	public String getBusinessParams() {
+    /**
+     * Gets business params.
+     *
+     * @return the business params
+     */
+    public String getBusinessParams() {
 		return this.businessParams;
 	}
-	public void setBusinessParams(String businessParams) {
+
+    /**
+     * Sets business params.
+     *
+     * @param businessParams the business params
+     */
+    public void setBusinessParams(String businessParams) {
 		this.businessParams = businessParams;
 	}
 
-	public String getDisablePayChannels() {
+    /**
+     * Gets disable pay channels.
+     *
+     * @return the disable pay channels
+     */
+    public String getDisablePayChannels() {
 		return this.disablePayChannels;
 	}
-	public void setDisablePayChannels(String disablePayChannels) {
+
+    /**
+     * Sets disable pay channels.
+     *
+     * @param disablePayChannels the disable pay channels
+     */
+    public void setDisablePayChannels(String disablePayChannels) {
 		this.disablePayChannels = disablePayChannels;
 	}
 
-	public String getEnablePayChannels() {
+    /**
+     * Gets enable pay channels.
+     *
+     * @return the enable pay channels
+     */
+    public String getEnablePayChannels() {
 		return this.enablePayChannels;
 	}
-	public void setEnablePayChannels(String enablePayChannels) {
+
+    /**
+     * Sets enable pay channels.
+     *
+     * @param enablePayChannels the enable pay channels
+     */
+    public void setEnablePayChannels(String enablePayChannels) {
 		this.enablePayChannels = enablePayChannels;
 	}
 
-	public ExtendParams getExtendParams() {
+    /**
+     * Gets ext user info.
+     *
+     * @return the ext user info
+     */
+    public ExtUserInfo getExtUserInfo() {
+		return this.extUserInfo;
+	}
+
+    /**
+     * Sets ext user info.
+     *
+     * @param extUserInfo the ext user info
+     */
+    public void setExtUserInfo(ExtUserInfo extUserInfo) {
+		this.extUserInfo = extUserInfo;
+	}
+
+    /**
+     * Gets extend params.
+     *
+     * @return the extend params
+     */
+    public ExtendParams getExtendParams() {
 		return this.extendParams;
 	}
-	public void setExtendParams(ExtendParams extendParams) {
+
+    /**
+     * Sets extend params.
+     *
+     * @param extendParams the extend params
+     */
+    public void setExtendParams(ExtendParams extendParams) {
 		this.extendParams = extendParams;
 	}
 
-	public List<GoodsDetail> getGoodsDetail() {
+    /**
+     * Gets goods detail.
+     *
+     * @return the goods detail
+     */
+    public List<GoodsDetail> getGoodsDetail() {
 		return this.goodsDetail;
 	}
-	public void setGoodsDetail(List<GoodsDetail> goodsDetail) {
+
+    /**
+     * Sets goods detail.
+     *
+     * @param goodsDetail the goods detail
+     */
+    public void setGoodsDetail(List<GoodsDetail> goodsDetail) {
 		this.goodsDetail = goodsDetail;
 	}
 
-	public String getGoodsType() {
+    /**
+     * Gets goods type.
+     *
+     * @return the goods type
+     */
+    public String getGoodsType() {
 		return this.goodsType;
 	}
-	public void setGoodsType(String goodsType) {
+
+    /**
+     * Sets goods type.
+     *
+     * @param goodsType the goods type
+     */
+    public void setGoodsType(String goodsType) {
 		this.goodsType = goodsType;
 	}
 
-	public String getIntegrationType() {
+    /**
+     * Gets integration type.
+     *
+     * @return the integration type
+     */
+    public String getIntegrationType() {
 		return this.integrationType;
 	}
-	public void setIntegrationType(String integrationType) {
+
+    /**
+     * Sets integration type.
+     *
+     * @param integrationType the integration type
+     */
+    public void setIntegrationType(String integrationType) {
 		this.integrationType = integrationType;
 	}
 
-	public InvoiceInfo getInvoiceInfo() {
+    /**
+     * Gets invoice info.
+     *
+     * @return the invoice info
+     */
+    public InvoiceInfo getInvoiceInfo() {
 		return this.invoiceInfo;
 	}
-	public void setInvoiceInfo(InvoiceInfo invoiceInfo) {
+
+    /**
+     * Sets invoice info.
+     *
+     * @param invoiceInfo the invoice info
+     */
+    public void setInvoiceInfo(InvoiceInfo invoiceInfo) {
 		this.invoiceInfo = invoiceInfo;
 	}
 
-	public String getOutTradeNo() {
+    /**
+     * Gets out trade no.
+     *
+     * @return the out trade no
+     */
+    public String getOutTradeNo() {
 		return this.outTradeNo;
 	}
-	public void setOutTradeNo(String outTradeNo) {
+
+    /**
+     * Sets out trade no.
+     *
+     * @param outTradeNo the out trade no
+     */
+    public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
 
-	public String getPassbackParams() {
+    /**
+     * Gets passback params.
+     *
+     * @return the passback params
+     */
+    public String getPassbackParams() {
 		return this.passbackParams;
 	}
-	public void setPassbackParams(String passbackParams) {
+
+    /**
+     * Sets passback params.
+     *
+     * @param passbackParams the passback params
+     */
+    public void setPassbackParams(String passbackParams) {
 		this.passbackParams = passbackParams;
 	}
 
-	public String getProductCode() {
+    /**
+     * Gets product code.
+     *
+     * @return the product code
+     */
+    public String getProductCode() {
 		return this.productCode;
 	}
-	public void setProductCode(String productCode) {
+
+    /**
+     * Sets product code.
+     *
+     * @param productCode the product code
+     */
+    public void setProductCode(String productCode) {
 		this.productCode = productCode;
 	}
 
-	public String getPromoParams() {
+    /**
+     * Gets promo params.
+     *
+     * @return the promo params
+     */
+    public String getPromoParams() {
 		return this.promoParams;
 	}
-	public void setPromoParams(String promoParams) {
+
+    /**
+     * Sets promo params.
+     *
+     * @param promoParams the promo params
+     */
+    public void setPromoParams(String promoParams) {
 		this.promoParams = promoParams;
 	}
 
-	public String getQrPayMode() {
+    /**
+     * Gets qr pay mode.
+     *
+     * @return the qr pay mode
+     */
+    public String getQrPayMode() {
 		return this.qrPayMode;
 	}
-	public void setQrPayMode(String qrPayMode) {
+
+    /**
+     * Sets qr pay mode.
+     *
+     * @param qrPayMode the qr pay mode
+     */
+    public void setQrPayMode(String qrPayMode) {
 		this.qrPayMode = qrPayMode;
 	}
 
-	public Long getQrcodeWidth() {
+    /**
+     * Gets qrcode width.
+     *
+     * @return the qrcode width
+     */
+    public Long getQrcodeWidth() {
 		return this.qrcodeWidth;
 	}
-	public void setQrcodeWidth(Long qrcodeWidth) {
+
+    /**
+     * Sets qrcode width.
+     *
+     * @param qrcodeWidth the qrcode width
+     */
+    public void setQrcodeWidth(Long qrcodeWidth) {
 		this.qrcodeWidth = qrcodeWidth;
 	}
 
-	public String getRequestFromUrl() {
+    /**
+     * Gets request from url.
+     *
+     * @return the request from url
+     */
+    public String getRequestFromUrl() {
 		return this.requestFromUrl;
 	}
-	public void setRequestFromUrl(String requestFromUrl) {
+
+    /**
+     * Sets request from url.
+     *
+     * @param requestFromUrl the request from url
+     */
+    public void setRequestFromUrl(String requestFromUrl) {
 		this.requestFromUrl = requestFromUrl;
 	}
 
-	public RoyaltyInfo getRoyaltyInfo() {
+    /**
+     * Gets royalty info.
+     *
+     * @return the royalty info
+     */
+    public RoyaltyInfo getRoyaltyInfo() {
 		return this.royaltyInfo;
 	}
-	public void setRoyaltyInfo(RoyaltyInfo royaltyInfo) {
+
+    /**
+     * Sets royalty info.
+     *
+     * @param royaltyInfo the royalty info
+     */
+    public void setRoyaltyInfo(RoyaltyInfo royaltyInfo) {
 		this.royaltyInfo = royaltyInfo;
 	}
 
-	public String getStoreId() {
+    /**
+     * Gets settle info.
+     *
+     * @return the settle info
+     */
+    public SettleInfo getSettleInfo() {
+		return this.settleInfo;
+	}
+
+    /**
+     * Sets settle info.
+     *
+     * @param settleInfo the settle info
+     */
+    public void setSettleInfo(SettleInfo settleInfo) {
+		this.settleInfo = settleInfo;
+	}
+
+    /**
+     * Gets store id.
+     *
+     * @return the store id
+     */
+    public String getStoreId() {
 		return this.storeId;
 	}
-	public void setStoreId(String storeId) {
+
+    /**
+     * Sets store id.
+     *
+     * @param storeId the store id
+     */
+    public void setStoreId(String storeId) {
 		this.storeId = storeId;
 	}
 
-	public SubMerchant getSubMerchant() {
+    /**
+     * Gets sub merchant.
+     *
+     * @return the sub merchant
+     */
+    public SubMerchant getSubMerchant() {
 		return this.subMerchant;
 	}
-	public void setSubMerchant(SubMerchant subMerchant) {
+
+    /**
+     * Sets sub merchant.
+     *
+     * @param subMerchant the sub merchant
+     */
+    public void setSubMerchant(SubMerchant subMerchant) {
 		this.subMerchant = subMerchant;
 	}
 
-	public String getSubject() {
+    /**
+     * Gets subject.
+     *
+     * @return the subject
+     */
+    public String getSubject() {
 		return this.subject;
 	}
-	public void setSubject(String subject) {
+
+    /**
+     * Sets subject.
+     *
+     * @param subject the subject
+     */
+    public void setSubject(String subject) {
 		this.subject = subject;
 	}
 
-	public String getTimeExpire() {
+    /**
+     * Gets time expire.
+     *
+     * @return the time expire
+     */
+    public String getTimeExpire() {
 		return this.timeExpire;
 	}
-	public void setTimeExpire(String timeExpire) {
+
+    /**
+     * Sets time expire.
+     *
+     * @param timeExpire the time expire
+     */
+    public void setTimeExpire(String timeExpire) {
 		this.timeExpire = timeExpire;
 	}
 
-	public String getTimeoutExpress() {
+    /**
+     * Gets timeout express.
+     *
+     * @return the timeout express
+     */
+    public String getTimeoutExpress() {
 		return this.timeoutExpress;
 	}
-	public void setTimeoutExpress(String timeoutExpress) {
+
+    /**
+     * Sets timeout express.
+     *
+     * @param timeoutExpress the timeout express
+     */
+    public void setTimeoutExpress(String timeoutExpress) {
 		this.timeoutExpress = timeoutExpress;
 	}
 
-	public String getTotalAmount() {
+    /**
+     * Gets total amount.
+     *
+     * @return the total amount
+     */
+    public String getTotalAmount() {
 		return this.totalAmount;
 	}
-	public void setTotalAmount(String totalAmount) {
+
+    /**
+     * Sets total amount.
+     *
+     * @param totalAmount the total amount
+     */
+    public void setTotalAmount(String totalAmount) {
 		this.totalAmount = totalAmount;
 	}
 

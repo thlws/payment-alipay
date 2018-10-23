@@ -9,9 +9,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.mobile.public.message.custom.send request
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-10-09 11:58:04
+ * @since 1.0, 2018-08-15 10:15:00
  */
 public class AlipayMobilePublicMessageCustomSendRequest implements AlipayRequest<AlipayMobilePublicMessageCustomSendResponse> {
 
@@ -19,15 +19,26 @@ public class AlipayMobilePublicMessageCustomSendRequest implements AlipayRequest
 	private String apiVersion="1.0";
 
 	/** 
-	* 业务内容，其中包括消息类型msgType、消息体和消息接受人toUserId三大块，具体参见“表1-2 服务窗单发客服消息的biz_content参数说明”。
+	* 业务内容，其中包括消息类型msgType、消息体和消息接受人toUserId三大块，在toUserId这一层级新加eventType参数，该字段取值为follow:表示关注事件，click：表示菜单点击事件，enter_ppchat:代表进入事件。具体参见“表1-2 服务窗单发客服消息的biz_content参数说明”。
 <a href="https://doc.open.alipay.com/doc2/detail.htm?spm=a219a.7386797.0.0.eZqycg&treeId=53&articleId=103448&docType=1">详情请见</a>
 	 */
 	private String bizContent;
 
-	public void setBizContent(String bizContent) {
+    /**
+     * Sets biz content.
+     *
+     * @param bizContent the biz content
+     */
+    public void setBizContent(String bizContent) {
 		this.bizContent = bizContent;
 	}
-	public String getBizContent() {
+
+    /**
+     * Gets biz content.
+     *
+     * @return the biz content
+     */
+    public String getBizContent() {
 		return this.bizContent;
 	}
 	private String terminalType;
@@ -99,7 +110,13 @@ public class AlipayMobilePublicMessageCustomSendRequest implements AlipayRequest
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.ecapiprod.data.put request
- * 
+ *
  * @author auto create
  * @since 1.0, 2015-04-02 16:45:23
  */
@@ -63,66 +63,165 @@ public class AlipayEcapiprodDataPutRequest implements AlipayRequest<AlipayEcapip
 	 */
 	private String orgCode;
 
-	public void setCategory(String category) {
+    /**
+     * Sets category.
+     *
+     * @param category the category
+     */
+    public void setCategory(String category) {
 		this.category = category;
 	}
-	public String getCategory() {
+
+    /**
+     * Gets category.
+     *
+     * @return the category
+     */
+    public String getCategory() {
 		return this.category;
 	}
 
-	public void setCharSet(String charSet) {
+    /**
+     * Sets char set.
+     *
+     * @param charSet the char set
+     */
+    public void setCharSet(String charSet) {
 		this.charSet = charSet;
 	}
-	public String getCharSet() {
+
+    /**
+     * Gets char set.
+     *
+     * @return the char set
+     */
+    public String getCharSet() {
 		return this.charSet;
 	}
 
-	public void setCollectingTaskId(String collectingTaskId) {
+    /**
+     * Sets collecting task id.
+     *
+     * @param collectingTaskId the collecting task id
+     */
+    public void setCollectingTaskId(String collectingTaskId) {
 		this.collectingTaskId = collectingTaskId;
 	}
-	public String getCollectingTaskId() {
+
+    /**
+     * Gets collecting task id.
+     *
+     * @return the collecting task id
+     */
+    public String getCollectingTaskId() {
 		return this.collectingTaskId;
 	}
 
-	public void setEntityCode(String entityCode) {
+    /**
+     * Sets entity code.
+     *
+     * @param entityCode the entity code
+     */
+    public void setEntityCode(String entityCode) {
 		this.entityCode = entityCode;
 	}
-	public String getEntityCode() {
+
+    /**
+     * Gets entity code.
+     *
+     * @return the entity code
+     */
+    public String getEntityCode() {
 		return this.entityCode;
 	}
 
-	public void setEntityName(String entityName) {
+    /**
+     * Sets entity name.
+     *
+     * @param entityName the entity name
+     */
+    public void setEntityName(String entityName) {
 		this.entityName = entityName;
 	}
-	public String getEntityName() {
+
+    /**
+     * Gets entity name.
+     *
+     * @return the entity name
+     */
+    public String getEntityName() {
 		return this.entityName;
 	}
 
-	public void setEntityType(String entityType) {
+    /**
+     * Sets entity type.
+     *
+     * @param entityType the entity type
+     */
+    public void setEntityType(String entityType) {
 		this.entityType = entityType;
 	}
-	public String getEntityType() {
+
+    /**
+     * Gets entity type.
+     *
+     * @return the entity type
+     */
+    public String getEntityType() {
 		return this.entityType;
 	}
 
-	public void setIsvCode(String isvCode) {
+    /**
+     * Sets isv code.
+     *
+     * @param isvCode the isv code
+     */
+    public void setIsvCode(String isvCode) {
 		this.isvCode = isvCode;
 	}
-	public String getIsvCode() {
+
+    /**
+     * Gets isv code.
+     *
+     * @return the isv code
+     */
+    public String getIsvCode() {
 		return this.isvCode;
 	}
 
-	public void setJsonData(String jsonData) {
+    /**
+     * Sets json data.
+     *
+     * @param jsonData the json data
+     */
+    public void setJsonData(String jsonData) {
 		this.jsonData = jsonData;
 	}
-	public String getJsonData() {
+
+    /**
+     * Gets json data.
+     *
+     * @return the json data
+     */
+    public String getJsonData() {
 		return this.jsonData;
 	}
 
-	public void setOrgCode(String orgCode) {
+    /**
+     * Sets org code.
+     *
+     * @param orgCode the org code
+     */
+    public void setOrgCode(String orgCode) {
 		this.orgCode = orgCode;
 	}
-	public String getOrgCode() {
+
+    /**
+     * Gets org code.
+     *
+     * @return the org code
+     */
+    public String getOrgCode() {
 		return this.orgCode;
 	}
 	private String terminalType;
@@ -202,7 +301,13 @@ public class AlipayEcapiprodDataPutRequest implements AlipayRequest<AlipayEcapip
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

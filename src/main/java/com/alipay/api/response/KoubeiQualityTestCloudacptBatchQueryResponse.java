@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.quality.test.cloudacpt.batch.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-06-15 15:06:46
  */
 public class KoubeiQualityTestCloudacptBatchQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7567521541576845596L;
+	private static final long serialVersionUID = 5491443548216415445L;
 
 	/** 
 	 * 活动id
@@ -36,24 +36,57 @@ public class KoubeiQualityTestCloudacptBatchQueryResponse extends AlipayResponse
 	@ApiField("batch_num")
 	private String batchNum;
 
-	public void setActivityId(String activityId) {
+    /**
+     * Sets activity id.
+     *
+     * @param activityId the activity id
+     */
+    public void setActivityId(String activityId) {
 		this.activityId = activityId;
 	}
-	public String getActivityId( ) {
+
+    /**
+     * Gets activity id.
+     *
+     * @return the activity id
+     */
+    public String getActivityId( ) {
 		return this.activityId;
 	}
 
-	public void setBatchList(List<OpenBatch> batchList) {
+    /**
+     * Sets batch list.
+     *
+     * @param batchList the batch list
+     */
+    public void setBatchList(List<OpenBatch> batchList) {
 		this.batchList = batchList;
 	}
-	public List<OpenBatch> getBatchList( ) {
+
+    /**
+     * Gets batch list.
+     *
+     * @return the batch list
+     */
+    public List<OpenBatch> getBatchList( ) {
 		return this.batchList;
 	}
 
-	public void setBatchNum(String batchNum) {
+    /**
+     * Sets batch num.
+     *
+     * @param batchNum the batch num
+     */
+    public void setBatchNum(String batchNum) {
 		this.batchNum = batchNum;
 	}
-	public String getBatchNum( ) {
+
+    /**
+     * Gets batch num.
+     *
+     * @return the batch num
+     */
+    public String getBatchNum( ) {
 		return this.batchNum;
 	}
 

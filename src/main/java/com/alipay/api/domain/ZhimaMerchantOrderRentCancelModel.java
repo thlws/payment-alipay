@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaMerchantOrderRentCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4352243546257826682L;
+	private static final long serialVersionUID = 2888899313713858898L;
 
 	/**
 	 * 信用借还订单号
@@ -25,17 +25,39 @@ public class ZhimaMerchantOrderRentCancelModel extends AlipayObject {
 	@ApiField("product_code")
 	private String productCode;
 
-	public String getOrderNo() {
+    /**
+     * Gets order no.
+     *
+     * @return the order no
+     */
+    public String getOrderNo() {
 		return this.orderNo;
 	}
-	public void setOrderNo(String orderNo) {
+
+    /**
+     * Sets order no.
+     *
+     * @param orderNo the order no
+     */
+    public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
 
-	public String getProductCode() {
+    /**
+     * Gets product code.
+     *
+     * @return the product code
+     */
+    public String getProductCode() {
 		return this.productCode;
 	}
-	public void setProductCode(String productCode) {
+
+    /**
+     * Sets product code.
+     *
+     * @param productCode the product code
+     */
+    public void setProductCode(String productCode) {
 		this.productCode = productCode;
 	}
 

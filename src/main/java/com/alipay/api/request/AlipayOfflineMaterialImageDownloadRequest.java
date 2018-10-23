@@ -10,7 +10,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.offline.material.image.download request
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-04-14 11:37:33
  */
@@ -24,10 +24,21 @@ public class AlipayOfflineMaterialImageDownloadRequest implements AlipayRequest<
 	 */
 	private List<String> imageIds;
 
-	public void setImageIds(List<String> imageIds) {
+    /**
+     * Sets image ids.
+     *
+     * @param imageIds the image ids
+     */
+    public void setImageIds(List<String> imageIds) {
 		this.imageIds = imageIds;
 	}
-	public List<String> getImageIds() {
+
+    /**
+     * Gets image ids.
+     *
+     * @return the image ids
+     */
+    public List<String> getImageIds() {
 		return this.imageIds;
 	}
 	private String terminalType;
@@ -92,14 +103,20 @@ public class AlipayOfflineMaterialImageDownloadRequest implements AlipayRequest<
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
-		txtParams.put("image_ids", this.imageIds);
+		txtParams.put("image_ids", this.imageIds == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.imageIds, true));
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

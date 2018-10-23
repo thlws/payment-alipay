@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员卡查询
  *
  * @author auto create
- * @since 1.0, 2017-06-23 09:39:57
+ * @since 1.0, 2018-01-31 17:43:09
  */
 public class AlipayMarketingCardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7467437699312918334L;
+	private static final long serialVersionUID = 8412474847282741679L;
 
 	/**
 	 * 用户信息 填写则作为附加条件查询
@@ -42,31 +42,75 @@ D_BAR_CODE：动态条码（业务卡号对应的）
 	@ApiField("target_card_no_type")
 	private String targetCardNoType;
 
-	public CardUserInfo getCardUserInfo() {
+    /**
+     * Gets card user info.
+     *
+     * @return the card user info
+     */
+    public CardUserInfo getCardUserInfo() {
 		return this.cardUserInfo;
 	}
-	public void setCardUserInfo(CardUserInfo cardUserInfo) {
+
+    /**
+     * Sets card user info.
+     *
+     * @param cardUserInfo the card user info
+     */
+    public void setCardUserInfo(CardUserInfo cardUserInfo) {
 		this.cardUserInfo = cardUserInfo;
 	}
 
-	public String getExtInfo() {
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo() {
 		return this.extInfo;
 	}
-	public void setExtInfo(String extInfo) {
+
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
-	public String getTargetCardNo() {
+    /**
+     * Gets target card no.
+     *
+     * @return the target card no
+     */
+    public String getTargetCardNo() {
 		return this.targetCardNo;
 	}
-	public void setTargetCardNo(String targetCardNo) {
+
+    /**
+     * Sets target card no.
+     *
+     * @param targetCardNo the target card no
+     */
+    public void setTargetCardNo(String targetCardNo) {
 		this.targetCardNo = targetCardNo;
 	}
 
-	public String getTargetCardNoType() {
+    /**
+     * Gets target card no type.
+     *
+     * @return the target card no type
+     */
+    public String getTargetCardNoType() {
 		return this.targetCardNoType;
 	}
-	public void setTargetCardNoType(String targetCardNoType) {
+
+    /**
+     * Sets target card no type.
+     *
+     * @param targetCardNoType the target card no type
+     */
+    public void setTargetCardNoType(String targetCardNoType) {
 		this.targetCardNoType = targetCardNoType;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMarketingDataBizadviserMyddsreportQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7723734249872327359L;
+	private static final long serialVersionUID = 4338765689358899352L;
 
 	/**
 	 * req_parameters是请求参数汇集的一个json串和格式如下；
@@ -34,17 +34,39 @@ memberType会员类型，1:会员、2:潜客。
 	@ApiField("uniq_key")
 	private String uniqKey;
 
-	public String getReqParameters() {
+    /**
+     * Gets req parameters.
+     *
+     * @return the req parameters
+     */
+    public String getReqParameters() {
 		return this.reqParameters;
 	}
-	public void setReqParameters(String reqParameters) {
+
+    /**
+     * Sets req parameters.
+     *
+     * @param reqParameters the req parameters
+     */
+    public void setReqParameters(String reqParameters) {
 		this.reqParameters = reqParameters;
 	}
 
-	public String getUniqKey() {
+    /**
+     * Gets uniq key.
+     *
+     * @return the uniq key
+     */
+    public String getUniqKey() {
 		return this.uniqKey;
 	}
-	public void setUniqKey(String uniqKey) {
+
+    /**
+     * Sets uniq key.
+     *
+     * @param uniqKey the uniq key
+     */
+    public void setUniqKey(String uniqKey) {
 		this.uniqKey = uniqKey;
 	}
 

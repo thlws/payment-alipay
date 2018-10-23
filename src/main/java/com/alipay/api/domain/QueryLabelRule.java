@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class QueryLabelRule extends AlipayObject {
 
-	private static final long serialVersionUID = 5483264614424978437L;
+	private static final long serialVersionUID = 8222532973687447231L;
 
 	/**
 	 * 标签id
@@ -37,31 +37,75 @@ public class QueryLabelRule extends AlipayObject {
 	@ApiField("operator")
 	private String operator;
 
-	public String getLabelId() {
+    /**
+     * Gets label id.
+     *
+     * @return the label id
+     */
+    public String getLabelId() {
 		return this.labelId;
 	}
-	public void setLabelId(String labelId) {
+
+    /**
+     * Sets label id.
+     *
+     * @param labelId the label id
+     */
+    public void setLabelId(String labelId) {
 		this.labelId = labelId;
 	}
 
-	public String getLabelName() {
+    /**
+     * Gets label name.
+     *
+     * @return the label name
+     */
+    public String getLabelName() {
 		return this.labelName;
 	}
-	public void setLabelName(String labelName) {
+
+    /**
+     * Sets label name.
+     *
+     * @param labelName the label name
+     */
+    public void setLabelName(String labelName) {
 		this.labelName = labelName;
 	}
 
-	public String getLabelValue() {
+    /**
+     * Gets label value.
+     *
+     * @return the label value
+     */
+    public String getLabelValue() {
 		return this.labelValue;
 	}
-	public void setLabelValue(String labelValue) {
+
+    /**
+     * Sets label value.
+     *
+     * @param labelValue the label value
+     */
+    public void setLabelValue(String labelValue) {
 		this.labelValue = labelValue;
 	}
 
-	public String getOperator() {
+    /**
+     * Gets operator.
+     *
+     * @return the operator
+     */
+    public String getOperator() {
 		return this.operator;
 	}
-	public void setOperator(String operator) {
+
+    /**
+     * Sets operator.
+     *
+     * @param operator the operator
+     */
+    public void setOperator(String operator) {
 		this.operator = operator;
 	}
 

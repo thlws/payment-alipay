@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiItemExtitemBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6181439685955836118L;
+	private static final long serialVersionUID = 2431997774853943863L;
 
 	/**
 	 * 品牌编码
@@ -43,38 +43,93 @@ public class KoubeiItemExtitemBatchqueryModel extends AlipayObject {
 	@ApiField("title")
 	private String title;
 
-	public String getBrandCode() {
+    /**
+     * Gets brand code.
+     *
+     * @return the brand code
+     */
+    public String getBrandCode() {
 		return this.brandCode;
 	}
-	public void setBrandCode(String brandCode) {
+
+    /**
+     * Sets brand code.
+     *
+     * @param brandCode the brand code
+     */
+    public void setBrandCode(String brandCode) {
 		this.brandCode = brandCode;
 	}
 
-	public String getCategoryCode() {
+    /**
+     * Gets category code.
+     *
+     * @return the category code
+     */
+    public String getCategoryCode() {
 		return this.categoryCode;
 	}
-	public void setCategoryCode(String categoryCode) {
+
+    /**
+     * Sets category code.
+     *
+     * @param categoryCode the category code
+     */
+    public void setCategoryCode(String categoryCode) {
 		this.categoryCode = categoryCode;
 	}
 
-	public String getPageNum() {
+    /**
+     * Gets page num.
+     *
+     * @return the page num
+     */
+    public String getPageNum() {
 		return this.pageNum;
 	}
-	public void setPageNum(String pageNum) {
+
+    /**
+     * Sets page num.
+     *
+     * @param pageNum the page num
+     */
+    public void setPageNum(String pageNum) {
 		this.pageNum = pageNum;
 	}
 
-	public String getPageSize() {
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public String getPageSize() {
 		return this.pageSize;
 	}
-	public void setPageSize(String pageSize) {
+
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(String pageSize) {
 		this.pageSize = pageSize;
 	}
 
-	public String getTitle() {
+    /**
+     * Gets title.
+     *
+     * @return the title
+     */
+    public String getTitle() {
 		return this.title;
 	}
-	public void setTitle(String title) {
+
+    /**
+     * Sets title.
+     *
+     * @param title the title
+     */
+    public void setTitle(String title) {
 		this.title = title;
 	}
 

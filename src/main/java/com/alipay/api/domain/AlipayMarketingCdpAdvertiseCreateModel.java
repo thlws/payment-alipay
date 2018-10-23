@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCdpAdvertiseCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7788556718415872412L;
+	private static final long serialVersionUID = 2273718968457623173L;
 
 	/**
 	 * 用户点击广告后，跳转URL地址，必须为https协议。广告类型为PIC时，需要设置该值。对于类型为URL不生效。
@@ -64,59 +64,147 @@ public class AlipayMarketingCdpAdvertiseCreateModel extends AlipayObject {
 	@ApiField("start_time")
 	private Date startTime;
 
-	public String getActionUrl() {
+    /**
+     * Gets action url.
+     *
+     * @return the action url
+     */
+    public String getActionUrl() {
 		return this.actionUrl;
 	}
-	public void setActionUrl(String actionUrl) {
+
+    /**
+     * Sets action url.
+     *
+     * @param actionUrl the action url
+     */
+    public void setActionUrl(String actionUrl) {
 		this.actionUrl = actionUrl;
 	}
 
-	public String getAdCode() {
+    /**
+     * Gets ad code.
+     *
+     * @return the ad code
+     */
+    public String getAdCode() {
 		return this.adCode;
 	}
-	public void setAdCode(String adCode) {
+
+    /**
+     * Sets ad code.
+     *
+     * @param adCode the ad code
+     */
+    public void setAdCode(String adCode) {
 		this.adCode = adCode;
 	}
 
-	public String getAdRules() {
+    /**
+     * Gets ad rules.
+     *
+     * @return the ad rules
+     */
+    public String getAdRules() {
 		return this.adRules;
 	}
-	public void setAdRules(String adRules) {
+
+    /**
+     * Sets ad rules.
+     *
+     * @param adRules the ad rules
+     */
+    public void setAdRules(String adRules) {
 		this.adRules = adRules;
 	}
 
-	public String getContent() {
+    /**
+     * Gets content.
+     *
+     * @return the content
+     */
+    public String getContent() {
 		return this.content;
 	}
-	public void setContent(String content) {
+
+    /**
+     * Sets content.
+     *
+     * @param content the content
+     */
+    public void setContent(String content) {
 		this.content = content;
 	}
 
-	public String getContentType() {
+    /**
+     * Gets content type.
+     *
+     * @return the content type
+     */
+    public String getContentType() {
 		return this.contentType;
 	}
-	public void setContentType(String contentType) {
+
+    /**
+     * Sets content type.
+     *
+     * @param contentType the content type
+     */
+    public void setContentType(String contentType) {
 		this.contentType = contentType;
 	}
 
-	public Date getEndTime() {
+    /**
+     * Gets end time.
+     *
+     * @return the end time
+     */
+    public Date getEndTime() {
 		return this.endTime;
 	}
-	public void setEndTime(Date endTime) {
+
+    /**
+     * Sets end time.
+     *
+     * @param endTime the end time
+     */
+    public void setEndTime(Date endTime) {
 		this.endTime = endTime;
 	}
 
-	public String getHeight() {
+    /**
+     * Gets height.
+     *
+     * @return the height
+     */
+    public String getHeight() {
 		return this.height;
 	}
-	public void setHeight(String height) {
+
+    /**
+     * Sets height.
+     *
+     * @param height the height
+     */
+    public void setHeight(String height) {
 		this.height = height;
 	}
 
-	public Date getStartTime() {
+    /**
+     * Gets start time.
+     *
+     * @return the start time
+     */
+    public Date getStartTime() {
 		return this.startTime;
 	}
-	public void setStartTime(Date startTime) {
+
+    /**
+     * Sets start time.
+     *
+     * @param startTime the start time
+     */
+    public void setStartTime(Date startTime) {
 		this.startTime = startTime;
 	}
 

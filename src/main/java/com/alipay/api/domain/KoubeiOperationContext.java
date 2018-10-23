@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiOperationContext extends AlipayObject {
 
-	private static final long serialVersionUID = 1325289125877283848L;
+	private static final long serialVersionUID = 8611971566212475636L;
 
 	/**
 	 * 如果是isv代操作，请传入ISV；如果是其他角色（商户MERCHANT、服务商PROVIDER、服务商员工S_STAFF、商户员工M_STAFF）操作，不用填写。
@@ -19,10 +19,21 @@ public class KoubeiOperationContext extends AlipayObject {
 	@ApiField("op_role")
 	private String opRole;
 
-	public String getOpRole() {
+    /**
+     * Gets op role.
+     *
+     * @return the op role
+     */
+    public String getOpRole() {
 		return this.opRole;
 	}
-	public void setOpRole(String opRole) {
+
+    /**
+     * Sets op role.
+     *
+     * @param opRole the op role
+     */
+    public void setOpRole(String opRole) {
 		this.opRole = opRole;
 	}
 

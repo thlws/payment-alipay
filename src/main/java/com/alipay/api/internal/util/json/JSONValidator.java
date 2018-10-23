@@ -3,17 +3,31 @@ package com.alipay.api.internal.util.json;
 import java.text.CharacterIterator;
 import java.text.StringCharacterIterator;
 
+/**
+ * The type Json validator.
+ */
 public class JSONValidator {
 
     private JSONErrorListener listener;
     private CharacterIterator it;
     private char c;
     private int col;
-    
+
+    /**
+     * Instantiates a new Json validator.
+     *
+     * @param listener the listener
+     */
     public JSONValidator(JSONErrorListener listener) {
         this.listener = listener;
     }
-    
+
+    /**
+     * Validate boolean.
+     *
+     * @param input the input
+     * @return the boolean
+     */
     public boolean validate(String input) {
         input = input.trim();
         listener.start(input);

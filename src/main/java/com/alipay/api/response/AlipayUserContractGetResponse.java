@@ -7,13 +7,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.user.contract.get response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-06-06 20:23:18
  */
 public class AlipayUserContractGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8465583847298948221L;
+	private static final long serialVersionUID = 8755397319231318665L;
 
 	/** 
 	 * 支付宝用户订购信息
@@ -21,10 +21,21 @@ public class AlipayUserContractGetResponse extends AlipayResponse {
 	@ApiField("alipay_contract")
 	private AlipayContract alipayContract;
 
-	public void setAlipayContract(AlipayContract alipayContract) {
+    /**
+     * Sets alipay contract.
+     *
+     * @param alipayContract the alipay contract
+     */
+    public void setAlipayContract(AlipayContract alipayContract) {
 		this.alipayContract = alipayContract;
 	}
-	public AlipayContract getAlipayContract( ) {
+
+    /**
+     * Gets alipay contract.
+     *
+     * @return the alipay contract
+     */
+    public AlipayContract getAlipayContract( ) {
 		return this.alipayContract;
 	}
 

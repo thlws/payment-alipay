@@ -10,9 +10,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.security.prod.signature.task.query request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-20 10:18:37
+ * @since 1.0, 2017-12-20 15:24:43
  */
 public class AlipaySecurityProdSignatureTaskQueryRequest implements AlipayRequest<AlipaySecurityProdSignatureTaskQueryResponse> {
 
@@ -24,10 +24,21 @@ public class AlipaySecurityProdSignatureTaskQueryRequest implements AlipayReques
 	 */
 	private String bizContent;
 
-	public void setBizContent(String bizContent) {
+    /**
+     * Sets biz content.
+     *
+     * @param bizContent the biz content
+     */
+    public void setBizContent(String bizContent) {
 		this.bizContent = bizContent;
 	}
-	public String getBizContent() {
+
+    /**
+     * Gets biz content.
+     *
+     * @return the biz content
+     */
+    public String getBizContent() {
 		return this.bizContent;
 	}
 	private String terminalType;
@@ -99,7 +110,13 @@ public class AlipaySecurityProdSignatureTaskQueryRequest implements AlipayReques
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

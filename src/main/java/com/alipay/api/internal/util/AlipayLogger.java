@@ -268,6 +268,32 @@ public class AlipayLogger {
     /**
      * 业务/系统错误日志
      *
+     * @param rsp         the rsp
+     * @param costTimeMap the cost time map
+     */
+    public static void logBizError(String rsp, Map<String, Long> costTimeMap) {
+        if (!needEnableLogger) {
+            return;
+        }
+        DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        df.setTimeZone(TimeZone.getTimeZone(AlipayConstants.DATE_TIMEZONE));
+        StringBuilder sb = new StringBuilder();
+        sb.append(df.format(new Date()));
+        sb.append("^_^");
+        sb.append(rsp);
+        sb.append("^_^");
+        sb.append(costTimeMap.get("prepareCostTime"));
+        sb.append("ms,");
+        sb.append(costTimeMap.get("requestCostTime"));
+        sb.append("ms,");
+        sb.append(costTimeMap.get("postCostTime"));
+        sb.append("ms");
+        blog.error(sb.toString());
+    }
+
+    /**
+     * 业务/系统错误日志
+     *
      * @param t the t
      */
     public static void logBizError(Throwable t) {
@@ -316,6 +342,92 @@ public class AlipayLogger {
         sb.append("Body:");
         sb.append((String) rt.get("rsp"));
         blog.error(sb.toString());
+    }
+
+    /**
+     * 发生特别错误时记录完整错误现场
+     *
+     * @param rt          the rt
+     * @param tRsp        the t rsp
+     * @param appSecret   the app secret
+     * @param costTimeMap the cost time map
+     */
+    public static void logErrorScene(Map<String, Object> rt, AlipayResponse tRsp,
+                                     String appSecret, Map<String, Long> costTimeMap) {
+        if (!needEnableLogger) {
+            return;
+        }
+        DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        df.setTimeZone(TimeZone.getTimeZone(AlipayConstants.DATE_TIMEZONE));
+        StringBuilder sb = new StringBuilder();
+        sb.append("ErrorScene");
+        sb.append("^_^");
+        sb.append(tRsp.getErrorCode());
+        sb.append("^_^");
+        sb.append(tRsp.getSubCode());
+        sb.append("^_^");
+        sb.append(ip);
+        sb.append("^_^");
+        sb.append(osName);
+        sb.append("^_^");
+        sb.append(df.format(new Date()));
+        sb.append("^_^");
+        sb.append("ProtocalMustParams:");
+        appendLog((AlipayHashMap) rt.get("protocalMustParams"), sb);
+        sb.append("^_^");
+        sb.append("ProtocalOptParams:");
+        appendLog((AlipayHashMap) rt.get("protocalOptParams"), sb);
+        sb.append("^_^");
+        sb.append("ApplicationParams:");
+        appendLog((AlipayHashMap) rt.get("textParams"), sb);
+        sb.append("^_^");
+        sb.append("Body:");
+        sb.append((String) rt.get("rsp"));
+        sb.append("^_^");
+        sb.append(costTimeMap.get("prepareCostTime"));
+        sb.append("ms,");
+        sb.append(costTimeMap.get("requestCostTime"));
+        sb.append("ms,");
+        sb.append(costTimeMap.get("postCostTime"));
+        sb.append("ms");
+        blog.error(sb.toString());
+    }
+
+    /**
+     * 发生特别错误时记录完整错误现场
+     *
+     * @param rt          the rt
+     * @param tRsp        the t rsp
+     * @param costTimeMap the cost time map
+     */
+    public static void logBizSummary(Map<String, Object> rt, AlipayResponse tRsp,
+                                     Map<String, Long> costTimeMap) {
+        if (!needEnableLogger) {
+            return;
+        }
+        StringBuilder sb = new StringBuilder();
+        sb.append("Summary");
+        sb.append("^_^");
+        sb.append(tRsp.getCode());
+        sb.append("^_^");
+        sb.append(tRsp.getSubCode());
+        sb.append("^_^");
+        sb.append("ProtocalMustParams:");
+        appendLog((AlipayHashMap) rt.get("protocalMustParams"), sb);
+        sb.append("^_^");
+        sb.append("ProtocalOptParams:");
+        appendLog((AlipayHashMap) rt.get("protocalOptParams"), sb);
+        sb.append("^_^");
+        sb.append("ApplicationParams:");
+        appendLog((AlipayHashMap) rt.get("textParams"), sb);
+        sb.append("^_^");
+        sb.append(costTimeMap.get("prepareCostTime"));
+        sb.append("ms,");
+        sb.append(costTimeMap.get("requestCostTime"));
+        sb.append("ms,");
+        sb.append(costTimeMap.get("postCostTime"));
+        sb.append("ms");
+        blog.info(sb.toString());
     }
 
     private static void appendLog(AlipayHashMap map, StringBuilder sb) {

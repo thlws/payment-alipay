@@ -9,9 +9,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.open.public.info.query request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-20 17:31:46
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayOpenPublicInfoQueryRequest implements AlipayRequest<AlipayOpenPublicInfoQueryResponse> {
 
@@ -85,7 +85,13 @@ public class AlipayOpenPublicInfoQueryRequest implements AlipayRequest<AlipayOpe
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

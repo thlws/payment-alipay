@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ReduceToDiscountDstCampPrizeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8657111769534935579L;
+	private static final long serialVersionUID = 2529124147177315691L;
 
 	/**
 	 * 折扣预算ID
@@ -37,31 +37,75 @@ public class ReduceToDiscountDstCampPrizeModel extends AlipayObject {
 	@ApiField("reduce_to_discount_rate")
 	private String reduceToDiscountRate;
 
-	public String getBudgetId() {
+    /**
+     * Gets budget id.
+     *
+     * @return the budget id
+     */
+    public String getBudgetId() {
 		return this.budgetId;
 	}
-	public void setBudgetId(String budgetId) {
+
+    /**
+     * Sets budget id.
+     *
+     * @param budgetId the budget id
+     */
+    public void setBudgetId(String budgetId) {
 		this.budgetId = budgetId;
 	}
 
-	public String getId() {
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
+    public String getId() {
 		return this.id;
 	}
-	public void setId(String id) {
+
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
+    public void setId(String id) {
 		this.id = id;
 	}
 
-	public String getMaxDiscountAmt() {
+    /**
+     * Gets max discount amt.
+     *
+     * @return the max discount amt
+     */
+    public String getMaxDiscountAmt() {
 		return this.maxDiscountAmt;
 	}
-	public void setMaxDiscountAmt(String maxDiscountAmt) {
+
+    /**
+     * Sets max discount amt.
+     *
+     * @param maxDiscountAmt the max discount amt
+     */
+    public void setMaxDiscountAmt(String maxDiscountAmt) {
 		this.maxDiscountAmt = maxDiscountAmt;
 	}
 
-	public String getReduceToDiscountRate() {
+    /**
+     * Gets reduce to discount rate.
+     *
+     * @return the reduce to discount rate
+     */
+    public String getReduceToDiscountRate() {
 		return this.reduceToDiscountRate;
 	}
-	public void setReduceToDiscountRate(String reduceToDiscountRate) {
+
+    /**
+     * Sets reduce to discount rate.
+     *
+     * @param reduceToDiscountRate the reduce to discount rate
+     */
+    public void setReduceToDiscountRate(String reduceToDiscountRate) {
 		this.reduceToDiscountRate = reduceToDiscountRate;
 	}
 

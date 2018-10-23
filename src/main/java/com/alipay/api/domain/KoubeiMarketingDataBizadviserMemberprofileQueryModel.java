@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMarketingDataBizadviserMemberprofileQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7693961887369511138L;
+	private static final long serialVersionUID = 4794627756483599974L;
 
 	/**
 	 * 会员分层，可传 ALL/4/3/2/1  五个值
@@ -24,10 +24,21 @@ public class KoubeiMarketingDataBizadviserMemberprofileQueryModel extends Alipay
 	@ApiField("member_grade")
 	private String memberGrade;
 
-	public String getMemberGrade() {
+    /**
+     * Gets member grade.
+     *
+     * @return the member grade
+     */
+    public String getMemberGrade() {
 		return this.memberGrade;
 	}
-	public void setMemberGrade(String memberGrade) {
+
+    /**
+     * Sets member grade.
+     *
+     * @param memberGrade the member grade
+     */
+    public void setMemberGrade(String memberGrade) {
 		this.memberGrade = memberGrade;
 	}
 

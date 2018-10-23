@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicPartnerMenuOperateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2267781449259472962L;
+	private static final long serialVersionUID = 8684465132324123838L;
 
 	/**
 	 * 行为参数
@@ -49,45 +49,111 @@ public class AlipayOpenPublicPartnerMenuOperateModel extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
-	public String getActionParam() {
+    /**
+     * Gets action param.
+     *
+     * @return the action param
+     */
+    public String getActionParam() {
 		return this.actionParam;
 	}
-	public void setActionParam(String actionParam) {
+
+    /**
+     * Sets action param.
+     *
+     * @param actionParam the action param
+     */
+    public void setActionParam(String actionParam) {
 		this.actionParam = actionParam;
 	}
 
-	public String getActionType() {
+    /**
+     * Gets action type.
+     *
+     * @return the action type
+     */
+    public String getActionType() {
 		return this.actionType;
 	}
-	public void setActionType(String actionType) {
+
+    /**
+     * Sets action type.
+     *
+     * @param actionType the action type
+     */
+    public void setActionType(String actionType) {
 		this.actionType = actionType;
 	}
 
-	public String getAgreementId() {
+    /**
+     * Gets agreement id.
+     *
+     * @return the agreement id
+     */
+    public String getAgreementId() {
 		return this.agreementId;
 	}
-	public void setAgreementId(String agreementId) {
+
+    /**
+     * Sets agreement id.
+     *
+     * @param agreementId the agreement id
+     */
+    public void setAgreementId(String agreementId) {
 		this.agreementId = agreementId;
 	}
 
-	public String getPublicId() {
+    /**
+     * Gets public id.
+     *
+     * @return the public id
+     */
+    public String getPublicId() {
 		return this.publicId;
 	}
-	public void setPublicId(String publicId) {
+
+    /**
+     * Sets public id.
+     *
+     * @param publicId the public id
+     */
+    public void setPublicId(String publicId) {
 		this.publicId = publicId;
 	}
 
-	public String getThirdAccountId() {
+    /**
+     * Gets third account id.
+     *
+     * @return the third account id
+     */
+    public String getThirdAccountId() {
 		return this.thirdAccountId;
 	}
-	public void setThirdAccountId(String thirdAccountId) {
+
+    /**
+     * Sets third account id.
+     *
+     * @param thirdAccountId the third account id
+     */
+    public void setThirdAccountId(String thirdAccountId) {
 		this.thirdAccountId = thirdAccountId;
 	}
 
-	public String getUserId() {
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
-	public void setUserId(String userId) {
+
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
 

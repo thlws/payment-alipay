@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.third.customer.service response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-12-08 12:11:15
  */
 public class AlipayOpenPublicThirdCustomerServiceResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3277419729515383425L;
+	private static final long serialVersionUID = 1829643418254729318L;
 
 	/** 
 	 * 授权给第三方渠道商的服务窗名称
@@ -20,10 +20,21 @@ public class AlipayOpenPublicThirdCustomerServiceResponse extends AlipayResponse
 	@ApiField("public_name")
 	private String publicName;
 
-	public void setPublicName(String publicName) {
+    /**
+     * Sets public name.
+     *
+     * @param publicName the public name
+     */
+    public void setPublicName(String publicName) {
 		this.publicName = publicName;
 	}
-	public String getPublicName( ) {
+
+    /**
+     * Gets public name.
+     *
+     * @return the public name
+     */
+    public String getPublicName( ) {
 		return this.publicName;
 	}
 

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoMycarViolationInfoPushModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4642893268398122334L;
+	private static final long serialVersionUID = 8218313155412837554L;
 
 	/**
 	 * 1:可在线处理, 2:不可在线处理, 3:需查询确定
@@ -69,66 +69,165 @@ public class AlipayEcoMycarViolationInfoPushModel extends AlipayObject {
 	@ApiField("vi_type")
 	private String viType;
 
-	public String getDealType() {
+    /**
+     * Gets deal type.
+     *
+     * @return the deal type
+     */
+    public String getDealType() {
 		return this.dealType;
 	}
-	public void setDealType(String dealType) {
+
+    /**
+     * Sets deal type.
+     *
+     * @param dealType the deal type
+     */
+    public void setDealType(String dealType) {
 		this.dealType = dealType;
 	}
 
-	public String getPushType() {
+    /**
+     * Gets push type.
+     *
+     * @return the push type
+     */
+    public String getPushType() {
 		return this.pushType;
 	}
-	public void setPushType(String pushType) {
+
+    /**
+     * Sets push type.
+     *
+     * @param pushType the push type
+     */
+    public void setPushType(String pushType) {
 		this.pushType = pushType;
 	}
 
-	public String getViAddress() {
+    /**
+     * Gets vi address.
+     *
+     * @return the vi address
+     */
+    public String getViAddress() {
 		return this.viAddress;
 	}
-	public void setViAddress(String viAddress) {
+
+    /**
+     * Sets vi address.
+     *
+     * @param viAddress the vi address
+     */
+    public void setViAddress(String viAddress) {
 		this.viAddress = viAddress;
 	}
 
-	public String getViFine() {
+    /**
+     * Gets vi fine.
+     *
+     * @return the vi fine
+     */
+    public String getViFine() {
 		return this.viFine;
 	}
-	public void setViFine(String viFine) {
+
+    /**
+     * Sets vi fine.
+     *
+     * @param viFine the vi fine
+     */
+    public void setViFine(String viFine) {
 		this.viFine = viFine;
 	}
 
-	public String getViHandled() {
+    /**
+     * Gets vi handled.
+     *
+     * @return the vi handled
+     */
+    public String getViHandled() {
 		return this.viHandled;
 	}
-	public void setViHandled(String viHandled) {
+
+    /**
+     * Sets vi handled.
+     *
+     * @param viHandled the vi handled
+     */
+    public void setViHandled(String viHandled) {
 		this.viHandled = viHandled;
 	}
 
-	public String getViNumber() {
+    /**
+     * Gets vi number.
+     *
+     * @return the vi number
+     */
+    public String getViNumber() {
 		return this.viNumber;
 	}
-	public void setViNumber(String viNumber) {
+
+    /**
+     * Sets vi number.
+     *
+     * @param viNumber the vi number
+     */
+    public void setViNumber(String viNumber) {
 		this.viNumber = viNumber;
 	}
 
-	public String getViPoint() {
+    /**
+     * Gets vi point.
+     *
+     * @return the vi point
+     */
+    public String getViPoint() {
 		return this.viPoint;
 	}
-	public void setViPoint(String viPoint) {
+
+    /**
+     * Sets vi point.
+     *
+     * @param viPoint the vi point
+     */
+    public void setViPoint(String viPoint) {
 		this.viPoint = viPoint;
 	}
 
-	public Date getViTime() {
+    /**
+     * Gets vi time.
+     *
+     * @return the vi time
+     */
+    public Date getViTime() {
 		return this.viTime;
 	}
-	public void setViTime(Date viTime) {
+
+    /**
+     * Sets vi time.
+     *
+     * @param viTime the vi time
+     */
+    public void setViTime(Date viTime) {
 		this.viTime = viTime;
 	}
 
-	public String getViType() {
+    /**
+     * Gets vi type.
+     *
+     * @return the vi type
+     */
+    public String getViType() {
 		return this.viType;
 	}
-	public void setViType(String viType) {
+
+    /**
+     * Sets vi type.
+     *
+     * @param viType the vi type
+     */
+    public void setViType(String viType) {
 		this.viType = viType;
 	}
 

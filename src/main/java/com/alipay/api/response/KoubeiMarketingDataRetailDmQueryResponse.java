@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.data.retail.dm.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-05-16 17:02:42
  */
 public class KoubeiMarketingDataRetailDmQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5695412138263561228L;
+	private static final long serialVersionUID = 3571288925296753422L;
 
 	/** 
 	 * 内容ID
@@ -42,31 +42,75 @@ public class KoubeiMarketingDataRetailDmQueryResponse extends AlipayResponse {
 	@ApiField("item_name")
 	private String itemName;
 
-	public void setContentId(String contentId) {
+    /**
+     * Sets content id.
+     *
+     * @param contentId the content id
+     */
+    public void setContentId(String contentId) {
 		this.contentId = contentId;
 	}
-	public String getContentId( ) {
+
+    /**
+     * Gets content id.
+     *
+     * @return the content id
+     */
+    public String getContentId( ) {
 		return this.contentId;
 	}
 
-	public void setDmMarketingDatas(List<DmActivityShopData> dmMarketingDatas) {
+    /**
+     * Sets dm marketing datas.
+     *
+     * @param dmMarketingDatas the dm marketing datas
+     */
+    public void setDmMarketingDatas(List<DmActivityShopData> dmMarketingDatas) {
 		this.dmMarketingDatas = dmMarketingDatas;
 	}
-	public List<DmActivityShopData> getDmMarketingDatas( ) {
+
+    /**
+     * Gets dm marketing datas.
+     *
+     * @return the dm marketing datas
+     */
+    public List<DmActivityShopData> getDmMarketingDatas( ) {
 		return this.dmMarketingDatas;
 	}
 
-	public void setItemCode(String itemCode) {
+    /**
+     * Sets item code.
+     *
+     * @param itemCode the item code
+     */
+    public void setItemCode(String itemCode) {
 		this.itemCode = itemCode;
 	}
-	public String getItemCode( ) {
+
+    /**
+     * Gets item code.
+     *
+     * @return the item code
+     */
+    public String getItemCode( ) {
 		return this.itemCode;
 	}
 
-	public void setItemName(String itemName) {
+    /**
+     * Sets item name.
+     *
+     * @param itemName the item name
+     */
+    public void setItemName(String itemName) {
 		this.itemName = itemName;
 	}
-	public String getItemName( ) {
+
+    /**
+     * Gets item name.
+     *
+     * @return the item name
+     */
+    public String getItemName( ) {
 		return this.itemName;
 	}
 

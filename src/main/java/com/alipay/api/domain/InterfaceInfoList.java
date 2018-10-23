@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InterfaceInfoList extends AlipayObject {
 
-	private static final long serialVersionUID = 3813923718421371264L;
+	private static final long serialVersionUID = 1529922415238872515L;
 
 	/**
 	 * 传入参数固定值:alipay.eco.mycar.parking.userpage.query
@@ -31,24 +31,57 @@ public class InterfaceInfoList extends AlipayObject {
 	@ApiField("interface_url")
 	private String interfaceUrl;
 
-	public String getInterfaceName() {
+    /**
+     * Gets interface name.
+     *
+     * @return the interface name
+     */
+    public String getInterfaceName() {
 		return this.interfaceName;
 	}
-	public void setInterfaceName(String interfaceName) {
+
+    /**
+     * Sets interface name.
+     *
+     * @param interfaceName the interface name
+     */
+    public void setInterfaceName(String interfaceName) {
 		this.interfaceName = interfaceName;
 	}
 
-	public String getInterfaceType() {
+    /**
+     * Gets interface type.
+     *
+     * @return the interface type
+     */
+    public String getInterfaceType() {
 		return this.interfaceType;
 	}
-	public void setInterfaceType(String interfaceType) {
+
+    /**
+     * Sets interface type.
+     *
+     * @param interfaceType the interface type
+     */
+    public void setInterfaceType(String interfaceType) {
 		this.interfaceType = interfaceType;
 	}
 
-	public String getInterfaceUrl() {
+    /**
+     * Gets interface url.
+     *
+     * @return the interface url
+     */
+    public String getInterfaceUrl() {
 		return this.interfaceUrl;
 	}
-	public void setInterfaceUrl(String interfaceUrl) {
+
+    /**
+     * Sets interface url.
+     *
+     * @param interfaceUrl the interface url
+     */
+    public void setInterfaceUrl(String interfaceUrl) {
 		this.interfaceUrl = interfaceUrl;
 	}
 

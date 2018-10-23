@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KbAdvertPercentageCommissionClause extends AlipayObject {
 
-	private static final long serialVersionUID = 1214453862772499231L;
+	private static final long serialVersionUID = 3584378472494746796L;
 
 	/**
 	 * 分佣封顶金额
@@ -27,17 +27,39 @@ public class KbAdvertPercentageCommissionClause extends AlipayObject {
 	@ApiField("rate")
 	private String rate;
 
-	public String getMax() {
+    /**
+     * Gets max.
+     *
+     * @return the max
+     */
+    public String getMax() {
 		return this.max;
 	}
-	public void setMax(String max) {
+
+    /**
+     * Sets max.
+     *
+     * @param max the max
+     */
+    public void setMax(String max) {
 		this.max = max;
 	}
 
-	public String getRate() {
+    /**
+     * Gets rate.
+     *
+     * @return the rate
+     */
+    public String getRate() {
 		return this.rate;
 	}
-	public void setRate(String rate) {
+
+    /**
+     * Sets rate.
+     *
+     * @param rate the rate
+     */
+    public void setRate(String rate) {
 		this.rate = rate;
 	}
 

@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.card.benefit.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-23 09:41:01
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayMarketingCardBenefitQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4339999433212881143L;
+	private static final long serialVersionUID = 2431147527337146199L;
 
 	/** 
 	 * 会员卡模板外部权益列表
@@ -24,10 +24,21 @@ public class AlipayMarketingCardBenefitQueryResponse extends AlipayResponse {
 	@ApiField("mcard_template_benefit_query")
 	private List<McardTemplateBenefitQuery> mcardTemplateBenefitQuery;
 
-	public void setMcardTemplateBenefitQuery(List<McardTemplateBenefitQuery> mcardTemplateBenefitQuery) {
+    /**
+     * Sets mcard template benefit query.
+     *
+     * @param mcardTemplateBenefitQuery the mcard template benefit query
+     */
+    public void setMcardTemplateBenefitQuery(List<McardTemplateBenefitQuery> mcardTemplateBenefitQuery) {
 		this.mcardTemplateBenefitQuery = mcardTemplateBenefitQuery;
 	}
-	public List<McardTemplateBenefitQuery> getMcardTemplateBenefitQuery( ) {
+
+    /**
+     * Gets mcard template benefit query.
+     *
+     * @return the mcard template benefit query
+     */
+    public List<McardTemplateBenefitQuery> getMcardTemplateBenefitQuery( ) {
 		return this.mcardTemplateBenefitQuery;
 	}
 

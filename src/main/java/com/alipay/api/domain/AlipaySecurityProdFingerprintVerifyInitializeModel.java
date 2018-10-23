@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 指纹校验初始化
  *
  * @author auto create
- * @since 1.0, 2017-08-02 14:25:20
+ * @since 1.0, 2018-08-17 16:53:42
  */
 public class AlipaySecurityProdFingerprintVerifyInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1419121413466741127L;
+	private static final long serialVersionUID = 6188234867145596327L;
 
 	/**
 	 * IFAA协议的版本，目前为2.0
@@ -31,24 +31,57 @@ public class AlipaySecurityProdFingerprintVerifyInitializeModel extends AlipayOb
 	@ApiField("token")
 	private String token;
 
-	public String getIfaaVersion() {
+    /**
+     * Gets ifaa version.
+     *
+     * @return the ifaa version
+     */
+    public String getIfaaVersion() {
 		return this.ifaaVersion;
 	}
-	public void setIfaaVersion(String ifaaVersion) {
+
+    /**
+     * Sets ifaa version.
+     *
+     * @param ifaaVersion the ifaa version
+     */
+    public void setIfaaVersion(String ifaaVersion) {
 		this.ifaaVersion = ifaaVersion;
 	}
 
-	public String getSecData() {
+    /**
+     * Gets sec data.
+     *
+     * @return the sec data
+     */
+    public String getSecData() {
 		return this.secData;
 	}
-	public void setSecData(String secData) {
+
+    /**
+     * Sets sec data.
+     *
+     * @param secData the sec data
+     */
+    public void setSecData(String secData) {
 		this.secData = secData;
 	}
 
-	public String getToken() {
+    /**
+     * Gets token.
+     *
+     * @return the token
+     */
+    public String getToken() {
 		return this.token;
 	}
-	public void setToken(String token) {
+
+    /**
+     * Sets token.
+     *
+     * @param token the token
+     */
+    public void setToken(String token) {
 		this.token = token;
 	}
 

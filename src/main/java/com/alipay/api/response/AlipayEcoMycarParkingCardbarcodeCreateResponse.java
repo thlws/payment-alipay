@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.mycar.parking.cardbarcode.create response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-08-25 17:10:39
  */
 public class AlipayEcoMycarParkingCardbarcodeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2618584235378987213L;
+	private static final long serialVersionUID = 6754483535675442491L;
 
 	/** 
 	 * 停车车卡对应二维码列表
@@ -24,10 +24,21 @@ public class AlipayEcoMycarParkingCardbarcodeCreateResponse extends AlipayRespon
 	@ApiField("q_rcode")
 	private List<QRcode> qrcodes;
 
-	public void setQrcodes(List<QRcode> qrcodes) {
+    /**
+     * Sets qrcodes.
+     *
+     * @param qrcodes the qrcodes
+     */
+    public void setQrcodes(List<QRcode> qrcodes) {
 		this.qrcodes = qrcodes;
 	}
-	public List<QRcode> getQrcodes( ) {
+
+    /**
+     * Gets qrcodes.
+     *
+     * @return the qrcodes
+     */
+    public List<QRcode> getQrcodes( ) {
 		return this.qrcodes;
 	}
 

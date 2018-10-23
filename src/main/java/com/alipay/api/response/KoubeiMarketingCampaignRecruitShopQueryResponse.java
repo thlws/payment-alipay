@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.campaign.recruit.shop.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-29 15:07:56
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class KoubeiMarketingCampaignRecruitShopQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1488327298553252368L;
+	private static final long serialVersionUID = 1733598746291579445L;
 
 	/** 
 	 * 招商活动id
@@ -36,24 +36,57 @@ public class KoubeiMarketingCampaignRecruitShopQueryResponse extends AlipayRespo
 	@ApiField("recruit_shop_info")
 	private List<RecruitShopInfo> shopInfo;
 
-	public void setPlanId(String planId) {
+    /**
+     * Sets plan id.
+     *
+     * @param planId the plan id
+     */
+    public void setPlanId(String planId) {
 		this.planId = planId;
 	}
-	public String getPlanId( ) {
+
+    /**
+     * Gets plan id.
+     *
+     * @return the plan id
+     */
+    public String getPlanId( ) {
 		return this.planId;
 	}
 
-	public void setShopCount(String shopCount) {
+    /**
+     * Sets shop count.
+     *
+     * @param shopCount the shop count
+     */
+    public void setShopCount(String shopCount) {
 		this.shopCount = shopCount;
 	}
-	public String getShopCount( ) {
+
+    /**
+     * Gets shop count.
+     *
+     * @return the shop count
+     */
+    public String getShopCount( ) {
 		return this.shopCount;
 	}
 
-	public void setShopInfo(List<RecruitShopInfo> shopInfo) {
+    /**
+     * Sets shop info.
+     *
+     * @param shopInfo the shop info
+     */
+    public void setShopInfo(List<RecruitShopInfo> shopInfo) {
 		this.shopInfo = shopInfo;
 	}
-	public List<RecruitShopInfo> getShopInfo( ) {
+
+    /**
+     * Gets shop info.
+     *
+     * @return the shop info
+     */
+    public List<RecruitShopInfo> getShopInfo( ) {
 		return this.shopInfo;
 	}
 

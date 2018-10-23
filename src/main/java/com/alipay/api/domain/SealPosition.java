@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签章位置描述信息
  *
  * @author auto create
- * @since 1.0, 2017-09-20 10:18:47
+ * @since 1.0, 2017-12-20 15:24:35
  */
 public class SealPosition extends AlipayObject {
 
-	private static final long serialVersionUID = 2511697444497557764L;
+	private static final long serialVersionUID = 5886788242484665534L;
 
 	/**
 	 * 关键字
@@ -47,38 +47,93 @@ public class SealPosition extends AlipayObject {
 	@ApiField("y")
 	private Long y;
 
-	public String getKeyword() {
+    /**
+     * Gets keyword.
+     *
+     * @return the keyword
+     */
+    public String getKeyword() {
 		return this.keyword;
 	}
-	public void setKeyword(String keyword) {
+
+    /**
+     * Sets keyword.
+     *
+     * @param keyword the keyword
+     */
+    public void setKeyword(String keyword) {
 		this.keyword = keyword;
 	}
 
-	public Long getPageNo() {
+    /**
+     * Gets page no.
+     *
+     * @return the page no
+     */
+    public Long getPageNo() {
 		return this.pageNo;
 	}
-	public void setPageNo(Long pageNo) {
+
+    /**
+     * Sets page no.
+     *
+     * @param pageNo the page no
+     */
+    public void setPageNo(Long pageNo) {
 		this.pageNo = pageNo;
 	}
 
-	public Long getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public Long getType() {
 		return this.type;
 	}
-	public void setType(Long type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(Long type) {
 		this.type = type;
 	}
 
-	public Long getX() {
+    /**
+     * Gets x.
+     *
+     * @return the x
+     */
+    public Long getX() {
 		return this.x;
 	}
-	public void setX(Long x) {
+
+    /**
+     * Sets x.
+     *
+     * @param x the x
+     */
+    public void setX(Long x) {
 		this.x = x;
 	}
 
-	public Long getY() {
+    /**
+     * Gets y.
+     *
+     * @return the y
+     */
+    public Long getY() {
 		return this.y;
 	}
-	public void setY(Long y) {
+
+    /**
+     * Sets y.
+     *
+     * @param y the y
+     */
+    public void setY(Long y) {
 		this.y = y;
 	}
 

@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.operator.mobile.bind response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-05-03 16:48:39
+ * @since 1.0, 2018-09-13 13:55:27
  */
 public class AlipayOperatorMobileBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1293215578279388722L;
+	private static final long serialVersionUID = 1559391993598653225L;
 
 	/** 
 	 * 用户签约的支付宝账号对应的支付宝唯一用户号。
@@ -34,7 +34,9 @@ public class AlipayOperatorMobileBindResponse extends AlipayResponse {
 	private String mobileNo;
 
 	/** 
-	 * 绑定状态
+	 * 绑定状态：
+&#61548;	S表示绑定成功
+&#61548;	F表示绑定失败
 	 */
 	@ApiField("status")
 	private String status;
@@ -45,38 +47,93 @@ public class AlipayOperatorMobileBindResponse extends AlipayResponse {
 	@ApiField("user_name")
 	private String userName;
 
-	public void setAlipayUserId(String alipayUserId) {
+    /**
+     * Sets alipay user id.
+     *
+     * @param alipayUserId the alipay user id
+     */
+    public void setAlipayUserId(String alipayUserId) {
 		this.alipayUserId = alipayUserId;
 	}
-	public String getAlipayUserId( ) {
+
+    /**
+     * Gets alipay user id.
+     *
+     * @return the alipay user id
+     */
+    public String getAlipayUserId( ) {
 		return this.alipayUserId;
 	}
 
-	public void setCertificate(String certificate) {
+    /**
+     * Sets certificate.
+     *
+     * @param certificate the certificate
+     */
+    public void setCertificate(String certificate) {
 		this.certificate = certificate;
 	}
-	public String getCertificate( ) {
+
+    /**
+     * Gets certificate.
+     *
+     * @return the certificate
+     */
+    public String getCertificate( ) {
 		return this.certificate;
 	}
 
-	public void setMobileNo(String mobileNo) {
+    /**
+     * Sets mobile no.
+     *
+     * @param mobileNo the mobile no
+     */
+    public void setMobileNo(String mobileNo) {
 		this.mobileNo = mobileNo;
 	}
-	public String getMobileNo( ) {
+
+    /**
+     * Gets mobile no.
+     *
+     * @return the mobile no
+     */
+    public String getMobileNo( ) {
 		return this.mobileNo;
 	}
 
-	public void setStatus(String status) {
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
-	public String getStatus( ) {
+
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus( ) {
 		return this.status;
 	}
 
-	public void setUserName(String userName) {
+    /**
+     * Sets user name.
+     *
+     * @param userName the user name
+     */
+    public void setUserName(String userName) {
 		this.userName = userName;
 	}
-	public String getUserName( ) {
+
+    /**
+     * Gets user name.
+     *
+     * @return the user name
+     */
+    public String getUserName( ) {
 		return this.userName;
 	}
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业平台写请求
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:15
+ * @since 1.0, 2018-02-09 12:02:34
  */
 public class AlipayEcoMycarDataExternalSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1263645135696977557L;
+	private static final long serialVersionUID = 1741958844317837128L;
 
 	/**
 	 * external_system_name
@@ -37,31 +37,75 @@ public class AlipayEcoMycarDataExternalSendModel extends AlipayObject {
 	@ApiField("send_data")
 	private String sendData;
 
-	public String getExternalSystemName() {
+    /**
+     * Gets external system name.
+     *
+     * @return the external system name
+     */
+    public String getExternalSystemName() {
 		return this.externalSystemName;
 	}
-	public void setExternalSystemName(String externalSystemName) {
+
+    /**
+     * Sets external system name.
+     *
+     * @param externalSystemName the external system name
+     */
+    public void setExternalSystemName(String externalSystemName) {
 		this.externalSystemName = externalSystemName;
 	}
 
-	public String getIsTransferUid() {
+    /**
+     * Gets is transfer uid.
+     *
+     * @return the is transfer uid
+     */
+    public String getIsTransferUid() {
 		return this.isTransferUid;
 	}
-	public void setIsTransferUid(String isTransferUid) {
+
+    /**
+     * Sets is transfer uid.
+     *
+     * @param isTransferUid the is transfer uid
+     */
+    public void setIsTransferUid(String isTransferUid) {
 		this.isTransferUid = isTransferUid;
 	}
 
-	public String getOperateType() {
+    /**
+     * Gets operate type.
+     *
+     * @return the operate type
+     */
+    public String getOperateType() {
 		return this.operateType;
 	}
-	public void setOperateType(String operateType) {
+
+    /**
+     * Sets operate type.
+     *
+     * @param operateType the operate type
+     */
+    public void setOperateType(String operateType) {
 		this.operateType = operateType;
 	}
 
-	public String getSendData() {
+    /**
+     * Gets send data.
+     *
+     * @return the send data
+     */
+    public String getSendData() {
 		return this.sendData;
 	}
-	public void setSendData(String sendData) {
+
+    /**
+     * Sets send data.
+     *
+     * @param sendData the send data
+     */
+    public void setSendData(String sendData) {
 		this.sendData = sendData;
 	}
 

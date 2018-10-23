@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OrderLogisticsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5778753342371792957L;
+	private static final long serialVersionUID = 2446499739978893414L;
 
 	/**
 	 * 消费者下单线下服务时，填写的服务地址
@@ -55,52 +55,129 @@ public class OrderLogisticsInfo extends AlipayObject {
 	@ApiField("mobile")
 	private String mobile;
 
-	public String getAddress() {
+    /**
+     * Gets address.
+     *
+     * @return the address
+     */
+    public String getAddress() {
 		return this.address;
 	}
-	public void setAddress(String address) {
+
+    /**
+     * Sets address.
+     *
+     * @param address the address
+     */
+    public void setAddress(String address) {
 		this.address = address;
 	}
 
-	public String getContactName() {
+    /**
+     * Gets contact name.
+     *
+     * @return the contact name
+     */
+    public String getContactName() {
 		return this.contactName;
 	}
-	public void setContactName(String contactName) {
+
+    /**
+     * Sets contact name.
+     *
+     * @param contactName the contact name
+     */
+    public void setContactName(String contactName) {
 		this.contactName = contactName;
 	}
 
-	public OrderLogisticsExtInfo getExtInfo() {
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public OrderLogisticsExtInfo getExtInfo() {
 		return this.extInfo;
 	}
-	public void setExtInfo(OrderLogisticsExtInfo extInfo) {
+
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(OrderLogisticsExtInfo extInfo) {
 		this.extInfo = extInfo;
 	}
 
-	public String getLatitude() {
+    /**
+     * Gets latitude.
+     *
+     * @return the latitude
+     */
+    public String getLatitude() {
 		return this.latitude;
 	}
-	public void setLatitude(String latitude) {
+
+    /**
+     * Sets latitude.
+     *
+     * @param latitude the latitude
+     */
+    public void setLatitude(String latitude) {
 		this.latitude = latitude;
 	}
 
-	public String getLongitude() {
+    /**
+     * Gets longitude.
+     *
+     * @return the longitude
+     */
+    public String getLongitude() {
 		return this.longitude;
 	}
-	public void setLongitude(String longitude) {
+
+    /**
+     * Sets longitude.
+     *
+     * @param longitude the longitude
+     */
+    public void setLongitude(String longitude) {
 		this.longitude = longitude;
 	}
 
-	public String getMerchantBindMobile() {
+    /**
+     * Gets merchant bind mobile.
+     *
+     * @return the merchant bind mobile
+     */
+    public String getMerchantBindMobile() {
 		return this.merchantBindMobile;
 	}
-	public void setMerchantBindMobile(String merchantBindMobile) {
+
+    /**
+     * Sets merchant bind mobile.
+     *
+     * @param merchantBindMobile the merchant bind mobile
+     */
+    public void setMerchantBindMobile(String merchantBindMobile) {
 		this.merchantBindMobile = merchantBindMobile;
 	}
 
-	public String getMobile() {
+    /**
+     * Gets mobile.
+     *
+     * @return the mobile
+     */
+    public String getMobile() {
 		return this.mobile;
 	}
-	public void setMobile(String mobile) {
+
+    /**
+     * Sets mobile.
+     *
+     * @param mobile the mobile
+     */
+    public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
 

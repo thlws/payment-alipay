@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 学生信息更新
  *
  * @author auto create
- * @since 1.0, 2017-08-18 12:27:08
+ * @since 1.0, 2017-11-06 11:46:27
  */
 public class AlipayEcoEduKtStudentModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7371984595824148794L;
+	private static final long serialVersionUID = 2514786782619186524L;
 
 	/**
 	 * 修改后的学生姓名
@@ -76,66 +76,165 @@ public class AlipayEcoEduKtStudentModifyModel extends AlipayObject {
 	@ApiField("user_details")
 	private List<UserDetails> users;
 
-	public String getChildName() {
+    /**
+     * Gets child name.
+     *
+     * @return the child name
+     */
+    public String getChildName() {
 		return this.childName;
 	}
-	public void setChildName(String childName) {
+
+    /**
+     * Sets child name.
+     *
+     * @param childName the child name
+     */
+    public void setChildName(String childName) {
 		this.childName = childName;
 	}
 
-	public String getIsvPid() {
+    /**
+     * Gets isv pid.
+     *
+     * @return the isv pid
+     */
+    public String getIsvPid() {
 		return this.isvPid;
 	}
-	public void setIsvPid(String isvPid) {
+
+    /**
+     * Sets isv pid.
+     *
+     * @param isvPid the isv pid
+     */
+    public void setIsvPid(String isvPid) {
 		this.isvPid = isvPid;
 	}
 
-	public String getSchoolNo() {
+    /**
+     * Gets school no.
+     *
+     * @return the school no
+     */
+    public String getSchoolNo() {
 		return this.schoolNo;
 	}
-	public void setSchoolNo(String schoolNo) {
+
+    /**
+     * Sets school no.
+     *
+     * @param schoolNo the school no
+     */
+    public void setSchoolNo(String schoolNo) {
 		this.schoolNo = schoolNo;
 	}
 
-	public String getSchoolPid() {
+    /**
+     * Gets school pid.
+     *
+     * @return the school pid
+     */
+    public String getSchoolPid() {
 		return this.schoolPid;
 	}
-	public void setSchoolPid(String schoolPid) {
+
+    /**
+     * Sets school pid.
+     *
+     * @param schoolPid the school pid
+     */
+    public void setSchoolPid(String schoolPid) {
 		this.schoolPid = schoolPid;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 
-	public String getStudentCode() {
+    /**
+     * Gets student code.
+     *
+     * @return the student code
+     */
+    public String getStudentCode() {
 		return this.studentCode;
 	}
-	public void setStudentCode(String studentCode) {
+
+    /**
+     * Sets student code.
+     *
+     * @param studentCode the student code
+     */
+    public void setStudentCode(String studentCode) {
 		this.studentCode = studentCode;
 	}
 
-	public String getStudentIdentify() {
+    /**
+     * Gets student identify.
+     *
+     * @return the student identify
+     */
+    public String getStudentIdentify() {
 		return this.studentIdentify;
 	}
-	public void setStudentIdentify(String studentIdentify) {
+
+    /**
+     * Sets student identify.
+     *
+     * @param studentIdentify the student identify
+     */
+    public void setStudentIdentify(String studentIdentify) {
 		this.studentIdentify = studentIdentify;
 	}
 
-	public String getStudentNo() {
+    /**
+     * Gets student no.
+     *
+     * @return the student no
+     */
+    public String getStudentNo() {
 		return this.studentNo;
 	}
-	public void setStudentNo(String studentNo) {
+
+    /**
+     * Sets student no.
+     *
+     * @param studentNo the student no
+     */
+    public void setStudentNo(String studentNo) {
 		this.studentNo = studentNo;
 	}
 
-	public List<UserDetails> getUsers() {
+    /**
+     * Gets users.
+     *
+     * @return the users
+     */
+    public List<UserDetails> getUsers() {
 		return this.users;
 	}
-	public void setUsers(List<UserDetails> users) {
+
+    /**
+     * Sets users.
+     *
+     * @param users the users
+     */
+    public void setUsers(List<UserDetails> users) {
 		this.users = users;
 	}
 

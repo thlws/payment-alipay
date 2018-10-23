@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 个性化扩展区创建接口
  *
  * @author auto create
- * @since 1.0, 2017-06-01 11:26:57
+ * @since 1.0, 2018-07-25 13:51:40
  */
 public class AlipayOpenPublicPersonalizedExtensionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7786527238634113126L;
+	private static final long serialVersionUID = 1469465532676164739L;
 
 	/**
 	 * 扩展区列表，最大条数为3
@@ -30,17 +30,39 @@ public class AlipayOpenPublicPersonalizedExtensionCreateModel extends AlipayObje
 	@ApiField("label_rule")
 	private List<LabelRule> labelRule;
 
-	public List<ExtensionArea> getAreas() {
+    /**
+     * Gets areas.
+     *
+     * @return the areas
+     */
+    public List<ExtensionArea> getAreas() {
 		return this.areas;
 	}
-	public void setAreas(List<ExtensionArea> areas) {
+
+    /**
+     * Sets areas.
+     *
+     * @param areas the areas
+     */
+    public void setAreas(List<ExtensionArea> areas) {
 		this.areas = areas;
 	}
 
-	public List<LabelRule> getLabelRule() {
+    /**
+     * Gets label rule.
+     *
+     * @return the label rule
+     */
+    public List<LabelRule> getLabelRule() {
 		return this.labelRule;
 	}
-	public void setLabelRule(List<LabelRule> labelRule) {
+
+    /**
+     * Sets label rule.
+     *
+     * @param labelRule the label rule
+     */
+    public void setLabelRule(List<LabelRule> labelRule) {
 		this.labelRule = labelRule;
 	}
 

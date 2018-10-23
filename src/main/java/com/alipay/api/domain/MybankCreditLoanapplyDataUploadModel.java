@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部合作机构数据推送
  *
  * @author auto create
- * @since 1.0, 2017-05-11 14:09:08
+ * @since 1.0, 2018-07-02 09:59:32
  */
 public class MybankCreditLoanapplyDataUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4576699572394455325L;
+	private static final long serialVersionUID = 8192662241357211864L;
 
 	/**
 	 * 业务单编号。在申请场景下，就是申请单编号，唯一标识一笔贷款授信申请，获取方式：前提，和网商对接业务消息，biz_no是申请成功消息applicationEvent中的applicationCode字段，必填项。在其他场景，比如订单交易场景下，就是订单号。
@@ -61,59 +61,147 @@ public class MybankCreditLoanapplyDataUploadModel extends AlipayObject {
 	@ApiField("entity_type")
 	private String entityType;
 
-	public String getBizNo() {
+    /**
+     * Gets biz no.
+     *
+     * @return the biz no
+     */
+    public String getBizNo() {
 		return this.bizNo;
 	}
-	public void setBizNo(String bizNo) {
+
+    /**
+     * Sets biz no.
+     *
+     * @param bizNo the biz no
+     */
+    public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
 	}
 
-	public String getBizType() {
+    /**
+     * Gets biz type.
+     *
+     * @return the biz type
+     */
+    public String getBizType() {
 		return this.bizType;
 	}
-	public void setBizType(String bizType) {
+
+    /**
+     * Sets biz type.
+     *
+     * @param bizType the biz type
+     */
+    public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
-	public String getCategory() {
+    /**
+     * Gets category.
+     *
+     * @return the category
+     */
+    public String getCategory() {
 		return this.category;
 	}
-	public void setCategory(String category) {
+
+    /**
+     * Sets category.
+     *
+     * @param category the category
+     */
+    public void setCategory(String category) {
 		this.category = category;
 	}
 
-	public String getData() {
+    /**
+     * Gets data.
+     *
+     * @return the data
+     */
+    public String getData() {
 		return this.data;
 	}
-	public void setData(String data) {
+
+    /**
+     * Sets data.
+     *
+     * @param data the data
+     */
+    public void setData(String data) {
 		this.data = data;
 	}
 
-	public String getDataProvider() {
+    /**
+     * Gets data provider.
+     *
+     * @return the data provider
+     */
+    public String getDataProvider() {
 		return this.dataProvider;
 	}
-	public void setDataProvider(String dataProvider) {
+
+    /**
+     * Sets data provider.
+     *
+     * @param dataProvider the data provider
+     */
+    public void setDataProvider(String dataProvider) {
 		this.dataProvider = dataProvider;
 	}
 
-	public String getEntityCode() {
+    /**
+     * Gets entity code.
+     *
+     * @return the entity code
+     */
+    public String getEntityCode() {
 		return this.entityCode;
 	}
-	public void setEntityCode(String entityCode) {
+
+    /**
+     * Sets entity code.
+     *
+     * @param entityCode the entity code
+     */
+    public void setEntityCode(String entityCode) {
 		this.entityCode = entityCode;
 	}
 
-	public String getEntityName() {
+    /**
+     * Gets entity name.
+     *
+     * @return the entity name
+     */
+    public String getEntityName() {
 		return this.entityName;
 	}
-	public void setEntityName(String entityName) {
+
+    /**
+     * Sets entity name.
+     *
+     * @param entityName the entity name
+     */
+    public void setEntityName(String entityName) {
 		this.entityName = entityName;
 	}
 
-	public String getEntityType() {
+    /**
+     * Gets entity type.
+     *
+     * @return the entity type
+     */
+    public String getEntityType() {
 		return this.entityType;
 	}
-	public void setEntityType(String entityType) {
+
+    /**
+     * Sets entity type.
+     *
+     * @param entityType the entity type
+     */
+    public void setEntityType(String entityType) {
 		this.entityType = entityType;
 	}
 

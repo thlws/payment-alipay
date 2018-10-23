@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class XXXXsdasdasd extends AlipayObject {
 
-	private static final long serialVersionUID = 2366647414258194624L;
+	private static final long serialVersionUID = 5395922674836889117L;
 
 	/**
 	 * sdfghsgafds
@@ -19,10 +19,21 @@ public class XXXXsdasdasd extends AlipayObject {
 	@ApiField("wasfdasdf")
 	private String wasfdasdf;
 
-	public String getWasfdasdf() {
+    /**
+     * Gets wasfdasdf.
+     *
+     * @return the wasfdasdf
+     */
+    public String getWasfdasdf() {
 		return this.wasfdasdf;
 	}
-	public void setWasfdasdf(String wasfdasdf) {
+
+    /**
+     * Sets wasfdasdf.
+     *
+     * @param wasfdasdf the wasfdasdf
+     */
+    public void setWasfdasdf(String wasfdasdf) {
 		this.wasfdasdf = wasfdasdf;
 	}
 

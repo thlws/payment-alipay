@@ -9,9 +9,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.zmscore.zrank.get request
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-02 14:27:12
+ * @since 1.0, 2018-01-22 10:27:38
  */
 public class AlipayZmscoreZrankGetRequest implements AlipayRequest<AlipayZmscoreZrankGetResponse> {
 
@@ -23,10 +23,21 @@ public class AlipayZmscoreZrankGetRequest implements AlipayRequest<AlipayZmscore
 	 */
 	private String userId;
 
-	public void setUserId(String userId) {
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public String getUserId() {
+
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
 	private String terminalType;
@@ -98,7 +109,13 @@ public class AlipayZmscoreZrankGetRequest implements AlipayRequest<AlipayZmscore
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

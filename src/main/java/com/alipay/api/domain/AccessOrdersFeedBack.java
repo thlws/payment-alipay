@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物料单据反馈
  *
  * @author auto create
- * @since 1.0, 2017-07-27 19:41:21
+ * @since 1.0, 2017-11-21 17:41:15
  */
 public class AccessOrdersFeedBack extends AlipayObject {
 
-	private static final long serialVersionUID = 7821212418284743247L;
+	private static final long serialVersionUID = 3868988752894293911L;
 
 	/**
 	 * 错误码
@@ -51,45 +51,111 @@ public class AccessOrdersFeedBack extends AlipayObject {
 	@ApiField("success")
 	private Boolean success;
 
-	public String getErrorCode() {
+    /**
+     * Gets error code.
+     *
+     * @return the error code
+     */
+    public String getErrorCode() {
 		return this.errorCode;
 	}
-	public void setErrorCode(String errorCode) {
+
+    /**
+     * Sets error code.
+     *
+     * @param errorCode the error code
+     */
+    public void setErrorCode(String errorCode) {
 		this.errorCode = errorCode;
 	}
 
-	public String getErrorDesc() {
+    /**
+     * Gets error desc.
+     *
+     * @return the error desc
+     */
+    public String getErrorDesc() {
 		return this.errorDesc;
 	}
-	public void setErrorDesc(String errorDesc) {
+
+    /**
+     * Sets error desc.
+     *
+     * @param errorDesc the error desc
+     */
+    public void setErrorDesc(String errorDesc) {
 		this.errorDesc = errorDesc;
 	}
 
-	public String getFeedbackId() {
+    /**
+     * Gets feedback id.
+     *
+     * @return the feedback id
+     */
+    public String getFeedbackId() {
 		return this.feedbackId;
 	}
-	public void setFeedbackId(String feedbackId) {
+
+    /**
+     * Sets feedback id.
+     *
+     * @param feedbackId the feedback id
+     */
+    public void setFeedbackId(String feedbackId) {
 		this.feedbackId = feedbackId;
 	}
 
-	public String getOrderType() {
+    /**
+     * Gets order type.
+     *
+     * @return the order type
+     */
+    public String getOrderType() {
 		return this.orderType;
 	}
-	public void setOrderType(String orderType) {
+
+    /**
+     * Sets order type.
+     *
+     * @param orderType the order type
+     */
+    public void setOrderType(String orderType) {
 		this.orderType = orderType;
 	}
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
-	public Boolean getSuccess() {
+    /**
+     * Gets success.
+     *
+     * @return the success
+     */
+    public Boolean getSuccess() {
 		return this.success;
 	}
-	public void setSuccess(Boolean success) {
+
+    /**
+     * Sets success.
+     *
+     * @param success the success
+     */
+    public void setSuccess(Boolean success) {
 		this.success = success;
 	}
 

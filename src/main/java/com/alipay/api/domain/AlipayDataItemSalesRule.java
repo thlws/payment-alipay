@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayDataItemSalesRule extends AlipayObject {
 
-	private static final long serialVersionUID = 7373566647357327151L;
+	private static final long serialVersionUID = 4585669352953819554L;
 
 	/**
 	 * 购买人群限制集合，开放平台暂时不支持此字段，如果需要使用，需要评估
@@ -37,24 +37,57 @@ public class AlipayDataItemSalesRule extends AlipayObject {
 	@ApiField("string")
 	private List<String> userSalesLimit;
 
-	public String getBuyerCrowdLimit() {
+    /**
+     * Gets buyer crowd limit.
+     *
+     * @return the buyer crowd limit
+     */
+    public String getBuyerCrowdLimit() {
 		return this.buyerCrowdLimit;
 	}
-	public void setBuyerCrowdLimit(String buyerCrowdLimit) {
+
+    /**
+     * Sets buyer crowd limit.
+     *
+     * @param buyerCrowdLimit the buyer crowd limit
+     */
+    public void setBuyerCrowdLimit(String buyerCrowdLimit) {
 		this.buyerCrowdLimit = buyerCrowdLimit;
 	}
 
-	public Long getDailySalesLimit() {
+    /**
+     * Gets daily sales limit.
+     *
+     * @return the daily sales limit
+     */
+    public Long getDailySalesLimit() {
 		return this.dailySalesLimit;
 	}
-	public void setDailySalesLimit(Long dailySalesLimit) {
+
+    /**
+     * Sets daily sales limit.
+     *
+     * @param dailySalesLimit the daily sales limit
+     */
+    public void setDailySalesLimit(Long dailySalesLimit) {
 		this.dailySalesLimit = dailySalesLimit;
 	}
 
-	public List<String> getUserSalesLimit() {
+    /**
+     * Gets user sales limit.
+     *
+     * @return the user sales limit
+     */
+    public List<String> getUserSalesLimit() {
 		return this.userSalesLimit;
 	}
-	public void setUserSalesLimit(List<String> userSalesLimit) {
+
+    /**
+     * Sets user sales limit.
+     *
+     * @param userSalesLimit the user sales limit
+     */
+    public void setUserSalesLimit(List<String> userSalesLimit) {
 		this.userSalesLimit = userSalesLimit;
 	}
 

@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.security.prod.fingerprint.verify response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-08-02 14:25:33
+ * @since 1.0, 2018-08-17 16:53:37
  */
 public class AlipaySecurityProdFingerprintVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6785872226975112475L;
+	private static final long serialVersionUID = 7347277954295422483L;
 
 	/** 
 	 * IFAA服务端校验结果，true为通过，false为未通过
@@ -26,17 +26,39 @@ public class AlipaySecurityProdFingerprintVerifyResponse extends AlipayResponse 
 	@ApiField("token")
 	private String token;
 
-	public void setAuthResult(Boolean authResult) {
+    /**
+     * Sets auth result.
+     *
+     * @param authResult the auth result
+     */
+    public void setAuthResult(Boolean authResult) {
 		this.authResult = authResult;
 	}
-	public Boolean getAuthResult( ) {
+
+    /**
+     * Gets auth result.
+     *
+     * @return the auth result
+     */
+    public Boolean getAuthResult( ) {
 		return this.authResult;
 	}
 
-	public void setToken(String token) {
+    /**
+     * Sets token.
+     *
+     * @param token the token
+     */
+    public void setToken(String token) {
 		this.token = token;
 	}
-	public String getToken( ) {
+
+    /**
+     * Gets token.
+     *
+     * @return the token
+     */
+    public String getToken( ) {
 		return this.token;
 	}
 

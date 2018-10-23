@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.group.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-14 11:01:42
+ * @since 1.0, 2018-07-25 13:51:51
  */
 public class AlipayOpenPublicGroupBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4383158152664127767L;
+	private static final long serialVersionUID = 7497237413458298546L;
 
 	/** 
 	 * 用户分组列表，包含每个分组的id、name、以及规则模型
@@ -24,10 +24,21 @@ public class AlipayOpenPublicGroupBatchqueryResponse extends AlipayResponse {
 	@ApiField("query_group")
 	private List<QueryGroup> groups;
 
-	public void setGroups(List<QueryGroup> groups) {
+    /**
+     * Sets groups.
+     *
+     * @param groups the groups
+     */
+    public void setGroups(List<QueryGroup> groups) {
 		this.groups = groups;
 	}
-	public List<QueryGroup> getGroups( ) {
+
+    /**
+     * Gets groups.
+     *
+     * @return the groups
+     */
+    public List<QueryGroup> getGroups( ) {
 		return this.groups;
 	}
 

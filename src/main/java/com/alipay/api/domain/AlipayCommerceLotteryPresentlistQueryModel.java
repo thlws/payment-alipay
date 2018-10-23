@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceLotteryPresentlistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6723695152166521697L;
+	private static final long serialVersionUID = 4635873438315685727L;
 
 	/**
 	 * 结束日期，格式为yyyyMMdd
@@ -37,31 +37,75 @@ public class AlipayCommerceLotteryPresentlistQueryModel extends AlipayObject {
 	@ApiField("page_size")
 	private Long pageSize;
 
-	public String getGmtEnd() {
+    /**
+     * Gets gmt end.
+     *
+     * @return the gmt end
+     */
+    public String getGmtEnd() {
 		return this.gmtEnd;
 	}
-	public void setGmtEnd(String gmtEnd) {
+
+    /**
+     * Sets gmt end.
+     *
+     * @param gmtEnd the gmt end
+     */
+    public void setGmtEnd(String gmtEnd) {
 		this.gmtEnd = gmtEnd;
 	}
 
-	public String getGmtStart() {
+    /**
+     * Gets gmt start.
+     *
+     * @return the gmt start
+     */
+    public String getGmtStart() {
 		return this.gmtStart;
 	}
-	public void setGmtStart(String gmtStart) {
+
+    /**
+     * Sets gmt start.
+     *
+     * @param gmtStart the gmt start
+     */
+    public void setGmtStart(String gmtStart) {
 		this.gmtStart = gmtStart;
 	}
 
-	public Long getPageNo() {
+    /**
+     * Gets page no.
+     *
+     * @return the page no
+     */
+    public Long getPageNo() {
 		return this.pageNo;
 	}
-	public void setPageNo(Long pageNo) {
+
+    /**
+     * Sets page no.
+     *
+     * @param pageNo the page no
+     */
+    public void setPageNo(Long pageNo) {
 		this.pageNo = pageNo;
 	}
 
-	public Long getPageSize() {
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public Long getPageSize() {
 		return this.pageSize;
 	}
-	public void setPageSize(Long pageSize) {
+
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}
 

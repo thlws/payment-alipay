@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserDeviceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8444453499125645868L;
+	private static final long serialVersionUID = 5727184192631996285L;
 
 	/**
 	 * 扩展信息，json格式的字符串
@@ -49,45 +49,111 @@ public class AlipayUserDeviceInfo extends AlipayObject {
 	@ApiField("os_version")
 	private String osVersion;
 
-	public String getExtInfo() {
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo() {
 		return this.extInfo;
 	}
-	public void setExtInfo(String extInfo) {
+
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
-	public String getImei() {
+    /**
+     * Gets imei.
+     *
+     * @return the imei
+     */
+    public String getImei() {
 		return this.imei;
 	}
-	public void setImei(String imei) {
+
+    /**
+     * Sets imei.
+     *
+     * @param imei the imei
+     */
+    public void setImei(String imei) {
 		this.imei = imei;
 	}
 
-	public String getIp() {
+    /**
+     * Gets ip.
+     *
+     * @return the ip
+     */
+    public String getIp() {
 		return this.ip;
 	}
-	public void setIp(String ip) {
+
+    /**
+     * Sets ip.
+     *
+     * @param ip the ip
+     */
+    public void setIp(String ip) {
 		this.ip = ip;
 	}
 
-	public String getMac() {
+    /**
+     * Gets mac.
+     *
+     * @return the mac
+     */
+    public String getMac() {
 		return this.mac;
 	}
-	public void setMac(String mac) {
+
+    /**
+     * Sets mac.
+     *
+     * @param mac the mac
+     */
+    public void setMac(String mac) {
 		this.mac = mac;
 	}
 
-	public String getOsName() {
+    /**
+     * Gets os name.
+     *
+     * @return the os name
+     */
+    public String getOsName() {
 		return this.osName;
 	}
-	public void setOsName(String osName) {
+
+    /**
+     * Sets os name.
+     *
+     * @param osName the os name
+     */
+    public void setOsName(String osName) {
 		this.osName = osName;
 	}
 
-	public String getOsVersion() {
+    /**
+     * Gets os version.
+     *
+     * @return the os version
+     */
+    public String getOsVersion() {
 		return this.osVersion;
 	}
-	public void setOsVersion(String osVersion) {
+
+    /**
+     * Sets os version.
+     *
+     * @param osVersion the os version
+     */
+    public void setOsVersion(String osVersion) {
 		this.osVersion = osVersion;
 	}
 

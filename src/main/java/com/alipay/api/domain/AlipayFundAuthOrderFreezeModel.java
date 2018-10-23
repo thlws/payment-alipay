@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金预授权冻结接口
  *
  * @author auto create
- * @since 1.0, 2017-09-19 10:28:07
+ * @since 1.0, 2018-07-20 17:13:54
  */
 public class AlipayFundAuthOrderFreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2567122678655466274L;
+	private static final long serialVersionUID = 3118617165275442421L;
 
 	/**
 	 * 需要冻结的金额，单位为：元（人民币），精确到小数点后两位
@@ -34,7 +34,17 @@ public class AlipayFundAuthOrderFreezeModel extends AlipayObject {
 	private String authCodeType;
 
 	/**
-	 * 业务扩展参数，用于商户的特定业务信息的传递，json格式
+	 * 商户可用该参数指定用户可使用的支付渠道，本期支持商户可支持三种支付渠道，余额宝（MONEY_FUND）、花呗（PCREDIT_PAY）以及芝麻信用（CREDITZHIMA）。商户可设置一种支付渠道，也可设置多种支付渠道。
+	 */
+	@ApiField("enable_pay_channels")
+	private String enablePayChannels;
+
+	/**
+	 * 业务扩展参数，用于商户的特定业务信息的传递，json格式。 
+1.间联模式必须传入二级商户ID，key为secondaryMerchantId;
+2. 当面资金授权业务对应的类目，key为category，value由支付宝分配，酒店业务传 "HOTEL"；
+3. 外部商户的门店编号，key为outStoreCode，可选；
+4. 外部商户的门店简称，key为outStoreAlias，可选。
 	 */
 	@ApiField("extra_param")
 	private String extraParam;
@@ -84,81 +94,268 @@ public class AlipayFundAuthOrderFreezeModel extends AlipayObject {
 	@ApiField("product_code")
 	private String productCode;
 
-	public String getAmount() {
+	/**
+	 * 商户指定的结算币种。支持澳元：AUD, 新西兰元：NZD, 台币：TWD, 美元：USD, 欧元：EUR, 英镑：GBP
+	 */
+	@ApiField("settle_currency")
+	private String settleCurrency;
+
+	/**
+	 * 标价币种,  amount 对应的币种单位。支持澳元：AUD, 新西兰元：NZD, 台币：TWD, 美元：USD, 欧元：EUR, 英镑：GBP
+	 */
+	@ApiField("trans_currency")
+	private String transCurrency;
+
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public String getAmount() {
 		return this.amount;
 	}
-	public void setAmount(String amount) {
+
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
-	public String getAuthCode() {
+    /**
+     * Gets auth code.
+     *
+     * @return the auth code
+     */
+    public String getAuthCode() {
 		return this.authCode;
 	}
-	public void setAuthCode(String authCode) {
+
+    /**
+     * Sets auth code.
+     *
+     * @param authCode the auth code
+     */
+    public void setAuthCode(String authCode) {
 		this.authCode = authCode;
 	}
 
-	public String getAuthCodeType() {
+    /**
+     * Gets auth code type.
+     *
+     * @return the auth code type
+     */
+    public String getAuthCodeType() {
 		return this.authCodeType;
 	}
-	public void setAuthCodeType(String authCodeType) {
+
+    /**
+     * Sets auth code type.
+     *
+     * @param authCodeType the auth code type
+     */
+    public void setAuthCodeType(String authCodeType) {
 		this.authCodeType = authCodeType;
 	}
 
-	public String getExtraParam() {
+    /**
+     * Gets enable pay channels.
+     *
+     * @return the enable pay channels
+     */
+    public String getEnablePayChannels() {
+		return this.enablePayChannels;
+	}
+
+    /**
+     * Sets enable pay channels.
+     *
+     * @param enablePayChannels the enable pay channels
+     */
+    public void setEnablePayChannels(String enablePayChannels) {
+		this.enablePayChannels = enablePayChannels;
+	}
+
+    /**
+     * Gets extra param.
+     *
+     * @return the extra param
+     */
+    public String getExtraParam() {
 		return this.extraParam;
 	}
-	public void setExtraParam(String extraParam) {
+
+    /**
+     * Sets extra param.
+     *
+     * @param extraParam the extra param
+     */
+    public void setExtraParam(String extraParam) {
 		this.extraParam = extraParam;
 	}
 
-	public String getOrderTitle() {
+    /**
+     * Gets order title.
+     *
+     * @return the order title
+     */
+    public String getOrderTitle() {
 		return this.orderTitle;
 	}
-	public void setOrderTitle(String orderTitle) {
+
+    /**
+     * Sets order title.
+     *
+     * @param orderTitle the order title
+     */
+    public void setOrderTitle(String orderTitle) {
 		this.orderTitle = orderTitle;
 	}
 
-	public String getOutOrderNo() {
+    /**
+     * Gets out order no.
+     *
+     * @return the out order no
+     */
+    public String getOutOrderNo() {
 		return this.outOrderNo;
 	}
-	public void setOutOrderNo(String outOrderNo) {
+
+    /**
+     * Sets out order no.
+     *
+     * @param outOrderNo the out order no
+     */
+    public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
 	}
 
-	public String getOutRequestNo() {
+    /**
+     * Gets out request no.
+     *
+     * @return the out request no
+     */
+    public String getOutRequestNo() {
 		return this.outRequestNo;
 	}
-	public void setOutRequestNo(String outRequestNo) {
+
+    /**
+     * Sets out request no.
+     *
+     * @param outRequestNo the out request no
+     */
+    public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
 	}
 
-	public String getPayTimeout() {
+    /**
+     * Gets pay timeout.
+     *
+     * @return the pay timeout
+     */
+    public String getPayTimeout() {
 		return this.payTimeout;
 	}
-	public void setPayTimeout(String payTimeout) {
+
+    /**
+     * Sets pay timeout.
+     *
+     * @param payTimeout the pay timeout
+     */
+    public void setPayTimeout(String payTimeout) {
 		this.payTimeout = payTimeout;
 	}
 
-	public String getPayeeLogonId() {
+    /**
+     * Gets payee logon id.
+     *
+     * @return the payee logon id
+     */
+    public String getPayeeLogonId() {
 		return this.payeeLogonId;
 	}
-	public void setPayeeLogonId(String payeeLogonId) {
+
+    /**
+     * Sets payee logon id.
+     *
+     * @param payeeLogonId the payee logon id
+     */
+    public void setPayeeLogonId(String payeeLogonId) {
 		this.payeeLogonId = payeeLogonId;
 	}
 
-	public String getPayeeUserId() {
+    /**
+     * Gets payee user id.
+     *
+     * @return the payee user id
+     */
+    public String getPayeeUserId() {
 		return this.payeeUserId;
 	}
-	public void setPayeeUserId(String payeeUserId) {
+
+    /**
+     * Sets payee user id.
+     *
+     * @param payeeUserId the payee user id
+     */
+    public void setPayeeUserId(String payeeUserId) {
 		this.payeeUserId = payeeUserId;
 	}
 
-	public String getProductCode() {
+    /**
+     * Gets product code.
+     *
+     * @return the product code
+     */
+    public String getProductCode() {
 		return this.productCode;
 	}
-	public void setProductCode(String productCode) {
+
+    /**
+     * Sets product code.
+     *
+     * @param productCode the product code
+     */
+    public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+    /**
+     * Gets settle currency.
+     *
+     * @return the settle currency
+     */
+    public String getSettleCurrency() {
+		return this.settleCurrency;
+	}
+
+    /**
+     * Sets settle currency.
+     *
+     * @param settleCurrency the settle currency
+     */
+    public void setSettleCurrency(String settleCurrency) {
+		this.settleCurrency = settleCurrency;
+	}
+
+    /**
+     * Gets trans currency.
+     *
+     * @return the trans currency
+     */
+    public String getTransCurrency() {
+		return this.transCurrency;
+	}
+
+    /**
+     * Sets trans currency.
+     *
+     * @param transCurrency the trans currency
+     */
+    public void setTransCurrency(String transCurrency) {
+		this.transCurrency = transCurrency;
 	}
 
 }

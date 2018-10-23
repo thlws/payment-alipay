@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.life.modify response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-15 17:39:52
+ * @since 1.0, 2017-12-18 14:58:00
  */
 public class AlipayOpenPublicLifeModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6497889993521926877L;
+	private static final long serialVersionUID = 3215529271554825766L;
 
 	/** 
 	 * 修改时间。
@@ -26,17 +26,39 @@ public class AlipayOpenPublicLifeModifyResponse extends AlipayResponse {
 	@ApiField("public_id")
 	private String publicId;
 
-	public void setModifyTime(String modifyTime) {
+    /**
+     * Sets modify time.
+     *
+     * @param modifyTime the modify time
+     */
+    public void setModifyTime(String modifyTime) {
 		this.modifyTime = modifyTime;
 	}
-	public String getModifyTime( ) {
+
+    /**
+     * Gets modify time.
+     *
+     * @return the modify time
+     */
+    public String getModifyTime( ) {
 		return this.modifyTime;
 	}
 
-	public void setPublicId(String publicId) {
+    /**
+     * Sets public id.
+     *
+     * @param publicId the public id
+     */
+    public void setPublicId(String publicId) {
 		this.publicId = publicId;
 	}
-	public String getPublicId( ) {
+
+    /**
+     * Gets public id.
+     *
+     * @return the public id
+     */
+    public String getPublicId( ) {
 		return this.publicId;
 	}
 

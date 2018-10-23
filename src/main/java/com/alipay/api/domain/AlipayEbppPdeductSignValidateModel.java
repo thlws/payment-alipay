@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppPdeductSignValidateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2755919845537271132L;
+	private static final long serialVersionUID = 3248488687143633743L;
 
 	/**
 	 * 机构签约代扣来源渠道
@@ -117,108 +117,273 @@ CZ：手机充值
 	@ApiField("user_id")
 	private String userId;
 
-	public String getAgentChannel() {
+    /**
+     * Gets agent channel.
+     *
+     * @return the agent channel
+     */
+    public String getAgentChannel() {
 		return this.agentChannel;
 	}
-	public void setAgentChannel(String agentChannel) {
+
+    /**
+     * Sets agent channel.
+     *
+     * @param agentChannel the agent channel
+     */
+    public void setAgentChannel(String agentChannel) {
 		this.agentChannel = agentChannel;
 	}
 
-	public String getAgentCode() {
+    /**
+     * Gets agent code.
+     *
+     * @return the agent code
+     */
+    public String getAgentCode() {
 		return this.agentCode;
 	}
-	public void setAgentCode(String agentCode) {
+
+    /**
+     * Sets agent code.
+     *
+     * @param agentCode the agent code
+     */
+    public void setAgentCode(String agentCode) {
 		this.agentCode = agentCode;
 	}
 
-	public String getBillKey() {
+    /**
+     * Gets bill key.
+     *
+     * @return the bill key
+     */
+    public String getBillKey() {
 		return this.billKey;
 	}
-	public void setBillKey(String billKey) {
+
+    /**
+     * Sets bill key.
+     *
+     * @param billKey the bill key
+     */
+    public void setBillKey(String billKey) {
 		this.billKey = billKey;
 	}
 
-	public String getBizType() {
+    /**
+     * Gets biz type.
+     *
+     * @return the biz type
+     */
+    public String getBizType() {
 		return this.bizType;
 	}
-	public void setBizType(String bizType) {
+
+    /**
+     * Sets biz type.
+     *
+     * @param bizType the biz type
+     */
+    public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
-	public String getChargeInst() {
+    /**
+     * Gets charge inst.
+     *
+     * @return the charge inst
+     */
+    public String getChargeInst() {
 		return this.chargeInst;
 	}
-	public void setChargeInst(String chargeInst) {
+
+    /**
+     * Sets charge inst.
+     *
+     * @param chargeInst the charge inst
+     */
+    public void setChargeInst(String chargeInst) {
 		this.chargeInst = chargeInst;
 	}
 
-	public String getDeductType() {
+    /**
+     * Gets deduct type.
+     *
+     * @return the deduct type
+     */
+    public String getDeductType() {
 		return this.deductType;
 	}
-	public void setDeductType(String deductType) {
+
+    /**
+     * Sets deduct type.
+     *
+     * @param deductType the deduct type
+     */
+    public void setDeductType(String deductType) {
 		this.deductType = deductType;
 	}
 
-	public String getExtendField() {
+    /**
+     * Gets extend field.
+     *
+     * @return the extend field
+     */
+    public String getExtendField() {
 		return this.extendField;
 	}
-	public void setExtendField(String extendField) {
+
+    /**
+     * Sets extend field.
+     *
+     * @param extendField the extend field
+     */
+    public void setExtendField(String extendField) {
 		this.extendField = extendField;
 	}
 
-	public String getNotifyConfig() {
+    /**
+     * Gets notify config.
+     *
+     * @return the notify config
+     */
+    public String getNotifyConfig() {
 		return this.notifyConfig;
 	}
-	public void setNotifyConfig(String notifyConfig) {
+
+    /**
+     * Sets notify config.
+     *
+     * @param notifyConfig the notify config
+     */
+    public void setNotifyConfig(String notifyConfig) {
 		this.notifyConfig = notifyConfig;
 	}
 
-	public String getOutAgreementId() {
+    /**
+     * Gets out agreement id.
+     *
+     * @return the out agreement id
+     */
+    public String getOutAgreementId() {
 		return this.outAgreementId;
 	}
-	public void setOutAgreementId(String outAgreementId) {
+
+    /**
+     * Sets out agreement id.
+     *
+     * @param outAgreementId the out agreement id
+     */
+    public void setOutAgreementId(String outAgreementId) {
 		this.outAgreementId = outAgreementId;
 	}
 
-	public String getOwnerName() {
+    /**
+     * Gets owner name.
+     *
+     * @return the owner name
+     */
+    public String getOwnerName() {
 		return this.ownerName;
 	}
-	public void setOwnerName(String ownerName) {
+
+    /**
+     * Sets owner name.
+     *
+     * @param ownerName the owner name
+     */
+    public void setOwnerName(String ownerName) {
 		this.ownerName = ownerName;
 	}
 
-	public String getPayConfig() {
+    /**
+     * Gets pay config.
+     *
+     * @return the pay config
+     */
+    public String getPayConfig() {
 		return this.payConfig;
 	}
-	public void setPayConfig(String payConfig) {
+
+    /**
+     * Sets pay config.
+     *
+     * @param payConfig the pay config
+     */
+    public void setPayConfig(String payConfig) {
 		this.payConfig = payConfig;
 	}
 
-	public String getPid() {
+    /**
+     * Gets pid.
+     *
+     * @return the pid
+     */
+    public String getPid() {
 		return this.pid;
 	}
-	public void setPid(String pid) {
+
+    /**
+     * Sets pid.
+     *
+     * @param pid the pid
+     */
+    public void setPid(String pid) {
 		this.pid = pid;
 	}
 
-	public String getSignExpireDate() {
+    /**
+     * Gets sign expire date.
+     *
+     * @return the sign expire date
+     */
+    public String getSignExpireDate() {
 		return this.signExpireDate;
 	}
-	public void setSignExpireDate(String signExpireDate) {
+
+    /**
+     * Sets sign expire date.
+     *
+     * @param signExpireDate the sign expire date
+     */
+    public void setSignExpireDate(String signExpireDate) {
 		this.signExpireDate = signExpireDate;
 	}
 
-	public String getSubBizType() {
+    /**
+     * Gets sub biz type.
+     *
+     * @return the sub biz type
+     */
+    public String getSubBizType() {
 		return this.subBizType;
 	}
-	public void setSubBizType(String subBizType) {
+
+    /**
+     * Sets sub biz type.
+     *
+     * @param subBizType the sub biz type
+     */
+    public void setSubBizType(String subBizType) {
 		this.subBizType = subBizType;
 	}
 
-	public String getUserId() {
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
-	public void setUserId(String userId) {
+
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
 

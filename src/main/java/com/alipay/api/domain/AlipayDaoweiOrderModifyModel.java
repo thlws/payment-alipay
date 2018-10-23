@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务订单修改接口
  *
  * @author auto create
- * @since 1.0, 2017-03-20 14:01:59
+ * @since 1.0, 2018-03-23 13:23:16
  */
 public class AlipayDaoweiOrderModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2174957713313123478L;
+	private static final long serialVersionUID = 6194371497674969682L;
 
 	/**
 	 * 服务地址，修改物流地址时填写的新服务地址：由第三方确认新的服务地址，最长不超过500字符
@@ -55,52 +55,129 @@ public class AlipayDaoweiOrderModifyModel extends AlipayObject {
 	@ApiField("real_amount")
 	private String realAmount;
 
-	public String getAddress() {
+    /**
+     * Gets address.
+     *
+     * @return the address
+     */
+    public String getAddress() {
 		return this.address;
 	}
-	public void setAddress(String address) {
+
+    /**
+     * Sets address.
+     *
+     * @param address the address
+     */
+    public void setAddress(String address) {
 		this.address = address;
 	}
 
-	public String getGmtStart() {
+    /**
+     * Gets gmt start.
+     *
+     * @return the gmt start
+     */
+    public String getGmtStart() {
 		return this.gmtStart;
 	}
-	public void setGmtStart(String gmtStart) {
+
+    /**
+     * Sets gmt start.
+     *
+     * @param gmtStart the gmt start
+     */
+    public void setGmtStart(String gmtStart) {
 		this.gmtStart = gmtStart;
 	}
 
-	public String getMemo() {
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo() {
 		return this.memo;
 	}
-	public void setMemo(String memo) {
+
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
-	public String getModifyType() {
+    /**
+     * Gets modify type.
+     *
+     * @return the modify type
+     */
+    public String getModifyType() {
 		return this.modifyType;
 	}
-	public void setModifyType(String modifyType) {
+
+    /**
+     * Sets modify type.
+     *
+     * @param modifyType the modify type
+     */
+    public void setModifyType(String modifyType) {
 		this.modifyType = modifyType;
 	}
 
-	public String getOrderNo() {
+    /**
+     * Gets order no.
+     *
+     * @return the order no
+     */
+    public String getOrderNo() {
 		return this.orderNo;
 	}
-	public void setOrderNo(String orderNo) {
+
+    /**
+     * Sets order no.
+     *
+     * @param orderNo the order no
+     */
+    public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
 
-	public String getOriginAmount() {
+    /**
+     * Gets origin amount.
+     *
+     * @return the origin amount
+     */
+    public String getOriginAmount() {
 		return this.originAmount;
 	}
-	public void setOriginAmount(String originAmount) {
+
+    /**
+     * Sets origin amount.
+     *
+     * @param originAmount the origin amount
+     */
+    public void setOriginAmount(String originAmount) {
 		this.originAmount = originAmount;
 	}
 
-	public String getRealAmount() {
+    /**
+     * Gets real amount.
+     *
+     * @return the real amount
+     */
+    public String getRealAmount() {
 		return this.realAmount;
 	}
-	public void setRealAmount(String realAmount) {
+
+    /**
+     * Sets real amount.
+     *
+     * @param realAmount the real amount
+     */
+    public void setRealAmount(String realAmount) {
 		this.realAmount = realAmount;
 	}
 

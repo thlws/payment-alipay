@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.campaign.cash.trigger response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-14 11:53:19
+ * @since 1.0, 2018-07-19 14:27:18
  */
 public class AlipayMarketingCampaignCashTriggerResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3738848524219285174L;
+	private static final long serialVersionUID = 1281526279563844898L;
 
 	/** 
 	 * 支付宝业务号,发奖成功时返回,调用者可提供此字符串进行问题排查与核对等
@@ -39,7 +39,7 @@ public class AlipayMarketingCampaignCashTriggerResponse extends AlipayResponse {
 	private String merchantLogo;
 
 	/** 
-	 * 外部业务号,回填请求中的out_biz_no,请求者可用于日志记录与核对等
+	 * 外部业务号,回填请求中的out_biz_no,请求参数中传了out_biz_no就会回传回去，如果不传就回传默认的"default_out_biz_no"，请求者可用于日志记录与核对等
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
@@ -69,78 +69,188 @@ public class AlipayMarketingCampaignCashTriggerResponse extends AlipayResponse {
 	private String repeatTriggerFlag;
 
 	/** 
-	 * 是否中奖结果状态，如果为true时返回的结果中的其他字段非空，否则返回的其他字段为空
+	 * 是否中奖结果状态，取值为true或false。如果为true表示发奖成功，这时返回的结果中的其他字段非空；如果为false表示发奖失败，这时返回的其他字段为空
 	 */
 	@ApiField("trigger_result")
 	private String triggerResult;
 
-	public void setBizNo(String bizNo) {
+    /**
+     * Sets biz no.
+     *
+     * @param bizNo the biz no
+     */
+    public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
 	}
-	public String getBizNo( ) {
+
+    /**
+     * Gets biz no.
+     *
+     * @return the biz no
+     */
+    public String getBizNo( ) {
 		return this.bizNo;
 	}
 
-	public void setCouponName(String couponName) {
+    /**
+     * Sets coupon name.
+     *
+     * @param couponName the coupon name
+     */
+    public void setCouponName(String couponName) {
 		this.couponName = couponName;
 	}
-	public String getCouponName( ) {
+
+    /**
+     * Gets coupon name.
+     *
+     * @return the coupon name
+     */
+    public String getCouponName( ) {
 		return this.couponName;
 	}
 
-	public void setErrorMsg(String errorMsg) {
+    /**
+     * Sets error msg.
+     *
+     * @param errorMsg the error msg
+     */
+    public void setErrorMsg(String errorMsg) {
 		this.errorMsg = errorMsg;
 	}
-	public String getErrorMsg( ) {
+
+    /**
+     * Gets error msg.
+     *
+     * @return the error msg
+     */
+    public String getErrorMsg( ) {
 		return this.errorMsg;
 	}
 
-	public void setMerchantLogo(String merchantLogo) {
+    /**
+     * Sets merchant logo.
+     *
+     * @param merchantLogo the merchant logo
+     */
+    public void setMerchantLogo(String merchantLogo) {
 		this.merchantLogo = merchantLogo;
 	}
-	public String getMerchantLogo( ) {
+
+    /**
+     * Gets merchant logo.
+     *
+     * @return the merchant logo
+     */
+    public String getMerchantLogo( ) {
 		return this.merchantLogo;
 	}
 
-	public void setOutBizNo(String outBizNo) {
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
-	public String getOutBizNo( ) {
+
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo( ) {
 		return this.outBizNo;
 	}
 
-	public void setPartnerId(String partnerId) {
+    /**
+     * Sets partner id.
+     *
+     * @param partnerId the partner id
+     */
+    public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}
-	public String getPartnerId( ) {
+
+    /**
+     * Gets partner id.
+     *
+     * @return the partner id
+     */
+    public String getPartnerId( ) {
 		return this.partnerId;
 	}
 
-	public void setPrizeAmount(String prizeAmount) {
+    /**
+     * Sets prize amount.
+     *
+     * @param prizeAmount the prize amount
+     */
+    public void setPrizeAmount(String prizeAmount) {
 		this.prizeAmount = prizeAmount;
 	}
-	public String getPrizeAmount( ) {
+
+    /**
+     * Gets prize amount.
+     *
+     * @return the prize amount
+     */
+    public String getPrizeAmount( ) {
 		return this.prizeAmount;
 	}
 
-	public void setPrizeMsg(String prizeMsg) {
+    /**
+     * Sets prize msg.
+     *
+     * @param prizeMsg the prize msg
+     */
+    public void setPrizeMsg(String prizeMsg) {
 		this.prizeMsg = prizeMsg;
 	}
-	public String getPrizeMsg( ) {
+
+    /**
+     * Gets prize msg.
+     *
+     * @return the prize msg
+     */
+    public String getPrizeMsg( ) {
 		return this.prizeMsg;
 	}
 
-	public void setRepeatTriggerFlag(String repeatTriggerFlag) {
+    /**
+     * Sets repeat trigger flag.
+     *
+     * @param repeatTriggerFlag the repeat trigger flag
+     */
+    public void setRepeatTriggerFlag(String repeatTriggerFlag) {
 		this.repeatTriggerFlag = repeatTriggerFlag;
 	}
-	public String getRepeatTriggerFlag( ) {
+
+    /**
+     * Gets repeat trigger flag.
+     *
+     * @return the repeat trigger flag
+     */
+    public String getRepeatTriggerFlag( ) {
 		return this.repeatTriggerFlag;
 	}
 
-	public void setTriggerResult(String triggerResult) {
+    /**
+     * Sets trigger result.
+     *
+     * @param triggerResult the trigger result
+     */
+    public void setTriggerResult(String triggerResult) {
 		this.triggerResult = triggerResult;
 	}
-	public String getTriggerResult( ) {
+
+    /**
+     * Gets trigger result.
+     *
+     * @return the trigger result
+     */
+    public String getTriggerResult( ) {
 		return this.triggerResult;
 	}
 

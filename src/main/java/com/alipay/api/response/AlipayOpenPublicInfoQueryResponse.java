@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.info.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-20 17:31:46
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayOpenPublicInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1184412213815239826L;
+	private static final long serialVersionUID = 3886216431999353496L;
 
 	/** 
 	 * 生活号名称
@@ -74,7 +74,7 @@ public class AlipayOpenPublicInfoQueryResponse extends AlipayResponse {
 
 	/** 
 	 * 商家经营类目，详情可参考
-<a href="https://doc.open.alipay.com/docs/doc.htm?spm=a219a.7629140.0.0.INIZWbarticleId=105364docType=1">商家经营类目</a>
+<a href="https://doc.open.alipay.com/docs/doc.htm?spm=a219a.7629140.0.0.INIZWb&articleId=105364&docType=1">商家经营类目</a>
 	 */
 	@ApiField("mcc_code_desc")
 	private String mccCodeDesc;
@@ -85,80 +85,201 @@ public class AlipayOpenPublicInfoQueryResponse extends AlipayResponse {
 	@ApiField("public_greeting")
 	private String publicGreeting;
 
-	public void setAppName(String appName) {
+    /**
+     * Sets app name.
+     *
+     * @param appName the app name
+     */
+    public void setAppName(String appName) {
 		this.appName = appName;
 	}
-	public String getAppName( ) {
+
+    /**
+     * Gets app name.
+     *
+     * @return the app name
+     */
+    public String getAppName( ) {
 		return this.appName;
 	}
 
-	public void setAuditDesc(String auditDesc) {
+    /**
+     * Sets audit desc.
+     *
+     * @param auditDesc the audit desc
+     */
+    public void setAuditDesc(String auditDesc) {
 		this.auditDesc = auditDesc;
 	}
-	public String getAuditDesc( ) {
+
+    /**
+     * Gets audit desc.
+     *
+     * @return the audit desc
+     */
+    public String getAuditDesc( ) {
 		return this.auditDesc;
 	}
 
-	public void setAuditStatus(String auditStatus) {
+    /**
+     * Sets audit status.
+     *
+     * @param auditStatus the audit status
+     */
+    public void setAuditStatus(String auditStatus) {
 		this.auditStatus = auditStatus;
 	}
-	public String getAuditStatus( ) {
+
+    /**
+     * Gets audit status.
+     *
+     * @return the audit status
+     */
+    public String getAuditStatus( ) {
 		return this.auditStatus;
 	}
 
-	public void setAuditStatusList(List<PublicAuditStatus> auditStatusList) {
+    /**
+     * Sets audit status list.
+     *
+     * @param auditStatusList the audit status list
+     */
+    public void setAuditStatusList(List<PublicAuditStatus> auditStatusList) {
 		this.auditStatusList = auditStatusList;
 	}
-	public List<PublicAuditStatus> getAuditStatusList( ) {
+
+    /**
+     * Gets audit status list.
+     *
+     * @return the audit status list
+     */
+    public List<PublicAuditStatus> getAuditStatusList( ) {
 		return this.auditStatusList;
 	}
 
-	public void setBackgroundUrl(String backgroundUrl) {
+    /**
+     * Sets background url.
+     *
+     * @param backgroundUrl the background url
+     */
+    public void setBackgroundUrl(String backgroundUrl) {
 		this.backgroundUrl = backgroundUrl;
 	}
-	public String getBackgroundUrl( ) {
+
+    /**
+     * Gets background url.
+     *
+     * @return the background url
+     */
+    public String getBackgroundUrl( ) {
 		return this.backgroundUrl;
 	}
 
-	public void setIntroduction(String introduction) {
+    /**
+     * Sets introduction.
+     *
+     * @param introduction the introduction
+     */
+    public void setIntroduction(String introduction) {
 		this.introduction = introduction;
 	}
-	public String getIntroduction( ) {
+
+    /**
+     * Gets introduction.
+     *
+     * @return the introduction
+     */
+    public String getIntroduction( ) {
 		return this.introduction;
 	}
 
-	public void setIsOnline(String isOnline) {
+    /**
+     * Sets is online.
+     *
+     * @param isOnline the is online
+     */
+    public void setIsOnline(String isOnline) {
 		this.isOnline = isOnline;
 	}
-	public String getIsOnline( ) {
+
+    /**
+     * Gets is online.
+     *
+     * @return the is online
+     */
+    public String getIsOnline( ) {
 		return this.isOnline;
 	}
 
-	public void setIsRelease(String isRelease) {
+    /**
+     * Sets is release.
+     *
+     * @param isRelease the is release
+     */
+    public void setIsRelease(String isRelease) {
 		this.isRelease = isRelease;
 	}
-	public String getIsRelease( ) {
+
+    /**
+     * Gets is release.
+     *
+     * @return the is release
+     */
+    public String getIsRelease( ) {
 		return this.isRelease;
 	}
 
-	public void setLogoUrl(String logoUrl) {
+    /**
+     * Sets logo url.
+     *
+     * @param logoUrl the logo url
+     */
+    public void setLogoUrl(String logoUrl) {
 		this.logoUrl = logoUrl;
 	}
-	public String getLogoUrl( ) {
+
+    /**
+     * Gets logo url.
+     *
+     * @return the logo url
+     */
+    public String getLogoUrl( ) {
 		return this.logoUrl;
 	}
 
-	public void setMccCodeDesc(String mccCodeDesc) {
+    /**
+     * Sets mcc code desc.
+     *
+     * @param mccCodeDesc the mcc code desc
+     */
+    public void setMccCodeDesc(String mccCodeDesc) {
 		this.mccCodeDesc = mccCodeDesc;
 	}
-	public String getMccCodeDesc( ) {
+
+    /**
+     * Gets mcc code desc.
+     *
+     * @return the mcc code desc
+     */
+    public String getMccCodeDesc( ) {
 		return this.mccCodeDesc;
 	}
 
-	public void setPublicGreeting(String publicGreeting) {
+    /**
+     * Sets public greeting.
+     *
+     * @param publicGreeting the public greeting
+     */
+    public void setPublicGreeting(String publicGreeting) {
 		this.publicGreeting = publicGreeting;
 	}
-	public String getPublicGreeting( ) {
+
+    /**
+     * Gets public greeting.
+     *
+     * @return the public greeting
+     */
+    public String getPublicGreeting( ) {
 		return this.publicGreeting;
 	}
 

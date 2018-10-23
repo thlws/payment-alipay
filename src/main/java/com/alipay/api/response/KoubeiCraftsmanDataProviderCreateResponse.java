@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.craftsman.data.provider.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-10-11 20:36:24
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class KoubeiCraftsmanDataProviderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7867313869544488996L;
+	private static final long serialVersionUID = 7497854834866213373L;
 
 	/** 
 	 * 手艺人id
@@ -20,10 +20,21 @@ public class KoubeiCraftsmanDataProviderCreateResponse extends AlipayResponse {
 	@ApiField("craftsman_id")
 	private String craftsmanId;
 
-	public void setCraftsmanId(String craftsmanId) {
+    /**
+     * Sets craftsman id.
+     *
+     * @param craftsmanId the craftsman id
+     */
+    public void setCraftsmanId(String craftsmanId) {
 		this.craftsmanId = craftsmanId;
 	}
-	public String getCraftsmanId( ) {
+
+    /**
+     * Gets craftsman id.
+     *
+     * @return the craftsman id
+     */
+    public String getCraftsmanId( ) {
 		return this.craftsmanId;
 	}
 

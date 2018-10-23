@@ -9,9 +9,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.offline.market.shop.public.bind request
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-07-29 19:57:30
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayOfflineMarketShopPublicBindRequest implements AlipayRequest<AlipayOfflineMarketShopPublicBindResponse> {
 
@@ -28,17 +28,39 @@ public class AlipayOfflineMarketShopPublicBindRequest implements AlipayRequest<A
 	 */
 	private String shopIds;
 
-	public void setIsAll(String isAll) {
+    /**
+     * Sets is all.
+     *
+     * @param isAll the is all
+     */
+    public void setIsAll(String isAll) {
 		this.isAll = isAll;
 	}
-	public String getIsAll() {
+
+    /**
+     * Gets is all.
+     *
+     * @return the is all
+     */
+    public String getIsAll() {
 		return this.isAll;
 	}
 
-	public void setShopIds(String shopIds) {
+    /**
+     * Sets shop ids.
+     *
+     * @param shopIds the shop ids
+     */
+    public void setShopIds(String shopIds) {
 		this.shopIds = shopIds;
 	}
-	public String getShopIds() {
+
+    /**
+     * Gets shop ids.
+     *
+     * @return the shop ids
+     */
+    public String getShopIds() {
 		return this.shopIds;
 	}
 	private String terminalType;
@@ -111,7 +133,13 @@ public class AlipayOfflineMarketShopPublicBindRequest implements AlipayRequest<A
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

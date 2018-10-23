@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业平台外部查询请求
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:15
+ * @since 1.0, 2018-03-06 20:18:29
  */
 public class AlipayEcoMycarDataExternalQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1519399551159486475L;
+	private static final long serialVersionUID = 5779522811491644773L;
 
 	/**
 	 * external_system_name
@@ -37,31 +37,75 @@ public class AlipayEcoMycarDataExternalQueryModel extends AlipayObject {
 	@ApiField("query_condition")
 	private String queryCondition;
 
-	public String getExternalSystemName() {
+    /**
+     * Gets external system name.
+     *
+     * @return the external system name
+     */
+    public String getExternalSystemName() {
 		return this.externalSystemName;
 	}
-	public void setExternalSystemName(String externalSystemName) {
+
+    /**
+     * Sets external system name.
+     *
+     * @param externalSystemName the external system name
+     */
+    public void setExternalSystemName(String externalSystemName) {
 		this.externalSystemName = externalSystemName;
 	}
 
-	public Boolean getIsTransferUid() {
+    /**
+     * Gets is transfer uid.
+     *
+     * @return the is transfer uid
+     */
+    public Boolean getIsTransferUid() {
 		return this.isTransferUid;
 	}
-	public void setIsTransferUid(Boolean isTransferUid) {
+
+    /**
+     * Sets is transfer uid.
+     *
+     * @param isTransferUid the is transfer uid
+     */
+    public void setIsTransferUid(Boolean isTransferUid) {
 		this.isTransferUid = isTransferUid;
 	}
 
-	public String getOperateType() {
+    /**
+     * Gets operate type.
+     *
+     * @return the operate type
+     */
+    public String getOperateType() {
 		return this.operateType;
 	}
-	public void setOperateType(String operateType) {
+
+    /**
+     * Sets operate type.
+     *
+     * @param operateType the operate type
+     */
+    public void setOperateType(String operateType) {
 		this.operateType = operateType;
 	}
 
-	public String getQueryCondition() {
+    /**
+     * Gets query condition.
+     *
+     * @return the query condition
+     */
+    public String getQueryCondition() {
 		return this.queryCondition;
 	}
-	public void setQueryCondition(String queryCondition) {
+
+    /**
+     * Sets query condition.
+     *
+     * @param queryCondition the query condition
+     */
+    public void setQueryCondition(String queryCondition) {
 		this.queryCondition = queryCondition;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCampaignCertCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7326185266927798197L;
+	private static final long serialVersionUID = 5625481939514765374L;
 
 	/**
 	 * 凭证批次名称
@@ -37,31 +37,75 @@ public class AlipayMarketingCampaignCertCreateModel extends AlipayObject {
 	@ApiField("valid_count")
 	private String validCount;
 
-	public String getCertName() {
+    /**
+     * Gets cert name.
+     *
+     * @return the cert name
+     */
+    public String getCertName() {
 		return this.certName;
 	}
-	public void setCertName(String certName) {
+
+    /**
+     * Sets cert name.
+     *
+     * @param certName the cert name
+     */
+    public void setCertName(String certName) {
 		this.certName = certName;
 	}
 
-	public String getExtendInfo() {
+    /**
+     * Gets extend info.
+     *
+     * @return the extend info
+     */
+    public String getExtendInfo() {
 		return this.extendInfo;
 	}
-	public void setExtendInfo(String extendInfo) {
+
+    /**
+     * Sets extend info.
+     *
+     * @param extendInfo the extend info
+     */
+    public void setExtendInfo(String extendInfo) {
 		this.extendInfo = extendInfo;
 	}
 
-	public String getMemo() {
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo() {
 		return this.memo;
 	}
-	public void setMemo(String memo) {
+
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
-	public String getValidCount() {
+    /**
+     * Gets valid count.
+     *
+     * @return the valid count
+     */
+    public String getValidCount() {
 		return this.validCount;
 	}
-	public void setValidCount(String validCount) {
+
+    /**
+     * Sets valid count.
+     *
+     * @param validCount the valid count
+     */
+    public void setValidCount(String validCount) {
 		this.validCount = validCount;
 	}
 

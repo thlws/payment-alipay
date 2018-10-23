@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class StationDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7864297653587349348L;
+	private static final long serialVersionUID = 1764792389148337792L;
 
 	/**
 	 * 站点编码
@@ -31,24 +31,57 @@ public class StationDetailInfo extends AlipayObject {
 	@ApiField("name")
 	private String name;
 
-	public String getCode() {
+    /**
+     * Gets code.
+     *
+     * @return the code
+     */
+    public String getCode() {
 		return this.code;
 	}
-	public void setCode(String code) {
+
+    /**
+     * Sets code.
+     *
+     * @param code the code
+     */
+    public void setCode(String code) {
 		this.code = code;
 	}
 
-	public String getExtCode() {
+    /**
+     * Gets ext code.
+     *
+     * @return the ext code
+     */
+    public String getExtCode() {
 		return this.extCode;
 	}
-	public void setExtCode(String extCode) {
+
+    /**
+     * Sets ext code.
+     *
+     * @param extCode the ext code
+     */
+    public void setExtCode(String extCode) {
 		this.extCode = extCode;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 

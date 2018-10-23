@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IndividualInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8253435625582843226L;
+	private static final long serialVersionUID = 3187177814564468975L;
 
 	/**
 	 * 生日
@@ -49,45 +49,111 @@ public class IndividualInfo extends AlipayObject {
 	@ApiField("type")
 	private String type;
 
-	public String getDateOfBirth() {
+    /**
+     * Gets date of birth.
+     *
+     * @return the date of birth
+     */
+    public String getDateOfBirth() {
 		return this.dateOfBirth;
 	}
-	public void setDateOfBirth(String dateOfBirth) {
+
+    /**
+     * Sets date of birth.
+     *
+     * @param dateOfBirth the date of birth
+     */
+    public void setDateOfBirth(String dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
 	}
 
-	public String getIdNumber() {
+    /**
+     * Gets id number.
+     *
+     * @return the id number
+     */
+    public String getIdNumber() {
 		return this.idNumber;
 	}
-	public void setIdNumber(String idNumber) {
+
+    /**
+     * Sets id number.
+     *
+     * @param idNumber the id number
+     */
+    public void setIdNumber(String idNumber) {
 		this.idNumber = idNumber;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getNationality() {
+    /**
+     * Gets nationality.
+     *
+     * @return the nationality
+     */
+    public String getNationality() {
 		return this.nationality;
 	}
-	public void setNationality(String nationality) {
+
+    /**
+     * Sets nationality.
+     *
+     * @param nationality the nationality
+     */
+    public void setNationality(String nationality) {
 		this.nationality = nationality;
 	}
 
-	public String getResidentialAddress() {
+    /**
+     * Gets residential address.
+     *
+     * @return the residential address
+     */
+    public String getResidentialAddress() {
 		return this.residentialAddress;
 	}
-	public void setResidentialAddress(String residentialAddress) {
+
+    /**
+     * Sets residential address.
+     *
+     * @param residentialAddress the residential address
+     */
+    public void setResidentialAddress(String residentialAddress) {
 		this.residentialAddress = residentialAddress;
 	}
 
-	public String getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
-	public void setType(String type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
 

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingCampaignDrawcampCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1312142483399452786L;
+	private static final long serialVersionUID = 2537138622731428611L;
 
 	/**
 	 * 单用户以支付宝账号维度可参与当前营销活动的总次数，由开发者自定义此数值
@@ -127,129 +127,327 @@ CAMP_SYS_TRIGGER：系统触发，必须配置实时人群验证规则（如：�
 	@ApiField("user_rule_id")
 	private String userRuleId;
 
-	public String getAccountCount() {
+    /**
+     * Gets account count.
+     *
+     * @return the account count
+     */
+    public String getAccountCount() {
 		return this.accountCount;
 	}
-	public void setAccountCount(String accountCount) {
+
+    /**
+     * Sets account count.
+     *
+     * @param accountCount the account count
+     */
+    public void setAccountCount(String accountCount) {
 		this.accountCount = accountCount;
 	}
 
-	public String getAppidCount() {
+    /**
+     * Gets appid count.
+     *
+     * @return the appid count
+     */
+    public String getAppidCount() {
 		return this.appidCount;
 	}
-	public void setAppidCount(String appidCount) {
+
+    /**
+     * Sets appid count.
+     *
+     * @param appidCount the appid count
+     */
+    public void setAppidCount(String appidCount) {
 		this.appidCount = appidCount;
 	}
 
-	public String getAwardCount() {
+    /**
+     * Gets award count.
+     *
+     * @return the award count
+     */
+    public String getAwardCount() {
 		return this.awardCount;
 	}
-	public void setAwardCount(String awardCount) {
+
+    /**
+     * Sets award count.
+     *
+     * @param awardCount the award count
+     */
+    public void setAwardCount(String awardCount) {
 		this.awardCount = awardCount;
 	}
 
-	public String getAwardRate() {
+    /**
+     * Gets award rate.
+     *
+     * @return the award rate
+     */
+    public String getAwardRate() {
 		return this.awardRate;
 	}
-	public void setAwardRate(String awardRate) {
+
+    /**
+     * Sets award rate.
+     *
+     * @param awardRate the award rate
+     */
+    public void setAwardRate(String awardRate) {
 		this.awardRate = awardRate;
 	}
 
-	public String getCampCode() {
+    /**
+     * Gets camp code.
+     *
+     * @return the camp code
+     */
+    public String getCampCode() {
 		return this.campCode;
 	}
-	public void setCampCode(String campCode) {
+
+    /**
+     * Sets camp code.
+     *
+     * @param campCode the camp code
+     */
+    public void setCampCode(String campCode) {
 		this.campCode = campCode;
 	}
 
-	public String getCampEndTime() {
+    /**
+     * Gets camp end time.
+     *
+     * @return the camp end time
+     */
+    public String getCampEndTime() {
 		return this.campEndTime;
 	}
-	public void setCampEndTime(String campEndTime) {
+
+    /**
+     * Sets camp end time.
+     *
+     * @param campEndTime the camp end time
+     */
+    public void setCampEndTime(String campEndTime) {
 		this.campEndTime = campEndTime;
 	}
 
-	public String getCampName() {
+    /**
+     * Gets camp name.
+     *
+     * @return the camp name
+     */
+    public String getCampName() {
 		return this.campName;
 	}
-	public void setCampName(String campName) {
+
+    /**
+     * Sets camp name.
+     *
+     * @param campName the camp name
+     */
+    public void setCampName(String campName) {
 		this.campName = campName;
 	}
 
-	public String getCampStartTime() {
+    /**
+     * Gets camp start time.
+     *
+     * @return the camp start time
+     */
+    public String getCampStartTime() {
 		return this.campStartTime;
 	}
-	public void setCampStartTime(String campStartTime) {
+
+    /**
+     * Sets camp start time.
+     *
+     * @param campStartTime the camp start time
+     */
+    public void setCampStartTime(String campStartTime) {
 		this.campStartTime = campStartTime;
 	}
 
-	public String getCertRuleId() {
+    /**
+     * Gets cert rule id.
+     *
+     * @return the cert rule id
+     */
+    public String getCertRuleId() {
 		return this.certRuleId;
 	}
-	public void setCertRuleId(String certRuleId) {
+
+    /**
+     * Sets cert rule id.
+     *
+     * @param certRuleId the cert rule id
+     */
+    public void setCertRuleId(String certRuleId) {
 		this.certRuleId = certRuleId;
 	}
 
-	public String getCertificationCount() {
+    /**
+     * Gets certification count.
+     *
+     * @return the certification count
+     */
+    public String getCertificationCount() {
 		return this.certificationCount;
 	}
-	public void setCertificationCount(String certificationCount) {
+
+    /**
+     * Sets certification count.
+     *
+     * @param certificationCount the certification count
+     */
+    public void setCertificationCount(String certificationCount) {
 		this.certificationCount = certificationCount;
 	}
 
-	public String getCrowdRuleId() {
+    /**
+     * Gets crowd rule id.
+     *
+     * @return the crowd rule id
+     */
+    public String getCrowdRuleId() {
 		return this.crowdRuleId;
 	}
-	public void setCrowdRuleId(String crowdRuleId) {
+
+    /**
+     * Sets crowd rule id.
+     *
+     * @param crowdRuleId the crowd rule id
+     */
+    public void setCrowdRuleId(String crowdRuleId) {
 		this.crowdRuleId = crowdRuleId;
 	}
 
-	public String getMobileCount() {
+    /**
+     * Gets mobile count.
+     *
+     * @return the mobile count
+     */
+    public String getMobileCount() {
 		return this.mobileCount;
 	}
-	public void setMobileCount(String mobileCount) {
+
+    /**
+     * Sets mobile count.
+     *
+     * @param mobileCount the mobile count
+     */
+    public void setMobileCount(String mobileCount) {
 		this.mobileCount = mobileCount;
 	}
 
-	public String getMpid() {
+    /**
+     * Gets mpid.
+     *
+     * @return the mpid
+     */
+    public String getMpid() {
 		return this.mpid;
 	}
-	public void setMpid(String mpid) {
+
+    /**
+     * Sets mpid.
+     *
+     * @param mpid the mpid
+     */
+    public void setMpid(String mpid) {
 		this.mpid = mpid;
 	}
 
-	public List<MpPrizeInfoModel> getPrizeList() {
+    /**
+     * Gets prize list.
+     *
+     * @return the prize list
+     */
+    public List<MpPrizeInfoModel> getPrizeList() {
 		return this.prizeList;
 	}
-	public void setPrizeList(List<MpPrizeInfoModel> prizeList) {
+
+    /**
+     * Sets prize list.
+     *
+     * @param prizeList the prize list
+     */
+    public void setPrizeList(List<MpPrizeInfoModel> prizeList) {
 		this.prizeList = prizeList;
 	}
 
-	public String getPromoRuleId() {
+    /**
+     * Gets promo rule id.
+     *
+     * @return the promo rule id
+     */
+    public String getPromoRuleId() {
 		return this.promoRuleId;
 	}
-	public void setPromoRuleId(String promoRuleId) {
+
+    /**
+     * Sets promo rule id.
+     *
+     * @param promoRuleId the promo rule id
+     */
+    public void setPromoRuleId(String promoRuleId) {
 		this.promoRuleId = promoRuleId;
 	}
 
-	public String getTriggerType() {
+    /**
+     * Gets trigger type.
+     *
+     * @return the trigger type
+     */
+    public String getTriggerType() {
 		return this.triggerType;
 	}
-	public void setTriggerType(String triggerType) {
+
+    /**
+     * Sets trigger type.
+     *
+     * @param triggerType the trigger type
+     */
+    public void setTriggerType(String triggerType) {
 		this.triggerType = triggerType;
 	}
 
-	public String getTriggerUserRuleId() {
+    /**
+     * Gets trigger user rule id.
+     *
+     * @return the trigger user rule id
+     */
+    public String getTriggerUserRuleId() {
 		return this.triggerUserRuleId;
 	}
-	public void setTriggerUserRuleId(String triggerUserRuleId) {
+
+    /**
+     * Sets trigger user rule id.
+     *
+     * @param triggerUserRuleId the trigger user rule id
+     */
+    public void setTriggerUserRuleId(String triggerUserRuleId) {
 		this.triggerUserRuleId = triggerUserRuleId;
 	}
 
-	public String getUserRuleId() {
+    /**
+     * Gets user rule id.
+     *
+     * @return the user rule id
+     */
+    public String getUserRuleId() {
 		return this.userRuleId;
 	}
-	public void setUserRuleId(String userRuleId) {
+
+    /**
+     * Sets user rule id.
+     *
+     * @param userRuleId the user rule id
+     */
+    public void setUserRuleId(String userRuleId) {
 		this.userRuleId = userRuleId;
 	}
 

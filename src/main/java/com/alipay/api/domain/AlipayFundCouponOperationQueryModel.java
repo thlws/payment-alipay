@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金授权明细查询接口
  *
  * @author auto create
- * @since 1.0, 2017-09-07 20:52:13
+ * @since 1.0, 2018-08-13 12:40:47
  */
 public class AlipayFundCouponOperationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7146763778462198981L;
+	private static final long serialVersionUID = 4137555651566383823L;
 
 	/**
 	 * 支付宝授权资金订单号，与商户的授权资金订单号不能同时为空，二者都存在时，以支付宝资金授权订单号为准，该参数与支付宝授权资金操作流水号配对使用。
@@ -37,31 +37,75 @@ public class AlipayFundCouponOperationQueryModel extends AlipayObject {
 	@ApiField("out_request_no")
 	private String outRequestNo;
 
-	public String getAuthNo() {
+    /**
+     * Gets auth no.
+     *
+     * @return the auth no
+     */
+    public String getAuthNo() {
 		return this.authNo;
 	}
-	public void setAuthNo(String authNo) {
+
+    /**
+     * Sets auth no.
+     *
+     * @param authNo the auth no
+     */
+    public void setAuthNo(String authNo) {
 		this.authNo = authNo;
 	}
 
-	public String getOperationId() {
+    /**
+     * Gets operation id.
+     *
+     * @return the operation id
+     */
+    public String getOperationId() {
 		return this.operationId;
 	}
-	public void setOperationId(String operationId) {
+
+    /**
+     * Sets operation id.
+     *
+     * @param operationId the operation id
+     */
+    public void setOperationId(String operationId) {
 		this.operationId = operationId;
 	}
 
-	public String getOutOrderNo() {
+    /**
+     * Gets out order no.
+     *
+     * @return the out order no
+     */
+    public String getOutOrderNo() {
 		return this.outOrderNo;
 	}
-	public void setOutOrderNo(String outOrderNo) {
+
+    /**
+     * Sets out order no.
+     *
+     * @param outOrderNo the out order no
+     */
+    public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
 	}
 
-	public String getOutRequestNo() {
+    /**
+     * Gets out request no.
+     *
+     * @return the out request no
+     */
+    public String getOutRequestNo() {
 		return this.outRequestNo;
 	}
-	public void setOutRequestNo(String outRequestNo) {
+
+    /**
+     * Sets out request no.
+     *
+     * @param outRequestNo the out request no
+     */
+    public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
 	}
 

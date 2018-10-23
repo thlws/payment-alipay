@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.cplife.community.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-02-10 18:55:25
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayEcoCplifeCommunityBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2676525297656737787L;
+	private static final long serialVersionUID = 8671558923538262797L;
 
 	/** 
 	 * 若查询到符合条件的小区，返回物业小区摘要信息列表
@@ -38,24 +38,57 @@ public class AlipayEcoCplifeCommunityBatchqueryResponse extends AlipayResponse {
 	@ApiField("total_community_count")
 	private Long totalCommunityCount;
 
-	public void setCommunityList(List<CPCommunitySet> communityList) {
+    /**
+     * Sets community list.
+     *
+     * @param communityList the community list
+     */
+    public void setCommunityList(List<CPCommunitySet> communityList) {
 		this.communityList = communityList;
 	}
-	public List<CPCommunitySet> getCommunityList( ) {
+
+    /**
+     * Gets community list.
+     *
+     * @return the community list
+     */
+    public List<CPCommunitySet> getCommunityList( ) {
 		return this.communityList;
 	}
 
-	public void setCurrentPageNum(Long currentPageNum) {
+    /**
+     * Sets current page num.
+     *
+     * @param currentPageNum the current page num
+     */
+    public void setCurrentPageNum(Long currentPageNum) {
 		this.currentPageNum = currentPageNum;
 	}
-	public Long getCurrentPageNum( ) {
+
+    /**
+     * Gets current page num.
+     *
+     * @return the current page num
+     */
+    public Long getCurrentPageNum( ) {
 		return this.currentPageNum;
 	}
 
-	public void setTotalCommunityCount(Long totalCommunityCount) {
+    /**
+     * Sets total community count.
+     *
+     * @param totalCommunityCount the total community count
+     */
+    public void setTotalCommunityCount(Long totalCommunityCount) {
 		this.totalCommunityCount = totalCommunityCount;
 	}
-	public Long getTotalCommunityCount( ) {
+
+    /**
+     * Gets total community count.
+     *
+     * @return the total community count
+     */
+    public Long getTotalCommunityCount( ) {
 		return this.totalCommunityCount;
 	}
 

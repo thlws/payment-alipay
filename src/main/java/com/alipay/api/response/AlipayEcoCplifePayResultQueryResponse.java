@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.cplife.pay.result.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-08 11:37:41
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayEcoCplifePayResultQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4671736923648466292L;
+	private static final long serialVersionUID = 4183642579566671637L;
 
 	/** 
 	 * 本次交易关联的账单详情
@@ -86,80 +86,201 @@ YC--预存类缴费
 	@ApiField("trade_status")
 	private String tradeStatus;
 
-	public void setAssocBillDetails(TradeAssocBillDetails assocBillDetails) {
+    /**
+     * Sets assoc bill details.
+     *
+     * @param assocBillDetails the assoc bill details
+     */
+    public void setAssocBillDetails(TradeAssocBillDetails assocBillDetails) {
 		this.assocBillDetails = assocBillDetails;
 	}
-	public TradeAssocBillDetails getAssocBillDetails( ) {
+
+    /**
+     * Gets assoc bill details.
+     *
+     * @return the assoc bill details
+     */
+    public TradeAssocBillDetails getAssocBillDetails( ) {
 		return this.assocBillDetails;
 	}
 
-	public void setBizEntityId(String bizEntityId) {
+    /**
+     * Sets biz entity id.
+     *
+     * @param bizEntityId the biz entity id
+     */
+    public void setBizEntityId(String bizEntityId) {
 		this.bizEntityId = bizEntityId;
 	}
-	public String getBizEntityId( ) {
+
+    /**
+     * Gets biz entity id.
+     *
+     * @return the biz entity id
+     */
+    public String getBizEntityId( ) {
 		return this.bizEntityId;
 	}
 
-	public void setBizType(String bizType) {
+    /**
+     * Sets biz type.
+     *
+     * @param bizType the biz type
+     */
+    public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
-	public String getBizType( ) {
+
+    /**
+     * Gets biz type.
+     *
+     * @return the biz type
+     */
+    public String getBizType( ) {
 		return this.bizType;
 	}
 
-	public void setBuyerLogonId(String buyerLogonId) {
+    /**
+     * Sets buyer logon id.
+     *
+     * @param buyerLogonId the buyer logon id
+     */
+    public void setBuyerLogonId(String buyerLogonId) {
 		this.buyerLogonId = buyerLogonId;
 	}
-	public String getBuyerLogonId( ) {
+
+    /**
+     * Gets buyer logon id.
+     *
+     * @return the buyer logon id
+     */
+    public String getBuyerLogonId( ) {
 		return this.buyerLogonId;
 	}
 
-	public void setBuyerUserId(String buyerUserId) {
+    /**
+     * Sets buyer user id.
+     *
+     * @param buyerUserId the buyer user id
+     */
+    public void setBuyerUserId(String buyerUserId) {
 		this.buyerUserId = buyerUserId;
 	}
-	public String getBuyerUserId( ) {
+
+    /**
+     * Gets buyer user id.
+     *
+     * @return the buyer user id
+     */
+    public String getBuyerUserId( ) {
 		return this.buyerUserId;
 	}
 
-	public void setFundBillList(FundBillListEco fundBillList) {
+    /**
+     * Sets fund bill list.
+     *
+     * @param fundBillList the fund bill list
+     */
+    public void setFundBillList(FundBillListEco fundBillList) {
 		this.fundBillList = fundBillList;
 	}
-	public FundBillListEco getFundBillList( ) {
+
+    /**
+     * Gets fund bill list.
+     *
+     * @return the fund bill list
+     */
+    public FundBillListEco getFundBillList( ) {
 		return this.fundBillList;
 	}
 
-	public void setGmtPayment(Date gmtPayment) {
+    /**
+     * Sets gmt payment.
+     *
+     * @param gmtPayment the gmt payment
+     */
+    public void setGmtPayment(Date gmtPayment) {
 		this.gmtPayment = gmtPayment;
 	}
-	public Date getGmtPayment( ) {
+
+    /**
+     * Gets gmt payment.
+     *
+     * @return the gmt payment
+     */
+    public Date getGmtPayment( ) {
 		return this.gmtPayment;
 	}
 
-	public void setSellerId(String sellerId) {
+    /**
+     * Sets seller id.
+     *
+     * @param sellerId the seller id
+     */
+    public void setSellerId(String sellerId) {
 		this.sellerId = sellerId;
 	}
-	public String getSellerId( ) {
+
+    /**
+     * Gets seller id.
+     *
+     * @return the seller id
+     */
+    public String getSellerId( ) {
 		return this.sellerId;
 	}
 
-	public void setTotalAmount(String totalAmount) {
+    /**
+     * Sets total amount.
+     *
+     * @param totalAmount the total amount
+     */
+    public void setTotalAmount(String totalAmount) {
 		this.totalAmount = totalAmount;
 	}
-	public String getTotalAmount( ) {
+
+    /**
+     * Gets total amount.
+     *
+     * @return the total amount
+     */
+    public String getTotalAmount( ) {
 		return this.totalAmount;
 	}
 
-	public void setTradeNo(String tradeNo) {
+    /**
+     * Sets trade no.
+     *
+     * @param tradeNo the trade no
+     */
+    public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
-	public String getTradeNo( ) {
+
+    /**
+     * Gets trade no.
+     *
+     * @return the trade no
+     */
+    public String getTradeNo( ) {
 		return this.tradeNo;
 	}
 
-	public void setTradeStatus(String tradeStatus) {
+    /**
+     * Sets trade status.
+     *
+     * @param tradeStatus the trade status
+     */
+    public void setTradeStatus(String tradeStatus) {
 		this.tradeStatus = tradeStatus;
 	}
-	public String getTradeStatus( ) {
+
+    /**
+     * Gets trade status.
+     *
+     * @return the trade status
+     */
+    public String getTradeStatus( ) {
 		return this.tradeStatus;
 	}
 

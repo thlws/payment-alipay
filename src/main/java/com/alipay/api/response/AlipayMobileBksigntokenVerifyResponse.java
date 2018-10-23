@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.bksigntoken.verify response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-04-07 18:08:15
  */
 public class AlipayMobileBksigntokenVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8624564133116527798L;
+	private static final long serialVersionUID = 4322489758726447648L;
 
 	/** 
 	 * 返回值创建时间
@@ -50,45 +50,111 @@ public class AlipayMobileBksigntokenVerifyResponse extends AlipayResponse {
 	@ApiField("userid")
 	private String userid;
 
-	public void setCreatetimestamp(String createtimestamp) {
+    /**
+     * Sets createtimestamp.
+     *
+     * @param createtimestamp the createtimestamp
+     */
+    public void setCreatetimestamp(String createtimestamp) {
 		this.createtimestamp = createtimestamp;
 	}
-	public String getCreatetimestamp( ) {
+
+    /**
+     * Gets createtimestamp.
+     *
+     * @return the createtimestamp
+     */
+    public String getCreatetimestamp( ) {
 		return this.createtimestamp;
 	}
 
-	public void setLoginid(String loginid) {
+    /**
+     * Sets loginid.
+     *
+     * @param loginid the loginid
+     */
+    public void setLoginid(String loginid) {
 		this.loginid = loginid;
 	}
-	public String getLoginid( ) {
+
+    /**
+     * Gets loginid.
+     *
+     * @return the loginid
+     */
+    public String getLoginid( ) {
 		return this.loginid;
 	}
 
-	public void setMemo(String memo) {
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
-	public String getMemo( ) {
+
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo( ) {
 		return this.memo;
 	}
 
-	public void setResultcode(Long resultcode) {
+    /**
+     * Sets resultcode.
+     *
+     * @param resultcode the resultcode
+     */
+    public void setResultcode(Long resultcode) {
 		this.resultcode = resultcode;
 	}
-	public Long getResultcode( ) {
+
+    /**
+     * Gets resultcode.
+     *
+     * @return the resultcode
+     */
+    public Long getResultcode( ) {
 		return this.resultcode;
 	}
 
-	public void setSuccess(Boolean success) {
+    /**
+     * Sets success.
+     *
+     * @param success the success
+     */
+    public void setSuccess(Boolean success) {
 		this.success = success;
 	}
-	public Boolean getSuccess( ) {
+
+    /**
+     * Gets success.
+     *
+     * @return the success
+     */
+    public Boolean getSuccess( ) {
 		return this.success;
 	}
 
-	public void setUserid(String userid) {
+    /**
+     * Sets userid.
+     *
+     * @param userid the userid
+     */
+    public void setUserid(String userid) {
 		this.userid = userid;
 	}
-	public String getUserid( ) {
+
+    /**
+     * Gets userid.
+     *
+     * @return the userid
+     */
+    public String getUserid( ) {
 		return this.userid;
 	}
 

@@ -11,16 +11,16 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SsdataDataserviceRiskAntifraudVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6568739252876611989L;
+	private static final long serialVersionUID = 5513367391574632596L;
 
 	/**
-	 * 地址信息。
+	 * 地址信息。省+市+区/县+详细地址，其中 省+市+区/县可以为空，长度不超过256，不要包含特殊字符，如","，"\"，"|"，"&"，"^"
 	 */
 	@ApiField("address")
 	private String address;
 
 	/**
-	 * 银行卡号。
+	 * 银行卡号。中国大陆银行发布的银行卡:借记卡长度19位；信用卡长度16位；各位的取值位[0,9]的整数；不含虚拟卡
 	 */
 	@ApiField("bank_card")
 	private String bankCard;
@@ -68,7 +68,7 @@ public class SsdataDataserviceRiskAntifraudVerifyModel extends AlipayObject {
 	private String mobile;
 
 	/**
-	 * 姓名，长度不超过64
+	 * 姓名，长度不超过64，姓名中不要包含特殊字符，如 ",","/u0001", "|", "&", "^", "\\"
 	 */
 	@ApiField("name")
 	private String name;
@@ -85,87 +85,219 @@ public class SsdataDataserviceRiskAntifraudVerifyModel extends AlipayObject {
 	@ApiField("wifimac")
 	private String wifimac;
 
-	public String getAddress() {
+    /**
+     * Gets address.
+     *
+     * @return the address
+     */
+    public String getAddress() {
 		return this.address;
 	}
-	public void setAddress(String address) {
+
+    /**
+     * Sets address.
+     *
+     * @param address the address
+     */
+    public void setAddress(String address) {
 		this.address = address;
 	}
 
-	public String getBankCard() {
+    /**
+     * Gets bank card.
+     *
+     * @return the bank card
+     */
+    public String getBankCard() {
 		return this.bankCard;
 	}
-	public void setBankCard(String bankCard) {
+
+    /**
+     * Sets bank card.
+     *
+     * @param bankCard the bank card
+     */
+    public void setBankCard(String bankCard) {
 		this.bankCard = bankCard;
 	}
 
-	public String getCertNo() {
+    /**
+     * Gets cert no.
+     *
+     * @return the cert no
+     */
+    public String getCertNo() {
 		return this.certNo;
 	}
-	public void setCertNo(String certNo) {
+
+    /**
+     * Sets cert no.
+     *
+     * @param certNo the cert no
+     */
+    public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}
 
-	public String getCertType() {
+    /**
+     * Gets cert type.
+     *
+     * @return the cert type
+     */
+    public String getCertType() {
 		return this.certType;
 	}
-	public void setCertType(String certType) {
+
+    /**
+     * Sets cert type.
+     *
+     * @param certType the cert type
+     */
+    public void setCertType(String certType) {
 		this.certType = certType;
 	}
 
-	public String getEmail() {
+    /**
+     * Gets email.
+     *
+     * @return the email
+     */
+    public String getEmail() {
 		return this.email;
 	}
-	public void setEmail(String email) {
+
+    /**
+     * Sets email.
+     *
+     * @param email the email
+     */
+    public void setEmail(String email) {
 		this.email = email;
 	}
 
-	public String getImei() {
+    /**
+     * Gets imei.
+     *
+     * @return the imei
+     */
+    public String getImei() {
 		return this.imei;
 	}
-	public void setImei(String imei) {
+
+    /**
+     * Sets imei.
+     *
+     * @param imei the imei
+     */
+    public void setImei(String imei) {
 		this.imei = imei;
 	}
 
-	public String getIp() {
+    /**
+     * Gets ip.
+     *
+     * @return the ip
+     */
+    public String getIp() {
 		return this.ip;
 	}
-	public void setIp(String ip) {
+
+    /**
+     * Sets ip.
+     *
+     * @param ip the ip
+     */
+    public void setIp(String ip) {
 		this.ip = ip;
 	}
 
-	public String getMac() {
+    /**
+     * Gets mac.
+     *
+     * @return the mac
+     */
+    public String getMac() {
 		return this.mac;
 	}
-	public void setMac(String mac) {
+
+    /**
+     * Sets mac.
+     *
+     * @param mac the mac
+     */
+    public void setMac(String mac) {
 		this.mac = mac;
 	}
 
-	public String getMobile() {
+    /**
+     * Gets mobile.
+     *
+     * @return the mobile
+     */
+    public String getMobile() {
 		return this.mobile;
 	}
-	public void setMobile(String mobile) {
+
+    /**
+     * Sets mobile.
+     *
+     * @param mobile the mobile
+     */
+    public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getPartnerId() {
+    /**
+     * Gets partner id.
+     *
+     * @return the partner id
+     */
+    public String getPartnerId() {
 		return this.partnerId;
 	}
-	public void setPartnerId(String partnerId) {
+
+    /**
+     * Sets partner id.
+     *
+     * @param partnerId the partner id
+     */
+    public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}
 
-	public String getWifimac() {
+    /**
+     * Gets wifimac.
+     *
+     * @return the wifimac
+     */
+    public String getWifimac() {
 		return this.wifimac;
 	}
-	public void setWifimac(String wifimac) {
+
+    /**
+     * Sets wifimac.
+     *
+     * @param wifimac the wifimac
+     */
+    public void setWifimac(String wifimac) {
 		this.wifimac = wifimac;
 	}
 

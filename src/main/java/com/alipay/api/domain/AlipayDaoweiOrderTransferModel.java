@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单状态推进接口
  *
  * @author auto create
- * @since 1.0, 2017-03-20 14:01:25
+ * @since 1.0, 2018-03-23 13:22:57
  */
 public class AlipayDaoweiOrderTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4775997347455987387L;
+	private static final long serialVersionUID = 4847154522878684299L;
 
 	/**
 	 * 备注信息。商户在推进订单状态时填写的备注信息，不超过500字符。
@@ -32,24 +32,57 @@ public class AlipayDaoweiOrderTransferModel extends AlipayObject {
 	@ApiField("order_no")
 	private String orderNo;
 
-	public String getMemo() {
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo() {
 		return this.memo;
 	}
-	public void setMemo(String memo) {
+
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
-	public String getOrderAction() {
+    /**
+     * Gets order action.
+     *
+     * @return the order action
+     */
+    public String getOrderAction() {
 		return this.orderAction;
 	}
-	public void setOrderAction(String orderAction) {
+
+    /**
+     * Sets order action.
+     *
+     * @param orderAction the order action
+     */
+    public void setOrderAction(String orderAction) {
 		this.orderAction = orderAction;
 	}
 
-	public String getOrderNo() {
+    /**
+     * Gets order no.
+     *
+     * @return the order no
+     */
+    public String getOrderNo() {
 		return this.orderNo;
 	}
-	public void setOrderNo(String orderNo) {
+
+    /**
+     * Sets order no.
+     *
+     * @param orderNo the order no
+     */
+    public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
 

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenAppYufanlingsanyaowuYufalingsanyaowuQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1677841927238758659L;
+	private static final long serialVersionUID = 6477467288927694864L;
 
 	/**
 	 * 省份编码，国标码
@@ -23,10 +23,21 @@ public class AlipayOpenAppYufanlingsanyaowuYufalingsanyaowuQueryModel extends Al
 	@ApiField("string")
 	private List<String> provinceCode;
 
-	public List<String> getProvinceCode() {
+    /**
+     * Gets province code.
+     *
+     * @return the province code
+     */
+    public List<String> getProvinceCode() {
 		return this.provinceCode;
 	}
-	public void setProvinceCode(List<String> provinceCode) {
+
+    /**
+     * Sets province code.
+     *
+     * @param provinceCode the province code
+     */
+    public void setProvinceCode(List<String> provinceCode) {
 		this.provinceCode = provinceCode;
 	}
 

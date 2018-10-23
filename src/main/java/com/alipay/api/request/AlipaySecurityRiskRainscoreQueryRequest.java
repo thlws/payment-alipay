@@ -10,9 +10,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.security.risk.rainscore.query request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-14 11:56:09
+ * @since 1.0, 2018-06-08 14:08:31
  */
 public class AlipaySecurityRiskRainscoreQueryRequest implements AlipayRequest<AlipaySecurityRiskRainscoreQueryResponse> {
 
@@ -24,10 +24,21 @@ public class AlipaySecurityRiskRainscoreQueryRequest implements AlipayRequest<Al
 	 */
 	private String bizContent;
 
-	public void setBizContent(String bizContent) {
+    /**
+     * Sets biz content.
+     *
+     * @param bizContent the biz content
+     */
+    public void setBizContent(String bizContent) {
 		this.bizContent = bizContent;
 	}
-	public String getBizContent() {
+
+    /**
+     * Gets biz content.
+     *
+     * @return the biz content
+     */
+    public String getBizContent() {
 		return this.bizContent;
 	}
 	private String terminalType;
@@ -99,7 +110,13 @@ public class AlipaySecurityRiskRainscoreQueryRequest implements AlipayRequest<Al
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RefundDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3689373529778685243L;
+	private static final long serialVersionUID = 8749871476972346276L;
 
 	/**
 	 * 交易退款金额
@@ -53,45 +53,111 @@ public class RefundDetail extends AlipayObject {
 	@ApiField("trade_no")
 	private String tradeNo;
 
-	public String getRefundAmount() {
+    /**
+     * Gets refund amount.
+     *
+     * @return the refund amount
+     */
+    public String getRefundAmount() {
 		return this.refundAmount;
 	}
-	public void setRefundAmount(String refundAmount) {
+
+    /**
+     * Sets refund amount.
+     *
+     * @param refundAmount the refund amount
+     */
+    public void setRefundAmount(String refundAmount) {
 		this.refundAmount = refundAmount;
 	}
 
-	public String getRefundMemo() {
+    /**
+     * Gets refund memo.
+     *
+     * @return the refund memo
+     */
+    public String getRefundMemo() {
 		return this.refundMemo;
 	}
-	public void setRefundMemo(String refundMemo) {
+
+    /**
+     * Sets refund memo.
+     *
+     * @param refundMemo the refund memo
+     */
+    public void setRefundMemo(String refundMemo) {
 		this.refundMemo = refundMemo;
 	}
 
-	public List<RefundRoyaltyInfo> getRefundRoyaltys() {
+    /**
+     * Gets refund royaltys.
+     *
+     * @return the refund royaltys
+     */
+    public List<RefundRoyaltyInfo> getRefundRoyaltys() {
 		return this.refundRoyaltys;
 	}
-	public void setRefundRoyaltys(List<RefundRoyaltyInfo> refundRoyaltys) {
+
+    /**
+     * Sets refund royaltys.
+     *
+     * @param refundRoyaltys the refund royaltys
+     */
+    public void setRefundRoyaltys(List<RefundRoyaltyInfo> refundRoyaltys) {
 		this.refundRoyaltys = refundRoyaltys;
 	}
 
-	public String getRefundSupplAmount() {
+    /**
+     * Gets refund suppl amount.
+     *
+     * @return the refund suppl amount
+     */
+    public String getRefundSupplAmount() {
 		return this.refundSupplAmount;
 	}
-	public void setRefundSupplAmount(String refundSupplAmount) {
+
+    /**
+     * Sets refund suppl amount.
+     *
+     * @param refundSupplAmount the refund suppl amount
+     */
+    public void setRefundSupplAmount(String refundSupplAmount) {
 		this.refundSupplAmount = refundSupplAmount;
 	}
 
-	public String getRefundSupplMemo() {
+    /**
+     * Gets refund suppl memo.
+     *
+     * @return the refund suppl memo
+     */
+    public String getRefundSupplMemo() {
 		return this.refundSupplMemo;
 	}
-	public void setRefundSupplMemo(String refundSupplMemo) {
+
+    /**
+     * Sets refund suppl memo.
+     *
+     * @param refundSupplMemo the refund suppl memo
+     */
+    public void setRefundSupplMemo(String refundSupplMemo) {
 		this.refundSupplMemo = refundSupplMemo;
 	}
 
-	public String getTradeNo() {
+    /**
+     * Gets trade no.
+     *
+     * @return the trade no
+     */
+    public String getTradeNo() {
 		return this.tradeNo;
 	}
-	public void setTradeNo(String tradeNo) {
+
+    /**
+     * Sets trade no.
+     *
+     * @param tradeNo the trade no
+     */
+    public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
 

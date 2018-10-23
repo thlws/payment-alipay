@@ -7,13 +7,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.fund.auth.order.unfreeze response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-21 19:43:22
+ * @since 1.0, 2018-07-23 11:40:00
  */
 public class AlipayFundAuthOrderUnfreezeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1276843473277562877L;
+	private static final long serialVersionUID = 4791274641647172319L;
 
 	/** 
 	 * 本次操作解冻的金额，单位为：元（人民币），精确到小数点后两位，取值范围：[0.01,100000000.00]
@@ -26,6 +26,18 @@ public class AlipayFundAuthOrderUnfreezeResponse extends AlipayResponse {
 	 */
 	@ApiField("auth_no")
 	private String authNo;
+
+	/** 
+	 * 本次解冻操作中信用解冻金额，单位为：元（人民币），精确到小数点后两位
+	 */
+	@ApiField("credit_amount")
+	private String creditAmount;
+
+	/** 
+	 * 本次解冻操作中自有资金解冻金额，单位为：元（人民币），精确到小数点后两位
+	 */
+	@ApiField("fund_amount")
+	private String fundAmount;
 
 	/** 
 	 * 授权资金解冻成功时间，格式：YYYY-MM-DD HH:MM:SS
@@ -60,52 +72,165 @@ CLOSED：关闭
 	@ApiField("status")
 	private String status;
 
-	public void setAmount(String amount) {
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(String amount) {
 		this.amount = amount;
 	}
-	public String getAmount( ) {
+
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public String getAmount( ) {
 		return this.amount;
 	}
 
-	public void setAuthNo(String authNo) {
+    /**
+     * Sets auth no.
+     *
+     * @param authNo the auth no
+     */
+    public void setAuthNo(String authNo) {
 		this.authNo = authNo;
 	}
-	public String getAuthNo( ) {
+
+    /**
+     * Gets auth no.
+     *
+     * @return the auth no
+     */
+    public String getAuthNo( ) {
 		return this.authNo;
 	}
 
-	public void setGmtTrans(Date gmtTrans) {
+    /**
+     * Sets credit amount.
+     *
+     * @param creditAmount the credit amount
+     */
+    public void setCreditAmount(String creditAmount) {
+		this.creditAmount = creditAmount;
+	}
+
+    /**
+     * Gets credit amount.
+     *
+     * @return the credit amount
+     */
+    public String getCreditAmount( ) {
+		return this.creditAmount;
+	}
+
+    /**
+     * Sets fund amount.
+     *
+     * @param fundAmount the fund amount
+     */
+    public void setFundAmount(String fundAmount) {
+		this.fundAmount = fundAmount;
+	}
+
+    /**
+     * Gets fund amount.
+     *
+     * @return the fund amount
+     */
+    public String getFundAmount( ) {
+		return this.fundAmount;
+	}
+
+    /**
+     * Sets gmt trans.
+     *
+     * @param gmtTrans the gmt trans
+     */
+    public void setGmtTrans(Date gmtTrans) {
 		this.gmtTrans = gmtTrans;
 	}
-	public Date getGmtTrans( ) {
+
+    /**
+     * Gets gmt trans.
+     *
+     * @return the gmt trans
+     */
+    public Date getGmtTrans( ) {
 		return this.gmtTrans;
 	}
 
-	public void setOperationId(String operationId) {
+    /**
+     * Sets operation id.
+     *
+     * @param operationId the operation id
+     */
+    public void setOperationId(String operationId) {
 		this.operationId = operationId;
 	}
-	public String getOperationId( ) {
+
+    /**
+     * Gets operation id.
+     *
+     * @return the operation id
+     */
+    public String getOperationId( ) {
 		return this.operationId;
 	}
 
-	public void setOutOrderNo(String outOrderNo) {
+    /**
+     * Sets out order no.
+     *
+     * @param outOrderNo the out order no
+     */
+    public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
 	}
-	public String getOutOrderNo( ) {
+
+    /**
+     * Gets out order no.
+     *
+     * @return the out order no
+     */
+    public String getOutOrderNo( ) {
 		return this.outOrderNo;
 	}
 
-	public void setOutRequestNo(String outRequestNo) {
+    /**
+     * Sets out request no.
+     *
+     * @param outRequestNo the out request no
+     */
+    public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
 	}
-	public String getOutRequestNo( ) {
+
+    /**
+     * Gets out request no.
+     *
+     * @return the out request no
+     */
+    public String getOutRequestNo( ) {
 		return this.outRequestNo;
 	}
 
-	public void setStatus(String status) {
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
-	public String getStatus( ) {
+
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus( ) {
 		return this.status;
 	}
 

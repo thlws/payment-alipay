@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiCraftsmanDataWorkCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7841927197525735618L;
+	private static final long serialVersionUID = 8685686169454389748L;
 
 	/**
 	 * 服务商、服务商员工、商户、商户员工等口碑角色操作时必填，对应为《koubei.member.data.oauth.query》中的auth_code，默认有效期24小时；isv自身角色操作的时候，无需传该参数
@@ -42,31 +42,75 @@ public class KoubeiCraftsmanDataWorkCreateModel extends AlipayObject {
 	@ApiField("craftsman_work_create_open_model")
 	private List<CraftsmanWorkCreateOpenModel> works;
 
-	public String getAuthCode() {
+    /**
+     * Gets auth code.
+     *
+     * @return the auth code
+     */
+    public String getAuthCode() {
 		return this.authCode;
 	}
-	public void setAuthCode(String authCode) {
+
+    /**
+     * Sets auth code.
+     *
+     * @param authCode the auth code
+     */
+    public void setAuthCode(String authCode) {
 		this.authCode = authCode;
 	}
 
-	public String getCraftsmanId() {
+    /**
+     * Gets craftsman id.
+     *
+     * @return the craftsman id
+     */
+    public String getCraftsmanId() {
 		return this.craftsmanId;
 	}
-	public void setCraftsmanId(String craftsmanId) {
+
+    /**
+     * Sets craftsman id.
+     *
+     * @param craftsmanId the craftsman id
+     */
+    public void setCraftsmanId(String craftsmanId) {
 		this.craftsmanId = craftsmanId;
 	}
 
-	public List<String> getShopIds() {
+    /**
+     * Gets shop ids.
+     *
+     * @return the shop ids
+     */
+    public List<String> getShopIds() {
 		return this.shopIds;
 	}
-	public void setShopIds(List<String> shopIds) {
+
+    /**
+     * Sets shop ids.
+     *
+     * @param shopIds the shop ids
+     */
+    public void setShopIds(List<String> shopIds) {
 		this.shopIds = shopIds;
 	}
 
-	public List<CraftsmanWorkCreateOpenModel> getWorks() {
+    /**
+     * Gets works.
+     *
+     * @return the works
+     */
+    public List<CraftsmanWorkCreateOpenModel> getWorks() {
 		return this.works;
 	}
-	public void setWorks(List<CraftsmanWorkCreateOpenModel> works) {
+
+    /**
+     * Sets works.
+     *
+     * @param works the works
+     */
+    public void setWorks(List<CraftsmanWorkCreateOpenModel> works) {
 		this.works = works;
 	}
 

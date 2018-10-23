@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipaySecurityProdAmlriskQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8752853664365561321L;
+	private static final long serialVersionUID = 1822574989357386653L;
 
 	/**
 	 * 办公地址
@@ -65,59 +65,147 @@ public class AlipaySecurityProdAmlriskQueryModel extends AlipayObject {
 	@ApiField("registration_number")
 	private String registrationNumber;
 
-	public String getBusinessAddress() {
+    /**
+     * Gets business address.
+     *
+     * @return the business address
+     */
+    public String getBusinessAddress() {
 		return this.businessAddress;
 	}
-	public void setBusinessAddress(String businessAddress) {
+
+    /**
+     * Sets business address.
+     *
+     * @param businessAddress the business address
+     */
+    public void setBusinessAddress(String businessAddress) {
 		this.businessAddress = businessAddress;
 	}
 
-	public String getEventId() {
+    /**
+     * Gets event id.
+     *
+     * @return the event id
+     */
+    public String getEventId() {
 		return this.eventId;
 	}
-	public void setEventId(String eventId) {
+
+    /**
+     * Sets event id.
+     *
+     * @param eventId the event id
+     */
+    public void setEventId(String eventId) {
 		this.eventId = eventId;
 	}
 
-	public List<IndividualInfo> getIndividualList() {
+    /**
+     * Gets individual list.
+     *
+     * @return the individual list
+     */
+    public List<IndividualInfo> getIndividualList() {
 		return this.individualList;
 	}
-	public void setIndividualList(List<IndividualInfo> individualList) {
+
+    /**
+     * Sets individual list.
+     *
+     * @param individualList the individual list
+     */
+    public void setIndividualList(List<IndividualInfo> individualList) {
 		this.individualList = individualList;
 	}
 
-	public String getLegalName() {
+    /**
+     * Gets legal name.
+     *
+     * @return the legal name
+     */
+    public String getLegalName() {
 		return this.legalName;
 	}
-	public void setLegalName(String legalName) {
+
+    /**
+     * Sets legal name.
+     *
+     * @param legalName the legal name
+     */
+    public void setLegalName(String legalName) {
 		this.legalName = legalName;
 	}
 
-	public String getMerchantId() {
+    /**
+     * Gets merchant id.
+     *
+     * @return the merchant id
+     */
+    public String getMerchantId() {
 		return this.merchantId;
 	}
-	public void setMerchantId(String merchantId) {
+
+    /**
+     * Sets merchant id.
+     *
+     * @param merchantId the merchant id
+     */
+    public void setMerchantId(String merchantId) {
 		this.merchantId = merchantId;
 	}
 
-	public String getOrderId() {
+    /**
+     * Gets order id.
+     *
+     * @return the order id
+     */
+    public String getOrderId() {
 		return this.orderId;
 	}
-	public void setOrderId(String orderId) {
+
+    /**
+     * Sets order id.
+     *
+     * @param orderId the order id
+     */
+    public void setOrderId(String orderId) {
 		this.orderId = orderId;
 	}
 
-	public String getRegisteredAddress() {
+    /**
+     * Gets registered address.
+     *
+     * @return the registered address
+     */
+    public String getRegisteredAddress() {
 		return this.registeredAddress;
 	}
-	public void setRegisteredAddress(String registeredAddress) {
+
+    /**
+     * Sets registered address.
+     *
+     * @param registeredAddress the registered address
+     */
+    public void setRegisteredAddress(String registeredAddress) {
 		this.registeredAddress = registeredAddress;
 	}
 
-	public String getRegistrationNumber() {
+    /**
+     * Gets registration number.
+     *
+     * @return the registration number
+     */
+    public String getRegistrationNumber() {
 		return this.registrationNumber;
 	}
-	public void setRegistrationNumber(String registrationNumber) {
+
+    /**
+     * Sets registration number.
+     *
+     * @param registrationNumber the registration number
+     */
+    public void setRegistrationNumber(String registrationNumber) {
 		this.registrationNumber = registrationNumber;
 	}
 

@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.std.public.express.user.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-04-14 20:18:49
  */
 public class AlipayMobileStdPublicExpressUserQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5462247592866349453L;
+	private static final long serialVersionUID = 7199419418815878183L;
 
 	/** 
 	 * 证件号
@@ -26,17 +26,39 @@ public class AlipayMobileStdPublicExpressUserQueryResponse extends AlipayRespons
 	@ApiField("cert_type")
 	private String certType;
 
-	public void setCertNo(String certNo) {
+    /**
+     * Sets cert no.
+     *
+     * @param certNo the cert no
+     */
+    public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}
-	public String getCertNo( ) {
+
+    /**
+     * Gets cert no.
+     *
+     * @return the cert no
+     */
+    public String getCertNo( ) {
 		return this.certNo;
 	}
 
-	public void setCertType(String certType) {
+    /**
+     * Sets cert type.
+     *
+     * @param certType the cert type
+     */
+    public void setCertType(String certType) {
 		this.certType = certType;
 	}
-	public String getCertType( ) {
+
+    /**
+     * Gets cert type.
+     *
+     * @return the cert type
+     */
+    public String getCertType( ) {
 		return this.certType;
 	}
 

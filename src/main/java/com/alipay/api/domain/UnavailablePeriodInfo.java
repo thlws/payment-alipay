@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UnavailablePeriodInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7528721435194183899L;
+	private static final long serialVersionUID = 6819513597411313717L;
 
 	/**
 	 * 商品不可用时段结束日期。格式为YYYY-MM-DD，如2017-05-03
@@ -25,17 +25,39 @@ public class UnavailablePeriodInfo extends AlipayObject {
 	@ApiField("start_day")
 	private String startDay;
 
-	public String getEndDay() {
+    /**
+     * Gets end day.
+     *
+     * @return the end day
+     */
+    public String getEndDay() {
 		return this.endDay;
 	}
-	public void setEndDay(String endDay) {
+
+    /**
+     * Sets end day.
+     *
+     * @param endDay the end day
+     */
+    public void setEndDay(String endDay) {
 		this.endDay = endDay;
 	}
 
-	public String getStartDay() {
+    /**
+     * Gets start day.
+     *
+     * @return the start day
+     */
+    public String getStartDay() {
 		return this.startDay;
 	}
-	public void setStartDay(String startDay) {
+
+    /**
+     * Sets start day.
+     *
+     * @param startDay the start day
+     */
+    public void setStartDay(String startDay) {
 		this.startDay = startDay;
 	}
 

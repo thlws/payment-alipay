@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.card.benefit.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-23 09:40:35
+ * @since 1.0, 2018-01-11 17:31:14
  */
 public class AlipayMarketingCardBenefitCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4725748589482296792L;
+	private static final long serialVersionUID = 5481186383456887924L;
 
 	/** 
 	 * 权益ID
@@ -20,10 +20,21 @@ public class AlipayMarketingCardBenefitCreateResponse extends AlipayResponse {
 	@ApiField("benefit_id")
 	private String benefitId;
 
-	public void setBenefitId(String benefitId) {
+    /**
+     * Sets benefit id.
+     *
+     * @param benefitId the benefit id
+     */
+    public void setBenefitId(String benefitId) {
 		this.benefitId = benefitId;
 	}
-	public String getBenefitId( ) {
+
+    /**
+     * Gets benefit id.
+     *
+     * @return the benefit id
+     */
+    public String getBenefitId( ) {
 		return this.benefitId;
 	}
 

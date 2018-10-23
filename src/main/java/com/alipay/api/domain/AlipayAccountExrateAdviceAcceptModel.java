@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayAccountExrateAdviceAcceptModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7326348733894665443L;
+	private static final long serialVersionUID = 7151935728527911723L;
 
 	/**
 	 * 交易请求对象内容
@@ -19,10 +19,21 @@ public class AlipayAccountExrateAdviceAcceptModel extends AlipayObject {
 	@ApiField("advice")
 	private AdviceVO advice;
 
-	public AdviceVO getAdvice() {
+    /**
+     * Gets advice.
+     *
+     * @return the advice
+     */
+    public AdviceVO getAdvice() {
 		return this.advice;
 	}
-	public void setAdvice(AdviceVO advice) {
+
+    /**
+     * Sets advice.
+     *
+     * @param advice the advice
+     */
+    public void setAdvice(AdviceVO advice) {
 		this.advice = advice;
 	}
 

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecruitInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8423624884819615862L;
+	private static final long serialVersionUID = 3625498798431256459L;
 
 	/**
 	 * 招商结束时间
@@ -45,38 +45,93 @@ public class RecruitInfo extends AlipayObject {
 	@ApiField("status")
 	private String status;
 
-	public Date getEndTime() {
+    /**
+     * Gets end time.
+     *
+     * @return the end time
+     */
+    public Date getEndTime() {
 		return this.endTime;
 	}
-	public void setEndTime(Date endTime) {
+
+    /**
+     * Sets end time.
+     *
+     * @param endTime the end time
+     */
+    public void setEndTime(Date endTime) {
 		this.endTime = endTime;
 	}
 
-	public Boolean getExcludeConstraintShops() {
+    /**
+     * Gets exclude constraint shops.
+     *
+     * @return the exclude constraint shops
+     */
+    public Boolean getExcludeConstraintShops() {
 		return this.excludeConstraintShops;
 	}
-	public void setExcludeConstraintShops(Boolean excludeConstraintShops) {
+
+    /**
+     * Sets exclude constraint shops.
+     *
+     * @param excludeConstraintShops the exclude constraint shops
+     */
+    public void setExcludeConstraintShops(Boolean excludeConstraintShops) {
 		this.excludeConstraintShops = excludeConstraintShops;
 	}
 
-	public String getPlanId() {
+    /**
+     * Gets plan id.
+     *
+     * @return the plan id
+     */
+    public String getPlanId() {
 		return this.planId;
 	}
-	public void setPlanId(String planId) {
+
+    /**
+     * Sets plan id.
+     *
+     * @param planId the plan id
+     */
+    public void setPlanId(String planId) {
 		this.planId = planId;
 	}
 
-	public Date getStartTime() {
+    /**
+     * Gets start time.
+     *
+     * @return the start time
+     */
+    public Date getStartTime() {
 		return this.startTime;
 	}
-	public void setStartTime(Date startTime) {
+
+    /**
+     * Sets start time.
+     *
+     * @param startTime the start time
+     */
+    public void setStartTime(Date startTime) {
 		this.startTime = startTime;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 

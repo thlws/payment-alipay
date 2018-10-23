@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.security.risk.detect request
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-03-04 14:55:25
  */
@@ -298,395 +298,1011 @@ public class AlipaySecurityRiskDetectRequest implements AlipayRequest<AlipaySecu
 	 */
 	private String transportType;
 
-	public void setBuyerAccountNo(String buyerAccountNo) {
+    /**
+     * Sets buyer account no.
+     *
+     * @param buyerAccountNo the buyer account no
+     */
+    public void setBuyerAccountNo(String buyerAccountNo) {
 		this.buyerAccountNo = buyerAccountNo;
 	}
-	public String getBuyerAccountNo() {
+
+    /**
+     * Gets buyer account no.
+     *
+     * @return the buyer account no
+     */
+    public String getBuyerAccountNo() {
 		return this.buyerAccountNo;
 	}
 
-	public void setBuyerBindBankcard(String buyerBindBankcard) {
+    /**
+     * Sets buyer bind bankcard.
+     *
+     * @param buyerBindBankcard the buyer bind bankcard
+     */
+    public void setBuyerBindBankcard(String buyerBindBankcard) {
 		this.buyerBindBankcard = buyerBindBankcard;
 	}
-	public String getBuyerBindBankcard() {
+
+    /**
+     * Gets buyer bind bankcard.
+     *
+     * @return the buyer bind bankcard
+     */
+    public String getBuyerBindBankcard() {
 		return this.buyerBindBankcard;
 	}
 
-	public void setBuyerBindBankcardType(String buyerBindBankcardType) {
+    /**
+     * Sets buyer bind bankcard type.
+     *
+     * @param buyerBindBankcardType the buyer bind bankcard type
+     */
+    public void setBuyerBindBankcardType(String buyerBindBankcardType) {
 		this.buyerBindBankcardType = buyerBindBankcardType;
 	}
-	public String getBuyerBindBankcardType() {
+
+    /**
+     * Gets buyer bind bankcard type.
+     *
+     * @return the buyer bind bankcard type
+     */
+    public String getBuyerBindBankcardType() {
 		return this.buyerBindBankcardType;
 	}
 
-	public void setBuyerBindMobile(String buyerBindMobile) {
+    /**
+     * Sets buyer bind mobile.
+     *
+     * @param buyerBindMobile the buyer bind mobile
+     */
+    public void setBuyerBindMobile(String buyerBindMobile) {
 		this.buyerBindMobile = buyerBindMobile;
 	}
-	public String getBuyerBindMobile() {
+
+    /**
+     * Gets buyer bind mobile.
+     *
+     * @return the buyer bind mobile
+     */
+    public String getBuyerBindMobile() {
 		return this.buyerBindMobile;
 	}
 
-	public void setBuyerGrade(String buyerGrade) {
+    /**
+     * Sets buyer grade.
+     *
+     * @param buyerGrade the buyer grade
+     */
+    public void setBuyerGrade(String buyerGrade) {
 		this.buyerGrade = buyerGrade;
 	}
-	public String getBuyerGrade() {
+
+    /**
+     * Gets buyer grade.
+     *
+     * @return the buyer grade
+     */
+    public String getBuyerGrade() {
 		return this.buyerGrade;
 	}
 
-	public void setBuyerIdentityNo(String buyerIdentityNo) {
+    /**
+     * Sets buyer identity no.
+     *
+     * @param buyerIdentityNo the buyer identity no
+     */
+    public void setBuyerIdentityNo(String buyerIdentityNo) {
 		this.buyerIdentityNo = buyerIdentityNo;
 	}
-	public String getBuyerIdentityNo() {
+
+    /**
+     * Gets buyer identity no.
+     *
+     * @return the buyer identity no
+     */
+    public String getBuyerIdentityNo() {
 		return this.buyerIdentityNo;
 	}
 
-	public void setBuyerIdentityType(String buyerIdentityType) {
+    /**
+     * Sets buyer identity type.
+     *
+     * @param buyerIdentityType the buyer identity type
+     */
+    public void setBuyerIdentityType(String buyerIdentityType) {
 		this.buyerIdentityType = buyerIdentityType;
 	}
-	public String getBuyerIdentityType() {
+
+    /**
+     * Gets buyer identity type.
+     *
+     * @return the buyer identity type
+     */
+    public String getBuyerIdentityType() {
 		return this.buyerIdentityType;
 	}
 
-	public void setBuyerRealName(String buyerRealName) {
+    /**
+     * Sets buyer real name.
+     *
+     * @param buyerRealName the buyer real name
+     */
+    public void setBuyerRealName(String buyerRealName) {
 		this.buyerRealName = buyerRealName;
 	}
-	public String getBuyerRealName() {
+
+    /**
+     * Gets buyer real name.
+     *
+     * @return the buyer real name
+     */
+    public String getBuyerRealName() {
 		return this.buyerRealName;
 	}
 
-	public void setBuyerRegDate(String buyerRegDate) {
+    /**
+     * Sets buyer reg date.
+     *
+     * @param buyerRegDate the buyer reg date
+     */
+    public void setBuyerRegDate(String buyerRegDate) {
 		this.buyerRegDate = buyerRegDate;
 	}
-	public String getBuyerRegDate() {
+
+    /**
+     * Gets buyer reg date.
+     *
+     * @return the buyer reg date
+     */
+    public String getBuyerRegDate() {
 		return this.buyerRegDate;
 	}
 
-	public void setBuyerRegEmail(String buyerRegEmail) {
+    /**
+     * Sets buyer reg email.
+     *
+     * @param buyerRegEmail the buyer reg email
+     */
+    public void setBuyerRegEmail(String buyerRegEmail) {
 		this.buyerRegEmail = buyerRegEmail;
 	}
-	public String getBuyerRegEmail() {
+
+    /**
+     * Gets buyer reg email.
+     *
+     * @return the buyer reg email
+     */
+    public String getBuyerRegEmail() {
 		return this.buyerRegEmail;
 	}
 
-	public void setBuyerRegMobile(String buyerRegMobile) {
+    /**
+     * Sets buyer reg mobile.
+     *
+     * @param buyerRegMobile the buyer reg mobile
+     */
+    public void setBuyerRegMobile(String buyerRegMobile) {
 		this.buyerRegMobile = buyerRegMobile;
 	}
-	public String getBuyerRegMobile() {
+
+    /**
+     * Gets buyer reg mobile.
+     *
+     * @return the buyer reg mobile
+     */
+    public String getBuyerRegMobile() {
 		return this.buyerRegMobile;
 	}
 
-	public void setBuyerSceneBankcard(String buyerSceneBankcard) {
+    /**
+     * Sets buyer scene bankcard.
+     *
+     * @param buyerSceneBankcard the buyer scene bankcard
+     */
+    public void setBuyerSceneBankcard(String buyerSceneBankcard) {
 		this.buyerSceneBankcard = buyerSceneBankcard;
 	}
-	public String getBuyerSceneBankcard() {
+
+    /**
+     * Gets buyer scene bankcard.
+     *
+     * @return the buyer scene bankcard
+     */
+    public String getBuyerSceneBankcard() {
 		return this.buyerSceneBankcard;
 	}
 
-	public void setBuyerSceneBankcardType(String buyerSceneBankcardType) {
+    /**
+     * Sets buyer scene bankcard type.
+     *
+     * @param buyerSceneBankcardType the buyer scene bankcard type
+     */
+    public void setBuyerSceneBankcardType(String buyerSceneBankcardType) {
 		this.buyerSceneBankcardType = buyerSceneBankcardType;
 	}
-	public String getBuyerSceneBankcardType() {
+
+    /**
+     * Gets buyer scene bankcard type.
+     *
+     * @return the buyer scene bankcard type
+     */
+    public String getBuyerSceneBankcardType() {
 		return this.buyerSceneBankcardType;
 	}
 
-	public void setBuyerSceneEmail(String buyerSceneEmail) {
+    /**
+     * Sets buyer scene email.
+     *
+     * @param buyerSceneEmail the buyer scene email
+     */
+    public void setBuyerSceneEmail(String buyerSceneEmail) {
 		this.buyerSceneEmail = buyerSceneEmail;
 	}
-	public String getBuyerSceneEmail() {
+
+    /**
+     * Gets buyer scene email.
+     *
+     * @return the buyer scene email
+     */
+    public String getBuyerSceneEmail() {
 		return this.buyerSceneEmail;
 	}
 
-	public void setBuyerSceneMobile(String buyerSceneMobile) {
+    /**
+     * Sets buyer scene mobile.
+     *
+     * @param buyerSceneMobile the buyer scene mobile
+     */
+    public void setBuyerSceneMobile(String buyerSceneMobile) {
 		this.buyerSceneMobile = buyerSceneMobile;
 	}
-	public String getBuyerSceneMobile() {
+
+    /**
+     * Gets buyer scene mobile.
+     *
+     * @return the buyer scene mobile
+     */
+    public String getBuyerSceneMobile() {
 		return this.buyerSceneMobile;
 	}
 
-	public void setCurrency(String currency) {
+    /**
+     * Sets currency.
+     *
+     * @param currency the currency
+     */
+    public void setCurrency(String currency) {
 		this.currency = currency;
 	}
-	public String getCurrency() {
+
+    /**
+     * Gets currency.
+     *
+     * @return the currency
+     */
+    public String getCurrency() {
 		return this.currency;
 	}
 
-	public void setEnvClientBaseBand(String envClientBaseBand) {
+    /**
+     * Sets env client base band.
+     *
+     * @param envClientBaseBand the env client base band
+     */
+    public void setEnvClientBaseBand(String envClientBaseBand) {
 		this.envClientBaseBand = envClientBaseBand;
 	}
-	public String getEnvClientBaseBand() {
+
+    /**
+     * Gets env client base band.
+     *
+     * @return the env client base band
+     */
+    public String getEnvClientBaseBand() {
 		return this.envClientBaseBand;
 	}
 
-	public void setEnvClientBaseStation(String envClientBaseStation) {
+    /**
+     * Sets env client base station.
+     *
+     * @param envClientBaseStation the env client base station
+     */
+    public void setEnvClientBaseStation(String envClientBaseStation) {
 		this.envClientBaseStation = envClientBaseStation;
 	}
-	public String getEnvClientBaseStation() {
+
+    /**
+     * Gets env client base station.
+     *
+     * @return the env client base station
+     */
+    public String getEnvClientBaseStation() {
 		return this.envClientBaseStation;
 	}
 
-	public void setEnvClientCoordinates(String envClientCoordinates) {
+    /**
+     * Sets env client coordinates.
+     *
+     * @param envClientCoordinates the env client coordinates
+     */
+    public void setEnvClientCoordinates(String envClientCoordinates) {
 		this.envClientCoordinates = envClientCoordinates;
 	}
-	public String getEnvClientCoordinates() {
+
+    /**
+     * Gets env client coordinates.
+     *
+     * @return the env client coordinates
+     */
+    public String getEnvClientCoordinates() {
 		return this.envClientCoordinates;
 	}
 
-	public void setEnvClientImei(String envClientImei) {
+    /**
+     * Sets env client imei.
+     *
+     * @param envClientImei the env client imei
+     */
+    public void setEnvClientImei(String envClientImei) {
 		this.envClientImei = envClientImei;
 	}
-	public String getEnvClientImei() {
+
+    /**
+     * Gets env client imei.
+     *
+     * @return the env client imei
+     */
+    public String getEnvClientImei() {
 		return this.envClientImei;
 	}
 
-	public void setEnvClientImsi(String envClientImsi) {
+    /**
+     * Sets env client imsi.
+     *
+     * @param envClientImsi the env client imsi
+     */
+    public void setEnvClientImsi(String envClientImsi) {
 		this.envClientImsi = envClientImsi;
 	}
-	public String getEnvClientImsi() {
+
+    /**
+     * Gets env client imsi.
+     *
+     * @return the env client imsi
+     */
+    public String getEnvClientImsi() {
 		return this.envClientImsi;
 	}
 
-	public void setEnvClientIosUdid(String envClientIosUdid) {
+    /**
+     * Sets env client ios udid.
+     *
+     * @param envClientIosUdid the env client ios udid
+     */
+    public void setEnvClientIosUdid(String envClientIosUdid) {
 		this.envClientIosUdid = envClientIosUdid;
 	}
-	public String getEnvClientIosUdid() {
+
+    /**
+     * Gets env client ios udid.
+     *
+     * @return the env client ios udid
+     */
+    public String getEnvClientIosUdid() {
 		return this.envClientIosUdid;
 	}
 
-	public void setEnvClientIp(String envClientIp) {
+    /**
+     * Sets env client ip.
+     *
+     * @param envClientIp the env client ip
+     */
+    public void setEnvClientIp(String envClientIp) {
 		this.envClientIp = envClientIp;
 	}
-	public String getEnvClientIp() {
+
+    /**
+     * Gets env client ip.
+     *
+     * @return the env client ip
+     */
+    public String getEnvClientIp() {
 		return this.envClientIp;
 	}
 
-	public void setEnvClientMac(String envClientMac) {
+    /**
+     * Sets env client mac.
+     *
+     * @param envClientMac the env client mac
+     */
+    public void setEnvClientMac(String envClientMac) {
 		this.envClientMac = envClientMac;
 	}
-	public String getEnvClientMac() {
+
+    /**
+     * Gets env client mac.
+     *
+     * @return the env client mac
+     */
+    public String getEnvClientMac() {
 		return this.envClientMac;
 	}
 
-	public void setEnvClientScreen(String envClientScreen) {
+    /**
+     * Sets env client screen.
+     *
+     * @param envClientScreen the env client screen
+     */
+    public void setEnvClientScreen(String envClientScreen) {
 		this.envClientScreen = envClientScreen;
 	}
-	public String getEnvClientScreen() {
+
+    /**
+     * Gets env client screen.
+     *
+     * @return the env client screen
+     */
+    public String getEnvClientScreen() {
 		return this.envClientScreen;
 	}
 
-	public void setEnvClientUuid(String envClientUuid) {
+    /**
+     * Sets env client uuid.
+     *
+     * @param envClientUuid the env client uuid
+     */
+    public void setEnvClientUuid(String envClientUuid) {
 		this.envClientUuid = envClientUuid;
 	}
-	public String getEnvClientUuid() {
+
+    /**
+     * Gets env client uuid.
+     *
+     * @return the env client uuid
+     */
+    public String getEnvClientUuid() {
 		return this.envClientUuid;
 	}
 
-	public void setItemQuantity(String itemQuantity) {
+    /**
+     * Sets item quantity.
+     *
+     * @param itemQuantity the item quantity
+     */
+    public void setItemQuantity(String itemQuantity) {
 		this.itemQuantity = itemQuantity;
 	}
-	public String getItemQuantity() {
+
+    /**
+     * Gets item quantity.
+     *
+     * @return the item quantity
+     */
+    public String getItemQuantity() {
 		return this.itemQuantity;
 	}
 
-	public void setItemUnitPrice(String itemUnitPrice) {
+    /**
+     * Sets item unit price.
+     *
+     * @param itemUnitPrice the item unit price
+     */
+    public void setItemUnitPrice(String itemUnitPrice) {
 		this.itemUnitPrice = itemUnitPrice;
 	}
-	public String getItemUnitPrice() {
+
+    /**
+     * Gets item unit price.
+     *
+     * @return the item unit price
+     */
+    public String getItemUnitPrice() {
 		return this.itemUnitPrice;
 	}
 
-	public void setJsTokenId(String jsTokenId) {
+    /**
+     * Sets js token id.
+     *
+     * @param jsTokenId the js token id
+     */
+    public void setJsTokenId(String jsTokenId) {
 		this.jsTokenId = jsTokenId;
 	}
-	public String getJsTokenId() {
+
+    /**
+     * Gets js token id.
+     *
+     * @return the js token id
+     */
+    public String getJsTokenId() {
 		return this.jsTokenId;
 	}
 
-	public void setOrderAmount(String orderAmount) {
+    /**
+     * Sets order amount.
+     *
+     * @param orderAmount the order amount
+     */
+    public void setOrderAmount(String orderAmount) {
 		this.orderAmount = orderAmount;
 	}
-	public String getOrderAmount() {
+
+    /**
+     * Gets order amount.
+     *
+     * @return the order amount
+     */
+    public String getOrderAmount() {
 		return this.orderAmount;
 	}
 
-	public void setOrderCategory(String orderCategory) {
+    /**
+     * Sets order category.
+     *
+     * @param orderCategory the order category
+     */
+    public void setOrderCategory(String orderCategory) {
 		this.orderCategory = orderCategory;
 	}
-	public String getOrderCategory() {
+
+    /**
+     * Gets order category.
+     *
+     * @return the order category
+     */
+    public String getOrderCategory() {
 		return this.orderCategory;
 	}
 
-	public void setOrderCredateTime(String orderCredateTime) {
+    /**
+     * Sets order credate time.
+     *
+     * @param orderCredateTime the order credate time
+     */
+    public void setOrderCredateTime(String orderCredateTime) {
 		this.orderCredateTime = orderCredateTime;
 	}
-	public String getOrderCredateTime() {
+
+    /**
+     * Gets order credate time.
+     *
+     * @return the order credate time
+     */
+    public String getOrderCredateTime() {
 		return this.orderCredateTime;
 	}
 
-	public void setOrderItemCity(String orderItemCity) {
+    /**
+     * Sets order item city.
+     *
+     * @param orderItemCity the order item city
+     */
+    public void setOrderItemCity(String orderItemCity) {
 		this.orderItemCity = orderItemCity;
 	}
-	public String getOrderItemCity() {
+
+    /**
+     * Gets order item city.
+     *
+     * @return the order item city
+     */
+    public String getOrderItemCity() {
 		return this.orderItemCity;
 	}
 
-	public void setOrderItemName(String orderItemName) {
+    /**
+     * Sets order item name.
+     *
+     * @param orderItemName the order item name
+     */
+    public void setOrderItemName(String orderItemName) {
 		this.orderItemName = orderItemName;
 	}
-	public String getOrderItemName() {
+
+    /**
+     * Gets order item name.
+     *
+     * @return the order item name
+     */
+    public String getOrderItemName() {
 		return this.orderItemName;
 	}
 
-	public void setOrderNo(String orderNo) {
+    /**
+     * Sets order no.
+     *
+     * @param orderNo the order no
+     */
+    public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
-	public String getOrderNo() {
+
+    /**
+     * Gets order no.
+     *
+     * @return the order no
+     */
+    public String getOrderNo() {
 		return this.orderNo;
 	}
 
-	public void setPartnerId(String partnerId) {
+    /**
+     * Sets partner id.
+     *
+     * @param partnerId the partner id
+     */
+    public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}
-	public String getPartnerId() {
+
+    /**
+     * Gets partner id.
+     *
+     * @return the partner id
+     */
+    public String getPartnerId() {
 		return this.partnerId;
 	}
 
-	public void setReceiverAddress(String receiverAddress) {
+    /**
+     * Sets receiver address.
+     *
+     * @param receiverAddress the receiver address
+     */
+    public void setReceiverAddress(String receiverAddress) {
 		this.receiverAddress = receiverAddress;
 	}
-	public String getReceiverAddress() {
+
+    /**
+     * Gets receiver address.
+     *
+     * @return the receiver address
+     */
+    public String getReceiverAddress() {
 		return this.receiverAddress;
 	}
 
-	public void setReceiverCity(String receiverCity) {
+    /**
+     * Sets receiver city.
+     *
+     * @param receiverCity the receiver city
+     */
+    public void setReceiverCity(String receiverCity) {
 		this.receiverCity = receiverCity;
 	}
-	public String getReceiverCity() {
+
+    /**
+     * Gets receiver city.
+     *
+     * @return the receiver city
+     */
+    public String getReceiverCity() {
 		return this.receiverCity;
 	}
 
-	public void setReceiverDistrict(String receiverDistrict) {
+    /**
+     * Sets receiver district.
+     *
+     * @param receiverDistrict the receiver district
+     */
+    public void setReceiverDistrict(String receiverDistrict) {
 		this.receiverDistrict = receiverDistrict;
 	}
-	public String getReceiverDistrict() {
+
+    /**
+     * Gets receiver district.
+     *
+     * @return the receiver district
+     */
+    public String getReceiverDistrict() {
 		return this.receiverDistrict;
 	}
 
-	public void setReceiverEmail(String receiverEmail) {
+    /**
+     * Sets receiver email.
+     *
+     * @param receiverEmail the receiver email
+     */
+    public void setReceiverEmail(String receiverEmail) {
 		this.receiverEmail = receiverEmail;
 	}
-	public String getReceiverEmail() {
+
+    /**
+     * Gets receiver email.
+     *
+     * @return the receiver email
+     */
+    public String getReceiverEmail() {
 		return this.receiverEmail;
 	}
 
-	public void setReceiverMobile(String receiverMobile) {
+    /**
+     * Sets receiver mobile.
+     *
+     * @param receiverMobile the receiver mobile
+     */
+    public void setReceiverMobile(String receiverMobile) {
 		this.receiverMobile = receiverMobile;
 	}
-	public String getReceiverMobile() {
+
+    /**
+     * Gets receiver mobile.
+     *
+     * @return the receiver mobile
+     */
+    public String getReceiverMobile() {
 		return this.receiverMobile;
 	}
 
-	public void setReceiverName(String receiverName) {
+    /**
+     * Sets receiver name.
+     *
+     * @param receiverName the receiver name
+     */
+    public void setReceiverName(String receiverName) {
 		this.receiverName = receiverName;
 	}
-	public String getReceiverName() {
+
+    /**
+     * Gets receiver name.
+     *
+     * @return the receiver name
+     */
+    public String getReceiverName() {
 		return this.receiverName;
 	}
 
-	public void setReceiverState(String receiverState) {
+    /**
+     * Sets receiver state.
+     *
+     * @param receiverState the receiver state
+     */
+    public void setReceiverState(String receiverState) {
 		this.receiverState = receiverState;
 	}
-	public String getReceiverState() {
+
+    /**
+     * Gets receiver state.
+     *
+     * @return the receiver state
+     */
+    public String getReceiverState() {
 		return this.receiverState;
 	}
 
-	public void setReceiverZip(String receiverZip) {
+    /**
+     * Sets receiver zip.
+     *
+     * @param receiverZip the receiver zip
+     */
+    public void setReceiverZip(String receiverZip) {
 		this.receiverZip = receiverZip;
 	}
-	public String getReceiverZip() {
+
+    /**
+     * Gets receiver zip.
+     *
+     * @return the receiver zip
+     */
+    public String getReceiverZip() {
 		return this.receiverZip;
 	}
 
-	public void setSceneCode(String sceneCode) {
+    /**
+     * Sets scene code.
+     *
+     * @param sceneCode the scene code
+     */
+    public void setSceneCode(String sceneCode) {
 		this.sceneCode = sceneCode;
 	}
-	public String getSceneCode() {
+
+    /**
+     * Gets scene code.
+     *
+     * @return the scene code
+     */
+    public String getSceneCode() {
 		return this.sceneCode;
 	}
 
-	public void setSellerAccountNo(String sellerAccountNo) {
+    /**
+     * Sets seller account no.
+     *
+     * @param sellerAccountNo the seller account no
+     */
+    public void setSellerAccountNo(String sellerAccountNo) {
 		this.sellerAccountNo = sellerAccountNo;
 	}
-	public String getSellerAccountNo() {
+
+    /**
+     * Gets seller account no.
+     *
+     * @return the seller account no
+     */
+    public String getSellerAccountNo() {
 		return this.sellerAccountNo;
 	}
 
-	public void setSellerBindBankcard(String sellerBindBankcard) {
+    /**
+     * Sets seller bind bankcard.
+     *
+     * @param sellerBindBankcard the seller bind bankcard
+     */
+    public void setSellerBindBankcard(String sellerBindBankcard) {
 		this.sellerBindBankcard = sellerBindBankcard;
 	}
-	public String getSellerBindBankcard() {
+
+    /**
+     * Gets seller bind bankcard.
+     *
+     * @return the seller bind bankcard
+     */
+    public String getSellerBindBankcard() {
 		return this.sellerBindBankcard;
 	}
 
-	public void setSellerBindBankcardType(String sellerBindBankcardType) {
+    /**
+     * Sets seller bind bankcard type.
+     *
+     * @param sellerBindBankcardType the seller bind bankcard type
+     */
+    public void setSellerBindBankcardType(String sellerBindBankcardType) {
 		this.sellerBindBankcardType = sellerBindBankcardType;
 	}
-	public String getSellerBindBankcardType() {
+
+    /**
+     * Gets seller bind bankcard type.
+     *
+     * @return the seller bind bankcard type
+     */
+    public String getSellerBindBankcardType() {
 		return this.sellerBindBankcardType;
 	}
 
-	public void setSellerBindMobile(String sellerBindMobile) {
+    /**
+     * Sets seller bind mobile.
+     *
+     * @param sellerBindMobile the seller bind mobile
+     */
+    public void setSellerBindMobile(String sellerBindMobile) {
 		this.sellerBindMobile = sellerBindMobile;
 	}
-	public String getSellerBindMobile() {
+
+    /**
+     * Gets seller bind mobile.
+     *
+     * @return the seller bind mobile
+     */
+    public String getSellerBindMobile() {
 		return this.sellerBindMobile;
 	}
 
-	public void setSellerIdentityNo(String sellerIdentityNo) {
+    /**
+     * Sets seller identity no.
+     *
+     * @param sellerIdentityNo the seller identity no
+     */
+    public void setSellerIdentityNo(String sellerIdentityNo) {
 		this.sellerIdentityNo = sellerIdentityNo;
 	}
-	public String getSellerIdentityNo() {
+
+    /**
+     * Gets seller identity no.
+     *
+     * @return the seller identity no
+     */
+    public String getSellerIdentityNo() {
 		return this.sellerIdentityNo;
 	}
 
-	public void setSellerIdentityType(String sellerIdentityType) {
+    /**
+     * Sets seller identity type.
+     *
+     * @param sellerIdentityType the seller identity type
+     */
+    public void setSellerIdentityType(String sellerIdentityType) {
 		this.sellerIdentityType = sellerIdentityType;
 	}
-	public String getSellerIdentityType() {
+
+    /**
+     * Gets seller identity type.
+     *
+     * @return the seller identity type
+     */
+    public String getSellerIdentityType() {
 		return this.sellerIdentityType;
 	}
 
-	public void setSellerRealName(String sellerRealName) {
+    /**
+     * Sets seller real name.
+     *
+     * @param sellerRealName the seller real name
+     */
+    public void setSellerRealName(String sellerRealName) {
 		this.sellerRealName = sellerRealName;
 	}
-	public String getSellerRealName() {
+
+    /**
+     * Gets seller real name.
+     *
+     * @return the seller real name
+     */
+    public String getSellerRealName() {
 		return this.sellerRealName;
 	}
 
-	public void setSellerRegDate(String sellerRegDate) {
+    /**
+     * Sets seller reg date.
+     *
+     * @param sellerRegDate the seller reg date
+     */
+    public void setSellerRegDate(String sellerRegDate) {
 		this.sellerRegDate = sellerRegDate;
 	}
-	public String getSellerRegDate() {
+
+    /**
+     * Gets seller reg date.
+     *
+     * @return the seller reg date
+     */
+    public String getSellerRegDate() {
 		return this.sellerRegDate;
 	}
 
-	public void setSellerRegEmail(String sellerRegEmail) {
+    /**
+     * Sets seller reg email.
+     *
+     * @param sellerRegEmail the seller reg email
+     */
+    public void setSellerRegEmail(String sellerRegEmail) {
 		this.sellerRegEmail = sellerRegEmail;
 	}
-	public String getSellerRegEmail() {
+
+    /**
+     * Gets seller reg email.
+     *
+     * @return the seller reg email
+     */
+    public String getSellerRegEmail() {
 		return this.sellerRegEmail;
 	}
 
-	public void setSellerRegMoile(String sellerRegMoile) {
+    /**
+     * Sets seller reg moile.
+     *
+     * @param sellerRegMoile the seller reg moile
+     */
+    public void setSellerRegMoile(String sellerRegMoile) {
 		this.sellerRegMoile = sellerRegMoile;
 	}
-	public String getSellerRegMoile() {
+
+    /**
+     * Gets seller reg moile.
+     *
+     * @return the seller reg moile
+     */
+    public String getSellerRegMoile() {
 		return this.sellerRegMoile;
 	}
 
-	public void setTransportType(String transportType) {
+    /**
+     * Sets transport type.
+     *
+     * @param transportType the transport type
+     */
+    public void setTransportType(String transportType) {
 		this.transportType = transportType;
 	}
-	public String getTransportType() {
+
+    /**
+     * Gets transport type.
+     *
+     * @return the transport type
+     */
+    public String getTransportType() {
 		return this.transportType;
 	}
 	private String terminalType;
@@ -813,7 +1429,13 @@ public class AlipaySecurityRiskDetectRequest implements AlipayRequest<AlipaySecu
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

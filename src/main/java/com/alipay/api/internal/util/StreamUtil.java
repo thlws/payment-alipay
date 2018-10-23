@@ -13,16 +13,32 @@ import java.io.StringWriter;
 import java.io.Writer;
 
 /**
- * 
+ * The type Stream util.
+ *
  * @author runzhi
  */
 public class StreamUtil {
     private static final int DEFAULT_BUFFER_SIZE = 8192;
 
+    /**
+     * Io.
+     *
+     * @param in  the in
+     * @param out the out
+     * @throws IOException the io exception
+     */
     public static void io(InputStream in, OutputStream out) throws IOException {
         io(in, out, -1);
     }
 
+    /**
+     * Io.
+     *
+     * @param in         the in
+     * @param out        the out
+     * @param bufferSize the buffer size
+     * @throws IOException the io exception
+     */
     public static void io(InputStream in, OutputStream out, int bufferSize) throws IOException {
         if (bufferSize == -1) {
             bufferSize = DEFAULT_BUFFER_SIZE;
@@ -36,10 +52,25 @@ public class StreamUtil {
         }
     }
 
+    /**
+     * Io.
+     *
+     * @param in  the in
+     * @param out the out
+     * @throws IOException the io exception
+     */
     public static void io(Reader in, Writer out) throws IOException {
         io(in, out, -1);
     }
 
+    /**
+     * Io.
+     *
+     * @param in         the in
+     * @param out        the out
+     * @param bufferSize the buffer size
+     * @throws IOException the io exception
+     */
     public static void io(Reader in, Writer out, int bufferSize) throws IOException {
         if (bufferSize == -1) {
             bufferSize = DEFAULT_BUFFER_SIZE >> 1;
@@ -53,22 +84,59 @@ public class StreamUtil {
         }
     }
 
+    /**
+     * Synchronized output stream output stream.
+     *
+     * @param out the out
+     * @return the output stream
+     */
     public static OutputStream synchronizedOutputStream(OutputStream out) {
         return new SynchronizedOutputStream(out);
     }
 
+    /**
+     * Synchronized output stream output stream.
+     *
+     * @param out  the out
+     * @param lock the lock
+     * @return the output stream
+     */
     public static OutputStream synchronizedOutputStream(OutputStream out, Object lock) {
         return new SynchronizedOutputStream(out, lock);
     }
 
+    /**
+     * Read text string.
+     *
+     * @param in the in
+     * @return the string
+     * @throws IOException the io exception
+     */
     public static String readText(InputStream in) throws IOException {
         return readText(in, null, -1);
     }
 
+    /**
+     * Read text string.
+     *
+     * @param in       the in
+     * @param encoding the encoding
+     * @return the string
+     * @throws IOException the io exception
+     */
     public static String readText(InputStream in, String encoding) throws IOException {
         return readText(in, encoding, -1);
     }
 
+    /**
+     * Read text string.
+     *
+     * @param in         the in
+     * @param encoding   the encoding
+     * @param bufferSize the buffer size
+     * @return the string
+     * @throws IOException the io exception
+     */
     public static String readText(InputStream in, String encoding, int bufferSize)
                                                                                   throws IOException {
         Reader reader = (encoding == null) ? new InputStreamReader(in) : new InputStreamReader(in,
@@ -77,10 +145,25 @@ public class StreamUtil {
         return readText(reader, bufferSize);
     }
 
+    /**
+     * Read text string.
+     *
+     * @param reader the reader
+     * @return the string
+     * @throws IOException the io exception
+     */
     public static String readText(Reader reader) throws IOException {
         return readText(reader, -1);
     }
 
+    /**
+     * Read text string.
+     *
+     * @param reader     the reader
+     * @param bufferSize the buffer size
+     * @return the string
+     * @throws IOException the io exception
+     */
     public static String readText(Reader reader, int bufferSize) throws IOException {
         StringWriter writer = new StringWriter();
 
@@ -92,10 +175,21 @@ public class StreamUtil {
         private OutputStream out;
         private Object       lock;
 
+        /**
+         * Instantiates a new Synchronized output stream.
+         *
+         * @param out the out
+         */
         SynchronizedOutputStream(OutputStream out) {
             this(out, out);
         }
 
+        /**
+         * Instantiates a new Synchronized output stream.
+         *
+         * @param out  the out
+         * @param lock the lock
+         */
         SynchronizedOutputStream(OutputStream out, Object lock) {
             this.out = out;
             this.lock = lock;

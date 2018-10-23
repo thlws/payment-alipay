@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankFinanceYulibaoCapitalRansomModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7717692953492422737L;
+	private static final long serialVersionUID = 4231711543559133276L;
 
 	/**
 	 * 赎回的金额，以分为单位，必须为正整数。如amount=123456表示赎回1234.56元的余利宝份额。
@@ -43,38 +43,93 @@ public class MybankFinanceYulibaoCapitalRansomModel extends AlipayObject {
 	@ApiField("ransom_mode")
 	private String ransomMode;
 
-	public Long getAmount() {
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public Long getAmount() {
 		return this.amount;
 	}
-	public void setAmount(Long amount) {
+
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(Long amount) {
 		this.amount = amount;
 	}
 
-	public String getCurrency() {
+    /**
+     * Gets currency.
+     *
+     * @return the currency
+     */
+    public String getCurrency() {
 		return this.currency;
 	}
-	public void setCurrency(String currency) {
+
+    /**
+     * Sets currency.
+     *
+     * @param currency the currency
+     */
+    public void setCurrency(String currency) {
 		this.currency = currency;
 	}
 
-	public String getFundCode() {
+    /**
+     * Gets fund code.
+     *
+     * @return the fund code
+     */
+    public String getFundCode() {
 		return this.fundCode;
 	}
-	public void setFundCode(String fundCode) {
+
+    /**
+     * Sets fund code.
+     *
+     * @param fundCode the fund code
+     */
+    public void setFundCode(String fundCode) {
 		this.fundCode = fundCode;
 	}
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
-	public String getRansomMode() {
+    /**
+     * Gets ransom mode.
+     *
+     * @return the ransom mode
+     */
+    public String getRansomMode() {
 		return this.ransomMode;
 	}
-	public void setRansomMode(String ransomMode) {
+
+    /**
+     * Sets ransom mode.
+     *
+     * @param ransomMode the ransom mode
+     */
+    public void setRansomMode(String ransomMode) {
 		this.ransomMode = ransomMode;
 	}
 

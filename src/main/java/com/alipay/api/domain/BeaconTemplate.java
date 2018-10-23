@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BeaconTemplate extends AlipayObject {
 
-	private static final long serialVersionUID = 1888287167878333336L;
+	private static final long serialVersionUID = 4349137252481347122L;
 
 	/**
 	 * 模板参数信息
@@ -25,17 +25,39 @@ public class BeaconTemplate extends AlipayObject {
 	@ApiField("templateid")
 	private String templateid;
 
-	public String getContext() {
+    /**
+     * Gets context.
+     *
+     * @return the context
+     */
+    public String getContext() {
 		return this.context;
 	}
-	public void setContext(String context) {
+
+    /**
+     * Sets context.
+     *
+     * @param context the context
+     */
+    public void setContext(String context) {
 		this.context = context;
 	}
 
-	public String getTemplateid() {
+    /**
+     * Gets templateid.
+     *
+     * @return the templateid
+     */
+    public String getTemplateid() {
 		return this.templateid;
 	}
-	public void setTemplateid(String templateid) {
+
+    /**
+     * Sets templateid.
+     *
+     * @param templateid the templateid
+     */
+    public void setTemplateid(String templateid) {
 		this.templateid = templateid;
 	}
 

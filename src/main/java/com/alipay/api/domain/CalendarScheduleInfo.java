@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CalendarScheduleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8149733212617631746L;
+	private static final long serialVersionUID = 5797635949742916642L;
 
 	/**
 	 * 时间分段时长，字段unit为单位，如duration=30，unit=MIN，则表示二进制的时间表表示将一天分为30分钟一小段的时间片段，用来表示服务者的时间是否可用
@@ -35,24 +35,57 @@ public class CalendarScheduleInfo extends AlipayObject {
 	@ApiField("unit")
 	private String unit;
 
-	public Long getDuration() {
+    /**
+     * Gets duration.
+     *
+     * @return the duration
+     */
+    public Long getDuration() {
 		return this.duration;
 	}
-	public void setDuration(Long duration) {
+
+    /**
+     * Sets duration.
+     *
+     * @param duration the duration
+     */
+    public void setDuration(Long duration) {
 		this.duration = duration;
 	}
 
-	public List<ScheduleInfo> getSchedule() {
+    /**
+     * Gets schedule.
+     *
+     * @return the schedule
+     */
+    public List<ScheduleInfo> getSchedule() {
 		return this.schedule;
 	}
-	public void setSchedule(List<ScheduleInfo> schedule) {
+
+    /**
+     * Sets schedule.
+     *
+     * @param schedule the schedule
+     */
+    public void setSchedule(List<ScheduleInfo> schedule) {
 		this.schedule = schedule;
 	}
 
-	public String getUnit() {
+    /**
+     * Gets unit.
+     *
+     * @return the unit
+     */
+    public String getUnit() {
 		return this.unit;
 	}
-	public void setUnit(String unit) {
+
+    /**
+     * Sets unit.
+     *
+     * @param unit the unit
+     */
+    public void setUnit(String unit) {
 		this.unit = unit;
 	}
 

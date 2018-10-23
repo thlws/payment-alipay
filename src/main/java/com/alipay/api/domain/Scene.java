@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class Scene extends AlipayObject {
 
-	private static final long serialVersionUID = 8881977514698658361L;
+	private static final long serialVersionUID = 2178353512648156333L;
 
 	/**
 	 * 场景Id，最长32位，英文字母、数字以及下划线，开发者自定义
@@ -19,10 +19,21 @@ public class Scene extends AlipayObject {
 	@ApiField("scene_id")
 	private String sceneId;
 
-	public String getSceneId() {
+    /**
+     * Gets scene id.
+     *
+     * @return the scene id
+     */
+    public String getSceneId() {
 		return this.sceneId;
 	}
-	public void setSceneId(String sceneId) {
+
+    /**
+     * Sets scene id.
+     *
+     * @param sceneId the scene id
+     */
+    public void setSceneId(String sceneId) {
 		this.sceneId = sceneId;
 	}
 

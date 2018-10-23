@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ItemPackageInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1864575143624156246L;
+	private static final long serialVersionUID = 8191922761436686852L;
 
 	/**
 	 * 商品详情-套餐内菜品信息列表
@@ -29,17 +29,39 @@ public class ItemPackageInfo extends AlipayObject {
 	@ApiField("title")
 	private String title;
 
-	public List<ItemUnitInfo> getItemUnits() {
+    /**
+     * Gets item units.
+     *
+     * @return the item units
+     */
+    public List<ItemUnitInfo> getItemUnits() {
 		return this.itemUnits;
 	}
-	public void setItemUnits(List<ItemUnitInfo> itemUnits) {
+
+    /**
+     * Sets item units.
+     *
+     * @param itemUnits the item units
+     */
+    public void setItemUnits(List<ItemUnitInfo> itemUnits) {
 		this.itemUnits = itemUnits;
 	}
 
-	public String getTitle() {
+    /**
+     * Gets title.
+     *
+     * @return the title
+     */
+    public String getTitle() {
 		return this.title;
 	}
-	public void setTitle(String title) {
+
+    /**
+     * Sets title.
+     *
+     * @param title the title
+     */
+    public void setTitle(String title) {
 		this.title = title;
 	}
 

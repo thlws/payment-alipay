@@ -9,9 +9,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.zdatafront.common.query request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-24 16:28:03
+ * @since 1.0, 2018-03-21 11:14:39
  */
 public class AlipayZdatafrontCommonQueryRequest implements AlipayRequest<AlipayZdatafrontCommonQueryResponse> {
 
@@ -50,45 +50,111 @@ public class AlipayZdatafrontCommonQueryRequest implements AlipayRequest<AlipayZ
 	 */
 	private String visitDomain;
 
-	public void setCacheInterval(Long cacheInterval) {
+    /**
+     * Sets cache interval.
+     *
+     * @param cacheInterval the cache interval
+     */
+    public void setCacheInterval(Long cacheInterval) {
 		this.cacheInterval = cacheInterval;
 	}
-	public Long getCacheInterval() {
+
+    /**
+     * Gets cache interval.
+     *
+     * @return the cache interval
+     */
+    public Long getCacheInterval() {
 		return this.cacheInterval;
 	}
 
-	public void setQueryConditions(String queryConditions) {
+    /**
+     * Sets query conditions.
+     *
+     * @param queryConditions the query conditions
+     */
+    public void setQueryConditions(String queryConditions) {
 		this.queryConditions = queryConditions;
 	}
-	public String getQueryConditions() {
+
+    /**
+     * Gets query conditions.
+     *
+     * @return the query conditions
+     */
+    public String getQueryConditions() {
 		return this.queryConditions;
 	}
 
-	public void setServiceName(String serviceName) {
+    /**
+     * Sets service name.
+     *
+     * @param serviceName the service name
+     */
+    public void setServiceName(String serviceName) {
 		this.serviceName = serviceName;
 	}
-	public String getServiceName() {
+
+    /**
+     * Gets service name.
+     *
+     * @return the service name
+     */
+    public String getServiceName() {
 		return this.serviceName;
 	}
 
-	public void setVisitBiz(String visitBiz) {
+    /**
+     * Sets visit biz.
+     *
+     * @param visitBiz the visit biz
+     */
+    public void setVisitBiz(String visitBiz) {
 		this.visitBiz = visitBiz;
 	}
-	public String getVisitBiz() {
+
+    /**
+     * Gets visit biz.
+     *
+     * @return the visit biz
+     */
+    public String getVisitBiz() {
 		return this.visitBiz;
 	}
 
-	public void setVisitBizLine(String visitBizLine) {
+    /**
+     * Sets visit biz line.
+     *
+     * @param visitBizLine the visit biz line
+     */
+    public void setVisitBizLine(String visitBizLine) {
 		this.visitBizLine = visitBizLine;
 	}
-	public String getVisitBizLine() {
+
+    /**
+     * Gets visit biz line.
+     *
+     * @return the visit biz line
+     */
+    public String getVisitBizLine() {
 		return this.visitBizLine;
 	}
 
-	public void setVisitDomain(String visitDomain) {
+    /**
+     * Sets visit domain.
+     *
+     * @param visitDomain the visit domain
+     */
+    public void setVisitDomain(String visitDomain) {
 		this.visitDomain = visitDomain;
 	}
-	public String getVisitDomain() {
+
+    /**
+     * Gets visit domain.
+     *
+     * @return the visit domain
+     */
+    public String getVisitDomain() {
 		return this.visitDomain;
 	}
 	private String terminalType;
@@ -165,7 +231,13 @@ public class AlipayZdatafrontCommonQueryRequest implements AlipayRequest<AlipayZ
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

@@ -10,9 +10,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: zhima.credit.score.brief.get request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-08-09 12:51:37
+ * @since 1.0, 2018-03-14 21:20:31
  */
 public class ZhimaCreditScoreBriefGetRequest implements AlipayRequest<ZhimaCreditScoreBriefGetResponse> {
 
@@ -24,10 +24,21 @@ public class ZhimaCreditScoreBriefGetRequest implements AlipayRequest<ZhimaCredi
 	 */
 	private String bizContent;
 
-	public void setBizContent(String bizContent) {
+    /**
+     * Sets biz content.
+     *
+     * @param bizContent the biz content
+     */
+    public void setBizContent(String bizContent) {
 		this.bizContent = bizContent;
 	}
-	public String getBizContent() {
+
+    /**
+     * Gets biz content.
+     *
+     * @return the biz content
+     */
+    public String getBizContent() {
 		return this.bizContent;
 	}
 	private String terminalType;
@@ -99,7 +110,13 @@ public class ZhimaCreditScoreBriefGetRequest implements AlipayRequest<ZhimaCredi
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

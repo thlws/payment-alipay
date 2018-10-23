@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TradeRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 4419117541856945467L;
+	private static final long serialVersionUID = 7517897417227872726L;
 
 	/**
 	 * 支付宝订单号
@@ -123,129 +123,327 @@ public class TradeRecord extends AlipayObject {
 	@ApiField("total_amount")
 	private String totalAmount;
 
-	public String getAlipayOrderNo() {
+    /**
+     * Gets alipay order no.
+     *
+     * @return the alipay order no
+     */
+    public String getAlipayOrderNo() {
 		return this.alipayOrderNo;
 	}
-	public void setAlipayOrderNo(String alipayOrderNo) {
+
+    /**
+     * Sets alipay order no.
+     *
+     * @param alipayOrderNo the alipay order no
+     */
+    public void setAlipayOrderNo(String alipayOrderNo) {
 		this.alipayOrderNo = alipayOrderNo;
 	}
 
-	public Date getCreateTime() {
+    /**
+     * Gets create time.
+     *
+     * @return the create time
+     */
+    public Date getCreateTime() {
 		return this.createTime;
 	}
-	public void setCreateTime(Date createTime) {
+
+    /**
+     * Sets create time.
+     *
+     * @param createTime the create time
+     */
+    public void setCreateTime(Date createTime) {
 		this.createTime = createTime;
 	}
 
-	public String getInOutType() {
+    /**
+     * Gets in out type.
+     *
+     * @return the in out type
+     */
+    public String getInOutType() {
 		return this.inOutType;
 	}
-	public void setInOutType(String inOutType) {
+
+    /**
+     * Sets in out type.
+     *
+     * @param inOutType the in out type
+     */
+    public void setInOutType(String inOutType) {
 		this.inOutType = inOutType;
 	}
 
-	public String getMerchantOrderNo() {
+    /**
+     * Gets merchant order no.
+     *
+     * @return the merchant order no
+     */
+    public String getMerchantOrderNo() {
 		return this.merchantOrderNo;
 	}
-	public void setMerchantOrderNo(String merchantOrderNo) {
+
+    /**
+     * Sets merchant order no.
+     *
+     * @param merchantOrderNo the merchant order no
+     */
+    public void setMerchantOrderNo(String merchantOrderNo) {
 		this.merchantOrderNo = merchantOrderNo;
 	}
 
-	public Date getModifiedTime() {
+    /**
+     * Gets modified time.
+     *
+     * @return the modified time
+     */
+    public Date getModifiedTime() {
 		return this.modifiedTime;
 	}
-	public void setModifiedTime(Date modifiedTime) {
+
+    /**
+     * Sets modified time.
+     *
+     * @param modifiedTime the modified time
+     */
+    public void setModifiedTime(Date modifiedTime) {
 		this.modifiedTime = modifiedTime;
 	}
 
-	public String getOppositeLogonId() {
+    /**
+     * Gets opposite logon id.
+     *
+     * @return the opposite logon id
+     */
+    public String getOppositeLogonId() {
 		return this.oppositeLogonId;
 	}
-	public void setOppositeLogonId(String oppositeLogonId) {
+
+    /**
+     * Sets opposite logon id.
+     *
+     * @param oppositeLogonId the opposite logon id
+     */
+    public void setOppositeLogonId(String oppositeLogonId) {
 		this.oppositeLogonId = oppositeLogonId;
 	}
 
-	public String getOppositeName() {
+    /**
+     * Gets opposite name.
+     *
+     * @return the opposite name
+     */
+    public String getOppositeName() {
 		return this.oppositeName;
 	}
-	public void setOppositeName(String oppositeName) {
+
+    /**
+     * Sets opposite name.
+     *
+     * @param oppositeName the opposite name
+     */
+    public void setOppositeName(String oppositeName) {
 		this.oppositeName = oppositeName;
 	}
 
-	public String getOppositeUserId() {
+    /**
+     * Gets opposite user id.
+     *
+     * @return the opposite user id
+     */
+    public String getOppositeUserId() {
 		return this.oppositeUserId;
 	}
-	public void setOppositeUserId(String oppositeUserId) {
+
+    /**
+     * Sets opposite user id.
+     *
+     * @param oppositeUserId the opposite user id
+     */
+    public void setOppositeUserId(String oppositeUserId) {
 		this.oppositeUserId = oppositeUserId;
 	}
 
-	public String getOrderFrom() {
+    /**
+     * Gets order from.
+     *
+     * @return the order from
+     */
+    public String getOrderFrom() {
 		return this.orderFrom;
 	}
-	public void setOrderFrom(String orderFrom) {
+
+    /**
+     * Sets order from.
+     *
+     * @param orderFrom the order from
+     */
+    public void setOrderFrom(String orderFrom) {
 		this.orderFrom = orderFrom;
 	}
 
-	public String getOrderStatus() {
+    /**
+     * Gets order status.
+     *
+     * @return the order status
+     */
+    public String getOrderStatus() {
 		return this.orderStatus;
 	}
-	public void setOrderStatus(String orderStatus) {
+
+    /**
+     * Sets order status.
+     *
+     * @param orderStatus the order status
+     */
+    public void setOrderStatus(String orderStatus) {
 		this.orderStatus = orderStatus;
 	}
 
-	public String getOrderTitle() {
+    /**
+     * Gets order title.
+     *
+     * @return the order title
+     */
+    public String getOrderTitle() {
 		return this.orderTitle;
 	}
-	public void setOrderTitle(String orderTitle) {
+
+    /**
+     * Sets order title.
+     *
+     * @param orderTitle the order title
+     */
+    public void setOrderTitle(String orderTitle) {
 		this.orderTitle = orderTitle;
 	}
 
-	public String getOrderType() {
+    /**
+     * Gets order type.
+     *
+     * @return the order type
+     */
+    public String getOrderType() {
 		return this.orderType;
 	}
-	public void setOrderType(String orderType) {
+
+    /**
+     * Sets order type.
+     *
+     * @param orderType the order type
+     */
+    public void setOrderType(String orderType) {
 		this.orderType = orderType;
 	}
 
-	public String getOwnerLogonId() {
+    /**
+     * Gets owner logon id.
+     *
+     * @return the owner logon id
+     */
+    public String getOwnerLogonId() {
 		return this.ownerLogonId;
 	}
-	public void setOwnerLogonId(String ownerLogonId) {
+
+    /**
+     * Sets owner logon id.
+     *
+     * @param ownerLogonId the owner logon id
+     */
+    public void setOwnerLogonId(String ownerLogonId) {
 		this.ownerLogonId = ownerLogonId;
 	}
 
-	public String getOwnerName() {
+    /**
+     * Gets owner name.
+     *
+     * @return the owner name
+     */
+    public String getOwnerName() {
 		return this.ownerName;
 	}
-	public void setOwnerName(String ownerName) {
+
+    /**
+     * Sets owner name.
+     *
+     * @param ownerName the owner name
+     */
+    public void setOwnerName(String ownerName) {
 		this.ownerName = ownerName;
 	}
 
-	public String getOwnerUserId() {
+    /**
+     * Gets owner user id.
+     *
+     * @return the owner user id
+     */
+    public String getOwnerUserId() {
 		return this.ownerUserId;
 	}
-	public void setOwnerUserId(String ownerUserId) {
+
+    /**
+     * Sets owner user id.
+     *
+     * @param ownerUserId the owner user id
+     */
+    public void setOwnerUserId(String ownerUserId) {
 		this.ownerUserId = ownerUserId;
 	}
 
-	public String getPartnerId() {
+    /**
+     * Gets partner id.
+     *
+     * @return the partner id
+     */
+    public String getPartnerId() {
 		return this.partnerId;
 	}
-	public void setPartnerId(String partnerId) {
+
+    /**
+     * Sets partner id.
+     *
+     * @param partnerId the partner id
+     */
+    public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}
 
-	public String getServiceCharge() {
+    /**
+     * Gets service charge.
+     *
+     * @return the service charge
+     */
+    public String getServiceCharge() {
 		return this.serviceCharge;
 	}
-	public void setServiceCharge(String serviceCharge) {
+
+    /**
+     * Sets service charge.
+     *
+     * @param serviceCharge the service charge
+     */
+    public void setServiceCharge(String serviceCharge) {
 		this.serviceCharge = serviceCharge;
 	}
 
-	public String getTotalAmount() {
+    /**
+     * Gets total amount.
+     *
+     * @return the total amount
+     */
+    public String getTotalAmount() {
 		return this.totalAmount;
 	}
-	public void setTotalAmount(String totalAmount) {
+
+    /**
+     * Sets total amount.
+     *
+     * @param totalAmount the total amount
+     */
+    public void setTotalAmount(String totalAmount) {
 		this.totalAmount = totalAmount;
 	}
 

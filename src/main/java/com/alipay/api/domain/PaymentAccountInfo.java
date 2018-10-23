@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PaymentAccountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4742791295469955268L;
+	private static final long serialVersionUID = 2126854129489268353L;
 
 	/**
 	 * 账号名称
@@ -43,38 +43,93 @@ public class PaymentAccountInfo extends AlipayObject {
 	@ApiField("content")
 	private String content;
 
-	public String getAccountName() {
+    /**
+     * Gets account name.
+     *
+     * @return the account name
+     */
+    public String getAccountName() {
 		return this.accountName;
 	}
-	public void setAccountName(String accountName) {
+
+    /**
+     * Sets account name.
+     *
+     * @param accountName the account name
+     */
+    public void setAccountName(String accountName) {
 		this.accountName = accountName;
 	}
 
-	public String getAccountNo() {
+    /**
+     * Gets account no.
+     *
+     * @return the account no
+     */
+    public String getAccountNo() {
 		return this.accountNo;
 	}
-	public void setAccountNo(String accountNo) {
+
+    /**
+     * Sets account no.
+     *
+     * @param accountNo the account no
+     */
+    public void setAccountNo(String accountNo) {
 		this.accountNo = accountNo;
 	}
 
-	public String getAccountType() {
+    /**
+     * Gets account type.
+     *
+     * @return the account type
+     */
+    public String getAccountType() {
 		return this.accountType;
 	}
-	public void setAccountType(String accountType) {
+
+    /**
+     * Sets account type.
+     *
+     * @param accountType the account type
+     */
+    public void setAccountType(String accountType) {
 		this.accountType = accountType;
 	}
 
-	public Long getAmount() {
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public Long getAmount() {
 		return this.amount;
 	}
-	public void setAmount(Long amount) {
+
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(Long amount) {
 		this.amount = amount;
 	}
 
-	public String getContent() {
+    /**
+     * Gets content.
+     *
+     * @return the content
+     */
+    public String getContent() {
 		return this.content;
 	}
-	public void setContent(String content) {
+
+    /**
+     * Sets content.
+     *
+     * @param content the content
+     */
+    public void setContent(String content) {
 		this.content = content;
 	}
 

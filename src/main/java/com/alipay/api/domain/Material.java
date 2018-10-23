@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class Material extends AlipayObject {
 
-	private static final long serialVersionUID = 6322745242452253229L;
+	private static final long serialVersionUID = 6691431473413281135L;
 
 	/**
 	 * 图文消息子消息项集合，单条消息最多6个子项，否则会发送失败
@@ -35,24 +35,57 @@ public class Material extends AlipayObject {
 	@ApiField("text")
 	private Text text;
 
-	public List<Article> getArticles() {
+    /**
+     * Gets articles.
+     *
+     * @return the articles
+     */
+    public List<Article> getArticles() {
 		return this.articles;
 	}
-	public void setArticles(List<Article> articles) {
+
+    /**
+     * Sets articles.
+     *
+     * @param articles the articles
+     */
+    public void setArticles(List<Article> articles) {
 		this.articles = articles;
 	}
 
-	public String getMsgType() {
+    /**
+     * Gets msg type.
+     *
+     * @return the msg type
+     */
+    public String getMsgType() {
 		return this.msgType;
 	}
-	public void setMsgType(String msgType) {
+
+    /**
+     * Sets msg type.
+     *
+     * @param msgType the msg type
+     */
+    public void setMsgType(String msgType) {
 		this.msgType = msgType;
 	}
 
-	public Text getText() {
+    /**
+     * Gets text.
+     *
+     * @return the text
+     */
+    public Text getText() {
 		return this.text;
 	}
-	public void setText(Text text) {
+
+    /**
+     * Sets text.
+     *
+     * @param text the text
+     */
+    public void setText(Text text) {
 		this.text = text;
 	}
 

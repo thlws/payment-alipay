@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * alipay.open.public. message.total.send（群发消息）
  *
  * @author auto create
- * @since 1.0, 2017-01-06 11:37:37
+ * @since 1.0, 2018-01-22 10:33:37
  */
 public class AlipayOpenPublicMessageTotalSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2759136455151845411L;
+	private static final long serialVersionUID = 2589244352765553984L;
 
 	/**
 	 * 图文消息，当msg_type为image-text，该值必须设置
@@ -35,24 +35,57 @@ public class AlipayOpenPublicMessageTotalSendModel extends AlipayObject {
 	@ApiField("text")
 	private Text text;
 
-	public List<Article> getArticles() {
+    /**
+     * Gets articles.
+     *
+     * @return the articles
+     */
+    public List<Article> getArticles() {
 		return this.articles;
 	}
-	public void setArticles(List<Article> articles) {
+
+    /**
+     * Sets articles.
+     *
+     * @param articles the articles
+     */
+    public void setArticles(List<Article> articles) {
 		this.articles = articles;
 	}
 
-	public String getMsgType() {
+    /**
+     * Gets msg type.
+     *
+     * @return the msg type
+     */
+    public String getMsgType() {
 		return this.msgType;
 	}
-	public void setMsgType(String msgType) {
+
+    /**
+     * Sets msg type.
+     *
+     * @param msgType the msg type
+     */
+    public void setMsgType(String msgType) {
 		this.msgType = msgType;
 	}
 
-	public Text getText() {
+    /**
+     * Gets text.
+     *
+     * @return the text
+     */
+    public Text getText() {
 		return this.text;
 	}
-	public void setText(Text text) {
+
+    /**
+     * Sets text.
+     *
+     * @param text the text
+     */
+    public void setText(Text text) {
 		this.text = text;
 	}
 

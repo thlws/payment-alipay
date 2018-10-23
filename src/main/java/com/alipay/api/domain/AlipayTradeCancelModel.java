@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 统一收单交易撤销接口
  *
  * @author auto create
- * @since 1.0, 2017-03-23 10:05:50
+ * @since 1.0, 2017-10-19 16:09:44
  */
 public class AlipayTradeCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7624611711317453936L;
+	private static final long serialVersionUID = 3329736457679583517L;
 
 	/**
 	 * 原支付请求的商户订单号,和支付宝交易号不能同时为空
@@ -25,17 +25,39 @@ public class AlipayTradeCancelModel extends AlipayObject {
 	@ApiField("trade_no")
 	private String tradeNo;
 
-	public String getOutTradeNo() {
+    /**
+     * Gets out trade no.
+     *
+     * @return the out trade no
+     */
+    public String getOutTradeNo() {
 		return this.outTradeNo;
 	}
-	public void setOutTradeNo(String outTradeNo) {
+
+    /**
+     * Sets out trade no.
+     *
+     * @param outTradeNo the out trade no
+     */
+    public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
 
-	public String getTradeNo() {
+    /**
+     * Gets trade no.
+     *
+     * @return the trade no
+     */
+    public String getTradeNo() {
 		return this.tradeNo;
 	}
-	public void setTradeNo(String tradeNo) {
+
+    /**
+     * Sets trade no.
+     *
+     * @param tradeNo the trade no
+     */
+    public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
 

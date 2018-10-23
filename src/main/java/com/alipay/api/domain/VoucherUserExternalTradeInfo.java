@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VoucherUserExternalTradeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7495539543238489824L;
+	private static final long serialVersionUID = 2614185238878378593L;
 
 	/**
 	 * 核销金额
@@ -37,31 +37,75 @@ public class VoucherUserExternalTradeInfo extends AlipayObject {
 	@ApiField("external_trade_no")
 	private String externalTradeNo;
 
-	public String getAmount() {
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public String getAmount() {
 		return this.amount;
 	}
-	public void setAmount(String amount) {
+
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
-	public String getConsumeDate() {
+    /**
+     * Gets consume date.
+     *
+     * @return the consume date
+     */
+    public String getConsumeDate() {
 		return this.consumeDate;
 	}
-	public void setConsumeDate(String consumeDate) {
+
+    /**
+     * Sets consume date.
+     *
+     * @param consumeDate the consume date
+     */
+    public void setConsumeDate(String consumeDate) {
 		this.consumeDate = consumeDate;
 	}
 
-	public String getConsumeShopId() {
+    /**
+     * Gets consume shop id.
+     *
+     * @return the consume shop id
+     */
+    public String getConsumeShopId() {
 		return this.consumeShopId;
 	}
-	public void setConsumeShopId(String consumeShopId) {
+
+    /**
+     * Sets consume shop id.
+     *
+     * @param consumeShopId the consume shop id
+     */
+    public void setConsumeShopId(String consumeShopId) {
 		this.consumeShopId = consumeShopId;
 	}
 
-	public String getExternalTradeNo() {
+    /**
+     * Gets external trade no.
+     *
+     * @return the external trade no
+     */
+    public String getExternalTradeNo() {
 		return this.externalTradeNo;
 	}
-	public void setExternalTradeNo(String externalTradeNo) {
+
+    /**
+     * Sets external trade no.
+     *
+     * @param externalTradeNo the external trade no
+     */
+    public void setExternalTradeNo(String externalTradeNo) {
 		this.externalTradeNo = externalTradeNo;
 	}
 

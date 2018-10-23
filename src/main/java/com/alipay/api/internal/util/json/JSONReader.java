@@ -10,8 +10,6 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 
- * 
  * 不能直接使用JSONReader，请用JSONValidatingReader，所以这里改为abstract修饰。
  */
 public abstract class JSONReader {
@@ -20,8 +18,17 @@ public abstract class JSONReader {
     private static final Object ARRAY_END = new Object();
     private static final Object COLON = new Object();
     private static final Object COMMA = new Object();
+    /**
+     * The constant FIRST.
+     */
     public static final int FIRST = 0;
+    /**
+     * The constant CURRENT.
+     */
     public static final int CURRENT = 1;
+    /**
+     * The constant NEXT.
+     */
     public static final int NEXT = 2;
 
     private static Map<Character, Character> escapes = new HashMap<Character, Character>();
@@ -52,6 +59,13 @@ public abstract class JSONReader {
         }
     }
 
+    /**
+     * Read object.
+     *
+     * @param ci    the ci
+     * @param start the start
+     * @return the object
+     */
     public Object read(CharacterIterator ci, int start) {
         it = ci;
         switch (start) {
@@ -68,10 +82,22 @@ public abstract class JSONReader {
         return read();
     }
 
+    /**
+     * Read object.
+     *
+     * @param it the it
+     * @return the object
+     */
     public Object read(CharacterIterator it) {
         return read(it, NEXT);
     }
 
+    /**
+     * Read object.
+     *
+     * @param string the string
+     * @return the object
+     */
     public Object read(String string) {
         return read(new StringCharacterIterator(string), FIRST);
     }

@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.public.label.delete response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-07-29 19:59:03
  */
 public class AlipayMobilePublicLabelDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5468311927617294617L;
+	private static final long serialVersionUID = 4278161721357839383L;
 
 	/** 
 	 * 结果码
@@ -39,10 +39,21 @@ public class AlipayMobilePublicLabelDeleteResponse extends AlipayResponse {
 		return this.code;
 	}
 
-	public void setId(Long id) {
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
+    public void setId(Long id) {
 		this.id = id;
 	}
-	public Long getId( ) {
+
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
+    public Long getId( ) {
 		return this.id;
 	}
 

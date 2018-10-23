@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OldComplextMockModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4875189762211513413L;
+	private static final long serialVersionUID = 2745885715476276162L;
 
 	/**
 	 * biz_num
@@ -31,24 +31,57 @@ public class OldComplextMockModel extends AlipayObject {
 	@ApiField("simple_mock_model")
 	private SimpleMockModel simpleMockModel;
 
-	public Long getBizNum() {
+    /**
+     * Gets biz num.
+     *
+     * @return the biz num
+     */
+    public Long getBizNum() {
 		return this.bizNum;
 	}
-	public void setBizNum(Long bizNum) {
+
+    /**
+     * Sets biz num.
+     *
+     * @param bizNum the biz num
+     */
+    public void setBizNum(Long bizNum) {
 		this.bizNum = bizNum;
 	}
 
-	public String getBizType() {
+    /**
+     * Gets biz type.
+     *
+     * @return the biz type
+     */
+    public String getBizType() {
 		return this.bizType;
 	}
-	public void setBizType(String bizType) {
+
+    /**
+     * Sets biz type.
+     *
+     * @param bizType the biz type
+     */
+    public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
-	public SimpleMockModel getSimpleMockModel() {
+    /**
+     * Gets simple mock model.
+     *
+     * @return the simple mock model
+     */
+    public SimpleMockModel getSimpleMockModel() {
 		return this.simpleMockModel;
 	}
-	public void setSimpleMockModel(SimpleMockModel simpleMockModel) {
+
+    /**
+     * Sets simple mock model.
+     *
+     * @param simpleMockModel the simple mock model
+     */
+    public void setSimpleMockModel(SimpleMockModel simpleMockModel) {
 		this.simpleMockModel = simpleMockModel;
 	}
 

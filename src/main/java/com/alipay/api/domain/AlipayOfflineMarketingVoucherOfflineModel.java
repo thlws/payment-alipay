@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券下架
  *
  * @author auto create
- * @since 1.0, 2016-06-23 17:38:01
+ * @since 1.0, 2018-08-22 11:32:14
  */
 public class AlipayOfflineMarketingVoucherOfflineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4695725783866345874L;
+	private static final long serialVersionUID = 4163152919512365495L;
 
 	/**
 	 * 下架描述
@@ -31,24 +31,57 @@ public class AlipayOfflineMarketingVoucherOfflineModel extends AlipayObject {
 	@ApiField("voucher_id")
 	private String voucherId;
 
-	public String getMemo() {
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo() {
 		return this.memo;
 	}
-	public void setMemo(String memo) {
+
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
-	public String getVoucherId() {
+    /**
+     * Gets voucher id.
+     *
+     * @return the voucher id
+     */
+    public String getVoucherId() {
 		return this.voucherId;
 	}
-	public void setVoucherId(String voucherId) {
+
+    /**
+     * Sets voucher id.
+     *
+     * @param voucherId the voucher id
+     */
+    public void setVoucherId(String voucherId) {
 		this.voucherId = voucherId;
 	}
 

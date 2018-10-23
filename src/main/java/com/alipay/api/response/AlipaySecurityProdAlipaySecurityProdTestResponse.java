@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.security.prod.alipay.security.prod.test response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-03-03 17:43:31
  */
 public class AlipaySecurityProdAlipaySecurityProdTestResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7562128513287229758L;
+	private static final long serialVersionUID = 6829543188478245692L;
 
 	/** 
 	 * ddd
@@ -20,10 +20,21 @@ public class AlipaySecurityProdAlipaySecurityProdTestResponse extends AlipayResp
 	@ApiField("admin")
 	private String admin;
 
-	public void setAdmin(String admin) {
+    /**
+     * Sets admin.
+     *
+     * @param admin the admin
+     */
+    public void setAdmin(String admin) {
 		this.admin = admin;
 	}
-	public String getAdmin( ) {
+
+    /**
+     * Gets admin.
+     *
+     * @return the admin
+     */
+    public String getAdmin( ) {
 		return this.admin;
 	}
 

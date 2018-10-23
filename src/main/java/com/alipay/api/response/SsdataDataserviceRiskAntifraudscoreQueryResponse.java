@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: ssdata.dataservice.risk.antifraudscore.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-09-27 11:42:00
  */
 public class SsdataDataserviceRiskAntifraudscoreQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1568672485193386279L;
+	private static final long serialVersionUID = 1529717179179437696L;
 
 	/** 
 	 * 蚁盾对于每一次请求返回的业务号。后续可以通过此业务号进行对账
@@ -32,24 +32,57 @@ public class SsdataDataserviceRiskAntifraudscoreQueryResponse extends AlipayResp
 	@ApiField("unique_id")
 	private String uniqueId;
 
-	public void setBizNo(String bizNo) {
+    /**
+     * Sets biz no.
+     *
+     * @param bizNo the biz no
+     */
+    public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
 	}
-	public String getBizNo( ) {
+
+    /**
+     * Gets biz no.
+     *
+     * @return the biz no
+     */
+    public String getBizNo( ) {
 		return this.bizNo;
 	}
 
-	public void setScore(String score) {
+    /**
+     * Sets score.
+     *
+     * @param score the score
+     */
+    public void setScore(String score) {
 		this.score = score;
 	}
-	public String getScore( ) {
+
+    /**
+     * Gets score.
+     *
+     * @return the score
+     */
+    public String getScore( ) {
 		return this.score;
 	}
 
-	public void setUniqueId(String uniqueId) {
+    /**
+     * Sets unique id.
+     *
+     * @param uniqueId the unique id
+     */
+    public void setUniqueId(String uniqueId) {
 		this.uniqueId = uniqueId;
 	}
-	public String getUniqueId( ) {
+
+    /**
+     * Gets unique id.
+     *
+     * @return the unique id
+     */
+    public String getUniqueId( ) {
 		return this.uniqueId;
 	}
 

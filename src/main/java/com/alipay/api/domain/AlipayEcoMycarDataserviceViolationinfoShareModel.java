@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoMycarDataserviceViolationinfoShareModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7819287856558393347L;
+	private static final long serialVersionUID = 2569631739568878752L;
 
 	/**
 	 * 支付宝app_id
@@ -25,17 +25,39 @@ public class AlipayEcoMycarDataserviceViolationinfoShareModel extends AlipayObje
 	@ApiField("vehicle_id")
 	private String vehicleId;
 
-	public String getAppId() {
+    /**
+     * Gets app id.
+     *
+     * @return the app id
+     */
+    public String getAppId() {
 		return this.appId;
 	}
-	public void setAppId(String appId) {
+
+    /**
+     * Sets app id.
+     *
+     * @param appId the app id
+     */
+    public void setAppId(String appId) {
 		this.appId = appId;
 	}
 
-	public String getVehicleId() {
+    /**
+     * Gets vehicle id.
+     *
+     * @return the vehicle id
+     */
+    public String getVehicleId() {
 		return this.vehicleId;
 	}
-	public void setVehicleId(String vehicleId) {
+
+    /**
+     * Sets vehicle id.
+     *
+     * @param vehicleId the vehicle id
+     */
+    public void setVehicleId(String vehicleId) {
 		this.vehicleId = vehicleId;
 	}
 

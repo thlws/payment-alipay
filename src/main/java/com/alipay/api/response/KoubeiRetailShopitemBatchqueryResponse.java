@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.retail.shopitem.batchquery response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-04-14 18:19:47
  */
 public class KoubeiRetailShopitemBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2476964138835512884L;
+	private static final long serialVersionUID = 8544755121824722216L;
 
 	/** 
 	 * 店铺商品集合
@@ -24,10 +24,21 @@ public class KoubeiRetailShopitemBatchqueryResponse extends AlipayResponse {
 	@ApiField("ext_shop_item")
 	private List<ExtShopItem> shopitemlist;
 
-	public void setShopitemlist(List<ExtShopItem> shopitemlist) {
+    /**
+     * Sets shopitemlist.
+     *
+     * @param shopitemlist the shopitemlist
+     */
+    public void setShopitemlist(List<ExtShopItem> shopitemlist) {
 		this.shopitemlist = shopitemlist;
 	}
-	public List<ExtShopItem> getShopitemlist( ) {
+
+    /**
+     * Gets shopitemlist.
+     *
+     * @return the shopitemlist
+     */
+    public List<ExtShopItem> getShopitemlist( ) {
 		return this.shopitemlist;
 	}
 

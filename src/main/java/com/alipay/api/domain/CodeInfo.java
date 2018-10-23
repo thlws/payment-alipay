@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CodeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5242299699522736172L;
+	private static final long serialVersionUID = 5682251313341546484L;
 
 	/**
 	 * 跳转URL，扫码关注服务窗后会直接跳转到此URL
@@ -25,17 +25,39 @@ public class CodeInfo extends AlipayObject {
 	@ApiField("scene")
 	private Scene scene;
 
-	public String getGotoUrl() {
+    /**
+     * Gets goto url.
+     *
+     * @return the goto url
+     */
+    public String getGotoUrl() {
 		return this.gotoUrl;
 	}
-	public void setGotoUrl(String gotoUrl) {
+
+    /**
+     * Sets goto url.
+     *
+     * @param gotoUrl the goto url
+     */
+    public void setGotoUrl(String gotoUrl) {
 		this.gotoUrl = gotoUrl;
 	}
 
-	public Scene getScene() {
+    /**
+     * Gets scene.
+     *
+     * @return the scene
+     */
+    public Scene getScene() {
 		return this.scene;
 	}
-	public void setScene(Scene scene) {
+
+    /**
+     * Sets scene.
+     *
+     * @param scene the scene
+     */
+    public void setScene(Scene scene) {
 		this.scene = scene;
 	}
 

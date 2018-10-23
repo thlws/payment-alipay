@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NewsfeedMediaImg extends AlipayObject {
 
-	private static final long serialVersionUID = 1471634288833498637L;
+	private static final long serialVersionUID = 7464339617858235848L;
 
 	/**
 	 * 图片高度
@@ -31,24 +31,57 @@ public class NewsfeedMediaImg extends AlipayObject {
 	@ApiField("width")
 	private String width;
 
-	public String getHeight() {
+    /**
+     * Gets height.
+     *
+     * @return the height
+     */
+    public String getHeight() {
 		return this.height;
 	}
-	public void setHeight(String height) {
+
+    /**
+     * Sets height.
+     *
+     * @param height the height
+     */
+    public void setHeight(String height) {
 		this.height = height;
 	}
 
-	public String getSrc() {
+    /**
+     * Gets src.
+     *
+     * @return the src
+     */
+    public String getSrc() {
 		return this.src;
 	}
-	public void setSrc(String src) {
+
+    /**
+     * Sets src.
+     *
+     * @param src the src
+     */
+    public void setSrc(String src) {
 		this.src = src;
 	}
 
-	public String getWidth() {
+    /**
+     * Gets width.
+     *
+     * @return the width
+     */
+    public String getWidth() {
 		return this.width;
 	}
-	public void setWidth(String width) {
+
+    /**
+     * Sets width.
+     *
+     * @param width the width
+     */
+    public void setWidth(String width) {
 		this.width = width;
 	}
 

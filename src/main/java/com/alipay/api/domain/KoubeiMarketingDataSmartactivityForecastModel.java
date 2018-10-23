@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户智能活动效果预测接口
  *
  * @author auto create
- * @since 1.0, 2017-07-26 11:31:44
+ * @since 1.0, 2018-07-26 14:02:52
  */
 public class KoubeiMarketingDataSmartactivityForecastModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8698392589267917323L;
+	private static final long serialVersionUID = 7489945123287373898L;
 
 	/**
 	 * 活动配置CODE
@@ -46,24 +46,57 @@ commission_rate:口碑客分佣比例
 	@ApiField("ext_info")
 	private String extInfo;
 
-	public String getConfigCode() {
+    /**
+     * Gets config code.
+     *
+     * @return the config code
+     */
+    public String getConfigCode() {
 		return this.configCode;
 	}
-	public void setConfigCode(String configCode) {
+
+    /**
+     * Sets config code.
+     *
+     * @param configCode the config code
+     */
+    public void setConfigCode(String configCode) {
 		this.configCode = configCode;
 	}
 
-	public String getDiagnoseCode() {
+    /**
+     * Gets diagnose code.
+     *
+     * @return the diagnose code
+     */
+    public String getDiagnoseCode() {
 		return this.diagnoseCode;
 	}
-	public void setDiagnoseCode(String diagnoseCode) {
+
+    /**
+     * Sets diagnose code.
+     *
+     * @param diagnoseCode the diagnose code
+     */
+    public void setDiagnoseCode(String diagnoseCode) {
 		this.diagnoseCode = diagnoseCode;
 	}
 
-	public String getExtInfo() {
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo() {
 		return this.extInfo;
 	}
-	public void setExtInfo(String extInfo) {
+
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 

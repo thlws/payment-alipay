@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.item.extitem.batchquery response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-07-06 10:48:09
  */
 public class KoubeiItemExtitemBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5314866824179855521L;
+	private static final long serialVersionUID = 7111434312311689743L;
 
 	/** 
 	 * 商品信息列表
@@ -42,31 +42,75 @@ public class KoubeiItemExtitemBatchqueryResponse extends AlipayResponse {
 	@ApiField("total_size")
 	private String totalSize;
 
-	public void setModelList(List<ExtItem> modelList) {
+    /**
+     * Sets model list.
+     *
+     * @param modelList the model list
+     */
+    public void setModelList(List<ExtItem> modelList) {
 		this.modelList = modelList;
 	}
-	public List<ExtItem> getModelList( ) {
+
+    /**
+     * Gets model list.
+     *
+     * @return the model list
+     */
+    public List<ExtItem> getModelList( ) {
 		return this.modelList;
 	}
 
-	public void setPageNum(String pageNum) {
+    /**
+     * Sets page num.
+     *
+     * @param pageNum the page num
+     */
+    public void setPageNum(String pageNum) {
 		this.pageNum = pageNum;
 	}
-	public String getPageNum( ) {
+
+    /**
+     * Gets page num.
+     *
+     * @return the page num
+     */
+    public String getPageNum( ) {
 		return this.pageNum;
 	}
 
-	public void setPageSize(String pageSize) {
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(String pageSize) {
 		this.pageSize = pageSize;
 	}
-	public String getPageSize( ) {
+
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public String getPageSize( ) {
 		return this.pageSize;
 	}
 
-	public void setTotalSize(String totalSize) {
+    /**
+     * Sets total size.
+     *
+     * @param totalSize the total size
+     */
+    public void setTotalSize(String totalSize) {
 		this.totalSize = totalSize;
 	}
-	public String getTotalSize( ) {
+
+    /**
+     * Gets total size.
+     *
+     * @return the total size
+     */
+    public String getTotalSize( ) {
 		return this.totalSize;
 	}
 

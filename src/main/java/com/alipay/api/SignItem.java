@@ -7,9 +7,10 @@ package com.alipay.api;
 import java.io.Serializable;
 
 /**
- *  签名类型
+ * 签名类型
+ *
  * @author jie.hua
- * @version $Id: SignItem.java, v 0.1 2015-4-21 下午2:11:37 jiehua Exp $
+ * @version $Id : SignItem.java, v 0.1 2015-4-21 下午2:11:37 jiehua Exp $
  */
 public class SignItem implements Serializable {
 
@@ -28,7 +29,7 @@ public class SignItem implements Serializable {
 
     /**
      * Getter method for property <tt>signSourceDate</tt>.
-     * 
+     *
      * @return property value of signSourceDate
      */
     public String getSignSourceDate() {
@@ -37,7 +38,7 @@ public class SignItem implements Serializable {
 
     /**
      * Setter method for property <tt>signSourceDate</tt>.
-     * 
+     *
      * @param signSourceDate value to be assigned to property signSourceDate
      */
     public void setSignSourceDate(String signSourceDate) {
@@ -46,7 +47,7 @@ public class SignItem implements Serializable {
 
     /**
      * Getter method for property <tt>sign</tt>.
-     * 
+     *
      * @return property value of sign
      */
     public String getSign() {
@@ -55,7 +56,7 @@ public class SignItem implements Serializable {
 
     /**
      * Setter method for property <tt>sign</tt>.
-     * 
+     *
      * @param sign value to be assigned to property sign
      */
     public void setSign(String sign) {

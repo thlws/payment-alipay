@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: koubei.member.brandowner.name.query request
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-07-06 10:48:20
  */
@@ -85,7 +85,13 @@ public class KoubeiMemberBrandownerNameQueryRequest implements AlipayRequest<Kou
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

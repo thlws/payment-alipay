@@ -158,7 +158,9 @@ public class AlipayMobilePublicMultiMediaClient implements AlipayClient {
         return execute(request, accessToken, null);
     }
 
-
+    /** 
+     * @see com.alipay.api.AlipayClient#execute(com.alipay.api.AlipayRequest, java.lang.String, java.lang.String)
+     */
     public <T extends AlipayResponse> T execute(AlipayRequest<T> request, String accessToken,
                                                 String appAuthToken) throws AlipayApiException {
 
@@ -522,7 +524,7 @@ public class AlipayMobilePublicMultiMediaClient implements AlipayClient {
      * Split url query map.
      *
      * @param query the query
-     * @return map map
+     * @return map
      */
     public static Map<String, String> splitUrlQuery(String query) {
         Map<String, String> result = new HashMap<String, String>();

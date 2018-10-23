@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.trade.order.settle response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-12-08 00:49:25
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayTradeOrderSettleResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2632199691978679641L;
+	private static final long serialVersionUID = 5834724591697492483L;
 
 	/** 
 	 * 支付宝交易号
@@ -20,10 +20,21 @@ public class AlipayTradeOrderSettleResponse extends AlipayResponse {
 	@ApiField("trade_no")
 	private String tradeNo;
 
-	public void setTradeNo(String tradeNo) {
+    /**
+     * Sets trade no.
+     *
+     * @param tradeNo the trade no
+     */
+    public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
-	public String getTradeNo( ) {
+
+    /**
+     * Gets trade no.
+     *
+     * @return the trade no
+     */
+    public String getTradeNo( ) {
 		return this.tradeNo;
 	}
 

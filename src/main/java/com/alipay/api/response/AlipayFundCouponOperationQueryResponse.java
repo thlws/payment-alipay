@@ -7,13 +7,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.fund.coupon.operation.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-07 20:52:13
+ * @since 1.0, 2018-08-13 12:40:46
  */
 public class AlipayFundCouponOperationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8382417238365217395L;
+	private static final long serialVersionUID = 7245333197912239438L;
 
 	/** 
 	 * 该支付宝操作流水操作金额，单位为：元（人民币）
@@ -128,122 +128,309 @@ CLOSED：关闭
 	@ApiField("total_pay_refund_amount")
 	private String totalPayRefundAmount;
 
-	public void setAmount(String amount) {
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(String amount) {
 		this.amount = amount;
 	}
-	public String getAmount( ) {
+
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public String getAmount( ) {
 		return this.amount;
 	}
 
-	public void setAuthNo(String authNo) {
+    /**
+     * Sets auth no.
+     *
+     * @param authNo the auth no
+     */
+    public void setAuthNo(String authNo) {
 		this.authNo = authNo;
 	}
-	public String getAuthNo( ) {
+
+    /**
+     * Gets auth no.
+     *
+     * @return the auth no
+     */
+    public String getAuthNo( ) {
 		return this.authNo;
 	}
 
-	public void setExtraParam(String extraParam) {
+    /**
+     * Sets extra param.
+     *
+     * @param extraParam the extra param
+     */
+    public void setExtraParam(String extraParam) {
 		this.extraParam = extraParam;
 	}
-	public String getExtraParam( ) {
+
+    /**
+     * Gets extra param.
+     *
+     * @return the extra param
+     */
+    public String getExtraParam( ) {
 		return this.extraParam;
 	}
 
-	public void setGmtCreate(Date gmtCreate) {
+    /**
+     * Sets gmt create.
+     *
+     * @param gmtCreate the gmt create
+     */
+    public void setGmtCreate(Date gmtCreate) {
 		this.gmtCreate = gmtCreate;
 	}
-	public Date getGmtCreate( ) {
+
+    /**
+     * Gets gmt create.
+     *
+     * @return the gmt create
+     */
+    public Date getGmtCreate( ) {
 		return this.gmtCreate;
 	}
 
-	public void setGmtTrans(Date gmtTrans) {
+    /**
+     * Sets gmt trans.
+     *
+     * @param gmtTrans the gmt trans
+     */
+    public void setGmtTrans(Date gmtTrans) {
 		this.gmtTrans = gmtTrans;
 	}
-	public Date getGmtTrans( ) {
+
+    /**
+     * Gets gmt trans.
+     *
+     * @return the gmt trans
+     */
+    public Date getGmtTrans( ) {
 		return this.gmtTrans;
 	}
 
-	public void setOperationId(String operationId) {
+    /**
+     * Sets operation id.
+     *
+     * @param operationId the operation id
+     */
+    public void setOperationId(String operationId) {
 		this.operationId = operationId;
 	}
-	public String getOperationId( ) {
+
+    /**
+     * Gets operation id.
+     *
+     * @return the operation id
+     */
+    public String getOperationId( ) {
 		return this.operationId;
 	}
 
-	public void setOperationType(String operationType) {
+    /**
+     * Sets operation type.
+     *
+     * @param operationType the operation type
+     */
+    public void setOperationType(String operationType) {
 		this.operationType = operationType;
 	}
-	public String getOperationType( ) {
+
+    /**
+     * Gets operation type.
+     *
+     * @return the operation type
+     */
+    public String getOperationType( ) {
 		return this.operationType;
 	}
 
-	public void setOrderTitle(String orderTitle) {
+    /**
+     * Sets order title.
+     *
+     * @param orderTitle the order title
+     */
+    public void setOrderTitle(String orderTitle) {
 		this.orderTitle = orderTitle;
 	}
-	public String getOrderTitle( ) {
+
+    /**
+     * Gets order title.
+     *
+     * @return the order title
+     */
+    public String getOrderTitle( ) {
 		return this.orderTitle;
 	}
 
-	public void setOutOrderNo(String outOrderNo) {
+    /**
+     * Sets out order no.
+     *
+     * @param outOrderNo the out order no
+     */
+    public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
 	}
-	public String getOutOrderNo( ) {
+
+    /**
+     * Gets out order no.
+     *
+     * @return the out order no
+     */
+    public String getOutOrderNo( ) {
 		return this.outOrderNo;
 	}
 
-	public void setOutRequestNo(String outRequestNo) {
+    /**
+     * Sets out request no.
+     *
+     * @param outRequestNo the out request no
+     */
+    public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
 	}
-	public String getOutRequestNo( ) {
+
+    /**
+     * Gets out request no.
+     *
+     * @return the out request no
+     */
+    public String getOutRequestNo( ) {
 		return this.outRequestNo;
 	}
 
-	public void setPayeeLogonId(String payeeLogonId) {
+    /**
+     * Sets payee logon id.
+     *
+     * @param payeeLogonId the payee logon id
+     */
+    public void setPayeeLogonId(String payeeLogonId) {
 		this.payeeLogonId = payeeLogonId;
 	}
-	public String getPayeeLogonId( ) {
+
+    /**
+     * Gets payee logon id.
+     *
+     * @return the payee logon id
+     */
+    public String getPayeeLogonId( ) {
 		return this.payeeLogonId;
 	}
 
-	public void setPayeeUserId(String payeeUserId) {
+    /**
+     * Sets payee user id.
+     *
+     * @param payeeUserId the payee user id
+     */
+    public void setPayeeUserId(String payeeUserId) {
 		this.payeeUserId = payeeUserId;
 	}
-	public String getPayeeUserId( ) {
+
+    /**
+     * Gets payee user id.
+     *
+     * @return the payee user id
+     */
+    public String getPayeeUserId( ) {
 		return this.payeeUserId;
 	}
 
-	public void setPayerLogonId(String payerLogonId) {
+    /**
+     * Sets payer logon id.
+     *
+     * @param payerLogonId the payer logon id
+     */
+    public void setPayerLogonId(String payerLogonId) {
 		this.payerLogonId = payerLogonId;
 	}
-	public String getPayerLogonId( ) {
+
+    /**
+     * Gets payer logon id.
+     *
+     * @return the payer logon id
+     */
+    public String getPayerLogonId( ) {
 		return this.payerLogonId;
 	}
 
-	public void setPayerUserId(String payerUserId) {
+    /**
+     * Sets payer user id.
+     *
+     * @param payerUserId the payer user id
+     */
+    public void setPayerUserId(String payerUserId) {
 		this.payerUserId = payerUserId;
 	}
-	public String getPayerUserId( ) {
+
+    /**
+     * Gets payer user id.
+     *
+     * @return the payer user id
+     */
+    public String getPayerUserId( ) {
 		return this.payerUserId;
 	}
 
-	public void setRemark(String remark) {
+    /**
+     * Sets remark.
+     *
+     * @param remark the remark
+     */
+    public void setRemark(String remark) {
 		this.remark = remark;
 	}
-	public String getRemark( ) {
+
+    /**
+     * Gets remark.
+     *
+     * @return the remark
+     */
+    public String getRemark( ) {
 		return this.remark;
 	}
 
-	public void setStatus(String status) {
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
-	public String getStatus( ) {
+
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus( ) {
 		return this.status;
 	}
 
-	public void setTotalPayRefundAmount(String totalPayRefundAmount) {
+    /**
+     * Sets total pay refund amount.
+     *
+     * @param totalPayRefundAmount the total pay refund amount
+     */
+    public void setTotalPayRefundAmount(String totalPayRefundAmount) {
 		this.totalPayRefundAmount = totalPayRefundAmount;
 	}
-	public String getTotalPayRefundAmount( ) {
+
+    /**
+     * Gets total pay refund amount.
+     *
+     * @return the total pay refund amount
+     */
+    public String getTotalPayRefundAmount( ) {
 		return this.totalPayRefundAmount;
 	}
 

@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.fund.auth.order.voucher.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-21 19:42:46
+ * @since 1.0, 2018-07-26 17:30:00
  */
 public class AlipayFundAuthOrderVoucherCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1492465324814576235L;
+	private static final long serialVersionUID = 7724775588738821162L;
 
 	/** 
 	 * 码类型，分为  barCode：条形码 (一维码) 和 qrCode:二维码(qrCode) ；
@@ -22,7 +22,9 @@ public class AlipayFundAuthOrderVoucherCreateResponse extends AlipayResponse {
 	private String codeType;
 
 	/** 
-	 * 生成的带有支付宝logo的二维码地址 */
+	 * 生成的带有支付宝logo的二维码地址，如：http://mobilecodec.alipay.com/show.htm?code=aeparsv2dknkqf3018556a；商户端通过在末尾追加picSize来指定要显示的图片大小，如
+显示1280大小的URL:http://mobilecodec.alipay.com/show.htm?code=aeparsv2dknkqf3018556a&picSize=1280；目前支持的大小有：256, 227, 270, 344, 430, 512, 570, 860, 1280, 1546；
+	 */
 	@ApiField("code_url")
 	private String codeUrl;
 
@@ -44,38 +46,93 @@ public class AlipayFundAuthOrderVoucherCreateResponse extends AlipayResponse {
 	@ApiField("out_request_no")
 	private String outRequestNo;
 
-	public void setCodeType(String codeType) {
+    /**
+     * Sets code type.
+     *
+     * @param codeType the code type
+     */
+    public void setCodeType(String codeType) {
 		this.codeType = codeType;
 	}
-	public String getCodeType( ) {
+
+    /**
+     * Gets code type.
+     *
+     * @return the code type
+     */
+    public String getCodeType( ) {
 		return this.codeType;
 	}
 
-	public void setCodeUrl(String codeUrl) {
+    /**
+     * Sets code url.
+     *
+     * @param codeUrl the code url
+     */
+    public void setCodeUrl(String codeUrl) {
 		this.codeUrl = codeUrl;
 	}
-	public String getCodeUrl( ) {
+
+    /**
+     * Gets code url.
+     *
+     * @return the code url
+     */
+    public String getCodeUrl( ) {
 		return this.codeUrl;
 	}
 
-	public void setCodeValue(String codeValue) {
+    /**
+     * Sets code value.
+     *
+     * @param codeValue the code value
+     */
+    public void setCodeValue(String codeValue) {
 		this.codeValue = codeValue;
 	}
-	public String getCodeValue( ) {
+
+    /**
+     * Gets code value.
+     *
+     * @return the code value
+     */
+    public String getCodeValue( ) {
 		return this.codeValue;
 	}
 
-	public void setOutOrderNo(String outOrderNo) {
+    /**
+     * Sets out order no.
+     *
+     * @param outOrderNo the out order no
+     */
+    public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
 	}
-	public String getOutOrderNo( ) {
+
+    /**
+     * Gets out order no.
+     *
+     * @return the out order no
+     */
+    public String getOutOrderNo( ) {
 		return this.outOrderNo;
 	}
 
-	public void setOutRequestNo(String outRequestNo) {
+    /**
+     * Sets out request no.
+     *
+     * @param outRequestNo the out request no
+     */
+    public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
 	}
-	public String getOutRequestNo( ) {
+
+    /**
+     * Gets out request no.
+     *
+     * @return the out request no
+     */
+    public String getOutRequestNo( ) {
 		return this.outRequestNo;
 	}
 

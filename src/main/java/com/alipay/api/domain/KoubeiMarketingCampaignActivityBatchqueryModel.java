@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiMarketingCampaignActivityBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6245849553844375355L;
+	private static final long serialVersionUID = 4127716524964942688L;
 
 	/**
 	 * 操作人id，必须和operator_type配对存在，不填时默认是商户
@@ -47,38 +47,93 @@ public class KoubeiMarketingCampaignActivityBatchqueryModel extends AlipayObject
 	@ApiField("condition")
 	private List<Condition> queryCriterias;
 
-	public String getOperatorId() {
+    /**
+     * Gets operator id.
+     *
+     * @return the operator id
+     */
+    public String getOperatorId() {
 		return this.operatorId;
 	}
-	public void setOperatorId(String operatorId) {
+
+    /**
+     * Sets operator id.
+     *
+     * @param operatorId the operator id
+     */
+    public void setOperatorId(String operatorId) {
 		this.operatorId = operatorId;
 	}
 
-	public String getOperatorType() {
+    /**
+     * Gets operator type.
+     *
+     * @return the operator type
+     */
+    public String getOperatorType() {
 		return this.operatorType;
 	}
-	public void setOperatorType(String operatorType) {
+
+    /**
+     * Sets operator type.
+     *
+     * @param operatorType the operator type
+     */
+    public void setOperatorType(String operatorType) {
 		this.operatorType = operatorType;
 	}
 
-	public String getPageNumber() {
+    /**
+     * Gets page number.
+     *
+     * @return the page number
+     */
+    public String getPageNumber() {
 		return this.pageNumber;
 	}
-	public void setPageNumber(String pageNumber) {
+
+    /**
+     * Sets page number.
+     *
+     * @param pageNumber the page number
+     */
+    public void setPageNumber(String pageNumber) {
 		this.pageNumber = pageNumber;
 	}
 
-	public String getPageSize() {
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public String getPageSize() {
 		return this.pageSize;
 	}
-	public void setPageSize(String pageSize) {
+
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(String pageSize) {
 		this.pageSize = pageSize;
 	}
 
-	public List<Condition> getQueryCriterias() {
+    /**
+     * Gets query criterias.
+     *
+     * @return the query criterias
+     */
+    public List<Condition> getQueryCriterias() {
 		return this.queryCriterias;
 	}
-	public void setQueryCriterias(List<Condition> queryCriterias) {
+
+    /**
+     * Sets query criterias.
+     *
+     * @param queryCriterias the query criterias
+     */
+    public void setQueryCriterias(List<Condition> queryCriterias) {
 		this.queryCriterias = queryCriterias;
 	}
 

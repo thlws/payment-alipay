@@ -94,30 +94,6 @@ public class AlipayTest {
     }
 
 
-    /***
-     * 统一收单线下交易预创建（扫码支付）
-     * 暂未开启异步通知,完成预订单创建后,请自行实现Thread调用query()查询支付结果
-     */
-    @Test
-    public void test_precreate(){
-
-        try {
-            AlipayQrcodeInput input = new AlipayQrcodeInput();
-            input.setSubject("购买商品");
-            input.setOutTradeNo(System.currentTimeMillis()+"");
-            input.setBody("测试下单");
-            input.setOperatorId("990001");
-            input.setStoreId("0001025104489");
-            input.setTotalAmount("0.01");
-//            input.setSellerId(partner_id);
-            AlipayQrcodeOutput output = alipayCore.precreate(input);
-            System.out.println("output="+JsonUtil.format(output));
-            assertTrue(output.isSuccess());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
 
     /***
      * 统一收单交易支付接口（条码支付）
@@ -130,12 +106,12 @@ public class AlipayTest {
             AlipayTradeInput input = new AlipayTradeInput();
 
             //必须参数
-            input.setTotalAmount("0.1");
+            input.setTotalAmount("0.01");
             input.setStoreId("00001025104487");
             input.setOperatorId("hanley001");
-            input.setAuthCode("288128652645994662");
+            input.setAuthCode("288609492126942746");
             input.setOutTradeNo(System.currentTimeMillis()+"");
-            input.setSubject("CI测试买单");
+            input.setSubject("CI测试买单001");
 
 //            如下为可选参数，全部参数请查看 AlipayTradeInput
 //            input.setBody("测试支付");
@@ -155,6 +131,88 @@ public class AlipayTest {
         }
     }
 
+
+
+
+    @Test
+    public void test_refund(){
+        try {
+            AlipayRefundInput input = new AlipayRefundInput();
+            input.setTradeNo("2018102322001444515405783599");
+            input.setRefundAmount("0.01");
+            input.setRefundReason("测试退款");
+            AlipayRefundOutput output = alipayCore.refund(input);
+            System.out.println("output="+JsonUtil.format(output));
+            assertTrue(output.isSuccess());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    /***
+     * 统一收单交易退款接口(部分退款)
+     */
+    @Test
+    public void  test_part_refund(){
+
+        try {
+            AlipayRefundInput input = new AlipayRefundInput();
+            //input.setOutTradeNo("1508487673867");
+            input.setTradeNo("2018062821001004510561182960");
+            input.setRefundAmount("0.05");
+            input.setRefundReason("测试部分退款");
+            input.setStoreId("00001025104487");
+            input.setTerminalId("10007");
+            input.setOutRequestNo(System.currentTimeMillis()+"");
+            AlipayRefundOutput output = alipayCore.refund(input);
+            System.out.println("output="+JsonUtil.format(output));
+            assertTrue(output.isSuccess());
+            //output 就是退款结果
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    /***
+     * 统一收单线下交易查询
+     */
+    @Test
+    public void test_query(){
+        try {
+            AlipayQueryOutput output = alipayCore.query("1540262464959");
+            System.out.println("output="+JsonUtil.format(output));
+            assertTrue(output.isSuccess());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    /***
+     * 统一收单线下交易预创建（扫码支付）
+     * 暂未开启异步通知,完成预订单创建后,请自行实现Thread调用query()查询支付结果
+     */
+    @Test
+    public void test_precreate(){
+
+        try {
+            AlipayQrcodeInput input = new AlipayQrcodeInput();
+            input.setSubject("购买商品");
+            input.setOutTradeNo(System.currentTimeMillis()+"");
+            input.setBody("测试下单");
+            input.setOperatorId("990001");
+            input.setStoreId("0001025104489");
+            input.setTotalAmount("0.01");
+            //input.setSellerId(partner_id);
+            AlipayQrcodeOutput output = alipayCore.precreate(input);
+            System.out.println("output="+JsonUtil.format(output));
+            assertTrue(output.isSuccess());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
 
     /***
@@ -203,48 +261,6 @@ public class AlipayTest {
             e.printStackTrace();
         }
     }
-
-
-
-    /***
-     * 统一收单交易退款接口
-     */
-    @Test
-    public void  builder(){
-
-        try {
-            AlipayRefundInput input = new AlipayRefundInput();
-//            input.setOutTradeNo("1508487673867");
-            input.setTradeNo("2018062821001004510561182960");
-            input.setRefundAmount("0.05");
-            input.setRefundReason("测试部分退款");
-            input.setStoreId("00001025104487");
-            input.setTerminalId("10007");
-            input.setOutRequestNo(System.currentTimeMillis()+"");
-            AlipayRefundOutput output = alipayCore.refund(input);
-            System.out.println("output="+JsonUtil.format(output));
-            assertTrue(output.isSuccess());
-            //output 就是退款结果
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-
-    /***
-     * 统一收单线下交易查询
-     */
-    @Test
-    public void test_query(){
-        try {
-            AlipayQueryOutput output = alipayCore.query("5113811987100800791");
-            System.out.println("output="+JsonUtil.format(output));
-            assertTrue(output.isSuccess());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
 
 
 

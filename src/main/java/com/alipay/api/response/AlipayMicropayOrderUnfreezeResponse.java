@@ -7,13 +7,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.micropay.order.unfreeze response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-06-06 17:54:23
  */
 public class AlipayMicropayOrderUnfreezeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3113572427996398591L;
+	private static final long serialVersionUID = 6797124319467941677L;
 
 	/** 
 	 * 冻结订单详情结果
@@ -21,10 +21,21 @@ public class AlipayMicropayOrderUnfreezeResponse extends AlipayResponse {
 	@ApiField("unfreeze_order_detail")
 	private UnfreezeOrderDetail unfreezeOrderDetail;
 
-	public void setUnfreezeOrderDetail(UnfreezeOrderDetail unfreezeOrderDetail) {
+    /**
+     * Sets unfreeze order detail.
+     *
+     * @param unfreezeOrderDetail the unfreeze order detail
+     */
+    public void setUnfreezeOrderDetail(UnfreezeOrderDetail unfreezeOrderDetail) {
 		this.unfreezeOrderDetail = unfreezeOrderDetail;
 	}
-	public UnfreezeOrderDetail getUnfreezeOrderDetail( ) {
+
+    /**
+     * Gets unfreeze order detail.
+     *
+     * @return the unfreeze order detail
+     */
+    public UnfreezeOrderDetail getUnfreezeOrderDetail( ) {
 		return this.unfreezeOrderDetail;
 	}
 

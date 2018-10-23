@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.public.shortlink.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-07-29 19:58:48
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayMobilePublicShortlinkCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2712169296941396388L;
+	private static final long serialVersionUID = 3798147989263387612L;
 
 	/** 
 	 * 结果码
@@ -46,10 +46,21 @@ public class AlipayMobilePublicShortlinkCreateResponse extends AlipayResponse {
 		return this.msg;
 	}
 
-	public void setShortlink(String shortlink) {
+    /**
+     * Sets shortlink.
+     *
+     * @param shortlink the shortlink
+     */
+    public void setShortlink(String shortlink) {
 		this.shortlink = shortlink;
 	}
-	public String getShortlink( ) {
+
+    /**
+     * Gets shortlink.
+     *
+     * @return the shortlink
+     */
+    public String getShortlink( ) {
 		return this.shortlink;
 	}
 

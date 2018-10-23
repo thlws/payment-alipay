@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 供应商同步的发货信息和物流信息对象
  *
  * @author auto create
- * @since 1.0, 2017-07-27 19:42:25
+ * @since 1.0, 2017-11-21 17:40:07
  */
 public class AccessPurchaseOrderSend extends AlipayObject {
 
-	private static final long serialVersionUID = 3522739955679238227L;
+	private static final long serialVersionUID = 4343634287993851724L;
 
 	/**
 	 * 申请单明细号
@@ -73,73 +73,183 @@ public class AccessPurchaseOrderSend extends AlipayObject {
 	@ApiField("ship_count")
 	private String shipCount;
 
-	public String getAssetItemId() {
+    /**
+     * Gets asset item id.
+     *
+     * @return the asset item id
+     */
+    public String getAssetItemId() {
 		return this.assetItemId;
 	}
-	public void setAssetItemId(String assetItemId) {
+
+    /**
+     * Sets asset item id.
+     *
+     * @param assetItemId the asset item id
+     */
+    public void setAssetItemId(String assetItemId) {
 		this.assetItemId = assetItemId;
 	}
 
-	public String getAssetOrderId() {
+    /**
+     * Gets asset order id.
+     *
+     * @return the asset order id
+     */
+    public String getAssetOrderId() {
 		return this.assetOrderId;
 	}
-	public void setAssetOrderId(String assetOrderId) {
+
+    /**
+     * Sets asset order id.
+     *
+     * @param assetOrderId the asset order id
+     */
+    public void setAssetOrderId(String assetOrderId) {
 		this.assetOrderId = assetOrderId;
 	}
 
-	public String getAssetPurchaseId() {
+    /**
+     * Gets asset purchase id.
+     *
+     * @return the asset purchase id
+     */
+    public String getAssetPurchaseId() {
 		return this.assetPurchaseId;
 	}
-	public void setAssetPurchaseId(String assetPurchaseId) {
+
+    /**
+     * Sets asset purchase id.
+     *
+     * @param assetPurchaseId the asset purchase id
+     */
+    public void setAssetPurchaseId(String assetPurchaseId) {
 		this.assetPurchaseId = assetPurchaseId;
 	}
 
-	public String getExpressCode() {
+    /**
+     * Gets express code.
+     *
+     * @return the express code
+     */
+    public String getExpressCode() {
 		return this.expressCode;
 	}
-	public void setExpressCode(String expressCode) {
+
+    /**
+     * Sets express code.
+     *
+     * @param expressCode the express code
+     */
+    public void setExpressCode(String expressCode) {
 		this.expressCode = expressCode;
 	}
 
-	public String getExpressName() {
+    /**
+     * Gets express name.
+     *
+     * @return the express name
+     */
+    public String getExpressName() {
 		return this.expressName;
 	}
-	public void setExpressName(String expressName) {
+
+    /**
+     * Sets express name.
+     *
+     * @param expressName the express name
+     */
+    public void setExpressName(String expressName) {
 		this.expressName = expressName;
 	}
 
-	public String getExpressNo() {
+    /**
+     * Gets express no.
+     *
+     * @return the express no
+     */
+    public String getExpressNo() {
 		return this.expressNo;
 	}
-	public void setExpressNo(String expressNo) {
+
+    /**
+     * Sets express no.
+     *
+     * @param expressNo the express no
+     */
+    public void setExpressNo(String expressNo) {
 		this.expressNo = expressNo;
 	}
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
-	public String getPoNo() {
+    /**
+     * Gets po no.
+     *
+     * @return the po no
+     */
+    public String getPoNo() {
 		return this.poNo;
 	}
-	public void setPoNo(String poNo) {
+
+    /**
+     * Sets po no.
+     *
+     * @param poNo the po no
+     */
+    public void setPoNo(String poNo) {
 		this.poNo = poNo;
 	}
 
-	public String getReturnQrcodeCount() {
+    /**
+     * Gets return qrcode count.
+     *
+     * @return the return qrcode count
+     */
+    public String getReturnQrcodeCount() {
 		return this.returnQrcodeCount;
 	}
-	public void setReturnQrcodeCount(String returnQrcodeCount) {
+
+    /**
+     * Sets return qrcode count.
+     *
+     * @param returnQrcodeCount the return qrcode count
+     */
+    public void setReturnQrcodeCount(String returnQrcodeCount) {
 		this.returnQrcodeCount = returnQrcodeCount;
 	}
 
-	public String getShipCount() {
+    /**
+     * Gets ship count.
+     *
+     * @return the ship count
+     */
+    public String getShipCount() {
 		return this.shipCount;
 	}
-	public void setShipCount(String shipCount) {
+
+    /**
+     * Sets ship count.
+     *
+     * @param shipCount the ship count
+     */
+    public void setShipCount(String shipCount) {
 		this.shipCount = shipCount;
 	}
 

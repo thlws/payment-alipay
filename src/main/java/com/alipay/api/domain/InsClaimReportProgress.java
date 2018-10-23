@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsClaimReportProgress extends AlipayObject {
 
-	private static final long serialVersionUID = 2837754584531188877L;
+	private static final long serialVersionUID = 8666521496637398697L;
 
 	/**
 	 * 案件更新内容
@@ -33,24 +33,57 @@ public class InsClaimReportProgress extends AlipayObject {
 	@ApiField("status")
 	private String status;
 
-	public String getProgressUpdateContent() {
+    /**
+     * Gets progress update content.
+     *
+     * @return the progress update content
+     */
+    public String getProgressUpdateContent() {
 		return this.progressUpdateContent;
 	}
-	public void setProgressUpdateContent(String progressUpdateContent) {
+
+    /**
+     * Sets progress update content.
+     *
+     * @param progressUpdateContent the progress update content
+     */
+    public void setProgressUpdateContent(String progressUpdateContent) {
 		this.progressUpdateContent = progressUpdateContent;
 	}
 
-	public Date getProgressUpdateTime() {
+    /**
+     * Gets progress update time.
+     *
+     * @return the progress update time
+     */
+    public Date getProgressUpdateTime() {
 		return this.progressUpdateTime;
 	}
-	public void setProgressUpdateTime(Date progressUpdateTime) {
+
+    /**
+     * Sets progress update time.
+     *
+     * @param progressUpdateTime the progress update time
+     */
+    public void setProgressUpdateTime(Date progressUpdateTime) {
 		this.progressUpdateTime = progressUpdateTime;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 

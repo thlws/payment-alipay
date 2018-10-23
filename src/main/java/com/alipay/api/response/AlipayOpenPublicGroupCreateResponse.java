@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.group.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-14 15:10:37
+ * @since 1.0, 2018-07-25 13:55:36
  */
 public class AlipayOpenPublicGroupCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2543447292951361654L;
+	private static final long serialVersionUID = 6246182536888489145L;
 
 	/** 
 	 * 分组id
@@ -20,10 +20,21 @@ public class AlipayOpenPublicGroupCreateResponse extends AlipayResponse {
 	@ApiField("group_id")
 	private String groupId;
 
-	public void setGroupId(String groupId) {
+    /**
+     * Sets group id.
+     *
+     * @param groupId the group id
+     */
+    public void setGroupId(String groupId) {
 		this.groupId = groupId;
 	}
-	public String getGroupId( ) {
+
+    /**
+     * Gets group id.
+     *
+     * @return the group id
+     */
+    public String getGroupId( ) {
 		return this.groupId;
 	}
 

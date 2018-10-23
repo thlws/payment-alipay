@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ExtBrand extends AlipayObject {
 
-	private static final long serialVersionUID = 8818932653697493213L;
+	private static final long serialVersionUID = 5323327753865181338L;
 
 	/**
 	 * 品牌编码
@@ -25,17 +25,39 @@ public class ExtBrand extends AlipayObject {
 	@ApiField("name")
 	private String name;
 
-	public String getBrandCode() {
+    /**
+     * Gets brand code.
+     *
+     * @return the brand code
+     */
+    public String getBrandCode() {
 		return this.brandCode;
 	}
-	public void setBrandCode(String brandCode) {
+
+    /**
+     * Sets brand code.
+     *
+     * @param brandCode the brand code
+     */
+    public void setBrandCode(String brandCode) {
 		this.brandCode = brandCode;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 

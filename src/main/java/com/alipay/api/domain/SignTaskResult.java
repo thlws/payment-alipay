@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SignTaskResult extends AlipayObject {
 
-	private static final long serialVersionUID = 3218988489338134691L;
+	private static final long serialVersionUID = 6782171974617225697L;
 
 	/**
 	 * 业务流水号
@@ -31,24 +31,57 @@ public class SignTaskResult extends AlipayObject {
 	@ApiField("task_id")
 	private String taskId;
 
-	public String getBizId() {
+    /**
+     * Gets biz id.
+     *
+     * @return the biz id
+     */
+    public String getBizId() {
 		return this.bizId;
 	}
-	public void setBizId(String bizId) {
+
+    /**
+     * Sets biz id.
+     *
+     * @param bizId the biz id
+     */
+    public void setBizId(String bizId) {
 		this.bizId = bizId;
 	}
 
-	public String getSignEnterUrl() {
+    /**
+     * Gets sign enter url.
+     *
+     * @return the sign enter url
+     */
+    public String getSignEnterUrl() {
 		return this.signEnterUrl;
 	}
-	public void setSignEnterUrl(String signEnterUrl) {
+
+    /**
+     * Sets sign enter url.
+     *
+     * @param signEnterUrl the sign enter url
+     */
+    public void setSignEnterUrl(String signEnterUrl) {
 		this.signEnterUrl = signEnterUrl;
 	}
 
-	public String getTaskId() {
+    /**
+     * Gets task id.
+     *
+     * @return the task id
+     */
+    public String getTaskId() {
 		return this.taskId;
 	}
-	public void setTaskId(String taskId) {
+
+    /**
+     * Sets task id.
+     *
+     * @param taskId the task id
+     */
+    public void setTaskId(String taskId) {
 		this.taskId = taskId;
 	}
 

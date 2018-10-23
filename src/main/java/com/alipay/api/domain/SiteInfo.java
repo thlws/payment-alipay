@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 站点信息
  *
  * @author auto create
- * @since 1.0, 2017-06-14 19:53:52
+ * @since 1.0, 2018-03-14 16:11:53
  */
 public class SiteInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2194879195554993279L;
+	private static final long serialVersionUID = 7732364554433357268L;
 
 	/**
 	 * 测试账号
@@ -37,6 +37,7 @@ APP  : 02
 服务窗:03
 公众号:04
 其他:05
+支付宝小程序:06
 	 */
 	@ApiField("site_type")
 	private String siteType;
@@ -47,38 +48,93 @@ APP  : 02
 	@ApiField("site_url")
 	private String siteUrl;
 
-	public String getAccount() {
+    /**
+     * Gets account.
+     *
+     * @return the account
+     */
+    public String getAccount() {
 		return this.account;
 	}
-	public void setAccount(String account) {
+
+    /**
+     * Sets account.
+     *
+     * @param account the account
+     */
+    public void setAccount(String account) {
 		this.account = account;
 	}
 
-	public String getPassword() {
+    /**
+     * Gets password.
+     *
+     * @return the password
+     */
+    public String getPassword() {
 		return this.password;
 	}
-	public void setPassword(String password) {
+
+    /**
+     * Sets password.
+     *
+     * @param password the password
+     */
+    public void setPassword(String password) {
 		this.password = password;
 	}
 
-	public String getSiteName() {
+    /**
+     * Gets site name.
+     *
+     * @return the site name
+     */
+    public String getSiteName() {
 		return this.siteName;
 	}
-	public void setSiteName(String siteName) {
+
+    /**
+     * Sets site name.
+     *
+     * @param siteName the site name
+     */
+    public void setSiteName(String siteName) {
 		this.siteName = siteName;
 	}
 
-	public String getSiteType() {
+    /**
+     * Gets site type.
+     *
+     * @return the site type
+     */
+    public String getSiteType() {
 		return this.siteType;
 	}
-	public void setSiteType(String siteType) {
+
+    /**
+     * Sets site type.
+     *
+     * @param siteType the site type
+     */
+    public void setSiteType(String siteType) {
 		this.siteType = siteType;
 	}
 
-	public String getSiteUrl() {
+    /**
+     * Gets site url.
+     *
+     * @return the site url
+     */
+    public String getSiteUrl() {
 		return this.siteUrl;
 	}
-	public void setSiteUrl(String siteUrl) {
+
+    /**
+     * Sets site url.
+     *
+     * @param siteUrl the site url
+     */
+    public void setSiteUrl(String siteUrl) {
 		this.siteUrl = siteUrl;
 	}
 

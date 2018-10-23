@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ebpp.merchant.config.get response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-04-07 17:12:49
  */
 public class AlipayEbppMerchantConfigGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5858652759382546548L;
+	private static final long serialVersionUID = 8785789898478763938L;
 
 	/** 
 	 * 商户机构配置信息
@@ -30,17 +30,39 @@ public class AlipayEbppMerchantConfigGetResponse extends AlipayResponse {
 	@ApiField("merchant_user_id")
 	private String merchantUserId;
 
-	public void setInstConfigs(List<MerchantInstConfig> instConfigs) {
+    /**
+     * Sets inst configs.
+     *
+     * @param instConfigs the inst configs
+     */
+    public void setInstConfigs(List<MerchantInstConfig> instConfigs) {
 		this.instConfigs = instConfigs;
 	}
-	public List<MerchantInstConfig> getInstConfigs( ) {
+
+    /**
+     * Gets inst configs.
+     *
+     * @return the inst configs
+     */
+    public List<MerchantInstConfig> getInstConfigs( ) {
 		return this.instConfigs;
 	}
 
-	public void setMerchantUserId(String merchantUserId) {
+    /**
+     * Sets merchant user id.
+     *
+     * @param merchantUserId the merchant user id
+     */
+    public void setMerchantUserId(String merchantUserId) {
 		this.merchantUserId = merchantUserId;
 	}
-	public String getMerchantUserId( ) {
+
+    /**
+     * Gets merchant user id.
+     *
+     * @return the merchant user id
+     */
+    public String getMerchantUserId( ) {
 		return this.merchantUserId;
 	}
 

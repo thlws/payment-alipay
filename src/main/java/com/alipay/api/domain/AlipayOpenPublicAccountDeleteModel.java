@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicAccountDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2139466241696922383L;
+	private static final long serialVersionUID = 2155984387759621268L;
 
 	/**
 	 * 协议号，商户会员在支付宝服务窗账号中的唯一标识，与bind_account_no不能同时为空
@@ -25,17 +25,39 @@ public class AlipayOpenPublicAccountDeleteModel extends AlipayObject {
 	@ApiField("bind_account_no")
 	private String bindAccountNo;
 
-	public String getAgreementId() {
+    /**
+     * Gets agreement id.
+     *
+     * @return the agreement id
+     */
+    public String getAgreementId() {
 		return this.agreementId;
 	}
-	public void setAgreementId(String agreementId) {
+
+    /**
+     * Sets agreement id.
+     *
+     * @param agreementId the agreement id
+     */
+    public void setAgreementId(String agreementId) {
 		this.agreementId = agreementId;
 	}
 
-	public String getBindAccountNo() {
+    /**
+     * Gets bind account no.
+     *
+     * @return the bind account no
+     */
+    public String getBindAccountNo() {
 		return this.bindAccountNo;
 	}
-	public void setBindAccountNo(String bindAccountNo) {
+
+    /**
+     * Sets bind account no.
+     *
+     * @param bindAccountNo the bind account no
+     */
+    public void setBindAccountNo(String bindAccountNo) {
 		this.bindAccountNo = bindAccountNo;
 	}
 

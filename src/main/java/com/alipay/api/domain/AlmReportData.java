@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资产负债报表数据
  *
  * @author auto create
- * @since 1.0, 2016-12-02 14:48:05
+ * @since 1.0, 2018-08-24 10:54:36
  */
 public class AlmReportData extends AlipayObject {
 
-	private static final long serialVersionUID = 6191615379126575949L;
+	private static final long serialVersionUID = 6411838761995798283L;
 
 	/**
 	 * 数据大类
@@ -52,45 +52,111 @@ public class AlmReportData extends AlipayObject {
 	@ApiField("sub_biz_type")
 	private String subBizType;
 
-	public String getBizType() {
+    /**
+     * Gets biz type.
+     *
+     * @return the biz type
+     */
+    public String getBizType() {
 		return this.bizType;
 	}
-	public void setBizType(String bizType) {
+
+    /**
+     * Sets biz type.
+     *
+     * @param bizType the biz type
+     */
+    public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
-	public String getDateType() {
+    /**
+     * Gets date type.
+     *
+     * @return the date type
+     */
+    public String getDateType() {
 		return this.dateType;
 	}
-	public void setDateType(String dateType) {
+
+    /**
+     * Sets date type.
+     *
+     * @param dateType the date type
+     */
+    public void setDateType(String dateType) {
 		this.dateType = dateType;
 	}
 
-	public String getReportDate() {
+    /**
+     * Gets report date.
+     *
+     * @return the report date
+     */
+    public String getReportDate() {
 		return this.reportDate;
 	}
-	public void setReportDate(String reportDate) {
+
+    /**
+     * Sets report date.
+     *
+     * @param reportDate the report date
+     */
+    public void setReportDate(String reportDate) {
 		this.reportDate = reportDate;
 	}
 
-	public String getReportName() {
+    /**
+     * Gets report name.
+     *
+     * @return the report name
+     */
+    public String getReportName() {
 		return this.reportName;
 	}
-	public void setReportName(String reportName) {
+
+    /**
+     * Sets report name.
+     *
+     * @param reportName the report name
+     */
+    public void setReportName(String reportName) {
 		this.reportName = reportName;
 	}
 
-	public Long getReportValue() {
+    /**
+     * Gets report value.
+     *
+     * @return the report value
+     */
+    public Long getReportValue() {
 		return this.reportValue;
 	}
-	public void setReportValue(Long reportValue) {
+
+    /**
+     * Sets report value.
+     *
+     * @param reportValue the report value
+     */
+    public void setReportValue(Long reportValue) {
 		this.reportValue = reportValue;
 	}
 
-	public String getSubBizType() {
+    /**
+     * Gets sub biz type.
+     *
+     * @return the sub biz type
+     */
+    public String getSubBizType() {
 		return this.subBizType;
 	}
-	public void setSubBizType(String subBizType) {
+
+    /**
+     * Sets sub biz type.
+     *
+     * @param subBizType the sub biz type
+     */
+    public void setSubBizType(String subBizType) {
 		this.subBizType = subBizType;
 	}
 

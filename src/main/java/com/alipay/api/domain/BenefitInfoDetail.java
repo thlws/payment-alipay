@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BenefitInfoDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5364592834428859393L;
+	private static final long serialVersionUID = 2265443679735959128L;
 
 	/**
 	 * PRE_FUND：实际核销或者商户赠送的金额
@@ -42,31 +42,75 @@ COUPON：券
 	@ApiField("description")
 	private String description;
 
-	public String getAmount() {
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public String getAmount() {
 		return this.amount;
 	}
-	public void setAmount(String amount) {
+
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
-	public String getBenefitType() {
+    /**
+     * Gets benefit type.
+     *
+     * @return the benefit type
+     */
+    public String getBenefitType() {
 		return this.benefitType;
 	}
-	public void setBenefitType(String benefitType) {
+
+    /**
+     * Sets benefit type.
+     *
+     * @param benefitType the benefit type
+     */
+    public void setBenefitType(String benefitType) {
 		this.benefitType = benefitType;
 	}
 
-	public String getCount() {
+    /**
+     * Gets count.
+     *
+     * @return the count
+     */
+    public String getCount() {
 		return this.count;
 	}
-	public void setCount(String count) {
+
+    /**
+     * Sets count.
+     *
+     * @param count the count
+     */
+    public void setCount(String count) {
 		this.count = count;
 	}
 
-	public String getDescription() {
+    /**
+     * Gets description.
+     *
+     * @return the description
+     */
+    public String getDescription() {
 		return this.description;
 	}
-	public void setDescription(String description) {
+
+    /**
+     * Sets description.
+     *
+     * @param description the description
+     */
+    public void setDescription(String description) {
 		this.description = description;
 	}
 

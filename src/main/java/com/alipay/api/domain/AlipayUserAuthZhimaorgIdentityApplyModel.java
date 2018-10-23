@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻企业征信基于身份的协议授权
  *
  * @author auto create
- * @since 1.0, 2017-10-09 11:23:33
+ * @since 1.0, 2017-10-16 14:17:46
  */
 public class AlipayUserAuthZhimaorgIdentityApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5321458752492267338L;
+	private static final long serialVersionUID = 2855553749844345476L;
 
 	/**
 	 * 营业执照号码
@@ -32,24 +32,57 @@ NATIONAL_LEGAL_MERGE:三证合一号码
 	@ApiField("name")
 	private String name;
 
-	public String getCertNo() {
+    /**
+     * Gets cert no.
+     *
+     * @return the cert no
+     */
+    public String getCertNo() {
 		return this.certNo;
 	}
-	public void setCertNo(String certNo) {
+
+    /**
+     * Sets cert no.
+     *
+     * @param certNo the cert no
+     */
+    public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}
 
-	public String getCertType() {
+    /**
+     * Gets cert type.
+     *
+     * @return the cert type
+     */
+    public String getCertType() {
 		return this.certType;
 	}
-	public void setCertType(String certType) {
+
+    /**
+     * Sets cert type.
+     *
+     * @param certType the cert type
+     */
+    public void setCertType(String certType) {
 		this.certType = certType;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 

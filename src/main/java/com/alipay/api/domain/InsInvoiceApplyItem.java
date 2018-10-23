@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsInvoiceApplyItem extends AlipayObject {
 
-	private static final long serialVersionUID = 2165342524675216284L;
+	private static final long serialVersionUID = 2279769352737535513L;
 
 	/**
 	 * 申请发票开票维度;BUSINESS_ORDER:业务单;
@@ -38,31 +38,75 @@ apply_scope为BUSINESS_ORDER时必填;
 	@ApiField("ins_biz_type")
 	private String insBizType;
 
-	public String getApplyScope() {
+    /**
+     * Gets apply scope.
+     *
+     * @return the apply scope
+     */
+    public String getApplyScope() {
 		return this.applyScope;
 	}
-	public void setApplyScope(String applyScope) {
+
+    /**
+     * Sets apply scope.
+     *
+     * @param applyScope the apply scope
+     */
+    public void setApplyScope(String applyScope) {
 		this.applyScope = applyScope;
 	}
 
-	public String getExpenseType() {
+    /**
+     * Gets expense type.
+     *
+     * @return the expense type
+     */
+    public String getExpenseType() {
 		return this.expenseType;
 	}
-	public void setExpenseType(String expenseType) {
+
+    /**
+     * Sets expense type.
+     *
+     * @param expenseType the expense type
+     */
+    public void setExpenseType(String expenseType) {
 		this.expenseType = expenseType;
 	}
 
-	public String getInsBizNo() {
+    /**
+     * Gets ins biz no.
+     *
+     * @return the ins biz no
+     */
+    public String getInsBizNo() {
 		return this.insBizNo;
 	}
-	public void setInsBizNo(String insBizNo) {
+
+    /**
+     * Sets ins biz no.
+     *
+     * @param insBizNo the ins biz no
+     */
+    public void setInsBizNo(String insBizNo) {
 		this.insBizNo = insBizNo;
 	}
 
-	public String getInsBizType() {
+    /**
+     * Gets ins biz type.
+     *
+     * @return the ins biz type
+     */
+    public String getInsBizType() {
 		return this.insBizType;
 	}
-	public void setInsBizType(String insBizType) {
+
+    /**
+     * Sets ins biz type.
+     *
+     * @param insBizType the ins biz type
+     */
+    public void setInsBizType(String insBizType) {
 		this.insBizType = insBizType;
 	}
 

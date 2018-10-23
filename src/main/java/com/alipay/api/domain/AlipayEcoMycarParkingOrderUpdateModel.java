@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoMycarParkingOrderUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8248854813627946944L;
+	private static final long serialVersionUID = 3131811947856971985L;
 
 	/**
 	 * 支付宝支付流水号，系统唯一
@@ -31,24 +31,57 @@ public class AlipayEcoMycarParkingOrderUpdateModel extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
-	public String getOrderNo() {
+    /**
+     * Gets order no.
+     *
+     * @return the order no
+     */
+    public String getOrderNo() {
 		return this.orderNo;
 	}
-	public void setOrderNo(String orderNo) {
+
+    /**
+     * Sets order no.
+     *
+     * @param orderNo the order no
+     */
+    public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
 
-	public String getOrderStatus() {
+    /**
+     * Gets order status.
+     *
+     * @return the order status
+     */
+    public String getOrderStatus() {
 		return this.orderStatus;
 	}
-	public void setOrderStatus(String orderStatus) {
+
+    /**
+     * Sets order status.
+     *
+     * @param orderStatus the order status
+     */
+    public void setOrderStatus(String orderStatus) {
 		this.orderStatus = orderStatus;
 	}
 
-	public String getUserId() {
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
-	public void setUserId(String userId) {
+
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
 

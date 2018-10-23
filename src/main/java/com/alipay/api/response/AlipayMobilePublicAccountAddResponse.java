@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.public.account.add response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-04-14 15:25:33
  */
 public class AlipayMobilePublicAccountAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4783665148566848571L;
+	private static final long serialVersionUID = 8434972432477238496L;
 
 	/** 
 	 * 账户添加成功，在支付宝与其对应的协议号。如果账户重复添加，接口保证幂等依然视为添加成功，返回此前该账户在支付宝对应的协议号。其他异常该字段不存在。
@@ -32,10 +32,21 @@ public class AlipayMobilePublicAccountAddResponse extends AlipayResponse {
 	@ApiField("msg")
 	private String msg;
 
-	public void setAgreementId(String agreementId) {
+    /**
+     * Sets agreement id.
+     *
+     * @param agreementId the agreement id
+     */
+    public void setAgreementId(String agreementId) {
 		this.agreementId = agreementId;
 	}
-	public String getAgreementId( ) {
+
+    /**
+     * Gets agreement id.
+     *
+     * @return the agreement id
+     */
+    public String getAgreementId( ) {
 		return this.agreementId;
 	}
 

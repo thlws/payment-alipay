@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMarketingToolPrizesendAuthModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8474516471975851436L;
+	private static final long serialVersionUID = 2528728342763497755L;
 
 	/**
 	 * 奖品ID
@@ -31,24 +31,57 @@ public class KoubeiMarketingToolPrizesendAuthModel extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
-	public String getPrizeId() {
+    /**
+     * Gets prize id.
+     *
+     * @return the prize id
+     */
+    public String getPrizeId() {
 		return this.prizeId;
 	}
-	public void setPrizeId(String prizeId) {
+
+    /**
+     * Sets prize id.
+     *
+     * @param prizeId the prize id
+     */
+    public void setPrizeId(String prizeId) {
 		this.prizeId = prizeId;
 	}
 
-	public String getReqId() {
+    /**
+     * Gets req id.
+     *
+     * @return the req id
+     */
+    public String getReqId() {
 		return this.reqId;
 	}
-	public void setReqId(String reqId) {
+
+    /**
+     * Sets req id.
+     *
+     * @param reqId the req id
+     */
+    public void setReqId(String reqId) {
 		this.reqId = reqId;
 	}
 
-	public String getUserId() {
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
-	public void setUserId(String userId) {
+
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
 

@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ecapiprod.drawndn.contract.get response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-03-29 11:34:32
  */
 public class AlipayEcapiprodDrawndnContractGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8818533943762994875L;
+	private static final long serialVersionUID = 1721896534225526711L;
 
 	/** 
 	 * 合同的内容文本	String	合同的内容文本，为HTML格式
@@ -32,24 +32,57 @@ public class AlipayEcapiprodDrawndnContractGetResponse extends AlipayResponse {
 	@ApiField("request_id")
 	private String requestId;
 
-	public void setContractContent(String contractContent) {
+    /**
+     * Sets contract content.
+     *
+     * @param contractContent the contract content
+     */
+    public void setContractContent(String contractContent) {
 		this.contractContent = contractContent;
 	}
-	public String getContractContent( ) {
+
+    /**
+     * Gets contract content.
+     *
+     * @return the contract content
+     */
+    public String getContractContent( ) {
 		return this.contractContent;
 	}
 
-	public void setContractNo(String contractNo) {
+    /**
+     * Sets contract no.
+     *
+     * @param contractNo the contract no
+     */
+    public void setContractNo(String contractNo) {
 		this.contractNo = contractNo;
 	}
-	public String getContractNo( ) {
+
+    /**
+     * Gets contract no.
+     *
+     * @return the contract no
+     */
+    public String getContractNo( ) {
 		return this.contractNo;
 	}
 
-	public void setRequestId(String requestId) {
+    /**
+     * Sets request id.
+     *
+     * @param requestId the request id
+     */
+    public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
-	public String getRequestId( ) {
+
+    /**
+     * Gets request id.
+     *
+     * @return the request id
+     */
+    public String getRequestId( ) {
 		return this.requestId;
 	}
 

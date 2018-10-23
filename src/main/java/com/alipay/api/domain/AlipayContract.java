@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayContract extends AlipayObject {
 
-	private static final long serialVersionUID = 3569725359586929813L;
+	private static final long serialVersionUID = 7297423592185827772L;
 
 	/**
 	 * 支付宝用户ID
@@ -51,45 +51,111 @@ public class AlipayContract extends AlipayObject {
 	@ApiField("subscribe")
 	private Boolean subscribe;
 
-	public String getAlipayUserId() {
+    /**
+     * Gets alipay user id.
+     *
+     * @return the alipay user id
+     */
+    public String getAlipayUserId() {
 		return this.alipayUserId;
 	}
-	public void setAlipayUserId(String alipayUserId) {
+
+    /**
+     * Sets alipay user id.
+     *
+     * @param alipayUserId the alipay user id
+     */
+    public void setAlipayUserId(String alipayUserId) {
 		this.alipayUserId = alipayUserId;
 	}
 
-	public String getContractContent() {
+    /**
+     * Gets contract content.
+     *
+     * @return the contract content
+     */
+    public String getContractContent() {
 		return this.contractContent;
 	}
-	public void setContractContent(String contractContent) {
+
+    /**
+     * Sets contract content.
+     *
+     * @param contractContent the contract content
+     */
+    public void setContractContent(String contractContent) {
 		this.contractContent = contractContent;
 	}
 
-	public Date getEndTime() {
+    /**
+     * Gets end time.
+     *
+     * @return the end time
+     */
+    public Date getEndTime() {
 		return this.endTime;
 	}
-	public void setEndTime(Date endTime) {
+
+    /**
+     * Sets end time.
+     *
+     * @param endTime the end time
+     */
+    public void setEndTime(Date endTime) {
 		this.endTime = endTime;
 	}
 
-	public String getPageUrl() {
+    /**
+     * Gets page url.
+     *
+     * @return the page url
+     */
+    public String getPageUrl() {
 		return this.pageUrl;
 	}
-	public void setPageUrl(String pageUrl) {
+
+    /**
+     * Sets page url.
+     *
+     * @param pageUrl the page url
+     */
+    public void setPageUrl(String pageUrl) {
 		this.pageUrl = pageUrl;
 	}
 
-	public Date getStartTime() {
+    /**
+     * Gets start time.
+     *
+     * @return the start time
+     */
+    public Date getStartTime() {
 		return this.startTime;
 	}
-	public void setStartTime(Date startTime) {
+
+    /**
+     * Sets start time.
+     *
+     * @param startTime the start time
+     */
+    public void setStartTime(Date startTime) {
 		this.startTime = startTime;
 	}
 
-	public Boolean getSubscribe() {
+    /**
+     * Gets subscribe.
+     *
+     * @return the subscribe
+     */
+    public Boolean getSubscribe() {
 		return this.subscribe;
 	}
-	public void setSubscribe(Boolean subscribe) {
+
+    /**
+     * Sets subscribe.
+     *
+     * @param subscribe the subscribe
+     */
+    public void setSubscribe(Boolean subscribe) {
 		this.subscribe = subscribe;
 	}
 

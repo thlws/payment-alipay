@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户券模板修改接口
  *
  * @author auto create
- * @since 1.0, 2017-06-19 11:26:27
+ * @since 1.0, 2018-09-17 11:06:03
  */
 public class AlipayMarketingCashlessvoucherTemplateModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1574245733355897156L;
+	private static final long serialVersionUID = 5879863623985199818L;
 
 	/**
 	 * 模板修改操作外部业务号，用于修改时的幂等控制，注意这里不是修改业务号
@@ -39,31 +39,75 @@ public class AlipayMarketingCashlessvoucherTemplateModifyModel extends AlipayObj
 	@ApiField("template_id")
 	private String templateId;
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
-	public Date getPublishEndTime() {
+    /**
+     * Gets publish end time.
+     *
+     * @return the publish end time
+     */
+    public Date getPublishEndTime() {
 		return this.publishEndTime;
 	}
-	public void setPublishEndTime(Date publishEndTime) {
+
+    /**
+     * Sets publish end time.
+     *
+     * @param publishEndTime the publish end time
+     */
+    public void setPublishEndTime(Date publishEndTime) {
 		this.publishEndTime = publishEndTime;
 	}
 
-	public String getRuleConf() {
+    /**
+     * Gets rule conf.
+     *
+     * @return the rule conf
+     */
+    public String getRuleConf() {
 		return this.ruleConf;
 	}
-	public void setRuleConf(String ruleConf) {
+
+    /**
+     * Sets rule conf.
+     *
+     * @param ruleConf the rule conf
+     */
+    public void setRuleConf(String ruleConf) {
 		this.ruleConf = ruleConf;
 	}
 
-	public String getTemplateId() {
+    /**
+     * Gets template id.
+     *
+     * @return the template id
+     */
+    public String getTemplateId() {
 		return this.templateId;
 	}
-	public void setTemplateId(String templateId) {
+
+    /**
+     * Sets template id.
+     *
+     * @param templateId the template id
+     */
+    public void setTemplateId(String templateId) {
 		this.templateId = templateId;
 	}
 

@@ -4,12 +4,14 @@ import com.alipay.api.AlipayApiException;
 import com.alipay.api.AlipayParser;
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.AlipayResponse;
+import com.alipay.api.Decryptor;
 import com.alipay.api.SignItem;
 import com.alipay.api.internal.mapping.Converter;
 
 /**
  * 单个JSON对象解释器。
- * 
+ *
+ * @param <T> the type parameter
  * @author carver.gu
  * @since 1.0, Apr 11, 2010
  */
@@ -17,6 +19,11 @@ public class ObjectJsonParser<T extends AlipayResponse> implements AlipayParser<
 
     private Class<T> clazz;
 
+    /**
+     * Instantiates a new Object json parser.
+     *
+     * @param clazz the clazz
+     */
     public ObjectJsonParser(Class<T> clazz) {
         this.clazz = clazz;
     }
@@ -30,9 +37,6 @@ public class ObjectJsonParser<T extends AlipayResponse> implements AlipayParser<
         return clazz;
     }
 
-    /** 
-     * @see com.alipay.api.AlipayParser#getSignItem(com.alipay.api.AlipayRequest, String)
-     */
     public SignItem getSignItem(AlipayRequest<?> request, String responseBody)
                                                                               throws AlipayApiException {
 
@@ -41,17 +45,13 @@ public class ObjectJsonParser<T extends AlipayResponse> implements AlipayParser<
         return converter.getSignItem(request, responseBody);
     }
 
-    /** 
-     * @see com.alipay.api.AlipayParser#encryptSourceData(com.alipay.api.AlipayRequest, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)
-     */
-    public String encryptSourceData(AlipayRequest<?> request, String body, String format,
-                                       String encryptType, String encryptKey, String charset)
-                                                                                             throws AlipayApiException {
+    public String decryptSourceData(AlipayRequest<?> request, String body, String format,
+                                    Decryptor decryptor, String encryptType, String charset)
+            throws AlipayApiException {
 
         Converter converter = new JsonConverter();
 
-        return converter.encryptSourceData(request, body, format, encryptType, encryptKey,
-            charset);
+        return converter.decryptSourceData(request, body, format, decryptor, encryptType, charset);
     }
 
 }

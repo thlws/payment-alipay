@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品列表信息
  *
  * @author auto create
- * @since 1.0, 2017-06-06 18:11:24
+ * @since 1.0, 2018-08-31 12:15:10
  */
 public class GoodsDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2855828983246971378L;
+	private static final long serialVersionUID = 2264166422499968551L;
 
 	/**
 	 * 支付宝定义的统一商品编号
@@ -61,59 +61,147 @@ public class GoodsDetail extends AlipayObject {
 	@ApiField("show_url")
 	private String showUrl;
 
-	public String getAlipayGoodsId() {
+    /**
+     * Gets alipay goods id.
+     *
+     * @return the alipay goods id
+     */
+    public String getAlipayGoodsId() {
 		return this.alipayGoodsId;
 	}
-	public void setAlipayGoodsId(String alipayGoodsId) {
+
+    /**
+     * Sets alipay goods id.
+     *
+     * @param alipayGoodsId the alipay goods id
+     */
+    public void setAlipayGoodsId(String alipayGoodsId) {
 		this.alipayGoodsId = alipayGoodsId;
 	}
 
-	public String getBody() {
+    /**
+     * Gets body.
+     *
+     * @return the body
+     */
+    public String getBody() {
 		return this.body;
 	}
-	public void setBody(String body) {
+
+    /**
+     * Sets body.
+     *
+     * @param body the body
+     */
+    public void setBody(String body) {
 		this.body = body;
 	}
 
-	public String getGoodsCategory() {
+    /**
+     * Gets goods category.
+     *
+     * @return the goods category
+     */
+    public String getGoodsCategory() {
 		return this.goodsCategory;
 	}
-	public void setGoodsCategory(String goodsCategory) {
+
+    /**
+     * Sets goods category.
+     *
+     * @param goodsCategory the goods category
+     */
+    public void setGoodsCategory(String goodsCategory) {
 		this.goodsCategory = goodsCategory;
 	}
 
-	public String getGoodsId() {
+    /**
+     * Gets goods id.
+     *
+     * @return the goods id
+     */
+    public String getGoodsId() {
 		return this.goodsId;
 	}
-	public void setGoodsId(String goodsId) {
+
+    /**
+     * Sets goods id.
+     *
+     * @param goodsId the goods id
+     */
+    public void setGoodsId(String goodsId) {
 		this.goodsId = goodsId;
 	}
 
-	public String getGoodsName() {
+    /**
+     * Gets goods name.
+     *
+     * @return the goods name
+     */
+    public String getGoodsName() {
 		return this.goodsName;
 	}
-	public void setGoodsName(String goodsName) {
+
+    /**
+     * Sets goods name.
+     *
+     * @param goodsName the goods name
+     */
+    public void setGoodsName(String goodsName) {
 		this.goodsName = goodsName;
 	}
 
-	public String getPrice() {
+    /**
+     * Gets price.
+     *
+     * @return the price
+     */
+    public String getPrice() {
 		return this.price;
 	}
-	public void setPrice(String price) {
+
+    /**
+     * Sets price.
+     *
+     * @param price the price
+     */
+    public void setPrice(String price) {
 		this.price = price;
 	}
 
-	public Long getQuantity() {
+    /**
+     * Gets quantity.
+     *
+     * @return the quantity
+     */
+    public Long getQuantity() {
 		return this.quantity;
 	}
-	public void setQuantity(Long quantity) {
+
+    /**
+     * Sets quantity.
+     *
+     * @param quantity the quantity
+     */
+    public void setQuantity(Long quantity) {
 		this.quantity = quantity;
 	}
 
-	public String getShowUrl() {
+    /**
+     * Gets show url.
+     *
+     * @return the show url
+     */
+    public String getShowUrl() {
 		return this.showUrl;
 	}
-	public void setShowUrl(String showUrl) {
+
+    /**
+     * Sets show url.
+     *
+     * @param showUrl the show url
+     */
+    public void setShowUrl(String showUrl) {
 		this.showUrl = showUrl;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoMycarCarlibInfoPushModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7316215763899973524L;
+	private static final long serialVersionUID = 5753452696835696938L;
 
 	/**
 	 * 品牌
@@ -61,59 +61,147 @@ public class AlipayEcoMycarCarlibInfoPushModel extends AlipayObject {
 	@ApiField("style")
 	private String style;
 
-	public String getBrand() {
+    /**
+     * Gets brand.
+     *
+     * @return the brand
+     */
+    public String getBrand() {
 		return this.brand;
 	}
-	public void setBrand(String brand) {
+
+    /**
+     * Sets brand.
+     *
+     * @param brand the brand
+     */
+    public void setBrand(String brand) {
 		this.brand = brand;
 	}
 
-	public String getCc() {
+    /**
+     * Gets cc.
+     *
+     * @return the cc
+     */
+    public String getCc() {
 		return this.cc;
 	}
-	public void setCc(String cc) {
+
+    /**
+     * Sets cc.
+     *
+     * @param cc the cc
+     */
+    public void setCc(String cc) {
 		this.cc = cc;
 	}
 
-	public String getCompany() {
+    /**
+     * Gets company.
+     *
+     * @return the company
+     */
+    public String getCompany() {
 		return this.company;
 	}
-	public void setCompany(String company) {
+
+    /**
+     * Sets company.
+     *
+     * @param company the company
+     */
+    public void setCompany(String company) {
 		this.company = company;
 	}
 
-	public String getEngine() {
+    /**
+     * Gets engine.
+     *
+     * @return the engine
+     */
+    public String getEngine() {
 		return this.engine;
 	}
-	public void setEngine(String engine) {
+
+    /**
+     * Sets engine.
+     *
+     * @param engine the engine
+     */
+    public void setEngine(String engine) {
 		this.engine = engine;
 	}
 
-	public String getMarker() {
+    /**
+     * Gets marker.
+     *
+     * @return the marker
+     */
+    public String getMarker() {
 		return this.marker;
 	}
-	public void setMarker(String marker) {
+
+    /**
+     * Sets marker.
+     *
+     * @param marker the marker
+     */
+    public void setMarker(String marker) {
 		this.marker = marker;
 	}
 
-	public String getProdYear() {
+    /**
+     * Gets prod year.
+     *
+     * @return the prod year
+     */
+    public String getProdYear() {
 		return this.prodYear;
 	}
-	public void setProdYear(String prodYear) {
+
+    /**
+     * Sets prod year.
+     *
+     * @param prodYear the prod year
+     */
+    public void setProdYear(String prodYear) {
 		this.prodYear = prodYear;
 	}
 
-	public String getSerie() {
+    /**
+     * Gets serie.
+     *
+     * @return the serie
+     */
+    public String getSerie() {
 		return this.serie;
 	}
-	public void setSerie(String serie) {
+
+    /**
+     * Sets serie.
+     *
+     * @param serie the serie
+     */
+    public void setSerie(String serie) {
 		this.serie = serie;
 	}
 
-	public String getStyle() {
+    /**
+     * Gets style.
+     *
+     * @return the style
+     */
+    public String getStyle() {
 		return this.style;
 	}
-	public void setStyle(String style) {
+
+    /**
+     * Sets style.
+     *
+     * @param style the style
+     */
+    public void setStyle(String style) {
 		this.style = style;
 	}
 

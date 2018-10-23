@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class IotDeviceModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2727122636223296887L;
+	private static final long serialVersionUID = 3624458625848481979L;
 
 	/**
 	 * 该型号所属类目的类目id
@@ -65,59 +65,147 @@ public class IotDeviceModel extends AlipayObject {
 	@ApiField("model_name")
 	private String modelName;
 
-	public String getCategoryId() {
+    /**
+     * Gets category id.
+     *
+     * @return the category id
+     */
+    public String getCategoryId() {
 		return this.categoryId;
 	}
-	public void setCategoryId(String categoryId) {
+
+    /**
+     * Sets category id.
+     *
+     * @param categoryId the category id
+     */
+    public void setCategoryId(String categoryId) {
 		this.categoryId = categoryId;
 	}
 
-	public List<String> getConnectionTypes() {
+    /**
+     * Gets connection types.
+     *
+     * @return the connection types
+     */
+    public List<String> getConnectionTypes() {
 		return this.connectionTypes;
 	}
-	public void setConnectionTypes(List<String> connectionTypes) {
+
+    /**
+     * Sets connection types.
+     *
+     * @param connectionTypes the connection types
+     */
+    public void setConnectionTypes(List<String> connectionTypes) {
 		this.connectionTypes = connectionTypes;
 	}
 
-	public String getConnectionUrl() {
+    /**
+     * Gets connection url.
+     *
+     * @return the connection url
+     */
+    public String getConnectionUrl() {
 		return this.connectionUrl;
 	}
-	public void setConnectionUrl(String connectionUrl) {
+
+    /**
+     * Sets connection url.
+     *
+     * @param connectionUrl the connection url
+     */
+    public void setConnectionUrl(String connectionUrl) {
 		this.connectionUrl = connectionUrl;
 	}
 
-	public String getDecription() {
+    /**
+     * Gets decription.
+     *
+     * @return the decription
+     */
+    public String getDecription() {
 		return this.decription;
 	}
-	public void setDecription(String decription) {
+
+    /**
+     * Sets decription.
+     *
+     * @param decription the decription
+     */
+    public void setDecription(String decription) {
 		this.decription = decription;
 	}
 
-	public String getIcon() {
+    /**
+     * Gets icon.
+     *
+     * @return the icon
+     */
+    public String getIcon() {
 		return this.icon;
 	}
-	public void setIcon(String icon) {
+
+    /**
+     * Sets icon.
+     *
+     * @param icon the icon
+     */
+    public void setIcon(String icon) {
 		this.icon = icon;
 	}
 
-	public String getManufacturer() {
+    /**
+     * Gets manufacturer.
+     *
+     * @return the manufacturer
+     */
+    public String getManufacturer() {
 		return this.manufacturer;
 	}
-	public void setManufacturer(String manufacturer) {
+
+    /**
+     * Sets manufacturer.
+     *
+     * @param manufacturer the manufacturer
+     */
+    public void setManufacturer(String manufacturer) {
 		this.manufacturer = manufacturer;
 	}
 
-	public String getModelId() {
+    /**
+     * Gets model id.
+     *
+     * @return the model id
+     */
+    public String getModelId() {
 		return this.modelId;
 	}
-	public void setModelId(String modelId) {
+
+    /**
+     * Sets model id.
+     *
+     * @param modelId the model id
+     */
+    public void setModelId(String modelId) {
 		this.modelId = modelId;
 	}
 
-	public String getModelName() {
+    /**
+     * Gets model name.
+     *
+     * @return the model name
+     */
+    public String getModelName() {
 		return this.modelName;
 	}
-	public void setModelName(String modelName) {
+
+    /**
+     * Sets model name.
+     *
+     * @param modelName the model name
+     */
+    public void setModelName(String modelName) {
 		this.modelName = modelName;
 	}
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 周期模型
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:39
+ * @since 1.0, 2018-08-22 11:32:33
  */
 public class PeriodInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6892794185671663416L;
+	private static final long serialVersionUID = 5328276787513477567L;
 
 	/**
 	 * 单位
@@ -25,17 +25,39 @@ public class PeriodInfo extends AlipayObject {
 	@ApiField("value")
 	private Long value;
 
-	public String getDimension() {
+    /**
+     * Gets dimension.
+     *
+     * @return the dimension
+     */
+    public String getDimension() {
 		return this.dimension;
 	}
-	public void setDimension(String dimension) {
+
+    /**
+     * Sets dimension.
+     *
+     * @param dimension the dimension
+     */
+    public void setDimension(String dimension) {
 		this.dimension = dimension;
 	}
 
-	public Long getValue() {
+    /**
+     * Gets value.
+     *
+     * @return the value
+     */
+    public Long getValue() {
 		return this.value;
 	}
-	public void setValue(Long value) {
+
+    /**
+     * Sets value.
+     *
+     * @param value the value
+     */
+    public void setValue(Long value) {
 		this.value = value;
 	}
 

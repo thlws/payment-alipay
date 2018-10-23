@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class YLBTransDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4898616868292351129L;
+	private static final long serialVersionUID = 7441154731583674127L;
 
 	/**
 	 * 余利宝交易金额，单位为元
@@ -63,59 +63,147 @@ public class YLBTransDetailInfo extends AlipayObject {
 	@ApiField("trans_type")
 	private String transType;
 
-	public String getAmount() {
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public String getAmount() {
 		return this.amount;
 	}
-	public void setAmount(String amount) {
+
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
-	public String getBizNo() {
+    /**
+     * Gets biz no.
+     *
+     * @return the biz no
+     */
+    public String getBizNo() {
 		return this.bizNo;
 	}
-	public void setBizNo(String bizNo) {
+
+    /**
+     * Sets biz no.
+     *
+     * @param bizNo the biz no
+     */
+    public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
 	}
 
-	public String getMemo() {
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo() {
 		return this.memo;
 	}
-	public void setMemo(String memo) {
+
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
-	public Date getTransAccountDate() {
+    /**
+     * Gets trans account date.
+     *
+     * @return the trans account date
+     */
+    public Date getTransAccountDate() {
 		return this.transAccountDate;
 	}
-	public void setTransAccountDate(Date transAccountDate) {
+
+    /**
+     * Sets trans account date.
+     *
+     * @param transAccountDate the trans account date
+     */
+    public void setTransAccountDate(Date transAccountDate) {
 		this.transAccountDate = transAccountDate;
 	}
 
-	public Date getTransDate() {
+    /**
+     * Gets trans date.
+     *
+     * @return the trans date
+     */
+    public Date getTransDate() {
 		return this.transDate;
 	}
-	public void setTransDate(Date transDate) {
+
+    /**
+     * Sets trans date.
+     *
+     * @param transDate the trans date
+     */
+    public void setTransDate(Date transDate) {
 		this.transDate = transDate;
 	}
 
-	public String getTransName() {
+    /**
+     * Gets trans name.
+     *
+     * @return the trans name
+     */
+    public String getTransName() {
 		return this.transName;
 	}
-	public void setTransName(String transName) {
+
+    /**
+     * Sets trans name.
+     *
+     * @param transName the trans name
+     */
+    public void setTransName(String transName) {
 		this.transName = transName;
 	}
 
-	public String getTransStatus() {
+    /**
+     * Gets trans status.
+     *
+     * @return the trans status
+     */
+    public String getTransStatus() {
 		return this.transStatus;
 	}
-	public void setTransStatus(String transStatus) {
+
+    /**
+     * Sets trans status.
+     *
+     * @param transStatus the trans status
+     */
+    public void setTransStatus(String transStatus) {
 		this.transStatus = transStatus;
 	}
 
-	public String getTransType() {
+    /**
+     * Gets trans type.
+     *
+     * @return the trans type
+     */
+    public String getTransType() {
 		return this.transType;
 	}
-	public void setTransType(String transType) {
+
+    /**
+     * Sets trans type.
+     *
+     * @param transType the trans type
+     */
+    public void setTransType(String transType) {
 		this.transType = transType;
 	}
 

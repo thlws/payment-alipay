@@ -9,9 +9,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.ebpp.pdeduct.bill.pay.status request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-08-04 11:19:05
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayEbppPdeductBillPayStatusRequest implements AlipayRequest<AlipayEbppPdeductBillPayStatusResponse> {
 
@@ -28,17 +28,39 @@ public class AlipayEbppPdeductBillPayStatusRequest implements AlipayRequest<Alip
 	 */
 	private String outOrderNo;
 
-	public void setAgreementId(String agreementId) {
+    /**
+     * Sets agreement id.
+     *
+     * @param agreementId the agreement id
+     */
+    public void setAgreementId(String agreementId) {
 		this.agreementId = agreementId;
 	}
-	public String getAgreementId() {
+
+    /**
+     * Gets agreement id.
+     *
+     * @return the agreement id
+     */
+    public String getAgreementId() {
 		return this.agreementId;
 	}
 
-	public void setOutOrderNo(String outOrderNo) {
+    /**
+     * Sets out order no.
+     *
+     * @param outOrderNo the out order no
+     */
+    public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
 	}
-	public String getOutOrderNo() {
+
+    /**
+     * Gets out order no.
+     *
+     * @return the out order no
+     */
+    public String getOutOrderNo() {
 		return this.outOrderNo;
 	}
 	private String terminalType;
@@ -111,7 +133,13 @@ public class AlipayEbppPdeductBillPayStatusRequest implements AlipayRequest<Alip
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

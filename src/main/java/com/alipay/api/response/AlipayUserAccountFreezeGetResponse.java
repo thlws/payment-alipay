@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.user.account.freeze.get response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-08-11 15:48:05
  */
 public class AlipayUserAccountFreezeGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1566522657858446147L;
+	private static final long serialVersionUID = 8493299133135742915L;
 
 	/** 
 	 * 冻结金额列表
@@ -30,17 +30,39 @@ public class AlipayUserAccountFreezeGetResponse extends AlipayResponse {
 	@ApiField("total_results")
 	private String totalResults;
 
-	public void setFreezeItems(List<AccountFreeze> freezeItems) {
+    /**
+     * Sets freeze items.
+     *
+     * @param freezeItems the freeze items
+     */
+    public void setFreezeItems(List<AccountFreeze> freezeItems) {
 		this.freezeItems = freezeItems;
 	}
-	public List<AccountFreeze> getFreezeItems( ) {
+
+    /**
+     * Gets freeze items.
+     *
+     * @return the freeze items
+     */
+    public List<AccountFreeze> getFreezeItems( ) {
 		return this.freezeItems;
 	}
 
-	public void setTotalResults(String totalResults) {
+    /**
+     * Sets total results.
+     *
+     * @param totalResults the total results
+     */
+    public void setTotalResults(String totalResults) {
 		this.totalResults = totalResults;
 	}
-	public String getTotalResults( ) {
+
+    /**
+     * Gets total results.
+     *
+     * @return the total results
+     */
+    public String getTotalResults( ) {
 		return this.totalResults;
 	}
 

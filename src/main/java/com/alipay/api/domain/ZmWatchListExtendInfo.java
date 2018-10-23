@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZmWatchListExtendInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7216635941824796277L;
+	private static final long serialVersionUID = 2129341758854394719L;
 
 	/**
 	 * 对于这个key的描述
@@ -31,24 +31,57 @@ public class ZmWatchListExtendInfo extends AlipayObject {
 	@ApiField("value")
 	private String value;
 
-	public String getDescription() {
+    /**
+     * Gets description.
+     *
+     * @return the description
+     */
+    public String getDescription() {
 		return this.description;
 	}
-	public void setDescription(String description) {
+
+    /**
+     * Sets description.
+     *
+     * @param description the description
+     */
+    public void setDescription(String description) {
 		this.description = description;
 	}
 
-	public String getKey() {
+    /**
+     * Gets key.
+     *
+     * @return the key
+     */
+    public String getKey() {
 		return this.key;
 	}
-	public void setKey(String key) {
+
+    /**
+     * Sets key.
+     *
+     * @param key the key
+     */
+    public void setKey(String key) {
 		this.key = key;
 	}
 
-	public String getValue() {
+    /**
+     * Gets value.
+     *
+     * @return the value
+     */
+    public String getValue() {
 		return this.value;
 	}
-	public void setValue(String value) {
+
+    /**
+     * Sets value.
+     *
+     * @param value the value
+     */
+    public void setValue(String value) {
 		this.value = value;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCampaignActivityOfflineCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2267512876822634468L;
+	private static final long serialVersionUID = 8794938896622434484L;
 
 	/**
 	 * 预算信息
@@ -37,31 +37,75 @@ public class AlipayMarketingCampaignActivityOfflineCreateModel extends AlipayObj
 	@ApiField("prize")
 	private OpenPromoPrize prize;
 
-	public OpenPromoBudget getBudget() {
+    /**
+     * Gets budget.
+     *
+     * @return the budget
+     */
+    public OpenPromoBudget getBudget() {
 		return this.budget;
 	}
-	public void setBudget(OpenPromoBudget budget) {
+
+    /**
+     * Sets budget.
+     *
+     * @param budget the budget
+     */
+    public void setBudget(OpenPromoBudget budget) {
 		this.budget = budget;
 	}
 
-	public OpenPromoCamp getCamp() {
+    /**
+     * Gets camp.
+     *
+     * @return the camp
+     */
+    public OpenPromoCamp getCamp() {
 		return this.camp;
 	}
-	public void setCamp(OpenPromoCamp camp) {
+
+    /**
+     * Sets camp.
+     *
+     * @param camp the camp
+     */
+    public void setCamp(OpenPromoCamp camp) {
 		this.camp = camp;
 	}
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
-	public OpenPromoPrize getPrize() {
+    /**
+     * Gets prize.
+     *
+     * @return the prize
+     */
+    public OpenPromoPrize getPrize() {
 		return this.prize;
 	}
-	public void setPrize(OpenPromoPrize prize) {
+
+    /**
+     * Sets prize.
+     *
+     * @param prize the prize
+     */
+    public void setPrize(OpenPromoPrize prize) {
 		this.prize = prize;
 	}
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 直连代扣协议查询接口
  *
  * @author auto create
- * @since 1.0, 2017-08-04 11:19:46
+ * @since 1.0, 2018-01-02 20:27:24
  */
 public class AlipayEbppPdeductSignQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7817433562585276299L;
+	private static final long serialVersionUID = 4545688599565313724L;
 
 	/**
 	 * 支付宝代扣协议Id。若协议id不传递，则需要保证业务类型、子业务类型、出账机构、户号必传
@@ -62,45 +62,111 @@ CZ：手机充值
 	@ApiField("user_id")
 	private String userId;
 
-	public String getAgreementId() {
+    /**
+     * Gets agreement id.
+     *
+     * @return the agreement id
+     */
+    public String getAgreementId() {
 		return this.agreementId;
 	}
-	public void setAgreementId(String agreementId) {
+
+    /**
+     * Sets agreement id.
+     *
+     * @param agreementId the agreement id
+     */
+    public void setAgreementId(String agreementId) {
 		this.agreementId = agreementId;
 	}
 
-	public String getBillKey() {
+    /**
+     * Gets bill key.
+     *
+     * @return the bill key
+     */
+    public String getBillKey() {
 		return this.billKey;
 	}
-	public void setBillKey(String billKey) {
+
+    /**
+     * Sets bill key.
+     *
+     * @param billKey the bill key
+     */
+    public void setBillKey(String billKey) {
 		this.billKey = billKey;
 	}
 
-	public String getBizType() {
+    /**
+     * Gets biz type.
+     *
+     * @return the biz type
+     */
+    public String getBizType() {
 		return this.bizType;
 	}
-	public void setBizType(String bizType) {
+
+    /**
+     * Sets biz type.
+     *
+     * @param bizType the biz type
+     */
+    public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
-	public String getChargeInst() {
+    /**
+     * Gets charge inst.
+     *
+     * @return the charge inst
+     */
+    public String getChargeInst() {
 		return this.chargeInst;
 	}
-	public void setChargeInst(String chargeInst) {
+
+    /**
+     * Sets charge inst.
+     *
+     * @param chargeInst the charge inst
+     */
+    public void setChargeInst(String chargeInst) {
 		this.chargeInst = chargeInst;
 	}
 
-	public String getSubBizType() {
+    /**
+     * Gets sub biz type.
+     *
+     * @return the sub biz type
+     */
+    public String getSubBizType() {
 		return this.subBizType;
 	}
-	public void setSubBizType(String subBizType) {
+
+    /**
+     * Sets sub biz type.
+     *
+     * @param subBizType the sub biz type
+     */
+    public void setSubBizType(String subBizType) {
 		this.subBizType = subBizType;
 	}
 
-	public String getUserId() {
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
-	public void setUserId(String userId) {
+
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
 

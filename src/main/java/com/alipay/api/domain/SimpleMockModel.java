@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SimpleMockModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7114596751925889282L;
+	private static final long serialVersionUID = 4351713668955957332L;
 
 	/**
 	 * 11
@@ -45,38 +45,93 @@ public class SimpleMockModel extends AlipayObject {
 	@ApiField("trade_no")
 	private String tradeNo;
 
-	public Long getCountItems() {
+    /**
+     * Gets count items.
+     *
+     * @return the count items
+     */
+    public Long getCountItems() {
 		return this.countItems;
 	}
-	public void setCountItems(Long countItems) {
+
+    /**
+     * Sets count items.
+     *
+     * @param countItems the count items
+     */
+    public void setCountItems(Long countItems) {
 		this.countItems = countItems;
 	}
 
-	public Date getHappenTime() {
+    /**
+     * Gets happen time.
+     *
+     * @return the happen time
+     */
+    public Date getHappenTime() {
 		return this.happenTime;
 	}
-	public void setHappenTime(Date happenTime) {
+
+    /**
+     * Sets happen time.
+     *
+     * @param happenTime the happen time
+     */
+    public void setHappenTime(Date happenTime) {
 		this.happenTime = happenTime;
 	}
 
-	public String getPriceNum() {
+    /**
+     * Gets price num.
+     *
+     * @return the price num
+     */
+    public String getPriceNum() {
 		return this.priceNum;
 	}
-	public void setPriceNum(String priceNum) {
+
+    /**
+     * Sets price num.
+     *
+     * @param priceNum the price num
+     */
+    public void setPriceNum(String priceNum) {
 		this.priceNum = priceNum;
 	}
 
-	public Boolean getRight() {
+    /**
+     * Gets right.
+     *
+     * @return the right
+     */
+    public Boolean getRight() {
 		return this.right;
 	}
-	public void setRight(Boolean right) {
+
+    /**
+     * Sets right.
+     *
+     * @param right the right
+     */
+    public void setRight(Boolean right) {
 		this.right = right;
 	}
 
-	public String getTradeNo() {
+    /**
+     * Gets trade no.
+     *
+     * @return the trade no
+     */
+    public String getTradeNo() {
 		return this.tradeNo;
 	}
-	public void setTradeNo(String tradeNo) {
+
+    /**
+     * Sets trade no.
+     *
+     * @param tradeNo the trade no
+     */
+    public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
 

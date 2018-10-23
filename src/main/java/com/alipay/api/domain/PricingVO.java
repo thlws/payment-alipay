@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PricingVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6373823971597118248L;
+	private static final long serialVersionUID = 6227852987653728972L;
 
 	/**
 	 * 买入价
@@ -151,164 +151,417 @@ public class PricingVO extends AlipayObject {
 	@ApiField("valid_timestamp")
 	private String validTimestamp;
 
-	public String getBid() {
+    /**
+     * Gets bid.
+     *
+     * @return the bid
+     */
+    public String getBid() {
 		return this.bid;
 	}
-	public void setBid(String bid) {
+
+    /**
+     * Sets bid.
+     *
+     * @param bid the bid
+     */
+    public void setBid(String bid) {
 		this.bid = bid;
 	}
 
-	public String getCurrency() {
+    /**
+     * Gets currency.
+     *
+     * @return the currency
+     */
+    public String getCurrency() {
 		return this.currency;
 	}
-	public void setCurrency(String currency) {
+
+    /**
+     * Sets currency.
+     *
+     * @param currency the currency
+     */
+    public void setCurrency(String currency) {
 		this.currency = currency;
 	}
 
-	public Long getCurrencyUnit() {
+    /**
+     * Gets currency unit.
+     *
+     * @return the currency unit
+     */
+    public Long getCurrencyUnit() {
 		return this.currencyUnit;
 	}
-	public void setCurrencyUnit(Long currencyUnit) {
+
+    /**
+     * Sets currency unit.
+     *
+     * @param currencyUnit the currency unit
+     */
+    public void setCurrencyUnit(Long currencyUnit) {
 		this.currencyUnit = currencyUnit;
 	}
 
-	public String getExpiryTimestamp() {
+    /**
+     * Gets expiry timestamp.
+     *
+     * @return the expiry timestamp
+     */
+    public String getExpiryTimestamp() {
 		return this.expiryTimestamp;
 	}
-	public void setExpiryTimestamp(String expiryTimestamp) {
+
+    /**
+     * Sets expiry timestamp.
+     *
+     * @param expiryTimestamp the expiry timestamp
+     */
+    public void setExpiryTimestamp(String expiryTimestamp) {
 		this.expiryTimestamp = expiryTimestamp;
 	}
 
-	public String getGenerateTimestamp() {
+    /**
+     * Gets generate timestamp.
+     *
+     * @return the generate timestamp
+     */
+    public String getGenerateTimestamp() {
 		return this.generateTimestamp;
 	}
-	public void setGenerateTimestamp(String generateTimestamp) {
+
+    /**
+     * Sets generate timestamp.
+     *
+     * @param generateTimestamp the generate timestamp
+     */
+    public void setGenerateTimestamp(String generateTimestamp) {
 		this.generateTimestamp = generateTimestamp;
 	}
 
-	public String getMaturityDate() {
+    /**
+     * Gets maturity date.
+     *
+     * @return the maturity date
+     */
+    public String getMaturityDate() {
 		return this.maturityDate;
 	}
-	public void setMaturityDate(String maturityDate) {
+
+    /**
+     * Sets maturity date.
+     *
+     * @param maturityDate the maturity date
+     */
+    public void setMaturityDate(String maturityDate) {
 		this.maturityDate = maturityDate;
 	}
 
-	public Long getMaximumBidAmount() {
+    /**
+     * Gets maximum bid amount.
+     *
+     * @return the maximum bid amount
+     */
+    public Long getMaximumBidAmount() {
 		return this.maximumBidAmount;
 	}
-	public void setMaximumBidAmount(Long maximumBidAmount) {
+
+    /**
+     * Sets maximum bid amount.
+     *
+     * @param maximumBidAmount the maximum bid amount
+     */
+    public void setMaximumBidAmount(Long maximumBidAmount) {
 		this.maximumBidAmount = maximumBidAmount;
 	}
 
-	public Long getMaximumOfferAmount() {
+    /**
+     * Gets maximum offer amount.
+     *
+     * @return the maximum offer amount
+     */
+    public Long getMaximumOfferAmount() {
 		return this.maximumOfferAmount;
 	}
-	public void setMaximumOfferAmount(Long maximumOfferAmount) {
+
+    /**
+     * Sets maximum offer amount.
+     *
+     * @param maximumOfferAmount the maximum offer amount
+     */
+    public void setMaximumOfferAmount(Long maximumOfferAmount) {
 		this.maximumOfferAmount = maximumOfferAmount;
 	}
 
-	public String getMemo() {
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo() {
 		return this.memo;
 	}
-	public void setMemo(String memo) {
+
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
-	public String getMid() {
+    /**
+     * Gets mid.
+     *
+     * @return the mid
+     */
+    public String getMid() {
 		return this.mid;
 	}
-	public void setMid(String mid) {
+
+    /**
+     * Sets mid.
+     *
+     * @param mid the mid
+     */
+    public void setMid(String mid) {
 		this.mid = mid;
 	}
 
-	public Long getMinimumBidAmount() {
+    /**
+     * Gets minimum bid amount.
+     *
+     * @return the minimum bid amount
+     */
+    public Long getMinimumBidAmount() {
 		return this.minimumBidAmount;
 	}
-	public void setMinimumBidAmount(Long minimumBidAmount) {
+
+    /**
+     * Sets minimum bid amount.
+     *
+     * @param minimumBidAmount the minimum bid amount
+     */
+    public void setMinimumBidAmount(Long minimumBidAmount) {
 		this.minimumBidAmount = minimumBidAmount;
 	}
 
-	public Long getMinimumOfferAmount() {
+    /**
+     * Gets minimum offer amount.
+     *
+     * @return the minimum offer amount
+     */
+    public Long getMinimumOfferAmount() {
 		return this.minimumOfferAmount;
 	}
-	public void setMinimumOfferAmount(Long minimumOfferAmount) {
+
+    /**
+     * Sets minimum offer amount.
+     *
+     * @param minimumOfferAmount the minimum offer amount
+     */
+    public void setMinimumOfferAmount(Long minimumOfferAmount) {
 		this.minimumOfferAmount = minimumOfferAmount;
 	}
 
-	public String getOffer() {
+    /**
+     * Gets offer.
+     *
+     * @return the offer
+     */
+    public String getOffer() {
 		return this.offer;
 	}
-	public void setOffer(String offer) {
+
+    /**
+     * Sets offer.
+     *
+     * @param offer the offer
+     */
+    public void setOffer(String offer) {
 		this.offer = offer;
 	}
 
-	public String getPeriod() {
+    /**
+     * Gets period.
+     *
+     * @return the period
+     */
+    public String getPeriod() {
 		return this.period;
 	}
-	public void setPeriod(String period) {
+
+    /**
+     * Sets period.
+     *
+     * @param period the period
+     */
+    public void setPeriod(String period) {
 		this.period = period;
 	}
 
-	public String getRateReferenceId() {
+    /**
+     * Gets rate reference id.
+     *
+     * @return the rate reference id
+     */
+    public String getRateReferenceId() {
 		return this.rateReferenceId;
 	}
-	public void setRateReferenceId(String rateReferenceId) {
+
+    /**
+     * Sets rate reference id.
+     *
+     * @param rateReferenceId the rate reference id
+     */
+    public void setRateReferenceId(String rateReferenceId) {
 		this.rateReferenceId = rateReferenceId;
 	}
 
-	public String getRateType() {
+    /**
+     * Gets rate type.
+     *
+     * @return the rate type
+     */
+    public String getRateType() {
 		return this.rateType;
 	}
-	public void setRateType(String rateType) {
+
+    /**
+     * Sets rate type.
+     *
+     * @param rateType the rate type
+     */
+    public void setRateType(String rateType) {
 		this.rateType = rateType;
 	}
 
-	public String getSpotBid() {
+    /**
+     * Gets spot bid.
+     *
+     * @return the spot bid
+     */
+    public String getSpotBid() {
 		return this.spotBid;
 	}
-	public void setSpotBid(String spotBid) {
+
+    /**
+     * Sets spot bid.
+     *
+     * @param spotBid the spot bid
+     */
+    public void setSpotBid(String spotBid) {
 		this.spotBid = spotBid;
 	}
 
-	public String getSpotMid() {
+    /**
+     * Gets spot mid.
+     *
+     * @return the spot mid
+     */
+    public String getSpotMid() {
 		return this.spotMid;
 	}
-	public void setSpotMid(String spotMid) {
+
+    /**
+     * Sets spot mid.
+     *
+     * @param spotMid the spot mid
+     */
+    public void setSpotMid(String spotMid) {
 		this.spotMid = spotMid;
 	}
 
-	public String getSpotOffer() {
+    /**
+     * Gets spot offer.
+     *
+     * @return the spot offer
+     */
+    public String getSpotOffer() {
 		return this.spotOffer;
 	}
-	public void setSpotOffer(String spotOffer) {
+
+    /**
+     * Sets spot offer.
+     *
+     * @param spotOffer the spot offer
+     */
+    public void setSpotOffer(String spotOffer) {
 		this.spotOffer = spotOffer;
 	}
 
-	public String getStartTimestamp() {
+    /**
+     * Gets start timestamp.
+     *
+     * @return the start timestamp
+     */
+    public String getStartTimestamp() {
 		return this.startTimestamp;
 	}
-	public void setStartTimestamp(String startTimestamp) {
+
+    /**
+     * Sets start timestamp.
+     *
+     * @param startTimestamp the start timestamp
+     */
+    public void setStartTimestamp(String startTimestamp) {
 		this.startTimestamp = startTimestamp;
 	}
 
-	public String getSymbol() {
+    /**
+     * Gets symbol.
+     *
+     * @return the symbol
+     */
+    public String getSymbol() {
 		return this.symbol;
 	}
-	public void setSymbol(String symbol) {
+
+    /**
+     * Sets symbol.
+     *
+     * @param symbol the symbol
+     */
+    public void setSymbol(String symbol) {
 		this.symbol = symbol;
 	}
 
-	public String getThresholdTimestamp() {
+    /**
+     * Gets threshold timestamp.
+     *
+     * @return the threshold timestamp
+     */
+    public String getThresholdTimestamp() {
 		return this.thresholdTimestamp;
 	}
-	public void setThresholdTimestamp(String thresholdTimestamp) {
+
+    /**
+     * Sets threshold timestamp.
+     *
+     * @param thresholdTimestamp the threshold timestamp
+     */
+    public void setThresholdTimestamp(String thresholdTimestamp) {
 		this.thresholdTimestamp = thresholdTimestamp;
 	}
 
-	public String getValidTimestamp() {
+    /**
+     * Gets valid timestamp.
+     *
+     * @return the valid timestamp
+     */
+    public String getValidTimestamp() {
 		return this.validTimestamp;
 	}
-	public void setValidTimestamp(String validTimestamp) {
+
+    /**
+     * Sets valid timestamp.
+     *
+     * @param validTimestamp the valid timestamp
+     */
+    public void setValidTimestamp(String validTimestamp) {
 		this.validTimestamp = validTimestamp;
 	}
 

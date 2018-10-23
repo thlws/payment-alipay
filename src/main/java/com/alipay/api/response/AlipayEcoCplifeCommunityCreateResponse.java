@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.cplife.community.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-30 20:48:59
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayEcoCplifeCommunityCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8475592391339238931L;
+	private static final long serialVersionUID = 3582925396692689919L;
 
 	/** 
 	 * 若小区创建成功，则返回支付宝社区物业平台中的小区统一编号。
@@ -50,24 +50,57 @@ OFFLINE - 下线
 	@ApiField("status")
 	private String status;
 
-	public void setCommunityId(String communityId) {
+    /**
+     * Sets community id.
+     *
+     * @param communityId the community id
+     */
+    public void setCommunityId(String communityId) {
 		this.communityId = communityId;
 	}
-	public String getCommunityId( ) {
+
+    /**
+     * Gets community id.
+     *
+     * @return the community id
+     */
+    public String getCommunityId( ) {
 		return this.communityId;
 	}
 
-	public void setNextAction(String nextAction) {
+    /**
+     * Sets next action.
+     *
+     * @param nextAction the next action
+     */
+    public void setNextAction(String nextAction) {
 		this.nextAction = nextAction;
 	}
-	public String getNextAction( ) {
+
+    /**
+     * Gets next action.
+     *
+     * @return the next action
+     */
+    public String getNextAction( ) {
 		return this.nextAction;
 	}
 
-	public void setStatus(String status) {
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
-	public String getStatus( ) {
+
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus( ) {
 		return this.status;
 	}
 

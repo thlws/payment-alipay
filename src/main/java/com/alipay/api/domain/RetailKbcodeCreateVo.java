@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RetailKbcodeCreateVo extends AlipayObject {
 
-	private static final long serialVersionUID = 5364442162618483974L;
+	private static final long serialVersionUID = 2792625291541795315L;
 
 	/**
 	 * 指定码图片上显示的名称，建议使用商户名称
@@ -25,17 +25,39 @@ public class RetailKbcodeCreateVo extends AlipayObject {
 	@ApiField("salesman")
 	private String salesman;
 
-	public String getCodeTip() {
+    /**
+     * Gets code tip.
+     *
+     * @return the code tip
+     */
+    public String getCodeTip() {
 		return this.codeTip;
 	}
-	public void setCodeTip(String codeTip) {
+
+    /**
+     * Sets code tip.
+     *
+     * @param codeTip the code tip
+     */
+    public void setCodeTip(String codeTip) {
 		this.codeTip = codeTip;
 	}
 
-	public String getSalesman() {
+    /**
+     * Gets salesman.
+     *
+     * @return the salesman
+     */
+    public String getSalesman() {
 		return this.salesman;
 	}
-	public void setSalesman(String salesman) {
+
+    /**
+     * Sets salesman.
+     *
+     * @param salesman the salesman
+     */
+    public void setSalesman(String salesman) {
 		this.salesman = salesman;
 	}
 

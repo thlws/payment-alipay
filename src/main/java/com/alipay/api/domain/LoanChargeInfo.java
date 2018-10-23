@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LoanChargeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4515316535298641866L;
+	private static final long serialVersionUID = 7262867165615686214L;
 
 	/**
 	 * 费用编码
@@ -31,24 +31,57 @@ public class LoanChargeInfo extends AlipayObject {
 	@ApiField("instal_chrg_rate")
 	private InstallmentValue instalChrgRate;
 
-	public String getChargeCode() {
+    /**
+     * Gets charge code.
+     *
+     * @return the charge code
+     */
+    public String getChargeCode() {
 		return this.chargeCode;
 	}
-	public void setChargeCode(String chargeCode) {
+
+    /**
+     * Sets charge code.
+     *
+     * @param chargeCode the charge code
+     */
+    public void setChargeCode(String chargeCode) {
 		this.chargeCode = chargeCode;
 	}
 
-	public String getChargeName() {
+    /**
+     * Gets charge name.
+     *
+     * @return the charge name
+     */
+    public String getChargeName() {
 		return this.chargeName;
 	}
-	public void setChargeName(String chargeName) {
+
+    /**
+     * Sets charge name.
+     *
+     * @param chargeName the charge name
+     */
+    public void setChargeName(String chargeName) {
 		this.chargeName = chargeName;
 	}
 
-	public InstallmentValue getInstalChrgRate() {
+    /**
+     * Gets instal chrg rate.
+     *
+     * @return the instal chrg rate
+     */
+    public InstallmentValue getInstalChrgRate() {
 		return this.instalChrgRate;
 	}
-	public void setInstalChrgRate(InstallmentValue instalChrgRate) {
+
+    /**
+     * Sets instal chrg rate.
+     *
+     * @param instalChrgRate the instal chrg rate
+     */
+    public void setInstalChrgRate(InstallmentValue instalChrgRate) {
 		this.instalChrgRate = instalChrgRate;
 	}
 

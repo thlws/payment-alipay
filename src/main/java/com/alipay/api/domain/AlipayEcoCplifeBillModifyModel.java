@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改已上传的物业费账单数据
  *
  * @author auto create
- * @since 1.0, 2017-01-18 16:45:48
+ * @since 1.0, 2018-06-09 20:15:11
  */
 public class AlipayEcoCplifeBillModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2453547665138313248L;
+	private static final long serialVersionUID = 6554646849322863151L;
 
 	/**
 	 * 待修改的物业费账单应收明细条目列表，一次最多修改1000条明细条目。如果明细条目已被支付或在支付中，则无法被修改。接口会返回无法修改的明细条目ID列表。
@@ -29,17 +29,39 @@ public class AlipayEcoCplifeBillModifyModel extends AlipayObject {
 	@ApiField("community_id")
 	private String communityId;
 
-	public List<CPBillModifySet> getBillEntryList() {
+    /**
+     * Gets bill entry list.
+     *
+     * @return the bill entry list
+     */
+    public List<CPBillModifySet> getBillEntryList() {
 		return this.billEntryList;
 	}
-	public void setBillEntryList(List<CPBillModifySet> billEntryList) {
+
+    /**
+     * Sets bill entry list.
+     *
+     * @param billEntryList the bill entry list
+     */
+    public void setBillEntryList(List<CPBillModifySet> billEntryList) {
 		this.billEntryList = billEntryList;
 	}
 
-	public String getCommunityId() {
+    /**
+     * Gets community id.
+     *
+     * @return the community id
+     */
+    public String getCommunityId() {
 		return this.communityId;
 	}
-	public void setCommunityId(String communityId) {
+
+    /**
+     * Sets community id.
+     *
+     * @param communityId the community id
+     */
+    public void setCommunityId(String communityId) {
 		this.communityId = communityId;
 	}
 

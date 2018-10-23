@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingVoucherAuthSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1488622916941732866L;
+	private static final long serialVersionUID = 2629798594843657422L;
 
 	/**
 	 * 外部业务订单号，用于幂等控制
@@ -37,31 +37,75 @@ public class AlipayMarketingVoucherAuthSendModel extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
-	public String getSendCode() {
+    /**
+     * Gets send code.
+     *
+     * @return the send code
+     */
+    public String getSendCode() {
 		return this.sendCode;
 	}
-	public void setSendCode(String sendCode) {
+
+    /**
+     * Sets send code.
+     *
+     * @param sendCode the send code
+     */
+    public void setSendCode(String sendCode) {
 		this.sendCode = sendCode;
 	}
 
-	public String getTemplateId() {
+    /**
+     * Gets template id.
+     *
+     * @return the template id
+     */
+    public String getTemplateId() {
 		return this.templateId;
 	}
-	public void setTemplateId(String templateId) {
+
+    /**
+     * Sets template id.
+     *
+     * @param templateId the template id
+     */
+    public void setTemplateId(String templateId) {
 		this.templateId = templateId;
 	}
 
-	public String getUserId() {
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
-	public void setUserId(String userId) {
+
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
 

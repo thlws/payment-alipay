@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CustomReportCondition extends AlipayObject {
 
-	private static final long serialVersionUID = 8633755762112556437L;
+	private static final long serialVersionUID = 7135995311429273827L;
 
 	/**
 	 * 规则KEY-为空则为创建规则，否则更新规则
@@ -62,52 +62,129 @@ public class CustomReportCondition extends AlipayObject {
 	@ApiField("sort_tags")
 	private String sortTags;
 
-	public String getConditionKey() {
+    /**
+     * Gets condition key.
+     *
+     * @return the condition key
+     */
+    public String getConditionKey() {
 		return this.conditionKey;
 	}
-	public void setConditionKey(String conditionKey) {
+
+    /**
+     * Sets condition key.
+     *
+     * @param conditionKey the condition key
+     */
+    public void setConditionKey(String conditionKey) {
 		this.conditionKey = conditionKey;
 	}
 
-	public List<DataTag> getDataTags() {
+    /**
+     * Gets data tags.
+     *
+     * @return the data tags
+     */
+    public List<DataTag> getDataTags() {
 		return this.dataTags;
 	}
-	public void setDataTags(List<DataTag> dataTags) {
+
+    /**
+     * Sets data tags.
+     *
+     * @param dataTags the data tags
+     */
+    public void setDataTags(List<DataTag> dataTags) {
 		this.dataTags = dataTags;
 	}
 
-	public List<FilterTag> getFilterTags() {
+    /**
+     * Gets filter tags.
+     *
+     * @return the filter tags
+     */
+    public List<FilterTag> getFilterTags() {
 		return this.filterTags;
 	}
-	public void setFilterTags(List<FilterTag> filterTags) {
+
+    /**
+     * Sets filter tags.
+     *
+     * @param filterTags the filter tags
+     */
+    public void setFilterTags(List<FilterTag> filterTags) {
 		this.filterTags = filterTags;
 	}
 
-	public String getGroupTags() {
+    /**
+     * Gets group tags.
+     *
+     * @return the group tags
+     */
+    public String getGroupTags() {
 		return this.groupTags;
 	}
-	public void setGroupTags(String groupTags) {
+
+    /**
+     * Sets group tags.
+     *
+     * @param groupTags the group tags
+     */
+    public void setGroupTags(String groupTags) {
 		this.groupTags = groupTags;
 	}
 
-	public String getMemo() {
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo() {
 		return this.memo;
 	}
-	public void setMemo(String memo) {
+
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getSortTags() {
+    /**
+     * Gets sort tags.
+     *
+     * @return the sort tags
+     */
+    public String getSortTags() {
 		return this.sortTags;
 	}
-	public void setSortTags(String sortTags) {
+
+    /**
+     * Sets sort tags.
+     *
+     * @param sortTags the sort tags
+     */
+    public void setSortTags(String sortTags) {
 		this.sortTags = sortTags;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KbAdvertSubjectResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 8137371427366354343L;
+	private static final long serialVersionUID = 6511848388765611655L;
 
 	/**
 	 * 分佣规则
@@ -33,24 +33,57 @@ voucher-券
 	@ApiField("voucher")
 	private KbAdvertSubjectVoucherResponse voucher;
 
-	public KbAdvertCommissionClauseResponse getCommissionClause() {
+    /**
+     * Gets commission clause.
+     *
+     * @return the commission clause
+     */
+    public KbAdvertCommissionClauseResponse getCommissionClause() {
 		return this.commissionClause;
 	}
-	public void setCommissionClause(KbAdvertCommissionClauseResponse commissionClause) {
+
+    /**
+     * Sets commission clause.
+     *
+     * @param commissionClause the commission clause
+     */
+    public void setCommissionClause(KbAdvertCommissionClauseResponse commissionClause) {
 		this.commissionClause = commissionClause;
 	}
 
-	public String getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
-	public void setType(String type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
 
-	public KbAdvertSubjectVoucherResponse getVoucher() {
+    /**
+     * Gets voucher.
+     *
+     * @return the voucher
+     */
+    public KbAdvertSubjectVoucherResponse getVoucher() {
 		return this.voucher;
 	}
-	public void setVoucher(KbAdvertSubjectVoucherResponse voucher) {
+
+    /**
+     * Sets voucher.
+     *
+     * @param voucher the voucher
+     */
+    public void setVoucher(KbAdvertSubjectVoucherResponse voucher) {
 		this.voucher = voucher;
 	}
 

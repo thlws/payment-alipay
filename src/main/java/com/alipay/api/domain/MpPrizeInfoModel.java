@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MpPrizeInfoModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1695983429587959428L;
+	private static final long serialVersionUID = 8519817965422878368L;
 
 	/**
 	 * 凭证id，通过alipay.marketing.campaign.cert.create 接口创建的凭证id，开发者可以根据此凭证处理自己的业务逻辑，如给用户发放自定义优惠券等；
@@ -73,73 +73,183 @@ public class MpPrizeInfoModel extends AlipayObject {
 	@ApiField("prize_type")
 	private String prizeType;
 
-	public String getCertlotNumber() {
+    /**
+     * Gets certlot number.
+     *
+     * @return the certlot number
+     */
+    public String getCertlotNumber() {
 		return this.certlotNumber;
 	}
-	public void setCertlotNumber(String certlotNumber) {
+
+    /**
+     * Sets certlot number.
+     *
+     * @param certlotNumber the certlot number
+     */
+    public void setCertlotNumber(String certlotNumber) {
 		this.certlotNumber = certlotNumber;
 	}
 
-	public String getFrequencyCount() {
+    /**
+     * Gets frequency count.
+     *
+     * @return the frequency count
+     */
+    public String getFrequencyCount() {
 		return this.frequencyCount;
 	}
-	public void setFrequencyCount(String frequencyCount) {
+
+    /**
+     * Sets frequency count.
+     *
+     * @param frequencyCount the frequency count
+     */
+    public void setFrequencyCount(String frequencyCount) {
 		this.frequencyCount = frequencyCount;
 	}
 
-	public String getFrequencyType() {
+    /**
+     * Gets frequency type.
+     *
+     * @return the frequency type
+     */
+    public String getFrequencyType() {
 		return this.frequencyType;
 	}
-	public void setFrequencyType(String frequencyType) {
+
+    /**
+     * Sets frequency type.
+     *
+     * @param frequencyType the frequency type
+     */
+    public void setFrequencyType(String frequencyType) {
 		this.frequencyType = frequencyType;
 	}
 
-	public String getPrizeEndTime() {
+    /**
+     * Gets prize end time.
+     *
+     * @return the prize end time
+     */
+    public String getPrizeEndTime() {
 		return this.prizeEndTime;
 	}
-	public void setPrizeEndTime(String prizeEndTime) {
+
+    /**
+     * Sets prize end time.
+     *
+     * @param prizeEndTime the prize end time
+     */
+    public void setPrizeEndTime(String prizeEndTime) {
 		this.prizeEndTime = prizeEndTime;
 	}
 
-	public String getPrizeId() {
+    /**
+     * Gets prize id.
+     *
+     * @return the prize id
+     */
+    public String getPrizeId() {
 		return this.prizeId;
 	}
-	public void setPrizeId(String prizeId) {
+
+    /**
+     * Sets prize id.
+     *
+     * @param prizeId the prize id
+     */
+    public void setPrizeId(String prizeId) {
 		this.prizeId = prizeId;
 	}
 
-	public String getPrizeMaxAwardLimit() {
+    /**
+     * Gets prize max award limit.
+     *
+     * @return the prize max award limit
+     */
+    public String getPrizeMaxAwardLimit() {
 		return this.prizeMaxAwardLimit;
 	}
-	public void setPrizeMaxAwardLimit(String prizeMaxAwardLimit) {
+
+    /**
+     * Sets prize max award limit.
+     *
+     * @param prizeMaxAwardLimit the prize max award limit
+     */
+    public void setPrizeMaxAwardLimit(String prizeMaxAwardLimit) {
 		this.prizeMaxAwardLimit = prizeMaxAwardLimit;
 	}
 
-	public String getPrizeName() {
+    /**
+     * Gets prize name.
+     *
+     * @return the prize name
+     */
+    public String getPrizeName() {
 		return this.prizeName;
 	}
-	public void setPrizeName(String prizeName) {
+
+    /**
+     * Sets prize name.
+     *
+     * @param prizeName the prize name
+     */
+    public void setPrizeName(String prizeName) {
 		this.prizeName = prizeName;
 	}
 
-	public String getPrizeStartTime() {
+    /**
+     * Gets prize start time.
+     *
+     * @return the prize start time
+     */
+    public String getPrizeStartTime() {
 		return this.prizeStartTime;
 	}
-	public void setPrizeStartTime(String prizeStartTime) {
+
+    /**
+     * Sets prize start time.
+     *
+     * @param prizeStartTime the prize start time
+     */
+    public void setPrizeStartTime(String prizeStartTime) {
 		this.prizeStartTime = prizeStartTime;
 	}
 
-	public String getPrizeTotal() {
+    /**
+     * Gets prize total.
+     *
+     * @return the prize total
+     */
+    public String getPrizeTotal() {
 		return this.prizeTotal;
 	}
-	public void setPrizeTotal(String prizeTotal) {
+
+    /**
+     * Sets prize total.
+     *
+     * @param prizeTotal the prize total
+     */
+    public void setPrizeTotal(String prizeTotal) {
 		this.prizeTotal = prizeTotal;
 	}
 
-	public String getPrizeType() {
+    /**
+     * Gets prize type.
+     *
+     * @return the prize type
+     */
+    public String getPrizeType() {
 		return this.prizeType;
 	}
-	public void setPrizeType(String prizeType) {
+
+    /**
+     * Sets prize type.
+     *
+     * @param prizeType the prize type
+     */
+    public void setPrizeType(String prizeType) {
 		this.prizeType = prizeType;
 	}
 

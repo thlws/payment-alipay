@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ebpp.pdeduct.bill.pay.status response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-08-04 11:19:05
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayEbppPdeductBillPayStatusResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4594339419951958995L;
+	private static final long serialVersionUID = 3416226547793858988L;
 
 	/** 
 	 * 支付宝协议流水
@@ -53,45 +53,111 @@ public class AlipayEbppPdeductBillPayStatusResponse extends AlipayResponse {
 	@ApiField("status")
 	private String status;
 
-	public void setAgreementId(String agreementId) {
+    /**
+     * Sets agreement id.
+     *
+     * @param agreementId the agreement id
+     */
+    public void setAgreementId(String agreementId) {
 		this.agreementId = agreementId;
 	}
-	public String getAgreementId( ) {
+
+    /**
+     * Gets agreement id.
+     *
+     * @return the agreement id
+     */
+    public String getAgreementId( ) {
 		return this.agreementId;
 	}
 
-	public void setOrderNo(String orderNo) {
+    /**
+     * Sets order no.
+     *
+     * @param orderNo the order no
+     */
+    public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
-	public String getOrderNo( ) {
+
+    /**
+     * Gets order no.
+     *
+     * @return the order no
+     */
+    public String getOrderNo( ) {
 		return this.orderNo;
 	}
 
-	public void setOrderResultCode(String orderResultCode) {
+    /**
+     * Sets order result code.
+     *
+     * @param orderResultCode the order result code
+     */
+    public void setOrderResultCode(String orderResultCode) {
 		this.orderResultCode = orderResultCode;
 	}
-	public String getOrderResultCode( ) {
+
+    /**
+     * Gets order result code.
+     *
+     * @return the order result code
+     */
+    public String getOrderResultCode( ) {
 		return this.orderResultCode;
 	}
 
-	public void setOrderResultMsg(String orderResultMsg) {
+    /**
+     * Sets order result msg.
+     *
+     * @param orderResultMsg the order result msg
+     */
+    public void setOrderResultMsg(String orderResultMsg) {
 		this.orderResultMsg = orderResultMsg;
 	}
-	public String getOrderResultMsg( ) {
+
+    /**
+     * Gets order result msg.
+     *
+     * @return the order result msg
+     */
+    public String getOrderResultMsg( ) {
 		return this.orderResultMsg;
 	}
 
-	public void setOutOrderNo(String outOrderNo) {
+    /**
+     * Sets out order no.
+     *
+     * @param outOrderNo the out order no
+     */
+    public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
 	}
-	public String getOutOrderNo( ) {
+
+    /**
+     * Gets out order no.
+     *
+     * @return the out order no
+     */
+    public String getOutOrderNo( ) {
 		return this.outOrderNo;
 	}
 
-	public void setStatus(String status) {
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
-	public String getStatus( ) {
+
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus( ) {
 		return this.status;
 	}
 

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 分页查询Leads、门店、商品相关操作流水信息
  *
  * @author auto create
- * @since 1.0, 2017-07-06 11:11:37
+ * @since 1.0, 2018-03-27 17:07:28
  */
 public class AlipayOfflineMarketApplyorderBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6812687216734417379L;
+	private static final long serialVersionUID = 8756117797354879694L;
 
 	/**
 	 * 操作动作
@@ -92,87 +92,219 @@ public class AlipayOfflineMarketApplyorderBatchqueryModel extends AlipayObject {
 	@ApiField("status")
 	private String status;
 
-	public String getAction() {
+    /**
+     * Gets action.
+     *
+     * @return the action
+     */
+    public String getAction() {
 		return this.action;
 	}
-	public void setAction(String action) {
+
+    /**
+     * Sets action.
+     *
+     * @param action the action
+     */
+    public void setAction(String action) {
 		this.action = action;
 	}
 
-	public List<String> getApplyIds() {
+    /**
+     * Gets apply ids.
+     *
+     * @return the apply ids
+     */
+    public List<String> getApplyIds() {
 		return this.applyIds;
 	}
-	public void setApplyIds(List<String> applyIds) {
+
+    /**
+     * Sets apply ids.
+     *
+     * @param applyIds the apply ids
+     */
+    public void setApplyIds(List<String> applyIds) {
 		this.applyIds = applyIds;
 	}
 
-	public String getBizId() {
+    /**
+     * Gets biz id.
+     *
+     * @return the biz id
+     */
+    public String getBizId() {
 		return this.bizId;
 	}
-	public void setBizId(String bizId) {
+
+    /**
+     * Sets biz id.
+     *
+     * @param bizId the biz id
+     */
+    public void setBizId(String bizId) {
 		this.bizId = bizId;
 	}
 
-	public String getBizType() {
+    /**
+     * Gets biz type.
+     *
+     * @return the biz type
+     */
+    public String getBizType() {
 		return this.bizType;
 	}
-	public void setBizType(String bizType) {
+
+    /**
+     * Sets biz type.
+     *
+     * @param bizType the biz type
+     */
+    public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
-	public Date getEndTime() {
+    /**
+     * Gets end time.
+     *
+     * @return the end time
+     */
+    public Date getEndTime() {
 		return this.endTime;
 	}
-	public void setEndTime(Date endTime) {
+
+    /**
+     * Sets end time.
+     *
+     * @param endTime the end time
+     */
+    public void setEndTime(Date endTime) {
 		this.endTime = endTime;
 	}
 
-	public String getOpId() {
+    /**
+     * Gets op id.
+     *
+     * @return the op id
+     */
+    public String getOpId() {
 		return this.opId;
 	}
-	public void setOpId(String opId) {
+
+    /**
+     * Sets op id.
+     *
+     * @param opId the op id
+     */
+    public void setOpId(String opId) {
 		this.opId = opId;
 	}
 
-	public String getOpRole() {
+    /**
+     * Gets op role.
+     *
+     * @return the op role
+     */
+    public String getOpRole() {
 		return this.opRole;
 	}
-	public void setOpRole(String opRole) {
+
+    /**
+     * Sets op role.
+     *
+     * @param opRole the op role
+     */
+    public void setOpRole(String opRole) {
 		this.opRole = opRole;
 	}
 
-	public Long getPageNo() {
+    /**
+     * Gets page no.
+     *
+     * @return the page no
+     */
+    public Long getPageNo() {
 		return this.pageNo;
 	}
-	public void setPageNo(Long pageNo) {
+
+    /**
+     * Sets page no.
+     *
+     * @param pageNo the page no
+     */
+    public void setPageNo(Long pageNo) {
 		this.pageNo = pageNo;
 	}
 
-	public Long getPageSize() {
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public Long getPageSize() {
 		return this.pageSize;
 	}
-	public void setPageSize(Long pageSize) {
+
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}
 
-	public List<String> getRequestIds() {
+    /**
+     * Gets request ids.
+     *
+     * @return the request ids
+     */
+    public List<String> getRequestIds() {
 		return this.requestIds;
 	}
-	public void setRequestIds(List<String> requestIds) {
+
+    /**
+     * Sets request ids.
+     *
+     * @param requestIds the request ids
+     */
+    public void setRequestIds(List<String> requestIds) {
 		this.requestIds = requestIds;
 	}
 
-	public Date getStartTime() {
+    /**
+     * Gets start time.
+     *
+     * @return the start time
+     */
+    public Date getStartTime() {
 		return this.startTime;
 	}
-	public void setStartTime(Date startTime) {
+
+    /**
+     * Sets start time.
+     *
+     * @param startTime the start time
+     */
+    public void setStartTime(Date startTime) {
 		this.startTime = startTime;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 

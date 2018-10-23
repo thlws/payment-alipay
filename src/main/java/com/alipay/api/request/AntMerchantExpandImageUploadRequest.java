@@ -11,9 +11,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: ant.merchant.expand.image.upload request
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-07-28 23:35:31
+ * @since 1.0, 2018-05-23 11:30:21
  */
 public class AntMerchantExpandImageUploadRequest implements AlipayUploadRequest<AntMerchantExpandImageUploadResponse> {
 
@@ -30,17 +30,39 @@ public class AntMerchantExpandImageUploadRequest implements AlipayUploadRequest<
 	 */
 	private String imageType;
 
-	public void setImageContent(FileItem imageContent) {
+    /**
+     * Sets image content.
+     *
+     * @param imageContent the image content
+     */
+    public void setImageContent(FileItem imageContent) {
 		this.imageContent = imageContent;
 	}
-	public FileItem getImageContent() {
+
+    /**
+     * Gets image content.
+     *
+     * @return the image content
+     */
+    public FileItem getImageContent() {
 		return this.imageContent;
 	}
 
-	public void setImageType(String imageType) {
+    /**
+     * Sets image type.
+     *
+     * @param imageType the image type
+     */
+    public void setImageType(String imageType) {
 		this.imageType = imageType;
 	}
-	public String getImageType() {
+
+    /**
+     * Gets image type.
+     *
+     * @return the image type
+     */
+    public String getImageType() {
 		return this.imageType;
 	}
 	private String terminalType;
@@ -110,8 +132,14 @@ public class AntMerchantExpandImageUploadRequest implements AlipayUploadRequest<
 		}
 		return txtParams;
 	}
-	
-	public void putOtherTextParam(String key, String value) {
+
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

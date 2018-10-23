@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayDaoweiSpModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5862823967363536428L;
+	private static final long serialVersionUID = 4458875353277219758L;
 
 	/**
 	 * 服务者的可用时间表。其中Duration和Unit配合使用，例如duration=30，unit=MIN表示将一天分为以30分钟一小段的时间片段。Unit：目前支持MIN（分钟）。Date：YYYY-MM-DD格式。Bitmap：根据定义的间隔长度跟单位，将date的时间切分，例如将2016-11-29整天按30分钟为一段切分为48段： 111111111111111111111111111111111110000011111111 ， 其中0表示不可用，1表示可用，如果工作日全天可用则每个分段都为1
@@ -92,87 +92,219 @@ DELETE（删除）
 	@ApiField("status")
 	private String status;
 
-	public CalendarScheduleInfo getCalendarSchedule() {
+    /**
+     * Gets calendar schedule.
+     *
+     * @return the calendar schedule
+     */
+    public CalendarScheduleInfo getCalendarSchedule() {
 		return this.calendarSchedule;
 	}
-	public void setCalendarSchedule(CalendarScheduleInfo calendarSchedule) {
+
+    /**
+     * Sets calendar schedule.
+     *
+     * @param calendarSchedule the calendar schedule
+     */
+    public void setCalendarSchedule(CalendarScheduleInfo calendarSchedule) {
 		this.calendarSchedule = calendarSchedule;
 	}
 
-	public String getCertNo() {
+    /**
+     * Gets cert no.
+     *
+     * @return the cert no
+     */
+    public String getCertNo() {
 		return this.certNo;
 	}
-	public void setCertNo(String certNo) {
+
+    /**
+     * Sets cert no.
+     *
+     * @param certNo the cert no
+     */
+    public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}
 
-	public String getCertType() {
+    /**
+     * Gets cert type.
+     *
+     * @return the cert type
+     */
+    public String getCertType() {
 		return this.certType;
 	}
-	public void setCertType(String certType) {
+
+    /**
+     * Sets cert type.
+     *
+     * @param certType the cert type
+     */
+    public void setCertType(String certType) {
 		this.certType = certType;
 	}
 
-	public String getDesc() {
+    /**
+     * Gets desc.
+     *
+     * @return the desc
+     */
+    public String getDesc() {
 		return this.desc;
 	}
-	public void setDesc(String desc) {
+
+    /**
+     * Sets desc.
+     *
+     * @param desc the desc
+     */
+    public void setDesc(String desc) {
 		this.desc = desc;
 	}
 
-	public List<LicenseInfo> getLicenseList() {
+    /**
+     * Gets license list.
+     *
+     * @return the license list
+     */
+    public List<LicenseInfo> getLicenseList() {
 		return this.licenseList;
 	}
-	public void setLicenseList(List<LicenseInfo> licenseList) {
+
+    /**
+     * Sets license list.
+     *
+     * @param licenseList the license list
+     */
+    public void setLicenseList(List<LicenseInfo> licenseList) {
 		this.licenseList = licenseList;
 	}
 
-	public String getLogonId() {
+    /**
+     * Gets logon id.
+     *
+     * @return the logon id
+     */
+    public String getLogonId() {
 		return this.logonId;
 	}
-	public void setLogonId(String logonId) {
+
+    /**
+     * Sets logon id.
+     *
+     * @param logonId the logon id
+     */
+    public void setLogonId(String logonId) {
 		this.logonId = logonId;
 	}
 
-	public String getMobile() {
+    /**
+     * Gets mobile.
+     *
+     * @return the mobile
+     */
+    public String getMobile() {
 		return this.mobile;
 	}
-	public void setMobile(String mobile) {
+
+    /**
+     * Sets mobile.
+     *
+     * @param mobile the mobile
+     */
+    public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getNickName() {
+    /**
+     * Gets nick name.
+     *
+     * @return the nick name
+     */
+    public String getNickName() {
 		return this.nickName;
 	}
-	public void setNickName(String nickName) {
+
+    /**
+     * Sets nick name.
+     *
+     * @param nickName the nick name
+     */
+    public void setNickName(String nickName) {
 		this.nickName = nickName;
 	}
 
-	public String getOutSpId() {
+    /**
+     * Gets out sp id.
+     *
+     * @return the out sp id
+     */
+    public String getOutSpId() {
 		return this.outSpId;
 	}
-	public void setOutSpId(String outSpId) {
+
+    /**
+     * Sets out sp id.
+     *
+     * @param outSpId the out sp id
+     */
+    public void setOutSpId(String outSpId) {
 		this.outSpId = outSpId;
 	}
 
-	public String getPhotoUrl() {
+    /**
+     * Gets photo url.
+     *
+     * @return the photo url
+     */
+    public String getPhotoUrl() {
 		return this.photoUrl;
 	}
-	public void setPhotoUrl(String photoUrl) {
+
+    /**
+     * Sets photo url.
+     *
+     * @param photoUrl the photo url
+     */
+    public void setPhotoUrl(String photoUrl) {
 		this.photoUrl = photoUrl;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 

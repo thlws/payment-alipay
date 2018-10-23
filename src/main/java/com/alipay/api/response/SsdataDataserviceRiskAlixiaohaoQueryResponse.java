@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: ssdata.dataservice.risk.alixiaohao.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-07-26 14:38:27
  */
 public class SsdataDataserviceRiskAlixiaohaoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1698722769723454325L;
+	private static final long serialVersionUID = 2824227872186424497L;
 
 	/** 
 	 * 是否阿里小号
@@ -20,10 +20,21 @@ public class SsdataDataserviceRiskAlixiaohaoQueryResponse extends AlipayResponse
 	@ApiField("is_alixiaohao")
 	private Boolean isAlixiaohao;
 
-	public void setIsAlixiaohao(Boolean isAlixiaohao) {
+    /**
+     * Sets is alixiaohao.
+     *
+     * @param isAlixiaohao the is alixiaohao
+     */
+    public void setIsAlixiaohao(Boolean isAlixiaohao) {
 		this.isAlixiaohao = isAlixiaohao;
 	}
-	public Boolean getIsAlixiaohao( ) {
+
+    /**
+     * Gets is alixiaohao.
+     *
+     * @return the is alixiaohao
+     */
+    public Boolean getIsAlixiaohao( ) {
 		return this.isAlixiaohao;
 	}
 

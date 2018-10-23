@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayDataDataexchangeSfasdfModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6825835861284166153L;
+	private static final long serialVersionUID = 6372961688486783698L;
 
 	/**
 	 * sdafsdfsaf
@@ -56,45 +56,111 @@ public class AlipayDataDataexchangeSfasdfModel extends AlipayObject {
 	@ApiField("string")
 	private List<String> wehtegf;
 
-	public AlipayItemVoucherTemplete getAdsfghjf() {
+    /**
+     * Gets adsfghjf.
+     *
+     * @return the adsfghjf
+     */
+    public AlipayItemVoucherTemplete getAdsfghjf() {
 		return this.adsfghjf;
 	}
-	public void setAdsfghjf(AlipayItemVoucherTemplete adsfghjf) {
+
+    /**
+     * Sets adsfghjf.
+     *
+     * @param adsfghjf the adsfghjf
+     */
+    public void setAdsfghjf(AlipayItemVoucherTemplete adsfghjf) {
 		this.adsfghjf = adsfghjf;
 	}
 
-	public List<String> getEasadasfd() {
+    /**
+     * Gets easadasfd.
+     *
+     * @return the easadasfd
+     */
+    public List<String> getEasadasfd() {
 		return this.easadasfd;
 	}
-	public void setEasadasfd(List<String> easadasfd) {
+
+    /**
+     * Sets easadasfd.
+     *
+     * @param easadasfd the easadasfd
+     */
+    public void setEasadasfd(List<String> easadasfd) {
 		this.easadasfd = easadasfd;
 	}
 
-	public List<String> getGdfsa() {
+    /**
+     * Gets gdfsa.
+     *
+     * @return the gdfsa
+     */
+    public List<String> getGdfsa() {
 		return this.gdfsa;
 	}
-	public void setGdfsa(List<String> gdfsa) {
+
+    /**
+     * Sets gdfsa.
+     *
+     * @param gdfsa the gdfsa
+     */
+    public void setGdfsa(List<String> gdfsa) {
 		this.gdfsa = gdfsa;
 	}
 
-	public String getHjgdfs() {
+    /**
+     * Gets hjgdfs.
+     *
+     * @return the hjgdfs
+     */
+    public String getHjgdfs() {
 		return this.hjgdfs;
 	}
-	public void setHjgdfs(String hjgdfs) {
+
+    /**
+     * Sets hjgdfs.
+     *
+     * @param hjgdfs the hjgdfs
+     */
+    public void setHjgdfs(String hjgdfs) {
 		this.hjgdfs = hjgdfs;
 	}
 
-	public List<String> getSdfgsdfg() {
+    /**
+     * Gets sdfgsdfg.
+     *
+     * @return the sdfgsdfg
+     */
+    public List<String> getSdfgsdfg() {
 		return this.sdfgsdfg;
 	}
-	public void setSdfgsdfg(List<String> sdfgsdfg) {
+
+    /**
+     * Sets sdfgsdfg.
+     *
+     * @param sdfgsdfg the sdfgsdfg
+     */
+    public void setSdfgsdfg(List<String> sdfgsdfg) {
 		this.sdfgsdfg = sdfgsdfg;
 	}
 
-	public List<String> getWehtegf() {
+    /**
+     * Gets wehtegf.
+     *
+     * @return the wehtegf
+     */
+    public List<String> getWehtegf() {
 		return this.wehtegf;
 	}
-	public void setWehtegf(List<String> wehtegf) {
+
+    /**
+     * Sets wehtegf.
+     *
+     * @param wehtegf the wehtegf
+     */
+    public void setWehtegf(List<String> wehtegf) {
 		this.wehtegf = wehtegf;
 	}
 

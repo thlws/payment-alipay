@@ -7,13 +7,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.life.account.create response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-08-01 16:01:03
  */
 public class AlipayOpenPublicLifeAccountCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1818247457966685582L;
+	private static final long serialVersionUID = 4376586741112364353L;
 
 	/** 
 	 * 过期时间，在过期时间之前需要拿refresh_token重新换取新的token使用
@@ -39,31 +39,75 @@ public class AlipayOpenPublicLifeAccountCreateResponse extends AlipayResponse {
 	@ApiField("token")
 	private String token;
 
-	public void setExpireTime(Date expireTime) {
+    /**
+     * Sets expire time.
+     *
+     * @param expireTime the expire time
+     */
+    public void setExpireTime(Date expireTime) {
 		this.expireTime = expireTime;
 	}
-	public Date getExpireTime( ) {
+
+    /**
+     * Gets expire time.
+     *
+     * @return the expire time
+     */
+    public Date getExpireTime( ) {
 		return this.expireTime;
 	}
 
-	public void setPublicId(String publicId) {
+    /**
+     * Sets public id.
+     *
+     * @param publicId the public id
+     */
+    public void setPublicId(String publicId) {
 		this.publicId = publicId;
 	}
-	public String getPublicId( ) {
+
+    /**
+     * Gets public id.
+     *
+     * @return the public id
+     */
+    public String getPublicId( ) {
 		return this.publicId;
 	}
 
-	public void setRefreshToken(String refreshToken) {
+    /**
+     * Sets refresh token.
+     *
+     * @param refreshToken the refresh token
+     */
+    public void setRefreshToken(String refreshToken) {
 		this.refreshToken = refreshToken;
 	}
-	public String getRefreshToken( ) {
+
+    /**
+     * Gets refresh token.
+     *
+     * @return the refresh token
+     */
+    public String getRefreshToken( ) {
 		return this.refreshToken;
 	}
 
-	public void setToken(String token) {
+    /**
+     * Sets token.
+     *
+     * @param token the token
+     */
+    public void setToken(String token) {
 		this.token = token;
 	}
-	public String getToken( ) {
+
+    /**
+     * Gets token.
+     *
+     * @return the token
+     */
+    public String getToken( ) {
 		return this.token;
 	}
 

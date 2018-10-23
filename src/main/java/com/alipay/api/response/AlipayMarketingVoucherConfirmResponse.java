@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.voucher.confirm response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-19 11:28:25
+ * @since 1.0, 2018-01-30 22:42:32
  */
 public class AlipayMarketingVoucherConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8129471144748318228L;
+	private static final long serialVersionUID = 4171754371871653523L;
 
 	/** 
 	 * 用于决定在用户确认领券后是否重定向。可枚举：true表示需要重定向，false表示不需要重定向
@@ -56,52 +56,129 @@ public class AlipayMarketingVoucherConfirmResponse extends AlipayResponse {
 	@ApiField("user_id")
 	private String userId;
 
-	public void setNeedRedirect(Boolean needRedirect) {
+    /**
+     * Sets need redirect.
+     *
+     * @param needRedirect the need redirect
+     */
+    public void setNeedRedirect(Boolean needRedirect) {
 		this.needRedirect = needRedirect;
 	}
-	public Boolean getNeedRedirect( ) {
+
+    /**
+     * Gets need redirect.
+     *
+     * @return the need redirect
+     */
+    public Boolean getNeedRedirect( ) {
 		return this.needRedirect;
 	}
 
-	public void setOutBizNo(String outBizNo) {
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
-	public String getOutBizNo( ) {
+
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo( ) {
 		return this.outBizNo;
 	}
 
-	public void setRedirectUri(String redirectUri) {
+    /**
+     * Sets redirect uri.
+     *
+     * @param redirectUri the redirect uri
+     */
+    public void setRedirectUri(String redirectUri) {
 		this.redirectUri = redirectUri;
 	}
-	public String getRedirectUri( ) {
+
+    /**
+     * Gets redirect uri.
+     *
+     * @return the redirect uri
+     */
+    public String getRedirectUri( ) {
 		return this.redirectUri;
 	}
 
-	public void setSendCode(String sendCode) {
+    /**
+     * Sets send code.
+     *
+     * @param sendCode the send code
+     */
+    public void setSendCode(String sendCode) {
 		this.sendCode = sendCode;
 	}
-	public String getSendCode( ) {
+
+    /**
+     * Gets send code.
+     *
+     * @return the send code
+     */
+    public String getSendCode( ) {
 		return this.sendCode;
 	}
 
-	public void setTemplateId(String templateId) {
+    /**
+     * Sets template id.
+     *
+     * @param templateId the template id
+     */
+    public void setTemplateId(String templateId) {
 		this.templateId = templateId;
 	}
-	public String getTemplateId( ) {
+
+    /**
+     * Gets template id.
+     *
+     * @return the template id
+     */
+    public String getTemplateId( ) {
 		return this.templateId;
 	}
 
-	public void setTheme(String theme) {
+    /**
+     * Sets theme.
+     *
+     * @param theme the theme
+     */
+    public void setTheme(String theme) {
 		this.theme = theme;
 	}
-	public String getTheme( ) {
+
+    /**
+     * Gets theme.
+     *
+     * @return the theme
+     */
+    public String getTheme( ) {
 		return this.theme;
 	}
 
-	public void setUserId(String userId) {
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public String getUserId( ) {
+
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId( ) {
 		return this.userId;
 	}
 

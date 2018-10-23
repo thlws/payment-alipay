@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BPOpenApiPUID extends AlipayObject {
 
-	private static final long serialVersionUID = 4585624878167668278L;
+	private static final long serialVersionUID = 5799262348199983566L;
 
 	/**
 	 * 系统名称
@@ -37,31 +37,75 @@ public class BPOpenApiPUID extends AlipayObject {
 	@ApiField("unique_key")
 	private String uniqueKey;
 
-	public String getAppName() {
+    /**
+     * Gets app name.
+     *
+     * @return the app name
+     */
+    public String getAppName() {
 		return this.appName;
 	}
-	public void setAppName(String appName) {
+
+    /**
+     * Sets app name.
+     *
+     * @param appName the app name
+     */
+    public void setAppName(String appName) {
 		this.appName = appName;
 	}
 
-	public String getBizId() {
+    /**
+     * Gets biz id.
+     *
+     * @return the biz id
+     */
+    public String getBizId() {
 		return this.bizId;
 	}
-	public void setBizId(String bizId) {
+
+    /**
+     * Sets biz id.
+     *
+     * @param bizId the biz id
+     */
+    public void setBizId(String bizId) {
 		this.bizId = bizId;
 	}
 
-	public String getBizType() {
+    /**
+     * Gets biz type.
+     *
+     * @return the biz type
+     */
+    public String getBizType() {
 		return this.bizType;
 	}
-	public void setBizType(String bizType) {
+
+    /**
+     * Sets biz type.
+     *
+     * @param bizType the biz type
+     */
+    public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
-	public String getUniqueKey() {
+    /**
+     * Gets unique key.
+     *
+     * @return the unique key
+     */
+    public String getUniqueKey() {
 		return this.uniqueKey;
 	}
-	public void setUniqueKey(String uniqueKey) {
+
+    /**
+     * Sets unique key.
+     *
+     * @param uniqueKey the unique key
+     */
+    public void setUniqueKey(String uniqueKey) {
 		this.uniqueKey = uniqueKey;
 	}
 

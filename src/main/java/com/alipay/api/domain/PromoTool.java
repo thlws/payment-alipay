@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PromoTool extends AlipayObject {
 
-	private static final long serialVersionUID = 2554982351592352716L;
+	private static final long serialVersionUID = 5414648716295428621L;
 
 	/**
 	 * 集点卡工具，仅在活动类型为POINT_SEND时才有效且必填，其他活动类型此字段必须为null
@@ -43,38 +43,93 @@ public class PromoTool extends AlipayObject {
 	@ApiField("voucher_no")
 	private String voucherNo;
 
-	public PointCard getPointCard() {
+    /**
+     * Gets point card.
+     *
+     * @return the point card
+     */
+    public PointCard getPointCard() {
 		return this.pointCard;
 	}
-	public void setPointCard(PointCard pointCard) {
+
+    /**
+     * Sets point card.
+     *
+     * @param pointCard the point card
+     */
+    public void setPointCard(PointCard pointCard) {
 		this.pointCard = pointCard;
 	}
 
-	public SendRule getSendRule() {
+    /**
+     * Gets send rule.
+     *
+     * @return the send rule
+     */
+    public SendRule getSendRule() {
 		return this.sendRule;
 	}
-	public void setSendRule(SendRule sendRule) {
+
+    /**
+     * Sets send rule.
+     *
+     * @param sendRule the send rule
+     */
+    public void setSendRule(SendRule sendRule) {
 		this.sendRule = sendRule;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 
-	public Voucher getVoucher() {
+    /**
+     * Gets voucher.
+     *
+     * @return the voucher
+     */
+    public Voucher getVoucher() {
 		return this.voucher;
 	}
-	public void setVoucher(Voucher voucher) {
+
+    /**
+     * Sets voucher.
+     *
+     * @param voucher the voucher
+     */
+    public void setVoucher(Voucher voucher) {
 		this.voucher = voucher;
 	}
 
-	public String getVoucherNo() {
+    /**
+     * Gets voucher no.
+     *
+     * @return the voucher no
+     */
+    public String getVoucherNo() {
 		return this.voucherNo;
 	}
-	public void setVoucherNo(String voucherNo) {
+
+    /**
+     * Sets voucher no.
+     *
+     * @param voucherNo the voucher no
+     */
+    public void setVoucherNo(String voucherNo) {
 		this.voucherNo = voucherNo;
 	}
 

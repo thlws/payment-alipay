@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户外部门店查询接口
  *
  * @author auto create
- * @since 1.0, 2017-06-20 21:12:59
+ * @since 1.0, 2018-07-03 13:52:35
  */
 public class AntMerchantExpandMerchantStorelistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5542273572967614457L;
+	private static final long serialVersionUID = 7713556693941698667L;
 
 	/**
 	 * 可选：  true / false 。
@@ -41,31 +41,75 @@ public class AntMerchantExpandMerchantStorelistQueryModel extends AlipayObject {
 	@ApiField("pid")
 	private String pid;
 
-	public String getIsIncludeCognate() {
+    /**
+     * Gets is include cognate.
+     *
+     * @return the is include cognate
+     */
+    public String getIsIncludeCognate() {
 		return this.isIncludeCognate;
 	}
-	public void setIsIncludeCognate(String isIncludeCognate) {
+
+    /**
+     * Sets is include cognate.
+     *
+     * @param isIncludeCognate the is include cognate
+     */
+    public void setIsIncludeCognate(String isIncludeCognate) {
 		this.isIncludeCognate = isIncludeCognate;
 	}
 
-	public Long getPageNum() {
+    /**
+     * Gets page num.
+     *
+     * @return the page num
+     */
+    public Long getPageNum() {
 		return this.pageNum;
 	}
-	public void setPageNum(Long pageNum) {
+
+    /**
+     * Sets page num.
+     *
+     * @param pageNum the page num
+     */
+    public void setPageNum(Long pageNum) {
 		this.pageNum = pageNum;
 	}
 
-	public Long getPageSize() {
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public Long getPageSize() {
 		return this.pageSize;
 	}
-	public void setPageSize(Long pageSize) {
+
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}
 
-	public String getPid() {
+    /**
+     * Gets pid.
+     *
+     * @return the pid
+     */
+    public String getPid() {
 		return this.pid;
 	}
-	public void setPid(String pid) {
+
+    /**
+     * Sets pid.
+     *
+     * @param pid the pid
+     */
+    public void setPid(String pid) {
 		this.pid = pid;
 	}
 

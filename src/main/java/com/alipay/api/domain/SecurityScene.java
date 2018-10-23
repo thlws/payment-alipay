@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安全场景
  *
  * @author auto create
- * @since 1.0, 2017-08-03 10:37:18
+ * @since 1.0, 2018-09-18 10:50:24
  */
 public class SecurityScene extends AlipayObject {
 
-	private static final long serialVersionUID = 6154426425166568445L;
+	private static final long serialVersionUID = 3251222656771229793L;
 
 	/**
 	 * 接入渠道
@@ -55,52 +55,129 @@ public class SecurityScene extends AlipayObject {
 	@ApiField("total_fee")
 	private String totalFee;
 
-	public String getAccessChannel() {
+    /**
+     * Gets access channel.
+     *
+     * @return the access channel
+     */
+    public String getAccessChannel() {
 		return this.accessChannel;
 	}
-	public void setAccessChannel(String accessChannel) {
+
+    /**
+     * Sets access channel.
+     *
+     * @param accessChannel the access channel
+     */
+    public void setAccessChannel(String accessChannel) {
 		this.accessChannel = accessChannel;
 	}
 
-	public String getCtuParams() {
+    /**
+     * Gets ctu params.
+     *
+     * @return the ctu params
+     */
+    public String getCtuParams() {
 		return this.ctuParams;
 	}
-	public void setCtuParams(String ctuParams) {
+
+    /**
+     * Sets ctu params.
+     *
+     * @param ctuParams the ctu params
+     */
+    public void setCtuParams(String ctuParams) {
 		this.ctuParams = ctuParams;
 	}
 
-	public String getProductName() {
+    /**
+     * Gets product name.
+     *
+     * @return the product name
+     */
+    public String getProductName() {
 		return this.productName;
 	}
-	public void setProductName(String productName) {
+
+    /**
+     * Sets product name.
+     *
+     * @param productName the product name
+     */
+    public void setProductName(String productName) {
 		this.productName = productName;
 	}
 
-	public String getProductNode() {
+    /**
+     * Gets product node.
+     *
+     * @return the product node
+     */
+    public String getProductNode() {
 		return this.productNode;
 	}
-	public void setProductNode(String productNode) {
+
+    /**
+     * Sets product node.
+     *
+     * @param productNode the product node
+     */
+    public void setProductNode(String productNode) {
 		this.productNode = productNode;
 	}
 
-	public String getSecuritySceneParams() {
+    /**
+     * Gets security scene params.
+     *
+     * @return the security scene params
+     */
+    public String getSecuritySceneParams() {
 		return this.securitySceneParams;
 	}
-	public void setSecuritySceneParams(String securitySceneParams) {
+
+    /**
+     * Sets security scene params.
+     *
+     * @param securitySceneParams the security scene params
+     */
+    public void setSecuritySceneParams(String securitySceneParams) {
 		this.securitySceneParams = securitySceneParams;
 	}
 
-	public String getSystemName() {
+    /**
+     * Gets system name.
+     *
+     * @return the system name
+     */
+    public String getSystemName() {
 		return this.systemName;
 	}
-	public void setSystemName(String systemName) {
+
+    /**
+     * Sets system name.
+     *
+     * @param systemName the system name
+     */
+    public void setSystemName(String systemName) {
 		this.systemName = systemName;
 	}
 
-	public String getTotalFee() {
+    /**
+     * Gets total fee.
+     *
+     * @return the total fee
+     */
+    public String getTotalFee() {
 		return this.totalFee;
 	}
-	public void setTotalFee(String totalFee) {
+
+    /**
+     * Sets total fee.
+     *
+     * @param totalFee the total fee
+     */
+    public void setTotalFee(String totalFee) {
 		this.totalFee = totalFee;
 	}
 

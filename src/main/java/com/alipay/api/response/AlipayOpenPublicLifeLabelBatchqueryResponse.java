@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.life.label.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-27 17:51:44
+ * @since 1.0, 2018-07-25 13:53:35
  */
 public class AlipayOpenPublicLifeLabelBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6317437677612751166L;
+	private static final long serialVersionUID = 1221924871638574222L;
 
 	/** 
 	 * 标签列表
@@ -24,10 +24,21 @@ public class AlipayOpenPublicLifeLabelBatchqueryResponse extends AlipayResponse 
 	@ApiField("life_label")
 	private List<LifeLabel> labels;
 
-	public void setLabels(List<LifeLabel> labels) {
+    /**
+     * Sets labels.
+     *
+     * @param labels the labels
+     */
+    public void setLabels(List<LifeLabel> labels) {
 		this.labels = labels;
 	}
-	public List<LifeLabel> getLabels( ) {
+
+    /**
+     * Gets labels.
+     *
+     * @return the labels
+     */
+    public List<LifeLabel> getLabels( ) {
 		return this.labels;
 	}
 

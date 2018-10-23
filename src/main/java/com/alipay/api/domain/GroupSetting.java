@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GroupSetting extends AlipayObject {
 
-	private static final long serialVersionUID = 8858995199892788865L;
+	private static final long serialVersionUID = 6647493579959952849L;
 
 	/**
 	 * 群名称
@@ -31,24 +31,57 @@ public class GroupSetting extends AlipayObject {
 	@ApiField("public_notice")
 	private String publicNotice;
 
-	public String getGroupName() {
+    /**
+     * Gets group name.
+     *
+     * @return the group name
+     */
+    public String getGroupName() {
 		return this.groupName;
 	}
-	public void setGroupName(String groupName) {
+
+    /**
+     * Sets group name.
+     *
+     * @param groupName the group name
+     */
+    public void setGroupName(String groupName) {
 		this.groupName = groupName;
 	}
 
-	public Boolean getIsOpeninv() {
+    /**
+     * Gets is openinv.
+     *
+     * @return the is openinv
+     */
+    public Boolean getIsOpeninv() {
 		return this.isOpeninv;
 	}
-	public void setIsOpeninv(Boolean isOpeninv) {
+
+    /**
+     * Sets is openinv.
+     *
+     * @param isOpeninv the is openinv
+     */
+    public void setIsOpeninv(Boolean isOpeninv) {
 		this.isOpeninv = isOpeninv;
 	}
 
-	public String getPublicNotice() {
+    /**
+     * Gets public notice.
+     *
+     * @return the public notice
+     */
+    public String getPublicNotice() {
 		return this.publicNotice;
 	}
-	public void setPublicNotice(String publicNotice) {
+
+    /**
+     * Sets public notice.
+     *
+     * @param publicNotice the public notice
+     */
+    public void setPublicNotice(String publicNotice) {
 		this.publicNotice = publicNotice;
 	}
 

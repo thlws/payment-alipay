@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KbOrderActivityModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6239453322635899997L;
+	private static final long serialVersionUID = 8276542567721924985L;
 
 	/**
 	 * 活动ID
@@ -25,17 +25,39 @@ public class KbOrderActivityModel extends AlipayObject {
 	@ApiField("item_id")
 	private String itemId;
 
-	public String getActivityId() {
+    /**
+     * Gets activity id.
+     *
+     * @return the activity id
+     */
+    public String getActivityId() {
 		return this.activityId;
 	}
-	public void setActivityId(String activityId) {
+
+    /**
+     * Sets activity id.
+     *
+     * @param activityId the activity id
+     */
+    public void setActivityId(String activityId) {
 		this.activityId = activityId;
 	}
 
-	public String getItemId() {
+    /**
+     * Gets item id.
+     *
+     * @return the item id
+     */
+    public String getItemId() {
 		return this.itemId;
 	}
-	public void setItemId(String itemId) {
+
+    /**
+     * Sets item id.
+     *
+     * @param itemId the item id
+     */
+    public void setItemId(String itemId) {
 		this.itemId = itemId;
 	}
 

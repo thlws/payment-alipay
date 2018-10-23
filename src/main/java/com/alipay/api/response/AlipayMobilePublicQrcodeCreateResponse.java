@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.public.qrcode.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-12-19 20:53:20
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayMobilePublicQrcodeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1423371684671299956L;
+	private static final long serialVersionUID = 4481558294478971223L;
 
 	/** 
 	 * 返回结果码，如200，标识成功
@@ -45,17 +45,39 @@ public class AlipayMobilePublicQrcodeCreateResponse extends AlipayResponse {
 		return this.code;
 	}
 
-	public void setCodeImg(String codeImg) {
+    /**
+     * Sets code img.
+     *
+     * @param codeImg the code img
+     */
+    public void setCodeImg(String codeImg) {
 		this.codeImg = codeImg;
 	}
-	public String getCodeImg( ) {
+
+    /**
+     * Gets code img.
+     *
+     * @return the code img
+     */
+    public String getCodeImg( ) {
 		return this.codeImg;
 	}
 
-	public void setExpireSecond(Long expireSecond) {
+    /**
+     * Sets expire second.
+     *
+     * @param expireSecond the expire second
+     */
+    public void setExpireSecond(Long expireSecond) {
 		this.expireSecond = expireSecond;
 	}
-	public Long getExpireSecond( ) {
+
+    /**
+     * Gets expire second.
+     *
+     * @return the expire second
+     */
+    public Long getExpireSecond( ) {
 		return this.expireSecond;
 	}
 

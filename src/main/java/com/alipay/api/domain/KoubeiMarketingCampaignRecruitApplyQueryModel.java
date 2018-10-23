@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMarketingCampaignRecruitApplyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3362669235427929238L;
+	private static final long serialVersionUID = 2861328572571524635L;
 
 	/**
 	 * 运营活动id
@@ -31,24 +31,57 @@ public class KoubeiMarketingCampaignRecruitApplyQueryModel extends AlipayObject 
 	@ApiField("page_size")
 	private String pageSize;
 
-	public String getCampId() {
+    /**
+     * Gets camp id.
+     *
+     * @return the camp id
+     */
+    public String getCampId() {
 		return this.campId;
 	}
-	public void setCampId(String campId) {
+
+    /**
+     * Sets camp id.
+     *
+     * @param campId the camp id
+     */
+    public void setCampId(String campId) {
 		this.campId = campId;
 	}
 
-	public String getPageNum() {
+    /**
+     * Gets page num.
+     *
+     * @return the page num
+     */
+    public String getPageNum() {
 		return this.pageNum;
 	}
-	public void setPageNum(String pageNum) {
+
+    /**
+     * Sets page num.
+     *
+     * @param pageNum the page num
+     */
+    public void setPageNum(String pageNum) {
 		this.pageNum = pageNum;
 	}
 
-	public String getPageSize() {
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public String getPageSize() {
 		return this.pageSize;
 	}
-	public void setPageSize(String pageSize) {
+
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(String pageSize) {
 		this.pageSize = pageSize;
 	}
 

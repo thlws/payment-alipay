@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceCityfacilitatorVoucherCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7746137663889958367L;
+	private static final long serialVersionUID = 3833945142853543481L;
 
 	/**
 	 * 渠道商提供的其它信息
@@ -43,38 +43,93 @@ public class AlipayCommerceCityfacilitatorVoucherCancelModel extends AlipayObjec
 	@ApiField("trade_no")
 	private String tradeNo;
 
-	public String getBizInfoExt() {
+    /**
+     * Gets biz info ext.
+     *
+     * @return the biz info ext
+     */
+    public String getBizInfoExt() {
 		return this.bizInfoExt;
 	}
-	public void setBizInfoExt(String bizInfoExt) {
+
+    /**
+     * Sets biz info ext.
+     *
+     * @param bizInfoExt the biz info ext
+     */
+    public void setBizInfoExt(String bizInfoExt) {
 		this.bizInfoExt = bizInfoExt;
 	}
 
-	public String getCityCode() {
+    /**
+     * Gets city code.
+     *
+     * @return the city code
+     */
+    public String getCityCode() {
 		return this.cityCode;
 	}
-	public void setCityCode(String cityCode) {
+
+    /**
+     * Sets city code.
+     *
+     * @param cityCode the city code
+     */
+    public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
 	}
 
-	public String getOperateTime() {
+    /**
+     * Gets operate time.
+     *
+     * @return the operate time
+     */
+    public String getOperateTime() {
 		return this.operateTime;
 	}
-	public void setOperateTime(String operateTime) {
+
+    /**
+     * Sets operate time.
+     *
+     * @param operateTime the operate time
+     */
+    public void setOperateTime(String operateTime) {
 		this.operateTime = operateTime;
 	}
 
-	public String getTicketNo() {
+    /**
+     * Gets ticket no.
+     *
+     * @return the ticket no
+     */
+    public String getTicketNo() {
 		return this.ticketNo;
 	}
-	public void setTicketNo(String ticketNo) {
+
+    /**
+     * Sets ticket no.
+     *
+     * @param ticketNo the ticket no
+     */
+    public void setTicketNo(String ticketNo) {
 		this.ticketNo = ticketNo;
 	}
 
-	public String getTradeNo() {
+    /**
+     * Gets trade no.
+     *
+     * @return the trade no
+     */
+    public String getTradeNo() {
 		return this.tradeNo;
 	}
-	public void setTradeNo(String tradeNo) {
+
+    /**
+     * Sets trade no.
+     *
+     * @param tradeNo the trade no
+     */
+    public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
 

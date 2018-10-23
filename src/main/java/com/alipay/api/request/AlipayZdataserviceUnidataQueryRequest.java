@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.zdataservice.unidata.query request
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-04-26 16:20:03
  */
@@ -28,17 +28,39 @@ public class AlipayZdataserviceUnidataQueryRequest implements AlipayRequest<Alip
 	 */
 	private String uniqKey;
 
-	public void setQueryCondition(String queryCondition) {
+    /**
+     * Sets query condition.
+     *
+     * @param queryCondition the query condition
+     */
+    public void setQueryCondition(String queryCondition) {
 		this.queryCondition = queryCondition;
 	}
-	public String getQueryCondition() {
+
+    /**
+     * Gets query condition.
+     *
+     * @return the query condition
+     */
+    public String getQueryCondition() {
 		return this.queryCondition;
 	}
 
-	public void setUniqKey(String uniqKey) {
+    /**
+     * Sets uniq key.
+     *
+     * @param uniqKey the uniq key
+     */
+    public void setUniqKey(String uniqKey) {
 		this.uniqKey = uniqKey;
 	}
-	public String getUniqKey() {
+
+    /**
+     * Gets uniq key.
+     *
+     * @return the uniq key
+     */
+    public String getUniqKey() {
 		return this.uniqKey;
 	}
 	private String terminalType;
@@ -111,7 +133,13 @@ public class AlipayZdataserviceUnidataQueryRequest implements AlipayRequest<Alip
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

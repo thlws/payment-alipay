@@ -11,11 +11,24 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 券对象
  *
  * @author auto create
- * @since 1.0, 2017-09-30 11:21:09
+ * @since 1.0, 2018-04-17 18:15:59
  */
 public class Voucher extends AlipayObject {
 
-	private static final long serialVersionUID = 7769751829995851561L;
+	private static final long serialVersionUID = 7272531762832956316L;
+
+	/**
+	 * 是否允许拆分，券在核销的时候是否允许券的面额拆分使用。(仅限渠道类型为ISV企业福利：ISV_ENTERPRISE_BENIFIT的场景使用)
+	 */
+	@ApiField("allow_split")
+	private Boolean allowSplit;
+
+	/**
+	 * 券剩余面额，单位元
+券详情查询接口返回，可拆分券中的券详情展示用
+	 */
+	@ApiField("available_amount")
+	private String availableAmount;
 
 	/**
 	 * 券副标题
@@ -103,7 +116,7 @@ public class Voucher extends AlipayObject {
 	/**
 	 * 最高优惠金额，单位元
 指用券最高可以优惠的金额
-必须为合法金额类型字符串仅当券类型为折扣券（DISOUNT），每满减券（PER_FULL_CUT）有效
+必须为合法金额类型字符串仅当券类型为折扣券（RATE），每满减券（PER_FULL_CUT）有效
 	 */
 	@ApiField("max_amount")
 	private String maxAmount;
@@ -147,7 +160,7 @@ RS:该全场优惠和其他所有优惠都可以叠加
 	 * 券核销时，抹零方式，目前支持：
 NOT_AUTO_ROUNDING:不自动抹零
 AUTO_ROUNDING_YUAN:自动抹零到元
-AUTO_ROUNDING_JIAO: "自动抹零到角
+AUTO_ROUNDING_JIAO:自动抹零到角
 ROUNDING_UP_YUAN:四舍五入到元
 ROUNDING_UP_JIAO:四舍五入到角
 	 */
@@ -227,192 +240,525 @@ MERCHANT_SCAN：商户通过APP扫码核销
 	@ApiField("worth_value")
 	private String worthValue;
 
-	public String getBrandName() {
+    /**
+     * Gets allow split.
+     *
+     * @return the allow split
+     */
+    public Boolean getAllowSplit() {
+		return this.allowSplit;
+	}
+
+    /**
+     * Sets allow split.
+     *
+     * @param allowSplit the allow split
+     */
+    public void setAllowSplit(Boolean allowSplit) {
+		this.allowSplit = allowSplit;
+	}
+
+    /**
+     * Gets available amount.
+     *
+     * @return the available amount
+     */
+    public String getAvailableAmount() {
+		return this.availableAmount;
+	}
+
+    /**
+     * Sets available amount.
+     *
+     * @param availableAmount the available amount
+     */
+    public void setAvailableAmount(String availableAmount) {
+		this.availableAmount = availableAmount;
+	}
+
+    /**
+     * Gets brand name.
+     *
+     * @return the brand name
+     */
+    public String getBrandName() {
 		return this.brandName;
 	}
-	public void setBrandName(String brandName) {
+
+    /**
+     * Sets brand name.
+     *
+     * @param brandName the brand name
+     */
+    public void setBrandName(String brandName) {
 		this.brandName = brandName;
 	}
 
-	public List<ClauseTerm> getClauseTerms() {
+    /**
+     * Gets clause terms.
+     *
+     * @return the clause terms
+     */
+    public List<ClauseTerm> getClauseTerms() {
 		return this.clauseTerms;
 	}
-	public void setClauseTerms(List<ClauseTerm> clauseTerms) {
+
+    /**
+     * Sets clause terms.
+     *
+     * @param clauseTerms the clause terms
+     */
+    public void setClauseTerms(List<ClauseTerm> clauseTerms) {
 		this.clauseTerms = clauseTerms;
 	}
 
-	public DelayInfo getDelayInfo() {
+    /**
+     * Gets delay info.
+     *
+     * @return the delay info
+     */
+    public DelayInfo getDelayInfo() {
 		return this.delayInfo;
 	}
-	public void setDelayInfo(DelayInfo delayInfo) {
+
+    /**
+     * Sets delay info.
+     *
+     * @param delayInfo the delay info
+     */
+    public void setDelayInfo(DelayInfo delayInfo) {
 		this.delayInfo = delayInfo;
 	}
 
-	public String getDesc() {
+    /**
+     * Gets desc.
+     *
+     * @return the desc
+     */
+    public String getDesc() {
 		return this.desc;
 	}
-	public void setDesc(String desc) {
+
+    /**
+     * Sets desc.
+     *
+     * @param desc the desc
+     */
+    public void setDesc(String desc) {
 		this.desc = desc;
 	}
 
-	public List<VoucherDescDetail> getDescDetailList() {
+    /**
+     * Gets desc detail list.
+     *
+     * @return the desc detail list
+     */
+    public List<VoucherDescDetail> getDescDetailList() {
 		return this.descDetailList;
 	}
-	public void setDescDetailList(List<VoucherDescDetail> descDetailList) {
+
+    /**
+     * Sets desc detail list.
+     *
+     * @param descDetailList the desc detail list
+     */
+    public void setDescDetailList(List<VoucherDescDetail> descDetailList) {
 		this.descDetailList = descDetailList;
 	}
 
-	public DisplayConfig getDisplayConfig() {
+    /**
+     * Gets display config.
+     *
+     * @return the display config
+     */
+    public DisplayConfig getDisplayConfig() {
 		return this.displayConfig;
 	}
-	public void setDisplayConfig(DisplayConfig displayConfig) {
+
+    /**
+     * Sets display config.
+     *
+     * @param displayConfig the display config
+     */
+    public void setDisplayConfig(DisplayConfig displayConfig) {
 		this.displayConfig = displayConfig;
 	}
 
-	public String getDonateFlag() {
+    /**
+     * Gets donate flag.
+     *
+     * @return the donate flag
+     */
+    public String getDonateFlag() {
 		return this.donateFlag;
 	}
-	public void setDonateFlag(String donateFlag) {
+
+    /**
+     * Sets donate flag.
+     *
+     * @param donateFlag the donate flag
+     */
+    public void setDonateFlag(String donateFlag) {
 		this.donateFlag = donateFlag;
 	}
 
-	public String getEffectType() {
+    /**
+     * Gets effect type.
+     *
+     * @return the effect type
+     */
+    public String getEffectType() {
 		return this.effectType;
 	}
-	public void setEffectType(String effectType) {
+
+    /**
+     * Sets effect type.
+     *
+     * @param effectType the effect type
+     */
+    public void setEffectType(String effectType) {
 		this.effectType = effectType;
 	}
 
-	public Date getEndTime() {
+    /**
+     * Gets end time.
+     *
+     * @return the end time
+     */
+    public Date getEndTime() {
 		return this.endTime;
 	}
-	public void setEndTime(Date endTime) {
+
+    /**
+     * Sets end time.
+     *
+     * @param endTime the end time
+     */
+    public void setEndTime(Date endTime) {
 		this.endTime = endTime;
 	}
 
-	public String getExtInfo() {
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo() {
 		return this.extInfo;
 	}
-	public void setExtInfo(String extInfo) {
+
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
-	public ItemInfo getItemInfo() {
+    /**
+     * Gets item info.
+     *
+     * @return the item info
+     */
+    public ItemInfo getItemInfo() {
 		return this.itemInfo;
 	}
-	public void setItemInfo(ItemInfo itemInfo) {
+
+    /**
+     * Sets item info.
+     *
+     * @param itemInfo the item info
+     */
+    public void setItemInfo(ItemInfo itemInfo) {
 		this.itemInfo = itemInfo;
 	}
 
-	public String getLogo() {
+    /**
+     * Gets logo.
+     *
+     * @return the logo
+     */
+    public String getLogo() {
 		return this.logo;
 	}
-	public void setLogo(String logo) {
+
+    /**
+     * Sets logo.
+     *
+     * @param logo the logo
+     */
+    public void setLogo(String logo) {
 		this.logo = logo;
 	}
 
-	public String getMaxAmount() {
+    /**
+     * Gets max amount.
+     *
+     * @return the max amount
+     */
+    public String getMaxAmount() {
 		return this.maxAmount;
 	}
-	public void setMaxAmount(String maxAmount) {
+
+    /**
+     * Sets max amount.
+     *
+     * @param maxAmount the max amount
+     */
+    public void setMaxAmount(String maxAmount) {
 		this.maxAmount = maxAmount;
 	}
 
-	public String getMultiUseMode() {
+    /**
+     * Gets multi use mode.
+     *
+     * @return the multi use mode
+     */
+    public String getMultiUseMode() {
 		return this.multiUseMode;
 	}
-	public void setMultiUseMode(String multiUseMode) {
+
+    /**
+     * Sets multi use mode.
+     *
+     * @param multiUseMode the multi use mode
+     */
+    public void setMultiUseMode(String multiUseMode) {
 		this.multiUseMode = multiUseMode;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getRate() {
+    /**
+     * Gets rate.
+     *
+     * @return the rate
+     */
+    public String getRate() {
 		return this.rate;
 	}
-	public void setRate(String rate) {
+
+    /**
+     * Sets rate.
+     *
+     * @param rate the rate
+     */
+    public void setRate(String rate) {
 		this.rate = rate;
 	}
 
-	public String getRelativeTime() {
+    /**
+     * Gets relative time.
+     *
+     * @return the relative time
+     */
+    public String getRelativeTime() {
 		return this.relativeTime;
 	}
-	public void setRelativeTime(String relativeTime) {
+
+    /**
+     * Sets relative time.
+     *
+     * @param relativeTime the relative time
+     */
+    public void setRelativeTime(String relativeTime) {
 		this.relativeTime = relativeTime;
 	}
 
-	public String getRoundingRule() {
+    /**
+     * Gets rounding rule.
+     *
+     * @return the rounding rule
+     */
+    public String getRoundingRule() {
 		return this.roundingRule;
 	}
-	public void setRoundingRule(String roundingRule) {
+
+    /**
+     * Sets rounding rule.
+     *
+     * @param roundingRule the rounding rule
+     */
+    public void setRoundingRule(String roundingRule) {
 		this.roundingRule = roundingRule;
 	}
 
-	public Date getStartTime() {
+    /**
+     * Gets start time.
+     *
+     * @return the start time
+     */
+    public Date getStartTime() {
 		return this.startTime;
 	}
-	public void setStartTime(Date startTime) {
+
+    /**
+     * Sets start time.
+     *
+     * @param startTime the start time
+     */
+    public void setStartTime(Date startTime) {
 		this.startTime = startTime;
 	}
 
-	public String getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
-	public void setType(String type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
 
-	public List<String> getUseInstructions() {
+    /**
+     * Gets use instructions.
+     *
+     * @return the use instructions
+     */
+    public List<String> getUseInstructions() {
 		return this.useInstructions;
 	}
-	public void setUseInstructions(List<String> useInstructions) {
+
+    /**
+     * Sets use instructions.
+     *
+     * @param useInstructions the use instructions
+     */
+    public void setUseInstructions(List<String> useInstructions) {
 		this.useInstructions = useInstructions;
 	}
 
-	public UseRule getUseRule() {
+    /**
+     * Gets use rule.
+     *
+     * @return the use rule
+     */
+    public UseRule getUseRule() {
 		return this.useRule;
 	}
-	public void setUseRule(UseRule useRule) {
+
+    /**
+     * Sets use rule.
+     *
+     * @param useRule the use rule
+     */
+    public void setUseRule(UseRule useRule) {
 		this.useRule = useRule;
 	}
 
-	public String getValidateType() {
+    /**
+     * Gets validate type.
+     *
+     * @return the validate type
+     */
+    public String getValidateType() {
 		return this.validateType;
 	}
-	public void setValidateType(String validateType) {
+
+    /**
+     * Sets validate type.
+     *
+     * @param validateType the validate type
+     */
+    public void setValidateType(String validateType) {
 		this.validateType = validateType;
 	}
 
-	public String getVerifyMode() {
+    /**
+     * Gets verify mode.
+     *
+     * @return the verify mode
+     */
+    public String getVerifyMode() {
 		return this.verifyMode;
 	}
-	public void setVerifyMode(String verifyMode) {
+
+    /**
+     * Sets verify mode.
+     *
+     * @param verifyMode the verify mode
+     */
+    public void setVerifyMode(String verifyMode) {
 		this.verifyMode = verifyMode;
 	}
 
-	public String getVoucherImg() {
+    /**
+     * Gets voucher img.
+     *
+     * @return the voucher img
+     */
+    public String getVoucherImg() {
 		return this.voucherImg;
 	}
-	public void setVoucherImg(String voucherImg) {
+
+    /**
+     * Sets voucher img.
+     *
+     * @param voucherImg the voucher img
+     */
+    public void setVoucherImg(String voucherImg) {
 		this.voucherImg = voucherImg;
 	}
 
-	public String getVoucherNote() {
+    /**
+     * Gets voucher note.
+     *
+     * @return the voucher note
+     */
+    public String getVoucherNote() {
 		return this.voucherNote;
 	}
-	public void setVoucherNote(String voucherNote) {
+
+    /**
+     * Sets voucher note.
+     *
+     * @param voucherNote the voucher note
+     */
+    public void setVoucherNote(String voucherNote) {
 		this.voucherNote = voucherNote;
 	}
 
-	public String getWorthValue() {
+    /**
+     * Gets worth value.
+     *
+     * @return the worth value
+     */
+    public String getWorthValue() {
 		return this.worthValue;
 	}
-	public void setWorthValue(String worthValue) {
+
+    /**
+     * Sets worth value.
+     *
+     * @param worthValue the worth value
+     */
+    public void setWorthValue(String worthValue) {
 		this.worthValue = worthValue;
 	}
 

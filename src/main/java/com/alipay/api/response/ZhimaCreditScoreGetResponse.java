@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: zhima.credit.score.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-12 14:16:29
+ * @since 1.0, 2018-03-14 21:31:44
  */
 public class ZhimaCreditScoreGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5387117434177724935L;
+	private static final long serialVersionUID = 7882111884835197132L;
 
 	/** 
 	 * 芝麻信用对于每一次请求返回的业务号。后续可以通过此业务号进行对账
@@ -21,22 +21,44 @@ public class ZhimaCreditScoreGetResponse extends AlipayResponse {
 	private String bizNo;
 
 	/** 
-	 * 用户的芝麻信用评分。分值范围[350,950]。如果用户数据不足，无法评分时，返回字符串"N/A"。
+	 * 用户的芝麻分。分值范围[350,950]。如果用户数据不足，无法评分时，返回字符串"N/A"。
 	 */
 	@ApiField("zm_score")
 	private String zmScore;
 
-	public void setBizNo(String bizNo) {
+    /**
+     * Sets biz no.
+     *
+     * @param bizNo the biz no
+     */
+    public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
 	}
-	public String getBizNo( ) {
+
+    /**
+     * Gets biz no.
+     *
+     * @return the biz no
+     */
+    public String getBizNo( ) {
 		return this.bizNo;
 	}
 
-	public void setZmScore(String zmScore) {
+    /**
+     * Sets zm score.
+     *
+     * @param zmScore the zm score
+     */
+    public void setZmScore(String zmScore) {
 		this.zmScore = zmScore;
 	}
-	public String getZmScore( ) {
+
+    /**
+     * Gets zm score.
+     *
+     * @return the zm score
+     */
+    public String getZmScore( ) {
 		return this.zmScore;
 	}
 

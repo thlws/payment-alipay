@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CashCampaignInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7845566823633573265L;
+	private static final long serialVersionUID = 3838198913855835184L;
 
 	/**
 	 * 活动状态
@@ -37,31 +37,75 @@ public class CashCampaignInfo extends AlipayObject {
 	@ApiField("origin_crowd_no")
 	private String originCrowdNo;
 
-	public String getCampStatus() {
+    /**
+     * Gets camp status.
+     *
+     * @return the camp status
+     */
+    public String getCampStatus() {
 		return this.campStatus;
 	}
-	public void setCampStatus(String campStatus) {
+
+    /**
+     * Sets camp status.
+     *
+     * @param campStatus the camp status
+     */
+    public void setCampStatus(String campStatus) {
 		this.campStatus = campStatus;
 	}
 
-	public String getCouponName() {
+    /**
+     * Gets coupon name.
+     *
+     * @return the coupon name
+     */
+    public String getCouponName() {
 		return this.couponName;
 	}
-	public void setCouponName(String couponName) {
+
+    /**
+     * Sets coupon name.
+     *
+     * @param couponName the coupon name
+     */
+    public void setCouponName(String couponName) {
 		this.couponName = couponName;
 	}
 
-	public String getCrowdNo() {
+    /**
+     * Gets crowd no.
+     *
+     * @return the crowd no
+     */
+    public String getCrowdNo() {
 		return this.crowdNo;
 	}
-	public void setCrowdNo(String crowdNo) {
+
+    /**
+     * Sets crowd no.
+     *
+     * @param crowdNo the crowd no
+     */
+    public void setCrowdNo(String crowdNo) {
 		this.crowdNo = crowdNo;
 	}
 
-	public String getOriginCrowdNo() {
+    /**
+     * Gets origin crowd no.
+     *
+     * @return the origin crowd no
+     */
+    public String getOriginCrowdNo() {
 		return this.originCrowdNo;
 	}
-	public void setOriginCrowdNo(String originCrowdNo) {
+
+    /**
+     * Sets origin crowd no.
+     *
+     * @param originCrowdNo the origin crowd no
+     */
+    public void setOriginCrowdNo(String originCrowdNo) {
 		this.originCrowdNo = originCrowdNo;
 	}
 

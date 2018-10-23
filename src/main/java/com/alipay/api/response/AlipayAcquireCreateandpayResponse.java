@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.acquire.createandpay response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-11-22 19:31:24
+ * @since 1.0, 2018-08-24 17:34:55
  */
 public class AlipayAcquireCreateandpayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3751236159442764725L;
+	private static final long serialVersionUID = 4754928525878159587L;
 
 	/** 
 	 * 买家支付宝账号，可以为email或者手机号。对部分信息进行了隐藏。
@@ -66,59 +66,147 @@ public class AlipayAcquireCreateandpayResponse extends AlipayResponse {
 	@ApiField("trade_no")
 	private String tradeNo;
 
-	public void setBuyerLogonId(String buyerLogonId) {
+    /**
+     * Sets buyer logon id.
+     *
+     * @param buyerLogonId the buyer logon id
+     */
+    public void setBuyerLogonId(String buyerLogonId) {
 		this.buyerLogonId = buyerLogonId;
 	}
-	public String getBuyerLogonId( ) {
+
+    /**
+     * Gets buyer logon id.
+     *
+     * @return the buyer logon id
+     */
+    public String getBuyerLogonId( ) {
 		return this.buyerLogonId;
 	}
 
-	public void setBuyerUserId(String buyerUserId) {
+    /**
+     * Sets buyer user id.
+     *
+     * @param buyerUserId the buyer user id
+     */
+    public void setBuyerUserId(String buyerUserId) {
 		this.buyerUserId = buyerUserId;
 	}
-	public String getBuyerUserId( ) {
+
+    /**
+     * Gets buyer user id.
+     *
+     * @return the buyer user id
+     */
+    public String getBuyerUserId( ) {
 		return this.buyerUserId;
 	}
 
-	public void setDetailErrorCode(String detailErrorCode) {
+    /**
+     * Sets detail error code.
+     *
+     * @param detailErrorCode the detail error code
+     */
+    public void setDetailErrorCode(String detailErrorCode) {
 		this.detailErrorCode = detailErrorCode;
 	}
-	public String getDetailErrorCode( ) {
+
+    /**
+     * Gets detail error code.
+     *
+     * @return the detail error code
+     */
+    public String getDetailErrorCode( ) {
 		return this.detailErrorCode;
 	}
 
-	public void setDetailErrorDes(String detailErrorDes) {
+    /**
+     * Sets detail error des.
+     *
+     * @param detailErrorDes the detail error des
+     */
+    public void setDetailErrorDes(String detailErrorDes) {
 		this.detailErrorDes = detailErrorDes;
 	}
-	public String getDetailErrorDes( ) {
+
+    /**
+     * Gets detail error des.
+     *
+     * @return the detail error des
+     */
+    public String getDetailErrorDes( ) {
 		return this.detailErrorDes;
 	}
 
-	public void setExtendInfo(String extendInfo) {
+    /**
+     * Sets extend info.
+     *
+     * @param extendInfo the extend info
+     */
+    public void setExtendInfo(String extendInfo) {
 		this.extendInfo = extendInfo;
 	}
-	public String getExtendInfo( ) {
+
+    /**
+     * Gets extend info.
+     *
+     * @return the extend info
+     */
+    public String getExtendInfo( ) {
 		return this.extendInfo;
 	}
 
-	public void setOutTradeNo(String outTradeNo) {
+    /**
+     * Sets out trade no.
+     *
+     * @param outTradeNo the out trade no
+     */
+    public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
-	public String getOutTradeNo( ) {
+
+    /**
+     * Gets out trade no.
+     *
+     * @return the out trade no
+     */
+    public String getOutTradeNo( ) {
 		return this.outTradeNo;
 	}
 
-	public void setResultCode(String resultCode) {
+    /**
+     * Sets result code.
+     *
+     * @param resultCode the result code
+     */
+    public void setResultCode(String resultCode) {
 		this.resultCode = resultCode;
 	}
-	public String getResultCode( ) {
+
+    /**
+     * Gets result code.
+     *
+     * @return the result code
+     */
+    public String getResultCode( ) {
 		return this.resultCode;
 	}
 
-	public void setTradeNo(String tradeNo) {
+    /**
+     * Sets trade no.
+     *
+     * @param tradeNo the trade no
+     */
+    public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
-	public String getTradeNo( ) {
+
+    /**
+     * Gets trade no.
+     *
+     * @return the trade no
+     */
+    public String getTradeNo( ) {
 		return this.tradeNo;
 	}
 

@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.security.prod.facerepo.search response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-06-30 08:29:21
  */
 public class AlipaySecurityProdFacerepoSearchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3242789224366615127L;
+	private static final long serialVersionUID = 1849491282152568315L;
 
 	/** 
 	 * 扩展参数
@@ -26,17 +26,39 @@ public class AlipaySecurityProdFacerepoSearchResponse extends AlipayResponse {
 	@ApiField("face_id")
 	private String faceId;
 
-	public void setExtInfo(String extInfo) {
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
-	public String getExtInfo( ) {
+
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo( ) {
 		return this.extInfo;
 	}
 
-	public void setFaceId(String faceId) {
+    /**
+     * Sets face id.
+     *
+     * @param faceId the face id
+     */
+    public void setFaceId(String faceId) {
 		this.faceId = faceId;
 	}
-	public String getFaceId( ) {
+
+    /**
+     * Gets face id.
+     *
+     * @return the face id
+     */
+    public String getFaceId( ) {
 		return this.faceId;
 	}
 

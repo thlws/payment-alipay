@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.commerce.lottery.typelist.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-24 14:38:00
+ * @since 1.0, 2018-03-30 15:10:00
  */
 public class AlipayCommerceLotteryTypelistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2864241518578614649L;
+	private static final long serialVersionUID = 2247862245359828496L;
 
 	/** 
 	 * 彩票系统支持的可用于赠送的彩种类型列表
@@ -30,17 +30,39 @@ public class AlipayCommerceLotteryTypelistQueryResponse extends AlipayResponse {
 	@ApiField("total_result")
 	private Long totalResult;
 
-	public void setResults(List<LotteryType> results) {
+    /**
+     * Sets results.
+     *
+     * @param results the results
+     */
+    public void setResults(List<LotteryType> results) {
 		this.results = results;
 	}
-	public List<LotteryType> getResults( ) {
+
+    /**
+     * Gets results.
+     *
+     * @return the results
+     */
+    public List<LotteryType> getResults( ) {
 		return this.results;
 	}
 
-	public void setTotalResult(Long totalResult) {
+    /**
+     * Sets total result.
+     *
+     * @param totalResult the total result
+     */
+    public void setTotalResult(Long totalResult) {
 		this.totalResult = totalResult;
 	}
-	public Long getTotalResult( ) {
+
+    /**
+     * Gets total result.
+     *
+     * @return the total result
+     */
+    public Long getTotalResult( ) {
 		return this.totalResult;
 	}
 

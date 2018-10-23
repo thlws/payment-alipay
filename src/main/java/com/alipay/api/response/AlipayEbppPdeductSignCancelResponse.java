@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ebpp.pdeduct.sign.cancel response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-08-04 11:19:20
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayEbppPdeductSignCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7799243925962525478L;
+	private static final long serialVersionUID = 5324237557543914683L;
 
 	/** 
 	 * 支付宝代扣协议ID
@@ -32,24 +32,57 @@ public class AlipayEbppPdeductSignCancelResponse extends AlipayResponse {
 	@ApiField("out_agreement_id")
 	private String outAgreementId;
 
-	public void setAgreementId(String agreementId) {
+    /**
+     * Sets agreement id.
+     *
+     * @param agreementId the agreement id
+     */
+    public void setAgreementId(String agreementId) {
 		this.agreementId = agreementId;
 	}
-	public String getAgreementId( ) {
+
+    /**
+     * Gets agreement id.
+     *
+     * @return the agreement id
+     */
+    public String getAgreementId( ) {
 		return this.agreementId;
 	}
 
-	public void setAgreementStatus(String agreementStatus) {
+    /**
+     * Sets agreement status.
+     *
+     * @param agreementStatus the agreement status
+     */
+    public void setAgreementStatus(String agreementStatus) {
 		this.agreementStatus = agreementStatus;
 	}
-	public String getAgreementStatus( ) {
+
+    /**
+     * Gets agreement status.
+     *
+     * @return the agreement status
+     */
+    public String getAgreementStatus( ) {
 		return this.agreementStatus;
 	}
 
-	public void setOutAgreementId(String outAgreementId) {
+    /**
+     * Sets out agreement id.
+     *
+     * @param outAgreementId the out agreement id
+     */
+    public void setOutAgreementId(String outAgreementId) {
 		this.outAgreementId = outAgreementId;
 	}
-	public String getOutAgreementId( ) {
+
+    /**
+     * Gets out agreement id.
+     *
+     * @return the out agreement id
+     */
+    public String getOutAgreementId( ) {
 		return this.outAgreementId;
 	}
 

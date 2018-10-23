@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMsaasPromotionCpainfoCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1464585955134539415L;
+	private static final long serialVersionUID = 3219161585738632359L;
 
 	/**
 	 * 唯一应用
@@ -67,66 +67,165 @@ public class AlipayMsaasPromotionCpainfoCreateModel extends AlipayObject {
 	@ApiField("mac")
 	private String mac;
 
-	public String getAppId() {
+    /**
+     * Gets app id.
+     *
+     * @return the app id
+     */
+    public String getAppId() {
 		return this.appId;
 	}
-	public void setAppId(String appId) {
+
+    /**
+     * Sets app id.
+     *
+     * @param appId the app id
+     */
+    public void setAppId(String appId) {
 		this.appId = appId;
 	}
 
-	public String getAppVersion() {
+    /**
+     * Gets app version.
+     *
+     * @return the app version
+     */
+    public String getAppVersion() {
 		return this.appVersion;
 	}
-	public void setAppVersion(String appVersion) {
+
+    /**
+     * Sets app version.
+     *
+     * @param appVersion the app version
+     */
+    public void setAppVersion(String appVersion) {
 		this.appVersion = appVersion;
 	}
 
-	public String getBundleId() {
+    /**
+     * Gets bundle id.
+     *
+     * @return the bundle id
+     */
+    public String getBundleId() {
 		return this.bundleId;
 	}
-	public void setBundleId(String bundleId) {
+
+    /**
+     * Sets bundle id.
+     *
+     * @param bundleId the bundle id
+     */
+    public void setBundleId(String bundleId) {
 		this.bundleId = bundleId;
 	}
 
-	public String getChannelId() {
+    /**
+     * Gets channel id.
+     *
+     * @return the channel id
+     */
+    public String getChannelId() {
 		return this.channelId;
 	}
-	public void setChannelId(String channelId) {
+
+    /**
+     * Sets channel id.
+     *
+     * @param channelId the channel id
+     */
+    public void setChannelId(String channelId) {
 		this.channelId = channelId;
 	}
 
-	public String getDebug() {
+    /**
+     * Gets debug.
+     *
+     * @return the debug
+     */
+    public String getDebug() {
 		return this.debug;
 	}
-	public void setDebug(String debug) {
+
+    /**
+     * Sets debug.
+     *
+     * @param debug the debug
+     */
+    public void setDebug(String debug) {
 		this.debug = debug;
 	}
 
-	public String getExtend() {
+    /**
+     * Gets extend.
+     *
+     * @return the extend
+     */
+    public String getExtend() {
 		return this.extend;
 	}
-	public void setExtend(String extend) {
+
+    /**
+     * Sets extend.
+     *
+     * @param extend the extend
+     */
+    public void setExtend(String extend) {
 		this.extend = extend;
 	}
 
-	public String getIdfa() {
+    /**
+     * Gets idfa.
+     *
+     * @return the idfa
+     */
+    public String getIdfa() {
 		return this.idfa;
 	}
-	public void setIdfa(String idfa) {
+
+    /**
+     * Sets idfa.
+     *
+     * @param idfa the idfa
+     */
+    public void setIdfa(String idfa) {
 		this.idfa = idfa;
 	}
 
-	public String getIosVersion() {
+    /**
+     * Gets ios version.
+     *
+     * @return the ios version
+     */
+    public String getIosVersion() {
 		return this.iosVersion;
 	}
-	public void setIosVersion(String iosVersion) {
+
+    /**
+     * Sets ios version.
+     *
+     * @param iosVersion the ios version
+     */
+    public void setIosVersion(String iosVersion) {
 		this.iosVersion = iosVersion;
 	}
 
-	public String getMac() {
+    /**
+     * Gets mac.
+     *
+     * @return the mac
+     */
+    public String getMac() {
 		return this.mac;
 	}
-	public void setMac(String mac) {
+
+    /**
+     * Sets mac.
+     *
+     * @param mac the mac
+     */
+    public void setMac(String mac) {
 		this.mac = mac;
 	}
 

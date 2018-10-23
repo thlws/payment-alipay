@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.platform.openid.get response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-06-06 17:38:21
  */
 public class AlipayPlatformOpenidGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4625628991553692815L;
+	private static final long serialVersionUID = 7586872746914976752L;
 
 	/** 
 	 * 结果码
@@ -39,10 +39,21 @@ public class AlipayPlatformOpenidGetResponse extends AlipayResponse {
 		return this.code;
 	}
 
-	public void setDict(String dict) {
+    /**
+     * Sets dict.
+     *
+     * @param dict the dict
+     */
+    public void setDict(String dict) {
 		this.dict = dict;
 	}
-	public String getDict( ) {
+
+    /**
+     * Gets dict.
+     *
+     * @return the dict
+     */
+    public String getDict( ) {
 		return this.dict;
 	}
 

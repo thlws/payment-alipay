@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 供应商回传码物料对应的码值记录对象
  *
  * @author auto create
- * @since 1.0, 2017-07-27 19:41:52
+ * @since 1.0, 2017-11-21 17:40:30
  */
 public class AccessReturnQrcode extends AlipayObject {
 
-	private static final long serialVersionUID = 5353642512871568692L;
+	private static final long serialVersionUID = 4724859946887674988L;
 
 	/**
 	 * 采购单ID
@@ -37,31 +37,75 @@ public class AccessReturnQrcode extends AlipayObject {
 	@ApiField("qrcode")
 	private String qrcode;
 
-	public String getAssetPurchaseId() {
+    /**
+     * Gets asset purchase id.
+     *
+     * @return the asset purchase id
+     */
+    public String getAssetPurchaseId() {
 		return this.assetPurchaseId;
 	}
-	public void setAssetPurchaseId(String assetPurchaseId) {
+
+    /**
+     * Sets asset purchase id.
+     *
+     * @param assetPurchaseId the asset purchase id
+     */
+    public void setAssetPurchaseId(String assetPurchaseId) {
 		this.assetPurchaseId = assetPurchaseId;
 	}
 
-	public String getExpressNo() {
+    /**
+     * Gets express no.
+     *
+     * @return the express no
+     */
+    public String getExpressNo() {
 		return this.expressNo;
 	}
-	public void setExpressNo(String expressNo) {
+
+    /**
+     * Sets express no.
+     *
+     * @param expressNo the express no
+     */
+    public void setExpressNo(String expressNo) {
 		this.expressNo = expressNo;
 	}
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
-	public String getQrcode() {
+    /**
+     * Gets qrcode.
+     *
+     * @return the qrcode
+     */
+    public String getQrcode() {
 		return this.qrcode;
 	}
-	public void setQrcode(String qrcode) {
+
+    /**
+     * Sets qrcode.
+     *
+     * @param qrcode the qrcode
+     */
+    public void setQrcode(String qrcode) {
 		this.qrcode = qrcode;
 	}
 

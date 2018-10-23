@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KbAdvertCommissionClauseQuotaResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 6662449472317294959L;
+	private static final long serialVersionUID = 8523546961696232756L;
 
 	/**
 	 * 分佣定额(精度2位的非负小数)
@@ -19,10 +19,21 @@ public class KbAdvertCommissionClauseQuotaResponse extends AlipayObject {
 	@ApiField("quota_amount")
 	private String quotaAmount;
 
-	public String getQuotaAmount() {
+    /**
+     * Gets quota amount.
+     *
+     * @return the quota amount
+     */
+    public String getQuotaAmount() {
 		return this.quotaAmount;
 	}
-	public void setQuotaAmount(String quotaAmount) {
+
+    /**
+     * Sets quota amount.
+     *
+     * @param quotaAmount the quota amount
+     */
+    public void setQuotaAmount(String quotaAmount) {
 		this.quotaAmount = quotaAmount;
 	}
 

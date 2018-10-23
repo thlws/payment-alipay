@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.pass.sync.add response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-12-16 16:35:12
  */
 public class AlipayPassSyncAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1537744871614721779L;
+	private static final long serialVersionUID = 8758668846183387597L;
 
 	/** 
 	 * 成功时返回的业务参数信息。
@@ -32,10 +32,21 @@ public class AlipayPassSyncAddResponse extends AlipayResponse {
 	@ApiField("success")
 	private Boolean success;
 
-	public void setBizResult(String bizResult) {
+    /**
+     * Sets biz result.
+     *
+     * @param bizResult the biz result
+     */
+    public void setBizResult(String bizResult) {
 		this.bizResult = bizResult;
 	}
-	public String getBizResult( ) {
+
+    /**
+     * Gets biz result.
+     *
+     * @return the biz result
+     */
+    public String getBizResult( ) {
 		return this.bizResult;
 	}
 
@@ -46,10 +57,21 @@ public class AlipayPassSyncAddResponse extends AlipayResponse {
 		return this.errorCode;
 	}
 
-	public void setSuccess(Boolean success) {
+    /**
+     * Sets success.
+     *
+     * @param success the success
+     */
+    public void setSuccess(Boolean success) {
 		this.success = success;
 	}
-	public Boolean getSuccess( ) {
+
+    /**
+     * Gets success.
+     *
+     * @return the success
+     */
+    public Boolean getSuccess( ) {
 		return this.success;
 	}
 

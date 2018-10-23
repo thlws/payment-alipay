@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InvoiceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6284676593521737214L;
+	private static final long serialVersionUID = 1376879153752683653L;
 
 	/**
 	 * 开票内容
@@ -26,17 +26,39 @@ public class InvoiceInfo extends AlipayObject {
 	@ApiField("key_info")
 	private InvoiceKeyInfo keyInfo;
 
-	public String getDetails() {
+    /**
+     * Gets details.
+     *
+     * @return the details
+     */
+    public String getDetails() {
 		return this.details;
 	}
-	public void setDetails(String details) {
+
+    /**
+     * Sets details.
+     *
+     * @param details the details
+     */
+    public void setDetails(String details) {
 		this.details = details;
 	}
 
-	public InvoiceKeyInfo getKeyInfo() {
+    /**
+     * Gets key info.
+     *
+     * @return the key info
+     */
+    public InvoiceKeyInfo getKeyInfo() {
 		return this.keyInfo;
 	}
-	public void setKeyInfo(InvoiceKeyInfo keyInfo) {
+
+    /**
+     * Sets key info.
+     *
+     * @param keyInfo the key info
+     */
+    public void setKeyInfo(InvoiceKeyInfo keyInfo) {
 		this.keyInfo = keyInfo;
 	}
 

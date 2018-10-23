@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class Filter extends AlipayObject {
 
-	private static final long serialVersionUID = 5291382748492329499L;
+	private static final long serialVersionUID = 3495376972585767151L;
 
 	/**
 	 * 标签组发圈人条件
@@ -27,17 +27,39 @@ or：只需满足其中一个条件
 	@ApiField("template")
 	private String template;
 
-	public LabelContext getContext() {
+    /**
+     * Gets context.
+     *
+     * @return the context
+     */
+    public LabelContext getContext() {
 		return this.context;
 	}
-	public void setContext(LabelContext context) {
+
+    /**
+     * Sets context.
+     *
+     * @param context the context
+     */
+    public void setContext(LabelContext context) {
 		this.context = context;
 	}
 
-	public String getTemplate() {
+    /**
+     * Gets template.
+     *
+     * @return the template
+     */
+    public String getTemplate() {
 		return this.template;
 	}
-	public void setTemplate(String template) {
+
+    /**
+     * Sets template.
+     *
+     * @param template the template
+     */
+    public void setTemplate(String template) {
 		this.template = template;
 	}
 

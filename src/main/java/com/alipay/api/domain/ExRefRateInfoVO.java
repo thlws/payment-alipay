@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ExRefRateInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6492275499915594665L;
+	private static final long serialVersionUID = 2199233691371518499L;
 
 	/**
 	 * 货币对
@@ -57,52 +57,129 @@ public class ExRefRateInfoVO extends AlipayObject {
 	@ApiField("target_currency")
 	private String targetCurrency;
 
-	public String getCurrencyPair() {
+    /**
+     * Gets currency pair.
+     *
+     * @return the currency pair
+     */
+    public String getCurrencyPair() {
 		return this.currencyPair;
 	}
-	public void setCurrencyPair(String currencyPair) {
+
+    /**
+     * Sets currency pair.
+     *
+     * @param currencyPair the currency pair
+     */
+    public void setCurrencyPair(String currencyPair) {
 		this.currencyPair = currencyPair;
 	}
 
-	public String getDatumCurrency() {
+    /**
+     * Gets datum currency.
+     *
+     * @return the datum currency
+     */
+    public String getDatumCurrency() {
 		return this.datumCurrency;
 	}
-	public void setDatumCurrency(String datumCurrency) {
+
+    /**
+     * Sets datum currency.
+     *
+     * @param datumCurrency the datum currency
+     */
+    public void setDatumCurrency(String datumCurrency) {
 		this.datumCurrency = datumCurrency;
 	}
 
-	public String getPriceType() {
+    /**
+     * Gets price type.
+     *
+     * @return the price type
+     */
+    public String getPriceType() {
 		return this.priceType;
 	}
-	public void setPriceType(String priceType) {
+
+    /**
+     * Sets price type.
+     *
+     * @param priceType the price type
+     */
+    public void setPriceType(String priceType) {
 		this.priceType = priceType;
 	}
 
-	public String getPubDate() {
+    /**
+     * Gets pub date.
+     *
+     * @return the pub date
+     */
+    public String getPubDate() {
 		return this.pubDate;
 	}
-	public void setPubDate(String pubDate) {
+
+    /**
+     * Sets pub date.
+     *
+     * @param pubDate the pub date
+     */
+    public void setPubDate(String pubDate) {
 		this.pubDate = pubDate;
 	}
 
-	public Date getPubTime() {
+    /**
+     * Gets pub time.
+     *
+     * @return the pub time
+     */
+    public Date getPubTime() {
 		return this.pubTime;
 	}
-	public void setPubTime(Date pubTime) {
+
+    /**
+     * Sets pub time.
+     *
+     * @param pubTime the pub time
+     */
+    public void setPubTime(Date pubTime) {
 		this.pubTime = pubTime;
 	}
 
-	public String getRate() {
+    /**
+     * Gets rate.
+     *
+     * @return the rate
+     */
+    public String getRate() {
 		return this.rate;
 	}
-	public void setRate(String rate) {
+
+    /**
+     * Sets rate.
+     *
+     * @param rate the rate
+     */
+    public void setRate(String rate) {
 		this.rate = rate;
 	}
 
-	public String getTargetCurrency() {
+    /**
+     * Gets target currency.
+     *
+     * @return the target currency
+     */
+    public String getTargetCurrency() {
 		return this.targetCurrency;
 	}
-	public void setTargetCurrency(String targetCurrency) {
+
+    /**
+     * Sets target currency.
+     *
+     * @param targetCurrency the target currency
+     */
+    public void setTargetCurrency(String targetCurrency) {
 		this.targetCurrency = targetCurrency;
 	}
 

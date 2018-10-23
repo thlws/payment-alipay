@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券状态查询
  *
  * @author auto create
- * @since 1.0, 2016-06-23 17:38:17
+ * @since 1.0, 2018-08-22 11:31:38
  */
 public class AlipayOfflineMarketingVoucherStatusQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8114421357323673177L;
+	private static final long serialVersionUID = 5721632934941317444L;
 
 	/**
 	 * 外部流水号
@@ -25,17 +25,39 @@ public class AlipayOfflineMarketingVoucherStatusQueryModel extends AlipayObject 
 	@ApiField("voucher_id")
 	private String voucherId;
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
-	public String getVoucherId() {
+    /**
+     * Gets voucher id.
+     *
+     * @return the voucher id
+     */
+    public String getVoucherId() {
 		return this.voucherId;
 	}
-	public void setVoucherId(String voucherId) {
+
+    /**
+     * Sets voucher id.
+     *
+     * @param voucherId the voucher id
+     */
+    public void setVoucherId(String voucherId) {
 		this.voucherId = voucherId;
 	}
 

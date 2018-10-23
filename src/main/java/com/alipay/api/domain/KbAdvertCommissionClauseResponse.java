@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KbAdvertCommissionClauseResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 8781838715935111916L;
+	private static final long serialVersionUID = 6745354799858831569L;
 
 	/**
 	 * 比例分佣规则
@@ -35,24 +35,57 @@ QUOTA_CLAUSE-定额
 	@ApiField("type")
 	private String type;
 
-	public KbAdvertCommissionClausePercentageResponse getPercentageClause() {
+    /**
+     * Gets percentage clause.
+     *
+     * @return the percentage clause
+     */
+    public KbAdvertCommissionClausePercentageResponse getPercentageClause() {
 		return this.percentageClause;
 	}
-	public void setPercentageClause(KbAdvertCommissionClausePercentageResponse percentageClause) {
+
+    /**
+     * Sets percentage clause.
+     *
+     * @param percentageClause the percentage clause
+     */
+    public void setPercentageClause(KbAdvertCommissionClausePercentageResponse percentageClause) {
 		this.percentageClause = percentageClause;
 	}
 
-	public KbAdvertCommissionClauseQuotaResponse getQuotaClause() {
+    /**
+     * Gets quota clause.
+     *
+     * @return the quota clause
+     */
+    public KbAdvertCommissionClauseQuotaResponse getQuotaClause() {
 		return this.quotaClause;
 	}
-	public void setQuotaClause(KbAdvertCommissionClauseQuotaResponse quotaClause) {
+
+    /**
+     * Sets quota clause.
+     *
+     * @param quotaClause the quota clause
+     */
+    public void setQuotaClause(KbAdvertCommissionClauseQuotaResponse quotaClause) {
 		this.quotaClause = quotaClause;
 	}
 
-	public String getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
-	public void setType(String type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
 

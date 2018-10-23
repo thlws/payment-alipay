@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.user.contract.get request
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-06-06 20:23:18
  */
@@ -23,10 +23,21 @@ public class AlipayUserContractGetRequest implements AlipayRequest<AlipayUserCon
 	 */
 	private String subscriberUserId;
 
-	public void setSubscriberUserId(String subscriberUserId) {
+    /**
+     * Sets subscriber user id.
+     *
+     * @param subscriberUserId the subscriber user id
+     */
+    public void setSubscriberUserId(String subscriberUserId) {
 		this.subscriberUserId = subscriberUserId;
 	}
-	public String getSubscriberUserId() {
+
+    /**
+     * Gets subscriber user id.
+     *
+     * @return the subscriber user id
+     */
+    public String getSubscriberUserId() {
 		return this.subscriberUserId;
 	}
 	private String terminalType;
@@ -98,7 +109,13 @@ public class AlipayUserContractGetRequest implements AlipayRequest<AlipayUserCon
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

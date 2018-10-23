@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineMarketMcommentQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8666476511281121663L;
+	private static final long serialVersionUID = 1246876955292754436L;
 
 	/**
 	 * 调用途径：
@@ -34,24 +34,57 @@ public class AlipayOfflineMarketMcommentQueryModel extends AlipayObject {
 	@ApiField("trade_no")
 	private String tradeNo;
 
-	public String getOpRole() {
+    /**
+     * Gets op role.
+     *
+     * @return the op role
+     */
+    public String getOpRole() {
 		return this.opRole;
 	}
-	public void setOpRole(String opRole) {
+
+    /**
+     * Sets op role.
+     *
+     * @param opRole the op role
+     */
+    public void setOpRole(String opRole) {
 		this.opRole = opRole;
 	}
 
-	public String getPartnerId() {
+    /**
+     * Gets partner id.
+     *
+     * @return the partner id
+     */
+    public String getPartnerId() {
 		return this.partnerId;
 	}
-	public void setPartnerId(String partnerId) {
+
+    /**
+     * Sets partner id.
+     *
+     * @param partnerId the partner id
+     */
+    public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}
 
-	public String getTradeNo() {
+    /**
+     * Gets trade no.
+     *
+     * @return the trade no
+     */
+    public String getTradeNo() {
 		return this.tradeNo;
 	}
-	public void setTradeNo(String tradeNo) {
+
+    /**
+     * Sets trade no.
+     *
+     * @param tradeNo the trade no
+     */
+    public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
 

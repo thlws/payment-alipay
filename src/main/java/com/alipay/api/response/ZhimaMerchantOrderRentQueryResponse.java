@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: zhima.merchant.order.rent.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-05-25 14:34:06
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class ZhimaMerchantOrderRentQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3423712353496622716L;
+	private static final long serialVersionUID = 1132335816494763253L;
 
 	/** 
 	 * 是否准入:
@@ -97,87 +97,219 @@ cancel:撤销
 	@ApiField("user_id")
 	private String userId;
 
-	public void setAdmitState(String admitState) {
+    /**
+     * Sets admit state.
+     *
+     * @param admitState the admit state
+     */
+    public void setAdmitState(String admitState) {
 		this.admitState = admitState;
 	}
-	public String getAdmitState( ) {
+
+    /**
+     * Gets admit state.
+     *
+     * @return the admit state
+     */
+    public String getAdmitState( ) {
 		return this.admitState;
 	}
 
-	public void setAlipayFundOrderNo(String alipayFundOrderNo) {
+    /**
+     * Sets alipay fund order no.
+     *
+     * @param alipayFundOrderNo the alipay fund order no
+     */
+    public void setAlipayFundOrderNo(String alipayFundOrderNo) {
 		this.alipayFundOrderNo = alipayFundOrderNo;
 	}
-	public String getAlipayFundOrderNo( ) {
+
+    /**
+     * Gets alipay fund order no.
+     *
+     * @return the alipay fund order no
+     */
+    public String getAlipayFundOrderNo( ) {
 		return this.alipayFundOrderNo;
 	}
 
-	public void setBorrowTime(String borrowTime) {
+    /**
+     * Sets borrow time.
+     *
+     * @param borrowTime the borrow time
+     */
+    public void setBorrowTime(String borrowTime) {
 		this.borrowTime = borrowTime;
 	}
-	public String getBorrowTime( ) {
+
+    /**
+     * Gets borrow time.
+     *
+     * @return the borrow time
+     */
+    public String getBorrowTime( ) {
 		return this.borrowTime;
 	}
 
-	public void setGoodsName(String goodsName) {
+    /**
+     * Sets goods name.
+     *
+     * @param goodsName the goods name
+     */
+    public void setGoodsName(String goodsName) {
 		this.goodsName = goodsName;
 	}
-	public String getGoodsName( ) {
+
+    /**
+     * Gets goods name.
+     *
+     * @return the goods name
+     */
+    public String getGoodsName( ) {
 		return this.goodsName;
 	}
 
-	public void setOrderNo(String orderNo) {
+    /**
+     * Sets order no.
+     *
+     * @param orderNo the order no
+     */
+    public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
-	public String getOrderNo( ) {
+
+    /**
+     * Gets order no.
+     *
+     * @return the order no
+     */
+    public String getOrderNo( ) {
 		return this.orderNo;
 	}
 
-	public void setPayAmount(String payAmount) {
+    /**
+     * Sets pay amount.
+     *
+     * @param payAmount the pay amount
+     */
+    public void setPayAmount(String payAmount) {
 		this.payAmount = payAmount;
 	}
-	public String getPayAmount( ) {
+
+    /**
+     * Gets pay amount.
+     *
+     * @return the pay amount
+     */
+    public String getPayAmount( ) {
 		return this.payAmount;
 	}
 
-	public void setPayAmountType(String payAmountType) {
+    /**
+     * Sets pay amount type.
+     *
+     * @param payAmountType the pay amount type
+     */
+    public void setPayAmountType(String payAmountType) {
 		this.payAmountType = payAmountType;
 	}
-	public String getPayAmountType( ) {
+
+    /**
+     * Gets pay amount type.
+     *
+     * @return the pay amount type
+     */
+    public String getPayAmountType( ) {
 		return this.payAmountType;
 	}
 
-	public void setPayStatus(String payStatus) {
+    /**
+     * Sets pay status.
+     *
+     * @param payStatus the pay status
+     */
+    public void setPayStatus(String payStatus) {
 		this.payStatus = payStatus;
 	}
-	public String getPayStatus( ) {
+
+    /**
+     * Gets pay status.
+     *
+     * @return the pay status
+     */
+    public String getPayStatus( ) {
 		return this.payStatus;
 	}
 
-	public void setPayTime(String payTime) {
+    /**
+     * Sets pay time.
+     *
+     * @param payTime the pay time
+     */
+    public void setPayTime(String payTime) {
 		this.payTime = payTime;
 	}
-	public String getPayTime( ) {
+
+    /**
+     * Gets pay time.
+     *
+     * @return the pay time
+     */
+    public String getPayTime( ) {
 		return this.payTime;
 	}
 
-	public void setRestoreTime(String restoreTime) {
+    /**
+     * Sets restore time.
+     *
+     * @param restoreTime the restore time
+     */
+    public void setRestoreTime(String restoreTime) {
 		this.restoreTime = restoreTime;
 	}
-	public String getRestoreTime( ) {
+
+    /**
+     * Gets restore time.
+     *
+     * @return the restore time
+     */
+    public String getRestoreTime( ) {
 		return this.restoreTime;
 	}
 
-	public void setUseState(String useState) {
+    /**
+     * Sets use state.
+     *
+     * @param useState the use state
+     */
+    public void setUseState(String useState) {
 		this.useState = useState;
 	}
-	public String getUseState( ) {
+
+    /**
+     * Gets use state.
+     *
+     * @return the use state
+     */
+    public String getUseState( ) {
 		return this.useState;
 	}
 
-	public void setUserId(String userId) {
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public String getUserId( ) {
+
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId( ) {
 		return this.userId;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CustomsDeclareRecordInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6428495734919372558L;
+	private static final long serialVersionUID = 2542497625936678193L;
 
 	/**
 	 * 支付宝报关流水号。
@@ -114,108 +114,273 @@ public class CustomsDeclareRecordInfo extends AlipayObject {
 	@ApiField("trade_no")
 	private String tradeNo;
 
-	public String getAlipayDeclareNo() {
+    /**
+     * Gets alipay declare no.
+     *
+     * @return the alipay declare no
+     */
+    public String getAlipayDeclareNo() {
 		return this.alipayDeclareNo;
 	}
-	public void setAlipayDeclareNo(String alipayDeclareNo) {
+
+    /**
+     * Sets alipay declare no.
+     *
+     * @param alipayDeclareNo the alipay declare no
+     */
+    public void setAlipayDeclareNo(String alipayDeclareNo) {
 		this.alipayDeclareNo = alipayDeclareNo;
 	}
 
-	public String getAmount() {
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public String getAmount() {
 		return this.amount;
 	}
-	public void setAmount(String amount) {
+
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
-	public String getCustomsPlace() {
+    /**
+     * Gets customs place.
+     *
+     * @return the customs place
+     */
+    public String getCustomsPlace() {
 		return this.customsPlace;
 	}
-	public void setCustomsPlace(String customsPlace) {
+
+    /**
+     * Sets customs place.
+     *
+     * @param customsPlace the customs place
+     */
+    public void setCustomsPlace(String customsPlace) {
 		this.customsPlace = customsPlace;
 	}
 
-	public String getCustomsResultCode() {
+    /**
+     * Gets customs result code.
+     *
+     * @return the customs result code
+     */
+    public String getCustomsResultCode() {
 		return this.customsResultCode;
 	}
-	public void setCustomsResultCode(String customsResultCode) {
+
+    /**
+     * Sets customs result code.
+     *
+     * @param customsResultCode the customs result code
+     */
+    public void setCustomsResultCode(String customsResultCode) {
 		this.customsResultCode = customsResultCode;
 	}
 
-	public String getCustomsResultInfo() {
+    /**
+     * Gets customs result info.
+     *
+     * @return the customs result info
+     */
+    public String getCustomsResultInfo() {
 		return this.customsResultInfo;
 	}
-	public void setCustomsResultInfo(String customsResultInfo) {
+
+    /**
+     * Sets customs result info.
+     *
+     * @param customsResultInfo the customs result info
+     */
+    public void setCustomsResultInfo(String customsResultInfo) {
 		this.customsResultInfo = customsResultInfo;
 	}
 
-	public String getCustomsResultReturnTime() {
+    /**
+     * Gets customs result return time.
+     *
+     * @return the customs result return time
+     */
+    public String getCustomsResultReturnTime() {
 		return this.customsResultReturnTime;
 	}
-	public void setCustomsResultReturnTime(String customsResultReturnTime) {
+
+    /**
+     * Sets customs result return time.
+     *
+     * @param customsResultReturnTime the customs result return time
+     */
+    public void setCustomsResultReturnTime(String customsResultReturnTime) {
 		this.customsResultReturnTime = customsResultReturnTime;
 	}
 
-	public String getIsSplit() {
+    /**
+     * Gets is split.
+     *
+     * @return the is split
+     */
+    public String getIsSplit() {
 		return this.isSplit;
 	}
-	public void setIsSplit(String isSplit) {
+
+    /**
+     * Sets is split.
+     *
+     * @param isSplit the is split
+     */
+    public void setIsSplit(String isSplit) {
 		this.isSplit = isSplit;
 	}
 
-	public String getLastModifiedTime() {
+    /**
+     * Gets last modified time.
+     *
+     * @return the last modified time
+     */
+    public String getLastModifiedTime() {
 		return this.lastModifiedTime;
 	}
-	public void setLastModifiedTime(String lastModifiedTime) {
+
+    /**
+     * Sets last modified time.
+     *
+     * @param lastModifiedTime the last modified time
+     */
+    public void setLastModifiedTime(String lastModifiedTime) {
 		this.lastModifiedTime = lastModifiedTime;
 	}
 
-	public String getMemo() {
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo() {
 		return this.memo;
 	}
-	public void setMemo(String memo) {
+
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
-	public String getMerchantCustomsCode() {
+    /**
+     * Gets merchant customs code.
+     *
+     * @return the merchant customs code
+     */
+    public String getMerchantCustomsCode() {
 		return this.merchantCustomsCode;
 	}
-	public void setMerchantCustomsCode(String merchantCustomsCode) {
+
+    /**
+     * Sets merchant customs code.
+     *
+     * @param merchantCustomsCode the merchant customs code
+     */
+    public void setMerchantCustomsCode(String merchantCustomsCode) {
 		this.merchantCustomsCode = merchantCustomsCode;
 	}
 
-	public String getMerchantCustomsName() {
+    /**
+     * Gets merchant customs name.
+     *
+     * @return the merchant customs name
+     */
+    public String getMerchantCustomsName() {
 		return this.merchantCustomsName;
 	}
-	public void setMerchantCustomsName(String merchantCustomsName) {
+
+    /**
+     * Sets merchant customs name.
+     *
+     * @param merchantCustomsName the merchant customs name
+     */
+    public void setMerchantCustomsName(String merchantCustomsName) {
 		this.merchantCustomsName = merchantCustomsName;
 	}
 
-	public String getOutRequestNo() {
+    /**
+     * Gets out request no.
+     *
+     * @return the out request no
+     */
+    public String getOutRequestNo() {
 		return this.outRequestNo;
 	}
-	public void setOutRequestNo(String outRequestNo) {
+
+    /**
+     * Sets out request no.
+     *
+     * @param outRequestNo the out request no
+     */
+    public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 
-	public String getSubOutBizNo() {
+    /**
+     * Gets sub out biz no.
+     *
+     * @return the sub out biz no
+     */
+    public String getSubOutBizNo() {
 		return this.subOutBizNo;
 	}
-	public void setSubOutBizNo(String subOutBizNo) {
+
+    /**
+     * Sets sub out biz no.
+     *
+     * @param subOutBizNo the sub out biz no
+     */
+    public void setSubOutBizNo(String subOutBizNo) {
 		this.subOutBizNo = subOutBizNo;
 	}
 
-	public String getTradeNo() {
+    /**
+     * Gets trade no.
+     *
+     * @return the trade no
+     */
+    public String getTradeNo() {
 		return this.tradeNo;
 	}
-	public void setTradeNo(String tradeNo) {
+
+    /**
+     * Sets trade no.
+     *
+     * @param tradeNo the trade no
+     */
+    public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayInsSceneCouponSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6472261727858211354L;
+	private static final long serialVersionUID = 5375162378157586449L;
 
 	/**
 	 * 渠道账号对应的uid;如果证件类型字段没填则必填
@@ -59,52 +59,129 @@ propertyPaySuccess:蚂蚁物业支付成功页面
 	@ApiField("service_scenario")
 	private String serviceScenario;
 
-	public String getChannelUserId() {
+    /**
+     * Gets channel user id.
+     *
+     * @return the channel user id
+     */
+    public String getChannelUserId() {
 		return this.channelUserId;
 	}
-	public void setChannelUserId(String channelUserId) {
+
+    /**
+     * Sets channel user id.
+     *
+     * @param channelUserId the channel user id
+     */
+    public void setChannelUserId(String channelUserId) {
 		this.channelUserId = channelUserId;
 	}
 
-	public String getChannelUserSource() {
+    /**
+     * Gets channel user source.
+     *
+     * @return the channel user source
+     */
+    public String getChannelUserSource() {
 		return this.channelUserSource;
 	}
-	public void setChannelUserSource(String channelUserSource) {
+
+    /**
+     * Sets channel user source.
+     *
+     * @param channelUserSource the channel user source
+     */
+    public void setChannelUserSource(String channelUserSource) {
 		this.channelUserSource = channelUserSource;
 	}
 
-	public String getDimensionId() {
+    /**
+     * Gets dimension id.
+     *
+     * @return the dimension id
+     */
+    public String getDimensionId() {
 		return this.dimensionId;
 	}
-	public void setDimensionId(String dimensionId) {
+
+    /**
+     * Sets dimension id.
+     *
+     * @param dimensionId the dimension id
+     */
+    public void setDimensionId(String dimensionId) {
 		this.dimensionId = dimensionId;
 	}
 
-	public String getDimensionType() {
+    /**
+     * Gets dimension type.
+     *
+     * @return the dimension type
+     */
+    public String getDimensionType() {
 		return this.dimensionType;
 	}
-	public void setDimensionType(String dimensionType) {
+
+    /**
+     * Sets dimension type.
+     *
+     * @param dimensionType the dimension type
+     */
+    public void setDimensionType(String dimensionType) {
 		this.dimensionType = dimensionType;
 	}
 
-	public String getMarketType() {
+    /**
+     * Gets market type.
+     *
+     * @return the market type
+     */
+    public String getMarketType() {
 		return this.marketType;
 	}
-	public void setMarketType(String marketType) {
+
+    /**
+     * Sets market type.
+     *
+     * @param marketType the market type
+     */
+    public void setMarketType(String marketType) {
 		this.marketType = marketType;
 	}
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
-	public String getServiceScenario() {
+    /**
+     * Gets service scenario.
+     *
+     * @return the service scenario
+     */
+    public String getServiceScenario() {
 		return this.serviceScenario;
 	}
-	public void setServiceScenario(String serviceScenario) {
+
+    /**
+     * Sets service scenario.
+     *
+     * @param serviceScenario the service scenario
+     */
+    public void setServiceScenario(String serviceScenario) {
 		this.serviceScenario = serviceScenario;
 	}
 

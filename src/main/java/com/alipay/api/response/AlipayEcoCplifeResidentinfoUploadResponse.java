@@ -5,13 +5,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.cplife.residentinfo.upload response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-02 18:15:55
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayEcoCplifeResidentinfoUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2754322925854773989L;
+	private static final long serialVersionUID = 4862216792513878988L;
 
 	
 

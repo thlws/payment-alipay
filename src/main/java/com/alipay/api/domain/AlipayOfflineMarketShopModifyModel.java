@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineMarketShopModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2297111835297788359L;
+	private static final long serialVersionUID = 6641294716415536967L;
 
 	/**
 	 * 门店详细地址，地址字符长度在4-50个字符。门店详细地址，格式（不含省市区）：例1：道路+门牌号，“人民东路18号”；例2：道路+门牌号+标志性建筑+楼层；注：门店详细地址按规范格式填写地址，以免影响门店搜索及活动报名
@@ -68,8 +68,8 @@ public class AlipayOfflineMarketShopModifyModel extends AlipayObject {
 	private String brandName;
 
 	/**
-	 * 许可证，各行业所需的证照资质
-	  */
+	 * 许可证，各行业所需的证照资质参见<a href="https://doc.open.alipay.com/doc2/detail.htm?treeId=205&articleId=104497&docType=1">商户入驻要求</a>；该字段只能上传一张许可证，一张以外的许可证、除营业执照和许可证之外其他证照请放在其他资质字段上传。
+	 */
 	@ApiField("business_certificate")
 	private String businessCertificate;
 
@@ -87,12 +87,13 @@ public class AlipayOfflineMarketShopModifyModel extends AlipayObject {
 
 	/**
 	 * 废弃字段，不支持修改类目。
+类目id，请参考<a href="https://doc.open.alipay.com/doc2/detail.htm?treeId=205&articleId=104497&docType=1">商户入驻要求</a>。
 	 */
 	@ApiField("category_id")
 	private String categoryId;
 
 	/**
-	 * 城市编码，国标码，详见国家统计局数据
+	 * 城市编码，国标码，详见国家统计局数据 <a href="http://aopsdkdownload.cn-hangzhou.alipay-pub.aliyun-inc.com/doc/2016.xls">点此下载</a>。
 	 */
 	@ApiField("city_code")
 	private String cityCode;
@@ -104,7 +105,7 @@ public class AlipayOfflineMarketShopModifyModel extends AlipayObject {
 	private String contactNumber;
 
 	/**
-	 * 区县编码，国标码，详见国家统计局数据 。
+	 * 区县编码，国标码，详见国家统计局数据 <a href="http://aopsdkdownload.cn-hangzhou.alipay-pub.aliyun-inc.com/doc/2016.xls">点此下载</a>。
 	 */
 	@ApiField("district_code")
 	private String districtCode;
@@ -134,8 +135,8 @@ public class AlipayOfflineMarketShopModifyModel extends AlipayObject {
 	private String latitude;
 
 	/**
-	 * 门店营业执照图片，各行业所需的证照资质
-	 * */
+	 * 门店营业执照图片，各行业所需的证照资质参见：https://doc.open.alipay.com/doc2/detail.htm?spm=a219a.7629140.0.0.NBvQVP&treeId=78&articleId=104497&docType=1。
+	 */
 	@ApiField("licence")
 	private String licence;
 
@@ -170,7 +171,8 @@ public class AlipayOfflineMarketShopModifyModel extends AlipayObject {
 	private String mainImage;
 
 	/**
-	 * 主门店名  */
+	 * 主门店名  比如：肯德基；主店名里不要包含分店名，如“万塘路店”。主店名长度不能超过20个字符。【xxx店】、(xxx店)、（xxx店）、[xxx店]、<xxx店>、xxx店，等类似的主店名都是不合法的，如果需要录入分店，请填写到branch_shop_name字段中。
+	 */
 	@ApiField("main_shop_name")
 	private String mainShopName;
 
@@ -242,7 +244,7 @@ online_pay：在线买单。ISV不可以指定此字段，ISV泛行业开店默�
 	private String payType;
 
 	/**
-	 * 省份编码，国标码，详见国家统计局数据
+	 * 省份编码，国标码，详见国家统计局数据 <a href="http://aopsdkdownload.cn-hangzhou.alipay-pub.aliyun-inc.com/doc/2016.xls">点此下载”</a>。
 	 */
 	@ApiField("province_code")
 	private String provinceCode;
@@ -283,318 +285,813 @@ online_pay：在线买单。ISV不可以指定此字段，ISV泛行业开店默�
 	@ApiField("wifi")
 	private String wifi;
 
-	public String getAddress() {
+    /**
+     * Gets address.
+     *
+     * @return the address
+     */
+    public String getAddress() {
 		return this.address;
 	}
-	public void setAddress(String address) {
+
+    /**
+     * Sets address.
+     *
+     * @param address the address
+     */
+    public void setAddress(String address) {
 		this.address = address;
 	}
 
-	public String getAuditImages() {
+    /**
+     * Gets audit images.
+     *
+     * @return the audit images
+     */
+    public String getAuditImages() {
 		return this.auditImages;
 	}
-	public void setAuditImages(String auditImages) {
+
+    /**
+     * Sets audit images.
+     *
+     * @param auditImages the audit images
+     */
+    public void setAuditImages(String auditImages) {
 		this.auditImages = auditImages;
 	}
 
-	public String getAuthLetter() {
+    /**
+     * Gets auth letter.
+     *
+     * @return the auth letter
+     */
+    public String getAuthLetter() {
 		return this.authLetter;
 	}
-	public void setAuthLetter(String authLetter) {
+
+    /**
+     * Sets auth letter.
+     *
+     * @param authLetter the auth letter
+     */
+    public void setAuthLetter(String authLetter) {
 		this.authLetter = authLetter;
 	}
 
-	public String getAvgPrice() {
+    /**
+     * Gets avg price.
+     *
+     * @return the avg price
+     */
+    public String getAvgPrice() {
 		return this.avgPrice;
 	}
-	public void setAvgPrice(String avgPrice) {
+
+    /**
+     * Sets avg price.
+     *
+     * @param avgPrice the avg price
+     */
+    public void setAvgPrice(String avgPrice) {
 		this.avgPrice = avgPrice;
 	}
 
-	public String getBizVersion() {
+    /**
+     * Gets biz version.
+     *
+     * @return the biz version
+     */
+    public String getBizVersion() {
 		return this.bizVersion;
 	}
-	public void setBizVersion(String bizVersion) {
+
+    /**
+     * Sets biz version.
+     *
+     * @param bizVersion the biz version
+     */
+    public void setBizVersion(String bizVersion) {
 		this.bizVersion = bizVersion;
 	}
 
-	public String getBox() {
+    /**
+     * Gets box.
+     *
+     * @return the box
+     */
+    public String getBox() {
 		return this.box;
 	}
-	public void setBox(String box) {
+
+    /**
+     * Sets box.
+     *
+     * @param box the box
+     */
+    public void setBox(String box) {
 		this.box = box;
 	}
 
-	public String getBranchShopName() {
+    /**
+     * Gets branch shop name.
+     *
+     * @return the branch shop name
+     */
+    public String getBranchShopName() {
 		return this.branchShopName;
 	}
-	public void setBranchShopName(String branchShopName) {
+
+    /**
+     * Sets branch shop name.
+     *
+     * @param branchShopName the branch shop name
+     */
+    public void setBranchShopName(String branchShopName) {
 		this.branchShopName = branchShopName;
 	}
 
-	public String getBrandLogo() {
+    /**
+     * Gets brand logo.
+     *
+     * @return the brand logo
+     */
+    public String getBrandLogo() {
 		return this.brandLogo;
 	}
-	public void setBrandLogo(String brandLogo) {
+
+    /**
+     * Sets brand logo.
+     *
+     * @param brandLogo the brand logo
+     */
+    public void setBrandLogo(String brandLogo) {
 		this.brandLogo = brandLogo;
 	}
 
-	public String getBrandName() {
+    /**
+     * Gets brand name.
+     *
+     * @return the brand name
+     */
+    public String getBrandName() {
 		return this.brandName;
 	}
-	public void setBrandName(String brandName) {
+
+    /**
+     * Sets brand name.
+     *
+     * @param brandName the brand name
+     */
+    public void setBrandName(String brandName) {
 		this.brandName = brandName;
 	}
 
-	public String getBusinessCertificate() {
+    /**
+     * Gets business certificate.
+     *
+     * @return the business certificate
+     */
+    public String getBusinessCertificate() {
 		return this.businessCertificate;
 	}
-	public void setBusinessCertificate(String businessCertificate) {
+
+    /**
+     * Sets business certificate.
+     *
+     * @param businessCertificate the business certificate
+     */
+    public void setBusinessCertificate(String businessCertificate) {
 		this.businessCertificate = businessCertificate;
 	}
 
-	public String getBusinessCertificateExpires() {
+    /**
+     * Gets business certificate expires.
+     *
+     * @return the business certificate expires
+     */
+    public String getBusinessCertificateExpires() {
 		return this.businessCertificateExpires;
 	}
-	public void setBusinessCertificateExpires(String businessCertificateExpires) {
+
+    /**
+     * Sets business certificate expires.
+     *
+     * @param businessCertificateExpires the business certificate expires
+     */
+    public void setBusinessCertificateExpires(String businessCertificateExpires) {
 		this.businessCertificateExpires = businessCertificateExpires;
 	}
 
-	public String getBusinessTime() {
+    /**
+     * Gets business time.
+     *
+     * @return the business time
+     */
+    public String getBusinessTime() {
 		return this.businessTime;
 	}
-	public void setBusinessTime(String businessTime) {
+
+    /**
+     * Sets business time.
+     *
+     * @param businessTime the business time
+     */
+    public void setBusinessTime(String businessTime) {
 		this.businessTime = businessTime;
 	}
 
-	public String getCategoryId() {
+    /**
+     * Gets category id.
+     *
+     * @return the category id
+     */
+    public String getCategoryId() {
 		return this.categoryId;
 	}
-	public void setCategoryId(String categoryId) {
+
+    /**
+     * Sets category id.
+     *
+     * @param categoryId the category id
+     */
+    public void setCategoryId(String categoryId) {
 		this.categoryId = categoryId;
 	}
 
-	public String getCityCode() {
+    /**
+     * Gets city code.
+     *
+     * @return the city code
+     */
+    public String getCityCode() {
 		return this.cityCode;
 	}
-	public void setCityCode(String cityCode) {
+
+    /**
+     * Sets city code.
+     *
+     * @param cityCode the city code
+     */
+    public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
 	}
 
-	public String getContactNumber() {
+    /**
+     * Gets contact number.
+     *
+     * @return the contact number
+     */
+    public String getContactNumber() {
 		return this.contactNumber;
 	}
-	public void setContactNumber(String contactNumber) {
+
+    /**
+     * Sets contact number.
+     *
+     * @param contactNumber the contact number
+     */
+    public void setContactNumber(String contactNumber) {
 		this.contactNumber = contactNumber;
 	}
 
-	public String getDistrictCode() {
+    /**
+     * Gets district code.
+     *
+     * @return the district code
+     */
+    public String getDistrictCode() {
 		return this.districtCode;
 	}
-	public void setDistrictCode(String districtCode) {
+
+    /**
+     * Sets district code.
+     *
+     * @param districtCode the district code
+     */
+    public void setDistrictCode(String districtCode) {
 		this.districtCode = districtCode;
 	}
 
-	public String getImplementId() {
+    /**
+     * Gets implement id.
+     *
+     * @return the implement id
+     */
+    public String getImplementId() {
 		return this.implementId;
 	}
-	public void setImplementId(String implementId) {
+
+    /**
+     * Sets implement id.
+     *
+     * @param implementId the implement id
+     */
+    public void setImplementId(String implementId) {
 		this.implementId = implementId;
 	}
 
-	public String getIsOperatingOnline() {
+    /**
+     * Gets is operating online.
+     *
+     * @return the is operating online
+     */
+    public String getIsOperatingOnline() {
 		return this.isOperatingOnline;
 	}
-	public void setIsOperatingOnline(String isOperatingOnline) {
+
+    /**
+     * Sets is operating online.
+     *
+     * @param isOperatingOnline the is operating online
+     */
+    public void setIsOperatingOnline(String isOperatingOnline) {
 		this.isOperatingOnline = isOperatingOnline;
 	}
 
-	public String getIsShow() {
+    /**
+     * Gets is show.
+     *
+     * @return the is show
+     */
+    public String getIsShow() {
 		return this.isShow;
 	}
-	public void setIsShow(String isShow) {
+
+    /**
+     * Sets is show.
+     *
+     * @param isShow the is show
+     */
+    public void setIsShow(String isShow) {
 		this.isShow = isShow;
 	}
 
-	public String getLatitude() {
+    /**
+     * Gets latitude.
+     *
+     * @return the latitude
+     */
+    public String getLatitude() {
 		return this.latitude;
 	}
-	public void setLatitude(String latitude) {
+
+    /**
+     * Sets latitude.
+     *
+     * @param latitude the latitude
+     */
+    public void setLatitude(String latitude) {
 		this.latitude = latitude;
 	}
 
-	public String getLicence() {
+    /**
+     * Gets licence.
+     *
+     * @return the licence
+     */
+    public String getLicence() {
 		return this.licence;
 	}
-	public void setLicence(String licence) {
+
+    /**
+     * Sets licence.
+     *
+     * @param licence the licence
+     */
+    public void setLicence(String licence) {
 		this.licence = licence;
 	}
 
-	public String getLicenceCode() {
+    /**
+     * Gets licence code.
+     *
+     * @return the licence code
+     */
+    public String getLicenceCode() {
 		return this.licenceCode;
 	}
-	public void setLicenceCode(String licenceCode) {
+
+    /**
+     * Sets licence code.
+     *
+     * @param licenceCode the licence code
+     */
+    public void setLicenceCode(String licenceCode) {
 		this.licenceCode = licenceCode;
 	}
 
-	public String getLicenceExpires() {
+    /**
+     * Gets licence expires.
+     *
+     * @return the licence expires
+     */
+    public String getLicenceExpires() {
 		return this.licenceExpires;
 	}
-	public void setLicenceExpires(String licenceExpires) {
+
+    /**
+     * Sets licence expires.
+     *
+     * @param licenceExpires the licence expires
+     */
+    public void setLicenceExpires(String licenceExpires) {
 		this.licenceExpires = licenceExpires;
 	}
 
-	public String getLicenceName() {
+    /**
+     * Gets licence name.
+     *
+     * @return the licence name
+     */
+    public String getLicenceName() {
 		return this.licenceName;
 	}
-	public void setLicenceName(String licenceName) {
+
+    /**
+     * Sets licence name.
+     *
+     * @param licenceName the licence name
+     */
+    public void setLicenceName(String licenceName) {
 		this.licenceName = licenceName;
 	}
 
-	public String getLongitude() {
+    /**
+     * Gets longitude.
+     *
+     * @return the longitude
+     */
+    public String getLongitude() {
 		return this.longitude;
 	}
-	public void setLongitude(String longitude) {
+
+    /**
+     * Sets longitude.
+     *
+     * @param longitude the longitude
+     */
+    public void setLongitude(String longitude) {
 		this.longitude = longitude;
 	}
 
-	public String getMainImage() {
+    /**
+     * Gets main image.
+     *
+     * @return the main image
+     */
+    public String getMainImage() {
 		return this.mainImage;
 	}
-	public void setMainImage(String mainImage) {
+
+    /**
+     * Sets main image.
+     *
+     * @param mainImage the main image
+     */
+    public void setMainImage(String mainImage) {
 		this.mainImage = mainImage;
 	}
 
-	public String getMainShopName() {
+    /**
+     * Gets main shop name.
+     *
+     * @return the main shop name
+     */
+    public String getMainShopName() {
 		return this.mainShopName;
 	}
-	public void setMainShopName(String mainShopName) {
+
+    /**
+     * Sets main shop name.
+     *
+     * @param mainShopName the main shop name
+     */
+    public void setMainShopName(String mainShopName) {
 		this.mainShopName = mainShopName;
 	}
 
-	public String getNoSmoking() {
+    /**
+     * Gets no smoking.
+     *
+     * @return the no smoking
+     */
+    public String getNoSmoking() {
 		return this.noSmoking;
 	}
-	public void setNoSmoking(String noSmoking) {
+
+    /**
+     * Sets no smoking.
+     *
+     * @param noSmoking the no smoking
+     */
+    public void setNoSmoking(String noSmoking) {
 		this.noSmoking = noSmoking;
 	}
 
-	public String getNotifyMobile() {
+    /**
+     * Gets notify mobile.
+     *
+     * @return the notify mobile
+     */
+    public String getNotifyMobile() {
 		return this.notifyMobile;
 	}
-	public void setNotifyMobile(String notifyMobile) {
+
+    /**
+     * Sets notify mobile.
+     *
+     * @param notifyMobile the notify mobile
+     */
+    public void setNotifyMobile(String notifyMobile) {
 		this.notifyMobile = notifyMobile;
 	}
 
-	public String getOnlineImage() {
+    /**
+     * Gets online image.
+     *
+     * @return the online image
+     */
+    public String getOnlineImage() {
 		return this.onlineImage;
 	}
-	public void setOnlineImage(String onlineImage) {
+
+    /**
+     * Sets online image.
+     *
+     * @param onlineImage the online image
+     */
+    public void setOnlineImage(String onlineImage) {
 		this.onlineImage = onlineImage;
 	}
 
-	public String getOnlineUrl() {
+    /**
+     * Gets online url.
+     *
+     * @return the online url
+     */
+    public String getOnlineUrl() {
 		return this.onlineUrl;
 	}
-	public void setOnlineUrl(String onlineUrl) {
+
+    /**
+     * Sets online url.
+     *
+     * @param onlineUrl the online url
+     */
+    public void setOnlineUrl(String onlineUrl) {
 		this.onlineUrl = onlineUrl;
 	}
 
-	public String getOpId() {
+    /**
+     * Gets op id.
+     *
+     * @return the op id
+     */
+    public String getOpId() {
 		return this.opId;
 	}
-	public void setOpId(String opId) {
+
+    /**
+     * Sets op id.
+     *
+     * @param opId the op id
+     */
+    public void setOpId(String opId) {
 		this.opId = opId;
 	}
 
-	public String getOpRole() {
+    /**
+     * Gets op role.
+     *
+     * @return the op role
+     */
+    public String getOpRole() {
 		return this.opRole;
 	}
-	public void setOpRole(String opRole) {
+
+    /**
+     * Sets op role.
+     *
+     * @param opRole the op role
+     */
+    public void setOpRole(String opRole) {
 		this.opRole = opRole;
 	}
 
-	public String getOperateNotifyUrl() {
+    /**
+     * Gets operate notify url.
+     *
+     * @return the operate notify url
+     */
+    public String getOperateNotifyUrl() {
 		return this.operateNotifyUrl;
 	}
-	public void setOperateNotifyUrl(String operateNotifyUrl) {
+
+    /**
+     * Sets operate notify url.
+     *
+     * @param operateNotifyUrl the operate notify url
+     */
+    public void setOperateNotifyUrl(String operateNotifyUrl) {
 		this.operateNotifyUrl = operateNotifyUrl;
 	}
 
-	public String getOtherAuthorization() {
+    /**
+     * Gets other authorization.
+     *
+     * @return the other authorization
+     */
+    public String getOtherAuthorization() {
 		return this.otherAuthorization;
 	}
-	public void setOtherAuthorization(String otherAuthorization) {
+
+    /**
+     * Sets other authorization.
+     *
+     * @param otherAuthorization the other authorization
+     */
+    public void setOtherAuthorization(String otherAuthorization) {
 		this.otherAuthorization = otherAuthorization;
 	}
 
-	public String getParking() {
+    /**
+     * Gets parking.
+     *
+     * @return the parking
+     */
+    public String getParking() {
 		return this.parking;
 	}
-	public void setParking(String parking) {
+
+    /**
+     * Sets parking.
+     *
+     * @param parking the parking
+     */
+    public void setParking(String parking) {
 		this.parking = parking;
 	}
 
-	public String getPartnerId() {
+    /**
+     * Gets partner id.
+     *
+     * @return the partner id
+     */
+    public String getPartnerId() {
 		return this.partnerId;
 	}
-	public void setPartnerId(String partnerId) {
+
+    /**
+     * Sets partner id.
+     *
+     * @param partnerId the partner id
+     */
+    public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}
 
-	public String getPayType() {
+    /**
+     * Gets pay type.
+     *
+     * @return the pay type
+     */
+    public String getPayType() {
 		return this.payType;
 	}
-	public void setPayType(String payType) {
+
+    /**
+     * Sets pay type.
+     *
+     * @param payType the pay type
+     */
+    public void setPayType(String payType) {
 		this.payType = payType;
 	}
 
-	public String getProvinceCode() {
+    /**
+     * Gets province code.
+     *
+     * @return the province code
+     */
+    public String getProvinceCode() {
 		return this.provinceCode;
 	}
-	public void setProvinceCode(String provinceCode) {
+
+    /**
+     * Sets province code.
+     *
+     * @param provinceCode the province code
+     */
+    public void setProvinceCode(String provinceCode) {
 		this.provinceCode = provinceCode;
 	}
 
-	public String getRequestId() {
+    /**
+     * Gets request id.
+     *
+     * @return the request id
+     */
+    public String getRequestId() {
 		return this.requestId;
 	}
-	public void setRequestId(String requestId) {
+
+    /**
+     * Sets request id.
+     *
+     * @param requestId the request id
+     */
+    public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
 
-	public String getShopId() {
+    /**
+     * Gets shop id.
+     *
+     * @return the shop id
+     */
+    public String getShopId() {
 		return this.shopId;
 	}
-	public void setShopId(String shopId) {
+
+    /**
+     * Sets shop id.
+     *
+     * @param shopId the shop id
+     */
+    public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 
-	public String getStoreId() {
+    /**
+     * Gets store id.
+     *
+     * @return the store id
+     */
+    public String getStoreId() {
 		return this.storeId;
 	}
-	public void setStoreId(String storeId) {
+
+    /**
+     * Sets store id.
+     *
+     * @param storeId the store id
+     */
+    public void setStoreId(String storeId) {
 		this.storeId = storeId;
 	}
 
-	public String getValueAdded() {
+    /**
+     * Gets value added.
+     *
+     * @return the value added
+     */
+    public String getValueAdded() {
 		return this.valueAdded;
 	}
-	public void setValueAdded(String valueAdded) {
+
+    /**
+     * Sets value added.
+     *
+     * @param valueAdded the value added
+     */
+    public void setValueAdded(String valueAdded) {
 		this.valueAdded = valueAdded;
 	}
 
-	public String getVersion() {
+    /**
+     * Gets version.
+     *
+     * @return the version
+     */
+    public String getVersion() {
 		return this.version;
 	}
-	public void setVersion(String version) {
+
+    /**
+     * Sets version.
+     *
+     * @param version the version
+     */
+    public void setVersion(String version) {
 		this.version = version;
 	}
 
-	public String getWifi() {
+    /**
+     * Gets wifi.
+     *
+     * @return the wifi
+     */
+    public String getWifi() {
 		return this.wifi;
 	}
-	public void setWifi(String wifi) {
+
+    /**
+     * Sets wifi.
+     *
+     * @param wifi the wifi
+     */
+    public void setWifi(String wifi) {
 		this.wifi = wifi;
 	}
 

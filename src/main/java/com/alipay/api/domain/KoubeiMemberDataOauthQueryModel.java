@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMemberDataOauthQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1854552429961167127L;
+	private static final long serialVersionUID = 4545745269481899452L;
 
 	/**
 	 * 授权业务类型，目前统一只有pay_member
@@ -31,24 +31,57 @@ public class KoubeiMemberDataOauthQueryModel extends AlipayObject {
 	@ApiField("ext_info")
 	private String extInfo;
 
-	public String getAuthType() {
+    /**
+     * Gets auth type.
+     *
+     * @return the auth type
+     */
+    public String getAuthType() {
 		return this.authType;
 	}
-	public void setAuthType(String authType) {
+
+    /**
+     * Sets auth type.
+     *
+     * @param authType the auth type
+     */
+    public void setAuthType(String authType) {
 		this.authType = authType;
 	}
 
-	public String getCode() {
+    /**
+     * Gets code.
+     *
+     * @return the code
+     */
+    public String getCode() {
 		return this.code;
 	}
-	public void setCode(String code) {
+
+    /**
+     * Sets code.
+     *
+     * @param code the code
+     */
+    public void setCode(String code) {
 		this.code = code;
 	}
 
-	public String getExtInfo() {
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo() {
 		return this.extInfo;
 	}
-	public void setExtInfo(String extInfo) {
+
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 

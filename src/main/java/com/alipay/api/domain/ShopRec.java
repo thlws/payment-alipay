@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ShopRec extends AlipayObject {
 
-	private static final long serialVersionUID = 6411445192224114149L;
+	private static final long serialVersionUID = 2647362964935957575L;
 
 	/**
 	 * 店铺地址
@@ -143,150 +143,381 @@ public class ShopRec extends AlipayObject {
 	@ApiField("voucher_rec")
 	private List<VoucherRec> voucherList;
 
-	public String getAddress() {
+    /**
+     * Gets address.
+     *
+     * @return the address
+     */
+    public String getAddress() {
 		return this.address;
 	}
-	public void setAddress(String address) {
+
+    /**
+     * Sets address.
+     *
+     * @param address the address
+     */
+    public void setAddress(String address) {
 		this.address = address;
 	}
 
-	public String getBrandName() {
+    /**
+     * Gets brand name.
+     *
+     * @return the brand name
+     */
+    public String getBrandName() {
 		return this.brandName;
 	}
-	public void setBrandName(String brandName) {
+
+    /**
+     * Sets brand name.
+     *
+     * @param brandName the brand name
+     */
+    public void setBrandName(String brandName) {
 		this.brandName = brandName;
 	}
 
-	public String getBusiArea() {
+    /**
+     * Gets busi area.
+     *
+     * @return the busi area
+     */
+    public String getBusiArea() {
 		return this.busiArea;
 	}
-	public void setBusiArea(String busiArea) {
+
+    /**
+     * Sets busi area.
+     *
+     * @param busiArea the busi area
+     */
+    public void setBusiArea(String busiArea) {
 		this.busiArea = busiArea;
 	}
 
-	public String getCityId() {
+    /**
+     * Gets city id.
+     *
+     * @return the city id
+     */
+    public String getCityId() {
 		return this.cityId;
 	}
-	public void setCityId(String cityId) {
+
+    /**
+     * Sets city id.
+     *
+     * @param cityId the city id
+     */
+    public void setCityId(String cityId) {
 		this.cityId = cityId;
 	}
 
-	public String getCuisine() {
+    /**
+     * Gets cuisine.
+     *
+     * @return the cuisine
+     */
+    public String getCuisine() {
 		return this.cuisine;
 	}
-	public void setCuisine(String cuisine) {
+
+    /**
+     * Sets cuisine.
+     *
+     * @param cuisine the cuisine
+     */
+    public void setCuisine(String cuisine) {
 		this.cuisine = cuisine;
 	}
 
-	public String getDistance() {
+    /**
+     * Gets distance.
+     *
+     * @return the distance
+     */
+    public String getDistance() {
 		return this.distance;
 	}
-	public void setDistance(String distance) {
+
+    /**
+     * Sets distance.
+     *
+     * @param distance the distance
+     */
+    public void setDistance(String distance) {
 		this.distance = distance;
 	}
 
-	public String getExtInfo() {
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo() {
 		return this.extInfo;
 	}
-	public void setExtInfo(String extInfo) {
+
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
-	public String getHasHui() {
+    /**
+     * Gets has hui.
+     *
+     * @return the has hui
+     */
+    public String getHasHui() {
 		return this.hasHui;
 	}
-	public void setHasHui(String hasHui) {
+
+    /**
+     * Sets has hui.
+     *
+     * @param hasHui the has hui
+     */
+    public void setHasHui(String hasHui) {
 		this.hasHui = hasHui;
 	}
 
-	public String getHeadShopName() {
+    /**
+     * Gets head shop name.
+     *
+     * @return the head shop name
+     */
+    public String getHeadShopName() {
 		return this.headShopName;
 	}
-	public void setHeadShopName(String headShopName) {
+
+    /**
+     * Sets head shop name.
+     *
+     * @param headShopName the head shop name
+     */
+    public void setHeadShopName(String headShopName) {
 		this.headShopName = headShopName;
 	}
 
-	public String getLatitude() {
+    /**
+     * Gets latitude.
+     *
+     * @return the latitude
+     */
+    public String getLatitude() {
 		return this.latitude;
 	}
-	public void setLatitude(String latitude) {
+
+    /**
+     * Sets latitude.
+     *
+     * @param latitude the latitude
+     */
+    public void setLatitude(String latitude) {
 		this.latitude = latitude;
 	}
 
-	public String getLongitude() {
+    /**
+     * Gets longitude.
+     *
+     * @return the longitude
+     */
+    public String getLongitude() {
 		return this.longitude;
 	}
-	public void setLongitude(String longitude) {
+
+    /**
+     * Sets longitude.
+     *
+     * @param longitude the longitude
+     */
+    public void setLongitude(String longitude) {
 		this.longitude = longitude;
 	}
 
-	public String getPopularity() {
+    /**
+     * Gets popularity.
+     *
+     * @return the popularity
+     */
+    public String getPopularity() {
 		return this.popularity;
 	}
-	public void setPopularity(String popularity) {
+
+    /**
+     * Sets popularity.
+     *
+     * @param popularity the popularity
+     */
+    public void setPopularity(String popularity) {
 		this.popularity = popularity;
 	}
 
-	public String getPopularityLevel() {
+    /**
+     * Gets popularity level.
+     *
+     * @return the popularity level
+     */
+    public String getPopularityLevel() {
 		return this.popularityLevel;
 	}
-	public void setPopularityLevel(String popularityLevel) {
+
+    /**
+     * Sets popularity level.
+     *
+     * @param popularityLevel the popularity level
+     */
+    public void setPopularityLevel(String popularityLevel) {
 		this.popularityLevel = popularityLevel;
 	}
 
-	public String getPriceAverage() {
+    /**
+     * Gets price average.
+     *
+     * @return the price average
+     */
+    public String getPriceAverage() {
 		return this.priceAverage;
 	}
-	public void setPriceAverage(String priceAverage) {
+
+    /**
+     * Sets price average.
+     *
+     * @param priceAverage the price average
+     */
+    public void setPriceAverage(String priceAverage) {
 		this.priceAverage = priceAverage;
 	}
 
-	public String getRootDisplayCategoryInfo() {
+    /**
+     * Gets root display category info.
+     *
+     * @return the root display category info
+     */
+    public String getRootDisplayCategoryInfo() {
 		return this.rootDisplayCategoryInfo;
 	}
-	public void setRootDisplayCategoryInfo(String rootDisplayCategoryInfo) {
+
+    /**
+     * Sets root display category info.
+     *
+     * @param rootDisplayCategoryInfo the root display category info
+     */
+    public void setRootDisplayCategoryInfo(String rootDisplayCategoryInfo) {
 		this.rootDisplayCategoryInfo = rootDisplayCategoryInfo;
 	}
 
-	public String getShopDetailUrl() {
+    /**
+     * Gets shop detail url.
+     *
+     * @return the shop detail url
+     */
+    public String getShopDetailUrl() {
 		return this.shopDetailUrl;
 	}
-	public void setShopDetailUrl(String shopDetailUrl) {
+
+    /**
+     * Sets shop detail url.
+     *
+     * @param shopDetailUrl the shop detail url
+     */
+    public void setShopDetailUrl(String shopDetailUrl) {
 		this.shopDetailUrl = shopDetailUrl;
 	}
 
-	public String getShopId() {
+    /**
+     * Gets shop id.
+     *
+     * @return the shop id
+     */
+    public String getShopId() {
 		return this.shopId;
 	}
-	public void setShopId(String shopId) {
+
+    /**
+     * Sets shop id.
+     *
+     * @param shopId the shop id
+     */
+    public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 
-	public String getShopLogoUrl() {
+    /**
+     * Gets shop logo url.
+     *
+     * @return the shop logo url
+     */
+    public String getShopLogoUrl() {
 		return this.shopLogoUrl;
 	}
-	public void setShopLogoUrl(String shopLogoUrl) {
+
+    /**
+     * Sets shop logo url.
+     *
+     * @param shopLogoUrl the shop logo url
+     */
+    public void setShopLogoUrl(String shopLogoUrl) {
 		this.shopLogoUrl = shopLogoUrl;
 	}
 
-	public String getShopName() {
+    /**
+     * Gets shop name.
+     *
+     * @return the shop name
+     */
+    public String getShopName() {
 		return this.shopName;
 	}
-	public void setShopName(String shopName) {
+
+    /**
+     * Sets shop name.
+     *
+     * @param shopName the shop name
+     */
+    public void setShopName(String shopName) {
 		this.shopName = shopName;
 	}
 
-	public String getShopRecommendOneTagCompose() {
+    /**
+     * Gets shop recommend one tag compose.
+     *
+     * @return the shop recommend one tag compose
+     */
+    public String getShopRecommendOneTagCompose() {
 		return this.shopRecommendOneTagCompose;
 	}
-	public void setShopRecommendOneTagCompose(String shopRecommendOneTagCompose) {
+
+    /**
+     * Sets shop recommend one tag compose.
+     *
+     * @param shopRecommendOneTagCompose the shop recommend one tag compose
+     */
+    public void setShopRecommendOneTagCompose(String shopRecommendOneTagCompose) {
 		this.shopRecommendOneTagCompose = shopRecommendOneTagCompose;
 	}
 
-	public List<VoucherRec> getVoucherList() {
+    /**
+     * Gets voucher list.
+     *
+     * @return the voucher list
+     */
+    public List<VoucherRec> getVoucherList() {
 		return this.voucherList;
 	}
-	public void setVoucherList(List<VoucherRec> voucherList) {
+
+    /**
+     * Sets voucher list.
+     *
+     * @param voucherList the voucher list
+     */
+    public void setVoucherList(List<VoucherRec> voucherList) {
 		this.voucherList = voucherList;
 	}
 

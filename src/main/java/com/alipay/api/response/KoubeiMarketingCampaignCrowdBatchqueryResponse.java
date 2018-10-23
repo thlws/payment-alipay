@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.campaign.crowd.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-02-15 16:30:54
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class KoubeiMarketingCampaignCrowdBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5881914589123358913L;
+	private static final long serialVersionUID = 7392373182276421261L;
 
 	/** 
 	 * 人群组的基本信息，id表示人群分组的ID，name表示人群分组的名称，status表示人群分组的状态，目前只有status=ENABLE有效状态才返回，已经删除的为DISABLE的不返回
@@ -26,17 +26,39 @@ public class KoubeiMarketingCampaignCrowdBatchqueryResponse extends AlipayRespon
 	@ApiField("total_number")
 	private String totalNumber;
 
-	public void setCrowdGroupSets(String crowdGroupSets) {
+    /**
+     * Sets crowd group sets.
+     *
+     * @param crowdGroupSets the crowd group sets
+     */
+    public void setCrowdGroupSets(String crowdGroupSets) {
 		this.crowdGroupSets = crowdGroupSets;
 	}
-	public String getCrowdGroupSets( ) {
+
+    /**
+     * Gets crowd group sets.
+     *
+     * @return the crowd group sets
+     */
+    public String getCrowdGroupSets( ) {
 		return this.crowdGroupSets;
 	}
 
-	public void setTotalNumber(String totalNumber) {
+    /**
+     * Sets total number.
+     *
+     * @param totalNumber the total number
+     */
+    public void setTotalNumber(String totalNumber) {
 		this.totalNumber = totalNumber;
 	}
-	public String getTotalNumber( ) {
+
+    /**
+     * Gets total number.
+     *
+     * @return the total number
+     */
+    public String getTotalNumber( ) {
 		return this.totalNumber;
 	}
 

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 报表详情查询接口
  *
  * @author auto create
- * @since 1.0, 2017-06-16 20:33:10
+ * @since 1.0, 2018-05-03 09:41:08
  */
 public class KoubeiMarketingDataAlisisReportQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3318913128323218634L;
+	private static final long serialVersionUID = 4577895789229238884L;
 
 	/**
 	 * 报表查询过滤条件
@@ -29,17 +29,39 @@ public class KoubeiMarketingDataAlisisReportQueryModel extends AlipayObject {
 	@ApiField("report_uk")
 	private String reportUk;
 
-	public List<ReportQueryCondition> getConditions() {
+    /**
+     * Gets conditions.
+     *
+     * @return the conditions
+     */
+    public List<ReportQueryCondition> getConditions() {
 		return this.conditions;
 	}
-	public void setConditions(List<ReportQueryCondition> conditions) {
+
+    /**
+     * Sets conditions.
+     *
+     * @param conditions the conditions
+     */
+    public void setConditions(List<ReportQueryCondition> conditions) {
 		this.conditions = conditions;
 	}
 
-	public String getReportUk() {
+    /**
+     * Gets report uk.
+     *
+     * @return the report uk
+     */
+    public String getReportUk() {
 		return this.reportUk;
 	}
-	public void setReportUk(String reportUk) {
+
+    /**
+     * Sets report uk.
+     *
+     * @param reportUk the report uk
+     */
+    public void setReportUk(String reportUk) {
 		this.reportUk = reportUk;
 	}
 

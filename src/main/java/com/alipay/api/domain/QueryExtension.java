@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class QueryExtension extends AlipayObject {
 
-	private static final long serialVersionUID = 1476816318879821948L;
+	private static final long serialVersionUID = 7392639877169435584L;
 
 	/**
 	 * 扩展区列表
@@ -42,31 +42,75 @@ public class QueryExtension extends AlipayObject {
 	@ApiField("status")
 	private String status;
 
-	public List<ExtensionArea> getAreas() {
+    /**
+     * Gets areas.
+     *
+     * @return the areas
+     */
+    public List<ExtensionArea> getAreas() {
 		return this.areas;
 	}
-	public void setAreas(List<ExtensionArea> areas) {
+
+    /**
+     * Sets areas.
+     *
+     * @param areas the areas
+     */
+    public void setAreas(List<ExtensionArea> areas) {
 		this.areas = areas;
 	}
 
-	public String getExtensionKey() {
+    /**
+     * Gets extension key.
+     *
+     * @return the extension key
+     */
+    public String getExtensionKey() {
 		return this.extensionKey;
 	}
-	public void setExtensionKey(String extensionKey) {
+
+    /**
+     * Sets extension key.
+     *
+     * @param extensionKey the extension key
+     */
+    public void setExtensionKey(String extensionKey) {
 		this.extensionKey = extensionKey;
 	}
 
-	public List<QueryLabelRule> getLabelRules() {
+    /**
+     * Gets label rules.
+     *
+     * @return the label rules
+     */
+    public List<QueryLabelRule> getLabelRules() {
 		return this.labelRules;
 	}
-	public void setLabelRules(List<QueryLabelRule> labelRules) {
+
+    /**
+     * Sets label rules.
+     *
+     * @param labelRules the label rules
+     */
+    public void setLabelRules(List<QueryLabelRule> labelRules) {
 		this.labelRules = labelRules;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 

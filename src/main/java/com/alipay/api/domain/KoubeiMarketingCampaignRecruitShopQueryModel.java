@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMarketingCampaignRecruitShopQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2423875858666967989L;
+	private static final long serialVersionUID = 2775217488269217815L;
 
 	/**
 	 * 活动id
@@ -49,45 +49,111 @@ public class KoubeiMarketingCampaignRecruitShopQueryModel extends AlipayObject {
 	@ApiField("page_size")
 	private String pageSize;
 
-	public String getCampId() {
+    /**
+     * Gets camp id.
+     *
+     * @return the camp id
+     */
+    public String getCampId() {
 		return this.campId;
 	}
-	public void setCampId(String campId) {
+
+    /**
+     * Sets camp id.
+     *
+     * @param campId the camp id
+     */
+    public void setCampId(String campId) {
 		this.campId = campId;
 	}
 
-	public String getInvitee() {
+    /**
+     * Gets invitee.
+     *
+     * @return the invitee
+     */
+    public String getInvitee() {
 		return this.invitee;
 	}
-	public void setInvitee(String invitee) {
+
+    /**
+     * Sets invitee.
+     *
+     * @param invitee the invitee
+     */
+    public void setInvitee(String invitee) {
 		this.invitee = invitee;
 	}
 
-	public String getOperatorId() {
+    /**
+     * Gets operator id.
+     *
+     * @return the operator id
+     */
+    public String getOperatorId() {
 		return this.operatorId;
 	}
-	public void setOperatorId(String operatorId) {
+
+    /**
+     * Sets operator id.
+     *
+     * @param operatorId the operator id
+     */
+    public void setOperatorId(String operatorId) {
 		this.operatorId = operatorId;
 	}
 
-	public String getOperatorType() {
+    /**
+     * Gets operator type.
+     *
+     * @return the operator type
+     */
+    public String getOperatorType() {
 		return this.operatorType;
 	}
-	public void setOperatorType(String operatorType) {
+
+    /**
+     * Sets operator type.
+     *
+     * @param operatorType the operator type
+     */
+    public void setOperatorType(String operatorType) {
 		this.operatorType = operatorType;
 	}
 
-	public String getPageNum() {
+    /**
+     * Gets page num.
+     *
+     * @return the page num
+     */
+    public String getPageNum() {
 		return this.pageNum;
 	}
-	public void setPageNum(String pageNum) {
+
+    /**
+     * Sets page num.
+     *
+     * @param pageNum the page num
+     */
+    public void setPageNum(String pageNum) {
 		this.pageNum = pageNum;
 	}
 
-	public String getPageSize() {
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public String getPageSize() {
 		return this.pageSize;
 	}
-	public void setPageSize(String pageSize) {
+
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(String pageSize) {
 		this.pageSize = pageSize;
 	}
 

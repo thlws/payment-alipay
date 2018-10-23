@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.boss.cs.channel.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-02-23 20:04:44
  */
 public class AlipayBossCsChannelQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7473528291547942633L;
+	private static final long serialVersionUID = 1634244824969158733L;
 
 	/** 
 	 * 平均通话时长
@@ -86,87 +86,219 @@ public class AlipayBossCsChannelQueryResponse extends AlipayResponse {
 	@ApiField("visitor_response_transfer")
 	private String visitorResponseTransfer;
 
-	public void setAtt(String att) {
+    /**
+     * Sets att.
+     *
+     * @param att the att
+     */
+    public void setAtt(String att) {
 		this.att = att;
 	}
-	public String getAtt( ) {
+
+    /**
+     * Gets att.
+     *
+     * @return the att
+     */
+    public String getAtt( ) {
 		return this.att;
 	}
 
-	public void setComment(String comment) {
+    /**
+     * Sets comment.
+     *
+     * @param comment the comment
+     */
+    public void setComment(String comment) {
 		this.comment = comment;
 	}
-	public String getComment( ) {
+
+    /**
+     * Gets comment.
+     *
+     * @return the comment
+     */
+    public String getComment( ) {
 		return this.comment;
 	}
 
-	public void setConnectionRate(String connectionRate) {
+    /**
+     * Sets connection rate.
+     *
+     * @param connectionRate the connection rate
+     */
+    public void setConnectionRate(String connectionRate) {
 		this.connectionRate = connectionRate;
 	}
-	public String getConnectionRate( ) {
+
+    /**
+     * Gets connection rate.
+     *
+     * @return the connection rate
+     */
+    public String getConnectionRate( ) {
 		return this.connectionRate;
 	}
 
-	public void setCurrAgentTalking(String currAgentTalking) {
+    /**
+     * Sets curr agent talking.
+     *
+     * @param currAgentTalking the curr agent talking
+     */
+    public void setCurrAgentTalking(String currAgentTalking) {
 		this.currAgentTalking = currAgentTalking;
 	}
-	public String getCurrAgentTalking( ) {
+
+    /**
+     * Gets curr agent talking.
+     *
+     * @return the curr agent talking
+     */
+    public String getCurrAgentTalking( ) {
 		return this.currAgentTalking;
 	}
 
-	public void setCurrAgentsLoggedIn(String currAgentsLoggedIn) {
+    /**
+     * Sets curr agents logged in.
+     *
+     * @param currAgentsLoggedIn the curr agents logged in
+     */
+    public void setCurrAgentsLoggedIn(String currAgentsLoggedIn) {
 		this.currAgentsLoggedIn = currAgentsLoggedIn;
 	}
-	public String getCurrAgentsLoggedIn( ) {
+
+    /**
+     * Gets curr agents logged in.
+     *
+     * @return the curr agents logged in
+     */
+    public String getCurrAgentsLoggedIn( ) {
 		return this.currAgentsLoggedIn;
 	}
 
-	public void setCurrNumberWaitingCalls(String currNumberWaitingCalls) {
+    /**
+     * Sets curr number waiting calls.
+     *
+     * @param currNumberWaitingCalls the curr number waiting calls
+     */
+    public void setCurrNumberWaitingCalls(String currNumberWaitingCalls) {
 		this.currNumberWaitingCalls = currNumberWaitingCalls;
 	}
-	public String getCurrNumberWaitingCalls( ) {
+
+    /**
+     * Gets curr number waiting calls.
+     *
+     * @return the curr number waiting calls
+     */
+    public String getCurrNumberWaitingCalls( ) {
 		return this.currNumberWaitingCalls;
 	}
 
-	public void setCurrentNotReadyAgents(String currentNotReadyAgents) {
+    /**
+     * Sets current not ready agents.
+     *
+     * @param currentNotReadyAgents the current not ready agents
+     */
+    public void setCurrentNotReadyAgents(String currentNotReadyAgents) {
 		this.currentNotReadyAgents = currentNotReadyAgents;
 	}
-	public String getCurrentNotReadyAgents( ) {
+
+    /**
+     * Gets current not ready agents.
+     *
+     * @return the current not ready agents
+     */
+    public String getCurrentNotReadyAgents( ) {
 		return this.currentNotReadyAgents;
 	}
 
-	public void setCurrentReadyAgents(String currentReadyAgents) {
+    /**
+     * Sets current ready agents.
+     *
+     * @param currentReadyAgents the current ready agents
+     */
+    public void setCurrentReadyAgents(String currentReadyAgents) {
 		this.currentReadyAgents = currentReadyAgents;
 	}
-	public String getCurrentReadyAgents( ) {
+
+    /**
+     * Gets current ready agents.
+     *
+     * @return the current ready agents
+     */
+    public String getCurrentReadyAgents( ) {
 		return this.currentReadyAgents;
 	}
 
-	public void setRowKey(String rowKey) {
+    /**
+     * Sets row key.
+     *
+     * @param rowKey the row key
+     */
+    public void setRowKey(String rowKey) {
 		this.rowKey = rowKey;
 	}
-	public String getRowKey( ) {
+
+    /**
+     * Gets row key.
+     *
+     * @return the row key
+     */
+    public String getRowKey( ) {
 		return this.rowKey;
 	}
 
-	public void setVisitorInflow(String visitorInflow) {
+    /**
+     * Sets visitor inflow.
+     *
+     * @param visitorInflow the visitor inflow
+     */
+    public void setVisitorInflow(String visitorInflow) {
 		this.visitorInflow = visitorInflow;
 	}
-	public String getVisitorInflow( ) {
+
+    /**
+     * Gets visitor inflow.
+     *
+     * @return the visitor inflow
+     */
+    public String getVisitorInflow( ) {
 		return this.visitorInflow;
 	}
 
-	public void setVisitorResponse(String visitorResponse) {
+    /**
+     * Sets visitor response.
+     *
+     * @param visitorResponse the visitor response
+     */
+    public void setVisitorResponse(String visitorResponse) {
 		this.visitorResponse = visitorResponse;
 	}
-	public String getVisitorResponse( ) {
+
+    /**
+     * Gets visitor response.
+     *
+     * @return the visitor response
+     */
+    public String getVisitorResponse( ) {
 		return this.visitorResponse;
 	}
 
-	public void setVisitorResponseTransfer(String visitorResponseTransfer) {
+    /**
+     * Sets visitor response transfer.
+     *
+     * @param visitorResponseTransfer the visitor response transfer
+     */
+    public void setVisitorResponseTransfer(String visitorResponseTransfer) {
 		this.visitorResponseTransfer = visitorResponseTransfer;
 	}
-	public String getVisitorResponseTransfer( ) {
+
+    /**
+     * Gets visitor response transfer.
+     *
+     * @return the visitor response transfer
+     */
+    public String getVisitorResponseTransfer( ) {
 		return this.visitorResponseTransfer;
 	}
 

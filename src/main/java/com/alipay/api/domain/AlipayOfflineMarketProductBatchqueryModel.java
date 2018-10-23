@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineMarketProductBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4487492427399391151L;
+	private static final long serialVersionUID = 8844613322164277156L;
 
 	/**
 	 * 操作人角色，默认商户操作:MERCHANT；服务商操作：PROVIDER。支付宝内部使用，外部商户不需填写此字段。
@@ -31,24 +31,57 @@ public class AlipayOfflineMarketProductBatchqueryModel extends AlipayObject {
 	@ApiField("shop_id")
 	private String shopId;
 
-	public String getOpRole() {
+    /**
+     * Gets op role.
+     *
+     * @return the op role
+     */
+    public String getOpRole() {
 		return this.opRole;
 	}
-	public void setOpRole(String opRole) {
+
+    /**
+     * Sets op role.
+     *
+     * @param opRole the op role
+     */
+    public void setOpRole(String opRole) {
 		this.opRole = opRole;
 	}
 
-	public String getPageNo() {
+    /**
+     * Gets page no.
+     *
+     * @return the page no
+     */
+    public String getPageNo() {
 		return this.pageNo;
 	}
-	public void setPageNo(String pageNo) {
+
+    /**
+     * Sets page no.
+     *
+     * @param pageNo the page no
+     */
+    public void setPageNo(String pageNo) {
 		this.pageNo = pageNo;
 	}
 
-	public String getShopId() {
+    /**
+     * Gets shop id.
+     *
+     * @return the shop id
+     */
+    public String getShopId() {
 		return this.shopId;
 	}
-	public void setShopId(String shopId) {
+
+    /**
+     * Sets shop id.
+     *
+     * @param shopId the shop id
+     */
+    public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 

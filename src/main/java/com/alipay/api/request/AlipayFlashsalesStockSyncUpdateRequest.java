@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.flashsales.stock.sync.update request
- * 
+ *
  * @author auto create
  * @since 1.0, 2014-08-22 15:32:32
  */
@@ -33,24 +33,57 @@ public class AlipayFlashsalesStockSyncUpdateRequest implements AlipayRequest<Ali
 	 */
 	private Long stock;
 
-	public void setOutProductId(String outProductId) {
+    /**
+     * Sets out product id.
+     *
+     * @param outProductId the out product id
+     */
+    public void setOutProductId(String outProductId) {
 		this.outProductId = outProductId;
 	}
-	public String getOutProductId() {
+
+    /**
+     * Gets out product id.
+     *
+     * @return the out product id
+     */
+    public String getOutProductId() {
 		return this.outProductId;
 	}
 
-	public void setPublicId(String publicId) {
+    /**
+     * Sets public id.
+     *
+     * @param publicId the public id
+     */
+    public void setPublicId(String publicId) {
 		this.publicId = publicId;
 	}
-	public String getPublicId() {
+
+    /**
+     * Gets public id.
+     *
+     * @return the public id
+     */
+    public String getPublicId() {
 		return this.publicId;
 	}
 
-	public void setStock(Long stock) {
+    /**
+     * Sets stock.
+     *
+     * @param stock the stock
+     */
+    public void setStock(Long stock) {
 		this.stock = stock;
 	}
-	public Long getStock() {
+
+    /**
+     * Gets stock.
+     *
+     * @return the stock
+     */
+    public Long getStock() {
 		return this.stock;
 	}
 	private String terminalType;
@@ -124,7 +157,13 @@ public class AlipayFlashsalesStockSyncUpdateRequest implements AlipayRequest<Ali
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

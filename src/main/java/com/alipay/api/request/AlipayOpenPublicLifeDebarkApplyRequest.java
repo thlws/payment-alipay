@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.open.public.life.debark.apply request
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-10-10 11:15:12
  */
@@ -85,7 +85,13 @@ public class AlipayOpenPublicLifeDebarkApplyRequest implements AlipayRequest<Ali
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

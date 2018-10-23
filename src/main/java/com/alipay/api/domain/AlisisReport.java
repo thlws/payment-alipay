@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlisisReport extends AlipayObject {
 
-	private static final long serialVersionUID = 2833787644974494231L;
+	private static final long serialVersionUID = 5822842135524892247L;
 
 	/**
 	 * ：	
@@ -42,31 +42,75 @@ public class AlisisReport extends AlipayObject {
 	@ApiField("report_uk")
 	private String reportUk;
 
-	public List<ReportCondition> getConditions() {
+    /**
+     * Gets conditions.
+     *
+     * @return the conditions
+     */
+    public List<ReportCondition> getConditions() {
 		return this.conditions;
 	}
-	public void setConditions(List<ReportCondition> conditions) {
+
+    /**
+     * Sets conditions.
+     *
+     * @param conditions the conditions
+     */
+    public void setConditions(List<ReportCondition> conditions) {
 		this.conditions = conditions;
 	}
 
-	public String getReportDesc() {
+    /**
+     * Gets report desc.
+     *
+     * @return the report desc
+     */
+    public String getReportDesc() {
 		return this.reportDesc;
 	}
-	public void setReportDesc(String reportDesc) {
+
+    /**
+     * Sets report desc.
+     *
+     * @param reportDesc the report desc
+     */
+    public void setReportDesc(String reportDesc) {
 		this.reportDesc = reportDesc;
 	}
 
-	public String getReportName() {
+    /**
+     * Gets report name.
+     *
+     * @return the report name
+     */
+    public String getReportName() {
 		return this.reportName;
 	}
-	public void setReportName(String reportName) {
+
+    /**
+     * Sets report name.
+     *
+     * @param reportName the report name
+     */
+    public void setReportName(String reportName) {
 		this.reportName = reportName;
 	}
 
-	public String getReportUk() {
+    /**
+     * Gets report uk.
+     *
+     * @return the report uk
+     */
+    public String getReportUk() {
 		return this.reportUk;
 	}
-	public void setReportUk(String reportUk) {
+
+    /**
+     * Sets report uk.
+     *
+     * @param reportUk the report uk
+     */
+    public void setReportUk(String reportUk) {
 		this.reportUk = reportUk;
 	}
 

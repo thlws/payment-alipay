@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.campaign.activity.offline.trigger response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-14 19:07:28
+ * @since 1.0, 2017-10-24 11:22:59
  */
 public class AlipayMarketingCampaignActivityOfflineTriggerResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2679495829768642365L;
+	private static final long serialVersionUID = 1166765716746787167L;
 
 	/** 
 	 * 外部奖品ID
@@ -20,10 +20,21 @@ public class AlipayMarketingCampaignActivityOfflineTriggerResponse extends Alipa
 	@ApiField("out_prize_id")
 	private String outPrizeId;
 
-	public void setOutPrizeId(String outPrizeId) {
+    /**
+     * Sets out prize id.
+     *
+     * @param outPrizeId the out prize id
+     */
+    public void setOutPrizeId(String outPrizeId) {
 		this.outPrizeId = outPrizeId;
 	}
-	public String getOutPrizeId( ) {
+
+    /**
+     * Gets out prize id.
+     *
+     * @return the out prize id
+     */
+    public String getOutPrizeId( ) {
 		return this.outPrizeId;
 	}
 

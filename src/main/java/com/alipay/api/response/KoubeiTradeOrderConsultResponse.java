@@ -10,13 +10,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.trade.order.consult response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-01 11:24:28
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class KoubeiTradeOrderConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5827739756584635176L;
+	private static final long serialVersionUID = 7188611672174359562L;
 
 	/** 
 	 * 用户实付金额
@@ -43,31 +43,75 @@ public class KoubeiTradeOrderConsultResponse extends AlipayResponse {
 	@ApiField("request_id")
 	private String requestId;
 
-	public void setBuyerPayAmount(String buyerPayAmount) {
+    /**
+     * Sets buyer pay amount.
+     *
+     * @param buyerPayAmount the buyer pay amount
+     */
+    public void setBuyerPayAmount(String buyerPayAmount) {
 		this.buyerPayAmount = buyerPayAmount;
 	}
-	public String getBuyerPayAmount( ) {
+
+    /**
+     * Gets buyer pay amount.
+     *
+     * @return the buyer pay amount
+     */
+    public String getBuyerPayAmount( ) {
 		return this.buyerPayAmount;
 	}
 
-	public void setDiscountDetail(List<DiscountDetail> discountDetail) {
+    /**
+     * Sets discount detail.
+     *
+     * @param discountDetail the discount detail
+     */
+    public void setDiscountDetail(List<DiscountDetail> discountDetail) {
 		this.discountDetail = discountDetail;
 	}
-	public List<DiscountDetail> getDiscountDetail( ) {
+
+    /**
+     * Gets discount detail.
+     *
+     * @return the discount detail
+     */
+    public List<DiscountDetail> getDiscountDetail( ) {
 		return this.discountDetail;
 	}
 
-	public void setmCardDetail(MCardDetail mCardDetail) {
+    /**
+     * Sets card detail.
+     *
+     * @param mCardDetail the m card detail
+     */
+    public void setmCardDetail(MCardDetail mCardDetail) {
 		this.mCardDetail = mCardDetail;
 	}
-	public MCardDetail getmCardDetail( ) {
+
+    /**
+     * Gets card detail.
+     *
+     * @return the card detail
+     */
+    public MCardDetail getmCardDetail( ) {
 		return this.mCardDetail;
 	}
 
-	public void setRequestId(String requestId) {
+    /**
+     * Sets request id.
+     *
+     * @param requestId the request id
+     */
+    public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
-	public String getRequestId( ) {
+
+    /**
+     * Gets request id.
+     *
+     * @return the request id
+     */
+    public String getRequestId( ) {
 		return this.requestId;
 	}
 

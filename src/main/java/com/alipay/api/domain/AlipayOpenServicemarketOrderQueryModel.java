@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用于服务商回查服务市场订单明细信息
  *
  * @author auto create
- * @since 1.0, 2017-07-31 17:29:32
+ * @since 1.0, 2018-07-06 14:47:25
  */
 public class AlipayOpenServicemarketOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5316417474518663728L;
+	private static final long serialVersionUID = 6317329862323711414L;
 
 	/**
 	 * 商户订单ID号
@@ -25,17 +25,39 @@ public class AlipayOpenServicemarketOrderQueryModel extends AlipayObject {
 	@ApiField("start_page")
 	private String startPage;
 
-	public String getCommodityOrderId() {
+    /**
+     * Gets commodity order id.
+     *
+     * @return the commodity order id
+     */
+    public String getCommodityOrderId() {
 		return this.commodityOrderId;
 	}
-	public void setCommodityOrderId(String commodityOrderId) {
+
+    /**
+     * Sets commodity order id.
+     *
+     * @param commodityOrderId the commodity order id
+     */
+    public void setCommodityOrderId(String commodityOrderId) {
 		this.commodityOrderId = commodityOrderId;
 	}
 
-	public String getStartPage() {
+    /**
+     * Gets start page.
+     *
+     * @return the start page
+     */
+    public String getStartPage() {
 		return this.startPage;
 	}
-	public void setStartPage(String startPage) {
+
+    /**
+     * Sets start page.
+     *
+     * @param startPage the start page
+     */
+    public void setStartPage(String startPage) {
 		this.startPage = startPage;
 	}
 

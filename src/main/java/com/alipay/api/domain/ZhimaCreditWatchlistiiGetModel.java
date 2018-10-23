@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业关注名单
  *
  * @author auto create
- * @since 1.0, 2017-08-04 10:54:31
+ * @since 1.0, 2017-11-14 17:59:20
  */
 public class ZhimaCreditWatchlistiiGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4351475532323252676L;
+	private static final long serialVersionUID = 8349158675984767264L;
 
 	/**
 	 * 产品码，直接使用［示例］给出的值
@@ -25,17 +25,39 @@ public class ZhimaCreditWatchlistiiGetModel extends AlipayObject {
 	@ApiField("transaction_id")
 	private String transactionId;
 
-	public String getProductCode() {
+    /**
+     * Gets product code.
+     *
+     * @return the product code
+     */
+    public String getProductCode() {
 		return this.productCode;
 	}
-	public void setProductCode(String productCode) {
+
+    /**
+     * Sets product code.
+     *
+     * @param productCode the product code
+     */
+    public void setProductCode(String productCode) {
 		this.productCode = productCode;
 	}
 
-	public String getTransactionId() {
+    /**
+     * Gets transaction id.
+     *
+     * @return the transaction id
+     */
+    public String getTransactionId() {
 		return this.transactionId;
 	}
-	public void setTransactionId(String transactionId) {
+
+    /**
+     * Sets transaction id.
+     *
+     * @param transactionId the transaction id
+     */
+    public void setTransactionId(String transactionId) {
 		this.transactionId = transactionId;
 	}
 

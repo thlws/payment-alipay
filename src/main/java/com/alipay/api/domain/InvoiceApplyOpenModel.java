@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票申请模型
  *
  * @author auto create
- * @since 1.0, 2017-05-09 14:11:07
+ * @since 1.0, 2018-07-02 10:29:40
  */
 public class InvoiceApplyOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2847149412424247298L;
+	private static final long serialVersionUID = 2572924584757666516L;
 
 	/**
 	 * 复核人
@@ -162,171 +162,435 @@ public class InvoiceApplyOpenModel extends AlipayObject {
 	@ApiField("trade_date")
 	private String tradeDate;
 
-	public String getChecker() {
+    /**
+     * Gets checker.
+     *
+     * @return the checker
+     */
+    public String getChecker() {
 		return this.checker;
 	}
-	public void setChecker(String checker) {
+
+    /**
+     * Sets checker.
+     *
+     * @param checker the checker
+     */
+    public void setChecker(String checker) {
 		this.checker = checker;
 	}
 
-	public String getClerk() {
+    /**
+     * Gets clerk.
+     *
+     * @return the clerk
+     */
+    public String getClerk() {
 		return this.clerk;
 	}
-	public void setClerk(String clerk) {
+
+    /**
+     * Sets clerk.
+     *
+     * @param clerk the clerk
+     */
+    public void setClerk(String clerk) {
 		this.clerk = clerk;
 	}
 
-	public String getExTaxAmount() {
+    /**
+     * Gets ex tax amount.
+     *
+     * @return the ex tax amount
+     */
+    public String getExTaxAmount() {
 		return this.exTaxAmount;
 	}
-	public void setExTaxAmount(String exTaxAmount) {
+
+    /**
+     * Sets ex tax amount.
+     *
+     * @param exTaxAmount the ex tax amount
+     */
+    public void setExTaxAmount(String exTaxAmount) {
 		this.exTaxAmount = exTaxAmount;
 	}
 
-	public String getInvoiceAmount() {
+    /**
+     * Gets invoice amount.
+     *
+     * @return the invoice amount
+     */
+    public String getInvoiceAmount() {
 		return this.invoiceAmount;
 	}
-	public void setInvoiceAmount(String invoiceAmount) {
+
+    /**
+     * Sets invoice amount.
+     *
+     * @param invoiceAmount the invoice amount
+     */
+    public void setInvoiceAmount(String invoiceAmount) {
 		this.invoiceAmount = invoiceAmount;
 	}
 
-	public List<InvoiceItemApplyOpenModel> getInvoiceContent() {
+    /**
+     * Gets invoice content.
+     *
+     * @return the invoice content
+     */
+    public List<InvoiceItemApplyOpenModel> getInvoiceContent() {
 		return this.invoiceContent;
 	}
-	public void setInvoiceContent(List<InvoiceItemApplyOpenModel> invoiceContent) {
+
+    /**
+     * Sets invoice content.
+     *
+     * @param invoiceContent the invoice content
+     */
+    public void setInvoiceContent(List<InvoiceItemApplyOpenModel> invoiceContent) {
 		this.invoiceContent = invoiceContent;
 	}
 
-	public String getInvoiceKind() {
+    /**
+     * Gets invoice kind.
+     *
+     * @return the invoice kind
+     */
+    public String getInvoiceKind() {
 		return this.invoiceKind;
 	}
-	public void setInvoiceKind(String invoiceKind) {
+
+    /**
+     * Sets invoice kind.
+     *
+     * @param invoiceKind the invoice kind
+     */
+    public void setInvoiceKind(String invoiceKind) {
 		this.invoiceKind = invoiceKind;
 	}
 
-	public String getInvoiceMemo() {
+    /**
+     * Gets invoice memo.
+     *
+     * @return the invoice memo
+     */
+    public String getInvoiceMemo() {
 		return this.invoiceMemo;
 	}
-	public void setInvoiceMemo(String invoiceMemo) {
+
+    /**
+     * Sets invoice memo.
+     *
+     * @param invoiceMemo the invoice memo
+     */
+    public void setInvoiceMemo(String invoiceMemo) {
 		this.invoiceMemo = invoiceMemo;
 	}
 
-	public InvoiceTitleApplyOpenModel getInvoiceTitle() {
+    /**
+     * Gets invoice title.
+     *
+     * @return the invoice title
+     */
+    public InvoiceTitleApplyOpenModel getInvoiceTitle() {
 		return this.invoiceTitle;
 	}
-	public void setInvoiceTitle(InvoiceTitleApplyOpenModel invoiceTitle) {
+
+    /**
+     * Sets invoice title.
+     *
+     * @param invoiceTitle the invoice title
+     */
+    public void setInvoiceTitle(InvoiceTitleApplyOpenModel invoiceTitle) {
 		this.invoiceTitle = invoiceTitle;
 	}
 
-	public String getOriBlueInvCode() {
+    /**
+     * Gets ori blue inv code.
+     *
+     * @return the ori blue inv code
+     */
+    public String getOriBlueInvCode() {
 		return this.oriBlueInvCode;
 	}
-	public void setOriBlueInvCode(String oriBlueInvCode) {
+
+    /**
+     * Sets ori blue inv code.
+     *
+     * @param oriBlueInvCode the ori blue inv code
+     */
+    public void setOriBlueInvCode(String oriBlueInvCode) {
 		this.oriBlueInvCode = oriBlueInvCode;
 	}
 
-	public String getOriBlueInvNo() {
+    /**
+     * Gets ori blue inv no.
+     *
+     * @return the ori blue inv no
+     */
+    public String getOriBlueInvNo() {
 		return this.oriBlueInvNo;
 	}
-	public void setOriBlueInvNo(String oriBlueInvNo) {
+
+    /**
+     * Sets ori blue inv no.
+     *
+     * @param oriBlueInvNo the ori blue inv no
+     */
+    public void setOriBlueInvNo(String oriBlueInvNo) {
 		this.oriBlueInvNo = oriBlueInvNo;
 	}
 
-	public String getOutApplyId() {
+    /**
+     * Gets out apply id.
+     *
+     * @return the out apply id
+     */
+    public String getOutApplyId() {
 		return this.outApplyId;
 	}
-	public void setOutApplyId(String outApplyId) {
+
+    /**
+     * Sets out apply id.
+     *
+     * @param outApplyId the out apply id
+     */
+    public void setOutApplyId(String outApplyId) {
 		this.outApplyId = outApplyId;
 	}
 
-	public String getOutTradeNo() {
+    /**
+     * Gets out trade no.
+     *
+     * @return the out trade no
+     */
+    public String getOutTradeNo() {
 		return this.outTradeNo;
 	}
-	public void setOutTradeNo(String outTradeNo) {
+
+    /**
+     * Sets out trade no.
+     *
+     * @param outTradeNo the out trade no
+     */
+    public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
 
-	public String getPayee() {
+    /**
+     * Gets payee.
+     *
+     * @return the payee
+     */
+    public String getPayee() {
 		return this.payee;
 	}
-	public void setPayee(String payee) {
+
+    /**
+     * Sets payee.
+     *
+     * @param payee the payee
+     */
+    public void setPayee(String payee) {
 		this.payee = payee;
 	}
 
-	public String getPayeeAddress() {
+    /**
+     * Gets payee address.
+     *
+     * @return the payee address
+     */
+    public String getPayeeAddress() {
 		return this.payeeAddress;
 	}
-	public void setPayeeAddress(String payeeAddress) {
+
+    /**
+     * Sets payee address.
+     *
+     * @param payeeAddress the payee address
+     */
+    public void setPayeeAddress(String payeeAddress) {
 		this.payeeAddress = payeeAddress;
 	}
 
-	public String getPayeeBankAccount() {
+    /**
+     * Gets payee bank account.
+     *
+     * @return the payee bank account
+     */
+    public String getPayeeBankAccount() {
 		return this.payeeBankAccount;
 	}
-	public void setPayeeBankAccount(String payeeBankAccount) {
+
+    /**
+     * Sets payee bank account.
+     *
+     * @param payeeBankAccount the payee bank account
+     */
+    public void setPayeeBankAccount(String payeeBankAccount) {
 		this.payeeBankAccount = payeeBankAccount;
 	}
 
-	public String getPayeeBankName() {
+    /**
+     * Gets payee bank name.
+     *
+     * @return the payee bank name
+     */
+    public String getPayeeBankName() {
 		return this.payeeBankName;
 	}
-	public void setPayeeBankName(String payeeBankName) {
+
+    /**
+     * Sets payee bank name.
+     *
+     * @param payeeBankName the payee bank name
+     */
+    public void setPayeeBankName(String payeeBankName) {
 		this.payeeBankName = payeeBankName;
 	}
 
-	public String getPayeeRegisterName() {
+    /**
+     * Gets payee register name.
+     *
+     * @return the payee register name
+     */
+    public String getPayeeRegisterName() {
 		return this.payeeRegisterName;
 	}
-	public void setPayeeRegisterName(String payeeRegisterName) {
+
+    /**
+     * Sets payee register name.
+     *
+     * @param payeeRegisterName the payee register name
+     */
+    public void setPayeeRegisterName(String payeeRegisterName) {
 		this.payeeRegisterName = payeeRegisterName;
 	}
 
-	public String getPayeeRegisterNo() {
+    /**
+     * Gets payee register no.
+     *
+     * @return the payee register no
+     */
+    public String getPayeeRegisterNo() {
 		return this.payeeRegisterNo;
 	}
-	public void setPayeeRegisterNo(String payeeRegisterNo) {
+
+    /**
+     * Sets payee register no.
+     *
+     * @param payeeRegisterNo the payee register no
+     */
+    public void setPayeeRegisterNo(String payeeRegisterNo) {
 		this.payeeRegisterNo = payeeRegisterNo;
 	}
 
-	public String getPayeeTel() {
+    /**
+     * Gets payee tel.
+     *
+     * @return the payee tel
+     */
+    public String getPayeeTel() {
 		return this.payeeTel;
 	}
-	public void setPayeeTel(String payeeTel) {
+
+    /**
+     * Sets payee tel.
+     *
+     * @param payeeTel the payee tel
+     */
+    public void setPayeeTel(String payeeTel) {
 		this.payeeTel = payeeTel;
 	}
 
-	public String getPayerContactEmail() {
+    /**
+     * Gets payer contact email.
+     *
+     * @return the payer contact email
+     */
+    public String getPayerContactEmail() {
 		return this.payerContactEmail;
 	}
-	public void setPayerContactEmail(String payerContactEmail) {
+
+    /**
+     * Sets payer contact email.
+     *
+     * @param payerContactEmail the payer contact email
+     */
+    public void setPayerContactEmail(String payerContactEmail) {
 		this.payerContactEmail = payerContactEmail;
 	}
 
-	public String getPayerContactMobile() {
+    /**
+     * Gets payer contact mobile.
+     *
+     * @return the payer contact mobile
+     */
+    public String getPayerContactMobile() {
 		return this.payerContactMobile;
 	}
-	public void setPayerContactMobile(String payerContactMobile) {
+
+    /**
+     * Sets payer contact mobile.
+     *
+     * @param payerContactMobile the payer contact mobile
+     */
+    public void setPayerContactMobile(String payerContactMobile) {
 		this.payerContactMobile = payerContactMobile;
 	}
 
-	public String getSumTaxAmount() {
+    /**
+     * Gets sum tax amount.
+     *
+     * @return the sum tax amount
+     */
+    public String getSumTaxAmount() {
 		return this.sumTaxAmount;
 	}
-	public void setSumTaxAmount(String sumTaxAmount) {
+
+    /**
+     * Sets sum tax amount.
+     *
+     * @param sumTaxAmount the sum tax amount
+     */
+    public void setSumTaxAmount(String sumTaxAmount) {
 		this.sumTaxAmount = sumTaxAmount;
 	}
 
-	public String getTaxToken() {
+    /**
+     * Gets tax token.
+     *
+     * @return the tax token
+     */
+    public String getTaxToken() {
 		return this.taxToken;
 	}
-	public void setTaxToken(String taxToken) {
+
+    /**
+     * Sets tax token.
+     *
+     * @param taxToken the tax token
+     */
+    public void setTaxToken(String taxToken) {
 		this.taxToken = taxToken;
 	}
 
-	public String getTradeDate() {
+    /**
+     * Gets trade date.
+     *
+     * @return the trade date
+     */
+    public String getTradeDate() {
 		return this.tradeDate;
 	}
-	public void setTradeDate(String tradeDate) {
+
+    /**
+     * Sets trade date.
+     *
+     * @param tradeDate the trade date
+     */
+    public void setTradeDate(String tradeDate) {
 		this.tradeDate = tradeDate;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayConstants;
 
 /**
  * 纯字符串字典结构。
- * 
+ *
  * @author carver.gu
  * @since 1.0, Sep 13, 2009
  */
@@ -19,15 +19,30 @@ public class AlipayHashMap extends HashMap<String, String> {
 
 	private static final long serialVersionUID = -1277791390393392630L;
 
-	public AlipayHashMap() {
+    /**
+     * Instantiates a new Alipay hash map.
+     */
+    public AlipayHashMap() {
 		super();
 	}
 
-	public AlipayHashMap(Map<? extends String, ? extends String> m) {
+    /**
+     * Instantiates a new Alipay hash map.
+     *
+     * @param m the m
+     */
+    public AlipayHashMap(Map<? extends String, ? extends String> m) {
 		super(m);
 	}
 
-	public String put(String key, Object value) {
+    /**
+     * Put string.
+     *
+     * @param key   the key
+     * @param value the value
+     * @return the string
+     */
+    public String put(String key, Object value) {
 		String strValue;
 
 		if (value == null) {

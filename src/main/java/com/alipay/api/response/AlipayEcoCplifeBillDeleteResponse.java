@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.cplife.bill.delete response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-02-10 18:52:02
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayEcoCplifeBillDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7376895644272179743L;
+	private static final long serialVersionUID = 1615666567443433849L;
 
 	/** 
 	 * 不允许删除（支付中或者支付完成）的账单明细条目列表
@@ -24,10 +24,21 @@ public class AlipayEcoCplifeBillDeleteResponse extends AlipayResponse {
 	@ApiField("c_p_alive_bill_entry_set")
 	private List<CPAliveBillEntrySet> aliveBillEntryList;
 
-	public void setAliveBillEntryList(List<CPAliveBillEntrySet> aliveBillEntryList) {
+    /**
+     * Sets alive bill entry list.
+     *
+     * @param aliveBillEntryList the alive bill entry list
+     */
+    public void setAliveBillEntryList(List<CPAliveBillEntrySet> aliveBillEntryList) {
 		this.aliveBillEntryList = aliveBillEntryList;
 	}
-	public List<CPAliveBillEntrySet> getAliveBillEntryList( ) {
+
+    /**
+     * Gets alive bill entry list.
+     *
+     * @return the alive bill entry list
+     */
+    public List<CPAliveBillEntrySet> getAliveBillEntryList( ) {
 		return this.aliveBillEntryList;
 	}
 

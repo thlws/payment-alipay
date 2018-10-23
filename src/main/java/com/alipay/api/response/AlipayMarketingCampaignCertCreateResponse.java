@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.campaign.cert.create response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-03-23 14:21:57
  */
 public class AlipayMarketingCampaignCertCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8485319417245286998L;
+	private static final long serialVersionUID = 1669235276754354188L;
 
 	/** 
 	 * 凭证id
@@ -20,10 +20,21 @@ public class AlipayMarketingCampaignCertCreateResponse extends AlipayResponse {
 	@ApiField("lot_number")
 	private String lotNumber;
 
-	public void setLotNumber(String lotNumber) {
+    /**
+     * Sets lot number.
+     *
+     * @param lotNumber the lot number
+     */
+    public void setLotNumber(String lotNumber) {
 		this.lotNumber = lotNumber;
 	}
-	public String getLotNumber( ) {
+
+    /**
+     * Gets lot number.
+     *
+     * @return the lot number
+     */
+    public String getLotNumber( ) {
 		return this.lotNumber;
 	}
 

@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: zhima.merchant.closeloop.data.upload response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-07 14:12:15
+ * @since 1.0, 2018-01-11 15:47:27
  */
 public class ZhimaMerchantCloseloopDataUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3248914921256889454L;
+	private static final long serialVersionUID = 7569844133892774461L;
 
 	/** 
 	 * 公用回传参数（非必填），这个字段由商户传入，系统透传给商户。
@@ -26,17 +26,39 @@ public class ZhimaMerchantCloseloopDataUploadResponse extends AlipayResponse {
 	@ApiField("task_id")
 	private String taskId;
 
-	public void setBizExtParams(String bizExtParams) {
+    /**
+     * Sets biz ext params.
+     *
+     * @param bizExtParams the biz ext params
+     */
+    public void setBizExtParams(String bizExtParams) {
 		this.bizExtParams = bizExtParams;
 	}
-	public String getBizExtParams( ) {
+
+    /**
+     * Gets biz ext params.
+     *
+     * @return the biz ext params
+     */
+    public String getBizExtParams( ) {
 		return this.bizExtParams;
 	}
 
-	public void setTaskId(String taskId) {
+    /**
+     * Sets task id.
+     *
+     * @param taskId the task id
+     */
+    public void setTaskId(String taskId) {
 		this.taskId = taskId;
 	}
-	public String getTaskId( ) {
+
+    /**
+     * Gets task id.
+     *
+     * @return the task id
+     */
+    public String getTaskId( ) {
 		return this.taskId;
 	}
 

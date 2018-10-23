@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.public.messagebatch.push response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-04-14 20:29:00
  */
 public class AlipayMobilePublicMessagebatchPushResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4259496155511567984L;
+	private static final long serialVersionUID = 8678218414149649697L;
 
 	/** 
 	 * 成功
@@ -39,10 +39,21 @@ public class AlipayMobilePublicMessagebatchPushResponse extends AlipayResponse {
 		return this.code;
 	}
 
-	public void setData(String data) {
+    /**
+     * Sets data.
+     *
+     * @param data the data
+     */
+    public void setData(String data) {
 		this.data = data;
 	}
-	public String getData( ) {
+
+    /**
+     * Gets data.
+     *
+     * @return the data
+     */
+    public String getData( ) {
 		return this.data;
 	}
 

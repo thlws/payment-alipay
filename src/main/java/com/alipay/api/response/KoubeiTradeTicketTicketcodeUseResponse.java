@@ -6,34 +6,40 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.trade.ticket.ticketcode.use response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-26 20:04:43
+ * @since 1.0, 2018-08-30 20:00:21
  */
 public class KoubeiTradeTicketTicketcodeUseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4522197871457861244L;
+	private static final long serialVersionUID = 7134232262458825576L;
 
 	/** 
-	 * 用户购买券的时候实际支付的金额
+	 * 该字段用于描述本次返回中的业务属性，现有：BIZ_ALREADY_SUCCESS（幂等业务码）
+	 */
+	@ApiField("biz_code")
+	private String bizCode;
+
+	/** 
+	 * 用户购买券的时候实际支付的金额，单位为元，精确到小数点后两位
 	 */
 	@ApiField("buyer_pay_amount")
 	private String buyerPayAmount;
 
 	/** 
-	 * 用户购买时商品的现价
+	 * 用户购买时商品的现价，单位为元，精确到小数点后两位
 	 */
 	@ApiField("current_price")
 	private String currentPrice;
 
 	/** 
-	 * 优惠金额，含商家补贴金额和口碑补贴金额
+	 * 商家优惠金额，单位为元，精确到小数点后两位
 	 */
 	@ApiField("discount_amount")
 	private String discountAmount;
 
 	/** 
-	 * 交易中可给用户开具发票的金额
+	 * 交易中可给用户开具发票的金额，单位为元，精确到小数点后两位
 	 */
 	@ApiField("invoice_amount")
 	private String invoiceAmount;
@@ -51,25 +57,25 @@ public class KoubeiTradeTicketTicketcodeUseResponse extends AlipayResponse {
 	private String itemName;
 
 	/** 
-	 * 口碑补贴金额
+	 * 口碑补贴金额，单位为元，精确到小数点后两位
 	 */
 	@ApiField("koubei_subsidy_amount")
 	private String koubeiSubsidyAmount;
 
 	/** 
-	 * 券码所属的订单id
+	 * 凭证码所属的订单id
 	 */
 	@ApiField("order_no")
 	private String orderNo;
 
 	/** 
-	 * 用户购买时商品的原价
+	 * 用户购买时商品的原价，单位为元，精确到小数点后两位
 	 */
 	@ApiField("original_price")
 	private String originalPrice;
 
 	/** 
-	 * 商家实收金额
+	 * 商家实收金额，单位为元，精确到小数点后两位
 	 */
 	@ApiField("receipt_amount")
 	private String receiptAmount;
@@ -111,127 +117,332 @@ public class KoubeiTradeTicketTicketcodeUseResponse extends AlipayResponse {
 	private String useShopName;
 
 	/** 
-	 * 券码对应的凭证资产id
+	 * 凭证码对应的凭证资产id
 	 */
 	@ApiField("voucher_id")
 	private String voucherId;
 
-	public void setBuyerPayAmount(String buyerPayAmount) {
+    /**
+     * Sets biz code.
+     *
+     * @param bizCode the biz code
+     */
+    public void setBizCode(String bizCode) {
+		this.bizCode = bizCode;
+	}
+
+    /**
+     * Gets biz code.
+     *
+     * @return the biz code
+     */
+    public String getBizCode( ) {
+		return this.bizCode;
+	}
+
+    /**
+     * Sets buyer pay amount.
+     *
+     * @param buyerPayAmount the buyer pay amount
+     */
+    public void setBuyerPayAmount(String buyerPayAmount) {
 		this.buyerPayAmount = buyerPayAmount;
 	}
-	public String getBuyerPayAmount( ) {
+
+    /**
+     * Gets buyer pay amount.
+     *
+     * @return the buyer pay amount
+     */
+    public String getBuyerPayAmount( ) {
 		return this.buyerPayAmount;
 	}
 
-	public void setCurrentPrice(String currentPrice) {
+    /**
+     * Sets current price.
+     *
+     * @param currentPrice the current price
+     */
+    public void setCurrentPrice(String currentPrice) {
 		this.currentPrice = currentPrice;
 	}
-	public String getCurrentPrice( ) {
+
+    /**
+     * Gets current price.
+     *
+     * @return the current price
+     */
+    public String getCurrentPrice( ) {
 		return this.currentPrice;
 	}
 
-	public void setDiscountAmount(String discountAmount) {
+    /**
+     * Sets discount amount.
+     *
+     * @param discountAmount the discount amount
+     */
+    public void setDiscountAmount(String discountAmount) {
 		this.discountAmount = discountAmount;
 	}
-	public String getDiscountAmount( ) {
+
+    /**
+     * Gets discount amount.
+     *
+     * @return the discount amount
+     */
+    public String getDiscountAmount( ) {
 		return this.discountAmount;
 	}
 
-	public void setInvoiceAmount(String invoiceAmount) {
+    /**
+     * Sets invoice amount.
+     *
+     * @param invoiceAmount the invoice amount
+     */
+    public void setInvoiceAmount(String invoiceAmount) {
 		this.invoiceAmount = invoiceAmount;
 	}
-	public String getInvoiceAmount( ) {
+
+    /**
+     * Gets invoice amount.
+     *
+     * @return the invoice amount
+     */
+    public String getInvoiceAmount( ) {
 		return this.invoiceAmount;
 	}
 
-	public void setItemId(String itemId) {
+    /**
+     * Sets item id.
+     *
+     * @param itemId the item id
+     */
+    public void setItemId(String itemId) {
 		this.itemId = itemId;
 	}
-	public String getItemId( ) {
+
+    /**
+     * Gets item id.
+     *
+     * @return the item id
+     */
+    public String getItemId( ) {
 		return this.itemId;
 	}
 
-	public void setItemName(String itemName) {
+    /**
+     * Sets item name.
+     *
+     * @param itemName the item name
+     */
+    public void setItemName(String itemName) {
 		this.itemName = itemName;
 	}
-	public String getItemName( ) {
+
+    /**
+     * Gets item name.
+     *
+     * @return the item name
+     */
+    public String getItemName( ) {
 		return this.itemName;
 	}
 
-	public void setKoubeiSubsidyAmount(String koubeiSubsidyAmount) {
+    /**
+     * Sets koubei subsidy amount.
+     *
+     * @param koubeiSubsidyAmount the koubei subsidy amount
+     */
+    public void setKoubeiSubsidyAmount(String koubeiSubsidyAmount) {
 		this.koubeiSubsidyAmount = koubeiSubsidyAmount;
 	}
-	public String getKoubeiSubsidyAmount( ) {
+
+    /**
+     * Gets koubei subsidy amount.
+     *
+     * @return the koubei subsidy amount
+     */
+    public String getKoubeiSubsidyAmount( ) {
 		return this.koubeiSubsidyAmount;
 	}
 
-	public void setOrderNo(String orderNo) {
+    /**
+     * Sets order no.
+     *
+     * @param orderNo the order no
+     */
+    public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
-	public String getOrderNo( ) {
+
+    /**
+     * Gets order no.
+     *
+     * @return the order no
+     */
+    public String getOrderNo( ) {
 		return this.orderNo;
 	}
 
-	public void setOriginalPrice(String originalPrice) {
+    /**
+     * Sets original price.
+     *
+     * @param originalPrice the original price
+     */
+    public void setOriginalPrice(String originalPrice) {
 		this.originalPrice = originalPrice;
 	}
-	public String getOriginalPrice( ) {
+
+    /**
+     * Gets original price.
+     *
+     * @return the original price
+     */
+    public String getOriginalPrice( ) {
 		return this.originalPrice;
 	}
 
-	public void setReceiptAmount(String receiptAmount) {
+    /**
+     * Sets receipt amount.
+     *
+     * @param receiptAmount the receipt amount
+     */
+    public void setReceiptAmount(String receiptAmount) {
 		this.receiptAmount = receiptAmount;
 	}
-	public String getReceiptAmount( ) {
+
+    /**
+     * Gets receipt amount.
+     *
+     * @return the receipt amount
+     */
+    public String getReceiptAmount( ) {
 		return this.receiptAmount;
 	}
 
-	public void setRequestId(String requestId) {
+    /**
+     * Sets request id.
+     *
+     * @param requestId the request id
+     */
+    public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
-	public String getRequestId( ) {
+
+    /**
+     * Gets request id.
+     *
+     * @return the request id
+     */
+    public String getRequestId( ) {
 		return this.requestId;
 	}
 
-	public void setTicketCode(String ticketCode) {
+    /**
+     * Sets ticket code.
+     *
+     * @param ticketCode the ticket code
+     */
+    public void setTicketCode(String ticketCode) {
 		this.ticketCode = ticketCode;
 	}
-	public String getTicketCode( ) {
+
+    /**
+     * Gets ticket code.
+     *
+     * @return the ticket code
+     */
+    public String getTicketCode( ) {
 		return this.ticketCode;
 	}
 
-	public void setTicketTransId(String ticketTransId) {
+    /**
+     * Sets ticket trans id.
+     *
+     * @param ticketTransId the ticket trans id
+     */
+    public void setTicketTransId(String ticketTransId) {
 		this.ticketTransId = ticketTransId;
 	}
-	public String getTicketTransId( ) {
+
+    /**
+     * Gets ticket trans id.
+     *
+     * @return the ticket trans id
+     */
+    public String getTicketTransId( ) {
 		return this.ticketTransId;
 	}
 
-	public void setUseDate(String useDate) {
+    /**
+     * Sets use date.
+     *
+     * @param useDate the use date
+     */
+    public void setUseDate(String useDate) {
 		this.useDate = useDate;
 	}
-	public String getUseDate( ) {
+
+    /**
+     * Gets use date.
+     *
+     * @return the use date
+     */
+    public String getUseDate( ) {
 		return this.useDate;
 	}
 
-	public void setUseShopId(String useShopId) {
+    /**
+     * Sets use shop id.
+     *
+     * @param useShopId the use shop id
+     */
+    public void setUseShopId(String useShopId) {
 		this.useShopId = useShopId;
 	}
-	public String getUseShopId( ) {
+
+    /**
+     * Gets use shop id.
+     *
+     * @return the use shop id
+     */
+    public String getUseShopId( ) {
 		return this.useShopId;
 	}
 
-	public void setUseShopName(String useShopName) {
+    /**
+     * Sets use shop name.
+     *
+     * @param useShopName the use shop name
+     */
+    public void setUseShopName(String useShopName) {
 		this.useShopName = useShopName;
 	}
-	public String getUseShopName( ) {
+
+    /**
+     * Gets use shop name.
+     *
+     * @return the use shop name
+     */
+    public String getUseShopName( ) {
 		return this.useShopName;
 	}
 
-	public void setVoucherId(String voucherId) {
+    /**
+     * Sets voucher id.
+     *
+     * @param voucherId the voucher id
+     */
+    public void setVoucherId(String voucherId) {
 		this.voucherId = voucherId;
 	}
-	public String getVoucherId( ) {
+
+    /**
+     * Gets voucher id.
+     *
+     * @return the voucher id
+     */
+    public String getVoucherId( ) {
 		return this.voucherId;
 	}
 

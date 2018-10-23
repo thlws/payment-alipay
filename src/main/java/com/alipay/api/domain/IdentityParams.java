@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户实名信息参数
  *
  * @author auto create
- * @since 1.0, 2017-09-27 23:39:54
+ * @since 1.0, 2018-07-01 21:53:36
  */
 public class IdentityParams extends AlipayObject {
 
-	private static final long serialVersionUID = 6597678731381576249L;
+	private static final long serialVersionUID = 5783696419378481286L;
 
 	/**
 	 * 用户身份证号
@@ -37,31 +37,75 @@ public class IdentityParams extends AlipayObject {
 	@ApiField("user_name")
 	private String userName;
 
-	public String getCertNo() {
+    /**
+     * Gets cert no.
+     *
+     * @return the cert no
+     */
+    public String getCertNo() {
 		return this.certNo;
 	}
-	public void setCertNo(String certNo) {
+
+    /**
+     * Sets cert no.
+     *
+     * @param certNo the cert no
+     */
+    public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}
 
-	public String getIdentityHash() {
+    /**
+     * Gets identity hash.
+     *
+     * @return the identity hash
+     */
+    public String getIdentityHash() {
 		return this.identityHash;
 	}
-	public void setIdentityHash(String identityHash) {
+
+    /**
+     * Sets identity hash.
+     *
+     * @param identityHash the identity hash
+     */
+    public void setIdentityHash(String identityHash) {
 		this.identityHash = identityHash;
 	}
 
-	public String getSignUserId() {
+    /**
+     * Gets sign user id.
+     *
+     * @return the sign user id
+     */
+    public String getSignUserId() {
 		return this.signUserId;
 	}
-	public void setSignUserId(String signUserId) {
+
+    /**
+     * Sets sign user id.
+     *
+     * @param signUserId the sign user id
+     */
+    public void setSignUserId(String signUserId) {
 		this.signUserId = signUserId;
 	}
 
-	public String getUserName() {
+    /**
+     * Gets user name.
+     *
+     * @return the user name
+     */
+    public String getUserName() {
 		return this.userName;
 	}
-	public void setUserName(String userName) {
+
+    /**
+     * Sets user name.
+     *
+     * @param userName the user name
+     */
+    public void setUserName(String userName) {
 		this.userName = userName;
 	}
 

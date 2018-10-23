@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.edu.kt.student.modify response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-08-18 12:27:08
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayEcoEduKtStudentModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2452371536585677765L;
+	private static final long serialVersionUID = 4437881947937397284L;
 
 	/** 
 	 * Y：代表成功；N：代表失败
@@ -20,10 +20,21 @@ public class AlipayEcoEduKtStudentModifyResponse extends AlipayResponse {
 	@ApiField("status")
 	private String status;
 
-	public void setStatus(String status) {
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
-	public String getStatus( ) {
+
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus( ) {
 		return this.status;
 	}
 

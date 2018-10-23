@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 门店摘要信息批量查询接口
  *
  * @author auto create
- * @since 1.0, 2017-02-17 14:20:04
+ * @since 1.0, 2018-07-11 16:20:25
  */
 public class AlipayOfflineMarketShopSummaryBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5222885333632274568L;
+	private static final long serialVersionUID = 8269481278135842697L;
 
 	/**
 	 * 表示接口业务的调用方身份：ISV、 服务商身份标识。传入ISV代表系统集成商身份。传入PROVIDER代表服务商。
@@ -61,52 +61,129 @@ KB_PROMOTER：口碑客推广者
 	@ApiField("shop_status")
 	private String shopStatus;
 
-	public String getOpRole() {
+    /**
+     * Gets op role.
+     *
+     * @return the op role
+     */
+    public String getOpRole() {
 		return this.opRole;
 	}
-	public void setOpRole(String opRole) {
+
+    /**
+     * Sets op role.
+     *
+     * @param opRole the op role
+     */
+    public void setOpRole(String opRole) {
 		this.opRole = opRole;
 	}
 
-	public Long getPageNo() {
+    /**
+     * Gets page no.
+     *
+     * @return the page no
+     */
+    public Long getPageNo() {
 		return this.pageNo;
 	}
-	public void setPageNo(Long pageNo) {
+
+    /**
+     * Sets page no.
+     *
+     * @param pageNo the page no
+     */
+    public void setPageNo(Long pageNo) {
 		this.pageNo = pageNo;
 	}
 
-	public Long getPageSize() {
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public Long getPageSize() {
 		return this.pageSize;
 	}
-	public void setPageSize(Long pageSize) {
+
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}
 
-	public String getQueryType() {
+    /**
+     * Gets query type.
+     *
+     * @return the query type
+     */
+    public String getQueryType() {
 		return this.queryType;
 	}
-	public void setQueryType(String queryType) {
+
+    /**
+     * Sets query type.
+     *
+     * @param queryType the query type
+     */
+    public void setQueryType(String queryType) {
 		this.queryType = queryType;
 	}
 
-	public String getRelatedPartnerId() {
+    /**
+     * Gets related partner id.
+     *
+     * @return the related partner id
+     */
+    public String getRelatedPartnerId() {
 		return this.relatedPartnerId;
 	}
-	public void setRelatedPartnerId(String relatedPartnerId) {
+
+    /**
+     * Sets related partner id.
+     *
+     * @param relatedPartnerId the related partner id
+     */
+    public void setRelatedPartnerId(String relatedPartnerId) {
 		this.relatedPartnerId = relatedPartnerId;
 	}
 
-	public String getShopId() {
+    /**
+     * Gets shop id.
+     *
+     * @return the shop id
+     */
+    public String getShopId() {
 		return this.shopId;
 	}
-	public void setShopId(String shopId) {
+
+    /**
+     * Sets shop id.
+     *
+     * @param shopId the shop id
+     */
+    public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 
-	public String getShopStatus() {
+    /**
+     * Gets shop status.
+     *
+     * @return the shop status
+     */
+    public String getShopStatus() {
 		return this.shopStatus;
 	}
-	public void setShopStatus(String shopStatus) {
+
+    /**
+     * Sets shop status.
+     *
+     * @param shopStatus the shop status
+     */
+    public void setShopStatus(String shopStatus) {
 		this.shopStatus = shopStatus;
 	}
 

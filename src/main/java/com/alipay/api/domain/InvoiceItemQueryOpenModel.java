@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InvoiceItemQueryOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2849418813394665184L;
+	private static final long serialVersionUID = 1744774633519482968L;
 
 	/**
 	 * 不含税金额
@@ -79,80 +79,201 @@ public class InvoiceItemQueryOpenModel extends AlipayObject {
 	@ApiField("row_type")
 	private String rowType;
 
-	public String getItemExTaxAmount() {
+    /**
+     * Gets item ex tax amount.
+     *
+     * @return the item ex tax amount
+     */
+    public String getItemExTaxAmount() {
 		return this.itemExTaxAmount;
 	}
-	public void setItemExTaxAmount(String itemExTaxAmount) {
+
+    /**
+     * Sets item ex tax amount.
+     *
+     * @param itemExTaxAmount the item ex tax amount
+     */
+    public void setItemExTaxAmount(String itemExTaxAmount) {
 		this.itemExTaxAmount = itemExTaxAmount;
 	}
 
-	public String getItemName() {
+    /**
+     * Gets item name.
+     *
+     * @return the item name
+     */
+    public String getItemName() {
 		return this.itemName;
 	}
-	public void setItemName(String itemName) {
+
+    /**
+     * Sets item name.
+     *
+     * @param itemName the item name
+     */
+    public void setItemName(String itemName) {
 		this.itemName = itemName;
 	}
 
-	public String getItemNo() {
+    /**
+     * Gets item no.
+     *
+     * @return the item no
+     */
+    public String getItemNo() {
 		return this.itemNo;
 	}
-	public void setItemNo(String itemNo) {
+
+    /**
+     * Sets item no.
+     *
+     * @param itemNo the item no
+     */
+    public void setItemNo(String itemNo) {
 		this.itemNo = itemNo;
 	}
 
-	public String getItemQuantity() {
+    /**
+     * Gets item quantity.
+     *
+     * @return the item quantity
+     */
+    public String getItemQuantity() {
 		return this.itemQuantity;
 	}
-	public void setItemQuantity(String itemQuantity) {
+
+    /**
+     * Sets item quantity.
+     *
+     * @param itemQuantity the item quantity
+     */
+    public void setItemQuantity(String itemQuantity) {
 		this.itemQuantity = itemQuantity;
 	}
 
-	public String getItemSpec() {
+    /**
+     * Gets item spec.
+     *
+     * @return the item spec
+     */
+    public String getItemSpec() {
 		return this.itemSpec;
 	}
-	public void setItemSpec(String itemSpec) {
+
+    /**
+     * Sets item spec.
+     *
+     * @param itemSpec the item spec
+     */
+    public void setItemSpec(String itemSpec) {
 		this.itemSpec = itemSpec;
 	}
 
-	public String getItemSumAmount() {
+    /**
+     * Gets item sum amount.
+     *
+     * @return the item sum amount
+     */
+    public String getItemSumAmount() {
 		return this.itemSumAmount;
 	}
-	public void setItemSumAmount(String itemSumAmount) {
+
+    /**
+     * Sets item sum amount.
+     *
+     * @param itemSumAmount the item sum amount
+     */
+    public void setItemSumAmount(String itemSumAmount) {
 		this.itemSumAmount = itemSumAmount;
 	}
 
-	public String getItemTaxAmount() {
+    /**
+     * Gets item tax amount.
+     *
+     * @return the item tax amount
+     */
+    public String getItemTaxAmount() {
 		return this.itemTaxAmount;
 	}
-	public void setItemTaxAmount(String itemTaxAmount) {
+
+    /**
+     * Sets item tax amount.
+     *
+     * @param itemTaxAmount the item tax amount
+     */
+    public void setItemTaxAmount(String itemTaxAmount) {
 		this.itemTaxAmount = itemTaxAmount;
 	}
 
-	public String getItemTaxRate() {
+    /**
+     * Gets item tax rate.
+     *
+     * @return the item tax rate
+     */
+    public String getItemTaxRate() {
 		return this.itemTaxRate;
 	}
-	public void setItemTaxRate(String itemTaxRate) {
+
+    /**
+     * Sets item tax rate.
+     *
+     * @param itemTaxRate the item tax rate
+     */
+    public void setItemTaxRate(String itemTaxRate) {
 		this.itemTaxRate = itemTaxRate;
 	}
 
-	public String getItemUnit() {
+    /**
+     * Gets item unit.
+     *
+     * @return the item unit
+     */
+    public String getItemUnit() {
 		return this.itemUnit;
 	}
-	public void setItemUnit(String itemUnit) {
+
+    /**
+     * Sets item unit.
+     *
+     * @param itemUnit the item unit
+     */
+    public void setItemUnit(String itemUnit) {
 		this.itemUnit = itemUnit;
 	}
 
-	public String getItemUnitPrice() {
+    /**
+     * Gets item unit price.
+     *
+     * @return the item unit price
+     */
+    public String getItemUnitPrice() {
 		return this.itemUnitPrice;
 	}
-	public void setItemUnitPrice(String itemUnitPrice) {
+
+    /**
+     * Sets item unit price.
+     *
+     * @param itemUnitPrice the item unit price
+     */
+    public void setItemUnitPrice(String itemUnitPrice) {
 		this.itemUnitPrice = itemUnitPrice;
 	}
 
-	public String getRowType() {
+    /**
+     * Gets row type.
+     *
+     * @return the row type
+     */
+    public String getRowType() {
 		return this.rowType;
 	}
-	public void setRowType(String rowType) {
+
+    /**
+     * Sets row type.
+     *
+     * @param rowType the row type
+     */
+    public void setRowType(String rowType) {
 		this.rowType = rowType;
 	}
 

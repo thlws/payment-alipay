@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 手艺人门店关系
  *
  * @author auto create
- * @since 1.0, 2017-01-13 16:26:55
+ * @since 1.0, 2017-10-26 10:35:48
  */
 public class CraftsmanShopRelationOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5515166933838841519L;
+	private static final long serialVersionUID = 3523697456354561849L;
 
 	/**
 	 * 推荐权重。整数。小于等于0表示不在口碑店铺页展示 大于0表示在口碑店铺页展示， 值越大，排序越靠前。
@@ -25,17 +25,39 @@ public class CraftsmanShopRelationOpenModel extends AlipayObject {
 	@ApiField("shop_id")
 	private String shopId;
 
-	public Long getRecommendWeight() {
+    /**
+     * Gets recommend weight.
+     *
+     * @return the recommend weight
+     */
+    public Long getRecommendWeight() {
 		return this.recommendWeight;
 	}
-	public void setRecommendWeight(Long recommendWeight) {
+
+    /**
+     * Sets recommend weight.
+     *
+     * @param recommendWeight the recommend weight
+     */
+    public void setRecommendWeight(Long recommendWeight) {
 		this.recommendWeight = recommendWeight;
 	}
 
-	public String getShopId() {
+    /**
+     * Gets shop id.
+     *
+     * @return the shop id
+     */
+    public String getShopId() {
 		return this.shopId;
 	}
-	public void setShopId(String shopId) {
+
+    /**
+     * Sets shop id.
+     *
+     * @param shopId the shop id
+     */
+    public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 

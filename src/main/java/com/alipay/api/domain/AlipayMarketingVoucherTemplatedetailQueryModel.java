@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询模板详情
  *
  * @author auto create
- * @since 1.0, 2017-06-19 11:27:10
+ * @since 1.0, 2018-06-20 18:10:39
  */
 public class AlipayMarketingVoucherTemplatedetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3517419535297665241L;
+	private static final long serialVersionUID = 5149222758446441223L;
 
 	/**
 	 * 券模板ID
@@ -19,10 +19,21 @@ public class AlipayMarketingVoucherTemplatedetailQueryModel extends AlipayObject
 	@ApiField("template_id")
 	private String templateId;
 
-	public String getTemplateId() {
+    /**
+     * Gets template id.
+     *
+     * @return the template id
+     */
+    public String getTemplateId() {
 		return this.templateId;
 	}
-	public void setTemplateId(String templateId) {
+
+    /**
+     * Sets template id.
+     *
+     * @param templateId the template id
+     */
+    public void setTemplateId(String templateId) {
 		this.templateId = templateId;
 	}
 

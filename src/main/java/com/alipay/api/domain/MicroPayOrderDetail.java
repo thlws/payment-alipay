@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MicroPayOrderDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8492734863649957372L;
+	private static final long serialVersionUID = 8443527284745822453L;
 
 	/**
 	 * 支付宝订单号，此订单号作为后续支付冻结金以及转账的订单标识
@@ -87,87 +87,219 @@ public class MicroPayOrderDetail extends AlipayObject {
 	@ApiField("pay_confirm")
 	private String payConfirm;
 
-	public String getAlipayOrderNo() {
+    /**
+     * Gets alipay order no.
+     *
+     * @return the alipay order no
+     */
+    public String getAlipayOrderNo() {
 		return this.alipayOrderNo;
 	}
-	public void setAlipayOrderNo(String alipayOrderNo) {
+
+    /**
+     * Sets alipay order no.
+     *
+     * @param alipayOrderNo the alipay order no
+     */
+    public void setAlipayOrderNo(String alipayOrderNo) {
 		this.alipayOrderNo = alipayOrderNo;
 	}
 
-	public String getAlipayUserId() {
+    /**
+     * Gets alipay user id.
+     *
+     * @return the alipay user id
+     */
+    public String getAlipayUserId() {
 		return this.alipayUserId;
 	}
-	public void setAlipayUserId(String alipayUserId) {
+
+    /**
+     * Sets alipay user id.
+     *
+     * @param alipayUserId the alipay user id
+     */
+    public void setAlipayUserId(String alipayUserId) {
 		this.alipayUserId = alipayUserId;
 	}
 
-	public String getAvailableAmount() {
+    /**
+     * Gets available amount.
+     *
+     * @return the available amount
+     */
+    public String getAvailableAmount() {
 		return this.availableAmount;
 	}
-	public void setAvailableAmount(String availableAmount) {
+
+    /**
+     * Sets available amount.
+     *
+     * @param availableAmount the available amount
+     */
+    public void setAvailableAmount(String availableAmount) {
 		this.availableAmount = availableAmount;
 	}
 
-	public Date getCreateTime() {
+    /**
+     * Gets create time.
+     *
+     * @return the create time
+     */
+    public Date getCreateTime() {
 		return this.createTime;
 	}
-	public void setCreateTime(Date createTime) {
+
+    /**
+     * Sets create time.
+     *
+     * @param createTime the create time
+     */
+    public void setCreateTime(Date createTime) {
 		this.createTime = createTime;
 	}
 
-	public Date getExpireTime() {
+    /**
+     * Gets expire time.
+     *
+     * @return the expire time
+     */
+    public Date getExpireTime() {
 		return this.expireTime;
 	}
-	public void setExpireTime(Date expireTime) {
+
+    /**
+     * Sets expire time.
+     *
+     * @param expireTime the expire time
+     */
+    public void setExpireTime(Date expireTime) {
 		this.expireTime = expireTime;
 	}
 
-	public String getFreezeAmount() {
+    /**
+     * Gets freeze amount.
+     *
+     * @return the freeze amount
+     */
+    public String getFreezeAmount() {
 		return this.freezeAmount;
 	}
-	public void setFreezeAmount(String freezeAmount) {
+
+    /**
+     * Sets freeze amount.
+     *
+     * @param freezeAmount the freeze amount
+     */
+    public void setFreezeAmount(String freezeAmount) {
 		this.freezeAmount = freezeAmount;
 	}
 
-	public String getMemo() {
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo() {
 		return this.memo;
 	}
-	public void setMemo(String memo) {
+
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
-	public String getMerchantOrderNo() {
+    /**
+     * Gets merchant order no.
+     *
+     * @return the merchant order no
+     */
+    public String getMerchantOrderNo() {
 		return this.merchantOrderNo;
 	}
-	public void setMerchantOrderNo(String merchantOrderNo) {
+
+    /**
+     * Sets merchant order no.
+     *
+     * @param merchantOrderNo the merchant order no
+     */
+    public void setMerchantOrderNo(String merchantOrderNo) {
 		this.merchantOrderNo = merchantOrderNo;
 	}
 
-	public Date getModifiedTime() {
+    /**
+     * Gets modified time.
+     *
+     * @return the modified time
+     */
+    public Date getModifiedTime() {
 		return this.modifiedTime;
 	}
-	public void setModifiedTime(Date modifiedTime) {
+
+    /**
+     * Sets modified time.
+     *
+     * @param modifiedTime the modified time
+     */
+    public void setModifiedTime(Date modifiedTime) {
 		this.modifiedTime = modifiedTime;
 	}
 
-	public String getOrderStatus() {
+    /**
+     * Gets order status.
+     *
+     * @return the order status
+     */
+    public String getOrderStatus() {
 		return this.orderStatus;
 	}
-	public void setOrderStatus(String orderStatus) {
+
+    /**
+     * Sets order status.
+     *
+     * @param orderStatus the order status
+     */
+    public void setOrderStatus(String orderStatus) {
 		this.orderStatus = orderStatus;
 	}
 
-	public String getPayAmount() {
+    /**
+     * Gets pay amount.
+     *
+     * @return the pay amount
+     */
+    public String getPayAmount() {
 		return this.payAmount;
 	}
-	public void setPayAmount(String payAmount) {
+
+    /**
+     * Sets pay amount.
+     *
+     * @param payAmount the pay amount
+     */
+    public void setPayAmount(String payAmount) {
 		this.payAmount = payAmount;
 	}
 
-	public String getPayConfirm() {
+    /**
+     * Gets pay confirm.
+     *
+     * @return the pay confirm
+     */
+    public String getPayConfirm() {
 		return this.payConfirm;
 	}
-	public void setPayConfirm(String payConfirm) {
+
+    /**
+     * Sets pay confirm.
+     *
+     * @param payConfirm the pay confirm
+     */
+    public void setPayConfirm(String payConfirm) {
 		this.payConfirm = payConfirm;
 	}
 

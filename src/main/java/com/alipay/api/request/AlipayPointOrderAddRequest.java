@@ -10,7 +10,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.point.order.add request
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-07-11 11:00:47
  */
@@ -49,45 +49,111 @@ public class AlipayPointOrderAddRequest implements AlipayRequest<AlipayPointOrde
 	 */
 	private String userSymbolType;
 
-	public void setMemo(String memo) {
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
-	public String getMemo() {
+
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo() {
 		return this.memo;
 	}
 
-	public void setMerchantOrderNo(String merchantOrderNo) {
+    /**
+     * Sets merchant order no.
+     *
+     * @param merchantOrderNo the merchant order no
+     */
+    public void setMerchantOrderNo(String merchantOrderNo) {
 		this.merchantOrderNo = merchantOrderNo;
 	}
-	public String getMerchantOrderNo() {
+
+    /**
+     * Gets merchant order no.
+     *
+     * @return the merchant order no
+     */
+    public String getMerchantOrderNo() {
 		return this.merchantOrderNo;
 	}
 
-	public void setOrderTime(Date orderTime) {
+    /**
+     * Sets order time.
+     *
+     * @param orderTime the order time
+     */
+    public void setOrderTime(Date orderTime) {
 		this.orderTime = orderTime;
 	}
-	public Date getOrderTime() {
+
+    /**
+     * Gets order time.
+     *
+     * @return the order time
+     */
+    public Date getOrderTime() {
 		return this.orderTime;
 	}
 
-	public void setPointCount(Long pointCount) {
+    /**
+     * Sets point count.
+     *
+     * @param pointCount the point count
+     */
+    public void setPointCount(Long pointCount) {
 		this.pointCount = pointCount;
 	}
-	public Long getPointCount() {
+
+    /**
+     * Gets point count.
+     *
+     * @return the point count
+     */
+    public Long getPointCount() {
 		return this.pointCount;
 	}
 
-	public void setUserSymbol(String userSymbol) {
+    /**
+     * Sets user symbol.
+     *
+     * @param userSymbol the user symbol
+     */
+    public void setUserSymbol(String userSymbol) {
 		this.userSymbol = userSymbol;
 	}
-	public String getUserSymbol() {
+
+    /**
+     * Gets user symbol.
+     *
+     * @return the user symbol
+     */
+    public String getUserSymbol() {
 		return this.userSymbol;
 	}
 
-	public void setUserSymbolType(String userSymbolType) {
+    /**
+     * Sets user symbol type.
+     *
+     * @param userSymbolType the user symbol type
+     */
+    public void setUserSymbolType(String userSymbolType) {
 		this.userSymbolType = userSymbolType;
 	}
-	public String getUserSymbolType() {
+
+    /**
+     * Gets user symbol type.
+     *
+     * @return the user symbol type
+     */
+    public String getUserSymbolType() {
 		return this.userSymbolType;
 	}
 	private String terminalType;
@@ -164,7 +230,13 @@ public class AlipayPointOrderAddRequest implements AlipayRequest<AlipayPointOrde
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

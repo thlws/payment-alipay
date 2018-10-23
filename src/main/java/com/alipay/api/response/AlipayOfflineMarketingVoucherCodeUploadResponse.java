@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.marketing.voucher.code.upload response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-23 17:58:11
+ * @since 1.0, 2018-08-22 11:31:56
  */
 public class AlipayOfflineMarketingVoucherCodeUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8799139953949359249L;
+	private static final long serialVersionUID = 1794527473488171549L;
 
 	/** 
 	 * 码库id
@@ -20,10 +20,21 @@ public class AlipayOfflineMarketingVoucherCodeUploadResponse extends AlipayRespo
 	@ApiField("code_inventory_id")
 	private String codeInventoryId;
 
-	public void setCodeInventoryId(String codeInventoryId) {
+    /**
+     * Sets code inventory id.
+     *
+     * @param codeInventoryId the code inventory id
+     */
+    public void setCodeInventoryId(String codeInventoryId) {
 		this.codeInventoryId = codeInventoryId;
 	}
-	public String getCodeInventoryId( ) {
+
+    /**
+     * Gets code inventory id.
+     *
+     * @return the code inventory id
+     */
+    public String getCodeInventoryId( ) {
 		return this.codeInventoryId;
 	}
 

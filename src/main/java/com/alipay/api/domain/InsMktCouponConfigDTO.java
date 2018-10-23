@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsMktCouponConfigDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5375493767719386936L;
+	private static final long serialVersionUID = 4272939172752781482L;
 
 	/**
 	 * 权益配置Id
@@ -51,45 +51,111 @@ public class InsMktCouponConfigDTO extends AlipayObject {
 	@ApiField("use_start_time")
 	private Date useStartTime;
 
-	public String getCouponConfId() {
+    /**
+     * Gets coupon conf id.
+     *
+     * @return the coupon conf id
+     */
+    public String getCouponConfId() {
 		return this.couponConfId;
 	}
-	public void setCouponConfId(String couponConfId) {
+
+    /**
+     * Sets coupon conf id.
+     *
+     * @param couponConfId the coupon conf id
+     */
+    public void setCouponConfId(String couponConfId) {
 		this.couponConfId = couponConfId;
 	}
 
-	public String getCouponType() {
+    /**
+     * Gets coupon type.
+     *
+     * @return the coupon type
+     */
+    public String getCouponType() {
 		return this.couponType;
 	}
-	public void setCouponType(String couponType) {
+
+    /**
+     * Sets coupon type.
+     *
+     * @param couponType the coupon type
+     */
+    public void setCouponType(String couponType) {
 		this.couponType = couponType;
 	}
 
-	public String getCouponValue() {
+    /**
+     * Gets coupon value.
+     *
+     * @return the coupon value
+     */
+    public String getCouponValue() {
 		return this.couponValue;
 	}
-	public void setCouponValue(String couponValue) {
+
+    /**
+     * Sets coupon value.
+     *
+     * @param couponValue the coupon value
+     */
+    public void setCouponValue(String couponValue) {
 		this.couponValue = couponValue;
 	}
 
-	public Date getUseEndTime() {
+    /**
+     * Gets use end time.
+     *
+     * @return the use end time
+     */
+    public Date getUseEndTime() {
 		return this.useEndTime;
 	}
-	public void setUseEndTime(Date useEndTime) {
+
+    /**
+     * Sets use end time.
+     *
+     * @param useEndTime the use end time
+     */
+    public void setUseEndTime(Date useEndTime) {
 		this.useEndTime = useEndTime;
 	}
 
-	public String getUseRule() {
+    /**
+     * Gets use rule.
+     *
+     * @return the use rule
+     */
+    public String getUseRule() {
 		return this.useRule;
 	}
-	public void setUseRule(String useRule) {
+
+    /**
+     * Sets use rule.
+     *
+     * @param useRule the use rule
+     */
+    public void setUseRule(String useRule) {
 		this.useRule = useRule;
 	}
 
-	public Date getUseStartTime() {
+    /**
+     * Gets use start time.
+     *
+     * @return the use start time
+     */
+    public Date getUseStartTime() {
 		return this.useStartTime;
 	}
-	public void setUseStartTime(Date useStartTime) {
+
+    /**
+     * Sets use start time.
+     *
+     * @param useStartTime the use start time
+     */
+    public void setUseStartTime(Date useStartTime) {
 		this.useStartTime = useStartTime;
 	}
 

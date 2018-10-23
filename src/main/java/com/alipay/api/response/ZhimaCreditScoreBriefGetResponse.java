@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: zhima.credit.score.brief.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-08-09 12:51:37
+ * @since 1.0, 2018-03-14 21:20:31
  */
 public class ZhimaCreditScoreBriefGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4113981654482382215L;
+	private static final long serialVersionUID = 5824413633788465853L;
 
 	/** 
 	 * 芝麻信用对于每一次请求返回的业务号。后续可以通过此业务号进行对账
@@ -26,17 +26,39 @@ public class ZhimaCreditScoreBriefGetResponse extends AlipayResponse {
 	@ApiField("is_admittance")
 	private String isAdmittance;
 
-	public void setBizNo(String bizNo) {
+    /**
+     * Sets biz no.
+     *
+     * @param bizNo the biz no
+     */
+    public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
 	}
-	public String getBizNo( ) {
+
+    /**
+     * Gets biz no.
+     *
+     * @return the biz no
+     */
+    public String getBizNo( ) {
 		return this.bizNo;
 	}
 
-	public void setIsAdmittance(String isAdmittance) {
+    /**
+     * Sets is admittance.
+     *
+     * @param isAdmittance the is admittance
+     */
+    public void setIsAdmittance(String isAdmittance) {
 		this.isAdmittance = isAdmittance;
 	}
-	public String getIsAdmittance( ) {
+
+    /**
+     * Gets is admittance.
+     *
+     * @return the is admittance
+     */
+    public String getIsAdmittance( ) {
 		return this.isAdmittance;
 	}
 

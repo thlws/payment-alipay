@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.commerce.cityfacilitator.city.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2015-12-15 11:19:13
  */
 public class AlipayCommerceCityfacilitatorCityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7137781898361388288L;
+	private static final long serialVersionUID = 8181198775837997346L;
 
 	/** 
 	 * 城市列表
@@ -24,10 +24,21 @@ public class AlipayCommerceCityfacilitatorCityQueryResponse extends AlipayRespon
 	@ApiField("city_function")
 	private List<CityFunction> citys;
 
-	public void setCitys(List<CityFunction> citys) {
+    /**
+     * Sets citys.
+     *
+     * @param citys the citys
+     */
+    public void setCitys(List<CityFunction> citys) {
 		this.citys = citys;
 	}
-	public List<CityFunction> getCitys( ) {
+
+    /**
+     * Gets citys.
+     *
+     * @return the citys
+     */
+    public List<CityFunction> getCitys( ) {
 		return this.citys;
 	}
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 中再核保结果查询
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:19
+ * @since 1.0, 2018-01-22 10:27:48
  */
 public class AlipayDataDataserviceChinaremodelQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1425846618965161912L;
+	private static final long serialVersionUID = 5152346435195564265L;
 
 	/**
 	 * 体检记录id
@@ -31,24 +31,57 @@ public class AlipayDataDataserviceChinaremodelQueryModel extends AlipayObject {
 	@ApiField("trans_id")
 	private String transId;
 
-	public String getId() {
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
+    public String getId() {
 		return this.id;
 	}
-	public void setId(String id) {
+
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
+    public void setId(String id) {
 		this.id = id;
 	}
 
-	public String getRuleId() {
+    /**
+     * Gets rule id.
+     *
+     * @return the rule id
+     */
+    public String getRuleId() {
 		return this.ruleId;
 	}
-	public void setRuleId(String ruleId) {
+
+    /**
+     * Sets rule id.
+     *
+     * @param ruleId the rule id
+     */
+    public void setRuleId(String ruleId) {
 		this.ruleId = ruleId;
 	}
 
-	public String getTransId() {
+    /**
+     * Gets trans id.
+     *
+     * @return the trans id
+     */
+    public String getTransId() {
 		return this.transId;
 	}
-	public void setTransId(String transId) {
+
+    /**
+     * Sets trans id.
+     *
+     * @param transId the trans id
+     */
+    public void setTransId(String transId) {
 		this.transId = transId;
 	}
 

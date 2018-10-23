@@ -7,13 +7,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.trust.user.riskidentify.get response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-01-04 10:16:04
  */
 public class AlipayTrustUserRiskidentifyGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3219578851416369551L;
+	private static final long serialVersionUID = 1443851873297785213L;
 
 	/** 
 	 * 行业关注名单识别结果
@@ -21,10 +21,21 @@ public class AlipayTrustUserRiskidentifyGetResponse extends AlipayResponse {
 	@ApiField("ali_trust_risk_identify")
 	private AliTrustRiskIdentify aliTrustRiskIdentify;
 
-	public void setAliTrustRiskIdentify(AliTrustRiskIdentify aliTrustRiskIdentify) {
+    /**
+     * Sets ali trust risk identify.
+     *
+     * @param aliTrustRiskIdentify the ali trust risk identify
+     */
+    public void setAliTrustRiskIdentify(AliTrustRiskIdentify aliTrustRiskIdentify) {
 		this.aliTrustRiskIdentify = aliTrustRiskIdentify;
 	}
-	public AliTrustRiskIdentify getAliTrustRiskIdentify( ) {
+
+    /**
+     * Gets ali trust risk identify.
+     *
+     * @return the ali trust risk identify
+     */
+    public AliTrustRiskIdentify getAliTrustRiskIdentify( ) {
 		return this.aliTrustRiskIdentify;
 	}
 

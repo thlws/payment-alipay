@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.campaign.drawcamp.update response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-03-23 14:22:20
  */
 public class AlipayMarketingCampaignDrawcampUpdateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8121192812611912764L;
+	private static final long serialVersionUID = 4244997673725557928L;
 
 	/** 
 	 * 操作结果状态，true表示修改成功立即生效，false表示修改失败
@@ -20,10 +20,21 @@ public class AlipayMarketingCampaignDrawcampUpdateResponse extends AlipayRespons
 	@ApiField("camp_result")
 	private Boolean campResult;
 
-	public void setCampResult(Boolean campResult) {
+    /**
+     * Sets camp result.
+     *
+     * @param campResult the camp result
+     */
+    public void setCampResult(Boolean campResult) {
 		this.campResult = campResult;
 	}
-	public Boolean getCampResult( ) {
+
+    /**
+     * Gets camp result.
+     *
+     * @return the camp result
+     */
+    public Boolean getCampResult( ) {
 		return this.campResult;
 	}
 

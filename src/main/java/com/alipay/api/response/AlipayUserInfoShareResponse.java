@@ -10,13 +10,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.user.info.share response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-06 14:48:15
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayUserInfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1632485228637942957L;
+	private static final long serialVersionUID = 8741251413196577446L;
 
 	/** 
 	 * 详细地址。
@@ -43,13 +43,15 @@ public class AlipayUserInfoShareResponse extends AlipayResponse {
 	private String businessScope;
 
 	/** 
-	 * 证件号码，结合证件类型使用.
+	 * 【注意】只有is_certified为T的时候才有意义，否则不保证准确性.
+证件号码，结合证件类型使用.
 	 */
 	@ApiField("cert_no")
 	private String certNo;
 
 	/** 
-	 * 0:身份证
+	 * 【注意】只有is_certified为T的时候才有意义，否则不保证准确性.
+0:身份证
 1:护照
 2:军官证
 3:士兵证
@@ -73,10 +75,22 @@ public class AlipayUserInfoShareResponse extends AlipayResponse {
 	private String city;
 
 	/** 
+	 * 学信网返回的学校名称，有可能为空。
+	 */
+	@ApiField("college_name")
+	private String collegeName;
+
+	/** 
 	 * 国家码
 	 */
 	@ApiField("country_code")
 	private String countryCode;
+
+	/** 
+	 * 学信网返回的学历/学位信息，数据质量一般，请谨慎使用，取值包括：博士研究生、硕士研究生、高升本、专科、博士、硕士、本科、夜大电大函大普通班、专科(高职)、第二学士学位。
+	 */
+	@ApiField("degree")
+	private String degree;
 
 	/** 
 	 * 收货地址列表
@@ -90,6 +104,12 @@ public class AlipayUserInfoShareResponse extends AlipayResponse {
 	 */
 	@ApiField("email")
 	private String email;
+
+	/** 
+	 * 入学时间，yyyy-mm-dd格式
+	 */
+	@ApiField("enrollment_time")
+	private String enrollmentTime;
 
 	/** 
 	 * 企业代理人证件有效期（用户类型是公司类型时才有此字段）。
@@ -165,10 +185,17 @@ STATEORGAN(党政国家机关)
 	private String firmType;
 
 	/** 
-	 * 性别（F：女性；M：男性）。
+	 * 【注意】只有is_certified为T的时候才有意义，否则不保证准确性.
+性别（F：女性；M：男性）。
 	 */
 	@ApiField("gender")
 	private String gender;
+
+	/** 
+	 * 预期毕业时间，不保证准确性，yyyy-mm-dd格式。
+	 */
+	@ApiField("graduation_time")
+	private String graduationTime;
 
 	/** 
 	 * 余额账户是否被冻结。
@@ -275,7 +302,8 @@ T--被冻结；F--未冻结
 	private String userId;
 
 	/** 
-	 * 若用户是个人用户，则是用户的真实姓名；若是企业用户，则是企业名称。
+	 * 【注意】只有is_certified为T的时候才有意义，否则不保证准确性.
+若用户是个人用户，则是用户的真实姓名；若是企业用户，则是企业名称。
 	 */
 	@ApiField("user_name")
 	private String userName;
@@ -303,304 +331,849 @@ W代表已注册，未激活的账户
 	@ApiField("zip")
 	private String zip;
 
-	public void setAddress(String address) {
+    /**
+     * Sets address.
+     *
+     * @param address the address
+     */
+    public void setAddress(String address) {
 		this.address = address;
 	}
-	public String getAddress( ) {
+
+    /**
+     * Gets address.
+     *
+     * @return the address
+     */
+    public String getAddress( ) {
 		return this.address;
 	}
 
-	public void setArea(String area) {
+    /**
+     * Sets area.
+     *
+     * @param area the area
+     */
+    public void setArea(String area) {
 		this.area = area;
 	}
-	public String getArea( ) {
+
+    /**
+     * Gets area.
+     *
+     * @return the area
+     */
+    public String getArea( ) {
 		return this.area;
 	}
 
-	public void setAvatar(String avatar) {
+    /**
+     * Sets avatar.
+     *
+     * @param avatar the avatar
+     */
+    public void setAvatar(String avatar) {
 		this.avatar = avatar;
 	}
-	public String getAvatar( ) {
+
+    /**
+     * Gets avatar.
+     *
+     * @return the avatar
+     */
+    public String getAvatar( ) {
 		return this.avatar;
 	}
 
-	public void setBusinessScope(String businessScope) {
+    /**
+     * Sets business scope.
+     *
+     * @param businessScope the business scope
+     */
+    public void setBusinessScope(String businessScope) {
 		this.businessScope = businessScope;
 	}
-	public String getBusinessScope( ) {
+
+    /**
+     * Gets business scope.
+     *
+     * @return the business scope
+     */
+    public String getBusinessScope( ) {
 		return this.businessScope;
 	}
 
-	public void setCertNo(String certNo) {
+    /**
+     * Sets cert no.
+     *
+     * @param certNo the cert no
+     */
+    public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}
-	public String getCertNo( ) {
+
+    /**
+     * Gets cert no.
+     *
+     * @return the cert no
+     */
+    public String getCertNo( ) {
 		return this.certNo;
 	}
 
-	public void setCertType(String certType) {
+    /**
+     * Sets cert type.
+     *
+     * @param certType the cert type
+     */
+    public void setCertType(String certType) {
 		this.certType = certType;
 	}
-	public String getCertType( ) {
+
+    /**
+     * Gets cert type.
+     *
+     * @return the cert type
+     */
+    public String getCertType( ) {
 		return this.certType;
 	}
 
-	public void setCity(String city) {
+    /**
+     * Sets city.
+     *
+     * @param city the city
+     */
+    public void setCity(String city) {
 		this.city = city;
 	}
-	public String getCity( ) {
+
+    /**
+     * Gets city.
+     *
+     * @return the city
+     */
+    public String getCity( ) {
 		return this.city;
 	}
 
-	public void setCountryCode(String countryCode) {
+    /**
+     * Sets college name.
+     *
+     * @param collegeName the college name
+     */
+    public void setCollegeName(String collegeName) {
+		this.collegeName = collegeName;
+	}
+
+    /**
+     * Gets college name.
+     *
+     * @return the college name
+     */
+    public String getCollegeName( ) {
+		return this.collegeName;
+	}
+
+    /**
+     * Sets country code.
+     *
+     * @param countryCode the country code
+     */
+    public void setCountryCode(String countryCode) {
 		this.countryCode = countryCode;
 	}
-	public String getCountryCode( ) {
+
+    /**
+     * Gets country code.
+     *
+     * @return the country code
+     */
+    public String getCountryCode( ) {
 		return this.countryCode;
 	}
 
-	public void setDeliverAddresses(List<AlipayUserDeliverAddress> deliverAddresses) {
+    /**
+     * Sets degree.
+     *
+     * @param degree the degree
+     */
+    public void setDegree(String degree) {
+		this.degree = degree;
+	}
+
+    /**
+     * Gets degree.
+     *
+     * @return the degree
+     */
+    public String getDegree( ) {
+		return this.degree;
+	}
+
+    /**
+     * Sets deliver addresses.
+     *
+     * @param deliverAddresses the deliver addresses
+     */
+    public void setDeliverAddresses(List<AlipayUserDeliverAddress> deliverAddresses) {
 		this.deliverAddresses = deliverAddresses;
 	}
-	public List<AlipayUserDeliverAddress> getDeliverAddresses( ) {
+
+    /**
+     * Gets deliver addresses.
+     *
+     * @return the deliver addresses
+     */
+    public List<AlipayUserDeliverAddress> getDeliverAddresses( ) {
 		return this.deliverAddresses;
 	}
 
-	public void setEmail(String email) {
+    /**
+     * Sets email.
+     *
+     * @param email the email
+     */
+    public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getEmail( ) {
+
+    /**
+     * Gets email.
+     *
+     * @return the email
+     */
+    public String getEmail( ) {
 		return this.email;
 	}
 
-	public void setFirmAgentPersonCertExpiryDate(String firmAgentPersonCertExpiryDate) {
+    /**
+     * Sets enrollment time.
+     *
+     * @param enrollmentTime the enrollment time
+     */
+    public void setEnrollmentTime(String enrollmentTime) {
+		this.enrollmentTime = enrollmentTime;
+	}
+
+    /**
+     * Gets enrollment time.
+     *
+     * @return the enrollment time
+     */
+    public String getEnrollmentTime( ) {
+		return this.enrollmentTime;
+	}
+
+    /**
+     * Sets firm agent person cert expiry date.
+     *
+     * @param firmAgentPersonCertExpiryDate the firm agent person cert expiry date
+     */
+    public void setFirmAgentPersonCertExpiryDate(String firmAgentPersonCertExpiryDate) {
 		this.firmAgentPersonCertExpiryDate = firmAgentPersonCertExpiryDate;
 	}
-	public String getFirmAgentPersonCertExpiryDate( ) {
+
+    /**
+     * Gets firm agent person cert expiry date.
+     *
+     * @return the firm agent person cert expiry date
+     */
+    public String getFirmAgentPersonCertExpiryDate( ) {
 		return this.firmAgentPersonCertExpiryDate;
 	}
 
-	public void setFirmAgentPersonCertNo(String firmAgentPersonCertNo) {
+    /**
+     * Sets firm agent person cert no.
+     *
+     * @param firmAgentPersonCertNo the firm agent person cert no
+     */
+    public void setFirmAgentPersonCertNo(String firmAgentPersonCertNo) {
 		this.firmAgentPersonCertNo = firmAgentPersonCertNo;
 	}
-	public String getFirmAgentPersonCertNo( ) {
+
+    /**
+     * Gets firm agent person cert no.
+     *
+     * @return the firm agent person cert no
+     */
+    public String getFirmAgentPersonCertNo( ) {
 		return this.firmAgentPersonCertNo;
 	}
 
-	public void setFirmAgentPersonCertType(String firmAgentPersonCertType) {
+    /**
+     * Sets firm agent person cert type.
+     *
+     * @param firmAgentPersonCertType the firm agent person cert type
+     */
+    public void setFirmAgentPersonCertType(String firmAgentPersonCertType) {
 		this.firmAgentPersonCertType = firmAgentPersonCertType;
 	}
-	public String getFirmAgentPersonCertType( ) {
+
+    /**
+     * Gets firm agent person cert type.
+     *
+     * @return the firm agent person cert type
+     */
+    public String getFirmAgentPersonCertType( ) {
 		return this.firmAgentPersonCertType;
 	}
 
-	public void setFirmAgentPersonName(String firmAgentPersonName) {
+    /**
+     * Sets firm agent person name.
+     *
+     * @param firmAgentPersonName the firm agent person name
+     */
+    public void setFirmAgentPersonName(String firmAgentPersonName) {
 		this.firmAgentPersonName = firmAgentPersonName;
 	}
-	public String getFirmAgentPersonName( ) {
+
+    /**
+     * Gets firm agent person name.
+     *
+     * @return the firm agent person name
+     */
+    public String getFirmAgentPersonName( ) {
 		return this.firmAgentPersonName;
 	}
 
-	public void setFirmLegalPersonCertExpiryDate(String firmLegalPersonCertExpiryDate) {
+    /**
+     * Sets firm legal person cert expiry date.
+     *
+     * @param firmLegalPersonCertExpiryDate the firm legal person cert expiry date
+     */
+    public void setFirmLegalPersonCertExpiryDate(String firmLegalPersonCertExpiryDate) {
 		this.firmLegalPersonCertExpiryDate = firmLegalPersonCertExpiryDate;
 	}
-	public String getFirmLegalPersonCertExpiryDate( ) {
+
+    /**
+     * Gets firm legal person cert expiry date.
+     *
+     * @return the firm legal person cert expiry date
+     */
+    public String getFirmLegalPersonCertExpiryDate( ) {
 		return this.firmLegalPersonCertExpiryDate;
 	}
 
-	public void setFirmLegalPersonCertNo(String firmLegalPersonCertNo) {
+    /**
+     * Sets firm legal person cert no.
+     *
+     * @param firmLegalPersonCertNo the firm legal person cert no
+     */
+    public void setFirmLegalPersonCertNo(String firmLegalPersonCertNo) {
 		this.firmLegalPersonCertNo = firmLegalPersonCertNo;
 	}
-	public String getFirmLegalPersonCertNo( ) {
+
+    /**
+     * Gets firm legal person cert no.
+     *
+     * @return the firm legal person cert no
+     */
+    public String getFirmLegalPersonCertNo( ) {
 		return this.firmLegalPersonCertNo;
 	}
 
-	public void setFirmLegalPersonCertType(String firmLegalPersonCertType) {
+    /**
+     * Sets firm legal person cert type.
+     *
+     * @param firmLegalPersonCertType the firm legal person cert type
+     */
+    public void setFirmLegalPersonCertType(String firmLegalPersonCertType) {
 		this.firmLegalPersonCertType = firmLegalPersonCertType;
 	}
-	public String getFirmLegalPersonCertType( ) {
+
+    /**
+     * Gets firm legal person cert type.
+     *
+     * @return the firm legal person cert type
+     */
+    public String getFirmLegalPersonCertType( ) {
 		return this.firmLegalPersonCertType;
 	}
 
-	public void setFirmLegalPersonName(String firmLegalPersonName) {
+    /**
+     * Sets firm legal person name.
+     *
+     * @param firmLegalPersonName the firm legal person name
+     */
+    public void setFirmLegalPersonName(String firmLegalPersonName) {
 		this.firmLegalPersonName = firmLegalPersonName;
 	}
-	public String getFirmLegalPersonName( ) {
+
+    /**
+     * Gets firm legal person name.
+     *
+     * @return the firm legal person name
+     */
+    public String getFirmLegalPersonName( ) {
 		return this.firmLegalPersonName;
 	}
 
-	public void setFirmLegalPersonPictures(List<AlipayUserPicture> firmLegalPersonPictures) {
+    /**
+     * Sets firm legal person pictures.
+     *
+     * @param firmLegalPersonPictures the firm legal person pictures
+     */
+    public void setFirmLegalPersonPictures(List<AlipayUserPicture> firmLegalPersonPictures) {
 		this.firmLegalPersonPictures = firmLegalPersonPictures;
 	}
-	public List<AlipayUserPicture> getFirmLegalPersonPictures( ) {
+
+    /**
+     * Gets firm legal person pictures.
+     *
+     * @return the firm legal person pictures
+     */
+    public List<AlipayUserPicture> getFirmLegalPersonPictures( ) {
 		return this.firmLegalPersonPictures;
 	}
 
-	public void setFirmPictures(List<AlipayUserPicture> firmPictures) {
+    /**
+     * Sets firm pictures.
+     *
+     * @param firmPictures the firm pictures
+     */
+    public void setFirmPictures(List<AlipayUserPicture> firmPictures) {
 		this.firmPictures = firmPictures;
 	}
-	public List<AlipayUserPicture> getFirmPictures( ) {
+
+    /**
+     * Gets firm pictures.
+     *
+     * @return the firm pictures
+     */
+    public List<AlipayUserPicture> getFirmPictures( ) {
 		return this.firmPictures;
 	}
 
-	public void setFirmType(String firmType) {
+    /**
+     * Sets firm type.
+     *
+     * @param firmType the firm type
+     */
+    public void setFirmType(String firmType) {
 		this.firmType = firmType;
 	}
-	public String getFirmType( ) {
+
+    /**
+     * Gets firm type.
+     *
+     * @return the firm type
+     */
+    public String getFirmType( ) {
 		return this.firmType;
 	}
 
-	public void setGender(String gender) {
+    /**
+     * Sets gender.
+     *
+     * @param gender the gender
+     */
+    public void setGender(String gender) {
 		this.gender = gender;
 	}
-	public String getGender( ) {
+
+    /**
+     * Gets gender.
+     *
+     * @return the gender
+     */
+    public String getGender( ) {
 		return this.gender;
 	}
 
-	public void setIsBalanceFrozen(String isBalanceFrozen) {
+    /**
+     * Sets graduation time.
+     *
+     * @param graduationTime the graduation time
+     */
+    public void setGraduationTime(String graduationTime) {
+		this.graduationTime = graduationTime;
+	}
+
+    /**
+     * Gets graduation time.
+     *
+     * @return the graduation time
+     */
+    public String getGraduationTime( ) {
+		return this.graduationTime;
+	}
+
+    /**
+     * Sets is balance frozen.
+     *
+     * @param isBalanceFrozen the is balance frozen
+     */
+    public void setIsBalanceFrozen(String isBalanceFrozen) {
 		this.isBalanceFrozen = isBalanceFrozen;
 	}
-	public String getIsBalanceFrozen( ) {
+
+    /**
+     * Gets is balance frozen.
+     *
+     * @return the is balance frozen
+     */
+    public String getIsBalanceFrozen( ) {
 		return this.isBalanceFrozen;
 	}
 
-	public void setIsCertified(String isCertified) {
+    /**
+     * Sets is certified.
+     *
+     * @param isCertified the is certified
+     */
+    public void setIsCertified(String isCertified) {
 		this.isCertified = isCertified;
 	}
-	public String getIsCertified( ) {
+
+    /**
+     * Gets is certified.
+     *
+     * @return the is certified
+     */
+    public String getIsCertified( ) {
 		return this.isCertified;
 	}
 
-	public void setIsStudentCertified(String isStudentCertified) {
+    /**
+     * Sets is student certified.
+     *
+     * @param isStudentCertified the is student certified
+     */
+    public void setIsStudentCertified(String isStudentCertified) {
 		this.isStudentCertified = isStudentCertified;
 	}
-	public String getIsStudentCertified( ) {
+
+    /**
+     * Gets is student certified.
+     *
+     * @return the is student certified
+     */
+    public String getIsStudentCertified( ) {
 		return this.isStudentCertified;
 	}
 
-	public void setLicenseExpiryDate(String licenseExpiryDate) {
+    /**
+     * Sets license expiry date.
+     *
+     * @param licenseExpiryDate the license expiry date
+     */
+    public void setLicenseExpiryDate(String licenseExpiryDate) {
 		this.licenseExpiryDate = licenseExpiryDate;
 	}
-	public String getLicenseExpiryDate( ) {
+
+    /**
+     * Gets license expiry date.
+     *
+     * @return the license expiry date
+     */
+    public String getLicenseExpiryDate( ) {
 		return this.licenseExpiryDate;
 	}
 
-	public void setLicenseNo(String licenseNo) {
+    /**
+     * Sets license no.
+     *
+     * @param licenseNo the license no
+     */
+    public void setLicenseNo(String licenseNo) {
 		this.licenseNo = licenseNo;
 	}
-	public String getLicenseNo( ) {
+
+    /**
+     * Gets license no.
+     *
+     * @return the license no
+     */
+    public String getLicenseNo( ) {
 		return this.licenseNo;
 	}
 
-	public void setMemberGrade(String memberGrade) {
+    /**
+     * Sets member grade.
+     *
+     * @param memberGrade the member grade
+     */
+    public void setMemberGrade(String memberGrade) {
 		this.memberGrade = memberGrade;
 	}
-	public String getMemberGrade( ) {
+
+    /**
+     * Gets member grade.
+     *
+     * @return the member grade
+     */
+    public String getMemberGrade( ) {
 		return this.memberGrade;
 	}
 
-	public void setMobile(String mobile) {
+    /**
+     * Sets mobile.
+     *
+     * @param mobile the mobile
+     */
+    public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
-	public String getMobile( ) {
+
+    /**
+     * Gets mobile.
+     *
+     * @return the mobile
+     */
+    public String getMobile( ) {
 		return this.mobile;
 	}
 
-	public void setNickName(String nickName) {
+    /**
+     * Sets nick name.
+     *
+     * @param nickName the nick name
+     */
+    public void setNickName(String nickName) {
 		this.nickName = nickName;
 	}
-	public String getNickName( ) {
+
+    /**
+     * Gets nick name.
+     *
+     * @return the nick name
+     */
+    public String getNickName( ) {
 		return this.nickName;
 	}
 
-	public void setOrganizationCode(String organizationCode) {
+    /**
+     * Sets organization code.
+     *
+     * @param organizationCode the organization code
+     */
+    public void setOrganizationCode(String organizationCode) {
 		this.organizationCode = organizationCode;
 	}
-	public String getOrganizationCode( ) {
+
+    /**
+     * Gets organization code.
+     *
+     * @return the organization code
+     */
+    public String getOrganizationCode( ) {
 		return this.organizationCode;
 	}
 
-	public void setPersonBirthday(String personBirthday) {
+    /**
+     * Sets person birthday.
+     *
+     * @param personBirthday the person birthday
+     */
+    public void setPersonBirthday(String personBirthday) {
 		this.personBirthday = personBirthday;
 	}
-	public String getPersonBirthday( ) {
+
+    /**
+     * Gets person birthday.
+     *
+     * @return the person birthday
+     */
+    public String getPersonBirthday( ) {
 		return this.personBirthday;
 	}
 
-	public void setPersonCertExpiryDate(String personCertExpiryDate) {
+    /**
+     * Sets person cert expiry date.
+     *
+     * @param personCertExpiryDate the person cert expiry date
+     */
+    public void setPersonCertExpiryDate(String personCertExpiryDate) {
 		this.personCertExpiryDate = personCertExpiryDate;
 	}
-	public String getPersonCertExpiryDate( ) {
+
+    /**
+     * Gets person cert expiry date.
+     *
+     * @return the person cert expiry date
+     */
+    public String getPersonCertExpiryDate( ) {
 		return this.personCertExpiryDate;
 	}
 
-	public void setPersonPictures(List<AlipayUserPicture> personPictures) {
+    /**
+     * Sets person pictures.
+     *
+     * @param personPictures the person pictures
+     */
+    public void setPersonPictures(List<AlipayUserPicture> personPictures) {
 		this.personPictures = personPictures;
 	}
-	public List<AlipayUserPicture> getPersonPictures( ) {
+
+    /**
+     * Gets person pictures.
+     *
+     * @return the person pictures
+     */
+    public List<AlipayUserPicture> getPersonPictures( ) {
 		return this.personPictures;
 	}
 
-	public void setPhone(String phone) {
+    /**
+     * Sets phone.
+     *
+     * @param phone the phone
+     */
+    public void setPhone(String phone) {
 		this.phone = phone;
 	}
-	public String getPhone( ) {
+
+    /**
+     * Gets phone.
+     *
+     * @return the phone
+     */
+    public String getPhone( ) {
 		return this.phone;
 	}
 
-	public void setProfession(String profession) {
+    /**
+     * Sets profession.
+     *
+     * @param profession the profession
+     */
+    public void setProfession(String profession) {
 		this.profession = profession;
 	}
-	public String getProfession( ) {
+
+    /**
+     * Gets profession.
+     *
+     * @return the profession
+     */
+    public String getProfession( ) {
 		return this.profession;
 	}
 
-	public void setProvince(String province) {
+    /**
+     * Sets province.
+     *
+     * @param province the province
+     */
+    public void setProvince(String province) {
 		this.province = province;
 	}
-	public String getProvince( ) {
+
+    /**
+     * Gets province.
+     *
+     * @return the province
+     */
+    public String getProvince( ) {
 		return this.province;
 	}
 
-	public void setTaobaoId(String taobaoId) {
+    /**
+     * Sets taobao id.
+     *
+     * @param taobaoId the taobao id
+     */
+    public void setTaobaoId(String taobaoId) {
 		this.taobaoId = taobaoId;
 	}
-	public String getTaobaoId( ) {
+
+    /**
+     * Gets taobao id.
+     *
+     * @return the taobao id
+     */
+    public String getTaobaoId( ) {
 		return this.taobaoId;
 	}
 
-	public void setUserId(String userId) {
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public String getUserId( ) {
+
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId( ) {
 		return this.userId;
 	}
 
-	public void setUserName(String userName) {
+    /**
+     * Sets user name.
+     *
+     * @param userName the user name
+     */
+    public void setUserName(String userName) {
 		this.userName = userName;
 	}
-	public String getUserName( ) {
+
+    /**
+     * Gets user name.
+     *
+     * @return the user name
+     */
+    public String getUserName( ) {
 		return this.userName;
 	}
 
-	public void setUserStatus(String userStatus) {
+    /**
+     * Sets user status.
+     *
+     * @param userStatus the user status
+     */
+    public void setUserStatus(String userStatus) {
 		this.userStatus = userStatus;
 	}
-	public String getUserStatus( ) {
+
+    /**
+     * Gets user status.
+     *
+     * @return the user status
+     */
+    public String getUserStatus( ) {
 		return this.userStatus;
 	}
 
-	public void setUserType(String userType) {
+    /**
+     * Sets user type.
+     *
+     * @param userType the user type
+     */
+    public void setUserType(String userType) {
 		this.userType = userType;
 	}
-	public String getUserType( ) {
+
+    /**
+     * Gets user type.
+     *
+     * @return the user type
+     */
+    public String getUserType( ) {
 		return this.userType;
 	}
 
-	public void setZip(String zip) {
+    /**
+     * Sets zip.
+     *
+     * @param zip the zip
+     */
+    public void setZip(String zip) {
 		this.zip = zip;
 	}
-	public String getZip( ) {
+
+    /**
+     * Gets zip.
+     *
+     * @return the zip
+     */
+    public String getZip( ) {
 		return this.zip;
 	}
 

@@ -180,6 +180,7 @@ public class AlipayCore {
          * Sets sign type.
          *
          * @param sign_type the sign type
+         * @return the sign type
          */
         public ClientBuilder setSign_type(String sign_type) {
             this.sign_type = sign_type;

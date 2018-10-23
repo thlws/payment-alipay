@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.fund.trans.order.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-02-09 15:07:43
+ * @since 1.0, 2017-12-29 17:23:47
  */
 public class AlipayFundTransOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3722294849934588829L;
+	private static final long serialVersionUID = 2725592691854424123L;
 
 	/** 
 	 * 预计到账时间，转账到银行卡专用，格式为yyyy-MM-dd HH:mm:ss，转账受理失败不返回。
@@ -73,10 +73,21 @@ public class AlipayFundTransOrderQueryResponse extends AlipayResponse {
 	@ApiField("status")
 	private String status;
 
-	public void setArrivalTimeEnd(String arrivalTimeEnd) {
+    /**
+     * Sets arrival time end.
+     *
+     * @param arrivalTimeEnd the arrival time end
+     */
+    public void setArrivalTimeEnd(String arrivalTimeEnd) {
 		this.arrivalTimeEnd = arrivalTimeEnd;
 	}
-	public String getArrivalTimeEnd( ) {
+
+    /**
+     * Gets arrival time end.
+     *
+     * @return the arrival time end
+     */
+    public String getArrivalTimeEnd( ) {
 		return this.arrivalTimeEnd;
 	}
 
@@ -87,45 +98,111 @@ public class AlipayFundTransOrderQueryResponse extends AlipayResponse {
 		return this.errorCode;
 	}
 
-	public void setFailReason(String failReason) {
+    /**
+     * Sets fail reason.
+     *
+     * @param failReason the fail reason
+     */
+    public void setFailReason(String failReason) {
 		this.failReason = failReason;
 	}
-	public String getFailReason( ) {
+
+    /**
+     * Gets fail reason.
+     *
+     * @return the fail reason
+     */
+    public String getFailReason( ) {
 		return this.failReason;
 	}
 
-	public void setOrderFee(String orderFee) {
+    /**
+     * Sets order fee.
+     *
+     * @param orderFee the order fee
+     */
+    public void setOrderFee(String orderFee) {
 		this.orderFee = orderFee;
 	}
-	public String getOrderFee( ) {
+
+    /**
+     * Gets order fee.
+     *
+     * @return the order fee
+     */
+    public String getOrderFee( ) {
 		return this.orderFee;
 	}
 
-	public void setOrderId(String orderId) {
+    /**
+     * Sets order id.
+     *
+     * @param orderId the order id
+     */
+    public void setOrderId(String orderId) {
 		this.orderId = orderId;
 	}
-	public String getOrderId( ) {
+
+    /**
+     * Gets order id.
+     *
+     * @return the order id
+     */
+    public String getOrderId( ) {
 		return this.orderId;
 	}
 
-	public void setOutBizNo(String outBizNo) {
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
-	public String getOutBizNo( ) {
+
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo( ) {
 		return this.outBizNo;
 	}
 
-	public void setPayDate(String payDate) {
+    /**
+     * Sets pay date.
+     *
+     * @param payDate the pay date
+     */
+    public void setPayDate(String payDate) {
 		this.payDate = payDate;
 	}
-	public String getPayDate( ) {
+
+    /**
+     * Gets pay date.
+     *
+     * @return the pay date
+     */
+    public String getPayDate( ) {
 		return this.payDate;
 	}
 
-	public void setStatus(String status) {
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
-	public String getStatus( ) {
+
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus( ) {
 		return this.status;
 	}
 

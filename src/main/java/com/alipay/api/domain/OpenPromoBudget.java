@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenPromoBudget extends AlipayObject {
 
-	private static final long serialVersionUID = 7354314927911962739L;
+	private static final long serialVersionUID = 5311939227981373617L;
 
 	/**
 	 * 预算数量，支持1～999999999之间。默认为999999999
@@ -25,17 +25,39 @@ public class OpenPromoBudget extends AlipayObject {
 	@ApiField("budget_type")
 	private String budgetType;
 
-	public String getBudgetTotal() {
+    /**
+     * Gets budget total.
+     *
+     * @return the budget total
+     */
+    public String getBudgetTotal() {
 		return this.budgetTotal;
 	}
-	public void setBudgetTotal(String budgetTotal) {
+
+    /**
+     * Sets budget total.
+     *
+     * @param budgetTotal the budget total
+     */
+    public void setBudgetTotal(String budgetTotal) {
 		this.budgetTotal = budgetTotal;
 	}
 
-	public String getBudgetType() {
+    /**
+     * Gets budget type.
+     *
+     * @return the budget type
+     */
+    public String getBudgetType() {
 		return this.budgetType;
 	}
-	public void setBudgetType(String budgetType) {
+
+    /**
+     * Sets budget type.
+     *
+     * @param budgetType the budget type
+     */
+    public void setBudgetType(String budgetType) {
 		this.budgetType = budgetType;
 	}
 

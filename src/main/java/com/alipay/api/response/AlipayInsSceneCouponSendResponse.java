@@ -8,13 +8,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ins.scene.coupon.send response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-02-23 21:17:32
  */
 public class AlipayInsSceneCouponSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2647822477729756338L;
+	private static final long serialVersionUID = 1413875937582867582L;
 
 	/** 
 	 * 发奖凭证
@@ -40,31 +40,75 @@ public class AlipayInsSceneCouponSendResponse extends AlipayResponse {
 	@ApiField("product")
 	private InsProduct product;
 
-	public void setCertificate(InsCertificate certificate) {
+    /**
+     * Sets certificate.
+     *
+     * @param certificate the certificate
+     */
+    public void setCertificate(InsCertificate certificate) {
 		this.certificate = certificate;
 	}
-	public InsCertificate getCertificate( ) {
+
+    /**
+     * Gets certificate.
+     *
+     * @return the certificate
+     */
+    public InsCertificate getCertificate( ) {
 		return this.certificate;
 	}
 
-	public void setCompaignId(String compaignId) {
+    /**
+     * Sets compaign id.
+     *
+     * @param compaignId the compaign id
+     */
+    public void setCompaignId(String compaignId) {
 		this.compaignId = compaignId;
 	}
-	public String getCompaignId( ) {
+
+    /**
+     * Gets compaign id.
+     *
+     * @return the compaign id
+     */
+    public String getCompaignId( ) {
 		return this.compaignId;
 	}
 
-	public void setFlowId(String flowId) {
+    /**
+     * Sets flow id.
+     *
+     * @param flowId the flow id
+     */
+    public void setFlowId(String flowId) {
 		this.flowId = flowId;
 	}
-	public String getFlowId( ) {
+
+    /**
+     * Gets flow id.
+     *
+     * @return the flow id
+     */
+    public String getFlowId( ) {
 		return this.flowId;
 	}
 
-	public void setProduct(InsProduct product) {
+    /**
+     * Sets product.
+     *
+     * @param product the product
+     */
+    public void setProduct(InsProduct product) {
 		this.product = product;
 	}
-	public InsProduct getProduct( ) {
+
+    /**
+     * Gets product.
+     *
+     * @return the product
+     */
+    public InsProduct getProduct( ) {
 		return this.product;
 	}
 

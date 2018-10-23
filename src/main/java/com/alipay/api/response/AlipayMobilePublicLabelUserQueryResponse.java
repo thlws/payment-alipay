@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.public.label.user.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-07-29 19:58:41
  */
 public class AlipayMobilePublicLabelUserQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3266485967648299496L;
+	private static final long serialVersionUID = 4732525626266442388L;
 
 	/** 
 	 * 结果码
@@ -39,10 +39,21 @@ public class AlipayMobilePublicLabelUserQueryResponse extends AlipayResponse {
 		return this.code;
 	}
 
-	public void setLabelIds(String labelIds) {
+    /**
+     * Sets label ids.
+     *
+     * @param labelIds the label ids
+     */
+    public void setLabelIds(String labelIds) {
 		this.labelIds = labelIds;
 	}
-	public String getLabelIds( ) {
+
+    /**
+     * Gets label ids.
+     *
+     * @return the label ids
+     */
+    public String getLabelIds( ) {
 		return this.labelIds;
 	}
 

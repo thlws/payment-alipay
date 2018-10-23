@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IntelligentPromoEffect extends AlipayObject {
 
-	private static final long serialVersionUID = 5124938386282782955L;
+	private static final long serialVersionUID = 3829598412639619826L;
 
 	/**
 	 * 平均客单价提升比例
@@ -93,94 +93,237 @@ public class IntelligentPromoEffect extends AlipayObject {
 	@ApiField("use_count")
 	private Long useCount;
 
-	public String getAvgPrizeIncrease() {
+    /**
+     * Gets avg prize increase.
+     *
+     * @return the avg prize increase
+     */
+    public String getAvgPrizeIncrease() {
 		return this.avgPrizeIncrease;
 	}
-	public void setAvgPrizeIncrease(String avgPrizeIncrease) {
+
+    /**
+     * Sets avg prize increase.
+     *
+     * @param avgPrizeIncrease the avg prize increase
+     */
+    public void setAvgPrizeIncrease(String avgPrizeIncrease) {
 		this.avgPrizeIncrease = avgPrizeIncrease;
 	}
 
-	public String getCost() {
+    /**
+     * Gets cost.
+     *
+     * @return the cost
+     */
+    public String getCost() {
 		return this.cost;
 	}
-	public void setCost(String cost) {
+
+    /**
+     * Sets cost.
+     *
+     * @param cost the cost
+     */
+    public void setCost(String cost) {
 		this.cost = cost;
 	}
 
-	public String getCurrentTotalAmount() {
+    /**
+     * Gets current total amount.
+     *
+     * @return the current total amount
+     */
+    public String getCurrentTotalAmount() {
 		return this.currentTotalAmount;
 	}
-	public void setCurrentTotalAmount(String currentTotalAmount) {
+
+    /**
+     * Sets current total amount.
+     *
+     * @param currentTotalAmount the current total amount
+     */
+    public void setCurrentTotalAmount(String currentTotalAmount) {
 		this.currentTotalAmount = currentTotalAmount;
 	}
 
-	public String getEffectId() {
+    /**
+     * Gets effect id.
+     *
+     * @return the effect id
+     */
+    public String getEffectId() {
 		return this.effectId;
 	}
-	public void setEffectId(String effectId) {
+
+    /**
+     * Sets effect id.
+     *
+     * @param effectId the effect id
+     */
+    public void setEffectId(String effectId) {
 		this.effectId = effectId;
 	}
 
-	public Date getGmtFrom() {
+    /**
+     * Gets gmt from.
+     *
+     * @return the gmt from
+     */
+    public Date getGmtFrom() {
 		return this.gmtFrom;
 	}
-	public void setGmtFrom(Date gmtFrom) {
+
+    /**
+     * Sets gmt from.
+     *
+     * @param gmtFrom the gmt from
+     */
+    public void setGmtFrom(Date gmtFrom) {
 		this.gmtFrom = gmtFrom;
 	}
 
-	public Date getGmtTo() {
+    /**
+     * Gets gmt to.
+     *
+     * @return the gmt to
+     */
+    public Date getGmtTo() {
 		return this.gmtTo;
 	}
-	public void setGmtTo(Date gmtTo) {
+
+    /**
+     * Sets gmt to.
+     *
+     * @param gmtTo the gmt to
+     */
+    public void setGmtTo(Date gmtTo) {
 		this.gmtTo = gmtTo;
 	}
 
-	public String getGmv() {
+    /**
+     * Gets gmv.
+     *
+     * @return the gmv
+     */
+    public String getGmv() {
 		return this.gmv;
 	}
-	public void setGmv(String gmv) {
+
+    /**
+     * Sets gmv.
+     *
+     * @param gmv the gmv
+     */
+    public void setGmv(String gmv) {
 		this.gmv = gmv;
 	}
 
-	public Long getRemainStockNum() {
+    /**
+     * Gets remain stock num.
+     *
+     * @return the remain stock num
+     */
+    public Long getRemainStockNum() {
 		return this.remainStockNum;
 	}
-	public void setRemainStockNum(Long remainStockNum) {
+
+    /**
+     * Sets remain stock num.
+     *
+     * @param remainStockNum the remain stock num
+     */
+    public void setRemainStockNum(Long remainStockNum) {
 		this.remainStockNum = remainStockNum;
 	}
 
-	public String getRepayRateIncrease() {
+    /**
+     * Gets repay rate increase.
+     *
+     * @return the repay rate increase
+     */
+    public String getRepayRateIncrease() {
 		return this.repayRateIncrease;
 	}
-	public void setRepayRateIncrease(String repayRateIncrease) {
+
+    /**
+     * Sets repay rate increase.
+     *
+     * @param repayRateIncrease the repay rate increase
+     */
+    public void setRepayRateIncrease(String repayRateIncrease) {
 		this.repayRateIncrease = repayRateIncrease;
 	}
 
-	public String getSendCountIncrease() {
+    /**
+     * Gets send count increase.
+     *
+     * @return the send count increase
+     */
+    public String getSendCountIncrease() {
 		return this.sendCountIncrease;
 	}
-	public void setSendCountIncrease(String sendCountIncrease) {
+
+    /**
+     * Sets send count increase.
+     *
+     * @param sendCountIncrease the send count increase
+     */
+    public void setSendCountIncrease(String sendCountIncrease) {
 		this.sendCountIncrease = sendCountIncrease;
 	}
 
-	public Long getTakeCount() {
+    /**
+     * Gets take count.
+     *
+     * @return the take count
+     */
+    public Long getTakeCount() {
 		return this.takeCount;
 	}
-	public void setTakeCount(Long takeCount) {
+
+    /**
+     * Sets take count.
+     *
+     * @param takeCount the take count
+     */
+    public void setTakeCount(Long takeCount) {
 		this.takeCount = takeCount;
 	}
 
-	public String getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
-	public void setType(String type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
 
-	public Long getUseCount() {
+    /**
+     * Gets use count.
+     *
+     * @return the use count
+     */
+    public Long getUseCount() {
 		return this.useCount;
 	}
-	public void setUseCount(Long useCount) {
+
+    /**
+     * Sets use count.
+     *
+     * @param useCount the use count
+     */
+    public void setUseCount(Long useCount) {
 		this.useCount = useCount;
 	}
 

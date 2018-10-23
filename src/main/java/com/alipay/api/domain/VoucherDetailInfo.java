@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 券资产详情信息对象
  *
  * @author auto create
- * @since 1.0, 2017-08-08 19:56:13
+ * @since 1.0, 2018-01-15 17:47:56
  */
 public class VoucherDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6318535449989812919L;
+	private static final long serialVersionUID = 7671286318468595715L;
 
 	/**
 	 * 资产id
@@ -23,7 +23,7 @@ public class VoucherDetailInfo extends AlipayObject {
 	private String assetId;
 
 	/**
-	 * 有效期起
+	 * 资产生效时间
 	 */
 	@ApiField("effect_time")
 	private String effectTime;
@@ -41,7 +41,7 @@ public class VoucherDetailInfo extends AlipayObject {
 	private ForbbidenTime forbbidenTime;
 
 	/**
-	 * 券过期时间
+	 * 资产过期时间
 	 */
 	@ApiField("invalid_time")
 	private String invalidTime;
@@ -77,73 +77,183 @@ public class VoucherDetailInfo extends AlipayObject {
 	@ApiField("voucher_type")
 	private String voucherType;
 
-	public String getAssetId() {
+    /**
+     * Gets asset id.
+     *
+     * @return the asset id
+     */
+    public String getAssetId() {
 		return this.assetId;
 	}
-	public void setAssetId(String assetId) {
+
+    /**
+     * Sets asset id.
+     *
+     * @param assetId the asset id
+     */
+    public void setAssetId(String assetId) {
 		this.assetId = assetId;
 	}
 
-	public String getEffectTime() {
+    /**
+     * Gets effect time.
+     *
+     * @return the effect time
+     */
+    public String getEffectTime() {
 		return this.effectTime;
 	}
-	public void setEffectTime(String effectTime) {
+
+    /**
+     * Sets effect time.
+     *
+     * @param effectTime the effect time
+     */
+    public void setEffectTime(String effectTime) {
 		this.effectTime = effectTime;
 	}
 
-	public String getExtInfo() {
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo() {
 		return this.extInfo;
 	}
-	public void setExtInfo(String extInfo) {
+
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
-	public ForbbidenTime getForbbidenTime() {
+    /**
+     * Gets forbbiden time.
+     *
+     * @return the forbbiden time
+     */
+    public ForbbidenTime getForbbidenTime() {
 		return this.forbbidenTime;
 	}
-	public void setForbbidenTime(ForbbidenTime forbbidenTime) {
+
+    /**
+     * Sets forbbiden time.
+     *
+     * @param forbbidenTime the forbbiden time
+     */
+    public void setForbbidenTime(ForbbidenTime forbbidenTime) {
 		this.forbbidenTime = forbbidenTime;
 	}
 
-	public String getInvalidTime() {
+    /**
+     * Gets invalid time.
+     *
+     * @return the invalid time
+     */
+    public String getInvalidTime() {
 		return this.invalidTime;
 	}
-	public void setInvalidTime(String invalidTime) {
+
+    /**
+     * Sets invalid time.
+     *
+     * @param invalidTime the invalid time
+     */
+    public void setInvalidTime(String invalidTime) {
 		this.invalidTime = invalidTime;
 	}
 
-	public String getSkuCodes() {
+    /**
+     * Gets sku codes.
+     *
+     * @return the sku codes
+     */
+    public String getSkuCodes() {
 		return this.skuCodes;
 	}
-	public void setSkuCodes(String skuCodes) {
+
+    /**
+     * Sets sku codes.
+     *
+     * @param skuCodes the sku codes
+     */
+    public void setSkuCodes(String skuCodes) {
 		this.skuCodes = skuCodes;
 	}
 
-	public List<UseTime> getTimeRules() {
+    /**
+     * Gets time rules.
+     *
+     * @return the time rules
+     */
+    public List<UseTime> getTimeRules() {
 		return this.timeRules;
 	}
-	public void setTimeRules(List<UseTime> timeRules) {
+
+    /**
+     * Sets time rules.
+     *
+     * @param timeRules the time rules
+     */
+    public void setTimeRules(List<UseTime> timeRules) {
 		this.timeRules = timeRules;
 	}
 
-	public String getUseCondition() {
+    /**
+     * Gets use condition.
+     *
+     * @return the use condition
+     */
+    public String getUseCondition() {
 		return this.useCondition;
 	}
-	public void setUseCondition(String useCondition) {
+
+    /**
+     * Sets use condition.
+     *
+     * @param useCondition the use condition
+     */
+    public void setUseCondition(String useCondition) {
 		this.useCondition = useCondition;
 	}
 
-	public String getVoucherDesc() {
+    /**
+     * Gets voucher desc.
+     *
+     * @return the voucher desc
+     */
+    public String getVoucherDesc() {
 		return this.voucherDesc;
 	}
-	public void setVoucherDesc(String voucherDesc) {
+
+    /**
+     * Sets voucher desc.
+     *
+     * @param voucherDesc the voucher desc
+     */
+    public void setVoucherDesc(String voucherDesc) {
 		this.voucherDesc = voucherDesc;
 	}
 
-	public String getVoucherType() {
+    /**
+     * Gets voucher type.
+     *
+     * @return the voucher type
+     */
+    public String getVoucherType() {
 		return this.voucherType;
 	}
-	public void setVoucherType(String voucherType) {
+
+    /**
+     * Sets voucher type.
+     *
+     * @param voucherType the voucher type
+     */
+    public void setVoucherType(String voucherType) {
 		this.voucherType = voucherType;
 	}
 

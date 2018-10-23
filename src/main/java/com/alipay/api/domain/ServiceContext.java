@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务上下文包括环境信息和用户信息
  *
  * @author auto create
- * @since 1.0, 2017-08-03 10:37:18
+ * @since 1.0, 2018-09-18 10:50:24
  */
 public class ServiceContext extends AlipayObject {
 
-	private static final long serialVersionUID = 3628651889328816952L;
+	private static final long serialVersionUID = 2122628798495972162L;
 
 	/**
 	 * 客户端IP
@@ -43,38 +43,93 @@ public class ServiceContext extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
-	public String getClientIp() {
+    /**
+     * Gets client ip.
+     *
+     * @return the client ip
+     */
+    public String getClientIp() {
 		return this.clientIp;
 	}
-	public void setClientIp(String clientIp) {
+
+    /**
+     * Sets client ip.
+     *
+     * @param clientIp the client ip
+     */
+    public void setClientIp(String clientIp) {
 		this.clientIp = clientIp;
 	}
 
-	public String getClientPcidguid() {
+    /**
+     * Gets client pcidguid.
+     *
+     * @return the client pcidguid
+     */
+    public String getClientPcidguid() {
 		return this.clientPcidguid;
 	}
-	public void setClientPcidguid(String clientPcidguid) {
+
+    /**
+     * Sets client pcidguid.
+     *
+     * @param clientPcidguid the client pcidguid
+     */
+    public void setClientPcidguid(String clientPcidguid) {
 		this.clientPcidguid = clientPcidguid;
 	}
 
-	public String getServerName() {
+    /**
+     * Gets server name.
+     *
+     * @return the server name
+     */
+    public String getServerName() {
 		return this.serverName;
 	}
-	public void setServerName(String serverName) {
+
+    /**
+     * Sets server name.
+     *
+     * @param serverName the server name
+     */
+    public void setServerName(String serverName) {
 		this.serverName = serverName;
 	}
 
-	public String getSessionId() {
+    /**
+     * Gets session id.
+     *
+     * @return the session id
+     */
+    public String getSessionId() {
 		return this.sessionId;
 	}
-	public void setSessionId(String sessionId) {
+
+    /**
+     * Sets session id.
+     *
+     * @param sessionId the session id
+     */
+    public void setSessionId(String sessionId) {
 		this.sessionId = sessionId;
 	}
 
-	public String getUserId() {
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
-	public void setUserId(String userId) {
+
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
 

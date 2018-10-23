@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankFinanceYulibaoCapitalPurchaseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5589732614961174257L;
+	private static final long serialVersionUID = 3282292648195577539L;
 
 	/**
 	 * 余利宝申购金额，单位是“分”。如amount=123456表示申购1234.56元的余利宝份额。
@@ -37,31 +37,75 @@ public class MybankFinanceYulibaoCapitalPurchaseModel extends AlipayObject {
 	@ApiField("out_biz_no")
 	private String outBizNo;
 
-	public Long getAmount() {
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public Long getAmount() {
 		return this.amount;
 	}
-	public void setAmount(Long amount) {
+
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(Long amount) {
 		this.amount = amount;
 	}
 
-	public String getCurrency() {
+    /**
+     * Gets currency.
+     *
+     * @return the currency
+     */
+    public String getCurrency() {
 		return this.currency;
 	}
-	public void setCurrency(String currency) {
+
+    /**
+     * Sets currency.
+     *
+     * @param currency the currency
+     */
+    public void setCurrency(String currency) {
 		this.currency = currency;
 	}
 
-	public String getFundCode() {
+    /**
+     * Gets fund code.
+     *
+     * @return the fund code
+     */
+    public String getFundCode() {
 		return this.fundCode;
 	}
-	public void setFundCode(String fundCode) {
+
+    /**
+     * Sets fund code.
+     *
+     * @param fundCode the fund code
+     */
+    public void setFundCode(String fundCode) {
 		this.fundCode = fundCode;
 	}
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 

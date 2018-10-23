@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ISV系统配置查询接口
  *
  * @author auto create
- * @since 1.0, 2017-07-20 09:54:53
+ * @since 1.0, 2018-06-25 14:53:00
  */
 public class AlipayEcoMycarParkingConfigQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5766957253511745559L;
+	private static final long serialVersionUID = 6725713193677493136L;
 
 	/**
 	 * 传入参数固定值:alipay.eco.mycar.parking.userpage.query
@@ -25,17 +25,39 @@ public class AlipayEcoMycarParkingConfigQueryModel extends AlipayObject {
 	@ApiField("interface_type")
 	private String interfaceType;
 
-	public String getInterfaceName() {
+    /**
+     * Gets interface name.
+     *
+     * @return the interface name
+     */
+    public String getInterfaceName() {
 		return this.interfaceName;
 	}
-	public void setInterfaceName(String interfaceName) {
+
+    /**
+     * Sets interface name.
+     *
+     * @param interfaceName the interface name
+     */
+    public void setInterfaceName(String interfaceName) {
 		this.interfaceName = interfaceName;
 	}
 
-	public String getInterfaceType() {
+    /**
+     * Gets interface type.
+     *
+     * @return the interface type
+     */
+    public String getInterfaceType() {
 		return this.interfaceType;
 	}
-	public void setInterfaceType(String interfaceType) {
+
+    /**
+     * Sets interface type.
+     *
+     * @param interfaceType the interface type
+     */
+    public void setInterfaceType(String interfaceType) {
 		this.interfaceType = interfaceType;
 	}
 

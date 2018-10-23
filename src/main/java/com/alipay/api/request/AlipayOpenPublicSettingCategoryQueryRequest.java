@@ -9,9 +9,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.open.public.setting.category.query request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-20 17:31:58
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayOpenPublicSettingCategoryQueryRequest implements AlipayRequest<AlipayOpenPublicSettingCategoryQueryResponse> {
 
@@ -85,7 +85,13 @@ public class AlipayOpenPublicSettingCategoryQueryRequest implements AlipayReques
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

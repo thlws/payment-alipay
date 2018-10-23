@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PublishChannel extends AlipayObject {
 
-	private static final long serialVersionUID = 3458731351786692719L;
+	private static final long serialVersionUID = 4363887666957336139L;
 
 	/**
 	 * 当type为MERCHANT_CROWD时，config需填入口令送的密码和图片，样例如下："config":"{\"PASSWORD\":\"口令送密码\",\"BACKGROUND_LOGO\":\"1T8Pp00AT7eo9NoAJkMR3AAAACMAAQEC\"}"
@@ -44,31 +44,75 @@ EXTERNAL：外部投放，口碑需要感知任何投放内容
 	@ApiField("type")
 	private String type;
 
-	public String getConfig() {
+    /**
+     * Gets config.
+     *
+     * @return the config
+     */
+    public String getConfig() {
 		return this.config;
 	}
-	public void setConfig(String config) {
+
+    /**
+     * Sets config.
+     *
+     * @param config the config
+     */
+    public void setConfig(String config) {
 		this.config = config;
 	}
 
-	public String getExtInfo() {
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo() {
 		return this.extInfo;
 	}
-	public void setExtInfo(String extInfo) {
+
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
-	public void setType(String type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
 

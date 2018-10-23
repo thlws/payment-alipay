@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenServicemarketOrderAcceptModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1888995862324367615L;
+	private static final long serialVersionUID = 3169275668843576936L;
 
 	/**
 	 * 服务商品订单ID
@@ -19,10 +19,21 @@ public class AlipayOpenServicemarketOrderAcceptModel extends AlipayObject {
 	@ApiField("commodity_order_id")
 	private String commodityOrderId;
 
-	public String getCommodityOrderId() {
+    /**
+     * Gets commodity order id.
+     *
+     * @return the commodity order id
+     */
+    public String getCommodityOrderId() {
 		return this.commodityOrderId;
 	}
-	public void setCommodityOrderId(String commodityOrderId) {
+
+    /**
+     * Sets commodity order id.
+     *
+     * @param commodityOrderId the commodity order id
+     */
+    public void setCommodityOrderId(String commodityOrderId) {
 		this.commodityOrderId = commodityOrderId;
 	}
 

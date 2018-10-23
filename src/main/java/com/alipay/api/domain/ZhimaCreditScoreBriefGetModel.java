@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻信用评分普惠版
  *
  * @author auto create
- * @since 1.0, 2017-08-09 12:51:37
+ * @since 1.0, 2018-03-14 21:12:30
  */
 public class ZhimaCreditScoreBriefGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1416417618364949634L;
+	private static final long serialVersionUID = 2435269475492331872L;
 
 	/**
 	 * 350～950之间 业务判断的准入标准 建议业务确定一个稳定的判断标准 频繁的变更该标准可能导致接口被停用
@@ -32,6 +32,12 @@ public class ZhimaCreditScoreBriefGetModel extends AlipayObject {
 	private String certType;
 
 	/**
+	 * 芝麻平台服务商模式下的二级商户标识，如果是直连商户调用该接口，不需要设置
+	 */
+	@ApiField("linked_merchant_id")
+	private String linkedMerchantId;
+
+	/**
 	 * 用户姓名 当证件类型为ALIPAY_USER_ID时不需要传入
 	 */
 	@ApiField("name")
@@ -49,45 +55,129 @@ public class ZhimaCreditScoreBriefGetModel extends AlipayObject {
 	@ApiField("transaction_id")
 	private String transactionId;
 
-	public Long getAdmittanceScore() {
+    /**
+     * Gets admittance score.
+     *
+     * @return the admittance score
+     */
+    public Long getAdmittanceScore() {
 		return this.admittanceScore;
 	}
-	public void setAdmittanceScore(Long admittanceScore) {
+
+    /**
+     * Sets admittance score.
+     *
+     * @param admittanceScore the admittance score
+     */
+    public void setAdmittanceScore(Long admittanceScore) {
 		this.admittanceScore = admittanceScore;
 	}
 
-	public String getCertNo() {
+    /**
+     * Gets cert no.
+     *
+     * @return the cert no
+     */
+    public String getCertNo() {
 		return this.certNo;
 	}
-	public void setCertNo(String certNo) {
+
+    /**
+     * Sets cert no.
+     *
+     * @param certNo the cert no
+     */
+    public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}
 
-	public String getCertType() {
+    /**
+     * Gets cert type.
+     *
+     * @return the cert type
+     */
+    public String getCertType() {
 		return this.certType;
 	}
-	public void setCertType(String certType) {
+
+    /**
+     * Sets cert type.
+     *
+     * @param certType the cert type
+     */
+    public void setCertType(String certType) {
 		this.certType = certType;
 	}
 
-	public String getName() {
+    /**
+     * Gets linked merchant id.
+     *
+     * @return the linked merchant id
+     */
+    public String getLinkedMerchantId() {
+		return this.linkedMerchantId;
+	}
+
+    /**
+     * Sets linked merchant id.
+     *
+     * @param linkedMerchantId the linked merchant id
+     */
+    public void setLinkedMerchantId(String linkedMerchantId) {
+		this.linkedMerchantId = linkedMerchantId;
+	}
+
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getProductCode() {
+    /**
+     * Gets product code.
+     *
+     * @return the product code
+     */
+    public String getProductCode() {
 		return this.productCode;
 	}
-	public void setProductCode(String productCode) {
+
+    /**
+     * Sets product code.
+     *
+     * @param productCode the product code
+     */
+    public void setProductCode(String productCode) {
 		this.productCode = productCode;
 	}
 
-	public String getTransactionId() {
+    /**
+     * Gets transaction id.
+     *
+     * @return the transaction id
+     */
+    public String getTransactionId() {
 		return this.transactionId;
 	}
-	public void setTransactionId(String transactionId) {
+
+    /**
+     * Sets transaction id.
+     *
+     * @param transactionId the transaction id
+     */
+    public void setTransactionId(String transactionId) {
 		this.transactionId = transactionId;
 	}
 

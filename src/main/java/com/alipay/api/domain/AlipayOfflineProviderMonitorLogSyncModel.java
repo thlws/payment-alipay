@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOfflineProviderMonitorLogSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2824922937322435399L;
+	private static final long serialVersionUID = 3132486566827156138L;
 
 	/**
 	 * 数据回流日志
@@ -23,10 +23,21 @@ public class AlipayOfflineProviderMonitorLogSyncModel extends AlipayObject {
 	@ApiField("i_s_v_log_sync")
 	private List<ISVLogSync> logs;
 
-	public List<ISVLogSync> getLogs() {
+    /**
+     * Gets logs.
+     *
+     * @return the logs
+     */
+    public List<ISVLogSync> getLogs() {
 		return this.logs;
 	}
-	public void setLogs(List<ISVLogSync> logs) {
+
+    /**
+     * Sets logs.
+     *
+     * @param logs the logs
+     */
+    public void setLogs(List<ISVLogSync> logs) {
 		this.logs = logs;
 	}
 

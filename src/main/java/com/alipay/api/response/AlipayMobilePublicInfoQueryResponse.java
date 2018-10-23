@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.public.info.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-01 20:56:23
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayMobilePublicInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1653169675338464571L;
+	private static final long serialVersionUID = 3121932461363457859L;
 
 	/** 
 	 * 服务窗名称
@@ -56,52 +56,129 @@ public class AlipayMobilePublicInfoQueryResponse extends AlipayResponse {
 	@ApiField("public_greeting")
 	private String publicGreeting;
 
-	public void setAppName(String appName) {
+    /**
+     * Sets app name.
+     *
+     * @param appName the app name
+     */
+    public void setAppName(String appName) {
 		this.appName = appName;
 	}
-	public String getAppName( ) {
+
+    /**
+     * Gets app name.
+     *
+     * @return the app name
+     */
+    public String getAppName( ) {
 		return this.appName;
 	}
 
-	public void setAuditDesc(String auditDesc) {
+    /**
+     * Sets audit desc.
+     *
+     * @param auditDesc the audit desc
+     */
+    public void setAuditDesc(String auditDesc) {
 		this.auditDesc = auditDesc;
 	}
-	public String getAuditDesc( ) {
+
+    /**
+     * Gets audit desc.
+     *
+     * @return the audit desc
+     */
+    public String getAuditDesc( ) {
 		return this.auditDesc;
 	}
 
-	public void setAuditStatus(String auditStatus) {
+    /**
+     * Sets audit status.
+     *
+     * @param auditStatus the audit status
+     */
+    public void setAuditStatus(String auditStatus) {
 		this.auditStatus = auditStatus;
 	}
-	public String getAuditStatus( ) {
+
+    /**
+     * Gets audit status.
+     *
+     * @return the audit status
+     */
+    public String getAuditStatus( ) {
 		return this.auditStatus;
 	}
 
-	public void setIsOnline(String isOnline) {
+    /**
+     * Sets is online.
+     *
+     * @param isOnline the is online
+     */
+    public void setIsOnline(String isOnline) {
 		this.isOnline = isOnline;
 	}
-	public String getIsOnline( ) {
+
+    /**
+     * Gets is online.
+     *
+     * @return the is online
+     */
+    public String getIsOnline( ) {
 		return this.isOnline;
 	}
 
-	public void setIsRelease(String isRelease) {
+    /**
+     * Sets is release.
+     *
+     * @param isRelease the is release
+     */
+    public void setIsRelease(String isRelease) {
 		this.isRelease = isRelease;
 	}
-	public String getIsRelease( ) {
+
+    /**
+     * Gets is release.
+     *
+     * @return the is release
+     */
+    public String getIsRelease( ) {
 		return this.isRelease;
 	}
 
-	public void setLogoUrl(String logoUrl) {
+    /**
+     * Sets logo url.
+     *
+     * @param logoUrl the logo url
+     */
+    public void setLogoUrl(String logoUrl) {
 		this.logoUrl = logoUrl;
 	}
-	public String getLogoUrl( ) {
+
+    /**
+     * Gets logo url.
+     *
+     * @return the logo url
+     */
+    public String getLogoUrl( ) {
 		return this.logoUrl;
 	}
 
-	public void setPublicGreeting(String publicGreeting) {
+    /**
+     * Sets public greeting.
+     *
+     * @param publicGreeting the public greeting
+     */
+    public void setPublicGreeting(String publicGreeting) {
 		this.publicGreeting = publicGreeting;
 	}
-	public String getPublicGreeting( ) {
+
+    /**
+     * Gets public greeting.
+     *
+     * @return the public greeting
+     */
+    public String getPublicGreeting( ) {
 		return this.publicGreeting;
 	}
 

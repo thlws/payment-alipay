@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.public.menu.get response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-01-05 22:34:31
  */
 public class AlipayMobilePublicMenuGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4446471748376638694L;
+	private static final long serialVersionUID = 8314333938248161895L;
 
 	/** 
 	 * success
@@ -39,10 +39,21 @@ public class AlipayMobilePublicMenuGetResponse extends AlipayResponse {
 		return this.code;
 	}
 
-	public void setMenuContent(String menuContent) {
+    /**
+     * Sets menu content.
+     *
+     * @param menuContent the menu content
+     */
+    public void setMenuContent(String menuContent) {
 		this.menuContent = menuContent;
 	}
-	public String getMenuContent( ) {
+
+    /**
+     * Gets menu content.
+     *
+     * @return the menu content
+     */
+    public String getMenuContent( ) {
 		return this.menuContent;
 	}
 

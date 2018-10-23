@@ -7,13 +7,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.card.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-23 09:39:57
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayMarketingCardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6828138572841594141L;
+	private static final long serialVersionUID = 8353284282187642464L;
 
 	/** 
 	 * 商户卡信息
@@ -27,17 +27,39 @@ public class AlipayMarketingCardQueryResponse extends AlipayResponse {
 	@ApiField("schema_url")
 	private String schemaUrl;
 
-	public void setCardInfo(MerchantCard cardInfo) {
+    /**
+     * Sets card info.
+     *
+     * @param cardInfo the card info
+     */
+    public void setCardInfo(MerchantCard cardInfo) {
 		this.cardInfo = cardInfo;
 	}
-	public MerchantCard getCardInfo( ) {
+
+    /**
+     * Gets card info.
+     *
+     * @return the card info
+     */
+    public MerchantCard getCardInfo( ) {
 		return this.cardInfo;
 	}
 
-	public void setSchemaUrl(String schemaUrl) {
+    /**
+     * Sets schema url.
+     *
+     * @param schemaUrl the schema url
+     */
+    public void setSchemaUrl(String schemaUrl) {
 		this.schemaUrl = schemaUrl;
 	}
-	public String getSchemaUrl( ) {
+
+    /**
+     * Gets schema url.
+     *
+     * @return the schema url
+     */
+    public String getSchemaUrl( ) {
 		return this.schemaUrl;
 	}
 

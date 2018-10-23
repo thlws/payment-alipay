@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.user.account.search response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-08-11 18:02:23
+ * @since 1.0, 2018-08-24 19:12:35
  */
 public class AlipayUserAccountSearchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6535114681948812395L;
+	private static final long serialVersionUID = 4497741611442686685L;
 
 	/** 
 	 * 支付宝用户账务明细信息
@@ -36,24 +36,57 @@ public class AlipayUserAccountSearchResponse extends AlipayResponse {
 	@ApiField("total_results")
 	private Long totalResults;
 
-	public void setAccountRecords(List<AccountRecord> accountRecords) {
+    /**
+     * Sets account records.
+     *
+     * @param accountRecords the account records
+     */
+    public void setAccountRecords(List<AccountRecord> accountRecords) {
 		this.accountRecords = accountRecords;
 	}
-	public List<AccountRecord> getAccountRecords( ) {
+
+    /**
+     * Gets account records.
+     *
+     * @return the account records
+     */
+    public List<AccountRecord> getAccountRecords( ) {
 		return this.accountRecords;
 	}
 
-	public void setTotalPages(Long totalPages) {
+    /**
+     * Sets total pages.
+     *
+     * @param totalPages the total pages
+     */
+    public void setTotalPages(Long totalPages) {
 		this.totalPages = totalPages;
 	}
-	public Long getTotalPages( ) {
+
+    /**
+     * Gets total pages.
+     *
+     * @return the total pages
+     */
+    public Long getTotalPages( ) {
 		return this.totalPages;
 	}
 
-	public void setTotalResults(Long totalResults) {
+    /**
+     * Sets total results.
+     *
+     * @param totalResults the total results
+     */
+    public void setTotalResults(Long totalResults) {
 		this.totalResults = totalResults;
 	}
-	public Long getTotalResults( ) {
+
+    /**
+     * Gets total results.
+     *
+     * @return the total results
+     */
+    public Long getTotalResults( ) {
 		return this.totalResults;
 	}
 

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UnfreezeOrderDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3185154831843425128L;
+	private static final long serialVersionUID = 4242294733554748974L;
 
 	/**
 	 * 支付宝订单号
@@ -63,59 +63,147 @@ public class UnfreezeOrderDetail extends AlipayObject {
 	@ApiField("unfreeze_amount")
 	private String unfreezeAmount;
 
-	public String getAlipayOrderNo() {
+    /**
+     * Gets alipay order no.
+     *
+     * @return the alipay order no
+     */
+    public String getAlipayOrderNo() {
 		return this.alipayOrderNo;
 	}
-	public void setAlipayOrderNo(String alipayOrderNo) {
+
+    /**
+     * Sets alipay order no.
+     *
+     * @param alipayOrderNo the alipay order no
+     */
+    public void setAlipayOrderNo(String alipayOrderNo) {
 		this.alipayOrderNo = alipayOrderNo;
 	}
 
-	public Date getCreateTime() {
+    /**
+     * Gets create time.
+     *
+     * @return the create time
+     */
+    public Date getCreateTime() {
 		return this.createTime;
 	}
-	public void setCreateTime(Date createTime) {
+
+    /**
+     * Sets create time.
+     *
+     * @param createTime the create time
+     */
+    public void setCreateTime(Date createTime) {
 		this.createTime = createTime;
 	}
 
-	public String getMemo() {
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo() {
 		return this.memo;
 	}
-	public void setMemo(String memo) {
+
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
-	public String getMerchantOrderNo() {
+    /**
+     * Gets merchant order no.
+     *
+     * @return the merchant order no
+     */
+    public String getMerchantOrderNo() {
 		return this.merchantOrderNo;
 	}
-	public void setMerchantOrderNo(String merchantOrderNo) {
+
+    /**
+     * Sets merchant order no.
+     *
+     * @param merchantOrderNo the merchant order no
+     */
+    public void setMerchantOrderNo(String merchantOrderNo) {
 		this.merchantOrderNo = merchantOrderNo;
 	}
 
-	public Date getModifiedTime() {
+    /**
+     * Gets modified time.
+     *
+     * @return the modified time
+     */
+    public Date getModifiedTime() {
 		return this.modifiedTime;
 	}
-	public void setModifiedTime(Date modifiedTime) {
+
+    /**
+     * Sets modified time.
+     *
+     * @param modifiedTime the modified time
+     */
+    public void setModifiedTime(Date modifiedTime) {
 		this.modifiedTime = modifiedTime;
 	}
 
-	public String getOrderAmount() {
+    /**
+     * Gets order amount.
+     *
+     * @return the order amount
+     */
+    public String getOrderAmount() {
 		return this.orderAmount;
 	}
-	public void setOrderAmount(String orderAmount) {
+
+    /**
+     * Sets order amount.
+     *
+     * @param orderAmount the order amount
+     */
+    public void setOrderAmount(String orderAmount) {
 		this.orderAmount = orderAmount;
 	}
 
-	public String getOrderStatus() {
+    /**
+     * Gets order status.
+     *
+     * @return the order status
+     */
+    public String getOrderStatus() {
 		return this.orderStatus;
 	}
-	public void setOrderStatus(String orderStatus) {
+
+    /**
+     * Sets order status.
+     *
+     * @param orderStatus the order status
+     */
+    public void setOrderStatus(String orderStatus) {
 		this.orderStatus = orderStatus;
 	}
 
-	public String getUnfreezeAmount() {
+    /**
+     * Gets unfreeze amount.
+     *
+     * @return the unfreeze amount
+     */
+    public String getUnfreezeAmount() {
 		return this.unfreezeAmount;
 	}
-	public void setUnfreezeAmount(String unfreezeAmount) {
+
+    /**
+     * Sets unfreeze amount.
+     *
+     * @param unfreezeAmount the unfreeze amount
+     */
+    public void setUnfreezeAmount(String unfreezeAmount) {
 		this.unfreezeAmount = unfreezeAmount;
 	}
 

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改资金券模板
  *
  * @author auto create
- * @since 1.0, 2017-06-19 11:27:47
+ * @since 1.0, 2018-09-17 10:53:25
  */
 public class AlipayMarketingCashvoucherTemplateModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2823863759633872247L;
+	private static final long serialVersionUID = 7466967235593914497L;
 
 	/**
 	 * 外部业务单号，用作幂等控制，相同template_id下相同out_biz_no视为同一次修改
@@ -51,45 +51,111 @@ public class AlipayMarketingCashvoucherTemplateModifyModel extends AlipayObject 
 	@ApiField("voucher_valid_period")
 	private String voucherValidPeriod;
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
-	public Date getPublishEndTime() {
+    /**
+     * Gets publish end time.
+     *
+     * @return the publish end time
+     */
+    public Date getPublishEndTime() {
 		return this.publishEndTime;
 	}
-	public void setPublishEndTime(Date publishEndTime) {
+
+    /**
+     * Sets publish end time.
+     *
+     * @param publishEndTime the publish end time
+     */
+    public void setPublishEndTime(Date publishEndTime) {
 		this.publishEndTime = publishEndTime;
 	}
 
-	public Date getPublishStartTime() {
+    /**
+     * Gets publish start time.
+     *
+     * @return the publish start time
+     */
+    public Date getPublishStartTime() {
 		return this.publishStartTime;
 	}
-	public void setPublishStartTime(Date publishStartTime) {
+
+    /**
+     * Sets publish start time.
+     *
+     * @param publishStartTime the publish start time
+     */
+    public void setPublishStartTime(Date publishStartTime) {
 		this.publishStartTime = publishStartTime;
 	}
 
-	public String getSlogan() {
+    /**
+     * Gets slogan.
+     *
+     * @return the slogan
+     */
+    public String getSlogan() {
 		return this.slogan;
 	}
-	public void setSlogan(String slogan) {
+
+    /**
+     * Sets slogan.
+     *
+     * @param slogan the slogan
+     */
+    public void setSlogan(String slogan) {
 		this.slogan = slogan;
 	}
 
-	public String getTemplateId() {
+    /**
+     * Gets template id.
+     *
+     * @return the template id
+     */
+    public String getTemplateId() {
 		return this.templateId;
 	}
-	public void setTemplateId(String templateId) {
+
+    /**
+     * Sets template id.
+     *
+     * @param templateId the template id
+     */
+    public void setTemplateId(String templateId) {
 		this.templateId = templateId;
 	}
 
-	public String getVoucherValidPeriod() {
+    /**
+     * Gets voucher valid period.
+     *
+     * @return the voucher valid period
+     */
+    public String getVoucherValidPeriod() {
 		return this.voucherValidPeriod;
 	}
-	public void setVoucherValidPeriod(String voucherValidPeriod) {
+
+    /**
+     * Sets voucher valid period.
+     *
+     * @param voucherValidPeriod the voucher valid period
+     */
+    public void setVoucherValidPeriod(String voucherValidPeriod) {
 		this.voucherValidPeriod = voucherValidPeriod;
 	}
 

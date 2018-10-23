@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserPicture extends AlipayObject {
 
-	private static final long serialVersionUID = 4268742791788884156L;
+	private static final long serialVersionUID = 4882753512267218775L;
 
 	/**
 	 * 图片类型，包括身份证正反面、营业执照等
@@ -25,17 +25,39 @@ public class AlipayUserPicture extends AlipayObject {
 	@ApiField("picture_url")
 	private String pictureUrl;
 
-	public String getPictureType() {
+    /**
+     * Gets picture type.
+     *
+     * @return the picture type
+     */
+    public String getPictureType() {
 		return this.pictureType;
 	}
-	public void setPictureType(String pictureType) {
+
+    /**
+     * Sets picture type.
+     *
+     * @param pictureType the picture type
+     */
+    public void setPictureType(String pictureType) {
 		this.pictureType = pictureType;
 	}
 
-	public String getPictureUrl() {
+    /**
+     * Gets picture url.
+     *
+     * @return the picture url
+     */
+    public String getPictureUrl() {
 		return this.pictureUrl;
 	}
-	public void setPictureUrl(String pictureUrl) {
+
+    /**
+     * Sets picture url.
+     *
+     * @param pictureUrl the picture url
+     */
+    public void setPictureUrl(String pictureUrl) {
 		this.pictureUrl = pictureUrl;
 	}
 

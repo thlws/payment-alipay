@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayUserInfoAuthModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4817913291554529834L;
+	private static final long serialVersionUID = 2413575334961251169L;
 
 	/**
 	 * 接口权限值，目前只支持auth_user和auth_base两个值。
@@ -32,17 +32,39 @@ auth_user：以auth_user为scope发起的网页授权，是用来获取用户的
 	@ApiField("state")
 	private String state;
 
-	public List<String> getScopes() {
+    /**
+     * Gets scopes.
+     *
+     * @return the scopes
+     */
+    public List<String> getScopes() {
 		return this.scopes;
 	}
-	public void setScopes(List<String> scopes) {
+
+    /**
+     * Sets scopes.
+     *
+     * @param scopes the scopes
+     */
+    public void setScopes(List<String> scopes) {
 		this.scopes = scopes;
 	}
 
-	public String getState() {
+    /**
+     * Gets state.
+     *
+     * @return the state
+     */
+    public String getState() {
 		return this.state;
 	}
-	public void setState(String state) {
+
+    /**
+     * Sets state.
+     *
+     * @param state the state
+     */
+    public void setState(String state) {
 		this.state = state;
 	}
 

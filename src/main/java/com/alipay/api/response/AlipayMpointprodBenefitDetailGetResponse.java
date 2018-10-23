@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mpointprod.benefit.detail.get response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2015-01-29 15:46:36
  */
 public class AlipayMpointprodBenefitDetailGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4147974823291367231L;
+	private static final long serialVersionUID = 2671327833353796738L;
 
 	/** 
 	 * 权益详情列表
@@ -36,10 +36,21 @@ public class AlipayMpointprodBenefitDetailGetResponse extends AlipayResponse {
 	@ApiField("msg")
 	private String msg;
 
-	public void setBenefitInfos(List<BenefitInfo> benefitInfos) {
+    /**
+     * Sets benefit infos.
+     *
+     * @param benefitInfos the benefit infos
+     */
+    public void setBenefitInfos(List<BenefitInfo> benefitInfos) {
 		this.benefitInfos = benefitInfos;
 	}
-	public List<BenefitInfo> getBenefitInfos( ) {
+
+    /**
+     * Gets benefit infos.
+     *
+     * @return the benefit infos
+     */
+    public List<BenefitInfo> getBenefitInfos( ) {
 		return this.benefitInfos;
 	}
 

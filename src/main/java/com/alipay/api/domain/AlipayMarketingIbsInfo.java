@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingIbsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3294367374764325378L;
+	private static final long serialVersionUID = 7193113166989188997L;
 
 	/**
 	 * 精度
@@ -43,38 +43,93 @@ public class AlipayMarketingIbsInfo extends AlipayObject {
 	@ApiField("time")
 	private String time;
 
-	public String getAccuracy() {
+    /**
+     * Gets accuracy.
+     *
+     * @return the accuracy
+     */
+    public String getAccuracy() {
 		return this.accuracy;
 	}
-	public void setAccuracy(String accuracy) {
+
+    /**
+     * Sets accuracy.
+     *
+     * @param accuracy the accuracy
+     */
+    public void setAccuracy(String accuracy) {
 		this.accuracy = accuracy;
 	}
 
-	public String getAltitude() {
+    /**
+     * Gets altitude.
+     *
+     * @return the altitude
+     */
+    public String getAltitude() {
 		return this.altitude;
 	}
-	public void setAltitude(String altitude) {
+
+    /**
+     * Sets altitude.
+     *
+     * @param altitude the altitude
+     */
+    public void setAltitude(String altitude) {
 		this.altitude = altitude;
 	}
 
-	public String getLatitude() {
+    /**
+     * Gets latitude.
+     *
+     * @return the latitude
+     */
+    public String getLatitude() {
 		return this.latitude;
 	}
-	public void setLatitude(String latitude) {
+
+    /**
+     * Sets latitude.
+     *
+     * @param latitude the latitude
+     */
+    public void setLatitude(String latitude) {
 		this.latitude = latitude;
 	}
 
-	public String getLongitude() {
+    /**
+     * Gets longitude.
+     *
+     * @return the longitude
+     */
+    public String getLongitude() {
 		return this.longitude;
 	}
-	public void setLongitude(String longitude) {
+
+    /**
+     * Sets longitude.
+     *
+     * @param longitude the longitude
+     */
+    public void setLongitude(String longitude) {
 		this.longitude = longitude;
 	}
 
-	public String getTime() {
+    /**
+     * Gets time.
+     *
+     * @return the time
+     */
+    public String getTime() {
 		return this.time;
 	}
-	public void setTime(String time) {
+
+    /**
+     * Sets time.
+     *
+     * @param time the time
+     */
+    public void setTime(String time) {
 		this.time = time;
 	}
 

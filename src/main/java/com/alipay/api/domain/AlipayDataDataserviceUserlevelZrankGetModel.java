@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通用的活跃高价值用户等级，支持EMAIL,PHONE,BANKCARD,CERTNO,IMEI,MAC，TBID维度查询用户活跃高价值等级。等级从Z0-Z7，等级越高价值越高，Z0表示未实名认证或者用户信息不全。
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:19
+ * @since 1.0, 2018-01-22 10:27:27
  */
 public class AlipayDataDataserviceUserlevelZrankGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6276547841131373229L;
+	private static final long serialVersionUID = 8793754991291839122L;
 
 	/**
 	 * type对应的账号：如手机号-13815869530
@@ -25,17 +25,39 @@ public class AlipayDataDataserviceUserlevelZrankGetModel extends AlipayObject {
 	@ApiField("type")
 	private String type;
 
-	public String getId() {
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
+    public String getId() {
 		return this.id;
 	}
-	public void setId(String id) {
+
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
+    public void setId(String id) {
 		this.id = id;
 	}
 
-	public String getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
-	public void setType(String type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
 

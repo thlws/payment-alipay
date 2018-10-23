@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员卡级别配置信息
  *
  * @author auto create
- * @since 1.0, 2017-08-21 19:55:15
+ * @since 1.0, 2017-10-27 17:49:09
  */
 public class TemplateCardLevelConfDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4686929555141357342L;
+	private static final long serialVersionUID = 2455992767224899659L;
 
 	/**
-	 * 会员级别 该级别和开卡接口中的levle要一致
+	 * 会员级别 该级别和开卡接口中的level要一致
 	 */
 	@ApiField("level")
 	private String level;
@@ -37,31 +37,75 @@ public class TemplateCardLevelConfDTO extends AlipayObject {
 	@ApiField("level_show_name")
 	private String levelShowName;
 
-	public String getLevel() {
+    /**
+     * Gets level.
+     *
+     * @return the level
+     */
+    public String getLevel() {
 		return this.level;
 	}
-	public void setLevel(String level) {
+
+    /**
+     * Sets level.
+     *
+     * @param level the level
+     */
+    public void setLevel(String level) {
 		this.level = level;
 	}
 
-	public String getLevelDesc() {
+    /**
+     * Gets level desc.
+     *
+     * @return the level desc
+     */
+    public String getLevelDesc() {
 		return this.levelDesc;
 	}
-	public void setLevelDesc(String levelDesc) {
+
+    /**
+     * Sets level desc.
+     *
+     * @param levelDesc the level desc
+     */
+    public void setLevelDesc(String levelDesc) {
 		this.levelDesc = levelDesc;
 	}
 
-	public String getLevelIcon() {
+    /**
+     * Gets level icon.
+     *
+     * @return the level icon
+     */
+    public String getLevelIcon() {
 		return this.levelIcon;
 	}
-	public void setLevelIcon(String levelIcon) {
+
+    /**
+     * Sets level icon.
+     *
+     * @param levelIcon the level icon
+     */
+    public void setLevelIcon(String levelIcon) {
 		this.levelIcon = levelIcon;
 	}
 
-	public String getLevelShowName() {
+    /**
+     * Gets level show name.
+     *
+     * @return the level show name
+     */
+    public String getLevelShowName() {
 		return this.levelShowName;
 	}
-	public void setLevelShowName(String levelShowName) {
+
+    /**
+     * Sets level show name.
+     *
+     * @param levelShowName the level show name
+     */
+    public void setLevelShowName(String levelShowName) {
 		this.levelShowName = levelShowName;
 	}
 

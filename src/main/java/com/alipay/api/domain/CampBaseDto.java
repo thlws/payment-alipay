@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CampBaseDto extends AlipayObject {
 
-	private static final long serialVersionUID = 2587318275388212745L;
+	private static final long serialVersionUID = 3869627349259913498L;
 
 	/**
 	 * 活动工单列表
@@ -78,73 +78,183 @@ public class CampBaseDto extends AlipayObject {
 	@ApiField("type")
 	private String type;
 
-	public List<ActivityOrderDTO> getActivityOrders() {
+    /**
+     * Gets activity orders.
+     *
+     * @return the activity orders
+     */
+    public List<ActivityOrderDTO> getActivityOrders() {
 		return this.activityOrders;
 	}
-	public void setActivityOrders(List<ActivityOrderDTO> activityOrders) {
+
+    /**
+     * Sets activity orders.
+     *
+     * @param activityOrders the activity orders
+     */
+    public void setActivityOrders(List<ActivityOrderDTO> activityOrders) {
 		this.activityOrders = activityOrders;
 	}
 
-	public String getAuditStatus() {
+    /**
+     * Gets audit status.
+     *
+     * @return the audit status
+     */
+    public String getAuditStatus() {
 		return this.auditStatus;
 	}
-	public void setAuditStatus(String auditStatus) {
+
+    /**
+     * Sets audit status.
+     *
+     * @param auditStatus the audit status
+     */
+    public void setAuditStatus(String auditStatus) {
 		this.auditStatus = auditStatus;
 	}
 
-	public String getAutoDelayFlag() {
+    /**
+     * Gets auto delay flag.
+     *
+     * @return the auto delay flag
+     */
+    public String getAutoDelayFlag() {
 		return this.autoDelayFlag;
 	}
-	public void setAutoDelayFlag(String autoDelayFlag) {
+
+    /**
+     * Sets auto delay flag.
+     *
+     * @param autoDelayFlag the auto delay flag
+     */
+    public void setAutoDelayFlag(String autoDelayFlag) {
 		this.autoDelayFlag = autoDelayFlag;
 	}
 
-	public Date getEndTime() {
+    /**
+     * Gets end time.
+     *
+     * @return the end time
+     */
+    public Date getEndTime() {
 		return this.endTime;
 	}
-	public void setEndTime(Date endTime) {
+
+    /**
+     * Sets end time.
+     *
+     * @param endTime the end time
+     */
+    public void setEndTime(Date endTime) {
 		this.endTime = endTime;
 	}
 
-	public String getId() {
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
+    public String getId() {
 		return this.id;
 	}
-	public void setId(String id) {
+
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
+    public void setId(String id) {
 		this.id = id;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getPlanStatus() {
+    /**
+     * Gets plan status.
+     *
+     * @return the plan status
+     */
+    public String getPlanStatus() {
 		return this.planStatus;
 	}
-	public void setPlanStatus(String planStatus) {
+
+    /**
+     * Sets plan status.
+     *
+     * @param planStatus the plan status
+     */
+    public void setPlanStatus(String planStatus) {
 		this.planStatus = planStatus;
 	}
 
-	public Date getStartTime() {
+    /**
+     * Gets start time.
+     *
+     * @return the start time
+     */
+    public Date getStartTime() {
 		return this.startTime;
 	}
-	public void setStartTime(Date startTime) {
+
+    /**
+     * Sets start time.
+     *
+     * @param startTime the start time
+     */
+    public void setStartTime(Date startTime) {
 		this.startTime = startTime;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 
-	public String getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
-	public void setType(String type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
 

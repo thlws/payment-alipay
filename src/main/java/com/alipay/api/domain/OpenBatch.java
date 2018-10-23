@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenBatch extends AlipayObject {
 
-	private static final long serialVersionUID = 1531619215555774958L;
+	private static final long serialVersionUID = 3121741366265314858L;
 
 	/**
 	 * 批次id
@@ -35,24 +35,57 @@ public class OpenBatch extends AlipayObject {
 	@ApiField("item_num")
 	private String itemNum;
 
-	public String getBatchId() {
+    /**
+     * Gets batch id.
+     *
+     * @return the batch id
+     */
+    public String getBatchId() {
 		return this.batchId;
 	}
-	public void setBatchId(String batchId) {
+
+    /**
+     * Sets batch id.
+     *
+     * @param batchId the batch id
+     */
+    public void setBatchId(String batchId) {
 		this.batchId = batchId;
 	}
 
-	public String getBatchStatus() {
+    /**
+     * Gets batch status.
+     *
+     * @return the batch status
+     */
+    public String getBatchStatus() {
 		return this.batchStatus;
 	}
-	public void setBatchStatus(String batchStatus) {
+
+    /**
+     * Sets batch status.
+     *
+     * @param batchStatus the batch status
+     */
+    public void setBatchStatus(String batchStatus) {
 		this.batchStatus = batchStatus;
 	}
 
-	public String getItemNum() {
+    /**
+     * Gets item num.
+     *
+     * @return the item num
+     */
+    public String getItemNum() {
 		return this.itemNum;
 	}
-	public void setItemNum(String itemNum) {
+
+    /**
+     * Sets item num.
+     *
+     * @param itemNum the item num
+     */
+    public void setItemNum(String itemNum) {
 		this.itemNum = itemNum;
 	}
 

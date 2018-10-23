@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 /**
  * Base Data Structure.
- * 
+ *
  * @author carver.gu
  * @since 1.0, Apr 11, 2010
  */

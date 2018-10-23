@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 菜单对象模型
  *
  * @author auto create
- * @since 1.0, 2017-07-04 11:09:00
+ * @since 1.0, 2017-10-31 19:50:53
  */
 public class ButtonObject extends AlipayObject {
 
-	private static final long serialVersionUID = 7422959283521141791L;
+	private static final long serialVersionUID = 6337245315312676172L;
 
 	/**
 	 * 当actionType为link时，该参数为url链接；
@@ -57,38 +57,93 @@ consumption——点击查看用户与生活号管理员账号之间的消费记
 	@ApiField("sub_button")
 	private List<SubButton> subButton;
 
-	public String getActionParam() {
+    /**
+     * Gets action param.
+     *
+     * @return the action param
+     */
+    public String getActionParam() {
 		return this.actionParam;
 	}
-	public void setActionParam(String actionParam) {
+
+    /**
+     * Sets action param.
+     *
+     * @param actionParam the action param
+     */
+    public void setActionParam(String actionParam) {
 		this.actionParam = actionParam;
 	}
 
-	public String getActionType() {
+    /**
+     * Gets action type.
+     *
+     * @return the action type
+     */
+    public String getActionType() {
 		return this.actionType;
 	}
-	public void setActionType(String actionType) {
+
+    /**
+     * Sets action type.
+     *
+     * @param actionType the action type
+     */
+    public void setActionType(String actionType) {
 		this.actionType = actionType;
 	}
 
-	public String getIcon() {
+    /**
+     * Gets icon.
+     *
+     * @return the icon
+     */
+    public String getIcon() {
 		return this.icon;
 	}
-	public void setIcon(String icon) {
+
+    /**
+     * Sets icon.
+     *
+     * @param icon the icon
+     */
+    public void setIcon(String icon) {
 		this.icon = icon;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public List<SubButton> getSubButton() {
+    /**
+     * Gets sub button.
+     *
+     * @return the sub button
+     */
+    public List<SubButton> getSubButton() {
 		return this.subButton;
 	}
-	public void setSubButton(List<SubButton> subButton) {
+
+    /**
+     * Sets sub button.
+     *
+     * @param subButton the sub button
+     */
+    public void setSubButton(List<SubButton> subButton) {
 		this.subButton = subButton;
 	}
 

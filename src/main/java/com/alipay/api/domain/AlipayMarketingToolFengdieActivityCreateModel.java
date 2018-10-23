@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建凤蝶H5应用
  *
  * @author auto create
- * @since 1.0, 2017-09-27 11:32:18
+ * @since 1.0, 2018-08-19 16:15:30
  */
 public class AlipayMarketingToolFengdieActivityCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5755924665224383412L;
+	private static final long serialVersionUID = 4658581368793552435L;
 
 	/**
 	 * H5应用初始化数据
@@ -25,17 +25,39 @@ public class AlipayMarketingToolFengdieActivityCreateModel extends AlipayObject 
 	@ApiField("template_id")
 	private Long templateId;
 
-	public FengdieActivityCreateData getActivity() {
+    /**
+     * Gets activity.
+     *
+     * @return the activity
+     */
+    public FengdieActivityCreateData getActivity() {
 		return this.activity;
 	}
-	public void setActivity(FengdieActivityCreateData activity) {
+
+    /**
+     * Sets activity.
+     *
+     * @param activity the activity
+     */
+    public void setActivity(FengdieActivityCreateData activity) {
 		this.activity = activity;
 	}
 
-	public Long getTemplateId() {
+    /**
+     * Gets template id.
+     *
+     * @return the template id
+     */
+    public Long getTemplateId() {
 		return this.templateId;
 	}
-	public void setTemplateId(Long templateId) {
+
+    /**
+     * Sets template id.
+     *
+     * @param templateId the template id
+     */
+    public void setTemplateId(Long templateId) {
 		this.templateId = templateId;
 	}
 

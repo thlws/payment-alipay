@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 更新菜单
  *
  * @author auto create
- * @since 1.0, 2017-05-25 11:40:42
+ * @since 1.0, 2018-07-16 17:18:31
  */
 public class AlipayOpenPublicMenuModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3267166726475977424L;
+	private static final long serialVersionUID = 6697563433147892838L;
 
 	/**
 	 * 一级菜单列表。最多有4个一级菜单，若开发者在后台打开了"咨询反馈"的开关，则只能有3个一级菜单.
@@ -29,17 +29,39 @@ public class AlipayOpenPublicMenuModifyModel extends AlipayObject {
 	@ApiField("type")
 	private String type;
 
-	public List<ButtonObject> getButton() {
+    /**
+     * Gets button.
+     *
+     * @return the button
+     */
+    public List<ButtonObject> getButton() {
 		return this.button;
 	}
-	public void setButton(List<ButtonObject> button) {
+
+    /**
+     * Sets button.
+     *
+     * @param button the button
+     */
+    public void setButton(List<ButtonObject> button) {
 		this.button = button;
 	}
 
-	public String getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
-	public void setType(String type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
 

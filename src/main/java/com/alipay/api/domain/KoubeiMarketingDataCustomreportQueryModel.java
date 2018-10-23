@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 自定义数据报表数据查询接口
  *
  * @author auto create
- * @since 1.0, 2017-07-26 11:32:05
+ * @since 1.0, 2018-07-26 14:03:45
  */
 public class KoubeiMarketingDataCustomreportQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8335655983919451126L;
+	private static final long serialVersionUID = 2154989786333284322L;
 
 	/**
 	 * 规则KEY
@@ -35,24 +35,57 @@ public class KoubeiMarketingDataCustomreportQueryModel extends AlipayObject {
 	@ApiField("max_count")
 	private String maxCount;
 
-	public String getConditionKey() {
+    /**
+     * Gets condition key.
+     *
+     * @return the condition key
+     */
+    public String getConditionKey() {
 		return this.conditionKey;
 	}
-	public void setConditionKey(String conditionKey) {
+
+    /**
+     * Sets condition key.
+     *
+     * @param conditionKey the condition key
+     */
+    public void setConditionKey(String conditionKey) {
 		this.conditionKey = conditionKey;
 	}
 
-	public List<FilterTag> getFilterTags() {
+    /**
+     * Gets filter tags.
+     *
+     * @return the filter tags
+     */
+    public List<FilterTag> getFilterTags() {
 		return this.filterTags;
 	}
-	public void setFilterTags(List<FilterTag> filterTags) {
+
+    /**
+     * Sets filter tags.
+     *
+     * @param filterTags the filter tags
+     */
+    public void setFilterTags(List<FilterTag> filterTags) {
 		this.filterTags = filterTags;
 	}
 
-	public String getMaxCount() {
+    /**
+     * Gets max count.
+     *
+     * @return the max count
+     */
+    public String getMaxCount() {
 		return this.maxCount;
 	}
-	public void setMaxCount(String maxCount) {
+
+    /**
+     * Sets max count.
+     *
+     * @param maxCount the max count
+     */
+    public void setMaxCount(String maxCount) {
 		this.maxCount = maxCount;
 	}
 

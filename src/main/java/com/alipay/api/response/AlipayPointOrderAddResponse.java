@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.point.order.add response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-07-11 11:00:47
  */
 public class AlipayPointOrderAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1547928135264443876L;
+	private static final long serialVersionUID = 8633346949585791814L;
 
 	/** 
 	 * 支付宝集分宝发放流水号
@@ -26,17 +26,39 @@ public class AlipayPointOrderAddResponse extends AlipayResponse {
 	@ApiField("result_code")
 	private Boolean resultCode;
 
-	public void setAlipayOrderNo(String alipayOrderNo) {
+    /**
+     * Sets alipay order no.
+     *
+     * @param alipayOrderNo the alipay order no
+     */
+    public void setAlipayOrderNo(String alipayOrderNo) {
 		this.alipayOrderNo = alipayOrderNo;
 	}
-	public String getAlipayOrderNo( ) {
+
+    /**
+     * Gets alipay order no.
+     *
+     * @return the alipay order no
+     */
+    public String getAlipayOrderNo( ) {
 		return this.alipayOrderNo;
 	}
 
-	public void setResultCode(Boolean resultCode) {
+    /**
+     * Sets result code.
+     *
+     * @param resultCode the result code
+     */
+    public void setResultCode(Boolean resultCode) {
 		this.resultCode = resultCode;
 	}
-	public Boolean getResultCode( ) {
+
+    /**
+     * Gets result code.
+     *
+     * @return the result code
+     */
+    public Boolean getResultCode( ) {
 		return this.resultCode;
 	}
 

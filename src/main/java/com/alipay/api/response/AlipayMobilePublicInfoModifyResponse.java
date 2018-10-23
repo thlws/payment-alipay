@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.public.info.modify response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-09-01 20:55:35
  */
 public class AlipayMobilePublicInfoModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2894366267825146881L;
+	private static final long serialVersionUID = 6122814746252786746L;
 
 	/** 
 	 * 服务窗审核状态描述，如果审核驳回则有相关的驳回理由
@@ -26,17 +26,39 @@ public class AlipayMobilePublicInfoModifyResponse extends AlipayResponse {
 	@ApiField("audit_status")
 	private String auditStatus;
 
-	public void setAuditDesc(String auditDesc) {
+    /**
+     * Sets audit desc.
+     *
+     * @param auditDesc the audit desc
+     */
+    public void setAuditDesc(String auditDesc) {
 		this.auditDesc = auditDesc;
 	}
-	public String getAuditDesc( ) {
+
+    /**
+     * Gets audit desc.
+     *
+     * @return the audit desc
+     */
+    public String getAuditDesc( ) {
 		return this.auditDesc;
 	}
 
-	public void setAuditStatus(String auditStatus) {
+    /**
+     * Sets audit status.
+     *
+     * @param auditStatus the audit status
+     */
+    public void setAuditStatus(String auditStatus) {
 		this.auditStatus = auditStatus;
 	}
-	public String getAuditStatus( ) {
+
+    /**
+     * Gets audit status.
+     *
+     * @return the audit status
+     */
+    public String getAuditStatus( ) {
 		return this.auditStatus;
 	}
 

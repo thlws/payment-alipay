@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.edu.kt.schoolinfo.modify response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-08-18 12:27:03
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayEcoEduKtSchoolinfoModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3361972138199127342L;
+	private static final long serialVersionUID = 2316691188174761676L;
 
 	/** 
 	 * 支付宝分配给学校的编码，作为学校在支付宝的标识
@@ -26,17 +26,39 @@ public class AlipayEcoEduKtSchoolinfoModifyResponse extends AlipayResponse {
 	@ApiField("status")
 	private String status;
 
-	public void setSchoolNo(String schoolNo) {
+    /**
+     * Sets school no.
+     *
+     * @param schoolNo the school no
+     */
+    public void setSchoolNo(String schoolNo) {
 		this.schoolNo = schoolNo;
 	}
-	public String getSchoolNo( ) {
+
+    /**
+     * Gets school no.
+     *
+     * @return the school no
+     */
+    public String getSchoolNo( ) {
 		return this.schoolNo;
 	}
 
-	public void setStatus(String status) {
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
-	public String getStatus( ) {
+
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus( ) {
 		return this.status;
 	}
 

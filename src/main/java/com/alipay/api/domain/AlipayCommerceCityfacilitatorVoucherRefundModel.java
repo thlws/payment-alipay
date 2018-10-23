@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceCityfacilitatorVoucherRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3818335118352365368L;
+	private static final long serialVersionUID = 2742885972726292876L;
 
 	/**
 	 * 城市编码请参考查询：http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/201504/t20150415_712722.html；
@@ -26,17 +26,39 @@ public class AlipayCommerceCityfacilitatorVoucherRefundModel extends AlipayObjec
 	@ApiField("trade_no")
 	private String tradeNo;
 
-	public String getCityCode() {
+    /**
+     * Gets city code.
+     *
+     * @return the city code
+     */
+    public String getCityCode() {
 		return this.cityCode;
 	}
-	public void setCityCode(String cityCode) {
+
+    /**
+     * Sets city code.
+     *
+     * @param cityCode the city code
+     */
+    public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
 	}
 
-	public String getTradeNo() {
+    /**
+     * Gets trade no.
+     *
+     * @return the trade no
+     */
+    public String getTradeNo() {
 		return this.tradeNo;
 	}
-	public void setTradeNo(String tradeNo) {
+
+    /**
+     * Sets trade no.
+     *
+     * @param tradeNo the trade no
+     */
+    public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
 

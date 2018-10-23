@@ -28,12 +28,12 @@
 <dependency>
     <groupId>org.thlws</groupId>
     <artifactId>payment-alipay</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.4</version>
 </dependency>
 ```
 - Gradle
 ```
-compile 'org.thlws:payment-alipay:1.0.2'
+compile 'org.thlws:payment-alipay:1.0.4'
 ```
 
 ### 源码测试
@@ -124,6 +124,7 @@ compile 'org.thlws:payment-alipay:1.0.2'
 - v1.0.1 日常bug修复;
 - v1.0.2 新增RSA2签名方式（RSA2时，支付宝公钥为必须参数）;
 - v1.0.3 返回参数新增code & msg;
+- v1.0.4 升级支付宝依赖至201809版本
 
 ### FAQ
 - 能不能直接 dependency 添加依赖?<br>
@@ -134,6 +135,3 @@ _JDK版本 >= 1.6 即可._
 
 - 有没有支付相关文档？<br>
 _[https://docs.open.alipay.com/api](https://docs.open.alipay.com/api)_
-
-## 打赏一下
-![](imgs/award.jpg)

@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.trade.close response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-11-09 22:08:22
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayTradeCloseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8463764857345821866L;
+	private static final long serialVersionUID = 1793937979136688316L;
 
 	/** 
 	 * 创建交易传入的商户订单号
@@ -26,17 +26,39 @@ public class AlipayTradeCloseResponse extends AlipayResponse {
 	@ApiField("trade_no")
 	private String tradeNo;
 
-	public void setOutTradeNo(String outTradeNo) {
+    /**
+     * Sets out trade no.
+     *
+     * @param outTradeNo the out trade no
+     */
+    public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
-	public String getOutTradeNo( ) {
+
+    /**
+     * Gets out trade no.
+     *
+     * @return the out trade no
+     */
+    public String getOutTradeNo( ) {
 		return this.outTradeNo;
 	}
 
-	public void setTradeNo(String tradeNo) {
+    /**
+     * Sets trade no.
+     *
+     * @param tradeNo the trade no
+     */
+    public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
-	public String getTradeNo( ) {
+
+    /**
+     * Gets trade no.
+     *
+     * @return the trade no
+     */
+    public String getTradeNo( ) {
 		return this.tradeNo;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CardTypeVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4416383874392224542L;
+	private static final long serialVersionUID = 6711554886434815112L;
 
 	/**
 	 * 卡类型标识符，取值范围如下：
@@ -33,17 +33,39 @@ NSTFA("非标准对公账户")
 	@ApiField("description")
 	private String description;
 
-	public String getCardType() {
+    /**
+     * Gets card type.
+     *
+     * @return the card type
+     */
+    public String getCardType() {
 		return this.cardType;
 	}
-	public void setCardType(String cardType) {
+
+    /**
+     * Sets card type.
+     *
+     * @param cardType the card type
+     */
+    public void setCardType(String cardType) {
 		this.cardType = cardType;
 	}
 
-	public String getDescription() {
+    /**
+     * Gets description.
+     *
+     * @return the description
+     */
+    public String getDescription() {
 		return this.description;
 	}
-	public void setDescription(String description) {
+
+    /**
+     * Sets description.
+     *
+     * @param description the description
+     */
+    public void setDescription(String description) {
 		this.description = description;
 	}
 

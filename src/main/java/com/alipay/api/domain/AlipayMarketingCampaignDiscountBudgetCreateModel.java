@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销立减活动预算创建
  *
  * @author auto create
- * @since 1.0, 2016-06-08 12:53:36
+ * @since 1.0, 2017-11-17 11:19:16
  */
 public class AlipayMarketingCampaignDiscountBudgetCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8541377679715639441L;
+	private static final long serialVersionUID = 6577453453599572814L;
 
 	/**
 	 * 业务名称，和out_biz_no一起进行幂等控制
@@ -55,52 +55,129 @@ public class AlipayMarketingCampaignDiscountBudgetCreateModel extends AlipayObje
 	@ApiField("total_amount")
 	private String totalAmount;
 
-	public String getBizFrom() {
+    /**
+     * Gets biz from.
+     *
+     * @return the biz from
+     */
+    public String getBizFrom() {
 		return this.bizFrom;
 	}
-	public void setBizFrom(String bizFrom) {
+
+    /**
+     * Sets biz from.
+     *
+     * @param bizFrom the biz from
+     */
+    public void setBizFrom(String bizFrom) {
 		this.bizFrom = bizFrom;
 	}
 
-	public String getGmtEnd() {
+    /**
+     * Gets gmt end.
+     *
+     * @return the gmt end
+     */
+    public String getGmtEnd() {
 		return this.gmtEnd;
 	}
-	public void setGmtEnd(String gmtEnd) {
+
+    /**
+     * Sets gmt end.
+     *
+     * @param gmtEnd the gmt end
+     */
+    public void setGmtEnd(String gmtEnd) {
 		this.gmtEnd = gmtEnd;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
-	public String getOutBudgetNo() {
+    /**
+     * Gets out budget no.
+     *
+     * @return the out budget no
+     */
+    public String getOutBudgetNo() {
 		return this.outBudgetNo;
 	}
-	public void setOutBudgetNo(String outBudgetNo) {
+
+    /**
+     * Sets out budget no.
+     *
+     * @param outBudgetNo the out budget no
+     */
+    public void setOutBudgetNo(String outBudgetNo) {
 		this.outBudgetNo = outBudgetNo;
 	}
 
-	public String getPublisherLogonId() {
+    /**
+     * Gets publisher logon id.
+     *
+     * @return the publisher logon id
+     */
+    public String getPublisherLogonId() {
 		return this.publisherLogonId;
 	}
-	public void setPublisherLogonId(String publisherLogonId) {
+
+    /**
+     * Sets publisher logon id.
+     *
+     * @param publisherLogonId the publisher logon id
+     */
+    public void setPublisherLogonId(String publisherLogonId) {
 		this.publisherLogonId = publisherLogonId;
 	}
 
-	public String getTotalAmount() {
+    /**
+     * Gets total amount.
+     *
+     * @return the total amount
+     */
+    public String getTotalAmount() {
 		return this.totalAmount;
 	}
-	public void setTotalAmount(String totalAmount) {
+
+    /**
+     * Sets total amount.
+     *
+     * @param totalAmount the total amount
+     */
+    public void setTotalAmount(String totalAmount) {
 		this.totalAmount = totalAmount;
 	}
 

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class VoucherTermInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1577325281477792422L;
+	private static final long serialVersionUID = 3129757237844875422L;
 
 	/**
 	 * 描述信息
@@ -29,17 +29,39 @@ public class VoucherTermInfo extends AlipayObject {
 	@ApiField("title")
 	private String title;
 
-	public List<String> getDescriptions() {
+    /**
+     * Gets descriptions.
+     *
+     * @return the descriptions
+     */
+    public List<String> getDescriptions() {
 		return this.descriptions;
 	}
-	public void setDescriptions(List<String> descriptions) {
+
+    /**
+     * Sets descriptions.
+     *
+     * @param descriptions the descriptions
+     */
+    public void setDescriptions(List<String> descriptions) {
 		this.descriptions = descriptions;
 	}
 
-	public String getTitle() {
+    /**
+     * Gets title.
+     *
+     * @return the title
+     */
+    public String getTitle() {
 		return this.title;
 	}
-	public void setTitle(String title) {
+
+    /**
+     * Sets title.
+     *
+     * @param title the title
+     */
+    public void setTitle(String title) {
 		this.title = title;
 	}
 

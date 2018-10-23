@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCampaignDiscountWhitelistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7758515557699252791L;
+	private static final long serialVersionUID = 5212627816246312452L;
 
 	/**
 	 * 活动od
@@ -19,10 +19,21 @@ public class AlipayMarketingCampaignDiscountWhitelistQueryModel extends AlipayOb
 	@ApiField("camp_id")
 	private String campId;
 
-	public String getCampId() {
+    /**
+     * Gets camp id.
+     *
+     * @return the camp id
+     */
+    public String getCampId() {
 		return this.campId;
 	}
-	public void setCampId(String campId) {
+
+    /**
+     * Sets camp id.
+     *
+     * @param campId the camp id
+     */
+    public void setCampId(String campId) {
 		this.campId = campId;
 	}
 

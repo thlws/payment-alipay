@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class EduStudentInfoShareResult extends AlipayObject {
 
-	private static final long serialVersionUID = 5749925759886256128L;
+	private static final long serialVersionUID = 7448949562378419481L;
 
 	/**
 	 * 教育分类
@@ -35,24 +35,57 @@ public class EduStudentInfoShareResult extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
-	public String getBizType() {
+    /**
+     * Gets biz type.
+     *
+     * @return the biz type
+     */
+    public String getBizType() {
 		return this.bizType;
 	}
-	public void setBizType(String bizType) {
+
+    /**
+     * Sets biz type.
+     *
+     * @param bizType the biz type
+     */
+    public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
-	public List<StudentInfo> getStudentInfos() {
+    /**
+     * Gets student infos.
+     *
+     * @return the student infos
+     */
+    public List<StudentInfo> getStudentInfos() {
 		return this.studentInfos;
 	}
-	public void setStudentInfos(List<StudentInfo> studentInfos) {
+
+    /**
+     * Sets student infos.
+     *
+     * @param studentInfos the student infos
+     */
+    public void setStudentInfos(List<StudentInfo> studentInfos) {
 		this.studentInfos = studentInfos;
 	}
 
-	public String getUserId() {
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
-	public void setUserId(String userId) {
+
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
 

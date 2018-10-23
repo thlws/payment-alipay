@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ReduceDstCampPrizeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6792637191791962698L;
+	private static final long serialVersionUID = 6685943138968391242L;
 
 	/**
 	 * 折扣预算ID
@@ -43,38 +43,93 @@ public class ReduceDstCampPrizeModel extends AlipayObject {
 	@ApiField("reduce_amt_suf")
 	private String reduceAmtSuf;
 
-	public String getBudgetId() {
+    /**
+     * Gets budget id.
+     *
+     * @return the budget id
+     */
+    public String getBudgetId() {
 		return this.budgetId;
 	}
-	public void setBudgetId(String budgetId) {
+
+    /**
+     * Sets budget id.
+     *
+     * @param budgetId the budget id
+     */
+    public void setBudgetId(String budgetId) {
 		this.budgetId = budgetId;
 	}
 
-	public String getId() {
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
+    public String getId() {
 		return this.id;
 	}
-	public void setId(String id) {
+
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
+    public void setId(String id) {
 		this.id = id;
 	}
 
-	public String getMaxDiscountAmt() {
+    /**
+     * Gets max discount amt.
+     *
+     * @return the max discount amt
+     */
+    public String getMaxDiscountAmt() {
 		return this.maxDiscountAmt;
 	}
-	public void setMaxDiscountAmt(String maxDiscountAmt) {
+
+    /**
+     * Sets max discount amt.
+     *
+     * @param maxDiscountAmt the max discount amt
+     */
+    public void setMaxDiscountAmt(String maxDiscountAmt) {
 		this.maxDiscountAmt = maxDiscountAmt;
 	}
 
-	public String getReduceAmtPre() {
+    /**
+     * Gets reduce amt pre.
+     *
+     * @return the reduce amt pre
+     */
+    public String getReduceAmtPre() {
 		return this.reduceAmtPre;
 	}
-	public void setReduceAmtPre(String reduceAmtPre) {
+
+    /**
+     * Sets reduce amt pre.
+     *
+     * @param reduceAmtPre the reduce amt pre
+     */
+    public void setReduceAmtPre(String reduceAmtPre) {
 		this.reduceAmtPre = reduceAmtPre;
 	}
 
-	public String getReduceAmtSuf() {
+    /**
+     * Gets reduce amt suf.
+     *
+     * @return the reduce amt suf
+     */
+    public String getReduceAmtSuf() {
 		return this.reduceAmtSuf;
 	}
-	public void setReduceAmtSuf(String reduceAmtSuf) {
+
+    /**
+     * Sets reduce amt suf.
+     *
+     * @param reduceAmtSuf the reduce amt suf
+     */
+    public void setReduceAmtSuf(String reduceAmtSuf) {
 		this.reduceAmtSuf = reduceAmtSuf;
 	}
 

@@ -7,13 +7,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.data.dataservice.code.reco response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-02 14:27:04
+ * @since 1.0, 2018-01-22 10:26:43
  */
 public class AlipayDataDataserviceCodeRecoResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2552568883816966571L;
+	private static final long serialVersionUID = 6318475826817684425L;
 
 	/** 
 	 * 识别结果
@@ -21,10 +21,21 @@ public class AlipayDataDataserviceCodeRecoResponse extends AlipayResponse {
 	@ApiField("result")
 	private AlipayCodeRecoResult result;
 
-	public void setResult(AlipayCodeRecoResult result) {
+    /**
+     * Sets result.
+     *
+     * @param result the result
+     */
+    public void setResult(AlipayCodeRecoResult result) {
 		this.result = result;
 	}
-	public AlipayCodeRecoResult getResult( ) {
+
+    /**
+     * Gets result.
+     *
+     * @return the result
+     */
+    public AlipayCodeRecoResult getResult( ) {
 		return this.result;
 	}
 

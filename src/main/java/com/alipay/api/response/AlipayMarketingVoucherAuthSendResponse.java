@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.voucher.auth.send response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-06-19 11:27:25
  */
 public class AlipayMarketingVoucherAuthSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8283271813678355584L;
+	private static final long serialVersionUID = 1839521163171974144L;
 
 	/** 
 	 * 券ID
@@ -20,10 +20,21 @@ public class AlipayMarketingVoucherAuthSendResponse extends AlipayResponse {
 	@ApiField("voucher_id")
 	private String voucherId;
 
-	public void setVoucherId(String voucherId) {
+    /**
+     * Sets voucher id.
+     *
+     * @param voucherId the voucher id
+     */
+    public void setVoucherId(String voucherId) {
 		this.voucherId = voucherId;
 	}
-	public String getVoucherId( ) {
+
+    /**
+     * Gets voucher id.
+     *
+     * @return the voucher id
+     */
+    public String getVoucherId( ) {
 		return this.voucherId;
 	}
 

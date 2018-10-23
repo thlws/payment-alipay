@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.commerce.cityfacilitator.voucher.generate response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-08-03 16:10:34
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayCommerceCityfacilitatorVoucherGenerateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5257689438778795788L;
+	private static final long serialVersionUID = 8289679642841187425L;
 
 	/** 
 	 * 核销码过期时间
@@ -32,24 +32,57 @@ public class AlipayCommerceCityfacilitatorVoucherGenerateResponse extends Alipay
 	@ApiField("ticket_no")
 	private String ticketNo;
 
-	public void setExpiredDate(String expiredDate) {
+    /**
+     * Sets expired date.
+     *
+     * @param expiredDate the expired date
+     */
+    public void setExpiredDate(String expiredDate) {
 		this.expiredDate = expiredDate;
 	}
-	public String getExpiredDate( ) {
+
+    /**
+     * Gets expired date.
+     *
+     * @return the expired date
+     */
+    public String getExpiredDate( ) {
 		return this.expiredDate;
 	}
 
-	public void setQrCodeNo(String qrCodeNo) {
+    /**
+     * Sets qr code no.
+     *
+     * @param qrCodeNo the qr code no
+     */
+    public void setQrCodeNo(String qrCodeNo) {
 		this.qrCodeNo = qrCodeNo;
 	}
-	public String getQrCodeNo( ) {
+
+    /**
+     * Gets qr code no.
+     *
+     * @return the qr code no
+     */
+    public String getQrCodeNo( ) {
 		return this.qrCodeNo;
 	}
 
-	public void setTicketNo(String ticketNo) {
+    /**
+     * Sets ticket no.
+     *
+     * @param ticketNo the ticket no
+     */
+    public void setTicketNo(String ticketNo) {
 		this.ticketNo = ticketNo;
 	}
-	public String getTicketNo( ) {
+
+    /**
+     * Gets ticket no.
+     *
+     * @return the ticket no
+     */
+    public String getTicketNo( ) {
 		return this.ticketNo;
 	}
 

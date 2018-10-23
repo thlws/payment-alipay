@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户可以通过此接口对商品进行库存等信息的修改（库存修改值只能大于当前值）
  *
  * @author auto create
- * @since 1.0, 2017-04-20 15:18:01
+ * @since 1.0, 2018-07-12 12:22:31
  */
 public class AlipayOfflineMarketItemModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4555752556113663945L;
+	private static final long serialVersionUID = 3896968815118963469L;
 
 	/**
 	 * 审核规则。支付宝内部使用，外部商户不需填写此字段。
@@ -73,73 +73,183 @@ public class AlipayOfflineMarketItemModifyModel extends AlipayObject {
 	@ApiField("weight")
 	private Long weight;
 
-	public AlipayItemAuditRule getAuditRule() {
+    /**
+     * Gets audit rule.
+     *
+     * @return the audit rule
+     */
+    public AlipayItemAuditRule getAuditRule() {
 		return this.auditRule;
 	}
-	public void setAuditRule(AlipayItemAuditRule auditRule) {
+
+    /**
+     * Sets audit rule.
+     *
+     * @param auditRule the audit rule
+     */
+    public void setAuditRule(AlipayItemAuditRule auditRule) {
 		this.auditRule = auditRule;
 	}
 
-	public String getGmtEnd() {
+    /**
+     * Gets gmt end.
+     *
+     * @return the gmt end
+     */
+    public String getGmtEnd() {
 		return this.gmtEnd;
 	}
-	public void setGmtEnd(String gmtEnd) {
+
+    /**
+     * Sets gmt end.
+     *
+     * @param gmtEnd the gmt end
+     */
+    public void setGmtEnd(String gmtEnd) {
 		this.gmtEnd = gmtEnd;
 	}
 
-	public Long getInventory() {
+    /**
+     * Gets inventory.
+     *
+     * @return the inventory
+     */
+    public Long getInventory() {
 		return this.inventory;
 	}
-	public void setInventory(Long inventory) {
+
+    /**
+     * Sets inventory.
+     *
+     * @param inventory the inventory
+     */
+    public void setInventory(Long inventory) {
 		this.inventory = inventory;
 	}
 
-	public String getItemId() {
+    /**
+     * Gets item id.
+     *
+     * @return the item id
+     */
+    public String getItemId() {
 		return this.itemId;
 	}
-	public void setItemId(String itemId) {
+
+    /**
+     * Sets item id.
+     *
+     * @param itemId the item id
+     */
+    public void setItemId(String itemId) {
 		this.itemId = itemId;
 	}
 
-	public String getMemo() {
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo() {
 		return this.memo;
 	}
-	public void setMemo(String memo) {
+
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
-	public String getOperateNotifyUrl() {
+    /**
+     * Gets operate notify url.
+     *
+     * @return the operate notify url
+     */
+    public String getOperateNotifyUrl() {
 		return this.operateNotifyUrl;
 	}
-	public void setOperateNotifyUrl(String operateNotifyUrl) {
+
+    /**
+     * Sets operate notify url.
+     *
+     * @param operateNotifyUrl the operate notify url
+     */
+    public void setOperateNotifyUrl(String operateNotifyUrl) {
 		this.operateNotifyUrl = operateNotifyUrl;
 	}
 
-	public AlipayItemOperationContext getOperationContext() {
+    /**
+     * Gets operation context.
+     *
+     * @return the operation context
+     */
+    public AlipayItemOperationContext getOperationContext() {
 		return this.operationContext;
 	}
-	public void setOperationContext(AlipayItemOperationContext operationContext) {
+
+    /**
+     * Sets operation context.
+     *
+     * @param operationContext the operation context
+     */
+    public void setOperationContext(AlipayItemOperationContext operationContext) {
 		this.operationContext = operationContext;
 	}
 
-	public String getRequestId() {
+    /**
+     * Gets request id.
+     *
+     * @return the request id
+     */
+    public String getRequestId() {
 		return this.requestId;
 	}
-	public void setRequestId(String requestId) {
+
+    /**
+     * Sets request id.
+     *
+     * @param requestId the request id
+     */
+    public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
 
-	public AlipayItemSalesRule getSalesRule() {
+    /**
+     * Gets sales rule.
+     *
+     * @return the sales rule
+     */
+    public AlipayItemSalesRule getSalesRule() {
 		return this.salesRule;
 	}
-	public void setSalesRule(AlipayItemSalesRule salesRule) {
+
+    /**
+     * Sets sales rule.
+     *
+     * @param salesRule the sales rule
+     */
+    public void setSalesRule(AlipayItemSalesRule salesRule) {
 		this.salesRule = salesRule;
 	}
 
-	public Long getWeight() {
+    /**
+     * Gets weight.
+     *
+     * @return the weight
+     */
+    public Long getWeight() {
 		return this.weight;
 	}
-	public void setWeight(Long weight) {
+
+    /**
+     * Sets weight.
+     *
+     * @param weight the weight
+     */
+    public void setWeight(Long weight) {
 		this.weight = weight;
 	}
 

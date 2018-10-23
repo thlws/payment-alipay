@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OpenPromoPrize extends AlipayObject {
 
-	private static final long serialVersionUID = 2726892527548413671L;
+	private static final long serialVersionUID = 7177891864673796846L;
 
 	/**
 	 * 消费门槛设置，单位元
@@ -122,122 +122,309 @@ public class OpenPromoPrize extends AlipayObject {
 	@ApiField("prize_worth_amount")
 	private String prizeWorthAmount;
 
-	public String getPrizeBaseRuleAmount() {
+    /**
+     * Gets prize base rule amount.
+     *
+     * @return the prize base rule amount
+     */
+    public String getPrizeBaseRuleAmount() {
 		return this.prizeBaseRuleAmount;
 	}
-	public void setPrizeBaseRuleAmount(String prizeBaseRuleAmount) {
+
+    /**
+     * Sets prize base rule amount.
+     *
+     * @param prizeBaseRuleAmount the prize base rule amount
+     */
+    public void setPrizeBaseRuleAmount(String prizeBaseRuleAmount) {
 		this.prizeBaseRuleAmount = prizeBaseRuleAmount;
 	}
 
-	public List<PrizeCustomMenu> getPrizeCustomMenu() {
+    /**
+     * Gets prize custom menu.
+     *
+     * @return the prize custom menu
+     */
+    public List<PrizeCustomMenu> getPrizeCustomMenu() {
 		return this.prizeCustomMenu;
 	}
-	public void setPrizeCustomMenu(List<PrizeCustomMenu> prizeCustomMenu) {
+
+    /**
+     * Sets prize custom menu.
+     *
+     * @param prizeCustomMenu the prize custom menu
+     */
+    public void setPrizeCustomMenu(List<PrizeCustomMenu> prizeCustomMenu) {
 		this.prizeCustomMenu = prizeCustomMenu;
 	}
 
-	public String getPrizeDesc() {
+    /**
+     * Gets prize desc.
+     *
+     * @return the prize desc
+     */
+    public String getPrizeDesc() {
 		return this.prizeDesc;
 	}
-	public void setPrizeDesc(String prizeDesc) {
+
+    /**
+     * Sets prize desc.
+     *
+     * @param prizeDesc the prize desc
+     */
+    public void setPrizeDesc(String prizeDesc) {
 		this.prizeDesc = prizeDesc;
 	}
 
-	public String getPrizeDetailImg() {
+    /**
+     * Gets prize detail img.
+     *
+     * @return the prize detail img
+     */
+    public String getPrizeDetailImg() {
 		return this.prizeDetailImg;
 	}
-	public void setPrizeDetailImg(String prizeDetailImg) {
+
+    /**
+     * Sets prize detail img.
+     *
+     * @param prizeDetailImg the prize detail img
+     */
+    public void setPrizeDetailImg(String prizeDetailImg) {
 		this.prizeDetailImg = prizeDetailImg;
 	}
 
-	public List<OpenPromoPrizeDimension> getPrizeDimensionTime() {
+    /**
+     * Gets prize dimension time.
+     *
+     * @return the prize dimension time
+     */
+    public List<OpenPromoPrizeDimension> getPrizeDimensionTime() {
 		return this.prizeDimensionTime;
 	}
-	public void setPrizeDimensionTime(List<OpenPromoPrizeDimension> prizeDimensionTime) {
+
+    /**
+     * Sets prize dimension time.
+     *
+     * @param prizeDimensionTime the prize dimension time
+     */
+    public void setPrizeDimensionTime(List<OpenPromoPrizeDimension> prizeDimensionTime) {
 		this.prizeDimensionTime = prizeDimensionTime;
 	}
 
-	public String getPrizeEndTime() {
+    /**
+     * Gets prize end time.
+     *
+     * @return the prize end time
+     */
+    public String getPrizeEndTime() {
 		return this.prizeEndTime;
 	}
-	public void setPrizeEndTime(String prizeEndTime) {
+
+    /**
+     * Sets prize end time.
+     *
+     * @param prizeEndTime the prize end time
+     */
+    public void setPrizeEndTime(String prizeEndTime) {
 		this.prizeEndTime = prizeEndTime;
 	}
 
-	public String getPrizeLogo() {
+    /**
+     * Gets prize logo.
+     *
+     * @return the prize logo
+     */
+    public String getPrizeLogo() {
 		return this.prizeLogo;
 	}
-	public void setPrizeLogo(String prizeLogo) {
+
+    /**
+     * Sets prize logo.
+     *
+     * @param prizeLogo the prize logo
+     */
+    public void setPrizeLogo(String prizeLogo) {
 		this.prizeLogo = prizeLogo;
 	}
 
-	public String getPrizeName() {
+    /**
+     * Gets prize name.
+     *
+     * @return the prize name
+     */
+    public String getPrizeName() {
 		return this.prizeName;
 	}
-	public void setPrizeName(String prizeName) {
+
+    /**
+     * Sets prize name.
+     *
+     * @param prizeName the prize name
+     */
+    public void setPrizeName(String prizeName) {
 		this.prizeName = prizeName;
 	}
 
-	public OpenPromoPrizeRelativeTime getPrizeRelativeTime() {
+    /**
+     * Gets prize relative time.
+     *
+     * @return the prize relative time
+     */
+    public OpenPromoPrizeRelativeTime getPrizeRelativeTime() {
 		return this.prizeRelativeTime;
 	}
-	public void setPrizeRelativeTime(OpenPromoPrizeRelativeTime prizeRelativeTime) {
+
+    /**
+     * Sets prize relative time.
+     *
+     * @param prizeRelativeTime the prize relative time
+     */
+    public void setPrizeRelativeTime(OpenPromoPrizeRelativeTime prizeRelativeTime) {
 		this.prizeRelativeTime = prizeRelativeTime;
 	}
 
-	public String getPrizeStartTime() {
+    /**
+     * Gets prize start time.
+     *
+     * @return the prize start time
+     */
+    public String getPrizeStartTime() {
 		return this.prizeStartTime;
 	}
-	public void setPrizeStartTime(String prizeStartTime) {
+
+    /**
+     * Sets prize start time.
+     *
+     * @param prizeStartTime the prize start time
+     */
+    public void setPrizeStartTime(String prizeStartTime) {
 		this.prizeStartTime = prizeStartTime;
 	}
 
-	public String getPrizeSubtitle() {
+    /**
+     * Gets prize subtitle.
+     *
+     * @return the prize subtitle
+     */
+    public String getPrizeSubtitle() {
 		return this.prizeSubtitle;
 	}
-	public void setPrizeSubtitle(String prizeSubtitle) {
+
+    /**
+     * Sets prize subtitle.
+     *
+     * @param prizeSubtitle the prize subtitle
+     */
+    public void setPrizeSubtitle(String prizeSubtitle) {
 		this.prizeSubtitle = prizeSubtitle;
 	}
 
-	public List<String> getPrizeSuitableShops() {
+    /**
+     * Gets prize suitable shops.
+     *
+     * @return the prize suitable shops
+     */
+    public List<String> getPrizeSuitableShops() {
 		return this.prizeSuitableShops;
 	}
-	public void setPrizeSuitableShops(List<String> prizeSuitableShops) {
+
+    /**
+     * Sets prize suitable shops.
+     *
+     * @param prizeSuitableShops the prize suitable shops
+     */
+    public void setPrizeSuitableShops(List<String> prizeSuitableShops) {
 		this.prizeSuitableShops = prizeSuitableShops;
 	}
 
-	public String getPrizeTemplateEndTime() {
+    /**
+     * Gets prize template end time.
+     *
+     * @return the prize template end time
+     */
+    public String getPrizeTemplateEndTime() {
 		return this.prizeTemplateEndTime;
 	}
-	public void setPrizeTemplateEndTime(String prizeTemplateEndTime) {
+
+    /**
+     * Sets prize template end time.
+     *
+     * @param prizeTemplateEndTime the prize template end time
+     */
+    public void setPrizeTemplateEndTime(String prizeTemplateEndTime) {
 		this.prizeTemplateEndTime = prizeTemplateEndTime;
 	}
 
-	public String getPrizeTemplateStartTime() {
+    /**
+     * Gets prize template start time.
+     *
+     * @return the prize template start time
+     */
+    public String getPrizeTemplateStartTime() {
 		return this.prizeTemplateStartTime;
 	}
-	public void setPrizeTemplateStartTime(String prizeTemplateStartTime) {
+
+    /**
+     * Sets prize template start time.
+     *
+     * @param prizeTemplateStartTime the prize template start time
+     */
+    public void setPrizeTemplateStartTime(String prizeTemplateStartTime) {
 		this.prizeTemplateStartTime = prizeTemplateStartTime;
 	}
 
-	public List<String> getPrizeTerms() {
+    /**
+     * Gets prize terms.
+     *
+     * @return the prize terms
+     */
+    public List<String> getPrizeTerms() {
 		return this.prizeTerms;
 	}
-	public void setPrizeTerms(List<String> prizeTerms) {
+
+    /**
+     * Sets prize terms.
+     *
+     * @param prizeTerms the prize terms
+     */
+    public void setPrizeTerms(List<String> prizeTerms) {
 		this.prizeTerms = prizeTerms;
 	}
 
-	public String getPrizeType() {
+    /**
+     * Gets prize type.
+     *
+     * @return the prize type
+     */
+    public String getPrizeType() {
 		return this.prizeType;
 	}
-	public void setPrizeType(String prizeType) {
+
+    /**
+     * Sets prize type.
+     *
+     * @param prizeType the prize type
+     */
+    public void setPrizeType(String prizeType) {
 		this.prizeType = prizeType;
 	}
 
-	public String getPrizeWorthAmount() {
+    /**
+     * Gets prize worth amount.
+     *
+     * @return the prize worth amount
+     */
+    public String getPrizeWorthAmount() {
 		return this.prizeWorthAmount;
 	}
-	public void setPrizeWorthAmount(String prizeWorthAmount) {
+
+    /**
+     * Sets prize worth amount.
+     *
+     * @param prizeWorthAmount the prize worth amount
+     */
+    public void setPrizeWorthAmount(String prizeWorthAmount) {
 		this.prizeWorthAmount = prizeWorthAmount;
 	}
 

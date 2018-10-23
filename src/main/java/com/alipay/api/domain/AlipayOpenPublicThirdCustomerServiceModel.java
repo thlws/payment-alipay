@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicThirdCustomerServiceModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2336387928292651192L;
+	private static final long serialVersionUID = 3898663669615885571L;
 
 	/**
 	 * 服务窗商户在渠道商处对应的用户id
@@ -19,10 +19,21 @@ public class AlipayOpenPublicThirdCustomerServiceModel extends AlipayObject {
 	@ApiField("channel_uid")
 	private String channelUid;
 
-	public String getChannelUid() {
+    /**
+     * Gets channel uid.
+     *
+     * @return the channel uid
+     */
+    public String getChannelUid() {
 		return this.channelUid;
 	}
-	public void setChannelUid(String channelUid) {
+
+    /**
+     * Sets channel uid.
+     *
+     * @param channelUid the channel uid
+     */
+    public void setChannelUid(String channelUid) {
 		this.channelUid = channelUid;
 	}
 

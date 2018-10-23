@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMarketingCampaignCrowdCountModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5112493195685122772L;
+	private static final long serialVersionUID = 6682521488425813319L;
 
 	/**
 	 * 圈人的条件
@@ -35,24 +35,57 @@ value:标签值
 	@ApiField("dimensions")
 	private String dimensions;
 
-	public String getConditions() {
+    /**
+     * Gets conditions.
+     *
+     * @return the conditions
+     */
+    public String getConditions() {
 		return this.conditions;
 	}
-	public void setConditions(String conditions) {
+
+    /**
+     * Sets conditions.
+     *
+     * @param conditions the conditions
+     */
+    public void setConditions(String conditions) {
 		this.conditions = conditions;
 	}
 
-	public String getCrowdGroupId() {
+    /**
+     * Gets crowd group id.
+     *
+     * @return the crowd group id
+     */
+    public String getCrowdGroupId() {
 		return this.crowdGroupId;
 	}
-	public void setCrowdGroupId(String crowdGroupId) {
+
+    /**
+     * Sets crowd group id.
+     *
+     * @param crowdGroupId the crowd group id
+     */
+    public void setCrowdGroupId(String crowdGroupId) {
 		this.crowdGroupId = crowdGroupId;
 	}
 
-	public String getDimensions() {
+    /**
+     * Gets dimensions.
+     *
+     * @return the dimensions
+     */
+    public String getDimensions() {
 		return this.dimensions;
 	}
-	public void setDimensions(String dimensions) {
+
+    /**
+     * Sets dimensions.
+     *
+     * @param dimensions the dimensions
+     */
+    public void setDimensions(String dimensions) {
 		this.dimensions = dimensions;
 	}
 

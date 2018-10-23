@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.shortlink.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-04 10:40:37
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayOpenPublicShortlinkCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4241256616977816841L;
+	private static final long serialVersionUID = 3495768966371495876L;
 
 	/** 
 	 * 生成的带参推广短链接
@@ -20,10 +20,21 @@ public class AlipayOpenPublicShortlinkCreateResponse extends AlipayResponse {
 	@ApiField("shortlink")
 	private String shortlink;
 
-	public void setShortlink(String shortlink) {
+    /**
+     * Sets shortlink.
+     *
+     * @param shortlink the shortlink
+     */
+    public void setShortlink(String shortlink) {
 		this.shortlink = shortlink;
 	}
-	public String getShortlink( ) {
+
+    /**
+     * Gets shortlink.
+     *
+     * @return the shortlink
+     */
+    public String getShortlink( ) {
 		return this.shortlink;
 	}
 

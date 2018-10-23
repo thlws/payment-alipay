@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: ant.merchant.expand.merchant.storelist.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-20 21:12:59
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AntMerchantExpandMerchantStorelistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8785888877853872191L;
+	private static final long serialVersionUID = 8336667345179424738L;
 
 	/** 
 	 * 商户门店列表
@@ -48,38 +48,93 @@ public class AntMerchantExpandMerchantStorelistQueryResponse extends AlipayRespo
 	@ApiField("total_size")
 	private Long totalSize;
 
-	public void setMerchantStores(List<ShopQueryInfo> merchantStores) {
+    /**
+     * Sets merchant stores.
+     *
+     * @param merchantStores the merchant stores
+     */
+    public void setMerchantStores(List<ShopQueryInfo> merchantStores) {
 		this.merchantStores = merchantStores;
 	}
-	public List<ShopQueryInfo> getMerchantStores( ) {
+
+    /**
+     * Gets merchant stores.
+     *
+     * @return the merchant stores
+     */
+    public List<ShopQueryInfo> getMerchantStores( ) {
 		return this.merchantStores;
 	}
 
-	public void setPageNum(Long pageNum) {
+    /**
+     * Sets page num.
+     *
+     * @param pageNum the page num
+     */
+    public void setPageNum(Long pageNum) {
 		this.pageNum = pageNum;
 	}
-	public Long getPageNum( ) {
+
+    /**
+     * Gets page num.
+     *
+     * @return the page num
+     */
+    public Long getPageNum( ) {
 		return this.pageNum;
 	}
 
-	public void setPageSize(Long pageSize) {
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}
-	public Long getPageSize( ) {
+
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public Long getPageSize( ) {
 		return this.pageSize;
 	}
 
-	public void setTotalPages(Long totalPages) {
+    /**
+     * Sets total pages.
+     *
+     * @param totalPages the total pages
+     */
+    public void setTotalPages(Long totalPages) {
 		this.totalPages = totalPages;
 	}
-	public Long getTotalPages( ) {
+
+    /**
+     * Gets total pages.
+     *
+     * @return the total pages
+     */
+    public Long getTotalPages( ) {
 		return this.totalPages;
 	}
 
-	public void setTotalSize(Long totalSize) {
+    /**
+     * Sets total size.
+     *
+     * @param totalSize the total size
+     */
+    public void setTotalSize(Long totalSize) {
 		this.totalSize = totalSize;
 	}
-	public Long getTotalSize( ) {
+
+    /**
+     * Gets total size.
+     *
+     * @return the total size
+     */
+    public Long getTotalSize( ) {
 		return this.totalSize;
 	}
 

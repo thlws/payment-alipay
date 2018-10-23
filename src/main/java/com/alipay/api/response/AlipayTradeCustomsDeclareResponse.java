@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.trade.customs.declare response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-12-08 00:48:24
  */
 public class AlipayTradeCustomsDeclareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4494677977271533486L;
+	private static final long serialVersionUID = 5463898171678833383L;
 
 	/** 
 	 * 支付宝报关流水号。
@@ -32,24 +32,57 @@ public class AlipayTradeCustomsDeclareResponse extends AlipayResponse {
 	@ApiField("trade_no")
 	private String tradeNo;
 
-	public void setAlipayDeclareNo(String alipayDeclareNo) {
+    /**
+     * Sets alipay declare no.
+     *
+     * @param alipayDeclareNo the alipay declare no
+     */
+    public void setAlipayDeclareNo(String alipayDeclareNo) {
 		this.alipayDeclareNo = alipayDeclareNo;
 	}
-	public String getAlipayDeclareNo( ) {
+
+    /**
+     * Gets alipay declare no.
+     *
+     * @return the alipay declare no
+     */
+    public String getAlipayDeclareNo( ) {
 		return this.alipayDeclareNo;
 	}
 
-	public void setIdentityCheck(String identityCheck) {
+    /**
+     * Sets identity check.
+     *
+     * @param identityCheck the identity check
+     */
+    public void setIdentityCheck(String identityCheck) {
 		this.identityCheck = identityCheck;
 	}
-	public String getIdentityCheck( ) {
+
+    /**
+     * Gets identity check.
+     *
+     * @return the identity check
+     */
+    public String getIdentityCheck( ) {
 		return this.identityCheck;
 	}
 
-	public void setTradeNo(String tradeNo) {
+    /**
+     * Sets trade no.
+     *
+     * @param tradeNo the trade no
+     */
+    public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
-	public String getTradeNo( ) {
+
+    /**
+     * Gets trade no.
+     *
+     * @return the trade no
+     */
+    public String getTradeNo( ) {
 		return this.tradeNo;
 	}
 

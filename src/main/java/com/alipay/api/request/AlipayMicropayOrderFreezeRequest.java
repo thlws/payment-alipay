@@ -10,7 +10,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.micropay.order.freeze request
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-06-06 17:49:00
  */
@@ -44,38 +44,93 @@ public class AlipayMicropayOrderFreezeRequest implements AlipayRequest<AlipayMic
 	 */
 	private String payConfirm;
 
-	public void setAmount(String amount) {
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(String amount) {
 		this.amount = amount;
 	}
-	public String getAmount() {
+
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public String getAmount() {
 		return this.amount;
 	}
 
-	public void setExpireTime(Date expireTime) {
+    /**
+     * Sets expire time.
+     *
+     * @param expireTime the expire time
+     */
+    public void setExpireTime(Date expireTime) {
 		this.expireTime = expireTime;
 	}
-	public Date getExpireTime() {
+
+    /**
+     * Gets expire time.
+     *
+     * @return the expire time
+     */
+    public Date getExpireTime() {
 		return this.expireTime;
 	}
 
-	public void setMemo(String memo) {
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
-	public String getMemo() {
+
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo() {
 		return this.memo;
 	}
 
-	public void setMerchantOrderNo(String merchantOrderNo) {
+    /**
+     * Sets merchant order no.
+     *
+     * @param merchantOrderNo the merchant order no
+     */
+    public void setMerchantOrderNo(String merchantOrderNo) {
 		this.merchantOrderNo = merchantOrderNo;
 	}
-	public String getMerchantOrderNo() {
+
+    /**
+     * Gets merchant order no.
+     *
+     * @return the merchant order no
+     */
+    public String getMerchantOrderNo() {
 		return this.merchantOrderNo;
 	}
 
-	public void setPayConfirm(String payConfirm) {
+    /**
+     * Sets pay confirm.
+     *
+     * @param payConfirm the pay confirm
+     */
+    public void setPayConfirm(String payConfirm) {
 		this.payConfirm = payConfirm;
 	}
-	public String getPayConfirm() {
+
+    /**
+     * Gets pay confirm.
+     *
+     * @return the pay confirm
+     */
+    public String getPayConfirm() {
 		return this.payConfirm;
 	}
 	private String terminalType;
@@ -151,7 +206,13 @@ public class AlipayMicropayOrderFreezeRequest implements AlipayRequest<AlipayMic
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

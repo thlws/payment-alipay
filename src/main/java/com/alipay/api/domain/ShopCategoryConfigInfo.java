@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ShopCategoryConfigInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3276755491637364449L;
+	private static final long serialVersionUID = 2474797481711876652L;
 
 	/**
 	 * 类目ID
@@ -43,38 +43,93 @@ public class ShopCategoryConfigInfo extends AlipayObject {
 	@ApiField("nm")
 	private String nm;
 
-	public String getId() {
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
+    public String getId() {
 		return this.id;
 	}
-	public void setId(String id) {
+
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
+    public void setId(String id) {
 		this.id = id;
 	}
 
-	public String getIsLeaf() {
+    /**
+     * Gets is leaf.
+     *
+     * @return the is leaf
+     */
+    public String getIsLeaf() {
 		return this.isLeaf;
 	}
-	public void setIsLeaf(String isLeaf) {
+
+    /**
+     * Sets is leaf.
+     *
+     * @param isLeaf the is leaf
+     */
+    public void setIsLeaf(String isLeaf) {
 		this.isLeaf = isLeaf;
 	}
 
-	public String getLevel() {
+    /**
+     * Gets level.
+     *
+     * @return the level
+     */
+    public String getLevel() {
 		return this.level;
 	}
-	public void setLevel(String level) {
+
+    /**
+     * Sets level.
+     *
+     * @param level the level
+     */
+    public void setLevel(String level) {
 		this.level = level;
 	}
 
-	public String getLink() {
+    /**
+     * Gets link.
+     *
+     * @return the link
+     */
+    public String getLink() {
 		return this.link;
 	}
-	public void setLink(String link) {
+
+    /**
+     * Sets link.
+     *
+     * @param link the link
+     */
+    public void setLink(String link) {
 		this.link = link;
 	}
 
-	public String getNm() {
+    /**
+     * Gets nm.
+     *
+     * @return the nm
+     */
+    public String getNm() {
 		return this.nm;
 	}
-	public void setNm(String nm) {
+
+    /**
+     * Sets nm.
+     *
+     * @param nm the nm
+     */
+    public void setNm(String nm) {
 		this.nm = nm;
 	}
 

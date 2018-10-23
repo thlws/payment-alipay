@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class BatchFundItemAOPModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3454549345966957381L;
+	private static final long serialVersionUID = 2377211878778188964L;
 
 	/**
 	 * 批次号
@@ -66,59 +66,147 @@ public class BatchFundItemAOPModel extends AlipayObject {
 	@ApiField("total_amount_with_service_fee")
 	private String totalAmountWithServiceFee;
 
-	public Long getBatchNo() {
+    /**
+     * Gets batch no.
+     *
+     * @return the batch no
+     */
+    public Long getBatchNo() {
 		return this.batchNo;
 	}
-	public void setBatchNo(Long batchNo) {
+
+    /**
+     * Sets batch no.
+     *
+     * @param batchNo the batch no
+     */
+    public void setBatchNo(Long batchNo) {
 		this.batchNo = batchNo;
 	}
 
-	public String getDbackRefundtobankProcessingBatchAmount() {
+    /**
+     * Gets dback refundtobank processing batch amount.
+     *
+     * @return the dback refundtobank processing batch amount
+     */
+    public String getDbackRefundtobankProcessingBatchAmount() {
 		return this.dbackRefundtobankProcessingBatchAmount;
 	}
-	public void setDbackRefundtobankProcessingBatchAmount(String dbackRefundtobankProcessingBatchAmount) {
+
+    /**
+     * Sets dback refundtobank processing batch amount.
+     *
+     * @param dbackRefundtobankProcessingBatchAmount the dback refundtobank processing batch amount
+     */
+    public void setDbackRefundtobankProcessingBatchAmount(String dbackRefundtobankProcessingBatchAmount) {
 		this.dbackRefundtobankProcessingBatchAmount = dbackRefundtobankProcessingBatchAmount;
 	}
 
-	public String getDbackRefundtobankSuccessBatchAmount() {
+    /**
+     * Gets dback refundtobank success batch amount.
+     *
+     * @return the dback refundtobank success batch amount
+     */
+    public String getDbackRefundtobankSuccessBatchAmount() {
 		return this.dbackRefundtobankSuccessBatchAmount;
 	}
-	public void setDbackRefundtobankSuccessBatchAmount(String dbackRefundtobankSuccessBatchAmount) {
+
+    /**
+     * Sets dback refundtobank success batch amount.
+     *
+     * @param dbackRefundtobankSuccessBatchAmount the dback refundtobank success batch amount
+     */
+    public void setDbackRefundtobankSuccessBatchAmount(String dbackRefundtobankSuccessBatchAmount) {
 		this.dbackRefundtobankSuccessBatchAmount = dbackRefundtobankSuccessBatchAmount;
 	}
 
-	public List<FundItemAOPModel> getFundItemList() {
+    /**
+     * Gets fund item list.
+     *
+     * @return the fund item list
+     */
+    public List<FundItemAOPModel> getFundItemList() {
 		return this.fundItemList;
 	}
-	public void setFundItemList(List<FundItemAOPModel> fundItemList) {
+
+    /**
+     * Sets fund item list.
+     *
+     * @param fundItemList the fund item list
+     */
+    public void setFundItemList(List<FundItemAOPModel> fundItemList) {
 		this.fundItemList = fundItemList;
 	}
 
-	public Date getGmtBizCreateDate() {
+    /**
+     * Gets gmt biz create date.
+     *
+     * @return the gmt biz create date
+     */
+    public Date getGmtBizCreateDate() {
 		return this.gmtBizCreateDate;
 	}
-	public void setGmtBizCreateDate(Date gmtBizCreateDate) {
+
+    /**
+     * Sets gmt biz create date.
+     *
+     * @param gmtBizCreateDate the gmt biz create date
+     */
+    public void setGmtBizCreateDate(Date gmtBizCreateDate) {
 		this.gmtBizCreateDate = gmtBizCreateDate;
 	}
 
-	public String getOrderId() {
+    /**
+     * Gets order id.
+     *
+     * @return the order id
+     */
+    public String getOrderId() {
 		return this.orderId;
 	}
-	public void setOrderId(String orderId) {
+
+    /**
+     * Sets order id.
+     *
+     * @param orderId the order id
+     */
+    public void setOrderId(String orderId) {
 		this.orderId = orderId;
 	}
 
-	public String getTotalAmount() {
+    /**
+     * Gets total amount.
+     *
+     * @return the total amount
+     */
+    public String getTotalAmount() {
 		return this.totalAmount;
 	}
-	public void setTotalAmount(String totalAmount) {
+
+    /**
+     * Sets total amount.
+     *
+     * @param totalAmount the total amount
+     */
+    public void setTotalAmount(String totalAmount) {
 		this.totalAmount = totalAmount;
 	}
 
-	public String getTotalAmountWithServiceFee() {
+    /**
+     * Gets total amount with service fee.
+     *
+     * @return the total amount with service fee
+     */
+    public String getTotalAmountWithServiceFee() {
 		return this.totalAmountWithServiceFee;
 	}
-	public void setTotalAmountWithServiceFee(String totalAmountWithServiceFee) {
+
+    /**
+     * Sets total amount with service fee.
+     *
+     * @param totalAmountWithServiceFee the total amount with service fee
+     */
+    public void setTotalAmountWithServiceFee(String totalAmountWithServiceFee) {
 		this.totalAmountWithServiceFee = totalAmountWithServiceFee;
 	}
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业平台获取授权码
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:15
+ * @since 1.0, 2018-02-09 11:39:27
  */
 public class AlipayOpenAuthIndustryPlatformCreateTokenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5794352892697162266L;
+	private static final long serialVersionUID = 7299593626394822512L;
 
 	/**
 	 * isv的appid
@@ -25,17 +25,39 @@ public class AlipayOpenAuthIndustryPlatformCreateTokenModel extends AlipayObject
 	@ApiField("scope")
 	private String scope;
 
-	public String getIsvAppid() {
+    /**
+     * Gets isv appid.
+     *
+     * @return the isv appid
+     */
+    public String getIsvAppid() {
 		return this.isvAppid;
 	}
-	public void setIsvAppid(String isvAppid) {
+
+    /**
+     * Sets isv appid.
+     *
+     * @param isvAppid the isv appid
+     */
+    public void setIsvAppid(String isvAppid) {
 		this.isvAppid = isvAppid;
 	}
 
-	public String getScope() {
+    /**
+     * Gets scope.
+     *
+     * @return the scope
+     */
+    public String getScope() {
 		return this.scope;
 	}
-	public void setScope(String scope) {
+
+    /**
+     * Sets scope.
+     *
+     * @param scope the scope
+     */
+    public void setScope(String scope) {
 		this.scope = scope;
 	}
 

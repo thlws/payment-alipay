@@ -7,13 +7,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: mybank.finance.yulibao.account.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-11-18 16:07:46
+ * @since 1.0, 2018-08-08 17:32:11
  */
 public class MybankFinanceYulibaoAccountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3438149664781249811L;
+	private static final long serialVersionUID = 8679259968918148917L;
 
 	/** 
 	 * 可用份额，单位为元
@@ -45,38 +45,93 @@ public class MybankFinanceYulibaoAccountQueryResponse extends AlipayResponse {
 	@ApiField("ylb_profit_detail_info")
 	private YLBProfitDetailInfo ylbProfitDetailInfo;
 
-	public void setAvailableAmount(String availableAmount) {
+    /**
+     * Sets available amount.
+     *
+     * @param availableAmount the available amount
+     */
+    public void setAvailableAmount(String availableAmount) {
 		this.availableAmount = availableAmount;
 	}
-	public String getAvailableAmount( ) {
+
+    /**
+     * Gets available amount.
+     *
+     * @return the available amount
+     */
+    public String getAvailableAmount( ) {
 		return this.availableAmount;
 	}
 
-	public void setFreezeAmount(String freezeAmount) {
+    /**
+     * Sets freeze amount.
+     *
+     * @param freezeAmount the freeze amount
+     */
+    public void setFreezeAmount(String freezeAmount) {
 		this.freezeAmount = freezeAmount;
 	}
-	public String getFreezeAmount( ) {
+
+    /**
+     * Gets freeze amount.
+     *
+     * @return the freeze amount
+     */
+    public String getFreezeAmount( ) {
 		return this.freezeAmount;
 	}
 
-	public void setSysFreezeAmount(String sysFreezeAmount) {
+    /**
+     * Sets sys freeze amount.
+     *
+     * @param sysFreezeAmount the sys freeze amount
+     */
+    public void setSysFreezeAmount(String sysFreezeAmount) {
 		this.sysFreezeAmount = sysFreezeAmount;
 	}
-	public String getSysFreezeAmount( ) {
+
+    /**
+     * Gets sys freeze amount.
+     *
+     * @return the sys freeze amount
+     */
+    public String getSysFreezeAmount( ) {
 		return this.sysFreezeAmount;
 	}
 
-	public void setTotalAmount(String totalAmount) {
+    /**
+     * Sets total amount.
+     *
+     * @param totalAmount the total amount
+     */
+    public void setTotalAmount(String totalAmount) {
 		this.totalAmount = totalAmount;
 	}
-	public String getTotalAmount( ) {
+
+    /**
+     * Gets total amount.
+     *
+     * @return the total amount
+     */
+    public String getTotalAmount( ) {
 		return this.totalAmount;
 	}
 
-	public void setYlbProfitDetailInfo(YLBProfitDetailInfo ylbProfitDetailInfo) {
+    /**
+     * Sets ylb profit detail info.
+     *
+     * @param ylbProfitDetailInfo the ylb profit detail info
+     */
+    public void setYlbProfitDetailInfo(YLBProfitDetailInfo ylbProfitDetailInfo) {
 		this.ylbProfitDetailInfo = ylbProfitDetailInfo;
 	}
-	public YLBProfitDetailInfo getYlbProfitDetailInfo( ) {
+
+    /**
+     * Gets ylb profit detail info.
+     *
+     * @return the ylb profit detail info
+     */
+    public YLBProfitDetailInfo getYlbProfitDetailInfo( ) {
 		return this.ylbProfitDetailInfo;
 	}
 

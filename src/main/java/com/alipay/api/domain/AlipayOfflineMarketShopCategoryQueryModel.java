@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineMarketShopCategoryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1276793334361458982L;
+	private static final long serialVersionUID = 2625418887124233756L;
 
 	/**
 	 * 类目ID，如果为空则查询全部类目。
@@ -25,17 +25,39 @@ public class AlipayOfflineMarketShopCategoryQueryModel extends AlipayObject {
 	@ApiField("op_role")
 	private String opRole;
 
-	public String getCategoryId() {
+    /**
+     * Gets category id.
+     *
+     * @return the category id
+     */
+    public String getCategoryId() {
 		return this.categoryId;
 	}
-	public void setCategoryId(String categoryId) {
+
+    /**
+     * Sets category id.
+     *
+     * @param categoryId the category id
+     */
+    public void setCategoryId(String categoryId) {
 		this.categoryId = categoryId;
 	}
 
-	public String getOpRole() {
+    /**
+     * Gets op role.
+     *
+     * @return the op role
+     */
+    public String getOpRole() {
 		return this.opRole;
 	}
-	public void setOpRole(String opRole) {
+
+    /**
+     * Sets op role.
+     *
+     * @param opRole the op role
+     */
+    public void setOpRole(String opRole) {
 		this.opRole = opRole;
 	}
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚁盾风险评分服务新版
  *
  * @author auto create
- * @since 1.0, 2017-09-14 11:55:38
+ * @since 1.0, 2018-08-28 16:10:23
  */
 public class SsdataDataserviceRiskRainscoreQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2596592173531329861L;
+	private static final long serialVersionUID = 3726497352675132427L;
 
 	/**
 	 * 帐号内容，目前为中国大陆手机号（11位阿拉伯数字，不包含特殊符号或空格）
@@ -37,31 +37,75 @@ public class SsdataDataserviceRiskRainscoreQueryModel extends AlipayObject {
 	@ApiField("version")
 	private String version;
 
-	public String getAccount() {
+    /**
+     * Gets account.
+     *
+     * @return the account
+     */
+    public String getAccount() {
 		return this.account;
 	}
-	public void setAccount(String account) {
+
+    /**
+     * Sets account.
+     *
+     * @param account the account
+     */
+    public void setAccount(String account) {
 		this.account = account;
 	}
 
-	public String getAccountType() {
+    /**
+     * Gets account type.
+     *
+     * @return the account type
+     */
+    public String getAccountType() {
 		return this.accountType;
 	}
-	public void setAccountType(String accountType) {
+
+    /**
+     * Sets account type.
+     *
+     * @param accountType the account type
+     */
+    public void setAccountType(String accountType) {
 		this.accountType = accountType;
 	}
 
-	public String getPartnerId() {
+    /**
+     * Gets partner id.
+     *
+     * @return the partner id
+     */
+    public String getPartnerId() {
 		return this.partnerId;
 	}
-	public void setPartnerId(String partnerId) {
+
+    /**
+     * Sets partner id.
+     *
+     * @param partnerId the partner id
+     */
+    public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}
 
-	public String getVersion() {
+    /**
+     * Gets version.
+     *
+     * @return the version
+     */
+    public String getVersion() {
 		return this.version;
 	}
-	public void setVersion(String version) {
+
+    /**
+     * Sets version.
+     *
+     * @param version the version
+     */
+    public void setVersion(String version) {
 		this.version = version;
 	}
 

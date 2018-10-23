@@ -8,13 +8,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.follow.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-12-20 10:26:41
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayOpenPublicFollowBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8829747949353872324L;
+	private static final long serialVersionUID = 8797692318444153475L;
 
 	/** 
 	 * 本次调用获取的userId个数，最大值为10000
@@ -35,24 +35,57 @@ public class AlipayOpenPublicFollowBatchqueryResponse extends AlipayResponse {
 	@ApiField("string")
 	private List<String> userIdList;
 
-	public void setCount(String count) {
+    /**
+     * Sets count.
+     *
+     * @param count the count
+     */
+    public void setCount(String count) {
 		this.count = count;
 	}
-	public String getCount( ) {
+
+    /**
+     * Gets count.
+     *
+     * @return the count
+     */
+    public String getCount( ) {
 		return this.count;
 	}
 
-	public void setNextUserId(String nextUserId) {
+    /**
+     * Sets next user id.
+     *
+     * @param nextUserId the next user id
+     */
+    public void setNextUserId(String nextUserId) {
 		this.nextUserId = nextUserId;
 	}
-	public String getNextUserId( ) {
+
+    /**
+     * Gets next user id.
+     *
+     * @return the next user id
+     */
+    public String getNextUserId( ) {
 		return this.nextUserId;
 	}
 
-	public void setUserIdList(List<String> userIdList) {
+    /**
+     * Sets user id list.
+     *
+     * @param userIdList the user id list
+     */
+    public void setUserIdList(List<String> userIdList) {
 		this.userIdList = userIdList;
 	}
-	public List<String> getUserIdList( ) {
+
+    /**
+     * Gets user id list.
+     *
+     * @return the user id list
+     */
+    public List<String> getUserIdList( ) {
 		return this.userIdList;
 	}
 

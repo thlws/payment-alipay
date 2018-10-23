@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.data.dataservice.shoppingmallrec.shop.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-08-15 19:53:06
  */
 public class AlipayDataDataserviceShoppingmallrecShopQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5718311991646225371L;
+	private static final long serialVersionUID = 3827424328362152822L;
 
 	/** 
 	 * 本次推荐的id, 开发者埋点需带入此参数
@@ -36,24 +36,57 @@ public class AlipayDataDataserviceShoppingmallrecShopQueryResponse extends Alipa
 	@ApiField("shop_rec")
 	private List<ShopRec> shopRecommendList;
 
-	public void setRecommendId(String recommendId) {
+    /**
+     * Sets recommend id.
+     *
+     * @param recommendId the recommend id
+     */
+    public void setRecommendId(String recommendId) {
 		this.recommendId = recommendId;
 	}
-	public String getRecommendId( ) {
+
+    /**
+     * Gets recommend id.
+     *
+     * @return the recommend id
+     */
+    public String getRecommendId( ) {
 		return this.recommendId;
 	}
 
-	public void setRequestId(String requestId) {
+    /**
+     * Sets request id.
+     *
+     * @param requestId the request id
+     */
+    public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
-	public String getRequestId( ) {
+
+    /**
+     * Gets request id.
+     *
+     * @return the request id
+     */
+    public String getRequestId( ) {
 		return this.requestId;
 	}
 
-	public void setShopRecommendList(List<ShopRec> shopRecommendList) {
+    /**
+     * Sets shop recommend list.
+     *
+     * @param shopRecommendList the shop recommend list
+     */
+    public void setShopRecommendList(List<ShopRec> shopRecommendList) {
 		this.shopRecommendList = shopRecommendList;
 	}
-	public List<ShopRec> getShopRecommendList( ) {
+
+    /**
+     * Gets shop recommend list.
+     *
+     * @return the shop recommend list
+     */
+    public List<ShopRec> getShopRecommendList( ) {
 		return this.shopRecommendList;
 	}
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 触发现金红包活动
  *
  * @author auto create
- * @since 1.0, 2017-07-14 11:53:19
+ * @since 1.0, 2018-07-19 14:27:18
  */
 public class AlipayMarketingCampaignCashTriggerModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8464828272171187813L;
+	private static final long serialVersionUID = 3466716452787952836L;
 
 	/**
 	 * 现金活动号
@@ -26,6 +26,12 @@ public class AlipayMarketingCampaignCashTriggerModel extends AlipayObject {
 	private String loginId;
 
 	/**
+	 * 此字段如果传入金额，就忽略prize_type算法，按照传入的金额发奖。如果不传或者小于等于0，则按照活动创建时指定的prize_type为fixed或者random算法发奖
+	 */
+	@ApiField("order_price")
+	private String orderPrice;
+
+	/**
 	 * 领取红包的外部业务号，只由可由字母、数字、下划线组成。同一个活动中不可重复，相同的外部业务号会被幂等并返回之前的结果。不填时，系统会生成一个默认固定的外部业务号。
 	 */
 	@ApiField("out_biz_no")
@@ -37,31 +43,93 @@ public class AlipayMarketingCampaignCashTriggerModel extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
-	public String getCrowdNo() {
+    /**
+     * Gets crowd no.
+     *
+     * @return the crowd no
+     */
+    public String getCrowdNo() {
 		return this.crowdNo;
 	}
-	public void setCrowdNo(String crowdNo) {
+
+    /**
+     * Sets crowd no.
+     *
+     * @param crowdNo the crowd no
+     */
+    public void setCrowdNo(String crowdNo) {
 		this.crowdNo = crowdNo;
 	}
 
-	public String getLoginId() {
+    /**
+     * Gets login id.
+     *
+     * @return the login id
+     */
+    public String getLoginId() {
 		return this.loginId;
 	}
-	public void setLoginId(String loginId) {
+
+    /**
+     * Sets login id.
+     *
+     * @param loginId the login id
+     */
+    public void setLoginId(String loginId) {
 		this.loginId = loginId;
 	}
 
-	public String getOutBizNo() {
+    /**
+     * Gets order price.
+     *
+     * @return the order price
+     */
+    public String getOrderPrice() {
+		return this.orderPrice;
+	}
+
+    /**
+     * Sets order price.
+     *
+     * @param orderPrice the order price
+     */
+    public void setOrderPrice(String orderPrice) {
+		this.orderPrice = orderPrice;
+	}
+
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
-	public String getUserId() {
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
-	public void setUserId(String userId) {
+
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
 

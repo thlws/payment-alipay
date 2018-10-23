@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiCraftsmanDataWorkDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5225496955326577467L;
+	private static final long serialVersionUID = 3367398377175496752L;
 
 	/**
 	 * 服务商、服务商员工、商户、商户员工等口碑角色操作时必填，对应为《koubei.member.data.oauth.query》中的auth_code，默认有效期24小时；isv自身角色操作的时候，无需传该参数
@@ -35,24 +35,57 @@ public class KoubeiCraftsmanDataWorkDeleteModel extends AlipayObject {
 	@ApiField("string")
 	private List<String> workIds;
 
-	public String getAuthCode() {
+    /**
+     * Gets auth code.
+     *
+     * @return the auth code
+     */
+    public String getAuthCode() {
 		return this.authCode;
 	}
-	public void setAuthCode(String authCode) {
+
+    /**
+     * Sets auth code.
+     *
+     * @param authCode the auth code
+     */
+    public void setAuthCode(String authCode) {
 		this.authCode = authCode;
 	}
 
-	public String getCraftsmanId() {
+    /**
+     * Gets craftsman id.
+     *
+     * @return the craftsman id
+     */
+    public String getCraftsmanId() {
 		return this.craftsmanId;
 	}
-	public void setCraftsmanId(String craftsmanId) {
+
+    /**
+     * Sets craftsman id.
+     *
+     * @param craftsmanId the craftsman id
+     */
+    public void setCraftsmanId(String craftsmanId) {
 		this.craftsmanId = craftsmanId;
 	}
 
-	public List<String> getWorkIds() {
+    /**
+     * Gets work ids.
+     *
+     * @return the work ids
+     */
+    public List<String> getWorkIds() {
 		return this.workIds;
 	}
-	public void setWorkIds(List<String> workIds) {
+
+    /**
+     * Sets work ids.
+     *
+     * @param workIds the work ids
+     */
+    public void setWorkIds(List<String> workIds) {
 		this.workIds = workIds;
 	}
 

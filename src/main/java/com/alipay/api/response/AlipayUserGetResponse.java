@@ -7,13 +7,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.user.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-07-29 19:51:20
+ * @since 1.0, 2018-07-24 16:35:00
  */
 public class AlipayUserGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6755859627926821469L;
+	private static final long serialVersionUID = 6499842215762795477L;
 
 	/** 
 	 * 支付宝用户信息
@@ -21,10 +21,21 @@ public class AlipayUserGetResponse extends AlipayResponse {
 	@ApiField("alipay_user_detail")
 	private AlipayUserDetail alipayUserDetail;
 
-	public void setAlipayUserDetail(AlipayUserDetail alipayUserDetail) {
+    /**
+     * Sets alipay user detail.
+     *
+     * @param alipayUserDetail the alipay user detail
+     */
+    public void setAlipayUserDetail(AlipayUserDetail alipayUserDetail) {
 		this.alipayUserDetail = alipayUserDetail;
 	}
-	public AlipayUserDetail getAlipayUserDetail( ) {
+
+    /**
+     * Gets alipay user detail.
+     *
+     * @return the alipay user detail
+     */
+    public AlipayUserDetail getAlipayUserDetail( ) {
 		return this.alipayUserDetail;
 	}
 

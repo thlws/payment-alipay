@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FundBillListEco extends AlipayObject {
 
-	private static final long serialVersionUID = 6558996643138551486L;
+	private static final long serialVersionUID = 4752256745641611574L;
 
 	/**
 	 * 该支付工具类型所使用的金额
@@ -25,17 +25,39 @@ public class FundBillListEco extends AlipayObject {
 	@ApiField("fund_channel")
 	private String fundChannel;
 
-	public String getAmount() {
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public String getAmount() {
 		return this.amount;
 	}
-	public void setAmount(String amount) {
+
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
-	public String getFundChannel() {
+    /**
+     * Gets fund channel.
+     *
+     * @return the fund channel
+     */
+    public String getFundChannel() {
 		return this.fundChannel;
 	}
-	public void setFundChannel(String fundChannel) {
+
+    /**
+     * Sets fund channel.
+     *
+     * @param fundChannel the fund channel
+     */
+    public void setFundChannel(String fundChannel) {
 		this.fundChannel = fundChannel;
 	}
 

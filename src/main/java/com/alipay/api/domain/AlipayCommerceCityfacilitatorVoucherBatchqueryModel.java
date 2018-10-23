@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceCityfacilitatorVoucherBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4518943584959319615L;
+	private static final long serialVersionUID = 1587394314757362213L;
 
 	/**
 	 * 城市编码请参考查询：http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/201504/t20150415_712722.html；
@@ -30,17 +30,39 @@ public class AlipayCommerceCityfacilitatorVoucherBatchqueryModel extends AlipayO
 	@ApiField("string")
 	private List<String> tradeNos;
 
-	public String getCityCode() {
+    /**
+     * Gets city code.
+     *
+     * @return the city code
+     */
+    public String getCityCode() {
 		return this.cityCode;
 	}
-	public void setCityCode(String cityCode) {
+
+    /**
+     * Sets city code.
+     *
+     * @param cityCode the city code
+     */
+    public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
 	}
 
-	public List<String> getTradeNos() {
+    /**
+     * Gets trade nos.
+     *
+     * @return the trade nos
+     */
+    public List<String> getTradeNos() {
 		return this.tradeNos;
 	}
-	public void setTradeNos(List<String> tradeNos) {
+
+    /**
+     * Sets trade nos.
+     *
+     * @param tradeNos the trade nos
+     */
+    public void setTradeNos(List<String> tradeNos) {
 		this.tradeNos = tradeNos;
 	}
 

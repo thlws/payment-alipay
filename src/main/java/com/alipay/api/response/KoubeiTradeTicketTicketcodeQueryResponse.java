@@ -9,13 +9,19 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.trade.ticket.ticketcode.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-08-29 14:16:18
+ * @since 1.0, 2018-08-30 20:01:01
  */
 public class KoubeiTradeTicketTicketcodeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5734215245135727456L;
+	private static final long serialVersionUID = 3246419833418697452L;
+
+	/** 
+	 * 次卡场景，可用核销份数。仅当次卡场景有值
+	 */
+	@ApiField("available_quantity")
+	private String availableQuantity;
 
 	/** 
 	 * 用户购买时商品的现价
@@ -97,92 +103,266 @@ public class KoubeiTradeTicketTicketcodeQueryResponse extends AlipayResponse {
 	private List<TicketTransInfo> ticketTransInfoList;
 
 	/** 
+	 * 是否次卡。是次卡场景值为true，反之为false
+	 */
+	@ApiField("time_cards")
+	private String timeCards;
+
+	/** 
 	 * 券码对应的凭证资产id
 	 */
 	@ApiField("voucher_id")
 	private String voucherId;
 
-	public void setCurrentPrice(String currentPrice) {
+    /**
+     * Sets available quantity.
+     *
+     * @param availableQuantity the available quantity
+     */
+    public void setAvailableQuantity(String availableQuantity) {
+		this.availableQuantity = availableQuantity;
+	}
+
+    /**
+     * Gets available quantity.
+     *
+     * @return the available quantity
+     */
+    public String getAvailableQuantity( ) {
+		return this.availableQuantity;
+	}
+
+    /**
+     * Sets current price.
+     *
+     * @param currentPrice the current price
+     */
+    public void setCurrentPrice(String currentPrice) {
 		this.currentPrice = currentPrice;
 	}
-	public String getCurrentPrice( ) {
+
+    /**
+     * Gets current price.
+     *
+     * @return the current price
+     */
+    public String getCurrentPrice( ) {
 		return this.currentPrice;
 	}
 
-	public void setEffectDate(String effectDate) {
+    /**
+     * Sets effect date.
+     *
+     * @param effectDate the effect date
+     */
+    public void setEffectDate(String effectDate) {
 		this.effectDate = effectDate;
 	}
-	public String getEffectDate( ) {
+
+    /**
+     * Gets effect date.
+     *
+     * @return the effect date
+     */
+    public String getEffectDate( ) {
 		return this.effectDate;
 	}
 
-	public void setExpireDate(String expireDate) {
+    /**
+     * Sets expire date.
+     *
+     * @param expireDate the expire date
+     */
+    public void setExpireDate(String expireDate) {
 		this.expireDate = expireDate;
 	}
-	public String getExpireDate( ) {
+
+    /**
+     * Gets expire date.
+     *
+     * @return the expire date
+     */
+    public String getExpireDate( ) {
 		return this.expireDate;
 	}
 
-	public void setItemId(String itemId) {
+    /**
+     * Sets item id.
+     *
+     * @param itemId the item id
+     */
+    public void setItemId(String itemId) {
 		this.itemId = itemId;
 	}
-	public String getItemId( ) {
+
+    /**
+     * Gets item id.
+     *
+     * @return the item id
+     */
+    public String getItemId( ) {
 		return this.itemId;
 	}
 
-	public void setItemName(String itemName) {
+    /**
+     * Sets item name.
+     *
+     * @param itemName the item name
+     */
+    public void setItemName(String itemName) {
 		this.itemName = itemName;
 	}
-	public String getItemName( ) {
+
+    /**
+     * Gets item name.
+     *
+     * @return the item name
+     */
+    public String getItemName( ) {
 		return this.itemName;
 	}
 
-	public void setOrderNo(String orderNo) {
+    /**
+     * Sets order no.
+     *
+     * @param orderNo the order no
+     */
+    public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
-	public String getOrderNo( ) {
+
+    /**
+     * Gets order no.
+     *
+     * @return the order no
+     */
+    public String getOrderNo( ) {
 		return this.orderNo;
 	}
 
-	public void setOriginalPrice(String originalPrice) {
+    /**
+     * Sets original price.
+     *
+     * @param originalPrice the original price
+     */
+    public void setOriginalPrice(String originalPrice) {
 		this.originalPrice = originalPrice;
 	}
-	public String getOriginalPrice( ) {
+
+    /**
+     * Gets original price.
+     *
+     * @return the original price
+     */
+    public String getOriginalPrice( ) {
 		return this.originalPrice;
 	}
 
-	public void setTicketCode(String ticketCode) {
+    /**
+     * Sets ticket code.
+     *
+     * @param ticketCode the ticket code
+     */
+    public void setTicketCode(String ticketCode) {
 		this.ticketCode = ticketCode;
 	}
-	public String getTicketCode( ) {
+
+    /**
+     * Gets ticket code.
+     *
+     * @return the ticket code
+     */
+    public String getTicketCode( ) {
 		return this.ticketCode;
 	}
 
-	public void setTicketStatus(String ticketStatus) {
+    /**
+     * Sets ticket status.
+     *
+     * @param ticketStatus the ticket status
+     */
+    public void setTicketStatus(String ticketStatus) {
 		this.ticketStatus = ticketStatus;
 	}
-	public String getTicketStatus( ) {
+
+    /**
+     * Gets ticket status.
+     *
+     * @return the ticket status
+     */
+    public String getTicketStatus( ) {
 		return this.ticketStatus;
 	}
 
-	public void setTicketStatusDesc(String ticketStatusDesc) {
+    /**
+     * Sets ticket status desc.
+     *
+     * @param ticketStatusDesc the ticket status desc
+     */
+    public void setTicketStatusDesc(String ticketStatusDesc) {
 		this.ticketStatusDesc = ticketStatusDesc;
 	}
-	public String getTicketStatusDesc( ) {
+
+    /**
+     * Gets ticket status desc.
+     *
+     * @return the ticket status desc
+     */
+    public String getTicketStatusDesc( ) {
 		return this.ticketStatusDesc;
 	}
 
-	public void setTicketTransInfoList(List<TicketTransInfo> ticketTransInfoList) {
+    /**
+     * Sets ticket trans info list.
+     *
+     * @param ticketTransInfoList the ticket trans info list
+     */
+    public void setTicketTransInfoList(List<TicketTransInfo> ticketTransInfoList) {
 		this.ticketTransInfoList = ticketTransInfoList;
 	}
-	public List<TicketTransInfo> getTicketTransInfoList( ) {
+
+    /**
+     * Gets ticket trans info list.
+     *
+     * @return the ticket trans info list
+     */
+    public List<TicketTransInfo> getTicketTransInfoList( ) {
 		return this.ticketTransInfoList;
 	}
 
-	public void setVoucherId(String voucherId) {
+    /**
+     * Sets time cards.
+     *
+     * @param timeCards the time cards
+     */
+    public void setTimeCards(String timeCards) {
+		this.timeCards = timeCards;
+	}
+
+    /**
+     * Gets time cards.
+     *
+     * @return the time cards
+     */
+    public String getTimeCards( ) {
+		return this.timeCards;
+	}
+
+    /**
+     * Sets voucher id.
+     *
+     * @param voucherId the voucher id
+     */
+    public void setVoucherId(String voucherId) {
 		this.voucherId = voucherId;
 	}
-	public String getVoucherId( ) {
+
+    /**
+     * Gets voucher id.
+     *
+     * @return the voucher id
+     */
+    public String getVoucherId( ) {
 		return this.voucherId;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PrizeCustomMenu extends AlipayObject {
 
-	private static final long serialVersionUID = 5315559234614881493L;
+	private static final long serialVersionUID = 7396562517138456139L;
 
 	/**
 	 * 菜单详情
@@ -25,17 +25,39 @@ public class PrizeCustomMenu extends AlipayObject {
 	@ApiField("title")
 	private String title;
 
-	public String getText() {
+    /**
+     * Gets text.
+     *
+     * @return the text
+     */
+    public String getText() {
 		return this.text;
 	}
-	public void setText(String text) {
+
+    /**
+     * Sets text.
+     *
+     * @param text the text
+     */
+    public void setText(String text) {
 		this.text = text;
 	}
 
-	public String getTitle() {
+    /**
+     * Gets title.
+     *
+     * @return the title
+     */
+    public String getTitle() {
 		return this.title;
 	}
-	public void setTitle(String title) {
+
+    /**
+     * Sets title.
+     *
+     * @param title the title
+     */
+    public void setTitle(String title) {
 		this.title = title;
 	}
 

@@ -10,13 +10,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.daowei.order.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-20 14:00:38
+ * @since 1.0, 2018-03-23 13:23:59
  */
 public class AlipayDaoweiOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2324725932845345313L;
+	private static final long serialVersionUID = 5425433167399729813L;
 
 	/** 
 	 * 到位业务定义的订单买家id，全局唯一，商户可以根据该ID唯一确定买家的信息
@@ -104,101 +104,255 @@ public class AlipayDaoweiOrderQueryResponse extends AlipayResponse {
 	@ApiField("total_amount")
 	private String totalAmount;
 
-	public void setBuyerUserId(String buyerUserId) {
+    /**
+     * Sets buyer user id.
+     *
+     * @param buyerUserId the buyer user id
+     */
+    public void setBuyerUserId(String buyerUserId) {
 		this.buyerUserId = buyerUserId;
 	}
-	public String getBuyerUserId( ) {
+
+    /**
+     * Gets buyer user id.
+     *
+     * @return the buyer user id
+     */
+    public String getBuyerUserId( ) {
 		return this.buyerUserId;
 	}
 
-	public void setGmtCreate(String gmtCreate) {
+    /**
+     * Sets gmt create.
+     *
+     * @param gmtCreate the gmt create
+     */
+    public void setGmtCreate(String gmtCreate) {
 		this.gmtCreate = gmtCreate;
 	}
-	public String getGmtCreate( ) {
+
+    /**
+     * Gets gmt create.
+     *
+     * @return the gmt create
+     */
+    public String getGmtCreate( ) {
 		return this.gmtCreate;
 	}
 
-	public void setGmtModified(String gmtModified) {
+    /**
+     * Sets gmt modified.
+     *
+     * @param gmtModified the gmt modified
+     */
+    public void setGmtModified(String gmtModified) {
 		this.gmtModified = gmtModified;
 	}
-	public String getGmtModified( ) {
+
+    /**
+     * Gets gmt modified.
+     *
+     * @return the gmt modified
+     */
+    public String getGmtModified( ) {
 		return this.gmtModified;
 	}
 
-	public void setGmtPayment(String gmtPayment) {
+    /**
+     * Sets gmt payment.
+     *
+     * @param gmtPayment the gmt payment
+     */
+    public void setGmtPayment(String gmtPayment) {
 		this.gmtPayment = gmtPayment;
 	}
-	public String getGmtPayment( ) {
+
+    /**
+     * Gets gmt payment.
+     *
+     * @return the gmt payment
+     */
+    public String getGmtPayment( ) {
 		return this.gmtPayment;
 	}
 
-	public void setGmtRefund(String gmtRefund) {
+    /**
+     * Sets gmt refund.
+     *
+     * @param gmtRefund the gmt refund
+     */
+    public void setGmtRefund(String gmtRefund) {
 		this.gmtRefund = gmtRefund;
 	}
-	public String getGmtRefund( ) {
+
+    /**
+     * Gets gmt refund.
+     *
+     * @return the gmt refund
+     */
+    public String getGmtRefund( ) {
 		return this.gmtRefund;
 	}
 
-	public void setLogisticsInfo(OrderLogisticsInfo logisticsInfo) {
+    /**
+     * Sets logistics info.
+     *
+     * @param logisticsInfo the logistics info
+     */
+    public void setLogisticsInfo(OrderLogisticsInfo logisticsInfo) {
 		this.logisticsInfo = logisticsInfo;
 	}
-	public OrderLogisticsInfo getLogisticsInfo( ) {
+
+    /**
+     * Gets logistics info.
+     *
+     * @return the logistics info
+     */
+    public OrderLogisticsInfo getLogisticsInfo( ) {
 		return this.logisticsInfo;
 	}
 
-	public void setMemo(String memo) {
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
-	public String getMemo( ) {
+
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo( ) {
 		return this.memo;
 	}
 
-	public void setOrderNo(String orderNo) {
+    /**
+     * Sets order no.
+     *
+     * @param orderNo the order no
+     */
+    public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
-	public String getOrderNo( ) {
+
+    /**
+     * Gets order no.
+     *
+     * @return the order no
+     */
+    public String getOrderNo( ) {
 		return this.orderNo;
 	}
 
-	public void setOrderStatus(String orderStatus) {
+    /**
+     * Sets order status.
+     *
+     * @param orderStatus the order status
+     */
+    public void setOrderStatus(String orderStatus) {
 		this.orderStatus = orderStatus;
 	}
-	public String getOrderStatus( ) {
+
+    /**
+     * Gets order status.
+     *
+     * @return the order status
+     */
+    public String getOrderStatus( ) {
 		return this.orderStatus;
 	}
 
-	public void setPaymentAmount(String paymentAmount) {
+    /**
+     * Sets payment amount.
+     *
+     * @param paymentAmount the payment amount
+     */
+    public void setPaymentAmount(String paymentAmount) {
 		this.paymentAmount = paymentAmount;
 	}
-	public String getPaymentAmount( ) {
+
+    /**
+     * Gets payment amount.
+     *
+     * @return the payment amount
+     */
+    public String getPaymentAmount( ) {
 		return this.paymentAmount;
 	}
 
-	public void setRealAmount(String realAmount) {
+    /**
+     * Sets real amount.
+     *
+     * @param realAmount the real amount
+     */
+    public void setRealAmount(String realAmount) {
 		this.realAmount = realAmount;
 	}
-	public String getRealAmount( ) {
+
+    /**
+     * Gets real amount.
+     *
+     * @return the real amount
+     */
+    public String getRealAmount( ) {
 		return this.realAmount;
 	}
 
-	public void setRefundAmount(String refundAmount) {
+    /**
+     * Sets refund amount.
+     *
+     * @param refundAmount the refund amount
+     */
+    public void setRefundAmount(String refundAmount) {
 		this.refundAmount = refundAmount;
 	}
-	public String getRefundAmount( ) {
+
+    /**
+     * Gets refund amount.
+     *
+     * @return the refund amount
+     */
+    public String getRefundAmount( ) {
 		return this.refundAmount;
 	}
 
-	public void setServiceOrderList(List<ServiceOrderInfo> serviceOrderList) {
+    /**
+     * Sets service order list.
+     *
+     * @param serviceOrderList the service order list
+     */
+    public void setServiceOrderList(List<ServiceOrderInfo> serviceOrderList) {
 		this.serviceOrderList = serviceOrderList;
 	}
-	public List<ServiceOrderInfo> getServiceOrderList( ) {
+
+    /**
+     * Gets service order list.
+     *
+     * @return the service order list
+     */
+    public List<ServiceOrderInfo> getServiceOrderList( ) {
 		return this.serviceOrderList;
 	}
 
-	public void setTotalAmount(String totalAmount) {
+    /**
+     * Sets total amount.
+     *
+     * @param totalAmount the total amount
+     */
+    public void setTotalAmount(String totalAmount) {
 		this.totalAmount = totalAmount;
 	}
-	public String getTotalAmount( ) {
+
+    /**
+     * Gets total amount.
+     *
+     * @return the total amount
+     */
+    public String getTotalAmount( ) {
 		return this.totalAmount;
 	}
 

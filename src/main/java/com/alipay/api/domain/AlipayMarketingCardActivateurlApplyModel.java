@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员卡领卡链接获取接口
  *
  * @author auto create
- * @since 1.0, 2017-07-21 20:48:40
+ * @since 1.0, 2017-10-30 11:50:27
  */
 public class AlipayMarketingCardActivateurlApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6476547711427537813L;
+	private static final long serialVersionUID = 4212377333247471661L;
 
 	/**
 	 * 会员卡开卡表单提交后回调地址。
@@ -21,7 +21,8 @@ public class AlipayMarketingCardActivateurlApplyModel extends AlipayObject {
 	private String callback;
 
 	/**
-	 * 需要关注的生活号AppId。若需要在领卡页面展示“关注生活号”提示，可设置此参数为待关注的生活号AppId。*/
+	 * 需要关注的生活号AppId。若需要在领卡页面展示“关注生活号”提示，需开通生活号并绑定会员卡。生活号快速接入详见：https://doc.open.alipay.com/docs/doc.htm?treeId=193&articleId=105933&docType=1
+	 */
 	@ApiField("follow_app_id")
 	private String followAppId;
 
@@ -37,31 +38,75 @@ public class AlipayMarketingCardActivateurlApplyModel extends AlipayObject {
 	@ApiField("template_id")
 	private String templateId;
 
-	public String getCallback() {
+    /**
+     * Gets callback.
+     *
+     * @return the callback
+     */
+    public String getCallback() {
 		return this.callback;
 	}
-	public void setCallback(String callback) {
+
+    /**
+     * Sets callback.
+     *
+     * @param callback the callback
+     */
+    public void setCallback(String callback) {
 		this.callback = callback;
 	}
 
-	public String getFollowAppId() {
+    /**
+     * Gets follow app id.
+     *
+     * @return the follow app id
+     */
+    public String getFollowAppId() {
 		return this.followAppId;
 	}
-	public void setFollowAppId(String followAppId) {
+
+    /**
+     * Sets follow app id.
+     *
+     * @param followAppId the follow app id
+     */
+    public void setFollowAppId(String followAppId) {
 		this.followAppId = followAppId;
 	}
 
-	public String getOutString() {
+    /**
+     * Gets out string.
+     *
+     * @return the out string
+     */
+    public String getOutString() {
 		return this.outString;
 	}
-	public void setOutString(String outString) {
+
+    /**
+     * Sets out string.
+     *
+     * @param outString the out string
+     */
+    public void setOutString(String outString) {
 		this.outString = outString;
 	}
 
-	public String getTemplateId() {
+    /**
+     * Gets template id.
+     *
+     * @return the template id
+     */
+    public String getTemplateId() {
 		return this.templateId;
 	}
-	public void setTemplateId(String templateId) {
+
+    /**
+     * Sets template id.
+     *
+     * @param templateId the template id
+     */
+    public void setTemplateId(String templateId) {
 		this.templateId = templateId;
 	}
 

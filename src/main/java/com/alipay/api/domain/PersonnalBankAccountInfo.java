@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PersonnalBankAccountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2254725396432696459L;
+	private static final long serialVersionUID = 3267416826958133382L;
 
 	/**
 	 * 填入的银行账号对应的银行预留手机号
@@ -37,31 +37,75 @@ public class PersonnalBankAccountInfo extends AlipayObject {
 	@ApiField("personal_bank_holder_name")
 	private String personalBankHolderName;
 
-	public String getPersonalBankAccountMobile() {
+    /**
+     * Gets personal bank account mobile.
+     *
+     * @return the personal bank account mobile
+     */
+    public String getPersonalBankAccountMobile() {
 		return this.personalBankAccountMobile;
 	}
-	public void setPersonalBankAccountMobile(String personalBankAccountMobile) {
+
+    /**
+     * Sets personal bank account mobile.
+     *
+     * @param personalBankAccountMobile the personal bank account mobile
+     */
+    public void setPersonalBankAccountMobile(String personalBankAccountMobile) {
 		this.personalBankAccountMobile = personalBankAccountMobile;
 	}
 
-	public String getPersonalBankCardNo() {
+    /**
+     * Gets personal bank card no.
+     *
+     * @return the personal bank card no
+     */
+    public String getPersonalBankCardNo() {
 		return this.personalBankCardNo;
 	}
-	public void setPersonalBankCardNo(String personalBankCardNo) {
+
+    /**
+     * Sets personal bank card no.
+     *
+     * @param personalBankCardNo the personal bank card no
+     */
+    public void setPersonalBankCardNo(String personalBankCardNo) {
 		this.personalBankCardNo = personalBankCardNo;
 	}
 
-	public String getPersonalBankHolderCertno() {
+    /**
+     * Gets personal bank holder certno.
+     *
+     * @return the personal bank holder certno
+     */
+    public String getPersonalBankHolderCertno() {
 		return this.personalBankHolderCertno;
 	}
-	public void setPersonalBankHolderCertno(String personalBankHolderCertno) {
+
+    /**
+     * Sets personal bank holder certno.
+     *
+     * @param personalBankHolderCertno the personal bank holder certno
+     */
+    public void setPersonalBankHolderCertno(String personalBankHolderCertno) {
 		this.personalBankHolderCertno = personalBankHolderCertno;
 	}
 
-	public String getPersonalBankHolderName() {
+    /**
+     * Gets personal bank holder name.
+     *
+     * @return the personal bank holder name
+     */
+    public String getPersonalBankHolderName() {
 		return this.personalBankHolderName;
 	}
-	public void setPersonalBankHolderName(String personalBankHolderName) {
+
+    /**
+     * Sets personal bank holder name.
+     *
+     * @param personalBankHolderName the personal bank holder name
+     */
+    public void setPersonalBankHolderName(String personalBankHolderName) {
 		this.personalBankHolderName = personalBankHolderName;
 	}
 

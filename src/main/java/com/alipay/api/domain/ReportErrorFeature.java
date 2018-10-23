@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ReportErrorFeature extends AlipayObject {
 
-	private static final long serialVersionUID = 6187315589748786252L;
+	private static final long serialVersionUID = 8187463899342553298L;
 
 	/**
 	 * 桌号
@@ -19,10 +19,21 @@ public class ReportErrorFeature extends AlipayObject {
 	@ApiField("table_num")
 	private String tableNum;
 
-	public String getTableNum() {
+    /**
+     * Gets table num.
+     *
+     * @return the table num
+     */
+    public String getTableNum() {
 		return this.tableNum;
 	}
-	public void setTableNum(String tableNum) {
+
+    /**
+     * Sets table num.
+     *
+     * @param tableNum the table num
+     */
+    public void setTableNum(String tableNum) {
 		this.tableNum = tableNum;
 	}
 

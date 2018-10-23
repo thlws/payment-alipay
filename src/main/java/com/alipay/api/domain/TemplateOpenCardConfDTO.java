@@ -1,17 +1,27 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 模板开卡配置
  *
  * @author auto create
- * @since 1.0, 2017-08-21 19:54:47
+ * @since 1.0, 2018-04-17 17:57:49
  */
 public class TemplateOpenCardConfDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6723796221133382473L;
+	private static final long serialVersionUID = 1425823296225663567L;
+
+	/**
+	 * 领卡权益信息
+	 */
+	@ApiListField("card_rights")
+	@ApiField("template_rights_content_d_t_o")
+	private List<TemplateRightsContentDTO> cardRights;
 
 	/**
 	 * 配置，预留字段，暂时不用
@@ -38,31 +48,93 @@ MER：直连商户
 	@ApiField("source_app_id")
 	private String sourceAppId;
 
-	public String getConf() {
+    /**
+     * Gets card rights.
+     *
+     * @return the card rights
+     */
+    public List<TemplateRightsContentDTO> getCardRights() {
+		return this.cardRights;
+	}
+
+    /**
+     * Sets card rights.
+     *
+     * @param cardRights the card rights
+     */
+    public void setCardRights(List<TemplateRightsContentDTO> cardRights) {
+		this.cardRights = cardRights;
+	}
+
+    /**
+     * Gets conf.
+     *
+     * @return the conf
+     */
+    public String getConf() {
 		return this.conf;
 	}
-	public void setConf(String conf) {
+
+    /**
+     * Sets conf.
+     *
+     * @param conf the conf
+     */
+    public void setConf(String conf) {
 		this.conf = conf;
 	}
 
-	public String getOpenCardSourceType() {
+    /**
+     * Gets open card source type.
+     *
+     * @return the open card source type
+     */
+    public String getOpenCardSourceType() {
 		return this.openCardSourceType;
 	}
-	public void setOpenCardSourceType(String openCardSourceType) {
+
+    /**
+     * Sets open card source type.
+     *
+     * @param openCardSourceType the open card source type
+     */
+    public void setOpenCardSourceType(String openCardSourceType) {
 		this.openCardSourceType = openCardSourceType;
 	}
 
-	public String getOpenCardUrl() {
+    /**
+     * Gets open card url.
+     *
+     * @return the open card url
+     */
+    public String getOpenCardUrl() {
 		return this.openCardUrl;
 	}
-	public void setOpenCardUrl(String openCardUrl) {
+
+    /**
+     * Sets open card url.
+     *
+     * @param openCardUrl the open card url
+     */
+    public void setOpenCardUrl(String openCardUrl) {
 		this.openCardUrl = openCardUrl;
 	}
 
-	public String getSourceAppId() {
+    /**
+     * Gets source app id.
+     *
+     * @return the source app id
+     */
+    public String getSourceAppId() {
 		return this.sourceAppId;
 	}
-	public void setSourceAppId(String sourceAppId) {
+
+    /**
+     * Sets source app id.
+     *
+     * @param sourceAppId the source app id
+     */
+    public void setSourceAppId(String sourceAppId) {
 		this.sourceAppId = sourceAppId;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SingleDstCampPrizeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7479794379949319641L;
+	private static final long serialVersionUID = 3694252431564195875L;
 
 	/**
 	 * 预算id
@@ -31,24 +31,57 @@ public class SingleDstCampPrizeModel extends AlipayObject {
 	@ApiField("reduce_amt")
 	private String reduceAmt;
 
-	public String getBudgetId() {
+    /**
+     * Gets budget id.
+     *
+     * @return the budget id
+     */
+    public String getBudgetId() {
 		return this.budgetId;
 	}
-	public void setBudgetId(String budgetId) {
+
+    /**
+     * Sets budget id.
+     *
+     * @param budgetId the budget id
+     */
+    public void setBudgetId(String budgetId) {
 		this.budgetId = budgetId;
 	}
 
-	public String getId() {
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
+    public String getId() {
 		return this.id;
 	}
-	public void setId(String id) {
+
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
+    public void setId(String id) {
 		this.id = id;
 	}
 
-	public String getReduceAmt() {
+    /**
+     * Gets reduce amt.
+     *
+     * @return the reduce amt
+     */
+    public String getReduceAmt() {
 		return this.reduceAmt;
 	}
-	public void setReduceAmt(String reduceAmt) {
+
+    /**
+     * Sets reduce amt.
+     *
+     * @param reduceAmt the reduce amt
+     */
+    public void setReduceAmt(String reduceAmt) {
 		this.reduceAmt = reduceAmt;
 	}
 

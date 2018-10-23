@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MaitainShopProduct extends AlipayObject {
 
-	private static final long serialVersionUID = 7366573896944965755L;
+	private static final long serialVersionUID = 6315397434191188414L;
 
 	/**
 	 * 销售价格（元），服务售卖价格，展示给用户。无优惠时的下单支付金额。
@@ -139,87 +139,219 @@ public class MaitainShopProduct extends AlipayObject {
 	@ApiField("status")
 	private String status;
 
-	public String getOffPrice() {
+    /**
+     * Gets off price.
+     *
+     * @return the off price
+     */
+    public String getOffPrice() {
 		return this.offPrice;
 	}
-	public void setOffPrice(String offPrice) {
+
+    /**
+     * Sets off price.
+     *
+     * @param offPrice the off price
+     */
+    public void setOffPrice(String offPrice) {
 		this.offPrice = offPrice;
 	}
 
-	public String getOrigPrice() {
+    /**
+     * Gets orig price.
+     *
+     * @return the orig price
+     */
+    public String getOrigPrice() {
 		return this.origPrice;
 	}
-	public void setOrigPrice(String origPrice) {
+
+    /**
+     * Sets orig price.
+     *
+     * @param origPrice the orig price
+     */
+    public void setOrigPrice(String origPrice) {
 		this.origPrice = origPrice;
 	}
 
-	public String getOutPrivilegeId() {
+    /**
+     * Gets out privilege id.
+     *
+     * @return the out privilege id
+     */
+    public String getOutPrivilegeId() {
 		return this.outPrivilegeId;
 	}
-	public void setOutPrivilegeId(String outPrivilegeId) {
+
+    /**
+     * Sets out privilege id.
+     *
+     * @param outPrivilegeId the out privilege id
+     */
+    public void setOutPrivilegeId(String outPrivilegeId) {
 		this.outPrivilegeId = outPrivilegeId;
 	}
 
-	public String getOutShopId() {
+    /**
+     * Gets out shop id.
+     *
+     * @return the out shop id
+     */
+    public String getOutShopId() {
 		return this.outShopId;
 	}
-	public void setOutShopId(String outShopId) {
+
+    /**
+     * Sets out shop id.
+     *
+     * @param outShopId the out shop id
+     */
+    public void setOutShopId(String outShopId) {
 		this.outShopId = outShopId;
 	}
 
-	public String getPrivilegeCloseTime() {
+    /**
+     * Gets privilege close time.
+     *
+     * @return the privilege close time
+     */
+    public String getPrivilegeCloseTime() {
 		return this.privilegeCloseTime;
 	}
-	public void setPrivilegeCloseTime(String privilegeCloseTime) {
+
+    /**
+     * Sets privilege close time.
+     *
+     * @param privilegeCloseTime the privilege close time
+     */
+    public void setPrivilegeCloseTime(String privilegeCloseTime) {
 		this.privilegeCloseTime = privilegeCloseTime;
 	}
 
-	public String getPrivilegePrice() {
+    /**
+     * Gets privilege price.
+     *
+     * @return the privilege price
+     */
+    public String getPrivilegePrice() {
 		return this.privilegePrice;
 	}
-	public void setPrivilegePrice(String privilegePrice) {
+
+    /**
+     * Sets privilege price.
+     *
+     * @param privilegePrice the privilege price
+     */
+    public void setPrivilegePrice(String privilegePrice) {
 		this.privilegePrice = privilegePrice;
 	}
 
-	public String getPrivilegeStartTime() {
+    /**
+     * Gets privilege start time.
+     *
+     * @return the privilege start time
+     */
+    public String getPrivilegeStartTime() {
 		return this.privilegeStartTime;
 	}
-	public void setPrivilegeStartTime(String privilegeStartTime) {
+
+    /**
+     * Sets privilege start time.
+     *
+     * @param privilegeStartTime the privilege start time
+     */
+    public void setPrivilegeStartTime(String privilegeStartTime) {
 		this.privilegeStartTime = privilegeStartTime;
 	}
 
-	public String getPrivilegeTags() {
+    /**
+     * Gets privilege tags.
+     *
+     * @return the privilege tags
+     */
+    public String getPrivilegeTags() {
 		return this.privilegeTags;
 	}
-	public void setPrivilegeTags(String privilegeTags) {
+
+    /**
+     * Sets privilege tags.
+     *
+     * @param privilegeTags the privilege tags
+     */
+    public void setPrivilegeTags(String privilegeTags) {
 		this.privilegeTags = privilegeTags;
 	}
 
-	public String getProductDesc() {
+    /**
+     * Gets product desc.
+     *
+     * @return the product desc
+     */
+    public String getProductDesc() {
 		return this.productDesc;
 	}
-	public void setProductDesc(String productDesc) {
+
+    /**
+     * Sets product desc.
+     *
+     * @param productDesc the product desc
+     */
+    public void setProductDesc(String productDesc) {
 		this.productDesc = productDesc;
 	}
 
-	public String getProductName() {
+    /**
+     * Gets product name.
+     *
+     * @return the product name
+     */
+    public String getProductName() {
 		return this.productName;
 	}
-	public void setProductName(String productName) {
+
+    /**
+     * Sets product name.
+     *
+     * @param productName the product name
+     */
+    public void setProductName(String productName) {
 		this.productName = productName;
 	}
 
-	public Long getServiceCategoryId() {
+    /**
+     * Gets service category id.
+     *
+     * @return the service category id
+     */
+    public Long getServiceCategoryId() {
 		return this.serviceCategoryId;
 	}
-	public void setServiceCategoryId(Long serviceCategoryId) {
+
+    /**
+     * Sets service category id.
+     *
+     * @param serviceCategoryId the service category id
+     */
+    public void setServiceCategoryId(Long serviceCategoryId) {
 		this.serviceCategoryId = serviceCategoryId;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 

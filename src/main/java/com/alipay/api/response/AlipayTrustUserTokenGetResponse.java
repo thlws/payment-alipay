@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.trust.user.token.get response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2015-05-06 18:13:09
  */
 public class AlipayTrustUserTokenGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5251216833327537468L;
+	private static final long serialVersionUID = 8554346471765552241L;
 
 	/** 
 	 * 访问令牌
@@ -26,17 +26,39 @@ public class AlipayTrustUserTokenGetResponse extends AlipayResponse {
 	@ApiField("refresh_token")
 	private String refreshToken;
 
-	public void setAccessToken(String accessToken) {
+    /**
+     * Sets access token.
+     *
+     * @param accessToken the access token
+     */
+    public void setAccessToken(String accessToken) {
 		this.accessToken = accessToken;
 	}
-	public String getAccessToken( ) {
+
+    /**
+     * Gets access token.
+     *
+     * @return the access token
+     */
+    public String getAccessToken( ) {
 		return this.accessToken;
 	}
 
-	public void setRefreshToken(String refreshToken) {
+    /**
+     * Sets refresh token.
+     *
+     * @param refreshToken the refresh token
+     */
+    public void setRefreshToken(String refreshToken) {
 		this.refreshToken = refreshToken;
 	}
-	public String getRefreshToken( ) {
+
+    /**
+     * Gets refresh token.
+     *
+     * @return the refresh token
+     */
+    public String getRefreshToken( ) {
 		return this.refreshToken;
 	}
 

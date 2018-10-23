@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class BenefitGradePoint extends AlipayObject {
 
-	private static final long serialVersionUID = 8746617896521495116L;
+	private static final long serialVersionUID = 7588118753989349294L;
 
 	/**
 	 * 蚂蚁会员权益配置的ID
@@ -41,31 +41,75 @@ public class BenefitGradePoint extends AlipayObject {
 	@ApiField("own_grades")
 	private String ownGrades;
 
-	public String getBenefitId() {
+    /**
+     * Gets benefit id.
+     *
+     * @return the benefit id
+     */
+    public String getBenefitId() {
 		return this.benefitId;
 	}
-	public void setBenefitId(String benefitId) {
+
+    /**
+     * Sets benefit id.
+     *
+     * @param benefitId the benefit id
+     */
+    public void setBenefitId(String benefitId) {
 		this.benefitId = benefitId;
 	}
 
-	public List<GradeDiscountPoint> getGradePoints() {
+    /**
+     * Gets grade points.
+     *
+     * @return the grade points
+     */
+    public List<GradeDiscountPoint> getGradePoints() {
 		return this.gradePoints;
 	}
-	public void setGradePoints(List<GradeDiscountPoint> gradePoints) {
+
+    /**
+     * Sets grade points.
+     *
+     * @param gradePoints the grade points
+     */
+    public void setGradePoints(List<GradeDiscountPoint> gradePoints) {
 		this.gradePoints = gradePoints;
 	}
 
-	public String getOriginalPoint() {
+    /**
+     * Gets original point.
+     *
+     * @return the original point
+     */
+    public String getOriginalPoint() {
 		return this.originalPoint;
 	}
-	public void setOriginalPoint(String originalPoint) {
+
+    /**
+     * Sets original point.
+     *
+     * @param originalPoint the original point
+     */
+    public void setOriginalPoint(String originalPoint) {
 		this.originalPoint = originalPoint;
 	}
 
-	public String getOwnGrades() {
+    /**
+     * Gets own grades.
+     *
+     * @return the own grades
+     */
+    public String getOwnGrades() {
 		return this.ownGrades;
 	}
-	public void setOwnGrades(String ownGrades) {
+
+    /**
+     * Sets own grades.
+     *
+     * @param ownGrades the own grades
+     */
+    public void setOwnGrades(String ownGrades) {
 		this.ownGrades = ownGrades;
 	}
 

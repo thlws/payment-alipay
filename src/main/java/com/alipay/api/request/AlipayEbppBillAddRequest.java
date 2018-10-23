@@ -9,9 +9,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.ebpp.bill.add request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-30 10:52:35
+ * @since 1.0, 2018-08-01 17:06:55
  */
 public class AlipayEbppBillAddRequest implements AlipayRequest<AlipayEbppBillAddResponse> {
 
@@ -88,101 +88,255 @@ public class AlipayEbppBillAddRequest implements AlipayRequest<AlipayEbppBillAdd
 	 */
 	private String trafficRegulations;
 
-	public void setBankBillNo(String bankBillNo) {
+    /**
+     * Sets bank bill no.
+     *
+     * @param bankBillNo the bank bill no
+     */
+    public void setBankBillNo(String bankBillNo) {
 		this.bankBillNo = bankBillNo;
 	}
-	public String getBankBillNo() {
+
+    /**
+     * Gets bank bill no.
+     *
+     * @return the bank bill no
+     */
+    public String getBankBillNo() {
 		return this.bankBillNo;
 	}
 
-	public void setBillDate(String billDate) {
+    /**
+     * Sets bill date.
+     *
+     * @param billDate the bill date
+     */
+    public void setBillDate(String billDate) {
 		this.billDate = billDate;
 	}
-	public String getBillDate() {
+
+    /**
+     * Gets bill date.
+     *
+     * @return the bill date
+     */
+    public String getBillDate() {
 		return this.billDate;
 	}
 
-	public void setBillKey(String billKey) {
+    /**
+     * Sets bill key.
+     *
+     * @param billKey the bill key
+     */
+    public void setBillKey(String billKey) {
 		this.billKey = billKey;
 	}
-	public String getBillKey() {
+
+    /**
+     * Gets bill key.
+     *
+     * @return the bill key
+     */
+    public String getBillKey() {
 		return this.billKey;
 	}
 
-	public void setChargeInst(String chargeInst) {
+    /**
+     * Sets charge inst.
+     *
+     * @param chargeInst the charge inst
+     */
+    public void setChargeInst(String chargeInst) {
 		this.chargeInst = chargeInst;
 	}
-	public String getChargeInst() {
+
+    /**
+     * Gets charge inst.
+     *
+     * @return the charge inst
+     */
+    public String getChargeInst() {
 		return this.chargeInst;
 	}
 
-	public void setExtendField(String extendField) {
+    /**
+     * Sets extend field.
+     *
+     * @param extendField the extend field
+     */
+    public void setExtendField(String extendField) {
 		this.extendField = extendField;
 	}
-	public String getExtendField() {
+
+    /**
+     * Gets extend field.
+     *
+     * @return the extend field
+     */
+    public String getExtendField() {
 		return this.extendField;
 	}
 
-	public void setMerchantOrderNo(String merchantOrderNo) {
+    /**
+     * Sets merchant order no.
+     *
+     * @param merchantOrderNo the merchant order no
+     */
+    public void setMerchantOrderNo(String merchantOrderNo) {
 		this.merchantOrderNo = merchantOrderNo;
 	}
-	public String getMerchantOrderNo() {
+
+    /**
+     * Gets merchant order no.
+     *
+     * @return the merchant order no
+     */
+    public String getMerchantOrderNo() {
 		return this.merchantOrderNo;
 	}
 
-	public void setMobile(String mobile) {
+    /**
+     * Sets mobile.
+     *
+     * @param mobile the mobile
+     */
+    public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
-	public String getMobile() {
+
+    /**
+     * Gets mobile.
+     *
+     * @return the mobile
+     */
+    public String getMobile() {
 		return this.mobile;
 	}
 
-	public void setOrderType(String orderType) {
+    /**
+     * Sets order type.
+     *
+     * @param orderType the order type
+     */
+    public void setOrderType(String orderType) {
 		this.orderType = orderType;
 	}
-	public String getOrderType() {
+
+    /**
+     * Gets order type.
+     *
+     * @return the order type
+     */
+    public String getOrderType() {
 		return this.orderType;
 	}
 
-	public void setOwnerName(String ownerName) {
+    /**
+     * Sets owner name.
+     *
+     * @param ownerName the owner name
+     */
+    public void setOwnerName(String ownerName) {
 		this.ownerName = ownerName;
 	}
-	public String getOwnerName() {
+
+    /**
+     * Gets owner name.
+     *
+     * @return the owner name
+     */
+    public String getOwnerName() {
 		return this.ownerName;
 	}
 
-	public void setPayAmount(String payAmount) {
+    /**
+     * Sets pay amount.
+     *
+     * @param payAmount the pay amount
+     */
+    public void setPayAmount(String payAmount) {
 		this.payAmount = payAmount;
 	}
-	public String getPayAmount() {
+
+    /**
+     * Gets pay amount.
+     *
+     * @return the pay amount
+     */
+    public String getPayAmount() {
 		return this.payAmount;
 	}
 
-	public void setServiceAmount(String serviceAmount) {
+    /**
+     * Sets service amount.
+     *
+     * @param serviceAmount the service amount
+     */
+    public void setServiceAmount(String serviceAmount) {
 		this.serviceAmount = serviceAmount;
 	}
-	public String getServiceAmount() {
+
+    /**
+     * Gets service amount.
+     *
+     * @return the service amount
+     */
+    public String getServiceAmount() {
 		return this.serviceAmount;
 	}
 
-	public void setSubOrderType(String subOrderType) {
+    /**
+     * Sets sub order type.
+     *
+     * @param subOrderType the sub order type
+     */
+    public void setSubOrderType(String subOrderType) {
 		this.subOrderType = subOrderType;
 	}
-	public String getSubOrderType() {
+
+    /**
+     * Gets sub order type.
+     *
+     * @return the sub order type
+     */
+    public String getSubOrderType() {
 		return this.subOrderType;
 	}
 
-	public void setTrafficLocation(String trafficLocation) {
+    /**
+     * Sets traffic location.
+     *
+     * @param trafficLocation the traffic location
+     */
+    public void setTrafficLocation(String trafficLocation) {
 		this.trafficLocation = trafficLocation;
 	}
-	public String getTrafficLocation() {
+
+    /**
+     * Gets traffic location.
+     *
+     * @return the traffic location
+     */
+    public String getTrafficLocation() {
 		return this.trafficLocation;
 	}
 
-	public void setTrafficRegulations(String trafficRegulations) {
+    /**
+     * Sets traffic regulations.
+     *
+     * @param trafficRegulations the traffic regulations
+     */
+    public void setTrafficRegulations(String trafficRegulations) {
 		this.trafficRegulations = trafficRegulations;
 	}
-	public String getTrafficRegulations() {
+
+    /**
+     * Gets traffic regulations.
+     *
+     * @return the traffic regulations
+     */
+    public String getTrafficRegulations() {
 		return this.trafficRegulations;
 	}
 	private String terminalType;
@@ -267,7 +421,13 @@ public class AlipayEbppBillAddRequest implements AlipayRequest<AlipayEbppBillAdd
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

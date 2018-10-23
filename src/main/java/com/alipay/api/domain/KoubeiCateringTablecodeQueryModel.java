@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiCateringTablecodeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2665858658127319954L;
+	private static final long serialVersionUID = 5256837353443761957L;
 
 	/**
 	 * 用户在isv界面通过扫一扫传入的url文本
@@ -19,10 +19,21 @@ public class KoubeiCateringTablecodeQueryModel extends AlipayObject {
 	@ApiField("url_context")
 	private String urlContext;
 
-	public String getUrlContext() {
+    /**
+     * Gets url context.
+     *
+     * @return the url context
+     */
+    public String getUrlContext() {
 		return this.urlContext;
 	}
-	public void setUrlContext(String urlContext) {
+
+    /**
+     * Sets url context.
+     *
+     * @param urlContext the url context
+     */
+    public void setUrlContext(String urlContext) {
 		this.urlContext = urlContext;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsCoverage extends AlipayObject {
 
-	private static final long serialVersionUID = 1486435944648411398L;
+	private static final long serialVersionUID = 4224526654863932587L;
 
 	/**
 	 * 险种名称
@@ -62,59 +62,147 @@ public class InsCoverage extends AlipayObject {
 	@ApiField("sum_insured")
 	private Long sumInsured;
 
-	public String getCoverageName() {
+    /**
+     * Gets coverage name.
+     *
+     * @return the coverage name
+     */
+    public String getCoverageName() {
 		return this.coverageName;
 	}
-	public void setCoverageName(String coverageName) {
+
+    /**
+     * Sets coverage name.
+     *
+     * @param coverageName the coverage name
+     */
+    public void setCoverageName(String coverageName) {
 		this.coverageName = coverageName;
 	}
 
-	public String getCoverageNo() {
+    /**
+     * Gets coverage no.
+     *
+     * @return the coverage no
+     */
+    public String getCoverageNo() {
 		return this.coverageNo;
 	}
-	public void setCoverageNo(String coverageNo) {
+
+    /**
+     * Sets coverage no.
+     *
+     * @param coverageNo the coverage no
+     */
+    public void setCoverageNo(String coverageNo) {
 		this.coverageNo = coverageNo;
 	}
 
-	public String getEffectEndTime() {
+    /**
+     * Gets effect end time.
+     *
+     * @return the effect end time
+     */
+    public String getEffectEndTime() {
 		return this.effectEndTime;
 	}
-	public void setEffectEndTime(String effectEndTime) {
+
+    /**
+     * Sets effect end time.
+     *
+     * @param effectEndTime the effect end time
+     */
+    public void setEffectEndTime(String effectEndTime) {
 		this.effectEndTime = effectEndTime;
 	}
 
-	public String getEffectStartTime() {
+    /**
+     * Gets effect start time.
+     *
+     * @return the effect start time
+     */
+    public String getEffectStartTime() {
 		return this.effectStartTime;
 	}
-	public void setEffectStartTime(String effectStartTime) {
+
+    /**
+     * Sets effect start time.
+     *
+     * @param effectStartTime the effect start time
+     */
+    public void setEffectStartTime(String effectStartTime) {
 		this.effectStartTime = effectStartTime;
 	}
 
-	public Long getIop() {
+    /**
+     * Gets iop.
+     *
+     * @return the iop
+     */
+    public Long getIop() {
 		return this.iop;
 	}
-	public void setIop(Long iop) {
+
+    /**
+     * Sets iop.
+     *
+     * @param iop the iop
+     */
+    public void setIop(Long iop) {
 		this.iop = iop;
 	}
 
-	public Long getIopPremium() {
+    /**
+     * Gets iop premium.
+     *
+     * @return the iop premium
+     */
+    public Long getIopPremium() {
 		return this.iopPremium;
 	}
-	public void setIopPremium(Long iopPremium) {
+
+    /**
+     * Sets iop premium.
+     *
+     * @param iopPremium the iop premium
+     */
+    public void setIopPremium(Long iopPremium) {
 		this.iopPremium = iopPremium;
 	}
 
-	public Long getPremium() {
+    /**
+     * Gets premium.
+     *
+     * @return the premium
+     */
+    public Long getPremium() {
 		return this.premium;
 	}
-	public void setPremium(Long premium) {
+
+    /**
+     * Sets premium.
+     *
+     * @param premium the premium
+     */
+    public void setPremium(Long premium) {
 		this.premium = premium;
 	}
 
-	public Long getSumInsured() {
+    /**
+     * Gets sum insured.
+     *
+     * @return the sum insured
+     */
+    public Long getSumInsured() {
 		return this.sumInsured;
 	}
-	public void setSumInsured(Long sumInsured) {
+
+    /**
+     * Sets sum insured.
+     *
+     * @param sumInsured the sum insured
+     */
+    public void setSumInsured(Long sumInsured) {
 		this.sumInsured = sumInsured;
 	}
 

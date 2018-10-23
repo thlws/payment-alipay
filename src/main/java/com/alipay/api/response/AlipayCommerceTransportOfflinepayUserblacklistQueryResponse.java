@@ -8,13 +8,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.commerce.transport.offlinepay.userblacklist.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-09-04 17:13:07
  */
 public class AlipayCommerceTransportOfflinepayUserblacklistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5886736368443576918L;
+	private static final long serialVersionUID = 1833553321618963751L;
 
 	/** 
 	 * 黑名单用户ID
@@ -23,10 +23,21 @@ public class AlipayCommerceTransportOfflinepayUserblacklistQueryResponse extends
 	@ApiField("string")
 	private List<String> blackList;
 
-	public void setBlackList(List<String> blackList) {
+    /**
+     * Sets black list.
+     *
+     * @param blackList the black list
+     */
+    public void setBlackList(List<String> blackList) {
 		this.blackList = blackList;
 	}
-	public List<String> getBlackList( ) {
+
+    /**
+     * Gets black list.
+     *
+     * @return the black list
+     */
+    public List<String> getBlackList( ) {
 		return this.blackList;
 	}
 

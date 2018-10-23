@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外汇交易请求对象
  *
  * @author auto create
- * @since 1.0, 2017-07-20 10:41:43
+ * @since 1.0, 2018-04-13 17:35:02
  */
 public class TradeRequestVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6615894864745419462L;
+	private static final long serialVersionUID = 6642465725294241597L;
 
 	/**
 	 * globalnet收单机构
@@ -342,381 +342,975 @@ MAN- 无论如何都受理请求汇率
 	@ApiField("value_date")
 	private String valueDate;
 
-	public String getAcquirer() {
+    /**
+     * Gets acquirer.
+     *
+     * @return the acquirer
+     */
+    public String getAcquirer() {
 		return this.acquirer;
 	}
-	public void setAcquirer(String acquirer) {
+
+    /**
+     * Sets acquirer.
+     *
+     * @param acquirer the acquirer
+     */
+    public void setAcquirer(String acquirer) {
 		this.acquirer = acquirer;
 	}
 
-	public String getAcquirerMemId() {
+    /**
+     * Gets acquirer mem id.
+     *
+     * @return the acquirer mem id
+     */
+    public String getAcquirerMemId() {
 		return this.acquirerMemId;
 	}
-	public void setAcquirerMemId(String acquirerMemId) {
+
+    /**
+     * Sets acquirer mem id.
+     *
+     * @param acquirerMemId the acquirer mem id
+     */
+    public void setAcquirerMemId(String acquirerMemId) {
 		this.acquirerMemId = acquirerMemId;
 	}
 
-	public String getAmlStatus() {
+    /**
+     * Gets aml status.
+     *
+     * @return the aml status
+     */
+    public String getAmlStatus() {
 		return this.amlStatus;
 	}
-	public void setAmlStatus(String amlStatus) {
+
+    /**
+     * Sets aml status.
+     *
+     * @param amlStatus the aml status
+     */
+    public void setAmlStatus(String amlStatus) {
 		this.amlStatus = amlStatus;
 	}
 
-	public String getBizEvCode() {
+    /**
+     * Gets biz ev code.
+     *
+     * @return the biz ev code
+     */
+    public String getBizEvCode() {
 		return this.bizEvCode;
 	}
-	public void setBizEvCode(String bizEvCode) {
+
+    /**
+     * Sets biz ev code.
+     *
+     * @param bizEvCode the biz ev code
+     */
+    public void setBizEvCode(String bizEvCode) {
 		this.bizEvCode = bizEvCode;
 	}
 
-	public String getBizPdCode() {
+    /**
+     * Gets biz pd code.
+     *
+     * @return the biz pd code
+     */
+    public String getBizPdCode() {
 		return this.bizPdCode;
 	}
-	public void setBizPdCode(String bizPdCode) {
+
+    /**
+     * Sets biz pd code.
+     *
+     * @param bizPdCode the biz pd code
+     */
+    public void setBizPdCode(String bizPdCode) {
 		this.bizPdCode = bizPdCode;
 	}
 
-	public Date getClientAdviceTimestamp() {
+    /**
+     * Gets client advice timestamp.
+     *
+     * @return the client advice timestamp
+     */
+    public Date getClientAdviceTimestamp() {
 		return this.clientAdviceTimestamp;
 	}
-	public void setClientAdviceTimestamp(Date clientAdviceTimestamp) {
+
+    /**
+     * Sets client advice timestamp.
+     *
+     * @param clientAdviceTimestamp the client advice timestamp
+     */
+    public void setClientAdviceTimestamp(Date clientAdviceTimestamp) {
 		this.clientAdviceTimestamp = clientAdviceTimestamp;
 	}
 
-	public String getClientBusinessId() {
+    /**
+     * Gets client business id.
+     *
+     * @return the client business id
+     */
+    public String getClientBusinessId() {
 		return this.clientBusinessId;
 	}
-	public void setClientBusinessId(String clientBusinessId) {
+
+    /**
+     * Sets client business id.
+     *
+     * @param clientBusinessId the client business id
+     */
+    public void setClientBusinessId(String clientBusinessId) {
 		this.clientBusinessId = clientBusinessId;
 	}
 
-	public String getClientId() {
+    /**
+     * Gets client id.
+     *
+     * @return the client id
+     */
+    public String getClientId() {
 		return this.clientId;
 	}
-	public void setClientId(String clientId) {
+
+    /**
+     * Sets client id.
+     *
+     * @param clientId the client id
+     */
+    public void setClientId(String clientId) {
 		this.clientId = clientId;
 	}
 
-	public String getClientMessageId() {
+    /**
+     * Gets client message id.
+     *
+     * @return the client message id
+     */
+    public String getClientMessageId() {
 		return this.clientMessageId;
 	}
-	public void setClientMessageId(String clientMessageId) {
+
+    /**
+     * Sets client message id.
+     *
+     * @param clientMessageId the client message id
+     */
+    public void setClientMessageId(String clientMessageId) {
 		this.clientMessageId = clientMessageId;
 	}
 
-	public String getClientRef() {
+    /**
+     * Gets client ref.
+     *
+     * @return the client ref
+     */
+    public String getClientRef() {
 		return this.clientRef;
 	}
-	public void setClientRef(String clientRef) {
+
+    /**
+     * Sets client ref.
+     *
+     * @param clientRef the client ref
+     */
+    public void setClientRef(String clientRef) {
 		this.clientRef = clientRef;
 	}
 
-	public String getClientSystem() {
+    /**
+     * Gets client system.
+     *
+     * @return the client system
+     */
+    public String getClientSystem() {
 		return this.clientSystem;
 	}
-	public void setClientSystem(String clientSystem) {
+
+    /**
+     * Sets client system.
+     *
+     * @param clientSystem the client system
+     */
+    public void setClientSystem(String clientSystem) {
 		this.clientSystem = clientSystem;
 	}
 
-	public String getCnlEvCode() {
+    /**
+     * Gets cnl ev code.
+     *
+     * @return the cnl ev code
+     */
+    public String getCnlEvCode() {
 		return this.cnlEvCode;
 	}
-	public void setCnlEvCode(String cnlEvCode) {
+
+    /**
+     * Sets cnl ev code.
+     *
+     * @param cnlEvCode the cnl ev code
+     */
+    public void setCnlEvCode(String cnlEvCode) {
 		this.cnlEvCode = cnlEvCode;
 	}
 
-	public String getCnlNo() {
+    /**
+     * Gets cnl no.
+     *
+     * @return the cnl no
+     */
+    public String getCnlNo() {
 		return this.cnlNo;
 	}
-	public void setCnlNo(String cnlNo) {
+
+    /**
+     * Sets cnl no.
+     *
+     * @param cnlNo the cnl no
+     */
+    public void setCnlNo(String cnlNo) {
 		this.cnlNo = cnlNo;
 	}
 
-	public String getCnlPdCode() {
+    /**
+     * Gets cnl pd code.
+     *
+     * @return the cnl pd code
+     */
+    public String getCnlPdCode() {
 		return this.cnlPdCode;
 	}
-	public void setCnlPdCode(String cnlPdCode) {
+
+    /**
+     * Sets cnl pd code.
+     *
+     * @param cnlPdCode the cnl pd code
+     */
+    public void setCnlPdCode(String cnlPdCode) {
 		this.cnlPdCode = cnlPdCode;
 	}
 
-	public String getContraAmount() {
+    /**
+     * Gets contra amount.
+     *
+     * @return the contra amount
+     */
+    public String getContraAmount() {
 		return this.contraAmount;
 	}
-	public void setContraAmount(String contraAmount) {
+
+    /**
+     * Sets contra amount.
+     *
+     * @param contraAmount the contra amount
+     */
+    public void setContraAmount(String contraAmount) {
 		this.contraAmount = contraAmount;
 	}
 
-	public String getContraCcy() {
+    /**
+     * Gets contra ccy.
+     *
+     * @return the contra ccy
+     */
+    public String getContraCcy() {
 		return this.contraCcy;
 	}
-	public void setContraCcy(String contraCcy) {
+
+    /**
+     * Sets contra ccy.
+     *
+     * @param contraCcy the contra ccy
+     */
+    public void setContraCcy(String contraCcy) {
 		this.contraCcy = contraCcy;
 	}
 
-	public String getExtension() {
+    /**
+     * Gets extension.
+     *
+     * @return the extension
+     */
+    public String getExtension() {
 		return this.extension;
 	}
-	public void setExtension(String extension) {
+
+    /**
+     * Sets extension.
+     *
+     * @param extension the extension
+     */
+    public void setExtension(String extension) {
 		this.extension = extension;
 	}
 
-	public String getInstEntity() {
+    /**
+     * Gets inst entity.
+     *
+     * @return the inst entity
+     */
+    public String getInstEntity() {
 		return this.instEntity;
 	}
-	public void setInstEntity(String instEntity) {
+
+    /**
+     * Sets inst entity.
+     *
+     * @param instEntity the inst entity
+     */
+    public void setInstEntity(String instEntity) {
 		this.instEntity = instEntity;
 	}
 
-	public String getIsLocked() {
+    /**
+     * Gets is locked.
+     *
+     * @return the is locked
+     */
+    public String getIsLocked() {
 		return this.isLocked;
 	}
-	public void setIsLocked(String isLocked) {
+
+    /**
+     * Sets is locked.
+     *
+     * @param isLocked the is locked
+     */
+    public void setIsLocked(String isLocked) {
 		this.isLocked = isLocked;
 	}
 
-	public String getIssuer() {
+    /**
+     * Gets issuer.
+     *
+     * @return the issuer
+     */
+    public String getIssuer() {
 		return this.issuer;
 	}
-	public void setIssuer(String issuer) {
+
+    /**
+     * Sets issuer.
+     *
+     * @param issuer the issuer
+     */
+    public void setIssuer(String issuer) {
 		this.issuer = issuer;
 	}
 
-	public String getIssuerMemId() {
+    /**
+     * Gets issuer mem id.
+     *
+     * @return the issuer mem id
+     */
+    public String getIssuerMemId() {
 		return this.issuerMemId;
 	}
-	public void setIssuerMemId(String issuerMemId) {
+
+    /**
+     * Sets issuer mem id.
+     *
+     * @param issuerMemId the issuer mem id
+     */
+    public void setIssuerMemId(String issuerMemId) {
 		this.issuerMemId = issuerMemId;
 	}
 
-	public String getMerchantMcc() {
+    /**
+     * Gets merchant mcc.
+     *
+     * @return the merchant mcc
+     */
+    public String getMerchantMcc() {
 		return this.merchantMcc;
 	}
-	public void setMerchantMcc(String merchantMcc) {
+
+    /**
+     * Sets merchant mcc.
+     *
+     * @param merchantMcc the merchant mcc
+     */
+    public void setMerchantMcc(String merchantMcc) {
 		this.merchantMcc = merchantMcc;
 	}
 
-	public String getMsgType() {
+    /**
+     * Gets msg type.
+     *
+     * @return the msg type
+     */
+    public String getMsgType() {
 		return this.msgType;
 	}
-	public void setMsgType(String msgType) {
+
+    /**
+     * Sets msg type.
+     *
+     * @param msgType the msg type
+     */
+    public void setMsgType(String msgType) {
 		this.msgType = msgType;
 	}
 
-	public String getOperateType() {
+    /**
+     * Gets operate type.
+     *
+     * @return the operate type
+     */
+    public String getOperateType() {
 		return this.operateType;
 	}
-	public void setOperateType(String operateType) {
+
+    /**
+     * Sets operate type.
+     *
+     * @param operateType the operate type
+     */
+    public void setOperateType(String operateType) {
 		this.operateType = operateType;
 	}
 
-	public String getPartialTrade() {
+    /**
+     * Gets partial trade.
+     *
+     * @return the partial trade
+     */
+    public String getPartialTrade() {
 		return this.partialTrade;
 	}
-	public void setPartialTrade(String partialTrade) {
+
+    /**
+     * Sets partial trade.
+     *
+     * @param partialTrade the partial trade
+     */
+    public void setPartialTrade(String partialTrade) {
 		this.partialTrade = partialTrade;
 	}
 
-	public String getPartnerId() {
+    /**
+     * Gets partner id.
+     *
+     * @return the partner id
+     */
+    public String getPartnerId() {
 		return this.partnerId;
 	}
-	public void setPartnerId(String partnerId) {
+
+    /**
+     * Sets partner id.
+     *
+     * @param partnerId the partner id
+     */
+    public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}
 
-	public String getPaymentProvider() {
+    /**
+     * Gets payment provider.
+     *
+     * @return the payment provider
+     */
+    public String getPaymentProvider() {
 		return this.paymentProvider;
 	}
-	public void setPaymentProvider(String paymentProvider) {
+
+    /**
+     * Sets payment provider.
+     *
+     * @param paymentProvider the payment provider
+     */
+    public void setPaymentProvider(String paymentProvider) {
 		this.paymentProvider = paymentProvider;
 	}
 
-	public String getPaymentType() {
+    /**
+     * Gets payment type.
+     *
+     * @return the payment type
+     */
+    public String getPaymentType() {
 		return this.paymentType;
 	}
-	public void setPaymentType(String paymentType) {
+
+    /**
+     * Sets payment type.
+     *
+     * @param paymentType the payment type
+     */
+    public void setPaymentType(String paymentType) {
 		this.paymentType = paymentType;
 	}
 
-	public String getProductId() {
+    /**
+     * Gets product id.
+     *
+     * @return the product id
+     */
+    public String getProductId() {
 		return this.productId;
 	}
-	public void setProductId(String productId) {
+
+    /**
+     * Sets product id.
+     *
+     * @param productId the product id
+     */
+    public void setProductId(String productId) {
 		this.productId = productId;
 	}
 
-	public String getProfileId() {
+    /**
+     * Gets profile id.
+     *
+     * @return the profile id
+     */
+    public String getProfileId() {
 		return this.profileId;
 	}
-	public void setProfileId(String profileId) {
+
+    /**
+     * Sets profile id.
+     *
+     * @param profileId the profile id
+     */
+    public void setProfileId(String profileId) {
 		this.profileId = profileId;
 	}
 
-	public String getRateBaseCcy() {
+    /**
+     * Gets rate base ccy.
+     *
+     * @return the rate base ccy
+     */
+    public String getRateBaseCcy() {
 		return this.rateBaseCcy;
 	}
-	public void setRateBaseCcy(String rateBaseCcy) {
+
+    /**
+     * Sets rate base ccy.
+     *
+     * @param rateBaseCcy the rate base ccy
+     */
+    public void setRateBaseCcy(String rateBaseCcy) {
 		this.rateBaseCcy = rateBaseCcy;
 	}
 
-	public String getRateRef() {
+    /**
+     * Gets rate ref.
+     *
+     * @return the rate ref
+     */
+    public String getRateRef() {
 		return this.rateRef;
 	}
-	public void setRateRef(String rateRef) {
+
+    /**
+     * Sets rate ref.
+     *
+     * @param rateRef the rate ref
+     */
+    public void setRateRef(String rateRef) {
 		this.rateRef = rateRef;
 	}
 
-	public String getRateRequestMode() {
+    /**
+     * Gets rate request mode.
+     *
+     * @return the rate request mode
+     */
+    public String getRateRequestMode() {
 		return this.rateRequestMode;
 	}
-	public void setRateRequestMode(String rateRequestMode) {
+
+    /**
+     * Sets rate request mode.
+     *
+     * @param rateRequestMode the rate request mode
+     */
+    public void setRateRequestMode(String rateRequestMode) {
 		this.rateRequestMode = rateRequestMode;
 	}
 
-	public String getRateType() {
+    /**
+     * Gets rate type.
+     *
+     * @return the rate type
+     */
+    public String getRateType() {
 		return this.rateType;
 	}
-	public void setRateType(String rateType) {
+
+    /**
+     * Sets rate type.
+     *
+     * @param rateType the rate type
+     */
+    public void setRateType(String rateType) {
 		this.rateType = rateType;
 	}
 
-	public String getReferenceField1() {
+    /**
+     * Gets reference field 1.
+     *
+     * @return the reference field 1
+     */
+    public String getReferenceField1() {
 		return this.referenceField1;
 	}
-	public void setReferenceField1(String referenceField1) {
+
+    /**
+     * Sets reference field 1.
+     *
+     * @param referenceField1 the reference field 1
+     */
+    public void setReferenceField1(String referenceField1) {
 		this.referenceField1 = referenceField1;
 	}
 
-	public String getReferenceField2() {
+    /**
+     * Gets reference field 2.
+     *
+     * @return the reference field 2
+     */
+    public String getReferenceField2() {
 		return this.referenceField2;
 	}
-	public void setReferenceField2(String referenceField2) {
+
+    /**
+     * Sets reference field 2.
+     *
+     * @param referenceField2 the reference field 2
+     */
+    public void setReferenceField2(String referenceField2) {
 		this.referenceField2 = referenceField2;
 	}
 
-	public String getReferenceField3() {
+    /**
+     * Gets reference field 3.
+     *
+     * @return the reference field 3
+     */
+    public String getReferenceField3() {
 		return this.referenceField3;
 	}
-	public void setReferenceField3(String referenceField3) {
+
+    /**
+     * Sets reference field 3.
+     *
+     * @param referenceField3 the reference field 3
+     */
+    public void setReferenceField3(String referenceField3) {
 		this.referenceField3 = referenceField3;
 	}
 
-	public String getRelatedMessageId() {
+    /**
+     * Gets related message id.
+     *
+     * @return the related message id
+     */
+    public String getRelatedMessageId() {
 		return this.relatedMessageId;
 	}
-	public void setRelatedMessageId(String relatedMessageId) {
+
+    /**
+     * Sets related message id.
+     *
+     * @param relatedMessageId the related message id
+     */
+    public void setRelatedMessageId(String relatedMessageId) {
 		this.relatedMessageId = relatedMessageId;
 	}
 
-	public String getRequestMessageId() {
+    /**
+     * Gets request message id.
+     *
+     * @return the request message id
+     */
+    public String getRequestMessageId() {
 		return this.requestMessageId;
 	}
-	public void setRequestMessageId(String requestMessageId) {
+
+    /**
+     * Sets request message id.
+     *
+     * @param requestMessageId the request message id
+     */
+    public void setRequestMessageId(String requestMessageId) {
 		this.requestMessageId = requestMessageId;
 	}
 
-	public String getRequestedRate() {
+    /**
+     * Gets requested rate.
+     *
+     * @return the requested rate
+     */
+    public String getRequestedRate() {
 		return this.requestedRate;
 	}
-	public void setRequestedRate(String requestedRate) {
+
+    /**
+     * Sets requested rate.
+     *
+     * @param requestedRate the requested rate
+     */
+    public void setRequestedRate(String requestedRate) {
 		this.requestedRate = requestedRate;
 	}
 
-	public String getSettlementAmount() {
+    /**
+     * Gets settlement amount.
+     *
+     * @return the settlement amount
+     */
+    public String getSettlementAmount() {
 		return this.settlementAmount;
 	}
-	public void setSettlementAmount(String settlementAmount) {
+
+    /**
+     * Sets settlement amount.
+     *
+     * @param settlementAmount the settlement amount
+     */
+    public void setSettlementAmount(String settlementAmount) {
 		this.settlementAmount = settlementAmount;
 	}
 
-	public String getSettlementCcy() {
+    /**
+     * Gets settlement ccy.
+     *
+     * @return the settlement ccy
+     */
+    public String getSettlementCcy() {
 		return this.settlementCcy;
 	}
-	public void setSettlementCcy(String settlementCcy) {
+
+    /**
+     * Sets settlement ccy.
+     *
+     * @param settlementCcy the settlement ccy
+     */
+    public void setSettlementCcy(String settlementCcy) {
 		this.settlementCcy = settlementCcy;
 	}
 
-	public String getSide() {
+    /**
+     * Gets side.
+     *
+     * @return the side
+     */
+    public String getSide() {
 		return this.side;
 	}
-	public void setSide(String side) {
+
+    /**
+     * Sets side.
+     *
+     * @param side the side
+     */
+    public void setSide(String side) {
 		this.side = side;
 	}
 
-	public String getSlipPoint() {
+    /**
+     * Gets slip point.
+     *
+     * @return the slip point
+     */
+    public String getSlipPoint() {
 		return this.slipPoint;
 	}
-	public void setSlipPoint(String slipPoint) {
+
+    /**
+     * Sets slip point.
+     *
+     * @param slipPoint the slip point
+     */
+    public void setSlipPoint(String slipPoint) {
 		this.slipPoint = slipPoint;
 	}
 
-	public String getTimeZone() {
+    /**
+     * Gets time zone.
+     *
+     * @return the time zone
+     */
+    public String getTimeZone() {
 		return this.timeZone;
 	}
-	public void setTimeZone(String timeZone) {
+
+    /**
+     * Sets time zone.
+     *
+     * @param timeZone the time zone
+     */
+    public void setTimeZone(String timeZone) {
 		this.timeZone = timeZone;
 	}
 
-	public String getTntInstId() {
+    /**
+     * Gets tnt inst id.
+     *
+     * @return the tnt inst id
+     */
+    public String getTntInstId() {
 		return this.tntInstId;
 	}
-	public void setTntInstId(String tntInstId) {
+
+    /**
+     * Sets tnt inst id.
+     *
+     * @param tntInstId the tnt inst id
+     */
+    public void setTntInstId(String tntInstId) {
 		this.tntInstId = tntInstId;
 	}
 
-	public Date getTradeTimestamp() {
+    /**
+     * Gets trade timestamp.
+     *
+     * @return the trade timestamp
+     */
+    public Date getTradeTimestamp() {
 		return this.tradeTimestamp;
 	}
-	public void setTradeTimestamp(Date tradeTimestamp) {
+
+    /**
+     * Sets trade timestamp.
+     *
+     * @param tradeTimestamp the trade timestamp
+     */
+    public void setTradeTimestamp(Date tradeTimestamp) {
 		this.tradeTimestamp = tradeTimestamp;
 	}
 
-	public String getTradeType() {
+    /**
+     * Gets trade type.
+     *
+     * @return the trade type
+     */
+    public String getTradeType() {
 		return this.tradeType;
 	}
-	public void setTradeType(String tradeType) {
+
+    /**
+     * Sets trade type.
+     *
+     * @param tradeType the trade type
+     */
+    public void setTradeType(String tradeType) {
 		this.tradeType = tradeType;
 	}
 
-	public String getTransactionAmount() {
+    /**
+     * Gets transaction amount.
+     *
+     * @return the transaction amount
+     */
+    public String getTransactionAmount() {
 		return this.transactionAmount;
 	}
-	public void setTransactionAmount(String transactionAmount) {
+
+    /**
+     * Sets transaction amount.
+     *
+     * @param transactionAmount the transaction amount
+     */
+    public void setTransactionAmount(String transactionAmount) {
 		this.transactionAmount = transactionAmount;
 	}
 
-	public String getTransactionCcy() {
+    /**
+     * Gets transaction ccy.
+     *
+     * @return the transaction ccy
+     */
+    public String getTransactionCcy() {
 		return this.transactionCcy;
 	}
-	public void setTransactionCcy(String transactionCcy) {
+
+    /**
+     * Sets transaction ccy.
+     *
+     * @param transactionCcy the transaction ccy
+     */
+    public void setTransactionCcy(String transactionCcy) {
 		this.transactionCcy = transactionCcy;
 	}
 
-	public String getTransactionCcyType() {
+    /**
+     * Gets transaction ccy type.
+     *
+     * @return the transaction ccy type
+     */
+    public String getTransactionCcyType() {
 		return this.transactionCcyType;
 	}
-	public void setTransactionCcyType(String transactionCcyType) {
+
+    /**
+     * Sets transaction ccy type.
+     *
+     * @param transactionCcyType the transaction ccy type
+     */
+    public void setTransactionCcyType(String transactionCcyType) {
 		this.transactionCcyType = transactionCcyType;
 	}
 
-	public String getTransactionType() {
+    /**
+     * Gets transaction type.
+     *
+     * @return the transaction type
+     */
+    public String getTransactionType() {
 		return this.transactionType;
 	}
-	public void setTransactionType(String transactionType) {
+
+    /**
+     * Sets transaction type.
+     *
+     * @param transactionType the transaction type
+     */
+    public void setTransactionType(String transactionType) {
 		this.transactionType = transactionType;
 	}
 
-	public String getUserId() {
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
-	public void setUserId(String userId) {
+
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
 
-	public String getValueDate() {
+    /**
+     * Gets value date.
+     *
+     * @return the value date
+     */
+    public String getValueDate() {
 		return this.valueDate;
 	}
-	public void setValueDate(String valueDate) {
+
+    /**
+     * Sets value date.
+     *
+     * @param valueDate the value date
+     */
+    public void setValueDate(String valueDate) {
 		this.valueDate = valueDate;
 	}
 

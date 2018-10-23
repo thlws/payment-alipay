@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户授权的开放表单信息
  *
  * @author auto create
- * @since 1.0, 2017-03-13 15:28:02
+ * @since 1.0, 2017-10-13 16:55:38
  */
 public class AlipayMarketingCardActivateformQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6418576621195436181L;
+	private static final long serialVersionUID = 6167727671746821539L;
 
 	/**
 	 * 开放表单信息查询业务类型，可选类型如下：
@@ -32,24 +32,57 @@ MEMBER_CARD -- 会员卡开卡
 	@ApiField("template_id")
 	private String templateId;
 
-	public String getBizType() {
+    /**
+     * Gets biz type.
+     *
+     * @return the biz type
+     */
+    public String getBizType() {
 		return this.bizType;
 	}
-	public void setBizType(String bizType) {
+
+    /**
+     * Sets biz type.
+     *
+     * @param bizType the biz type
+     */
+    public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
-	public String getRequestId() {
+    /**
+     * Gets request id.
+     *
+     * @return the request id
+     */
+    public String getRequestId() {
 		return this.requestId;
 	}
-	public void setRequestId(String requestId) {
+
+    /**
+     * Sets request id.
+     *
+     * @param requestId the request id
+     */
+    public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
 
-	public String getTemplateId() {
+    /**
+     * Gets template id.
+     *
+     * @return the template id
+     */
+    public String getTemplateId() {
 		return this.templateId;
 	}
-	public void setTemplateId(String templateId) {
+
+    /**
+     * Sets template id.
+     *
+     * @param templateId the template id
+     */
+    public void setTemplateId(String templateId) {
 		this.templateId = templateId;
 	}
 

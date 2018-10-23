@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.market.shop.modify response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-07-19 16:50:03
  */
 public class AlipayOfflineMarketShopModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2151634713623516263L;
+	private static final long serialVersionUID = 2573831982543389215L;
 
 	/** 
 	 * 修改门店请求受理成功后返回的支付宝流水ID，根据此ID调用接口
@@ -45,38 +45,93 @@ alipay.offline.market.applyorder.batchquery，能够获取当前修改店铺请�
 	@ApiField("is_show")
 	private String isShow;
 
-	public void setApplyId(String applyId) {
+    /**
+     * Sets apply id.
+     *
+     * @param applyId the apply id
+     */
+    public void setApplyId(String applyId) {
 		this.applyId = applyId;
 	}
-	public String getApplyId( ) {
+
+    /**
+     * Gets apply id.
+     *
+     * @return the apply id
+     */
+    public String getApplyId( ) {
 		return this.applyId;
 	}
 
-	public void setAuditDesc(String auditDesc) {
+    /**
+     * Sets audit desc.
+     *
+     * @param auditDesc the audit desc
+     */
+    public void setAuditDesc(String auditDesc) {
 		this.auditDesc = auditDesc;
 	}
-	public String getAuditDesc( ) {
+
+    /**
+     * Gets audit desc.
+     *
+     * @return the audit desc
+     */
+    public String getAuditDesc( ) {
 		return this.auditDesc;
 	}
 
-	public void setAuditStatus(String auditStatus) {
+    /**
+     * Sets audit status.
+     *
+     * @param auditStatus the audit status
+     */
+    public void setAuditStatus(String auditStatus) {
 		this.auditStatus = auditStatus;
 	}
-	public String getAuditStatus( ) {
+
+    /**
+     * Gets audit status.
+     *
+     * @return the audit status
+     */
+    public String getAuditStatus( ) {
 		return this.auditStatus;
 	}
 
-	public void setIsOnline(String isOnline) {
+    /**
+     * Sets is online.
+     *
+     * @param isOnline the is online
+     */
+    public void setIsOnline(String isOnline) {
 		this.isOnline = isOnline;
 	}
-	public String getIsOnline( ) {
+
+    /**
+     * Gets is online.
+     *
+     * @return the is online
+     */
+    public String getIsOnline( ) {
 		return this.isOnline;
 	}
 
-	public void setIsShow(String isShow) {
+    /**
+     * Sets is show.
+     *
+     * @param isShow the is show
+     */
+    public void setIsShow(String isShow) {
 		this.isShow = isShow;
 	}
-	public String getIsShow( ) {
+
+    /**
+     * Gets is show.
+     *
+     * @return the is show
+     */
+    public String getIsShow( ) {
 		return this.isShow;
 	}
 

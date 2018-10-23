@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.gis.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-04-14 15:21:53
  */
 public class AlipayOpenPublicGisQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3337744612955857259L;
+	private static final long serialVersionUID = 6278526191947887172L;
 
 	/** 
 	 * 精确度
@@ -44,38 +44,93 @@ public class AlipayOpenPublicGisQueryResponse extends AlipayResponse {
 	@ApiField("province")
 	private String province;
 
-	public void setAccuracy(String accuracy) {
+    /**
+     * Sets accuracy.
+     *
+     * @param accuracy the accuracy
+     */
+    public void setAccuracy(String accuracy) {
 		this.accuracy = accuracy;
 	}
-	public String getAccuracy( ) {
+
+    /**
+     * Gets accuracy.
+     *
+     * @return the accuracy
+     */
+    public String getAccuracy( ) {
 		return this.accuracy;
 	}
 
-	public void setCity(String city) {
+    /**
+     * Sets city.
+     *
+     * @param city the city
+     */
+    public void setCity(String city) {
 		this.city = city;
 	}
-	public String getCity( ) {
+
+    /**
+     * Gets city.
+     *
+     * @return the city
+     */
+    public String getCity( ) {
 		return this.city;
 	}
 
-	public void setLatitude(String latitude) {
+    /**
+     * Sets latitude.
+     *
+     * @param latitude the latitude
+     */
+    public void setLatitude(String latitude) {
 		this.latitude = latitude;
 	}
-	public String getLatitude( ) {
+
+    /**
+     * Gets latitude.
+     *
+     * @return the latitude
+     */
+    public String getLatitude( ) {
 		return this.latitude;
 	}
 
-	public void setLongitude(String longitude) {
+    /**
+     * Sets longitude.
+     *
+     * @param longitude the longitude
+     */
+    public void setLongitude(String longitude) {
 		this.longitude = longitude;
 	}
-	public String getLongitude( ) {
+
+    /**
+     * Gets longitude.
+     *
+     * @return the longitude
+     */
+    public String getLongitude( ) {
 		return this.longitude;
 	}
 
-	public void setProvince(String province) {
+    /**
+     * Sets province.
+     *
+     * @param province the province
+     */
+    public void setProvince(String province) {
 		this.province = province;
 	}
-	public String getProvince( ) {
+
+    /**
+     * Gets province.
+     *
+     * @return the province
+     */
+    public String getProvince( ) {
 		return this.province;
 	}
 

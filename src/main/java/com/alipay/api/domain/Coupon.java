@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class Coupon extends AlipayObject {
 
-	private static final long serialVersionUID = 3697469159336395881L;
+	private static final long serialVersionUID = 1759652775187395741L;
 
 	/**
 	 * 当前可用面额
@@ -103,108 +103,273 @@ public class Coupon extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
-	public String getAvailableAmount() {
+    /**
+     * Gets available amount.
+     *
+     * @return the available amount
+     */
+    public String getAvailableAmount() {
 		return this.availableAmount;
 	}
-	public void setAvailableAmount(String availableAmount) {
+
+    /**
+     * Sets available amount.
+     *
+     * @param availableAmount the available amount
+     */
+    public void setAvailableAmount(String availableAmount) {
 		this.availableAmount = availableAmount;
 	}
 
-	public String getCouponNo() {
+    /**
+     * Gets coupon no.
+     *
+     * @return the coupon no
+     */
+    public String getCouponNo() {
 		return this.couponNo;
 	}
-	public void setCouponNo(String couponNo) {
+
+    /**
+     * Sets coupon no.
+     *
+     * @param couponNo the coupon no
+     */
+    public void setCouponNo(String couponNo) {
 		this.couponNo = couponNo;
 	}
 
-	public String getDeductAmount() {
+    /**
+     * Gets deduct amount.
+     *
+     * @return the deduct amount
+     */
+    public String getDeductAmount() {
 		return this.deductAmount;
 	}
-	public void setDeductAmount(String deductAmount) {
+
+    /**
+     * Sets deduct amount.
+     *
+     * @param deductAmount the deduct amount
+     */
+    public void setDeductAmount(String deductAmount) {
 		this.deductAmount = deductAmount;
 	}
 
-	public String getGmtActive() {
+    /**
+     * Gets gmt active.
+     *
+     * @return the gmt active
+     */
+    public String getGmtActive() {
 		return this.gmtActive;
 	}
-	public void setGmtActive(String gmtActive) {
+
+    /**
+     * Sets gmt active.
+     *
+     * @param gmtActive the gmt active
+     */
+    public void setGmtActive(String gmtActive) {
 		this.gmtActive = gmtActive;
 	}
 
-	public String getGmtCreate() {
+    /**
+     * Gets gmt create.
+     *
+     * @return the gmt create
+     */
+    public String getGmtCreate() {
 		return this.gmtCreate;
 	}
-	public void setGmtCreate(String gmtCreate) {
+
+    /**
+     * Sets gmt create.
+     *
+     * @param gmtCreate the gmt create
+     */
+    public void setGmtCreate(String gmtCreate) {
 		this.gmtCreate = gmtCreate;
 	}
 
-	public String getGmtExpired() {
+    /**
+     * Gets gmt expired.
+     *
+     * @return the gmt expired
+     */
+    public String getGmtExpired() {
 		return this.gmtExpired;
 	}
-	public void setGmtExpired(String gmtExpired) {
+
+    /**
+     * Sets gmt expired.
+     *
+     * @param gmtExpired the gmt expired
+     */
+    public void setGmtExpired(String gmtExpired) {
 		this.gmtExpired = gmtExpired;
 	}
 
-	public String getInstructions() {
+    /**
+     * Gets instructions.
+     *
+     * @return the instructions
+     */
+    public String getInstructions() {
 		return this.instructions;
 	}
-	public void setInstructions(String instructions) {
+
+    /**
+     * Sets instructions.
+     *
+     * @param instructions the instructions
+     */
+    public void setInstructions(String instructions) {
 		this.instructions = instructions;
 	}
 
-	public String getMemo() {
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo() {
 		return this.memo;
 	}
-	public void setMemo(String memo) {
+
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
-	public String getMerchantUniqId() {
+    /**
+     * Gets merchant uniq id.
+     *
+     * @return the merchant uniq id
+     */
+    public String getMerchantUniqId() {
 		return this.merchantUniqId;
 	}
-	public void setMerchantUniqId(String merchantUniqId) {
+
+    /**
+     * Sets merchant uniq id.
+     *
+     * @param merchantUniqId the merchant uniq id
+     */
+    public void setMerchantUniqId(String merchantUniqId) {
 		this.merchantUniqId = merchantUniqId;
 	}
 
-	public String getMultiUseFlag() {
+    /**
+     * Gets multi use flag.
+     *
+     * @return the multi use flag
+     */
+    public String getMultiUseFlag() {
 		return this.multiUseFlag;
 	}
-	public void setMultiUseFlag(String multiUseFlag) {
+
+    /**
+     * Sets multi use flag.
+     *
+     * @param multiUseFlag the multi use flag
+     */
+    public void setMultiUseFlag(String multiUseFlag) {
 		this.multiUseFlag = multiUseFlag;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getRefundFlag() {
+    /**
+     * Gets refund flag.
+     *
+     * @return the refund flag
+     */
+    public String getRefundFlag() {
 		return this.refundFlag;
 	}
-	public void setRefundFlag(String refundFlag) {
+
+    /**
+     * Sets refund flag.
+     *
+     * @param refundFlag the refund flag
+     */
+    public void setRefundFlag(String refundFlag) {
 		this.refundFlag = refundFlag;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 
-	public String getTemplateNo() {
+    /**
+     * Gets template no.
+     *
+     * @return the template no
+     */
+    public String getTemplateNo() {
 		return this.templateNo;
 	}
-	public void setTemplateNo(String templateNo) {
+
+    /**
+     * Sets template no.
+     *
+     * @param templateNo the template no
+     */
+    public void setTemplateNo(String templateNo) {
 		this.templateNo = templateNo;
 	}
 
-	public String getUserId() {
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
-	public void setUserId(String userId) {
+
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
 

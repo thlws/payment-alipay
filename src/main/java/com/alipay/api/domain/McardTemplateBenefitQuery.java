@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class McardTemplateBenefitQuery extends AlipayObject {
 
-	private static final long serialVersionUID = 5771813967773128817L;
+	private static final long serialVersionUID = 7424477387739224275L;
 
 	/**
 	 * 权益描述信息
@@ -57,52 +57,129 @@ public class McardTemplateBenefitQuery extends AlipayObject {
 	@ApiField("title")
 	private String title;
 
-	public String getBenefitDesc() {
+    /**
+     * Gets benefit desc.
+     *
+     * @return the benefit desc
+     */
+    public String getBenefitDesc() {
 		return this.benefitDesc;
 	}
-	public void setBenefitDesc(String benefitDesc) {
+
+    /**
+     * Sets benefit desc.
+     *
+     * @param benefitDesc the benefit desc
+     */
+    public void setBenefitDesc(String benefitDesc) {
 		this.benefitDesc = benefitDesc;
 	}
 
-	public String getBenefitId() {
+    /**
+     * Gets benefit id.
+     *
+     * @return the benefit id
+     */
+    public String getBenefitId() {
 		return this.benefitId;
 	}
-	public void setBenefitId(String benefitId) {
+
+    /**
+     * Sets benefit id.
+     *
+     * @param benefitId the benefit id
+     */
+    public void setBenefitId(String benefitId) {
 		this.benefitId = benefitId;
 	}
 
-	public Date getEndDate() {
+    /**
+     * Gets end date.
+     *
+     * @return the end date
+     */
+    public Date getEndDate() {
 		return this.endDate;
 	}
-	public void setEndDate(Date endDate) {
+
+    /**
+     * Sets end date.
+     *
+     * @param endDate the end date
+     */
+    public void setEndDate(Date endDate) {
 		this.endDate = endDate;
 	}
 
-	public String getExtInfo() {
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo() {
 		return this.extInfo;
 	}
-	public void setExtInfo(String extInfo) {
+
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
-	public Date getStartDate() {
+    /**
+     * Gets start date.
+     *
+     * @return the start date
+     */
+    public Date getStartDate() {
 		return this.startDate;
 	}
-	public void setStartDate(Date startDate) {
+
+    /**
+     * Sets start date.
+     *
+     * @param startDate the start date
+     */
+    public void setStartDate(Date startDate) {
 		this.startDate = startDate;
 	}
 
-	public String getTemplateId() {
+    /**
+     * Gets template id.
+     *
+     * @return the template id
+     */
+    public String getTemplateId() {
 		return this.templateId;
 	}
-	public void setTemplateId(String templateId) {
+
+    /**
+     * Sets template id.
+     *
+     * @param templateId the template id
+     */
+    public void setTemplateId(String templateId) {
 		this.templateId = templateId;
 	}
 
-	public String getTitle() {
+    /**
+     * Gets title.
+     *
+     * @return the title
+     */
+    public String getTitle() {
 		return this.title;
 	}
-	public void setTitle(String title) {
+
+    /**
+     * Sets title.
+     *
+     * @param title the title
+     */
+    public void setTitle(String title) {
 		this.title = title;
 	}
 

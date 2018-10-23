@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CategoryLevelInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2358946376159911437L;
+	private static final long serialVersionUID = 5274281696674145128L;
 
 	/**
 	 * 品类编码
@@ -31,24 +31,57 @@ public class CategoryLevelInfo extends AlipayObject {
 	@ApiField("category_name")
 	private String categoryName;
 
-	public String getCategoryCode() {
+    /**
+     * Gets category code.
+     *
+     * @return the category code
+     */
+    public String getCategoryCode() {
 		return this.categoryCode;
 	}
-	public void setCategoryCode(String categoryCode) {
+
+    /**
+     * Sets category code.
+     *
+     * @param categoryCode the category code
+     */
+    public void setCategoryCode(String categoryCode) {
 		this.categoryCode = categoryCode;
 	}
 
-	public Long getCategoryLevel() {
+    /**
+     * Gets category level.
+     *
+     * @return the category level
+     */
+    public Long getCategoryLevel() {
 		return this.categoryLevel;
 	}
-	public void setCategoryLevel(Long categoryLevel) {
+
+    /**
+     * Sets category level.
+     *
+     * @param categoryLevel the category level
+     */
+    public void setCategoryLevel(Long categoryLevel) {
 		this.categoryLevel = categoryLevel;
 	}
 
-	public String getCategoryName() {
+    /**
+     * Gets category name.
+     *
+     * @return the category name
+     */
+    public String getCategoryName() {
 		return this.categoryName;
 	}
-	public void setCategoryName(String categoryName) {
+
+    /**
+     * Sets category name.
+     *
+     * @param categoryName the category name
+     */
+    public void setCategoryName(String categoryName) {
 		this.categoryName = categoryName;
 	}
 

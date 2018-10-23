@@ -24,6 +24,9 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.internal.util.AlipayLogger;
 
+/**
+ * The type Json writer.
+ */
 public class JSONWriter {
 
     private StringBuffer  buf           = new StringBuffer();
@@ -31,41 +34,91 @@ public class JSONWriter {
     private boolean       emitClassName = true;
     private DateFormat    format;
 
+    /**
+     * Instantiates a new Json writer.
+     *
+     * @param emitClassName the emit class name
+     */
     public JSONWriter(boolean emitClassName) {
         this.emitClassName = emitClassName;
     }
 
+    /**
+     * Instantiates a new Json writer.
+     */
     public JSONWriter() {
         this(false);
     }
 
+    /**
+     * Instantiates a new Json writer.
+     *
+     * @param format the format
+     */
     public JSONWriter(DateFormat format) {
         this(false);
         this.format = format;
     }
 
+    /**
+     * Write string.
+     *
+     * @param object the object
+     * @return the string
+     */
     public String write(Object object) {
         return write(object, false);
     }
 
+    /**
+     * Write string.
+     *
+     * @param object     the object
+     * @param isApiModel the is api model
+     * @return the string
+     */
     public String write(Object object, boolean isApiModel) {
         buf.setLength(0);
         value(object, isApiModel);
         return buf.toString();
     }
 
+    /**
+     * Write string.
+     *
+     * @param n the n
+     * @return the string
+     */
     public String write(long n) {
         return String.valueOf(n);
     }
 
+    /**
+     * Write string.
+     *
+     * @param d the d
+     * @return the string
+     */
     public String write(double d) {
         return String.valueOf(d);
     }
 
+    /**
+     * Write string.
+     *
+     * @param c the c
+     * @return the string
+     */
     public String write(char c) {
         return "\"" + c + "\"";
     }
 
+    /**
+     * Write string.
+     *
+     * @param b the b
+     * @return the string
+     */
     public String write(boolean b) {
         return String.valueOf(b);
     }
@@ -320,6 +373,9 @@ public class JSONWriter {
         buf.append(c);
     }
 
+    /**
+     * The Hex.
+     */
     static char[] hex = "0123456789ABCDEF".toCharArray();
 
     private void unicode(char c) {

@@ -5,13 +5,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.provider.shopaction.record response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-10-10 10:59:28
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayOfflineProviderShopactionRecordResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5714531523478633584L;
+	private static final long serialVersionUID = 3641715865722885952L;
 
 	
 

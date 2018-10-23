@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class DataEnumValue extends AlipayObject {
 
-	private static final long serialVersionUID = 1784984567269682881L;
+	private static final long serialVersionUID = 8293764671994165843L;
 
 	/**
 	 * 过滤条件
@@ -35,24 +35,57 @@ public class DataEnumValue extends AlipayObject {
 	@ApiField("value")
 	private String value;
 
-	public List<FilterTag> getFilterTags() {
+    /**
+     * Gets filter tags.
+     *
+     * @return the filter tags
+     */
+    public List<FilterTag> getFilterTags() {
 		return this.filterTags;
 	}
-	public void setFilterTags(List<FilterTag> filterTags) {
+
+    /**
+     * Sets filter tags.
+     *
+     * @param filterTags the filter tags
+     */
+    public void setFilterTags(List<FilterTag> filterTags) {
 		this.filterTags = filterTags;
 	}
 
-	public String getLabel() {
+    /**
+     * Gets label.
+     *
+     * @return the label
+     */
+    public String getLabel() {
 		return this.label;
 	}
-	public void setLabel(String label) {
+
+    /**
+     * Sets label.
+     *
+     * @param label the label
+     */
+    public void setLabel(String label) {
 		this.label = label;
 	}
 
-	public String getValue() {
+    /**
+     * Gets value.
+     *
+     * @return the value
+     */
+    public String getValue() {
 		return this.value;
 	}
-	public void setValue(String value) {
+
+    /**
+     * Sets value.
+     *
+     * @param value the value
+     */
+    public void setValue(String value) {
 		this.value = value;
 	}
 

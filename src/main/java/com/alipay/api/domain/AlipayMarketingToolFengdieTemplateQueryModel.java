@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询当前用户可用的模板列表
  *
  * @author auto create
- * @since 1.0, 2017-09-27 11:31:51
+ * @since 1.0, 2018-08-19 16:15:20
  */
 public class AlipayMarketingToolFengdieTemplateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1698823663452784581L;
+	private static final long serialVersionUID = 2674131228793241727L;
 
 	/**
 	 * 当前页数，默认为1
@@ -25,17 +25,39 @@ public class AlipayMarketingToolFengdieTemplateQueryModel extends AlipayObject {
 	@ApiField("page_size")
 	private Long pageSize;
 
-	public Long getPageNumber() {
+    /**
+     * Gets page number.
+     *
+     * @return the page number
+     */
+    public Long getPageNumber() {
 		return this.pageNumber;
 	}
-	public void setPageNumber(Long pageNumber) {
+
+    /**
+     * Sets page number.
+     *
+     * @param pageNumber the page number
+     */
+    public void setPageNumber(Long pageNumber) {
 		this.pageNumber = pageNumber;
 	}
 
-	public Long getPageSize() {
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public Long getPageSize() {
 		return this.pageSize;
 	}
-	public void setPageSize(Long pageSize) {
+
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}
 

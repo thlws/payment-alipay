@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceCityfacilitatorDepositCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3388767979344762164L;
+	private static final long serialVersionUID = 8488977214772425221L;
 
 	/**
 	 * 扩展字段，传递撤销的终端信息，原因等
@@ -49,45 +49,111 @@ public class AlipayCommerceCityfacilitatorDepositCancelModel extends AlipayObjec
 	@ApiField("trade_no")
 	private String tradeNo;
 
-	public String getBizInfoExt() {
+    /**
+     * Gets biz info ext.
+     *
+     * @return the biz info ext
+     */
+    public String getBizInfoExt() {
 		return this.bizInfoExt;
 	}
-	public void setBizInfoExt(String bizInfoExt) {
+
+    /**
+     * Sets biz info ext.
+     *
+     * @param bizInfoExt the biz info ext
+     */
+    public void setBizInfoExt(String bizInfoExt) {
 		this.bizInfoExt = bizInfoExt;
 	}
 
-	public String getCardNo() {
+    /**
+     * Gets card no.
+     *
+     * @return the card no
+     */
+    public String getCardNo() {
 		return this.cardNo;
 	}
-	public void setCardNo(String cardNo) {
+
+    /**
+     * Sets card no.
+     *
+     * @param cardNo the card no
+     */
+    public void setCardNo(String cardNo) {
 		this.cardNo = cardNo;
 	}
 
-	public String getCardType() {
+    /**
+     * Gets card type.
+     *
+     * @return the card type
+     */
+    public String getCardType() {
 		return this.cardType;
 	}
-	public void setCardType(String cardType) {
+
+    /**
+     * Sets card type.
+     *
+     * @param cardType the card type
+     */
+    public void setCardType(String cardType) {
 		this.cardType = cardType;
 	}
 
-	public String getOperateTime() {
+    /**
+     * Gets operate time.
+     *
+     * @return the operate time
+     */
+    public String getOperateTime() {
 		return this.operateTime;
 	}
-	public void setOperateTime(String operateTime) {
+
+    /**
+     * Sets operate time.
+     *
+     * @param operateTime the operate time
+     */
+    public void setOperateTime(String operateTime) {
 		this.operateTime = operateTime;
 	}
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
-	public String getTradeNo() {
+    /**
+     * Gets trade no.
+     *
+     * @return the trade no
+     */
+    public String getTradeNo() {
 		return this.tradeNo;
 	}
-	public void setTradeNo(String tradeNo) {
+
+    /**
+     * Sets trade no.
+     *
+     * @param tradeNo the trade no
+     */
+    public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
 

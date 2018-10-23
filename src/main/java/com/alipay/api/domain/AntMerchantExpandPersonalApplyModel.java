@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntMerchantExpandPersonalApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7783189444826887999L;
+	private static final long serialVersionUID = 2139272263471466575L;
 
 	/**
 	 * 企业基本信息
@@ -55,52 +55,129 @@ public class AntMerchantExpandPersonalApplyModel extends AlipayObject {
 	@ApiField("shop_info")
 	private ShopInfo shopInfo;
 
-	public BaseInfo getBaseInfo() {
+    /**
+     * Gets base info.
+     *
+     * @return the base info
+     */
+    public BaseInfo getBaseInfo() {
 		return this.baseInfo;
 	}
-	public void setBaseInfo(BaseInfo baseInfo) {
+
+    /**
+     * Sets base info.
+     *
+     * @param baseInfo the base info
+     */
+    public void setBaseInfo(BaseInfo baseInfo) {
 		this.baseInfo = baseInfo;
 	}
 
-	public BusinessLicenceInfo getBusinessLicenseInfo() {
+    /**
+     * Gets business license info.
+     *
+     * @return the business license info
+     */
+    public BusinessLicenceInfo getBusinessLicenseInfo() {
 		return this.businessLicenseInfo;
 	}
-	public void setBusinessLicenseInfo(BusinessLicenceInfo businessLicenseInfo) {
+
+    /**
+     * Sets business license info.
+     *
+     * @param businessLicenseInfo the business license info
+     */
+    public void setBusinessLicenseInfo(BusinessLicenceInfo businessLicenseInfo) {
 		this.businessLicenseInfo = businessLicenseInfo;
 	}
 
-	public String getLoginId() {
+    /**
+     * Gets login id.
+     *
+     * @return the login id
+     */
+    public String getLoginId() {
 		return this.loginId;
 	}
-	public void setLoginId(String loginId) {
+
+    /**
+     * Sets login id.
+     *
+     * @param loginId the login id
+     */
+    public void setLoginId(String loginId) {
 		this.loginId = loginId;
 	}
 
-	public OperatorInfo getOperatorInfo() {
+    /**
+     * Gets operator info.
+     *
+     * @return the operator info
+     */
+    public OperatorInfo getOperatorInfo() {
 		return this.operatorInfo;
 	}
-	public void setOperatorInfo(OperatorInfo operatorInfo) {
+
+    /**
+     * Sets operator info.
+     *
+     * @param operatorInfo the operator info
+     */
+    public void setOperatorInfo(OperatorInfo operatorInfo) {
 		this.operatorInfo = operatorInfo;
 	}
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
-	public PersonnalBankAccountInfo getPersonalBankAccountInfo() {
+    /**
+     * Gets personal bank account info.
+     *
+     * @return the personal bank account info
+     */
+    public PersonnalBankAccountInfo getPersonalBankAccountInfo() {
 		return this.personalBankAccountInfo;
 	}
-	public void setPersonalBankAccountInfo(PersonnalBankAccountInfo personalBankAccountInfo) {
+
+    /**
+     * Sets personal bank account info.
+     *
+     * @param personalBankAccountInfo the personal bank account info
+     */
+    public void setPersonalBankAccountInfo(PersonnalBankAccountInfo personalBankAccountInfo) {
 		this.personalBankAccountInfo = personalBankAccountInfo;
 	}
 
-	public ShopInfo getShopInfo() {
+    /**
+     * Gets shop info.
+     *
+     * @return the shop info
+     */
+    public ShopInfo getShopInfo() {
 		return this.shopInfo;
 	}
-	public void setShopInfo(ShopInfo shopInfo) {
+
+    /**
+     * Sets shop info.
+     *
+     * @param shopInfo the shop info
+     */
+    public void setShopInfo(ShopInfo shopInfo) {
 		this.shopInfo = shopInfo;
 	}
 

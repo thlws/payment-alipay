@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.data.smartmanagement.diagnose response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-07-26 11:31:56
  */
 public class KoubeiMarketingDataSmartmanagementDiagnoseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6652386381882221355L;
+	private static final long serialVersionUID = 3375922147161389945L;
 
 	/** 
 	 * 诊断结果CODE，目前有如下四个值
@@ -45,10 +45,21 @@ repurchase_customer返回8，则封装的文案是“一个明星菜将带来8�
 	@ApiField("diagnose_result")
 	private List<DiagnoseResult> diagnoseResult;
 
-	public void setDiagnoseResult(List<DiagnoseResult> diagnoseResult) {
+    /**
+     * Sets diagnose result.
+     *
+     * @param diagnoseResult the diagnose result
+     */
+    public void setDiagnoseResult(List<DiagnoseResult> diagnoseResult) {
 		this.diagnoseResult = diagnoseResult;
 	}
-	public List<DiagnoseResult> getDiagnoseResult( ) {
+
+    /**
+     * Gets diagnose result.
+     *
+     * @return the diagnose result
+     */
+    public List<DiagnoseResult> getDiagnoseResult( ) {
 		return this.diagnoseResult;
 	}
 

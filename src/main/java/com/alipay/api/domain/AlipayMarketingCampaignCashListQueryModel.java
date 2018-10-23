@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 现金活动列表查询
  *
  * @author auto create
- * @since 1.0, 2017-07-14 11:53:33
+ * @since 1.0, 2018-07-19 14:27:01
  */
 public class AlipayMarketingCampaignCashListQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8444794644861639152L;
+	private static final long serialVersionUID = 4539591353192951965L;
 
 	/**
 	 * 要查询的活动状态,不填默认返回所有类型。
@@ -39,24 +39,57 @@ SETTLE:活动已清算
 	@ApiField("page_size")
 	private String pageSize;
 
-	public String getCampStatus() {
+    /**
+     * Gets camp status.
+     *
+     * @return the camp status
+     */
+    public String getCampStatus() {
 		return this.campStatus;
 	}
-	public void setCampStatus(String campStatus) {
+
+    /**
+     * Sets camp status.
+     *
+     * @param campStatus the camp status
+     */
+    public void setCampStatus(String campStatus) {
 		this.campStatus = campStatus;
 	}
 
-	public String getPageIndex() {
+    /**
+     * Gets page index.
+     *
+     * @return the page index
+     */
+    public String getPageIndex() {
 		return this.pageIndex;
 	}
-	public void setPageIndex(String pageIndex) {
+
+    /**
+     * Sets page index.
+     *
+     * @param pageIndex the page index
+     */
+    public void setPageIndex(String pageIndex) {
 		this.pageIndex = pageIndex;
 	}
 
-	public String getPageSize() {
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public String getPageSize() {
 		return this.pageSize;
 	}
-	public void setPageSize(String pageSize) {
+
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(String pageSize) {
 		this.pageSize = pageSize;
 	}
 

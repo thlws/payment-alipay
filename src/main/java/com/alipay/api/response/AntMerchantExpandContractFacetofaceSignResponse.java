@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: ant.merchant.expand.contract.facetoface.sign response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-14 12:07:19
+ * @since 1.0, 2017-12-08 19:38:04
  */
 public class AntMerchantExpandContractFacetofaceSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4343119321461997785L;
+	private static final long serialVersionUID = 1148623396993937586L;
 
 	/** 
 	 * 支付宝端商户入驻申请单据号
@@ -26,17 +26,39 @@ public class AntMerchantExpandContractFacetofaceSignResponse extends AlipayRespo
 	@ApiField("out_biz_no")
 	private String outBizNo;
 
-	public void setOrderNo(String orderNo) {
+    /**
+     * Sets order no.
+     *
+     * @param orderNo the order no
+     */
+    public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
-	public String getOrderNo( ) {
+
+    /**
+     * Gets order no.
+     *
+     * @return the order no
+     */
+    public String getOrderNo( ) {
 		return this.orderNo;
 	}
 
-	public void setOutBizNo(String outBizNo) {
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
-	public String getOutBizNo( ) {
+
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo( ) {
 		return this.outBizNo;
 	}
 

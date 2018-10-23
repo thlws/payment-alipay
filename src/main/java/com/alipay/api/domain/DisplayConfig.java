@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DisplayConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 5513184642961366812L;
+	private static final long serialVersionUID = 6461111877443629353L;
 
 	/**
 	 * 券的宣传语
@@ -27,17 +27,39 @@ public class DisplayConfig extends AlipayObject {
 	@ApiField("slogan_img")
 	private String sloganImg;
 
-	public String getSlogan() {
+    /**
+     * Gets slogan.
+     *
+     * @return the slogan
+     */
+    public String getSlogan() {
 		return this.slogan;
 	}
-	public void setSlogan(String slogan) {
+
+    /**
+     * Sets slogan.
+     *
+     * @param slogan the slogan
+     */
+    public void setSlogan(String slogan) {
 		this.slogan = slogan;
 	}
 
-	public String getSloganImg() {
+    /**
+     * Gets slogan img.
+     *
+     * @return the slogan img
+     */
+    public String getSloganImg() {
 		return this.sloganImg;
 	}
-	public void setSloganImg(String sloganImg) {
+
+    /**
+     * Sets slogan img.
+     *
+     * @param sloganImg the slogan img
+     */
+    public void setSloganImg(String sloganImg) {
 		this.sloganImg = sloganImg;
 	}
 

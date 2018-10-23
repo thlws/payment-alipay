@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RechargeBill extends AlipayObject {
 
-	private static final long serialVersionUID = 2846398164632378814L;
+	private static final long serialVersionUID = 2771739975724257699L;
 
 	/**
 	 * 用户充值金额，单位为元
@@ -39,31 +39,75 @@ Fail：圈存失败
 	@ApiField("trade_no")
 	private String tradeNo;
 
-	public String getAmount() {
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public String getAmount() {
 		return this.amount;
 	}
-	public void setAmount(String amount) {
+
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
-	public String getDepositTime() {
+    /**
+     * Gets deposit time.
+     *
+     * @return the deposit time
+     */
+    public String getDepositTime() {
 		return this.depositTime;
 	}
-	public void setDepositTime(String depositTime) {
+
+    /**
+     * Sets deposit time.
+     *
+     * @param depositTime the deposit time
+     */
+    public void setDepositTime(String depositTime) {
 		this.depositTime = depositTime;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 
-	public String getTradeNo() {
+    /**
+     * Gets trade no.
+     *
+     * @return the trade no
+     */
+    public String getTradeNo() {
 		return this.tradeNo;
 	}
-	public void setTradeNo(String tradeNo) {
+
+    /**
+     * Sets trade no.
+     *
+     * @param tradeNo the trade no
+     */
+    public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
 

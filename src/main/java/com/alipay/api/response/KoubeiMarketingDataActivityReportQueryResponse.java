@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.data.activity.report.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-09-20 14:23:46
+ * @since 1.0, 2017-12-07 16:53:34
  */
 public class KoubeiMarketingDataActivityReportQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1371728658433719294L;
+	private static final long serialVersionUID = 7127384212334916961L;
 
 	/** 
 	 * 报表
@@ -20,10 +20,21 @@ public class KoubeiMarketingDataActivityReportQueryResponse extends AlipayRespon
 	@ApiField("report_data")
 	private String reportData;
 
-	public void setReportData(String reportData) {
+    /**
+     * Sets report data.
+     *
+     * @param reportData the report data
+     */
+    public void setReportData(String reportData) {
 		this.reportData = reportData;
 	}
-	public String getReportData( ) {
+
+    /**
+     * Gets report data.
+     *
+     * @return the report data
+     */
+    public String getReportData( ) {
 		return this.reportData;
 	}
 

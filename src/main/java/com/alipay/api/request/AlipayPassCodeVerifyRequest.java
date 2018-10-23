@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.pass.code.verify request
- * 
+ *
  * @author auto create
  * @since 1.0, 2014-06-12 17:16:11
  */
@@ -42,31 +42,75 @@ public class AlipayPassCodeVerifyRequest implements AlipayRequest<AlipayPassCode
 	 */
 	private String verifyCode;
 
-	public void setExtInfo(String extInfo) {
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
-	public String getExtInfo() {
+
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo() {
 		return this.extInfo;
 	}
 
-	public void setOperatorId(String operatorId) {
+    /**
+     * Sets operator id.
+     *
+     * @param operatorId the operator id
+     */
+    public void setOperatorId(String operatorId) {
 		this.operatorId = operatorId;
 	}
-	public String getOperatorId() {
+
+    /**
+     * Gets operator id.
+     *
+     * @return the operator id
+     */
+    public String getOperatorId() {
 		return this.operatorId;
 	}
 
-	public void setOperatorType(String operatorType) {
+    /**
+     * Sets operator type.
+     *
+     * @param operatorType the operator type
+     */
+    public void setOperatorType(String operatorType) {
 		this.operatorType = operatorType;
 	}
-	public String getOperatorType() {
+
+    /**
+     * Gets operator type.
+     *
+     * @return the operator type
+     */
+    public String getOperatorType() {
 		return this.operatorType;
 	}
 
-	public void setVerifyCode(String verifyCode) {
+    /**
+     * Sets verify code.
+     *
+     * @param verifyCode the verify code
+     */
+    public void setVerifyCode(String verifyCode) {
 		this.verifyCode = verifyCode;
 	}
-	public String getVerifyCode() {
+
+    /**
+     * Gets verify code.
+     *
+     * @return the verify code
+     */
+    public String getVerifyCode() {
 		return this.verifyCode;
 	}
 	private String terminalType;
@@ -141,7 +185,13 @@ public class AlipayPassCodeVerifyRequest implements AlipayRequest<AlipayPassCode
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

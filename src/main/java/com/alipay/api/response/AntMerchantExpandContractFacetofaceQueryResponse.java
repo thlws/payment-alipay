@@ -7,13 +7,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: ant.merchant.expand.contract.facetoface.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-14 12:06:49
+ * @since 1.0, 2017-12-08 19:36:40
  */
 public class AntMerchantExpandContractFacetofaceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2457125886346651193L;
+	private static final long serialVersionUID = 4488464864971716728L;
 
 	/** 
 	 * 订单创建时间
@@ -45,38 +45,93 @@ public class AntMerchantExpandContractFacetofaceQueryResponse extends AlipayResp
 	@ApiField("out_biz_no")
 	private String outBizNo;
 
-	public void setGmtCreate(Date gmtCreate) {
+    /**
+     * Sets gmt create.
+     *
+     * @param gmtCreate the gmt create
+     */
+    public void setGmtCreate(Date gmtCreate) {
 		this.gmtCreate = gmtCreate;
 	}
-	public Date getGmtCreate( ) {
+
+    /**
+     * Gets gmt create.
+     *
+     * @return the gmt create
+     */
+    public Date getGmtCreate( ) {
 		return this.gmtCreate;
 	}
 
-	public void setOrderDetail(String orderDetail) {
+    /**
+     * Sets order detail.
+     *
+     * @param orderDetail the order detail
+     */
+    public void setOrderDetail(String orderDetail) {
 		this.orderDetail = orderDetail;
 	}
-	public String getOrderDetail( ) {
+
+    /**
+     * Gets order detail.
+     *
+     * @return the order detail
+     */
+    public String getOrderDetail( ) {
 		return this.orderDetail;
 	}
 
-	public void setOrderNo(String orderNo) {
+    /**
+     * Sets order no.
+     *
+     * @param orderNo the order no
+     */
+    public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
-	public String getOrderNo( ) {
+
+    /**
+     * Gets order no.
+     *
+     * @return the order no
+     */
+    public String getOrderNo( ) {
 		return this.orderNo;
 	}
 
-	public void setOrderStatus(String orderStatus) {
+    /**
+     * Sets order status.
+     *
+     * @param orderStatus the order status
+     */
+    public void setOrderStatus(String orderStatus) {
 		this.orderStatus = orderStatus;
 	}
-	public String getOrderStatus( ) {
+
+    /**
+     * Gets order status.
+     *
+     * @return the order status
+     */
+    public String getOrderStatus( ) {
 		return this.orderStatus;
 	}
 
-	public void setOutBizNo(String outBizNo) {
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
-	public String getOutBizNo( ) {
+
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo( ) {
 		return this.outBizNo;
 	}
 

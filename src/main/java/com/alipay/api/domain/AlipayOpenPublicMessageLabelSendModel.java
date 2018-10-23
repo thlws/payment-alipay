@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicMessageLabelSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8681667137761649922L;
+	private static final long serialVersionUID = 1745562442253845482L;
 
 	/**
 	 * 根据标签圈人的过滤器
@@ -25,17 +25,39 @@ public class AlipayOpenPublicMessageLabelSendModel extends AlipayObject {
 	@ApiField("material")
 	private Material material;
 
-	public Filter getFilter() {
+    /**
+     * Gets filter.
+     *
+     * @return the filter
+     */
+    public Filter getFilter() {
 		return this.filter;
 	}
-	public void setFilter(Filter filter) {
+
+    /**
+     * Sets filter.
+     *
+     * @param filter the filter
+     */
+    public void setFilter(Filter filter) {
 		this.filter = filter;
 	}
 
-	public Material getMaterial() {
+    /**
+     * Gets material.
+     *
+     * @return the material
+     */
+    public Material getMaterial() {
 		return this.material;
 	}
-	public void setMaterial(Material material) {
+
+    /**
+     * Sets material.
+     *
+     * @param material the material
+     */
+    public void setMaterial(Material material) {
 		this.material = material;
 	}
 

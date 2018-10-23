@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.trade.customs.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-12-08 00:47:36
+ * @since 1.0, 2018-03-02 14:37:16
  */
 public class AlipayTradeCustomsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6195585775594517916L;
+	private static final long serialVersionUID = 1161959265437145852L;
 
 	/** 
 	 * 不存在记录的报关请求号。多个值用逗号分隔，单次最多10个;每个报关请求号String(32)
@@ -30,17 +30,39 @@ public class AlipayTradeCustomsQueryResponse extends AlipayResponse {
 	@ApiField("customs_declare_record_info")
 	private List<CustomsDeclareRecordInfo> records;
 
-	public void setNotFound(String notFound) {
+    /**
+     * Sets not found.
+     *
+     * @param notFound the not found
+     */
+    public void setNotFound(String notFound) {
 		this.notFound = notFound;
 	}
-	public String getNotFound( ) {
+
+    /**
+     * Gets not found.
+     *
+     * @return the not found
+     */
+    public String getNotFound( ) {
 		return this.notFound;
 	}
 
-	public void setRecords(List<CustomsDeclareRecordInfo> records) {
+    /**
+     * Sets records.
+     *
+     * @param records the records
+     */
+    public void setRecords(List<CustomsDeclareRecordInfo> records) {
 		this.records = records;
 	}
-	public List<CustomsDeclareRecordInfo> getRecords( ) {
+
+    /**
+     * Gets records.
+     *
+     * @return the records
+     */
+    public List<CustomsDeclareRecordInfo> getRecords( ) {
 		return this.records;
 	}
 

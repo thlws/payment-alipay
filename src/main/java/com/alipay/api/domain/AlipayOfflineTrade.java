@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝脱机交易
  *
  * @author auto create
- * @since 1.0, 2017-09-20 18:07:59
+ * @since 1.0, 2017-10-17 19:47:11
  */
 public class AlipayOfflineTrade extends AlipayObject {
 
-	private static final long serialVersionUID = 4577663394349171325L;
+	private static final long serialVersionUID = 1642463759739753856L;
 
 	/**
 	 * 交易实际发生时间
@@ -28,6 +28,12 @@ public class AlipayOfflineTrade extends AlipayObject {
 	 */
 	@ApiField("amount")
 	private String amount;
+
+	/**
+	 * 交易对应的卡类型。
+	 */
+	@ApiField("card_type")
+	private String cardType;
 
 	/**
 	 * 交易扩展信息,json格式字符串。
@@ -66,59 +72,165 @@ public class AlipayOfflineTrade extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
-	public Date getActualOrderTime() {
+    /**
+     * Gets actual order time.
+     *
+     * @return the actual order time
+     */
+    public Date getActualOrderTime() {
 		return this.actualOrderTime;
 	}
-	public void setActualOrderTime(Date actualOrderTime) {
+
+    /**
+     * Sets actual order time.
+     *
+     * @param actualOrderTime the actual order time
+     */
+    public void setActualOrderTime(Date actualOrderTime) {
 		this.actualOrderTime = actualOrderTime;
 	}
 
-	public String getAmount() {
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public String getAmount() {
 		return this.amount;
 	}
-	public void setAmount(String amount) {
+
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
-	public String getOrderBizContext() {
+    /**
+     * Gets card type.
+     *
+     * @return the card type
+     */
+    public String getCardType() {
+		return this.cardType;
+	}
+
+    /**
+     * Sets card type.
+     *
+     * @param cardType the card type
+     */
+    public void setCardType(String cardType) {
+		this.cardType = cardType;
+	}
+
+    /**
+     * Gets order biz context.
+     *
+     * @return the order biz context
+     */
+    public String getOrderBizContext() {
 		return this.orderBizContext;
 	}
-	public void setOrderBizContext(String orderBizContext) {
+
+    /**
+     * Sets order biz context.
+     *
+     * @param orderBizContext the order biz context
+     */
+    public void setOrderBizContext(String orderBizContext) {
 		this.orderBizContext = orderBizContext;
 	}
 
-	public String getOutTradeNo() {
+    /**
+     * Gets out trade no.
+     *
+     * @return the out trade no
+     */
+    public String getOutTradeNo() {
 		return this.outTradeNo;
 	}
-	public void setOutTradeNo(String outTradeNo) {
+
+    /**
+     * Sets out trade no.
+     *
+     * @param outTradeNo the out trade no
+     */
+    public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
 
-	public List<String> getRecords() {
+    /**
+     * Gets records.
+     *
+     * @return the records
+     */
+    public List<String> getRecords() {
 		return this.records;
 	}
-	public void setRecords(List<String> records) {
+
+    /**
+     * Sets records.
+     *
+     * @param records the records
+     */
+    public void setRecords(List<String> records) {
 		this.records = records;
 	}
 
-	public String getSellerLoginName() {
+    /**
+     * Gets seller login name.
+     *
+     * @return the seller login name
+     */
+    public String getSellerLoginName() {
 		return this.sellerLoginName;
 	}
-	public void setSellerLoginName(String sellerLoginName) {
+
+    /**
+     * Sets seller login name.
+     *
+     * @param sellerLoginName the seller login name
+     */
+    public void setSellerLoginName(String sellerLoginName) {
 		this.sellerLoginName = sellerLoginName;
 	}
 
-	public String getSubject() {
+    /**
+     * Gets subject.
+     *
+     * @return the subject
+     */
+    public String getSubject() {
 		return this.subject;
 	}
-	public void setSubject(String subject) {
+
+    /**
+     * Sets subject.
+     *
+     * @param subject the subject
+     */
+    public void setSubject(String subject) {
 		this.subject = subject;
 	}
 
-	public String getUserId() {
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
-	public void setUserId(String userId) {
+
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
 

@@ -7,13 +7,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.market.mcomment.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-06-13 20:25:02
  */
 public class AlipayOfflineMarketMcommentQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8484289363273623272L;
+	private static final long serialVersionUID = 5626619163144224167L;
 
 	/** 
 	 * 本次交易号对应的评价在支付宝的唯一标识.评价id
@@ -45,31 +45,75 @@ public class AlipayOfflineMarketMcommentQueryResponse extends AlipayResponse {
 	@ApiField("score")
 	private Long score;
 
-	public void setCommentId(String commentId) {
+    /**
+     * Sets comment id.
+     *
+     * @param commentId the comment id
+     */
+    public void setCommentId(String commentId) {
 		this.commentId = commentId;
 	}
-	public String getCommentId( ) {
+
+    /**
+     * Gets comment id.
+     *
+     * @return the comment id
+     */
+    public String getCommentId( ) {
 		return this.commentId;
 	}
 
-	public void setCommentStatus(String commentStatus) {
+    /**
+     * Sets comment status.
+     *
+     * @param commentStatus the comment status
+     */
+    public void setCommentStatus(String commentStatus) {
 		this.commentStatus = commentStatus;
 	}
-	public String getCommentStatus( ) {
+
+    /**
+     * Gets comment status.
+     *
+     * @return the comment status
+     */
+    public String getCommentStatus( ) {
 		return this.commentStatus;
 	}
 
-	public void setCommentTime(Date commentTime) {
+    /**
+     * Sets comment time.
+     *
+     * @param commentTime the comment time
+     */
+    public void setCommentTime(Date commentTime) {
 		this.commentTime = commentTime;
 	}
-	public Date getCommentTime( ) {
+
+    /**
+     * Gets comment time.
+     *
+     * @return the comment time
+     */
+    public Date getCommentTime( ) {
 		return this.commentTime;
 	}
 
-	public void setScore(Long score) {
+    /**
+     * Sets score.
+     *
+     * @param score the score
+     */
+    public void setScore(Long score) {
 		this.score = score;
 	}
-	public Long getScore( ) {
+
+    /**
+     * Gets score.
+     *
+     * @return the score
+     */
+    public Long getScore( ) {
 		return this.score;
 	}
 

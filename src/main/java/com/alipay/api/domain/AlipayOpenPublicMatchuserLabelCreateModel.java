@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 匹配用户标签添加接口
  *
  * @author auto create
- * @since 1.0, 2017-07-03 21:12:51
+ * @since 1.0, 2018-07-25 13:53:51
  */
 public class AlipayOpenPublicMatchuserLabelCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5199167382686982968L;
+	private static final long serialVersionUID = 5242663478612987717L;
 
 	/**
 	 * 标签id，调用创建标签接口会返回label_id
@@ -35,24 +35,57 @@ public class AlipayOpenPublicMatchuserLabelCreateModel extends AlipayObject {
 	@ApiField("matcher")
 	private List<Matcher> matchers;
 
-	public String getLabelId() {
+    /**
+     * Gets label id.
+     *
+     * @return the label id
+     */
+    public String getLabelId() {
 		return this.labelId;
 	}
-	public void setLabelId(String labelId) {
+
+    /**
+     * Sets label id.
+     *
+     * @param labelId the label id
+     */
+    public void setLabelId(String labelId) {
 		this.labelId = labelId;
 	}
 
-	public String getLabelValue() {
+    /**
+     * Gets label value.
+     *
+     * @return the label value
+     */
+    public String getLabelValue() {
 		return this.labelValue;
 	}
-	public void setLabelValue(String labelValue) {
+
+    /**
+     * Sets label value.
+     *
+     * @param labelValue the label value
+     */
+    public void setLabelValue(String labelValue) {
 		this.labelValue = labelValue;
 	}
 
-	public List<Matcher> getMatchers() {
+    /**
+     * Gets matchers.
+     *
+     * @return the matchers
+     */
+    public List<Matcher> getMatchers() {
 		return this.matchers;
 	}
-	public void setMatchers(List<Matcher> matchers) {
+
+    /**
+     * Sets matchers.
+     *
+     * @param matchers the matchers
+     */
+    public void setMatchers(List<Matcher> matchers) {
 		this.matchers = matchers;
 	}
 

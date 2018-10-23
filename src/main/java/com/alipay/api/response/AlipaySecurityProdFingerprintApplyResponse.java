@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.security.prod.fingerprint.apply response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-08-02 14:25:09
+ * @since 1.0, 2018-08-17 16:53:47
  */
 public class AlipaySecurityProdFingerprintApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5177726134828957714L;
+	private static final long serialVersionUID = 5795132615983617379L;
 
 	/** 
 	 * IFAA标准中的校验类型，目前1为指纹
@@ -32,24 +32,57 @@ public class AlipaySecurityProdFingerprintApplyResponse extends AlipayResponse {
 	@ApiField("token")
 	private String token;
 
-	public void setAuthType(String authType) {
+    /**
+     * Sets auth type.
+     *
+     * @param authType the auth type
+     */
+    public void setAuthType(String authType) {
 		this.authType = authType;
 	}
-	public String getAuthType( ) {
+
+    /**
+     * Gets auth type.
+     *
+     * @return the auth type
+     */
+    public String getAuthType( ) {
 		return this.authType;
 	}
 
-	public void setDeviceId(String deviceId) {
+    /**
+     * Sets device id.
+     *
+     * @param deviceId the device id
+     */
+    public void setDeviceId(String deviceId) {
 		this.deviceId = deviceId;
 	}
-	public String getDeviceId( ) {
+
+    /**
+     * Gets device id.
+     *
+     * @return the device id
+     */
+    public String getDeviceId( ) {
 		return this.deviceId;
 	}
 
-	public void setToken(String token) {
+    /**
+     * Sets token.
+     *
+     * @param token the token
+     */
+    public void setToken(String token) {
 		this.token = token;
 	}
-	public String getToken( ) {
+
+    /**
+     * Gets token.
+     *
+     * @return the token
+     */
+    public String getToken( ) {
 		return this.token;
 	}
 

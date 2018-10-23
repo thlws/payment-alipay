@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 物业小区业主信息上传
  *
  * @author auto create
- * @since 1.0, 2016-11-24 16:15:02
+ * @since 1.0, 2018-06-09 20:19:02
  */
 public class AlipayEcoCplifeResidentinfoUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4263932174211173893L;
+	private static final long serialVersionUID = 5561722528998695932L;
 
 	/**
 	 * 请求流水号，由商户自定义，在商户系统内唯一标示一次业务请求。
@@ -35,24 +35,57 @@ public class AlipayEcoCplifeResidentinfoUploadModel extends AlipayObject {
 	@ApiField("cplife_resident_info")
 	private List<CplifeResidentInfo> residentInfo;
 
-	public String getBatchId() {
+    /**
+     * Gets batch id.
+     *
+     * @return the batch id
+     */
+    public String getBatchId() {
 		return this.batchId;
 	}
-	public void setBatchId(String batchId) {
+
+    /**
+     * Sets batch id.
+     *
+     * @param batchId the batch id
+     */
+    public void setBatchId(String batchId) {
 		this.batchId = batchId;
 	}
 
-	public String getCommunityId() {
+    /**
+     * Gets community id.
+     *
+     * @return the community id
+     */
+    public String getCommunityId() {
 		return this.communityId;
 	}
-	public void setCommunityId(String communityId) {
+
+    /**
+     * Sets community id.
+     *
+     * @param communityId the community id
+     */
+    public void setCommunityId(String communityId) {
 		this.communityId = communityId;
 	}
 
-	public List<CplifeResidentInfo> getResidentInfo() {
+    /**
+     * Gets resident info.
+     *
+     * @return the resident info
+     */
+    public List<CplifeResidentInfo> getResidentInfo() {
 		return this.residentInfo;
 	}
-	public void setResidentInfo(List<CplifeResidentInfo> residentInfo) {
+
+    /**
+     * Sets resident info.
+     *
+     * @param residentInfo the resident info
+     */
+    public void setResidentInfo(List<CplifeResidentInfo> residentInfo) {
 		this.residentInfo = residentInfo;
 	}
 

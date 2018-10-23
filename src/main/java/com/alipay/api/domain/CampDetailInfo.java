@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 营销活动详情信息
  *
  * @author auto create
- * @since 1.0, 2017-08-07 20:34:11
+ * @since 1.0, 2018-01-05 10:43:59
  */
 public class CampDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8518587675854887324L;
+	private static final long serialVersionUID = 7171359169841229442L;
 
 	/**
 	 * 活动开始时间
@@ -44,6 +47,12 @@ public class CampDetailInfo extends AlipayObject {
 	private String campGuide;
 
 	/**
+	 * 活动id
+	 */
+	@ApiField("camp_id")
+	private String campId;
+
+	/**
 	 * 活动结束时间
 	 */
 	@ApiField("end_time")
@@ -54,6 +63,14 @@ public class CampDetailInfo extends AlipayObject {
 	 */
 	@ApiField("ext_info")
 	private String extInfo;
+
+	/**
+	 * 活动规则标识列表，列表中存在的标识，代表该活动包含对应的规则。目前只有人群规则一种。标识说明：
+CROWD：人群规则
+	 */
+	@ApiListField("rule_flag_list")
+	@ApiField("string")
+	private List<String> ruleFlagList;
 
 	/**
 	 * 每人每日参与次数 -1为不限制
@@ -67,66 +84,201 @@ public class CampDetailInfo extends AlipayObject {
 	@ApiField("win_limit_life")
 	private String winLimitLife;
 
-	public String getBeginTime() {
+    /**
+     * Gets begin time.
+     *
+     * @return the begin time
+     */
+    public String getBeginTime() {
 		return this.beginTime;
 	}
-	public void setBeginTime(String beginTime) {
+
+    /**
+     * Sets begin time.
+     *
+     * @param beginTime the begin time
+     */
+    public void setBeginTime(String beginTime) {
 		this.beginTime = beginTime;
 	}
 
-	public String getBizId() {
+    /**
+     * Gets biz id.
+     *
+     * @return the biz id
+     */
+    public String getBizId() {
 		return this.bizId;
 	}
-	public void setBizId(String bizId) {
+
+    /**
+     * Sets biz id.
+     *
+     * @param bizId the biz id
+     */
+    public void setBizId(String bizId) {
 		this.bizId = bizId;
 	}
 
-	public String getBizType() {
+    /**
+     * Gets biz type.
+     *
+     * @return the biz type
+     */
+    public String getBizType() {
 		return this.bizType;
 	}
-	public void setBizType(String bizType) {
+
+    /**
+     * Sets biz type.
+     *
+     * @param bizType the biz type
+     */
+    public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
-	public String getCampDesc() {
+    /**
+     * Gets camp desc.
+     *
+     * @return the camp desc
+     */
+    public String getCampDesc() {
 		return this.campDesc;
 	}
-	public void setCampDesc(String campDesc) {
+
+    /**
+     * Sets camp desc.
+     *
+     * @param campDesc the camp desc
+     */
+    public void setCampDesc(String campDesc) {
 		this.campDesc = campDesc;
 	}
 
-	public String getCampGuide() {
+    /**
+     * Gets camp guide.
+     *
+     * @return the camp guide
+     */
+    public String getCampGuide() {
 		return this.campGuide;
 	}
-	public void setCampGuide(String campGuide) {
+
+    /**
+     * Sets camp guide.
+     *
+     * @param campGuide the camp guide
+     */
+    public void setCampGuide(String campGuide) {
 		this.campGuide = campGuide;
 	}
 
-	public String getEndTime() {
+    /**
+     * Gets camp id.
+     *
+     * @return the camp id
+     */
+    public String getCampId() {
+		return this.campId;
+	}
+
+    /**
+     * Sets camp id.
+     *
+     * @param campId the camp id
+     */
+    public void setCampId(String campId) {
+		this.campId = campId;
+	}
+
+    /**
+     * Gets end time.
+     *
+     * @return the end time
+     */
+    public String getEndTime() {
 		return this.endTime;
 	}
-	public void setEndTime(String endTime) {
+
+    /**
+     * Sets end time.
+     *
+     * @param endTime the end time
+     */
+    public void setEndTime(String endTime) {
 		this.endTime = endTime;
 	}
 
-	public String getExtInfo() {
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo() {
 		return this.extInfo;
 	}
-	public void setExtInfo(String extInfo) {
+
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
-	public String getWinLimitDaily() {
+    /**
+     * Gets rule flag list.
+     *
+     * @return the rule flag list
+     */
+    public List<String> getRuleFlagList() {
+		return this.ruleFlagList;
+	}
+
+    /**
+     * Sets rule flag list.
+     *
+     * @param ruleFlagList the rule flag list
+     */
+    public void setRuleFlagList(List<String> ruleFlagList) {
+		this.ruleFlagList = ruleFlagList;
+	}
+
+    /**
+     * Gets win limit daily.
+     *
+     * @return the win limit daily
+     */
+    public String getWinLimitDaily() {
 		return this.winLimitDaily;
 	}
-	public void setWinLimitDaily(String winLimitDaily) {
+
+    /**
+     * Sets win limit daily.
+     *
+     * @param winLimitDaily the win limit daily
+     */
+    public void setWinLimitDaily(String winLimitDaily) {
 		this.winLimitDaily = winLimitDaily;
 	}
 
-	public String getWinLimitLife() {
+    /**
+     * Gets win limit life.
+     *
+     * @return the win limit life
+     */
+    public String getWinLimitLife() {
 		return this.winLimitLife;
 	}
-	public void setWinLimitLife(String winLimitLife) {
+
+    /**
+     * Sets win limit life.
+     *
+     * @param winLimitLife the win limit life
+     */
+    public void setWinLimitLife(String winLimitLife) {
 		this.winLimitLife = winLimitLife;
 	}
 

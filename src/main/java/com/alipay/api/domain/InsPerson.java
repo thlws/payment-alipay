@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险干系人
  *
  * @author auto create
- * @since 1.0, 2017-07-18 15:48:09
+ * @since 1.0, 2018-06-28 20:24:40
  */
 public class InsPerson extends AlipayObject {
 
-	private static final long serialVersionUID = 7161958785486238822L;
+	private static final long serialVersionUID = 3294597925867789415L;
 
 	/**
 	 * 地址
@@ -100,101 +100,255 @@ public class InsPerson extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
-	public String getAddress() {
+    /**
+     * Gets address.
+     *
+     * @return the address
+     */
+    public String getAddress() {
 		return this.address;
 	}
-	public void setAddress(String address) {
+
+    /**
+     * Sets address.
+     *
+     * @param address the address
+     */
+    public void setAddress(String address) {
 		this.address = address;
 	}
 
-	public Date getBirthday() {
+    /**
+     * Gets birthday.
+     *
+     * @return the birthday
+     */
+    public Date getBirthday() {
 		return this.birthday;
 	}
-	public void setBirthday(Date birthday) {
+
+    /**
+     * Sets birthday.
+     *
+     * @param birthday the birthday
+     */
+    public void setBirthday(Date birthday) {
 		this.birthday = birthday;
 	}
 
-	public String getBizData() {
+    /**
+     * Gets biz data.
+     *
+     * @return the biz data
+     */
+    public String getBizData() {
 		return this.bizData;
 	}
-	public void setBizData(String bizData) {
+
+    /**
+     * Sets biz data.
+     *
+     * @param bizData the biz data
+     */
+    public void setBizData(String bizData) {
 		this.bizData = bizData;
 	}
 
-	public String getCertName() {
+    /**
+     * Gets cert name.
+     *
+     * @return the cert name
+     */
+    public String getCertName() {
 		return this.certName;
 	}
-	public void setCertName(String certName) {
+
+    /**
+     * Sets cert name.
+     *
+     * @param certName the cert name
+     */
+    public void setCertName(String certName) {
 		this.certName = certName;
 	}
 
-	public String getCertNo() {
+    /**
+     * Gets cert no.
+     *
+     * @return the cert no
+     */
+    public String getCertNo() {
 		return this.certNo;
 	}
-	public void setCertNo(String certNo) {
+
+    /**
+     * Sets cert no.
+     *
+     * @param certNo the cert no
+     */
+    public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}
 
-	public String getCertType() {
+    /**
+     * Gets cert type.
+     *
+     * @return the cert type
+     */
+    public String getCertType() {
 		return this.certType;
 	}
-	public void setCertType(String certType) {
+
+    /**
+     * Sets cert type.
+     *
+     * @param certType the cert type
+     */
+    public void setCertType(String certType) {
 		this.certType = certType;
 	}
 
-	public String getChannelUserId() {
+    /**
+     * Gets channel user id.
+     *
+     * @return the channel user id
+     */
+    public String getChannelUserId() {
 		return this.channelUserId;
 	}
-	public void setChannelUserId(String channelUserId) {
+
+    /**
+     * Sets channel user id.
+     *
+     * @param channelUserId the channel user id
+     */
+    public void setChannelUserId(String channelUserId) {
 		this.channelUserId = channelUserId;
 	}
 
-	public String getChannelUserSource() {
+    /**
+     * Gets channel user source.
+     *
+     * @return the channel user source
+     */
+    public String getChannelUserSource() {
 		return this.channelUserSource;
 	}
-	public void setChannelUserSource(String channelUserSource) {
+
+    /**
+     * Sets channel user source.
+     *
+     * @param channelUserSource the channel user source
+     */
+    public void setChannelUserSource(String channelUserSource) {
 		this.channelUserSource = channelUserSource;
 	}
 
-	public String getEmail() {
+    /**
+     * Gets email.
+     *
+     * @return the email
+     */
+    public String getEmail() {
 		return this.email;
 	}
-	public void setEmail(String email) {
+
+    /**
+     * Sets email.
+     *
+     * @param email the email
+     */
+    public void setEmail(String email) {
 		this.email = email;
 	}
 
-	public String getGender() {
+    /**
+     * Gets gender.
+     *
+     * @return the gender
+     */
+    public String getGender() {
 		return this.gender;
 	}
-	public void setGender(String gender) {
+
+    /**
+     * Sets gender.
+     *
+     * @param gender the gender
+     */
+    public void setGender(String gender) {
 		this.gender = gender;
 	}
 
-	public String getNationality() {
+    /**
+     * Gets nationality.
+     *
+     * @return the nationality
+     */
+    public String getNationality() {
 		return this.nationality;
 	}
-	public void setNationality(String nationality) {
+
+    /**
+     * Sets nationality.
+     *
+     * @param nationality the nationality
+     */
+    public void setNationality(String nationality) {
 		this.nationality = nationality;
 	}
 
-	public String getPhone() {
+    /**
+     * Gets phone.
+     *
+     * @return the phone
+     */
+    public String getPhone() {
 		return this.phone;
 	}
-	public void setPhone(String phone) {
+
+    /**
+     * Sets phone.
+     *
+     * @param phone the phone
+     */
+    public void setPhone(String phone) {
 		this.phone = phone;
 	}
 
-	public String getPronounceName() {
+    /**
+     * Gets pronounce name.
+     *
+     * @return the pronounce name
+     */
+    public String getPronounceName() {
 		return this.pronounceName;
 	}
-	public void setPronounceName(String pronounceName) {
+
+    /**
+     * Sets pronounce name.
+     *
+     * @param pronounceName the pronounce name
+     */
+    public void setPronounceName(String pronounceName) {
 		this.pronounceName = pronounceName;
 	}
 
-	public String getUserId() {
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
-	public void setUserId(String userId) {
+
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
 

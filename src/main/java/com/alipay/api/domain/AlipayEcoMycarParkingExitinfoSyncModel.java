@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoMycarParkingExitinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8442686548938933557L;
+	private static final long serialVersionUID = 4617236342551223776L;
 
 	/**
 	 * 车牌号
@@ -31,24 +31,57 @@ public class AlipayEcoMycarParkingExitinfoSyncModel extends AlipayObject {
 	@ApiField("parking_id")
 	private String parkingId;
 
-	public String getCarNumber() {
+    /**
+     * Gets car number.
+     *
+     * @return the car number
+     */
+    public String getCarNumber() {
 		return this.carNumber;
 	}
-	public void setCarNumber(String carNumber) {
+
+    /**
+     * Sets car number.
+     *
+     * @param carNumber the car number
+     */
+    public void setCarNumber(String carNumber) {
 		this.carNumber = carNumber;
 	}
 
-	public String getOutTime() {
+    /**
+     * Gets out time.
+     *
+     * @return the out time
+     */
+    public String getOutTime() {
 		return this.outTime;
 	}
-	public void setOutTime(String outTime) {
+
+    /**
+     * Sets out time.
+     *
+     * @param outTime the out time
+     */
+    public void setOutTime(String outTime) {
 		this.outTime = outTime;
 	}
 
-	public String getParkingId() {
+    /**
+     * Gets parking id.
+     *
+     * @return the parking id
+     */
+    public String getParkingId() {
 		return this.parkingId;
 	}
-	public void setParkingId(String parkingId) {
+
+    /**
+     * Sets parking id.
+     *
+     * @param parkingId the parking id
+     */
+    public void setParkingId(String parkingId) {
 		this.parkingId = parkingId;
 	}
 

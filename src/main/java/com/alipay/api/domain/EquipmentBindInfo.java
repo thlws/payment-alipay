@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EquipmentBindInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4484591467628617927L;
+	private static final long serialVersionUID = 4435871926162367347L;
 
 	/**
 	 * 机具ID
@@ -25,17 +25,39 @@ public class EquipmentBindInfo extends AlipayObject {
 	@ApiField("is_bind_shop")
 	private String isBindShop;
 
-	public String getEquipmentId() {
+    /**
+     * Gets equipment id.
+     *
+     * @return the equipment id
+     */
+    public String getEquipmentId() {
 		return this.equipmentId;
 	}
-	public void setEquipmentId(String equipmentId) {
+
+    /**
+     * Sets equipment id.
+     *
+     * @param equipmentId the equipment id
+     */
+    public void setEquipmentId(String equipmentId) {
 		this.equipmentId = equipmentId;
 	}
 
-	public String getIsBindShop() {
+    /**
+     * Gets is bind shop.
+     *
+     * @return the is bind shop
+     */
+    public String getIsBindShop() {
 		return this.isBindShop;
 	}
-	public void setIsBindShop(String isBindShop) {
+
+    /**
+     * Sets is bind shop.
+     *
+     * @param isBindShop the is bind shop
+     */
+    public void setIsBindShop(String isBindShop) {
 		this.isBindShop = isBindShop;
 	}
 

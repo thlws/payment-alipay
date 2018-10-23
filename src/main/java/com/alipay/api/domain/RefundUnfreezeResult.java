@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RefundUnfreezeResult extends AlipayObject {
 
-	private static final long serialVersionUID = 8295543625721643985L;
+	private static final long serialVersionUID = 8846676267822966694L;
 
 	/**
 	 * 冻结单号
@@ -49,45 +49,111 @@ public class RefundUnfreezeResult extends AlipayObject {
 	@ApiField("unfreeze_time")
 	private String unfreezeTime;
 
-	public String getFreezeNo() {
+    /**
+     * Gets freeze no.
+     *
+     * @return the freeze no
+     */
+    public String getFreezeNo() {
 		return this.freezeNo;
 	}
-	public void setFreezeNo(String freezeNo) {
+
+    /**
+     * Sets freeze no.
+     *
+     * @param freezeNo the freeze no
+     */
+    public void setFreezeNo(String freezeNo) {
 		this.freezeNo = freezeNo;
 	}
 
-	public String getResultCode() {
+    /**
+     * Gets result code.
+     *
+     * @return the result code
+     */
+    public String getResultCode() {
 		return this.resultCode;
 	}
-	public void setResultCode(String resultCode) {
+
+    /**
+     * Sets result code.
+     *
+     * @param resultCode the result code
+     */
+    public void setResultCode(String resultCode) {
 		this.resultCode = resultCode;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 
-	public String getUnfreezeAmount() {
+    /**
+     * Gets unfreeze amount.
+     *
+     * @return the unfreeze amount
+     */
+    public String getUnfreezeAmount() {
 		return this.unfreezeAmount;
 	}
-	public void setUnfreezeAmount(String unfreezeAmount) {
+
+    /**
+     * Sets unfreeze amount.
+     *
+     * @param unfreezeAmount the unfreeze amount
+     */
+    public void setUnfreezeAmount(String unfreezeAmount) {
 		this.unfreezeAmount = unfreezeAmount;
 	}
 
-	public String getUnfreezeNo() {
+    /**
+     * Gets unfreeze no.
+     *
+     * @return the unfreeze no
+     */
+    public String getUnfreezeNo() {
 		return this.unfreezeNo;
 	}
-	public void setUnfreezeNo(String unfreezeNo) {
+
+    /**
+     * Sets unfreeze no.
+     *
+     * @param unfreezeNo the unfreeze no
+     */
+    public void setUnfreezeNo(String unfreezeNo) {
 		this.unfreezeNo = unfreezeNo;
 	}
 
-	public String getUnfreezeTime() {
+    /**
+     * Gets unfreeze time.
+     *
+     * @return the unfreeze time
+     */
+    public String getUnfreezeTime() {
 		return this.unfreezeTime;
 	}
-	public void setUnfreezeTime(String unfreezeTime) {
+
+    /**
+     * Sets unfreeze time.
+     *
+     * @param unfreezeTime the unfreeze time
+     */
+    public void setUnfreezeTime(String unfreezeTime) {
 		this.unfreezeTime = unfreezeTime;
 	}
 

@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.edu.kt.student.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-08-14 11:04:55
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayEcoEduKtStudentQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7466665573384754756L;
+	private static final long serialVersionUID = 8863342591234145149L;
 
 	/** 
 	 * 学生姓名
@@ -54,45 +54,111 @@ public class AlipayEcoEduKtStudentQueryResponse extends AlipayResponse {
 	@ApiField("user_details")
 	private List<UserDetails> users;
 
-	public void setChildName(String childName) {
+    /**
+     * Sets child name.
+     *
+     * @param childName the child name
+     */
+    public void setChildName(String childName) {
 		this.childName = childName;
 	}
-	public String getChildName( ) {
+
+    /**
+     * Gets child name.
+     *
+     * @return the child name
+     */
+    public String getChildName( ) {
 		return this.childName;
 	}
 
-	public void setClassName(String className) {
+    /**
+     * Sets class name.
+     *
+     * @param className the class name
+     */
+    public void setClassName(String className) {
 		this.className = className;
 	}
-	public String getClassName( ) {
+
+    /**
+     * Gets class name.
+     *
+     * @return the class name
+     */
+    public String getClassName( ) {
 		return this.className;
 	}
 
-	public void setSchoolName(String schoolName) {
+    /**
+     * Sets school name.
+     *
+     * @param schoolName the school name
+     */
+    public void setSchoolName(String schoolName) {
 		this.schoolName = schoolName;
 	}
-	public String getSchoolName( ) {
+
+    /**
+     * Gets school name.
+     *
+     * @return the school name
+     */
+    public String getSchoolName( ) {
 		return this.schoolName;
 	}
 
-	public void setStudentCode(String studentCode) {
+    /**
+     * Sets student code.
+     *
+     * @param studentCode the student code
+     */
+    public void setStudentCode(String studentCode) {
 		this.studentCode = studentCode;
 	}
-	public String getStudentCode( ) {
+
+    /**
+     * Gets student code.
+     *
+     * @return the student code
+     */
+    public String getStudentCode( ) {
 		return this.studentCode;
 	}
 
-	public void setStudentIdentify(String studentIdentify) {
+    /**
+     * Sets student identify.
+     *
+     * @param studentIdentify the student identify
+     */
+    public void setStudentIdentify(String studentIdentify) {
 		this.studentIdentify = studentIdentify;
 	}
-	public String getStudentIdentify( ) {
+
+    /**
+     * Gets student identify.
+     *
+     * @return the student identify
+     */
+    public String getStudentIdentify( ) {
 		return this.studentIdentify;
 	}
 
-	public void setUsers(List<UserDetails> users) {
+    /**
+     * Sets users.
+     *
+     * @param users the users
+     */
+    public void setUsers(List<UserDetails> users) {
 		this.users = users;
 	}
-	public List<UserDetails> getUsers( ) {
+
+    /**
+     * Gets users.
+     *
+     * @return the users
+     */
+    public List<UserDetails> getUsers( ) {
 		return this.users;
 	}
 

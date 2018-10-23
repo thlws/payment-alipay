@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.member.coupon.querylist request
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-04-14 11:46:40
  */
@@ -59,38 +59,93 @@ OPENID：用户支付宝账户在某商户下的唯一ID
 	 */
 	private String userInfo;
 
-	public void setMerchantInfo(String merchantInfo) {
+    /**
+     * Sets merchant info.
+     *
+     * @param merchantInfo the merchant info
+     */
+    public void setMerchantInfo(String merchantInfo) {
 		this.merchantInfo = merchantInfo;
 	}
-	public String getMerchantInfo() {
+
+    /**
+     * Gets merchant info.
+     *
+     * @return the merchant info
+     */
+    public String getMerchantInfo() {
 		return this.merchantInfo;
 	}
 
-	public void setPageNo(String pageNo) {
+    /**
+     * Sets page no.
+     *
+     * @param pageNo the page no
+     */
+    public void setPageNo(String pageNo) {
 		this.pageNo = pageNo;
 	}
-	public String getPageNo() {
+
+    /**
+     * Gets page no.
+     *
+     * @return the page no
+     */
+    public String getPageNo() {
 		return this.pageNo;
 	}
 
-	public void setPageSize(String pageSize) {
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(String pageSize) {
 		this.pageSize = pageSize;
 	}
-	public String getPageSize() {
+
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public String getPageSize() {
 		return this.pageSize;
 	}
 
-	public void setStatus(String status) {
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
-	public String getStatus() {
+
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
 
-	public void setUserInfo(String userInfo) {
+    /**
+     * Sets user info.
+     *
+     * @param userInfo the user info
+     */
+    public void setUserInfo(String userInfo) {
 		this.userInfo = userInfo;
 	}
-	public String getUserInfo() {
+
+    /**
+     * Gets user info.
+     *
+     * @return the user info
+     */
+    public String getUserInfo() {
 		return this.userInfo;
 	}
 	private String terminalType;
@@ -166,7 +221,13 @@ OPENID：用户支付宝账户在某商户下的唯一ID
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

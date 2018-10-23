@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.data.dishdiagnosetype.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-10-10 19:25:38
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class KoubeiMarketingDataDishdiagnosetypeBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4637827761825466793L;
+	private static final long serialVersionUID = 6464486259759296597L;
 
 	/** 
 	 * 菜品类型list
@@ -24,10 +24,21 @@ public class KoubeiMarketingDataDishdiagnosetypeBatchqueryResponse extends Alipa
 	@ApiField("item_diagnose_type")
 	private List<ItemDiagnoseType> itemDiagnoseTypeList;
 
-	public void setItemDiagnoseTypeList(List<ItemDiagnoseType> itemDiagnoseTypeList) {
+    /**
+     * Sets item diagnose type list.
+     *
+     * @param itemDiagnoseTypeList the item diagnose type list
+     */
+    public void setItemDiagnoseTypeList(List<ItemDiagnoseType> itemDiagnoseTypeList) {
 		this.itemDiagnoseTypeList = itemDiagnoseTypeList;
 	}
-	public List<ItemDiagnoseType> getItemDiagnoseTypeList( ) {
+
+    /**
+     * Gets item diagnose type list.
+     *
+     * @return the item diagnose type list
+     */
+    public List<ItemDiagnoseType> getItemDiagnoseTypeList( ) {
 		return this.itemDiagnoseTypeList;
 	}
 

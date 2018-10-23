@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayItemVoucherTemplete extends AlipayObject {
 
-	private static final long serialVersionUID = 1781196711831278314L;
+	private static final long serialVersionUID = 4323484267354538667L;
 
 	/**
 	 * 延迟生效时间（手动领取条件下，可跟valid_period组合使用）
@@ -119,108 +119,273 @@ DISCOUNT类型为优惠封顶金额
 	@ApiField("voucher_type")
 	private String voucherType;
 
-	public Long getDelayMinute() {
+    /**
+     * Gets delay minute.
+     *
+     * @return the delay minute
+     */
+    public Long getDelayMinute() {
 		return this.delayMinute;
 	}
-	public void setDelayMinute(Long delayMinute) {
+
+    /**
+     * Sets delay minute.
+     *
+     * @param delayMinute the delay minute
+     */
+    public void setDelayMinute(Long delayMinute) {
 		this.delayMinute = delayMinute;
 	}
 
-	public List<AlipayItemDescription> getDescDetails() {
+    /**
+     * Gets desc details.
+     *
+     * @return the desc details
+     */
+    public List<AlipayItemDescription> getDescDetails() {
 		return this.descDetails;
 	}
-	public void setDescDetails(List<AlipayItemDescription> descDetails) {
+
+    /**
+     * Sets desc details.
+     *
+     * @param descDetails the desc details
+     */
+    public void setDescDetails(List<AlipayItemDescription> descDetails) {
 		this.descDetails = descDetails;
 	}
 
-	public Long getDiscountRate() {
+    /**
+     * Gets discount rate.
+     *
+     * @return the discount rate
+     */
+    public Long getDiscountRate() {
 		return this.discountRate;
 	}
-	public void setDiscountRate(Long discountRate) {
+
+    /**
+     * Sets discount rate.
+     *
+     * @param discountRate the discount rate
+     */
+    public void setDiscountRate(Long discountRate) {
 		this.discountRate = discountRate;
 	}
 
-	public AlipayItemGoodsList getExternalGoodsList() {
+    /**
+     * Gets external goods list.
+     *
+     * @return the external goods list
+     */
+    public AlipayItemGoodsList getExternalGoodsList() {
 		return this.externalGoodsList;
 	}
-	public void setExternalGoodsList(AlipayItemGoodsList externalGoodsList) {
+
+    /**
+     * Sets external goods list.
+     *
+     * @param externalGoodsList the external goods list
+     */
+    public void setExternalGoodsList(AlipayItemGoodsList externalGoodsList) {
 		this.externalGoodsList = externalGoodsList;
 	}
 
-	public List<AlipayItemLimitPeriodInfo> getLimitPeriodInfoList() {
+    /**
+     * Gets limit period info list.
+     *
+     * @return the limit period info list
+     */
+    public List<AlipayItemLimitPeriodInfo> getLimitPeriodInfoList() {
 		return this.limitPeriodInfoList;
 	}
-	public void setLimitPeriodInfoList(List<AlipayItemLimitPeriodInfo> limitPeriodInfoList) {
+
+    /**
+     * Sets limit period info list.
+     *
+     * @param limitPeriodInfoList the limit period info list
+     */
+    public void setLimitPeriodInfoList(List<AlipayItemLimitPeriodInfo> limitPeriodInfoList) {
 		this.limitPeriodInfoList = limitPeriodInfoList;
 	}
 
-	public Long getOriginalAmount() {
+    /**
+     * Gets original amount.
+     *
+     * @return the original amount
+     */
+    public Long getOriginalAmount() {
 		return this.originalAmount;
 	}
-	public void setOriginalAmount(Long originalAmount) {
+
+    /**
+     * Sets original amount.
+     *
+     * @param originalAmount the original amount
+     */
+    public void setOriginalAmount(Long originalAmount) {
 		this.originalAmount = originalAmount;
 	}
 
-	public Long getOriginalRate() {
+    /**
+     * Gets original rate.
+     *
+     * @return the original rate
+     */
+    public Long getOriginalRate() {
 		return this.originalRate;
 	}
-	public void setOriginalRate(Long originalRate) {
+
+    /**
+     * Sets original rate.
+     *
+     * @param originalRate the original rate
+     */
+    public void setOriginalRate(Long originalRate) {
 		this.originalRate = originalRate;
 	}
 
-	public Long getReduceToAmount() {
+    /**
+     * Gets reduce to amount.
+     *
+     * @return the reduce to amount
+     */
+    public Long getReduceToAmount() {
 		return this.reduceToAmount;
 	}
-	public void setReduceToAmount(Long reduceToAmount) {
+
+    /**
+     * Sets reduce to amount.
+     *
+     * @param reduceToAmount the reduce to amount
+     */
+    public void setReduceToAmount(Long reduceToAmount) {
 		this.reduceToAmount = reduceToAmount;
 	}
 
-	public String getRoundingRule() {
+    /**
+     * Gets rounding rule.
+     *
+     * @return the rounding rule
+     */
+    public String getRoundingRule() {
 		return this.roundingRule;
 	}
-	public void setRoundingRule(String roundingRule) {
+
+    /**
+     * Sets rounding rule.
+     *
+     * @param roundingRule the rounding rule
+     */
+    public void setRoundingRule(String roundingRule) {
 		this.roundingRule = roundingRule;
 	}
 
-	public Long getThresholdAmount() {
+    /**
+     * Gets threshold amount.
+     *
+     * @return the threshold amount
+     */
+    public Long getThresholdAmount() {
 		return this.thresholdAmount;
 	}
-	public void setThresholdAmount(Long thresholdAmount) {
+
+    /**
+     * Sets threshold amount.
+     *
+     * @param thresholdAmount the threshold amount
+     */
+    public void setThresholdAmount(Long thresholdAmount) {
 		this.thresholdAmount = thresholdAmount;
 	}
 
-	public Long getThresholdQuantity() {
+    /**
+     * Gets threshold quantity.
+     *
+     * @return the threshold quantity
+     */
+    public Long getThresholdQuantity() {
 		return this.thresholdQuantity;
 	}
-	public void setThresholdQuantity(Long thresholdQuantity) {
+
+    /**
+     * Sets threshold quantity.
+     *
+     * @param thresholdQuantity the threshold quantity
+     */
+    public void setThresholdQuantity(Long thresholdQuantity) {
 		this.thresholdQuantity = thresholdQuantity;
 	}
 
-	public Long getValidPeriod() {
+    /**
+     * Gets valid period.
+     *
+     * @return the valid period
+     */
+    public Long getValidPeriod() {
 		return this.validPeriod;
 	}
-	public void setValidPeriod(Long validPeriod) {
+
+    /**
+     * Sets valid period.
+     *
+     * @param validPeriod the valid period
+     */
+    public void setValidPeriod(Long validPeriod) {
 		this.validPeriod = validPeriod;
 	}
 
-	public Long getValueAmount() {
+    /**
+     * Gets value amount.
+     *
+     * @return the value amount
+     */
+    public Long getValueAmount() {
 		return this.valueAmount;
 	}
-	public void setValueAmount(Long valueAmount) {
+
+    /**
+     * Sets value amount.
+     *
+     * @param valueAmount the value amount
+     */
+    public void setValueAmount(Long valueAmount) {
 		this.valueAmount = valueAmount;
 	}
 
-	public String getVoucherDesc() {
+    /**
+     * Gets voucher desc.
+     *
+     * @return the voucher desc
+     */
+    public String getVoucherDesc() {
 		return this.voucherDesc;
 	}
-	public void setVoucherDesc(String voucherDesc) {
+
+    /**
+     * Sets voucher desc.
+     *
+     * @param voucherDesc the voucher desc
+     */
+    public void setVoucherDesc(String voucherDesc) {
 		this.voucherDesc = voucherDesc;
 	}
 
-	public String getVoucherType() {
+    /**
+     * Gets voucher type.
+     *
+     * @return the voucher type
+     */
+    public String getVoucherType() {
 		return this.voucherType;
 	}
-	public void setVoucherType(String voucherType) {
+
+    /**
+     * Sets voucher type.
+     *
+     * @param voucherType the voucher type
+     */
+    public void setVoucherType(String voucherType) {
 		this.voucherType = voucherType;
 	}
 

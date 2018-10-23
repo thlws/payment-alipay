@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaDataFeedbackurlQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6517968184385611255L;
+	private static final long serialVersionUID = 7179263715313768532L;
 
 	/**
 	 * 在支付宝商户版注册支付宝账号id
@@ -19,10 +19,21 @@ public class ZhimaDataFeedbackurlQueryModel extends AlipayObject {
 	@ApiField("merchant_id")
 	private String merchantId;
 
-	public String getMerchantId() {
+    /**
+     * Gets merchant id.
+     *
+     * @return the merchant id
+     */
+    public String getMerchantId() {
 		return this.merchantId;
 	}
-	public void setMerchantId(String merchantId) {
+
+    /**
+     * Sets merchant id.
+     *
+     * @param merchantId the merchant id
+     */
+    public void setMerchantId(String merchantId) {
 		this.merchantId = merchantId;
 	}
 

@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.mycar.dataservice.violationinfo.share response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-09-15 16:30:19
  */
 public class AlipayEcoMycarDataserviceViolationinfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8268559551349744745L;
+	private static final long serialVersionUID = 4859171542778131277L;
 
 	/** 
 	 * 车架号
@@ -38,31 +38,75 @@ public class AlipayEcoMycarDataserviceViolationinfoShareResponse extends AlipayR
 	@ApiField("vi_number")
 	private String viNumber;
 
-	public void setBodyNum(String bodyNum) {
+    /**
+     * Sets body num.
+     *
+     * @param bodyNum the body num
+     */
+    public void setBodyNum(String bodyNum) {
 		this.bodyNum = bodyNum;
 	}
-	public String getBodyNum( ) {
+
+    /**
+     * Gets body num.
+     *
+     * @return the body num
+     */
+    public String getBodyNum( ) {
 		return this.bodyNum;
 	}
 
-	public void setEngineNum(String engineNum) {
+    /**
+     * Sets engine num.
+     *
+     * @param engineNum the engine num
+     */
+    public void setEngineNum(String engineNum) {
 		this.engineNum = engineNum;
 	}
-	public String getEngineNum( ) {
+
+    /**
+     * Gets engine num.
+     *
+     * @return the engine num
+     */
+    public String getEngineNum( ) {
 		return this.engineNum;
 	}
 
-	public void setVehicleId(String vehicleId) {
+    /**
+     * Sets vehicle id.
+     *
+     * @param vehicleId the vehicle id
+     */
+    public void setVehicleId(String vehicleId) {
 		this.vehicleId = vehicleId;
 	}
-	public String getVehicleId( ) {
+
+    /**
+     * Gets vehicle id.
+     *
+     * @return the vehicle id
+     */
+    public String getVehicleId( ) {
 		return this.vehicleId;
 	}
 
-	public void setViNumber(String viNumber) {
+    /**
+     * Sets vi number.
+     *
+     * @param viNumber the vi number
+     */
+    public void setViNumber(String viNumber) {
 		this.viNumber = viNumber;
 	}
-	public String getViNumber( ) {
+
+    /**
+     * Gets vi number.
+     *
+     * @return the vi number
+     */
+    public String getViNumber( ) {
 		return this.viNumber;
 	}
 

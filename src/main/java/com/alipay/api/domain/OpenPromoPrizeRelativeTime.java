@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenPromoPrizeRelativeTime extends AlipayObject {
 
-	private static final long serialVersionUID = 8134585749612116126L;
+	private static final long serialVersionUID = 5367795675967145213L;
 
 	/**
 	 * 时间维度,
@@ -30,17 +30,39 @@ public class OpenPromoPrizeRelativeTime extends AlipayObject {
 	@ApiField("value")
 	private String value;
 
-	public String getDimension() {
+    /**
+     * Gets dimension.
+     *
+     * @return the dimension
+     */
+    public String getDimension() {
 		return this.dimension;
 	}
-	public void setDimension(String dimension) {
+
+    /**
+     * Sets dimension.
+     *
+     * @param dimension the dimension
+     */
+    public void setDimension(String dimension) {
 		this.dimension = dimension;
 	}
 
-	public String getValue() {
+    /**
+     * Gets value.
+     *
+     * @return the value
+     */
+    public String getValue() {
 		return this.value;
 	}
-	public void setValue(String value) {
+
+    /**
+     * Sets value.
+     *
+     * @param value the value
+     */
+    public void setValue(String value) {
 		this.value = value;
 	}
 

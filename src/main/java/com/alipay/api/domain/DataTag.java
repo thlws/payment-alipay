@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DataTag extends AlipayObject {
 
-	private static final long serialVersionUID = 6683725128844145589L;
+	private static final long serialVersionUID = 3566326537924892649L;
 
 	/**
 	 * 聚合方式NONE,COUNT,COUNT_DISTINCT,DISTINCT,MIN,MAX,SUM
@@ -31,24 +31,57 @@ public class DataTag extends AlipayObject {
 	@ApiField("code")
 	private String code;
 
-	public String getAggregate() {
+    /**
+     * Gets aggregate.
+     *
+     * @return the aggregate
+     */
+    public String getAggregate() {
 		return this.aggregate;
 	}
-	public void setAggregate(String aggregate) {
+
+    /**
+     * Sets aggregate.
+     *
+     * @param aggregate the aggregate
+     */
+    public void setAggregate(String aggregate) {
 		this.aggregate = aggregate;
 	}
 
-	public String getAlias() {
+    /**
+     * Gets alias.
+     *
+     * @return the alias
+     */
+    public String getAlias() {
 		return this.alias;
 	}
-	public void setAlias(String alias) {
+
+    /**
+     * Sets alias.
+     *
+     * @param alias the alias
+     */
+    public void setAlias(String alias) {
 		this.alias = alias;
 	}
 
-	public String getCode() {
+    /**
+     * Gets code.
+     *
+     * @return the code
+     */
+    public String getCode() {
 		return this.code;
 	}
-	public void setCode(String code) {
+
+    /**
+     * Sets code.
+     *
+     * @param code the code
+     */
+    public void setCode(String code) {
 		this.code = code;
 	}
 

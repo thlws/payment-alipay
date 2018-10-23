@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsCertificate extends AlipayObject {
 
-	private static final long serialVersionUID = 6347442647618237566L;
+	private static final long serialVersionUID = 5687727176726234222L;
 
 	/**
 	 * 发奖凭证ID
@@ -31,24 +31,57 @@ public class InsCertificate extends AlipayObject {
 	@ApiField("certificate_value")
 	private String certificateValue;
 
-	public String getCertificateId() {
+    /**
+     * Gets certificate id.
+     *
+     * @return the certificate id
+     */
+    public String getCertificateId() {
 		return this.certificateId;
 	}
-	public void setCertificateId(String certificateId) {
+
+    /**
+     * Sets certificate id.
+     *
+     * @param certificateId the certificate id
+     */
+    public void setCertificateId(String certificateId) {
 		this.certificateId = certificateId;
 	}
 
-	public String getCertificateType() {
+    /**
+     * Gets certificate type.
+     *
+     * @return the certificate type
+     */
+    public String getCertificateType() {
 		return this.certificateType;
 	}
-	public void setCertificateType(String certificateType) {
+
+    /**
+     * Sets certificate type.
+     *
+     * @param certificateType the certificate type
+     */
+    public void setCertificateType(String certificateType) {
 		this.certificateType = certificateType;
 	}
 
-	public String getCertificateValue() {
+    /**
+     * Gets certificate value.
+     *
+     * @return the certificate value
+     */
+    public String getCertificateValue() {
 		return this.certificateValue;
 	}
-	public void setCertificateValue(String certificateValue) {
+
+    /**
+     * Sets certificate value.
+     *
+     * @param certificateValue the certificate value
+     */
+    public void setCertificateValue(String certificateValue) {
 		this.certificateValue = certificateValue;
 	}
 

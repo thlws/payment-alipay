@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.trade.app.pay response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-05 11:49:05
+ * @since 1.0, 2018-07-16 16:20:00
  */
 public class AlipayTradeAppPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7311846964548697461L;
+	private static final long serialVersionUID = 1492861922467215923L;
 
 	/** 
 	 * 商户网站唯一订单号
@@ -39,31 +39,75 @@ public class AlipayTradeAppPayResponse extends AlipayResponse {
 	@ApiField("trade_no")
 	private String tradeNo;
 
-	public void setOutTradeNo(String outTradeNo) {
+    /**
+     * Sets out trade no.
+     *
+     * @param outTradeNo the out trade no
+     */
+    public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
-	public String getOutTradeNo( ) {
+
+    /**
+     * Gets out trade no.
+     *
+     * @return the out trade no
+     */
+    public String getOutTradeNo( ) {
 		return this.outTradeNo;
 	}
 
-	public void setSellerId(String sellerId) {
+    /**
+     * Sets seller id.
+     *
+     * @param sellerId the seller id
+     */
+    public void setSellerId(String sellerId) {
 		this.sellerId = sellerId;
 	}
-	public String getSellerId( ) {
+
+    /**
+     * Gets seller id.
+     *
+     * @return the seller id
+     */
+    public String getSellerId( ) {
 		return this.sellerId;
 	}
 
-	public void setTotalAmount(String totalAmount) {
+    /**
+     * Sets total amount.
+     *
+     * @param totalAmount the total amount
+     */
+    public void setTotalAmount(String totalAmount) {
 		this.totalAmount = totalAmount;
 	}
-	public String getTotalAmount( ) {
+
+    /**
+     * Gets total amount.
+     *
+     * @return the total amount
+     */
+    public String getTotalAmount( ) {
 		return this.totalAmount;
 	}
 
-	public void setTradeNo(String tradeNo) {
+    /**
+     * Sets trade no.
+     *
+     * @param tradeNo the trade no
+     */
+    public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
-	public String getTradeNo( ) {
+
+    /**
+     * Gets trade no.
+     *
+     * @return the trade no
+     */
+    public String getTradeNo( ) {
 		return this.tradeNo;
 	}
 

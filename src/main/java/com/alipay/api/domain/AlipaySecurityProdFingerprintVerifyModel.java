@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 指纹校验
  *
  * @author auto create
- * @since 1.0, 2017-08-02 14:25:33
+ * @since 1.0, 2018-08-17 16:53:37
  */
 public class AlipaySecurityProdFingerprintVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1166159467599726514L;
+	private static final long serialVersionUID = 2541465318933731756L;
 
 	/**
 	 * 业务扩展参数，目前添加指位变更逻辑判断字段，needAuthData标示指位变更敏感，subAction标示当前操作是校验还是更新指位
@@ -43,38 +43,93 @@ public class AlipaySecurityProdFingerprintVerifyModel extends AlipayObject {
 	@ApiField("sec_data")
 	private String secData;
 
-	public String getExtendParam() {
+    /**
+     * Gets extend param.
+     *
+     * @return the extend param
+     */
+    public String getExtendParam() {
 		return this.extendParam;
 	}
-	public void setExtendParam(String extendParam) {
+
+    /**
+     * Sets extend param.
+     *
+     * @param extendParam the extend param
+     */
+    public void setExtendParam(String extendParam) {
 		this.extendParam = extendParam;
 	}
 
-	public String getIfaaVersion() {
+    /**
+     * Gets ifaa version.
+     *
+     * @return the ifaa version
+     */
+    public String getIfaaVersion() {
 		return this.ifaaVersion;
 	}
-	public void setIfaaVersion(String ifaaVersion) {
+
+    /**
+     * Sets ifaa version.
+     *
+     * @param ifaaVersion the ifaa version
+     */
+    public void setIfaaVersion(String ifaaVersion) {
 		this.ifaaVersion = ifaaVersion;
 	}
 
-	public String getIfafMessage() {
+    /**
+     * Gets ifaf message.
+     *
+     * @return the ifaf message
+     */
+    public String getIfafMessage() {
 		return this.ifafMessage;
 	}
-	public void setIfafMessage(String ifafMessage) {
+
+    /**
+     * Sets ifaf message.
+     *
+     * @param ifafMessage the ifaf message
+     */
+    public void setIfafMessage(String ifafMessage) {
 		this.ifafMessage = ifafMessage;
 	}
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
-	public String getSecData() {
+    /**
+     * Gets sec data.
+     *
+     * @return the sec data
+     */
+    public String getSecData() {
 		return this.secData;
 	}
-	public void setSecData(String secData) {
+
+    /**
+     * Sets sec data.
+     *
+     * @param secData the sec data
+     */
+    public void setSecData(String secData) {
 		this.secData = secData;
 	}
 

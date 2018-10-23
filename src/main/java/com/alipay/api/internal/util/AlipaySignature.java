@@ -103,7 +103,7 @@ public class AlipaySignature {
      * @param privateKey the private key
      * @param charset    the charset
      * @param signType   the sign type
-     * @return string string
+     * @return string
      * @throws AlipayApiException the alipay api exception
      */
     public static String rsaSign(String content, String privateKey, String charset,
@@ -128,7 +128,7 @@ public class AlipaySignature {
      * @param content    the content
      * @param privateKey the private key
      * @param charset    the charset
-     * @return string string
+     * @return string
      * @throws AlipayApiException the alipay api exception
      */
     public static String rsa256Sign(String content, String privateKey,
@@ -164,7 +164,7 @@ public class AlipaySignature {
      * @param content    the content
      * @param privateKey the private key
      * @param charset    the charset
-     * @return string string
+     * @return string
      * @throws AlipayApiException the alipay api exception
      */
     public static String rsaSign(String content, String privateKey,
@@ -565,7 +565,7 @@ public class AlipaySignature {
      * @param charset         字符集，如UTF-8, GBK, GB2312
      * @param isEncrypt       是否加密，true-加密  false-不加密
      * @param isSign          是否签名，true-签名  false-不签名
-     * @return 加密 、签名后xml内容字符串
+     * @return 加密 、签名后xml内容字符串 <p> 返回示例： <alipay>  <response>密文</response>  <encryption_type>RSA</encryption_type>  <sign>sign</sign>  <sign_type>RSA</sign_type> </alipay> </p>
      * @throws AlipayApiException the alipay api exception
      */
     public static String encryptAndSign(String bizContent, String alipayPublicKey,
@@ -611,7 +611,7 @@ public class AlipaySignature {
      * @param isEncrypt       是否加密，true-加密  false-不加密
      * @param isSign          是否签名，true-签名  false-不签名
      * @param signType        the sign type
-     * @return 加密 、签名后xml内容字符串
+     * @return 加密 、签名后xml内容字符串 <p> 返回示例： <alipay>  <response>密文</response>  <encryption_type>RSA</encryption_type>  <sign>sign</sign>  <sign_type>RSA</sign_type> </alipay> </p>
      * @throws AlipayApiException the alipay api exception
      */
     public static String encryptAndSign(String bizContent, String alipayPublicKey,

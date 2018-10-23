@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保单邮寄地址
  *
  * @author auto create
- * @since 1.0, 2016-11-14 13:50:08
+ * @since 1.0, 2018-06-28 20:24:40
  */
 public class InsAddressee extends AlipayObject {
 
-	private static final long serialVersionUID = 1345597823167979598L;
+	private static final long serialVersionUID = 1861289957873852349L;
 
 	/**
 	 * 收件人详细地址
@@ -36,6 +36,12 @@ public class InsAddressee extends AlipayObject {
 	 */
 	@ApiField("city")
 	private String city;
+
+	/**
+	 * 邮箱
+	 */
+	@ApiField("email")
+	private String email;
 
 	/**
 	 * 联系方式(mobile登录号)
@@ -67,66 +73,183 @@ public class InsAddressee extends AlipayObject {
 	@ApiField("zip")
 	private String zip;
 
-	public String getAddress() {
+    /**
+     * Gets address.
+     *
+     * @return the address
+     */
+    public String getAddress() {
 		return this.address;
 	}
-	public void setAddress(String address) {
+
+    /**
+     * Sets address.
+     *
+     * @param address the address
+     */
+    public void setAddress(String address) {
 		this.address = address;
 	}
 
-	public String getAddressCode() {
+    /**
+     * Gets address code.
+     *
+     * @return the address code
+     */
+    public String getAddressCode() {
 		return this.addressCode;
 	}
-	public void setAddressCode(String addressCode) {
+
+    /**
+     * Sets address code.
+     *
+     * @param addressCode the address code
+     */
+    public void setAddressCode(String addressCode) {
 		this.addressCode = addressCode;
 	}
 
-	public String getArea() {
+    /**
+     * Gets area.
+     *
+     * @return the area
+     */
+    public String getArea() {
 		return this.area;
 	}
-	public void setArea(String area) {
+
+    /**
+     * Sets area.
+     *
+     * @param area the area
+     */
+    public void setArea(String area) {
 		this.area = area;
 	}
 
-	public String getCity() {
+    /**
+     * Gets city.
+     *
+     * @return the city
+     */
+    public String getCity() {
 		return this.city;
 	}
-	public void setCity(String city) {
+
+    /**
+     * Sets city.
+     *
+     * @param city the city
+     */
+    public void setCity(String city) {
 		this.city = city;
 	}
 
-	public String getMobile() {
+    /**
+     * Gets email.
+     *
+     * @return the email
+     */
+    public String getEmail() {
+		return this.email;
+	}
+
+    /**
+     * Sets email.
+     *
+     * @param email the email
+     */
+    public void setEmail(String email) {
+		this.email = email;
+	}
+
+    /**
+     * Gets mobile.
+     *
+     * @return the mobile
+     */
+    public String getMobile() {
 		return this.mobile;
 	}
-	public void setMobile(String mobile) {
+
+    /**
+     * Sets mobile.
+     *
+     * @param mobile the mobile
+     */
+    public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getPhone() {
+    /**
+     * Gets phone.
+     *
+     * @return the phone
+     */
+    public String getPhone() {
 		return this.phone;
 	}
-	public void setPhone(String phone) {
+
+    /**
+     * Sets phone.
+     *
+     * @param phone the phone
+     */
+    public void setPhone(String phone) {
 		this.phone = phone;
 	}
 
-	public String getProvince() {
+    /**
+     * Gets province.
+     *
+     * @return the province
+     */
+    public String getProvince() {
 		return this.province;
 	}
-	public void setProvince(String province) {
+
+    /**
+     * Sets province.
+     *
+     * @param province the province
+     */
+    public void setProvince(String province) {
 		this.province = province;
 	}
 
-	public String getZip() {
+    /**
+     * Gets zip.
+     *
+     * @return the zip
+     */
+    public String getZip() {
 		return this.zip;
 	}
-	public void setZip(String zip) {
+
+    /**
+     * Sets zip.
+     *
+     * @param zip the zip
+     */
+    public void setZip(String zip) {
 		this.zip = zip;
 	}
 

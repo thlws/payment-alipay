@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OperatorInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4589629164237431539L;
+	private static final long serialVersionUID = 6534296676394749546L;
 
 	/**
 	 * 个体工商户经营者证件到期日，格式为YYYY-MM-DD
@@ -49,45 +49,111 @@ public class OperatorInfo extends AlipayObject {
 	@ApiField("operator_name")
 	private String operatorName;
 
-	public String getOperatorCertIndate() {
+    /**
+     * Gets operator cert indate.
+     *
+     * @return the operator cert indate
+     */
+    public String getOperatorCertIndate() {
 		return this.operatorCertIndate;
 	}
-	public void setOperatorCertIndate(String operatorCertIndate) {
+
+    /**
+     * Sets operator cert indate.
+     *
+     * @param operatorCertIndate the operator cert indate
+     */
+    public void setOperatorCertIndate(String operatorCertIndate) {
 		this.operatorCertIndate = operatorCertIndate;
 	}
 
-	public String getOperatorCertNo() {
+    /**
+     * Gets operator cert no.
+     *
+     * @return the operator cert no
+     */
+    public String getOperatorCertNo() {
 		return this.operatorCertNo;
 	}
-	public void setOperatorCertNo(String operatorCertNo) {
+
+    /**
+     * Sets operator cert no.
+     *
+     * @param operatorCertNo the operator cert no
+     */
+    public void setOperatorCertNo(String operatorCertNo) {
 		this.operatorCertNo = operatorCertNo;
 	}
 
-	public String getOperatorCertPicBack() {
+    /**
+     * Gets operator cert pic back.
+     *
+     * @return the operator cert pic back
+     */
+    public String getOperatorCertPicBack() {
 		return this.operatorCertPicBack;
 	}
-	public void setOperatorCertPicBack(String operatorCertPicBack) {
+
+    /**
+     * Sets operator cert pic back.
+     *
+     * @param operatorCertPicBack the operator cert pic back
+     */
+    public void setOperatorCertPicBack(String operatorCertPicBack) {
 		this.operatorCertPicBack = operatorCertPicBack;
 	}
 
-	public String getOperatorCertPicFront() {
+    /**
+     * Gets operator cert pic front.
+     *
+     * @return the operator cert pic front
+     */
+    public String getOperatorCertPicFront() {
 		return this.operatorCertPicFront;
 	}
-	public void setOperatorCertPicFront(String operatorCertPicFront) {
+
+    /**
+     * Sets operator cert pic front.
+     *
+     * @param operatorCertPicFront the operator cert pic front
+     */
+    public void setOperatorCertPicFront(String operatorCertPicFront) {
 		this.operatorCertPicFront = operatorCertPicFront;
 	}
 
-	public String getOperatorCertType() {
+    /**
+     * Gets operator cert type.
+     *
+     * @return the operator cert type
+     */
+    public String getOperatorCertType() {
 		return this.operatorCertType;
 	}
-	public void setOperatorCertType(String operatorCertType) {
+
+    /**
+     * Sets operator cert type.
+     *
+     * @param operatorCertType the operator cert type
+     */
+    public void setOperatorCertType(String operatorCertType) {
 		this.operatorCertType = operatorCertType;
 	}
 
-	public String getOperatorName() {
+    /**
+     * Gets operator name.
+     *
+     * @return the operator name
+     */
+    public String getOperatorName() {
 		return this.operatorName;
 	}
-	public void setOperatorName(String operatorName) {
+
+    /**
+     * Sets operator name.
+     *
+     * @param operatorName the operator name
+     */
+    public void setOperatorName(String operatorName) {
 		this.operatorName = operatorName;
 	}
 

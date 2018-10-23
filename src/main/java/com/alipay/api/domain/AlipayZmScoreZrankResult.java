@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻分分段
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:41
+ * @since 1.0, 2018-01-22 10:52:40
  */
 public class AlipayZmScoreZrankResult extends AlipayObject {
 
-	private static final long serialVersionUID = 4329736888386269741L;
+	private static final long serialVersionUID = 7819584212691993965L;
 
 	/**
 	 * 芝麻分分段 Z0-Z7
@@ -19,10 +19,21 @@ public class AlipayZmScoreZrankResult extends AlipayObject {
 	@ApiField("zrank")
 	private String zrank;
 
-	public String getZrank() {
+    /**
+     * Gets zrank.
+     *
+     * @return the zrank
+     */
+    public String getZrank() {
 		return this.zrank;
 	}
-	public void setZrank(String zrank) {
+
+    /**
+     * Sets zrank.
+     *
+     * @param zrank the zrank
+     */
+    public void setZrank(String zrank) {
 		this.zrank = zrank;
 	}
 

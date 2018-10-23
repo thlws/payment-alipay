@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ecapiprod.drawndn.drawndnlist.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-03-29 11:34:45
  */
 public class AlipayEcapiprodDrawndnDrawndnlistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7579281372616235384L;
+	private static final long serialVersionUID = 8449287737194181286L;
 
 	/** 
 	 * 支用列表
@@ -30,17 +30,39 @@ public class AlipayEcapiprodDrawndnDrawndnlistQueryResponse extends AlipayRespon
 	@ApiField("request_id")
 	private String requestId;
 
-	public void setDrawndnList(List<DrawndnVo> drawndnList) {
+    /**
+     * Sets drawndn list.
+     *
+     * @param drawndnList the drawndn list
+     */
+    public void setDrawndnList(List<DrawndnVo> drawndnList) {
 		this.drawndnList = drawndnList;
 	}
-	public List<DrawndnVo> getDrawndnList( ) {
+
+    /**
+     * Gets drawndn list.
+     *
+     * @return the drawndn list
+     */
+    public List<DrawndnVo> getDrawndnList( ) {
 		return this.drawndnList;
 	}
 
-	public void setRequestId(String requestId) {
+    /**
+     * Sets request id.
+     *
+     * @param requestId the request id
+     */
+    public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
-	public String getRequestId( ) {
+
+    /**
+     * Gets request id.
+     *
+     * @return the request id
+     */
+    public String getRequestId( ) {
 		return this.requestId;
 	}
 

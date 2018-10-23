@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CPCommunitySet extends AlipayObject {
 
-	private static final long serialVersionUID = 1551786316724194353L;
+	private static final long serialVersionUID = 4488796881113793433L;
 
 	/**
 	 * 支付宝社区小区统一编号。
@@ -41,31 +41,75 @@ OFFLINE - 下线
 	@ApiField("status")
 	private String status;
 
-	public String getCommunityId() {
+    /**
+     * Gets community id.
+     *
+     * @return the community id
+     */
+    public String getCommunityId() {
 		return this.communityId;
 	}
-	public void setCommunityId(String communityId) {
+
+    /**
+     * Sets community id.
+     *
+     * @param communityId the community id
+     */
+    public void setCommunityId(String communityId) {
 		this.communityId = communityId;
 	}
 
-	public String getMerchantPid() {
+    /**
+     * Gets merchant pid.
+     *
+     * @return the merchant pid
+     */
+    public String getMerchantPid() {
 		return this.merchantPid;
 	}
-	public void setMerchantPid(String merchantPid) {
+
+    /**
+     * Sets merchant pid.
+     *
+     * @param merchantPid the merchant pid
+     */
+    public void setMerchantPid(String merchantPid) {
 		this.merchantPid = merchantPid;
 	}
 
-	public String getOutCommunityId() {
+    /**
+     * Gets out community id.
+     *
+     * @return the out community id
+     */
+    public String getOutCommunityId() {
 		return this.outCommunityId;
 	}
-	public void setOutCommunityId(String outCommunityId) {
+
+    /**
+     * Sets out community id.
+     *
+     * @param outCommunityId the out community id
+     */
+    public void setOutCommunityId(String outCommunityId) {
 		this.outCommunityId = outCommunityId;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 

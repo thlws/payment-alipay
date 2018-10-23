@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销立减活动预算查询
  *
  * @author auto create
- * @since 1.0, 2016-06-08 12:53:45
+ * @since 1.0, 2017-12-21 23:42:04
  */
 public class AlipayMarketingCampaignDiscountBudgetQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3624882585711762638L;
+	private static final long serialVersionUID = 1333335767157466618L;
 
 	/**
 	 * 预算名称
@@ -19,10 +19,21 @@ public class AlipayMarketingCampaignDiscountBudgetQueryModel extends AlipayObjec
 	@ApiField("budget_id")
 	private String budgetId;
 
-	public String getBudgetId() {
+    /**
+     * Gets budget id.
+     *
+     * @return the budget id
+     */
+    public String getBudgetId() {
 		return this.budgetId;
 	}
-	public void setBudgetId(String budgetId) {
+
+    /**
+     * Sets budget id.
+     *
+     * @param budgetId the budget id
+     */
+    public void setBudgetId(String budgetId) {
 		this.budgetId = budgetId;
 	}
 

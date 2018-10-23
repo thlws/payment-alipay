@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.setting.category.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-20 17:31:58
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayOpenPublicSettingCategoryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6471573938956832932L;
+	private static final long serialVersionUID = 1612347357533389256L;
 
 	/** 
 	 * 返回已设置的一级行业分类名称
@@ -26,17 +26,39 @@ public class AlipayOpenPublicSettingCategoryQueryResponse extends AlipayResponse
 	@ApiField("secondary_category")
 	private String secondaryCategory;
 
-	public void setPrimaryCategory(String primaryCategory) {
+    /**
+     * Sets primary category.
+     *
+     * @param primaryCategory the primary category
+     */
+    public void setPrimaryCategory(String primaryCategory) {
 		this.primaryCategory = primaryCategory;
 	}
-	public String getPrimaryCategory( ) {
+
+    /**
+     * Gets primary category.
+     *
+     * @return the primary category
+     */
+    public String getPrimaryCategory( ) {
 		return this.primaryCategory;
 	}
 
-	public void setSecondaryCategory(String secondaryCategory) {
+    /**
+     * Sets secondary category.
+     *
+     * @param secondaryCategory the secondary category
+     */
+    public void setSecondaryCategory(String secondaryCategory) {
 		this.secondaryCategory = secondaryCategory;
 	}
-	public String getSecondaryCategory( ) {
+
+    /**
+     * Gets secondary category.
+     *
+     * @return the secondary category
+     */
+    public String getSecondaryCategory( ) {
 		return this.secondaryCategory;
 	}
 

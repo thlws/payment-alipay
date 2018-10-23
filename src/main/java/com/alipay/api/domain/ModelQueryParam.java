@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ModelQueryParam extends AlipayObject {
 
-	private static final long serialVersionUID = 3832568344712638962L;
+	private static final long serialVersionUID = 1383871873826482312L;
 
 	/**
 	 * 条件查询参数
@@ -31,24 +31,57 @@ public class ModelQueryParam extends AlipayObject {
 	@ApiField("value")
 	private String value;
 
-	public String getKey() {
+    /**
+     * Gets key.
+     *
+     * @return the key
+     */
+    public String getKey() {
 		return this.key;
 	}
-	public void setKey(String key) {
+
+    /**
+     * Sets key.
+     *
+     * @param key the key
+     */
+    public void setKey(String key) {
 		this.key = key;
 	}
 
-	public String getOperate() {
+    /**
+     * Gets operate.
+     *
+     * @return the operate
+     */
+    public String getOperate() {
 		return this.operate;
 	}
-	public void setOperate(String operate) {
+
+    /**
+     * Sets operate.
+     *
+     * @param operate the operate
+     */
+    public void setOperate(String operate) {
 		this.operate = operate;
 	}
 
-	public String getValue() {
+    /**
+     * Gets value.
+     *
+     * @return the value
+     */
+    public String getValue() {
 		return this.value;
 	}
-	public void setValue(String value) {
+
+    /**
+     * Sets value.
+     *
+     * @param value the value
+     */
+    public void setValue(String value) {
 		this.value = value;
 	}
 

@@ -9,9 +9,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.mobile.shake.user.query request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-02-27 11:22:58
+ * @since 1.0, 2018-01-03 16:35:37
  */
 public class AlipayMobileShakeUserQueryRequest implements AlipayRequest<AlipayMobileShakeUserQueryResponse> {
 
@@ -31,17 +31,39 @@ bar_code：条码
 	 */
 	private String dynamicIdType;
 
-	public void setDynamicId(String dynamicId) {
+    /**
+     * Sets dynamic id.
+     *
+     * @param dynamicId the dynamic id
+     */
+    public void setDynamicId(String dynamicId) {
 		this.dynamicId = dynamicId;
 	}
-	public String getDynamicId() {
+
+    /**
+     * Gets dynamic id.
+     *
+     * @return the dynamic id
+     */
+    public String getDynamicId() {
 		return this.dynamicId;
 	}
 
-	public void setDynamicIdType(String dynamicIdType) {
+    /**
+     * Sets dynamic id type.
+     *
+     * @param dynamicIdType the dynamic id type
+     */
+    public void setDynamicIdType(String dynamicIdType) {
 		this.dynamicIdType = dynamicIdType;
 	}
-	public String getDynamicIdType() {
+
+    /**
+     * Gets dynamic id type.
+     *
+     * @return the dynamic id type
+     */
+    public String getDynamicIdType() {
 		return this.dynamicIdType;
 	}
 	private String terminalType;
@@ -114,7 +136,13 @@ bar_code：条码
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

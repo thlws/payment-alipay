@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 更改现金活动状态
  *
  * @author auto create
- * @since 1.0, 2017-07-14 11:53:01
+ * @since 1.0, 2018-07-19 14:27:09
  */
 public class AlipayMarketingCampaignCashStatusModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2614628365149775417L;
+	private static final long serialVersionUID = 6597883359311781354L;
 
 	/**
 	 * 修改后的活动状态, PAUSE或者READY或者CLOSED
@@ -25,17 +25,39 @@ public class AlipayMarketingCampaignCashStatusModifyModel extends AlipayObject {
 	@ApiField("crowd_no")
 	private String crowdNo;
 
-	public String getCampStatus() {
+    /**
+     * Gets camp status.
+     *
+     * @return the camp status
+     */
+    public String getCampStatus() {
 		return this.campStatus;
 	}
-	public void setCampStatus(String campStatus) {
+
+    /**
+     * Sets camp status.
+     *
+     * @param campStatus the camp status
+     */
+    public void setCampStatus(String campStatus) {
 		this.campStatus = campStatus;
 	}
 
-	public String getCrowdNo() {
+    /**
+     * Gets crowd no.
+     *
+     * @return the crowd no
+     */
+    public String getCrowdNo() {
 		return this.crowdNo;
 	}
-	public void setCrowdNo(String crowdNo) {
+
+    /**
+     * Sets crowd no.
+     *
+     * @param crowdNo the crowd no
+     */
+    public void setCrowdNo(String crowdNo) {
 		this.crowdNo = crowdNo;
 	}
 

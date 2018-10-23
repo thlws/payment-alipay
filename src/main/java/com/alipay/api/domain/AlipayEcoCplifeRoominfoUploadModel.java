@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 上传物业小区内部房屋信息.
  *
  * @author auto create
- * @since 1.0, 2017-03-24 11:43:11
+ * @since 1.0, 2018-06-09 20:16:50
  */
 public class AlipayEcoCplifeRoominfoUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5759251628626573664L;
+	private static final long serialVersionUID = 4288717596694512361L;
 
 	/**
 	 * 请求批次号，由商户自定义，在商户系统内唯一标示一次业务请求。
@@ -35,24 +35,57 @@ public class AlipayEcoCplifeRoominfoUploadModel extends AlipayObject {
 	@ApiField("cplife_room_info")
 	private List<CplifeRoomInfo> roomInfoSet;
 
-	public String getBatchId() {
+    /**
+     * Gets batch id.
+     *
+     * @return the batch id
+     */
+    public String getBatchId() {
 		return this.batchId;
 	}
-	public void setBatchId(String batchId) {
+
+    /**
+     * Sets batch id.
+     *
+     * @param batchId the batch id
+     */
+    public void setBatchId(String batchId) {
 		this.batchId = batchId;
 	}
 
-	public String getCommunityId() {
+    /**
+     * Gets community id.
+     *
+     * @return the community id
+     */
+    public String getCommunityId() {
 		return this.communityId;
 	}
-	public void setCommunityId(String communityId) {
+
+    /**
+     * Sets community id.
+     *
+     * @param communityId the community id
+     */
+    public void setCommunityId(String communityId) {
 		this.communityId = communityId;
 	}
 
-	public List<CplifeRoomInfo> getRoomInfoSet() {
+    /**
+     * Gets room info set.
+     *
+     * @return the room info set
+     */
+    public List<CplifeRoomInfo> getRoomInfoSet() {
 		return this.roomInfoSet;
 	}
-	public void setRoomInfoSet(List<CplifeRoomInfo> roomInfoSet) {
+
+    /**
+     * Sets room info set.
+     *
+     * @param roomInfoSet the room info set
+     */
+    public void setRoomInfoSet(List<CplifeRoomInfo> roomInfoSet) {
 		this.roomInfoSet = roomInfoSet;
 	}
 

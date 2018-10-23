@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ISVLogSync extends AlipayObject {
 
-	private static final long serialVersionUID = 7894313848576345224L;
+	private static final long serialVersionUID = 6536257269656364816L;
 
 	/**
 	 * 应用名
@@ -68,66 +68,165 @@ F 失败
 	@ApiField("timestamp")
 	private String timestamp;
 
-	public String getApplication() {
+    /**
+     * Gets application.
+     *
+     * @return the application
+     */
+    public String getApplication() {
 		return this.application;
 	}
-	public void setApplication(String application) {
+
+    /**
+     * Sets application.
+     *
+     * @param application the application
+     */
+    public void setApplication(String application) {
 		this.application = application;
 	}
 
-	public String getErrorCode() {
+    /**
+     * Gets error code.
+     *
+     * @return the error code
+     */
+    public String getErrorCode() {
 		return this.errorCode;
 	}
-	public void setErrorCode(String errorCode) {
+
+    /**
+     * Sets error code.
+     *
+     * @param errorCode the error code
+     */
+    public void setErrorCode(String errorCode) {
 		this.errorCode = errorCode;
 	}
 
-	public String getErrorMsg() {
+    /**
+     * Gets error msg.
+     *
+     * @return the error msg
+     */
+    public String getErrorMsg() {
 		return this.errorMsg;
 	}
-	public void setErrorMsg(String errorMsg) {
+
+    /**
+     * Sets error msg.
+     *
+     * @param errorMsg the error msg
+     */
+    public void setErrorMsg(String errorMsg) {
 		this.errorMsg = errorMsg;
 	}
 
-	public String getExceptionStackTrace() {
+    /**
+     * Gets exception stack trace.
+     *
+     * @return the exception stack trace
+     */
+    public String getExceptionStackTrace() {
 		return this.exceptionStackTrace;
 	}
-	public void setExceptionStackTrace(String exceptionStackTrace) {
+
+    /**
+     * Sets exception stack trace.
+     *
+     * @param exceptionStackTrace the exception stack trace
+     */
+    public void setExceptionStackTrace(String exceptionStackTrace) {
 		this.exceptionStackTrace = exceptionStackTrace;
 	}
 
-	public String getExecutionMillis() {
+    /**
+     * Gets execution millis.
+     *
+     * @return the execution millis
+     */
+    public String getExecutionMillis() {
 		return this.executionMillis;
 	}
-	public void setExecutionMillis(String executionMillis) {
+
+    /**
+     * Sets execution millis.
+     *
+     * @param executionMillis the execution millis
+     */
+    public void setExecutionMillis(String executionMillis) {
 		this.executionMillis = executionMillis;
 	}
 
-	public String getInterfaceName() {
+    /**
+     * Gets interface name.
+     *
+     * @return the interface name
+     */
+    public String getInterfaceName() {
 		return this.interfaceName;
 	}
-	public void setInterfaceName(String interfaceName) {
+
+    /**
+     * Sets interface name.
+     *
+     * @param interfaceName the interface name
+     */
+    public void setInterfaceName(String interfaceName) {
 		this.interfaceName = interfaceName;
 	}
 
-	public String getSuccess() {
+    /**
+     * Gets success.
+     *
+     * @return the success
+     */
+    public String getSuccess() {
 		return this.success;
 	}
-	public void setSuccess(String success) {
+
+    /**
+     * Sets success.
+     *
+     * @param success the success
+     */
+    public void setSuccess(String success) {
 		this.success = success;
 	}
 
-	public String getSyncType() {
+    /**
+     * Gets sync type.
+     *
+     * @return the sync type
+     */
+    public String getSyncType() {
 		return this.syncType;
 	}
-	public void setSyncType(String syncType) {
+
+    /**
+     * Sets sync type.
+     *
+     * @param syncType the sync type
+     */
+    public void setSyncType(String syncType) {
 		this.syncType = syncType;
 	}
 
-	public String getTimestamp() {
+    /**
+     * Gets timestamp.
+     *
+     * @return the timestamp
+     */
+    public String getTimestamp() {
 		return this.timestamp;
 	}
-	public void setTimestamp(String timestamp) {
+
+    /**
+     * Sets timestamp.
+     *
+     * @param timestamp the timestamp
+     */
+    public void setTimestamp(String timestamp) {
 		this.timestamp = timestamp;
 	}
 

@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.tool.fengdie.template.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-27 11:31:51
+ * @since 1.0, 2018-08-19 16:15:20
  */
 public class AlipayMarketingToolFengdieTemplateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2544851629679274783L;
+	private static final long serialVersionUID = 7877762559488172881L;
 
 	/** 
 	 * 开发者开发上传的H5模板列表
@@ -24,10 +24,21 @@ public class AlipayMarketingToolFengdieTemplateQueryResponse extends AlipayRespo
 	@ApiField("fengdie_template")
 	private List<FengdieTemplate> template;
 
-	public void setTemplate(List<FengdieTemplate> template) {
+    /**
+     * Sets template.
+     *
+     * @param template the template
+     */
+    public void setTemplate(List<FengdieTemplate> template) {
 		this.template = template;
 	}
-	public List<FengdieTemplate> getTemplate( ) {
+
+    /**
+     * Gets template.
+     *
+     * @return the template
+     */
+    public List<FengdieTemplate> getTemplate( ) {
 		return this.template;
 	}
 

@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.transfer.thirdparty.bill.create response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2014-06-25 17:00:56
  */
 public class AlipayTransferThirdpartyBillCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8368542168893967788L;
+	private static final long serialVersionUID = 7881695558453711223L;
 
 	/** 
 	 * 支付宝转账交易号
@@ -32,24 +32,57 @@ public class AlipayTransferThirdpartyBillCreateResponse extends AlipayResponse {
 	@ApiField("payment_id")
 	private String paymentId;
 
-	public void setOrderId(String orderId) {
+    /**
+     * Sets order id.
+     *
+     * @param orderId the order id
+     */
+    public void setOrderId(String orderId) {
 		this.orderId = orderId;
 	}
-	public String getOrderId( ) {
+
+    /**
+     * Gets order id.
+     *
+     * @return the order id
+     */
+    public String getOrderId( ) {
 		return this.orderId;
 	}
 
-	public void setOrderType(String orderType) {
+    /**
+     * Sets order type.
+     *
+     * @param orderType the order type
+     */
+    public void setOrderType(String orderType) {
 		this.orderType = orderType;
 	}
-	public String getOrderType( ) {
+
+    /**
+     * Gets order type.
+     *
+     * @return the order type
+     */
+    public String getOrderType( ) {
 		return this.orderType;
 	}
 
-	public void setPaymentId(String paymentId) {
+    /**
+     * Sets payment id.
+     *
+     * @param paymentId the payment id
+     */
+    public void setPaymentId(String paymentId) {
 		this.paymentId = paymentId;
 	}
-	public String getPaymentId( ) {
+
+    /**
+     * Gets payment id.
+     *
+     * @return the payment id
+     */
+    public String getPaymentId( ) {
 		return this.paymentId;
 	}
 

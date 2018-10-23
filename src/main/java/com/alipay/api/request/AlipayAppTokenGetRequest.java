@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.app.token.get request
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-04-13 19:13:06
  */
@@ -23,10 +23,21 @@ public class AlipayAppTokenGetRequest implements AlipayRequest<AlipayAppTokenGet
 	 */
 	private String secret;
 
-	public void setSecret(String secret) {
+    /**
+     * Sets secret.
+     *
+     * @param secret the secret
+     */
+    public void setSecret(String secret) {
 		this.secret = secret;
 	}
-	public String getSecret() {
+
+    /**
+     * Gets secret.
+     *
+     * @return the secret
+     */
+    public String getSecret() {
 		return this.secret;
 	}
 	private String terminalType;
@@ -98,7 +109,13 @@ public class AlipayAppTokenGetRequest implements AlipayRequest<AlipayAppTokenGet
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

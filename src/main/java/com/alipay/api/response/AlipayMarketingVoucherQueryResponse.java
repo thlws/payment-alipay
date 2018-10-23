@@ -10,13 +10,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.voucher.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-26 14:52:11
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayMarketingVoucherQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4163255456218286892L;
+	private static final long serialVersionUID = 7371188416957168774L;
 
 	/** 
 	 * 券余额(元)
@@ -91,87 +91,219 @@ public class AlipayMarketingVoucherQueryResponse extends AlipayResponse {
 	@ApiField("voucher_id")
 	private String voucherId;
 
-	public void setAvailableAmount(Long availableAmount) {
+    /**
+     * Sets available amount.
+     *
+     * @param availableAmount the available amount
+     */
+    public void setAvailableAmount(Long availableAmount) {
 		this.availableAmount = availableAmount;
 	}
-	public Long getAvailableAmount( ) {
+
+    /**
+     * Gets available amount.
+     *
+     * @return the available amount
+     */
+    public Long getAvailableAmount( ) {
 		return this.availableAmount;
 	}
 
-	public void setBillDetails(List<VoucherBillDetail> billDetails) {
+    /**
+     * Sets bill details.
+     *
+     * @param billDetails the bill details
+     */
+    public void setBillDetails(List<VoucherBillDetail> billDetails) {
 		this.billDetails = billDetails;
 	}
-	public List<VoucherBillDetail> getBillDetails( ) {
+
+    /**
+     * Gets bill details.
+     *
+     * @return the bill details
+     */
+    public List<VoucherBillDetail> getBillDetails( ) {
 		return this.billDetails;
 	}
 
-	public void setExtendInfo(String extendInfo) {
+    /**
+     * Sets extend info.
+     *
+     * @param extendInfo the extend info
+     */
+    public void setExtendInfo(String extendInfo) {
 		this.extendInfo = extendInfo;
 	}
-	public String getExtendInfo( ) {
+
+    /**
+     * Gets extend info.
+     *
+     * @return the extend info
+     */
+    public String getExtendInfo( ) {
 		return this.extendInfo;
 	}
 
-	public void setGmtActive(Date gmtActive) {
+    /**
+     * Sets gmt active.
+     *
+     * @param gmtActive the gmt active
+     */
+    public void setGmtActive(Date gmtActive) {
 		this.gmtActive = gmtActive;
 	}
-	public Date getGmtActive( ) {
+
+    /**
+     * Gets gmt active.
+     *
+     * @return the gmt active
+     */
+    public Date getGmtActive( ) {
 		return this.gmtActive;
 	}
 
-	public void setGmtCreate(Date gmtCreate) {
+    /**
+     * Sets gmt create.
+     *
+     * @param gmtCreate the gmt create
+     */
+    public void setGmtCreate(Date gmtCreate) {
 		this.gmtCreate = gmtCreate;
 	}
-	public Date getGmtCreate( ) {
+
+    /**
+     * Gets gmt create.
+     *
+     * @return the gmt create
+     */
+    public Date getGmtCreate( ) {
 		return this.gmtCreate;
 	}
 
-	public void setGmtExpired(Date gmtExpired) {
+    /**
+     * Sets gmt expired.
+     *
+     * @param gmtExpired the gmt expired
+     */
+    public void setGmtExpired(Date gmtExpired) {
 		this.gmtExpired = gmtExpired;
 	}
-	public Date getGmtExpired( ) {
+
+    /**
+     * Gets gmt expired.
+     *
+     * @return the gmt expired
+     */
+    public Date getGmtExpired( ) {
 		return this.gmtExpired;
 	}
 
-	public void setName(String name) {
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
-	public String getName( ) {
+
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName( ) {
 		return this.name;
 	}
 
-	public void setStatus(String status) {
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
-	public String getStatus( ) {
+
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus( ) {
 		return this.status;
 	}
 
-	public void setTemplateId(String templateId) {
+    /**
+     * Sets template id.
+     *
+     * @param templateId the template id
+     */
+    public void setTemplateId(String templateId) {
 		this.templateId = templateId;
 	}
-	public String getTemplateId( ) {
+
+    /**
+     * Gets template id.
+     *
+     * @return the template id
+     */
+    public String getTemplateId( ) {
 		return this.templateId;
 	}
 
-	public void setTotalAmount(Long totalAmount) {
+    /**
+     * Sets total amount.
+     *
+     * @param totalAmount the total amount
+     */
+    public void setTotalAmount(Long totalAmount) {
 		this.totalAmount = totalAmount;
 	}
-	public Long getTotalAmount( ) {
+
+    /**
+     * Gets total amount.
+     *
+     * @return the total amount
+     */
+    public Long getTotalAmount( ) {
 		return this.totalAmount;
 	}
 
-	public void setUserId(String userId) {
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public String getUserId( ) {
+
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId( ) {
 		return this.userId;
 	}
 
-	public void setVoucherId(String voucherId) {
+    /**
+     * Sets voucher id.
+     *
+     * @param voucherId the voucher id
+     */
+    public void setVoucherId(String voucherId) {
 		this.voucherId = voucherId;
 	}
-	public String getVoucherId( ) {
+
+    /**
+     * Gets voucher id.
+     *
+     * @return the voucher id
+     */
+    public String getVoucherId( ) {
 		return this.voucherId;
 	}
 

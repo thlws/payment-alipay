@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NewsfeedMediaVideoInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2176185694586156863L;
+	private static final long serialVersionUID = 7183113236227213337L;
 
 	/**
 	 * 高度
@@ -37,31 +37,75 @@ public class NewsfeedMediaVideoInfo extends AlipayObject {
 	@ApiField("width")
 	private String width;
 
-	public String getHeight() {
+    /**
+     * Gets height.
+     *
+     * @return the height
+     */
+    public String getHeight() {
 		return this.height;
 	}
-	public void setHeight(String height) {
+
+    /**
+     * Sets height.
+     *
+     * @param height the height
+     */
+    public void setHeight(String height) {
 		this.height = height;
 	}
 
-	public String getImgId() {
+    /**
+     * Gets img id.
+     *
+     * @return the img id
+     */
+    public String getImgId() {
 		return this.imgId;
 	}
-	public void setImgId(String imgId) {
+
+    /**
+     * Sets img id.
+     *
+     * @param imgId the img id
+     */
+    public void setImgId(String imgId) {
 		this.imgId = imgId;
 	}
 
-	public String getVideoId() {
+    /**
+     * Gets video id.
+     *
+     * @return the video id
+     */
+    public String getVideoId() {
 		return this.videoId;
 	}
-	public void setVideoId(String videoId) {
+
+    /**
+     * Sets video id.
+     *
+     * @param videoId the video id
+     */
+    public void setVideoId(String videoId) {
 		this.videoId = videoId;
 	}
 
-	public String getWidth() {
+    /**
+     * Gets width.
+     *
+     * @return the width
+     */
+    public String getWidth() {
 		return this.width;
 	}
-	public void setWidth(String width) {
+
+    /**
+     * Sets width.
+     *
+     * @param width the width
+     */
+    public void setWidth(String width) {
 		this.width = width;
 	}
 

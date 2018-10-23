@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class StagedDiscountDstCampPrizeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8623742364928253492L;
+	private static final long serialVersionUID = 8383598458636751269L;
 
 	/**
 	 * 折扣预算ID
@@ -41,31 +41,75 @@ public class StagedDiscountDstCampPrizeModel extends AlipayObject {
 	@ApiField("max_discount_amt")
 	private String maxDiscountAmt;
 
-	public String getBudgetId() {
+    /**
+     * Gets budget id.
+     *
+     * @return the budget id
+     */
+    public String getBudgetId() {
 		return this.budgetId;
 	}
-	public void setBudgetId(String budgetId) {
+
+    /**
+     * Sets budget id.
+     *
+     * @param budgetId the budget id
+     */
+    public void setBudgetId(String budgetId) {
 		this.budgetId = budgetId;
 	}
 
-	public List<DiscountRateModel> getDiscountRateModelList() {
+    /**
+     * Gets discount rate model list.
+     *
+     * @return the discount rate model list
+     */
+    public List<DiscountRateModel> getDiscountRateModelList() {
 		return this.discountRateModelList;
 	}
-	public void setDiscountRateModelList(List<DiscountRateModel> discountRateModelList) {
+
+    /**
+     * Sets discount rate model list.
+     *
+     * @param discountRateModelList the discount rate model list
+     */
+    public void setDiscountRateModelList(List<DiscountRateModel> discountRateModelList) {
 		this.discountRateModelList = discountRateModelList;
 	}
 
-	public String getId() {
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
+    public String getId() {
 		return this.id;
 	}
-	public void setId(String id) {
+
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
+    public void setId(String id) {
 		this.id = id;
 	}
 
-	public String getMaxDiscountAmt() {
+    /**
+     * Gets max discount amt.
+     *
+     * @return the max discount amt
+     */
+    public String getMaxDiscountAmt() {
 		return this.maxDiscountAmt;
 	}
-	public void setMaxDiscountAmt(String maxDiscountAmt) {
+
+    /**
+     * Sets max discount amt.
+     *
+     * @param maxDiscountAmt the max discount amt
+     */
+    public void setMaxDiscountAmt(String maxDiscountAmt) {
 		this.maxDiscountAmt = maxDiscountAmt;
 	}
 

@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 个性化菜单创建
  *
  * @author auto create
- * @since 1.0, 2017-05-25 11:40:27
+ * @since 1.0, 2018-07-25 13:54:12
  */
 public class AlipayOpenPublicPersonalizedMenuCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4381855728728429561L;
+	private static final long serialVersionUID = 7724153692519954988L;
 
 	/**
-	 * 一级菜单列表。最多有4个一级菜单，若开发者在后台打开了"咨询反馈"的开关，则只能有3个一级菜单。
+	 * 一级菜单列表。如果是文本菜单，最多有4个一级菜单，若开发者在后台打开了"咨询反馈"的开关，则只能有3个一级菜单；如果是 ICON 菜单信息，最多有80个一级菜单(忽略二级菜单)
 	 */
 	@ApiListField("button")
 	@ApiField("button_object")
@@ -36,24 +36,57 @@ public class AlipayOpenPublicPersonalizedMenuCreateModel extends AlipayObject {
 	@ApiField("type")
 	private String type;
 
-	public List<ButtonObject> getButton() {
+    /**
+     * Gets button.
+     *
+     * @return the button
+     */
+    public List<ButtonObject> getButton() {
 		return this.button;
 	}
-	public void setButton(List<ButtonObject> button) {
+
+    /**
+     * Sets button.
+     *
+     * @param button the button
+     */
+    public void setButton(List<ButtonObject> button) {
 		this.button = button;
 	}
 
-	public List<LabelRule> getLabelRule() {
+    /**
+     * Gets label rule.
+     *
+     * @return the label rule
+     */
+    public List<LabelRule> getLabelRule() {
 		return this.labelRule;
 	}
-	public void setLabelRule(List<LabelRule> labelRule) {
+
+    /**
+     * Sets label rule.
+     *
+     * @param labelRule the label rule
+     */
+    public void setLabelRule(List<LabelRule> labelRule) {
 		this.labelRule = labelRule;
 	}
 
-	public String getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
-	public void setType(String type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
 

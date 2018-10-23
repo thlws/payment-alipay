@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品库存单元属性值详情
  *
  * @author auto create
- * @since 1.0, 2017-03-14 14:11:10
+ * @since 1.0, 2018-06-26 14:23:36
  */
 public class SkuPropertyValue extends AlipayObject {
 
-	private static final long serialVersionUID = 1596137277125753728L;
+	private static final long serialVersionUID = 6751682941614141888L;
 
 	/**
 	 * 外部sku属性值ID,由外部商户定义
@@ -25,17 +25,39 @@ public class SkuPropertyValue extends AlipayObject {
 	@ApiField("value")
 	private String value;
 
-	public String getOutPvId() {
+    /**
+     * Gets out pv id.
+     *
+     * @return the out pv id
+     */
+    public String getOutPvId() {
 		return this.outPvId;
 	}
-	public void setOutPvId(String outPvId) {
+
+    /**
+     * Sets out pv id.
+     *
+     * @param outPvId the out pv id
+     */
+    public void setOutPvId(String outPvId) {
 		this.outPvId = outPvId;
 	}
 
-	public String getValue() {
+    /**
+     * Gets value.
+     *
+     * @return the value
+     */
+    public String getValue() {
 		return this.value;
 	}
-	public void setValue(String value) {
+
+    /**
+     * Sets value.
+     *
+     * @param value the value
+     */
+    public void setValue(String value) {
 		this.value = value;
 	}
 

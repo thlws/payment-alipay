@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建资金券模板
  *
  * @author auto create
- * @since 1.0, 2017-09-21 17:04:08
+ * @since 1.0, 2018-03-05 14:38:00
  */
 public class AlipayMarketingCashvoucherTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1527917869493298387L;
+	private static final long serialVersionUID = 1234478752186419191L;
 
 	/**
 	 * 面额。每张代金券可以抵扣的金额。币种为人民币，单位为元。该数值不能小于0.1，小数点以后最多保留两位。
@@ -28,7 +28,8 @@ public class AlipayMarketingCashvoucherTemplateCreateModel extends AlipayObject 
 	private String brandName;
 
 	/**
-	 * 扩展字段,JSON字符串。
+	 * 扩展字段,JSON字符串。目前支持使用模式扩展：{"useMode":"H5","useModeData":{"url":"http://www.yourdomian.com/yourusepage.htm","signKeys":"voucherId,userId,tag","charset":"UTF-8","signType":"RSA2","tag":"this is my tag"}}
+其中如果useMode表示自定义的使用模式类型，目前仅支持"H5",表示在券详情页按钮跳转至自定义H5页面，当传入useMode参数后，将会检查useModeData对象数据，其中的url为必传参数;url字段表示客制化使用按钮跳转链接，传入该字段后在券详情使用时点击效果将会跳转此链接，链接将进行白名单过滤，如果无法接入成功请联系技术支持;signKeys字段表示跳转至客制链接时的加签字段，如果不传默认为voucherId,userId,tag;signType为加签类型，目前支持RSA及RSA2,如果不传则不会加签;charset为链接编码格式，不传默认为UTF-8;tag为自定义参数，会直接透传回使用链接;当传入合法加签信息后，券使用链接将为http://www.yourdomain.com/yourusepage.htm?voucherId=当前券id&userId=当前用户id&tag=传入tag&sign=对应算法及key生成的加签数据
 	 */
 	@ApiField("extension_info")
 	private String extensionInfo;
@@ -117,122 +118,309 @@ public class AlipayMarketingCashvoucherTemplateCreateModel extends AlipayObject 
 	@ApiField("voucher_valid_period")
 	private String voucherValidPeriod;
 
-	public String getAmount() {
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public String getAmount() {
 		return this.amount;
 	}
-	public void setAmount(String amount) {
+
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
-	public String getBrandName() {
+    /**
+     * Gets brand name.
+     *
+     * @return the brand name
+     */
+    public String getBrandName() {
 		return this.brandName;
 	}
-	public void setBrandName(String brandName) {
+
+    /**
+     * Sets brand name.
+     *
+     * @param brandName the brand name
+     */
+    public void setBrandName(String brandName) {
 		this.brandName = brandName;
 	}
 
-	public String getExtensionInfo() {
+    /**
+     * Gets extension info.
+     *
+     * @return the extension info
+     */
+    public String getExtensionInfo() {
 		return this.extensionInfo;
 	}
-	public void setExtensionInfo(String extensionInfo) {
+
+    /**
+     * Sets extension info.
+     *
+     * @param extensionInfo the extension info
+     */
+    public void setExtensionInfo(String extensionInfo) {
 		this.extensionInfo = extensionInfo;
 	}
 
-	public String getFloorAmount() {
+    /**
+     * Gets floor amount.
+     *
+     * @return the floor amount
+     */
+    public String getFloorAmount() {
 		return this.floorAmount;
 	}
-	public void setFloorAmount(String floorAmount) {
+
+    /**
+     * Sets floor amount.
+     *
+     * @param floorAmount the floor amount
+     */
+    public void setFloorAmount(String floorAmount) {
 		this.floorAmount = floorAmount;
 	}
 
-	public String getFundAccount() {
+    /**
+     * Gets fund account.
+     *
+     * @return the fund account
+     */
+    public String getFundAccount() {
 		return this.fundAccount;
 	}
-	public void setFundAccount(String fundAccount) {
+
+    /**
+     * Sets fund account.
+     *
+     * @param fundAccount the fund account
+     */
+    public void setFundAccount(String fundAccount) {
 		this.fundAccount = fundAccount;
 	}
 
-	public String getNotifyUri() {
+    /**
+     * Gets notify uri.
+     *
+     * @return the notify uri
+     */
+    public String getNotifyUri() {
 		return this.notifyUri;
 	}
-	public void setNotifyUri(String notifyUri) {
+
+    /**
+     * Sets notify uri.
+     *
+     * @param notifyUri the notify uri
+     */
+    public void setNotifyUri(String notifyUri) {
 		this.notifyUri = notifyUri;
 	}
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
-	public Date getPublishEndTime() {
+    /**
+     * Gets publish end time.
+     *
+     * @return the publish end time
+     */
+    public Date getPublishEndTime() {
 		return this.publishEndTime;
 	}
-	public void setPublishEndTime(Date publishEndTime) {
+
+    /**
+     * Sets publish end time.
+     *
+     * @param publishEndTime the publish end time
+     */
+    public void setPublishEndTime(Date publishEndTime) {
 		this.publishEndTime = publishEndTime;
 	}
 
-	public Date getPublishStartTime() {
+    /**
+     * Gets publish start time.
+     *
+     * @return the publish start time
+     */
+    public Date getPublishStartTime() {
 		return this.publishStartTime;
 	}
-	public void setPublishStartTime(Date publishStartTime) {
+
+    /**
+     * Sets publish start time.
+     *
+     * @param publishStartTime the publish start time
+     */
+    public void setPublishStartTime(Date publishStartTime) {
 		this.publishStartTime = publishStartTime;
 	}
 
-	public String getRedirectUri() {
+    /**
+     * Gets redirect uri.
+     *
+     * @return the redirect uri
+     */
+    public String getRedirectUri() {
 		return this.redirectUri;
 	}
-	public void setRedirectUri(String redirectUri) {
+
+    /**
+     * Sets redirect uri.
+     *
+     * @param redirectUri the redirect uri
+     */
+    public void setRedirectUri(String redirectUri) {
 		this.redirectUri = redirectUri;
 	}
 
-	public String getRuleConf() {
+    /**
+     * Gets rule conf.
+     *
+     * @return the rule conf
+     */
+    public String getRuleConf() {
 		return this.ruleConf;
 	}
-	public void setRuleConf(String ruleConf) {
+
+    /**
+     * Sets rule conf.
+     *
+     * @param ruleConf the rule conf
+     */
+    public void setRuleConf(String ruleConf) {
 		this.ruleConf = ruleConf;
 	}
 
-	public String getSlogan() {
+    /**
+     * Gets slogan.
+     *
+     * @return the slogan
+     */
+    public String getSlogan() {
 		return this.slogan;
 	}
-	public void setSlogan(String slogan) {
+
+    /**
+     * Sets slogan.
+     *
+     * @param slogan the slogan
+     */
+    public void setSlogan(String slogan) {
 		this.slogan = slogan;
 	}
 
-	public String getVoucherDescription() {
+    /**
+     * Gets voucher description.
+     *
+     * @return the voucher description
+     */
+    public String getVoucherDescription() {
 		return this.voucherDescription;
 	}
-	public void setVoucherDescription(String voucherDescription) {
+
+    /**
+     * Sets voucher description.
+     *
+     * @param voucherDescription the voucher description
+     */
+    public void setVoucherDescription(String voucherDescription) {
 		this.voucherDescription = voucherDescription;
 	}
 
-	public Long getVoucherQuantity() {
+    /**
+     * Gets voucher quantity.
+     *
+     * @return the voucher quantity
+     */
+    public Long getVoucherQuantity() {
 		return this.voucherQuantity;
 	}
-	public void setVoucherQuantity(Long voucherQuantity) {
+
+    /**
+     * Sets voucher quantity.
+     *
+     * @param voucherQuantity the voucher quantity
+     */
+    public void setVoucherQuantity(Long voucherQuantity) {
 		this.voucherQuantity = voucherQuantity;
 	}
 
-	public String getVoucherType() {
+    /**
+     * Gets voucher type.
+     *
+     * @return the voucher type
+     */
+    public String getVoucherType() {
 		return this.voucherType;
 	}
-	public void setVoucherType(String voucherType) {
+
+    /**
+     * Sets voucher type.
+     *
+     * @param voucherType the voucher type
+     */
+    public void setVoucherType(String voucherType) {
 		this.voucherType = voucherType;
 	}
 
-	public String getVoucherUseScene() {
+    /**
+     * Gets voucher use scene.
+     *
+     * @return the voucher use scene
+     */
+    public String getVoucherUseScene() {
 		return this.voucherUseScene;
 	}
-	public void setVoucherUseScene(String voucherUseScene) {
+
+    /**
+     * Sets voucher use scene.
+     *
+     * @param voucherUseScene the voucher use scene
+     */
+    public void setVoucherUseScene(String voucherUseScene) {
 		this.voucherUseScene = voucherUseScene;
 	}
 
-	public String getVoucherValidPeriod() {
+    /**
+     * Gets voucher valid period.
+     *
+     * @return the voucher valid period
+     */
+    public String getVoucherValidPeriod() {
 		return this.voucherValidPeriod;
 	}
-	public void setVoucherValidPeriod(String voucherValidPeriod) {
+
+    /**
+     * Sets voucher valid period.
+     *
+     * @param voucherValidPeriod the voucher valid period
+     */
+    public void setVoucherValidPeriod(String voucherValidPeriod) {
 		this.voucherValidPeriod = voucherValidPeriod;
 	}
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易支付的渠道属性
  *
  * @author auto create
- * @since 1.0, 2017-06-06 18:11:24
+ * @since 1.0, 2018-06-07 15:14:51
  */
 public class TradeFundBill extends AlipayObject {
 
-	private static final long serialVersionUID = 8862824915992381799L;
+	private static final long serialVersionUID = 5653129259578121527L;
 
 	/**
 	 * 该支付工具类型所使用的金额
@@ -37,31 +37,75 @@ public class TradeFundBill extends AlipayObject {
 	@ApiField("real_amount")
 	private String realAmount;
 
-	public String getAmount() {
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public String getAmount() {
 		return this.amount;
 	}
-	public void setAmount(String amount) {
+
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
-	public String getFundChannel() {
+    /**
+     * Gets fund channel.
+     *
+     * @return the fund channel
+     */
+    public String getFundChannel() {
 		return this.fundChannel;
 	}
-	public void setFundChannel(String fundChannel) {
+
+    /**
+     * Sets fund channel.
+     *
+     * @param fundChannel the fund channel
+     */
+    public void setFundChannel(String fundChannel) {
 		this.fundChannel = fundChannel;
 	}
 
-	public String getFundType() {
+    /**
+     * Gets fund type.
+     *
+     * @return the fund type
+     */
+    public String getFundType() {
 		return this.fundType;
 	}
-	public void setFundType(String fundType) {
+
+    /**
+     * Sets fund type.
+     *
+     * @param fundType the fund type
+     */
+    public void setFundType(String fundType) {
 		this.fundType = fundType;
 	}
 
-	public String getRealAmount() {
+    /**
+     * Gets real amount.
+     *
+     * @return the real amount
+     */
+    public String getRealAmount() {
 		return this.realAmount;
 	}
-	public void setRealAmount(String realAmount) {
+
+    /**
+     * Sets real amount.
+     *
+     * @param realAmount the real amount
+     */
+    public void setRealAmount(String realAmount) {
 		this.realAmount = realAmount;
 	}
 

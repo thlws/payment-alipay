@@ -8,13 +8,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.market.shop.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-19 16:55:51
+ * @since 1.0, 2018-08-02 12:21:39
  */
 public class AlipayOfflineMarketShopBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6839323829938773651L;
+	private static final long serialVersionUID = 2751449453352286831L;
 
 	/** 
 	 * 当前页码
@@ -35,24 +35,57 @@ public class AlipayOfflineMarketShopBatchqueryResponse extends AlipayResponse {
 	@ApiField("total_pageno")
 	private String totalPageno;
 
-	public void setCurrentPageno(String currentPageno) {
+    /**
+     * Sets current pageno.
+     *
+     * @param currentPageno the current pageno
+     */
+    public void setCurrentPageno(String currentPageno) {
 		this.currentPageno = currentPageno;
 	}
-	public String getCurrentPageno( ) {
+
+    /**
+     * Gets current pageno.
+     *
+     * @return the current pageno
+     */
+    public String getCurrentPageno( ) {
 		return this.currentPageno;
 	}
 
-	public void setShopIds(List<String> shopIds) {
+    /**
+     * Sets shop ids.
+     *
+     * @param shopIds the shop ids
+     */
+    public void setShopIds(List<String> shopIds) {
 		this.shopIds = shopIds;
 	}
-	public List<String> getShopIds( ) {
+
+    /**
+     * Gets shop ids.
+     *
+     * @return the shop ids
+     */
+    public List<String> getShopIds( ) {
 		return this.shopIds;
 	}
 
-	public void setTotalPageno(String totalPageno) {
+    /**
+     * Sets total pageno.
+     *
+     * @param totalPageno the total pageno
+     */
+    public void setTotalPageno(String totalPageno) {
 		this.totalPageno = totalPageno;
 	}
-	public String getTotalPageno( ) {
+
+    /**
+     * Gets total pageno.
+     *
+     * @return the total pageno
+     */
+    public String getTotalPageno( ) {
 		return this.totalPageno;
 	}
 

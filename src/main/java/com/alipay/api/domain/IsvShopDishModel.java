@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class IsvShopDishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4351157993572743444L;
+	private static final long serialVersionUID = 1632157764545557463L;
 
 	/**
 	 * 菜品库存。 alipay.offline.provider.shopaction.record回传点菜中的desc。建议ISV在拿到推荐的菜品的ID后，直接使用自己的菜品元数据，口碑元数据是ISV上传，实时性无法保证。
@@ -145,150 +145,381 @@ alipay.offline.provider.shopaction.record回传点菜中的quantity，建议ISV�
 	@ApiField("unit")
 	private String unit;
 
-	public String getContent() {
+    /**
+     * Gets content.
+     *
+     * @return the content
+     */
+    public String getContent() {
 		return this.content;
 	}
-	public void setContent(String content) {
+
+    /**
+     * Sets content.
+     *
+     * @param content the content
+     */
+    public void setContent(String content) {
 		this.content = content;
 	}
 
-	public String getDishTypeId() {
+    /**
+     * Gets dish type id.
+     *
+     * @return the dish type id
+     */
+    public String getDishTypeId() {
 		return this.dishTypeId;
 	}
-	public void setDishTypeId(String dishTypeId) {
+
+    /**
+     * Sets dish type id.
+     *
+     * @param dishTypeId the dish type id
+     */
+    public void setDishTypeId(String dishTypeId) {
 		this.dishTypeId = dishTypeId;
 	}
 
-	public String getDishTypeName() {
+    /**
+     * Gets dish type name.
+     *
+     * @return the dish type name
+     */
+    public String getDishTypeName() {
 		return this.dishTypeName;
 	}
-	public void setDishTypeName(String dishTypeName) {
+
+    /**
+     * Sets dish type name.
+     *
+     * @param dishTypeName the dish type name
+     */
+    public void setDishTypeName(String dishTypeName) {
 		this.dishTypeName = dishTypeName;
 	}
 
-	public String getGoodLevel() {
+    /**
+     * Gets good level.
+     *
+     * @return the good level
+     */
+    public String getGoodLevel() {
 		return this.goodLevel;
 	}
-	public void setGoodLevel(String goodLevel) {
+
+    /**
+     * Sets good level.
+     *
+     * @param goodLevel the good level
+     */
+    public void setGoodLevel(String goodLevel) {
 		this.goodLevel = goodLevel;
 	}
 
-	public Long getMerchantSoldCntSevenD() {
+    /**
+     * Gets merchant sold cnt seven d.
+     *
+     * @return the merchant sold cnt seven d
+     */
+    public Long getMerchantSoldCntSevenD() {
 		return this.merchantSoldCntSevenD;
 	}
-	public void setMerchantSoldCntSevenD(Long merchantSoldCntSevenD) {
+
+    /**
+     * Sets merchant sold cnt seven d.
+     *
+     * @param merchantSoldCntSevenD the merchant sold cnt seven d
+     */
+    public void setMerchantSoldCntSevenD(Long merchantSoldCntSevenD) {
 		this.merchantSoldCntSevenD = merchantSoldCntSevenD;
 	}
 
-	public Long getMerchantSoldCntThirtyD() {
+    /**
+     * Gets merchant sold cnt thirty d.
+     *
+     * @return the merchant sold cnt thirty d
+     */
+    public Long getMerchantSoldCntThirtyD() {
 		return this.merchantSoldCntThirtyD;
 	}
-	public void setMerchantSoldCntThirtyD(Long merchantSoldCntThirtyD) {
+
+    /**
+     * Sets merchant sold cnt thirty d.
+     *
+     * @param merchantSoldCntThirtyD the merchant sold cnt thirty d
+     */
+    public void setMerchantSoldCntThirtyD(Long merchantSoldCntThirtyD) {
 		this.merchantSoldCntThirtyD = merchantSoldCntThirtyD;
 	}
 
-	public Long getMerchantSoldReusercntThirtyD() {
+    /**
+     * Gets merchant sold reusercnt thirty d.
+     *
+     * @return the merchant sold reusercnt thirty d
+     */
+    public Long getMerchantSoldReusercntThirtyD() {
 		return this.merchantSoldReusercntThirtyD;
 	}
-	public void setMerchantSoldReusercntThirtyD(Long merchantSoldReusercntThirtyD) {
+
+    /**
+     * Sets merchant sold reusercnt thirty d.
+     *
+     * @param merchantSoldReusercntThirtyD the merchant sold reusercnt thirty d
+     */
+    public void setMerchantSoldReusercntThirtyD(Long merchantSoldReusercntThirtyD) {
 		this.merchantSoldReusercntThirtyD = merchantSoldReusercntThirtyD;
 	}
 
-	public Long getMerchantSoldUsercntThirtyD() {
+    /**
+     * Gets merchant sold usercnt thirty d.
+     *
+     * @return the merchant sold usercnt thirty d
+     */
+    public Long getMerchantSoldUsercntThirtyD() {
 		return this.merchantSoldUsercntThirtyD;
 	}
-	public void setMerchantSoldUsercntThirtyD(Long merchantSoldUsercntThirtyD) {
+
+    /**
+     * Sets merchant sold usercnt thirty d.
+     *
+     * @param merchantSoldUsercntThirtyD the merchant sold usercnt thirty d
+     */
+    public void setMerchantSoldUsercntThirtyD(Long merchantSoldUsercntThirtyD) {
 		this.merchantSoldUsercntThirtyD = merchantSoldUsercntThirtyD;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getOuterDishId() {
+    /**
+     * Gets outer dish id.
+     *
+     * @return the outer dish id
+     */
+    public String getOuterDishId() {
 		return this.outerDishId;
 	}
-	public void setOuterDishId(String outerDishId) {
+
+    /**
+     * Sets outer dish id.
+     *
+     * @param outerDishId the outer dish id
+     */
+    public void setOuterDishId(String outerDishId) {
 		this.outerDishId = outerDishId;
 	}
 
-	public String getPict() {
+    /**
+     * Gets pict.
+     *
+     * @return the pict
+     */
+    public String getPict() {
 		return this.pict;
 	}
-	public void setPict(String pict) {
+
+    /**
+     * Sets pict.
+     *
+     * @param pict the pict
+     */
+    public void setPict(String pict) {
 		this.pict = pict;
 	}
 
-	public String getPlatform() {
+    /**
+     * Gets platform.
+     *
+     * @return the platform
+     */
+    public String getPlatform() {
 		return this.platform;
 	}
-	public void setPlatform(String platform) {
+
+    /**
+     * Sets platform.
+     *
+     * @param platform the platform
+     */
+    public void setPlatform(String platform) {
 		this.platform = platform;
 	}
 
-	public String getPrice() {
+    /**
+     * Gets price.
+     *
+     * @return the price
+     */
+    public String getPrice() {
 		return this.price;
 	}
-	public void setPrice(String price) {
+
+    /**
+     * Sets price.
+     *
+     * @param price the price
+     */
+    public void setPrice(String price) {
 		this.price = price;
 	}
 
-	public Long getQuantity() {
+    /**
+     * Gets quantity.
+     *
+     * @return the quantity
+     */
+    public Long getQuantity() {
 		return this.quantity;
 	}
-	public void setQuantity(Long quantity) {
+
+    /**
+     * Sets quantity.
+     *
+     * @param quantity the quantity
+     */
+    public void setQuantity(Long quantity) {
 		this.quantity = quantity;
 	}
 
-	public String getShopId() {
+    /**
+     * Gets shop id.
+     *
+     * @return the shop id
+     */
+    public String getShopId() {
 		return this.shopId;
 	}
-	public void setShopId(String shopId) {
+
+    /**
+     * Sets shop id.
+     *
+     * @param shopId the shop id
+     */
+    public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 
-	public Long getSoldCntSevenD() {
+    /**
+     * Gets sold cnt seven d.
+     *
+     * @return the sold cnt seven d
+     */
+    public Long getSoldCntSevenD() {
 		return this.soldCntSevenD;
 	}
-	public void setSoldCntSevenD(Long soldCntSevenD) {
+
+    /**
+     * Sets sold cnt seven d.
+     *
+     * @param soldCntSevenD the sold cnt seven d
+     */
+    public void setSoldCntSevenD(Long soldCntSevenD) {
 		this.soldCntSevenD = soldCntSevenD;
 	}
 
-	public Long getSoldCntThirtyD() {
+    /**
+     * Gets sold cnt thirty d.
+     *
+     * @return the sold cnt thirty d
+     */
+    public Long getSoldCntThirtyD() {
 		return this.soldCntThirtyD;
 	}
-	public void setSoldCntThirtyD(Long soldCntThirtyD) {
+
+    /**
+     * Sets sold cnt thirty d.
+     *
+     * @param soldCntThirtyD the sold cnt thirty d
+     */
+    public void setSoldCntThirtyD(Long soldCntThirtyD) {
 		this.soldCntThirtyD = soldCntThirtyD;
 	}
 
-	public Long getSoldReusercntThirtyD() {
+    /**
+     * Gets sold reusercnt thirty d.
+     *
+     * @return the sold reusercnt thirty d
+     */
+    public Long getSoldReusercntThirtyD() {
 		return this.soldReusercntThirtyD;
 	}
-	public void setSoldReusercntThirtyD(Long soldReusercntThirtyD) {
+
+    /**
+     * Sets sold reusercnt thirty d.
+     *
+     * @param soldReusercntThirtyD the sold reusercnt thirty d
+     */
+    public void setSoldReusercntThirtyD(Long soldReusercntThirtyD) {
 		this.soldReusercntThirtyD = soldReusercntThirtyD;
 	}
 
-	public Long getSoldUsercntThirtyD() {
+    /**
+     * Gets sold usercnt thirty d.
+     *
+     * @return the sold usercnt thirty d
+     */
+    public Long getSoldUsercntThirtyD() {
 		return this.soldUsercntThirtyD;
 	}
-	public void setSoldUsercntThirtyD(Long soldUsercntThirtyD) {
+
+    /**
+     * Sets sold usercnt thirty d.
+     *
+     * @param soldUsercntThirtyD the sold usercnt thirty d
+     */
+    public void setSoldUsercntThirtyD(Long soldUsercntThirtyD) {
 		this.soldUsercntThirtyD = soldUsercntThirtyD;
 	}
 
-	public List<Long> getSortCol() {
+    /**
+     * Gets sort col.
+     *
+     * @return the sort col
+     */
+    public List<Long> getSortCol() {
 		return this.sortCol;
 	}
-	public void setSortCol(List<Long> sortCol) {
+
+    /**
+     * Sets sort col.
+     *
+     * @param sortCol the sort col
+     */
+    public void setSortCol(List<Long> sortCol) {
 		this.sortCol = sortCol;
 	}
 
-	public String getUnit() {
+    /**
+     * Gets unit.
+     *
+     * @return the unit
+     */
+    public String getUnit() {
 		return this.unit;
 	}
-	public void setUnit(String unit) {
+
+    /**
+     * Sets unit.
+     *
+     * @param unit the unit
+     */
+    public void setUnit(String unit) {
 		this.unit = unit;
 	}
 

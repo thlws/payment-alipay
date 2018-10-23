@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.campaign.activity.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-29 18:12:38
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class KoubeiMarketingCampaignActivityBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4736371815436641437L;
+	private static final long serialVersionUID = 4788773891421621498L;
 
 	/** 
 	 * 活动列表
@@ -30,17 +30,39 @@ public class KoubeiMarketingCampaignActivityBatchqueryResponse extends AlipayRes
 	@ApiField("total_number")
 	private String totalNumber;
 
-	public void setCampSets(List<CampBaseDto> campSets) {
+    /**
+     * Sets camp sets.
+     *
+     * @param campSets the camp sets
+     */
+    public void setCampSets(List<CampBaseDto> campSets) {
 		this.campSets = campSets;
 	}
-	public List<CampBaseDto> getCampSets( ) {
+
+    /**
+     * Gets camp sets.
+     *
+     * @return the camp sets
+     */
+    public List<CampBaseDto> getCampSets( ) {
 		return this.campSets;
 	}
 
-	public void setTotalNumber(String totalNumber) {
+    /**
+     * Sets total number.
+     *
+     * @param totalNumber the total number
+     */
+    public void setTotalNumber(String totalNumber) {
 		this.totalNumber = totalNumber;
 	}
-	public String getTotalNumber( ) {
+
+    /**
+     * Gets total number.
+     *
+     * @return the total number
+     */
+    public String getTotalNumber( ) {
 		return this.totalNumber;
 	}
 

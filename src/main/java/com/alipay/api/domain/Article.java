@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class Article extends AlipayObject {
 
-	private static final long serialVersionUID = 4596229654264477185L;
+	private static final long serialVersionUID = 1271516222619232929L;
 
 	/**
 	 * 链接文字
@@ -43,38 +43,93 @@ public class Article extends AlipayObject {
 	@ApiField("url")
 	private String url;
 
-	public String getActionName() {
+    /**
+     * Gets action name.
+     *
+     * @return the action name
+     */
+    public String getActionName() {
 		return this.actionName;
 	}
-	public void setActionName(String actionName) {
+
+    /**
+     * Sets action name.
+     *
+     * @param actionName the action name
+     */
+    public void setActionName(String actionName) {
 		this.actionName = actionName;
 	}
 
-	public String getDesc() {
+    /**
+     * Gets desc.
+     *
+     * @return the desc
+     */
+    public String getDesc() {
 		return this.desc;
 	}
-	public void setDesc(String desc) {
+
+    /**
+     * Sets desc.
+     *
+     * @param desc the desc
+     */
+    public void setDesc(String desc) {
 		this.desc = desc;
 	}
 
-	public String getImageUrl() {
+    /**
+     * Gets image url.
+     *
+     * @return the image url
+     */
+    public String getImageUrl() {
 		return this.imageUrl;
 	}
-	public void setImageUrl(String imageUrl) {
+
+    /**
+     * Sets image url.
+     *
+     * @param imageUrl the image url
+     */
+    public void setImageUrl(String imageUrl) {
 		this.imageUrl = imageUrl;
 	}
 
-	public String getTitle() {
+    /**
+     * Gets title.
+     *
+     * @return the title
+     */
+    public String getTitle() {
 		return this.title;
 	}
-	public void setTitle(String title) {
+
+    /**
+     * Sets title.
+     *
+     * @param title the title
+     */
+    public void setTitle(String title) {
 		this.title = title;
 	}
 
-	public String getUrl() {
+    /**
+     * Gets url.
+     *
+     * @return the url
+     */
+    public String getUrl() {
 		return this.url;
 	}
-	public void setUrl(String url) {
+
+    /**
+     * Sets url.
+     *
+     * @param url the url
+     */
+    public void setUrl(String url) {
 		this.url = url;
 	}
 

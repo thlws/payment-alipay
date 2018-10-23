@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ebpp.bill.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-30 10:54:34
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayEbppBillGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8719616989425246386L;
+	private static final long serialVersionUID = 5549152775757793125L;
 
 	/** 
 	 * 支付宝的业务订单号，具有唯一性。
@@ -104,108 +104,273 @@ public class AlipayEbppBillGetResponse extends AlipayResponse {
 	@ApiField("traffic_regulations")
 	private String trafficRegulations;
 
-	public void setAlipayOrderNo(String alipayOrderNo) {
+    /**
+     * Sets alipay order no.
+     *
+     * @param alipayOrderNo the alipay order no
+     */
+    public void setAlipayOrderNo(String alipayOrderNo) {
 		this.alipayOrderNo = alipayOrderNo;
 	}
-	public String getAlipayOrderNo( ) {
+
+    /**
+     * Gets alipay order no.
+     *
+     * @return the alipay order no
+     */
+    public String getAlipayOrderNo( ) {
 		return this.alipayOrderNo;
 	}
 
-	public void setBillDate(String billDate) {
+    /**
+     * Sets bill date.
+     *
+     * @param billDate the bill date
+     */
+    public void setBillDate(String billDate) {
 		this.billDate = billDate;
 	}
-	public String getBillDate( ) {
+
+    /**
+     * Gets bill date.
+     *
+     * @return the bill date
+     */
+    public String getBillDate( ) {
 		return this.billDate;
 	}
 
-	public void setBillKey(String billKey) {
+    /**
+     * Sets bill key.
+     *
+     * @param billKey the bill key
+     */
+    public void setBillKey(String billKey) {
 		this.billKey = billKey;
 	}
-	public String getBillKey( ) {
+
+    /**
+     * Gets bill key.
+     *
+     * @return the bill key
+     */
+    public String getBillKey( ) {
 		return this.billKey;
 	}
 
-	public void setChargeInst(String chargeInst) {
+    /**
+     * Sets charge inst.
+     *
+     * @param chargeInst the charge inst
+     */
+    public void setChargeInst(String chargeInst) {
 		this.chargeInst = chargeInst;
 	}
-	public String getChargeInst( ) {
+
+    /**
+     * Gets charge inst.
+     *
+     * @return the charge inst
+     */
+    public String getChargeInst( ) {
 		return this.chargeInst;
 	}
 
-	public void setChargeInstName(String chargeInstName) {
+    /**
+     * Sets charge inst name.
+     *
+     * @param chargeInstName the charge inst name
+     */
+    public void setChargeInstName(String chargeInstName) {
 		this.chargeInstName = chargeInstName;
 	}
-	public String getChargeInstName( ) {
+
+    /**
+     * Gets charge inst name.
+     *
+     * @return the charge inst name
+     */
+    public String getChargeInstName( ) {
 		return this.chargeInstName;
 	}
 
-	public void setMerchantOrderNo(String merchantOrderNo) {
+    /**
+     * Sets merchant order no.
+     *
+     * @param merchantOrderNo the merchant order no
+     */
+    public void setMerchantOrderNo(String merchantOrderNo) {
 		this.merchantOrderNo = merchantOrderNo;
 	}
-	public String getMerchantOrderNo( ) {
+
+    /**
+     * Gets merchant order no.
+     *
+     * @return the merchant order no
+     */
+    public String getMerchantOrderNo( ) {
 		return this.merchantOrderNo;
 	}
 
-	public void setOrderStatus(String orderStatus) {
+    /**
+     * Sets order status.
+     *
+     * @param orderStatus the order status
+     */
+    public void setOrderStatus(String orderStatus) {
 		this.orderStatus = orderStatus;
 	}
-	public String getOrderStatus( ) {
+
+    /**
+     * Gets order status.
+     *
+     * @return the order status
+     */
+    public String getOrderStatus( ) {
 		return this.orderStatus;
 	}
 
-	public void setOrderType(String orderType) {
+    /**
+     * Sets order type.
+     *
+     * @param orderType the order type
+     */
+    public void setOrderType(String orderType) {
 		this.orderType = orderType;
 	}
-	public String getOrderType( ) {
+
+    /**
+     * Gets order type.
+     *
+     * @return the order type
+     */
+    public String getOrderType( ) {
 		return this.orderType;
 	}
 
-	public void setOwnerName(String ownerName) {
+    /**
+     * Sets owner name.
+     *
+     * @param ownerName the owner name
+     */
+    public void setOwnerName(String ownerName) {
 		this.ownerName = ownerName;
 	}
-	public String getOwnerName( ) {
+
+    /**
+     * Gets owner name.
+     *
+     * @return the owner name
+     */
+    public String getOwnerName( ) {
 		return this.ownerName;
 	}
 
-	public void setPayAmount(String payAmount) {
+    /**
+     * Sets pay amount.
+     *
+     * @param payAmount the pay amount
+     */
+    public void setPayAmount(String payAmount) {
 		this.payAmount = payAmount;
 	}
-	public String getPayAmount( ) {
+
+    /**
+     * Gets pay amount.
+     *
+     * @return the pay amount
+     */
+    public String getPayAmount( ) {
 		return this.payAmount;
 	}
 
-	public void setPayTime(String payTime) {
+    /**
+     * Sets pay time.
+     *
+     * @param payTime the pay time
+     */
+    public void setPayTime(String payTime) {
 		this.payTime = payTime;
 	}
-	public String getPayTime( ) {
+
+    /**
+     * Gets pay time.
+     *
+     * @return the pay time
+     */
+    public String getPayTime( ) {
 		return this.payTime;
 	}
 
-	public void setServiceAmount(String serviceAmount) {
+    /**
+     * Sets service amount.
+     *
+     * @param serviceAmount the service amount
+     */
+    public void setServiceAmount(String serviceAmount) {
 		this.serviceAmount = serviceAmount;
 	}
-	public String getServiceAmount( ) {
+
+    /**
+     * Gets service amount.
+     *
+     * @return the service amount
+     */
+    public String getServiceAmount( ) {
 		return this.serviceAmount;
 	}
 
-	public void setSubOrderType(String subOrderType) {
+    /**
+     * Sets sub order type.
+     *
+     * @param subOrderType the sub order type
+     */
+    public void setSubOrderType(String subOrderType) {
 		this.subOrderType = subOrderType;
 	}
-	public String getSubOrderType( ) {
+
+    /**
+     * Gets sub order type.
+     *
+     * @return the sub order type
+     */
+    public String getSubOrderType( ) {
 		return this.subOrderType;
 	}
 
-	public void setTrafficLocation(String trafficLocation) {
+    /**
+     * Sets traffic location.
+     *
+     * @param trafficLocation the traffic location
+     */
+    public void setTrafficLocation(String trafficLocation) {
 		this.trafficLocation = trafficLocation;
 	}
-	public String getTrafficLocation( ) {
+
+    /**
+     * Gets traffic location.
+     *
+     * @return the traffic location
+     */
+    public String getTrafficLocation( ) {
 		return this.trafficLocation;
 	}
 
-	public void setTrafficRegulations(String trafficRegulations) {
+    /**
+     * Sets traffic regulations.
+     *
+     * @param trafficRegulations the traffic regulations
+     */
+    public void setTrafficRegulations(String trafficRegulations) {
 		this.trafficRegulations = trafficRegulations;
 	}
-	public String getTrafficRegulations( ) {
+
+    /**
+     * Gets traffic regulations.
+     *
+     * @return the traffic regulations
+     */
+    public String getTrafficRegulations( ) {
 		return this.trafficRegulations;
 	}
 

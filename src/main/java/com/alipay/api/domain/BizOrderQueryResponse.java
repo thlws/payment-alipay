@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BizOrderQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 6129189356971541252L;
+	private static final long serialVersionUID = 7684257877124138158L;
 
 	/**
 	 * 操作动作。
@@ -109,101 +109,255 @@ PAUSE_ITEM-恢复售卖商品
 	@ApiField("update_time")
 	private Date updateTime;
 
-	public String getAction() {
+    /**
+     * Gets action.
+     *
+     * @return the action
+     */
+    public String getAction() {
 		return this.action;
 	}
-	public void setAction(String action) {
+
+    /**
+     * Sets action.
+     *
+     * @param action the action
+     */
+    public void setAction(String action) {
 		this.action = action;
 	}
 
-	public String getActionMode() {
+    /**
+     * Gets action mode.
+     *
+     * @return the action mode
+     */
+    public String getActionMode() {
 		return this.actionMode;
 	}
-	public void setActionMode(String actionMode) {
+
+    /**
+     * Sets action mode.
+     *
+     * @param actionMode the action mode
+     */
+    public void setActionMode(String actionMode) {
 		this.actionMode = actionMode;
 	}
 
-	public String getApplyId() {
+    /**
+     * Gets apply id.
+     *
+     * @return the apply id
+     */
+    public String getApplyId() {
 		return this.applyId;
 	}
-	public void setApplyId(String applyId) {
+
+    /**
+     * Sets apply id.
+     *
+     * @param applyId the apply id
+     */
+    public void setApplyId(String applyId) {
 		this.applyId = applyId;
 	}
 
-	public String getBizContextInfo() {
+    /**
+     * Gets biz context info.
+     *
+     * @return the biz context info
+     */
+    public String getBizContextInfo() {
 		return this.bizContextInfo;
 	}
-	public void setBizContextInfo(String bizContextInfo) {
+
+    /**
+     * Sets biz context info.
+     *
+     * @param bizContextInfo the biz context info
+     */
+    public void setBizContextInfo(String bizContextInfo) {
 		this.bizContextInfo = bizContextInfo;
 	}
 
-	public String getBizId() {
+    /**
+     * Gets biz id.
+     *
+     * @return the biz id
+     */
+    public String getBizId() {
 		return this.bizId;
 	}
-	public void setBizId(String bizId) {
+
+    /**
+     * Sets biz id.
+     *
+     * @param bizId the biz id
+     */
+    public void setBizId(String bizId) {
 		this.bizId = bizId;
 	}
 
-	public String getBizType() {
+    /**
+     * Gets biz type.
+     *
+     * @return the biz type
+     */
+    public String getBizType() {
 		return this.bizType;
 	}
-	public void setBizType(String bizType) {
+
+    /**
+     * Sets biz type.
+     *
+     * @param bizType the biz type
+     */
+    public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
-	public Date getCreateTime() {
+    /**
+     * Gets create time.
+     *
+     * @return the create time
+     */
+    public Date getCreateTime() {
 		return this.createTime;
 	}
-	public void setCreateTime(Date createTime) {
+
+    /**
+     * Sets create time.
+     *
+     * @param createTime the create time
+     */
+    public void setCreateTime(Date createTime) {
 		this.createTime = createTime;
 	}
 
-	public String getOpId() {
+    /**
+     * Gets op id.
+     *
+     * @return the op id
+     */
+    public String getOpId() {
 		return this.opId;
 	}
-	public void setOpId(String opId) {
+
+    /**
+     * Sets op id.
+     *
+     * @param opId the op id
+     */
+    public void setOpId(String opId) {
 		this.opId = opId;
 	}
 
-	public String getRequestId() {
+    /**
+     * Gets request id.
+     *
+     * @return the request id
+     */
+    public String getRequestId() {
 		return this.requestId;
 	}
-	public void setRequestId(String requestId) {
+
+    /**
+     * Sets request id.
+     *
+     * @param requestId the request id
+     */
+    public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
 
-	public String getResultCode() {
+    /**
+     * Gets result code.
+     *
+     * @return the result code
+     */
+    public String getResultCode() {
 		return this.resultCode;
 	}
-	public void setResultCode(String resultCode) {
+
+    /**
+     * Sets result code.
+     *
+     * @param resultCode the result code
+     */
+    public void setResultCode(String resultCode) {
 		this.resultCode = resultCode;
 	}
 
-	public String getResultDesc() {
+    /**
+     * Gets result desc.
+     *
+     * @return the result desc
+     */
+    public String getResultDesc() {
 		return this.resultDesc;
 	}
-	public void setResultDesc(String resultDesc) {
+
+    /**
+     * Sets result desc.
+     *
+     * @param resultDesc the result desc
+     */
+    public void setResultDesc(String resultDesc) {
 		this.resultDesc = resultDesc;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 
-	public String getSubStatus() {
+    /**
+     * Gets sub status.
+     *
+     * @return the sub status
+     */
+    public String getSubStatus() {
 		return this.subStatus;
 	}
-	public void setSubStatus(String subStatus) {
+
+    /**
+     * Sets sub status.
+     *
+     * @param subStatus the sub status
+     */
+    public void setSubStatus(String subStatus) {
 		this.subStatus = subStatus;
 	}
 
-	public Date getUpdateTime() {
+    /**
+     * Gets update time.
+     *
+     * @return the update time
+     */
+    public Date getUpdateTime() {
 		return this.updateTime;
 	}
-	public void setUpdateTime(Date updateTime) {
+
+    /**
+     * Sets update time.
+     *
+     * @param updateTime the update time
+     */
+    public void setUpdateTime(Date updateTime) {
 		this.updateTime = updateTime;
 	}
 

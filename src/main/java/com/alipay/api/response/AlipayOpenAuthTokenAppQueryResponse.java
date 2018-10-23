@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.auth.token.app.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-07-18 13:35:47
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayOpenAuthTokenAppQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3525737197165353197L;
+	private static final long serialVersionUID = 6797174618515241554L;
 
 	/** 
 	 * 授权商户的appid
@@ -60,52 +60,129 @@ public class AlipayOpenAuthTokenAppQueryResponse extends AlipayResponse {
 	@ApiField("user_id")
 	private String userId;
 
-	public void setAuthAppId(String authAppId) {
+    /**
+     * Sets auth app id.
+     *
+     * @param authAppId the auth app id
+     */
+    public void setAuthAppId(String authAppId) {
 		this.authAppId = authAppId;
 	}
-	public String getAuthAppId( ) {
+
+    /**
+     * Gets auth app id.
+     *
+     * @return the auth app id
+     */
+    public String getAuthAppId( ) {
 		return this.authAppId;
 	}
 
-	public void setAuthEnd(Date authEnd) {
+    /**
+     * Sets auth end.
+     *
+     * @param authEnd the auth end
+     */
+    public void setAuthEnd(Date authEnd) {
 		this.authEnd = authEnd;
 	}
-	public Date getAuthEnd( ) {
+
+    /**
+     * Gets auth end.
+     *
+     * @return the auth end
+     */
+    public Date getAuthEnd( ) {
 		return this.authEnd;
 	}
 
-	public void setAuthMethods(List<String> authMethods) {
+    /**
+     * Sets auth methods.
+     *
+     * @param authMethods the auth methods
+     */
+    public void setAuthMethods(List<String> authMethods) {
 		this.authMethods = authMethods;
 	}
-	public List<String> getAuthMethods( ) {
+
+    /**
+     * Gets auth methods.
+     *
+     * @return the auth methods
+     */
+    public List<String> getAuthMethods( ) {
 		return this.authMethods;
 	}
 
-	public void setAuthStart(Date authStart) {
+    /**
+     * Sets auth start.
+     *
+     * @param authStart the auth start
+     */
+    public void setAuthStart(Date authStart) {
 		this.authStart = authStart;
 	}
-	public Date getAuthStart( ) {
+
+    /**
+     * Gets auth start.
+     *
+     * @return the auth start
+     */
+    public Date getAuthStart( ) {
 		return this.authStart;
 	}
 
-	public void setExpiresIn(Long expiresIn) {
+    /**
+     * Sets expires in.
+     *
+     * @param expiresIn the expires in
+     */
+    public void setExpiresIn(Long expiresIn) {
 		this.expiresIn = expiresIn;
 	}
-	public Long getExpiresIn( ) {
+
+    /**
+     * Gets expires in.
+     *
+     * @return the expires in
+     */
+    public Long getExpiresIn( ) {
 		return this.expiresIn;
 	}
 
-	public void setStatus(String status) {
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
-	public String getStatus( ) {
+
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus( ) {
 		return this.status;
 	}
 
-	public void setUserId(String userId) {
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public String getUserId( ) {
+
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId( ) {
 		return this.userId;
 	}
 

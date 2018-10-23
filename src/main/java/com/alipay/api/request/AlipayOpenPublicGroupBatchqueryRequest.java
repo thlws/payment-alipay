@@ -9,9 +9,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.open.public.group.batchquery request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-14 11:01:42
+ * @since 1.0, 2018-07-25 13:51:51
  */
 public class AlipayOpenPublicGroupBatchqueryRequest implements AlipayRequest<AlipayOpenPublicGroupBatchqueryResponse> {
 
@@ -85,7 +85,13 @@ public class AlipayOpenPublicGroupBatchqueryRequest implements AlipayRequest<Ali
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

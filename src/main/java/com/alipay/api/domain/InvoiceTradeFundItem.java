@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InvoiceTradeFundItem extends AlipayObject {
 
-	private static final long serialVersionUID = 5244583859914655375L;
+	private static final long serialVersionUID = 3251953996229961585L;
 
 	/**
 	 * 当前支付工具支付的金额
@@ -31,24 +31,57 @@ public class InvoiceTradeFundItem extends AlipayObject {
 	@ApiField("payment_tool_type")
 	private String paymentToolType;
 
-	public String getAmount() {
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public String getAmount() {
 		return this.amount;
 	}
-	public void setAmount(String amount) {
+
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
-	public String getPaymentToolName() {
+    /**
+     * Gets payment tool name.
+     *
+     * @return the payment tool name
+     */
+    public String getPaymentToolName() {
 		return this.paymentToolName;
 	}
-	public void setPaymentToolName(String paymentToolName) {
+
+    /**
+     * Sets payment tool name.
+     *
+     * @param paymentToolName the payment tool name
+     */
+    public void setPaymentToolName(String paymentToolName) {
 		this.paymentToolName = paymentToolName;
 	}
 
-	public String getPaymentToolType() {
+    /**
+     * Gets payment tool type.
+     *
+     * @return the payment tool type
+     */
+    public String getPaymentToolType() {
 		return this.paymentToolType;
 	}
-	public void setPaymentToolType(String paymentToolType) {
+
+    /**
+     * Sets payment tool type.
+     *
+     * @param paymentToolType the payment tool type
+     */
+    public void setPaymentToolType(String paymentToolType) {
 		this.paymentToolType = paymentToolType;
 	}
 

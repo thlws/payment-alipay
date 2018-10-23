@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.campaign.discount.operate response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-03-03 16:48:01
  */
 public class AlipayMarketingCampaignDiscountOperateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6135746592334531994L;
+	private static final long serialVersionUID = 8699799347774847719L;
 
 	/** 
 	 * 123
@@ -20,10 +20,21 @@ public class AlipayMarketingCampaignDiscountOperateResponse extends AlipayRespon
 	@ApiField("camp_id")
 	private String campId;
 
-	public void setCampId(String campId) {
+    /**
+     * Sets camp id.
+     *
+     * @param campId the camp id
+     */
+    public void setCampId(String campId) {
 		this.campId = campId;
 	}
-	public String getCampId( ) {
+
+    /**
+     * Gets camp id.
+     *
+     * @return the camp id
+     */
+    public String getCampId( ) {
 		return this.campId;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ResetZeroDstCampPrizeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8639139497732182415L;
+	private static final long serialVersionUID = 5387879612957232223L;
 
 	/**
 	 * 折扣预算ID
@@ -41,31 +41,75 @@ public class ResetZeroDstCampPrizeModel extends AlipayObject {
 	@ApiField("reset_zero_amt")
 	private String resetZeroAmt;
 
-	public String getBudgetId() {
+    /**
+     * Gets budget id.
+     *
+     * @return the budget id
+     */
+    public String getBudgetId() {
 		return this.budgetId;
 	}
-	public void setBudgetId(String budgetId) {
+
+    /**
+     * Sets budget id.
+     *
+     * @param budgetId the budget id
+     */
+    public void setBudgetId(String budgetId) {
 		this.budgetId = budgetId;
 	}
 
-	public String getId() {
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
+    public String getId() {
 		return this.id;
 	}
-	public void setId(String id) {
+
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
+    public void setId(String id) {
 		this.id = id;
 	}
 
-	public String getMaxDiscountAmt() {
+    /**
+     * Gets max discount amt.
+     *
+     * @return the max discount amt
+     */
+    public String getMaxDiscountAmt() {
 		return this.maxDiscountAmt;
 	}
-	public void setMaxDiscountAmt(String maxDiscountAmt) {
+
+    /**
+     * Sets max discount amt.
+     *
+     * @param maxDiscountAmt the max discount amt
+     */
+    public void setMaxDiscountAmt(String maxDiscountAmt) {
 		this.maxDiscountAmt = maxDiscountAmt;
 	}
 
-	public String getResetZeroAmt() {
+    /**
+     * Gets reset zero amt.
+     *
+     * @return the reset zero amt
+     */
+    public String getResetZeroAmt() {
 		return this.resetZeroAmt;
 	}
-	public void setResetZeroAmt(String resetZeroAmt) {
+
+    /**
+     * Sets reset zero amt.
+     *
+     * @param resetZeroAmt the reset zero amt
+     */
+    public void setResetZeroAmt(String resetZeroAmt) {
 		this.resetZeroAmt = resetZeroAmt;
 	}
 

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VoucherTemplateLiteInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4687675916726167224L;
+	private static final long serialVersionUID = 8427857967984265294L;
 
 	/**
 	 * 模板激活时间。草稿状态的模板该项为空
@@ -57,52 +57,129 @@ public class VoucherTemplateLiteInfo extends AlipayObject {
 	@ApiField("voucher_name")
 	private String voucherName;
 
-	public Date getActivateTime() {
+    /**
+     * Gets activate time.
+     *
+     * @return the activate time
+     */
+    public Date getActivateTime() {
 		return this.activateTime;
 	}
-	public void setActivateTime(Date activateTime) {
+
+    /**
+     * Sets activate time.
+     *
+     * @param activateTime the activate time
+     */
+    public void setActivateTime(Date activateTime) {
 		this.activateTime = activateTime;
 	}
 
-	public Date getCreateTime() {
+    /**
+     * Gets create time.
+     *
+     * @return the create time
+     */
+    public Date getCreateTime() {
 		return this.createTime;
 	}
-	public void setCreateTime(Date createTime) {
+
+    /**
+     * Sets create time.
+     *
+     * @param createTime the create time
+     */
+    public void setCreateTime(Date createTime) {
 		this.createTime = createTime;
 	}
 
-	public Date getPublishEndTime() {
+    /**
+     * Gets publish end time.
+     *
+     * @return the publish end time
+     */
+    public Date getPublishEndTime() {
 		return this.publishEndTime;
 	}
-	public void setPublishEndTime(Date publishEndTime) {
+
+    /**
+     * Sets publish end time.
+     *
+     * @param publishEndTime the publish end time
+     */
+    public void setPublishEndTime(Date publishEndTime) {
 		this.publishEndTime = publishEndTime;
 	}
 
-	public Date getPublishStartTime() {
+    /**
+     * Gets publish start time.
+     *
+     * @return the publish start time
+     */
+    public Date getPublishStartTime() {
 		return this.publishStartTime;
 	}
-	public void setPublishStartTime(Date publishStartTime) {
+
+    /**
+     * Sets publish start time.
+     *
+     * @param publishStartTime the publish start time
+     */
+    public void setPublishStartTime(Date publishStartTime) {
 		this.publishStartTime = publishStartTime;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 
-	public String getTemplateId() {
+    /**
+     * Gets template id.
+     *
+     * @return the template id
+     */
+    public String getTemplateId() {
 		return this.templateId;
 	}
-	public void setTemplateId(String templateId) {
+
+    /**
+     * Sets template id.
+     *
+     * @param templateId the template id
+     */
+    public void setTemplateId(String templateId) {
 		this.templateId = templateId;
 	}
 
-	public String getVoucherName() {
+    /**
+     * Gets voucher name.
+     *
+     * @return the voucher name
+     */
+    public String getVoucherName() {
 		return this.voucherName;
 	}
-	public void setVoucherName(String voucherName) {
+
+    /**
+     * Sets voucher name.
+     *
+     * @param voucherName the voucher name
+     */
+    public void setVoucherName(String voucherName) {
 		this.voucherName = voucherName;
 	}
 

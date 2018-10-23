@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: ssdata.dataservice.risk.antifraudintegration.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-27 11:42:25
+ * @since 1.0, 2018-06-08 14:09:21
  */
 public class SsdataDataserviceRiskAntifraudintegrationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4522362912887867829L;
+	private static final long serialVersionUID = 4681148672353754186L;
 
 	/** 
 	 * 蚁盾对于每一次请求返回的业务号。后续可以通过此业务号进行对账
@@ -45,50 +45,116 @@ public class SsdataDataserviceRiskAntifraudintegrationQueryResponse extends Alip
 	private String uniqueId;
 
 	/** 
-	 * <a href="https://doc.open.alipay.com/docs/doc.htm?treeId=272articleId=105917docType=1">验证code列表</a>
+	 * <a href="https://doc.open.alipay.com/docs/doc.htm?treeId=272&articleId=105917&docType=1">验证code列表</a>
 	 */
 	@ApiField("verify_code")
 	private String verifyCode;
 
-	public void setBizNo(String bizNo) {
+    /**
+     * Sets biz no.
+     *
+     * @param bizNo the biz no
+     */
+    public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
 	}
-	public String getBizNo( ) {
+
+    /**
+     * Gets biz no.
+     *
+     * @return the biz no
+     */
+    public String getBizNo( ) {
 		return this.bizNo;
 	}
 
-	public void setHit(String hit) {
+    /**
+     * Sets hit.
+     *
+     * @param hit the hit
+     */
+    public void setHit(String hit) {
 		this.hit = hit;
 	}
-	public String getHit( ) {
+
+    /**
+     * Gets hit.
+     *
+     * @return the hit
+     */
+    public String getHit( ) {
 		return this.hit;
 	}
 
-	public void setRiskCode(String riskCode) {
+    /**
+     * Sets risk code.
+     *
+     * @param riskCode the risk code
+     */
+    public void setRiskCode(String riskCode) {
 		this.riskCode = riskCode;
 	}
-	public String getRiskCode( ) {
+
+    /**
+     * Gets risk code.
+     *
+     * @return the risk code
+     */
+    public String getRiskCode( ) {
 		return this.riskCode;
 	}
 
-	public void setScore(String score) {
+    /**
+     * Sets score.
+     *
+     * @param score the score
+     */
+    public void setScore(String score) {
 		this.score = score;
 	}
-	public String getScore( ) {
+
+    /**
+     * Gets score.
+     *
+     * @return the score
+     */
+    public String getScore( ) {
 		return this.score;
 	}
 
-	public void setUniqueId(String uniqueId) {
+    /**
+     * Sets unique id.
+     *
+     * @param uniqueId the unique id
+     */
+    public void setUniqueId(String uniqueId) {
 		this.uniqueId = uniqueId;
 	}
-	public String getUniqueId( ) {
+
+    /**
+     * Gets unique id.
+     *
+     * @return the unique id
+     */
+    public String getUniqueId( ) {
 		return this.uniqueId;
 	}
 
-	public void setVerifyCode(String verifyCode) {
+    /**
+     * Sets verify code.
+     *
+     * @param verifyCode the verify code
+     */
+    public void setVerifyCode(String verifyCode) {
 		this.verifyCode = verifyCode;
 	}
-	public String getVerifyCode( ) {
+
+    /**
+     * Gets verify code.
+     *
+     * @return the verify code
+     */
+    public String getVerifyCode( ) {
 		return this.verifyCode;
 	}
 

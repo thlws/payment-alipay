@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.pass.tpl.content.update response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-07-01 15:29:44
+ * @since 1.0, 2017-12-07 16:33:36
  */
 public class AlipayPassTplContentUpdateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2151432468934598911L;
+	private static final long serialVersionUID = 6132695145726678355L;
 
 	/** 
 	 * 业务错误码
@@ -39,17 +39,39 @@ public class AlipayPassTplContentUpdateResponse extends AlipayResponse {
 		return this.errorCode;
 	}
 
-	public void setResult(String result) {
+    /**
+     * Sets result.
+     *
+     * @param result the result
+     */
+    public void setResult(String result) {
 		this.result = result;
 	}
-	public String getResult( ) {
+
+    /**
+     * Gets result.
+     *
+     * @return the result
+     */
+    public String getResult( ) {
 		return this.result;
 	}
 
-	public void setSuccess(String success) {
+    /**
+     * Sets success.
+     *
+     * @param success the success
+     */
+    public void setSuccess(String success) {
 		this.success = success;
 	}
-	public String getSuccess( ) {
+
+    /**
+     * Gets success.
+     *
+     * @return the success
+     */
+    public String getSuccess( ) {
 		return this.success;
 	}
 

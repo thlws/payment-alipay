@@ -9,9 +9,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.exsc.user.firstfundinpour.get request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-07 16:23:40
+ * @since 1.0, 2017-12-07 16:30:37
  */
 public class AlipayExscUserFirstfundinpourGetRequest implements AlipayRequest<AlipayExscUserFirstfundinpourGetResponse> {
 
@@ -23,10 +23,21 @@ public class AlipayExscUserFirstfundinpourGetRequest implements AlipayRequest<Al
 	 */
 	private String alipayId;
 
-	public void setAlipayId(String alipayId) {
+    /**
+     * Sets alipay id.
+     *
+     * @param alipayId the alipay id
+     */
+    public void setAlipayId(String alipayId) {
 		this.alipayId = alipayId;
 	}
-	public String getAlipayId() {
+
+    /**
+     * Gets alipay id.
+     *
+     * @return the alipay id
+     */
+    public String getAlipayId() {
 		return this.alipayId;
 	}
 	private String terminalType;
@@ -98,7 +109,13 @@ public class AlipayExscUserFirstfundinpourGetRequest implements AlipayRequest<Al
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

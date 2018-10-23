@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineMarketProductQuerydetailModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6158738196312686421L;
+	private static final long serialVersionUID = 5363561746659136712L;
 
 	/**
 	 * 商品ID
@@ -31,24 +31,57 @@ public class AlipayOfflineMarketProductQuerydetailModel extends AlipayObject {
 	@ApiField("shop_id")
 	private String shopId;
 
-	public String getItemId() {
+    /**
+     * Gets item id.
+     *
+     * @return the item id
+     */
+    public String getItemId() {
 		return this.itemId;
 	}
-	public void setItemId(String itemId) {
+
+    /**
+     * Sets item id.
+     *
+     * @param itemId the item id
+     */
+    public void setItemId(String itemId) {
 		this.itemId = itemId;
 	}
 
-	public String getOpRole() {
+    /**
+     * Gets op role.
+     *
+     * @return the op role
+     */
+    public String getOpRole() {
 		return this.opRole;
 	}
-	public void setOpRole(String opRole) {
+
+    /**
+     * Sets op role.
+     *
+     * @param opRole the op role
+     */
+    public void setOpRole(String opRole) {
 		this.opRole = opRole;
 	}
 
-	public String getShopId() {
+    /**
+     * Gets shop id.
+     *
+     * @return the shop id
+     */
+    public String getShopId() {
 		return this.shopId;
 	}
-	public void setShopId(String shopId) {
+
+    /**
+     * Sets shop id.
+     *
+     * @param shopId the shop id
+     */
+    public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 

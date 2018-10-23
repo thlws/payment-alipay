@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class FengdieActivityPage extends AlipayObject {
 
-	private static final long serialVersionUID = 5149227553329361216L;
+	private static final long serialVersionUID = 2525197398892883731L;
 
 	/**
 	 * H5页面唯一id，创建H5应用时自动生成
@@ -53,45 +53,111 @@ public class FengdieActivityPage extends AlipayObject {
 	@ApiField("url")
 	private String url;
 
-	public Long getId() {
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
+    public Long getId() {
 		return this.id;
 	}
-	public void setId(Long id) {
+
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
+    public void setId(Long id) {
 		this.id = id;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public List<FengdieActivitySchemaData> getSchema() {
+    /**
+     * Gets schema.
+     *
+     * @return the schema
+     */
+    public List<FengdieActivitySchemaData> getSchema() {
 		return this.schema;
 	}
-	public void setSchema(List<FengdieActivitySchemaData> schema) {
+
+    /**
+     * Sets schema.
+     *
+     * @param schema the schema
+     */
+    public void setSchema(List<FengdieActivitySchemaData> schema) {
 		this.schema = schema;
 	}
 
-	public String getSnapshot() {
+    /**
+     * Gets snapshot.
+     *
+     * @return the snapshot
+     */
+    public String getSnapshot() {
 		return this.snapshot;
 	}
-	public void setSnapshot(String snapshot) {
+
+    /**
+     * Sets snapshot.
+     *
+     * @param snapshot the snapshot
+     */
+    public void setSnapshot(String snapshot) {
 		this.snapshot = snapshot;
 	}
 
-	public String getTitle() {
+    /**
+     * Gets title.
+     *
+     * @return the title
+     */
+    public String getTitle() {
 		return this.title;
 	}
-	public void setTitle(String title) {
+
+    /**
+     * Sets title.
+     *
+     * @param title the title
+     */
+    public void setTitle(String title) {
 		this.title = title;
 	}
 
-	public String getUrl() {
+    /**
+     * Gets url.
+     *
+     * @return the url
+     */
+    public String getUrl() {
 		return this.url;
 	}
-	public void setUrl(String url) {
+
+    /**
+     * Sets url.
+     *
+     * @param url the url
+     */
+    public void setUrl(String url) {
 		this.url = url;
 	}
 

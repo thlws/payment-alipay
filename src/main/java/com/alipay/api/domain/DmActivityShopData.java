@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DmActivityShopData extends AlipayObject {
 
-	private static final long serialVersionUID = 3446165675562615931L;
+	private static final long serialVersionUID = 6611193368135823751L;
 
 	/**
 	 * 数据创建时间戳
@@ -69,66 +69,165 @@ public class DmActivityShopData extends AlipayObject {
 	@ApiField("total_exposure_times")
 	private Long totalExposureTimes;
 
-	public Date getGmtCreate() {
+    /**
+     * Gets gmt create.
+     *
+     * @return the gmt create
+     */
+    public Date getGmtCreate() {
 		return this.gmtCreate;
 	}
-	public void setGmtCreate(Date gmtCreate) {
+
+    /**
+     * Sets gmt create.
+     *
+     * @param gmtCreate the gmt create
+     */
+    public void setGmtCreate(Date gmtCreate) {
 		this.gmtCreate = gmtCreate;
 	}
 
-	public Date getGmtModified() {
+    /**
+     * Gets gmt modified.
+     *
+     * @return the gmt modified
+     */
+    public Date getGmtModified() {
 		return this.gmtModified;
 	}
-	public void setGmtModified(Date gmtModified) {
+
+    /**
+     * Sets gmt modified.
+     *
+     * @param gmtModified the gmt modified
+     */
+    public void setGmtModified(Date gmtModified) {
 		this.gmtModified = gmtModified;
 	}
 
-	public Long getOneDayClickPersons() {
+    /**
+     * Gets one day click persons.
+     *
+     * @return the one day click persons
+     */
+    public Long getOneDayClickPersons() {
 		return this.oneDayClickPersons;
 	}
-	public void setOneDayClickPersons(Long oneDayClickPersons) {
+
+    /**
+     * Sets one day click persons.
+     *
+     * @param oneDayClickPersons the one day click persons
+     */
+    public void setOneDayClickPersons(Long oneDayClickPersons) {
 		this.oneDayClickPersons = oneDayClickPersons;
 	}
 
-	public Long getOneDayClickTimes() {
+    /**
+     * Gets one day click times.
+     *
+     * @return the one day click times
+     */
+    public Long getOneDayClickTimes() {
 		return this.oneDayClickTimes;
 	}
-	public void setOneDayClickTimes(Long oneDayClickTimes) {
+
+    /**
+     * Sets one day click times.
+     *
+     * @param oneDayClickTimes the one day click times
+     */
+    public void setOneDayClickTimes(Long oneDayClickTimes) {
 		this.oneDayClickTimes = oneDayClickTimes;
 	}
 
-	public Long getOneDayExposureTimes() {
+    /**
+     * Gets one day exposure times.
+     *
+     * @return the one day exposure times
+     */
+    public Long getOneDayExposureTimes() {
 		return this.oneDayExposureTimes;
 	}
-	public void setOneDayExposureTimes(Long oneDayExposureTimes) {
+
+    /**
+     * Sets one day exposure times.
+     *
+     * @param oneDayExposureTimes the one day exposure times
+     */
+    public void setOneDayExposureTimes(Long oneDayExposureTimes) {
 		this.oneDayExposureTimes = oneDayExposureTimes;
 	}
 
-	public String getShopId() {
+    /**
+     * Gets shop id.
+     *
+     * @return the shop id
+     */
+    public String getShopId() {
 		return this.shopId;
 	}
-	public void setShopId(String shopId) {
+
+    /**
+     * Sets shop id.
+     *
+     * @param shopId the shop id
+     */
+    public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 
-	public Long getTotalClickPersons() {
+    /**
+     * Gets total click persons.
+     *
+     * @return the total click persons
+     */
+    public Long getTotalClickPersons() {
 		return this.totalClickPersons;
 	}
-	public void setTotalClickPersons(Long totalClickPersons) {
+
+    /**
+     * Sets total click persons.
+     *
+     * @param totalClickPersons the total click persons
+     */
+    public void setTotalClickPersons(Long totalClickPersons) {
 		this.totalClickPersons = totalClickPersons;
 	}
 
-	public Long getTotalClickTimes() {
+    /**
+     * Gets total click times.
+     *
+     * @return the total click times
+     */
+    public Long getTotalClickTimes() {
 		return this.totalClickTimes;
 	}
-	public void setTotalClickTimes(Long totalClickTimes) {
+
+    /**
+     * Sets total click times.
+     *
+     * @param totalClickTimes the total click times
+     */
+    public void setTotalClickTimes(Long totalClickTimes) {
 		this.totalClickTimes = totalClickTimes;
 	}
 
-	public Long getTotalExposureTimes() {
+    /**
+     * Gets total exposure times.
+     *
+     * @return the total exposure times
+     */
+    public Long getTotalExposureTimes() {
 		return this.totalExposureTimes;
 	}
-	public void setTotalExposureTimes(Long totalExposureTimes) {
+
+    /**
+     * Sets total exposure times.
+     *
+     * @param totalExposureTimes the total exposure times
+     */
+    public void setTotalExposureTimes(Long totalExposureTimes) {
 		this.totalExposureTimes = totalExposureTimes;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TradeAssocBillDetails extends AlipayObject {
 
-	private static final long serialVersionUID = 2526655388981137716L;
+	private static final long serialVersionUID = 6413885993482846421L;
 
 	/**
 	 * 明细条目所归属的账期
@@ -37,31 +37,75 @@ public class TradeAssocBillDetails extends AlipayObject {
 	@ApiField("cost_type")
 	private String costType;
 
-	public String getAcctPeriod() {
+    /**
+     * Gets acct period.
+     *
+     * @return the acct period
+     */
+    public String getAcctPeriod() {
 		return this.acctPeriod;
 	}
-	public void setAcctPeriod(String acctPeriod) {
+
+    /**
+     * Sets acct period.
+     *
+     * @param acctPeriod the acct period
+     */
+    public void setAcctPeriod(String acctPeriod) {
 		this.acctPeriod = acctPeriod;
 	}
 
-	public String getBillEntryAmount() {
+    /**
+     * Gets bill entry amount.
+     *
+     * @return the bill entry amount
+     */
+    public String getBillEntryAmount() {
 		return this.billEntryAmount;
 	}
-	public void setBillEntryAmount(String billEntryAmount) {
+
+    /**
+     * Sets bill entry amount.
+     *
+     * @param billEntryAmount the bill entry amount
+     */
+    public void setBillEntryAmount(String billEntryAmount) {
 		this.billEntryAmount = billEntryAmount;
 	}
 
-	public String getBillEntryId() {
+    /**
+     * Gets bill entry id.
+     *
+     * @return the bill entry id
+     */
+    public String getBillEntryId() {
 		return this.billEntryId;
 	}
-	public void setBillEntryId(String billEntryId) {
+
+    /**
+     * Sets bill entry id.
+     *
+     * @param billEntryId the bill entry id
+     */
+    public void setBillEntryId(String billEntryId) {
 		this.billEntryId = billEntryId;
 	}
 
-	public String getCostType() {
+    /**
+     * Gets cost type.
+     *
+     * @return the cost type
+     */
+    public String getCostType() {
 		return this.costType;
 	}
-	public void setCostType(String costType) {
+
+    /**
+     * Sets cost type.
+     *
+     * @param costType the cost type
+     */
+    public void setCostType(String costType) {
 		this.costType = costType;
 	}
 

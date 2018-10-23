@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AvailablePeriodInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4523962191221174773L;
+	private static final long serialVersionUID = 2358339311632596887L;
 
 	/**
 	 * 每周可用天列表。格式为星期几并用逗号分隔。如周一周二可用则为“1,2”，周五周六可用则为"5,6"
@@ -31,24 +31,57 @@ public class AvailablePeriodInfo extends AlipayObject {
 	@ApiField("time_start")
 	private String timeStart;
 
-	public String getAvailableWeekDays() {
+    /**
+     * Gets available week days.
+     *
+     * @return the available week days
+     */
+    public String getAvailableWeekDays() {
 		return this.availableWeekDays;
 	}
-	public void setAvailableWeekDays(String availableWeekDays) {
+
+    /**
+     * Sets available week days.
+     *
+     * @param availableWeekDays the available week days
+     */
+    public void setAvailableWeekDays(String availableWeekDays) {
 		this.availableWeekDays = availableWeekDays;
 	}
 
-	public String getTimeEnd() {
+    /**
+     * Gets time end.
+     *
+     * @return the time end
+     */
+    public String getTimeEnd() {
 		return this.timeEnd;
 	}
-	public void setTimeEnd(String timeEnd) {
+
+    /**
+     * Sets time end.
+     *
+     * @param timeEnd the time end
+     */
+    public void setTimeEnd(String timeEnd) {
 		this.timeEnd = timeEnd;
 	}
 
-	public String getTimeStart() {
+    /**
+     * Gets time start.
+     *
+     * @return the time start
+     */
+    public String getTimeStart() {
 		return this.timeStart;
 	}
-	public void setTimeStart(String timeStart) {
+
+    /**
+     * Sets time start.
+     *
+     * @param timeStart the time start
+     */
+    public void setTimeStart(String timeStart) {
 		this.timeStart = timeStart;
 	}
 

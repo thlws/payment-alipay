@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SendRule extends AlipayObject {
 
-	private static final long serialVersionUID = 8329356865613776976L;
+	private static final long serialVersionUID = 8816225289652642158L;
 
 	/**
 	 * 是否允许重复发奖：
@@ -43,31 +43,75 @@ true代表允许，false代表不允许
 	@ApiField("send_num")
 	private String sendNum;
 
-	public String getAllowRepeatSend() {
+    /**
+     * Gets allow repeat send.
+     *
+     * @return the allow repeat send
+     */
+    public String getAllowRepeatSend() {
 		return this.allowRepeatSend;
 	}
-	public void setAllowRepeatSend(String allowRepeatSend) {
+
+    /**
+     * Sets allow repeat send.
+     *
+     * @param allowRepeatSend the allow repeat send
+     */
+    public void setAllowRepeatSend(String allowRepeatSend) {
 		this.allowRepeatSend = allowRepeatSend;
 	}
 
-	public String getMinCost() {
+    /**
+     * Gets min cost.
+     *
+     * @return the min cost
+     */
+    public String getMinCost() {
 		return this.minCost;
 	}
-	public void setMinCost(String minCost) {
+
+    /**
+     * Sets min cost.
+     *
+     * @param minCost the min cost
+     */
+    public void setMinCost(String minCost) {
 		this.minCost = minCost;
 	}
 
-	public String getSendBudget() {
+    /**
+     * Gets send budget.
+     *
+     * @return the send budget
+     */
+    public String getSendBudget() {
 		return this.sendBudget;
 	}
-	public void setSendBudget(String sendBudget) {
+
+    /**
+     * Sets send budget.
+     *
+     * @param sendBudget the send budget
+     */
+    public void setSendBudget(String sendBudget) {
 		this.sendBudget = sendBudget;
 	}
 
-	public String getSendNum() {
+    /**
+     * Gets send num.
+     *
+     * @return the send num
+     */
+    public String getSendNum() {
 		return this.sendNum;
 	}
-	public void setSendNum(String sendNum) {
+
+    /**
+     * Sets send num.
+     *
+     * @param sendNum the send num
+     */
+    public void setSendNum(String sendNum) {
 		this.sendNum = sendNum;
 	}
 

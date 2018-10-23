@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PubChannelDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4625737918923952994L;
+	private static final long serialVersionUID = 1372615857419387725L;
 
 	/**
 	 * 扩展信息，无需配置
@@ -26,17 +26,39 @@ public class PubChannelDTO extends AlipayObject {
 	@ApiField("pub_channel")
 	private String pubChannel;
 
-	public String getExtInfo() {
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo() {
 		return this.extInfo;
 	}
-	public void setExtInfo(String extInfo) {
+
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
-	public String getPubChannel() {
+    /**
+     * Gets pub channel.
+     *
+     * @return the pub channel
+     */
+    public String getPubChannel() {
 		return this.pubChannel;
 	}
-	public void setPubChannel(String pubChannel) {
+
+    /**
+     * Sets pub channel.
+     *
+     * @param pubChannel the pub channel
+     */
+    public void setPubChannel(String pubChannel) {
 		this.pubChannel = pubChannel;
 	}
 

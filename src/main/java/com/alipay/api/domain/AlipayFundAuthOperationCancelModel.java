@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundAuthOperationCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6123874788839292629L;
+	private static final long serialVersionUID = 6434167823242645962L;
 
 	/**
 	 * 支付宝授权资金订单号，与商户的授权资金订单号不能同时为空，二者都存在时，以支付宝资金授权订单号为准，该参数与支付宝授权资金操作流水号配对使用。
@@ -43,38 +43,93 @@ public class AlipayFundAuthOperationCancelModel extends AlipayObject {
 	@ApiField("remark")
 	private String remark;
 
-	public String getAuthNo() {
+    /**
+     * Gets auth no.
+     *
+     * @return the auth no
+     */
+    public String getAuthNo() {
 		return this.authNo;
 	}
-	public void setAuthNo(String authNo) {
+
+    /**
+     * Sets auth no.
+     *
+     * @param authNo the auth no
+     */
+    public void setAuthNo(String authNo) {
 		this.authNo = authNo;
 	}
 
-	public String getOperationId() {
+    /**
+     * Gets operation id.
+     *
+     * @return the operation id
+     */
+    public String getOperationId() {
 		return this.operationId;
 	}
-	public void setOperationId(String operationId) {
+
+    /**
+     * Sets operation id.
+     *
+     * @param operationId the operation id
+     */
+    public void setOperationId(String operationId) {
 		this.operationId = operationId;
 	}
 
-	public String getOutOrderNo() {
+    /**
+     * Gets out order no.
+     *
+     * @return the out order no
+     */
+    public String getOutOrderNo() {
 		return this.outOrderNo;
 	}
-	public void setOutOrderNo(String outOrderNo) {
+
+    /**
+     * Sets out order no.
+     *
+     * @param outOrderNo the out order no
+     */
+    public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
 	}
 
-	public String getOutRequestNo() {
+    /**
+     * Gets out request no.
+     *
+     * @return the out request no
+     */
+    public String getOutRequestNo() {
 		return this.outRequestNo;
 	}
-	public void setOutRequestNo(String outRequestNo) {
+
+    /**
+     * Sets out request no.
+     *
+     * @param outRequestNo the out request no
+     */
+    public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
 	}
 
-	public String getRemark() {
+    /**
+     * Gets remark.
+     *
+     * @return the remark
+     */
+    public String getRemark() {
 		return this.remark;
 	}
-	public void setRemark(String remark) {
+
+    /**
+     * Sets remark.
+     *
+     * @param remark the remark
+     */
+    public void setRemark(String remark) {
 		this.remark = remark;
 	}
 

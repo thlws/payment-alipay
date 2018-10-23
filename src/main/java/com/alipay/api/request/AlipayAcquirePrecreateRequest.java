@@ -9,9 +9,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.acquire.precreate request
- * 
+ *
  * @author auto create
- * @since 1.0, 2014-05-28 11:57:10
+ * @since 1.0, 2018-05-22 11:49:56
  */
 public class AlipayAcquirePrecreateRequest implements AlipayRequest<AlipayAcquirePrecreateResponse> {
 
@@ -120,129 +120,327 @@ m-分钟，h-小时，d-天，1c-当天（无论交易何时创建，都在0点�
 	 */
 	private String totalFee;
 
-	public void setBody(String body) {
+    /**
+     * Sets body.
+     *
+     * @param body the body
+     */
+    public void setBody(String body) {
 		this.body = body;
 	}
-	public String getBody() {
+
+    /**
+     * Gets body.
+     *
+     * @return the body
+     */
+    public String getBody() {
 		return this.body;
 	}
 
-	public void setChannelParameters(String channelParameters) {
+    /**
+     * Sets channel parameters.
+     *
+     * @param channelParameters the channel parameters
+     */
+    public void setChannelParameters(String channelParameters) {
 		this.channelParameters = channelParameters;
 	}
-	public String getChannelParameters() {
+
+    /**
+     * Gets channel parameters.
+     *
+     * @return the channel parameters
+     */
+    public String getChannelParameters() {
 		return this.channelParameters;
 	}
 
-	public void setCurrency(String currency) {
+    /**
+     * Sets currency.
+     *
+     * @param currency the currency
+     */
+    public void setCurrency(String currency) {
 		this.currency = currency;
 	}
-	public String getCurrency() {
+
+    /**
+     * Gets currency.
+     *
+     * @return the currency
+     */
+    public String getCurrency() {
 		return this.currency;
 	}
 
-	public void setExtendParams(String extendParams) {
+    /**
+     * Sets extend params.
+     *
+     * @param extendParams the extend params
+     */
+    public void setExtendParams(String extendParams) {
 		this.extendParams = extendParams;
 	}
-	public String getExtendParams() {
+
+    /**
+     * Gets extend params.
+     *
+     * @return the extend params
+     */
+    public String getExtendParams() {
 		return this.extendParams;
 	}
 
-	public void setGoodsDetail(String goodsDetail) {
+    /**
+     * Sets goods detail.
+     *
+     * @param goodsDetail the goods detail
+     */
+    public void setGoodsDetail(String goodsDetail) {
 		this.goodsDetail = goodsDetail;
 	}
-	public String getGoodsDetail() {
+
+    /**
+     * Gets goods detail.
+     *
+     * @return the goods detail
+     */
+    public String getGoodsDetail() {
 		return this.goodsDetail;
 	}
 
-	public void setItBPay(String itBPay) {
+    /**
+     * Sets it b pay.
+     *
+     * @param itBPay the it b pay
+     */
+    public void setItBPay(String itBPay) {
 		this.itBPay = itBPay;
 	}
-	public String getItBPay() {
+
+    /**
+     * Gets it b pay.
+     *
+     * @return the it b pay
+     */
+    public String getItBPay() {
 		return this.itBPay;
 	}
 
-	public void setOperatorCode(String operatorCode) {
+    /**
+     * Sets operator code.
+     *
+     * @param operatorCode the operator code
+     */
+    public void setOperatorCode(String operatorCode) {
 		this.operatorCode = operatorCode;
 	}
-	public String getOperatorCode() {
+
+    /**
+     * Gets operator code.
+     *
+     * @return the operator code
+     */
+    public String getOperatorCode() {
 		return this.operatorCode;
 	}
 
-	public void setOperatorId(String operatorId) {
+    /**
+     * Sets operator id.
+     *
+     * @param operatorId the operator id
+     */
+    public void setOperatorId(String operatorId) {
 		this.operatorId = operatorId;
 	}
-	public String getOperatorId() {
+
+    /**
+     * Gets operator id.
+     *
+     * @return the operator id
+     */
+    public String getOperatorId() {
 		return this.operatorId;
 	}
 
-	public void setOutTradeNo(String outTradeNo) {
+    /**
+     * Sets out trade no.
+     *
+     * @param outTradeNo the out trade no
+     */
+    public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
-	public String getOutTradeNo() {
+
+    /**
+     * Gets out trade no.
+     *
+     * @return the out trade no
+     */
+    public String getOutTradeNo() {
 		return this.outTradeNo;
 	}
 
-	public void setPrice(String price) {
+    /**
+     * Sets price.
+     *
+     * @param price the price
+     */
+    public void setPrice(String price) {
 		this.price = price;
 	}
-	public String getPrice() {
+
+    /**
+     * Gets price.
+     *
+     * @return the price
+     */
+    public String getPrice() {
 		return this.price;
 	}
 
-	public void setQuantity(String quantity) {
+    /**
+     * Sets quantity.
+     *
+     * @param quantity the quantity
+     */
+    public void setQuantity(String quantity) {
 		this.quantity = quantity;
 	}
-	public String getQuantity() {
+
+    /**
+     * Gets quantity.
+     *
+     * @return the quantity
+     */
+    public String getQuantity() {
 		return this.quantity;
 	}
 
-	public void setRoyaltyParameters(String royaltyParameters) {
+    /**
+     * Sets royalty parameters.
+     *
+     * @param royaltyParameters the royalty parameters
+     */
+    public void setRoyaltyParameters(String royaltyParameters) {
 		this.royaltyParameters = royaltyParameters;
 	}
-	public String getRoyaltyParameters() {
+
+    /**
+     * Gets royalty parameters.
+     *
+     * @return the royalty parameters
+     */
+    public String getRoyaltyParameters() {
 		return this.royaltyParameters;
 	}
 
-	public void setRoyaltyType(String royaltyType) {
+    /**
+     * Sets royalty type.
+     *
+     * @param royaltyType the royalty type
+     */
+    public void setRoyaltyType(String royaltyType) {
 		this.royaltyType = royaltyType;
 	}
-	public String getRoyaltyType() {
+
+    /**
+     * Gets royalty type.
+     *
+     * @return the royalty type
+     */
+    public String getRoyaltyType() {
 		return this.royaltyType;
 	}
 
-	public void setSellerEmail(String sellerEmail) {
+    /**
+     * Sets seller email.
+     *
+     * @param sellerEmail the seller email
+     */
+    public void setSellerEmail(String sellerEmail) {
 		this.sellerEmail = sellerEmail;
 	}
-	public String getSellerEmail() {
+
+    /**
+     * Gets seller email.
+     *
+     * @return the seller email
+     */
+    public String getSellerEmail() {
 		return this.sellerEmail;
 	}
 
-	public void setSellerId(String sellerId) {
+    /**
+     * Sets seller id.
+     *
+     * @param sellerId the seller id
+     */
+    public void setSellerId(String sellerId) {
 		this.sellerId = sellerId;
 	}
-	public String getSellerId() {
+
+    /**
+     * Gets seller id.
+     *
+     * @return the seller id
+     */
+    public String getSellerId() {
 		return this.sellerId;
 	}
 
-	public void setShowUrl(String showUrl) {
+    /**
+     * Sets show url.
+     *
+     * @param showUrl the show url
+     */
+    public void setShowUrl(String showUrl) {
 		this.showUrl = showUrl;
 	}
-	public String getShowUrl() {
+
+    /**
+     * Gets show url.
+     *
+     * @return the show url
+     */
+    public String getShowUrl() {
 		return this.showUrl;
 	}
 
-	public void setSubject(String subject) {
+    /**
+     * Sets subject.
+     *
+     * @param subject the subject
+     */
+    public void setSubject(String subject) {
 		this.subject = subject;
 	}
-	public String getSubject() {
+
+    /**
+     * Gets subject.
+     *
+     * @return the subject
+     */
+    public String getSubject() {
 		return this.subject;
 	}
 
-	public void setTotalFee(String totalFee) {
+    /**
+     * Sets total fee.
+     *
+     * @param totalFee the total fee
+     */
+    public void setTotalFee(String totalFee) {
 		this.totalFee = totalFee;
 	}
-	public String getTotalFee() {
+
+    /**
+     * Gets total fee.
+     *
+     * @return the total fee
+     */
+    public String getTotalFee() {
 		return this.totalFee;
 	}
 	private String terminalType;
@@ -331,7 +529,13 @@ m-分钟，h-小时，d-天，1c-当天（无论交易何时创建，都在0点�
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

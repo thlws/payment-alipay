@@ -11,9 +11,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: zhima.data.batch.feedback request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-05-02 14:40:53
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class ZhimaDataBatchFeedbackRequest implements AlipayUploadRequest<ZhimaDataBatchFeedbackResponse> {
 
@@ -60,59 +60,147 @@ public class ZhimaDataBatchFeedbackRequest implements AlipayUploadRequest<ZhimaD
 	 */
 	private String records;
 
-	public void setBizExtParams(String bizExtParams) {
+    /**
+     * Sets biz ext params.
+     *
+     * @param bizExtParams the biz ext params
+     */
+    public void setBizExtParams(String bizExtParams) {
 		this.bizExtParams = bizExtParams;
 	}
-	public String getBizExtParams() {
+
+    /**
+     * Gets biz ext params.
+     *
+     * @return the biz ext params
+     */
+    public String getBizExtParams() {
 		return this.bizExtParams;
 	}
 
-	public void setColumns(String columns) {
+    /**
+     * Sets columns.
+     *
+     * @param columns the columns
+     */
+    public void setColumns(String columns) {
 		this.columns = columns;
 	}
-	public String getColumns() {
+
+    /**
+     * Gets columns.
+     *
+     * @return the columns
+     */
+    public String getColumns() {
 		return this.columns;
 	}
 
-	public void setFile(FileItem file) {
+    /**
+     * Sets file.
+     *
+     * @param file the file
+     */
+    public void setFile(FileItem file) {
 		this.file = file;
 	}
-	public FileItem getFile() {
+
+    /**
+     * Gets file.
+     *
+     * @return the file
+     */
+    public FileItem getFile() {
 		return this.file;
 	}
 
-	public void setFileCharset(String fileCharset) {
+    /**
+     * Sets file charset.
+     *
+     * @param fileCharset the file charset
+     */
+    public void setFileCharset(String fileCharset) {
 		this.fileCharset = fileCharset;
 	}
-	public String getFileCharset() {
+
+    /**
+     * Gets file charset.
+     *
+     * @return the file charset
+     */
+    public String getFileCharset() {
 		return this.fileCharset;
 	}
 
-	public void setFileDescription(String fileDescription) {
+    /**
+     * Sets file description.
+     *
+     * @param fileDescription the file description
+     */
+    public void setFileDescription(String fileDescription) {
 		this.fileDescription = fileDescription;
 	}
-	public String getFileDescription() {
+
+    /**
+     * Gets file description.
+     *
+     * @return the file description
+     */
+    public String getFileDescription() {
 		return this.fileDescription;
 	}
 
-	public void setFileType(String fileType) {
+    /**
+     * Sets file type.
+     *
+     * @param fileType the file type
+     */
+    public void setFileType(String fileType) {
 		this.fileType = fileType;
 	}
-	public String getFileType() {
+
+    /**
+     * Gets file type.
+     *
+     * @return the file type
+     */
+    public String getFileType() {
 		return this.fileType;
 	}
 
-	public void setPrimaryKeyColumns(String primaryKeyColumns) {
+    /**
+     * Sets primary key columns.
+     *
+     * @param primaryKeyColumns the primary key columns
+     */
+    public void setPrimaryKeyColumns(String primaryKeyColumns) {
 		this.primaryKeyColumns = primaryKeyColumns;
 	}
-	public String getPrimaryKeyColumns() {
+
+    /**
+     * Gets primary key columns.
+     *
+     * @return the primary key columns
+     */
+    public String getPrimaryKeyColumns() {
 		return this.primaryKeyColumns;
 	}
 
-	public void setRecords(String records) {
+    /**
+     * Sets records.
+     *
+     * @param records the records
+     */
+    public void setRecords(String records) {
 		this.records = records;
 	}
-	public String getRecords() {
+
+    /**
+     * Gets records.
+     *
+     * @return the records
+     */
+    public String getRecords() {
 		return this.records;
 	}
 	private String terminalType;
@@ -188,8 +276,14 @@ public class ZhimaDataBatchFeedbackRequest implements AlipayUploadRequest<ZhimaD
 		}
 		return txtParams;
 	}
-	
-	public void putOtherTextParam(String key, String value) {
+
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

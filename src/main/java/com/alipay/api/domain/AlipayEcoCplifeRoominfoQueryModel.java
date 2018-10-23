@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户根据需要调用该接口查询小区房屋信息列表。
  *
  * @author auto create
- * @since 1.0, 2017-03-24 11:24:31
+ * @since 1.0, 2018-06-09 20:17:57
  */
 public class AlipayEcoCplifeRoominfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2153313973981438912L;
+	private static final long serialVersionUID = 5788175728488393893L;
 
 	/**
 	 * 传入该小区在支付宝社区物业平台中的唯一编号，通过小区创建和查询接口获取。
@@ -31,24 +31,57 @@ public class AlipayEcoCplifeRoominfoQueryModel extends AlipayObject {
 	@ApiField("page_size")
 	private Long pageSize;
 
-	public String getCommunityId() {
+    /**
+     * Gets community id.
+     *
+     * @return the community id
+     */
+    public String getCommunityId() {
 		return this.communityId;
 	}
-	public void setCommunityId(String communityId) {
+
+    /**
+     * Sets community id.
+     *
+     * @param communityId the community id
+     */
+    public void setCommunityId(String communityId) {
 		this.communityId = communityId;
 	}
 
-	public Long getPageNum() {
+    /**
+     * Gets page num.
+     *
+     * @return the page num
+     */
+    public Long getPageNum() {
 		return this.pageNum;
 	}
-	public void setPageNum(Long pageNum) {
+
+    /**
+     * Sets page num.
+     *
+     * @param pageNum the page num
+     */
+    public void setPageNum(Long pageNum) {
 		this.pageNum = pageNum;
 	}
 
-	public Long getPageSize() {
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public Long getPageSize() {
 		return this.pageSize;
 	}
-	public void setPageSize(Long pageSize) {
+
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}
 

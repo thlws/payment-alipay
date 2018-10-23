@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ShopCommentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1287763955179725413L;
+	private static final long serialVersionUID = 2742822549348348724L;
 
 	/**
 	 * 店铺30天平均人气值
@@ -37,31 +37,75 @@ public class ShopCommentInfo extends AlipayObject {
 	@ApiField("star")
 	private String star;
 
-	public String getAvgPopularity() {
+    /**
+     * Gets avg popularity.
+     *
+     * @return the avg popularity
+     */
+    public String getAvgPopularity() {
 		return this.avgPopularity;
 	}
-	public void setAvgPopularity(String avgPopularity) {
+
+    /**
+     * Sets avg popularity.
+     *
+     * @param avgPopularity the avg popularity
+     */
+    public void setAvgPopularity(String avgPopularity) {
 		this.avgPopularity = avgPopularity;
 	}
 
-	public String getAvgPopularityName() {
+    /**
+     * Gets avg popularity name.
+     *
+     * @return the avg popularity name
+     */
+    public String getAvgPopularityName() {
 		return this.avgPopularityName;
 	}
-	public void setAvgPopularityName(String avgPopularityName) {
+
+    /**
+     * Sets avg popularity name.
+     *
+     * @param avgPopularityName the avg popularity name
+     */
+    public void setAvgPopularityName(String avgPopularityName) {
 		this.avgPopularityName = avgPopularityName;
 	}
 
-	public String getScore() {
+    /**
+     * Gets score.
+     *
+     * @return the score
+     */
+    public String getScore() {
 		return this.score;
 	}
-	public void setScore(String score) {
+
+    /**
+     * Sets score.
+     *
+     * @param score the score
+     */
+    public void setScore(String score) {
 		this.score = score;
 	}
 
-	public String getStar() {
+    /**
+     * Gets star.
+     *
+     * @return the star
+     */
+    public String getStar() {
 		return this.star;
 	}
-	public void setStar(String star) {
+
+    /**
+     * Sets star.
+     *
+     * @param star the star
+     */
+    public void setStar(String star) {
 		this.star = star;
 	}
 

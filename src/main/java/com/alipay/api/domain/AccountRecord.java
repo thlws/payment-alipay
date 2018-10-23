@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AccountRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 3434672594897683435L;
+	private static final long serialVersionUID = 8779895811541277659L;
 
 	/**
 	 * 支付宝订单号
@@ -81,80 +81,201 @@ public class AccountRecord extends AlipayObject {
 	@ApiField("type")
 	private String type;
 
-	public String getAlipayOrderNo() {
+    /**
+     * Gets alipay order no.
+     *
+     * @return the alipay order no
+     */
+    public String getAlipayOrderNo() {
 		return this.alipayOrderNo;
 	}
-	public void setAlipayOrderNo(String alipayOrderNo) {
+
+    /**
+     * Sets alipay order no.
+     *
+     * @param alipayOrderNo the alipay order no
+     */
+    public void setAlipayOrderNo(String alipayOrderNo) {
 		this.alipayOrderNo = alipayOrderNo;
 	}
 
-	public String getBalance() {
+    /**
+     * Gets balance.
+     *
+     * @return the balance
+     */
+    public String getBalance() {
 		return this.balance;
 	}
-	public void setBalance(String balance) {
+
+    /**
+     * Sets balance.
+     *
+     * @param balance the balance
+     */
+    public void setBalance(String balance) {
 		this.balance = balance;
 	}
 
-	public String getBusinessType() {
+    /**
+     * Gets business type.
+     *
+     * @return the business type
+     */
+    public String getBusinessType() {
 		return this.businessType;
 	}
-	public void setBusinessType(String businessType) {
+
+    /**
+     * Sets business type.
+     *
+     * @param businessType the business type
+     */
+    public void setBusinessType(String businessType) {
 		this.businessType = businessType;
 	}
 
-	public Date getCreateTime() {
+    /**
+     * Gets create time.
+     *
+     * @return the create time
+     */
+    public Date getCreateTime() {
 		return this.createTime;
 	}
-	public void setCreateTime(Date createTime) {
+
+    /**
+     * Sets create time.
+     *
+     * @param createTime the create time
+     */
+    public void setCreateTime(Date createTime) {
 		this.createTime = createTime;
 	}
 
-	public String getInAmount() {
+    /**
+     * Gets in amount.
+     *
+     * @return the in amount
+     */
+    public String getInAmount() {
 		return this.inAmount;
 	}
-	public void setInAmount(String inAmount) {
+
+    /**
+     * Sets in amount.
+     *
+     * @param inAmount the in amount
+     */
+    public void setInAmount(String inAmount) {
 		this.inAmount = inAmount;
 	}
 
-	public String getMemo() {
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo() {
 		return this.memo;
 	}
-	public void setMemo(String memo) {
+
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
-	public String getMerchantOrderNo() {
+    /**
+     * Gets merchant order no.
+     *
+     * @return the merchant order no
+     */
+    public String getMerchantOrderNo() {
 		return this.merchantOrderNo;
 	}
-	public void setMerchantOrderNo(String merchantOrderNo) {
+
+    /**
+     * Sets merchant order no.
+     *
+     * @param merchantOrderNo the merchant order no
+     */
+    public void setMerchantOrderNo(String merchantOrderNo) {
 		this.merchantOrderNo = merchantOrderNo;
 	}
 
-	public String getOptUserId() {
+    /**
+     * Gets opt user id.
+     *
+     * @return the opt user id
+     */
+    public String getOptUserId() {
 		return this.optUserId;
 	}
-	public void setOptUserId(String optUserId) {
+
+    /**
+     * Sets opt user id.
+     *
+     * @param optUserId the opt user id
+     */
+    public void setOptUserId(String optUserId) {
 		this.optUserId = optUserId;
 	}
 
-	public String getOutAmount() {
+    /**
+     * Gets out amount.
+     *
+     * @return the out amount
+     */
+    public String getOutAmount() {
 		return this.outAmount;
 	}
-	public void setOutAmount(String outAmount) {
+
+    /**
+     * Sets out amount.
+     *
+     * @param outAmount the out amount
+     */
+    public void setOutAmount(String outAmount) {
 		this.outAmount = outAmount;
 	}
 
-	public String getSelfUserId() {
+    /**
+     * Gets self user id.
+     *
+     * @return the self user id
+     */
+    public String getSelfUserId() {
 		return this.selfUserId;
 	}
-	public void setSelfUserId(String selfUserId) {
+
+    /**
+     * Sets self user id.
+     *
+     * @param selfUserId the self user id
+     */
+    public void setSelfUserId(String selfUserId) {
 		this.selfUserId = selfUserId;
 	}
 
-	public String getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
-	public void setType(String type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
 

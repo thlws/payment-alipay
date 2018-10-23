@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4357842174541448159L;
+	private static final long serialVersionUID = 4699344436266513235L;
 
 	/**
 	 * 支付宝用户userId
@@ -55,52 +55,129 @@ public class AlipayUserDetail extends AlipayObject {
 	@ApiField("user_type")
 	private String userType;
 
-	public String getAlipayUserId() {
+    /**
+     * Gets alipay user id.
+     *
+     * @return the alipay user id
+     */
+    public String getAlipayUserId() {
 		return this.alipayUserId;
 	}
-	public void setAlipayUserId(String alipayUserId) {
+
+    /**
+     * Sets alipay user id.
+     *
+     * @param alipayUserId the alipay user id
+     */
+    public void setAlipayUserId(String alipayUserId) {
 		this.alipayUserId = alipayUserId;
 	}
 
-	public Boolean getCertified() {
+    /**
+     * Gets certified.
+     *
+     * @return the certified
+     */
+    public Boolean getCertified() {
 		return this.certified;
 	}
-	public void setCertified(Boolean certified) {
+
+    /**
+     * Sets certified.
+     *
+     * @param certified the certified
+     */
+    public void setCertified(Boolean certified) {
 		this.certified = certified;
 	}
 
-	public String getLogonId() {
+    /**
+     * Gets logon id.
+     *
+     * @return the logon id
+     */
+    public String getLogonId() {
 		return this.logonId;
 	}
-	public void setLogonId(String logonId) {
+
+    /**
+     * Sets logon id.
+     *
+     * @param logonId the logon id
+     */
+    public void setLogonId(String logonId) {
 		this.logonId = logonId;
 	}
 
-	public String getRealName() {
+    /**
+     * Gets real name.
+     *
+     * @return the real name
+     */
+    public String getRealName() {
 		return this.realName;
 	}
-	public void setRealName(String realName) {
+
+    /**
+     * Sets real name.
+     *
+     * @param realName the real name
+     */
+    public void setRealName(String realName) {
 		this.realName = realName;
 	}
 
-	public String getSex() {
+    /**
+     * Gets sex.
+     *
+     * @return the sex
+     */
+    public String getSex() {
 		return this.sex;
 	}
-	public void setSex(String sex) {
+
+    /**
+     * Sets sex.
+     *
+     * @param sex the sex
+     */
+    public void setSex(String sex) {
 		this.sex = sex;
 	}
 
-	public String getUserStatus() {
+    /**
+     * Gets user status.
+     *
+     * @return the user status
+     */
+    public String getUserStatus() {
 		return this.userStatus;
 	}
-	public void setUserStatus(String userStatus) {
+
+    /**
+     * Sets user status.
+     *
+     * @param userStatus the user status
+     */
+    public void setUserStatus(String userStatus) {
 		this.userStatus = userStatus;
 	}
 
-	public String getUserType() {
+    /**
+     * Gets user type.
+     *
+     * @return the user type
+     */
+    public String getUserType() {
 		return this.userType;
 	}
-	public void setUserType(String userType) {
+
+    /**
+     * Sets user type.
+     *
+     * @param userType the user type
+     */
+    public void setUserType(String userType) {
 		this.userType = userType;
 	}
 

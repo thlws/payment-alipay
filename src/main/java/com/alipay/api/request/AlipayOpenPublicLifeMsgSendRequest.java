@@ -12,9 +12,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.open.public.life.msg.send request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-01-11 11:21:11
+ * @since 1.0, 2018-04-17 14:24:09
  */
 public class AlipayOpenPublicLifeMsgSendRequest implements AlipayUploadRequest<AlipayOpenPublicLifeMsgSendResponse> {
 
@@ -102,101 +102,255 @@ deadline（int）：文章的失效时间，单位秒
 	 */
 	private String videoUrl;
 
-	public void setCategory(String category) {
+    /**
+     * Sets category.
+     *
+     * @param category the category
+     */
+    public void setCategory(String category) {
 		this.category = category;
 	}
-	public String getCategory() {
+
+    /**
+     * Gets category.
+     *
+     * @return the category
+     */
+    public String getCategory() {
 		return this.category;
 	}
 
-	public void setContent(String content) {
+    /**
+     * Sets content.
+     *
+     * @param content the content
+     */
+    public void setContent(String content) {
 		this.content = content;
 	}
-	public String getContent() {
+
+    /**
+     * Gets content.
+     *
+     * @return the content
+     */
+    public String getContent() {
 		return this.content;
 	}
 
-	public void setCover(FileItem cover) {
+    /**
+     * Sets cover.
+     *
+     * @param cover the cover
+     */
+    public void setCover(FileItem cover) {
 		this.cover = cover;
 	}
-	public FileItem getCover() {
+
+    /**
+     * Gets cover.
+     *
+     * @return the cover
+     */
+    public FileItem getCover() {
 		return this.cover;
 	}
 
-	public void setDesc(String desc) {
+    /**
+     * Sets desc.
+     *
+     * @param desc the desc
+     */
+    public void setDesc(String desc) {
 		this.desc = desc;
 	}
-	public String getDesc() {
+
+    /**
+     * Gets desc.
+     *
+     * @return the desc
+     */
+    public String getDesc() {
 		return this.desc;
 	}
 
-	public void setMsgType(String msgType) {
+    /**
+     * Sets msg type.
+     *
+     * @param msgType the msg type
+     */
+    public void setMsgType(String msgType) {
 		this.msgType = msgType;
 	}
-	public String getMsgType() {
+
+    /**
+     * Gets msg type.
+     *
+     * @return the msg type
+     */
+    public String getMsgType() {
 		return this.msgType;
 	}
 
-	public void setSourceExtInfo(String sourceExtInfo) {
+    /**
+     * Sets source ext info.
+     *
+     * @param sourceExtInfo the source ext info
+     */
+    public void setSourceExtInfo(String sourceExtInfo) {
 		this.sourceExtInfo = sourceExtInfo;
 	}
-	public String getSourceExtInfo() {
+
+    /**
+     * Gets source ext info.
+     *
+     * @return the source ext info
+     */
+    public String getSourceExtInfo() {
 		return this.sourceExtInfo;
 	}
 
-	public void setTitle(String title) {
+    /**
+     * Sets title.
+     *
+     * @param title the title
+     */
+    public void setTitle(String title) {
 		this.title = title;
 	}
-	public String getTitle() {
+
+    /**
+     * Gets title.
+     *
+     * @return the title
+     */
+    public String getTitle() {
 		return this.title;
 	}
 
-	public void setUniqueMsgId(String uniqueMsgId) {
+    /**
+     * Sets unique msg id.
+     *
+     * @param uniqueMsgId the unique msg id
+     */
+    public void setUniqueMsgId(String uniqueMsgId) {
 		this.uniqueMsgId = uniqueMsgId;
 	}
-	public String getUniqueMsgId() {
+
+    /**
+     * Gets unique msg id.
+     *
+     * @return the unique msg id
+     */
+    public String getUniqueMsgId() {
 		return this.uniqueMsgId;
 	}
 
-	public void setVideoLength(String videoLength) {
+    /**
+     * Sets video length.
+     *
+     * @param videoLength the video length
+     */
+    public void setVideoLength(String videoLength) {
 		this.videoLength = videoLength;
 	}
-	public String getVideoLength() {
+
+    /**
+     * Gets video length.
+     *
+     * @return the video length
+     */
+    public String getVideoLength() {
 		return this.videoLength;
 	}
 
-	public void setVideoSamples(List<String> videoSamples) {
+    /**
+     * Sets video samples.
+     *
+     * @param videoSamples the video samples
+     */
+    public void setVideoSamples(List<String> videoSamples) {
 		this.videoSamples = videoSamples;
 	}
-	public List<String> getVideoSamples() {
+
+    /**
+     * Gets video samples.
+     *
+     * @return the video samples
+     */
+    public List<String> getVideoSamples() {
 		return this.videoSamples;
 	}
 
-	public void setVideoSize(String videoSize) {
+    /**
+     * Sets video size.
+     *
+     * @param videoSize the video size
+     */
+    public void setVideoSize(String videoSize) {
 		this.videoSize = videoSize;
 	}
-	public String getVideoSize() {
+
+    /**
+     * Gets video size.
+     *
+     * @return the video size
+     */
+    public String getVideoSize() {
 		return this.videoSize;
 	}
 
-	public void setVideoSource(String videoSource) {
+    /**
+     * Sets video source.
+     *
+     * @param videoSource the video source
+     */
+    public void setVideoSource(String videoSource) {
 		this.videoSource = videoSource;
 	}
-	public String getVideoSource() {
+
+    /**
+     * Gets video source.
+     *
+     * @return the video source
+     */
+    public String getVideoSource() {
 		return this.videoSource;
 	}
 
-	public void setVideoTemporaryUrl(String videoTemporaryUrl) {
+    /**
+     * Sets video temporary url.
+     *
+     * @param videoTemporaryUrl the video temporary url
+     */
+    public void setVideoTemporaryUrl(String videoTemporaryUrl) {
 		this.videoTemporaryUrl = videoTemporaryUrl;
 	}
-	public String getVideoTemporaryUrl() {
+
+    /**
+     * Gets video temporary url.
+     *
+     * @return the video temporary url
+     */
+    public String getVideoTemporaryUrl() {
 		return this.videoTemporaryUrl;
 	}
 
-	public void setVideoUrl(String videoUrl) {
+    /**
+     * Sets video url.
+     *
+     * @param videoUrl the video url
+     */
+    public void setVideoUrl(String videoUrl) {
 		this.videoUrl = videoUrl;
 	}
-	public String getVideoUrl() {
+
+    /**
+     * Gets video url.
+     *
+     * @return the video url
+     */
+    public String getVideoUrl() {
 		return this.videoUrl;
 	}
 	private String terminalType;
@@ -268,7 +422,7 @@ deadline（int）：文章的失效时间，单位秒
 		txtParams.put("title", this.title);
 		txtParams.put("unique_msg_id", this.uniqueMsgId);
 		txtParams.put("video_length", this.videoLength);
-		txtParams.put("video_samples", this.videoSamples);
+		txtParams.put("video_samples", this.videoSamples == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.videoSamples, true));
 		txtParams.put("video_size", this.videoSize);
 		txtParams.put("video_source", this.videoSource);
 		txtParams.put("video_temporary_url", this.videoTemporaryUrl);
@@ -278,8 +432,14 @@ deadline（int）：文章的失效时间，单位秒
 		}
 		return txtParams;
 	}
-	
-	public void putOtherTextParam(String key, String value) {
+
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

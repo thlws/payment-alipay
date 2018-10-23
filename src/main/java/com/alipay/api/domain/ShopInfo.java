@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ShopInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6391151969881714865L;
+	private static final long serialVersionUID = 8354478419615774782L;
 
 	/**
 	 * 企业门店名称
@@ -35,24 +35,57 @@ public class ShopInfo extends AlipayObject {
 	@ApiField("shop_sign_board_pic")
 	private String shopSignBoardPic;
 
-	public String getShopName() {
+    /**
+     * Gets shop name.
+     *
+     * @return the shop name
+     */
+    public String getShopName() {
 		return this.shopName;
 	}
-	public void setShopName(String shopName) {
+
+    /**
+     * Sets shop name.
+     *
+     * @param shopName the shop name
+     */
+    public void setShopName(String shopName) {
 		this.shopName = shopName;
 	}
 
-	public List<String> getShopScenePic() {
+    /**
+     * Gets shop scene pic.
+     *
+     * @return the shop scene pic
+     */
+    public List<String> getShopScenePic() {
 		return this.shopScenePic;
 	}
-	public void setShopScenePic(List<String> shopScenePic) {
+
+    /**
+     * Sets shop scene pic.
+     *
+     * @param shopScenePic the shop scene pic
+     */
+    public void setShopScenePic(List<String> shopScenePic) {
 		this.shopScenePic = shopScenePic;
 	}
 
-	public String getShopSignBoardPic() {
+    /**
+     * Gets shop sign board pic.
+     *
+     * @return the shop sign board pic
+     */
+    public String getShopSignBoardPic() {
 		return this.shopSignBoardPic;
 	}
-	public void setShopSignBoardPic(String shopSignBoardPic) {
+
+    /**
+     * Sets shop sign board pic.
+     *
+     * @param shopSignBoardPic the shop sign board pic
+     */
+    public void setShopSignBoardPic(String shopSignBoardPic) {
 		this.shopSignBoardPic = shopSignBoardPic;
 	}
 

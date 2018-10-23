@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户口碑优惠资产查询接口
  *
  * @author auto create
- * @since 1.0, 2017-08-08 19:56:13
+ * @since 1.0, 2018-03-21 15:19:49
  */
 public class KoubeiMarketingCampaignUserAssetQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2185796996794889586L;
+	private static final long serialVersionUID = 1559983563467389359L;
 
 	/**
 	 * 页码
@@ -37,31 +37,75 @@ public class KoubeiMarketingCampaignUserAssetQueryModel extends AlipayObject {
 	@ApiField("shop_id")
 	private String shopId;
 
-	public Long getPageNum() {
+    /**
+     * Gets page num.
+     *
+     * @return the page num
+     */
+    public Long getPageNum() {
 		return this.pageNum;
 	}
-	public void setPageNum(Long pageNum) {
+
+    /**
+     * Sets page num.
+     *
+     * @param pageNum the page num
+     */
+    public void setPageNum(Long pageNum) {
 		this.pageNum = pageNum;
 	}
 
-	public Long getPageSize() {
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public Long getPageSize() {
 		return this.pageSize;
 	}
-	public void setPageSize(Long pageSize) {
+
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}
 
-	public String getScope() {
+    /**
+     * Gets scope.
+     *
+     * @return the scope
+     */
+    public String getScope() {
 		return this.scope;
 	}
-	public void setScope(String scope) {
+
+    /**
+     * Sets scope.
+     *
+     * @param scope the scope
+     */
+    public void setScope(String scope) {
 		this.scope = scope;
 	}
 
-	public String getShopId() {
+    /**
+     * Gets shop id.
+     *
+     * @return the shop id
+     */
+    public String getShopId() {
 		return this.shopId;
 	}
-	public void setShopId(String shopId) {
+
+    /**
+     * Sets shop id.
+     *
+     * @param shopId the shop id
+     */
+    public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 

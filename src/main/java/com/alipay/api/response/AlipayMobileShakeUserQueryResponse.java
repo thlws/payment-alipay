@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.shake.user.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-02-27 11:22:58
+ * @since 1.0, 2018-01-03 16:35:37
  */
 public class AlipayMobileShakeUserQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6585815668959632871L;
+	private static final long serialVersionUID = 3182585694424273853L;
 
 	/** 
 	 * 对应的业务信息
@@ -38,31 +38,75 @@ public class AlipayMobileShakeUserQueryResponse extends AlipayResponse {
 	@ApiField("user_id")
 	private String userId;
 
-	public void setBizdata(String bizdata) {
+    /**
+     * Sets bizdata.
+     *
+     * @param bizdata the bizdata
+     */
+    public void setBizdata(String bizdata) {
 		this.bizdata = bizdata;
 	}
-	public String getBizdata( ) {
+
+    /**
+     * Gets bizdata.
+     *
+     * @return the bizdata
+     */
+    public String getBizdata( ) {
 		return this.bizdata;
 	}
 
-	public void setLogonId(String logonId) {
+    /**
+     * Sets logon id.
+     *
+     * @param logonId the logon id
+     */
+    public void setLogonId(String logonId) {
 		this.logonId = logonId;
 	}
-	public String getLogonId( ) {
+
+    /**
+     * Gets logon id.
+     *
+     * @return the logon id
+     */
+    public String getLogonId( ) {
 		return this.logonId;
 	}
 
-	public void setPassId(String passId) {
+    /**
+     * Sets pass id.
+     *
+     * @param passId the pass id
+     */
+    public void setPassId(String passId) {
 		this.passId = passId;
 	}
-	public String getPassId( ) {
+
+    /**
+     * Gets pass id.
+     *
+     * @return the pass id
+     */
+    public String getPassId( ) {
 		return this.passId;
 	}
 
-	public void setUserId(String userId) {
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public String getUserId( ) {
+
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId( ) {
 		return this.userId;
 	}
 

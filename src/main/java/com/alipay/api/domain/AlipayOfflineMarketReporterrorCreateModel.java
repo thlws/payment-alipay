@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineMarketReporterrorCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1161417744123453685L;
+	private static final long serialVersionUID = 2493457941193969237L;
 
 	/**
 	 * 发生错误的时候，当前系统的毫秒数，系统会把当前时间构建成Date对象保存为错误发生时间
@@ -49,45 +49,111 @@ public class AlipayOfflineMarketReporterrorCreateModel extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
-	public Long getErrTime() {
+    /**
+     * Gets err time.
+     *
+     * @return the err time
+     */
+    public Long getErrTime() {
 		return this.errTime;
 	}
-	public void setErrTime(Long errTime) {
+
+    /**
+     * Sets err time.
+     *
+     * @param errTime the err time
+     */
+    public void setErrTime(Long errTime) {
 		this.errTime = errTime;
 	}
 
-	public ReportErrorFeature getFeature() {
+    /**
+     * Gets feature.
+     *
+     * @return the feature
+     */
+    public ReportErrorFeature getFeature() {
 		return this.feature;
 	}
-	public void setFeature(ReportErrorFeature feature) {
+
+    /**
+     * Sets feature.
+     *
+     * @param feature the feature
+     */
+    public void setFeature(ReportErrorFeature feature) {
 		this.feature = feature;
 	}
 
-	public String getMerchantId() {
+    /**
+     * Gets merchant id.
+     *
+     * @return the merchant id
+     */
+    public String getMerchantId() {
 		return this.merchantId;
 	}
-	public void setMerchantId(String merchantId) {
+
+    /**
+     * Sets merchant id.
+     *
+     * @param merchantId the merchant id
+     */
+    public void setMerchantId(String merchantId) {
 		this.merchantId = merchantId;
 	}
 
-	public String getShopId() {
+    /**
+     * Gets shop id.
+     *
+     * @return the shop id
+     */
+    public String getShopId() {
 		return this.shopId;
 	}
-	public void setShopId(String shopId) {
+
+    /**
+     * Sets shop id.
+     *
+     * @param shopId the shop id
+     */
+    public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 
-	public String getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
-	public void setType(String type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
 
-	public String getUserId() {
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
-	public void setUserId(String userId) {
+
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
 

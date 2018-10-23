@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PublicLabel extends AlipayObject {
 
-	private static final long serialVersionUID = 5139497643175369978L;
+	private static final long serialVersionUID = 5781632563357393958L;
 
 	/**
 	 * 标签用户量
@@ -31,24 +31,57 @@ public class PublicLabel extends AlipayObject {
 	@ApiField("name")
 	private String name;
 
-	public Long getCount() {
+    /**
+     * Gets count.
+     *
+     * @return the count
+     */
+    public Long getCount() {
 		return this.count;
 	}
-	public void setCount(Long count) {
+
+    /**
+     * Sets count.
+     *
+     * @param count the count
+     */
+    public void setCount(Long count) {
 		this.count = count;
 	}
 
-	public String getId() {
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
+    public String getId() {
 		return this.id;
 	}
-	public void setId(String id) {
+
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
+    public void setId(String id) {
 		this.id = id;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 

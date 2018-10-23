@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MCardDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6547926848361179921L;
+	private static final long serialVersionUID = 5156466299386757967L;
 
 	/**
 	 * 储值卡可用余额
@@ -31,24 +31,57 @@ public class MCardDetail extends AlipayObject {
 	@ApiField("pay_amount")
 	private String payAmount;
 
-	public String getAvailableAmount() {
+    /**
+     * Gets available amount.
+     *
+     * @return the available amount
+     */
+    public String getAvailableAmount() {
 		return this.availableAmount;
 	}
-	public void setAvailableAmount(String availableAmount) {
+
+    /**
+     * Sets available amount.
+     *
+     * @param availableAmount the available amount
+     */
+    public void setAvailableAmount(String availableAmount) {
 		this.availableAmount = availableAmount;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getPayAmount() {
+    /**
+     * Gets pay amount.
+     *
+     * @return the pay amount
+     */
+    public String getPayAmount() {
 		return this.payAmount;
 	}
-	public void setPayAmount(String payAmount) {
+
+    /**
+     * Sets pay amount.
+     *
+     * @param payAmount the pay amount
+     */
+    public void setPayAmount(String payAmount) {
 		this.payAmount = payAmount;
 	}
 

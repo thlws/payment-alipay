@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.zdataservice.unidata.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-04-26 16:20:03
  */
 public class AlipayZdataserviceUnidataQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5637631534224633834L;
+	private static final long serialVersionUID = 4176346484474555924L;
 
 	/** 
 	 * 查询结果集，统一用string方式返回
@@ -32,24 +32,57 @@ public class AlipayZdataserviceUnidataQueryResponse extends AlipayResponse {
 	@ApiField("success")
 	private String success;
 
-	public void setQueryResult(String queryResult) {
+    /**
+     * Sets query result.
+     *
+     * @param queryResult the query result
+     */
+    public void setQueryResult(String queryResult) {
 		this.queryResult = queryResult;
 	}
-	public String getQueryResult( ) {
+
+    /**
+     * Gets query result.
+     *
+     * @return the query result
+     */
+    public String getQueryResult( ) {
 		return this.queryResult;
 	}
 
-	public void setResultCode(String resultCode) {
+    /**
+     * Sets result code.
+     *
+     * @param resultCode the result code
+     */
+    public void setResultCode(String resultCode) {
 		this.resultCode = resultCode;
 	}
-	public String getResultCode( ) {
+
+    /**
+     * Gets result code.
+     *
+     * @return the result code
+     */
+    public String getResultCode( ) {
 		return this.resultCode;
 	}
 
-	public void setSuccess(String success) {
+    /**
+     * Sets success.
+     *
+     * @param success the success
+     */
+    public void setSuccess(String success) {
 		this.success = success;
 	}
-	public String getSuccess( ) {
+
+    /**
+     * Gets success.
+     *
+     * @return the success
+     */
+    public String getSuccess( ) {
 		return this.success;
 	}
 

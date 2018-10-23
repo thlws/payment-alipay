@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayInsDataAutodamageRequestImageInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3546481162843536271L;
+	private static final long serialVersionUID = 2363589923934854958L;
 
 	/**
 	 * 图像文件名称
@@ -25,17 +25,39 @@ public class AlipayInsDataAutodamageRequestImageInfo extends AlipayObject {
 	@ApiField("image_path")
 	private String imagePath;
 
-	public String getImageName() {
+    /**
+     * Gets image name.
+     *
+     * @return the image name
+     */
+    public String getImageName() {
 		return this.imageName;
 	}
-	public void setImageName(String imageName) {
+
+    /**
+     * Sets image name.
+     *
+     * @param imageName the image name
+     */
+    public void setImageName(String imageName) {
 		this.imageName = imageName;
 	}
 
-	public String getImagePath() {
+    /**
+     * Gets image path.
+     *
+     * @return the image path
+     */
+    public String getImagePath() {
 		return this.imagePath;
 	}
-	public void setImagePath(String imagePath) {
+
+    /**
+     * Sets image path.
+     *
+     * @param imagePath the image path
+     */
+    public void setImagePath(String imagePath) {
 		this.imagePath = imagePath;
 	}
 

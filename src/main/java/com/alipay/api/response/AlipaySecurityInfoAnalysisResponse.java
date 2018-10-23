@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.security.info.analysis response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-03-04 14:55:20
  */
 public class AlipaySecurityInfoAnalysisResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7858419359759768673L;
+	private static final long serialVersionUID = 5588227786453414681L;
 
 	/** 
 	 * 风险标签
@@ -26,17 +26,39 @@ public class AlipaySecurityInfoAnalysisResponse extends AlipayResponse {
 	@ApiField("risk_level")
 	private Long riskLevel;
 
-	public void setRiskCode(String riskCode) {
+    /**
+     * Sets risk code.
+     *
+     * @param riskCode the risk code
+     */
+    public void setRiskCode(String riskCode) {
 		this.riskCode = riskCode;
 	}
-	public String getRiskCode( ) {
+
+    /**
+     * Gets risk code.
+     *
+     * @return the risk code
+     */
+    public String getRiskCode( ) {
 		return this.riskCode;
 	}
 
-	public void setRiskLevel(Long riskLevel) {
+    /**
+     * Sets risk level.
+     *
+     * @param riskLevel the risk level
+     */
+    public void setRiskLevel(Long riskLevel) {
 		this.riskLevel = riskLevel;
 	}
-	public Long getRiskLevel( ) {
+
+    /**
+     * Gets risk level.
+     *
+     * @return the risk level
+     */
+    public Long getRiskLevel( ) {
 		return this.riskLevel;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TableListResult extends AlipayObject {
 
-	private static final long serialVersionUID = 7892322934331319745L;
+	private static final long serialVersionUID = 2315125476323844788L;
 
 	/**
 	 * 桌名
@@ -25,17 +25,39 @@ public class TableListResult extends AlipayObject {
 	@ApiField("table_num")
 	private String tableNum;
 
-	public String getTableName() {
+    /**
+     * Gets table name.
+     *
+     * @return the table name
+     */
+    public String getTableName() {
 		return this.tableName;
 	}
-	public void setTableName(String tableName) {
+
+    /**
+     * Sets table name.
+     *
+     * @param tableName the table name
+     */
+    public void setTableName(String tableName) {
 		this.tableName = tableName;
 	}
 
-	public String getTableNum() {
+    /**
+     * Gets table num.
+     *
+     * @return the table num
+     */
+    public String getTableNum() {
 		return this.tableNum;
 	}
-	public void setTableNum(String tableNum) {
+
+    /**
+     * Sets table num.
+     *
+     * @param tableNum the table num
+     */
+    public void setTableNum(String tableNum) {
 		this.tableNum = tableNum;
 	}
 

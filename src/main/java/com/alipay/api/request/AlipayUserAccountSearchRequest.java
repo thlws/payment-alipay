@@ -9,9 +9,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.user.account.search request
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-08-11 18:02:23
+ * @since 1.0, 2018-08-24 19:12:35
  */
 public class AlipayUserAccountSearchRequest implements AlipayRequest<AlipayUserAccountSearchResponse> {
 
@@ -48,45 +48,111 @@ public class AlipayUserAccountSearchRequest implements AlipayRequest<AlipayUserA
 	 */
 	private String type;
 
-	public void setEndTime(String endTime) {
+    /**
+     * Sets end time.
+     *
+     * @param endTime the end time
+     */
+    public void setEndTime(String endTime) {
 		this.endTime = endTime;
 	}
-	public String getEndTime() {
+
+    /**
+     * Gets end time.
+     *
+     * @return the end time
+     */
+    public String getEndTime() {
 		return this.endTime;
 	}
 
-	public void setFields(String fields) {
+    /**
+     * Sets fields.
+     *
+     * @param fields the fields
+     */
+    public void setFields(String fields) {
 		this.fields = fields;
 	}
-	public String getFields() {
+
+    /**
+     * Gets fields.
+     *
+     * @return the fields
+     */
+    public String getFields() {
 		return this.fields;
 	}
 
-	public void setPageNo(String pageNo) {
+    /**
+     * Sets page no.
+     *
+     * @param pageNo the page no
+     */
+    public void setPageNo(String pageNo) {
 		this.pageNo = pageNo;
 	}
-	public String getPageNo() {
+
+    /**
+     * Gets page no.
+     *
+     * @return the page no
+     */
+    public String getPageNo() {
 		return this.pageNo;
 	}
 
-	public void setPageSize(String pageSize) {
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(String pageSize) {
 		this.pageSize = pageSize;
 	}
-	public String getPageSize() {
+
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public String getPageSize() {
 		return this.pageSize;
 	}
 
-	public void setStartTime(String startTime) {
+    /**
+     * Sets start time.
+     *
+     * @param startTime the start time
+     */
+    public void setStartTime(String startTime) {
 		this.startTime = startTime;
 	}
-	public String getStartTime() {
+
+    /**
+     * Gets start time.
+     *
+     * @return the start time
+     */
+    public String getStartTime() {
 		return this.startTime;
 	}
 
-	public void setType(String type) {
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
-	public String getType() {
+
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
 	private String terminalType;
@@ -163,7 +229,13 @@ public class AlipayUserAccountSearchRequest implements AlipayRequest<AlipayUserA
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

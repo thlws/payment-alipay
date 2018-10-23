@@ -11,10 +11,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineProviderShopactionRecordModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4516145699371181348L;
+	private static final long serialVersionUID = 2868835316585417826L;
 
 	/**
-	 * 详情设置会根据action_type字段类型不同而格式不同，请详细查看开放平台文案，会详细说明如果设置，整体是json结构。
+	 * 详情设置会根据action_type字段类型不同而格式不同，请详细查看开放平台文案，会详细说明如果设置，整体是json结构。参考文档：https://doc.open.alipay.com/docs/doc.htm?spm=a219a.7629140.0.0.u6pJ7Q&treeId=193&articleId=105281&docType=1#s1
 	 */
 	@ApiField("action_detail")
 	private String actionDetail;
@@ -79,71 +79,170 @@ public class AlipayOfflineProviderShopactionRecordModel extends AlipayObject {
 	private String source;
 
 	/**
-	 * 支付宝账户ID，这里传入门店的商户id。如果获取不到支付宝账户ID，一定不能设置。如何获取支付宝账户ID
+	 * 支付宝账户ID，这里传入门店的商户id。如果获取不到支付宝账户ID，一定不能设置。如何获取支付宝账户ID,获取用户uid的接口调用文档：https://doc.open.alipay.com/docs/doc.htm?spm=a219a.7629140.0.0.jokL1V&treeId=193&articleId=105656&docType=1#s3
 	 */
 	@ApiField("user_id")
 	private String userId;
 
-	public String getActionDetail() {
+    /**
+     * Gets action detail.
+     *
+     * @return the action detail
+     */
+    public String getActionDetail() {
 		return this.actionDetail;
 	}
-	public void setActionDetail(String actionDetail) {
+
+    /**
+     * Sets action detail.
+     *
+     * @param actionDetail the action detail
+     */
+    public void setActionDetail(String actionDetail) {
 		this.actionDetail = actionDetail;
 	}
 
-	public String getActionOuterId() {
+    /**
+     * Gets action outer id.
+     *
+     * @return the action outer id
+     */
+    public String getActionOuterId() {
 		return this.actionOuterId;
 	}
-	public void setActionOuterId(String actionOuterId) {
+
+    /**
+     * Sets action outer id.
+     *
+     * @param actionOuterId the action outer id
+     */
+    public void setActionOuterId(String actionOuterId) {
 		this.actionOuterId = actionOuterId;
 	}
 
-	public String getActionType() {
+    /**
+     * Gets action type.
+     *
+     * @return the action type
+     */
+    public String getActionType() {
 		return this.actionType;
 	}
-	public void setActionType(String actionType) {
+
+    /**
+     * Sets action type.
+     *
+     * @param actionType the action type
+     */
+    public void setActionType(String actionType) {
 		this.actionType = actionType;
 	}
 
-	public String getDateTime() {
+    /**
+     * Gets date time.
+     *
+     * @return the date time
+     */
+    public String getDateTime() {
 		return this.dateTime;
 	}
-	public void setDateTime(String dateTime) {
+
+    /**
+     * Sets date time.
+     *
+     * @param dateTime the date time
+     */
+    public void setDateTime(String dateTime) {
 		this.dateTime = dateTime;
 	}
 
-	public String getEntity() {
+    /**
+     * Gets entity.
+     *
+     * @return the entity
+     */
+    public String getEntity() {
 		return this.entity;
 	}
-	public void setEntity(String entity) {
+
+    /**
+     * Sets entity.
+     *
+     * @param entity the entity
+     */
+    public void setEntity(String entity) {
 		this.entity = entity;
 	}
 
-	public String getIndustry() {
+    /**
+     * Gets industry.
+     *
+     * @return the industry
+     */
+    public String getIndustry() {
 		return this.industry;
 	}
-	public void setIndustry(String industry) {
+
+    /**
+     * Sets industry.
+     *
+     * @param industry the industry
+     */
+    public void setIndustry(String industry) {
 		this.industry = industry;
 	}
 
-	public OuterShopDO getOuterShopDo() {
+    /**
+     * Gets outer shop do.
+     *
+     * @return the outer shop do
+     */
+    public OuterShopDO getOuterShopDo() {
 		return this.outerShopDo;
 	}
-	public void setOuterShopDo(OuterShopDO outerShopDo) {
+
+    /**
+     * Sets outer shop do.
+     *
+     * @param outerShopDo the outer shop do
+     */
+    public void setOuterShopDo(OuterShopDO outerShopDo) {
 		this.outerShopDo = outerShopDo;
 	}
 
-	public String getSource() {
+    /**
+     * Gets source.
+     *
+     * @return the source
+     */
+    public String getSource() {
 		return this.source;
 	}
-	public void setSource(String source) {
+
+    /**
+     * Sets source.
+     *
+     * @param source the source
+     */
+    public void setSource(String source) {
 		this.source = source;
 	}
 
-	public String getUserId() {
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
-	public void setUserId(String userId) {
+
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
 

@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.member.retailer.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-07-06 10:47:45
+ * @since 1.0, 2018-01-12 10:59:05
  */
 public class KoubeiMemberRetailerQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3677719387896358838L;
+	private static final long serialVersionUID = 6627566845517789463L;
 
 	/** 
 	 * 零售商信息列表
@@ -24,10 +24,21 @@ public class KoubeiMemberRetailerQueryResponse extends AlipayResponse {
 	@ApiField("retailer")
 	private List<Retailer> retailerList;
 
-	public void setRetailerList(List<Retailer> retailerList) {
+    /**
+     * Sets retailer list.
+     *
+     * @param retailerList the retailer list
+     */
+    public void setRetailerList(List<Retailer> retailerList) {
 		this.retailerList = retailerList;
 	}
-	public List<Retailer> getRetailerList( ) {
+
+    /**
+     * Gets retailer list.
+     *
+     * @return the retailer list
+     */
+    public List<Retailer> getRetailerList( ) {
 		return this.retailerList;
 	}
 

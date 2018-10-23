@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝可信电子签名申请
  *
  * @author auto create
- * @since 1.0, 2017-09-20 10:18:47
+ * @since 1.0, 2017-12-20 15:24:35
  */
 public class AlipaySecurityProdSignatureTaskApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5671783785645621675L;
+	private static final long serialVersionUID = 6318388932448114395L;
 
 	/**
 	 * 外部应用名称，由支付宝统一分配，无法自助获取。
@@ -74,66 +74,165 @@ public class AlipaySecurityProdSignatureTaskApplyModel extends AlipayObject {
 	@ApiField("sign_task_type")
 	private Long signTaskType;
 
-	public String getBizApp() {
+    /**
+     * Gets biz app.
+     *
+     * @return the biz app
+     */
+    public String getBizApp() {
 		return this.bizApp;
 	}
-	public void setBizApp(String bizApp) {
+
+    /**
+     * Sets biz app.
+     *
+     * @param bizApp the biz app
+     */
+    public void setBizApp(String bizApp) {
 		this.bizApp = bizApp;
 	}
 
-	public String getBizId() {
+    /**
+     * Gets biz id.
+     *
+     * @return the biz id
+     */
+    public String getBizId() {
 		return this.bizId;
 	}
-	public void setBizId(String bizId) {
+
+    /**
+     * Sets biz id.
+     *
+     * @param bizId the biz id
+     */
+    public void setBizId(String bizId) {
 		this.bizId = bizId;
 	}
 
-	public String getBizInfo() {
+    /**
+     * Gets biz info.
+     *
+     * @return the biz info
+     */
+    public String getBizInfo() {
 		return this.bizInfo;
 	}
-	public void setBizInfo(String bizInfo) {
+
+    /**
+     * Sets biz info.
+     *
+     * @param bizInfo the biz info
+     */
+    public void setBizInfo(String bizInfo) {
 		this.bizInfo = bizInfo;
 	}
 
-	public String getBizProduct() {
+    /**
+     * Gets biz product.
+     *
+     * @return the biz product
+     */
+    public String getBizProduct() {
 		return this.bizProduct;
 	}
-	public void setBizProduct(String bizProduct) {
+
+    /**
+     * Sets biz product.
+     *
+     * @param bizProduct the biz product
+     */
+    public void setBizProduct(String bizProduct) {
 		this.bizProduct = bizProduct;
 	}
 
-	public Long getOrderType() {
+    /**
+     * Gets order type.
+     *
+     * @return the order type
+     */
+    public Long getOrderType() {
 		return this.orderType;
 	}
-	public void setOrderType(Long orderType) {
+
+    /**
+     * Sets order type.
+     *
+     * @param orderType the order type
+     */
+    public void setOrderType(Long orderType) {
 		this.orderType = orderType;
 	}
 
-	public String getServiceVersion() {
+    /**
+     * Gets service version.
+     *
+     * @return the service version
+     */
+    public String getServiceVersion() {
 		return this.serviceVersion;
 	}
-	public void setServiceVersion(String serviceVersion) {
+
+    /**
+     * Sets service version.
+     *
+     * @param serviceVersion the service version
+     */
+    public void setServiceVersion(String serviceVersion) {
 		this.serviceVersion = serviceVersion;
 	}
 
-	public List<SignDataInfo> getSignDataList() {
+    /**
+     * Gets sign data list.
+     *
+     * @return the sign data list
+     */
+    public List<SignDataInfo> getSignDataList() {
 		return this.signDataList;
 	}
-	public void setSignDataList(List<SignDataInfo> signDataList) {
+
+    /**
+     * Sets sign data list.
+     *
+     * @param signDataList the sign data list
+     */
+    public void setSignDataList(List<SignDataInfo> signDataList) {
 		this.signDataList = signDataList;
 	}
 
-	public List<SignTask> getSignTaskList() {
+    /**
+     * Gets sign task list.
+     *
+     * @return the sign task list
+     */
+    public List<SignTask> getSignTaskList() {
 		return this.signTaskList;
 	}
-	public void setSignTaskList(List<SignTask> signTaskList) {
+
+    /**
+     * Sets sign task list.
+     *
+     * @param signTaskList the sign task list
+     */
+    public void setSignTaskList(List<SignTask> signTaskList) {
 		this.signTaskList = signTaskList;
 	}
 
-	public Long getSignTaskType() {
+    /**
+     * Gets sign task type.
+     *
+     * @return the sign task type
+     */
+    public Long getSignTaskType() {
 		return this.signTaskType;
 	}
-	public void setSignTaskType(Long signTaskType) {
+
+    /**
+     * Sets sign task type.
+     *
+     * @param signTaskType the sign task type
+     */
+    public void setSignTaskType(Long signTaskType) {
 		this.signTaskType = signTaskType;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CPBillResultSet extends AlipayObject {
 
-	private static final long serialVersionUID = 3615956831413251214L;
+	private static final long serialVersionUID = 8617134225836439416L;
 
 	/**
 	 * 账期
@@ -71,66 +71,165 @@ OUT_OF_DATE - 未支付且已过缴费截止日期
 	@ApiField("status")
 	private String status;
 
-	public String getAcctPeriod() {
+    /**
+     * Gets acct period.
+     *
+     * @return the acct period
+     */
+    public String getAcctPeriod() {
 		return this.acctPeriod;
 	}
-	public void setAcctPeriod(String acctPeriod) {
+
+    /**
+     * Sets acct period.
+     *
+     * @param acctPeriod the acct period
+     */
+    public void setAcctPeriod(String acctPeriod) {
 		this.acctPeriod = acctPeriod;
 	}
 
-	public String getBillEntryAmount() {
+    /**
+     * Gets bill entry amount.
+     *
+     * @return the bill entry amount
+     */
+    public String getBillEntryAmount() {
 		return this.billEntryAmount;
 	}
-	public void setBillEntryAmount(String billEntryAmount) {
+
+    /**
+     * Sets bill entry amount.
+     *
+     * @param billEntryAmount the bill entry amount
+     */
+    public void setBillEntryAmount(String billEntryAmount) {
 		this.billEntryAmount = billEntryAmount;
 	}
 
-	public String getBillEntryId() {
+    /**
+     * Gets bill entry id.
+     *
+     * @return the bill entry id
+     */
+    public String getBillEntryId() {
 		return this.billEntryId;
 	}
-	public void setBillEntryId(String billEntryId) {
+
+    /**
+     * Sets bill entry id.
+     *
+     * @param billEntryId the bill entry id
+     */
+    public void setBillEntryId(String billEntryId) {
 		this.billEntryId = billEntryId;
 	}
 
-	public String getCostType() {
+    /**
+     * Gets cost type.
+     *
+     * @return the cost type
+     */
+    public String getCostType() {
 		return this.costType;
 	}
-	public void setCostType(String costType) {
+
+    /**
+     * Sets cost type.
+     *
+     * @param costType the cost type
+     */
+    public void setCostType(String costType) {
 		this.costType = costType;
 	}
 
-	public String getDeadline() {
+    /**
+     * Gets deadline.
+     *
+     * @return the deadline
+     */
+    public String getDeadline() {
 		return this.deadline;
 	}
-	public void setDeadline(String deadline) {
+
+    /**
+     * Sets deadline.
+     *
+     * @param deadline the deadline
+     */
+    public void setDeadline(String deadline) {
 		this.deadline = deadline;
 	}
 
-	public String getOutRoomId() {
+    /**
+     * Gets out room id.
+     *
+     * @return the out room id
+     */
+    public String getOutRoomId() {
 		return this.outRoomId;
 	}
-	public void setOutRoomId(String outRoomId) {
+
+    /**
+     * Sets out room id.
+     *
+     * @param outRoomId the out room id
+     */
+    public void setOutRoomId(String outRoomId) {
 		this.outRoomId = outRoomId;
 	}
 
-	public String getReleaseDay() {
+    /**
+     * Gets release day.
+     *
+     * @return the release day
+     */
+    public String getReleaseDay() {
 		return this.releaseDay;
 	}
-	public void setReleaseDay(String releaseDay) {
+
+    /**
+     * Sets release day.
+     *
+     * @param releaseDay the release day
+     */
+    public void setReleaseDay(String releaseDay) {
 		this.releaseDay = releaseDay;
 	}
 
-	public String getRoomAddress() {
+    /**
+     * Gets room address.
+     *
+     * @return the room address
+     */
+    public String getRoomAddress() {
 		return this.roomAddress;
 	}
-	public void setRoomAddress(String roomAddress) {
+
+    /**
+     * Sets room address.
+     *
+     * @param roomAddress the room address
+     */
+    public void setRoomAddress(String roomAddress) {
 		this.roomAddress = roomAddress;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 签约主体信息，例如个人签约者，企业签约者
  *
  * @author auto create
- * @since 1.0, 2017-09-20 10:18:47
+ * @since 1.0, 2017-12-20 15:24:35
  */
 public class SignTask extends AlipayObject {
 
-	private static final long serialVersionUID = 4296889678993158195L;
+	private static final long serialVersionUID = 2572479455496887792L;
 
 	/**
 	 * 业务扩展参数 {"key1":"value2"}
@@ -81,66 +81,165 @@ entreprise  //企业认证
 	@ApiField("task_expire")
 	private String taskExpire;
 
-	public String getBizData() {
+    /**
+     * Gets biz data.
+     *
+     * @return the biz data
+     */
+    public String getBizData() {
 		return this.bizData;
 	}
-	public void setBizData(String bizData) {
+
+    /**
+     * Sets biz data.
+     *
+     * @param bizData the biz data
+     */
+    public void setBizData(String bizData) {
 		this.bizData = bizData;
 	}
 
-	public String getBizId() {
+    /**
+     * Gets biz id.
+     *
+     * @return the biz id
+     */
+    public String getBizId() {
 		return this.bizId;
 	}
-	public void setBizId(String bizId) {
+
+    /**
+     * Sets biz id.
+     *
+     * @param bizId the biz id
+     */
+    public void setBizId(String bizId) {
 		this.bizId = bizId;
 	}
 
-	public String getCbType() {
+    /**
+     * Gets cb type.
+     *
+     * @return the cb type
+     */
+    public String getCbType() {
 		return this.cbType;
 	}
-	public void setCbType(String cbType) {
+
+    /**
+     * Sets cb type.
+     *
+     * @param cbType the cb type
+     */
+    public void setCbType(String cbType) {
 		this.cbType = cbType;
 	}
 
-	public String getCbUrl() {
+    /**
+     * Gets cb url.
+     *
+     * @return the cb url
+     */
+    public String getCbUrl() {
 		return this.cbUrl;
 	}
-	public void setCbUrl(String cbUrl) {
+
+    /**
+     * Sets cb url.
+     *
+     * @param cbUrl the cb url
+     */
+    public void setCbUrl(String cbUrl) {
 		this.cbUrl = cbUrl;
 	}
 
-	public Long getCertSignType() {
+    /**
+     * Gets cert sign type.
+     *
+     * @return the cert sign type
+     */
+    public Long getCertSignType() {
 		return this.certSignType;
 	}
-	public void setCertSignType(Long certSignType) {
+
+    /**
+     * Sets cert sign type.
+     *
+     * @param certSignType the cert sign type
+     */
+    public void setCertSignType(Long certSignType) {
 		this.certSignType = certSignType;
 	}
 
-	public String getEnterType() {
+    /**
+     * Gets enter type.
+     *
+     * @return the enter type
+     */
+    public String getEnterType() {
 		return this.enterType;
 	}
-	public void setEnterType(String enterType) {
+
+    /**
+     * Sets enter type.
+     *
+     * @param enterType the enter type
+     */
+    public void setEnterType(String enterType) {
 		this.enterType = enterType;
 	}
 
-	public List<Principal> getPrincipalList() {
+    /**
+     * Gets principal list.
+     *
+     * @return the principal list
+     */
+    public List<Principal> getPrincipalList() {
 		return this.principalList;
 	}
-	public void setPrincipalList(List<Principal> principalList) {
+
+    /**
+     * Sets principal list.
+     *
+     * @param principalList the principal list
+     */
+    public void setPrincipalList(List<Principal> principalList) {
 		this.principalList = principalList;
 	}
 
-	public String getSignerType() {
+    /**
+     * Gets signer type.
+     *
+     * @return the signer type
+     */
+    public String getSignerType() {
 		return this.signerType;
 	}
-	public void setSignerType(String signerType) {
+
+    /**
+     * Sets signer type.
+     *
+     * @param signerType the signer type
+     */
+    public void setSignerType(String signerType) {
 		this.signerType = signerType;
 	}
 
-	public String getTaskExpire() {
+    /**
+     * Gets task expire.
+     *
+     * @return the task expire
+     */
+    public String getTaskExpire() {
 		return this.taskExpire;
 	}
-	public void setTaskExpire(String taskExpire) {
+
+    /**
+     * Sets task expire.
+     *
+     * @param taskExpire the task expire
+     */
+    public void setTaskExpire(String taskExpire) {
 		this.taskExpire = taskExpire;
 	}
 

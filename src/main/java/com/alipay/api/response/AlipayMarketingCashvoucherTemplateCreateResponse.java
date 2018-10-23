@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.cashvoucher.template.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-21 17:04:08
+ * @since 1.0, 2018-09-17 11:06:24
  */
 public class AlipayMarketingCashvoucherTemplateCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5498893533137615289L;
+	private static final long serialVersionUID = 3648125313621838691L;
 
 	/** 
 	 * 模板支付确认链接
@@ -32,24 +32,57 @@ public class AlipayMarketingCashvoucherTemplateCreateResponse extends AlipayResp
 	@ApiField("template_id")
 	private String templateId;
 
-	public void setConfirmUri(String confirmUri) {
+    /**
+     * Sets confirm uri.
+     *
+     * @param confirmUri the confirm uri
+     */
+    public void setConfirmUri(String confirmUri) {
 		this.confirmUri = confirmUri;
 	}
-	public String getConfirmUri( ) {
+
+    /**
+     * Gets confirm uri.
+     *
+     * @return the confirm uri
+     */
+    public String getConfirmUri( ) {
 		return this.confirmUri;
 	}
 
-	public void setFundOrderNo(String fundOrderNo) {
+    /**
+     * Sets fund order no.
+     *
+     * @param fundOrderNo the fund order no
+     */
+    public void setFundOrderNo(String fundOrderNo) {
 		this.fundOrderNo = fundOrderNo;
 	}
-	public String getFundOrderNo( ) {
+
+    /**
+     * Gets fund order no.
+     *
+     * @return the fund order no
+     */
+    public String getFundOrderNo( ) {
 		return this.fundOrderNo;
 	}
 
-	public void setTemplateId(String templateId) {
+    /**
+     * Sets template id.
+     *
+     * @param templateId the template id
+     */
+    public void setTemplateId(String templateId) {
 		this.templateId = templateId;
 	}
-	public String getTemplateId( ) {
+
+    /**
+     * Gets template id.
+     *
+     * @return the template id
+     */
+    public String getTemplateId( ) {
 		return this.templateId;
 	}
 

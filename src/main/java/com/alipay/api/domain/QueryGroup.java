@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class QueryGroup extends AlipayObject {
 
-	private static final long serialVersionUID = 4518357645996634823L;
+	private static final long serialVersionUID = 8651536997925292745L;
 
 	/**
 	 * 分组id
@@ -35,24 +35,57 @@ public class QueryGroup extends AlipayObject {
 	@ApiField("name")
 	private String name;
 
-	public String getId() {
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
+    public String getId() {
 		return this.id;
 	}
-	public void setId(String id) {
+
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
+    public void setId(String id) {
 		this.id = id;
 	}
 
-	public List<QueryComplexLabelRule> getLabelRule() {
+    /**
+     * Gets label rule.
+     *
+     * @return the label rule
+     */
+    public List<QueryComplexLabelRule> getLabelRule() {
 		return this.labelRule;
 	}
-	public void setLabelRule(List<QueryComplexLabelRule> labelRule) {
+
+    /**
+     * Sets label rule.
+     *
+     * @param labelRule the label rule
+     */
+    public void setLabelRule(List<QueryComplexLabelRule> labelRule) {
 		this.labelRule = labelRule;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 

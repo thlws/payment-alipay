@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DishonestyDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3247554796864327727L;
+	private static final long serialVersionUID = 7491157948914553844L;
 
 	/**
 	 * 被执行人行为具体情况
@@ -61,59 +61,147 @@ public class DishonestyDetailInfo extends AlipayObject {
 	@ApiField("region")
 	private String region;
 
-	public String getBehavior() {
+    /**
+     * Gets behavior.
+     *
+     * @return the behavior
+     */
+    public String getBehavior() {
 		return this.behavior;
 	}
-	public void setBehavior(String behavior) {
+
+    /**
+     * Sets behavior.
+     *
+     * @param behavior the behavior
+     */
+    public void setBehavior(String behavior) {
 		this.behavior = behavior;
 	}
 
-	public String getCaseCode() {
+    /**
+     * Gets case code.
+     *
+     * @return the case code
+     */
+    public String getCaseCode() {
 		return this.caseCode;
 	}
-	public void setCaseCode(String caseCode) {
+
+    /**
+     * Sets case code.
+     *
+     * @param caseCode the case code
+     */
+    public void setCaseCode(String caseCode) {
 		this.caseCode = caseCode;
 	}
 
-	public String getEnforceCourt() {
+    /**
+     * Gets enforce court.
+     *
+     * @return the enforce court
+     */
+    public String getEnforceCourt() {
 		return this.enforceCourt;
 	}
-	public void setEnforceCourt(String enforceCourt) {
+
+    /**
+     * Sets enforce court.
+     *
+     * @param enforceCourt the enforce court
+     */
+    public void setEnforceCourt(String enforceCourt) {
 		this.enforceCourt = enforceCourt;
 	}
 
-	public String getIdNumber() {
+    /**
+     * Gets id number.
+     *
+     * @return the id number
+     */
+    public String getIdNumber() {
 		return this.idNumber;
 	}
-	public void setIdNumber(String idNumber) {
+
+    /**
+     * Sets id number.
+     *
+     * @param idNumber the id number
+     */
+    public void setIdNumber(String idNumber) {
 		this.idNumber = idNumber;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getPerformance() {
+    /**
+     * Gets performance.
+     *
+     * @return the performance
+     */
+    public String getPerformance() {
 		return this.performance;
 	}
-	public void setPerformance(String performance) {
+
+    /**
+     * Sets performance.
+     *
+     * @param performance the performance
+     */
+    public void setPerformance(String performance) {
 		this.performance = performance;
 	}
 
-	public String getPublishDate() {
+    /**
+     * Gets publish date.
+     *
+     * @return the publish date
+     */
+    public String getPublishDate() {
 		return this.publishDate;
 	}
-	public void setPublishDate(String publishDate) {
+
+    /**
+     * Sets publish date.
+     *
+     * @param publishDate the publish date
+     */
+    public void setPublishDate(String publishDate) {
 		this.publishDate = publishDate;
 	}
 
-	public String getRegion() {
+    /**
+     * Gets region.
+     *
+     * @return the region
+     */
+    public String getRegion() {
 		return this.region;
 	}
-	public void setRegion(String region) {
+
+    /**
+     * Sets region.
+     *
+     * @param region the region
+     */
+    public void setRegion(String region) {
 		this.region = region;
 	}
 

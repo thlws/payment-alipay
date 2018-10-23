@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MedicalHospitalDeptInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4731744743733834558L;
+	private static final long serialVersionUID = 6128619478695791158L;
 
 	/**
 	 * 科室唯一标识，编码开发者生成并保证唯一
@@ -45,38 +45,93 @@ public class MedicalHospitalDeptInfo extends AlipayObject {
 	@ApiField("partner_code")
 	private String partnerCode;
 
-	public String getCode() {
+    /**
+     * Gets code.
+     *
+     * @return the code
+     */
+    public String getCode() {
 		return this.code;
 	}
-	public void setCode(String code) {
+
+    /**
+     * Sets code.
+     *
+     * @param code the code
+     */
+    public void setCode(String code) {
 		this.code = code;
 	}
 
-	public String getLocation() {
+    /**
+     * Gets location.
+     *
+     * @return the location
+     */
+    public String getLocation() {
 		return this.location;
 	}
-	public void setLocation(String location) {
+
+    /**
+     * Sets location.
+     *
+     * @param location the location
+     */
+    public void setLocation(String location) {
 		this.location = location;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getParentName() {
+    /**
+     * Gets parent name.
+     *
+     * @return the parent name
+     */
+    public String getParentName() {
 		return this.parentName;
 	}
-	public void setParentName(String parentName) {
+
+    /**
+     * Sets parent name.
+     *
+     * @param parentName the parent name
+     */
+    public void setParentName(String parentName) {
 		this.parentName = parentName;
 	}
 
-	public String getPartnerCode() {
+    /**
+     * Gets partner code.
+     *
+     * @return the partner code
+     */
+    public String getPartnerCode() {
 		return this.partnerCode;
 	}
-	public void setPartnerCode(String partnerCode) {
+
+    /**
+     * Sets partner code.
+     *
+     * @param partnerCode the partner code
+     */
+    public void setPartnerCode(String partnerCode) {
 		this.partnerCode = partnerCode;
 	}
 

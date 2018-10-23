@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发布物业通知公告
  *
  * @author auto create
- * @since 1.0, 2016-11-24 16:14:39
+ * @since 1.0, 2018-06-09 20:18:37
  */
 public class AlipayEcoCplifeNoticePublishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1817646682322496773L;
+	private static final long serialVersionUID = 3624925414987944727L;
 
 	/**
 	 * 待发布通知的目标物业小区ID列表，使用支付宝平台统一的小区ID编码。
@@ -29,17 +29,39 @@ public class AlipayEcoCplifeNoticePublishModel extends AlipayObject {
 	@ApiField("notice_details")
 	private CplifeNoticeDetail noticeDetails;
 
-	public List<String> getCommunityIdSet() {
+    /**
+     * Gets community id set.
+     *
+     * @return the community id set
+     */
+    public List<String> getCommunityIdSet() {
 		return this.communityIdSet;
 	}
-	public void setCommunityIdSet(List<String> communityIdSet) {
+
+    /**
+     * Sets community id set.
+     *
+     * @param communityIdSet the community id set
+     */
+    public void setCommunityIdSet(List<String> communityIdSet) {
 		this.communityIdSet = communityIdSet;
 	}
 
-	public CplifeNoticeDetail getNoticeDetails() {
+    /**
+     * Gets notice details.
+     *
+     * @return the notice details
+     */
+    public CplifeNoticeDetail getNoticeDetails() {
 		return this.noticeDetails;
 	}
-	public void setNoticeDetails(CplifeNoticeDetail noticeDetails) {
+
+    /**
+     * Sets notice details.
+     *
+     * @param noticeDetails the notice details
+     */
+    public void setNoticeDetails(CplifeNoticeDetail noticeDetails) {
 		this.noticeDetails = noticeDetails;
 	}
 

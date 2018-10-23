@@ -10,7 +10,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.user.test request
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-01-14 17:47:44
  */
@@ -24,10 +24,21 @@ public class AlipayUserTestRequest implements AlipayRequest<AlipayUserTestRespon
 	 */
 	private List<String> userinfo;
 
-	public void setUserinfo(List<String> userinfo) {
+    /**
+     * Sets userinfo.
+     *
+     * @param userinfo the userinfo
+     */
+    public void setUserinfo(List<String> userinfo) {
 		this.userinfo = userinfo;
 	}
-	public List<String> getUserinfo() {
+
+    /**
+     * Gets userinfo.
+     *
+     * @return the userinfo
+     */
+    public List<String> getUserinfo() {
 		return this.userinfo;
 	}
 	private String terminalType;
@@ -92,14 +103,20 @@ public class AlipayUserTestRequest implements AlipayRequest<AlipayUserTestRespon
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
-		txtParams.put("userinfo", this.userinfo);
+		txtParams.put("userinfo", this.userinfo == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.userinfo, true));
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

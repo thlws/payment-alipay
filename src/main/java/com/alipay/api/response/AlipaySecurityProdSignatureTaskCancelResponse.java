@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.security.prod.signature.task.cancel response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-08-08 10:43:08
+ * @since 1.0, 2017-12-20 15:25:04
  */
 public class AlipaySecurityProdSignatureTaskCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4836235322234277593L;
+	private static final long serialVersionUID = 3716883784431559138L;
 
 	/** 
 	 * 是否更新成功
@@ -20,10 +20,21 @@ public class AlipaySecurityProdSignatureTaskCancelResponse extends AlipayRespons
 	@ApiField("success")
 	private Boolean success;
 
-	public void setSuccess(Boolean success) {
+    /**
+     * Sets success.
+     *
+     * @param success the success
+     */
+    public void setSuccess(Boolean success) {
 		this.success = success;
 	}
-	public Boolean getSuccess( ) {
+
+    /**
+     * Gets success.
+     *
+     * @return the success
+     */
+    public Boolean getSuccess( ) {
 		return this.success;
 	}
 

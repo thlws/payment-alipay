@@ -10,9 +10,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.marketing.voucher.templatedetail.query request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-19 11:27:10
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayMarketingVoucherTemplatedetailQueryRequest implements AlipayRequest<AlipayMarketingVoucherTemplatedetailQueryResponse> {
 
@@ -24,10 +24,21 @@ public class AlipayMarketingVoucherTemplatedetailQueryRequest implements AlipayR
 	 */
 	private String bizContent;
 
-	public void setBizContent(String bizContent) {
+    /**
+     * Sets biz content.
+     *
+     * @param bizContent the biz content
+     */
+    public void setBizContent(String bizContent) {
 		this.bizContent = bizContent;
 	}
-	public String getBizContent() {
+
+    /**
+     * Gets biz content.
+     *
+     * @return the biz content
+     */
+    public String getBizContent() {
 		return this.bizContent;
 	}
 	private String terminalType;
@@ -99,7 +110,13 @@ public class AlipayMarketingVoucherTemplatedetailQueryRequest implements AlipayR
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

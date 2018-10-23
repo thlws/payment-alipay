@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CascadeMissionConfModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4243212447852256339L;
+	private static final long serialVersionUID = 5891684291354497847L;
 
 	/**
 	 * 分佣条款列表
@@ -33,17 +33,39 @@ KOUBEI_PLATFORM：口碑平台推广
 	@ApiField("commission_user_type")
 	private String commissionUserType;
 
-	public List<KbAdvertCommissionClause> getCommissionClause() {
+    /**
+     * Gets commission clause.
+     *
+     * @return the commission clause
+     */
+    public List<KbAdvertCommissionClause> getCommissionClause() {
 		return this.commissionClause;
 	}
-	public void setCommissionClause(List<KbAdvertCommissionClause> commissionClause) {
+
+    /**
+     * Sets commission clause.
+     *
+     * @param commissionClause the commission clause
+     */
+    public void setCommissionClause(List<KbAdvertCommissionClause> commissionClause) {
 		this.commissionClause = commissionClause;
 	}
 
-	public String getCommissionUserType() {
+    /**
+     * Gets commission user type.
+     *
+     * @return the commission user type
+     */
+    public String getCommissionUserType() {
 		return this.commissionUserType;
 	}
-	public void setCommissionUserType(String commissionUserType) {
+
+    /**
+     * Sets commission user type.
+     *
+     * @param commissionUserType the commission user type
+     */
+    public void setCommissionUserType(String commissionUserType) {
 		this.commissionUserType = commissionUserType;
 	}
 

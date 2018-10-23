@@ -9,9 +9,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.pass.tpl.content.add request
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-07-01 15:30:16
+ * @since 1.0, 2017-12-07 16:32:21
  */
 public class AlipayPassTplContentAddRequest implements AlipayRequest<AlipayPassTplContentAddResponse> {
 
@@ -41,31 +41,75 @@ public class AlipayPassTplContentAddRequest implements AlipayRequest<AlipayPassT
 	 */
 	private String tplParams;
 
-	public void setRecognitionInfo(String recognitionInfo) {
+    /**
+     * Sets recognition info.
+     *
+     * @param recognitionInfo the recognition info
+     */
+    public void setRecognitionInfo(String recognitionInfo) {
 		this.recognitionInfo = recognitionInfo;
 	}
-	public String getRecognitionInfo() {
+
+    /**
+     * Gets recognition info.
+     *
+     * @return the recognition info
+     */
+    public String getRecognitionInfo() {
 		return this.recognitionInfo;
 	}
 
-	public void setRecognitionType(String recognitionType) {
+    /**
+     * Sets recognition type.
+     *
+     * @param recognitionType the recognition type
+     */
+    public void setRecognitionType(String recognitionType) {
 		this.recognitionType = recognitionType;
 	}
-	public String getRecognitionType() {
+
+    /**
+     * Gets recognition type.
+     *
+     * @return the recognition type
+     */
+    public String getRecognitionType() {
 		return this.recognitionType;
 	}
 
-	public void setTplId(String tplId) {
+    /**
+     * Sets tpl id.
+     *
+     * @param tplId the tpl id
+     */
+    public void setTplId(String tplId) {
 		this.tplId = tplId;
 	}
-	public String getTplId() {
+
+    /**
+     * Gets tpl id.
+     *
+     * @return the tpl id
+     */
+    public String getTplId() {
 		return this.tplId;
 	}
 
-	public void setTplParams(String tplParams) {
+    /**
+     * Sets tpl params.
+     *
+     * @param tplParams the tpl params
+     */
+    public void setTplParams(String tplParams) {
 		this.tplParams = tplParams;
 	}
-	public String getTplParams() {
+
+    /**
+     * Gets tpl params.
+     *
+     * @return the tpl params
+     */
+    public String getTplParams() {
 		return this.tplParams;
 	}
 	private String terminalType;
@@ -140,7 +184,13 @@ public class AlipayPassTplContentAddRequest implements AlipayRequest<AlipayPassT
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

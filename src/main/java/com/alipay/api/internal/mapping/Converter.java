@@ -3,6 +3,7 @@ package com.alipay.api.internal.mapping;
 import com.alipay.api.AlipayApiException;
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.AlipayResponse;
+import com.alipay.api.Decryptor;
 import com.alipay.api.SignItem;
 
 /**
@@ -42,14 +43,14 @@ public interface Converter {
      * @param request     the request
      * @param body        the body
      * @param format      the format
+     * @param decryptor   the decryptor
      * @param encryptType the encrypt type
-     * @param encryptKey  the encrypt key
      * @param charset     the charset
      * @return string
      * @throws AlipayApiException the alipay api exception
      */
-    public String encryptSourceData(AlipayRequest<?> request, String body, String format,
-                                       String encryptType, String encryptKey, String charset)
-                                                                                             throws AlipayApiException;
+    public String decryptSourceData(AlipayRequest<?> request, String body, String format,
+                                    Decryptor decryptor, String encryptType, String charset)
+            throws AlipayApiException;
 
 }

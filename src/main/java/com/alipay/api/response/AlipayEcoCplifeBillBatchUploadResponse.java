@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.cplife.bill.batch.upload response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-02-10 18:54:48
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayEcoCplifeBillBatchUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3576853381525156447L;
+	private static final long serialVersionUID = 6177554461252946589L;
 
 	/** 
 	 * 成功导入所有条目集合中的条目，则回传请求中的批次号
@@ -20,10 +20,21 @@ public class AlipayEcoCplifeBillBatchUploadResponse extends AlipayResponse {
 	@ApiField("batch_id")
 	private String batchId;
 
-	public void setBatchId(String batchId) {
+    /**
+     * Sets batch id.
+     *
+     * @param batchId the batch id
+     */
+    public void setBatchId(String batchId) {
 		this.batchId = batchId;
 	}
-	public String getBatchId( ) {
+
+    /**
+     * Gets batch id.
+     *
+     * @return the batch id
+     */
+    public String getBatchId( ) {
 		return this.batchId;
 	}
 

@@ -5,13 +5,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.mycar.carmodel.modify response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-13 14:24:39
+ * @since 1.0, 2018-06-25 14:52:20
  */
 public class AlipayEcoMycarCarmodelModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1525883393829487388L;
+	private static final long serialVersionUID = 2412862943788677922L;
 
 	
 

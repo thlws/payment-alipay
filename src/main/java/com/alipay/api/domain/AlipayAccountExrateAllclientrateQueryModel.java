@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询客户的所有币种对最新有效汇率
  *
  * @author auto create
- * @since 1.0, 2016-05-12 19:41:16
+ * @since 1.0, 2018-04-12 19:07:12
  */
 public class AlipayAccountExrateAllclientrateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3819966131193612121L;
+	private static final long serialVersionUID = 5121382868576891921L;
 
 	/**
 	 * 客户id，客户和报价中心签约时约定的信息
@@ -25,17 +25,39 @@ public class AlipayAccountExrateAllclientrateQueryModel extends AlipayObject {
 	@ApiField("profile_id")
 	private String profileId;
 
-	public String getClientId() {
+    /**
+     * Gets client id.
+     *
+     * @return the client id
+     */
+    public String getClientId() {
 		return this.clientId;
 	}
-	public void setClientId(String clientId) {
+
+    /**
+     * Sets client id.
+     *
+     * @param clientId the client id
+     */
+    public void setClientId(String clientId) {
 		this.clientId = clientId;
 	}
 
-	public String getProfileId() {
+    /**
+     * Gets profile id.
+     *
+     * @return the profile id
+     */
+    public String getProfileId() {
 		return this.profileId;
 	}
-	public void setProfileId(String profileId) {
+
+    /**
+     * Sets profile id.
+     *
+     * @param profileId the profile id
+     */
+    public void setProfileId(String profileId) {
 		this.profileId = profileId;
 	}
 

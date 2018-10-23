@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.mobile.public.menu.get request
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-01-05 22:34:31
  */
@@ -85,7 +85,13 @@ public class AlipayMobilePublicMenuGetRequest implements AlipayRequest<AlipayMob
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

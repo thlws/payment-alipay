@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiMarketingDataEnterpriseStaffinfoUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3826344792127726616L;
+	private static final long serialVersionUID = 3541959916743572218L;
 
 	/**
 	 * 请求流水号，由ISV自定义，在ISV系统内唯一标示一次业务请求。
@@ -44,31 +44,75 @@ public class KoubeiMarketingDataEnterpriseStaffinfoUploadModel extends AlipayObj
 	@ApiField("staff_info")
 	private List<StaffInfo> staffInfo;
 
-	public String getBatchId() {
+    /**
+     * Gets batch id.
+     *
+     * @return the batch id
+     */
+    public String getBatchId() {
 		return this.batchId;
 	}
-	public void setBatchId(String batchId) {
+
+    /**
+     * Sets batch id.
+     *
+     * @param batchId the batch id
+     */
+    public void setBatchId(String batchId) {
 		this.batchId = batchId;
 	}
 
-	public String getEnterpriseName() {
+    /**
+     * Gets enterprise name.
+     *
+     * @return the enterprise name
+     */
+    public String getEnterpriseName() {
 		return this.enterpriseName;
 	}
-	public void setEnterpriseName(String enterpriseName) {
+
+    /**
+     * Sets enterprise name.
+     *
+     * @param enterpriseName the enterprise name
+     */
+    public void setEnterpriseName(String enterpriseName) {
 		this.enterpriseName = enterpriseName;
 	}
 
-	public String getOperatorType() {
+    /**
+     * Gets operator type.
+     *
+     * @return the operator type
+     */
+    public String getOperatorType() {
 		return this.operatorType;
 	}
-	public void setOperatorType(String operatorType) {
+
+    /**
+     * Sets operator type.
+     *
+     * @param operatorType the operator type
+     */
+    public void setOperatorType(String operatorType) {
 		this.operatorType = operatorType;
 	}
 
-	public List<StaffInfo> getStaffInfo() {
+    /**
+     * Gets staff info.
+     *
+     * @return the staff info
+     */
+    public List<StaffInfo> getStaffInfo() {
 		return this.staffInfo;
 	}
-	public void setStaffInfo(List<StaffInfo> staffInfo) {
+
+    /**
+     * Sets staff info.
+     *
+     * @param staffInfo the staff info
+     */
+    public void setStaffInfo(List<StaffInfo> staffInfo) {
 		this.staffInfo = staffInfo;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenActivity extends AlipayObject {
 
-	private static final long serialVersionUID = 7114422642644194379L;
+	private static final long serialVersionUID = 4479813193672183315L;
 
 	/**
 	 * 活动结束时间
@@ -52,45 +52,111 @@ public class OpenActivity extends AlipayObject {
 	@ApiField("store_id")
 	private String storeId;
 
-	public String getActivityEndDate() {
+    /**
+     * Gets activity end date.
+     *
+     * @return the activity end date
+     */
+    public String getActivityEndDate() {
 		return this.activityEndDate;
 	}
-	public void setActivityEndDate(String activityEndDate) {
+
+    /**
+     * Sets activity end date.
+     *
+     * @param activityEndDate the activity end date
+     */
+    public void setActivityEndDate(String activityEndDate) {
 		this.activityEndDate = activityEndDate;
 	}
 
-	public String getActivityId() {
+    /**
+     * Gets activity id.
+     *
+     * @return the activity id
+     */
+    public String getActivityId() {
 		return this.activityId;
 	}
-	public void setActivityId(String activityId) {
+
+    /**
+     * Sets activity id.
+     *
+     * @param activityId the activity id
+     */
+    public void setActivityId(String activityId) {
 		this.activityId = activityId;
 	}
 
-	public String getActivityName() {
+    /**
+     * Gets activity name.
+     *
+     * @return the activity name
+     */
+    public String getActivityName() {
 		return this.activityName;
 	}
-	public void setActivityName(String activityName) {
+
+    /**
+     * Sets activity name.
+     *
+     * @param activityName the activity name
+     */
+    public void setActivityName(String activityName) {
 		this.activityName = activityName;
 	}
 
-	public String getActivityStartDate() {
+    /**
+     * Gets activity start date.
+     *
+     * @return the activity start date
+     */
+    public String getActivityStartDate() {
 		return this.activityStartDate;
 	}
-	public void setActivityStartDate(String activityStartDate) {
+
+    /**
+     * Sets activity start date.
+     *
+     * @param activityStartDate the activity start date
+     */
+    public void setActivityStartDate(String activityStartDate) {
 		this.activityStartDate = activityStartDate;
 	}
 
-	public String getActivityStatus() {
+    /**
+     * Gets activity status.
+     *
+     * @return the activity status
+     */
+    public String getActivityStatus() {
 		return this.activityStatus;
 	}
-	public void setActivityStatus(String activityStatus) {
+
+    /**
+     * Sets activity status.
+     *
+     * @param activityStatus the activity status
+     */
+    public void setActivityStatus(String activityStatus) {
 		this.activityStatus = activityStatus;
 	}
 
-	public String getStoreId() {
+    /**
+     * Gets store id.
+     *
+     * @return the store id
+     */
+    public String getStoreId() {
 		return this.storeId;
 	}
-	public void setStoreId(String storeId) {
+
+    /**
+     * Sets store id.
+     *
+     * @param storeId the store id
+     */
+    public void setStoreId(String storeId) {
 		this.storeId = storeId;
 	}
 

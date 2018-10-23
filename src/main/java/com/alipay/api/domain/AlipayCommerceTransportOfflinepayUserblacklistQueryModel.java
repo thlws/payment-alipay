@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportOfflinepayUserblacklistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4193472832859118512L;
+	private static final long serialVersionUID = 5112437273264157129L;
 
 	/**
 	 * 用户黑名单分页ID，1开始
@@ -25,17 +25,39 @@ public class AlipayCommerceTransportOfflinepayUserblacklistQueryModel extends Al
 	@ApiField("page_size")
 	private Long pageSize;
 
-	public Long getPageIndex() {
+    /**
+     * Gets page index.
+     *
+     * @return the page index
+     */
+    public Long getPageIndex() {
 		return this.pageIndex;
 	}
-	public void setPageIndex(Long pageIndex) {
+
+    /**
+     * Sets page index.
+     *
+     * @param pageIndex the page index
+     */
+    public void setPageIndex(Long pageIndex) {
 		this.pageIndex = pageIndex;
 	}
 
-	public Long getPageSize() {
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public Long getPageSize() {
 		return this.pageSize;
 	}
-	public void setPageSize(Long pageSize) {
+
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}
 

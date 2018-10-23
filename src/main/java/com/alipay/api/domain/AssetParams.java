@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AssetParams extends AlipayObject {
 
-	private static final long serialVersionUID = 5292536838471774161L;
+	private static final long serialVersionUID = 5337296564364371117L;
 
 	/**
 	 * 资产类型：
@@ -35,24 +35,57 @@ assetType为BANK时，必填。
 	@ApiField("inst_id")
 	private String instId;
 
-	public String getAssetType() {
+    /**
+     * Gets asset type.
+     *
+     * @return the asset type
+     */
+    public String getAssetType() {
 		return this.assetType;
 	}
-	public void setAssetType(String assetType) {
+
+    /**
+     * Sets asset type.
+     *
+     * @param assetType the asset type
+     */
+    public void setAssetType(String assetType) {
 		this.assetType = assetType;
 	}
 
-	public String getCardNo() {
+    /**
+     * Gets card no.
+     *
+     * @return the card no
+     */
+    public String getCardNo() {
 		return this.cardNo;
 	}
-	public void setCardNo(String cardNo) {
+
+    /**
+     * Sets card no.
+     *
+     * @param cardNo the card no
+     */
+    public void setCardNo(String cardNo) {
 		this.cardNo = cardNo;
 	}
 
-	public String getInstId() {
+    /**
+     * Gets inst id.
+     *
+     * @return the inst id
+     */
+    public String getInstId() {
 		return this.instId;
 	}
-	public void setInstId(String instId) {
+
+    /**
+     * Sets inst id.
+     *
+     * @param instId the inst id
+     */
+    public void setInstId(String instId) {
 		this.instId = instId;
 	}
 

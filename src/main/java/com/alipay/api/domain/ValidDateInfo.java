@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ValidDateInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2357584816549246793L;
+	private static final long serialVersionUID = 7425871296277796423L;
 
 	/**
 	 * 截至时间
@@ -39,31 +39,75 @@ public class ValidDateInfo extends AlipayObject {
 	@ApiField("time_mode")
 	private String timeMode;
 
-	public Date getEndTime() {
+    /**
+     * Gets end time.
+     *
+     * @return the end time
+     */
+    public Date getEndTime() {
 		return this.endTime;
 	}
-	public void setEndTime(Date endTime) {
+
+    /**
+     * Sets end time.
+     *
+     * @param endTime the end time
+     */
+    public void setEndTime(Date endTime) {
 		this.endTime = endTime;
 	}
 
-	public PeriodInfo getRelativeTime() {
+    /**
+     * Gets relative time.
+     *
+     * @return the relative time
+     */
+    public PeriodInfo getRelativeTime() {
 		return this.relativeTime;
 	}
-	public void setRelativeTime(PeriodInfo relativeTime) {
+
+    /**
+     * Sets relative time.
+     *
+     * @param relativeTime the relative time
+     */
+    public void setRelativeTime(PeriodInfo relativeTime) {
 		this.relativeTime = relativeTime;
 	}
 
-	public Date getStartTime() {
+    /**
+     * Gets start time.
+     *
+     * @return the start time
+     */
+    public Date getStartTime() {
 		return this.startTime;
 	}
-	public void setStartTime(Date startTime) {
+
+    /**
+     * Sets start time.
+     *
+     * @param startTime the start time
+     */
+    public void setStartTime(Date startTime) {
 		this.startTime = startTime;
 	}
 
-	public String getTimeMode() {
+    /**
+     * Gets time mode.
+     *
+     * @return the time mode
+     */
+    public String getTimeMode() {
 		return this.timeMode;
 	}
-	public void setTimeMode(String timeMode) {
+
+    /**
+     * Sets time mode.
+     *
+     * @param timeMode the time mode
+     */
+    public void setTimeMode(String timeMode) {
 		this.timeMode = timeMode;
 	}
 

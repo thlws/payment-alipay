@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.public.gis.get response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-10-09 11:38:26
  */
 public class AlipayMobilePublicGisGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1632611384883399247L;
+	private static final long serialVersionUID = 4491528183717624444L;
 
 	/** 
 	 * 精确度
@@ -56,17 +56,39 @@ public class AlipayMobilePublicGisGetResponse extends AlipayResponse {
 	@ApiField("province")
 	private String province;
 
-	public void setAccuracy(String accuracy) {
+    /**
+     * Sets accuracy.
+     *
+     * @param accuracy the accuracy
+     */
+    public void setAccuracy(String accuracy) {
 		this.accuracy = accuracy;
 	}
-	public String getAccuracy( ) {
+
+    /**
+     * Gets accuracy.
+     *
+     * @return the accuracy
+     */
+    public String getAccuracy( ) {
 		return this.accuracy;
 	}
 
-	public void setCity(String city) {
+    /**
+     * Sets city.
+     *
+     * @param city the city
+     */
+    public void setCity(String city) {
 		this.city = city;
 	}
-	public String getCity( ) {
+
+    /**
+     * Gets city.
+     *
+     * @return the city
+     */
+    public String getCity( ) {
 		return this.city;
 	}
 
@@ -77,17 +99,39 @@ public class AlipayMobilePublicGisGetResponse extends AlipayResponse {
 		return this.code;
 	}
 
-	public void setLatitude(String latitude) {
+    /**
+     * Sets latitude.
+     *
+     * @param latitude the latitude
+     */
+    public void setLatitude(String latitude) {
 		this.latitude = latitude;
 	}
-	public String getLatitude( ) {
+
+    /**
+     * Gets latitude.
+     *
+     * @return the latitude
+     */
+    public String getLatitude( ) {
 		return this.latitude;
 	}
 
-	public void setLongitude(String longitude) {
+    /**
+     * Sets longitude.
+     *
+     * @param longitude the longitude
+     */
+    public void setLongitude(String longitude) {
 		this.longitude = longitude;
 	}
-	public String getLongitude( ) {
+
+    /**
+     * Gets longitude.
+     *
+     * @return the longitude
+     */
+    public String getLongitude( ) {
 		return this.longitude;
 	}
 
@@ -98,10 +142,21 @@ public class AlipayMobilePublicGisGetResponse extends AlipayResponse {
 		return this.msg;
 	}
 
-	public void setProvince(String province) {
+    /**
+     * Sets province.
+     *
+     * @param province the province
+     */
+    public void setProvince(String province) {
 		this.province = province;
 	}
-	public String getProvince( ) {
+
+    /**
+     * Gets province.
+     *
+     * @return the province
+     */
+    public String getProvince( ) {
 		return this.province;
 	}
 

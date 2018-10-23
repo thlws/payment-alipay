@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiQualityTestCloudacptActivityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2697274635193152245L;
+	private static final long serialVersionUID = 4487445881468527299L;
 
 	/**
 	 * partener id
@@ -25,17 +25,39 @@ public class KoubeiQualityTestCloudacptActivityQueryModel extends AlipayObject {
 	@ApiField("uid")
 	private String uid;
 
-	public String getPid() {
+    /**
+     * Gets pid.
+     *
+     * @return the pid
+     */
+    public String getPid() {
 		return this.pid;
 	}
-	public void setPid(String pid) {
+
+    /**
+     * Sets pid.
+     *
+     * @param pid the pid
+     */
+    public void setPid(String pid) {
 		this.pid = pid;
 	}
 
-	public String getUid() {
+    /**
+     * Gets uid.
+     *
+     * @return the uid
+     */
+    public String getUid() {
 		return this.uid;
 	}
-	public void setUid(String uid) {
+
+    /**
+     * Sets uid.
+     *
+     * @param uid the uid
+     */
+    public void setUid(String uid) {
 		this.uid = uid;
 	}
 

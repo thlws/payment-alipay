@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.trade.cancel response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-23 10:05:50
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayTradeCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1497975755142869297L;
+	private static final long serialVersionUID = 1757321478556929967L;
 
 	/** 
 	 * 本次撤销触发的交易动作
@@ -40,31 +40,75 @@ refund：产生了退款
 	@ApiField("trade_no")
 	private String tradeNo;
 
-	public void setAction(String action) {
+    /**
+     * Sets action.
+     *
+     * @param action the action
+     */
+    public void setAction(String action) {
 		this.action = action;
 	}
-	public String getAction( ) {
+
+    /**
+     * Gets action.
+     *
+     * @return the action
+     */
+    public String getAction( ) {
 		return this.action;
 	}
 
-	public void setOutTradeNo(String outTradeNo) {
+    /**
+     * Sets out trade no.
+     *
+     * @param outTradeNo the out trade no
+     */
+    public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
-	public String getOutTradeNo( ) {
+
+    /**
+     * Gets out trade no.
+     *
+     * @return the out trade no
+     */
+    public String getOutTradeNo( ) {
 		return this.outTradeNo;
 	}
 
-	public void setRetryFlag(String retryFlag) {
+    /**
+     * Sets retry flag.
+     *
+     * @param retryFlag the retry flag
+     */
+    public void setRetryFlag(String retryFlag) {
 		this.retryFlag = retryFlag;
 	}
-	public String getRetryFlag( ) {
+
+    /**
+     * Gets retry flag.
+     *
+     * @return the retry flag
+     */
+    public String getRetryFlag( ) {
 		return this.retryFlag;
 	}
 
-	public void setTradeNo(String tradeNo) {
+    /**
+     * Sets trade no.
+     *
+     * @param tradeNo the trade no
+     */
+    public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
-	public String getTradeNo( ) {
+
+    /**
+     * Gets trade no.
+     *
+     * @return the trade no
+     */
+    public String getTradeNo( ) {
 		return this.tradeNo;
 	}
 

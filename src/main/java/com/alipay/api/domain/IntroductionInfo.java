@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class IntroductionInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1236862182979565773L;
+	private static final long serialVersionUID = 7442252553991112899L;
 
 	/**
 	 * 商品详情-商家介绍图片地址列表
@@ -29,17 +29,39 @@ public class IntroductionInfo extends AlipayObject {
 	@ApiField("title")
 	private String title;
 
-	public List<String> getImageUrls() {
+    /**
+     * Gets image urls.
+     *
+     * @return the image urls
+     */
+    public List<String> getImageUrls() {
 		return this.imageUrls;
 	}
-	public void setImageUrls(List<String> imageUrls) {
+
+    /**
+     * Sets image urls.
+     *
+     * @param imageUrls the image urls
+     */
+    public void setImageUrls(List<String> imageUrls) {
 		this.imageUrls = imageUrls;
 	}
 
-	public String getTitle() {
+    /**
+     * Gets title.
+     *
+     * @return the title
+     */
+    public String getTitle() {
 		return this.title;
 	}
-	public void setTitle(String title) {
+
+    /**
+     * Sets title.
+     *
+     * @param title the title
+     */
+    public void setTitle(String title) {
 		this.title = title;
 	}
 

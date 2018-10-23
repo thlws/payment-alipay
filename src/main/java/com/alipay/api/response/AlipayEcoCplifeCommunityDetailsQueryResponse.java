@@ -10,13 +10,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.cplife.community.details.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-02-10 18:54:23
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayEcoCplifeCommunityDetailsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7281144566233976157L;
+	private static final long serialVersionUID = 6863644462912492142L;
 
 	/** 
 	 * 开发者关联的高德地图中住宅、住宿或地名地址等小区相关类型的POI（地图兴趣点）ID列表和POI名称，中间用"|"分隔。
@@ -159,136 +159,345 @@ WAIT_AUDITING - 等待审核
 	@ApiField("qr_code_image")
 	private String qrCodeImage;
 
-	public void setAssociatedPois(List<String> associatedPois) {
+    /**
+     * Sets associated pois.
+     *
+     * @param associatedPois the associated pois
+     */
+    public void setAssociatedPois(List<String> associatedPois) {
 		this.associatedPois = associatedPois;
 	}
-	public List<String> getAssociatedPois( ) {
+
+    /**
+     * Gets associated pois.
+     *
+     * @return the associated pois
+     */
+    public List<String> getAssociatedPois( ) {
 		return this.associatedPois;
 	}
 
-	public void setAuditStatus(String auditStatus) {
+    /**
+     * Sets audit status.
+     *
+     * @param auditStatus the audit status
+     */
+    public void setAuditStatus(String auditStatus) {
 		this.auditStatus = auditStatus;
 	}
-	public String getAuditStatus( ) {
+
+    /**
+     * Gets audit status.
+     *
+     * @return the audit status
+     */
+    public String getAuditStatus( ) {
 		return this.auditStatus;
 	}
 
-	public void setCityCode(String cityCode) {
+    /**
+     * Sets city code.
+     *
+     * @param cityCode the city code
+     */
+    public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
 	}
-	public String getCityCode( ) {
+
+    /**
+     * Gets city code.
+     *
+     * @return the city code
+     */
+    public String getCityCode( ) {
 		return this.cityCode;
 	}
 
-	public void setCommunityAddress(String communityAddress) {
+    /**
+     * Sets community address.
+     *
+     * @param communityAddress the community address
+     */
+    public void setCommunityAddress(String communityAddress) {
 		this.communityAddress = communityAddress;
 	}
-	public String getCommunityAddress( ) {
+
+    /**
+     * Gets community address.
+     *
+     * @return the community address
+     */
+    public String getCommunityAddress( ) {
 		return this.communityAddress;
 	}
 
-	public void setCommunityLocations(List<String> communityLocations) {
+    /**
+     * Sets community locations.
+     *
+     * @param communityLocations the community locations
+     */
+    public void setCommunityLocations(List<String> communityLocations) {
 		this.communityLocations = communityLocations;
 	}
-	public List<String> getCommunityLocations( ) {
+
+    /**
+     * Gets community locations.
+     *
+     * @return the community locations
+     */
+    public List<String> getCommunityLocations( ) {
 		return this.communityLocations;
 	}
 
-	public void setCommunityName(String communityName) {
+    /**
+     * Sets community name.
+     *
+     * @param communityName the community name
+     */
+    public void setCommunityName(String communityName) {
 		this.communityName = communityName;
 	}
-	public String getCommunityName( ) {
+
+    /**
+     * Gets community name.
+     *
+     * @return the community name
+     */
+    public String getCommunityName( ) {
 		return this.communityName;
 	}
 
-	public void setCommunityServices(List<CPCommServices> communityServices) {
+    /**
+     * Sets community services.
+     *
+     * @param communityServices the community services
+     */
+    public void setCommunityServices(List<CPCommServices> communityServices) {
 		this.communityServices = communityServices;
 	}
-	public List<CPCommServices> getCommunityServices( ) {
+
+    /**
+     * Gets community services.
+     *
+     * @return the community services
+     */
+    public List<CPCommServices> getCommunityServices( ) {
 		return this.communityServices;
 	}
 
-	public void setCommunityStatus(String communityStatus) {
+    /**
+     * Sets community status.
+     *
+     * @param communityStatus the community status
+     */
+    public void setCommunityStatus(String communityStatus) {
 		this.communityStatus = communityStatus;
 	}
-	public String getCommunityStatus( ) {
+
+    /**
+     * Gets community status.
+     *
+     * @return the community status
+     */
+    public String getCommunityStatus( ) {
 		return this.communityStatus;
 	}
 
-	public void setDistrictCode(String districtCode) {
+    /**
+     * Sets district code.
+     *
+     * @param districtCode the district code
+     */
+    public void setDistrictCode(String districtCode) {
 		this.districtCode = districtCode;
 	}
-	public String getDistrictCode( ) {
+
+    /**
+     * Gets district code.
+     *
+     * @return the district code
+     */
+    public String getDistrictCode( ) {
 		return this.districtCode;
 	}
 
-	public void setGmtCreated(Date gmtCreated) {
+    /**
+     * Sets gmt created.
+     *
+     * @param gmtCreated the gmt created
+     */
+    public void setGmtCreated(Date gmtCreated) {
 		this.gmtCreated = gmtCreated;
 	}
-	public Date getGmtCreated( ) {
+
+    /**
+     * Gets gmt created.
+     *
+     * @return the gmt created
+     */
+    public Date getGmtCreated( ) {
 		return this.gmtCreated;
 	}
 
-	public void setGmtModified(Date gmtModified) {
+    /**
+     * Sets gmt modified.
+     *
+     * @param gmtModified the gmt modified
+     */
+    public void setGmtModified(Date gmtModified) {
 		this.gmtModified = gmtModified;
 	}
-	public Date getGmtModified( ) {
+
+    /**
+     * Gets gmt modified.
+     *
+     * @return the gmt modified
+     */
+    public Date getGmtModified( ) {
 		return this.gmtModified;
 	}
 
-	public void setHotline(String hotline) {
+    /**
+     * Sets hotline.
+     *
+     * @param hotline the hotline
+     */
+    public void setHotline(String hotline) {
 		this.hotline = hotline;
 	}
-	public String getHotline( ) {
+
+    /**
+     * Gets hotline.
+     *
+     * @return the hotline
+     */
+    public String getHotline( ) {
 		return this.hotline;
 	}
 
-	public void setIsvPid(String isvPid) {
+    /**
+     * Sets isv pid.
+     *
+     * @param isvPid the isv pid
+     */
+    public void setIsvPid(String isvPid) {
 		this.isvPid = isvPid;
 	}
-	public String getIsvPid( ) {
+
+    /**
+     * Gets isv pid.
+     *
+     * @return the isv pid
+     */
+    public String getIsvPid( ) {
 		return this.isvPid;
 	}
 
-	public void setMerchantFirmName(String merchantFirmName) {
+    /**
+     * Sets merchant firm name.
+     *
+     * @param merchantFirmName the merchant firm name
+     */
+    public void setMerchantFirmName(String merchantFirmName) {
 		this.merchantFirmName = merchantFirmName;
 	}
-	public String getMerchantFirmName( ) {
+
+    /**
+     * Gets merchant firm name.
+     *
+     * @return the merchant firm name
+     */
+    public String getMerchantFirmName( ) {
 		return this.merchantFirmName;
 	}
 
-	public void setMerchantPid(String merchantPid) {
+    /**
+     * Sets merchant pid.
+     *
+     * @param merchantPid the merchant pid
+     */
+    public void setMerchantPid(String merchantPid) {
 		this.merchantPid = merchantPid;
 	}
-	public String getMerchantPid( ) {
+
+    /**
+     * Gets merchant pid.
+     *
+     * @return the merchant pid
+     */
+    public String getMerchantPid( ) {
 		return this.merchantPid;
 	}
 
-	public void setNextAction(String nextAction) {
+    /**
+     * Sets next action.
+     *
+     * @param nextAction the next action
+     */
+    public void setNextAction(String nextAction) {
 		this.nextAction = nextAction;
 	}
-	public String getNextAction( ) {
+
+    /**
+     * Gets next action.
+     *
+     * @return the next action
+     */
+    public String getNextAction( ) {
 		return this.nextAction;
 	}
 
-	public void setOutCommunityId(String outCommunityId) {
+    /**
+     * Sets out community id.
+     *
+     * @param outCommunityId the out community id
+     */
+    public void setOutCommunityId(String outCommunityId) {
 		this.outCommunityId = outCommunityId;
 	}
-	public String getOutCommunityId( ) {
+
+    /**
+     * Gets out community id.
+     *
+     * @return the out community id
+     */
+    public String getOutCommunityId( ) {
 		return this.outCommunityId;
 	}
 
-	public void setProvinceCode(String provinceCode) {
+    /**
+     * Sets province code.
+     *
+     * @param provinceCode the province code
+     */
+    public void setProvinceCode(String provinceCode) {
 		this.provinceCode = provinceCode;
 	}
-	public String getProvinceCode( ) {
+
+    /**
+     * Gets province code.
+     *
+     * @return the province code
+     */
+    public String getProvinceCode( ) {
 		return this.provinceCode;
 	}
 
-	public void setQrCodeImage(String qrCodeImage) {
+    /**
+     * Sets qr code image.
+     *
+     * @param qrCodeImage the qr code image
+     */
+    public void setQrCodeImage(String qrCodeImage) {
 		this.qrCodeImage = qrCodeImage;
 	}
-	public String getQrCodeImage( ) {
+
+    /**
+     * Gets qr code image.
+     *
+     * @return the qr code image
+     */
+    public String getQrCodeImage( ) {
 		return this.qrCodeImage;
 	}
 

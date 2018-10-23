@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCdpAdvertiseOperateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5517896563668134154L;
+	private static final long serialVersionUID = 1464386499342526341L;
 
 	/**
 	 * 广告ID，唯一标识一条广告
@@ -25,17 +25,39 @@ public class AlipayMarketingCdpAdvertiseOperateModel extends AlipayObject {
 	@ApiField("operate_type")
 	private String operateType;
 
-	public String getAdId() {
+    /**
+     * Gets ad id.
+     *
+     * @return the ad id
+     */
+    public String getAdId() {
 		return this.adId;
 	}
-	public void setAdId(String adId) {
+
+    /**
+     * Sets ad id.
+     *
+     * @param adId the ad id
+     */
+    public void setAdId(String adId) {
 		this.adId = adId;
 	}
 
-	public String getOperateType() {
+    /**
+     * Gets operate type.
+     *
+     * @return the operate type
+     */
+    public String getOperateType() {
 		return this.operateType;
 	}
-	public void setOperateType(String operateType) {
+
+    /**
+     * Sets operate type.
+     *
+     * @param operateType the operate type
+     */
+    public void setOperateType(String operateType) {
 		this.operateType = operateType;
 	}
 

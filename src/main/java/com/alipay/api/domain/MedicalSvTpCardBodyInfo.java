@@ -5,15 +5,15 @@ import com.alipay.api.internal.mapping.ApiField;
 
 /**
  * 参见“body_info参数说明”
-1提醒类body_info固定为主副及可选布局格式
-2应用类body_info固定为图文连接的格式布局
+ * 1提醒类body_info固定为主副及可选布局格式
+ * 2应用类body_info固定为图文连接的格式布局
  *
  * @author auto create
  * @since 1.0, 2016-11-16 15:16:20
  */
 public class MedicalSvTpCardBodyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7545738797655575737L;
+	private static final long serialVersionUID = 2693755992525946213L;
 
 	/**
 	 * 模板消息主体主要内容题,开发者自定义
@@ -65,52 +65,129 @@ public class MedicalSvTpCardBodyInfo extends AlipayObject {
 	@ApiField("title")
 	private String title;
 
-	public String getContent() {
+    /**
+     * Gets content.
+     *
+     * @return the content
+     */
+    public String getContent() {
 		return this.content;
 	}
-	public void setContent(String content) {
+
+    /**
+     * Sets content.
+     *
+     * @param content the content
+     */
+    public void setContent(String content) {
 		this.content = content;
 	}
 
-	public String getImageUrl() {
+    /**
+     * Gets image url.
+     *
+     * @return the image url
+     */
+    public String getImageUrl() {
 		return this.imageUrl;
 	}
-	public void setImageUrl(String imageUrl) {
+
+    /**
+     * Sets image url.
+     *
+     * @param imageUrl the image url
+     */
+    public void setImageUrl(String imageUrl) {
 		this.imageUrl = imageUrl;
 	}
 
-	public String getLinkUrl() {
+    /**
+     * Gets link url.
+     *
+     * @return the link url
+     */
+    public String getLinkUrl() {
 		return this.linkUrl;
 	}
-	public void setLinkUrl(String linkUrl) {
+
+    /**
+     * Sets link url.
+     *
+     * @param linkUrl the link url
+     */
+    public void setLinkUrl(String linkUrl) {
 		this.linkUrl = linkUrl;
 	}
 
-	public String getRemark() {
+    /**
+     * Gets remark.
+     *
+     * @return the remark
+     */
+    public String getRemark() {
 		return this.remark;
 	}
-	public void setRemark(String remark) {
+
+    /**
+     * Sets remark.
+     *
+     * @param remark the remark
+     */
+    public void setRemark(String remark) {
 		this.remark = remark;
 	}
 
-	public String getSubContenet() {
+    /**
+     * Gets sub contenet.
+     *
+     * @return the sub contenet
+     */
+    public String getSubContenet() {
 		return this.subContenet;
 	}
-	public void setSubContenet(String subContenet) {
+
+    /**
+     * Sets sub contenet.
+     *
+     * @param subContenet the sub contenet
+     */
+    public void setSubContenet(String subContenet) {
 		this.subContenet = subContenet;
 	}
 
-	public String getSubTitle() {
+    /**
+     * Gets sub title.
+     *
+     * @return the sub title
+     */
+    public String getSubTitle() {
 		return this.subTitle;
 	}
-	public void setSubTitle(String subTitle) {
+
+    /**
+     * Sets sub title.
+     *
+     * @param subTitle the sub title
+     */
+    public void setSubTitle(String subTitle) {
 		this.subTitle = subTitle;
 	}
 
-	public String getTitle() {
+    /**
+     * Gets title.
+     *
+     * @return the title
+     */
+    public String getTitle() {
 		return this.title;
 	}
-	public void setTitle(String title) {
+
+    /**
+     * Sets title.
+     *
+     * @param title the title
+     */
+    public void setTitle(String title) {
 		this.title = title;
 	}
 

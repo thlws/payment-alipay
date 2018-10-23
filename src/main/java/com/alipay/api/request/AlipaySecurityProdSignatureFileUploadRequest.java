@@ -11,9 +11,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.security.prod.signature.file.upload request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-20 10:18:26
+ * @since 1.0, 2017-12-20 15:24:53
  */
 public class AlipaySecurityProdSignatureFileUploadRequest implements AlipayUploadRequest<AlipaySecurityProdSignatureFileUploadResponse> {
 
@@ -30,17 +30,39 @@ public class AlipaySecurityProdSignatureFileUploadRequest implements AlipayUploa
 	 */
 	private FileItem fileContent;
 
-	public void setBizProduct(String bizProduct) {
+    /**
+     * Sets biz product.
+     *
+     * @param bizProduct the biz product
+     */
+    public void setBizProduct(String bizProduct) {
 		this.bizProduct = bizProduct;
 	}
-	public String getBizProduct() {
+
+    /**
+     * Gets biz product.
+     *
+     * @return the biz product
+     */
+    public String getBizProduct() {
 		return this.bizProduct;
 	}
 
-	public void setFileContent(FileItem fileContent) {
+    /**
+     * Sets file content.
+     *
+     * @param fileContent the file content
+     */
+    public void setFileContent(FileItem fileContent) {
 		this.fileContent = fileContent;
 	}
-	public FileItem getFileContent() {
+
+    /**
+     * Gets file content.
+     *
+     * @return the file content
+     */
+    public FileItem getFileContent() {
 		return this.fileContent;
 	}
 	private String terminalType;
@@ -110,8 +132,14 @@ public class AlipaySecurityProdSignatureFileUploadRequest implements AlipayUploa
 		}
 		return txtParams;
 	}
-	
-	public void putOtherTextParam(String key, String value) {
+
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

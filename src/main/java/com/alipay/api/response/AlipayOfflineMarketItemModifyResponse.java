@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.market.item.modify response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-20 15:18:01
+ * @since 1.0, 2018-07-12 12:22:31
  */
 public class AlipayOfflineMarketItemModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2556672146753278797L;
+	private static final long serialVersionUID = 6134686859478491258L;
 
 	/** 
 	 * 口碑体系内部商品的唯一标识
@@ -26,17 +26,39 @@ public class AlipayOfflineMarketItemModifyResponse extends AlipayResponse {
 	@ApiField("request_id")
 	private String requestId;
 
-	public void setItemId(String itemId) {
+    /**
+     * Sets item id.
+     *
+     * @param itemId the item id
+     */
+    public void setItemId(String itemId) {
 		this.itemId = itemId;
 	}
-	public String getItemId( ) {
+
+    /**
+     * Gets item id.
+     *
+     * @return the item id
+     */
+    public String getItemId( ) {
 		return this.itemId;
 	}
 
-	public void setRequestId(String requestId) {
+    /**
+     * Sets request id.
+     *
+     * @param requestId the request id
+     */
+    public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
-	public String getRequestId( ) {
+
+    /**
+     * Gets request id.
+     *
+     * @return the request id
+     */
+    public String getRequestId( ) {
 		return this.requestId;
 	}
 

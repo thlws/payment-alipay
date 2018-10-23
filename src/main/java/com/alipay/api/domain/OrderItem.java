@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单明细
  *
  * @author auto create
- * @since 1.0, 2017-09-27 19:44:40
+ * @since 1.0, 2018-07-06 14:47:25
  */
 public class OrderItem extends AlipayObject {
 
-	private static final long serialVersionUID = 8733957499261977119L;
+	private static final long serialVersionUID = 3285279588277272232L;
 
 	/**
 	 * 店铺所在具体位置
@@ -80,6 +80,18 @@ public class OrderItem extends AlipayObject {
 	private String merchantPid;
 
 	/**
+	 * 小程序APPID，订购实体为小程序的场景该字段必填
+	 */
+	@ApiField("mini_app_id")
+	private String miniAppId;
+
+	/**
+	 * 小程序应用名称，订购实体为小程序的场景该字段必填
+	 */
+	@ApiField("mini_app_name")
+	private String miniAppName;
+
+	/**
 	 * 上架时间
 	 */
 	@ApiField("online_time")
@@ -104,13 +116,13 @@ public class OrderItem extends AlipayObject {
 	private String province;
 
 	/**
-	 * 店铺ID
+	 * 店铺ID，订购实体为口碑门店的场景该字段必填
 	 */
 	@ApiField("shop_id")
 	private String shopId;
 
 	/**
-	 * 店铺名称
+	 * 店铺名称，订购实体为口碑门店的场景该字段必填
 	 */
 	@ApiField("shop_name")
 	private String shopName;
@@ -127,136 +139,381 @@ public class OrderItem extends AlipayObject {
 	@ApiField("status")
 	private String status;
 
-	public String getAddress() {
+    /**
+     * Gets address.
+     *
+     * @return the address
+     */
+    public String getAddress() {
 		return this.address;
 	}
-	public void setAddress(String address) {
+
+    /**
+     * Sets address.
+     *
+     * @param address the address
+     */
+    public void setAddress(String address) {
 		this.address = address;
 	}
 
-	public String getBrandName() {
+    /**
+     * Gets brand name.
+     *
+     * @return the brand name
+     */
+    public String getBrandName() {
 		return this.brandName;
 	}
-	public void setBrandName(String brandName) {
+
+    /**
+     * Sets brand name.
+     *
+     * @param brandName the brand name
+     */
+    public void setBrandName(String brandName) {
 		this.brandName = brandName;
 	}
 
-	public String getCategory() {
+    /**
+     * Gets category.
+     *
+     * @return the category
+     */
+    public String getCategory() {
 		return this.category;
 	}
-	public void setCategory(String category) {
+
+    /**
+     * Sets category.
+     *
+     * @param category the category
+     */
+    public void setCategory(String category) {
 		this.category = category;
 	}
 
-	public String getCity() {
+    /**
+     * Gets city.
+     *
+     * @return the city
+     */
+    public String getCity() {
 		return this.city;
 	}
-	public void setCity(String city) {
+
+    /**
+     * Sets city.
+     *
+     * @param city the city
+     */
+    public void setCity(String city) {
 		this.city = city;
 	}
 
-	public String getCityCode() {
+    /**
+     * Gets city code.
+     *
+     * @return the city code
+     */
+    public String getCityCode() {
 		return this.cityCode;
 	}
-	public void setCityCode(String cityCode) {
+
+    /**
+     * Sets city code.
+     *
+     * @param cityCode the city code
+     */
+    public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
 	}
 
-	public String getCommodityId() {
+    /**
+     * Gets commodity id.
+     *
+     * @return the commodity id
+     */
+    public String getCommodityId() {
 		return this.commodityId;
 	}
-	public void setCommodityId(String commodityId) {
+
+    /**
+     * Sets commodity id.
+     *
+     * @param commodityId the commodity id
+     */
+    public void setCommodityId(String commodityId) {
 		this.commodityId = commodityId;
 	}
 
-	public String getContacts() {
+    /**
+     * Gets contacts.
+     *
+     * @return the contacts
+     */
+    public String getContacts() {
 		return this.contacts;
 	}
-	public void setContacts(String contacts) {
+
+    /**
+     * Sets contacts.
+     *
+     * @param contacts the contacts
+     */
+    public void setContacts(String contacts) {
 		this.contacts = contacts;
 	}
 
-	public String getCreator() {
+    /**
+     * Gets creator.
+     *
+     * @return the creator
+     */
+    public String getCreator() {
 		return this.creator;
 	}
-	public void setCreator(String creator) {
+
+    /**
+     * Sets creator.
+     *
+     * @param creator the creator
+     */
+    public void setCreator(String creator) {
 		this.creator = creator;
 	}
 
-	public String getExpireDate() {
+    /**
+     * Gets expire date.
+     *
+     * @return the expire date
+     */
+    public String getExpireDate() {
 		return this.expireDate;
 	}
-	public void setExpireDate(String expireDate) {
+
+    /**
+     * Sets expire date.
+     *
+     * @param expireDate the expire date
+     */
+    public void setExpireDate(String expireDate) {
 		this.expireDate = expireDate;
 	}
 
-	public String getMerchantName() {
+    /**
+     * Gets merchant name.
+     *
+     * @return the merchant name
+     */
+    public String getMerchantName() {
 		return this.merchantName;
 	}
-	public void setMerchantName(String merchantName) {
+
+    /**
+     * Sets merchant name.
+     *
+     * @param merchantName the merchant name
+     */
+    public void setMerchantName(String merchantName) {
 		this.merchantName = merchantName;
 	}
 
-	public String getMerchantPid() {
+    /**
+     * Gets merchant pid.
+     *
+     * @return the merchant pid
+     */
+    public String getMerchantPid() {
 		return this.merchantPid;
 	}
-	public void setMerchantPid(String merchantPid) {
+
+    /**
+     * Sets merchant pid.
+     *
+     * @param merchantPid the merchant pid
+     */
+    public void setMerchantPid(String merchantPid) {
 		this.merchantPid = merchantPid;
 	}
 
-	public String getOnlineTime() {
+    /**
+     * Gets mini app id.
+     *
+     * @return the mini app id
+     */
+    public String getMiniAppId() {
+		return this.miniAppId;
+	}
+
+    /**
+     * Sets mini app id.
+     *
+     * @param miniAppId the mini app id
+     */
+    public void setMiniAppId(String miniAppId) {
+		this.miniAppId = miniAppId;
+	}
+
+    /**
+     * Gets mini app name.
+     *
+     * @return the mini app name
+     */
+    public String getMiniAppName() {
+		return this.miniAppName;
+	}
+
+    /**
+     * Sets mini app name.
+     *
+     * @param miniAppName the mini app name
+     */
+    public void setMiniAppName(String miniAppName) {
+		this.miniAppName = miniAppName;
+	}
+
+    /**
+     * Gets online time.
+     *
+     * @return the online time
+     */
+    public String getOnlineTime() {
 		return this.onlineTime;
 	}
-	public void setOnlineTime(String onlineTime) {
+
+    /**
+     * Sets online time.
+     *
+     * @param onlineTime the online time
+     */
+    public void setOnlineTime(String onlineTime) {
 		this.onlineTime = onlineTime;
 	}
 
-	public String getOrderStatus() {
+    /**
+     * Gets order status.
+     *
+     * @return the order status
+     */
+    public String getOrderStatus() {
 		return this.orderStatus;
 	}
-	public void setOrderStatus(String orderStatus) {
+
+    /**
+     * Sets order status.
+     *
+     * @param orderStatus the order status
+     */
+    public void setOrderStatus(String orderStatus) {
 		this.orderStatus = orderStatus;
 	}
 
-	public String getPhoneNo() {
+    /**
+     * Gets phone no.
+     *
+     * @return the phone no
+     */
+    public String getPhoneNo() {
 		return this.phoneNo;
 	}
-	public void setPhoneNo(String phoneNo) {
+
+    /**
+     * Sets phone no.
+     *
+     * @param phoneNo the phone no
+     */
+    public void setPhoneNo(String phoneNo) {
 		this.phoneNo = phoneNo;
 	}
 
-	public String getProvince() {
+    /**
+     * Gets province.
+     *
+     * @return the province
+     */
+    public String getProvince() {
 		return this.province;
 	}
-	public void setProvince(String province) {
+
+    /**
+     * Sets province.
+     *
+     * @param province the province
+     */
+    public void setProvince(String province) {
 		this.province = province;
 	}
 
-	public String getShopId() {
+    /**
+     * Gets shop id.
+     *
+     * @return the shop id
+     */
+    public String getShopId() {
 		return this.shopId;
 	}
-	public void setShopId(String shopId) {
+
+    /**
+     * Sets shop id.
+     *
+     * @param shopId the shop id
+     */
+    public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 
-	public String getShopName() {
+    /**
+     * Gets shop name.
+     *
+     * @return the shop name
+     */
+    public String getShopName() {
 		return this.shopName;
 	}
-	public void setShopName(String shopName) {
+
+    /**
+     * Sets shop name.
+     *
+     * @param shopName the shop name
+     */
+    public void setShopName(String shopName) {
 		this.shopName = shopName;
 	}
 
-	public String getShopStatus() {
+    /**
+     * Gets shop status.
+     *
+     * @return the shop status
+     */
+    public String getShopStatus() {
 		return this.shopStatus;
 	}
-	public void setShopStatus(String shopStatus) {
+
+    /**
+     * Sets shop status.
+     *
+     * @param shopStatus the shop status
+     */
+    public void setShopStatus(String shopStatus) {
 		this.shopStatus = shopStatus;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 

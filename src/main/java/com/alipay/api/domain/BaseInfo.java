@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class BaseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4541551286997743712L;
+	private static final long serialVersionUID = 2891167272292946595L;
 
 	/**
 	 * 支付宝服务窗名称
@@ -42,7 +42,9 @@ public class BaseInfo extends AlipayObject {
 	private String logoPic;
 
 	/**
-	 * 所属MCCCode
+	 * 所属MCCCode，详情可参考
+<a href="https://doc.open.alipay.com/doc2/detail.htm?spm=a219a.7629140.0.0.59bgD2&treeId=222&articleId=105364&docType=1#s1
+">商家经营类目</a>
 	 */
 	@ApiField("mcc_code")
 	private String mccCode;
@@ -54,7 +56,9 @@ public class BaseInfo extends AlipayObject {
 	private String shortName;
 
 	/**
-	 * 企业特殊资质图片
+	 * 企业特殊资质图片，可参考
+<a href="https://doc.open.alipay.com/doc2/detail.htm?spm=a219a.7629140.0.0.59bgD2&treeId=222&articleId=105364&docType=1#s1
+">商家经营类目</a>
 	 */
 	@ApiListField("special_license_pic")
 	@ApiField("string")
@@ -85,80 +89,201 @@ public class BaseInfo extends AlipayObject {
 	@ApiField("weixin_public_name")
 	private String weixinPublicName;
 
-	public String getAlipayFuwuName() {
+    /**
+     * Gets alipay fuwu name.
+     *
+     * @return the alipay fuwu name
+     */
+    public String getAlipayFuwuName() {
 		return this.alipayFuwuName;
 	}
-	public void setAlipayFuwuName(String alipayFuwuName) {
+
+    /**
+     * Sets alipay fuwu name.
+     *
+     * @param alipayFuwuName the alipay fuwu name
+     */
+    public void setAlipayFuwuName(String alipayFuwuName) {
 		this.alipayFuwuName = alipayFuwuName;
 	}
 
-	public String getAppName() {
+    /**
+     * Gets app name.
+     *
+     * @return the app name
+     */
+    public String getAppName() {
 		return this.appName;
 	}
-	public void setAppName(String appName) {
+
+    /**
+     * Sets app name.
+     *
+     * @param appName the app name
+     */
+    public void setAppName(String appName) {
 		this.appName = appName;
 	}
 
-	public List<ContactPersonInfo> getContactInfo() {
+    /**
+     * Gets contact info.
+     *
+     * @return the contact info
+     */
+    public List<ContactPersonInfo> getContactInfo() {
 		return this.contactInfo;
 	}
-	public void setContactInfo(List<ContactPersonInfo> contactInfo) {
+
+    /**
+     * Sets contact info.
+     *
+     * @param contactInfo the contact info
+     */
+    public void setContactInfo(List<ContactPersonInfo> contactInfo) {
 		this.contactInfo = contactInfo;
 	}
 
-	public String getLogoPic() {
+    /**
+     * Gets logo pic.
+     *
+     * @return the logo pic
+     */
+    public String getLogoPic() {
 		return this.logoPic;
 	}
-	public void setLogoPic(String logoPic) {
+
+    /**
+     * Sets logo pic.
+     *
+     * @param logoPic the logo pic
+     */
+    public void setLogoPic(String logoPic) {
 		this.logoPic = logoPic;
 	}
 
-	public String getMccCode() {
+    /**
+     * Gets mcc code.
+     *
+     * @return the mcc code
+     */
+    public String getMccCode() {
 		return this.mccCode;
 	}
-	public void setMccCode(String mccCode) {
+
+    /**
+     * Sets mcc code.
+     *
+     * @param mccCode the mcc code
+     */
+    public void setMccCode(String mccCode) {
 		this.mccCode = mccCode;
 	}
 
-	public String getShortName() {
+    /**
+     * Gets short name.
+     *
+     * @return the short name
+     */
+    public String getShortName() {
 		return this.shortName;
 	}
-	public void setShortName(String shortName) {
+
+    /**
+     * Sets short name.
+     *
+     * @param shortName the short name
+     */
+    public void setShortName(String shortName) {
 		this.shortName = shortName;
 	}
 
-	public List<String> getSpecialLicensePic() {
+    /**
+     * Gets special license pic.
+     *
+     * @return the special license pic
+     */
+    public List<String> getSpecialLicensePic() {
 		return this.specialLicensePic;
 	}
-	public void setSpecialLicensePic(List<String> specialLicensePic) {
+
+    /**
+     * Sets special license pic.
+     *
+     * @param specialLicensePic the special license pic
+     */
+    public void setSpecialLicensePic(List<String> specialLicensePic) {
 		this.specialLicensePic = specialLicensePic;
 	}
 
-	public String getUsageScenario() {
+    /**
+     * Gets usage scenario.
+     *
+     * @return the usage scenario
+     */
+    public String getUsageScenario() {
 		return this.usageScenario;
 	}
-	public void setUsageScenario(String usageScenario) {
+
+    /**
+     * Sets usage scenario.
+     *
+     * @param usageScenario the usage scenario
+     */
+    public void setUsageScenario(String usageScenario) {
 		this.usageScenario = usageScenario;
 	}
 
-	public List<String> getWebAddress() {
+    /**
+     * Gets web address.
+     *
+     * @return the web address
+     */
+    public List<String> getWebAddress() {
 		return this.webAddress;
 	}
-	public void setWebAddress(List<String> webAddress) {
+
+    /**
+     * Sets web address.
+     *
+     * @param webAddress the web address
+     */
+    public void setWebAddress(List<String> webAddress) {
 		this.webAddress = webAddress;
 	}
 
-	public String getWebAuthPic() {
+    /**
+     * Gets web auth pic.
+     *
+     * @return the web auth pic
+     */
+    public String getWebAuthPic() {
 		return this.webAuthPic;
 	}
-	public void setWebAuthPic(String webAuthPic) {
+
+    /**
+     * Sets web auth pic.
+     *
+     * @param webAuthPic the web auth pic
+     */
+    public void setWebAuthPic(String webAuthPic) {
 		this.webAuthPic = webAuthPic;
 	}
 
-	public String getWeixinPublicName() {
+    /**
+     * Gets weixin public name.
+     *
+     * @return the weixin public name
+     */
+    public String getWeixinPublicName() {
 		return this.weixinPublicName;
 	}
-	public void setWeixinPublicName(String weixinPublicName) {
+
+    /**
+     * Sets weixin public name.
+     *
+     * @param weixinPublicName the weixin public name
+     */
+    public void setWeixinPublicName(String weixinPublicName) {
 		this.weixinPublicName = weixinPublicName;
 	}
 

@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.commerce.transport.offlinepay.key.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-09-04 17:13:35
  */
 public class AlipayCommerceTransportOfflinepayKeyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3558294327757893514L;
+	private static final long serialVersionUID = 8524343781126623782L;
 
 	/** 
 	 * 支付宝脱机交易公钥列表。列表中每一项为一个有效的支付宝公钥信息, 其中id字段表示支付宝公钥id。
@@ -24,10 +24,21 @@ public class AlipayCommerceTransportOfflinepayKeyQueryResponse extends AlipayRes
 	@ApiField("alipay_offline_pay_master_key")
 	private List<AlipayOfflinePayMasterKey> keys;
 
-	public void setKeys(List<AlipayOfflinePayMasterKey> keys) {
+    /**
+     * Sets keys.
+     *
+     * @param keys the keys
+     */
+    public void setKeys(List<AlipayOfflinePayMasterKey> keys) {
 		this.keys = keys;
 	}
-	public List<AlipayOfflinePayMasterKey> getKeys( ) {
+
+    /**
+     * Gets keys.
+     *
+     * @return the keys
+     */
+    public List<AlipayOfflinePayMasterKey> getKeys( ) {
 		return this.keys;
 	}
 

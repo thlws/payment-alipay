@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoEduKtSchoolinfoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2592213581195695369L;
+	private static final long serialVersionUID = 6468387967373686124L;
 
 	/**
 	 * 与浙江网商交易见证平台有交互ISV输入网商交易异步通知回调URL，教育缴费同步账单信息给网商，网商会回调此url，ISV即可获取网商相关的参数，根据教育缴费平台账单发送接口返回的 order_no和网商返回的outer_trade_no来对应账单信息。
@@ -151,157 +151,399 @@ public class AlipayEcoEduKtSchoolinfoModifyModel extends AlipayObject {
 	@ApiField("white_channel_code")
 	private String whiteChannelCode;
 
-	public String getBankNotifyUrl() {
+    /**
+     * Gets bank notify url.
+     *
+     * @return the bank notify url
+     */
+    public String getBankNotifyUrl() {
 		return this.bankNotifyUrl;
 	}
-	public void setBankNotifyUrl(String bankNotifyUrl) {
+
+    /**
+     * Sets bank notify url.
+     *
+     * @param bankNotifyUrl the bank notify url
+     */
+    public void setBankNotifyUrl(String bankNotifyUrl) {
 		this.bankNotifyUrl = bankNotifyUrl;
 	}
 
-	public String getBankPartnerId() {
+    /**
+     * Gets bank partner id.
+     *
+     * @return the bank partner id
+     */
+    public String getBankPartnerId() {
 		return this.bankPartnerId;
 	}
-	public void setBankPartnerId(String bankPartnerId) {
+
+    /**
+     * Sets bank partner id.
+     *
+     * @param bankPartnerId the bank partner id
+     */
+    public void setBankPartnerId(String bankPartnerId) {
 		this.bankPartnerId = bankPartnerId;
 	}
 
-	public String getBankUid() {
+    /**
+     * Gets bank uid.
+     *
+     * @return the bank uid
+     */
+    public String getBankUid() {
 		return this.bankUid;
 	}
-	public void setBankUid(String bankUid) {
+
+    /**
+     * Sets bank uid.
+     *
+     * @param bankUid the bank uid
+     */
+    public void setBankUid(String bankUid) {
 		this.bankUid = bankUid;
 	}
 
-	public String getBankcardNo() {
+    /**
+     * Gets bankcard no.
+     *
+     * @return the bankcard no
+     */
+    public String getBankcardNo() {
 		return this.bankcardNo;
 	}
-	public void setBankcardNo(String bankcardNo) {
+
+    /**
+     * Sets bankcard no.
+     *
+     * @param bankcardNo the bankcard no
+     */
+    public void setBankcardNo(String bankcardNo) {
 		this.bankcardNo = bankcardNo;
 	}
 
-	public String getCityCode() {
+    /**
+     * Gets city code.
+     *
+     * @return the city code
+     */
+    public String getCityCode() {
 		return this.cityCode;
 	}
-	public void setCityCode(String cityCode) {
+
+    /**
+     * Sets city code.
+     *
+     * @param cityCode the city code
+     */
+    public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
 	}
 
-	public String getCityName() {
+    /**
+     * Gets city name.
+     *
+     * @return the city name
+     */
+    public String getCityName() {
 		return this.cityName;
 	}
-	public void setCityName(String cityName) {
+
+    /**
+     * Sets city name.
+     *
+     * @param cityName the city name
+     */
+    public void setCityName(String cityName) {
 		this.cityName = cityName;
 	}
 
-	public String getDistrictCode() {
+    /**
+     * Gets district code.
+     *
+     * @return the district code
+     */
+    public String getDistrictCode() {
 		return this.districtCode;
 	}
-	public void setDistrictCode(String districtCode) {
+
+    /**
+     * Sets district code.
+     *
+     * @param districtCode the district code
+     */
+    public void setDistrictCode(String districtCode) {
 		this.districtCode = districtCode;
 	}
 
-	public String getDistrictName() {
+    /**
+     * Gets district name.
+     *
+     * @return the district name
+     */
+    public String getDistrictName() {
 		return this.districtName;
 	}
-	public void setDistrictName(String districtName) {
+
+    /**
+     * Sets district name.
+     *
+     * @param districtName the district name
+     */
+    public void setDistrictName(String districtName) {
 		this.districtName = districtName;
 	}
 
-	public String getIsvName() {
+    /**
+     * Gets isv name.
+     *
+     * @return the isv name
+     */
+    public String getIsvName() {
 		return this.isvName;
 	}
-	public void setIsvName(String isvName) {
+
+    /**
+     * Sets isv name.
+     *
+     * @param isvName the isv name
+     */
+    public void setIsvName(String isvName) {
 		this.isvName = isvName;
 	}
 
-	public String getIsvNo() {
+    /**
+     * Gets isv no.
+     *
+     * @return the isv no
+     */
+    public String getIsvNo() {
 		return this.isvNo;
 	}
-	public void setIsvNo(String isvNo) {
+
+    /**
+     * Sets isv no.
+     *
+     * @param isvNo the isv no
+     */
+    public void setIsvNo(String isvNo) {
 		this.isvNo = isvNo;
 	}
 
-	public String getIsvNotifyUrl() {
+    /**
+     * Gets isv notify url.
+     *
+     * @return the isv notify url
+     */
+    public String getIsvNotifyUrl() {
 		return this.isvNotifyUrl;
 	}
-	public void setIsvNotifyUrl(String isvNotifyUrl) {
+
+    /**
+     * Sets isv notify url.
+     *
+     * @param isvNotifyUrl the isv notify url
+     */
+    public void setIsvNotifyUrl(String isvNotifyUrl) {
 		this.isvNotifyUrl = isvNotifyUrl;
 	}
 
-	public String getIsvPhone() {
+    /**
+     * Gets isv phone.
+     *
+     * @return the isv phone
+     */
+    public String getIsvPhone() {
 		return this.isvPhone;
 	}
-	public void setIsvPhone(String isvPhone) {
+
+    /**
+     * Sets isv phone.
+     *
+     * @param isvPhone the isv phone
+     */
+    public void setIsvPhone(String isvPhone) {
 		this.isvPhone = isvPhone;
 	}
 
-	public String getIsvPid() {
+    /**
+     * Gets isv pid.
+     *
+     * @return the isv pid
+     */
+    public String getIsvPid() {
 		return this.isvPid;
 	}
-	public void setIsvPid(String isvPid) {
+
+    /**
+     * Sets isv pid.
+     *
+     * @param isvPid the isv pid
+     */
+    public void setIsvPid(String isvPid) {
 		this.isvPid = isvPid;
 	}
 
-	public String getProvinceCode() {
+    /**
+     * Gets province code.
+     *
+     * @return the province code
+     */
+    public String getProvinceCode() {
 		return this.provinceCode;
 	}
-	public void setProvinceCode(String provinceCode) {
+
+    /**
+     * Sets province code.
+     *
+     * @param provinceCode the province code
+     */
+    public void setProvinceCode(String provinceCode) {
 		this.provinceCode = provinceCode;
 	}
 
-	public String getProvinceName() {
+    /**
+     * Gets province name.
+     *
+     * @return the province name
+     */
+    public String getProvinceName() {
 		return this.provinceName;
 	}
-	public void setProvinceName(String provinceName) {
+
+    /**
+     * Sets province name.
+     *
+     * @param provinceName the province name
+     */
+    public void setProvinceName(String provinceName) {
 		this.provinceName = provinceName;
 	}
 
-	public String getSchoolIcon() {
+    /**
+     * Gets school icon.
+     *
+     * @return the school icon
+     */
+    public String getSchoolIcon() {
 		return this.schoolIcon;
 	}
-	public void setSchoolIcon(String schoolIcon) {
+
+    /**
+     * Sets school icon.
+     *
+     * @param schoolIcon the school icon
+     */
+    public void setSchoolIcon(String schoolIcon) {
 		this.schoolIcon = schoolIcon;
 	}
 
-	public String getSchoolIconType() {
+    /**
+     * Gets school icon type.
+     *
+     * @return the school icon type
+     */
+    public String getSchoolIconType() {
 		return this.schoolIconType;
 	}
-	public void setSchoolIconType(String schoolIconType) {
+
+    /**
+     * Sets school icon type.
+     *
+     * @param schoolIconType the school icon type
+     */
+    public void setSchoolIconType(String schoolIconType) {
 		this.schoolIconType = schoolIconType;
 	}
 
-	public String getSchoolName() {
+    /**
+     * Gets school name.
+     *
+     * @return the school name
+     */
+    public String getSchoolName() {
 		return this.schoolName;
 	}
-	public void setSchoolName(String schoolName) {
+
+    /**
+     * Sets school name.
+     *
+     * @param schoolName the school name
+     */
+    public void setSchoolName(String schoolName) {
 		this.schoolName = schoolName;
 	}
 
-	public String getSchoolPid() {
+    /**
+     * Gets school pid.
+     *
+     * @return the school pid
+     */
+    public String getSchoolPid() {
 		return this.schoolPid;
 	}
-	public void setSchoolPid(String schoolPid) {
+
+    /**
+     * Sets school pid.
+     *
+     * @param schoolPid the school pid
+     */
+    public void setSchoolPid(String schoolPid) {
 		this.schoolPid = schoolPid;
 	}
 
-	public String getSchoolStdcode() {
+    /**
+     * Gets school stdcode.
+     *
+     * @return the school stdcode
+     */
+    public String getSchoolStdcode() {
 		return this.schoolStdcode;
 	}
-	public void setSchoolStdcode(String schoolStdcode) {
+
+    /**
+     * Sets school stdcode.
+     *
+     * @param schoolStdcode the school stdcode
+     */
+    public void setSchoolStdcode(String schoolStdcode) {
 		this.schoolStdcode = schoolStdcode;
 	}
 
-	public String getSchoolType() {
+    /**
+     * Gets school type.
+     *
+     * @return the school type
+     */
+    public String getSchoolType() {
 		return this.schoolType;
 	}
-	public void setSchoolType(String schoolType) {
+
+    /**
+     * Sets school type.
+     *
+     * @param schoolType the school type
+     */
+    public void setSchoolType(String schoolType) {
 		this.schoolType = schoolType;
 	}
 
-	public String getWhiteChannelCode() {
+    /**
+     * Gets white channel code.
+     *
+     * @return the white channel code
+     */
+    public String getWhiteChannelCode() {
 		return this.whiteChannelCode;
 	}
-	public void setWhiteChannelCode(String whiteChannelCode) {
+
+    /**
+     * Sets white channel code.
+     *
+     * @param whiteChannelCode the white channel code
+     */
+    public void setWhiteChannelCode(String whiteChannelCode) {
 		this.whiteChannelCode = whiteChannelCode;
 	}
 

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 自助监控服务接口
  *
  * @author auto create
- * @since 1.0, 2017-08-31 17:34:13
+ * @since 1.0, 2018-01-04 10:34:06
  */
 public class AlipayCommerceDataMonitordataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8634511951494964386L;
+	private static final long serialVersionUID = 7237682422978922623L;
 
 	/**
 	 * 传入的批量打包数据，dataEntry和dataDim的组合数据，详见dataEntry和dataDim的说明
@@ -36,24 +36,57 @@ public class AlipayCommerceDataMonitordataSyncModel extends AlipayObject {
 	@ApiField("product_code")
 	private String productCode;
 
-	public List<Datas> getDatas() {
+    /**
+     * Gets datas.
+     *
+     * @return the datas
+     */
+    public List<Datas> getDatas() {
 		return this.datas;
 	}
-	public void setDatas(List<Datas> datas) {
+
+    /**
+     * Sets datas.
+     *
+     * @param datas the datas
+     */
+    public void setDatas(List<Datas> datas) {
 		this.datas = datas;
 	}
 
-	public String getInterfaceVersion() {
+    /**
+     * Gets interface version.
+     *
+     * @return the interface version
+     */
+    public String getInterfaceVersion() {
 		return this.interfaceVersion;
 	}
-	public void setInterfaceVersion(String interfaceVersion) {
+
+    /**
+     * Sets interface version.
+     *
+     * @param interfaceVersion the interface version
+     */
+    public void setInterfaceVersion(String interfaceVersion) {
 		this.interfaceVersion = interfaceVersion;
 	}
 
-	public String getProductCode() {
+    /**
+     * Gets product code.
+     *
+     * @return the product code
+     */
+    public String getProductCode() {
 		return this.productCode;
 	}
-	public void setProductCode(String productCode) {
+
+    /**
+     * Sets product code.
+     *
+     * @param productCode the product code
+     */
+    public void setProductCode(String productCode) {
 		this.productCode = productCode;
 	}
 

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户分组修改接口
  *
  * @author auto create
- * @since 1.0, 2017-06-27 17:51:56
+ * @since 1.0, 2018-07-25 13:55:20
  */
 public class AlipayOpenPublicGroupModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8829762628777472582L;
+	private static final long serialVersionUID = 6682936576354824646L;
 
 	/**
 	 * 分组ID，整型值
@@ -35,24 +35,57 @@ public class AlipayOpenPublicGroupModifyModel extends AlipayObject {
 	@ApiField("name")
 	private String name;
 
-	public String getGroupId() {
+    /**
+     * Gets group id.
+     *
+     * @return the group id
+     */
+    public String getGroupId() {
 		return this.groupId;
 	}
-	public void setGroupId(String groupId) {
+
+    /**
+     * Sets group id.
+     *
+     * @param groupId the group id
+     */
+    public void setGroupId(String groupId) {
 		this.groupId = groupId;
 	}
 
-	public List<ComplexLabelRule> getLabelRule() {
+    /**
+     * Gets label rule.
+     *
+     * @return the label rule
+     */
+    public List<ComplexLabelRule> getLabelRule() {
 		return this.labelRule;
 	}
-	public void setLabelRule(List<ComplexLabelRule> labelRule) {
+
+    /**
+     * Sets label rule.
+     *
+     * @param labelRule the label rule
+     */
+    public void setLabelRule(List<ComplexLabelRule> labelRule) {
 		this.labelRule = labelRule;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 

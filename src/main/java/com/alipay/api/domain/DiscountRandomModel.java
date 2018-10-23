@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DiscountRandomModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8373556519448226677L;
+	private static final long serialVersionUID = 3419787569636644639L;
 
 	/**
 	 * 最高优惠金额
@@ -32,24 +32,57 @@ public class DiscountRandomModel extends AlipayObject {
 	@ApiField("probability")
 	private String probability;
 
-	public String getMaxAmount() {
+    /**
+     * Gets max amount.
+     *
+     * @return the max amount
+     */
+    public String getMaxAmount() {
 		return this.maxAmount;
 	}
-	public void setMaxAmount(String maxAmount) {
+
+    /**
+     * Sets max amount.
+     *
+     * @param maxAmount the max amount
+     */
+    public void setMaxAmount(String maxAmount) {
 		this.maxAmount = maxAmount;
 	}
 
-	public String getMinAmount() {
+    /**
+     * Gets min amount.
+     *
+     * @return the min amount
+     */
+    public String getMinAmount() {
 		return this.minAmount;
 	}
-	public void setMinAmount(String minAmount) {
+
+    /**
+     * Sets min amount.
+     *
+     * @param minAmount the min amount
+     */
+    public void setMinAmount(String minAmount) {
 		this.minAmount = minAmount;
 	}
 
-	public String getProbability() {
+    /**
+     * Gets probability.
+     *
+     * @return the probability
+     */
+    public String getProbability() {
 		return this.probability;
 	}
-	public void setProbability(String probability) {
+
+    /**
+     * Sets probability.
+     *
+     * @param probability the probability
+     */
+    public void setProbability(String probability) {
 		this.probability = probability;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCardBenefitCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5159663192655171117L;
+	private static final long serialVersionUID = 5868256851131818264L;
 
 	/**
 	 * 会员卡模板外部权益
@@ -19,10 +19,21 @@ public class AlipayMarketingCardBenefitCreateModel extends AlipayObject {
 	@ApiField("mcard_template_benefit")
 	private McardTemplateBenefit mcardTemplateBenefit;
 
-	public McardTemplateBenefit getMcardTemplateBenefit() {
+    /**
+     * Gets mcard template benefit.
+     *
+     * @return the mcard template benefit
+     */
+    public McardTemplateBenefit getMcardTemplateBenefit() {
 		return this.mcardTemplateBenefit;
 	}
-	public void setMcardTemplateBenefit(McardTemplateBenefit mcardTemplateBenefit) {
+
+    /**
+     * Sets mcard template benefit.
+     *
+     * @param mcardTemplateBenefit the mcard template benefit
+     */
+    public void setMcardTemplateBenefit(McardTemplateBenefit mcardTemplateBenefit) {
 		this.mcardTemplateBenefit = mcardTemplateBenefit;
 	}
 

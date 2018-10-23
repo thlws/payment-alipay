@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OpenPromoPrizeDimension extends AlipayObject {
 
-	private static final long serialVersionUID = 8711933959641912351L;
+	private static final long serialVersionUID = 6467945119877575134L;
 
 	/**
 	 * 时间维度,
@@ -31,17 +31,39 @@ MIOD：表示 每天X分钟[0,1439]
 	@ApiField("number")
 	private List<Long> values;
 
-	public String getDimension() {
+    /**
+     * Gets dimension.
+     *
+     * @return the dimension
+     */
+    public String getDimension() {
 		return this.dimension;
 	}
-	public void setDimension(String dimension) {
+
+    /**
+     * Sets dimension.
+     *
+     * @param dimension the dimension
+     */
+    public void setDimension(String dimension) {
 		this.dimension = dimension;
 	}
 
-	public List<Long> getValues() {
+    /**
+     * Gets values.
+     *
+     * @return the values
+     */
+    public List<Long> getValues() {
 		return this.values;
 	}
-	public void setValues(List<Long> values) {
+
+    /**
+     * Sets values.
+     *
+     * @param values the values
+     */
+    public void setValues(List<Long> values) {
 		this.values = values;
 	}
 

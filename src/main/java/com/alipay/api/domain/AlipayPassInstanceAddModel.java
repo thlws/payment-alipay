@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝pass新建卡券实例接口
  *
  * @author auto create
- * @since 1.0, 2017-03-31 15:33:20
+ * @since 1.0, 2018-07-23 15:36:44
  */
 public class AlipayPassInstanceAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5892228577672819449L;
+	private static final long serialVersionUID = 2358739642712936361L;
 
 	/**
 	 * 支付宝用户识别信息：
@@ -38,31 +38,75 @@ public class AlipayPassInstanceAddModel extends AlipayObject {
 	@ApiField("tpl_params")
 	private String tplParams;
 
-	public String getRecognitionInfo() {
+    /**
+     * Gets recognition info.
+     *
+     * @return the recognition info
+     */
+    public String getRecognitionInfo() {
 		return this.recognitionInfo;
 	}
-	public void setRecognitionInfo(String recognitionInfo) {
+
+    /**
+     * Sets recognition info.
+     *
+     * @param recognitionInfo the recognition info
+     */
+    public void setRecognitionInfo(String recognitionInfo) {
 		this.recognitionInfo = recognitionInfo;
 	}
 
-	public String getRecognitionType() {
+    /**
+     * Gets recognition type.
+     *
+     * @return the recognition type
+     */
+    public String getRecognitionType() {
 		return this.recognitionType;
 	}
-	public void setRecognitionType(String recognitionType) {
+
+    /**
+     * Sets recognition type.
+     *
+     * @param recognitionType the recognition type
+     */
+    public void setRecognitionType(String recognitionType) {
 		this.recognitionType = recognitionType;
 	}
 
-	public String getTplId() {
+    /**
+     * Gets tpl id.
+     *
+     * @return the tpl id
+     */
+    public String getTplId() {
 		return this.tplId;
 	}
-	public void setTplId(String tplId) {
+
+    /**
+     * Sets tpl id.
+     *
+     * @param tplId the tpl id
+     */
+    public void setTplId(String tplId) {
 		this.tplId = tplId;
 	}
 
-	public String getTplParams() {
+    /**
+     * Gets tpl params.
+     *
+     * @return the tpl params
+     */
+    public String getTplParams() {
 		return this.tplParams;
 	}
-	public void setTplParams(String tplParams) {
+
+    /**
+     * Sets tpl params.
+     *
+     * @param tplParams the tpl params
+     */
+    public void setTplParams(String tplParams) {
 		this.tplParams = tplParams;
 	}
 

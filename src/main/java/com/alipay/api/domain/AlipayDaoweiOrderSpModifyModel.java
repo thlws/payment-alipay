@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单服务者变更接口
  *
  * @author auto create
- * @since 1.0, 2017-03-20 14:01:51
+ * @since 1.0, 2018-03-23 13:23:29
  */
 public class AlipayDaoweiOrderSpModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5256457623334734523L;
+	private static final long serialVersionUID = 1748398324588542867L;
 
 	/**
 	 * 到位业务订单号，全局唯一，由32位数字组成，用户在到位下单时系统生成并消息同步给商家，商户只能查自己同步到的订单号
@@ -25,17 +25,39 @@ public class AlipayDaoweiOrderSpModifyModel extends AlipayObject {
 	@ApiField("out_sp_id")
 	private String outSpId;
 
-	public String getOrderNo() {
+    /**
+     * Gets order no.
+     *
+     * @return the order no
+     */
+    public String getOrderNo() {
 		return this.orderNo;
 	}
-	public void setOrderNo(String orderNo) {
+
+    /**
+     * Sets order no.
+     *
+     * @param orderNo the order no
+     */
+    public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
 
-	public String getOutSpId() {
+    /**
+     * Gets out sp id.
+     *
+     * @return the out sp id
+     */
+    public String getOutSpId() {
 		return this.outSpId;
 	}
-	public void setOutSpId(String outSpId) {
+
+    /**
+     * Sets out sp id.
+     *
+     * @param outSpId the out sp id
+     */
+    public void setOutSpId(String outSpId) {
 		this.outSpId = outSpId;
 	}
 

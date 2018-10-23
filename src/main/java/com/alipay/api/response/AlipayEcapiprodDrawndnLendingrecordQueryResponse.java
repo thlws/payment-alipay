@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ecapiprod.drawndn.lendingrecord.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-03-29 11:34:36
  */
 public class AlipayEcapiprodDrawndnLendingrecordQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6185869982347987966L;
+	private static final long serialVersionUID = 2167329962216811876L;
 
 	/** 
 	 * 放款流水
@@ -30,17 +30,39 @@ public class AlipayEcapiprodDrawndnLendingrecordQueryResponse extends AlipayResp
 	@ApiField("request_id")
 	private String requestId;
 
-	public void setLendingRecords(List<LendingRecords> lendingRecords) {
+    /**
+     * Sets lending records.
+     *
+     * @param lendingRecords the lending records
+     */
+    public void setLendingRecords(List<LendingRecords> lendingRecords) {
 		this.lendingRecords = lendingRecords;
 	}
-	public List<LendingRecords> getLendingRecords( ) {
+
+    /**
+     * Gets lending records.
+     *
+     * @return the lending records
+     */
+    public List<LendingRecords> getLendingRecords( ) {
 		return this.lendingRecords;
 	}
 
-	public void setRequestId(String requestId) {
+    /**
+     * Sets request id.
+     *
+     * @param requestId the request id
+     */
+    public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
-	public String getRequestId( ) {
+
+    /**
+     * Gets request id.
+     *
+     * @return the request id
+     */
+    public String getRequestId( ) {
 		return this.requestId;
 	}
 

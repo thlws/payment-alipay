@@ -5,13 +5,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.daowei.order.cancel response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-30 11:55:47
+ * @since 1.0, 2018-03-23 13:21:44
  */
 public class AlipayDaoweiOrderCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1352538136266862412L;
+	private static final long serialVersionUID = 5425895889232522465L;
 
 	
 

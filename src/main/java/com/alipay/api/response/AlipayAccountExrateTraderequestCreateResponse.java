@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.account.exrate.traderequest.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-20 10:41:44
+ * @since 1.0, 2018-04-13 17:35:02
  */
 public class AlipayAccountExrateTraderequestCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7154996228868252414L;
+	private static final long serialVersionUID = 5634478525564894399L;
 
 	/** 
 	 * 成交汇率的基准币种
@@ -105,108 +105,273 @@ public class AlipayAccountExrateTraderequestCreateResponse extends AlipayRespons
 	@ApiField("value_date")
 	private String valueDate;
 
-	public void setBaseCcy(String baseCcy) {
+    /**
+     * Sets base ccy.
+     *
+     * @param baseCcy the base ccy
+     */
+    public void setBaseCcy(String baseCcy) {
 		this.baseCcy = baseCcy;
 	}
-	public String getBaseCcy( ) {
+
+    /**
+     * Gets base ccy.
+     *
+     * @return the base ccy
+     */
+    public String getBaseCcy( ) {
 		return this.baseCcy;
 	}
 
-	public void setClientId(String clientId) {
+    /**
+     * Sets client id.
+     *
+     * @param clientId the client id
+     */
+    public void setClientId(String clientId) {
 		this.clientId = clientId;
 	}
-	public String getClientId( ) {
+
+    /**
+     * Gets client id.
+     *
+     * @return the client id
+     */
+    public String getClientId( ) {
 		return this.clientId;
 	}
 
-	public void setContraAmount(String contraAmount) {
+    /**
+     * Sets contra amount.
+     *
+     * @param contraAmount the contra amount
+     */
+    public void setContraAmount(String contraAmount) {
 		this.contraAmount = contraAmount;
 	}
-	public String getContraAmount( ) {
+
+    /**
+     * Gets contra amount.
+     *
+     * @return the contra amount
+     */
+    public String getContraAmount( ) {
 		return this.contraAmount;
 	}
 
-	public void setContraCcy(String contraCcy) {
+    /**
+     * Sets contra ccy.
+     *
+     * @param contraCcy the contra ccy
+     */
+    public void setContraCcy(String contraCcy) {
 		this.contraCcy = contraCcy;
 	}
-	public String getContraCcy( ) {
+
+    /**
+     * Gets contra ccy.
+     *
+     * @return the contra ccy
+     */
+    public String getContraCcy( ) {
 		return this.contraCcy;
 	}
 
-	public void setDealRef(String dealRef) {
+    /**
+     * Sets deal ref.
+     *
+     * @param dealRef the deal ref
+     */
+    public void setDealRef(String dealRef) {
 		this.dealRef = dealRef;
 	}
-	public String getDealRef( ) {
+
+    /**
+     * Gets deal ref.
+     *
+     * @return the deal ref
+     */
+    public String getDealRef( ) {
 		return this.dealRef;
 	}
 
-	public void setDealtRate(String dealtRate) {
+    /**
+     * Sets dealt rate.
+     *
+     * @param dealtRate the dealt rate
+     */
+    public void setDealtRate(String dealtRate) {
 		this.dealtRate = dealtRate;
 	}
-	public String getDealtRate( ) {
+
+    /**
+     * Gets dealt rate.
+     *
+     * @return the dealt rate
+     */
+    public String getDealtRate( ) {
 		return this.dealtRate;
 	}
 
-	public void setDuplicate(String duplicate) {
+    /**
+     * Sets duplicate.
+     *
+     * @param duplicate the duplicate
+     */
+    public void setDuplicate(String duplicate) {
 		this.duplicate = duplicate;
 	}
-	public String getDuplicate( ) {
+
+    /**
+     * Gets duplicate.
+     *
+     * @return the duplicate
+     */
+    public String getDuplicate( ) {
 		return this.duplicate;
 	}
 
-	public void setMsgType(String msgType) {
+    /**
+     * Sets msg type.
+     *
+     * @param msgType the msg type
+     */
+    public void setMsgType(String msgType) {
 		this.msgType = msgType;
 	}
-	public String getMsgType( ) {
+
+    /**
+     * Gets msg type.
+     *
+     * @return the msg type
+     */
+    public String getMsgType( ) {
 		return this.msgType;
 	}
 
-	public void setRequestedMessageId(String requestedMessageId) {
+    /**
+     * Sets requested message id.
+     *
+     * @param requestedMessageId the requested message id
+     */
+    public void setRequestedMessageId(String requestedMessageId) {
 		this.requestedMessageId = requestedMessageId;
 	}
-	public String getRequestedMessageId( ) {
+
+    /**
+     * Gets requested message id.
+     *
+     * @return the requested message id
+     */
+    public String getRequestedMessageId( ) {
 		return this.requestedMessageId;
 	}
 
-	public void setRequestedRateStatus(String requestedRateStatus) {
+    /**
+     * Sets requested rate status.
+     *
+     * @param requestedRateStatus the requested rate status
+     */
+    public void setRequestedRateStatus(String requestedRateStatus) {
 		this.requestedRateStatus = requestedRateStatus;
 	}
-	public String getRequestedRateStatus( ) {
+
+    /**
+     * Gets requested rate status.
+     *
+     * @return the requested rate status
+     */
+    public String getRequestedRateStatus( ) {
 		return this.requestedRateStatus;
 	}
 
-	public void setResponseType(String responseType) {
+    /**
+     * Sets response type.
+     *
+     * @param responseType the response type
+     */
+    public void setResponseType(String responseType) {
 		this.responseType = responseType;
 	}
-	public String getResponseType( ) {
+
+    /**
+     * Gets response type.
+     *
+     * @return the response type
+     */
+    public String getResponseType( ) {
 		return this.responseType;
 	}
 
-	public void setSide(String side) {
+    /**
+     * Sets side.
+     *
+     * @param side the side
+     */
+    public void setSide(String side) {
 		this.side = side;
 	}
-	public String getSide( ) {
+
+    /**
+     * Gets side.
+     *
+     * @return the side
+     */
+    public String getSide( ) {
 		return this.side;
 	}
 
-	public void setTransactionAmount(String transactionAmount) {
+    /**
+     * Sets transaction amount.
+     *
+     * @param transactionAmount the transaction amount
+     */
+    public void setTransactionAmount(String transactionAmount) {
 		this.transactionAmount = transactionAmount;
 	}
-	public String getTransactionAmount( ) {
+
+    /**
+     * Gets transaction amount.
+     *
+     * @return the transaction amount
+     */
+    public String getTransactionAmount( ) {
 		return this.transactionAmount;
 	}
 
-	public void setTransactionCcy(String transactionCcy) {
+    /**
+     * Sets transaction ccy.
+     *
+     * @param transactionCcy the transaction ccy
+     */
+    public void setTransactionCcy(String transactionCcy) {
 		this.transactionCcy = transactionCcy;
 	}
-	public String getTransactionCcy( ) {
+
+    /**
+     * Gets transaction ccy.
+     *
+     * @return the transaction ccy
+     */
+    public String getTransactionCcy( ) {
 		return this.transactionCcy;
 	}
 
-	public void setValueDate(String valueDate) {
+    /**
+     * Sets value date.
+     *
+     * @param valueDate the value date
+     */
+    public void setValueDate(String valueDate) {
 		this.valueDate = valueDate;
 	}
-	public String getValueDate( ) {
+
+    /**
+     * Gets value date.
+     *
+     * @return the value date
+     */
+    public String getValueDate( ) {
 		return this.valueDate;
 	}
 

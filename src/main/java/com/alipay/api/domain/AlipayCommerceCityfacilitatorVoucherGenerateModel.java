@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceCityfacilitatorVoucherGenerateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6215829233744991359L;
+	private static final long serialVersionUID = 6646756985163129811L;
 
 	/**
 	 * 城市编码请参考查询：http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/201504/t20150415_712722.html；
@@ -62,59 +62,147 @@ public class AlipayCommerceCityfacilitatorVoucherGenerateModel extends AlipayObj
 	@ApiField("trade_no")
 	private String tradeNo;
 
-	public String getCityCode() {
+    /**
+     * Gets city code.
+     *
+     * @return the city code
+     */
+    public String getCityCode() {
 		return this.cityCode;
 	}
-	public void setCityCode(String cityCode) {
+
+    /**
+     * Sets city code.
+     *
+     * @param cityCode the city code
+     */
+    public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
 	}
 
-	public String getSiteBegin() {
+    /**
+     * Gets site begin.
+     *
+     * @return the site begin
+     */
+    public String getSiteBegin() {
 		return this.siteBegin;
 	}
-	public void setSiteBegin(String siteBegin) {
+
+    /**
+     * Sets site begin.
+     *
+     * @param siteBegin the site begin
+     */
+    public void setSiteBegin(String siteBegin) {
 		this.siteBegin = siteBegin;
 	}
 
-	public String getSiteEnd() {
+    /**
+     * Gets site end.
+     *
+     * @return the site end
+     */
+    public String getSiteEnd() {
 		return this.siteEnd;
 	}
-	public void setSiteEnd(String siteEnd) {
+
+    /**
+     * Sets site end.
+     *
+     * @param siteEnd the site end
+     */
+    public void setSiteEnd(String siteEnd) {
 		this.siteEnd = siteEnd;
 	}
 
-	public String getTicketNum() {
+    /**
+     * Gets ticket num.
+     *
+     * @return the ticket num
+     */
+    public String getTicketNum() {
 		return this.ticketNum;
 	}
-	public void setTicketNum(String ticketNum) {
+
+    /**
+     * Sets ticket num.
+     *
+     * @param ticketNum the ticket num
+     */
+    public void setTicketNum(String ticketNum) {
 		this.ticketNum = ticketNum;
 	}
 
-	public String getTicketPrice() {
+    /**
+     * Gets ticket price.
+     *
+     * @return the ticket price
+     */
+    public String getTicketPrice() {
 		return this.ticketPrice;
 	}
-	public void setTicketPrice(String ticketPrice) {
+
+    /**
+     * Sets ticket price.
+     *
+     * @param ticketPrice the ticket price
+     */
+    public void setTicketPrice(String ticketPrice) {
 		this.ticketPrice = ticketPrice;
 	}
 
-	public String getTicketType() {
+    /**
+     * Gets ticket type.
+     *
+     * @return the ticket type
+     */
+    public String getTicketType() {
 		return this.ticketType;
 	}
-	public void setTicketType(String ticketType) {
+
+    /**
+     * Sets ticket type.
+     *
+     * @param ticketType the ticket type
+     */
+    public void setTicketType(String ticketType) {
 		this.ticketType = ticketType;
 	}
 
-	public String getTotalFee() {
+    /**
+     * Gets total fee.
+     *
+     * @return the total fee
+     */
+    public String getTotalFee() {
 		return this.totalFee;
 	}
-	public void setTotalFee(String totalFee) {
+
+    /**
+     * Sets total fee.
+     *
+     * @param totalFee the total fee
+     */
+    public void setTotalFee(String totalFee) {
 		this.totalFee = totalFee;
 	}
 
-	public String getTradeNo() {
+    /**
+     * Gets trade no.
+     *
+     * @return the trade no
+     */
+    public String getTradeNo() {
 		return this.tradeNo;
 	}
-	public void setTradeNo(String tradeNo) {
+
+    /**
+     * Sets trade no.
+     *
+     * @param tradeNo the trade no
+     */
+    public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
 

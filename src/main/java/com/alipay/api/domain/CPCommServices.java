@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CPCommServices extends AlipayObject {
 
-	private static final long serialVersionUID = 6581578287882356378L;
+	private static final long serialVersionUID = 2757183637279539829L;
 
 	/**
 	 * 对于涉及收费类型的服务，返回收款帐号，若开发者没有为当前服务传入过物业收款帐号，则默认为授权物业的签约账号。
@@ -113,115 +113,291 @@ FORMAL - 上线后可用于推广的正式二维码（仅针对部分服务类�
 	@ApiField("status")
 	private String status;
 
-	public String getAccount() {
+    /**
+     * Gets account.
+     *
+     * @return the account
+     */
+    public String getAccount() {
 		return this.account;
 	}
-	public void setAccount(String account) {
+
+    /**
+     * Sets account.
+     *
+     * @param account the account
+     */
+    public void setAccount(String account) {
 		this.account = account;
 	}
 
-	public String getAccountType() {
+    /**
+     * Gets account type.
+     *
+     * @return the account type
+     */
+    public String getAccountType() {
 		return this.accountType;
 	}
-	public void setAccountType(String accountType) {
+
+    /**
+     * Sets account type.
+     *
+     * @param accountType the account type
+     */
+    public void setAccountType(String accountType) {
 		this.accountType = accountType;
 	}
 
-	public String getAuditDesc() {
+    /**
+     * Gets audit desc.
+     *
+     * @return the audit desc
+     */
+    public String getAuditDesc() {
 		return this.auditDesc;
 	}
-	public void setAuditDesc(String auditDesc) {
+
+    /**
+     * Sets audit desc.
+     *
+     * @param auditDesc the audit desc
+     */
+    public void setAuditDesc(String auditDesc) {
 		this.auditDesc = auditDesc;
 	}
 
-	public String getAuditStatus() {
+    /**
+     * Gets audit status.
+     *
+     * @return the audit status
+     */
+    public String getAuditStatus() {
 		return this.auditStatus;
 	}
-	public void setAuditStatus(String auditStatus) {
+
+    /**
+     * Sets audit status.
+     *
+     * @param auditStatus the audit status
+     */
+    public void setAuditStatus(String auditStatus) {
 		this.auditStatus = auditStatus;
 	}
 
-	public String getCategoryName() {
+    /**
+     * Gets category name.
+     *
+     * @return the category name
+     */
+    public String getCategoryName() {
 		return this.categoryName;
 	}
-	public void setCategoryName(String categoryName) {
+
+    /**
+     * Sets category name.
+     *
+     * @param categoryName the category name
+     */
+    public void setCategoryName(String categoryName) {
 		this.categoryName = categoryName;
 	}
 
-	public String getExternalAddressScanResult() {
+    /**
+     * Gets external address scan result.
+     *
+     * @return the external address scan result
+     */
+    public String getExternalAddressScanResult() {
 		return this.externalAddressScanResult;
 	}
-	public void setExternalAddressScanResult(String externalAddressScanResult) {
+
+    /**
+     * Sets external address scan result.
+     *
+     * @param externalAddressScanResult the external address scan result
+     */
+    public void setExternalAddressScanResult(String externalAddressScanResult) {
 		this.externalAddressScanResult = externalAddressScanResult;
 	}
 
-	public String getExternalInvokeAddress() {
+    /**
+     * Gets external invoke address.
+     *
+     * @return the external invoke address
+     */
+    public String getExternalInvokeAddress() {
 		return this.externalInvokeAddress;
 	}
-	public void setExternalInvokeAddress(String externalInvokeAddress) {
+
+    /**
+     * Sets external invoke address.
+     *
+     * @param externalInvokeAddress the external invoke address
+     */
+    public void setExternalInvokeAddress(String externalInvokeAddress) {
 		this.externalInvokeAddress = externalInvokeAddress;
 	}
 
-	public Date getGmtCreated() {
+    /**
+     * Gets gmt created.
+     *
+     * @return the gmt created
+     */
+    public Date getGmtCreated() {
 		return this.gmtCreated;
 	}
-	public void setGmtCreated(Date gmtCreated) {
+
+    /**
+     * Sets gmt created.
+     *
+     * @param gmtCreated the gmt created
+     */
+    public void setGmtCreated(Date gmtCreated) {
 		this.gmtCreated = gmtCreated;
 	}
 
-	public Date getGmtModified() {
+    /**
+     * Gets gmt modified.
+     *
+     * @return the gmt modified
+     */
+    public Date getGmtModified() {
 		return this.gmtModified;
 	}
-	public void setGmtModified(Date gmtModified) {
+
+    /**
+     * Sets gmt modified.
+     *
+     * @param gmtModified the gmt modified
+     */
+    public void setGmtModified(Date gmtModified) {
 		this.gmtModified = gmtModified;
 	}
 
-	public String getNextAction() {
+    /**
+     * Gets next action.
+     *
+     * @return the next action
+     */
+    public String getNextAction() {
 		return this.nextAction;
 	}
-	public void setNextAction(String nextAction) {
+
+    /**
+     * Sets next action.
+     *
+     * @param nextAction the next action
+     */
+    public void setNextAction(String nextAction) {
 		this.nextAction = nextAction;
 	}
 
-	public Date getQrCodeExpires() {
+    /**
+     * Gets qr code expires.
+     *
+     * @return the qr code expires
+     */
+    public Date getQrCodeExpires() {
 		return this.qrCodeExpires;
 	}
-	public void setQrCodeExpires(Date qrCodeExpires) {
+
+    /**
+     * Sets qr code expires.
+     *
+     * @param qrCodeExpires the qr code expires
+     */
+    public void setQrCodeExpires(Date qrCodeExpires) {
 		this.qrCodeExpires = qrCodeExpires;
 	}
 
-	public String getQrCodeImage() {
+    /**
+     * Gets qr code image.
+     *
+     * @return the qr code image
+     */
+    public String getQrCodeImage() {
 		return this.qrCodeImage;
 	}
-	public void setQrCodeImage(String qrCodeImage) {
+
+    /**
+     * Sets qr code image.
+     *
+     * @param qrCodeImage the qr code image
+     */
+    public void setQrCodeImage(String qrCodeImage) {
 		this.qrCodeImage = qrCodeImage;
 	}
 
-	public String getQrCodeType() {
+    /**
+     * Gets qr code type.
+     *
+     * @return the qr code type
+     */
+    public String getQrCodeType() {
 		return this.qrCodeType;
 	}
-	public void setQrCodeType(String qrCodeType) {
+
+    /**
+     * Sets qr code type.
+     *
+     * @param qrCodeType the qr code type
+     */
+    public void setQrCodeType(String qrCodeType) {
 		this.qrCodeType = qrCodeType;
 	}
 
-	public Date getServiceExpires() {
+    /**
+     * Gets service expires.
+     *
+     * @return the service expires
+     */
+    public Date getServiceExpires() {
 		return this.serviceExpires;
 	}
-	public void setServiceExpires(Date serviceExpires) {
+
+    /**
+     * Sets service expires.
+     *
+     * @param serviceExpires the service expires
+     */
+    public void setServiceExpires(Date serviceExpires) {
 		this.serviceExpires = serviceExpires;
 	}
 
-	public String getServiceType() {
+    /**
+     * Gets service type.
+     *
+     * @return the service type
+     */
+    public String getServiceType() {
 		return this.serviceType;
 	}
-	public void setServiceType(String serviceType) {
+
+    /**
+     * Sets service type.
+     *
+     * @param serviceType the service type
+     */
+    public void setServiceType(String serviceType) {
 		this.serviceType = serviceType;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 

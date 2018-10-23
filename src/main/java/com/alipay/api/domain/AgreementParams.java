@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用于传递用户和支付宝的协议相关信息，json格式
  *
  * @author auto create
- * @since 1.0, 2017-07-18 14:29:55
+ * @since 1.0, 2018-01-10 14:56:36
  */
 public class AgreementParams extends AlipayObject {
 
-	private static final long serialVersionUID = 5631468514925777831L;
+	private static final long serialVersionUID = 7572675516828338367L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号（用户签约成功后的协议号 ）
@@ -31,24 +31,57 @@ public class AgreementParams extends AlipayObject {
 	@ApiField("auth_confirm_no")
 	private String authConfirmNo;
 
-	public String getAgreementNo() {
+    /**
+     * Gets agreement no.
+     *
+     * @return the agreement no
+     */
+    public String getAgreementNo() {
 		return this.agreementNo;
 	}
-	public void setAgreementNo(String agreementNo) {
+
+    /**
+     * Sets agreement no.
+     *
+     * @param agreementNo the agreement no
+     */
+    public void setAgreementNo(String agreementNo) {
 		this.agreementNo = agreementNo;
 	}
 
-	public String getApplyToken() {
+    /**
+     * Gets apply token.
+     *
+     * @return the apply token
+     */
+    public String getApplyToken() {
 		return this.applyToken;
 	}
-	public void setApplyToken(String applyToken) {
+
+    /**
+     * Sets apply token.
+     *
+     * @param applyToken the apply token
+     */
+    public void setApplyToken(String applyToken) {
 		this.applyToken = applyToken;
 	}
 
-	public String getAuthConfirmNo() {
+    /**
+     * Gets auth confirm no.
+     *
+     * @return the auth confirm no
+     */
+    public String getAuthConfirmNo() {
 		return this.authConfirmNo;
 	}
-	public void setAuthConfirmNo(String authConfirmNo) {
+
+    /**
+     * Sets auth confirm no.
+     *
+     * @param authConfirmNo the auth confirm no
+     */
+    public void setAuthConfirmNo(String authConfirmNo) {
 		this.authConfirmNo = authConfirmNo;
 	}
 

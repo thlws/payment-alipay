@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 分组消息发送接口
  *
  * @author auto create
- * @since 1.0, 2017-07-03 21:12:45
+ * @since 1.0, 2018-07-25 13:53:43
  */
 public class AlipayOpenPublicMessageGroupSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8277192964993989659L;
+	private static final long serialVersionUID = 5724639357236279448L;
 
 	/**
 	 * 图文消息，当msg_type为image-text，该值必须设置，图文消息中的图片建议尺寸 750 x 350px，小于3M，图片支持jpg、png格式
@@ -47,38 +47,93 @@ public class AlipayOpenPublicMessageGroupSendModel extends AlipayObject {
 	@ApiField("text")
 	private Text text;
 
-	public List<Article> getArticles() {
+    /**
+     * Gets articles.
+     *
+     * @return the articles
+     */
+    public List<Article> getArticles() {
 		return this.articles;
 	}
-	public void setArticles(List<Article> articles) {
+
+    /**
+     * Sets articles.
+     *
+     * @param articles the articles
+     */
+    public void setArticles(List<Article> articles) {
 		this.articles = articles;
 	}
 
-	public String getGroupId() {
+    /**
+     * Gets group id.
+     *
+     * @return the group id
+     */
+    public String getGroupId() {
 		return this.groupId;
 	}
-	public void setGroupId(String groupId) {
+
+    /**
+     * Sets group id.
+     *
+     * @param groupId the group id
+     */
+    public void setGroupId(String groupId) {
 		this.groupId = groupId;
 	}
 
-	public Image getImage() {
+    /**
+     * Gets image.
+     *
+     * @return the image
+     */
+    public Image getImage() {
 		return this.image;
 	}
-	public void setImage(Image image) {
+
+    /**
+     * Sets image.
+     *
+     * @param image the image
+     */
+    public void setImage(Image image) {
 		this.image = image;
 	}
 
-	public String getMsgType() {
+    /**
+     * Gets msg type.
+     *
+     * @return the msg type
+     */
+    public String getMsgType() {
 		return this.msgType;
 	}
-	public void setMsgType(String msgType) {
+
+    /**
+     * Sets msg type.
+     *
+     * @param msgType the msg type
+     */
+    public void setMsgType(String msgType) {
 		this.msgType = msgType;
 	}
 
-	public Text getText() {
+    /**
+     * Gets text.
+     *
+     * @return the text
+     */
+    public Text getText() {
 		return this.text;
 	}
-	public void setText(Text text) {
+
+    /**
+     * Sets text.
+     *
+     * @param text the text
+     */
+    public void setText(Text text) {
 		this.text = text;
 	}
 

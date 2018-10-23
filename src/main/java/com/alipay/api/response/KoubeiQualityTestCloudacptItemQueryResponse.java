@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.quality.test.cloudacpt.item.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-06-15 15:07:35
  */
 public class KoubeiQualityTestCloudacptItemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7729817211729164679L;
+	private static final long serialVersionUID = 7576378779834594955L;
 
 	/** 
 	 * 活动id
@@ -78,66 +78,165 @@ public class KoubeiQualityTestCloudacptItemQueryResponse extends AlipayResponse 
 	@ApiField("pass_num")
 	private String passNum;
 
-	public void setActivityId(String activityId) {
+    /**
+     * Sets activity id.
+     *
+     * @param activityId the activity id
+     */
+    public void setActivityId(String activityId) {
 		this.activityId = activityId;
 	}
-	public String getActivityId( ) {
+
+    /**
+     * Gets activity id.
+     *
+     * @return the activity id
+     */
+    public String getActivityId( ) {
 		return this.activityId;
 	}
 
-	public void setBatchId(String batchId) {
+    /**
+     * Sets batch id.
+     *
+     * @param batchId the batch id
+     */
+    public void setBatchId(String batchId) {
 		this.batchId = batchId;
 	}
-	public String getBatchId( ) {
+
+    /**
+     * Gets batch id.
+     *
+     * @return the batch id
+     */
+    public String getBatchId( ) {
 		return this.batchId;
 	}
 
-	public void setBatchStatus(String batchStatus) {
+    /**
+     * Sets batch status.
+     *
+     * @param batchStatus the batch status
+     */
+    public void setBatchStatus(String batchStatus) {
 		this.batchStatus = batchStatus;
 	}
-	public String getBatchStatus( ) {
+
+    /**
+     * Gets batch status.
+     *
+     * @return the batch status
+     */
+    public String getBatchStatus( ) {
 		return this.batchStatus;
 	}
 
-	public void setFailList(List<OpenItem> failList) {
+    /**
+     * Sets fail list.
+     *
+     * @param failList the fail list
+     */
+    public void setFailList(List<OpenItem> failList) {
 		this.failList = failList;
 	}
-	public List<OpenItem> getFailList( ) {
+
+    /**
+     * Gets fail list.
+     *
+     * @return the fail list
+     */
+    public List<OpenItem> getFailList( ) {
 		return this.failList;
 	}
 
-	public void setFailNum(String failNum) {
+    /**
+     * Sets fail num.
+     *
+     * @param failNum the fail num
+     */
+    public void setFailNum(String failNum) {
 		this.failNum = failNum;
 	}
-	public String getFailNum( ) {
+
+    /**
+     * Gets fail num.
+     *
+     * @return the fail num
+     */
+    public String getFailNum( ) {
 		return this.failNum;
 	}
 
-	public void setItemList(List<OpenItem> itemList) {
+    /**
+     * Sets item list.
+     *
+     * @param itemList the item list
+     */
+    public void setItemList(List<OpenItem> itemList) {
 		this.itemList = itemList;
 	}
-	public List<OpenItem> getItemList( ) {
+
+    /**
+     * Gets item list.
+     *
+     * @return the item list
+     */
+    public List<OpenItem> getItemList( ) {
 		return this.itemList;
 	}
 
-	public void setItemNum(String itemNum) {
+    /**
+     * Sets item num.
+     *
+     * @param itemNum the item num
+     */
+    public void setItemNum(String itemNum) {
 		this.itemNum = itemNum;
 	}
-	public String getItemNum( ) {
+
+    /**
+     * Gets item num.
+     *
+     * @return the item num
+     */
+    public String getItemNum( ) {
 		return this.itemNum;
 	}
 
-	public void setPassList(List<OpenItem> passList) {
+    /**
+     * Sets pass list.
+     *
+     * @param passList the pass list
+     */
+    public void setPassList(List<OpenItem> passList) {
 		this.passList = passList;
 	}
-	public List<OpenItem> getPassList( ) {
+
+    /**
+     * Gets pass list.
+     *
+     * @return the pass list
+     */
+    public List<OpenItem> getPassList( ) {
 		return this.passList;
 	}
 
-	public void setPassNum(String passNum) {
+    /**
+     * Sets pass num.
+     *
+     * @param passNum the pass num
+     */
+    public void setPassNum(String passNum) {
 		this.passNum = passNum;
 	}
-	public String getPassNum( ) {
+
+    /**
+     * Gets pass num.
+     *
+     * @return the pass num
+     */
+    public String getPassNum( ) {
 		return this.passNum;
 	}
 

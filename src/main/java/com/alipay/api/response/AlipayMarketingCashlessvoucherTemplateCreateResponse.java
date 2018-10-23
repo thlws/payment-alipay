@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.cashlessvoucher.template.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-21 17:03:48
+ * @since 1.0, 2018-09-17 11:06:38
  */
 public class AlipayMarketingCashlessvoucherTemplateCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6575371971778168155L;
+	private static final long serialVersionUID = 4383833943174957376L;
 
 	/** 
 	 * 模板ID
@@ -20,10 +20,21 @@ public class AlipayMarketingCashlessvoucherTemplateCreateResponse extends Alipay
 	@ApiField("template_id")
 	private String templateId;
 
-	public void setTemplateId(String templateId) {
+    /**
+     * Sets template id.
+     *
+     * @param templateId the template id
+     */
+    public void setTemplateId(String templateId) {
 		this.templateId = templateId;
 	}
-	public String getTemplateId( ) {
+
+    /**
+     * Gets template id.
+     *
+     * @return the template id
+     */
+    public String getTemplateId( ) {
 		return this.templateId;
 	}
 

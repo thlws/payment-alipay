@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AttachmentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1883582565484275748L;
+	private static final long serialVersionUID = 3154146784429235213L;
 
 	/**
 	 * 支付宝返回的图片在文件存储平台的标识
@@ -31,24 +31,57 @@ public class AttachmentInfo extends AlipayObject {
 	@ApiField("type")
 	private String type;
 
-	public String getAttaUrl() {
+    /**
+     * Gets atta url.
+     *
+     * @return the atta url
+     */
+    public String getAttaUrl() {
 		return this.attaUrl;
 	}
-	public void setAttaUrl(String attaUrl) {
+
+    /**
+     * Sets atta url.
+     *
+     * @param attaUrl the atta url
+     */
+    public void setAttaUrl(String attaUrl) {
 		this.attaUrl = attaUrl;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
-	public void setType(String type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
 

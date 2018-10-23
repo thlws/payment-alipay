@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ExtensionArea extends AlipayObject {
 
-	private static final long serialVersionUID = 3616293183289112919L;
+	private static final long serialVersionUID = 1655246395638695618L;
 
 	/**
 	 * 跳转链接，当content_type为"image"时必传，必须是https或alipays开头的url链接
@@ -43,38 +43,93 @@ public class ExtensionArea extends AlipayObject {
 	@ApiField("url")
 	private String url;
 
-	public String getGotoUrl() {
+    /**
+     * Gets goto url.
+     *
+     * @return the goto url
+     */
+    public String getGotoUrl() {
 		return this.gotoUrl;
 	}
-	public void setGotoUrl(String gotoUrl) {
+
+    /**
+     * Sets goto url.
+     *
+     * @param gotoUrl the goto url
+     */
+    public void setGotoUrl(String gotoUrl) {
 		this.gotoUrl = gotoUrl;
 	}
 
-	public Long getHeight() {
+    /**
+     * Gets height.
+     *
+     * @return the height
+     */
+    public Long getHeight() {
 		return this.height;
 	}
-	public void setHeight(Long height) {
+
+    /**
+     * Sets height.
+     *
+     * @param height the height
+     */
+    public void setHeight(Long height) {
 		this.height = height;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
-	public void setType(String type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
 
-	public String getUrl() {
+    /**
+     * Gets url.
+     *
+     * @return the url
+     */
+    public String getUrl() {
 		return this.url;
 	}
-	public void setUrl(String url) {
+
+    /**
+     * Sets url.
+     *
+     * @param url the url
+     */
+    public void setUrl(String url) {
 		this.url = url;
 	}
 

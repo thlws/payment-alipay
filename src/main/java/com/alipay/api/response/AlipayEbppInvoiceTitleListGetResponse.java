@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ebpp.invoice.title.list.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-07 16:47:33
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayEbppInvoiceTitleListGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4468964987494417111L;
+	private static final long serialVersionUID = 6769124235494376546L;
 
 	/** 
 	 * 抬头列表
@@ -24,10 +24,21 @@ public class AlipayEbppInvoiceTitleListGetResponse extends AlipayResponse {
 	@ApiField("invoice_title_model")
 	private List<InvoiceTitleModel> titleList;
 
-	public void setTitleList(List<InvoiceTitleModel> titleList) {
+    /**
+     * Sets title list.
+     *
+     * @param titleList the title list
+     */
+    public void setTitleList(List<InvoiceTitleModel> titleList) {
 		this.titleList = titleList;
 	}
-	public List<InvoiceTitleModel> getTitleList( ) {
+
+    /**
+     * Gets title list.
+     *
+     * @return the title list
+     */
+    public List<InvoiceTitleModel> getTitleList( ) {
 		return this.titleList;
 	}
 

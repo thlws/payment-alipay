@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KbAdvertContentPassword extends AlipayObject {
 
-	private static final long serialVersionUID = 8646513347774263875L;
+	private static final long serialVersionUID = 7116315585984419689L;
 
 	/**
 	 * 红包口令
@@ -25,17 +25,39 @@ public class KbAdvertContentPassword extends AlipayObject {
 	@ApiField("share_page_url")
 	private String sharePageUrl;
 
-	public String getPassword() {
+    /**
+     * Gets password.
+     *
+     * @return the password
+     */
+    public String getPassword() {
 		return this.password;
 	}
-	public void setPassword(String password) {
+
+    /**
+     * Sets password.
+     *
+     * @param password the password
+     */
+    public void setPassword(String password) {
 		this.password = password;
 	}
 
-	public String getSharePageUrl() {
+    /**
+     * Gets share page url.
+     *
+     * @return the share page url
+     */
+    public String getSharePageUrl() {
 		return this.sharePageUrl;
 	}
-	public void setSharePageUrl(String sharePageUrl) {
+
+    /**
+     * Sets share page url.
+     *
+     * @param sharePageUrl the share page url
+     */
+    public void setSharePageUrl(String sharePageUrl) {
 		this.sharePageUrl = sharePageUrl;
 	}
 

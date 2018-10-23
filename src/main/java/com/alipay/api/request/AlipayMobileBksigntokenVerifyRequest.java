@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.mobile.bksigntoken.verify request
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-04-07 18:08:15
  */
@@ -33,24 +33,57 @@ public class AlipayMobileBksigntokenVerifyRequest implements AlipayRequest<Alipa
 	 */
 	private String token;
 
-	public void setDeviceid(String deviceid) {
+    /**
+     * Sets deviceid.
+     *
+     * @param deviceid the deviceid
+     */
+    public void setDeviceid(String deviceid) {
 		this.deviceid = deviceid;
 	}
-	public String getDeviceid() {
+
+    /**
+     * Gets deviceid.
+     *
+     * @return the deviceid
+     */
+    public String getDeviceid() {
 		return this.deviceid;
 	}
 
-	public void setSource(String source) {
+    /**
+     * Sets source.
+     *
+     * @param source the source
+     */
+    public void setSource(String source) {
 		this.source = source;
 	}
-	public String getSource() {
+
+    /**
+     * Gets source.
+     *
+     * @return the source
+     */
+    public String getSource() {
 		return this.source;
 	}
 
-	public void setToken(String token) {
+    /**
+     * Sets token.
+     *
+     * @param token the token
+     */
+    public void setToken(String token) {
 		this.token = token;
 	}
-	public String getToken() {
+
+    /**
+     * Gets token.
+     *
+     * @return the token
+     */
+    public String getToken() {
 		return this.token;
 	}
 	private String terminalType;
@@ -124,7 +157,13 @@ public class AlipayMobileBksigntokenVerifyRequest implements AlipayRequest<Alipa
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

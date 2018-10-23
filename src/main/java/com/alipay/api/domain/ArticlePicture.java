@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ArticlePicture extends AlipayObject {
 
-	private static final long serialVersionUID = 4392889332818579977L;
+	private static final long serialVersionUID = 8561587949449175333L;
 
 	/**
 	 * 图片的描述
@@ -37,31 +37,75 @@ public class ArticlePicture extends AlipayObject {
 	@ApiField("type")
 	private String type;
 
-	public String getDesc() {
+    /**
+     * Gets desc.
+     *
+     * @return the desc
+     */
+    public String getDesc() {
 		return this.desc;
 	}
-	public void setDesc(String desc) {
+
+    /**
+     * Sets desc.
+     *
+     * @param desc the desc
+     */
+    public void setDesc(String desc) {
 		this.desc = desc;
 	}
 
-	public String getLocation() {
+    /**
+     * Gets location.
+     *
+     * @return the location
+     */
+    public String getLocation() {
 		return this.location;
 	}
-	public void setLocation(String location) {
+
+    /**
+     * Sets location.
+     *
+     * @param location the location
+     */
+    public void setLocation(String location) {
 		this.location = location;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
-	public void setType(String type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
 

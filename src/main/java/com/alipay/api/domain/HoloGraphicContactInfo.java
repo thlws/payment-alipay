@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HoloGraphicContactInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5523753119449879889L;
+	private static final long serialVersionUID = 8615191961313497717L;
 
 	/**
 	 * 主叫通话频次
@@ -55,52 +55,129 @@ public class HoloGraphicContactInfo extends AlipayObject {
 	@ApiField("talk_time")
 	private Long talkTime;
 
-	public Long getCallFrequency() {
+    /**
+     * Gets call frequency.
+     *
+     * @return the call frequency
+     */
+    public Long getCallFrequency() {
 		return this.callFrequency;
 	}
-	public void setCallFrequency(Long callFrequency) {
+
+    /**
+     * Sets call frequency.
+     *
+     * @param callFrequency the call frequency
+     */
+    public void setCallFrequency(Long callFrequency) {
 		this.callFrequency = callFrequency;
 	}
 
-	public Long getCallTime() {
+    /**
+     * Gets call time.
+     *
+     * @return the call time
+     */
+    public Long getCallTime() {
 		return this.callTime;
 	}
-	public void setCallTime(Long callTime) {
+
+    /**
+     * Sets call time.
+     *
+     * @param callTime the call time
+     */
+    public void setCallTime(Long callTime) {
 		this.callTime = callTime;
 	}
 
-	public Long getCalledFrequency() {
+    /**
+     * Gets called frequency.
+     *
+     * @return the called frequency
+     */
+    public Long getCalledFrequency() {
 		return this.calledFrequency;
 	}
-	public void setCalledFrequency(Long calledFrequency) {
+
+    /**
+     * Sets called frequency.
+     *
+     * @param calledFrequency the called frequency
+     */
+    public void setCalledFrequency(Long calledFrequency) {
 		this.calledFrequency = calledFrequency;
 	}
 
-	public Long getCalledTime() {
+    /**
+     * Gets called time.
+     *
+     * @return the called time
+     */
+    public Long getCalledTime() {
 		return this.calledTime;
 	}
-	public void setCalledTime(Long calledTime) {
+
+    /**
+     * Sets called time.
+     *
+     * @param calledTime the called time
+     */
+    public void setCalledTime(Long calledTime) {
 		this.calledTime = calledTime;
 	}
 
-	public String getMobile() {
+    /**
+     * Gets mobile.
+     *
+     * @return the mobile
+     */
+    public String getMobile() {
 		return this.mobile;
 	}
-	public void setMobile(String mobile) {
+
+    /**
+     * Sets mobile.
+     *
+     * @param mobile the mobile
+     */
+    public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
 
-	public Long getTalkFrequency() {
+    /**
+     * Gets talk frequency.
+     *
+     * @return the talk frequency
+     */
+    public Long getTalkFrequency() {
 		return this.talkFrequency;
 	}
-	public void setTalkFrequency(Long talkFrequency) {
+
+    /**
+     * Sets talk frequency.
+     *
+     * @param talkFrequency the talk frequency
+     */
+    public void setTalkFrequency(Long talkFrequency) {
 		this.talkFrequency = talkFrequency;
 	}
 
-	public Long getTalkTime() {
+    /**
+     * Gets talk time.
+     *
+     * @return the talk time
+     */
+    public Long getTalkTime() {
 		return this.talkTime;
 	}
-	public void setTalkTime(Long talkTime) {
+
+    /**
+     * Sets talk time.
+     *
+     * @param talkTime the talk time
+     */
+    public void setTalkTime(Long talkTime) {
 		this.talkTime = talkTime;
 	}
 

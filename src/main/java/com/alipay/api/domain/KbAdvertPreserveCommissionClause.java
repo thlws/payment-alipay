@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KbAdvertPreserveCommissionClause extends AlipayObject {
 
-	private static final long serialVersionUID = 1897189851629561728L;
+	private static final long serialVersionUID = 2412999184528188617L;
 
 	/**
 	 * user_id：支付宝账户ID(2088开头)
@@ -30,17 +30,39 @@ logon_id：登陆账号
 	@ApiField("string")
 	private List<String> claimers;
 
-	public String getClaimerIdType() {
+    /**
+     * Gets claimer id type.
+     *
+     * @return the claimer id type
+     */
+    public String getClaimerIdType() {
 		return this.claimerIdType;
 	}
-	public void setClaimerIdType(String claimerIdType) {
+
+    /**
+     * Sets claimer id type.
+     *
+     * @param claimerIdType the claimer id type
+     */
+    public void setClaimerIdType(String claimerIdType) {
 		this.claimerIdType = claimerIdType;
 	}
 
-	public List<String> getClaimers() {
+    /**
+     * Gets claimers.
+     *
+     * @return the claimers
+     */
+    public List<String> getClaimers() {
 		return this.claimers;
 	}
-	public void setClaimers(List<String> claimers) {
+
+    /**
+     * Sets claimers.
+     *
+     * @param claimers the claimers
+     */
+    public void setClaimers(List<String> claimers) {
 		this.claimers = claimers;
 	}
 

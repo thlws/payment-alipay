@@ -9,9 +9,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.commerce.lottery.typelist.query request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-24 14:38:00
+ * @since 1.0, 2018-03-30 15:10:00
  */
 public class AlipayCommerceLotteryTypelistQueryRequest implements AlipayRequest<AlipayCommerceLotteryTypelistQueryResponse> {
 
@@ -85,7 +85,13 @@ public class AlipayCommerceLotteryTypelistQueryRequest implements AlipayRequest<
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑商品创建接口
  *
  * @author auto create
- * @since 1.0, 2017-08-31 21:06:27
+ * @since 1.0, 2018-09-03 14:58:43
  */
 public class KoubeiItemCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7789624895422146145L;
+	private static final long serialVersionUID = 1885746952653689664L;
 
 	/**
 	 * 服务商、服务商员工、商户、商户员工等口碑角色操作时必填，对应为《koubei.member.data.oauth.query》中的auth_code，默认有效期24小时；isv自身角色操作的时候，无需传该参数
@@ -43,7 +43,14 @@ public class KoubeiItemCreateModel extends AlipayObject {
 	private List<KoubeiItemDescription> descriptions;
 
 	/**
-	 * 商品生效时间，商品状态有效并且到达生效时间后才可在客户端（消费者端）展示出来，如果商品生效时间小于当前时间，则立即生效。
+	 * 售卖结束时间。当到达该时间时，商品暂停售卖，将不在客户端中继续展示，用户无法继续购买。
+注意：该时间不能晚于核销绝对有效期的结束时间。
+	 */
+	@ApiField("gmt_end")
+	private String gmtEnd;
+
+	/**
+	 * 商品售卖开始时间，商品状态有效并且到达生效时间后才可在客户端（消费者端）展示出来，如果商品生效时间小于当前时间，则立即生效。
 说明：商品的生效时间不能早于创建当天的0点
 	 */
 	@ApiField("gmt_start")
@@ -111,6 +118,12 @@ public class KoubeiItemCreateModel extends AlipayObject {
 	private String requestId;
 
 	/**
+	 * 行业场景 例如泛行业SERV_INDUSTRY，综合体MALL
+	 */
+	@ApiField("scene")
+	private String scene;
+
+	/**
 	 * 上架门店id列表，即传入一个或多个shop_id。多个ID则以英文分隔
 	 */
 	@ApiField("shop_ids")
@@ -121,6 +134,12 @@ public class KoubeiItemCreateModel extends AlipayObject {
 	 */
 	@ApiField("subject")
 	private String subject;
+
+	/**
+	 * 商品1:1首图，该封面图将展示在淘抢购、聚划算等商品售卖渠道。支持bmp、png、jpeg、jpg、gif格式，建议宽高比1:1，建议宽高1500*1500px，图片大小≤5M。图片大小超过5M，接口会报错。若图片尺寸不符，口碑服务器自身不会做压缩，但在口碑客户端展现时，会自动做性能优化（等比缩放，以图片中心为基准裁剪）。
+	 */
+	@ApiField("tb_cover")
+	private String tbCover;
 
 	/**
 	 * 交易凭证类商品模板信息
@@ -134,136 +153,399 @@ public class KoubeiItemCreateModel extends AlipayObject {
 	@ApiField("weight")
 	private String weight;
 
-	public String getAuthCode() {
+    /**
+     * Gets auth code.
+     *
+     * @return the auth code
+     */
+    public String getAuthCode() {
 		return this.authCode;
 	}
-	public void setAuthCode(String authCode) {
+
+    /**
+     * Sets auth code.
+     *
+     * @param authCode the auth code
+     */
+    public void setAuthCode(String authCode) {
 		this.authCode = authCode;
 	}
 
-	public String getCategoryId() {
+    /**
+     * Gets category id.
+     *
+     * @return the category id
+     */
+    public String getCategoryId() {
 		return this.categoryId;
 	}
-	public void setCategoryId(String categoryId) {
+
+    /**
+     * Sets category id.
+     *
+     * @param categoryId the category id
+     */
+    public void setCategoryId(String categoryId) {
 		this.categoryId = categoryId;
 	}
 
-	public String getCover() {
+    /**
+     * Gets cover.
+     *
+     * @return the cover
+     */
+    public String getCover() {
 		return this.cover;
 	}
-	public void setCover(String cover) {
+
+    /**
+     * Sets cover.
+     *
+     * @param cover the cover
+     */
+    public void setCover(String cover) {
 		this.cover = cover;
 	}
 
-	public List<KoubeiItemDescription> getDescriptions() {
+    /**
+     * Gets descriptions.
+     *
+     * @return the descriptions
+     */
+    public List<KoubeiItemDescription> getDescriptions() {
 		return this.descriptions;
 	}
-	public void setDescriptions(List<KoubeiItemDescription> descriptions) {
+
+    /**
+     * Sets descriptions.
+     *
+     * @param descriptions the descriptions
+     */
+    public void setDescriptions(List<KoubeiItemDescription> descriptions) {
 		this.descriptions = descriptions;
 	}
 
-	public Date getGmtStart() {
+    /**
+     * Gets gmt end.
+     *
+     * @return the gmt end
+     */
+    public String getGmtEnd() {
+		return this.gmtEnd;
+	}
+
+    /**
+     * Sets gmt end.
+     *
+     * @param gmtEnd the gmt end
+     */
+    public void setGmtEnd(String gmtEnd) {
+		this.gmtEnd = gmtEnd;
+	}
+
+    /**
+     * Gets gmt start.
+     *
+     * @return the gmt start
+     */
+    public Date getGmtStart() {
 		return this.gmtStart;
 	}
-	public void setGmtStart(Date gmtStart) {
+
+    /**
+     * Sets gmt start.
+     *
+     * @param gmtStart the gmt start
+     */
+    public void setGmtStart(Date gmtStart) {
 		this.gmtStart = gmtStart;
 	}
 
-	public Long getInventory() {
+    /**
+     * Gets inventory.
+     *
+     * @return the inventory
+     */
+    public Long getInventory() {
 		return this.inventory;
 	}
-	public void setInventory(Long inventory) {
+
+    /**
+     * Sets inventory.
+     *
+     * @param inventory the inventory
+     */
+    public void setInventory(Long inventory) {
 		this.inventory = inventory;
 	}
 
-	public String getItemDetailUrl() {
+    /**
+     * Gets item detail url.
+     *
+     * @return the item detail url
+     */
+    public String getItemDetailUrl() {
 		return this.itemDetailUrl;
 	}
-	public void setItemDetailUrl(String itemDetailUrl) {
+
+    /**
+     * Sets item detail url.
+     *
+     * @param itemDetailUrl the item detail url
+     */
+    public void setItemDetailUrl(String itemDetailUrl) {
 		this.itemDetailUrl = itemDetailUrl;
 	}
 
-	public String getItemType() {
+    /**
+     * Gets item type.
+     *
+     * @return the item type
+     */
+    public String getItemType() {
 		return this.itemType;
 	}
-	public void setItemType(String itemType) {
+
+    /**
+     * Sets item type.
+     *
+     * @param itemType the item type
+     */
+    public void setItemType(String itemType) {
 		this.itemType = itemType;
 	}
 
-	public String getMemo() {
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo() {
 		return this.memo;
 	}
-	public void setMemo(String memo) {
+
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
-	public KoubeiOperationContext getOperationContext() {
+    /**
+     * Gets operation context.
+     *
+     * @return the operation context
+     */
+    public KoubeiOperationContext getOperationContext() {
 		return this.operationContext;
 	}
-	public void setOperationContext(KoubeiOperationContext operationContext) {
+
+    /**
+     * Sets operation context.
+     *
+     * @param operationContext the operation context
+     */
+    public void setOperationContext(KoubeiOperationContext operationContext) {
 		this.operationContext = operationContext;
 	}
 
-	public String getOriginalPrice() {
+    /**
+     * Gets original price.
+     *
+     * @return the original price
+     */
+    public String getOriginalPrice() {
 		return this.originalPrice;
 	}
-	public void setOriginalPrice(String originalPrice) {
+
+    /**
+     * Sets original price.
+     *
+     * @param originalPrice the original price
+     */
+    public void setOriginalPrice(String originalPrice) {
 		this.originalPrice = originalPrice;
 	}
 
-	public String getPictureDetails() {
+    /**
+     * Gets picture details.
+     *
+     * @return the picture details
+     */
+    public String getPictureDetails() {
 		return this.pictureDetails;
 	}
-	public void setPictureDetails(String pictureDetails) {
+
+    /**
+     * Sets picture details.
+     *
+     * @param pictureDetails the picture details
+     */
+    public void setPictureDetails(String pictureDetails) {
 		this.pictureDetails = pictureDetails;
 	}
 
-	public String getPrice() {
+    /**
+     * Gets price.
+     *
+     * @return the price
+     */
+    public String getPrice() {
 		return this.price;
 	}
-	public void setPrice(String price) {
+
+    /**
+     * Sets price.
+     *
+     * @param price the price
+     */
+    public void setPrice(String price) {
 		this.price = price;
 	}
 
-	public String getPriceMode() {
+    /**
+     * Gets price mode.
+     *
+     * @return the price mode
+     */
+    public String getPriceMode() {
 		return this.priceMode;
 	}
-	public void setPriceMode(String priceMode) {
+
+    /**
+     * Sets price mode.
+     *
+     * @param priceMode the price mode
+     */
+    public void setPriceMode(String priceMode) {
 		this.priceMode = priceMode;
 	}
 
-	public String getRequestId() {
+    /**
+     * Gets request id.
+     *
+     * @return the request id
+     */
+    public String getRequestId() {
 		return this.requestId;
 	}
-	public void setRequestId(String requestId) {
+
+    /**
+     * Sets request id.
+     *
+     * @param requestId the request id
+     */
+    public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
 
-	public String getShopIds() {
+    /**
+     * Gets scene.
+     *
+     * @return the scene
+     */
+    public String getScene() {
+		return this.scene;
+	}
+
+    /**
+     * Sets scene.
+     *
+     * @param scene the scene
+     */
+    public void setScene(String scene) {
+		this.scene = scene;
+	}
+
+    /**
+     * Gets shop ids.
+     *
+     * @return the shop ids
+     */
+    public String getShopIds() {
 		return this.shopIds;
 	}
-	public void setShopIds(String shopIds) {
+
+    /**
+     * Sets shop ids.
+     *
+     * @param shopIds the shop ids
+     */
+    public void setShopIds(String shopIds) {
 		this.shopIds = shopIds;
 	}
 
-	public String getSubject() {
+    /**
+     * Gets subject.
+     *
+     * @return the subject
+     */
+    public String getSubject() {
 		return this.subject;
 	}
-	public void setSubject(String subject) {
+
+    /**
+     * Sets subject.
+     *
+     * @param subject the subject
+     */
+    public void setSubject(String subject) {
 		this.subject = subject;
 	}
 
-	public KoubeiTradeVoucherItemTemplete getTradeVoucherItemTemplate() {
+    /**
+     * Gets tb cover.
+     *
+     * @return the tb cover
+     */
+    public String getTbCover() {
+		return this.tbCover;
+	}
+
+    /**
+     * Sets tb cover.
+     *
+     * @param tbCover the tb cover
+     */
+    public void setTbCover(String tbCover) {
+		this.tbCover = tbCover;
+	}
+
+    /**
+     * Gets trade voucher item template.
+     *
+     * @return the trade voucher item template
+     */
+    public KoubeiTradeVoucherItemTemplete getTradeVoucherItemTemplate() {
 		return this.tradeVoucherItemTemplate;
 	}
-	public void setTradeVoucherItemTemplate(KoubeiTradeVoucherItemTemplete tradeVoucherItemTemplate) {
+
+    /**
+     * Sets trade voucher item template.
+     *
+     * @param tradeVoucherItemTemplate the trade voucher item template
+     */
+    public void setTradeVoucherItemTemplate(KoubeiTradeVoucherItemTemplete tradeVoucherItemTemplate) {
 		this.tradeVoucherItemTemplate = tradeVoucherItemTemplate;
 	}
 
-	public String getWeight() {
+    /**
+     * Gets weight.
+     *
+     * @return the weight
+     */
+    public String getWeight() {
 		return this.weight;
 	}
-	public void setWeight(String weight) {
+
+    /**
+     * Sets weight.
+     *
+     * @param weight the weight
+     */
+    public void setWeight(String weight) {
 		this.weight = weight;
 	}
 

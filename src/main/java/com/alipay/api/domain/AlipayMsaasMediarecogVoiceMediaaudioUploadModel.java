@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMsaasMediarecogVoiceMediaaudioUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6698857851996122932L;
+	private static final long serialVersionUID = 5733355345315136235L;
 
 	/**
 	 * base64编码的声音数据
@@ -61,59 +61,147 @@ public class AlipayMsaasMediarecogVoiceMediaaudioUploadModel extends AlipayObjec
 	@ApiField("vtype")
 	private String vtype;
 
-	public String getData() {
+    /**
+     * Gets data.
+     *
+     * @return the data
+     */
+    public String getData() {
 		return this.data;
 	}
-	public void setData(String data) {
+
+    /**
+     * Sets data.
+     *
+     * @param data the data
+     */
+    public void setData(String data) {
 		this.data = data;
 	}
 
-	public String getExtinfoA() {
+    /**
+     * Gets extinfo a.
+     *
+     * @return the extinfo a
+     */
+    public String getExtinfoA() {
 		return this.extinfoA;
 	}
-	public void setExtinfoA(String extinfoA) {
+
+    /**
+     * Sets extinfo a.
+     *
+     * @param extinfoA the extinfo a
+     */
+    public void setExtinfoA(String extinfoA) {
 		this.extinfoA = extinfoA;
 	}
 
-	public String getExtinfoB() {
+    /**
+     * Gets extinfo b.
+     *
+     * @return the extinfo b
+     */
+    public String getExtinfoB() {
 		return this.extinfoB;
 	}
-	public void setExtinfoB(String extinfoB) {
+
+    /**
+     * Sets extinfo b.
+     *
+     * @param extinfoB the extinfo b
+     */
+    public void setExtinfoB(String extinfoB) {
 		this.extinfoB = extinfoB;
 	}
 
-	public String getExtinfoC() {
+    /**
+     * Gets extinfo c.
+     *
+     * @return the extinfo c
+     */
+    public String getExtinfoC() {
 		return this.extinfoC;
 	}
-	public void setExtinfoC(String extinfoC) {
+
+    /**
+     * Sets extinfo c.
+     *
+     * @param extinfoC the extinfo c
+     */
+    public void setExtinfoC(String extinfoC) {
 		this.extinfoC = extinfoC;
 	}
 
-	public String getExtinfoD() {
+    /**
+     * Gets extinfo d.
+     *
+     * @return the extinfo d
+     */
+    public String getExtinfoD() {
 		return this.extinfoD;
 	}
-	public void setExtinfoD(String extinfoD) {
+
+    /**
+     * Sets extinfo d.
+     *
+     * @param extinfoD the extinfo d
+     */
+    public void setExtinfoD(String extinfoD) {
 		this.extinfoD = extinfoD;
 	}
 
-	public String getLabeltime() {
+    /**
+     * Gets labeltime.
+     *
+     * @return the labeltime
+     */
+    public String getLabeltime() {
 		return this.labeltime;
 	}
-	public void setLabeltime(String labeltime) {
+
+    /**
+     * Sets labeltime.
+     *
+     * @param labeltime the labeltime
+     */
+    public void setLabeltime(String labeltime) {
 		this.labeltime = labeltime;
 	}
 
-	public String getVname() {
+    /**
+     * Gets vname.
+     *
+     * @return the vname
+     */
+    public String getVname() {
 		return this.vname;
 	}
-	public void setVname(String vname) {
+
+    /**
+     * Sets vname.
+     *
+     * @param vname the vname
+     */
+    public void setVname(String vname) {
 		this.vname = vname;
 	}
 
-	public String getVtype() {
+    /**
+     * Gets vtype.
+     *
+     * @return the vtype
+     */
+    public String getVtype() {
 		return this.vtype;
 	}
-	public void setVtype(String vtype) {
+
+    /**
+     * Sets vtype.
+     *
+     * @param vtype the vtype
+     */
+    public void setVtype(String vtype) {
 		this.vtype = vtype;
 	}
 

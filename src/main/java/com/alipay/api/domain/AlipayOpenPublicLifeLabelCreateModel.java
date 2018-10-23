@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建标签接口
  *
  * @author auto create
- * @since 1.0, 2017-06-27 17:50:46
+ * @since 1.0, 2018-07-25 13:52:34
  */
 public class AlipayOpenPublicLifeLabelCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3815955855793172569L;
+	private static final long serialVersionUID = 4645858756571154159L;
 
 	/**
 	 * 标签值类型，目前只支持string（字符串类型），不传默认为"string"
@@ -25,17 +25,39 @@ public class AlipayOpenPublicLifeLabelCreateModel extends AlipayObject {
 	@ApiField("label_name")
 	private String labelName;
 
-	public String getDataType() {
+    /**
+     * Gets data type.
+     *
+     * @return the data type
+     */
+    public String getDataType() {
 		return this.dataType;
 	}
-	public void setDataType(String dataType) {
+
+    /**
+     * Sets data type.
+     *
+     * @param dataType the data type
+     */
+    public void setDataType(String dataType) {
 		this.dataType = dataType;
 	}
 
-	public String getLabelName() {
+    /**
+     * Gets label name.
+     *
+     * @return the label name
+     */
+    public String getLabelName() {
 		return this.labelName;
 	}
-	public void setLabelName(String labelName) {
+
+    /**
+     * Sets label name.
+     *
+     * @param labelName the label name
+     */
+    public void setLabelName(String labelName) {
 		this.labelName = labelName;
 	}
 

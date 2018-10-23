@@ -11,8 +11,9 @@ import com.alipay.api.internal.util.AlipayHashMap;
 
 /**
  * 多媒体文件下载请求
+ *
  * @author yikai.hu
- * @version $Id: AlipayMobilePublicMultiMediaDownloadRequest.java, v 0.1 Aug 15, 2014 10:19:15 AM yikai.hu Exp $
+ * @version $Id : AlipayMobilePublicMultiMediaDownloadRequest.java, v 0.1 Aug 15, 2014 10:19:15 AM yikai.hu Exp $
  */
 public class AlipayMobilePublicMultiMediaDownloadRequest implements
                                                          AlipayRequest<AlipayMobilePublicMultiMediaDownloadResponse> {
@@ -26,10 +27,20 @@ public class AlipayMobilePublicMultiMediaDownloadRequest implements
 
     private String        bizContent;
 
+    /**
+     * Sets biz content.
+     *
+     * @param bizContent the biz content
+     */
     public void setBizContent(String bizContent) {
         this.bizContent = bizContent;
     }
 
+    /**
+     * Gets biz content.
+     *
+     * @return the biz content
+     */
     public String getBizContent() {
         return this.bizContent;
     }
@@ -83,6 +94,12 @@ public class AlipayMobilePublicMultiMediaDownloadRequest implements
         return txtParams;
     }
 
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
     public void putOtherTextParam(String key, String value) {
         if (this.udfParams == null) {
             this.udfParams = new AlipayHashMap();
@@ -92,7 +109,7 @@ public class AlipayMobilePublicMultiMediaDownloadRequest implements
 
     /**
      * Getter method for property <tt>outputStream</tt>.
-     * 
+     *
      * @return property value of outputStream
      */
     public OutputStream getOutputStream() {
@@ -101,7 +118,7 @@ public class AlipayMobilePublicMultiMediaDownloadRequest implements
 
     /**
      * Setter method for property <tt>outputStream</tt>.
-     * 
+     *
      * @param outputStream value to be assigned to property outputStream
      */
     public void setOutputStream(OutputStream outputStream) {

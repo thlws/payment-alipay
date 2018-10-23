@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiRetailShopitemModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4145411868477987853L;
+	private static final long serialVersionUID = 3885118173372977863L;
 
 	/**
 	 * 店铺商品的品牌名称
@@ -55,52 +55,129 @@ public class KoubeiRetailShopitemModifyModel extends AlipayObject {
 	@ApiField("title")
 	private String title;
 
-	public String getBrandCode() {
+    /**
+     * Gets brand code.
+     *
+     * @return the brand code
+     */
+    public String getBrandCode() {
 		return this.brandCode;
 	}
-	public void setBrandCode(String brandCode) {
+
+    /**
+     * Sets brand code.
+     *
+     * @param brandCode the brand code
+     */
+    public void setBrandCode(String brandCode) {
 		this.brandCode = brandCode;
 	}
 
-	public String getCategoryCode() {
+    /**
+     * Gets category code.
+     *
+     * @return the category code
+     */
+    public String getCategoryCode() {
 		return this.categoryCode;
 	}
-	public void setCategoryCode(String categoryCode) {
+
+    /**
+     * Sets category code.
+     *
+     * @param categoryCode the category code
+     */
+    public void setCategoryCode(String categoryCode) {
 		this.categoryCode = categoryCode;
 	}
 
-	public String getDescription() {
+    /**
+     * Gets description.
+     *
+     * @return the description
+     */
+    public String getDescription() {
 		return this.description;
 	}
-	public void setDescription(String description) {
+
+    /**
+     * Sets description.
+     *
+     * @param description the description
+     */
+    public void setDescription(String description) {
 		this.description = description;
 	}
 
-	public String getItemCode() {
+    /**
+     * Gets item code.
+     *
+     * @return the item code
+     */
+    public String getItemCode() {
 		return this.itemCode;
 	}
-	public void setItemCode(String itemCode) {
+
+    /**
+     * Sets item code.
+     *
+     * @param itemCode the item code
+     */
+    public void setItemCode(String itemCode) {
 		this.itemCode = itemCode;
 	}
 
-	public String getKbShopId() {
+    /**
+     * Gets kb shop id.
+     *
+     * @return the kb shop id
+     */
+    public String getKbShopId() {
 		return this.kbShopId;
 	}
-	public void setKbShopId(String kbShopId) {
+
+    /**
+     * Sets kb shop id.
+     *
+     * @param kbShopId the kb shop id
+     */
+    public void setKbShopId(String kbShopId) {
 		this.kbShopId = kbShopId;
 	}
 
-	public String getPrice() {
+    /**
+     * Gets price.
+     *
+     * @return the price
+     */
+    public String getPrice() {
 		return this.price;
 	}
-	public void setPrice(String price) {
+
+    /**
+     * Sets price.
+     *
+     * @param price the price
+     */
+    public void setPrice(String price) {
 		this.price = price;
 	}
 
-	public String getTitle() {
+    /**
+     * Gets title.
+     *
+     * @return the title
+     */
+    public String getTitle() {
 		return this.title;
 	}
-	public void setTitle(String title) {
+
+    /**
+     * Sets title.
+     *
+     * @param title the title
+     */
+    public void setTitle(String title) {
 		this.title = title;
 	}
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询单个物业小区信息
  *
  * @author auto create
- * @since 1.0, 2017-01-14 11:36:24
+ * @since 1.0, 2018-06-09 20:14:02
  */
 public class AlipayEcoCplifeCommunityDetailsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3186239235999337766L;
+	private static final long serialVersionUID = 5534387567244281828L;
 
 	/**
 	 * 支付宝社区小区统一编号，必须在物业账号名下存在。
@@ -19,10 +19,21 @@ public class AlipayEcoCplifeCommunityDetailsQueryModel extends AlipayObject {
 	@ApiField("community_id")
 	private String communityId;
 
-	public String getCommunityId() {
+    /**
+     * Gets community id.
+     *
+     * @return the community id
+     */
+    public String getCommunityId() {
 		return this.communityId;
 	}
-	public void setCommunityId(String communityId) {
+
+    /**
+     * Sets community id.
+     *
+     * @param communityId the community id
+     */
+    public void setCommunityId(String communityId) {
 		this.communityId = communityId;
 	}
 

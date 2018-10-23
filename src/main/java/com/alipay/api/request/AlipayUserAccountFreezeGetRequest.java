@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.user.account.freeze.get request
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-08-11 15:48:05
  */
@@ -23,10 +23,21 @@ public class AlipayUserAccountFreezeGetRequest implements AlipayRequest<AlipayUs
 	 */
 	private String freezeType;
 
-	public void setFreezeType(String freezeType) {
+    /**
+     * Sets freeze type.
+     *
+     * @param freezeType the freeze type
+     */
+    public void setFreezeType(String freezeType) {
 		this.freezeType = freezeType;
 	}
-	public String getFreezeType() {
+
+    /**
+     * Gets freeze type.
+     *
+     * @return the freeze type
+     */
+    public String getFreezeType() {
 		return this.freezeType;
 	}
 	private String terminalType;
@@ -98,7 +109,13 @@ public class AlipayUserAccountFreezeGetRequest implements AlipayRequest<AlipayUs
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class McardStylInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7328592441292766195L;
+	private static final long serialVersionUID = 8753846116391657827L;
 
 	/**
 	 * 背景图片Id，通过接口（alipay.offline.material.image.upload）上传图片
@@ -39,24 +39,57 @@ public class McardStylInfo extends AlipayObject {
 	@ApiField("logo_id")
 	private String logoId;
 
-	public String getBackgroundId() {
+    /**
+     * Gets background id.
+     *
+     * @return the background id
+     */
+    public String getBackgroundId() {
 		return this.backgroundId;
 	}
-	public void setBackgroundId(String backgroundId) {
+
+    /**
+     * Sets background id.
+     *
+     * @param backgroundId the background id
+     */
+    public void setBackgroundId(String backgroundId) {
 		this.backgroundId = backgroundId;
 	}
 
-	public String getBgColor() {
+    /**
+     * Gets bg color.
+     *
+     * @return the bg color
+     */
+    public String getBgColor() {
 		return this.bgColor;
 	}
-	public void setBgColor(String bgColor) {
+
+    /**
+     * Sets bg color.
+     *
+     * @param bgColor the bg color
+     */
+    public void setBgColor(String bgColor) {
 		this.bgColor = bgColor;
 	}
 
-	public String getLogoId() {
+    /**
+     * Gets logo id.
+     *
+     * @return the logo id
+     */
+    public String getLogoId() {
 		return this.logoId;
 	}
-	public void setLogoId(String logoId) {
+
+    /**
+     * Sets logo id.
+     *
+     * @param logoId the logo id
+     */
+    public void setLogoId(String logoId) {
 		this.logoId = logoId;
 	}
 

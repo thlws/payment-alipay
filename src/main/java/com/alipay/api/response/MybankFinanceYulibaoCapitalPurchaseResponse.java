@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: mybank.finance.yulibao.capital.purchase response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-11-18 16:08:26
+ * @since 1.0, 2018-08-08 17:34:06
  */
 public class MybankFinanceYulibaoCapitalPurchaseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4626621913627144697L;
+	private static final long serialVersionUID = 4421246796817947121L;
 
 	/** 
 	 * 余利宝内部的交易流水号。
@@ -32,24 +32,57 @@ public class MybankFinanceYulibaoCapitalPurchaseResponse extends AlipayResponse 
 	@ApiField("trans_result")
 	private String transResult;
 
-	public void setInnerBizNo(String innerBizNo) {
+    /**
+     * Sets inner biz no.
+     *
+     * @param innerBizNo the inner biz no
+     */
+    public void setInnerBizNo(String innerBizNo) {
 		this.innerBizNo = innerBizNo;
 	}
-	public String getInnerBizNo( ) {
+
+    /**
+     * Gets inner biz no.
+     *
+     * @return the inner biz no
+     */
+    public String getInnerBizNo( ) {
 		return this.innerBizNo;
 	}
 
-	public void setRemark(String remark) {
+    /**
+     * Sets remark.
+     *
+     * @param remark the remark
+     */
+    public void setRemark(String remark) {
 		this.remark = remark;
 	}
-	public String getRemark( ) {
+
+    /**
+     * Gets remark.
+     *
+     * @return the remark
+     */
+    public String getRemark( ) {
 		return this.remark;
 	}
 
-	public void setTransResult(String transResult) {
+    /**
+     * Sets trans result.
+     *
+     * @param transResult the trans result
+     */
+    public void setTransResult(String transResult) {
 		this.transResult = transResult;
 	}
-	public String getTransResult( ) {
+
+    /**
+     * Gets trans result.
+     *
+     * @return the trans result
+     */
+    public String getTransResult( ) {
 		return this.transResult;
 	}
 

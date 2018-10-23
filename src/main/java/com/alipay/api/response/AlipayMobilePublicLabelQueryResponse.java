@@ -8,13 +8,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.public.label.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-07-29 20:00:13
  */
 public class AlipayMobilePublicLabelQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5196255823734212627L;
+	private static final long serialVersionUID = 2413732933188974758L;
 
 	/** 
 	 * 结果码
@@ -42,10 +42,21 @@ public class AlipayMobilePublicLabelQueryResponse extends AlipayResponse {
 		return this.code;
 	}
 
-	public void setLabels(List<String> labels) {
+    /**
+     * Sets labels.
+     *
+     * @param labels the labels
+     */
+    public void setLabels(List<String> labels) {
 		this.labels = labels;
 	}
-	public List<String> getLabels( ) {
+
+    /**
+     * Gets labels.
+     *
+     * @return the labels
+     */
+    public List<String> getLabels( ) {
 		return this.labels;
 	}
 

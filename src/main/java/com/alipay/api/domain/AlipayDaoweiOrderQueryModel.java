@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 到位订单查询接口
  *
  * @author auto create
- * @since 1.0, 2017-03-20 14:00:38
+ * @since 1.0, 2018-03-23 13:23:59
  */
 public class AlipayDaoweiOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1772863318184573134L;
+	private static final long serialVersionUID = 5662922734694454112L;
 
 	/**
 	 * 到位业务订单号。用户在到位下单时，由到位系统生成的32位全局唯一数字 id。
@@ -20,10 +20,21 @@ public class AlipayDaoweiOrderQueryModel extends AlipayObject {
 	@ApiField("order_no")
 	private String orderNo;
 
-	public String getOrderNo() {
+    /**
+     * Gets order no.
+     *
+     * @return the order no
+     */
+    public String getOrderNo() {
 		return this.orderNo;
 	}
-	public void setOrderNo(String orderNo) {
+
+    /**
+     * Sets order no.
+     *
+     * @param orderNo the order no
+     */
+    public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
 

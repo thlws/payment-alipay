@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.mobile.recommend.get request
- * 
+ *
  * @author auto create
  * @since 1.0, 2015-03-11 15:19:54
  */
@@ -43,38 +43,93 @@ public class AlipayMobileRecommendGetRequest implements AlipayRequest<AlipayMobi
 	 */
 	private String userId;
 
-	public void setExtInfo(String extInfo) {
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
-	public String getExtInfo() {
+
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo() {
 		return this.extInfo;
 	}
 
-	public void setLimit(String limit) {
+    /**
+     * Sets limit.
+     *
+     * @param limit the limit
+     */
+    public void setLimit(String limit) {
 		this.limit = limit;
 	}
-	public String getLimit() {
+
+    /**
+     * Gets limit.
+     *
+     * @return the limit
+     */
+    public String getLimit() {
 		return this.limit;
 	}
 
-	public void setSceneId(String sceneId) {
+    /**
+     * Sets scene id.
+     *
+     * @param sceneId the scene id
+     */
+    public void setSceneId(String sceneId) {
 		this.sceneId = sceneId;
 	}
-	public String getSceneId() {
+
+    /**
+     * Gets scene id.
+     *
+     * @return the scene id
+     */
+    public String getSceneId() {
 		return this.sceneId;
 	}
 
-	public void setStartIdx(String startIdx) {
+    /**
+     * Sets start idx.
+     *
+     * @param startIdx the start idx
+     */
+    public void setStartIdx(String startIdx) {
 		this.startIdx = startIdx;
 	}
-	public String getStartIdx() {
+
+    /**
+     * Gets start idx.
+     *
+     * @return the start idx
+     */
+    public String getStartIdx() {
 		return this.startIdx;
 	}
 
-	public void setUserId(String userId) {
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public String getUserId() {
+
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
 	private String terminalType;
@@ -150,7 +205,13 @@ public class AlipayMobileRecommendGetRequest implements AlipayRequest<AlipayMobi
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

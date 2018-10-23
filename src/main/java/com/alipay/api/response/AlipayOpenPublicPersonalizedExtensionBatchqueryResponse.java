@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.personalized.extension.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-08-07 18:03:59
+ * @since 1.0, 2018-07-25 13:54:59
  */
 public class AlipayOpenPublicPersonalizedExtensionBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4227269671649444438L;
+	private static final long serialVersionUID = 6627673898347657755L;
 
 	/** 
 	 * 扩展区套数
@@ -30,17 +30,39 @@ public class AlipayOpenPublicPersonalizedExtensionBatchqueryResponse extends Ali
 	@ApiField("query_extension")
 	private List<QueryExtension> extensions;
 
-	public void setCount(Long count) {
+    /**
+     * Sets count.
+     *
+     * @param count the count
+     */
+    public void setCount(Long count) {
 		this.count = count;
 	}
-	public Long getCount( ) {
+
+    /**
+     * Gets count.
+     *
+     * @return the count
+     */
+    public Long getCount( ) {
 		return this.count;
 	}
 
-	public void setExtensions(List<QueryExtension> extensions) {
+    /**
+     * Sets extensions.
+     *
+     * @param extensions the extensions
+     */
+    public void setExtensions(List<QueryExtension> extensions) {
 		this.extensions = extensions;
 	}
-	public List<QueryExtension> getExtensions( ) {
+
+    /**
+     * Gets extensions.
+     *
+     * @return the extensions
+     */
+    public List<QueryExtension> getExtensions( ) {
 		return this.extensions;
 	}
 

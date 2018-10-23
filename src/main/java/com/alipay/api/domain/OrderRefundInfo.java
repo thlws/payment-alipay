@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OrderRefundInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2219838364196755975L;
+	private static final long serialVersionUID = 2252584648948921667L;
 
 	/**
 	 * 服务订单的退款金额，单位为元
@@ -25,17 +25,39 @@ public class OrderRefundInfo extends AlipayObject {
 	@ApiField("service_order_no")
 	private String serviceOrderNo;
 
-	public String getRefundAmount() {
+    /**
+     * Gets refund amount.
+     *
+     * @return the refund amount
+     */
+    public String getRefundAmount() {
 		return this.refundAmount;
 	}
-	public void setRefundAmount(String refundAmount) {
+
+    /**
+     * Sets refund amount.
+     *
+     * @param refundAmount the refund amount
+     */
+    public void setRefundAmount(String refundAmount) {
 		this.refundAmount = refundAmount;
 	}
 
-	public String getServiceOrderNo() {
+    /**
+     * Gets service order no.
+     *
+     * @return the service order no
+     */
+    public String getServiceOrderNo() {
 		return this.serviceOrderNo;
 	}
-	public void setServiceOrderNo(String serviceOrderNo) {
+
+    /**
+     * Sets service order no.
+     *
+     * @param serviceOrderNo the service order no
+     */
+    public void setServiceOrderNo(String serviceOrderNo) {
 		this.serviceOrderNo = serviceOrderNo;
 	}
 

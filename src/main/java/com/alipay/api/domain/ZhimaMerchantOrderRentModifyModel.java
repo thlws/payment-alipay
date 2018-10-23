@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaMerchantOrderRentModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7846751418822476959L;
+	private static final long serialVersionUID = 4431323425598779153L;
 
 	/**
 	 * 芝麻借还订单的开始借用时间，格式：yyyy-mm-dd hh:MM:ss 
@@ -41,31 +41,75 @@ borrow_time 与 expiry_time 须至少传入一个，可同时传入。
 	@ApiField("product_code")
 	private String productCode;
 
-	public String getBorrowTime() {
+    /**
+     * Gets borrow time.
+     *
+     * @return the borrow time
+     */
+    public String getBorrowTime() {
 		return this.borrowTime;
 	}
-	public void setBorrowTime(String borrowTime) {
+
+    /**
+     * Sets borrow time.
+     *
+     * @param borrowTime the borrow time
+     */
+    public void setBorrowTime(String borrowTime) {
 		this.borrowTime = borrowTime;
 	}
 
-	public String getExpiryTime() {
+    /**
+     * Gets expiry time.
+     *
+     * @return the expiry time
+     */
+    public String getExpiryTime() {
 		return this.expiryTime;
 	}
-	public void setExpiryTime(String expiryTime) {
+
+    /**
+     * Sets expiry time.
+     *
+     * @param expiryTime the expiry time
+     */
+    public void setExpiryTime(String expiryTime) {
 		this.expiryTime = expiryTime;
 	}
 
-	public String getOrderNo() {
+    /**
+     * Gets order no.
+     *
+     * @return the order no
+     */
+    public String getOrderNo() {
 		return this.orderNo;
 	}
-	public void setOrderNo(String orderNo) {
+
+    /**
+     * Sets order no.
+     *
+     * @param orderNo the order no
+     */
+    public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
 
-	public String getProductCode() {
+    /**
+     * Gets product code.
+     *
+     * @return the product code
+     */
+    public String getProductCode() {
 		return this.productCode;
 	}
-	public void setProductCode(String productCode) {
+
+    /**
+     * Sets product code.
+     *
+     * @param productCode the product code
+     */
+    public void setProductCode(String productCode) {
 		this.productCode = productCode;
 	}
 

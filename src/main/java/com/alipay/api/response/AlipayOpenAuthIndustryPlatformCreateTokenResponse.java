@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.auth.industry.platform.create.token response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-05-13 18:02:26
+ * @since 1.0, 2018-02-09 11:39:27
  */
 public class AlipayOpenAuthIndustryPlatformCreateTokenResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6284378691644434563L;
+	private static final long serialVersionUID = 4288892626165997535L;
 
 	/** 
 	 * 授权码
@@ -32,24 +32,57 @@ public class AlipayOpenAuthIndustryPlatformCreateTokenResponse extends AlipayRes
 	@ApiField("scope")
 	private String scope;
 
-	public void setAuthCode(String authCode) {
+    /**
+     * Sets auth code.
+     *
+     * @param authCode the auth code
+     */
+    public void setAuthCode(String authCode) {
 		this.authCode = authCode;
 	}
-	public String getAuthCode( ) {
+
+    /**
+     * Gets auth code.
+     *
+     * @return the auth code
+     */
+    public String getAuthCode( ) {
 		return this.authCode;
 	}
 
-	public void setRequstAppId(String requstAppId) {
+    /**
+     * Sets requst app id.
+     *
+     * @param requstAppId the requst app id
+     */
+    public void setRequstAppId(String requstAppId) {
 		this.requstAppId = requstAppId;
 	}
-	public String getRequstAppId( ) {
+
+    /**
+     * Gets requst app id.
+     *
+     * @return the requst app id
+     */
+    public String getRequstAppId( ) {
 		return this.requstAppId;
 	}
 
-	public void setScope(String scope) {
+    /**
+     * Sets scope.
+     *
+     * @param scope the scope
+     */
+    public void setScope(String scope) {
 		this.scope = scope;
 	}
-	public String getScope( ) {
+
+    /**
+     * Gets scope.
+     *
+     * @return the scope
+     */
+    public String getScope( ) {
 		return this.scope;
 	}
 

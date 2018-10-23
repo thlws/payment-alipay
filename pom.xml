@@ -6,7 +6,7 @@
 
     <groupId>org.thlws</groupId>
     <artifactId>payment-alipay</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
 
     <name>payment-alipay</name>
     <url>https://github.com/thlws/payment-alipay</url>
@@ -29,7 +29,11 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
-
+        <!--<dependency>-->
+            <!--<groupId>com.alipay.sdk</groupId>-->
+            <!--<artifactId>alipay-sdk-java</artifactId>-->
+            <!--<version>3.3.87.ALL</version>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
@@ -104,14 +108,14 @@
                 </configuration>
             </plugin>
 
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.10.4</version>
-                <configuration>
-                    <aggregate>true</aggregate>
-                </configuration>
-            </plugin>
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-javadoc-plugin</artifactId>-->
+                <!--<version>2.10.4</version>-->
+                <!--<configuration>-->
+                    <!--<aggregate>true</aggregate>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
 
             <!-- skip junit test classes -->
             <plugin>
@@ -162,9 +166,14 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
-                        <version>2.10.4</version>
+                        <version>3.0.1</version>
+                        <configuration>
+                            <failOnError>true</failOnError>
+                            <doclint>none</doclint>
+                        </configuration>
                         <executions>
                             <execution>
+                                <id>attach-javadocs</id>
                                 <phase>package</phase>
                                 <goals>
                                     <goal>jar</goal>

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 签约文件列表
  *
  * @author auto create
- * @since 1.0, 2017-09-20 10:18:47
+ * @since 1.0, 2017-12-20 15:24:35
  */
 public class SignDataInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3641194548573991683L;
+	private static final long serialVersionUID = 4257548932431523935L;
 
 	/**
 	 * 待签约数据编号，由外部系统定义，用于数据关联
@@ -70,59 +70,147 @@ public class SignDataInfo extends AlipayObject {
 	@ApiField("source_data")
 	private String sourceData;
 
-	public String getDataId() {
+    /**
+     * Gets data id.
+     *
+     * @return the data id
+     */
+    public String getDataId() {
 		return this.dataId;
 	}
-	public void setDataId(String dataId) {
+
+    /**
+     * Sets data id.
+     *
+     * @param dataId the data id
+     */
+    public void setDataId(String dataId) {
 		this.dataId = dataId;
 	}
 
-	public String getDataName() {
+    /**
+     * Gets data name.
+     *
+     * @return the data name
+     */
+    public String getDataName() {
 		return this.dataName;
 	}
-	public void setDataName(String dataName) {
+
+    /**
+     * Sets data name.
+     *
+     * @param dataName the data name
+     */
+    public void setDataName(String dataName) {
 		this.dataName = dataName;
 	}
 
-	public String getDataType() {
+    /**
+     * Gets data type.
+     *
+     * @return the data type
+     */
+    public String getDataType() {
 		return this.dataType;
 	}
-	public void setDataType(String dataType) {
+
+    /**
+     * Sets data type.
+     *
+     * @param dataType the data type
+     */
+    public void setDataType(String dataType) {
 		this.dataType = dataType;
 	}
 
-	public String getFileType() {
+    /**
+     * Gets file type.
+     *
+     * @return the file type
+     */
+    public String getFileType() {
 		return this.fileType;
 	}
-	public void setFileType(String fileType) {
+
+    /**
+     * Sets file type.
+     *
+     * @param fileType the file type
+     */
+    public void setFileType(String fileType) {
 		this.fileType = fileType;
 	}
 
-	public String getOssFileId() {
+    /**
+     * Gets oss file id.
+     *
+     * @return the oss file id
+     */
+    public String getOssFileId() {
 		return this.ossFileId;
 	}
-	public void setOssFileId(String ossFileId) {
+
+    /**
+     * Sets oss file id.
+     *
+     * @param ossFileId the oss file id
+     */
+    public void setOssFileId(String ossFileId) {
 		this.ossFileId = ossFileId;
 	}
 
-	public String getPreviewUrl() {
+    /**
+     * Gets preview url.
+     *
+     * @return the preview url
+     */
+    public String getPreviewUrl() {
 		return this.previewUrl;
 	}
-	public void setPreviewUrl(String previewUrl) {
+
+    /**
+     * Sets preview url.
+     *
+     * @param previewUrl the preview url
+     */
+    public void setPreviewUrl(String previewUrl) {
 		this.previewUrl = previewUrl;
 	}
 
-	public List<FileSignature> getSignatureList() {
+    /**
+     * Gets signature list.
+     *
+     * @return the signature list
+     */
+    public List<FileSignature> getSignatureList() {
 		return this.signatureList;
 	}
-	public void setSignatureList(List<FileSignature> signatureList) {
+
+    /**
+     * Sets signature list.
+     *
+     * @param signatureList the signature list
+     */
+    public void setSignatureList(List<FileSignature> signatureList) {
 		this.signatureList = signatureList;
 	}
 
-	public String getSourceData() {
+    /**
+     * Gets source data.
+     *
+     * @return the source data
+     */
+    public String getSourceData() {
 		return this.sourceData;
 	}
-	public void setSourceData(String sourceData) {
+
+    /**
+     * Sets source data.
+     *
+     * @param sourceData the source data
+     */
+    public void setSourceData(String sourceData) {
 		this.sourceData = sourceData;
 	}
 

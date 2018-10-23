@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IotDevicePersonalInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1346623936648875666L;
+	private static final long serialVersionUID = 4479758398411823534L;
 
 	/**
 	 * 协议服务商用于唯一标识该设备的设备id(协议服务商定义)
@@ -25,17 +25,39 @@ public class IotDevicePersonalInfo extends AlipayObject {
 	@ApiField("remark")
 	private String remark;
 
-	public String getDeviceId() {
+    /**
+     * Gets device id.
+     *
+     * @return the device id
+     */
+    public String getDeviceId() {
 		return this.deviceId;
 	}
-	public void setDeviceId(String deviceId) {
+
+    /**
+     * Sets device id.
+     *
+     * @param deviceId the device id
+     */
+    public void setDeviceId(String deviceId) {
 		this.deviceId = deviceId;
 	}
 
-	public String getRemark() {
+    /**
+     * Gets remark.
+     *
+     * @return the remark
+     */
+    public String getRemark() {
 		return this.remark;
 	}
-	public void setRemark(String remark) {
+
+    /**
+     * Sets remark.
+     *
+     * @param remark the remark
+     */
+    public void setRemark(String remark) {
 		this.remark = remark;
 	}
 

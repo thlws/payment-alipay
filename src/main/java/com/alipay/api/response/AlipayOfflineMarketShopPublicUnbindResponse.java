@@ -8,13 +8,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.market.shop.public.unbind response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-12-19 20:52:06
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayOfflineMarketShopPublicUnbindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4213511969564869124L;
+	private static final long serialVersionUID = 6111315636722464378L;
 
 	/** 
 	 * 绑定失败的店铺ID列表,绑定失败原因可能是：a)检测到shop_id不存在;b)检测到shop_id不属于当前商户；c）该门店ID已经绑定服务窗
@@ -35,24 +35,57 @@ public class AlipayOfflineMarketShopPublicUnbindResponse extends AlipayResponse 
 	@ApiField("total_success")
 	private Long totalSuccess;
 
-	public void setErrorUnBindingShopIds(List<String> errorUnBindingShopIds) {
+    /**
+     * Sets error un binding shop ids.
+     *
+     * @param errorUnBindingShopIds the error un binding shop ids
+     */
+    public void setErrorUnBindingShopIds(List<String> errorUnBindingShopIds) {
 		this.errorUnBindingShopIds = errorUnBindingShopIds;
 	}
-	public List<String> getErrorUnBindingShopIds( ) {
+
+    /**
+     * Gets error un binding shop ids.
+     *
+     * @return the error un binding shop ids
+     */
+    public List<String> getErrorUnBindingShopIds( ) {
 		return this.errorUnBindingShopIds;
 	}
 
-	public void setTotalError(Long totalError) {
+    /**
+     * Sets total error.
+     *
+     * @param totalError the total error
+     */
+    public void setTotalError(Long totalError) {
 		this.totalError = totalError;
 	}
-	public Long getTotalError( ) {
+
+    /**
+     * Gets total error.
+     *
+     * @return the total error
+     */
+    public Long getTotalError( ) {
 		return this.totalError;
 	}
 
-	public void setTotalSuccess(Long totalSuccess) {
+    /**
+     * Sets total success.
+     *
+     * @param totalSuccess the total success
+     */
+    public void setTotalSuccess(Long totalSuccess) {
 		this.totalSuccess = totalSuccess;
 	}
-	public Long getTotalSuccess( ) {
+
+    /**
+     * Gets total success.
+     *
+     * @return the total success
+     */
+    public Long getTotalSuccess( ) {
 		return this.totalSuccess;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsProdTag extends AlipayObject {
 
-	private static final long serialVersionUID = 5424421379113172159L;
+	private static final long serialVersionUID = 4848172556464127942L;
 
 	/**
 	 * 业务标记代码
@@ -25,17 +25,39 @@ public class InsProdTag extends AlipayObject {
 	@ApiField("tag_value")
 	private String tagValue;
 
-	public String getTagCode() {
+    /**
+     * Gets tag code.
+     *
+     * @return the tag code
+     */
+    public String getTagCode() {
 		return this.tagCode;
 	}
-	public void setTagCode(String tagCode) {
+
+    /**
+     * Sets tag code.
+     *
+     * @param tagCode the tag code
+     */
+    public void setTagCode(String tagCode) {
 		this.tagCode = tagCode;
 	}
 
-	public String getTagValue() {
+    /**
+     * Gets tag value.
+     *
+     * @return the tag value
+     */
+    public String getTagValue() {
 		return this.tagValue;
 	}
-	public void setTagValue(String tagValue) {
+
+    /**
+     * Sets tag value.
+     *
+     * @param tagValue the tag value
+     */
+    public void setTagValue(String tagValue) {
 		this.tagValue = tagValue;
 	}
 

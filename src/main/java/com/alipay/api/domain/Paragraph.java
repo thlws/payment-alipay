@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class Paragraph extends AlipayObject {
 
-	private static final long serialVersionUID = 3849845641562458745L;
+	private static final long serialVersionUID = 1598314639476138818L;
 
 	/**
 	 * 图片列表
@@ -29,17 +29,39 @@ public class Paragraph extends AlipayObject {
 	@ApiField("text")
 	private String text;
 
-	public List<Picture> getPictures() {
+    /**
+     * Gets pictures.
+     *
+     * @return the pictures
+     */
+    public List<Picture> getPictures() {
 		return this.pictures;
 	}
-	public void setPictures(List<Picture> pictures) {
+
+    /**
+     * Sets pictures.
+     *
+     * @param pictures the pictures
+     */
+    public void setPictures(List<Picture> pictures) {
 		this.pictures = pictures;
 	}
 
-	public String getText() {
+    /**
+     * Gets text.
+     *
+     * @return the text
+     */
+    public String getText() {
 		return this.text;
 	}
-	public void setText(String text) {
+
+    /**
+     * Sets text.
+     *
+     * @param text the text
+     */
+    public void setText(String text) {
 		this.text = text;
 	}
 

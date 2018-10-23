@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.data.dataservice.shoppingmallrec.voucher.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-08-15 19:53:24
  */
 public class AlipayDataDataserviceShoppingmallrecVoucherQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3119391495892172112L;
+	private static final long serialVersionUID = 8675117763979135481L;
 
 	/** 
 	 * 本次推荐的id, 开发者埋点需带入此参数
@@ -36,24 +36,57 @@ public class AlipayDataDataserviceShoppingmallrecVoucherQueryResponse extends Al
 	@ApiField("voucher_rec")
 	private List<VoucherRec> voucherRecommendList;
 
-	public void setRecommendId(String recommendId) {
+    /**
+     * Sets recommend id.
+     *
+     * @param recommendId the recommend id
+     */
+    public void setRecommendId(String recommendId) {
 		this.recommendId = recommendId;
 	}
-	public String getRecommendId( ) {
+
+    /**
+     * Gets recommend id.
+     *
+     * @return the recommend id
+     */
+    public String getRecommendId( ) {
 		return this.recommendId;
 	}
 
-	public void setRequestId(String requestId) {
+    /**
+     * Sets request id.
+     *
+     * @param requestId the request id
+     */
+    public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
-	public String getRequestId( ) {
+
+    /**
+     * Gets request id.
+     *
+     * @return the request id
+     */
+    public String getRequestId( ) {
 		return this.requestId;
 	}
 
-	public void setVoucherRecommendList(List<VoucherRec> voucherRecommendList) {
+    /**
+     * Sets voucher recommend list.
+     *
+     * @param voucherRecommendList the voucher recommend list
+     */
+    public void setVoucherRecommendList(List<VoucherRec> voucherRecommendList) {
 		this.voucherRecommendList = voucherRecommendList;
 	}
-	public List<VoucherRec> getVoucherRecommendList( ) {
+
+    /**
+     * Gets voucher recommend list.
+     *
+     * @return the voucher recommend list
+     */
+    public List<VoucherRec> getVoucherRecommendList( ) {
 		return this.voucherRecommendList;
 	}
 

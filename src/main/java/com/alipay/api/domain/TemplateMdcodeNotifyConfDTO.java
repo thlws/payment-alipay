@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TemplateMdcodeNotifyConfDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4243161596258868996L;
+	private static final long serialVersionUID = 3287888523418378995L;
 
 	/**
 	 * 扩展参数信息；
@@ -29,17 +29,39 @@ public class TemplateMdcodeNotifyConfDTO extends AlipayObject {
 	@ApiField("url")
 	private String url;
 
-	public String getExtParams() {
+    /**
+     * Gets ext params.
+     *
+     * @return the ext params
+     */
+    public String getExtParams() {
 		return this.extParams;
 	}
-	public void setExtParams(String extParams) {
+
+    /**
+     * Sets ext params.
+     *
+     * @param extParams the ext params
+     */
+    public void setExtParams(String extParams) {
 		this.extParams = extParams;
 	}
 
-	public String getUrl() {
+    /**
+     * Gets url.
+     *
+     * @return the url
+     */
+    public String getUrl() {
 		return this.url;
 	}
-	public void setUrl(String url) {
+
+    /**
+     * Sets url.
+     *
+     * @param url the url
+     */
+    public void setUrl(String url) {
 		this.url = url;
 	}
 

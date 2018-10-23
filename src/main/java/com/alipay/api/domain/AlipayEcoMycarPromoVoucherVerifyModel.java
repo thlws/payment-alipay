@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoMycarPromoVoucherVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3217896518348438945L;
+	private static final long serialVersionUID = 8772487633782911693L;
 
 	/**
 	 * 订单编号
@@ -31,24 +31,57 @@ public class AlipayEcoMycarPromoVoucherVerifyModel extends AlipayObject {
 	@ApiField("sms_code")
 	private String smsCode;
 
-	public String getOrderNo() {
+    /**
+     * Gets order no.
+     *
+     * @return the order no
+     */
+    public String getOrderNo() {
 		return this.orderNo;
 	}
-	public void setOrderNo(String orderNo) {
+
+    /**
+     * Sets order no.
+     *
+     * @param orderNo the order no
+     */
+    public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
 
-	public String getOrderStatus() {
+    /**
+     * Gets order status.
+     *
+     * @return the order status
+     */
+    public String getOrderStatus() {
 		return this.orderStatus;
 	}
-	public void setOrderStatus(String orderStatus) {
+
+    /**
+     * Sets order status.
+     *
+     * @param orderStatus the order status
+     */
+    public void setOrderStatus(String orderStatus) {
 		this.orderStatus = orderStatus;
 	}
 
-	public String getSmsCode() {
+    /**
+     * Gets sms code.
+     *
+     * @return the sms code
+     */
+    public String getSmsCode() {
 		return this.smsCode;
 	}
-	public void setSmsCode(String smsCode) {
+
+    /**
+     * Sets sms code.
+     *
+     * @param smsCode the sms code
+     */
+    public void setSmsCode(String smsCode) {
 		this.smsCode = smsCode;
 	}
 

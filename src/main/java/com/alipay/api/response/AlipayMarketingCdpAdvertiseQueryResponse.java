@@ -7,13 +7,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.cdp.advertise.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-08-18 15:36:18
+ * @since 1.0, 2017-12-15 11:50:40
  */
 public class AlipayMarketingCdpAdvertiseQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1551443799665816952L;
+	private static final long serialVersionUID = 3397639426798645967L;
 
 	/** 
 	 * 用户点击广告后，跳转URL地址, 协议必须为HTTPS。广告类型为PIC时，需要设置该值。对于类型为URL不生效
@@ -81,80 +81,201 @@ public class AlipayMarketingCdpAdvertiseQueryResponse extends AlipayResponse {
 	@ApiField("status")
 	private String status;
 
-	public void setActionUrl(String actionUrl) {
+    /**
+     * Sets action url.
+     *
+     * @param actionUrl the action url
+     */
+    public void setActionUrl(String actionUrl) {
 		this.actionUrl = actionUrl;
 	}
-	public String getActionUrl( ) {
+
+    /**
+     * Gets action url.
+     *
+     * @return the action url
+     */
+    public String getActionUrl( ) {
 		return this.actionUrl;
 	}
 
-	public void setAdCode(String adCode) {
+    /**
+     * Sets ad code.
+     *
+     * @param adCode the ad code
+     */
+    public void setAdCode(String adCode) {
 		this.adCode = adCode;
 	}
-	public String getAdCode( ) {
+
+    /**
+     * Gets ad code.
+     *
+     * @return the ad code
+     */
+    public String getAdCode( ) {
 		return this.adCode;
 	}
 
-	public void setAdRules(String adRules) {
+    /**
+     * Sets ad rules.
+     *
+     * @param adRules the ad rules
+     */
+    public void setAdRules(String adRules) {
 		this.adRules = adRules;
 	}
-	public String getAdRules( ) {
+
+    /**
+     * Gets ad rules.
+     *
+     * @return the ad rules
+     */
+    public String getAdRules( ) {
 		return this.adRules;
 	}
 
-	public void setBehavior(String behavior) {
+    /**
+     * Sets behavior.
+     *
+     * @param behavior the behavior
+     */
+    public void setBehavior(String behavior) {
 		this.behavior = behavior;
 	}
-	public String getBehavior( ) {
+
+    /**
+     * Gets behavior.
+     *
+     * @return the behavior
+     */
+    public String getBehavior( ) {
 		return this.behavior;
 	}
 
-	public void setBizExtInfo(String bizExtInfo) {
+    /**
+     * Sets biz ext info.
+     *
+     * @param bizExtInfo the biz ext info
+     */
+    public void setBizExtInfo(String bizExtInfo) {
 		this.bizExtInfo = bizExtInfo;
 	}
-	public String getBizExtInfo( ) {
+
+    /**
+     * Gets biz ext info.
+     *
+     * @return the biz ext info
+     */
+    public String getBizExtInfo( ) {
 		return this.bizExtInfo;
 	}
 
-	public void setContent(String content) {
+    /**
+     * Sets content.
+     *
+     * @param content the content
+     */
+    public void setContent(String content) {
 		this.content = content;
 	}
-	public String getContent( ) {
+
+    /**
+     * Gets content.
+     *
+     * @return the content
+     */
+    public String getContent( ) {
 		return this.content;
 	}
 
-	public void setContentType(String contentType) {
+    /**
+     * Sets content type.
+     *
+     * @param contentType the content type
+     */
+    public void setContentType(String contentType) {
 		this.contentType = contentType;
 	}
-	public String getContentType( ) {
+
+    /**
+     * Gets content type.
+     *
+     * @return the content type
+     */
+    public String getContentType( ) {
 		return this.contentType;
 	}
 
-	public void setEndTime(Date endTime) {
+    /**
+     * Sets end time.
+     *
+     * @param endTime the end time
+     */
+    public void setEndTime(Date endTime) {
 		this.endTime = endTime;
 	}
-	public Date getEndTime( ) {
+
+    /**
+     * Gets end time.
+     *
+     * @return the end time
+     */
+    public Date getEndTime( ) {
 		return this.endTime;
 	}
 
-	public void setHeight(String height) {
+    /**
+     * Sets height.
+     *
+     * @param height the height
+     */
+    public void setHeight(String height) {
 		this.height = height;
 	}
-	public String getHeight( ) {
+
+    /**
+     * Gets height.
+     *
+     * @return the height
+     */
+    public String getHeight( ) {
 		return this.height;
 	}
 
-	public void setStartTime(Date startTime) {
+    /**
+     * Sets start time.
+     *
+     * @param startTime the start time
+     */
+    public void setStartTime(Date startTime) {
 		this.startTime = startTime;
 	}
-	public Date getStartTime( ) {
+
+    /**
+     * Gets start time.
+     *
+     * @return the start time
+     */
+    public Date getStartTime( ) {
 		return this.startTime;
 	}
 
-	public void setStatus(String status) {
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
-	public String getStatus( ) {
+
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus( ) {
 		return this.status;
 	}
 

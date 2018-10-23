@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KbCodeBindInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1429124511446396751L;
+	private static final long serialVersionUID = 4529278517332142544L;
 
 	/**
 	 * 商家餐桌摆放的区域名称（预留字段，暂不使用）
@@ -49,45 +49,111 @@ public class KbCodeBindInfoVO extends AlipayObject {
 	@ApiField("table_no")
 	private String tableNo;
 
-	public String getAreaName() {
+    /**
+     * Gets area name.
+     *
+     * @return the area name
+     */
+    public String getAreaName() {
 		return this.areaName;
 	}
-	public void setAreaName(String areaName) {
+
+    /**
+     * Sets area name.
+     *
+     * @param areaName the area name
+     */
+    public void setAreaName(String areaName) {
 		this.areaName = areaName;
 	}
 
-	public Long getMaxPepoleNum() {
+    /**
+     * Gets max pepole num.
+     *
+     * @return the max pepole num
+     */
+    public Long getMaxPepoleNum() {
 		return this.maxPepoleNum;
 	}
-	public void setMaxPepoleNum(Long maxPepoleNum) {
+
+    /**
+     * Sets max pepole num.
+     *
+     * @param maxPepoleNum the max pepole num
+     */
+    public void setMaxPepoleNum(Long maxPepoleNum) {
 		this.maxPepoleNum = maxPepoleNum;
 	}
 
-	public String getMinPepoleNum() {
+    /**
+     * Gets min pepole num.
+     *
+     * @return the min pepole num
+     */
+    public String getMinPepoleNum() {
 		return this.minPepoleNum;
 	}
-	public void setMinPepoleNum(String minPepoleNum) {
+
+    /**
+     * Sets min pepole num.
+     *
+     * @param minPepoleNum the min pepole num
+     */
+    public void setMinPepoleNum(String minPepoleNum) {
 		this.minPepoleNum = minPepoleNum;
 	}
 
-	public String getShopId() {
+    /**
+     * Gets shop id.
+     *
+     * @return the shop id
+     */
+    public String getShopId() {
 		return this.shopId;
 	}
-	public void setShopId(String shopId) {
+
+    /**
+     * Sets shop id.
+     *
+     * @param shopId the shop id
+     */
+    public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 
-	public String getTableName() {
+    /**
+     * Gets table name.
+     *
+     * @return the table name
+     */
+    public String getTableName() {
 		return this.tableName;
 	}
-	public void setTableName(String tableName) {
+
+    /**
+     * Sets table name.
+     *
+     * @param tableName the table name
+     */
+    public void setTableName(String tableName) {
 		this.tableName = tableName;
 	}
 
-	public String getTableNo() {
+    /**
+     * Gets table no.
+     *
+     * @return the table no
+     */
+    public String getTableNo() {
 		return this.tableNo;
 	}
-	public void setTableNo(String tableNo) {
+
+    /**
+     * Sets table no.
+     *
+     * @param tableNo the table no
+     */
+    public void setTableNo(String tableNo) {
 		this.tableNo = tableNo;
 	}
 

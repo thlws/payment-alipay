@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 受理外汇交易请求
  *
  * @author auto create
- * @since 1.0, 2017-07-20 10:41:43
+ * @since 1.0, 2018-04-13 17:35:02
  */
 public class AlipayAccountExrateTraderequestCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2248943319555482653L;
+	private static final long serialVersionUID = 7825317343124355777L;
 
 	/**
 	 * 交易请求对象内容
@@ -19,10 +19,21 @@ public class AlipayAccountExrateTraderequestCreateModel extends AlipayObject {
 	@ApiField("trade_request")
 	private TradeRequestVO tradeRequest;
 
-	public TradeRequestVO getTradeRequest() {
+    /**
+     * Gets trade request.
+     *
+     * @return the trade request
+     */
+    public TradeRequestVO getTradeRequest() {
 		return this.tradeRequest;
 	}
-	public void setTradeRequest(TradeRequestVO tradeRequest) {
+
+    /**
+     * Sets trade request.
+     *
+     * @param tradeRequest the trade request
+     */
+    public void setTradeRequest(TradeRequestVO tradeRequest) {
 		this.tradeRequest = tradeRequest;
 	}
 

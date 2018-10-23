@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsDataDsbEstimateResultDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8529755666829852428L;
+	private static final long serialVersionUID = 6146221719921311662L;
 
 	/**
 	 * 受损程度
@@ -97,101 +97,255 @@ public class InsDataDsbEstimateResultDetail extends AlipayObject {
 	@ApiField("repair_type_desc")
 	private String repairTypeDesc;
 
-	public String getDamageDegree() {
+    /**
+     * Gets damage degree.
+     *
+     * @return the damage degree
+     */
+    public String getDamageDegree() {
 		return this.damageDegree;
 	}
-	public void setDamageDegree(String damageDegree) {
+
+    /**
+     * Sets damage degree.
+     *
+     * @param damageDegree the damage degree
+     */
+    public void setDamageDegree(String damageDegree) {
 		this.damageDegree = damageDegree;
 	}
 
-	public String getDamageDegreeDesc() {
+    /**
+     * Gets damage degree desc.
+     *
+     * @return the damage degree desc
+     */
+    public String getDamageDegreeDesc() {
 		return this.damageDegreeDesc;
 	}
-	public void setDamageDegreeDesc(String damageDegreeDesc) {
+
+    /**
+     * Sets damage degree desc.
+     *
+     * @param damageDegreeDesc the damage degree desc
+     */
+    public void setDamageDegreeDesc(String damageDegreeDesc) {
 		this.damageDegreeDesc = damageDegreeDesc;
 	}
 
-	public String getDamageType() {
+    /**
+     * Gets damage type.
+     *
+     * @return the damage type
+     */
+    public String getDamageType() {
 		return this.damageType;
 	}
-	public void setDamageType(String damageType) {
+
+    /**
+     * Sets damage type.
+     *
+     * @param damageType the damage type
+     */
+    public void setDamageType(String damageType) {
 		this.damageType = damageType;
 	}
 
-	public String getDamageTypeDesc() {
+    /**
+     * Gets damage type desc.
+     *
+     * @return the damage type desc
+     */
+    public String getDamageTypeDesc() {
 		return this.damageTypeDesc;
 	}
-	public void setDamageTypeDesc(String damageTypeDesc) {
+
+    /**
+     * Sets damage type desc.
+     *
+     * @param damageTypeDesc the damage type desc
+     */
+    public void setDamageTypeDesc(String damageTypeDesc) {
 		this.damageTypeDesc = damageTypeDesc;
 	}
 
-	public String getHourlyCode() {
+    /**
+     * Gets hourly code.
+     *
+     * @return the hourly code
+     */
+    public String getHourlyCode() {
 		return this.hourlyCode;
 	}
-	public void setHourlyCode(String hourlyCode) {
+
+    /**
+     * Sets hourly code.
+     *
+     * @param hourlyCode the hourly code
+     */
+    public void setHourlyCode(String hourlyCode) {
 		this.hourlyCode = hourlyCode;
 	}
 
-	public String getHourlyWage() {
+    /**
+     * Gets hourly wage.
+     *
+     * @return the hourly wage
+     */
+    public String getHourlyWage() {
 		return this.hourlyWage;
 	}
-	public void setHourlyWage(String hourlyWage) {
+
+    /**
+     * Sets hourly wage.
+     *
+     * @param hourlyWage the hourly wage
+     */
+    public void setHourlyWage(String hourlyWage) {
 		this.hourlyWage = hourlyWage;
 	}
 
-	public String getOeCode() {
+    /**
+     * Gets oe code.
+     *
+     * @return the oe code
+     */
+    public String getOeCode() {
 		return this.oeCode;
 	}
-	public void setOeCode(String oeCode) {
+
+    /**
+     * Sets oe code.
+     *
+     * @param oeCode the oe code
+     */
+    public void setOeCode(String oeCode) {
 		this.oeCode = oeCode;
 	}
 
-	public Boolean getOldRecycle() {
+    /**
+     * Gets old recycle.
+     *
+     * @return the old recycle
+     */
+    public Boolean getOldRecycle() {
 		return this.oldRecycle;
 	}
-	public void setOldRecycle(Boolean oldRecycle) {
+
+    /**
+     * Sets old recycle.
+     *
+     * @param oldRecycle the old recycle
+     */
+    public void setOldRecycle(Boolean oldRecycle) {
 		this.oldRecycle = oldRecycle;
 	}
 
-	public String getPartsCost() {
+    /**
+     * Gets parts cost.
+     *
+     * @return the parts cost
+     */
+    public String getPartsCost() {
 		return this.partsCost;
 	}
-	public void setPartsCost(String partsCost) {
+
+    /**
+     * Sets parts cost.
+     *
+     * @param partsCost the parts cost
+     */
+    public void setPartsCost(String partsCost) {
 		this.partsCost = partsCost;
 	}
 
-	public String getPartsManageFee() {
+    /**
+     * Gets parts manage fee.
+     *
+     * @return the parts manage fee
+     */
+    public String getPartsManageFee() {
 		return this.partsManageFee;
 	}
-	public void setPartsManageFee(String partsManageFee) {
+
+    /**
+     * Sets parts manage fee.
+     *
+     * @param partsManageFee the parts manage fee
+     */
+    public void setPartsManageFee(String partsManageFee) {
 		this.partsManageFee = partsManageFee;
 	}
 
-	public String getPartsName() {
+    /**
+     * Gets parts name.
+     *
+     * @return the parts name
+     */
+    public String getPartsName() {
 		return this.partsName;
 	}
-	public void setPartsName(String partsName) {
+
+    /**
+     * Sets parts name.
+     *
+     * @param partsName the parts name
+     */
+    public void setPartsName(String partsName) {
 		this.partsName = partsName;
 	}
 
-	public String getRemainValue() {
+    /**
+     * Gets remain value.
+     *
+     * @return the remain value
+     */
+    public String getRemainValue() {
 		return this.remainValue;
 	}
-	public void setRemainValue(String remainValue) {
+
+    /**
+     * Sets remain value.
+     *
+     * @param remainValue the remain value
+     */
+    public void setRemainValue(String remainValue) {
 		this.remainValue = remainValue;
 	}
 
-	public String getRepairType() {
+    /**
+     * Gets repair type.
+     *
+     * @return the repair type
+     */
+    public String getRepairType() {
 		return this.repairType;
 	}
-	public void setRepairType(String repairType) {
+
+    /**
+     * Sets repair type.
+     *
+     * @param repairType the repair type
+     */
+    public void setRepairType(String repairType) {
 		this.repairType = repairType;
 	}
 
-	public String getRepairTypeDesc() {
+    /**
+     * Gets repair type desc.
+     *
+     * @return the repair type desc
+     */
+    public String getRepairTypeDesc() {
 		return this.repairTypeDesc;
 	}
-	public void setRepairTypeDesc(String repairTypeDesc) {
+
+    /**
+     * Sets repair type desc.
+     *
+     * @param repairTypeDesc the repair type desc
+     */
+    public void setRepairTypeDesc(String repairTypeDesc) {
 		this.repairTypeDesc = repairTypeDesc;
 	}
 

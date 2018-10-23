@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改车型信息接口
  *
  * @author auto create
- * @since 1.0, 2017-07-13 14:24:39
+ * @since 1.0, 2018-06-25 14:52:20
  */
 public class AlipayEcoMycarCarmodelModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7722759725768113815L;
+	private static final long serialVersionUID = 8188356455878585276L;
 
 	/**
 	 * 支付宝车型库品牌背景图片，尺寸750 x 448（modify_type参数的值为brand时此参数必填）图片url可以通过【通用图片上传接口】alipay.eco.mycar.image.upload 上传完成后获取, 图片url需要进行URLencode进行转码
@@ -115,122 +115,309 @@ public class AlipayEcoMycarCarmodelModifyModel extends AlipayObject {
 	@ApiField("style")
 	private String style;
 
-	public String getBackgroundUrl() {
+    /**
+     * Gets background url.
+     *
+     * @return the background url
+     */
+    public String getBackgroundUrl() {
 		return this.backgroundUrl;
 	}
-	public void setBackgroundUrl(String backgroundUrl) {
+
+    /**
+     * Sets background url.
+     *
+     * @param backgroundUrl the background url
+     */
+    public void setBackgroundUrl(String backgroundUrl) {
 		this.backgroundUrl = backgroundUrl;
 	}
 
-	public String getBrandId() {
+    /**
+     * Gets brand id.
+     *
+     * @return the brand id
+     */
+    public String getBrandId() {
 		return this.brandId;
 	}
-	public void setBrandId(String brandId) {
+
+    /**
+     * Sets brand id.
+     *
+     * @param brandId the brand id
+     */
+    public void setBrandId(String brandId) {
 		this.brandId = brandId;
 	}
 
-	public String getBrandLogo() {
+    /**
+     * Gets brand logo.
+     *
+     * @return the brand logo
+     */
+    public String getBrandLogo() {
 		return this.brandLogo;
 	}
-	public void setBrandLogo(String brandLogo) {
+
+    /**
+     * Sets brand logo.
+     *
+     * @param brandLogo the brand logo
+     */
+    public void setBrandLogo(String brandLogo) {
 		this.brandLogo = brandLogo;
 	}
 
-	public String getBrandName() {
+    /**
+     * Gets brand name.
+     *
+     * @return the brand name
+     */
+    public String getBrandName() {
 		return this.brandName;
 	}
-	public void setBrandName(String brandName) {
+
+    /**
+     * Sets brand name.
+     *
+     * @param brandName the brand name
+     */
+    public void setBrandName(String brandName) {
 		this.brandName = brandName;
 	}
 
-	public String getCc() {
+    /**
+     * Gets cc.
+     *
+     * @return the cc
+     */
+    public String getCc() {
 		return this.cc;
 	}
-	public void setCc(String cc) {
+
+    /**
+     * Sets cc.
+     *
+     * @param cc the cc
+     */
+    public void setCc(String cc) {
 		this.cc = cc;
 	}
 
-	public String getCompanyId() {
+    /**
+     * Gets company id.
+     *
+     * @return the company id
+     */
+    public String getCompanyId() {
 		return this.companyId;
 	}
-	public void setCompanyId(String companyId) {
+
+    /**
+     * Sets company id.
+     *
+     * @param companyId the company id
+     */
+    public void setCompanyId(String companyId) {
 		this.companyId = companyId;
 	}
 
-	public String getCompanyName() {
+    /**
+     * Gets company name.
+     *
+     * @return the company name
+     */
+    public String getCompanyName() {
 		return this.companyName;
 	}
-	public void setCompanyName(String companyName) {
+
+    /**
+     * Sets company name.
+     *
+     * @param companyName the company name
+     */
+    public void setCompanyName(String companyName) {
 		this.companyName = companyName;
 	}
 
-	public String getEngine() {
+    /**
+     * Gets engine.
+     *
+     * @return the engine
+     */
+    public String getEngine() {
 		return this.engine;
 	}
-	public void setEngine(String engine) {
+
+    /**
+     * Sets engine.
+     *
+     * @param engine the engine
+     */
+    public void setEngine(String engine) {
 		this.engine = engine;
 	}
 
-	public String getModelId() {
+    /**
+     * Gets model id.
+     *
+     * @return the model id
+     */
+    public String getModelId() {
 		return this.modelId;
 	}
-	public void setModelId(String modelId) {
+
+    /**
+     * Sets model id.
+     *
+     * @param modelId the model id
+     */
+    public void setModelId(String modelId) {
 		this.modelId = modelId;
 	}
 
-	public String getModelName() {
+    /**
+     * Gets model name.
+     *
+     * @return the model name
+     */
+    public String getModelName() {
 		return this.modelName;
 	}
-	public void setModelName(String modelName) {
+
+    /**
+     * Sets model name.
+     *
+     * @param modelName the model name
+     */
+    public void setModelName(String modelName) {
 		this.modelName = modelName;
 	}
 
-	public String getModifyType() {
+    /**
+     * Gets modify type.
+     *
+     * @return the modify type
+     */
+    public String getModifyType() {
 		return this.modifyType;
 	}
-	public void setModifyType(String modifyType) {
+
+    /**
+     * Sets modify type.
+     *
+     * @param modifyType the modify type
+     */
+    public void setModifyType(String modifyType) {
 		this.modifyType = modifyType;
 	}
 
-	public String getProdYear() {
+    /**
+     * Gets prod year.
+     *
+     * @return the prod year
+     */
+    public String getProdYear() {
 		return this.prodYear;
 	}
-	public void setProdYear(String prodYear) {
+
+    /**
+     * Sets prod year.
+     *
+     * @param prodYear the prod year
+     */
+    public void setProdYear(String prodYear) {
 		this.prodYear = prodYear;
 	}
 
-	public String getSerieGroup() {
+    /**
+     * Gets serie group.
+     *
+     * @return the serie group
+     */
+    public String getSerieGroup() {
 		return this.serieGroup;
 	}
-	public void setSerieGroup(String serieGroup) {
+
+    /**
+     * Sets serie group.
+     *
+     * @param serieGroup the serie group
+     */
+    public void setSerieGroup(String serieGroup) {
 		this.serieGroup = serieGroup;
 	}
 
-	public String getSerieId() {
+    /**
+     * Gets serie id.
+     *
+     * @return the serie id
+     */
+    public String getSerieId() {
 		return this.serieId;
 	}
-	public void setSerieId(String serieId) {
+
+    /**
+     * Sets serie id.
+     *
+     * @param serieId the serie id
+     */
+    public void setSerieId(String serieId) {
 		this.serieId = serieId;
 	}
 
-	public String getSerieName() {
+    /**
+     * Gets serie name.
+     *
+     * @return the serie name
+     */
+    public String getSerieName() {
 		return this.serieName;
 	}
-	public void setSerieName(String serieName) {
+
+    /**
+     * Sets serie name.
+     *
+     * @param serieName the serie name
+     */
+    public void setSerieName(String serieName) {
 		this.serieName = serieName;
 	}
 
-	public String getSeriePhoto() {
+    /**
+     * Gets serie photo.
+     *
+     * @return the serie photo
+     */
+    public String getSeriePhoto() {
 		return this.seriePhoto;
 	}
-	public void setSeriePhoto(String seriePhoto) {
+
+    /**
+     * Sets serie photo.
+     *
+     * @param seriePhoto the serie photo
+     */
+    public void setSeriePhoto(String seriePhoto) {
 		this.seriePhoto = seriePhoto;
 	}
 
-	public String getStyle() {
+    /**
+     * Gets style.
+     *
+     * @return the style
+     */
+    public String getStyle() {
 		return this.style;
 	}
-	public void setStyle(String style) {
+
+    /**
+     * Sets style.
+     *
+     * @param style the style
+     */
+    public void setStyle(String style) {
 		this.style = style;
 	}
 

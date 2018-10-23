@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ShopSummaryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3235153766986732377L;
+	private static final long serialVersionUID = 6431289712971242538L;
 
 	/**
 	 * 门店地址
@@ -170,178 +170,453 @@ public class ShopSummaryInfo extends AlipayObject {
 	@ApiField("status")
 	private String status;
 
-	public String getAddress() {
+    /**
+     * Gets address.
+     *
+     * @return the address
+     */
+    public String getAddress() {
 		return this.address;
 	}
-	public void setAddress(String address) {
+
+    /**
+     * Sets address.
+     *
+     * @param address the address
+     */
+    public void setAddress(String address) {
 		this.address = address;
 	}
 
-	public String getBranchShopName() {
+    /**
+     * Gets branch shop name.
+     *
+     * @return the branch shop name
+     */
+    public String getBranchShopName() {
 		return this.branchShopName;
 	}
-	public void setBranchShopName(String branchShopName) {
+
+    /**
+     * Sets branch shop name.
+     *
+     * @param branchShopName the branch shop name
+     */
+    public void setBranchShopName(String branchShopName) {
 		this.branchShopName = branchShopName;
 	}
 
-	public String getBrandName() {
+    /**
+     * Gets brand name.
+     *
+     * @return the brand name
+     */
+    public String getBrandName() {
 		return this.brandName;
 	}
-	public void setBrandName(String brandName) {
+
+    /**
+     * Sets brand name.
+     *
+     * @param brandName the brand name
+     */
+    public void setBrandName(String brandName) {
 		this.brandName = brandName;
 	}
 
-	public String getBusinessTime() {
+    /**
+     * Gets business time.
+     *
+     * @return the business time
+     */
+    public String getBusinessTime() {
 		return this.businessTime;
 	}
-	public void setBusinessTime(String businessTime) {
+
+    /**
+     * Sets business time.
+     *
+     * @param businessTime the business time
+     */
+    public void setBusinessTime(String businessTime) {
 		this.businessTime = businessTime;
 	}
 
-	public List<ShopCategoryInfo> getCategoryInfos() {
+    /**
+     * Gets category infos.
+     *
+     * @return the category infos
+     */
+    public List<ShopCategoryInfo> getCategoryInfos() {
 		return this.categoryInfos;
 	}
-	public void setCategoryInfos(List<ShopCategoryInfo> categoryInfos) {
+
+    /**
+     * Sets category infos.
+     *
+     * @param categoryInfos the category infos
+     */
+    public void setCategoryInfos(List<ShopCategoryInfo> categoryInfos) {
 		this.categoryInfos = categoryInfos;
 	}
 
-	public String getCityCode() {
+    /**
+     * Gets city code.
+     *
+     * @return the city code
+     */
+    public String getCityCode() {
 		return this.cityCode;
 	}
-	public void setCityCode(String cityCode) {
+
+    /**
+     * Sets city code.
+     *
+     * @param cityCode the city code
+     */
+    public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
 	}
 
-	public String getCityName() {
+    /**
+     * Gets city name.
+     *
+     * @return the city name
+     */
+    public String getCityName() {
 		return this.cityName;
 	}
-	public void setCityName(String cityName) {
+
+    /**
+     * Sets city name.
+     *
+     * @param cityName the city name
+     */
+    public void setCityName(String cityName) {
 		this.cityName = cityName;
 	}
 
-	public String getDisplayStatus() {
+    /**
+     * Gets display status.
+     *
+     * @return the display status
+     */
+    public String getDisplayStatus() {
 		return this.displayStatus;
 	}
-	public void setDisplayStatus(String displayStatus) {
+
+    /**
+     * Sets display status.
+     *
+     * @param displayStatus the display status
+     */
+    public void setDisplayStatus(String displayStatus) {
 		this.displayStatus = displayStatus;
 	}
 
-	public String getDistrictCode() {
+    /**
+     * Gets district code.
+     *
+     * @return the district code
+     */
+    public String getDistrictCode() {
 		return this.districtCode;
 	}
-	public void setDistrictCode(String districtCode) {
+
+    /**
+     * Sets district code.
+     *
+     * @param districtCode the district code
+     */
+    public void setDistrictCode(String districtCode) {
 		this.districtCode = districtCode;
 	}
 
-	public String getDistrictName() {
+    /**
+     * Gets district name.
+     *
+     * @return the district name
+     */
+    public String getDistrictName() {
 		return this.districtName;
 	}
-	public void setDistrictName(String districtName) {
+
+    /**
+     * Sets district name.
+     *
+     * @param districtName the district name
+     */
+    public void setDistrictName(String districtName) {
 		this.districtName = districtName;
 	}
 
-	public String getLandlineNo() {
+    /**
+     * Gets landline no.
+     *
+     * @return the landline no
+     */
+    public String getLandlineNo() {
 		return this.landlineNo;
 	}
-	public void setLandlineNo(String landlineNo) {
+
+    /**
+     * Sets landline no.
+     *
+     * @param landlineNo the landline no
+     */
+    public void setLandlineNo(String landlineNo) {
 		this.landlineNo = landlineNo;
 	}
 
-	public String getLatitude() {
+    /**
+     * Gets latitude.
+     *
+     * @return the latitude
+     */
+    public String getLatitude() {
 		return this.latitude;
 	}
-	public void setLatitude(String latitude) {
+
+    /**
+     * Sets latitude.
+     *
+     * @param latitude the latitude
+     */
+    public void setLatitude(String latitude) {
 		this.latitude = latitude;
 	}
 
-	public String getLogo() {
+    /**
+     * Gets logo.
+     *
+     * @return the logo
+     */
+    public String getLogo() {
 		return this.logo;
 	}
-	public void setLogo(String logo) {
+
+    /**
+     * Sets logo.
+     *
+     * @param logo the logo
+     */
+    public void setLogo(String logo) {
 		this.logo = logo;
 	}
 
-	public String getLogoUrl() {
+    /**
+     * Gets logo url.
+     *
+     * @return the logo url
+     */
+    public String getLogoUrl() {
 		return this.logoUrl;
 	}
-	public void setLogoUrl(String logoUrl) {
+
+    /**
+     * Sets logo url.
+     *
+     * @param logoUrl the logo url
+     */
+    public void setLogoUrl(String logoUrl) {
 		this.logoUrl = logoUrl;
 	}
 
-	public String getLongitude() {
+    /**
+     * Gets longitude.
+     *
+     * @return the longitude
+     */
+    public String getLongitude() {
 		return this.longitude;
 	}
-	public void setLongitude(String longitude) {
+
+    /**
+     * Sets longitude.
+     *
+     * @param longitude the longitude
+     */
+    public void setLongitude(String longitude) {
 		this.longitude = longitude;
 	}
 
-	public String getMainImage() {
+    /**
+     * Gets main image.
+     *
+     * @return the main image
+     */
+    public String getMainImage() {
 		return this.mainImage;
 	}
-	public void setMainImage(String mainImage) {
+
+    /**
+     * Sets main image.
+     *
+     * @param mainImage the main image
+     */
+    public void setMainImage(String mainImage) {
 		this.mainImage = mainImage;
 	}
 
-	public String getMainImageUrl() {
+    /**
+     * Gets main image url.
+     *
+     * @return the main image url
+     */
+    public String getMainImageUrl() {
 		return this.mainImageUrl;
 	}
-	public void setMainImageUrl(String mainImageUrl) {
+
+    /**
+     * Sets main image url.
+     *
+     * @param mainImageUrl the main image url
+     */
+    public void setMainImageUrl(String mainImageUrl) {
 		this.mainImageUrl = mainImageUrl;
 	}
 
-	public String getMainShopName() {
+    /**
+     * Gets main shop name.
+     *
+     * @return the main shop name
+     */
+    public String getMainShopName() {
 		return this.mainShopName;
 	}
-	public void setMainShopName(String mainShopName) {
+
+    /**
+     * Sets main shop name.
+     *
+     * @param mainShopName the main shop name
+     */
+    public void setMainShopName(String mainShopName) {
 		this.mainShopName = mainShopName;
 	}
 
-	public String getMobileNo() {
+    /**
+     * Gets mobile no.
+     *
+     * @return the mobile no
+     */
+    public String getMobileNo() {
 		return this.mobileNo;
 	}
-	public void setMobileNo(String mobileNo) {
+
+    /**
+     * Sets mobile no.
+     *
+     * @param mobileNo the mobile no
+     */
+    public void setMobileNo(String mobileNo) {
 		this.mobileNo = mobileNo;
 	}
 
-	public String getPerPay() {
+    /**
+     * Gets per pay.
+     *
+     * @return the per pay
+     */
+    public String getPerPay() {
 		return this.perPay;
 	}
-	public void setPerPay(String perPay) {
+
+    /**
+     * Sets per pay.
+     *
+     * @param perPay the per pay
+     */
+    public void setPerPay(String perPay) {
 		this.perPay = perPay;
 	}
 
-	public String getPrincipalId() {
+    /**
+     * Gets principal id.
+     *
+     * @return the principal id
+     */
+    public String getPrincipalId() {
 		return this.principalId;
 	}
-	public void setPrincipalId(String principalId) {
+
+    /**
+     * Sets principal id.
+     *
+     * @param principalId the principal id
+     */
+    public void setPrincipalId(String principalId) {
 		this.principalId = principalId;
 	}
 
-	public String getProvinceCode() {
+    /**
+     * Gets province code.
+     *
+     * @return the province code
+     */
+    public String getProvinceCode() {
 		return this.provinceCode;
 	}
-	public void setProvinceCode(String provinceCode) {
+
+    /**
+     * Sets province code.
+     *
+     * @param provinceCode the province code
+     */
+    public void setProvinceCode(String provinceCode) {
 		this.provinceCode = provinceCode;
 	}
 
-	public String getProvinceName() {
+    /**
+     * Gets province name.
+     *
+     * @return the province name
+     */
+    public String getProvinceName() {
 		return this.provinceName;
 	}
-	public void setProvinceName(String provinceName) {
+
+    /**
+     * Sets province name.
+     *
+     * @param provinceName the province name
+     */
+    public void setProvinceName(String provinceName) {
 		this.provinceName = provinceName;
 	}
 
-	public String getShopId() {
+    /**
+     * Gets shop id.
+     *
+     * @return the shop id
+     */
+    public String getShopId() {
 		return this.shopId;
 	}
-	public void setShopId(String shopId) {
+
+    /**
+     * Sets shop id.
+     *
+     * @param shopId the shop id
+     */
+    public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 

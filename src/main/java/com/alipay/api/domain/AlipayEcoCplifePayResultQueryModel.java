@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询单笔物业费交易关联账单详情
  *
  * @author auto create
- * @since 1.0, 2017-09-08 11:37:41
+ * @since 1.0, 2018-06-09 20:11:05
  */
 public class AlipayEcoCplifePayResultQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8829591399752973534L;
+	private static final long serialVersionUID = 8589612673475184132L;
 
 	/**
 	 * 查询令牌，部分模式下用户缴物业费成功后由支付宝通过异步通知给到开发者系统，和trade_no二者传其一即可。
@@ -25,17 +25,39 @@ public class AlipayEcoCplifePayResultQueryModel extends AlipayObject {
 	@ApiField("trade_no")
 	private String tradeNo;
 
-	public String getQueryToken() {
+    /**
+     * Gets query token.
+     *
+     * @return the query token
+     */
+    public String getQueryToken() {
 		return this.queryToken;
 	}
-	public void setQueryToken(String queryToken) {
+
+    /**
+     * Sets query token.
+     *
+     * @param queryToken the query token
+     */
+    public void setQueryToken(String queryToken) {
 		this.queryToken = queryToken;
 	}
 
-	public String getTradeNo() {
+    /**
+     * Gets trade no.
+     *
+     * @return the trade no
+     */
+    public String getTradeNo() {
 		return this.tradeNo;
 	}
-	public void setTradeNo(String tradeNo) {
+
+    /**
+     * Sets trade no.
+     *
+     * @param tradeNo the trade no
+     */
+    public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
 

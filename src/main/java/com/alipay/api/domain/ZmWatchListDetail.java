@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ZmWatchListDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7735419531935493287L;
+	private static final long serialVersionUID = 5781494485595127225L;
 
 	/**
 	 * 风险信息行业编码
@@ -72,66 +72,165 @@ public class ZmWatchListDetail extends AlipayObject {
 	@ApiField("type")
 	private String type;
 
-	public String getBizCode() {
+    /**
+     * Gets biz code.
+     *
+     * @return the biz code
+     */
+    public String getBizCode() {
 		return this.bizCode;
 	}
-	public void setBizCode(String bizCode) {
+
+    /**
+     * Sets biz code.
+     *
+     * @param bizCode the biz code
+     */
+    public void setBizCode(String bizCode) {
 		this.bizCode = bizCode;
 	}
 
-	public String getCode() {
+    /**
+     * Gets code.
+     *
+     * @return the code
+     */
+    public String getCode() {
 		return this.code;
 	}
-	public void setCode(String code) {
+
+    /**
+     * Sets code.
+     *
+     * @param code the code
+     */
+    public void setCode(String code) {
 		this.code = code;
 	}
 
-	public List<ZmWatchListExtendInfo> getExtendInfo() {
+    /**
+     * Gets extend info.
+     *
+     * @return the extend info
+     */
+    public List<ZmWatchListExtendInfo> getExtendInfo() {
 		return this.extendInfo;
 	}
-	public void setExtendInfo(List<ZmWatchListExtendInfo> extendInfo) {
+
+    /**
+     * Sets extend info.
+     *
+     * @param extendInfo the extend info
+     */
+    public void setExtendInfo(List<ZmWatchListExtendInfo> extendInfo) {
 		this.extendInfo = extendInfo;
 	}
 
-	public Long getLevel() {
+    /**
+     * Gets level.
+     *
+     * @return the level
+     */
+    public Long getLevel() {
 		return this.level;
 	}
-	public void setLevel(Long level) {
+
+    /**
+     * Sets level.
+     *
+     * @param level the level
+     */
+    public void setLevel(Long level) {
 		this.level = level;
 	}
 
-	public Date getRefreshTime() {
+    /**
+     * Gets refresh time.
+     *
+     * @return the refresh time
+     */
+    public Date getRefreshTime() {
 		return this.refreshTime;
 	}
-	public void setRefreshTime(Date refreshTime) {
+
+    /**
+     * Sets refresh time.
+     *
+     * @param refreshTime the refresh time
+     */
+    public void setRefreshTime(Date refreshTime) {
 		this.refreshTime = refreshTime;
 	}
 
-	public Boolean getSettlement() {
+    /**
+     * Gets settlement.
+     *
+     * @return the settlement
+     */
+    public Boolean getSettlement() {
 		return this.settlement;
 	}
-	public void setSettlement(Boolean settlement) {
+
+    /**
+     * Sets settlement.
+     *
+     * @param settlement the settlement
+     */
+    public void setSettlement(Boolean settlement) {
 		this.settlement = settlement;
 	}
 
-	public String getStatement() {
+    /**
+     * Gets statement.
+     *
+     * @return the statement
+     */
+    public String getStatement() {
 		return this.statement;
 	}
-	public void setStatement(String statement) {
+
+    /**
+     * Sets statement.
+     *
+     * @param statement the statement
+     */
+    public void setStatement(String statement) {
 		this.statement = statement;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 
-	public String getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
-	public void setType(String type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
 

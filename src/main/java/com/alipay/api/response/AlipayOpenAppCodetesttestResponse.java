@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.app.codetesttest response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-04-12 20:55:36
  */
 public class AlipayOpenAppCodetesttestResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1864149732875655691L;
+	private static final long serialVersionUID = 1274377297136187868L;
 
 	/** 
 	 * 测试测试测试
@@ -20,10 +20,21 @@ public class AlipayOpenAppCodetesttestResponse extends AlipayResponse {
 	@ApiField("testtesttest")
 	private String testtesttest;
 
-	public void setTesttesttest(String testtesttest) {
+    /**
+     * Sets testtesttest.
+     *
+     * @param testtesttest the testtesttest
+     */
+    public void setTesttesttest(String testtesttest) {
 		this.testtesttest = testtesttest;
 	}
-	public String getTesttesttest( ) {
+
+    /**
+     * Gets testtesttest.
+     *
+     * @return the testtesttest
+     */
+    public String getTesttesttest( ) {
 		return this.testtesttest;
 	}
 

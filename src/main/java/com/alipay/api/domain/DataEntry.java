@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DataEntry extends AlipayObject {
 
-	private static final long serialVersionUID = 7661163884557172135L;
+	private static final long serialVersionUID = 7698344286691537166L;
 
 	/**
 	 * 数据的发生时间
@@ -44,31 +44,75 @@ public class DataEntry extends AlipayObject {
 	@ApiField("value")
 	private String value;
 
-	public Date getBizTime() {
+    /**
+     * Gets biz time.
+     *
+     * @return the biz time
+     */
+    public Date getBizTime() {
 		return this.bizTime;
 	}
-	public void setBizTime(Date bizTime) {
+
+    /**
+     * Sets biz time.
+     *
+     * @param bizTime the biz time
+     */
+    public void setBizTime(Date bizTime) {
 		this.bizTime = bizTime;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
-	public void setType(String type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
 
-	public String getValue() {
+    /**
+     * Gets value.
+     *
+     * @return the value
+     */
+    public String getValue() {
 		return this.value;
 	}
-	public void setValue(String value) {
+
+    /**
+     * Sets value.
+     *
+     * @param value the value
+     */
+    public void setValue(String value) {
 		this.value = value;
 	}
 

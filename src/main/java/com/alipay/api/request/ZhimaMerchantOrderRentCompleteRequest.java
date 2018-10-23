@@ -10,9 +10,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: zhima.merchant.order.rent.complete request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-26 12:59:52
+ * @since 1.0, 2018-07-06 15:50:00
  */
 public class ZhimaMerchantOrderRentCompleteRequest implements AlipayRequest<ZhimaMerchantOrderRentCompleteResponse> {
 
@@ -24,10 +24,21 @@ public class ZhimaMerchantOrderRentCompleteRequest implements AlipayRequest<Zhim
 	 */
 	private String bizContent;
 
-	public void setBizContent(String bizContent) {
+    /**
+     * Sets biz content.
+     *
+     * @param bizContent the biz content
+     */
+    public void setBizContent(String bizContent) {
 		this.bizContent = bizContent;
 	}
-	public String getBizContent() {
+
+    /**
+     * Gets biz content.
+     *
+     * @return the biz content
+     */
+    public String getBizContent() {
 		return this.bizContent;
 	}
 	private String terminalType;
@@ -99,7 +110,13 @@ public class ZhimaMerchantOrderRentCompleteRequest implements AlipayRequest<Zhim
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

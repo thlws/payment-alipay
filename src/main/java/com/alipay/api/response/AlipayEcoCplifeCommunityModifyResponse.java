@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.cplife.community.modify response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-30 20:49:30
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayEcoCplifeCommunityModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8374342154691222743L;
+	private static final long serialVersionUID = 8216482666342948969L;
 
 	/** 
 	 * 小区变更成功后，若从当前状态到下一状态需要完成下一步条件代码。则返回该字段，否则不返回。
@@ -38,17 +38,39 @@ WAIT_AUDITING - 等待审核
 	@ApiField("status")
 	private String status;
 
-	public void setNextAction(String nextAction) {
+    /**
+     * Sets next action.
+     *
+     * @param nextAction the next action
+     */
+    public void setNextAction(String nextAction) {
 		this.nextAction = nextAction;
 	}
-	public String getNextAction( ) {
+
+    /**
+     * Gets next action.
+     *
+     * @return the next action
+     */
+    public String getNextAction( ) {
 		return this.nextAction;
 	}
 
-	public void setStatus(String status) {
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
-	public String getStatus( ) {
+
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus( ) {
 		return this.status;
 	}
 

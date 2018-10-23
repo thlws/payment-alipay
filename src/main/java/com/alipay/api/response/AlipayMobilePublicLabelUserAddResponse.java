@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.public.label.user.add response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-07-29 19:59:10
  */
 public class AlipayMobilePublicLabelUserAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7743475584588692838L;
+	private static final long serialVersionUID = 3891851958546494831L;
 
 	/** 
 	 * 结果码

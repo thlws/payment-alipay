@@ -7,13 +7,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.data.dataservice.chinaremodel.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-02 14:27:15
+ * @since 1.0, 2018-01-22 10:27:48
  */
 public class AlipayDataDataserviceChinaremodelQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3886412429779359193L;
+	private static final long serialVersionUID = 2888852471963735769L;
 
 	/** 
 	 * 中再核保模型查询结果
@@ -21,10 +21,21 @@ public class AlipayDataDataserviceChinaremodelQueryResponse extends AlipayRespon
 	@ApiField("result")
 	private AlipayChinareModelResult result;
 
-	public void setResult(AlipayChinareModelResult result) {
+    /**
+     * Sets result.
+     *
+     * @param result the result
+     */
+    public void setResult(AlipayChinareModelResult result) {
 		this.result = result;
 	}
-	public AlipayChinareModelResult getResult( ) {
+
+    /**
+     * Gets result.
+     *
+     * @return the result
+     */
+    public AlipayChinareModelResult getResult( ) {
 		return this.result;
 	}
 

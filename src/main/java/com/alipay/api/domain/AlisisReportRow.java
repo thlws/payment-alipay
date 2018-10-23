@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlisisReportRow extends AlipayObject {
 
-	private static final long serialVersionUID = 4789868565213214635L;
+	private static final long serialVersionUID = 2219452299584316459L;
 
 	/**
 	 * 报表行信息，每个对象是一列的数据
@@ -23,10 +23,21 @@ public class AlisisReportRow extends AlipayObject {
 	@ApiField("alisis_report_column")
 	private List<AlisisReportColumn> rowData;
 
-	public List<AlisisReportColumn> getRowData() {
+    /**
+     * Gets row data.
+     *
+     * @return the row data
+     */
+    public List<AlisisReportColumn> getRowData() {
 		return this.rowData;
 	}
-	public void setRowData(List<AlisisReportColumn> rowData) {
+
+    /**
+     * Sets row data.
+     *
+     * @param rowData the row data
+     */
+    public void setRowData(List<AlisisReportColumn> rowData) {
 		this.rowData = rowData;
 	}
 

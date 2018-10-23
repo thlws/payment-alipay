@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LotteryType extends AlipayObject {
 
-	private static final long serialVersionUID = 7798626934828454943L;
+	private static final long serialVersionUID = 3693343154188481789L;
 
 	/**
 	 * 彩种ID
@@ -25,17 +25,39 @@ public class LotteryType extends AlipayObject {
 	@ApiField("lottery_type_name")
 	private String lotteryTypeName;
 
-	public Long getLotteryTypeId() {
+    /**
+     * Gets lottery type id.
+     *
+     * @return the lottery type id
+     */
+    public Long getLotteryTypeId() {
 		return this.lotteryTypeId;
 	}
-	public void setLotteryTypeId(Long lotteryTypeId) {
+
+    /**
+     * Sets lottery type id.
+     *
+     * @param lotteryTypeId the lottery type id
+     */
+    public void setLotteryTypeId(Long lotteryTypeId) {
 		this.lotteryTypeId = lotteryTypeId;
 	}
 
-	public String getLotteryTypeName() {
+    /**
+     * Gets lottery type name.
+     *
+     * @return the lottery type name
+     */
+    public String getLotteryTypeName() {
 		return this.lotteryTypeName;
 	}
-	public void setLotteryTypeName(String lotteryTypeName) {
+
+    /**
+     * Sets lottery type name.
+     *
+     * @param lotteryTypeName the lottery type name
+     */
+    public void setLotteryTypeName(String lotteryTypeName) {
 		this.lotteryTypeName = lotteryTypeName;
 	}
 

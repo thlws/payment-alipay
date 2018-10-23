@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZmAuthParams extends AlipayObject {
 
-	private static final long serialVersionUID = 1651897675744315552L;
+	private static final long serialVersionUID = 7297488788471535856L;
 
 	/**
 	 * 商户在芝麻端申请的appId
@@ -25,17 +25,39 @@ public class ZmAuthParams extends AlipayObject {
 	@ApiField("buckle_merchant_id")
 	private String buckleMerchantId;
 
-	public String getBuckleAppId() {
+    /**
+     * Gets buckle app id.
+     *
+     * @return the buckle app id
+     */
+    public String getBuckleAppId() {
 		return this.buckleAppId;
 	}
-	public void setBuckleAppId(String buckleAppId) {
+
+    /**
+     * Sets buckle app id.
+     *
+     * @param buckleAppId the buckle app id
+     */
+    public void setBuckleAppId(String buckleAppId) {
 		this.buckleAppId = buckleAppId;
 	}
 
-	public String getBuckleMerchantId() {
+    /**
+     * Gets buckle merchant id.
+     *
+     * @return the buckle merchant id
+     */
+    public String getBuckleMerchantId() {
 		return this.buckleMerchantId;
 	}
-	public void setBuckleMerchantId(String buckleMerchantId) {
+
+    /**
+     * Sets buckle merchant id.
+     *
+     * @param buckleMerchantId the buckle merchant id
+     */
+    public void setBuckleMerchantId(String buckleMerchantId) {
 		this.buckleMerchantId = buckleMerchantId;
 	}
 

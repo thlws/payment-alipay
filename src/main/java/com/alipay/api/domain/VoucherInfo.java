@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class VoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1159738856971674151L;
+	private static final long serialVersionUID = 6145298455416482229L;
 
 	/**
 	 * 是否可转赠。默认true
@@ -71,66 +71,165 @@ public class VoucherInfo extends AlipayObject {
 	@ApiField("voucher_type")
 	private String voucherType;
 
-	public Boolean getCanGiveFriend() {
+    /**
+     * Gets can give friend.
+     *
+     * @return the can give friend
+     */
+    public Boolean getCanGiveFriend() {
 		return this.canGiveFriend;
 	}
-	public void setCanGiveFriend(Boolean canGiveFriend) {
+
+    /**
+     * Sets can give friend.
+     *
+     * @param canGiveFriend the can give friend
+     */
+    public void setCanGiveFriend(Boolean canGiveFriend) {
 		this.canGiveFriend = canGiveFriend;
 	}
 
-	public UseRuleInfo getUseRule() {
+    /**
+     * Gets use rule.
+     *
+     * @return the use rule
+     */
+    public UseRuleInfo getUseRule() {
 		return this.useRule;
 	}
-	public void setUseRule(UseRuleInfo useRule) {
+
+    /**
+     * Sets use rule.
+     *
+     * @param useRule the use rule
+     */
+    public void setUseRule(UseRuleInfo useRule) {
 		this.useRule = useRule;
 	}
 
-	public ValidDateInfo getValidDate() {
+    /**
+     * Gets valid date.
+     *
+     * @return the valid date
+     */
+    public ValidDateInfo getValidDate() {
 		return this.validDate;
 	}
-	public void setValidDate(ValidDateInfo validDate) {
+
+    /**
+     * Sets valid date.
+     *
+     * @param validDate the valid date
+     */
+    public void setValidDate(ValidDateInfo validDate) {
 		this.validDate = validDate;
 	}
 
-	public String getVoucherDesc() {
+    /**
+     * Gets voucher desc.
+     *
+     * @return the voucher desc
+     */
+    public String getVoucherDesc() {
 		return this.voucherDesc;
 	}
-	public void setVoucherDesc(String voucherDesc) {
+
+    /**
+     * Sets voucher desc.
+     *
+     * @param voucherDesc the voucher desc
+     */
+    public void setVoucherDesc(String voucherDesc) {
 		this.voucherDesc = voucherDesc;
 	}
 
-	public String getVoucherImg() {
+    /**
+     * Gets voucher img.
+     *
+     * @return the voucher img
+     */
+    public String getVoucherImg() {
 		return this.voucherImg;
 	}
-	public void setVoucherImg(String voucherImg) {
+
+    /**
+     * Sets voucher img.
+     *
+     * @param voucherImg the voucher img
+     */
+    public void setVoucherImg(String voucherImg) {
 		this.voucherImg = voucherImg;
 	}
 
-	public String getVoucherLogo() {
+    /**
+     * Gets voucher logo.
+     *
+     * @return the voucher logo
+     */
+    public String getVoucherLogo() {
 		return this.voucherLogo;
 	}
-	public void setVoucherLogo(String voucherLogo) {
+
+    /**
+     * Sets voucher logo.
+     *
+     * @param voucherLogo the voucher logo
+     */
+    public void setVoucherLogo(String voucherLogo) {
 		this.voucherLogo = voucherLogo;
 	}
 
-	public String getVoucherName() {
+    /**
+     * Gets voucher name.
+     *
+     * @return the voucher name
+     */
+    public String getVoucherName() {
 		return this.voucherName;
 	}
-	public void setVoucherName(String voucherName) {
+
+    /**
+     * Sets voucher name.
+     *
+     * @param voucherName the voucher name
+     */
+    public void setVoucherName(String voucherName) {
 		this.voucherName = voucherName;
 	}
 
-	public List<VoucherTermInfo> getVoucherTerms() {
+    /**
+     * Gets voucher terms.
+     *
+     * @return the voucher terms
+     */
+    public List<VoucherTermInfo> getVoucherTerms() {
 		return this.voucherTerms;
 	}
-	public void setVoucherTerms(List<VoucherTermInfo> voucherTerms) {
+
+    /**
+     * Sets voucher terms.
+     *
+     * @param voucherTerms the voucher terms
+     */
+    public void setVoucherTerms(List<VoucherTermInfo> voucherTerms) {
 		this.voucherTerms = voucherTerms;
 	}
 
-	public String getVoucherType() {
+    /**
+     * Gets voucher type.
+     *
+     * @return the voucher type
+     */
+    public String getVoucherType() {
 		return this.voucherType;
 	}
-	public void setVoucherType(String voucherType) {
+
+    /**
+     * Sets voucher type.
+     *
+     * @param voucherType the voucher type
+     */
+    public void setVoucherType(String voucherType) {
 		this.voucherType = voucherType;
 	}
 

@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ecard.edu.public.bind response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2014-06-12 17:16:41
  */
 public class AlipayEcardEduPublicBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4799832161141325586L;
+	private static final long serialVersionUID = 7125995825221724581L;
 
 	/** 
 	 * 机构编码
@@ -32,24 +32,57 @@ public class AlipayEcardEduPublicBindResponse extends AlipayResponse {
 	@ApiField("return_code")
 	private String returnCode;
 
-	public void setAgentCode(String agentCode) {
+    /**
+     * Sets agent code.
+     *
+     * @param agentCode the agent code
+     */
+    public void setAgentCode(String agentCode) {
 		this.agentCode = agentCode;
 	}
-	public String getAgentCode( ) {
+
+    /**
+     * Gets agent code.
+     *
+     * @return the agent code
+     */
+    public String getAgentCode( ) {
 		return this.agentCode;
 	}
 
-	public void setCardNo(String cardNo) {
+    /**
+     * Sets card no.
+     *
+     * @param cardNo the card no
+     */
+    public void setCardNo(String cardNo) {
 		this.cardNo = cardNo;
 	}
-	public String getCardNo( ) {
+
+    /**
+     * Gets card no.
+     *
+     * @return the card no
+     */
+    public String getCardNo( ) {
 		return this.cardNo;
 	}
 
-	public void setReturnCode(String returnCode) {
+    /**
+     * Sets return code.
+     *
+     * @param returnCode the return code
+     */
+    public void setReturnCode(String returnCode) {
 		this.returnCode = returnCode;
 	}
-	public String getReturnCode( ) {
+
+    /**
+     * Gets return code.
+     *
+     * @return the return code
+     */
+    public String getReturnCode( ) {
 		return this.returnCode;
 	}
 

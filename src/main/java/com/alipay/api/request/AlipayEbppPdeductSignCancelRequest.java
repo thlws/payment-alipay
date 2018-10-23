@@ -9,9 +9,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.ebpp.pdeduct.sign.cancel request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-08-04 11:19:20
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayEbppPdeductSignCancelRequest implements AlipayRequest<AlipayEbppPdeductSignCancelResponse> {
 
@@ -43,38 +43,93 @@ public class AlipayEbppPdeductSignCancelRequest implements AlipayRequest<AlipayE
 	 */
 	private String userId;
 
-	public void setAgentChannel(String agentChannel) {
+    /**
+     * Sets agent channel.
+     *
+     * @param agentChannel the agent channel
+     */
+    public void setAgentChannel(String agentChannel) {
 		this.agentChannel = agentChannel;
 	}
-	public String getAgentChannel() {
+
+    /**
+     * Gets agent channel.
+     *
+     * @return the agent channel
+     */
+    public String getAgentChannel() {
 		return this.agentChannel;
 	}
 
-	public void setAgentCode(String agentCode) {
+    /**
+     * Sets agent code.
+     *
+     * @param agentCode the agent code
+     */
+    public void setAgentCode(String agentCode) {
 		this.agentCode = agentCode;
 	}
-	public String getAgentCode() {
+
+    /**
+     * Gets agent code.
+     *
+     * @return the agent code
+     */
+    public String getAgentCode() {
 		return this.agentCode;
 	}
 
-	public void setAgreementId(String agreementId) {
+    /**
+     * Sets agreement id.
+     *
+     * @param agreementId the agreement id
+     */
+    public void setAgreementId(String agreementId) {
 		this.agreementId = agreementId;
 	}
-	public String getAgreementId() {
+
+    /**
+     * Gets agreement id.
+     *
+     * @return the agreement id
+     */
+    public String getAgreementId() {
 		return this.agreementId;
 	}
 
-	public void setPayPasswordToken(String payPasswordToken) {
+    /**
+     * Sets pay password token.
+     *
+     * @param payPasswordToken the pay password token
+     */
+    public void setPayPasswordToken(String payPasswordToken) {
 		this.payPasswordToken = payPasswordToken;
 	}
-	public String getPayPasswordToken() {
+
+    /**
+     * Gets pay password token.
+     *
+     * @return the pay password token
+     */
+    public String getPayPasswordToken() {
 		return this.payPasswordToken;
 	}
 
-	public void setUserId(String userId) {
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public String getUserId() {
+
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
 	private String terminalType;
@@ -150,7 +205,13 @@ public class AlipayEbppPdeductSignCancelRequest implements AlipayRequest<AlipayE
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 删除物业小区住户信息
  *
  * @author auto create
- * @since 1.0, 2016-11-24 16:14:56
+ * @since 1.0, 2018-06-09 20:18:10
  */
 public class AlipayEcoCplifeResidentinfoDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8775888237284781589L;
+	private static final long serialVersionUID = 1597811627686581613L;
 
 	/**
 	 * 待删除的住户所在的小区ID(支付宝平台统一小区ID标识)
@@ -29,17 +29,39 @@ public class AlipayEcoCplifeResidentinfoDeleteModel extends AlipayObject {
 	@ApiField("string")
 	private List<String> outResidentIdSet;
 
-	public String getCommunityId() {
+    /**
+     * Gets community id.
+     *
+     * @return the community id
+     */
+    public String getCommunityId() {
 		return this.communityId;
 	}
-	public void setCommunityId(String communityId) {
+
+    /**
+     * Sets community id.
+     *
+     * @param communityId the community id
+     */
+    public void setCommunityId(String communityId) {
 		this.communityId = communityId;
 	}
 
-	public List<String> getOutResidentIdSet() {
+    /**
+     * Gets out resident id set.
+     *
+     * @return the out resident id set
+     */
+    public List<String> getOutResidentIdSet() {
 		return this.outResidentIdSet;
 	}
-	public void setOutResidentIdSet(List<String> outResidentIdSet) {
+
+    /**
+     * Sets out resident id set.
+     *
+     * @param outResidentIdSet the out resident id set
+     */
+    public void setOutResidentIdSet(List<String> outResidentIdSet) {
 		this.outResidentIdSet = outResidentIdSet;
 	}
 

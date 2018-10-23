@@ -9,9 +9,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.acquire.query request
- * 
+ *
  * @author auto create
- * @since 1.0, 2014-05-28 11:58:01
+ * @since 1.0, 2018-04-18 17:54:57
  */
 public class AlipayAcquireQueryRequest implements AlipayRequest<AlipayAcquireQueryResponse> {
 
@@ -30,17 +30,39 @@ public class AlipayAcquireQueryRequest implements AlipayRequest<AlipayAcquireQue
 	 */
 	private String tradeNo;
 
-	public void setOutTradeNo(String outTradeNo) {
+    /**
+     * Sets out trade no.
+     *
+     * @param outTradeNo the out trade no
+     */
+    public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
-	public String getOutTradeNo() {
+
+    /**
+     * Gets out trade no.
+     *
+     * @return the out trade no
+     */
+    public String getOutTradeNo() {
 		return this.outTradeNo;
 	}
 
-	public void setTradeNo(String tradeNo) {
+    /**
+     * Sets trade no.
+     *
+     * @param tradeNo the trade no
+     */
+    public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
-	public String getTradeNo() {
+
+    /**
+     * Gets trade no.
+     *
+     * @return the trade no
+     */
+    public String getTradeNo() {
 		return this.tradeNo;
 	}
 	private String terminalType;
@@ -113,7 +135,13 @@ public class AlipayAcquireQueryRequest implements AlipayRequest<AlipayAcquireQue
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

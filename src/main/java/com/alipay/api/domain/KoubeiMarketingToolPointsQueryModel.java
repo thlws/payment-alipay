@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMarketingToolPointsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4226858147125852427L;
+	private static final long serialVersionUID = 1865671263755312191L;
 
 	/**
 	 * 活动积分帐户
@@ -25,17 +25,39 @@ public class KoubeiMarketingToolPointsQueryModel extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
-	public String getActivityAccount() {
+    /**
+     * Gets activity account.
+     *
+     * @return the activity account
+     */
+    public String getActivityAccount() {
 		return this.activityAccount;
 	}
-	public void setActivityAccount(String activityAccount) {
+
+    /**
+     * Sets activity account.
+     *
+     * @param activityAccount the activity account
+     */
+    public void setActivityAccount(String activityAccount) {
 		this.activityAccount = activityAccount;
 	}
 
-	public String getUserId() {
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
-	public void setUserId(String userId) {
+
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
 

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ItemDishInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4197594165585876818L;
+	private static final long serialVersionUID = 1364539869991146675L;
 
 	/**
 	 * 商品详情-菜品图片中的图片描述
@@ -35,24 +35,57 @@ public class ItemDishInfo extends AlipayObject {
 	@ApiField("title")
 	private String title;
 
-	public String getDesc() {
+    /**
+     * Gets desc.
+     *
+     * @return the desc
+     */
+    public String getDesc() {
 		return this.desc;
 	}
-	public void setDesc(String desc) {
+
+    /**
+     * Sets desc.
+     *
+     * @param desc the desc
+     */
+    public void setDesc(String desc) {
 		this.desc = desc;
 	}
 
-	public List<String> getImageUrls() {
+    /**
+     * Gets image urls.
+     *
+     * @return the image urls
+     */
+    public List<String> getImageUrls() {
 		return this.imageUrls;
 	}
-	public void setImageUrls(List<String> imageUrls) {
+
+    /**
+     * Sets image urls.
+     *
+     * @param imageUrls the image urls
+     */
+    public void setImageUrls(List<String> imageUrls) {
 		this.imageUrls = imageUrls;
 	}
 
-	public String getTitle() {
+    /**
+     * Gets title.
+     *
+     * @return the title
+     */
+    public String getTitle() {
 		return this.title;
 	}
-	public void setTitle(String title) {
+
+    /**
+     * Sets title.
+     *
+     * @param title the title
+     */
+    public void setTitle(String title) {
 		this.title = title;
 	}
 

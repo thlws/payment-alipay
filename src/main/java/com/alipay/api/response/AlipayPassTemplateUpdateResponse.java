@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.pass.template.update response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-24 12:08:09
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayPassTemplateUpdateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1533153919138274959L;
+	private static final long serialVersionUID = 2821317475217375385L;
 
 	/** 
 	 * 接口调用返回结果信息(json字串):
@@ -30,17 +30,39 @@ tpl_params：动态参数（变量）列表，预期在调发券接口时传入�
 	@ApiField("success")
 	private String success;
 
-	public void setResult(String result) {
+    /**
+     * Sets result.
+     *
+     * @param result the result
+     */
+    public void setResult(String result) {
 		this.result = result;
 	}
-	public String getResult( ) {
+
+    /**
+     * Gets result.
+     *
+     * @return the result
+     */
+    public String getResult( ) {
 		return this.result;
 	}
 
-	public void setSuccess(String success) {
+    /**
+     * Sets success.
+     *
+     * @param success the success
+     */
+    public void setSuccess(String success) {
 		this.success = success;
 	}
-	public String getSuccess( ) {
+
+    /**
+     * Gets success.
+     *
+     * @return the success
+     */
+    public String getSuccess( ) {
 		return this.success;
 	}
 

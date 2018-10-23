@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntMerchantExpandEnterpriseApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5418323676589145221L;
+	private static final long serialVersionUID = 1477184361692632129L;
 
 	/**
 	 * 企业基础信息
@@ -55,52 +55,129 @@ public class AntMerchantExpandEnterpriseApplyModel extends AlipayObject {
 	@ApiField("shop_info")
 	private ShopInfo shopInfo;
 
-	public BaseInfo getBaseInfo() {
+    /**
+     * Gets base info.
+     *
+     * @return the base info
+     */
+    public BaseInfo getBaseInfo() {
 		return this.baseInfo;
 	}
-	public void setBaseInfo(BaseInfo baseInfo) {
+
+    /**
+     * Sets base info.
+     *
+     * @param baseInfo the base info
+     */
+    public void setBaseInfo(BaseInfo baseInfo) {
 		this.baseInfo = baseInfo;
 	}
 
-	public BusinessBankAccountInfo getBusinessBankAccountInfo() {
+    /**
+     * Gets business bank account info.
+     *
+     * @return the business bank account info
+     */
+    public BusinessBankAccountInfo getBusinessBankAccountInfo() {
 		return this.businessBankAccountInfo;
 	}
-	public void setBusinessBankAccountInfo(BusinessBankAccountInfo businessBankAccountInfo) {
+
+    /**
+     * Sets business bank account info.
+     *
+     * @param businessBankAccountInfo the business bank account info
+     */
+    public void setBusinessBankAccountInfo(BusinessBankAccountInfo businessBankAccountInfo) {
 		this.businessBankAccountInfo = businessBankAccountInfo;
 	}
 
-	public BusinessLicenceInfo getBusinessLicenseInfo() {
+    /**
+     * Gets business license info.
+     *
+     * @return the business license info
+     */
+    public BusinessLicenceInfo getBusinessLicenseInfo() {
 		return this.businessLicenseInfo;
 	}
-	public void setBusinessLicenseInfo(BusinessLicenceInfo businessLicenseInfo) {
+
+    /**
+     * Sets business license info.
+     *
+     * @param businessLicenseInfo the business license info
+     */
+    public void setBusinessLicenseInfo(BusinessLicenceInfo businessLicenseInfo) {
 		this.businessLicenseInfo = businessLicenseInfo;
 	}
 
-	public LegalRepresentativeInfo getLegalRepresentativeInfo() {
+    /**
+     * Gets legal representative info.
+     *
+     * @return the legal representative info
+     */
+    public LegalRepresentativeInfo getLegalRepresentativeInfo() {
 		return this.legalRepresentativeInfo;
 	}
-	public void setLegalRepresentativeInfo(LegalRepresentativeInfo legalRepresentativeInfo) {
+
+    /**
+     * Sets legal representative info.
+     *
+     * @param legalRepresentativeInfo the legal representative info
+     */
+    public void setLegalRepresentativeInfo(LegalRepresentativeInfo legalRepresentativeInfo) {
 		this.legalRepresentativeInfo = legalRepresentativeInfo;
 	}
 
-	public String getLoginId() {
+    /**
+     * Gets login id.
+     *
+     * @return the login id
+     */
+    public String getLoginId() {
 		return this.loginId;
 	}
-	public void setLoginId(String loginId) {
+
+    /**
+     * Sets login id.
+     *
+     * @param loginId the login id
+     */
+    public void setLoginId(String loginId) {
 		this.loginId = loginId;
 	}
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
-	public ShopInfo getShopInfo() {
+    /**
+     * Gets shop info.
+     *
+     * @return the shop info
+     */
+    public ShopInfo getShopInfo() {
 		return this.shopInfo;
 	}
-	public void setShopInfo(ShopInfo shopInfo) {
+
+    /**
+     * Sets shop info.
+     *
+     * @param shopInfo the shop info
+     */
+    public void setShopInfo(ShopInfo shopInfo) {
 		this.shopInfo = shopInfo;
 	}
 

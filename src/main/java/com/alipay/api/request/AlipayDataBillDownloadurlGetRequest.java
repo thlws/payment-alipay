@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.data.bill.downloadurl.get request
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-04-14 11:43:02
  */
@@ -28,17 +28,39 @@ public class AlipayDataBillDownloadurlGetRequest implements AlipayRequest<Alipay
 	 */
 	private String billType;
 
-	public void setBillDate(String billDate) {
+    /**
+     * Sets bill date.
+     *
+     * @param billDate the bill date
+     */
+    public void setBillDate(String billDate) {
 		this.billDate = billDate;
 	}
-	public String getBillDate() {
+
+    /**
+     * Gets bill date.
+     *
+     * @return the bill date
+     */
+    public String getBillDate() {
 		return this.billDate;
 	}
 
-	public void setBillType(String billType) {
+    /**
+     * Sets bill type.
+     *
+     * @param billType the bill type
+     */
+    public void setBillType(String billType) {
 		this.billType = billType;
 	}
-	public String getBillType() {
+
+    /**
+     * Gets bill type.
+     *
+     * @return the bill type
+     */
+    public String getBillType() {
 		return this.billType;
 	}
 	private String terminalType;
@@ -111,7 +133,13 @@ public class AlipayDataBillDownloadurlGetRequest implements AlipayRequest<Alipay
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

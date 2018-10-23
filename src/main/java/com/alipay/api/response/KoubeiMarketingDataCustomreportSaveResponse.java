@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.data.customreport.save response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-12-05 17:13:15
+ * @since 1.0, 2018-07-26 14:03:21
  */
 public class KoubeiMarketingDataCustomreportSaveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5133865767312362561L;
+	private static final long serialVersionUID = 2244978412899194774L;
 
 	/** 
 	 * 自定义报表的规则ID
@@ -20,10 +20,21 @@ public class KoubeiMarketingDataCustomreportSaveResponse extends AlipayResponse 
 	@ApiField("condition_key")
 	private String conditionKey;
 
-	public void setConditionKey(String conditionKey) {
+    /**
+     * Sets condition key.
+     *
+     * @param conditionKey the condition key
+     */
+    public void setConditionKey(String conditionKey) {
 		this.conditionKey = conditionKey;
 	}
-	public String getConditionKey( ) {
+
+    /**
+     * Gets condition key.
+     *
+     * @return the condition key
+     */
+    public String getConditionKey( ) {
 		return this.conditionKey;
 	}
 

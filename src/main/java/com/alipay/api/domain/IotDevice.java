@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IotDevice extends AlipayObject {
 
-	private static final long serialVersionUID = 1258766263266419699L;
+	private static final long serialVersionUID = 3681295782121416713L;
 
 	/**
 	 * 蓝牙MAC地址
@@ -55,52 +55,129 @@ public class IotDevice extends AlipayObject {
 	@ApiField("wifi_mac")
 	private String wifiMac;
 
-	public String getBluetoothMac() {
+    /**
+     * Gets bluetooth mac.
+     *
+     * @return the bluetooth mac
+     */
+    public String getBluetoothMac() {
 		return this.bluetoothMac;
 	}
-	public void setBluetoothMac(String bluetoothMac) {
+
+    /**
+     * Sets bluetooth mac.
+     *
+     * @param bluetoothMac the bluetooth mac
+     */
+    public void setBluetoothMac(String bluetoothMac) {
 		this.bluetoothMac = bluetoothMac;
 	}
 
-	public String getControlUrl() {
+    /**
+     * Gets control url.
+     *
+     * @return the control url
+     */
+    public String getControlUrl() {
 		return this.controlUrl;
 	}
-	public void setControlUrl(String controlUrl) {
+
+    /**
+     * Sets control url.
+     *
+     * @param controlUrl the control url
+     */
+    public void setControlUrl(String controlUrl) {
 		this.controlUrl = controlUrl;
 	}
 
-	public String getDeviceId() {
+    /**
+     * Gets device id.
+     *
+     * @return the device id
+     */
+    public String getDeviceId() {
 		return this.deviceId;
 	}
-	public void setDeviceId(String deviceId) {
+
+    /**
+     * Sets device id.
+     *
+     * @param deviceId the device id
+     */
+    public void setDeviceId(String deviceId) {
 		this.deviceId = deviceId;
 	}
 
-	public String getDeviceName() {
+    /**
+     * Gets device name.
+     *
+     * @return the device name
+     */
+    public String getDeviceName() {
 		return this.deviceName;
 	}
-	public void setDeviceName(String deviceName) {
+
+    /**
+     * Sets device name.
+     *
+     * @param deviceName the device name
+     */
+    public void setDeviceName(String deviceName) {
 		this.deviceName = deviceName;
 	}
 
-	public String getModelId() {
+    /**
+     * Gets model id.
+     *
+     * @return the model id
+     */
+    public String getModelId() {
 		return this.modelId;
 	}
-	public void setModelId(String modelId) {
+
+    /**
+     * Sets model id.
+     *
+     * @param modelId the model id
+     */
+    public void setModelId(String modelId) {
 		this.modelId = modelId;
 	}
 
-	public String getSn() {
+    /**
+     * Gets sn.
+     *
+     * @return the sn
+     */
+    public String getSn() {
 		return this.sn;
 	}
-	public void setSn(String sn) {
+
+    /**
+     * Sets sn.
+     *
+     * @param sn the sn
+     */
+    public void setSn(String sn) {
 		this.sn = sn;
 	}
 
-	public String getWifiMac() {
+    /**
+     * Gets wifi mac.
+     *
+     * @return the wifi mac
+     */
+    public String getWifiMac() {
 		return this.wifiMac;
 	}
-	public void setWifiMac(String wifiMac) {
+
+    /**
+     * Sets wifi mac.
+     *
+     * @param wifiMac the wifi mac
+     */
+    public void setWifiMac(String wifiMac) {
 		this.wifiMac = wifiMac;
 	}
 

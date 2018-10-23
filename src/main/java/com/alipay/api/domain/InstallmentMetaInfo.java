@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InstallmentMetaInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2738454658151162727L;
+	private static final long serialVersionUID = 7532772316923654628L;
 
 	/**
 	 * 结束期数，包含此值
@@ -31,24 +31,57 @@ public class InstallmentMetaInfo extends AlipayObject {
 	@ApiField("value")
 	private String value;
 
-	public Long getEndTerm() {
+    /**
+     * Gets end term.
+     *
+     * @return the end term
+     */
+    public Long getEndTerm() {
 		return this.endTerm;
 	}
-	public void setEndTerm(Long endTerm) {
+
+    /**
+     * Sets end term.
+     *
+     * @param endTerm the end term
+     */
+    public void setEndTerm(Long endTerm) {
 		this.endTerm = endTerm;
 	}
 
-	public Long getStartTerm() {
+    /**
+     * Gets start term.
+     *
+     * @return the start term
+     */
+    public Long getStartTerm() {
 		return this.startTerm;
 	}
-	public void setStartTerm(Long startTerm) {
+
+    /**
+     * Sets start term.
+     *
+     * @param startTerm the start term
+     */
+    public void setStartTerm(Long startTerm) {
 		this.startTerm = startTerm;
 	}
 
-	public String getValue() {
+    /**
+     * Gets value.
+     *
+     * @return the value
+     */
+    public String getValue() {
 		return this.value;
 	}
-	public void setValue(String value) {
+
+    /**
+     * Sets value.
+     *
+     * @param value the value
+     */
+    public void setValue(String value) {
 		this.value = value;
 	}
 

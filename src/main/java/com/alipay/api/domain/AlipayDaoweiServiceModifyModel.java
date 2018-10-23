@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建或更新服务信息接口
  *
  * @author auto create
- * @since 1.0, 2017-03-17 17:48:10
+ * @since 1.0, 2018-06-26 14:23:36
  */
 public class AlipayDaoweiServiceModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7643753435691755424L;
+	private static final long serialVersionUID = 6542798477329267446L;
 
 	/**
 	 * 服务保障描述
@@ -181,178 +181,453 @@ out_sku_id是在sku中定义的外部商品库存单位信息ID,该配置表示o
 	@ApiField("unit_price")
 	private String unitPrice;
 
-	public List<AssuranceInfo> getAssuranceDesc() {
+    /**
+     * Gets assurance desc.
+     *
+     * @return the assurance desc
+     */
+    public List<AssuranceInfo> getAssuranceDesc() {
 		return this.assuranceDesc;
 	}
-	public void setAssuranceDesc(List<AssuranceInfo> assuranceDesc) {
+
+    /**
+     * Sets assurance desc.
+     *
+     * @param assuranceDesc the assurance desc
+     */
+    public void setAssuranceDesc(List<AssuranceInfo> assuranceDesc) {
 		this.assuranceDesc = assuranceDesc;
 	}
 
-	public List<CommonDescInfo> getAttention() {
+    /**
+     * Gets attention.
+     *
+     * @return the attention
+     */
+    public List<CommonDescInfo> getAttention() {
 		return this.attention;
 	}
-	public void setAttention(List<CommonDescInfo> attention) {
+
+    /**
+     * Sets attention.
+     *
+     * @param attention the attention
+     */
+    public void setAttention(List<CommonDescInfo> attention) {
 		this.attention = attention;
 	}
 
-	public String getCategoryCode() {
+    /**
+     * Gets category code.
+     *
+     * @return the category code
+     */
+    public String getCategoryCode() {
 		return this.categoryCode;
 	}
-	public void setCategoryCode(String categoryCode) {
+
+    /**
+     * Sets category code.
+     *
+     * @param categoryCode the category code
+     */
+    public void setCategoryCode(String categoryCode) {
 		this.categoryCode = categoryCode;
 	}
 
-	public String getCityCode() {
+    /**
+     * Gets city code.
+     *
+     * @return the city code
+     */
+    public String getCityCode() {
 		return this.cityCode;
 	}
-	public void setCityCode(String cityCode) {
+
+    /**
+     * Sets city code.
+     *
+     * @param cityCode the city code
+     */
+    public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
 	}
 
-	public List<CommonDescInfo> getDesc() {
+    /**
+     * Gets desc.
+     *
+     * @return the desc
+     */
+    public List<CommonDescInfo> getDesc() {
 		return this.desc;
 	}
-	public void setDesc(List<CommonDescInfo> desc) {
+
+    /**
+     * Sets desc.
+     *
+     * @param desc the desc
+     */
+    public void setDesc(List<CommonDescInfo> desc) {
 		this.desc = desc;
 	}
 
-	public List<String> getDistrictCodeList() {
+    /**
+     * Gets district code list.
+     *
+     * @return the district code list
+     */
+    public List<String> getDistrictCodeList() {
 		return this.districtCodeList;
 	}
-	public void setDistrictCodeList(List<String> districtCodeList) {
+
+    /**
+     * Sets district code list.
+     *
+     * @param districtCodeList the district code list
+     */
+    public void setDistrictCodeList(List<String> districtCodeList) {
 		this.districtCodeList = districtCodeList;
 	}
 
-	public List<String> getImageUrls() {
+    /**
+     * Gets image urls.
+     *
+     * @return the image urls
+     */
+    public List<String> getImageUrls() {
 		return this.imageUrls;
 	}
-	public void setImageUrls(List<String> imageUrls) {
+
+    /**
+     * Sets image urls.
+     *
+     * @param imageUrls the image urls
+     */
+    public void setImageUrls(List<String> imageUrls) {
 		this.imageUrls = imageUrls;
 	}
 
-	public String getLatitude() {
+    /**
+     * Gets latitude.
+     *
+     * @return the latitude
+     */
+    public String getLatitude() {
 		return this.latitude;
 	}
-	public void setLatitude(String latitude) {
+
+    /**
+     * Sets latitude.
+     *
+     * @param latitude the latitude
+     */
+    public void setLatitude(String latitude) {
 		this.latitude = latitude;
 	}
 
-	public String getLongitude() {
+    /**
+     * Gets longitude.
+     *
+     * @return the longitude
+     */
+    public String getLongitude() {
 		return this.longitude;
 	}
-	public void setLongitude(String longitude) {
+
+    /**
+     * Sets longitude.
+     *
+     * @param longitude the longitude
+     */
+    public void setLongitude(String longitude) {
 		this.longitude = longitude;
 	}
 
-	public String getMode() {
+    /**
+     * Gets mode.
+     *
+     * @return the mode
+     */
+    public String getMode() {
 		return this.mode;
 	}
-	public void setMode(String mode) {
+
+    /**
+     * Sets mode.
+     *
+     * @param mode the mode
+     */
+    public void setMode(String mode) {
 		this.mode = mode;
 	}
 
-	public String getOutServiceId() {
+    /**
+     * Gets out service id.
+     *
+     * @return the out service id
+     */
+    public String getOutServiceId() {
 		return this.outServiceId;
 	}
-	public void setOutServiceId(String outServiceId) {
+
+    /**
+     * Sets out service id.
+     *
+     * @param outServiceId the out service id
+     */
+    public void setOutServiceId(String outServiceId) {
 		this.outServiceId = outServiceId;
 	}
 
-	public String getOutSpId() {
+    /**
+     * Gets out sp id.
+     *
+     * @return the out sp id
+     */
+    public String getOutSpId() {
 		return this.outSpId;
 	}
-	public void setOutSpId(String outSpId) {
+
+    /**
+     * Sets out sp id.
+     *
+     * @param outSpId the out sp id
+     */
+    public void setOutSpId(String outSpId) {
 		this.outSpId = outSpId;
 	}
 
-	public List<CommonDescInfo> getPriceDesc() {
+    /**
+     * Gets price desc.
+     *
+     * @return the price desc
+     */
+    public List<CommonDescInfo> getPriceDesc() {
 		return this.priceDesc;
 	}
-	public void setPriceDesc(List<CommonDescInfo> priceDesc) {
+
+    /**
+     * Sets price desc.
+     *
+     * @param priceDesc the price desc
+     */
+    public void setPriceDesc(List<CommonDescInfo> priceDesc) {
 		this.priceDesc = priceDesc;
 	}
 
-	public String getPriceDimType() {
+    /**
+     * Gets price dim type.
+     *
+     * @return the price dim type
+     */
+    public String getPriceDimType() {
 		return this.priceDimType;
 	}
-	public void setPriceDimType(String priceDimType) {
+
+    /**
+     * Sets price dim type.
+     *
+     * @param priceDimType the price dim type
+     */
+    public void setPriceDimType(String priceDimType) {
 		this.priceDimType = priceDimType;
 	}
 
-	public List<CommonDescInfo> getProcessDesc() {
+    /**
+     * Gets process desc.
+     *
+     * @return the process desc
+     */
+    public List<CommonDescInfo> getProcessDesc() {
 		return this.processDesc;
 	}
-	public void setProcessDesc(List<CommonDescInfo> processDesc) {
+
+    /**
+     * Sets process desc.
+     *
+     * @param processDesc the process desc
+     */
+    public void setProcessDesc(List<CommonDescInfo> processDesc) {
 		this.processDesc = processDesc;
 	}
 
-	public List<SkuPropertyInfo> getProperty() {
+    /**
+     * Gets property.
+     *
+     * @return the property
+     */
+    public List<SkuPropertyInfo> getProperty() {
 		return this.property;
 	}
-	public void setProperty(List<SkuPropertyInfo> property) {
+
+    /**
+     * Sets property.
+     *
+     * @param property the property
+     */
+    public void setProperty(List<SkuPropertyInfo> property) {
 		this.property = property;
 	}
 
-	public Long getQuantity() {
+    /**
+     * Gets quantity.
+     *
+     * @return the quantity
+     */
+    public Long getQuantity() {
 		return this.quantity;
 	}
-	public void setQuantity(Long quantity) {
+
+    /**
+     * Sets quantity.
+     *
+     * @param quantity the quantity
+     */
+    public void setQuantity(Long quantity) {
 		this.quantity = quantity;
 	}
 
-	public String getServiceName() {
+    /**
+     * Gets service name.
+     *
+     * @return the service name
+     */
+    public String getServiceName() {
 		return this.serviceName;
 	}
-	public void setServiceName(String serviceName) {
+
+    /**
+     * Sets service name.
+     *
+     * @param serviceName the service name
+     */
+    public void setServiceName(String serviceName) {
 		this.serviceName = serviceName;
 	}
 
-	public String getServiceRange() {
+    /**
+     * Gets service range.
+     *
+     * @return the service range
+     */
+    public String getServiceRange() {
 		return this.serviceRange;
 	}
-	public void setServiceRange(String serviceRange) {
+
+    /**
+     * Sets service range.
+     *
+     * @param serviceRange the service range
+     */
+    public void setServiceRange(String serviceRange) {
 		this.serviceRange = serviceRange;
 	}
 
-	public List<SkuDescInfo> getSku() {
+    /**
+     * Gets sku.
+     *
+     * @return the sku
+     */
+    public List<SkuDescInfo> getSku() {
 		return this.sku;
 	}
-	public void setSku(List<SkuDescInfo> sku) {
+
+    /**
+     * Sets sku.
+     *
+     * @param sku the sku
+     */
+    public void setSku(List<SkuDescInfo> sku) {
 		this.sku = sku;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 
-	public String getTags() {
+    /**
+     * Gets tags.
+     *
+     * @return the tags
+     */
+    public String getTags() {
 		return this.tags;
 	}
-	public void setTags(String tags) {
+
+    /**
+     * Sets tags.
+     *
+     * @param tags the tags
+     */
+    public void setTags(String tags) {
 		this.tags = tags;
 	}
 
-	public String getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
-	public void setType(String type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
 
-	public String getUnit() {
+    /**
+     * Gets unit.
+     *
+     * @return the unit
+     */
+    public String getUnit() {
 		return this.unit;
 	}
-	public void setUnit(String unit) {
+
+    /**
+     * Sets unit.
+     *
+     * @param unit the unit
+     */
+    public void setUnit(String unit) {
 		this.unit = unit;
 	}
 
-	public String getUnitPrice() {
+    /**
+     * Gets unit price.
+     *
+     * @return the unit price
+     */
+    public String getUnitPrice() {
 		return this.unitPrice;
 	}
-	public void setUnitPrice(String unitPrice) {
+
+    /**
+     * Sets unit price.
+     *
+     * @param unitPrice the unit price
+     */
+    public void setUnitPrice(String unitPrice) {
 		this.unitPrice = unitPrice;
 	}
 

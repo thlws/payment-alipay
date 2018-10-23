@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenItem extends AlipayObject {
 
-	private static final long serialVersionUID = 6818653153678899257L;
+	private static final long serialVersionUID = 8256796658389422274L;
 
 	/**
 	 * 单品编号
@@ -34,24 +34,57 @@ public class OpenItem extends AlipayObject {
 	@ApiField("store_id")
 	private String storeId;
 
-	public String getItemId() {
+    /**
+     * Gets item id.
+     *
+     * @return the item id
+     */
+    public String getItemId() {
 		return this.itemId;
 	}
-	public void setItemId(String itemId) {
+
+    /**
+     * Sets item id.
+     *
+     * @param itemId the item id
+     */
+    public void setItemId(String itemId) {
 		this.itemId = itemId;
 	}
 
-	public String getItemStatus() {
+    /**
+     * Gets item status.
+     *
+     * @return the item status
+     */
+    public String getItemStatus() {
 		return this.itemStatus;
 	}
-	public void setItemStatus(String itemStatus) {
+
+    /**
+     * Sets item status.
+     *
+     * @param itemStatus the item status
+     */
+    public void setItemStatus(String itemStatus) {
 		this.itemStatus = itemStatus;
 	}
 
-	public String getStoreId() {
+    /**
+     * Gets store id.
+     *
+     * @return the store id
+     */
+    public String getStoreId() {
 		return this.storeId;
 	}
-	public void setStoreId(String storeId) {
+
+    /**
+     * Sets store id.
+     *
+     * @param storeId the store id
+     */
+    public void setStoreId(String storeId) {
 		this.storeId = storeId;
 	}
 

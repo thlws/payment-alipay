@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 社区物业平台物业费账单数据集合
  *
  * @author auto create
- * @since 1.0, 2017-01-14 11:37:38
+ * @since 1.0, 2018-06-09 20:14:19
  */
 public class CPBillSet extends AlipayObject {
 
-	private static final long serialVersionUID = 1215218911298427123L;
+	private static final long serialVersionUID = 4418211719316459814L;
 
 	/**
 	 * 明细条目所归属的账期，用于归类和向用户展示，具体参数值由物业系统自行定义，除参数最大长度外支付宝不做限定。
@@ -73,73 +73,183 @@ public class CPBillSet extends AlipayObject {
 	@ApiField("room_address")
 	private String roomAddress;
 
-	public String getAcctPeriod() {
+    /**
+     * Gets acct period.
+     *
+     * @return the acct period
+     */
+    public String getAcctPeriod() {
 		return this.acctPeriod;
 	}
-	public void setAcctPeriod(String acctPeriod) {
+
+    /**
+     * Sets acct period.
+     *
+     * @param acctPeriod the acct period
+     */
+    public void setAcctPeriod(String acctPeriod) {
 		this.acctPeriod = acctPeriod;
 	}
 
-	public String getBillEntryAmount() {
+    /**
+     * Gets bill entry amount.
+     *
+     * @return the bill entry amount
+     */
+    public String getBillEntryAmount() {
 		return this.billEntryAmount;
 	}
-	public void setBillEntryAmount(String billEntryAmount) {
+
+    /**
+     * Sets bill entry amount.
+     *
+     * @param billEntryAmount the bill entry amount
+     */
+    public void setBillEntryAmount(String billEntryAmount) {
 		this.billEntryAmount = billEntryAmount;
 	}
 
-	public String getBillEntryId() {
+    /**
+     * Gets bill entry id.
+     *
+     * @return the bill entry id
+     */
+    public String getBillEntryId() {
 		return this.billEntryId;
 	}
-	public void setBillEntryId(String billEntryId) {
+
+    /**
+     * Sets bill entry id.
+     *
+     * @param billEntryId the bill entry id
+     */
+    public void setBillEntryId(String billEntryId) {
 		this.billEntryId = billEntryId;
 	}
 
-	public String getCostType() {
+    /**
+     * Gets cost type.
+     *
+     * @return the cost type
+     */
+    public String getCostType() {
 		return this.costType;
 	}
-	public void setCostType(String costType) {
+
+    /**
+     * Sets cost type.
+     *
+     * @param costType the cost type
+     */
+    public void setCostType(String costType) {
 		this.costType = costType;
 	}
 
-	public String getDeadline() {
+    /**
+     * Gets deadline.
+     *
+     * @return the deadline
+     */
+    public String getDeadline() {
 		return this.deadline;
 	}
-	public void setDeadline(String deadline) {
+
+    /**
+     * Sets deadline.
+     *
+     * @param deadline the deadline
+     */
+    public void setDeadline(String deadline) {
 		this.deadline = deadline;
 	}
 
-	public String getOutRoomId() {
+    /**
+     * Gets out room id.
+     *
+     * @return the out room id
+     */
+    public String getOutRoomId() {
 		return this.outRoomId;
 	}
-	public void setOutRoomId(String outRoomId) {
+
+    /**
+     * Sets out room id.
+     *
+     * @param outRoomId the out room id
+     */
+    public void setOutRoomId(String outRoomId) {
 		this.outRoomId = outRoomId;
 	}
 
-	public String getRelateId() {
+    /**
+     * Gets relate id.
+     *
+     * @return the relate id
+     */
+    public String getRelateId() {
 		return this.relateId;
 	}
-	public void setRelateId(String relateId) {
+
+    /**
+     * Sets relate id.
+     *
+     * @param relateId the relate id
+     */
+    public void setRelateId(String relateId) {
 		this.relateId = relateId;
 	}
 
-	public String getReleaseDay() {
+    /**
+     * Gets release day.
+     *
+     * @return the release day
+     */
+    public String getReleaseDay() {
 		return this.releaseDay;
 	}
-	public void setReleaseDay(String releaseDay) {
+
+    /**
+     * Sets release day.
+     *
+     * @param releaseDay the release day
+     */
+    public void setReleaseDay(String releaseDay) {
 		this.releaseDay = releaseDay;
 	}
 
-	public String getRemarkStr() {
+    /**
+     * Gets remark str.
+     *
+     * @return the remark str
+     */
+    public String getRemarkStr() {
 		return this.remarkStr;
 	}
-	public void setRemarkStr(String remarkStr) {
+
+    /**
+     * Sets remark str.
+     *
+     * @param remarkStr the remark str
+     */
+    public void setRemarkStr(String remarkStr) {
 		this.remarkStr = remarkStr;
 	}
 
-	public String getRoomAddress() {
+    /**
+     * Gets room address.
+     *
+     * @return the room address
+     */
+    public String getRoomAddress() {
 		return this.roomAddress;
 	}
-	public void setRoomAddress(String roomAddress) {
+
+    /**
+     * Sets room address.
+     *
+     * @param roomAddress the room address
+     */
+    public void setRoomAddress(String roomAddress) {
 		this.roomAddress = roomAddress;
 	}
 

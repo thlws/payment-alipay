@@ -35,15 +35,15 @@ public abstract class AtsUtils {
 	private AtsUtils() {
 	}
 
-	/**
-	 * 解压gzip文件到指定的目录，目前只能解压gzip包里面只包含一个文件的压缩包。
-	 *
-	 * @param gzip  需要解压的gzip文件
-	 * @param toDir 需要解压到的目录
-	 * @return 解压后的文件 file
-	 * @throws IOException the io exception
-	 */
-	public static File ungzip(File gzip, File toDir) throws IOException {
+    /**
+     * 解压gzip文件到指定的目录，目前只能解压gzip包里面只包含一个文件的压缩包。
+     *
+     * @param gzip  需要解压的gzip文件
+     * @param toDir 需要解压到的目录
+     * @return 解压后的文件 file
+     * @throws IOException the io exception
+     */
+    public static File ungzip(File gzip, File toDir) throws IOException {
 		toDir.mkdirs();
 		File out = new File(toDir, gzip.getName());
 		GZIPInputStream gin = null;
@@ -62,15 +62,15 @@ public abstract class AtsUtils {
 		return out;
 	}
 
-	/**
-	 * 解压zip文件到指定的目录。
-	 *
-	 * @param zip   需要解压的zip文件
-	 * @param toDir 需要解压到的目录
-	 * @return 解压后的文件列表 （不包含文件夹）
-	 * @throws IOException the io exception
-	 */
-	public static List<File> unzip(File zip, File toDir) throws IOException {
+    /**
+     * 解压zip文件到指定的目录。
+     *
+     * @param zip   需要解压的zip文件
+     * @param toDir 需要解压到的目录
+     * @return 解压后的文件列表 （不包含文件夹）
+     * @throws IOException the io exception
+     */
+    public static List<File> unzip(File zip, File toDir) throws IOException {
 		ZipFile zf = null;
 		List<File> files = null;
 		try {
@@ -79,6 +79,9 @@ public abstract class AtsUtils {
 			Enumeration<?> entries = zf.entries();
 			while (entries.hasMoreElements()) {
 				ZipEntry entry = (ZipEntry) entries.nextElement();
+				if (!pathSecurityCheck(entry.getName())) {
+					continue;
+				}
 				if (entry.isDirectory()) {
 					new File(toDir, entry.getName()).mkdirs();
 					continue;
@@ -105,15 +108,15 @@ public abstract class AtsUtils {
 		return files;
 	}
 
-	/**
-	 * 通过HTTP GET方式下载文件到指定的目录。
-	 *
-	 * @param url   需要下载的URL
-	 * @param toDir 需要下载到的目录
-	 * @return 下载后的文件 file
-	 * @throws AlipayApiException the alipay api exception
-	 */
-	public static File download(String url, File toDir) throws AlipayApiException {
+    /**
+     * 通过HTTP GET方式下载文件到指定的目录。
+     *
+     * @param url   需要下载的URL
+     * @param toDir 需要下载到的目录
+     * @return 下载后的文件 file
+     * @throws AlipayApiException the alipay api exception
+     */
+    public static File download(String url, File toDir) throws AlipayApiException {
 		toDir.mkdirs();
 		HttpURLConnection conn = null;
 		OutputStream output = null;
@@ -141,15 +144,15 @@ public abstract class AtsUtils {
 		return file;
 	}
 
-	/**
-	 * 检查指定文件的md5sum和指定的检验码是否一致。
-	 *
-	 * @param file      需要检验的文件
-	 * @param checkCode 已知的md5sum检验码
-	 * @return true /false
-	 * @throws IOException the io exception
-	 */
-	public static boolean checkMd5sum(File file, String checkCode) throws IOException {
+    /**
+     * 检查指定文件的md5sum和指定的检验码是否一致。
+     *
+     * @param file      需要检验的文件
+     * @param checkCode 已知的md5sum检验码
+     * @return true /false
+     * @throws IOException the io exception
+     */
+    public static boolean checkMd5sum(File file, String checkCode) throws IOException {
 		DigestInputStream dInput = null;
 		try {
 			FileInputStream fInput = new FileInputStream(file);
@@ -244,6 +247,22 @@ public abstract class AtsUtils {
 		} catch (IOException ioe) {
 			// ignore
 		}
+	}
+
+    /**
+     * Path security check boolean.
+     *
+     * @param path the path
+     * @return the boolean
+     */
+    public static boolean pathSecurityCheck(String path) {
+		if (path == null) {
+			return false;
+		}
+		if (path.contains("..") && (path.contains("/") || path.contains("\\"))) {
+			return false;
+		}
+		return true;
 	}
 
 }

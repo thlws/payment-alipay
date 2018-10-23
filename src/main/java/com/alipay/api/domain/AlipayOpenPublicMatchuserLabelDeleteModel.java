@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 匹配用户标签删除接口
  *
  * @author auto create
- * @since 1.0, 2017-06-01 11:25:22
+ * @since 1.0, 2018-07-25 13:51:59
  */
 public class AlipayOpenPublicMatchuserLabelDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8495262684222525527L;
+	private static final long serialVersionUID = 8433556867574966521L;
 
 	/**
 	 * 标签id
@@ -29,17 +29,39 @@ public class AlipayOpenPublicMatchuserLabelDeleteModel extends AlipayObject {
 	@ApiField("matcher")
 	private List<Matcher> matchers;
 
-	public String getLabelId() {
+    /**
+     * Gets label id.
+     *
+     * @return the label id
+     */
+    public String getLabelId() {
 		return this.labelId;
 	}
-	public void setLabelId(String labelId) {
+
+    /**
+     * Sets label id.
+     *
+     * @param labelId the label id
+     */
+    public void setLabelId(String labelId) {
 		this.labelId = labelId;
 	}
 
-	public List<Matcher> getMatchers() {
+    /**
+     * Gets matchers.
+     *
+     * @return the matchers
+     */
+    public List<Matcher> getMatchers() {
 		return this.matchers;
 	}
-	public void setMatchers(List<Matcher> matchers) {
+
+    /**
+     * Sets matchers.
+     *
+     * @param matchers the matchers
+     */
+    public void setMatchers(List<Matcher> matchers) {
 		this.matchers = matchers;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ItemUnitInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1347572763745275712L;
+	private static final long serialVersionUID = 4488678349699554793L;
 
 	/**
 	 * 商品详情-商品套餐内容-菜品数量
@@ -43,38 +43,93 @@ public class ItemUnitInfo extends AlipayObject {
 	@ApiField("unit")
 	private String unit;
 
-	public Long getAmount() {
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public Long getAmount() {
 		return this.amount;
 	}
-	public void setAmount(Long amount) {
+
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(Long amount) {
 		this.amount = amount;
 	}
 
-	public String getPrice() {
+    /**
+     * Gets price.
+     *
+     * @return the price
+     */
+    public String getPrice() {
 		return this.price;
 	}
-	public void setPrice(String price) {
+
+    /**
+     * Sets price.
+     *
+     * @param price the price
+     */
+    public void setPrice(String price) {
 		this.price = price;
 	}
 
-	public String getSpec() {
+    /**
+     * Gets spec.
+     *
+     * @return the spec
+     */
+    public String getSpec() {
 		return this.spec;
 	}
-	public void setSpec(String spec) {
+
+    /**
+     * Sets spec.
+     *
+     * @param spec the spec
+     */
+    public void setSpec(String spec) {
 		this.spec = spec;
 	}
 
-	public String getTitle() {
+    /**
+     * Gets title.
+     *
+     * @return the title
+     */
+    public String getTitle() {
 		return this.title;
 	}
-	public void setTitle(String title) {
+
+    /**
+     * Sets title.
+     *
+     * @param title the title
+     */
+    public void setTitle(String title) {
 		this.title = title;
 	}
 
-	public String getUnit() {
+    /**
+     * Gets unit.
+     *
+     * @return the unit
+     */
+    public String getUnit() {
 		return this.unit;
 	}
-	public void setUnit(String unit) {
+
+    /**
+     * Sets unit.
+     *
+     * @param unit the unit
+     */
+    public void setUnit(String unit) {
 		this.unit = unit;
 	}
 

@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.mobile.public.account.reset request
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-12-19 20:52:24
  */
@@ -48,45 +48,111 @@ public class AlipayMobilePublicAccountResetRequest implements AlipayRequest<Alip
 	 */
 	private String realName;
 
-	public void setAgreementId(String agreementId) {
+    /**
+     * Sets agreement id.
+     *
+     * @param agreementId the agreement id
+     */
+    public void setAgreementId(String agreementId) {
 		this.agreementId = agreementId;
 	}
-	public String getAgreementId() {
+
+    /**
+     * Gets agreement id.
+     *
+     * @return the agreement id
+     */
+    public String getAgreementId() {
 		return this.agreementId;
 	}
 
-	public void setBindAccountNo(String bindAccountNo) {
+    /**
+     * Sets bind account no.
+     *
+     * @param bindAccountNo the bind account no
+     */
+    public void setBindAccountNo(String bindAccountNo) {
 		this.bindAccountNo = bindAccountNo;
 	}
-	public String getBindAccountNo() {
+
+    /**
+     * Gets bind account no.
+     *
+     * @return the bind account no
+     */
+    public String getBindAccountNo() {
 		return this.bindAccountNo;
 	}
 
-	public void setBizContent(String bizContent) {
+    /**
+     * Sets biz content.
+     *
+     * @param bizContent the biz content
+     */
+    public void setBizContent(String bizContent) {
 		this.bizContent = bizContent;
 	}
-	public String getBizContent() {
+
+    /**
+     * Gets biz content.
+     *
+     * @return the biz content
+     */
+    public String getBizContent() {
 		return this.bizContent;
 	}
 
-	public void setDisplayName(String displayName) {
+    /**
+     * Sets display name.
+     *
+     * @param displayName the display name
+     */
+    public void setDisplayName(String displayName) {
 		this.displayName = displayName;
 	}
-	public String getDisplayName() {
+
+    /**
+     * Gets display name.
+     *
+     * @return the display name
+     */
+    public String getDisplayName() {
 		return this.displayName;
 	}
 
-	public void setFromUserId(String fromUserId) {
+    /**
+     * Sets from user id.
+     *
+     * @param fromUserId the from user id
+     */
+    public void setFromUserId(String fromUserId) {
 		this.fromUserId = fromUserId;
 	}
-	public String getFromUserId() {
+
+    /**
+     * Gets from user id.
+     *
+     * @return the from user id
+     */
+    public String getFromUserId() {
 		return this.fromUserId;
 	}
 
-	public void setRealName(String realName) {
+    /**
+     * Sets real name.
+     *
+     * @param realName the real name
+     */
+    public void setRealName(String realName) {
 		this.realName = realName;
 	}
-	public String getRealName() {
+
+    /**
+     * Gets real name.
+     *
+     * @return the real name
+     */
+    public String getRealName() {
 		return this.realName;
 	}
 	private String terminalType;
@@ -163,7 +229,13 @@ public class AlipayMobilePublicAccountResetRequest implements AlipayRequest<Alip
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

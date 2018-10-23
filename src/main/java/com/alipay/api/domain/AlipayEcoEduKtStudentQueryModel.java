@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoEduKtStudentQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4592357984939282593L;
+	private static final long serialVersionUID = 8351197273816162576L;
 
 	/**
 	 * 已经签约教育缴费的isv的支付宝PID
@@ -37,31 +37,75 @@ public class AlipayEcoEduKtStudentQueryModel extends AlipayObject {
 	@ApiField("student_no")
 	private String studentNo;
 
-	public String getIsvPid() {
+    /**
+     * Gets isv pid.
+     *
+     * @return the isv pid
+     */
+    public String getIsvPid() {
 		return this.isvPid;
 	}
-	public void setIsvPid(String isvPid) {
+
+    /**
+     * Sets isv pid.
+     *
+     * @param isvPid the isv pid
+     */
+    public void setIsvPid(String isvPid) {
 		this.isvPid = isvPid;
 	}
 
-	public String getSchoolNo() {
+    /**
+     * Gets school no.
+     *
+     * @return the school no
+     */
+    public String getSchoolNo() {
 		return this.schoolNo;
 	}
-	public void setSchoolNo(String schoolNo) {
+
+    /**
+     * Sets school no.
+     *
+     * @param schoolNo the school no
+     */
+    public void setSchoolNo(String schoolNo) {
 		this.schoolNo = schoolNo;
 	}
 
-	public String getSchoolPid() {
+    /**
+     * Gets school pid.
+     *
+     * @return the school pid
+     */
+    public String getSchoolPid() {
 		return this.schoolPid;
 	}
-	public void setSchoolPid(String schoolPid) {
+
+    /**
+     * Sets school pid.
+     *
+     * @param schoolPid the school pid
+     */
+    public void setSchoolPid(String schoolPid) {
 		this.schoolPid = schoolPid;
 	}
 
-	public String getStudentNo() {
+    /**
+     * Gets student no.
+     *
+     * @return the student no
+     */
+    public String getStudentNo() {
 		return this.studentNo;
 	}
-	public void setStudentNo(String studentNo) {
+
+    /**
+     * Sets student no.
+     *
+     * @param studentNo the student no
+     */
+    public void setStudentNo(String studentNo) {
 		this.studentNo = studentNo;
 	}
 

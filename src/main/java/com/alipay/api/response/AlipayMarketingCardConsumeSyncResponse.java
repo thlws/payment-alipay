@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.card.consume.sync response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-06-23 14:51:37
  */
 public class AlipayMarketingCardConsumeSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1149589461668127751L;
+	private static final long serialVersionUID = 4229242954492281965L;
 
 	/** 
 	 * 外部卡号
@@ -20,10 +20,21 @@ public class AlipayMarketingCardConsumeSyncResponse extends AlipayResponse {
 	@ApiField("external_card_no")
 	private String externalCardNo;
 
-	public void setExternalCardNo(String externalCardNo) {
+    /**
+     * Sets external card no.
+     *
+     * @param externalCardNo the external card no
+     */
+    public void setExternalCardNo(String externalCardNo) {
 		this.externalCardNo = externalCardNo;
 	}
-	public String getExternalCardNo( ) {
+
+    /**
+     * Gets external card no.
+     *
+     * @return the external card no
+     */
+    public String getExternalCardNo( ) {
 		return this.externalCardNo;
 	}
 

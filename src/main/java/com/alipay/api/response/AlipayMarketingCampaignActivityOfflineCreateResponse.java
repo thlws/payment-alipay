@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.campaign.activity.offline.create response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-04-07 18:22:19
  */
 public class AlipayMarketingCampaignActivityOfflineCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4713767934512331817L;
+	private static final long serialVersionUID = 4868715989757624444L;
 
 	/** 
 	 * 创建成功的活动id
@@ -26,17 +26,39 @@ public class AlipayMarketingCampaignActivityOfflineCreateResponse extends Alipay
 	@ApiField("prize_id")
 	private String prizeId;
 
-	public void setCampId(String campId) {
+    /**
+     * Sets camp id.
+     *
+     * @param campId the camp id
+     */
+    public void setCampId(String campId) {
 		this.campId = campId;
 	}
-	public String getCampId( ) {
+
+    /**
+     * Gets camp id.
+     *
+     * @return the camp id
+     */
+    public String getCampId( ) {
 		return this.campId;
 	}
 
-	public void setPrizeId(String prizeId) {
+    /**
+     * Sets prize id.
+     *
+     * @param prizeId the prize id
+     */
+    public void setPrizeId(String prizeId) {
 		this.prizeId = prizeId;
 	}
-	public String getPrizeId( ) {
+
+    /**
+     * Gets prize id.
+     *
+     * @return the prize id
+     */
+    public String getPrizeId( ) {
 		return this.prizeId;
 	}
 

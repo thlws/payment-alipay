@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CustomerEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 2654793362159959391L;
+	private static final long serialVersionUID = 8154913838421532325L;
 
 	/**
 	 * 实体英文名
@@ -47,38 +47,93 @@ public class CustomerEntity extends AlipayObject {
 	@ApiField("customer_tag")
 	private List<CustomerTag> tags;
 
-	public String getCode() {
+    /**
+     * Gets code.
+     *
+     * @return the code
+     */
+    public String getCode() {
 		return this.code;
 	}
-	public void setCode(String code) {
+
+    /**
+     * Sets code.
+     *
+     * @param code the code
+     */
+    public void setCode(String code) {
 		this.code = code;
 	}
 
-	public String getDesc() {
+    /**
+     * Gets desc.
+     *
+     * @return the desc
+     */
+    public String getDesc() {
 		return this.desc;
 	}
-	public void setDesc(String desc) {
+
+    /**
+     * Sets desc.
+     *
+     * @param desc the desc
+     */
+    public void setDesc(String desc) {
 		this.desc = desc;
 	}
 
-	public String getId() {
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
+    public String getId() {
 		return this.id;
 	}
-	public void setId(String id) {
+
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
+    public void setId(String id) {
 		this.id = id;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public List<CustomerTag> getTags() {
+    /**
+     * Gets tags.
+     *
+     * @return the tags
+     */
+    public List<CustomerTag> getTags() {
 		return this.tags;
 	}
-	public void setTags(List<CustomerTag> tags) {
+
+    /**
+     * Sets tags.
+     *
+     * @param tags the tags
+     */
+    public void setTags(List<CustomerTag> tags) {
 		this.tags = tags;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicTemplateMessageIndustryModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5617879331535754197L;
+	private static final long serialVersionUID = 8444833789516433943L;
 
 	/**
 	 * 服务窗消息模板所属主行业一/二级编码
@@ -37,31 +37,75 @@ public class AlipayOpenPublicTemplateMessageIndustryModifyModel extends AlipayOb
 	@ApiField("secondary_industry_name")
 	private String secondaryIndustryName;
 
-	public String getPrimaryIndustryCode() {
+    /**
+     * Gets primary industry code.
+     *
+     * @return the primary industry code
+     */
+    public String getPrimaryIndustryCode() {
 		return this.primaryIndustryCode;
 	}
-	public void setPrimaryIndustryCode(String primaryIndustryCode) {
+
+    /**
+     * Sets primary industry code.
+     *
+     * @param primaryIndustryCode the primary industry code
+     */
+    public void setPrimaryIndustryCode(String primaryIndustryCode) {
 		this.primaryIndustryCode = primaryIndustryCode;
 	}
 
-	public String getPrimaryIndustryName() {
+    /**
+     * Gets primary industry name.
+     *
+     * @return the primary industry name
+     */
+    public String getPrimaryIndustryName() {
 		return this.primaryIndustryName;
 	}
-	public void setPrimaryIndustryName(String primaryIndustryName) {
+
+    /**
+     * Sets primary industry name.
+     *
+     * @param primaryIndustryName the primary industry name
+     */
+    public void setPrimaryIndustryName(String primaryIndustryName) {
 		this.primaryIndustryName = primaryIndustryName;
 	}
 
-	public String getSecondaryIndustryCode() {
+    /**
+     * Gets secondary industry code.
+     *
+     * @return the secondary industry code
+     */
+    public String getSecondaryIndustryCode() {
 		return this.secondaryIndustryCode;
 	}
-	public void setSecondaryIndustryCode(String secondaryIndustryCode) {
+
+    /**
+     * Sets secondary industry code.
+     *
+     * @param secondaryIndustryCode the secondary industry code
+     */
+    public void setSecondaryIndustryCode(String secondaryIndustryCode) {
 		this.secondaryIndustryCode = secondaryIndustryCode;
 	}
 
-	public String getSecondaryIndustryName() {
+    /**
+     * Gets secondary industry name.
+     *
+     * @return the secondary industry name
+     */
+    public String getSecondaryIndustryName() {
 		return this.secondaryIndustryName;
 	}
-	public void setSecondaryIndustryName(String secondaryIndustryName) {
+
+    /**
+     * Sets secondary industry name.
+     *
+     * @param secondaryIndustryName the secondary industry name
+     */
+    public void setSecondaryIndustryName(String secondaryIndustryName) {
 		this.secondaryIndustryName = secondaryIndustryName;
 	}
 

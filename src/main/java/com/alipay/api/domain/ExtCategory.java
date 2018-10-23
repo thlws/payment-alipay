@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ExtCategory extends AlipayObject {
 
-	private static final long serialVersionUID = 2425976256363334992L;
+	private static final long serialVersionUID = 4654659822221564944L;
 
 	/**
 	 * 品类编码
@@ -31,24 +31,57 @@ public class ExtCategory extends AlipayObject {
 	@ApiField("parent_id")
 	private String parentId;
 
-	public String getCategoryCode() {
+    /**
+     * Gets category code.
+     *
+     * @return the category code
+     */
+    public String getCategoryCode() {
 		return this.categoryCode;
 	}
-	public void setCategoryCode(String categoryCode) {
+
+    /**
+     * Sets category code.
+     *
+     * @param categoryCode the category code
+     */
+    public void setCategoryCode(String categoryCode) {
 		this.categoryCode = categoryCode;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getParentId() {
+    /**
+     * Gets parent id.
+     *
+     * @return the parent id
+     */
+    public String getParentId() {
 		return this.parentId;
 	}
-	public void setParentId(String parentId) {
+
+    /**
+     * Sets parent id.
+     *
+     * @param parentId the parent id
+     */
+    public void setParentId(String parentId) {
 		this.parentId = parentId;
 	}
 

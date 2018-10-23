@@ -9,9 +9,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.system.oauth.token request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-25 16:00:34
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipaySystemOauthTokenRequest implements AlipayRequest<AlipaySystemOauthTokenResponse> {
 
@@ -33,24 +33,57 @@ public class AlipaySystemOauthTokenRequest implements AlipayRequest<AlipaySystem
 	 */
 	private String refreshToken;
 
-	public void setCode(String code) {
+    /**
+     * Sets code.
+     *
+     * @param code the code
+     */
+    public void setCode(String code) {
 		this.code = code;
 	}
-	public String getCode() {
+
+    /**
+     * Gets code.
+     *
+     * @return the code
+     */
+    public String getCode() {
 		return this.code;
 	}
 
-	public void setGrantType(String grantType) {
+    /**
+     * Sets grant type.
+     *
+     * @param grantType the grant type
+     */
+    public void setGrantType(String grantType) {
 		this.grantType = grantType;
 	}
-	public String getGrantType() {
+
+    /**
+     * Gets grant type.
+     *
+     * @return the grant type
+     */
+    public String getGrantType() {
 		return this.grantType;
 	}
 
-	public void setRefreshToken(String refreshToken) {
+    /**
+     * Sets refresh token.
+     *
+     * @param refreshToken the refresh token
+     */
+    public void setRefreshToken(String refreshToken) {
 		this.refreshToken = refreshToken;
 	}
-	public String getRefreshToken() {
+
+    /**
+     * Gets refresh token.
+     *
+     * @return the refresh token
+     */
+    public String getRefreshToken() {
 		return this.refreshToken;
 	}
 	private String terminalType;
@@ -124,7 +157,13 @@ public class AlipaySystemOauthTokenRequest implements AlipayRequest<AlipaySystem
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

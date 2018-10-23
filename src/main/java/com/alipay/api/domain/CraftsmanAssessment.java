@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 手艺人评价详情
  *
  * @author auto create
- * @since 1.0, 2017-01-13 16:27:52
+ * @since 1.0, 2017-10-26 10:35:48
  */
 public class CraftsmanAssessment extends AlipayObject {
 
-	private static final long serialVersionUID = 1589325972182171342L;
+	private static final long serialVersionUID = 4172716698948892151L;
 
 	/**
 	 * 子评分项
@@ -35,24 +35,57 @@ public class CraftsmanAssessment extends AlipayObject {
 	@ApiField("total_score")
 	private Long totalScore;
 
-	public List<CraftsmanSubAssessment> getSubAssessments() {
+    /**
+     * Gets sub assessments.
+     *
+     * @return the sub assessments
+     */
+    public List<CraftsmanSubAssessment> getSubAssessments() {
 		return this.subAssessments;
 	}
-	public void setSubAssessments(List<CraftsmanSubAssessment> subAssessments) {
+
+    /**
+     * Sets sub assessments.
+     *
+     * @param subAssessments the sub assessments
+     */
+    public void setSubAssessments(List<CraftsmanSubAssessment> subAssessments) {
 		this.subAssessments = subAssessments;
 	}
 
-	public Long getTotalNo() {
+    /**
+     * Gets total no.
+     *
+     * @return the total no
+     */
+    public Long getTotalNo() {
 		return this.totalNo;
 	}
-	public void setTotalNo(Long totalNo) {
+
+    /**
+     * Sets total no.
+     *
+     * @param totalNo the total no
+     */
+    public void setTotalNo(Long totalNo) {
 		this.totalNo = totalNo;
 	}
 
-	public Long getTotalScore() {
+    /**
+     * Gets total score.
+     *
+     * @return the total score
+     */
+    public Long getTotalScore() {
 		return this.totalScore;
 	}
-	public void setTotalScore(Long totalScore) {
+
+    /**
+     * Sets total score.
+     *
+     * @param totalScore the total score
+     */
+    public void setTotalScore(Long totalScore) {
 		this.totalScore = totalScore;
 	}
 

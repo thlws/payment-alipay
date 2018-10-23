@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 异步单发消息
  *
  * @author auto create
- * @since 1.0, 2017-03-27 10:56:03
+ * @since 1.0, 2018-08-14 13:54:21
  */
 public class AlipayOpenPublicMessageCustomSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2111666642751975861L;
+	private static final long serialVersionUID = 2351573361726142489L;
 
 	/**
 	 * 图文消息，当msg_type为image-text时，必须存在相对应的值
@@ -28,6 +28,12 @@ public class AlipayOpenPublicMessageCustomSendModel extends AlipayObject {
 	 */
 	@ApiField("chat")
 	private String chat;
+
+	/**
+	 * 触发消息的事件类型，默认为空。代表商户未改造。如果是follow，代表关注消息。click代表菜单点击，enter_ppchat代表进入事件；请注意事件类型的大小写
+	 */
+	@ApiField("event_type")
+	private String eventType;
 
 	/**
 	 * 消息类型，text：文本消息，image-text：图文消息
@@ -47,38 +53,111 @@ public class AlipayOpenPublicMessageCustomSendModel extends AlipayObject {
 	@ApiField("to_user_id")
 	private String toUserId;
 
-	public List<Article> getArticles() {
+    /**
+     * Gets articles.
+     *
+     * @return the articles
+     */
+    public List<Article> getArticles() {
 		return this.articles;
 	}
-	public void setArticles(List<Article> articles) {
+
+    /**
+     * Sets articles.
+     *
+     * @param articles the articles
+     */
+    public void setArticles(List<Article> articles) {
 		this.articles = articles;
 	}
 
-	public String getChat() {
+    /**
+     * Gets chat.
+     *
+     * @return the chat
+     */
+    public String getChat() {
 		return this.chat;
 	}
-	public void setChat(String chat) {
+
+    /**
+     * Sets chat.
+     *
+     * @param chat the chat
+     */
+    public void setChat(String chat) {
 		this.chat = chat;
 	}
 
-	public String getMsgType() {
+    /**
+     * Gets event type.
+     *
+     * @return the event type
+     */
+    public String getEventType() {
+		return this.eventType;
+	}
+
+    /**
+     * Sets event type.
+     *
+     * @param eventType the event type
+     */
+    public void setEventType(String eventType) {
+		this.eventType = eventType;
+	}
+
+    /**
+     * Gets msg type.
+     *
+     * @return the msg type
+     */
+    public String getMsgType() {
 		return this.msgType;
 	}
-	public void setMsgType(String msgType) {
+
+    /**
+     * Sets msg type.
+     *
+     * @param msgType the msg type
+     */
+    public void setMsgType(String msgType) {
 		this.msgType = msgType;
 	}
 
-	public Text getText() {
+    /**
+     * Gets text.
+     *
+     * @return the text
+     */
+    public Text getText() {
 		return this.text;
 	}
-	public void setText(Text text) {
+
+    /**
+     * Sets text.
+     *
+     * @param text the text
+     */
+    public void setText(Text text) {
 		this.text = text;
 	}
 
-	public String getToUserId() {
+    /**
+     * Gets to user id.
+     *
+     * @return the to user id
+     */
+    public String getToUserId() {
 		return this.toUserId;
 	}
-	public void setToUserId(String toUserId) {
+
+    /**
+     * Sets to user id.
+     *
+     * @param toUserId the to user id
+     */
+    public void setToUserId(String toUserId) {
 		this.toUserId = toUserId;
 	}
 

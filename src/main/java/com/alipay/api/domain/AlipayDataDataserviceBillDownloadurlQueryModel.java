@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 无授权模式的查询对账单下载地址
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:19
+ * @since 1.0, 2018-08-08 15:18:41
  */
 public class AlipayDataDataserviceBillDownloadurlQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5288298988115761273L;
+	private static final long serialVersionUID = 6216232421395497324L;
 
 	/**
 	 * 账单时间：日账单格式为yyyy-MM-dd，月账单格式为yyyy-MM。
@@ -25,17 +25,39 @@ public class AlipayDataDataserviceBillDownloadurlQueryModel extends AlipayObject
 	@ApiField("bill_type")
 	private String billType;
 
-	public String getBillDate() {
+    /**
+     * Gets bill date.
+     *
+     * @return the bill date
+     */
+    public String getBillDate() {
 		return this.billDate;
 	}
-	public void setBillDate(String billDate) {
+
+    /**
+     * Sets bill date.
+     *
+     * @param billDate the bill date
+     */
+    public void setBillDate(String billDate) {
 		this.billDate = billDate;
 	}
 
-	public String getBillType() {
+    /**
+     * Gets bill type.
+     *
+     * @return the bill type
+     */
+    public String getBillType() {
 		return this.billType;
 	}
-	public void setBillType(String billType) {
+
+    /**
+     * Sets bill type.
+     *
+     * @param billType the bill type
+     */
+    public void setBillType(String billType) {
 		this.billType = billType;
 	}
 

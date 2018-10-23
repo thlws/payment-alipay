@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KbAdvertSpecialAdvContentRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 5516439248435869644L;
+	private static final long serialVersionUID = 8885768358579647285L;
 
 	/**
 	 * 红包口令模型，创建红包口令时传入该模型
@@ -26,17 +26,39 @@ public class KbAdvertSpecialAdvContentRequest extends AlipayObject {
 	@ApiField("content_type")
 	private String contentType;
 
-	public KbAdvertContentPasswordModify getContentPasswordModify() {
+    /**
+     * Gets content password modify.
+     *
+     * @return the content password modify
+     */
+    public KbAdvertContentPasswordModify getContentPasswordModify() {
 		return this.contentPasswordModify;
 	}
-	public void setContentPasswordModify(KbAdvertContentPasswordModify contentPasswordModify) {
+
+    /**
+     * Sets content password modify.
+     *
+     * @param contentPasswordModify the content password modify
+     */
+    public void setContentPasswordModify(KbAdvertContentPasswordModify contentPasswordModify) {
 		this.contentPasswordModify = contentPasswordModify;
 	}
 
-	public String getContentType() {
+    /**
+     * Gets content type.
+     *
+     * @return the content type
+     */
+    public String getContentType() {
 		return this.contentType;
 	}
-	public void setContentType(String contentType) {
+
+    /**
+     * Sets content type.
+     *
+     * @param contentType the content type
+     */
+    public void setContentType(String contentType) {
 		this.contentType = contentType;
 	}
 

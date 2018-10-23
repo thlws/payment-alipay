@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.data.isv.shop.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-07-26 09:48:54
  */
 public class KoubeiMarketingDataIsvShopQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8472148394137526531L;
+	private static final long serialVersionUID = 3697351326966348382L;
 
 	/** 
 	 * 门店摘要信息列表
@@ -24,10 +24,21 @@ public class KoubeiMarketingDataIsvShopQueryResponse extends AlipayResponse {
 	@ApiField("shop_summary_info")
 	private List<ShopSummaryInfo> shopSummaryInfos;
 
-	public void setShopSummaryInfos(List<ShopSummaryInfo> shopSummaryInfos) {
+    /**
+     * Sets shop summary infos.
+     *
+     * @param shopSummaryInfos the shop summary infos
+     */
+    public void setShopSummaryInfos(List<ShopSummaryInfo> shopSummaryInfos) {
 		this.shopSummaryInfos = shopSummaryInfos;
 	}
-	public List<ShopSummaryInfo> getShopSummaryInfos( ) {
+
+    /**
+     * Gets shop summary infos.
+     *
+     * @return the shop summary infos
+     */
+    public List<ShopSummaryInfo> getShopSummaryInfos( ) {
 		return this.shopSummaryInfos;
 	}
 

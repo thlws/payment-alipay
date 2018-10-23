@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SinglePayDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1573897622698154148L;
+	private static final long serialVersionUID = 7838717747995651936L;
 
 	/**
 	 * 支付宝冻结订单号
@@ -63,59 +63,147 @@ public class SinglePayDetail extends AlipayObject {
 	@ApiField("transfer_out_order_no")
 	private String transferOutOrderNo;
 
-	public String getAlipayOrderNo() {
+    /**
+     * Gets alipay order no.
+     *
+     * @return the alipay order no
+     */
+    public String getAlipayOrderNo() {
 		return this.alipayOrderNo;
 	}
-	public void setAlipayOrderNo(String alipayOrderNo) {
+
+    /**
+     * Sets alipay order no.
+     *
+     * @param alipayOrderNo the alipay order no
+     */
+    public void setAlipayOrderNo(String alipayOrderNo) {
 		this.alipayOrderNo = alipayOrderNo;
 	}
 
-	public String getAmount() {
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public String getAmount() {
 		return this.amount;
 	}
-	public void setAmount(String amount) {
+
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
-	public Date getCreateTime() {
+    /**
+     * Gets create time.
+     *
+     * @return the create time
+     */
+    public Date getCreateTime() {
 		return this.createTime;
 	}
-	public void setCreateTime(Date createTime) {
+
+    /**
+     * Sets create time.
+     *
+     * @param createTime the create time
+     */
+    public void setCreateTime(Date createTime) {
 		this.createTime = createTime;
 	}
 
-	public Date getModifiedTime() {
+    /**
+     * Gets modified time.
+     *
+     * @return the modified time
+     */
+    public Date getModifiedTime() {
 		return this.modifiedTime;
 	}
-	public void setModifiedTime(Date modifiedTime) {
+
+    /**
+     * Sets modified time.
+     *
+     * @param modifiedTime the modified time
+     */
+    public void setModifiedTime(Date modifiedTime) {
 		this.modifiedTime = modifiedTime;
 	}
 
-	public String getPayUrl() {
+    /**
+     * Gets pay url.
+     *
+     * @return the pay url
+     */
+    public String getPayUrl() {
 		return this.payUrl;
 	}
-	public void setPayUrl(String payUrl) {
+
+    /**
+     * Sets pay url.
+     *
+     * @param payUrl the pay url
+     */
+    public void setPayUrl(String payUrl) {
 		this.payUrl = payUrl;
 	}
 
-	public String getReceiveUserId() {
+    /**
+     * Gets receive user id.
+     *
+     * @return the receive user id
+     */
+    public String getReceiveUserId() {
 		return this.receiveUserId;
 	}
-	public void setReceiveUserId(String receiveUserId) {
+
+    /**
+     * Sets receive user id.
+     *
+     * @param receiveUserId the receive user id
+     */
+    public void setReceiveUserId(String receiveUserId) {
 		this.receiveUserId = receiveUserId;
 	}
 
-	public String getTransferOrderNo() {
+    /**
+     * Gets transfer order no.
+     *
+     * @return the transfer order no
+     */
+    public String getTransferOrderNo() {
 		return this.transferOrderNo;
 	}
-	public void setTransferOrderNo(String transferOrderNo) {
+
+    /**
+     * Sets transfer order no.
+     *
+     * @param transferOrderNo the transfer order no
+     */
+    public void setTransferOrderNo(String transferOrderNo) {
 		this.transferOrderNo = transferOrderNo;
 	}
 
-	public String getTransferOutOrderNo() {
+    /**
+     * Gets transfer out order no.
+     *
+     * @return the transfer out order no
+     */
+    public String getTransferOutOrderNo() {
 		return this.transferOutOrderNo;
 	}
-	public void setTransferOutOrderNo(String transferOutOrderNo) {
+
+    /**
+     * Sets transfer out order no.
+     *
+     * @param transferOutOrderNo the transfer out order no
+     */
+    public void setTransferOutOrderNo(String transferOutOrderNo) {
 		this.transferOutOrderNo = transferOutOrderNo;
 	}
 

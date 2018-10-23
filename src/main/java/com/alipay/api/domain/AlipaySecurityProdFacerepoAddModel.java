@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySecurityProdFacerepoAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2253723254523737453L;
+	private static final long serialVersionUID = 1231325828712795548L;
 
 	/**
 	 * 商户的业务单据号，用于核对与问题排查
@@ -31,24 +31,57 @@ public class AlipaySecurityProdFacerepoAddModel extends AlipayObject {
 	@ApiField("group_id")
 	private String groupId;
 
-	public String getBizId() {
+    /**
+     * Gets biz id.
+     *
+     * @return the biz id
+     */
+    public String getBizId() {
 		return this.bizId;
 	}
-	public void setBizId(String bizId) {
+
+    /**
+     * Sets biz id.
+     *
+     * @param bizId the biz id
+     */
+    public void setBizId(String bizId) {
 		this.bizId = bizId;
 	}
 
-	public String getFaceStr() {
+    /**
+     * Gets face str.
+     *
+     * @return the face str
+     */
+    public String getFaceStr() {
 		return this.faceStr;
 	}
-	public void setFaceStr(String faceStr) {
+
+    /**
+     * Sets face str.
+     *
+     * @param faceStr the face str
+     */
+    public void setFaceStr(String faceStr) {
 		this.faceStr = faceStr;
 	}
 
-	public String getGroupId() {
+    /**
+     * Gets group id.
+     *
+     * @return the group id
+     */
+    public String getGroupId() {
 		return this.groupId;
 	}
-	public void setGroupId(String groupId) {
+
+    /**
+     * Sets group id.
+     *
+     * @param groupId the group id
+     */
+    public void setGroupId(String groupId) {
 		this.groupId = groupId;
 	}
 

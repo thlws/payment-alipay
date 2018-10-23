@@ -10,9 +10,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.mobile.code.create request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-02-28 11:13:54
+ * @since 1.0, 2018-06-14 11:34:41
  */
 public class AlipayMobileCodeCreateRequest implements AlipayRequest<AlipayMobileCodeCreateResponse> {
 
@@ -65,66 +65,165 @@ public class AlipayMobileCodeCreateRequest implements AlipayRequest<AlipayMobile
 	 */
 	private String userId;
 
-	public void setBizLinkedId(String bizLinkedId) {
+    /**
+     * Sets biz linked id.
+     *
+     * @param bizLinkedId the biz linked id
+     */
+    public void setBizLinkedId(String bizLinkedId) {
 		this.bizLinkedId = bizLinkedId;
 	}
-	public String getBizLinkedId() {
+
+    /**
+     * Gets biz linked id.
+     *
+     * @return the biz linked id
+     */
+    public String getBizLinkedId() {
 		return this.bizLinkedId;
 	}
 
-	public void setBizType(String bizType) {
+    /**
+     * Sets biz type.
+     *
+     * @param bizType the biz type
+     */
+    public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
-	public String getBizType() {
+
+    /**
+     * Gets biz type.
+     *
+     * @return the biz type
+     */
+    public String getBizType() {
 		return this.bizType;
 	}
 
-	public void setContextStr(String contextStr) {
+    /**
+     * Sets context str.
+     *
+     * @param contextStr the context str
+     */
+    public void setContextStr(String contextStr) {
 		this.contextStr = contextStr;
 	}
-	public String getContextStr() {
+
+    /**
+     * Gets context str.
+     *
+     * @return the context str
+     */
+    public String getContextStr() {
 		return this.contextStr;
 	}
 
-	public void setIsDirect(Boolean isDirect) {
+    /**
+     * Sets is direct.
+     *
+     * @param isDirect the is direct
+     */
+    public void setIsDirect(Boolean isDirect) {
 		this.isDirect = isDirect;
 	}
-	public Boolean getIsDirect() {
+
+    /**
+     * Gets is direct.
+     *
+     * @return the is direct
+     */
+    public Boolean getIsDirect() {
 		return this.isDirect;
 	}
 
-	public void setMemo(String memo) {
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
-	public String getMemo() {
+
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo() {
 		return this.memo;
 	}
 
-	public void setSourceId(String sourceId) {
+    /**
+     * Sets source id.
+     *
+     * @param sourceId the source id
+     */
+    public void setSourceId(String sourceId) {
 		this.sourceId = sourceId;
 	}
-	public String getSourceId() {
+
+    /**
+     * Gets source id.
+     *
+     * @return the source id
+     */
+    public String getSourceId() {
 		return this.sourceId;
 	}
 
-	public void setStartDate(Date startDate) {
+    /**
+     * Sets start date.
+     *
+     * @param startDate the start date
+     */
+    public void setStartDate(Date startDate) {
 		this.startDate = startDate;
 	}
-	public Date getStartDate() {
+
+    /**
+     * Gets start date.
+     *
+     * @return the start date
+     */
+    public Date getStartDate() {
 		return this.startDate;
 	}
 
-	public void setTimeout(Long timeout) {
+    /**
+     * Sets timeout.
+     *
+     * @param timeout the timeout
+     */
+    public void setTimeout(Long timeout) {
 		this.timeout = timeout;
 	}
-	public Long getTimeout() {
+
+    /**
+     * Gets timeout.
+     *
+     * @return the timeout
+     */
+    public Long getTimeout() {
 		return this.timeout;
 	}
 
-	public void setUserId(String userId) {
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public String getUserId() {
+
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
 	private String terminalType;
@@ -204,7 +303,13 @@ public class AlipayMobileCodeCreateRequest implements AlipayRequest<AlipayMobile
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

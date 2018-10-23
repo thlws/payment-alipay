@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaRiskDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8784281793187416458L;
+	private static final long serialVersionUID = 6798837716494381476L;
 
 	/**
 	 * 数据类型：Negative(负面信息)、Risk(风险信息) 。系统会将在APP上对C端披露的信息标记为负面信息，其余的信息标记为风险信息。
@@ -69,66 +69,165 @@ public class ZhimaRiskDetail extends AlipayObject {
 	@ApiField("update")
 	private Date update;
 
-	public String getDataType() {
+    /**
+     * Gets data type.
+     *
+     * @return the data type
+     */
+    public String getDataType() {
 		return this.dataType;
 	}
-	public void setDataType(String dataType) {
+
+    /**
+     * Sets data type.
+     *
+     * @param dataType the data type
+     */
+    public void setDataType(String dataType) {
 		this.dataType = dataType;
 	}
 
-	public String getExtendinfo() {
+    /**
+     * Gets extendinfo.
+     *
+     * @return the extendinfo
+     */
+    public String getExtendinfo() {
 		return this.extendinfo;
 	}
-	public void setExtendinfo(String extendinfo) {
+
+    /**
+     * Sets extendinfo.
+     *
+     * @param extendinfo the extendinfo
+     */
+    public void setExtendinfo(String extendinfo) {
 		this.extendinfo = extendinfo;
 	}
 
-	public String getRiskCode() {
+    /**
+     * Gets risk code.
+     *
+     * @return the risk code
+     */
+    public String getRiskCode() {
 		return this.riskCode;
 	}
-	public void setRiskCode(String riskCode) {
+
+    /**
+     * Sets risk code.
+     *
+     * @param riskCode the risk code
+     */
+    public void setRiskCode(String riskCode) {
 		this.riskCode = riskCode;
 	}
 
-	public String getRiskType() {
+    /**
+     * Gets risk type.
+     *
+     * @return the risk type
+     */
+    public String getRiskType() {
 		return this.riskType;
 	}
-	public void setRiskType(String riskType) {
+
+    /**
+     * Sets risk type.
+     *
+     * @param riskType the risk type
+     */
+    public void setRiskType(String riskType) {
 		this.riskType = riskType;
 	}
 
-	public String getSettlement() {
+    /**
+     * Gets settlement.
+     *
+     * @return the settlement
+     */
+    public String getSettlement() {
 		return this.settlement;
 	}
-	public void setSettlement(String settlement) {
+
+    /**
+     * Sets settlement.
+     *
+     * @param settlement the settlement
+     */
+    public void setSettlement(String settlement) {
 		this.settlement = settlement;
 	}
 
-	public String getStatement() {
+    /**
+     * Gets statement.
+     *
+     * @return the statement
+     */
+    public String getStatement() {
 		return this.statement;
 	}
-	public void setStatement(String statement) {
+
+    /**
+     * Sets statement.
+     *
+     * @param statement the statement
+     */
+    public void setStatement(String statement) {
 		this.statement = statement;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 
-	public String getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
-	public void setType(String type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
 
-	public Date getUpdate() {
+    /**
+     * Gets update.
+     *
+     * @return the update
+     */
+    public Date getUpdate() {
 		return this.update;
 	}
-	public void setUpdate(Date update) {
+
+    /**
+     * Sets update.
+     *
+     * @param update the update
+     */
+    public void setUpdate(Date update) {
 		this.update = update;
 	}
 

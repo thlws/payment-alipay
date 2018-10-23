@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineProviderEquipmentAuthQuerybypageModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8696823164412848549L;
+	private static final long serialVersionUID = 6571133735197723365L;
 
 	/**
 	 * 解绑起始时间
@@ -55,52 +55,129 @@ public class AlipayOfflineProviderEquipmentAuthQuerybypageModel extends AlipayOb
 	@ApiField("page_size")
 	private String pageSize;
 
-	public String getBeginTime() {
+    /**
+     * Gets begin time.
+     *
+     * @return the begin time
+     */
+    public String getBeginTime() {
 		return this.beginTime;
 	}
-	public void setBeginTime(String beginTime) {
+
+    /**
+     * Sets begin time.
+     *
+     * @param beginTime the begin time
+     */
+    public void setBeginTime(String beginTime) {
 		this.beginTime = beginTime;
 	}
 
-	public String getDeviceType() {
+    /**
+     * Gets device type.
+     *
+     * @return the device type
+     */
+    public String getDeviceType() {
 		return this.deviceType;
 	}
-	public void setDeviceType(String deviceType) {
+
+    /**
+     * Sets device type.
+     *
+     * @param deviceType the device type
+     */
+    public void setDeviceType(String deviceType) {
 		this.deviceType = deviceType;
 	}
 
-	public String getEndTime() {
+    /**
+     * Gets end time.
+     *
+     * @return the end time
+     */
+    public String getEndTime() {
 		return this.endTime;
 	}
-	public void setEndTime(String endTime) {
+
+    /**
+     * Sets end time.
+     *
+     * @param endTime the end time
+     */
+    public void setEndTime(String endTime) {
 		this.endTime = endTime;
 	}
 
-	public String getExtInfo() {
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo() {
 		return this.extInfo;
 	}
-	public void setExtInfo(String extInfo) {
+
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
-	public String getMerchantPid() {
+    /**
+     * Gets merchant pid.
+     *
+     * @return the merchant pid
+     */
+    public String getMerchantPid() {
 		return this.merchantPid;
 	}
-	public void setMerchantPid(String merchantPid) {
+
+    /**
+     * Sets merchant pid.
+     *
+     * @param merchantPid the merchant pid
+     */
+    public void setMerchantPid(String merchantPid) {
 		this.merchantPid = merchantPid;
 	}
 
-	public String getPageNum() {
+    /**
+     * Gets page num.
+     *
+     * @return the page num
+     */
+    public String getPageNum() {
 		return this.pageNum;
 	}
-	public void setPageNum(String pageNum) {
+
+    /**
+     * Sets page num.
+     *
+     * @param pageNum the page num
+     */
+    public void setPageNum(String pageNum) {
 		this.pageNum = pageNum;
 	}
 
-	public String getPageSize() {
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public String getPageSize() {
 		return this.pageSize;
 	}
-	public void setPageSize(String pageSize) {
+
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(String pageSize) {
 		this.pageSize = pageSize;
 	}
 

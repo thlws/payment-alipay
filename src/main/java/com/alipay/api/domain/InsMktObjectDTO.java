@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsMktObjectDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4367779149127986523L;
+	private static final long serialVersionUID = 5466781653945867743L;
 
 	/**
 	 * 活动标的id
@@ -25,17 +25,39 @@ public class InsMktObjectDTO extends AlipayObject {
 	@ApiField("type")
 	private Long type;
 
-	public String getObjId() {
+    /**
+     * Gets obj id.
+     *
+     * @return the obj id
+     */
+    public String getObjId() {
 		return this.objId;
 	}
-	public void setObjId(String objId) {
+
+    /**
+     * Sets obj id.
+     *
+     * @param objId the obj id
+     */
+    public void setObjId(String objId) {
 		this.objId = objId;
 	}
 
-	public Long getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public Long getType() {
 		return this.type;
 	}
-	public void setType(Long type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(Long type) {
 		this.type = type;
 	}
 

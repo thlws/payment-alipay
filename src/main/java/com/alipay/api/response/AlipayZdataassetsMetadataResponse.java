@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.zdataassets.metadata response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-04-26 15:12:06
  */
 public class AlipayZdataassetsMetadataResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2558237487623483424L;
+	private static final long serialVersionUID = 3389223283893438925L;
 
 	/** 
 	 * 用户标签集合
@@ -24,10 +24,21 @@ public class AlipayZdataassetsMetadataResponse extends AlipayResponse {
 	@ApiField("customer_entity")
 	private List<CustomerEntity> result;
 
-	public void setResult(List<CustomerEntity> result) {
+    /**
+     * Sets result.
+     *
+     * @param result the result
+     */
+    public void setResult(List<CustomerEntity> result) {
 		this.result = result;
 	}
-	public List<CustomerEntity> getResult( ) {
+
+    /**
+     * Gets result.
+     *
+     * @return the result
+     */
+    public List<CustomerEntity> getResult( ) {
 		return this.result;
 	}
 

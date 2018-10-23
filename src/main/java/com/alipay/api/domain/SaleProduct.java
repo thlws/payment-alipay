@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SaleProduct extends AlipayObject {
 
-	private static final long serialVersionUID = 6878675341377423964L;
+	private static final long serialVersionUID = 3635852337678261435L;
 
 	/**
 	 * 宝贝来源 例如：TAOBAO ALIPAY
@@ -49,45 +49,111 @@ public class SaleProduct extends AlipayObject {
 	@ApiField("status")
 	private String status;
 
-	public String getChannelType() {
+    /**
+     * Gets channel type.
+     *
+     * @return the channel type
+     */
+    public String getChannelType() {
 		return this.channelType;
 	}
-	public void setChannelType(String channelType) {
+
+    /**
+     * Sets channel type.
+     *
+     * @param channelType the channel type
+     */
+    public void setChannelType(String channelType) {
 		this.channelType = channelType;
 	}
 
-	public String getId() {
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
+    public String getId() {
 		return this.id;
 	}
-	public void setId(String id) {
+
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
+    public void setId(String id) {
 		this.id = id;
 	}
 
-	public String getMarketPrice() {
+    /**
+     * Gets market price.
+     *
+     * @return the market price
+     */
+    public String getMarketPrice() {
 		return this.marketPrice;
 	}
-	public void setMarketPrice(String marketPrice) {
+
+    /**
+     * Sets market price.
+     *
+     * @param marketPrice the market price
+     */
+    public void setMarketPrice(String marketPrice) {
 		this.marketPrice = marketPrice;
 	}
 
-	public ProductProvider getProductProvider() {
+    /**
+     * Gets product provider.
+     *
+     * @return the product provider
+     */
+    public ProductProvider getProductProvider() {
 		return this.productProvider;
 	}
-	public void setProductProvider(ProductProvider productProvider) {
+
+    /**
+     * Sets product provider.
+     *
+     * @param productProvider the product provider
+     */
+    public void setProductProvider(ProductProvider productProvider) {
 		this.productProvider = productProvider;
 	}
 
-	public String getSalePrice() {
+    /**
+     * Gets sale price.
+     *
+     * @return the sale price
+     */
+    public String getSalePrice() {
 		return this.salePrice;
 	}
-	public void setSalePrice(String salePrice) {
+
+    /**
+     * Sets sale price.
+     *
+     * @param salePrice the sale price
+     */
+    public void setSalePrice(String salePrice) {
 		this.salePrice = salePrice;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 

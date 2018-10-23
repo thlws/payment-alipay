@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.trade.precreate response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-05 11:49:17
+ * @since 1.0, 2018-09-11 16:20:00
  */
 public class AlipayTradePrecreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4368823166674283411L;
+	private static final long serialVersionUID = 7661245281416593244L;
 
 	/** 
 	 * 商户的订单号
@@ -26,17 +26,39 @@ public class AlipayTradePrecreateResponse extends AlipayResponse {
 	@ApiField("qr_code")
 	private String qrCode;
 
-	public void setOutTradeNo(String outTradeNo) {
+    /**
+     * Sets out trade no.
+     *
+     * @param outTradeNo the out trade no
+     */
+    public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
-	public String getOutTradeNo( ) {
+
+    /**
+     * Gets out trade no.
+     *
+     * @return the out trade no
+     */
+    public String getOutTradeNo( ) {
 		return this.outTradeNo;
 	}
 
-	public void setQrCode(String qrCode) {
+    /**
+     * Sets qr code.
+     *
+     * @param qrCode the qr code
+     */
+    public void setQrCode(String qrCode) {
 		this.qrCode = qrCode;
 	}
-	public String getQrCode( ) {
+
+    /**
+     * Gets qr code.
+     *
+     * @return the qr code
+     */
+    public String getQrCode( ) {
 		return this.qrCode;
 	}
 

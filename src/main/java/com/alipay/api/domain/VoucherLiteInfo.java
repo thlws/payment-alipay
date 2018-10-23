@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VoucherLiteInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3731582283439593364L;
+	private static final long serialVersionUID = 6287721989676123478L;
 
 	/**
 	 * 发券时间，格式为：yyyy-MM-dd HH:mm:ss
@@ -39,31 +39,75 @@ public class VoucherLiteInfo extends AlipayObject {
 	@ApiField("voucher_id")
 	private String voucherId;
 
-	public Date getSendTime() {
+    /**
+     * Gets send time.
+     *
+     * @return the send time
+     */
+    public Date getSendTime() {
 		return this.sendTime;
 	}
-	public void setSendTime(Date sendTime) {
+
+    /**
+     * Sets send time.
+     *
+     * @param sendTime the send time
+     */
+    public void setSendTime(Date sendTime) {
 		this.sendTime = sendTime;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 
-	public String getTemplateId() {
+    /**
+     * Gets template id.
+     *
+     * @return the template id
+     */
+    public String getTemplateId() {
 		return this.templateId;
 	}
-	public void setTemplateId(String templateId) {
+
+    /**
+     * Sets template id.
+     *
+     * @param templateId the template id
+     */
+    public void setTemplateId(String templateId) {
 		this.templateId = templateId;
 	}
 
-	public String getVoucherId() {
+    /**
+     * Gets voucher id.
+     *
+     * @return the voucher id
+     */
+    public String getVoucherId() {
 		return this.voucherId;
 	}
-	public void setVoucherId(String voucherId) {
+
+    /**
+     * Sets voucher id.
+     *
+     * @param voucherId the voucher id
+     */
+    public void setVoucherId(String voucherId) {
 		this.voucherId = voucherId;
 	}
 

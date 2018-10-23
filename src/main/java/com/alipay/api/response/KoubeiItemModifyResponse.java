@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.item.modify response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-08-31 21:06:41
+ * @since 1.0, 2018-09-03 14:58:58
  */
 public class KoubeiItemModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7119375943775855557L;
+	private static final long serialVersionUID = 4237727384577318646L;
 
 	/** 
 	 * 口碑体系内部商品的唯一标识，后续的增删改查接口都使用该ID作为主键
@@ -26,17 +26,39 @@ public class KoubeiItemModifyResponse extends AlipayResponse {
 	@ApiField("request_id")
 	private String requestId;
 
-	public void setItemId(String itemId) {
+    /**
+     * Sets item id.
+     *
+     * @param itemId the item id
+     */
+    public void setItemId(String itemId) {
 		this.itemId = itemId;
 	}
-	public String getItemId( ) {
+
+    /**
+     * Gets item id.
+     *
+     * @return the item id
+     */
+    public String getItemId( ) {
 		return this.itemId;
 	}
 
-	public void setRequestId(String requestId) {
+    /**
+     * Sets request id.
+     *
+     * @param requestId the request id
+     */
+    public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
-	public String getRequestId( ) {
+
+    /**
+     * Gets request id.
+     *
+     * @return the request id
+     */
+    public String getRequestId( ) {
 		return this.requestId;
 	}
 

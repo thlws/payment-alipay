@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券模板创建
  *
  * @author auto create
- * @since 1.0, 2016-06-23 17:38:07
+ * @since 1.0, 2018-08-22 11:32:24
  */
 public class AlipayOfflineMarketingVoucherCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7299847326264779658L;
+	private static final long serialVersionUID = 4433585228644718184L;
 
 	/**
 	 * 预算信息
@@ -49,45 +49,111 @@ public class AlipayOfflineMarketingVoucherCreateModel extends AlipayObject {
 	@ApiField("voucher_info")
 	private VoucherInfo voucherInfo;
 
-	public BudgetInfo getBudgetInfo() {
+    /**
+     * Gets budget info.
+     *
+     * @return the budget info
+     */
+    public BudgetInfo getBudgetInfo() {
 		return this.budgetInfo;
 	}
-	public void setBudgetInfo(BudgetInfo budgetInfo) {
+
+    /**
+     * Sets budget info.
+     *
+     * @param budgetInfo the budget info
+     */
+    public void setBudgetInfo(BudgetInfo budgetInfo) {
 		this.budgetInfo = budgetInfo;
 	}
 
-	public String getCodeInventoryId() {
+    /**
+     * Gets code inventory id.
+     *
+     * @return the code inventory id
+     */
+    public String getCodeInventoryId() {
 		return this.codeInventoryId;
 	}
-	public void setCodeInventoryId(String codeInventoryId) {
+
+    /**
+     * Sets code inventory id.
+     *
+     * @param codeInventoryId the code inventory id
+     */
+    public void setCodeInventoryId(String codeInventoryId) {
 		this.codeInventoryId = codeInventoryId;
 	}
 
-	public String getExtInfo() {
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo() {
 		return this.extInfo;
 	}
-	public void setExtInfo(String extInfo) {
+
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
-	public GetRuleInfo getGetRule() {
+    /**
+     * Gets get rule.
+     *
+     * @return the get rule
+     */
+    public GetRuleInfo getGetRule() {
 		return this.getRule;
 	}
-	public void setGetRule(GetRuleInfo getRule) {
+
+    /**
+     * Sets get rule.
+     *
+     * @param getRule the get rule
+     */
+    public void setGetRule(GetRuleInfo getRule) {
 		this.getRule = getRule;
 	}
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
-	public VoucherInfo getVoucherInfo() {
+    /**
+     * Gets voucher info.
+     *
+     * @return the voucher info
+     */
+    public VoucherInfo getVoucherInfo() {
 		return this.voucherInfo;
 	}
-	public void setVoucherInfo(VoucherInfo voucherInfo) {
+
+    /**
+     * Sets voucher info.
+     *
+     * @param voucherInfo the voucher info
+     */
+    public void setVoucherInfo(VoucherInfo voucherInfo) {
 		this.voucherInfo = voucherInfo;
 	}
 

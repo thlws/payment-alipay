@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FeeRecords extends AlipayObject {
 
-	private static final long serialVersionUID = 6423297989966164885L;
+	private static final long serialVersionUID = 2148511345651823544L;
 
 	/**
 	 * 费用余额，单位为元，小数点保留2位
@@ -39,31 +39,75 @@ public class FeeRecords extends AlipayObject {
 	@ApiField("total_amount")
 	private String totalAmount;
 
-	public String getBalance() {
+    /**
+     * Gets balance.
+     *
+     * @return the balance
+     */
+    public String getBalance() {
 		return this.balance;
 	}
-	public void setBalance(String balance) {
+
+    /**
+     * Sets balance.
+     *
+     * @param balance the balance
+     */
+    public void setBalance(String balance) {
 		this.balance = balance;
 	}
 
-	public Date getDate() {
+    /**
+     * Gets date.
+     *
+     * @return the date
+     */
+    public Date getDate() {
 		return this.date;
 	}
-	public void setDate(Date date) {
+
+    /**
+     * Sets date.
+     *
+     * @param date the date
+     */
+    public void setDate(Date date) {
 		this.date = date;
 	}
 
-	public String getRemark() {
+    /**
+     * Gets remark.
+     *
+     * @return the remark
+     */
+    public String getRemark() {
 		return this.remark;
 	}
-	public void setRemark(String remark) {
+
+    /**
+     * Sets remark.
+     *
+     * @param remark the remark
+     */
+    public void setRemark(String remark) {
 		this.remark = remark;
 	}
 
-	public String getTotalAmount() {
+    /**
+     * Gets total amount.
+     *
+     * @return the total amount
+     */
+    public String getTotalAmount() {
 		return this.totalAmount;
 	}
-	public void setTotalAmount(String totalAmount) {
+
+    /**
+     * Sets total amount.
+     *
+     * @param totalAmount the total amount
+     */
+    public void setTotalAmount(String totalAmount) {
 		this.totalAmount = totalAmount;
 	}
 

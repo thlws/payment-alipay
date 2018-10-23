@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineProviderDishQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6286661873386718256L;
+	private static final long serialVersionUID = 5273854754562729176L;
 
 	/**
 	 * 数据是根据alipay.offline.provider.shopaction.record的插入菜品接口获取，对应字段是：dishTypeName。
@@ -49,45 +49,111 @@ public class AlipayOfflineProviderDishQueryModel extends AlipayObject {
 	@ApiField("shop_id")
 	private String shopId;
 
-	public String getDishTypeName() {
+    /**
+     * Gets dish type name.
+     *
+     * @return the dish type name
+     */
+    public String getDishTypeName() {
 		return this.dishTypeName;
 	}
-	public void setDishTypeName(String dishTypeName) {
+
+    /**
+     * Sets dish type name.
+     *
+     * @param dishTypeName the dish type name
+     */
+    public void setDishTypeName(String dishTypeName) {
 		this.dishTypeName = dishTypeName;
 	}
 
-	public String getOrderBy() {
+    /**
+     * Gets order by.
+     *
+     * @return the order by
+     */
+    public String getOrderBy() {
 		return this.orderBy;
 	}
-	public void setOrderBy(String orderBy) {
+
+    /**
+     * Sets order by.
+     *
+     * @param orderBy the order by
+     */
+    public void setOrderBy(String orderBy) {
 		this.orderBy = orderBy;
 	}
 
-	public String getOuterDishId() {
+    /**
+     * Gets outer dish id.
+     *
+     * @return the outer dish id
+     */
+    public String getOuterDishId() {
 		return this.outerDishId;
 	}
-	public void setOuterDishId(String outerDishId) {
+
+    /**
+     * Sets outer dish id.
+     *
+     * @param outerDishId the outer dish id
+     */
+    public void setOuterDishId(String outerDishId) {
 		this.outerDishId = outerDishId;
 	}
 
-	public Long getPage() {
+    /**
+     * Gets page.
+     *
+     * @return the page
+     */
+    public Long getPage() {
 		return this.page;
 	}
-	public void setPage(Long page) {
+
+    /**
+     * Sets page.
+     *
+     * @param page the page
+     */
+    public void setPage(Long page) {
 		this.page = page;
 	}
 
-	public Long getPageSize() {
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public Long getPageSize() {
 		return this.pageSize;
 	}
-	public void setPageSize(Long pageSize) {
+
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}
 
-	public String getShopId() {
+    /**
+     * Gets shop id.
+     *
+     * @return the shop id
+     */
+    public String getShopId() {
 		return this.shopId;
 	}
-	public void setShopId(String shopId) {
+
+    /**
+     * Sets shop id.
+     *
+     * @param shopId the shop id
+     */
+    public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecruitItemApplyData extends AlipayObject {
 
-	private static final long serialVersionUID = 8573487147142477488L;
+	private static final long serialVersionUID = 8733552766643555235L;
 
 	/**
 	 * 活动价格，单位为元，活动期间以此价格售卖。注：预热期间仍然以原价售卖，但是不消耗活动的库存。
@@ -43,38 +43,93 @@ public class RecruitItemApplyData extends AlipayObject {
 	@ApiField("sales")
 	private String sales;
 
-	public String getActivityPrice() {
+    /**
+     * Gets activity price.
+     *
+     * @return the activity price
+     */
+    public String getActivityPrice() {
 		return this.activityPrice;
 	}
-	public void setActivityPrice(String activityPrice) {
+
+    /**
+     * Sets activity price.
+     *
+     * @param activityPrice the activity price
+     */
+    public void setActivityPrice(String activityPrice) {
 		this.activityPrice = activityPrice;
 	}
 
-	public String getActivityStock() {
+    /**
+     * Gets activity stock.
+     *
+     * @return the activity stock
+     */
+    public String getActivityStock() {
 		return this.activityStock;
 	}
-	public void setActivityStock(String activityStock) {
+
+    /**
+     * Sets activity stock.
+     *
+     * @param activityStock the activity stock
+     */
+    public void setActivityStock(String activityStock) {
 		this.activityStock = activityStock;
 	}
 
-	public String getItemId() {
+    /**
+     * Gets item id.
+     *
+     * @return the item id
+     */
+    public String getItemId() {
 		return this.itemId;
 	}
-	public void setItemId(String itemId) {
+
+    /**
+     * Sets item id.
+     *
+     * @param itemId the item id
+     */
+    public void setItemId(String itemId) {
 		this.itemId = itemId;
 	}
 
-	public String getOriginalPrice() {
+    /**
+     * Gets original price.
+     *
+     * @return the original price
+     */
+    public String getOriginalPrice() {
 		return this.originalPrice;
 	}
-	public void setOriginalPrice(String originalPrice) {
+
+    /**
+     * Sets original price.
+     *
+     * @param originalPrice the original price
+     */
+    public void setOriginalPrice(String originalPrice) {
 		this.originalPrice = originalPrice;
 	}
 
-	public String getSales() {
+    /**
+     * Gets sales.
+     *
+     * @return the sales
+     */
+    public String getSales() {
 		return this.sales;
 	}
-	public void setSales(String sales) {
+
+    /**
+     * Sets sales.
+     *
+     * @param sales the sales
+     */
+    public void setSales(String sales) {
 		this.sales = sales;
 	}
 

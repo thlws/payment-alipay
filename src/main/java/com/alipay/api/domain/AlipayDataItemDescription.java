@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayDataItemDescription extends AlipayObject {
 
-	private static final long serialVersionUID = 3698697113218612259L;
+	private static final long serialVersionUID = 7682392237291835141L;
 
 	/**
 	 * 标题下的描述列表
@@ -42,31 +42,75 @@ public class AlipayDataItemDescription extends AlipayObject {
 	@ApiField("url")
 	private String url;
 
-	public List<String> getDetails() {
+    /**
+     * Gets details.
+     *
+     * @return the details
+     */
+    public List<String> getDetails() {
 		return this.details;
 	}
-	public void setDetails(List<String> details) {
+
+    /**
+     * Sets details.
+     *
+     * @param details the details
+     */
+    public void setDetails(List<String> details) {
 		this.details = details;
 	}
 
-	public List<String> getImages() {
+    /**
+     * Gets images.
+     *
+     * @return the images
+     */
+    public List<String> getImages() {
 		return this.images;
 	}
-	public void setImages(List<String> images) {
+
+    /**
+     * Sets images.
+     *
+     * @param images the images
+     */
+    public void setImages(List<String> images) {
 		this.images = images;
 	}
 
-	public String getTitle() {
+    /**
+     * Gets title.
+     *
+     * @return the title
+     */
+    public String getTitle() {
 		return this.title;
 	}
-	public void setTitle(String title) {
+
+    /**
+     * Sets title.
+     *
+     * @param title the title
+     */
+    public void setTitle(String title) {
 		this.title = title;
 	}
 
-	public String getUrl() {
+    /**
+     * Gets url.
+     *
+     * @return the url
+     */
+    public String getUrl() {
 		return this.url;
 	}
-	public void setUrl(String url) {
+
+    /**
+     * Sets url.
+     *
+     * @param url the url
+     */
+    public void setUrl(String url) {
 		this.url = url;
 	}
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 指纹注册
  *
  * @author auto create
- * @since 1.0, 2017-08-02 14:25:09
+ * @since 1.0, 2018-08-17 16:53:47
  */
 public class AlipaySecurityProdFingerprintApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8244224823456196871L;
+	private static final long serialVersionUID = 3379466867823343635L;
 
 	/**
 	 * IFAA协议的版本，目前为2.0
@@ -37,31 +37,75 @@ public class AlipaySecurityProdFingerprintApplyModel extends AlipayObject {
 	@ApiField("sec_data")
 	private String secData;
 
-	public String getIfaaVersion() {
+    /**
+     * Gets ifaa version.
+     *
+     * @return the ifaa version
+     */
+    public String getIfaaVersion() {
 		return this.ifaaVersion;
 	}
-	public void setIfaaVersion(String ifaaVersion) {
+
+    /**
+     * Sets ifaa version.
+     *
+     * @param ifaaVersion the ifaa version
+     */
+    public void setIfaaVersion(String ifaaVersion) {
 		this.ifaaVersion = ifaaVersion;
 	}
 
-	public String getIfafMessage() {
+    /**
+     * Gets ifaf message.
+     *
+     * @return the ifaf message
+     */
+    public String getIfafMessage() {
 		return this.ifafMessage;
 	}
-	public void setIfafMessage(String ifafMessage) {
+
+    /**
+     * Sets ifaf message.
+     *
+     * @param ifafMessage the ifaf message
+     */
+    public void setIfafMessage(String ifafMessage) {
 		this.ifafMessage = ifafMessage;
 	}
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
-	public String getSecData() {
+    /**
+     * Gets sec data.
+     *
+     * @return the sec data
+     */
+    public String getSecData() {
 		return this.secData;
 	}
-	public void setSecData(String secData) {
+
+    /**
+     * Sets sec data.
+     *
+     * @param secData the sec data
+     */
+    public void setSecData(String secData) {
 		this.secData = secData;
 	}
 

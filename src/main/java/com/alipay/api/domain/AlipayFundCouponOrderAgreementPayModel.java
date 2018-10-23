@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 红包协议支付接口
  *
  * @author auto create
- * @since 1.0, 2017-09-07 20:52:38
+ * @since 1.0, 2018-08-22 11:32:24
  */
 public class AlipayFundCouponOrderAgreementPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5476839374842472568L;
+	private static final long serialVersionUID = 5398789845134622722L;
 
 	/**
 	 * 需要支付的金额，单位为：元（人民币），精确到小数点后两位
@@ -60,52 +60,129 @@ public class AlipayFundCouponOrderAgreementPayModel extends AlipayObject {
 	@ApiField("payer_user_id")
 	private String payerUserId;
 
-	public String getAmount() {
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public String getAmount() {
 		return this.amount;
 	}
-	public void setAmount(String amount) {
+
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
-	public String getExtraParam() {
+    /**
+     * Gets extra param.
+     *
+     * @return the extra param
+     */
+    public String getExtraParam() {
 		return this.extraParam;
 	}
-	public void setExtraParam(String extraParam) {
+
+    /**
+     * Sets extra param.
+     *
+     * @param extraParam the extra param
+     */
+    public void setExtraParam(String extraParam) {
 		this.extraParam = extraParam;
 	}
 
-	public String getOrderTitle() {
+    /**
+     * Gets order title.
+     *
+     * @return the order title
+     */
+    public String getOrderTitle() {
 		return this.orderTitle;
 	}
-	public void setOrderTitle(String orderTitle) {
+
+    /**
+     * Sets order title.
+     *
+     * @param orderTitle the order title
+     */
+    public void setOrderTitle(String orderTitle) {
 		this.orderTitle = orderTitle;
 	}
 
-	public String getOutOrderNo() {
+    /**
+     * Gets out order no.
+     *
+     * @return the out order no
+     */
+    public String getOutOrderNo() {
 		return this.outOrderNo;
 	}
-	public void setOutOrderNo(String outOrderNo) {
+
+    /**
+     * Sets out order no.
+     *
+     * @param outOrderNo the out order no
+     */
+    public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
 	}
 
-	public String getOutRequestNo() {
+    /**
+     * Gets out request no.
+     *
+     * @return the out request no
+     */
+    public String getOutRequestNo() {
 		return this.outRequestNo;
 	}
-	public void setOutRequestNo(String outRequestNo) {
+
+    /**
+     * Sets out request no.
+     *
+     * @param outRequestNo the out request no
+     */
+    public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
 	}
 
-	public String getPayTimeout() {
+    /**
+     * Gets pay timeout.
+     *
+     * @return the pay timeout
+     */
+    public String getPayTimeout() {
 		return this.payTimeout;
 	}
-	public void setPayTimeout(String payTimeout) {
+
+    /**
+     * Sets pay timeout.
+     *
+     * @param payTimeout the pay timeout
+     */
+    public void setPayTimeout(String payTimeout) {
 		this.payTimeout = payTimeout;
 	}
 
-	public String getPayerUserId() {
+    /**
+     * Gets payer user id.
+     *
+     * @return the payer user id
+     */
+    public String getPayerUserId() {
 		return this.payerUserId;
 	}
-	public void setPayerUserId(String payerUserId) {
+
+    /**
+     * Sets payer user id.
+     *
+     * @param payerUserId the payer user id
+     */
+    public void setPayerUserId(String payerUserId) {
 		this.payerUserId = payerUserId;
 	}
 

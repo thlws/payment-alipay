@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayTradeVendorpayDevicedataUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8762584522987455849L;
+	private static final long serialVersionUID = 7135562978521919731L;
 
 	/**
 	 * 客户端应用包标识
@@ -79,80 +79,201 @@ public class AlipayTradeVendorpayDevicedataUploadModel extends AlipayObject {
 	@ApiField("vendor")
 	private String vendor;
 
-	public String getAppPackageName() {
+    /**
+     * Gets app package name.
+     *
+     * @return the app package name
+     */
+    public String getAppPackageName() {
 		return this.appPackageName;
 	}
-	public void setAppPackageName(String appPackageName) {
+
+    /**
+     * Sets app package name.
+     *
+     * @param appPackageName the app package name
+     */
+    public void setAppPackageName(String appPackageName) {
 		this.appPackageName = appPackageName;
 	}
 
-	public String getExtInfo() {
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo() {
 		return this.extInfo;
 	}
-	public void setExtInfo(String extInfo) {
+
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
-	public String getImei() {
+    /**
+     * Gets imei.
+     *
+     * @return the imei
+     */
+    public String getImei() {
 		return this.imei;
 	}
-	public void setImei(String imei) {
+
+    /**
+     * Sets imei.
+     *
+     * @param imei the imei
+     */
+    public void setImei(String imei) {
 		this.imei = imei;
 	}
 
-	public String getImsi() {
+    /**
+     * Gets imsi.
+     *
+     * @return the imsi
+     */
+    public String getImsi() {
 		return this.imsi;
 	}
-	public void setImsi(String imsi) {
+
+    /**
+     * Sets imsi.
+     *
+     * @param imsi the imsi
+     */
+    public void setImsi(String imsi) {
 		this.imsi = imsi;
 	}
 
-	public String getMac() {
+    /**
+     * Gets mac.
+     *
+     * @return the mac
+     */
+    public String getMac() {
 		return this.mac;
 	}
-	public void setMac(String mac) {
+
+    /**
+     * Sets mac.
+     *
+     * @param mac the mac
+     */
+    public void setMac(String mac) {
 		this.mac = mac;
 	}
 
-	public String getMachineType() {
+    /**
+     * Gets machine type.
+     *
+     * @return the machine type
+     */
+    public String getMachineType() {
 		return this.machineType;
 	}
-	public void setMachineType(String machineType) {
+
+    /**
+     * Sets machine type.
+     *
+     * @param machineType the machine type
+     */
+    public void setMachineType(String machineType) {
 		this.machineType = machineType;
 	}
 
-	public String getPhoneSysVersion() {
+    /**
+     * Gets phone sys version.
+     *
+     * @return the phone sys version
+     */
+    public String getPhoneSysVersion() {
 		return this.phoneSysVersion;
 	}
-	public void setPhoneSysVersion(String phoneSysVersion) {
+
+    /**
+     * Sets phone sys version.
+     *
+     * @param phoneSysVersion the phone sys version
+     */
+    public void setPhoneSysVersion(String phoneSysVersion) {
 		this.phoneSysVersion = phoneSysVersion;
 	}
 
-	public String getPublicKey() {
+    /**
+     * Gets public key.
+     *
+     * @return the public key
+     */
+    public String getPublicKey() {
 		return this.publicKey;
 	}
-	public void setPublicKey(String publicKey) {
+
+    /**
+     * Sets public key.
+     *
+     * @param publicKey the public key
+     */
+    public void setPublicKey(String publicKey) {
 		this.publicKey = publicKey;
 	}
 
-	public String getTidsource() {
+    /**
+     * Gets tidsource.
+     *
+     * @return the tidsource
+     */
+    public String getTidsource() {
 		return this.tidsource;
 	}
-	public void setTidsource(String tidsource) {
+
+    /**
+     * Sets tidsource.
+     *
+     * @param tidsource the tidsource
+     */
+    public void setTidsource(String tidsource) {
 		this.tidsource = tidsource;
 	}
 
-	public String getUuid() {
+    /**
+     * Gets uuid.
+     *
+     * @return the uuid
+     */
+    public String getUuid() {
 		return this.uuid;
 	}
-	public void setUuid(String uuid) {
+
+    /**
+     * Sets uuid.
+     *
+     * @param uuid the uuid
+     */
+    public void setUuid(String uuid) {
 		this.uuid = uuid;
 	}
 
-	public String getVendor() {
+    /**
+     * Gets vendor.
+     *
+     * @return the vendor
+     */
+    public String getVendor() {
 		return this.vendor;
 	}
-	public void setVendor(String vendor) {
+
+    /**
+     * Sets vendor.
+     *
+     * @param vendor the vendor
+     */
+    public void setVendor(String vendor) {
 		this.vendor = vendor;
 	}
 

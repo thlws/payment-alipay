@@ -7,13 +7,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.asset.point.order.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-04-14 19:02:42
  */
 public class AlipayAssetPointOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5131465182457383948L;
+	private static final long serialVersionUID = 1399263895959428699L;
 
 	/** 
 	 * 支付宝集分宝发放流水号
@@ -63,59 +63,147 @@ public class AlipayAssetPointOrderQueryResponse extends AlipayResponse {
 	@ApiField("receive_user_id")
 	private String receiveUserId;
 
-	public void setAlipayOrderNo(String alipayOrderNo) {
+    /**
+     * Sets alipay order no.
+     *
+     * @param alipayOrderNo the alipay order no
+     */
+    public void setAlipayOrderNo(String alipayOrderNo) {
 		this.alipayOrderNo = alipayOrderNo;
 	}
-	public String getAlipayOrderNo( ) {
+
+    /**
+     * Gets alipay order no.
+     *
+     * @return the alipay order no
+     */
+    public String getAlipayOrderNo( ) {
 		return this.alipayOrderNo;
 	}
 
-	public void setCreateTime(Date createTime) {
+    /**
+     * Sets create time.
+     *
+     * @param createTime the create time
+     */
+    public void setCreateTime(Date createTime) {
 		this.createTime = createTime;
 	}
-	public Date getCreateTime( ) {
+
+    /**
+     * Gets create time.
+     *
+     * @return the create time
+     */
+    public Date getCreateTime( ) {
 		return this.createTime;
 	}
 
-	public void setDispatchUserId(String dispatchUserId) {
+    /**
+     * Sets dispatch user id.
+     *
+     * @param dispatchUserId the dispatch user id
+     */
+    public void setDispatchUserId(String dispatchUserId) {
 		this.dispatchUserId = dispatchUserId;
 	}
-	public String getDispatchUserId( ) {
+
+    /**
+     * Gets dispatch user id.
+     *
+     * @return the dispatch user id
+     */
+    public String getDispatchUserId( ) {
 		return this.dispatchUserId;
 	}
 
-	public void setMemo(String memo) {
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
-	public String getMemo( ) {
+
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo( ) {
 		return this.memo;
 	}
 
-	public void setMerchantOrderNo(String merchantOrderNo) {
+    /**
+     * Sets merchant order no.
+     *
+     * @param merchantOrderNo the merchant order no
+     */
+    public void setMerchantOrderNo(String merchantOrderNo) {
 		this.merchantOrderNo = merchantOrderNo;
 	}
-	public String getMerchantOrderNo( ) {
+
+    /**
+     * Gets merchant order no.
+     *
+     * @return the merchant order no
+     */
+    public String getMerchantOrderNo( ) {
 		return this.merchantOrderNo;
 	}
 
-	public void setOrderStatus(String orderStatus) {
+    /**
+     * Sets order status.
+     *
+     * @param orderStatus the order status
+     */
+    public void setOrderStatus(String orderStatus) {
 		this.orderStatus = orderStatus;
 	}
-	public String getOrderStatus( ) {
+
+    /**
+     * Gets order status.
+     *
+     * @return the order status
+     */
+    public String getOrderStatus( ) {
 		return this.orderStatus;
 	}
 
-	public void setPointCount(Long pointCount) {
+    /**
+     * Sets point count.
+     *
+     * @param pointCount the point count
+     */
+    public void setPointCount(Long pointCount) {
 		this.pointCount = pointCount;
 	}
-	public Long getPointCount( ) {
+
+    /**
+     * Gets point count.
+     *
+     * @return the point count
+     */
+    public Long getPointCount( ) {
 		return this.pointCount;
 	}
 
-	public void setReceiveUserId(String receiveUserId) {
+    /**
+     * Sets receive user id.
+     *
+     * @param receiveUserId the receive user id
+     */
+    public void setReceiveUserId(String receiveUserId) {
 		this.receiveUserId = receiveUserId;
 	}
-	public String getReceiveUserId( ) {
+
+    /**
+     * Gets receive user id.
+     *
+     * @return the receive user id
+     */
+    public String getReceiveUserId( ) {
 		return this.receiveUserId;
 	}
 

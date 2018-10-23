@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.boss.prod.arrangement.offline.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-04-14 21:06:47
  */
 public class AlipayBossProdArrangementOfflineQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3139159424276858261L;
+	private static final long serialVersionUID = 8374321693977257737L;
 
 	/** 
 	 * 商户的签约状态
@@ -20,10 +20,21 @@ public class AlipayBossProdArrangementOfflineQueryResponse extends AlipayRespons
 	@ApiField("sign_status")
 	private String signStatus;
 
-	public void setSignStatus(String signStatus) {
+    /**
+     * Sets sign status.
+     *
+     * @param signStatus the sign status
+     */
+    public void setSignStatus(String signStatus) {
 		this.signStatus = signStatus;
 	}
-	public String getSignStatus( ) {
+
+    /**
+     * Gets sign status.
+     *
+     * @return the sign status
+     */
+    public String getSignStatus( ) {
 		return this.signStatus;
 	}
 

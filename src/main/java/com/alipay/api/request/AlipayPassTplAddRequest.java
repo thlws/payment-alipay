@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.pass.tpl.add request
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-07-01 15:35:14
  */
@@ -29,17 +29,39 @@ public class AlipayPassTplAddRequest implements AlipayRequest<AlipayPassTplAddRe
 	 */
 	private String uniqueId;
 
-	public void setTplContent(String tplContent) {
+    /**
+     * Sets tpl content.
+     *
+     * @param tplContent the tpl content
+     */
+    public void setTplContent(String tplContent) {
 		this.tplContent = tplContent;
 	}
-	public String getTplContent() {
+
+    /**
+     * Gets tpl content.
+     *
+     * @return the tpl content
+     */
+    public String getTplContent() {
 		return this.tplContent;
 	}
 
-	public void setUniqueId(String uniqueId) {
+    /**
+     * Sets unique id.
+     *
+     * @param uniqueId the unique id
+     */
+    public void setUniqueId(String uniqueId) {
 		this.uniqueId = uniqueId;
 	}
-	public String getUniqueId() {
+
+    /**
+     * Gets unique id.
+     *
+     * @return the unique id
+     */
+    public String getUniqueId() {
 		return this.uniqueId;
 	}
 	private String terminalType;
@@ -112,7 +134,13 @@ public class AlipayPassTplAddRequest implements AlipayRequest<AlipayPassTplAddRe
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.data.smartactivity.config response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-26 11:31:50
+ * @since 1.0, 2018-07-26 14:02:41
  */
 public class KoubeiMarketingDataSmartactivityConfigResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3537488553862623539L;
+	private static final long serialVersionUID = 8111215515833876471L;
 
 	/** 
 	 * 活动类型
@@ -102,94 +102,237 @@ RATE：折扣券
 	@ApiField("worth_value")
 	private String worthValue;
 
-	public void setActivityType(String activityType) {
+    /**
+     * Sets activity type.
+     *
+     * @param activityType the activity type
+     */
+    public void setActivityType(String activityType) {
 		this.activityType = activityType;
 	}
-	public String getActivityType( ) {
+
+    /**
+     * Gets activity type.
+     *
+     * @return the activity type
+     */
+    public String getActivityType( ) {
 		return this.activityType;
 	}
 
-	public void setActivityValidDays(String activityValidDays) {
+    /**
+     * Sets activity valid days.
+     *
+     * @param activityValidDays the activity valid days
+     */
+    public void setActivityValidDays(String activityValidDays) {
 		this.activityValidDays = activityValidDays;
 	}
-	public String getActivityValidDays( ) {
+
+    /**
+     * Gets activity valid days.
+     *
+     * @return the activity valid days
+     */
+    public String getActivityValidDays( ) {
 		return this.activityValidDays;
 	}
 
-	public void setConfigCode(String configCode) {
+    /**
+     * Sets config code.
+     *
+     * @param configCode the config code
+     */
+    public void setConfigCode(String configCode) {
 		this.configCode = configCode;
 	}
-	public String getConfigCode( ) {
+
+    /**
+     * Gets config code.
+     *
+     * @return the config code
+     */
+    public String getConfigCode( ) {
 		return this.configCode;
 	}
 
-	public void setCrowdGroup(String crowdGroup) {
+    /**
+     * Sets crowd group.
+     *
+     * @param crowdGroup the crowd group
+     */
+    public void setCrowdGroup(String crowdGroup) {
 		this.crowdGroup = crowdGroup;
 	}
-	public String getCrowdGroup( ) {
+
+    /**
+     * Gets crowd group.
+     *
+     * @return the crowd group
+     */
+    public String getCrowdGroup( ) {
 		return this.crowdGroup;
 	}
 
-	public void setExtInfo(String extInfo) {
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
-	public String getExtInfo( ) {
+
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo( ) {
 		return this.extInfo;
 	}
 
-	public void setItemId(String itemId) {
+    /**
+     * Sets item id.
+     *
+     * @param itemId the item id
+     */
+    public void setItemId(String itemId) {
 		this.itemId = itemId;
 	}
-	public String getItemId( ) {
+
+    /**
+     * Gets item id.
+     *
+     * @return the item id
+     */
+    public String getItemId( ) {
 		return this.itemId;
 	}
 
-	public void setItemName(String itemName) {
+    /**
+     * Sets item name.
+     *
+     * @param itemName the item name
+     */
+    public void setItemName(String itemName) {
 		this.itemName = itemName;
 	}
-	public String getItemName( ) {
+
+    /**
+     * Gets item name.
+     *
+     * @return the item name
+     */
+    public String getItemName( ) {
 		return this.itemName;
 	}
 
-	public void setMinConsume(String minConsume) {
+    /**
+     * Sets min consume.
+     *
+     * @param minConsume the min consume
+     */
+    public void setMinConsume(String minConsume) {
 		this.minConsume = minConsume;
 	}
-	public String getMinConsume( ) {
+
+    /**
+     * Gets min consume.
+     *
+     * @return the min consume
+     */
+    public String getMinConsume( ) {
 		return this.minConsume;
 	}
 
-	public void setMinCost(String minCost) {
+    /**
+     * Sets min cost.
+     *
+     * @param minCost the min cost
+     */
+    public void setMinCost(String minCost) {
 		this.minCost = minCost;
 	}
-	public String getMinCost( ) {
+
+    /**
+     * Gets min cost.
+     *
+     * @return the min cost
+     */
+    public String getMinCost( ) {
 		return this.minCost;
 	}
 
-	public void setProType(String proType) {
+    /**
+     * Sets pro type.
+     *
+     * @param proType the pro type
+     */
+    public void setProType(String proType) {
 		this.proType = proType;
 	}
-	public String getProType( ) {
+
+    /**
+     * Gets pro type.
+     *
+     * @return the pro type
+     */
+    public String getProType( ) {
 		return this.proType;
 	}
 
-	public void setVoucherType(String voucherType) {
+    /**
+     * Sets voucher type.
+     *
+     * @param voucherType the voucher type
+     */
+    public void setVoucherType(String voucherType) {
 		this.voucherType = voucherType;
 	}
-	public String getVoucherType( ) {
+
+    /**
+     * Gets voucher type.
+     *
+     * @return the voucher type
+     */
+    public String getVoucherType( ) {
 		return this.voucherType;
 	}
 
-	public void setVoucherValidDays(String voucherValidDays) {
+    /**
+     * Sets voucher valid days.
+     *
+     * @param voucherValidDays the voucher valid days
+     */
+    public void setVoucherValidDays(String voucherValidDays) {
 		this.voucherValidDays = voucherValidDays;
 	}
-	public String getVoucherValidDays( ) {
+
+    /**
+     * Gets voucher valid days.
+     *
+     * @return the voucher valid days
+     */
+    public String getVoucherValidDays( ) {
 		return this.voucherValidDays;
 	}
 
-	public void setWorthValue(String worthValue) {
+    /**
+     * Sets worth value.
+     *
+     * @param worthValue the worth value
+     */
+    public void setWorthValue(String worthValue) {
 		this.worthValue = worthValue;
 	}
-	public String getWorthValue( ) {
+
+    /**
+     * Gets worth value.
+     *
+     * @return the worth value
+     */
+    public String getWorthValue( ) {
 		return this.worthValue;
 	}
 

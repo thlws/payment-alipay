@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.commerce.cityfacilitator.function.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2015-12-15 11:19:03
  */
 public class AlipayCommerceCityfacilitatorFunctionQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8792216311435536441L;
+	private static final long serialVersionUID = 8637859123144244867L;
 
 	/** 
 	 * 支持的功能列表
@@ -24,10 +24,21 @@ public class AlipayCommerceCityfacilitatorFunctionQueryResponse extends AlipayRe
 	@ApiField("support_function")
 	private List<SupportFunction> functions;
 
-	public void setFunctions(List<SupportFunction> functions) {
+    /**
+     * Sets functions.
+     *
+     * @param functions the functions
+     */
+    public void setFunctions(List<SupportFunction> functions) {
 		this.functions = functions;
 	}
-	public List<SupportFunction> getFunctions( ) {
+
+    /**
+     * Gets functions.
+     *
+     * @return the functions
+     */
+    public List<SupportFunction> getFunctions( ) {
 		return this.functions;
 	}
 

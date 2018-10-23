@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.pass.verify.query request
- * 
+ *
  * @author auto create
  * @since 1.0, 2014-06-12 17:16:02
  */
@@ -23,10 +23,21 @@ public class AlipayPassVerifyQueryRequest implements AlipayRequest<AlipayPassVer
 	 */
 	private String verifyCode;
 
-	public void setVerifyCode(String verifyCode) {
+    /**
+     * Sets verify code.
+     *
+     * @param verifyCode the verify code
+     */
+    public void setVerifyCode(String verifyCode) {
 		this.verifyCode = verifyCode;
 	}
-	public String getVerifyCode() {
+
+    /**
+     * Gets verify code.
+     *
+     * @return the verify code
+     */
+    public String getVerifyCode() {
 		return this.verifyCode;
 	}
 	private String terminalType;
@@ -98,7 +109,13 @@ public class AlipayPassVerifyQueryRequest implements AlipayRequest<AlipayPassVer
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

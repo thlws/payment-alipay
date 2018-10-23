@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingCampaignDiscountOperateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7822268338619296427L;
+	private static final long serialVersionUID = 2438537876628961753L;
 
 	/**
 	 * 幂等控制code,控制重复新增，修改时候可以不设置。
@@ -133,129 +133,327 @@ public class AlipayMarketingCampaignDiscountOperateModel extends AlipayObject {
 	@ApiField("staged_discount_dst_camp_prize_model")
 	private StagedDiscountDstCampPrizeModel stagedDiscountDstCampPrizeModel;
 
-	public String getCampCode() {
+    /**
+     * Gets camp code.
+     *
+     * @return the camp code
+     */
+    public String getCampCode() {
 		return this.campCode;
 	}
-	public void setCampCode(String campCode) {
+
+    /**
+     * Sets camp code.
+     *
+     * @param campCode the camp code
+     */
+    public void setCampCode(String campCode) {
 		this.campCode = campCode;
 	}
 
-	public String getCampDesc() {
+    /**
+     * Gets camp desc.
+     *
+     * @return the camp desc
+     */
+    public String getCampDesc() {
 		return this.campDesc;
 	}
-	public void setCampDesc(String campDesc) {
+
+    /**
+     * Sets camp desc.
+     *
+     * @param campDesc the camp desc
+     */
+    public void setCampDesc(String campDesc) {
 		this.campDesc = campDesc;
 	}
 
-	public String getCampId() {
+    /**
+     * Gets camp id.
+     *
+     * @return the camp id
+     */
+    public String getCampId() {
 		return this.campId;
 	}
-	public void setCampId(String campId) {
+
+    /**
+     * Sets camp id.
+     *
+     * @param campId the camp id
+     */
+    public void setCampId(String campId) {
 		this.campId = campId;
 	}
 
-	public String getCampName() {
+    /**
+     * Gets camp name.
+     *
+     * @return the camp name
+     */
+    public String getCampName() {
 		return this.campName;
 	}
-	public void setCampName(String campName) {
+
+    /**
+     * Sets camp name.
+     *
+     * @param campName the camp name
+     */
+    public void setCampName(String campName) {
 		this.campName = campName;
 	}
 
-	public String getCampSlogan() {
+    /**
+     * Gets camp slogan.
+     *
+     * @return the camp slogan
+     */
+    public String getCampSlogan() {
 		return this.campSlogan;
 	}
-	public void setCampSlogan(String campSlogan) {
+
+    /**
+     * Sets camp slogan.
+     *
+     * @param campSlogan the camp slogan
+     */
+    public void setCampSlogan(String campSlogan) {
 		this.campSlogan = campSlogan;
 	}
 
-	public DiscountDstCampPrizeModel getDiscountDstCampPrizeModel() {
+    /**
+     * Gets discount dst camp prize model.
+     *
+     * @return the discount dst camp prize model
+     */
+    public DiscountDstCampPrizeModel getDiscountDstCampPrizeModel() {
 		return this.discountDstCampPrizeModel;
 	}
-	public void setDiscountDstCampPrizeModel(DiscountDstCampPrizeModel discountDstCampPrizeModel) {
+
+    /**
+     * Sets discount dst camp prize model.
+     *
+     * @param discountDstCampPrizeModel the discount dst camp prize model
+     */
+    public void setDiscountDstCampPrizeModel(DiscountDstCampPrizeModel discountDstCampPrizeModel) {
 		this.discountDstCampPrizeModel = discountDstCampPrizeModel;
 	}
 
-	public DstCampRuleModel getDstCampRuleModel() {
+    /**
+     * Gets dst camp rule model.
+     *
+     * @return the dst camp rule model
+     */
+    public DstCampRuleModel getDstCampRuleModel() {
 		return this.dstCampRuleModel;
 	}
-	public void setDstCampRuleModel(DstCampRuleModel dstCampRuleModel) {
+
+    /**
+     * Sets dst camp rule model.
+     *
+     * @param dstCampRuleModel the dst camp rule model
+     */
+    public void setDstCampRuleModel(DstCampRuleModel dstCampRuleModel) {
 		this.dstCampRuleModel = dstCampRuleModel;
 	}
 
-	public List<DateAreaModel> getDstCampSubTimeModelList() {
+    /**
+     * Gets dst camp sub time model list.
+     *
+     * @return the dst camp sub time model list
+     */
+    public List<DateAreaModel> getDstCampSubTimeModelList() {
 		return this.dstCampSubTimeModelList;
 	}
-	public void setDstCampSubTimeModelList(List<DateAreaModel> dstCampSubTimeModelList) {
+
+    /**
+     * Sets dst camp sub time model list.
+     *
+     * @param dstCampSubTimeModelList the dst camp sub time model list
+     */
+    public void setDstCampSubTimeModelList(List<DateAreaModel> dstCampSubTimeModelList) {
 		this.dstCampSubTimeModelList = dstCampSubTimeModelList;
 	}
 
-	public String getGmtEnd() {
+    /**
+     * Gets gmt end.
+     *
+     * @return the gmt end
+     */
+    public String getGmtEnd() {
 		return this.gmtEnd;
 	}
-	public void setGmtEnd(String gmtEnd) {
+
+    /**
+     * Sets gmt end.
+     *
+     * @param gmtEnd the gmt end
+     */
+    public void setGmtEnd(String gmtEnd) {
 		this.gmtEnd = gmtEnd;
 	}
 
-	public String getGmtStart() {
+    /**
+     * Gets gmt start.
+     *
+     * @return the gmt start
+     */
+    public String getGmtStart() {
 		return this.gmtStart;
 	}
-	public void setGmtStart(String gmtStart) {
+
+    /**
+     * Sets gmt start.
+     *
+     * @param gmtStart the gmt start
+     */
+    public void setGmtStart(String gmtStart) {
 		this.gmtStart = gmtStart;
 	}
 
-	public String getOperateType() {
+    /**
+     * Gets operate type.
+     *
+     * @return the operate type
+     */
+    public String getOperateType() {
 		return this.operateType;
 	}
-	public void setOperateType(String operateType) {
+
+    /**
+     * Sets operate type.
+     *
+     * @param operateType the operate type
+     */
+    public void setOperateType(String operateType) {
 		this.operateType = operateType;
 	}
 
-	public String getPrizeType() {
+    /**
+     * Gets prize type.
+     *
+     * @return the prize type
+     */
+    public String getPrizeType() {
 		return this.prizeType;
 	}
-	public void setPrizeType(String prizeType) {
+
+    /**
+     * Sets prize type.
+     *
+     * @param prizeType the prize type
+     */
+    public void setPrizeType(String prizeType) {
 		this.prizeType = prizeType;
 	}
 
-	public RandomDiscountDstCampPrizeModel getRandomDiscountDstCampPrizeModel() {
+    /**
+     * Gets random discount dst camp prize model.
+     *
+     * @return the random discount dst camp prize model
+     */
+    public RandomDiscountDstCampPrizeModel getRandomDiscountDstCampPrizeModel() {
 		return this.randomDiscountDstCampPrizeModel;
 	}
-	public void setRandomDiscountDstCampPrizeModel(RandomDiscountDstCampPrizeModel randomDiscountDstCampPrizeModel) {
+
+    /**
+     * Sets random discount dst camp prize model.
+     *
+     * @param randomDiscountDstCampPrizeModel the random discount dst camp prize model
+     */
+    public void setRandomDiscountDstCampPrizeModel(RandomDiscountDstCampPrizeModel randomDiscountDstCampPrizeModel) {
 		this.randomDiscountDstCampPrizeModel = randomDiscountDstCampPrizeModel;
 	}
 
-	public ReduceDstCampPrizeModel getReduceDstCampPrizeModel() {
+    /**
+     * Gets reduce dst camp prize model.
+     *
+     * @return the reduce dst camp prize model
+     */
+    public ReduceDstCampPrizeModel getReduceDstCampPrizeModel() {
 		return this.reduceDstCampPrizeModel;
 	}
-	public void setReduceDstCampPrizeModel(ReduceDstCampPrizeModel reduceDstCampPrizeModel) {
+
+    /**
+     * Sets reduce dst camp prize model.
+     *
+     * @param reduceDstCampPrizeModel the reduce dst camp prize model
+     */
+    public void setReduceDstCampPrizeModel(ReduceDstCampPrizeModel reduceDstCampPrizeModel) {
 		this.reduceDstCampPrizeModel = reduceDstCampPrizeModel;
 	}
 
-	public ReduceToDiscountDstCampPrizeModel getReduceToDiscountDstCampPrizeModel() {
+    /**
+     * Gets reduce to discount dst camp prize model.
+     *
+     * @return the reduce to discount dst camp prize model
+     */
+    public ReduceToDiscountDstCampPrizeModel getReduceToDiscountDstCampPrizeModel() {
 		return this.reduceToDiscountDstCampPrizeModel;
 	}
-	public void setReduceToDiscountDstCampPrizeModel(ReduceToDiscountDstCampPrizeModel reduceToDiscountDstCampPrizeModel) {
+
+    /**
+     * Sets reduce to discount dst camp prize model.
+     *
+     * @param reduceToDiscountDstCampPrizeModel the reduce to discount dst camp prize model
+     */
+    public void setReduceToDiscountDstCampPrizeModel(ReduceToDiscountDstCampPrizeModel reduceToDiscountDstCampPrizeModel) {
 		this.reduceToDiscountDstCampPrizeModel = reduceToDiscountDstCampPrizeModel;
 	}
 
-	public ResetZeroDstCampPrizeModel getResetZeroDstCampPrizeModel() {
+    /**
+     * Gets reset zero dst camp prize model.
+     *
+     * @return the reset zero dst camp prize model
+     */
+    public ResetZeroDstCampPrizeModel getResetZeroDstCampPrizeModel() {
 		return this.resetZeroDstCampPrizeModel;
 	}
-	public void setResetZeroDstCampPrizeModel(ResetZeroDstCampPrizeModel resetZeroDstCampPrizeModel) {
+
+    /**
+     * Sets reset zero dst camp prize model.
+     *
+     * @param resetZeroDstCampPrizeModel the reset zero dst camp prize model
+     */
+    public void setResetZeroDstCampPrizeModel(ResetZeroDstCampPrizeModel resetZeroDstCampPrizeModel) {
 		this.resetZeroDstCampPrizeModel = resetZeroDstCampPrizeModel;
 	}
 
-	public SingleDstCampPrizeModel getSingleDstCampPrizeModel() {
+    /**
+     * Gets single dst camp prize model.
+     *
+     * @return the single dst camp prize model
+     */
+    public SingleDstCampPrizeModel getSingleDstCampPrizeModel() {
 		return this.singleDstCampPrizeModel;
 	}
-	public void setSingleDstCampPrizeModel(SingleDstCampPrizeModel singleDstCampPrizeModel) {
+
+    /**
+     * Sets single dst camp prize model.
+     *
+     * @param singleDstCampPrizeModel the single dst camp prize model
+     */
+    public void setSingleDstCampPrizeModel(SingleDstCampPrizeModel singleDstCampPrizeModel) {
 		this.singleDstCampPrizeModel = singleDstCampPrizeModel;
 	}
 
-	public StagedDiscountDstCampPrizeModel getStagedDiscountDstCampPrizeModel() {
+    /**
+     * Gets staged discount dst camp prize model.
+     *
+     * @return the staged discount dst camp prize model
+     */
+    public StagedDiscountDstCampPrizeModel getStagedDiscountDstCampPrizeModel() {
 		return this.stagedDiscountDstCampPrizeModel;
 	}
-	public void setStagedDiscountDstCampPrizeModel(StagedDiscountDstCampPrizeModel stagedDiscountDstCampPrizeModel) {
+
+    /**
+     * Sets staged discount dst camp prize model.
+     *
+     * @param stagedDiscountDstCampPrizeModel the staged discount dst camp prize model
+     */
+    public void setStagedDiscountDstCampPrizeModel(StagedDiscountDstCampPrizeModel stagedDiscountDstCampPrizeModel) {
 		this.stagedDiscountDstCampPrizeModel = stagedDiscountDstCampPrizeModel;
 	}
 

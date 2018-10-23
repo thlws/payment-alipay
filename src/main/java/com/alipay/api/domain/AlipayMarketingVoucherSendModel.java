@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发券接口
  *
  * @author auto create
- * @since 1.0, 2017-06-19 11:26:53
+ * @since 1.0, 2018-06-20 18:11:01
  */
 public class AlipayMarketingVoucherSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1877914858814387884L;
+	private static final long serialVersionUID = 7682763966499147989L;
 
 	/**
 	 * 券金额。浮点数，格式为#.00，单位是元。红包发放时填写，其它情形不能填
@@ -55,52 +55,129 @@ public class AlipayMarketingVoucherSendModel extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
-	public String getAmount() {
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public String getAmount() {
 		return this.amount;
 	}
-	public void setAmount(String amount) {
+
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
-	public String getLoginId() {
+    /**
+     * Gets login id.
+     *
+     * @return the login id
+     */
+    public String getLoginId() {
 		return this.loginId;
 	}
-	public void setLoginId(String loginId) {
+
+    /**
+     * Sets login id.
+     *
+     * @param loginId the login id
+     */
+    public void setLoginId(String loginId) {
 		this.loginId = loginId;
 	}
 
-	public String getMemo() {
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo() {
 		return this.memo;
 	}
-	public void setMemo(String memo) {
+
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
-	public String getTaobaoNick() {
+    /**
+     * Gets taobao nick.
+     *
+     * @return the taobao nick
+     */
+    public String getTaobaoNick() {
 		return this.taobaoNick;
 	}
-	public void setTaobaoNick(String taobaoNick) {
+
+    /**
+     * Sets taobao nick.
+     *
+     * @param taobaoNick the taobao nick
+     */
+    public void setTaobaoNick(String taobaoNick) {
 		this.taobaoNick = taobaoNick;
 	}
 
-	public String getTemplateId() {
+    /**
+     * Gets template id.
+     *
+     * @return the template id
+     */
+    public String getTemplateId() {
 		return this.templateId;
 	}
-	public void setTemplateId(String templateId) {
+
+    /**
+     * Sets template id.
+     *
+     * @param templateId the template id
+     */
+    public void setTemplateId(String templateId) {
 		this.templateId = templateId;
 	}
 
-	public String getUserId() {
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
-	public void setUserId(String userId) {
+
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
 

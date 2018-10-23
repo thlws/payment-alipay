@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DstCampRuleModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7135346198236439253L;
+	private static final long serialVersionUID = 1125259162576872875L;
 
 	/**
 	 * 支付宝收银台:PC端:PC   安全支付端:WIRELESS_CLIENT   无线WAP端:WIRELESS_WAP   协议支付;AGREEMENTPAY
@@ -55,52 +55,129 @@ public class DstCampRuleModel extends AlipayObject {
 	@ApiField("voucher_id")
 	private String voucherId;
 
-	public String getAlipayCashier() {
+    /**
+     * Gets alipay cashier.
+     *
+     * @return the alipay cashier
+     */
+    public String getAlipayCashier() {
 		return this.alipayCashier;
 	}
-	public void setAlipayCashier(String alipayCashier) {
+
+    /**
+     * Sets alipay cashier.
+     *
+     * @param alipayCashier the alipay cashier
+     */
+    public void setAlipayCashier(String alipayCashier) {
 		this.alipayCashier = alipayCashier;
 	}
 
-	public String getDiscountType() {
+    /**
+     * Gets discount type.
+     *
+     * @return the discount type
+     */
+    public String getDiscountType() {
 		return this.discountType;
 	}
-	public void setDiscountType(String discountType) {
+
+    /**
+     * Sets discount type.
+     *
+     * @param discountType the discount type
+     */
+    public void setDiscountType(String discountType) {
 		this.discountType = discountType;
 	}
 
-	public String getId() {
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
+    public String getId() {
 		return this.id;
 	}
-	public void setId(String id) {
+
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
+    public void setId(String id) {
 		this.id = id;
 	}
 
-	public String getPrizeCountPerAccount() {
+    /**
+     * Gets prize count per account.
+     *
+     * @return the prize count per account
+     */
+    public String getPrizeCountPerAccount() {
 		return this.prizeCountPerAccount;
 	}
-	public void setPrizeCountPerAccount(String prizeCountPerAccount) {
+
+    /**
+     * Sets prize count per account.
+     *
+     * @param prizeCountPerAccount the prize count per account
+     */
+    public void setPrizeCountPerAccount(String prizeCountPerAccount) {
 		this.prizeCountPerAccount = prizeCountPerAccount;
 	}
 
-	public String getProductType() {
+    /**
+     * Gets product type.
+     *
+     * @return the product type
+     */
+    public String getProductType() {
 		return this.productType;
 	}
-	public void setProductType(String productType) {
+
+    /**
+     * Sets product type.
+     *
+     * @param productType the product type
+     */
+    public void setProductType(String productType) {
 		this.productType = productType;
 	}
 
-	public String getRuleUuid() {
+    /**
+     * Gets rule uuid.
+     *
+     * @return the rule uuid
+     */
+    public String getRuleUuid() {
 		return this.ruleUuid;
 	}
-	public void setRuleUuid(String ruleUuid) {
+
+    /**
+     * Sets rule uuid.
+     *
+     * @param ruleUuid the rule uuid
+     */
+    public void setRuleUuid(String ruleUuid) {
 		this.ruleUuid = ruleUuid;
 	}
 
-	public String getVoucherId() {
+    /**
+     * Gets voucher id.
+     *
+     * @return the voucher id
+     */
+    public String getVoucherId() {
 		return this.voucherId;
 	}
-	public void setVoucherId(String voucherId) {
+
+    /**
+     * Sets voucher id.
+     *
+     * @param voucherId the voucher id
+     */
+    public void setVoucherId(String voucherId) {
 		this.voucherId = voucherId;
 	}
 

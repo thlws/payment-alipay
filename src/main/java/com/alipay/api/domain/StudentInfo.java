@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class StudentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1537748163639234278L;
+	private static final long serialVersionUID = 1113811583733949981L;
 
 	/**
 	 * 学校所在行政区域编码
@@ -75,73 +75,183 @@ public class StudentInfo extends AlipayObject {
 	@ApiField("student_id")
 	private String studentId;
 
-	public String getCityNo() {
+    /**
+     * Gets city no.
+     *
+     * @return the city no
+     */
+    public String getCityNo() {
 		return this.cityNo;
 	}
-	public void setCityNo(String cityNo) {
+
+    /**
+     * Sets city no.
+     *
+     * @param cityNo the city no
+     */
+    public void setCityNo(String cityNo) {
 		this.cityNo = cityNo;
 	}
 
-	public String getClassName() {
+    /**
+     * Gets class name.
+     *
+     * @return the class name
+     */
+    public String getClassName() {
 		return this.className;
 	}
-	public void setClassName(String className) {
+
+    /**
+     * Sets class name.
+     *
+     * @param className the class name
+     */
+    public void setClassName(String className) {
 		this.className = className;
 	}
 
-	public String getCollegeName() {
+    /**
+     * Gets college name.
+     *
+     * @return the college name
+     */
+    public String getCollegeName() {
 		return this.collegeName;
 	}
-	public void setCollegeName(String collegeName) {
+
+    /**
+     * Sets college name.
+     *
+     * @param collegeName the college name
+     */
+    public void setCollegeName(String collegeName) {
 		this.collegeName = collegeName;
 	}
 
-	public String getCollegeNo() {
+    /**
+     * Gets college no.
+     *
+     * @return the college no
+     */
+    public String getCollegeNo() {
 		return this.collegeNo;
 	}
-	public void setCollegeNo(String collegeNo) {
+
+    /**
+     * Sets college no.
+     *
+     * @param collegeNo the college no
+     */
+    public void setCollegeNo(String collegeNo) {
 		this.collegeNo = collegeNo;
 	}
 
-	public String getDegree() {
+    /**
+     * Gets degree.
+     *
+     * @return the degree
+     */
+    public String getDegree() {
 		return this.degree;
 	}
-	public void setDegree(String degree) {
+
+    /**
+     * Sets degree.
+     *
+     * @param degree the degree
+     */
+    public void setDegree(String degree) {
 		this.degree = degree;
 	}
 
-	public String getDepartments() {
+    /**
+     * Gets departments.
+     *
+     * @return the departments
+     */
+    public String getDepartments() {
 		return this.departments;
 	}
-	public void setDepartments(String departments) {
+
+    /**
+     * Sets departments.
+     *
+     * @param departments the departments
+     */
+    public void setDepartments(String departments) {
 		this.departments = departments;
 	}
 
-	public Date getGmtEnrollment() {
+    /**
+     * Gets gmt enrollment.
+     *
+     * @return the gmt enrollment
+     */
+    public Date getGmtEnrollment() {
 		return this.gmtEnrollment;
 	}
-	public void setGmtEnrollment(Date gmtEnrollment) {
+
+    /**
+     * Sets gmt enrollment.
+     *
+     * @param gmtEnrollment the gmt enrollment
+     */
+    public void setGmtEnrollment(Date gmtEnrollment) {
 		this.gmtEnrollment = gmtEnrollment;
 	}
 
-	public Date getGmtGraduation() {
+    /**
+     * Gets gmt graduation.
+     *
+     * @return the gmt graduation
+     */
+    public Date getGmtGraduation() {
 		return this.gmtGraduation;
 	}
-	public void setGmtGraduation(Date gmtGraduation) {
+
+    /**
+     * Sets gmt graduation.
+     *
+     * @param gmtGraduation the gmt graduation
+     */
+    public void setGmtGraduation(Date gmtGraduation) {
 		this.gmtGraduation = gmtGraduation;
 	}
 
-	public String getMajor() {
+    /**
+     * Gets major.
+     *
+     * @return the major
+     */
+    public String getMajor() {
 		return this.major;
 	}
-	public void setMajor(String major) {
+
+    /**
+     * Sets major.
+     *
+     * @param major the major
+     */
+    public void setMajor(String major) {
 		this.major = major;
 	}
 
-	public String getStudentId() {
+    /**
+     * Gets student id.
+     *
+     * @return the student id
+     */
+    public String getStudentId() {
 		return this.studentId;
 	}
-	public void setStudentId(String studentId) {
+
+    /**
+     * Sets student id.
+     *
+     * @param studentId the student id
+     */
+    public void setStudentId(String studentId) {
 		this.studentId = studentId;
 	}
 

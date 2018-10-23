@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RepaymentRecords extends AlipayObject {
 
-	private static final long serialVersionUID = 6536597683372144454L;
+	private static final long serialVersionUID = 4831925836542361938L;
 
 	/**
 	 * 交易时间
@@ -69,66 +69,165 @@ public class RepaymentRecords extends AlipayObject {
 	@ApiField("total_amount")
 	private String totalAmount;
 
-	public Date getDate() {
+    /**
+     * Gets date.
+     *
+     * @return the date
+     */
+    public Date getDate() {
 		return this.date;
 	}
-	public void setDate(Date date) {
+
+    /**
+     * Sets date.
+     *
+     * @param date the date
+     */
+    public void setDate(Date date) {
 		this.date = date;
 	}
 
-	public String getInterest() {
+    /**
+     * Gets interest.
+     *
+     * @return the interest
+     */
+    public String getInterest() {
 		return this.interest;
 	}
-	public void setInterest(String interest) {
+
+    /**
+     * Sets interest.
+     *
+     * @param interest the interest
+     */
+    public void setInterest(String interest) {
 		this.interest = interest;
 	}
 
-	public String getOverdueInterest() {
+    /**
+     * Gets overdue interest.
+     *
+     * @return the overdue interest
+     */
+    public String getOverdueInterest() {
 		return this.overdueInterest;
 	}
-	public void setOverdueInterest(String overdueInterest) {
+
+    /**
+     * Sets overdue interest.
+     *
+     * @param overdueInterest the overdue interest
+     */
+    public void setOverdueInterest(String overdueInterest) {
 		this.overdueInterest = overdueInterest;
 	}
 
-	public String getOverdueInterestPenalty() {
+    /**
+     * Gets overdue interest penalty.
+     *
+     * @return the overdue interest penalty
+     */
+    public String getOverdueInterestPenalty() {
 		return this.overdueInterestPenalty;
 	}
-	public void setOverdueInterestPenalty(String overdueInterestPenalty) {
+
+    /**
+     * Sets overdue interest penalty.
+     *
+     * @param overdueInterestPenalty the overdue interest penalty
+     */
+    public void setOverdueInterestPenalty(String overdueInterestPenalty) {
 		this.overdueInterestPenalty = overdueInterestPenalty;
 	}
 
-	public String getOverduePrincipal() {
+    /**
+     * Gets overdue principal.
+     *
+     * @return the overdue principal
+     */
+    public String getOverduePrincipal() {
 		return this.overduePrincipal;
 	}
-	public void setOverduePrincipal(String overduePrincipal) {
+
+    /**
+     * Sets overdue principal.
+     *
+     * @param overduePrincipal the overdue principal
+     */
+    public void setOverduePrincipal(String overduePrincipal) {
 		this.overduePrincipal = overduePrincipal;
 	}
 
-	public String getOverduePrincipalPenalty() {
+    /**
+     * Gets overdue principal penalty.
+     *
+     * @return the overdue principal penalty
+     */
+    public String getOverduePrincipalPenalty() {
 		return this.overduePrincipalPenalty;
 	}
-	public void setOverduePrincipalPenalty(String overduePrincipalPenalty) {
+
+    /**
+     * Sets overdue principal penalty.
+     *
+     * @param overduePrincipalPenalty the overdue principal penalty
+     */
+    public void setOverduePrincipalPenalty(String overduePrincipalPenalty) {
 		this.overduePrincipalPenalty = overduePrincipalPenalty;
 	}
 
-	public String getPrincipal() {
+    /**
+     * Gets principal.
+     *
+     * @return the principal
+     */
+    public String getPrincipal() {
 		return this.principal;
 	}
-	public void setPrincipal(String principal) {
+
+    /**
+     * Sets principal.
+     *
+     * @param principal the principal
+     */
+    public void setPrincipal(String principal) {
 		this.principal = principal;
 	}
 
-	public String getRemarks() {
+    /**
+     * Gets remarks.
+     *
+     * @return the remarks
+     */
+    public String getRemarks() {
 		return this.remarks;
 	}
-	public void setRemarks(String remarks) {
+
+    /**
+     * Sets remarks.
+     *
+     * @param remarks the remarks
+     */
+    public void setRemarks(String remarks) {
 		this.remarks = remarks;
 	}
 
-	public String getTotalAmount() {
+    /**
+     * Gets total amount.
+     *
+     * @return the total amount
+     */
+    public String getTotalAmount() {
 		return this.totalAmount;
 	}
-	public void setTotalAmount(String totalAmount) {
+
+    /**
+     * Sets total amount.
+     *
+     * @param totalAmount the total amount
+     */
+    public void setTotalAmount(String totalAmount) {
 		this.totalAmount = totalAmount;
 	}
 

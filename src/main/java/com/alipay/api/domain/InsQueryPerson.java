@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险查询用户的精简模型定义
  *
  * @author auto create
- * @since 1.0, 2017-07-20 21:55:46
+ * @since 1.0, 2018-07-18 13:53:51
  */
 public class InsQueryPerson extends AlipayObject {
 
-	private static final long serialVersionUID = 5489257581167464397L;
+	private static final long serialVersionUID = 1492712481128242635L;
 
 	/**
 	 * 证件号码;如果渠道账号字段（channel_user_id）没填则本字段为必填
@@ -51,38 +51,93 @@ public class InsQueryPerson extends AlipayObject {
 	@ApiField("type")
 	private String type;
 
-	public String getCertNo() {
+    /**
+     * Gets cert no.
+     *
+     * @return the cert no
+     */
+    public String getCertNo() {
 		return this.certNo;
 	}
-	public void setCertNo(String certNo) {
+
+    /**
+     * Sets cert no.
+     *
+     * @param certNo the cert no
+     */
+    public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}
 
-	public String getCertType() {
+    /**
+     * Gets cert type.
+     *
+     * @return the cert type
+     */
+    public String getCertType() {
 		return this.certType;
 	}
-	public void setCertType(String certType) {
+
+    /**
+     * Sets cert type.
+     *
+     * @param certType the cert type
+     */
+    public void setCertType(String certType) {
 		this.certType = certType;
 	}
 
-	public String getChannelUserId() {
+    /**
+     * Gets channel user id.
+     *
+     * @return the channel user id
+     */
+    public String getChannelUserId() {
 		return this.channelUserId;
 	}
-	public void setChannelUserId(String channelUserId) {
+
+    /**
+     * Sets channel user id.
+     *
+     * @param channelUserId the channel user id
+     */
+    public void setChannelUserId(String channelUserId) {
 		this.channelUserId = channelUserId;
 	}
 
-	public String getChannelUserSource() {
+    /**
+     * Gets channel user source.
+     *
+     * @return the channel user source
+     */
+    public String getChannelUserSource() {
 		return this.channelUserSource;
 	}
-	public void setChannelUserSource(String channelUserSource) {
+
+    /**
+     * Sets channel user source.
+     *
+     * @param channelUserSource the channel user source
+     */
+    public void setChannelUserSource(String channelUserSource) {
 		this.channelUserSource = channelUserSource;
 	}
 
-	public String getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
-	public void setType(String type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
 

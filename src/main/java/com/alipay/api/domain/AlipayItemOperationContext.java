@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayItemOperationContext extends AlipayObject {
 
-	private static final long serialVersionUID = 5548373939194248427L;
+	private static final long serialVersionUID = 3186874146432986469L;
 
 	/**
 	 * 商品创建者，商户授权模式此值不需要填写。
@@ -31,24 +31,57 @@ public class AlipayItemOperationContext extends AlipayObject {
 	@ApiField("partner_id")
 	private String partnerId;
 
-	public String getCreator() {
+    /**
+     * Gets creator.
+     *
+     * @return the creator
+     */
+    public String getCreator() {
 		return this.creator;
 	}
-	public void setCreator(String creator) {
+
+    /**
+     * Sets creator.
+     *
+     * @param creator the creator
+     */
+    public void setCreator(String creator) {
 		this.creator = creator;
 	}
 
-	public String getOpRole() {
+    /**
+     * Gets op role.
+     *
+     * @return the op role
+     */
+    public String getOpRole() {
 		return this.opRole;
 	}
-	public void setOpRole(String opRole) {
+
+    /**
+     * Sets op role.
+     *
+     * @param opRole the op role
+     */
+    public void setOpRole(String opRole) {
 		this.opRole = opRole;
 	}
 
-	public String getPartnerId() {
+    /**
+     * Gets partner id.
+     *
+     * @return the partner id
+     */
+    public String getPartnerId() {
 		return this.partnerId;
 	}
-	public void setPartnerId(String partnerId) {
+
+    /**
+     * Sets partner id.
+     *
+     * @param partnerId the partner id
+     */
+    public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}
 

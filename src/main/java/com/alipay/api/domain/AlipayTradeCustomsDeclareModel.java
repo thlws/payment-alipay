@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayTradeCustomsDeclareModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1153599562661422142L;
+	private static final long serialVersionUID = 3283544592734541127L;
 
 	/**
 	 * 报关金额，单位为人民币“元”，精确到小数点后2位。
@@ -69,66 +69,165 @@ public class AlipayTradeCustomsDeclareModel extends AlipayObject {
 	@ApiField("trade_no")
 	private String tradeNo;
 
-	public String getAmount() {
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public String getAmount() {
 		return this.amount;
 	}
-	public void setAmount(String amount) {
+
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
-	public CustomsDeclareBuyerInfo getBuyerInfo() {
+    /**
+     * Gets buyer info.
+     *
+     * @return the buyer info
+     */
+    public CustomsDeclareBuyerInfo getBuyerInfo() {
 		return this.buyerInfo;
 	}
-	public void setBuyerInfo(CustomsDeclareBuyerInfo buyerInfo) {
+
+    /**
+     * Sets buyer info.
+     *
+     * @param buyerInfo the buyer info
+     */
+    public void setBuyerInfo(CustomsDeclareBuyerInfo buyerInfo) {
 		this.buyerInfo = buyerInfo;
 	}
 
-	public String getCustomsPlace() {
+    /**
+     * Gets customs place.
+     *
+     * @return the customs place
+     */
+    public String getCustomsPlace() {
 		return this.customsPlace;
 	}
-	public void setCustomsPlace(String customsPlace) {
+
+    /**
+     * Sets customs place.
+     *
+     * @param customsPlace the customs place
+     */
+    public void setCustomsPlace(String customsPlace) {
 		this.customsPlace = customsPlace;
 	}
 
-	public String getIsSplit() {
+    /**
+     * Gets is split.
+     *
+     * @return the is split
+     */
+    public String getIsSplit() {
 		return this.isSplit;
 	}
-	public void setIsSplit(String isSplit) {
+
+    /**
+     * Sets is split.
+     *
+     * @param isSplit the is split
+     */
+    public void setIsSplit(String isSplit) {
 		this.isSplit = isSplit;
 	}
 
-	public String getMerchantCustomsCode() {
+    /**
+     * Gets merchant customs code.
+     *
+     * @return the merchant customs code
+     */
+    public String getMerchantCustomsCode() {
 		return this.merchantCustomsCode;
 	}
-	public void setMerchantCustomsCode(String merchantCustomsCode) {
+
+    /**
+     * Sets merchant customs code.
+     *
+     * @param merchantCustomsCode the merchant customs code
+     */
+    public void setMerchantCustomsCode(String merchantCustomsCode) {
 		this.merchantCustomsCode = merchantCustomsCode;
 	}
 
-	public String getMerchantCustomsName() {
+    /**
+     * Gets merchant customs name.
+     *
+     * @return the merchant customs name
+     */
+    public String getMerchantCustomsName() {
 		return this.merchantCustomsName;
 	}
-	public void setMerchantCustomsName(String merchantCustomsName) {
+
+    /**
+     * Sets merchant customs name.
+     *
+     * @param merchantCustomsName the merchant customs name
+     */
+    public void setMerchantCustomsName(String merchantCustomsName) {
 		this.merchantCustomsName = merchantCustomsName;
 	}
 
-	public String getOutRequestNo() {
+    /**
+     * Gets out request no.
+     *
+     * @return the out request no
+     */
+    public String getOutRequestNo() {
 		return this.outRequestNo;
 	}
-	public void setOutRequestNo(String outRequestNo) {
+
+    /**
+     * Sets out request no.
+     *
+     * @param outRequestNo the out request no
+     */
+    public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
 	}
 
-	public String getSubOutBizNo() {
+    /**
+     * Gets sub out biz no.
+     *
+     * @return the sub out biz no
+     */
+    public String getSubOutBizNo() {
 		return this.subOutBizNo;
 	}
-	public void setSubOutBizNo(String subOutBizNo) {
+
+    /**
+     * Sets sub out biz no.
+     *
+     * @param subOutBizNo the sub out biz no
+     */
+    public void setSubOutBizNo(String subOutBizNo) {
 		this.subOutBizNo = subOutBizNo;
 	}
 
-	public String getTradeNo() {
+    /**
+     * Gets trade no.
+     *
+     * @return the trade no
+     */
+    public String getTradeNo() {
 		return this.tradeNo;
 	}
-	public void setTradeNo(String tradeNo) {
+
+    /**
+     * Sets trade no.
+     *
+     * @param tradeNo the trade no
+     */
+    public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
 

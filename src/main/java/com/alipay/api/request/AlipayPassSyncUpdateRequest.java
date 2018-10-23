@@ -9,9 +9,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.pass.sync.update request
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-07-01 15:32:40
+ * @since 1.0, 2017-12-07 20:19:03
  */
 public class AlipayPassSyncUpdateRequest implements AlipayRequest<AlipayPassSyncUpdateResponse> {
 
@@ -53,52 +53,129 @@ public class AlipayPassSyncUpdateRequest implements AlipayRequest<AlipayPassSync
 	 */
 	private String verifyType;
 
-	public void setChannelId(String channelId) {
+    /**
+     * Sets channel id.
+     *
+     * @param channelId the channel id
+     */
+    public void setChannelId(String channelId) {
 		this.channelId = channelId;
 	}
-	public String getChannelId() {
+
+    /**
+     * Gets channel id.
+     *
+     * @return the channel id
+     */
+    public String getChannelId() {
 		return this.channelId;
 	}
 
-	public void setExtInfo(String extInfo) {
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
-	public String getExtInfo() {
+
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo() {
 		return this.extInfo;
 	}
 
-	public void setPass(String pass) {
+    /**
+     * Sets pass.
+     *
+     * @param pass the pass
+     */
+    public void setPass(String pass) {
 		this.pass = pass;
 	}
-	public String getPass() {
+
+    /**
+     * Gets pass.
+     *
+     * @return the pass
+     */
+    public String getPass() {
 		return this.pass;
 	}
 
-	public void setSerialNumber(String serialNumber) {
+    /**
+     * Sets serial number.
+     *
+     * @param serialNumber the serial number
+     */
+    public void setSerialNumber(String serialNumber) {
 		this.serialNumber = serialNumber;
 	}
-	public String getSerialNumber() {
+
+    /**
+     * Gets serial number.
+     *
+     * @return the serial number
+     */
+    public String getSerialNumber() {
 		return this.serialNumber;
 	}
 
-	public void setStatus(String status) {
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
-	public String getStatus() {
+
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
 
-	public void setVerifyCode(String verifyCode) {
+    /**
+     * Sets verify code.
+     *
+     * @param verifyCode the verify code
+     */
+    public void setVerifyCode(String verifyCode) {
 		this.verifyCode = verifyCode;
 	}
-	public String getVerifyCode() {
+
+    /**
+     * Gets verify code.
+     *
+     * @return the verify code
+     */
+    public String getVerifyCode() {
 		return this.verifyCode;
 	}
 
-	public void setVerifyType(String verifyType) {
+    /**
+     * Sets verify type.
+     *
+     * @param verifyType the verify type
+     */
+    public void setVerifyType(String verifyType) {
 		this.verifyType = verifyType;
 	}
-	public String getVerifyType() {
+
+    /**
+     * Gets verify type.
+     *
+     * @return the verify type
+     */
+    public String getVerifyType() {
 		return this.verifyType;
 	}
 	private String terminalType;
@@ -176,7 +253,13 @@ public class AlipayPassSyncUpdateRequest implements AlipayRequest<AlipayPassSync
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

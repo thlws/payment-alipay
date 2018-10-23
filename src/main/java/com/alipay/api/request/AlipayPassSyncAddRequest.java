@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.pass.sync.add request
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-12-16 16:35:12
  */
@@ -38,31 +38,75 @@ public class AlipayPassSyncAddRequest implements AlipayRequest<AlipayPassSyncAdd
 	 */
 	private String userId;
 
-	public void setFileContent(String fileContent) {
+    /**
+     * Sets file content.
+     *
+     * @param fileContent the file content
+     */
+    public void setFileContent(String fileContent) {
 		this.fileContent = fileContent;
 	}
-	public String getFileContent() {
+
+    /**
+     * Gets file content.
+     *
+     * @return the file content
+     */
+    public String getFileContent() {
 		return this.fileContent;
 	}
 
-	public void setOutTradeNo(String outTradeNo) {
+    /**
+     * Sets out trade no.
+     *
+     * @param outTradeNo the out trade no
+     */
+    public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
-	public String getOutTradeNo() {
+
+    /**
+     * Gets out trade no.
+     *
+     * @return the out trade no
+     */
+    public String getOutTradeNo() {
 		return this.outTradeNo;
 	}
 
-	public void setPartnerId(String partnerId) {
+    /**
+     * Sets partner id.
+     *
+     * @param partnerId the partner id
+     */
+    public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}
-	public String getPartnerId() {
+
+    /**
+     * Gets partner id.
+     *
+     * @return the partner id
+     */
+    public String getPartnerId() {
 		return this.partnerId;
 	}
 
-	public void setUserId(String userId) {
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public String getUserId() {
+
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
 	private String terminalType;
@@ -137,7 +181,13 @@ public class AlipayPassSyncAddRequest implements AlipayRequest<AlipayPassSyncAdd
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

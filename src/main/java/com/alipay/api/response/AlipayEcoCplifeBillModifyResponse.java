@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.cplife.bill.modify response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-02-10 18:56:10
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayEcoCplifeBillModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8439671177263877138L;
+	private static final long serialVersionUID = 8649684963929539291L;
 
 	/** 
 	 * 不允许修改（支付中或者支付完成）的账单明细条目列表
@@ -24,10 +24,21 @@ public class AlipayEcoCplifeBillModifyResponse extends AlipayResponse {
 	@ApiField("c_p_alive_bill_entry_set")
 	private List<CPAliveBillEntrySet> aliveBillEntryList;
 
-	public void setAliveBillEntryList(List<CPAliveBillEntrySet> aliveBillEntryList) {
+    /**
+     * Sets alive bill entry list.
+     *
+     * @param aliveBillEntryList the alive bill entry list
+     */
+    public void setAliveBillEntryList(List<CPAliveBillEntrySet> aliveBillEntryList) {
 		this.aliveBillEntryList = aliveBillEntryList;
 	}
-	public List<CPAliveBillEntrySet> getAliveBillEntryList( ) {
+
+    /**
+     * Gets alive bill entry list.
+     *
+     * @return the alive bill entry list
+     */
+    public List<CPAliveBillEntrySet> getAliveBillEntryList( ) {
 		return this.aliveBillEntryList;
 	}
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险批单项
  *
  * @author auto create
- * @since 1.0, 2016-12-29 17:49:22
+ * @since 1.0, 2018-04-03 11:28:52
  */
 public class InsEndorseItem extends AlipayObject {
 
-	private static final long serialVersionUID = 2872638696362547859L;
+	private static final long serialVersionUID = 2521893813544841755L;
 
 	/**
 	 * 批单项新值
@@ -31,24 +31,57 @@ public class InsEndorseItem extends AlipayObject {
 	@ApiField("type")
 	private Long type;
 
-	public String getNewValue() {
+    /**
+     * Gets new value.
+     *
+     * @return the new value
+     */
+    public String getNewValue() {
 		return this.newValue;
 	}
-	public void setNewValue(String newValue) {
+
+    /**
+     * Sets new value.
+     *
+     * @param newValue the new value
+     */
+    public void setNewValue(String newValue) {
 		this.newValue = newValue;
 	}
 
-	public String getOldValue() {
+    /**
+     * Gets old value.
+     *
+     * @return the old value
+     */
+    public String getOldValue() {
 		return this.oldValue;
 	}
-	public void setOldValue(String oldValue) {
+
+    /**
+     * Sets old value.
+     *
+     * @param oldValue the old value
+     */
+    public void setOldValue(String oldValue) {
 		this.oldValue = oldValue;
 	}
 
-	public Long getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public Long getType() {
 		return this.type;
 	}
-	public void setType(Long type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(Long type) {
 		this.type = type;
 	}
 

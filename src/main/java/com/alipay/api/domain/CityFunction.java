@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CityFunction extends AlipayObject {
 
-	private static final long serialVersionUID = 2816879675665966465L;
+	private static final long serialVersionUID = 1137954292347374582L;
 
 	/**
 	 * 城市标准编码
@@ -35,24 +35,57 @@ public class CityFunction extends AlipayObject {
 	@ApiField("string")
 	private List<String> functionType;
 
-	public String getCityCode() {
+    /**
+     * Gets city code.
+     *
+     * @return the city code
+     */
+    public String getCityCode() {
 		return this.cityCode;
 	}
-	public void setCityCode(String cityCode) {
+
+    /**
+     * Sets city code.
+     *
+     * @param cityCode the city code
+     */
+    public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
 	}
 
-	public String getCityName() {
+    /**
+     * Gets city name.
+     *
+     * @return the city name
+     */
+    public String getCityName() {
 		return this.cityName;
 	}
-	public void setCityName(String cityName) {
+
+    /**
+     * Sets city name.
+     *
+     * @param cityName the city name
+     */
+    public void setCityName(String cityName) {
 		this.cityName = cityName;
 	}
 
-	public List<String> getFunctionType() {
+    /**
+     * Gets function type.
+     *
+     * @return the function type
+     */
+    public List<String> getFunctionType() {
 		return this.functionType;
 	}
-	public void setFunctionType(List<String> functionType) {
+
+    /**
+     * Sets function type.
+     *
+     * @param functionType the function type
+     */
+    public void setFunctionType(List<String> functionType) {
 		this.functionType = functionType;
 	}
 

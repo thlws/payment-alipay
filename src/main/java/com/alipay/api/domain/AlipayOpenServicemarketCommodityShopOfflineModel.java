@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenServicemarketCommodityShopOfflineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4447119461746693961L;
+	private static final long serialVersionUID = 8139648187768551461L;
 
 	/**
 	 * 服务商户ID
@@ -25,17 +25,39 @@ public class AlipayOpenServicemarketCommodityShopOfflineModel extends AlipayObje
 	@ApiField("shop_id")
 	private String shopId;
 
-	public String getCommodityId() {
+    /**
+     * Gets commodity id.
+     *
+     * @return the commodity id
+     */
+    public String getCommodityId() {
 		return this.commodityId;
 	}
-	public void setCommodityId(String commodityId) {
+
+    /**
+     * Sets commodity id.
+     *
+     * @param commodityId the commodity id
+     */
+    public void setCommodityId(String commodityId) {
 		this.commodityId = commodityId;
 	}
 
-	public String getShopId() {
+    /**
+     * Gets shop id.
+     *
+     * @return the shop id
+     */
+    public String getShopId() {
 		return this.shopId;
 	}
-	public void setShopId(String shopId) {
+
+    /**
+     * Sets shop id.
+     *
+     * @param shopId the shop id
+     */
+    public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 

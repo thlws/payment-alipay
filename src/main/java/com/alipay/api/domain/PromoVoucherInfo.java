@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PromoVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1757141619131668589L;
+	private static final long serialVersionUID = 6245223966535212721L;
 
 	/**
 	 * 折扣（折扣券类型才有）
@@ -121,115 +121,291 @@ BUY_SEND_OTHER; // 买就送券(买a送b)
 	@ApiField("voucher_type")
 	private String voucherType;
 
-	public String getDiscount() {
+    /**
+     * Gets discount.
+     *
+     * @return the discount
+     */
+    public String getDiscount() {
 		return this.discount;
 	}
-	public void setDiscount(String discount) {
+
+    /**
+     * Sets discount.
+     *
+     * @param discount the discount
+     */
+    public void setDiscount(String discount) {
 		this.discount = discount;
 	}
 
-	public String getIsAutoObtain() {
+    /**
+     * Gets is auto obtain.
+     *
+     * @return the is auto obtain
+     */
+    public String getIsAutoObtain() {
 		return this.isAutoObtain;
 	}
-	public void setIsAutoObtain(String isAutoObtain) {
+
+    /**
+     * Sets is auto obtain.
+     *
+     * @param isAutoObtain the is auto obtain
+     */
+    public void setIsAutoObtain(String isAutoObtain) {
 		this.isAutoObtain = isAutoObtain;
 	}
 
-	public String getIsMallVoucher() {
+    /**
+     * Gets is mall voucher.
+     *
+     * @return the is mall voucher
+     */
+    public String getIsMallVoucher() {
 		return this.isMallVoucher;
 	}
-	public void setIsMallVoucher(String isMallVoucher) {
+
+    /**
+     * Sets is mall voucher.
+     *
+     * @param isMallVoucher the is mall voucher
+     */
+    public void setIsMallVoucher(String isMallVoucher) {
 		this.isMallVoucher = isMallVoucher;
 	}
 
-	public String getItemBrandName() {
+    /**
+     * Gets item brand name.
+     *
+     * @return the item brand name
+     */
+    public String getItemBrandName() {
 		return this.itemBrandName;
 	}
-	public void setItemBrandName(String itemBrandName) {
+
+    /**
+     * Sets item brand name.
+     *
+     * @param itemBrandName the item brand name
+     */
+    public void setItemBrandName(String itemBrandName) {
 		this.itemBrandName = itemBrandName;
 	}
 
-	public Date getItemGmtEnd() {
+    /**
+     * Gets item gmt end.
+     *
+     * @return the item gmt end
+     */
+    public Date getItemGmtEnd() {
 		return this.itemGmtEnd;
 	}
-	public void setItemGmtEnd(Date itemGmtEnd) {
+
+    /**
+     * Sets item gmt end.
+     *
+     * @param itemGmtEnd the item gmt end
+     */
+    public void setItemGmtEnd(Date itemGmtEnd) {
 		this.itemGmtEnd = itemGmtEnd;
 	}
 
-	public Date getItemGmtStart() {
+    /**
+     * Gets item gmt start.
+     *
+     * @return the item gmt start
+     */
+    public Date getItemGmtStart() {
 		return this.itemGmtStart;
 	}
-	public void setItemGmtStart(Date itemGmtStart) {
+
+    /**
+     * Sets item gmt start.
+     *
+     * @param itemGmtStart the item gmt start
+     */
+    public void setItemGmtStart(Date itemGmtStart) {
 		this.itemGmtStart = itemGmtStart;
 	}
 
-	public String getItemId() {
+    /**
+     * Gets item id.
+     *
+     * @return the item id
+     */
+    public String getItemId() {
 		return this.itemId;
 	}
-	public void setItemId(String itemId) {
+
+    /**
+     * Sets item id.
+     *
+     * @param itemId the item id
+     */
+    public void setItemId(String itemId) {
 		this.itemId = itemId;
 	}
 
-	public String getItemLogo() {
+    /**
+     * Gets item logo.
+     *
+     * @return the item logo
+     */
+    public String getItemLogo() {
 		return this.itemLogo;
 	}
-	public void setItemLogo(String itemLogo) {
+
+    /**
+     * Sets item logo.
+     *
+     * @param itemLogo the item logo
+     */
+    public void setItemLogo(String itemLogo) {
 		this.itemLogo = itemLogo;
 	}
 
-	public String getItemName() {
+    /**
+     * Gets item name.
+     *
+     * @return the item name
+     */
+    public String getItemName() {
 		return this.itemName;
 	}
-	public void setItemName(String itemName) {
+
+    /**
+     * Sets item name.
+     *
+     * @param itemName the item name
+     */
+    public void setItemName(String itemName) {
 		this.itemName = itemName;
 	}
 
-	public String getSendItemName() {
+    /**
+     * Gets send item name.
+     *
+     * @return the send item name
+     */
+    public String getSendItemName() {
 		return this.sendItemName;
 	}
-	public void setSendItemName(String sendItemName) {
+
+    /**
+     * Sets send item name.
+     *
+     * @param sendItemName the send item name
+     */
+    public void setSendItemName(String sendItemName) {
 		this.sendItemName = sendItemName;
 	}
 
-	public String getShopId() {
+    /**
+     * Gets shop id.
+     *
+     * @return the shop id
+     */
+    public String getShopId() {
 		return this.shopId;
 	}
-	public void setShopId(String shopId) {
+
+    /**
+     * Sets shop id.
+     *
+     * @param shopId the shop id
+     */
+    public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 
-	public String getShopName() {
+    /**
+     * Gets shop name.
+     *
+     * @return the shop name
+     */
+    public String getShopName() {
 		return this.shopName;
 	}
-	public void setShopName(String shopName) {
+
+    /**
+     * Sets shop name.
+     *
+     * @param shopName the shop name
+     */
+    public void setShopName(String shopName) {
 		this.shopName = shopName;
 	}
 
-	public String getUseConditionAmount() {
+    /**
+     * Gets use condition amount.
+     *
+     * @return the use condition amount
+     */
+    public String getUseConditionAmount() {
 		return this.useConditionAmount;
 	}
-	public void setUseConditionAmount(String useConditionAmount) {
+
+    /**
+     * Sets use condition amount.
+     *
+     * @param useConditionAmount the use condition amount
+     */
+    public void setUseConditionAmount(String useConditionAmount) {
 		this.useConditionAmount = useConditionAmount;
 	}
 
-	public String getValueAmount() {
+    /**
+     * Gets value amount.
+     *
+     * @return the value amount
+     */
+    public String getValueAmount() {
 		return this.valueAmount;
 	}
-	public void setValueAmount(String valueAmount) {
+
+    /**
+     * Sets value amount.
+     *
+     * @param valueAmount the value amount
+     */
+    public void setValueAmount(String valueAmount) {
 		this.valueAmount = valueAmount;
 	}
 
-	public String getVoucherDetailUrl() {
+    /**
+     * Gets voucher detail url.
+     *
+     * @return the voucher detail url
+     */
+    public String getVoucherDetailUrl() {
 		return this.voucherDetailUrl;
 	}
-	public void setVoucherDetailUrl(String voucherDetailUrl) {
+
+    /**
+     * Sets voucher detail url.
+     *
+     * @param voucherDetailUrl the voucher detail url
+     */
+    public void setVoucherDetailUrl(String voucherDetailUrl) {
 		this.voucherDetailUrl = voucherDetailUrl;
 	}
 
-	public String getVoucherType() {
+    /**
+     * Gets voucher type.
+     *
+     * @return the voucher type
+     */
+    public String getVoucherType() {
 		return this.voucherType;
 	}
-	public void setVoucherType(String voucherType) {
+
+    /**
+     * Sets voucher type.
+     *
+     * @param voucherType the voucher type
+     */
+    public void setVoucherType(String voucherType) {
 		this.voucherType = voucherType;
 	}
 

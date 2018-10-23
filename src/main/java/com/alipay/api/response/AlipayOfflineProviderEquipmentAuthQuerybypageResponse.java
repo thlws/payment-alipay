@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.provider.equipment.auth.querybypage response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-03-29 17:00:49
  */
 public class AlipayOfflineProviderEquipmentAuthQuerybypageResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7134889466283643113L;
+	private static final long serialVersionUID = 5837961963962211372L;
 
 	/** 
 	 * 机具解绑按照条件分页查询返回信息
@@ -30,17 +30,39 @@ public class AlipayOfflineProviderEquipmentAuthQuerybypageResponse extends Alipa
 	@ApiField("total")
 	private Long total;
 
-	public void setEquipmentauthremovequerybypagelist(List<EquipmentAuthRemoveQueryBypageDTO> equipmentauthremovequerybypagelist) {
+    /**
+     * Sets equipmentauthremovequerybypagelist.
+     *
+     * @param equipmentauthremovequerybypagelist the equipmentauthremovequerybypagelist
+     */
+    public void setEquipmentauthremovequerybypagelist(List<EquipmentAuthRemoveQueryBypageDTO> equipmentauthremovequerybypagelist) {
 		this.equipmentauthremovequerybypagelist = equipmentauthremovequerybypagelist;
 	}
-	public List<EquipmentAuthRemoveQueryBypageDTO> getEquipmentauthremovequerybypagelist( ) {
+
+    /**
+     * Gets equipmentauthremovequerybypagelist.
+     *
+     * @return the equipmentauthremovequerybypagelist
+     */
+    public List<EquipmentAuthRemoveQueryBypageDTO> getEquipmentauthremovequerybypagelist( ) {
 		return this.equipmentauthremovequerybypagelist;
 	}
 
-	public void setTotal(Long total) {
+    /**
+     * Sets total.
+     *
+     * @param total the total
+     */
+    public void setTotal(Long total) {
 		this.total = total;
 	}
-	public Long getTotal( ) {
+
+    /**
+     * Gets total.
+     *
+     * @return the total
+     */
+    public Long getTotal( ) {
 		return this.total;
 	}
 

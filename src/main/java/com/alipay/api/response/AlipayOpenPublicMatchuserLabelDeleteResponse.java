@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.matchuser.label.delete response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-01 11:25:22
+ * @since 1.0, 2018-07-25 13:51:59
  */
 public class AlipayOpenPublicMatchuserLabelDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4619725353694874275L;
+	private static final long serialVersionUID = 4145856883612873124L;
 
 	/** 
 	 * 用户打标失败数量
@@ -30,17 +30,39 @@ public class AlipayOpenPublicMatchuserLabelDeleteResponse extends AlipayResponse
 	@ApiField("error_matcher")
 	private List<ErrorMatcher> errorMatchers;
 
-	public void setErrorCount(Long errorCount) {
+    /**
+     * Sets error count.
+     *
+     * @param errorCount the error count
+     */
+    public void setErrorCount(Long errorCount) {
 		this.errorCount = errorCount;
 	}
-	public Long getErrorCount( ) {
+
+    /**
+     * Gets error count.
+     *
+     * @return the error count
+     */
+    public Long getErrorCount( ) {
 		return this.errorCount;
 	}
 
-	public void setErrorMatchers(List<ErrorMatcher> errorMatchers) {
+    /**
+     * Sets error matchers.
+     *
+     * @param errorMatchers the error matchers
+     */
+    public void setErrorMatchers(List<ErrorMatcher> errorMatchers) {
 		this.errorMatchers = errorMatchers;
 	}
-	public List<ErrorMatcher> getErrorMatchers( ) {
+
+    /**
+     * Gets error matchers.
+     *
+     * @return the error matchers
+     */
+    public List<ErrorMatcher> getErrorMatchers( ) {
 		return this.errorMatchers;
 	}
 

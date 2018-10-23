@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.craftsman.data.work.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-10-11 20:35:17
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class KoubeiCraftsmanDataWorkBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8115661595443419177L;
+	private static final long serialVersionUID = 2244655153467938284L;
 
 	/** 
 	 * 当前页码
@@ -48,38 +48,93 @@ public class KoubeiCraftsmanDataWorkBatchqueryResponse extends AlipayResponse {
 	@ApiField("craftsman_work_open_model")
 	private List<CraftsmanWorkOpenModel> works;
 
-	public void setCurrentPageNo(Long currentPageNo) {
+    /**
+     * Sets current page no.
+     *
+     * @param currentPageNo the current page no
+     */
+    public void setCurrentPageNo(Long currentPageNo) {
 		this.currentPageNo = currentPageNo;
 	}
-	public Long getCurrentPageNo( ) {
+
+    /**
+     * Gets current page no.
+     *
+     * @return the current page no
+     */
+    public Long getCurrentPageNo( ) {
 		return this.currentPageNo;
 	}
 
-	public void setPageSize(Long pageSize) {
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}
-	public Long getPageSize( ) {
+
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public Long getPageSize( ) {
 		return this.pageSize;
 	}
 
-	public void setTotalPageNo(Long totalPageNo) {
+    /**
+     * Sets total page no.
+     *
+     * @param totalPageNo the total page no
+     */
+    public void setTotalPageNo(Long totalPageNo) {
 		this.totalPageNo = totalPageNo;
 	}
-	public Long getTotalPageNo( ) {
+
+    /**
+     * Gets total page no.
+     *
+     * @return the total page no
+     */
+    public Long getTotalPageNo( ) {
 		return this.totalPageNo;
 	}
 
-	public void setTotalWorks(Long totalWorks) {
+    /**
+     * Sets total works.
+     *
+     * @param totalWorks the total works
+     */
+    public void setTotalWorks(Long totalWorks) {
 		this.totalWorks = totalWorks;
 	}
-	public Long getTotalWorks( ) {
+
+    /**
+     * Gets total works.
+     *
+     * @return the total works
+     */
+    public Long getTotalWorks( ) {
 		return this.totalWorks;
 	}
 
-	public void setWorks(List<CraftsmanWorkOpenModel> works) {
+    /**
+     * Sets works.
+     *
+     * @param works the works
+     */
+    public void setWorks(List<CraftsmanWorkOpenModel> works) {
 		this.works = works;
 	}
-	public List<CraftsmanWorkOpenModel> getWorks( ) {
+
+    /**
+     * Gets works.
+     *
+     * @return the works
+     */
+    public List<CraftsmanWorkOpenModel> getWorks( ) {
 		return this.works;
 	}
 

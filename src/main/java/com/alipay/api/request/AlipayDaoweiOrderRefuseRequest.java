@@ -10,9 +10,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.daowei.order.refuse request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-01-16 11:30:46
+ * @since 1.0, 2018-03-23 13:24:12
  */
 public class AlipayDaoweiOrderRefuseRequest implements AlipayRequest<AlipayDaoweiOrderRefuseResponse> {
 
@@ -24,10 +24,21 @@ public class AlipayDaoweiOrderRefuseRequest implements AlipayRequest<AlipayDaowe
 	 */
 	private String bizContent;
 
-	public void setBizContent(String bizContent) {
+    /**
+     * Sets biz content.
+     *
+     * @param bizContent the biz content
+     */
+    public void setBizContent(String bizContent) {
 		this.bizContent = bizContent;
 	}
-	public String getBizContent() {
+
+    /**
+     * Gets biz content.
+     *
+     * @return the biz content
+     */
+    public String getBizContent() {
 		return this.bizContent;
 	}
 	private String terminalType;
@@ -99,7 +110,13 @@ public class AlipayDaoweiOrderRefuseRequest implements AlipayRequest<AlipayDaowe
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

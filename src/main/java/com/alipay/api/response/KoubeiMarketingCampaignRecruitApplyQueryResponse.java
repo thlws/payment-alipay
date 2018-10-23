@@ -10,13 +10,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.campaign.recruit.apply.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-02-20 13:50:48
  */
 public class KoubeiMarketingCampaignRecruitApplyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4612257643678575412L;
+	private static final long serialVersionUID = 3216168213468595926L;
 
 	/** 
 	 * 活动开始购买时间
@@ -55,45 +55,111 @@ public class KoubeiMarketingCampaignRecruitApplyQueryResponse extends AlipayResp
 	@ApiField("prehot_time")
 	private Date prehotTime;
 
-	public void setBoughtTime(Date boughtTime) {
+    /**
+     * Sets bought time.
+     *
+     * @param boughtTime the bought time
+     */
+    public void setBoughtTime(Date boughtTime) {
 		this.boughtTime = boughtTime;
 	}
-	public Date getBoughtTime( ) {
+
+    /**
+     * Gets bought time.
+     *
+     * @return the bought time
+     */
+    public Date getBoughtTime( ) {
 		return this.boughtTime;
 	}
 
-	public void setEndTime(Date endTime) {
+    /**
+     * Sets end time.
+     *
+     * @param endTime the end time
+     */
+    public void setEndTime(Date endTime) {
 		this.endTime = endTime;
 	}
-	public Date getEndTime( ) {
+
+    /**
+     * Gets end time.
+     *
+     * @return the end time
+     */
+    public Date getEndTime( ) {
 		return this.endTime;
 	}
 
-	public void setItemCount(String itemCount) {
+    /**
+     * Sets item count.
+     *
+     * @param itemCount the item count
+     */
+    public void setItemCount(String itemCount) {
 		this.itemCount = itemCount;
 	}
-	public String getItemCount( ) {
+
+    /**
+     * Gets item count.
+     *
+     * @return the item count
+     */
+    public String getItemCount( ) {
 		return this.itemCount;
 	}
 
-	public void setItemInfo(List<RecruitItemApplyData> itemInfo) {
+    /**
+     * Sets item info.
+     *
+     * @param itemInfo the item info
+     */
+    public void setItemInfo(List<RecruitItemApplyData> itemInfo) {
 		this.itemInfo = itemInfo;
 	}
-	public List<RecruitItemApplyData> getItemInfo( ) {
+
+    /**
+     * Gets item info.
+     *
+     * @return the item info
+     */
+    public List<RecruitItemApplyData> getItemInfo( ) {
 		return this.itemInfo;
 	}
 
-	public void setName(String name) {
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
-	public String getName( ) {
+
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName( ) {
 		return this.name;
 	}
 
-	public void setPrehotTime(Date prehotTime) {
+    /**
+     * Sets prehot time.
+     *
+     * @param prehotTime the prehot time
+     */
+    public void setPrehotTime(Date prehotTime) {
 		this.prehotTime = prehotTime;
 	}
-	public Date getPrehotTime( ) {
+
+    /**
+     * Gets prehot time.
+     *
+     * @return the prehot time
+     */
+    public Date getPrehotTime( ) {
 		return this.prehotTime;
 	}
 

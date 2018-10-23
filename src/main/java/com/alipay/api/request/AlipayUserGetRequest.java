@@ -9,9 +9,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.user.get request
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-07-29 19:51:20
+ * @since 1.0, 2018-07-24 16:35:00
  */
 public class AlipayUserGetRequest implements AlipayRequest<AlipayUserGetResponse> {
 
@@ -23,10 +23,21 @@ public class AlipayUserGetRequest implements AlipayRequest<AlipayUserGetResponse
 	 */
 	private String fields;
 
-	public void setFields(String fields) {
+    /**
+     * Sets fields.
+     *
+     * @param fields the fields
+     */
+    public void setFields(String fields) {
 		this.fields = fields;
 	}
-	public String getFields() {
+
+    /**
+     * Gets fields.
+     *
+     * @return the fields
+     */
+    public String getFields() {
 		return this.fields;
 	}
 	private String terminalType;
@@ -98,7 +109,13 @@ public class AlipayUserGetRequest implements AlipayRequest<AlipayUserGetResponse
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

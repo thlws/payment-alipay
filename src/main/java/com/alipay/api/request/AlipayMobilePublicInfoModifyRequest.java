@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.mobile.public.info.modify request
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-09-01 20:55:35
  */
@@ -58,59 +58,147 @@ public class AlipayMobilePublicInfoModifyRequest implements AlipayRequest<Alipay
 	 */
 	private String shopPic3;
 
-	public void setAppName(String appName) {
+    /**
+     * Sets app name.
+     *
+     * @param appName the app name
+     */
+    public void setAppName(String appName) {
 		this.appName = appName;
 	}
-	public String getAppName() {
+
+    /**
+     * Gets app name.
+     *
+     * @return the app name
+     */
+    public String getAppName() {
 		return this.appName;
 	}
 
-	public void setAuthPic(String authPic) {
+    /**
+     * Sets auth pic.
+     *
+     * @param authPic the auth pic
+     */
+    public void setAuthPic(String authPic) {
 		this.authPic = authPic;
 	}
-	public String getAuthPic() {
+
+    /**
+     * Gets auth pic.
+     *
+     * @return the auth pic
+     */
+    public String getAuthPic() {
 		return this.authPic;
 	}
 
-	public void setLicenseUrl(String licenseUrl) {
+    /**
+     * Sets license url.
+     *
+     * @param licenseUrl the license url
+     */
+    public void setLicenseUrl(String licenseUrl) {
 		this.licenseUrl = licenseUrl;
 	}
-	public String getLicenseUrl() {
+
+    /**
+     * Gets license url.
+     *
+     * @return the license url
+     */
+    public String getLicenseUrl() {
 		return this.licenseUrl;
 	}
 
-	public void setLogoUrl(String logoUrl) {
+    /**
+     * Sets logo url.
+     *
+     * @param logoUrl the logo url
+     */
+    public void setLogoUrl(String logoUrl) {
 		this.logoUrl = logoUrl;
 	}
-	public String getLogoUrl() {
+
+    /**
+     * Gets logo url.
+     *
+     * @return the logo url
+     */
+    public String getLogoUrl() {
 		return this.logoUrl;
 	}
 
-	public void setPublicGreeting(String publicGreeting) {
+    /**
+     * Sets public greeting.
+     *
+     * @param publicGreeting the public greeting
+     */
+    public void setPublicGreeting(String publicGreeting) {
 		this.publicGreeting = publicGreeting;
 	}
-	public String getPublicGreeting() {
+
+    /**
+     * Gets public greeting.
+     *
+     * @return the public greeting
+     */
+    public String getPublicGreeting() {
 		return this.publicGreeting;
 	}
 
-	public void setShopPic1(String shopPic1) {
+    /**
+     * Sets shop pic 1.
+     *
+     * @param shopPic1 the shop pic 1
+     */
+    public void setShopPic1(String shopPic1) {
 		this.shopPic1 = shopPic1;
 	}
-	public String getShopPic1() {
+
+    /**
+     * Gets shop pic 1.
+     *
+     * @return the shop pic 1
+     */
+    public String getShopPic1() {
 		return this.shopPic1;
 	}
 
-	public void setShopPic2(String shopPic2) {
+    /**
+     * Sets shop pic 2.
+     *
+     * @param shopPic2 the shop pic 2
+     */
+    public void setShopPic2(String shopPic2) {
 		this.shopPic2 = shopPic2;
 	}
-	public String getShopPic2() {
+
+    /**
+     * Gets shop pic 2.
+     *
+     * @return the shop pic 2
+     */
+    public String getShopPic2() {
 		return this.shopPic2;
 	}
 
-	public void setShopPic3(String shopPic3) {
+    /**
+     * Sets shop pic 3.
+     *
+     * @param shopPic3 the shop pic 3
+     */
+    public void setShopPic3(String shopPic3) {
 		this.shopPic3 = shopPic3;
 	}
-	public String getShopPic3() {
+
+    /**
+     * Gets shop pic 3.
+     *
+     * @return the shop pic 3
+     */
+    public String getShopPic3() {
 		return this.shopPic3;
 	}
 	private String terminalType;
@@ -189,7 +277,13 @@ public class AlipayMobilePublicInfoModifyRequest implements AlipayRequest<Alipay
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

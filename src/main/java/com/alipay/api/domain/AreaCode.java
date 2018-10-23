@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AreaCode extends AlipayObject {
 
-	private static final long serialVersionUID = 8239969895295876863L;
+	private static final long serialVersionUID = 7531771166689926711L;
 
 	/**
 	 * 区域类型
@@ -29,17 +29,39 @@ AREA_DIST:区县代码；
 	@ApiField("code")
 	private String code;
 
-	public String getAreaType() {
+    /**
+     * Gets area type.
+     *
+     * @return the area type
+     */
+    public String getAreaType() {
 		return this.areaType;
 	}
-	public void setAreaType(String areaType) {
+
+    /**
+     * Sets area type.
+     *
+     * @param areaType the area type
+     */
+    public void setAreaType(String areaType) {
 		this.areaType = areaType;
 	}
 
-	public String getCode() {
+    /**
+     * Gets code.
+     *
+     * @return the code
+     */
+    public String getCode() {
 		return this.code;
 	}
-	public void setCode(String code) {
+
+    /**
+     * Sets code.
+     *
+     * @param code the code
+     */
+    public void setCode(String code) {
 		this.code = code;
 	}
 

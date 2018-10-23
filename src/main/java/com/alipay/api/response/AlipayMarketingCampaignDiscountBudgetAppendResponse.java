@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.campaign.discount.budget.append response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-08 12:53:50
+ * @since 1.0, 2017-11-17 11:19:00
  */
 public class AlipayMarketingCampaignDiscountBudgetAppendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4338274293144115841L;
+	private static final long serialVersionUID = 6321728265578888119L;
 
 	/** 
 	 * 预算ID
@@ -20,10 +20,21 @@ public class AlipayMarketingCampaignDiscountBudgetAppendResponse extends AlipayR
 	@ApiField("budget_id")
 	private String budgetId;
 
-	public void setBudgetId(String budgetId) {
+    /**
+     * Sets budget id.
+     *
+     * @param budgetId the budget id
+     */
+    public void setBudgetId(String budgetId) {
 		this.budgetId = budgetId;
 	}
-	public String getBudgetId( ) {
+
+    /**
+     * Gets budget id.
+     *
+     * @return the budget id
+     */
+    public String getBudgetId( ) {
 		return this.budgetId;
 	}
 

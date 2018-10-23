@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsCreateCertificateRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 8173333923643862294L;
+	private static final long serialVersionUID = 1882369588752957693L;
 
 	/**
 	 * 扩展字段
@@ -81,80 +81,201 @@ public class InsCreateCertificateRequest extends AlipayObject {
 	@ApiField("owner_uid")
 	private String ownerUid;
 
-	public String getBizData() {
+    /**
+     * Gets biz data.
+     *
+     * @return the biz data
+     */
+    public String getBizData() {
 		return this.bizData;
 	}
-	public void setBizData(String bizData) {
+
+    /**
+     * Sets biz data.
+     *
+     * @param bizData the biz data
+     */
+    public void setBizData(String bizData) {
 		this.bizData = bizData;
 	}
 
-	public String getCertificateType() {
+    /**
+     * Gets certificate type.
+     *
+     * @return the certificate type
+     */
+    public String getCertificateType() {
 		return this.certificateType;
 	}
-	public void setCertificateType(String certificateType) {
+
+    /**
+     * Sets certificate type.
+     *
+     * @param certificateType the certificate type
+     */
+    public void setCertificateType(String certificateType) {
 		this.certificateType = certificateType;
 	}
 
-	public Date getEffectTime() {
+    /**
+     * Gets effect time.
+     *
+     * @return the effect time
+     */
+    public Date getEffectTime() {
 		return this.effectTime;
 	}
-	public void setEffectTime(Date effectTime) {
+
+    /**
+     * Sets effect time.
+     *
+     * @param effectTime the effect time
+     */
+    public void setEffectTime(Date effectTime) {
 		this.effectTime = effectTime;
 	}
 
-	public Date getExpireTime() {
+    /**
+     * Gets expire time.
+     *
+     * @return the expire time
+     */
+    public Date getExpireTime() {
 		return this.expireTime;
 	}
-	public void setExpireTime(Date expireTime) {
+
+    /**
+     * Sets expire time.
+     *
+     * @param expireTime the expire time
+     */
+    public void setExpireTime(Date expireTime) {
 		this.expireTime = expireTime;
 	}
 
-	public String getFaceValue() {
+    /**
+     * Gets face value.
+     *
+     * @return the face value
+     */
+    public String getFaceValue() {
 		return this.faceValue;
 	}
-	public void setFaceValue(String faceValue) {
+
+    /**
+     * Sets face value.
+     *
+     * @param faceValue the face value
+     */
+    public void setFaceValue(String faceValue) {
 		this.faceValue = faceValue;
 	}
 
-	public String getInsPolicyNo() {
+    /**
+     * Gets ins policy no.
+     *
+     * @return the ins policy no
+     */
+    public String getInsPolicyNo() {
 		return this.insPolicyNo;
 	}
-	public void setInsPolicyNo(String insPolicyNo) {
+
+    /**
+     * Sets ins policy no.
+     *
+     * @param insPolicyNo the ins policy no
+     */
+    public void setInsPolicyNo(String insPolicyNo) {
 		this.insPolicyNo = insPolicyNo;
 	}
 
-	public String getInstId() {
+    /**
+     * Gets inst id.
+     *
+     * @return the inst id
+     */
+    public String getInstId() {
 		return this.instId;
 	}
-	public void setInstId(String instId) {
+
+    /**
+     * Sets inst id.
+     *
+     * @param instId the inst id
+     */
+    public void setInstId(String instId) {
 		this.instId = instId;
 	}
 
-	public String getOrderId() {
+    /**
+     * Gets order id.
+     *
+     * @return the order id
+     */
+    public String getOrderId() {
 		return this.orderId;
 	}
-	public void setOrderId(String orderId) {
+
+    /**
+     * Sets order id.
+     *
+     * @param orderId the order id
+     */
+    public void setOrderId(String orderId) {
 		this.orderId = orderId;
 	}
 
-	public String getOrderSource() {
+    /**
+     * Gets order source.
+     *
+     * @return the order source
+     */
+    public String getOrderSource() {
 		return this.orderSource;
 	}
-	public void setOrderSource(String orderSource) {
+
+    /**
+     * Sets order source.
+     *
+     * @param orderSource the order source
+     */
+    public void setOrderSource(String orderSource) {
 		this.orderSource = orderSource;
 	}
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
-	public String getOwnerUid() {
+    /**
+     * Gets owner uid.
+     *
+     * @return the owner uid
+     */
+    public String getOwnerUid() {
 		return this.ownerUid;
 	}
-	public void setOwnerUid(String ownerUid) {
+
+    /**
+     * Sets owner uid.
+     *
+     * @param ownerUid the owner uid
+     */
+    public void setOwnerUid(String ownerUid) {
 		this.ownerUid = ownerUid;
 	}
 

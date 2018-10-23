@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分账明细
  *
  * @author auto create
- * @since 1.0, 2017-06-06 18:11:24
+ * @since 1.0, 2018-09-06 14:10:03
  */
 public class RoyaltyDetailInfos extends AlipayObject {
 
-	private static final long serialVersionUID = 4789378779414776974L;
+	private static final long serialVersionUID = 3664757311272126292L;
 
 	/**
 	 * 分账的金额，单位为元
@@ -53,13 +53,18 @@ public class RoyaltyDetailInfos extends AlipayObject {
 	private Long serialNo;
 
 	/**
-	 * 如果转入账号类型为userId
+	 * 如果转入账号类型为userId，本参数为接受分账金额的支付宝账号对应的支付宝唯一用户号。以2088开头的纯16位数字。
+&#61548;	如果转入账号类型为bankIndex，本参数为28位的银行编号（商户和支付宝签约时确定）。
+如果转入账号类型为storeId，本参数为商户的门店ID。
 	 */
 	@ApiField("trans_in")
 	private String transIn;
 
 	/**
-	 * 接受分账金额的账户类型
+	 * 接受分账金额的账户类型：
+&#61548;	userId：支付宝账号对应的支付宝唯一用户号。
+&#61548;	bankIndex：分账到银行账户的银行编号。目前暂时只支持分账到一个银行编号。
+storeId：分账到门店对应的银行卡编号。
 默认值为userId。
 	 */
 	@ApiField("trans_in_type")
@@ -79,73 +84,183 @@ public class RoyaltyDetailInfos extends AlipayObject {
 	@ApiField("trans_out_type")
 	private String transOutType;
 
-	public Long getAmount() {
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public Long getAmount() {
 		return this.amount;
 	}
-	public void setAmount(Long amount) {
+
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(Long amount) {
 		this.amount = amount;
 	}
 
-	public String getAmountPercentage() {
+    /**
+     * Gets amount percentage.
+     *
+     * @return the amount percentage
+     */
+    public String getAmountPercentage() {
 		return this.amountPercentage;
 	}
-	public void setAmountPercentage(String amountPercentage) {
+
+    /**
+     * Sets amount percentage.
+     *
+     * @param amountPercentage the amount percentage
+     */
+    public void setAmountPercentage(String amountPercentage) {
 		this.amountPercentage = amountPercentage;
 	}
 
-	public String getBatchNo() {
+    /**
+     * Gets batch no.
+     *
+     * @return the batch no
+     */
+    public String getBatchNo() {
 		return this.batchNo;
 	}
-	public void setBatchNo(String batchNo) {
+
+    /**
+     * Sets batch no.
+     *
+     * @param batchNo the batch no
+     */
+    public void setBatchNo(String batchNo) {
 		this.batchNo = batchNo;
 	}
 
-	public String getDesc() {
+    /**
+     * Gets desc.
+     *
+     * @return the desc
+     */
+    public String getDesc() {
 		return this.desc;
 	}
-	public void setDesc(String desc) {
+
+    /**
+     * Sets desc.
+     *
+     * @param desc the desc
+     */
+    public void setDesc(String desc) {
 		this.desc = desc;
 	}
 
-	public String getOutRelationId() {
+    /**
+     * Gets out relation id.
+     *
+     * @return the out relation id
+     */
+    public String getOutRelationId() {
 		return this.outRelationId;
 	}
-	public void setOutRelationId(String outRelationId) {
+
+    /**
+     * Sets out relation id.
+     *
+     * @param outRelationId the out relation id
+     */
+    public void setOutRelationId(String outRelationId) {
 		this.outRelationId = outRelationId;
 	}
 
-	public Long getSerialNo() {
+    /**
+     * Gets serial no.
+     *
+     * @return the serial no
+     */
+    public Long getSerialNo() {
 		return this.serialNo;
 	}
-	public void setSerialNo(Long serialNo) {
+
+    /**
+     * Sets serial no.
+     *
+     * @param serialNo the serial no
+     */
+    public void setSerialNo(Long serialNo) {
 		this.serialNo = serialNo;
 	}
 
-	public String getTransIn() {
+    /**
+     * Gets trans in.
+     *
+     * @return the trans in
+     */
+    public String getTransIn() {
 		return this.transIn;
 	}
-	public void setTransIn(String transIn) {
+
+    /**
+     * Sets trans in.
+     *
+     * @param transIn the trans in
+     */
+    public void setTransIn(String transIn) {
 		this.transIn = transIn;
 	}
 
-	public String getTransInType() {
+    /**
+     * Gets trans in type.
+     *
+     * @return the trans in type
+     */
+    public String getTransInType() {
 		return this.transInType;
 	}
-	public void setTransInType(String transInType) {
+
+    /**
+     * Sets trans in type.
+     *
+     * @param transInType the trans in type
+     */
+    public void setTransInType(String transInType) {
 		this.transInType = transInType;
 	}
 
-	public String getTransOut() {
+    /**
+     * Gets trans out.
+     *
+     * @return the trans out
+     */
+    public String getTransOut() {
 		return this.transOut;
 	}
-	public void setTransOut(String transOut) {
+
+    /**
+     * Sets trans out.
+     *
+     * @param transOut the trans out
+     */
+    public void setTransOut(String transOut) {
 		this.transOut = transOut;
 	}
 
-	public String getTransOutType() {
+    /**
+     * Gets trans out type.
+     *
+     * @return the trans out type
+     */
+    public String getTransOutType() {
 		return this.transOutType;
 	}
-	public void setTransOutType(String transOutType) {
+
+    /**
+     * Sets trans out type.
+     *
+     * @param transOutType the trans out type
+     */
+    public void setTransOutType(String transOutType) {
 		this.transOutType = transOutType;
 	}
 

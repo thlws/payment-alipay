@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class InsProdCoverage extends AlipayObject {
 
-	private static final long serialVersionUID = 6257164752634686258L;
+	private static final long serialVersionUID = 4854596411924165122L;
 
 	/**
 	 * 险种描述
@@ -60,52 +60,129 @@ public class InsProdCoverage extends AlipayObject {
 	@ApiField("sum_insured")
 	private InsSumInsured sumInsured;
 
-	public String getCoverageDesc() {
+    /**
+     * Gets coverage desc.
+     *
+     * @return the coverage desc
+     */
+    public String getCoverageDesc() {
 		return this.coverageDesc;
 	}
-	public void setCoverageDesc(String coverageDesc) {
+
+    /**
+     * Sets coverage desc.
+     *
+     * @param coverageDesc the coverage desc
+     */
+    public void setCoverageDesc(String coverageDesc) {
 		this.coverageDesc = coverageDesc;
 	}
 
-	public String getCoverageName() {
+    /**
+     * Gets coverage name.
+     *
+     * @return the coverage name
+     */
+    public String getCoverageName() {
 		return this.coverageName;
 	}
-	public void setCoverageName(String coverageName) {
+
+    /**
+     * Sets coverage name.
+     *
+     * @param coverageName the coverage name
+     */
+    public void setCoverageName(String coverageName) {
 		this.coverageName = coverageName;
 	}
 
-	public String getCoverageNo() {
+    /**
+     * Gets coverage no.
+     *
+     * @return the coverage no
+     */
+    public String getCoverageNo() {
 		return this.coverageNo;
 	}
-	public void setCoverageNo(String coverageNo) {
+
+    /**
+     * Sets coverage no.
+     *
+     * @param coverageNo the coverage no
+     */
+    public void setCoverageNo(String coverageNo) {
 		this.coverageNo = coverageNo;
 	}
 
-	public Boolean getIsFixedPeriod() {
+    /**
+     * Gets is fixed period.
+     *
+     * @return the is fixed period
+     */
+    public Boolean getIsFixedPeriod() {
 		return this.isFixedPeriod;
 	}
-	public void setIsFixedPeriod(Boolean isFixedPeriod) {
+
+    /**
+     * Sets is fixed period.
+     *
+     * @param isFixedPeriod the is fixed period
+     */
+    public void setIsFixedPeriod(Boolean isFixedPeriod) {
 		this.isFixedPeriod = isFixedPeriod;
 	}
 
-	public List<InsLiability> getLiabilities() {
+    /**
+     * Gets liabilities.
+     *
+     * @return the liabilities
+     */
+    public List<InsLiability> getLiabilities() {
 		return this.liabilities;
 	}
-	public void setLiabilities(List<InsLiability> liabilities) {
+
+    /**
+     * Sets liabilities.
+     *
+     * @param liabilities the liabilities
+     */
+    public void setLiabilities(List<InsLiability> liabilities) {
 		this.liabilities = liabilities;
 	}
 
-	public List<String> getPeriods() {
+    /**
+     * Gets periods.
+     *
+     * @return the periods
+     */
+    public List<String> getPeriods() {
 		return this.periods;
 	}
-	public void setPeriods(List<String> periods) {
+
+    /**
+     * Sets periods.
+     *
+     * @param periods the periods
+     */
+    public void setPeriods(List<String> periods) {
 		this.periods = periods;
 	}
 
-	public InsSumInsured getSumInsured() {
+    /**
+     * Gets sum insured.
+     *
+     * @return the sum insured
+     */
+    public InsSumInsured getSumInsured() {
 		return this.sumInsured;
 	}
-	public void setSumInsured(InsSumInsured sumInsured) {
+
+    /**
+     * Sets sum insured.
+     *
+     * @param sumInsured the sum insured
+     */
+    public void setSumInsured(InsSumInsured sumInsured) {
 		this.sumInsured = sumInsured;
 	}
 

@@ -7,13 +7,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.campaign.cash.detail.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-14 11:53:26
+ * @since 1.0, 2018-07-19 14:27:35
  */
 public class AlipayMarketingCampaignCashDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8718996829238779214L;
+	private static final long serialVersionUID = 6665795977479133869L;
 
 	/** 
 	 * 活动状态，CREATED: 已创建未打款
@@ -83,83 +83,228 @@ SETTLE:活动已清算
 	/** 
 	 * 红包总个数
 	 */
+	@ApiField("total_count")
+	private Long totalCount;
+
+	/** 
+	 * 红包总个数(废弃)
+	 */
 	@ApiField("total_num")
 	private Long totalNum;
 
-	public void setCampStatus(String campStatus) {
+    /**
+     * Sets camp status.
+     *
+     * @param campStatus the camp status
+     */
+    public void setCampStatus(String campStatus) {
 		this.campStatus = campStatus;
 	}
-	public String getCampStatus( ) {
+
+    /**
+     * Gets camp status.
+     *
+     * @return the camp status
+     */
+    public String getCampStatus( ) {
 		return this.campStatus;
 	}
 
-	public void setCouponName(String couponName) {
+    /**
+     * Sets coupon name.
+     *
+     * @param couponName the coupon name
+     */
+    public void setCouponName(String couponName) {
 		this.couponName = couponName;
 	}
-	public String getCouponName( ) {
+
+    /**
+     * Gets coupon name.
+     *
+     * @return the coupon name
+     */
+    public String getCouponName( ) {
 		return this.couponName;
 	}
 
-	public void setCrowdNo(String crowdNo) {
+    /**
+     * Sets crowd no.
+     *
+     * @param crowdNo the crowd no
+     */
+    public void setCrowdNo(String crowdNo) {
 		this.crowdNo = crowdNo;
 	}
-	public String getCrowdNo( ) {
+
+    /**
+     * Gets crowd no.
+     *
+     * @return the crowd no
+     */
+    public String getCrowdNo( ) {
 		return this.crowdNo;
 	}
 
-	public void setEndTime(Date endTime) {
+    /**
+     * Sets end time.
+     *
+     * @param endTime the end time
+     */
+    public void setEndTime(Date endTime) {
 		this.endTime = endTime;
 	}
-	public Date getEndTime( ) {
+
+    /**
+     * Gets end time.
+     *
+     * @return the end time
+     */
+    public Date getEndTime( ) {
 		return this.endTime;
 	}
 
-	public void setOriginCrowdNo(String originCrowdNo) {
+    /**
+     * Sets origin crowd no.
+     *
+     * @param originCrowdNo the origin crowd no
+     */
+    public void setOriginCrowdNo(String originCrowdNo) {
 		this.originCrowdNo = originCrowdNo;
 	}
-	public String getOriginCrowdNo( ) {
+
+    /**
+     * Gets origin crowd no.
+     *
+     * @return the origin crowd no
+     */
+    public String getOriginCrowdNo( ) {
 		return this.originCrowdNo;
 	}
 
-	public void setPrizeMsg(String prizeMsg) {
+    /**
+     * Sets prize msg.
+     *
+     * @param prizeMsg the prize msg
+     */
+    public void setPrizeMsg(String prizeMsg) {
 		this.prizeMsg = prizeMsg;
 	}
-	public String getPrizeMsg( ) {
+
+    /**
+     * Gets prize msg.
+     *
+     * @return the prize msg
+     */
+    public String getPrizeMsg( ) {
 		return this.prizeMsg;
 	}
 
-	public void setPrizeType(String prizeType) {
+    /**
+     * Sets prize type.
+     *
+     * @param prizeType the prize type
+     */
+    public void setPrizeType(String prizeType) {
 		this.prizeType = prizeType;
 	}
-	public String getPrizeType( ) {
+
+    /**
+     * Gets prize type.
+     *
+     * @return the prize type
+     */
+    public String getPrizeType( ) {
 		return this.prizeType;
 	}
 
-	public void setSendAmount(String sendAmount) {
+    /**
+     * Sets send amount.
+     *
+     * @param sendAmount the send amount
+     */
+    public void setSendAmount(String sendAmount) {
 		this.sendAmount = sendAmount;
 	}
-	public String getSendAmount( ) {
+
+    /**
+     * Gets send amount.
+     *
+     * @return the send amount
+     */
+    public String getSendAmount( ) {
 		return this.sendAmount;
 	}
 
-	public void setStartTime(Date startTime) {
+    /**
+     * Sets start time.
+     *
+     * @param startTime the start time
+     */
+    public void setStartTime(Date startTime) {
 		this.startTime = startTime;
 	}
-	public Date getStartTime( ) {
+
+    /**
+     * Gets start time.
+     *
+     * @return the start time
+     */
+    public Date getStartTime( ) {
 		return this.startTime;
 	}
 
-	public void setTotalAmount(String totalAmount) {
+    /**
+     * Sets total amount.
+     *
+     * @param totalAmount the total amount
+     */
+    public void setTotalAmount(String totalAmount) {
 		this.totalAmount = totalAmount;
 	}
-	public String getTotalAmount( ) {
+
+    /**
+     * Gets total amount.
+     *
+     * @return the total amount
+     */
+    public String getTotalAmount( ) {
 		return this.totalAmount;
 	}
 
-	public void setTotalNum(Long totalNum) {
+    /**
+     * Sets total count.
+     *
+     * @param totalCount the total count
+     */
+    public void setTotalCount(Long totalCount) {
+		this.totalCount = totalCount;
+	}
+
+    /**
+     * Gets total count.
+     *
+     * @return the total count
+     */
+    public Long getTotalCount( ) {
+		return this.totalCount;
+	}
+
+    /**
+     * Sets total num.
+     *
+     * @param totalNum the total num
+     */
+    public void setTotalNum(Long totalNum) {
 		this.totalNum = totalNum;
 	}
-	public Long getTotalNum( ) {
+
+    /**
+     * Gets total num.
+     *
+     * @return the total num
+     */
+    public Long getTotalNum( ) {
 		return this.totalNum;
 	}
 

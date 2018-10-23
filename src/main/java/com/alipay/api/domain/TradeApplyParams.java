@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TradeApplyParams extends AlipayObject {
 
-	private static final long serialVersionUID = 6422574429295329463L;
+	private static final long serialVersionUID = 6681534692149348787L;
 
 	/**
 	 * 系统商编号，该参数作为系统商返佣数据提取的依据，请填写系统商签约协议的PID
@@ -61,59 +61,147 @@ public class TradeApplyParams extends AlipayObject {
 	@ApiField("total_amount")
 	private String totalAmount;
 
-	public String getBrokerId() {
+    /**
+     * Gets broker id.
+     *
+     * @return the broker id
+     */
+    public String getBrokerId() {
 		return this.brokerId;
 	}
-	public void setBrokerId(String brokerId) {
+
+    /**
+     * Sets broker id.
+     *
+     * @param brokerId the broker id
+     */
+    public void setBrokerId(String brokerId) {
 		this.brokerId = brokerId;
 	}
 
-	public String getBuyerName() {
+    /**
+     * Gets buyer name.
+     *
+     * @return the buyer name
+     */
+    public String getBuyerName() {
 		return this.buyerName;
 	}
-	public void setBuyerName(String buyerName) {
+
+    /**
+     * Sets buyer name.
+     *
+     * @param buyerName the buyer name
+     */
+    public void setBuyerName(String buyerName) {
 		this.buyerName = buyerName;
 	}
 
-	public String getCurrency() {
+    /**
+     * Gets currency.
+     *
+     * @return the currency
+     */
+    public String getCurrency() {
 		return this.currency;
 	}
-	public void setCurrency(String currency) {
+
+    /**
+     * Sets currency.
+     *
+     * @param currency the currency
+     */
+    public void setCurrency(String currency) {
 		this.currency = currency;
 	}
 
-	public String getExpireTime() {
+    /**
+     * Gets expire time.
+     *
+     * @return the expire time
+     */
+    public String getExpireTime() {
 		return this.expireTime;
 	}
-	public void setExpireTime(String expireTime) {
+
+    /**
+     * Sets expire time.
+     *
+     * @param expireTime the expire time
+     */
+    public void setExpireTime(String expireTime) {
 		this.expireTime = expireTime;
 	}
 
-	public String getOutTradeNo() {
+    /**
+     * Gets out trade no.
+     *
+     * @return the out trade no
+     */
+    public String getOutTradeNo() {
 		return this.outTradeNo;
 	}
-	public void setOutTradeNo(String outTradeNo) {
+
+    /**
+     * Sets out trade no.
+     *
+     * @param outTradeNo the out trade no
+     */
+    public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
 
-	public String getPromoParams() {
+    /**
+     * Gets promo params.
+     *
+     * @return the promo params
+     */
+    public String getPromoParams() {
 		return this.promoParams;
 	}
-	public void setPromoParams(String promoParams) {
+
+    /**
+     * Sets promo params.
+     *
+     * @param promoParams the promo params
+     */
+    public void setPromoParams(String promoParams) {
 		this.promoParams = promoParams;
 	}
 
-	public String getSubject() {
+    /**
+     * Gets subject.
+     *
+     * @return the subject
+     */
+    public String getSubject() {
 		return this.subject;
 	}
-	public void setSubject(String subject) {
+
+    /**
+     * Sets subject.
+     *
+     * @param subject the subject
+     */
+    public void setSubject(String subject) {
 		this.subject = subject;
 	}
 
-	public String getTotalAmount() {
+    /**
+     * Gets total amount.
+     *
+     * @return the total amount
+     */
+    public String getTotalAmount() {
 		return this.totalAmount;
 	}
-	public void setTotalAmount(String totalAmount) {
+
+    /**
+     * Sets total amount.
+     *
+     * @param totalAmount the total amount
+     */
+    public void setTotalAmount(String totalAmount) {
 		this.totalAmount = totalAmount;
 	}
 

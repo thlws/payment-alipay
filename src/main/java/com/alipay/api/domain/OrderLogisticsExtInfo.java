@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OrderLogisticsExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2288556843921694347L;
+	private static final long serialVersionUID = 4394659122921454989L;
 
 	/**
 	 * 服务结束时间，格式为yyyy-MM-dd HH:mm（到分）
@@ -25,17 +25,39 @@ public class OrderLogisticsExtInfo extends AlipayObject {
 	@ApiField("gmt_start")
 	private String gmtStart;
 
-	public String getGmtEnd() {
+    /**
+     * Gets gmt end.
+     *
+     * @return the gmt end
+     */
+    public String getGmtEnd() {
 		return this.gmtEnd;
 	}
-	public void setGmtEnd(String gmtEnd) {
+
+    /**
+     * Sets gmt end.
+     *
+     * @param gmtEnd the gmt end
+     */
+    public void setGmtEnd(String gmtEnd) {
 		this.gmtEnd = gmtEnd;
 	}
 
-	public String getGmtStart() {
+    /**
+     * Gets gmt start.
+     *
+     * @return the gmt start
+     */
+    public String getGmtStart() {
 		return this.gmtStart;
 	}
-	public void setGmtStart(String gmtStart) {
+
+    /**
+     * Sets gmt start.
+     *
+     * @param gmtStart the gmt start
+     */
+    public void setGmtStart(String gmtStart) {
 		this.gmtStart = gmtStart;
 	}
 

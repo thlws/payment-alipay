@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.group.crowd.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-14 15:10:43
+ * @since 1.0, 2018-07-25 13:55:14
  */
 public class AlipayOpenPublicGroupCrowdQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1686751222577588546L;
+	private static final long serialVersionUID = 4614269519374824525L;
 
 	/** 
 	 * 分组圈出的人群数量
@@ -20,10 +20,21 @@ public class AlipayOpenPublicGroupCrowdQueryResponse extends AlipayResponse {
 	@ApiField("count")
 	private String count;
 
-	public void setCount(String count) {
+    /**
+     * Sets count.
+     *
+     * @param count the count
+     */
+    public void setCount(String count) {
 		this.count = count;
 	}
-	public String getCount( ) {
+
+    /**
+     * Gets count.
+     *
+     * @return the count
+     */
+    public String getCount( ) {
 		return this.count;
 	}
 

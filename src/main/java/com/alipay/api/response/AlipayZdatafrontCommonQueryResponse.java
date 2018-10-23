@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.zdatafront.common.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-24 16:28:03
+ * @since 1.0, 2018-03-21 11:14:39
  */
 public class AlipayZdatafrontCommonQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5874851929953778392L;
+	private static final long serialVersionUID = 1278174314934962189L;
 
 	/** 
 	 * 数据的时间戳：
@@ -28,17 +28,39 @@ public class AlipayZdatafrontCommonQueryResponse extends AlipayResponse {
 	@ApiField("values")
 	private String values;
 
-	public void setCacheTimestamp(Long cacheTimestamp) {
+    /**
+     * Sets cache timestamp.
+     *
+     * @param cacheTimestamp the cache timestamp
+     */
+    public void setCacheTimestamp(Long cacheTimestamp) {
 		this.cacheTimestamp = cacheTimestamp;
 	}
-	public Long getCacheTimestamp( ) {
+
+    /**
+     * Gets cache timestamp.
+     *
+     * @return the cache timestamp
+     */
+    public Long getCacheTimestamp( ) {
 		return this.cacheTimestamp;
 	}
 
-	public void setValues(String values) {
+    /**
+     * Sets values.
+     *
+     * @param values the values
+     */
+    public void setValues(String values) {
 		this.values = values;
 	}
-	public String getValues( ) {
+
+    /**
+     * Gets values.
+     *
+     * @return the values
+     */
+    public String getValues( ) {
 		return this.values;
 	}
 

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class YLBPriceDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1692547843864226382L;
+	private static final long serialVersionUID = 5755969272575279525L;
 
 	/**
 	 * 余利宝行情日期，格式为yyyy-MM-dd HH:mm:ss
@@ -33,24 +33,57 @@ public class YLBPriceDetailInfo extends AlipayObject {
 	@ApiField("tenthousand_income")
 	private String tenthousandIncome;
 
-	public Date getPriceDate() {
+    /**
+     * Gets price date.
+     *
+     * @return the price date
+     */
+    public Date getPriceDate() {
 		return this.priceDate;
 	}
-	public void setPriceDate(Date priceDate) {
+
+    /**
+     * Sets price date.
+     *
+     * @param priceDate the price date
+     */
+    public void setPriceDate(Date priceDate) {
 		this.priceDate = priceDate;
 	}
 
-	public String getSevendaysYeildRate() {
+    /**
+     * Gets sevendays yeild rate.
+     *
+     * @return the sevendays yeild rate
+     */
+    public String getSevendaysYeildRate() {
 		return this.sevendaysYeildRate;
 	}
-	public void setSevendaysYeildRate(String sevendaysYeildRate) {
+
+    /**
+     * Sets sevendays yeild rate.
+     *
+     * @param sevendaysYeildRate the sevendays yeild rate
+     */
+    public void setSevendaysYeildRate(String sevendaysYeildRate) {
 		this.sevendaysYeildRate = sevendaysYeildRate;
 	}
 
-	public String getTenthousandIncome() {
+    /**
+     * Gets tenthousand income.
+     *
+     * @return the tenthousand income
+     */
+    public String getTenthousandIncome() {
 		return this.tenthousandIncome;
 	}
-	public void setTenthousandIncome(String tenthousandIncome) {
+
+    /**
+     * Sets tenthousand income.
+     *
+     * @param tenthousandIncome the tenthousand income
+     */
+    public void setTenthousandIncome(String tenthousandIncome) {
 		this.tenthousandIncome = tenthousandIncome;
 	}
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电子发票平台发票明细项
  *
  * @author auto create
- * @since 1.0, 2017-01-13 18:53:44
+ * @since 1.0, 2018-06-11 16:17:30
  */
 public class InvoiceItemContent extends AlipayObject {
 
-	private static final long serialVersionUID = 5255866381249586957L;
+	private static final long serialVersionUID = 4865119731468355612L;
 
 	/**
 	 * 价税合计。(等于sumPrice和tax之和)
@@ -73,73 +73,183 @@ public class InvoiceItemContent extends AlipayObject {
 	@ApiField("row_type")
 	private Long rowType;
 
-	public String getItemAmount() {
+    /**
+     * Gets item amount.
+     *
+     * @return the item amount
+     */
+    public String getItemAmount() {
 		return this.itemAmount;
 	}
-	public void setItemAmount(String itemAmount) {
+
+    /**
+     * Sets item amount.
+     *
+     * @param itemAmount the item amount
+     */
+    public void setItemAmount(String itemAmount) {
 		this.itemAmount = itemAmount;
 	}
 
-	public String getItemName() {
+    /**
+     * Gets item name.
+     *
+     * @return the item name
+     */
+    public String getItemName() {
 		return this.itemName;
 	}
-	public void setItemName(String itemName) {
+
+    /**
+     * Sets item name.
+     *
+     * @param itemName the item name
+     */
+    public void setItemName(String itemName) {
 		this.itemName = itemName;
 	}
 
-	public String getItemNo() {
+    /**
+     * Gets item no.
+     *
+     * @return the item no
+     */
+    public String getItemNo() {
 		return this.itemNo;
 	}
-	public void setItemNo(String itemNo) {
+
+    /**
+     * Sets item no.
+     *
+     * @param itemNo the item no
+     */
+    public void setItemNo(String itemNo) {
 		this.itemNo = itemNo;
 	}
 
-	public String getItemPrice() {
+    /**
+     * Gets item price.
+     *
+     * @return the item price
+     */
+    public String getItemPrice() {
 		return this.itemPrice;
 	}
-	public void setItemPrice(String itemPrice) {
+
+    /**
+     * Sets item price.
+     *
+     * @param itemPrice the item price
+     */
+    public void setItemPrice(String itemPrice) {
 		this.itemPrice = itemPrice;
 	}
 
-	public Long getItemQuantity() {
+    /**
+     * Gets item quantity.
+     *
+     * @return the item quantity
+     */
+    public Long getItemQuantity() {
 		return this.itemQuantity;
 	}
-	public void setItemQuantity(Long itemQuantity) {
+
+    /**
+     * Sets item quantity.
+     *
+     * @param itemQuantity the item quantity
+     */
+    public void setItemQuantity(Long itemQuantity) {
 		this.itemQuantity = itemQuantity;
 	}
 
-	public String getItemSumPrice() {
+    /**
+     * Gets item sum price.
+     *
+     * @return the item sum price
+     */
+    public String getItemSumPrice() {
 		return this.itemSumPrice;
 	}
-	public void setItemSumPrice(String itemSumPrice) {
+
+    /**
+     * Sets item sum price.
+     *
+     * @param itemSumPrice the item sum price
+     */
+    public void setItemSumPrice(String itemSumPrice) {
 		this.itemSumPrice = itemSumPrice;
 	}
 
-	public String getItemTaxPrice() {
+    /**
+     * Gets item tax price.
+     *
+     * @return the item tax price
+     */
+    public String getItemTaxPrice() {
 		return this.itemTaxPrice;
 	}
-	public void setItemTaxPrice(String itemTaxPrice) {
+
+    /**
+     * Sets item tax price.
+     *
+     * @param itemTaxPrice the item tax price
+     */
+    public void setItemTaxPrice(String itemTaxPrice) {
 		this.itemTaxPrice = itemTaxPrice;
 	}
 
-	public String getItemTaxRate() {
+    /**
+     * Gets item tax rate.
+     *
+     * @return the item tax rate
+     */
+    public String getItemTaxRate() {
 		return this.itemTaxRate;
 	}
-	public void setItemTaxRate(String itemTaxRate) {
+
+    /**
+     * Sets item tax rate.
+     *
+     * @param itemTaxRate the item tax rate
+     */
+    public void setItemTaxRate(String itemTaxRate) {
 		this.itemTaxRate = itemTaxRate;
 	}
 
-	public String getItemUnit() {
+    /**
+     * Gets item unit.
+     *
+     * @return the item unit
+     */
+    public String getItemUnit() {
 		return this.itemUnit;
 	}
-	public void setItemUnit(String itemUnit) {
+
+    /**
+     * Sets item unit.
+     *
+     * @param itemUnit the item unit
+     */
+    public void setItemUnit(String itemUnit) {
 		this.itemUnit = itemUnit;
 	}
 
-	public Long getRowType() {
+    /**
+     * Gets row type.
+     *
+     * @return the row type
+     */
+    public Long getRowType() {
 		return this.rowType;
 	}
-	public void setRowType(Long rowType) {
+
+    /**
+     * Sets row type.
+     *
+     * @param rowType the row type
+     */
+    public void setRowType(Long rowType) {
 		this.rowType = rowType;
 	}
 

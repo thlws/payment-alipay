@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KbAdvertAdvContentResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 3277974794157236222L;
+	private static final long serialVersionUID = 4412158992693961367L;
 
 	/**
 	 * 二维码类型的内容模型（当content_type为codec时，返回该模型）
@@ -51,38 +51,93 @@ shareCode：吱口令；
 	@ApiField("content_type")
 	private String contentType;
 
-	public KbAdvertContentCodec getContentCodec() {
+    /**
+     * Gets content codec.
+     *
+     * @return the content codec
+     */
+    public KbAdvertContentCodec getContentCodec() {
 		return this.contentCodec;
 	}
-	public void setContentCodec(KbAdvertContentCodec contentCodec) {
+
+    /**
+     * Sets content codec.
+     *
+     * @param contentCodec the content codec
+     */
+    public void setContentCodec(KbAdvertContentCodec contentCodec) {
 		this.contentCodec = contentCodec;
 	}
 
-	public KbAdvertContentPassword getContentPassword() {
+    /**
+     * Gets content password.
+     *
+     * @return the content password
+     */
+    public KbAdvertContentPassword getContentPassword() {
 		return this.contentPassword;
 	}
-	public void setContentPassword(KbAdvertContentPassword contentPassword) {
+
+    /**
+     * Sets content password.
+     *
+     * @param contentPassword the content password
+     */
+    public void setContentPassword(KbAdvertContentPassword contentPassword) {
 		this.contentPassword = contentPassword;
 	}
 
-	public List<KbAdvertContentShareCode> getContentShareCode() {
+    /**
+     * Gets content share code.
+     *
+     * @return the content share code
+     */
+    public List<KbAdvertContentShareCode> getContentShareCode() {
 		return this.contentShareCode;
 	}
-	public void setContentShareCode(List<KbAdvertContentShareCode> contentShareCode) {
+
+    /**
+     * Sets content share code.
+     *
+     * @param contentShareCode the content share code
+     */
+    public void setContentShareCode(List<KbAdvertContentShareCode> contentShareCode) {
 		this.contentShareCode = contentShareCode;
 	}
 
-	public KbAdvertContentShortLink getContentShortLink() {
+    /**
+     * Gets content short link.
+     *
+     * @return the content short link
+     */
+    public KbAdvertContentShortLink getContentShortLink() {
 		return this.contentShortLink;
 	}
-	public void setContentShortLink(KbAdvertContentShortLink contentShortLink) {
+
+    /**
+     * Sets content short link.
+     *
+     * @param contentShortLink the content short link
+     */
+    public void setContentShortLink(KbAdvertContentShortLink contentShortLink) {
 		this.contentShortLink = contentShortLink;
 	}
 
-	public String getContentType() {
+    /**
+     * Gets content type.
+     *
+     * @return the content type
+     */
+    public String getContentType() {
 		return this.contentType;
 	}
-	public void setContentType(String contentType) {
+
+    /**
+     * Sets content type.
+     *
+     * @param contentType the content type
+     */
+    public void setContentType(String contentType) {
 		this.contentType = contentType;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DiscountModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1476625798478473586L;
+	private static final long serialVersionUID = 4151899214549491112L;
 
 	/**
 	 * 每期折扣，保留小数点2位
@@ -25,17 +25,39 @@ public class DiscountModel extends AlipayObject {
 	@ApiField("term_no")
 	private Long termNo;
 
-	public String getTermDiscount() {
+    /**
+     * Gets term discount.
+     *
+     * @return the term discount
+     */
+    public String getTermDiscount() {
 		return this.termDiscount;
 	}
-	public void setTermDiscount(String termDiscount) {
+
+    /**
+     * Sets term discount.
+     *
+     * @param termDiscount the term discount
+     */
+    public void setTermDiscount(String termDiscount) {
 		this.termDiscount = termDiscount;
 	}
 
-	public Long getTermNo() {
+    /**
+     * Gets term no.
+     *
+     * @return the term no
+     */
+    public Long getTermNo() {
 		return this.termNo;
 	}
-	public void setTermNo(Long termNo) {
+
+    /**
+     * Sets term no.
+     *
+     * @param termNo the term no
+     */
+    public void setTermNo(Long termNo) {
 		this.termNo = termNo;
 	}
 

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SignTaskFileResult extends AlipayObject {
 
-	private static final long serialVersionUID = 8194398528295474782L;
+	private static final long serialVersionUID = 3514278233185265845L;
 
 	/**
 	 * 业务初始化时传入的流水号
@@ -51,38 +51,93 @@ public class SignTaskFileResult extends AlipayObject {
 	@ApiField("task_id")
 	private String taskId;
 
-	public String getBizId() {
+    /**
+     * Gets biz id.
+     *
+     * @return the biz id
+     */
+    public String getBizId() {
 		return this.bizId;
 	}
-	public void setBizId(String bizId) {
+
+    /**
+     * Sets biz id.
+     *
+     * @param bizId the biz id
+     */
+    public void setBizId(String bizId) {
 		this.bizId = bizId;
 	}
 
-	public String getBizInfo() {
+    /**
+     * Gets biz info.
+     *
+     * @return the biz info
+     */
+    public String getBizInfo() {
 		return this.bizInfo;
 	}
-	public void setBizInfo(String bizInfo) {
+
+    /**
+     * Sets biz info.
+     *
+     * @param bizInfo the biz info
+     */
+    public void setBizInfo(String bizInfo) {
 		this.bizInfo = bizInfo;
 	}
 
-	public List<SignedFileInfo> getSignedFileList() {
+    /**
+     * Gets signed file list.
+     *
+     * @return the signed file list
+     */
+    public List<SignedFileInfo> getSignedFileList() {
 		return this.signedFileList;
 	}
-	public void setSignedFileList(List<SignedFileInfo> signedFileList) {
+
+    /**
+     * Sets signed file list.
+     *
+     * @param signedFileList the signed file list
+     */
+    public void setSignedFileList(List<SignedFileInfo> signedFileList) {
 		this.signedFileList = signedFileList;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 
-	public String getTaskId() {
+    /**
+     * Gets task id.
+     *
+     * @return the task id
+     */
+    public String getTaskId() {
 		return this.taskId;
 	}
-	public void setTaskId(String taskId) {
+
+    /**
+     * Sets task id.
+     *
+     * @param taskId the task id
+     */
+    public void setTaskId(String taskId) {
 		this.taskId = taskId;
 	}
 

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ArrangementBaseSelector extends AlipayObject {
 
-	private static final long serialVersionUID = 8473666398281857634L;
+	private static final long serialVersionUID = 4114515395157646133L;
 
 	/**
 	 * 合约状态列表.01 待生效，02 生效，03失效，04 取消
@@ -55,45 +55,111 @@ public class ArrangementBaseSelector extends AlipayObject {
 	@ApiField("select_pd_name")
 	private Boolean selectPdName;
 
-	public List<String> getArStatuses() {
+    /**
+     * Gets ar statuses.
+     *
+     * @return the ar statuses
+     */
+    public List<String> getArStatuses() {
 		return this.arStatuses;
 	}
-	public void setArStatuses(List<String> arStatuses) {
+
+    /**
+     * Sets ar statuses.
+     *
+     * @param arStatuses the ar statuses
+     */
+    public void setArStatuses(List<String> arStatuses) {
 		this.arStatuses = arStatuses;
 	}
 
-	public String getMarkType() {
+    /**
+     * Gets mark type.
+     *
+     * @return the mark type
+     */
+    public String getMarkType() {
 		return this.markType;
 	}
-	public void setMarkType(String markType) {
+
+    /**
+     * Sets mark type.
+     *
+     * @param markType the mark type
+     */
+    public void setMarkType(String markType) {
 		this.markType = markType;
 	}
 
-	public List<String> getPdCodes() {
+    /**
+     * Gets pd codes.
+     *
+     * @return the pd codes
+     */
+    public List<String> getPdCodes() {
 		return this.pdCodes;
 	}
-	public void setPdCodes(List<String> pdCodes) {
+
+    /**
+     * Sets pd codes.
+     *
+     * @param pdCodes the pd codes
+     */
+    public void setPdCodes(List<String> pdCodes) {
 		this.pdCodes = pdCodes;
 	}
 
-	public List<String> getPdMarks() {
+    /**
+     * Gets pd marks.
+     *
+     * @return the pd marks
+     */
+    public List<String> getPdMarks() {
 		return this.pdMarks;
 	}
-	public void setPdMarks(List<String> pdMarks) {
+
+    /**
+     * Sets pd marks.
+     *
+     * @param pdMarks the pd marks
+     */
+    public void setPdMarks(List<String> pdMarks) {
 		this.pdMarks = pdMarks;
 	}
 
-	public Boolean getSelectPdMark() {
+    /**
+     * Gets select pd mark.
+     *
+     * @return the select pd mark
+     */
+    public Boolean getSelectPdMark() {
 		return this.selectPdMark;
 	}
-	public void setSelectPdMark(Boolean selectPdMark) {
+
+    /**
+     * Sets select pd mark.
+     *
+     * @param selectPdMark the select pd mark
+     */
+    public void setSelectPdMark(Boolean selectPdMark) {
 		this.selectPdMark = selectPdMark;
 	}
 
-	public Boolean getSelectPdName() {
+    /**
+     * Gets select pd name.
+     *
+     * @return the select pd name
+     */
+    public Boolean getSelectPdName() {
 		return this.selectPdName;
 	}
-	public void setSelectPdName(Boolean selectPdName) {
+
+    /**
+     * Sets select pd name.
+     *
+     * @param selectPdName the select pd name
+     */
+    public void setSelectPdName(Boolean selectPdName) {
 		this.selectPdName = selectPdName;
 	}
 

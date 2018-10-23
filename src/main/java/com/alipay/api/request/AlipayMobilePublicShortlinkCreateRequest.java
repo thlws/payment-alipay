@@ -9,9 +9,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.mobile.public.shortlink.create request
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-07-29 19:58:48
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayMobilePublicShortlinkCreateRequest implements AlipayRequest<AlipayMobilePublicShortlinkCreateResponse> {
 
@@ -23,10 +23,21 @@ public class AlipayMobilePublicShortlinkCreateRequest implements AlipayRequest<A
 	 */
 	private String bizContent;
 
-	public void setBizContent(String bizContent) {
+    /**
+     * Sets biz content.
+     *
+     * @param bizContent the biz content
+     */
+    public void setBizContent(String bizContent) {
 		this.bizContent = bizContent;
 	}
-	public String getBizContent() {
+
+    /**
+     * Gets biz content.
+     *
+     * @return the biz content
+     */
+    public String getBizContent() {
 		return this.bizContent;
 	}
 	private String terminalType;
@@ -98,7 +109,13 @@ public class AlipayMobilePublicShortlinkCreateRequest implements AlipayRequest<A
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

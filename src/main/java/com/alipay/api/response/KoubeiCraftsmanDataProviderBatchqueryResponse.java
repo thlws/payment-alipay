@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.craftsman.data.provider.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-10-11 20:36:09
+ * @since 1.0, 2018-07-10 11:00:54
  */
 public class KoubeiCraftsmanDataProviderBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7325835531114533857L;
+	private static final long serialVersionUID = 7719523478128276767L;
 
 	/** 
 	 * craftsmans:手艺人信息
@@ -48,38 +48,93 @@ public class KoubeiCraftsmanDataProviderBatchqueryResponse extends AlipayRespons
 	@ApiField("total_page_no")
 	private Long totalPageNo;
 
-	public void setCraftsmans(List<CraftsmanOpenModel> craftsmans) {
+    /**
+     * Sets craftsmans.
+     *
+     * @param craftsmans the craftsmans
+     */
+    public void setCraftsmans(List<CraftsmanOpenModel> craftsmans) {
 		this.craftsmans = craftsmans;
 	}
-	public List<CraftsmanOpenModel> getCraftsmans( ) {
+
+    /**
+     * Gets craftsmans.
+     *
+     * @return the craftsmans
+     */
+    public List<CraftsmanOpenModel> getCraftsmans( ) {
 		return this.craftsmans;
 	}
 
-	public void setCurrentPageNo(Long currentPageNo) {
+    /**
+     * Sets current page no.
+     *
+     * @param currentPageNo the current page no
+     */
+    public void setCurrentPageNo(Long currentPageNo) {
 		this.currentPageNo = currentPageNo;
 	}
-	public Long getCurrentPageNo( ) {
+
+    /**
+     * Gets current page no.
+     *
+     * @return the current page no
+     */
+    public Long getCurrentPageNo( ) {
 		return this.currentPageNo;
 	}
 
-	public void setPageSize(Long pageSize) {
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}
-	public Long getPageSize( ) {
+
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public Long getPageSize( ) {
 		return this.pageSize;
 	}
 
-	public void setTotalCraftsmans(Long totalCraftsmans) {
+    /**
+     * Sets total craftsmans.
+     *
+     * @param totalCraftsmans the total craftsmans
+     */
+    public void setTotalCraftsmans(Long totalCraftsmans) {
 		this.totalCraftsmans = totalCraftsmans;
 	}
-	public Long getTotalCraftsmans( ) {
+
+    /**
+     * Gets total craftsmans.
+     *
+     * @return the total craftsmans
+     */
+    public Long getTotalCraftsmans( ) {
 		return this.totalCraftsmans;
 	}
 
-	public void setTotalPageNo(Long totalPageNo) {
+    /**
+     * Sets total page no.
+     *
+     * @param totalPageNo the total page no
+     */
+    public void setTotalPageNo(Long totalPageNo) {
 		this.totalPageNo = totalPageNo;
 	}
-	public Long getTotalPageNo( ) {
+
+    /**
+     * Gets total page no.
+     *
+     * @return the total page no
+     */
+    public Long getTotalPageNo( ) {
 		return this.totalPageNo;
 	}
 

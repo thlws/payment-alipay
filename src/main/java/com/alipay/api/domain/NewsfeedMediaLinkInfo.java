@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NewsfeedMediaLinkInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1114616766187564224L;
+	private static final long serialVersionUID = 5231258353159377249L;
 
 	/**
 	 * 资源ID
@@ -55,52 +55,129 @@ public class NewsfeedMediaLinkInfo extends AlipayObject {
 	@ApiField("url")
 	private String url;
 
-	public String getContentId() {
+    /**
+     * Gets content id.
+     *
+     * @return the content id
+     */
+    public String getContentId() {
 		return this.contentId;
 	}
-	public void setContentId(String contentId) {
+
+    /**
+     * Sets content id.
+     *
+     * @param contentId the content id
+     */
+    public void setContentId(String contentId) {
 		this.contentId = contentId;
 	}
 
-	public String getContentSource() {
+    /**
+     * Gets content source.
+     *
+     * @return the content source
+     */
+    public String getContentSource() {
 		return this.contentSource;
 	}
-	public void setContentSource(String contentSource) {
+
+    /**
+     * Sets content source.
+     *
+     * @param contentSource the content source
+     */
+    public void setContentSource(String contentSource) {
 		this.contentSource = contentSource;
 	}
 
-	public String getContentType() {
+    /**
+     * Gets content type.
+     *
+     * @return the content type
+     */
+    public String getContentType() {
 		return this.contentType;
 	}
-	public void setContentType(String contentType) {
+
+    /**
+     * Sets content type.
+     *
+     * @param contentType the content type
+     */
+    public void setContentType(String contentType) {
 		this.contentType = contentType;
 	}
 
-	public String getDesc() {
+    /**
+     * Gets desc.
+     *
+     * @return the desc
+     */
+    public String getDesc() {
 		return this.desc;
 	}
-	public void setDesc(String desc) {
+
+    /**
+     * Sets desc.
+     *
+     * @param desc the desc
+     */
+    public void setDesc(String desc) {
 		this.desc = desc;
 	}
 
-	public String getThumb() {
+    /**
+     * Gets thumb.
+     *
+     * @return the thumb
+     */
+    public String getThumb() {
 		return this.thumb;
 	}
-	public void setThumb(String thumb) {
+
+    /**
+     * Sets thumb.
+     *
+     * @param thumb the thumb
+     */
+    public void setThumb(String thumb) {
 		this.thumb = thumb;
 	}
 
-	public String getTitle() {
+    /**
+     * Gets title.
+     *
+     * @return the title
+     */
+    public String getTitle() {
 		return this.title;
 	}
-	public void setTitle(String title) {
+
+    /**
+     * Sets title.
+     *
+     * @param title the title
+     */
+    public void setTitle(String title) {
 		this.title = title;
 	}
 
-	public String getUrl() {
+    /**
+     * Gets url.
+     *
+     * @return the url
+     */
+    public String getUrl() {
 		return this.url;
 	}
-	public void setUrl(String url) {
+
+    /**
+     * Sets url.
+     *
+     * @param url the url
+     */
+    public void setUrl(String url) {
 		this.url = url;
 	}
 

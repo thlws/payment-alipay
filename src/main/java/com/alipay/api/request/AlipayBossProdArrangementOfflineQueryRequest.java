@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.boss.prod.arrangement.offline.query request
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-04-14 21:06:47
  */
@@ -23,10 +23,21 @@ public class AlipayBossProdArrangementOfflineQueryRequest implements AlipayReque
 	 */
 	private String productCode;
 
-	public void setProductCode(String productCode) {
+    /**
+     * Sets product code.
+     *
+     * @param productCode the product code
+     */
+    public void setProductCode(String productCode) {
 		this.productCode = productCode;
 	}
-	public String getProductCode() {
+
+    /**
+     * Gets product code.
+     *
+     * @return the product code
+     */
+    public String getProductCode() {
 		return this.productCode;
 	}
 	private String terminalType;
@@ -98,7 +109,13 @@ public class AlipayBossProdArrangementOfflineQueryRequest implements AlipayReque
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

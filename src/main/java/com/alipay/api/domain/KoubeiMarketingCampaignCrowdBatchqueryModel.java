@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMarketingCampaignCrowdBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4355533541983982639L;
+	private static final long serialVersionUID = 8512438224483522628L;
 
 	/**
 	 * 人群名称
@@ -31,24 +31,57 @@ public class KoubeiMarketingCampaignCrowdBatchqueryModel extends AlipayObject {
 	@ApiField("page_size")
 	private String pageSize;
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getPageNumber() {
+    /**
+     * Gets page number.
+     *
+     * @return the page number
+     */
+    public String getPageNumber() {
 		return this.pageNumber;
 	}
-	public void setPageNumber(String pageNumber) {
+
+    /**
+     * Sets page number.
+     *
+     * @param pageNumber the page number
+     */
+    public void setPageNumber(String pageNumber) {
 		this.pageNumber = pageNumber;
 	}
 
-	public String getPageSize() {
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public String getPageSize() {
 		return this.pageSize;
 	}
-	public void setPageSize(String pageSize) {
+
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(String pageSize) {
 		this.pageSize = pageSize;
 	}
 

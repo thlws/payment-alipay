@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签约实体信息
  *
  * @author auto create
- * @since 1.0, 2017-09-20 10:18:47
+ * @since 1.0, 2017-10-26 15:12:24
  */
 public class Principal extends AlipayObject {
 
-	private static final long serialVersionUID = 1583524241995794196L;
+	private static final long serialVersionUID = 7528564983569726876L;
 
 	/**
 	 * 用户身份证号。
@@ -52,38 +52,93 @@ entreprise //企业
 	@ApiField("verify_type")
 	private String verifyType;
 
-	public String getCertNo() {
+    /**
+     * Gets cert no.
+     *
+     * @return the cert no
+     */
+    public String getCertNo() {
 		return this.certNo;
 	}
-	public void setCertNo(String certNo) {
+
+    /**
+     * Sets cert no.
+     *
+     * @param certNo the cert no
+     */
+    public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}
 
-	public String getCertType() {
+    /**
+     * Gets cert type.
+     *
+     * @return the cert type
+     */
+    public String getCertType() {
 		return this.certType;
 	}
-	public void setCertType(String certType) {
+
+    /**
+     * Sets cert type.
+     *
+     * @param certType the cert type
+     */
+    public void setCertType(String certType) {
 		this.certType = certType;
 	}
 
-	public String getSignerType() {
+    /**
+     * Gets signer type.
+     *
+     * @return the signer type
+     */
+    public String getSignerType() {
 		return this.signerType;
 	}
-	public void setSignerType(String signerType) {
+
+    /**
+     * Sets signer type.
+     *
+     * @param signerType the signer type
+     */
+    public void setSignerType(String signerType) {
 		this.signerType = signerType;
 	}
 
-	public String getUserName() {
+    /**
+     * Gets user name.
+     *
+     * @return the user name
+     */
+    public String getUserName() {
 		return this.userName;
 	}
-	public void setUserName(String userName) {
+
+    /**
+     * Sets user name.
+     *
+     * @param userName the user name
+     */
+    public void setUserName(String userName) {
 		this.userName = userName;
 	}
 
-	public String getVerifyType() {
+    /**
+     * Gets verify type.
+     *
+     * @return the verify type
+     */
+    public String getVerifyType() {
 		return this.verifyType;
 	}
-	public void setVerifyType(String verifyType) {
+
+    /**
+     * Sets verify type.
+     *
+     * @param verifyType the verify type
+     */
+    public void setVerifyType(String verifyType) {
 		this.verifyType = verifyType;
 	}
 

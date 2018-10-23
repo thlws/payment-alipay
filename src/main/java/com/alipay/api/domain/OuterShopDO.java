@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OuterShopDO extends AlipayObject {
 
-	private static final long serialVersionUID = 4883137673318494317L;
+	private static final long serialVersionUID = 2813447161775952824L;
 
 	/**
 	 * 合作商户ID
@@ -32,24 +32,57 @@ iSV自己定义自己的类型，推荐使用自己的域名
 	@ApiField("type")
 	private String type;
 
-	public String getOuterId() {
+    /**
+     * Gets outer id.
+     *
+     * @return the outer id
+     */
+    public String getOuterId() {
 		return this.outerId;
 	}
-	public void setOuterId(String outerId) {
+
+    /**
+     * Sets outer id.
+     *
+     * @param outerId the outer id
+     */
+    public void setOuterId(String outerId) {
 		this.outerId = outerId;
 	}
 
-	public String getShopId() {
+    /**
+     * Gets shop id.
+     *
+     * @return the shop id
+     */
+    public String getShopId() {
 		return this.shopId;
 	}
-	public void setShopId(String shopId) {
+
+    /**
+     * Sets shop id.
+     *
+     * @param shopId the shop id
+     */
+    public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 
-	public String getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
-	public void setType(String type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
 

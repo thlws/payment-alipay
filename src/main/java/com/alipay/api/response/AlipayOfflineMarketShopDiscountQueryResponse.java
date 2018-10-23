@@ -10,13 +10,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.market.shop.discount.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-08-07 20:34:11
+ * @since 1.0, 2018-01-05 10:50:38
  */
 public class AlipayOfflineMarketShopDiscountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6427119926996655689L;
+	private static final long serialVersionUID = 8594443647618929152L;
 
 	/** 
 	 * 返回商户正在进行中的活动摘要列表数据，注意：如果入参query_type不传递或者传递错误值，该参数将不会返回。
@@ -45,31 +45,75 @@ public class AlipayOfflineMarketShopDiscountQueryResponse extends AlipayResponse
 	@ApiField("shop_discount_info")
 	private List<ShopDiscountInfo> itemList;
 
-	public void setCampList(List<CampDetailInfo> campList) {
+    /**
+     * Sets camp list.
+     *
+     * @param campList the camp list
+     */
+    public void setCampList(List<CampDetailInfo> campList) {
 		this.campList = campList;
 	}
-	public List<CampDetailInfo> getCampList( ) {
+
+    /**
+     * Gets camp list.
+     *
+     * @return the camp list
+     */
+    public List<CampDetailInfo> getCampList( ) {
 		return this.campList;
 	}
 
-	public void setCampNum(Long campNum) {
+    /**
+     * Sets camp num.
+     *
+     * @param campNum the camp num
+     */
+    public void setCampNum(Long campNum) {
 		this.campNum = campNum;
 	}
-	public Long getCampNum( ) {
+
+    /**
+     * Gets camp num.
+     *
+     * @return the camp num
+     */
+    public Long getCampNum( ) {
 		return this.campNum;
 	}
 
-	public void setDiscountList(List<ShopDiscountInfo> discountList) {
+    /**
+     * Sets discount list.
+     *
+     * @param discountList the discount list
+     */
+    public void setDiscountList(List<ShopDiscountInfo> discountList) {
 		this.discountList = discountList;
 	}
-	public List<ShopDiscountInfo> getDiscountList( ) {
+
+    /**
+     * Gets discount list.
+     *
+     * @return the discount list
+     */
+    public List<ShopDiscountInfo> getDiscountList( ) {
 		return this.discountList;
 	}
 
-	public void setItemList(List<ShopDiscountInfo> itemList) {
+    /**
+     * Sets item list.
+     *
+     * @param itemList the item list
+     */
+    public void setItemList(List<ShopDiscountInfo> itemList) {
 		this.itemList = itemList;
 	}
-	public List<ShopDiscountInfo> getItemList( ) {
+
+    /**
+     * Gets item list.
+     *
+     * @return the item list
+     */
+    public List<ShopDiscountInfo> getItemList( ) {
 		return this.itemList;
 	}
 

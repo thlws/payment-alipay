@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BusinessLicenceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2246282633932446939L;
+	private static final long serialVersionUID = 8388166683342175481L;
 
 	/**
 	 * 营业执照授权函图片，个体工商户如果使用总公司或其他公司的营业执照认证需上传该授权函图片
@@ -85,87 +85,219 @@ public class BusinessLicenceInfo extends AlipayObject {
 	@ApiField("org_code_certificate_pic")
 	private String orgCodeCertificatePic;
 
-	public String getBusinessLicenseAuthPic() {
+    /**
+     * Gets business license auth pic.
+     *
+     * @return the business license auth pic
+     */
+    public String getBusinessLicenseAuthPic() {
 		return this.businessLicenseAuthPic;
 	}
-	public void setBusinessLicenseAuthPic(String businessLicenseAuthPic) {
+
+    /**
+     * Sets business license auth pic.
+     *
+     * @param businessLicenseAuthPic the business license auth pic
+     */
+    public void setBusinessLicenseAuthPic(String businessLicenseAuthPic) {
 		this.businessLicenseAuthPic = businessLicenseAuthPic;
 	}
 
-	public String getBusinessLicenseCity() {
+    /**
+     * Gets business license city.
+     *
+     * @return the business license city
+     */
+    public String getBusinessLicenseCity() {
 		return this.businessLicenseCity;
 	}
-	public void setBusinessLicenseCity(String businessLicenseCity) {
+
+    /**
+     * Sets business license city.
+     *
+     * @param businessLicenseCity the business license city
+     */
+    public void setBusinessLicenseCity(String businessLicenseCity) {
 		this.businessLicenseCity = businessLicenseCity;
 	}
 
-	public String getBusinessLicenseIndate() {
+    /**
+     * Gets business license indate.
+     *
+     * @return the business license indate
+     */
+    public String getBusinessLicenseIndate() {
 		return this.businessLicenseIndate;
 	}
-	public void setBusinessLicenseIndate(String businessLicenseIndate) {
+
+    /**
+     * Sets business license indate.
+     *
+     * @param businessLicenseIndate the business license indate
+     */
+    public void setBusinessLicenseIndate(String businessLicenseIndate) {
 		this.businessLicenseIndate = businessLicenseIndate;
 	}
 
-	public Boolean getBusinessLicenseIsThreeInOne() {
+    /**
+     * Gets business license is three in one.
+     *
+     * @return the business license is three in one
+     */
+    public Boolean getBusinessLicenseIsThreeInOne() {
 		return this.businessLicenseIsThreeInOne;
 	}
-	public void setBusinessLicenseIsThreeInOne(Boolean businessLicenseIsThreeInOne) {
+
+    /**
+     * Sets business license is three in one.
+     *
+     * @param businessLicenseIsThreeInOne the business license is three in one
+     */
+    public void setBusinessLicenseIsThreeInOne(Boolean businessLicenseIsThreeInOne) {
 		this.businessLicenseIsThreeInOne = businessLicenseIsThreeInOne;
 	}
 
-	public String getBusinessLicenseNo() {
+    /**
+     * Gets business license no.
+     *
+     * @return the business license no
+     */
+    public String getBusinessLicenseNo() {
 		return this.businessLicenseNo;
 	}
-	public void setBusinessLicenseNo(String businessLicenseNo) {
+
+    /**
+     * Sets business license no.
+     *
+     * @param businessLicenseNo the business license no
+     */
+    public void setBusinessLicenseNo(String businessLicenseNo) {
 		this.businessLicenseNo = businessLicenseNo;
 	}
 
-	public String getBusinessLicensePic() {
+    /**
+     * Gets business license pic.
+     *
+     * @return the business license pic
+     */
+    public String getBusinessLicensePic() {
 		return this.businessLicensePic;
 	}
-	public void setBusinessLicensePic(String businessLicensePic) {
+
+    /**
+     * Sets business license pic.
+     *
+     * @param businessLicensePic the business license pic
+     */
+    public void setBusinessLicensePic(String businessLicensePic) {
 		this.businessLicensePic = businessLicensePic;
 	}
 
-	public String getBusinessLicenseProvince() {
+    /**
+     * Gets business license province.
+     *
+     * @return the business license province
+     */
+    public String getBusinessLicenseProvince() {
 		return this.businessLicenseProvince;
 	}
-	public void setBusinessLicenseProvince(String businessLicenseProvince) {
+
+    /**
+     * Sets business license province.
+     *
+     * @param businessLicenseProvince the business license province
+     */
+    public void setBusinessLicenseProvince(String businessLicenseProvince) {
 		this.businessLicenseProvince = businessLicenseProvince;
 	}
 
-	public String getBusinessScope() {
+    /**
+     * Gets business scope.
+     *
+     * @return the business scope
+     */
+    public String getBusinessScope() {
 		return this.businessScope;
 	}
-	public void setBusinessScope(String businessScope) {
+
+    /**
+     * Sets business scope.
+     *
+     * @param businessScope the business scope
+     */
+    public void setBusinessScope(String businessScope) {
 		this.businessScope = businessScope;
 	}
 
-	public String getCompanyAddress() {
+    /**
+     * Gets company address.
+     *
+     * @return the company address
+     */
+    public String getCompanyAddress() {
 		return this.companyAddress;
 	}
-	public void setCompanyAddress(String companyAddress) {
+
+    /**
+     * Sets company address.
+     *
+     * @param companyAddress the company address
+     */
+    public void setCompanyAddress(String companyAddress) {
 		this.companyAddress = companyAddress;
 	}
 
-	public String getCompanyName() {
+    /**
+     * Gets company name.
+     *
+     * @return the company name
+     */
+    public String getCompanyName() {
 		return this.companyName;
 	}
-	public void setCompanyName(String companyName) {
+
+    /**
+     * Sets company name.
+     *
+     * @param companyName the company name
+     */
+    public void setCompanyName(String companyName) {
 		this.companyName = companyName;
 	}
 
-	public String getOrgCodeCertificateNo() {
+    /**
+     * Gets org code certificate no.
+     *
+     * @return the org code certificate no
+     */
+    public String getOrgCodeCertificateNo() {
 		return this.orgCodeCertificateNo;
 	}
-	public void setOrgCodeCertificateNo(String orgCodeCertificateNo) {
+
+    /**
+     * Sets org code certificate no.
+     *
+     * @param orgCodeCertificateNo the org code certificate no
+     */
+    public void setOrgCodeCertificateNo(String orgCodeCertificateNo) {
 		this.orgCodeCertificateNo = orgCodeCertificateNo;
 	}
 
-	public String getOrgCodeCertificatePic() {
+    /**
+     * Gets org code certificate pic.
+     *
+     * @return the org code certificate pic
+     */
+    public String getOrgCodeCertificatePic() {
 		return this.orgCodeCertificatePic;
 	}
-	public void setOrgCodeCertificatePic(String orgCodeCertificatePic) {
+
+    /**
+     * Sets org code certificate pic.
+     *
+     * @param orgCodeCertificatePic the org code certificate pic
+     */
+    public void setOrgCodeCertificatePic(String orgCodeCertificatePic) {
 		this.orgCodeCertificatePic = orgCodeCertificatePic;
 	}
 

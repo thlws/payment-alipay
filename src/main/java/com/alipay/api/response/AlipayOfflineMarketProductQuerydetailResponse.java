@@ -12,13 +12,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.market.product.querydetail response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-04-14 11:41:52
  */
 public class AlipayOfflineMarketProductQuerydetailResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7688385173724329981L;
+	private static final long serialVersionUID = 4455665739199271351L;
 
 	/** 
 	 * 商品首图，尺寸比例在65:53范围内且图片大小不超过10k皆可
@@ -119,108 +119,273 @@ AUTO_OBTAIN为自动领取
 	@ApiField("weight")
 	private Long weight;
 
-	public void setCover(String cover) {
+    /**
+     * Sets cover.
+     *
+     * @param cover the cover
+     */
+    public void setCover(String cover) {
 		this.cover = cover;
 	}
-	public String getCover( ) {
+
+    /**
+     * Gets cover.
+     *
+     * @return the cover
+     */
+    public String getCover( ) {
 		return this.cover;
 	}
 
-	public void setDescriptions(List<AlipayDataItemDescription> descriptions) {
+    /**
+     * Sets descriptions.
+     *
+     * @param descriptions the descriptions
+     */
+    public void setDescriptions(List<AlipayDataItemDescription> descriptions) {
 		this.descriptions = descriptions;
 	}
-	public List<AlipayDataItemDescription> getDescriptions( ) {
+
+    /**
+     * Gets descriptions.
+     *
+     * @return the descriptions
+     */
+    public List<AlipayDataItemDescription> getDescriptions( ) {
 		return this.descriptions;
 	}
 
-	public void setGmtEnd(Date gmtEnd) {
+    /**
+     * Sets gmt end.
+     *
+     * @param gmtEnd the gmt end
+     */
+    public void setGmtEnd(Date gmtEnd) {
 		this.gmtEnd = gmtEnd;
 	}
-	public Date getGmtEnd( ) {
+
+    /**
+     * Gets gmt end.
+     *
+     * @return the gmt end
+     */
+    public Date getGmtEnd( ) {
 		return this.gmtEnd;
 	}
 
-	public void setGmtStart(Date gmtStart) {
+    /**
+     * Sets gmt start.
+     *
+     * @param gmtStart the gmt start
+     */
+    public void setGmtStart(Date gmtStart) {
 		this.gmtStart = gmtStart;
 	}
-	public Date getGmtStart( ) {
+
+    /**
+     * Gets gmt start.
+     *
+     * @return the gmt start
+     */
+    public Date getGmtStart( ) {
 		return this.gmtStart;
 	}
 
-	public void setInventory(Long inventory) {
+    /**
+     * Sets inventory.
+     *
+     * @param inventory the inventory
+     */
+    public void setInventory(Long inventory) {
 		this.inventory = inventory;
 	}
-	public Long getInventory( ) {
+
+    /**
+     * Gets inventory.
+     *
+     * @return the inventory
+     */
+    public Long getInventory( ) {
 		return this.inventory;
 	}
 
-	public void setIsAutoExpanded(Boolean isAutoExpanded) {
+    /**
+     * Sets is auto expanded.
+     *
+     * @param isAutoExpanded the is auto expanded
+     */
+    public void setIsAutoExpanded(Boolean isAutoExpanded) {
 		this.isAutoExpanded = isAutoExpanded;
 	}
-	public Boolean getIsAutoExpanded( ) {
+
+    /**
+     * Gets is auto expanded.
+     *
+     * @return the is auto expanded
+     */
+    public Boolean getIsAutoExpanded( ) {
 		return this.isAutoExpanded;
 	}
 
-	public void setItemStatus(String itemStatus) {
+    /**
+     * Sets item status.
+     *
+     * @param itemStatus the item status
+     */
+    public void setItemStatus(String itemStatus) {
 		this.itemStatus = itemStatus;
 	}
-	public String getItemStatus( ) {
+
+    /**
+     * Gets item status.
+     *
+     * @return the item status
+     */
+    public String getItemStatus( ) {
 		return this.itemStatus;
 	}
 
-	public void setItemType(String itemType) {
+    /**
+     * Sets item type.
+     *
+     * @param itemType the item type
+     */
+    public void setItemType(String itemType) {
 		this.itemType = itemType;
 	}
-	public String getItemType( ) {
+
+    /**
+     * Gets item type.
+     *
+     * @return the item type
+     */
+    public String getItemType( ) {
 		return this.itemType;
 	}
 
-	public void setPicColl(String picColl) {
+    /**
+     * Sets pic coll.
+     *
+     * @param picColl the pic coll
+     */
+    public void setPicColl(String picColl) {
 		this.picColl = picColl;
 	}
-	public String getPicColl( ) {
+
+    /**
+     * Gets pic coll.
+     *
+     * @return the pic coll
+     */
+    public String getPicColl( ) {
 		return this.picColl;
 	}
 
-	public void setPurchaseMode(String purchaseMode) {
+    /**
+     * Sets purchase mode.
+     *
+     * @param purchaseMode the purchase mode
+     */
+    public void setPurchaseMode(String purchaseMode) {
 		this.purchaseMode = purchaseMode;
 	}
-	public String getPurchaseMode( ) {
+
+    /**
+     * Gets purchase mode.
+     *
+     * @return the purchase mode
+     */
+    public String getPurchaseMode( ) {
 		return this.purchaseMode;
 	}
 
-	public void setSalesRule(AlipayDataItemSalesRule salesRule) {
+    /**
+     * Sets sales rule.
+     *
+     * @param salesRule the sales rule
+     */
+    public void setSalesRule(AlipayDataItemSalesRule salesRule) {
 		this.salesRule = salesRule;
 	}
-	public AlipayDataItemSalesRule getSalesRule( ) {
+
+    /**
+     * Gets sales rule.
+     *
+     * @return the sales rule
+     */
+    public AlipayDataItemSalesRule getSalesRule( ) {
 		return this.salesRule;
 	}
 
-	public void setShopList(List<String> shopList) {
+    /**
+     * Sets shop list.
+     *
+     * @param shopList the shop list
+     */
+    public void setShopList(List<String> shopList) {
 		this.shopList = shopList;
 	}
-	public List<String> getShopList( ) {
+
+    /**
+     * Gets shop list.
+     *
+     * @return the shop list
+     */
+    public List<String> getShopList( ) {
 		return this.shopList;
 	}
 
-	public void setSubject(String subject) {
+    /**
+     * Sets subject.
+     *
+     * @param subject the subject
+     */
+    public void setSubject(String subject) {
 		this.subject = subject;
 	}
-	public String getSubject( ) {
+
+    /**
+     * Gets subject.
+     *
+     * @return the subject
+     */
+    public String getSubject( ) {
 		return this.subject;
 	}
 
-	public void setVoucherTemplete(AlipayDataItemVoucherTemplete voucherTemplete) {
+    /**
+     * Sets voucher templete.
+     *
+     * @param voucherTemplete the voucher templete
+     */
+    public void setVoucherTemplete(AlipayDataItemVoucherTemplete voucherTemplete) {
 		this.voucherTemplete = voucherTemplete;
 	}
-	public AlipayDataItemVoucherTemplete getVoucherTemplete( ) {
+
+    /**
+     * Gets voucher templete.
+     *
+     * @return the voucher templete
+     */
+    public AlipayDataItemVoucherTemplete getVoucherTemplete( ) {
 		return this.voucherTemplete;
 	}
 
-	public void setWeight(Long weight) {
+    /**
+     * Sets weight.
+     *
+     * @param weight the weight
+     */
+    public void setWeight(Long weight) {
 		this.weight = weight;
 	}
-	public Long getWeight( ) {
+
+    /**
+     * Gets weight.
+     *
+     * @return the weight
+     */
+    public Long getWeight( ) {
 		return this.weight;
 	}
 

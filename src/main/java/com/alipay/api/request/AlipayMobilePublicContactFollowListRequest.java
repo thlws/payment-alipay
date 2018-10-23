@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.mobile.public.contact.follow.list request
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-12-19 20:51:46
  */
@@ -85,7 +85,13 @@ public class AlipayMobilePublicContactFollowListRequest implements AlipayRequest
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

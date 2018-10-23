@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.recommend.get response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2015-03-11 15:19:54
  */
 public class AlipayMobileRecommendGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3548113391393342593L;
+	private static final long serialVersionUID = 3297345356289194457L;
 
 	/** 
 	 * 推荐结果的扩展信息
@@ -32,24 +32,57 @@ public class AlipayMobileRecommendGetResponse extends AlipayResponse {
 	@ApiField("recommend_id")
 	private String recommendId;
 
-	public void setExtInfo(String extInfo) {
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
-	public String getExtInfo( ) {
+
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo( ) {
 		return this.extInfo;
 	}
 
-	public void setItems(String items) {
+    /**
+     * Sets items.
+     *
+     * @param items the items
+     */
+    public void setItems(String items) {
 		this.items = items;
 	}
-	public String getItems( ) {
+
+    /**
+     * Gets items.
+     *
+     * @return the items
+     */
+    public String getItems( ) {
 		return this.items;
 	}
 
-	public void setRecommendId(String recommendId) {
+    /**
+     * Sets recommend id.
+     *
+     * @param recommendId the recommend id
+     */
+    public void setRecommendId(String recommendId) {
 		this.recommendId = recommendId;
 	}
-	public String getRecommendId( ) {
+
+    /**
+     * Gets recommend id.
+     *
+     * @return the recommend id
+     */
+    public String getRecommendId( ) {
 		return this.recommendId;
 	}
 

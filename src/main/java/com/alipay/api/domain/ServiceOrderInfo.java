@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ServiceOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5184943169968231684L;
+	private static final long serialVersionUID = 2139286344295137948L;
 
 	/**
 	 * 服务总金额，单位为元
@@ -142,143 +142,363 @@ yyyy-MM-dd HH:mm:ss
 	@ApiField("unit")
 	private String unit;
 
-	public String getAmount() {
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public String getAmount() {
 		return this.amount;
 	}
-	public void setAmount(String amount) {
+
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
-	public String getCategoryCode() {
+    /**
+     * Gets category code.
+     *
+     * @return the category code
+     */
+    public String getCategoryCode() {
 		return this.categoryCode;
 	}
-	public void setCategoryCode(String categoryCode) {
+
+    /**
+     * Sets category code.
+     *
+     * @param categoryCode the category code
+     */
+    public void setCategoryCode(String categoryCode) {
 		this.categoryCode = categoryCode;
 	}
 
-	public String getGmtCreate() {
+    /**
+     * Gets gmt create.
+     *
+     * @return the gmt create
+     */
+    public String getGmtCreate() {
 		return this.gmtCreate;
 	}
-	public void setGmtCreate(String gmtCreate) {
+
+    /**
+     * Sets gmt create.
+     *
+     * @param gmtCreate the gmt create
+     */
+    public void setGmtCreate(String gmtCreate) {
 		this.gmtCreate = gmtCreate;
 	}
 
-	public String getGmtModified() {
+    /**
+     * Gets gmt modified.
+     *
+     * @return the gmt modified
+     */
+    public String getGmtModified() {
 		return this.gmtModified;
 	}
-	public void setGmtModified(String gmtModified) {
+
+    /**
+     * Sets gmt modified.
+     *
+     * @param gmtModified the gmt modified
+     */
+    public void setGmtModified(String gmtModified) {
 		this.gmtModified = gmtModified;
 	}
 
-	public String getGmtPayment() {
+    /**
+     * Gets gmt payment.
+     *
+     * @return the gmt payment
+     */
+    public String getGmtPayment() {
 		return this.gmtPayment;
 	}
-	public void setGmtPayment(String gmtPayment) {
+
+    /**
+     * Sets gmt payment.
+     *
+     * @param gmtPayment the gmt payment
+     */
+    public void setGmtPayment(String gmtPayment) {
 		this.gmtPayment = gmtPayment;
 	}
 
-	public String getGmtRefund() {
+    /**
+     * Gets gmt refund.
+     *
+     * @return the gmt refund
+     */
+    public String getGmtRefund() {
 		return this.gmtRefund;
 	}
-	public void setGmtRefund(String gmtRefund) {
+
+    /**
+     * Sets gmt refund.
+     *
+     * @param gmtRefund the gmt refund
+     */
+    public void setGmtRefund(String gmtRefund) {
 		this.gmtRefund = gmtRefund;
 	}
 
-	public String getMemo() {
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo() {
 		return this.memo;
 	}
-	public void setMemo(String memo) {
+
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
-	public String getOutServiceId() {
+    /**
+     * Gets out service id.
+     *
+     * @return the out service id
+     */
+    public String getOutServiceId() {
 		return this.outServiceId;
 	}
-	public void setOutServiceId(String outServiceId) {
+
+    /**
+     * Sets out service id.
+     *
+     * @param outServiceId the out service id
+     */
+    public void setOutServiceId(String outServiceId) {
 		this.outServiceId = outServiceId;
 	}
 
-	public String getOutSkuId() {
+    /**
+     * Gets out sku id.
+     *
+     * @return the out sku id
+     */
+    public String getOutSkuId() {
 		return this.outSkuId;
 	}
-	public void setOutSkuId(String outSkuId) {
+
+    /**
+     * Sets out sku id.
+     *
+     * @param outSkuId the out sku id
+     */
+    public void setOutSkuId(String outSkuId) {
 		this.outSkuId = outSkuId;
 	}
 
-	public List<String> getOutSpId() {
+    /**
+     * Gets out sp id.
+     *
+     * @return the out sp id
+     */
+    public List<String> getOutSpId() {
 		return this.outSpId;
 	}
-	public void setOutSpId(List<String> outSpId) {
+
+    /**
+     * Sets out sp id.
+     *
+     * @param outSpId the out sp id
+     */
+    public void setOutSpId(List<String> outSpId) {
 		this.outSpId = outSpId;
 	}
 
-	public String getPaymentAmount() {
+    /**
+     * Gets payment amount.
+     *
+     * @return the payment amount
+     */
+    public String getPaymentAmount() {
 		return this.paymentAmount;
 	}
-	public void setPaymentAmount(String paymentAmount) {
+
+    /**
+     * Sets payment amount.
+     *
+     * @param paymentAmount the payment amount
+     */
+    public void setPaymentAmount(String paymentAmount) {
 		this.paymentAmount = paymentAmount;
 	}
 
-	public String getPrice() {
+    /**
+     * Gets price.
+     *
+     * @return the price
+     */
+    public String getPrice() {
 		return this.price;
 	}
-	public void setPrice(String price) {
+
+    /**
+     * Sets price.
+     *
+     * @param price the price
+     */
+    public void setPrice(String price) {
 		this.price = price;
 	}
 
-	public Long getQuantity() {
+    /**
+     * Gets quantity.
+     *
+     * @return the quantity
+     */
+    public Long getQuantity() {
 		return this.quantity;
 	}
-	public void setQuantity(Long quantity) {
+
+    /**
+     * Sets quantity.
+     *
+     * @param quantity the quantity
+     */
+    public void setQuantity(Long quantity) {
 		this.quantity = quantity;
 	}
 
-	public String getRealAmount() {
+    /**
+     * Gets real amount.
+     *
+     * @return the real amount
+     */
+    public String getRealAmount() {
 		return this.realAmount;
 	}
-	public void setRealAmount(String realAmount) {
+
+    /**
+     * Sets real amount.
+     *
+     * @param realAmount the real amount
+     */
+    public void setRealAmount(String realAmount) {
 		this.realAmount = realAmount;
 	}
 
-	public String getRefundAmount() {
+    /**
+     * Gets refund amount.
+     *
+     * @return the refund amount
+     */
+    public String getRefundAmount() {
 		return this.refundAmount;
 	}
-	public void setRefundAmount(String refundAmount) {
+
+    /**
+     * Sets refund amount.
+     *
+     * @param refundAmount the refund amount
+     */
+    public void setRefundAmount(String refundAmount) {
 		this.refundAmount = refundAmount;
 	}
 
-	public String getServiceId() {
+    /**
+     * Gets service id.
+     *
+     * @return the service id
+     */
+    public String getServiceId() {
 		return this.serviceId;
 	}
-	public void setServiceId(String serviceId) {
+
+    /**
+     * Sets service id.
+     *
+     * @param serviceId the service id
+     */
+    public void setServiceId(String serviceId) {
 		this.serviceId = serviceId;
 	}
 
-	public String getServiceOrderNo() {
+    /**
+     * Gets service order no.
+     *
+     * @return the service order no
+     */
+    public String getServiceOrderNo() {
 		return this.serviceOrderNo;
 	}
-	public void setServiceOrderNo(String serviceOrderNo) {
+
+    /**
+     * Sets service order no.
+     *
+     * @param serviceOrderNo the service order no
+     */
+    public void setServiceOrderNo(String serviceOrderNo) {
 		this.serviceOrderNo = serviceOrderNo;
 	}
 
-	public String getSkuId() {
+    /**
+     * Gets sku id.
+     *
+     * @return the sku id
+     */
+    public String getSkuId() {
 		return this.skuId;
 	}
-	public void setSkuId(String skuId) {
+
+    /**
+     * Sets sku id.
+     *
+     * @param skuId the sku id
+     */
+    public void setSkuId(String skuId) {
 		this.skuId = skuId;
 	}
 
-	public String getTradeNo() {
+    /**
+     * Gets trade no.
+     *
+     * @return the trade no
+     */
+    public String getTradeNo() {
 		return this.tradeNo;
 	}
-	public void setTradeNo(String tradeNo) {
+
+    /**
+     * Sets trade no.
+     *
+     * @param tradeNo the trade no
+     */
+    public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
 
-	public String getUnit() {
+    /**
+     * Gets unit.
+     *
+     * @return the unit
+     */
+    public String getUnit() {
 		return this.unit;
 	}
-	public void setUnit(String unit) {
+
+    /**
+     * Sets unit.
+     *
+     * @param unit the unit
+     */
+    public void setUnit(String unit) {
 		this.unit = unit;
 	}
 

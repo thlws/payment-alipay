@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySecurityRiskHideDeviceidQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3145947628997544913L;
+	private static final long serialVersionUID = 1451579452157969455L;
 
 	/**
 	 * 商户的sdk客户端key
@@ -37,31 +37,75 @@ public class AlipaySecurityRiskHideDeviceidQueryModel extends AlipayObject {
 	@ApiField("deviceid_token")
 	private String deviceidToken;
 
-	public String getAppKeyClient() {
+    /**
+     * Gets app key client.
+     *
+     * @return the app key client
+     */
+    public String getAppKeyClient() {
 		return this.appKeyClient;
 	}
-	public void setAppKeyClient(String appKeyClient) {
+
+    /**
+     * Sets app key client.
+     *
+     * @param appKeyClient the app key client
+     */
+    public void setAppKeyClient(String appKeyClient) {
 		this.appKeyClient = appKeyClient;
 	}
 
-	public String getAppKeyServer() {
+    /**
+     * Gets app key server.
+     *
+     * @return the app key server
+     */
+    public String getAppKeyServer() {
 		return this.appKeyServer;
 	}
-	public void setAppKeyServer(String appKeyServer) {
+
+    /**
+     * Sets app key server.
+     *
+     * @param appKeyServer the app key server
+     */
+    public void setAppKeyServer(String appKeyServer) {
 		this.appKeyServer = appKeyServer;
 	}
 
-	public String getAppName() {
+    /**
+     * Gets app name.
+     *
+     * @return the app name
+     */
+    public String getAppName() {
 		return this.appName;
 	}
-	public void setAppName(String appName) {
+
+    /**
+     * Sets app name.
+     *
+     * @param appName the app name
+     */
+    public void setAppName(String appName) {
 		this.appName = appName;
 	}
 
-	public String getDeviceidToken() {
+    /**
+     * Gets deviceid token.
+     *
+     * @return the deviceid token
+     */
+    public String getDeviceidToken() {
 		return this.deviceidToken;
 	}
-	public void setDeviceidToken(String deviceidToken) {
+
+    /**
+     * Sets deviceid token.
+     *
+     * @param deviceidToken the deviceid token
+     */
+    public void setDeviceidToken(String deviceidToken) {
 		this.deviceidToken = deviceidToken;
 	}
 

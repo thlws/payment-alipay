@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户会员交易习惯查询接口
  *
  * @author auto create
- * @since 1.0, 2016-11-25 10:43:58
+ * @since 1.0, 2018-07-26 14:04:58
  */
 public class KoubeiMarketingDataTradeHabbitQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5887388238156415273L;
+	private static final long serialVersionUID = 1856499872543195881L;
 
 	/**
 	 * 业务日期
@@ -26,17 +26,39 @@ public class KoubeiMarketingDataTradeHabbitQueryModel extends AlipayObject {
 	@ApiField("store_ids")
 	private String storeIds;
 
-	public String getBizDate() {
+    /**
+     * Gets biz date.
+     *
+     * @return the biz date
+     */
+    public String getBizDate() {
 		return this.bizDate;
 	}
-	public void setBizDate(String bizDate) {
+
+    /**
+     * Sets biz date.
+     *
+     * @param bizDate the biz date
+     */
+    public void setBizDate(String bizDate) {
 		this.bizDate = bizDate;
 	}
 
-	public String getStoreIds() {
+    /**
+     * Gets store ids.
+     *
+     * @return the store ids
+     */
+    public String getStoreIds() {
 		return this.storeIds;
 	}
-	public void setStoreIds(String storeIds) {
+
+    /**
+     * Sets store ids.
+     *
+     * @param storeIds the store ids
+     */
+    public void setStoreIds(String storeIds) {
 		this.storeIds = storeIds;
 	}
 

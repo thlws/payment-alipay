@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.cplife.roominfo.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-24 11:24:31
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayEcoCplifeRoominfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4247216858422814947L;
+	private static final long serialVersionUID = 2856667735581782278L;
 
 	/** 
 	 * 符合条件的小区房屋信息列表.
@@ -30,17 +30,39 @@ public class AlipayEcoCplifeRoominfoQueryResponse extends AlipayResponse {
 	@ApiField("total_room_number")
 	private Long totalRoomNumber;
 
-	public void setRoomInfo(List<CplifeRoomDetail> roomInfo) {
+    /**
+     * Sets room info.
+     *
+     * @param roomInfo the room info
+     */
+    public void setRoomInfo(List<CplifeRoomDetail> roomInfo) {
 		this.roomInfo = roomInfo;
 	}
-	public List<CplifeRoomDetail> getRoomInfo( ) {
+
+    /**
+     * Gets room info.
+     *
+     * @return the room info
+     */
+    public List<CplifeRoomDetail> getRoomInfo( ) {
 		return this.roomInfo;
 	}
 
-	public void setTotalRoomNumber(Long totalRoomNumber) {
+    /**
+     * Sets total room number.
+     *
+     * @param totalRoomNumber the total room number
+     */
+    public void setTotalRoomNumber(Long totalRoomNumber) {
 		this.totalRoomNumber = totalRoomNumber;
 	}
-	public Long getTotalRoomNumber( ) {
+
+    /**
+     * Gets total room number.
+     *
+     * @return the total room number
+     */
+    public Long getTotalRoomNumber( ) {
 		return this.totalRoomNumber;
 	}
 

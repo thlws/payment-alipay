@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoWelfareCodeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7342734485791649323L;
+	private static final long serialVersionUID = 3793739867383685172L;
 
 	/**
 	 * 支付宝账户USERID，和福利账户ID而选一，可以通过支付宝钱包用户信息共享接口获取支付宝账户ID
@@ -110,101 +110,255 @@ NOT_EXIST	码不存在
 	@ApiField("welfare_user_id")
 	private String welfareUserId;
 
-	public String getAlipayUserId() {
+    /**
+     * Gets alipay user id.
+     *
+     * @return the alipay user id
+     */
+    public String getAlipayUserId() {
 		return this.alipayUserId;
 	}
-	public void setAlipayUserId(String alipayUserId) {
+
+    /**
+     * Sets alipay user id.
+     *
+     * @param alipayUserId the alipay user id
+     */
+    public void setAlipayUserId(String alipayUserId) {
 		this.alipayUserId = alipayUserId;
 	}
 
-	public String getCode() {
+    /**
+     * Gets code.
+     *
+     * @return the code
+     */
+    public String getCode() {
 		return this.code;
 	}
-	public void setCode(String code) {
+
+    /**
+     * Sets code.
+     *
+     * @param code the code
+     */
+    public void setCode(String code) {
 		this.code = code;
 	}
 
-	public String getCodeExpireDate() {
+    /**
+     * Gets code expire date.
+     *
+     * @return the code expire date
+     */
+    public String getCodeExpireDate() {
 		return this.codeExpireDate;
 	}
-	public void setCodeExpireDate(String codeExpireDate) {
+
+    /**
+     * Sets code expire date.
+     *
+     * @param codeExpireDate the code expire date
+     */
+    public void setCodeExpireDate(String codeExpireDate) {
 		this.codeExpireDate = codeExpireDate;
 	}
 
-	public Long getCodeNum() {
+    /**
+     * Gets code num.
+     *
+     * @return the code num
+     */
+    public Long getCodeNum() {
 		return this.codeNum;
 	}
-	public void setCodeNum(Long codeNum) {
+
+    /**
+     * Sets code num.
+     *
+     * @param codeNum the code num
+     */
+    public void setCodeNum(Long codeNum) {
 		this.codeNum = codeNum;
 	}
 
-	public String getCodePicUrl() {
+    /**
+     * Gets code pic url.
+     *
+     * @return the code pic url
+     */
+    public String getCodePicUrl() {
 		return this.codePicUrl;
 	}
-	public void setCodePicUrl(String codePicUrl) {
+
+    /**
+     * Sets code pic url.
+     *
+     * @param codePicUrl the code pic url
+     */
+    public void setCodePicUrl(String codePicUrl) {
 		this.codePicUrl = codePicUrl;
 	}
 
-	public String getCodeStartDate() {
+    /**
+     * Gets code start date.
+     *
+     * @return the code start date
+     */
+    public String getCodeStartDate() {
 		return this.codeStartDate;
 	}
-	public void setCodeStartDate(String codeStartDate) {
+
+    /**
+     * Sets code start date.
+     *
+     * @param codeStartDate the code start date
+     */
+    public void setCodeStartDate(String codeStartDate) {
 		this.codeStartDate = codeStartDate;
 	}
 
-	public String getCodeStatus() {
+    /**
+     * Gets code status.
+     *
+     * @return the code status
+     */
+    public String getCodeStatus() {
 		return this.codeStatus;
 	}
-	public void setCodeStatus(String codeStatus) {
+
+    /**
+     * Sets code status.
+     *
+     * @param codeStatus the code status
+     */
+    public void setCodeStatus(String codeStatus) {
 		this.codeStatus = codeStatus;
 	}
 
-	public String getCodeStatusDate() {
+    /**
+     * Gets code status date.
+     *
+     * @return the code status date
+     */
+    public String getCodeStatusDate() {
 		return this.codeStatusDate;
 	}
-	public void setCodeStatusDate(String codeStatusDate) {
+
+    /**
+     * Sets code status date.
+     *
+     * @param codeStatusDate the code status date
+     */
+    public void setCodeStatusDate(String codeStatusDate) {
 		this.codeStatusDate = codeStatusDate;
 	}
 
-	public String getCodeType() {
+    /**
+     * Gets code type.
+     *
+     * @return the code type
+     */
+    public String getCodeType() {
 		return this.codeType;
 	}
-	public void setCodeType(String codeType) {
+
+    /**
+     * Sets code type.
+     *
+     * @param codeType the code type
+     */
+    public void setCodeType(String codeType) {
 		this.codeType = codeType;
 	}
 
-	public String getExtendParams() {
+    /**
+     * Gets extend params.
+     *
+     * @return the extend params
+     */
+    public String getExtendParams() {
 		return this.extendParams;
 	}
-	public void setExtendParams(String extendParams) {
+
+    /**
+     * Sets extend params.
+     *
+     * @param extendParams the extend params
+     */
+    public void setExtendParams(String extendParams) {
 		this.extendParams = extendParams;
 	}
 
-	public String getIsvCode() {
+    /**
+     * Gets isv code.
+     *
+     * @return the isv code
+     */
+    public String getIsvCode() {
 		return this.isvCode;
 	}
-	public void setIsvCode(String isvCode) {
+
+    /**
+     * Sets isv code.
+     *
+     * @param isvCode the isv code
+     */
+    public void setIsvCode(String isvCode) {
 		this.isvCode = isvCode;
 	}
 
-	public WelfareEcoStoreInfo getStoreInfo() {
+    /**
+     * Gets store info.
+     *
+     * @return the store info
+     */
+    public WelfareEcoStoreInfo getStoreInfo() {
 		return this.storeInfo;
 	}
-	public void setStoreInfo(WelfareEcoStoreInfo storeInfo) {
+
+    /**
+     * Sets store info.
+     *
+     * @param storeInfo the store info
+     */
+    public void setStoreInfo(WelfareEcoStoreInfo storeInfo) {
 		this.storeInfo = storeInfo;
 	}
 
-	public String getSyncDate() {
+    /**
+     * Gets sync date.
+     *
+     * @return the sync date
+     */
+    public String getSyncDate() {
 		return this.syncDate;
 	}
-	public void setSyncDate(String syncDate) {
+
+    /**
+     * Sets sync date.
+     *
+     * @param syncDate the sync date
+     */
+    public void setSyncDate(String syncDate) {
 		this.syncDate = syncDate;
 	}
 
-	public String getWelfareUserId() {
+    /**
+     * Gets welfare user id.
+     *
+     * @return the welfare user id
+     */
+    public String getWelfareUserId() {
 		return this.welfareUserId;
 	}
-	public void setWelfareUserId(String welfareUserId) {
+
+    /**
+     * Sets welfare user id.
+     *
+     * @param welfareUserId the welfare user id
+     */
+    public void setWelfareUserId(String welfareUserId) {
 		this.welfareUserId = welfareUserId;
 	}
 

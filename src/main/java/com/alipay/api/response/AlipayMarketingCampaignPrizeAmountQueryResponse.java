@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.campaign.prize.amount.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-03-23 14:22:01
  */
 public class AlipayMarketingCampaignPrizeAmountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5712614555139217669L;
+	private static final long serialVersionUID = 6821353199618829377L;
 
 	/** 
 	 * 奖品剩余数量，数值
@@ -20,10 +20,21 @@ public class AlipayMarketingCampaignPrizeAmountQueryResponse extends AlipayRespo
 	@ApiField("remain_amount")
 	private String remainAmount;
 
-	public void setRemainAmount(String remainAmount) {
+    /**
+     * Sets remain amount.
+     *
+     * @param remainAmount the remain amount
+     */
+    public void setRemainAmount(String remainAmount) {
 		this.remainAmount = remainAmount;
 	}
-	public String getRemainAmount( ) {
+
+    /**
+     * Gets remain amount.
+     *
+     * @return the remain amount
+     */
+    public String getRemainAmount( ) {
 		return this.remainAmount;
 	}
 

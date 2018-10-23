@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KbadvertVoucherManual extends AlipayObject {
 
-	private static final long serialVersionUID = 3578879859224498593L;
+	private static final long serialVersionUID = 4858771773757546132L;
 
 	/**
 	 * 说明
@@ -29,17 +29,39 @@ public class KbadvertVoucherManual extends AlipayObject {
 	@ApiField("title")
 	private String title;
 
-	public List<String> getDetails() {
+    /**
+     * Gets details.
+     *
+     * @return the details
+     */
+    public List<String> getDetails() {
 		return this.details;
 	}
-	public void setDetails(List<String> details) {
+
+    /**
+     * Sets details.
+     *
+     * @param details the details
+     */
+    public void setDetails(List<String> details) {
 		this.details = details;
 	}
 
-	public String getTitle() {
+    /**
+     * Gets title.
+     *
+     * @return the title
+     */
+    public String getTitle() {
 		return this.title;
 	}
-	public void setTitle(String title) {
+
+    /**
+     * Sets title.
+     *
+     * @param title the title
+     */
+    public void setTitle(String title) {
 		this.title = title;
 	}
 

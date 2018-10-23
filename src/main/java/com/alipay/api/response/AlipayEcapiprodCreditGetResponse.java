@@ -7,13 +7,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ecapiprod.credit.get response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2015-04-02 16:44:25
  */
 public class AlipayEcapiprodCreditGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4299653821738673879L;
+	private static final long serialVersionUID = 5246972735792198183L;
 
 	/** 
 	 * 授信结果
@@ -27,17 +27,39 @@ public class AlipayEcapiprodCreditGetResponse extends AlipayResponse {
 	@ApiField("request_id")
 	private String requestId;
 
-	public void setCreditResult(CreditResult creditResult) {
+    /**
+     * Sets credit result.
+     *
+     * @param creditResult the credit result
+     */
+    public void setCreditResult(CreditResult creditResult) {
 		this.creditResult = creditResult;
 	}
-	public CreditResult getCreditResult( ) {
+
+    /**
+     * Gets credit result.
+     *
+     * @return the credit result
+     */
+    public CreditResult getCreditResult( ) {
 		return this.creditResult;
 	}
 
-	public void setRequestId(String requestId) {
+    /**
+     * Sets request id.
+     *
+     * @param requestId the request id
+     */
+    public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
-	public String getRequestId( ) {
+
+    /**
+     * Gets request id.
+     *
+     * @return the request id
+     */
+    public String getRequestId( ) {
 		return this.requestId;
 	}
 

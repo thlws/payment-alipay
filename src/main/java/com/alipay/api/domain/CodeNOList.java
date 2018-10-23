@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CodeNOList extends AlipayObject {
 
-	private static final long serialVersionUID = 7376639534862224741L;
+	private static final long serialVersionUID = 2642368935873273484L;
 
 	/**
 	 * 金额
@@ -43,38 +43,93 @@ public class CodeNOList extends AlipayObject {
 	@ApiField("valid_date")
 	private String validDate;
 
-	public String getAmount() {
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public String getAmount() {
 		return this.amount;
 	}
-	public void setAmount(String amount) {
+
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
-	public String getCodeNo() {
+    /**
+     * Gets code no.
+     *
+     * @return the code no
+     */
+    public String getCodeNo() {
 		return this.codeNo;
 	}
-	public void setCodeNo(String codeNo) {
+
+    /**
+     * Sets code no.
+     *
+     * @param codeNo the code no
+     */
+    public void setCodeNo(String codeNo) {
 		this.codeNo = codeNo;
 	}
 
-	public String getSubType() {
+    /**
+     * Gets sub type.
+     *
+     * @return the sub type
+     */
+    public String getSubType() {
 		return this.subType;
 	}
-	public void setSubType(String subType) {
+
+    /**
+     * Sets sub type.
+     *
+     * @param subType the sub type
+     */
+    public void setSubType(String subType) {
 		this.subType = subType;
 	}
 
-	public String getTicketType() {
+    /**
+     * Gets ticket type.
+     *
+     * @return the ticket type
+     */
+    public String getTicketType() {
 		return this.ticketType;
 	}
-	public void setTicketType(String ticketType) {
+
+    /**
+     * Sets ticket type.
+     *
+     * @param ticketType the ticket type
+     */
+    public void setTicketType(String ticketType) {
 		this.ticketType = ticketType;
 	}
 
-	public String getValidDate() {
+    /**
+     * Gets valid date.
+     *
+     * @return the valid date
+     */
+    public String getValidDate() {
 		return this.validDate;
 	}
-	public void setValidDate(String validDate) {
+
+    /**
+     * Sets valid date.
+     *
+     * @param validDate the valid date
+     */
+    public void setValidDate(String validDate) {
 		this.validDate = validDate;
 	}
 

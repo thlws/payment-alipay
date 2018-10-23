@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.user.auth.zhimaorg.identity.apply response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-10-09 11:23:33
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayUserAuthZhimaorgIdentityApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5361765339192853815L;
+	private static final long serialVersionUID = 5231838194554137958L;
 
 	/** 
 	 * 访问令牌。通过该令牌调用需要授权类接口
@@ -32,24 +32,57 @@ public class AlipayUserAuthZhimaorgIdentityApplyResponse extends AlipayResponse 
 	@ApiField("refresh_token")
 	private String refreshToken;
 
-	public void setAccessToken(String accessToken) {
+    /**
+     * Sets access token.
+     *
+     * @param accessToken the access token
+     */
+    public void setAccessToken(String accessToken) {
 		this.accessToken = accessToken;
 	}
-	public String getAccessToken( ) {
+
+    /**
+     * Gets access token.
+     *
+     * @return the access token
+     */
+    public String getAccessToken( ) {
 		return this.accessToken;
 	}
 
-	public void setAuthTokenType(String authTokenType) {
+    /**
+     * Sets auth token type.
+     *
+     * @param authTokenType the auth token type
+     */
+    public void setAuthTokenType(String authTokenType) {
 		this.authTokenType = authTokenType;
 	}
-	public String getAuthTokenType( ) {
+
+    /**
+     * Gets auth token type.
+     *
+     * @return the auth token type
+     */
+    public String getAuthTokenType( ) {
 		return this.authTokenType;
 	}
 
-	public void setRefreshToken(String refreshToken) {
+    /**
+     * Sets refresh token.
+     *
+     * @param refreshToken the refresh token
+     */
+    public void setRefreshToken(String refreshToken) {
 		this.refreshToken = refreshToken;
 	}
-	public String getRefreshToken( ) {
+
+    /**
+     * Gets refresh token.
+     *
+     * @return the refresh token
+     */
+    public String getRefreshToken( ) {
 		return this.refreshToken;
 	}
 

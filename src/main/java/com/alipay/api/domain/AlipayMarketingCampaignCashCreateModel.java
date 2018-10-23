@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建现金活动
  *
  * @author auto create
- * @since 1.0, 2017-07-14 11:53:08
+ * @since 1.0, 2018-07-19 14:27:27
  */
 public class AlipayMarketingCampaignCashCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2566125714395265364L;
+	private static final long serialVersionUID = 3285351455641611242L;
 
 	/**
 	 * 红包名称,商户在查询列表、详情看到的名字,同时也会显示在商户付款页面。
@@ -72,66 +72,165 @@ public class AlipayMarketingCampaignCashCreateModel extends AlipayObject {
 	@ApiField("total_num")
 	private String totalNum;
 
-	public String getCouponName() {
+    /**
+     * Gets coupon name.
+     *
+     * @return the coupon name
+     */
+    public String getCouponName() {
 		return this.couponName;
 	}
-	public void setCouponName(String couponName) {
+
+    /**
+     * Sets coupon name.
+     *
+     * @param couponName the coupon name
+     */
+    public void setCouponName(String couponName) {
 		this.couponName = couponName;
 	}
 
-	public String getEndTime() {
+    /**
+     * Gets end time.
+     *
+     * @return the end time
+     */
+    public String getEndTime() {
 		return this.endTime;
 	}
-	public void setEndTime(String endTime) {
+
+    /**
+     * Sets end time.
+     *
+     * @param endTime the end time
+     */
+    public void setEndTime(String endTime) {
 		this.endTime = endTime;
 	}
 
-	public String getMerchantLink() {
+    /**
+     * Gets merchant link.
+     *
+     * @return the merchant link
+     */
+    public String getMerchantLink() {
 		return this.merchantLink;
 	}
-	public void setMerchantLink(String merchantLink) {
+
+    /**
+     * Sets merchant link.
+     *
+     * @param merchantLink the merchant link
+     */
+    public void setMerchantLink(String merchantLink) {
 		this.merchantLink = merchantLink;
 	}
 
-	public String getPrizeMsg() {
+    /**
+     * Gets prize msg.
+     *
+     * @return the prize msg
+     */
+    public String getPrizeMsg() {
 		return this.prizeMsg;
 	}
-	public void setPrizeMsg(String prizeMsg) {
+
+    /**
+     * Sets prize msg.
+     *
+     * @param prizeMsg the prize msg
+     */
+    public void setPrizeMsg(String prizeMsg) {
 		this.prizeMsg = prizeMsg;
 	}
 
-	public String getPrizeType() {
+    /**
+     * Gets prize type.
+     *
+     * @return the prize type
+     */
+    public String getPrizeType() {
 		return this.prizeType;
 	}
-	public void setPrizeType(String prizeType) {
+
+    /**
+     * Sets prize type.
+     *
+     * @param prizeType the prize type
+     */
+    public void setPrizeType(String prizeType) {
 		this.prizeType = prizeType;
 	}
 
-	public String getSendFreqency() {
+    /**
+     * Gets send freqency.
+     *
+     * @return the send freqency
+     */
+    public String getSendFreqency() {
 		return this.sendFreqency;
 	}
-	public void setSendFreqency(String sendFreqency) {
+
+    /**
+     * Sets send freqency.
+     *
+     * @param sendFreqency the send freqency
+     */
+    public void setSendFreqency(String sendFreqency) {
 		this.sendFreqency = sendFreqency;
 	}
 
-	public String getStartTime() {
+    /**
+     * Gets start time.
+     *
+     * @return the start time
+     */
+    public String getStartTime() {
 		return this.startTime;
 	}
-	public void setStartTime(String startTime) {
+
+    /**
+     * Sets start time.
+     *
+     * @param startTime the start time
+     */
+    public void setStartTime(String startTime) {
 		this.startTime = startTime;
 	}
 
-	public String getTotalMoney() {
+    /**
+     * Gets total money.
+     *
+     * @return the total money
+     */
+    public String getTotalMoney() {
 		return this.totalMoney;
 	}
-	public void setTotalMoney(String totalMoney) {
+
+    /**
+     * Sets total money.
+     *
+     * @param totalMoney the total money
+     */
+    public void setTotalMoney(String totalMoney) {
 		this.totalMoney = totalMoney;
 	}
 
-	public String getTotalNum() {
+    /**
+     * Gets total num.
+     *
+     * @return the total num
+     */
+    public String getTotalNum() {
 		return this.totalNum;
 	}
-	public void setTotalNum(String totalNum) {
+
+    /**
+     * Sets total num.
+     *
+     * @param totalNum the total num
+     */
+    public void setTotalNum(String totalNum) {
 		this.totalNum = totalNum;
 	}
 

@@ -21,31 +21,31 @@ package com.alipay.api.internal.util.codec;
 
 /**
  * Provides Base64 encoding and decoding as defined by RFC 2045.
- * 
- * <p>This class implements section <cite>6.8. Base64 Content-Transfer-Encoding</cite> 
- * from RFC 2045 <cite>Multipurpose Internet Mail Extensions (MIME) Part One: 
- * Format of Internet Message Bodies</cite> by Freed and Borenstein.</p> 
  *
- * @see <a href="http://www.ietf.org/rfc/rfc2045.txt">RFC 2045</a>
+ * <p>This class implements section <cite>6.8. Base64 Content-Transfer-Encoding</cite>
+ * from RFC 2045 <cite>Multipurpose Internet Mail Extensions (MIME) Part One:
+ * Format of Internet Message Bodies</cite> by Freed and Borenstein.</p>
+ *
  * @author Apache Software Foundation
- * @since 1.0-dev
- * @version $Id: Base64.java,v 1.20 2004/05/24 00:21:24 ggregory Exp $
+ * @version $Id : Base64.java,v 1.20 2004/05/24 00:21:24 ggregory Exp $
+ * @see <a href="http://www.ietf.org/rfc/rfc2045.txt">RFC 2045</a>
+ * @since 1.0 -dev
  */
 public class Base64 implements BinaryEncoder, BinaryDecoder {
 
     /**
      * Chunk size per RFC 2045 section 6.8.
-     * 
-     * <p>The {@value} character limit does not count the trailing CRLF, but counts 
+     *
+     * <p>The {@value} character limit does not count the trailing CRLF, but counts
      * all other characters, including any equal signs.</p>
-     * 
+     *
      * @see <a href="http://www.ietf.org/rfc/rfc2045.txt">RFC 2045 section 6.8</a>
      */
     static final int CHUNK_SIZE = 76;
 
     /**
      * Chunk separator per RFC 2045 section 2.1.
-     * 
+     *
      * @see <a href="http://www.ietf.org/rfc/rfc2045.txt">RFC 2045 section 2.1</a>
      */
     static final byte[] CHUNK_SEPARATOR = "\r\n".getBytes();
@@ -84,7 +84,7 @@ public class Base64 implements BinaryEncoder, BinaryDecoder {
      * Used to test the sign of a byte.
      */
     static final int SIGN = -128;
-    
+
     /**
      * Byte used to pad output.
      */
@@ -144,8 +144,7 @@ public class Base64 implements BinaryEncoder, BinaryDecoder {
      * only valid characters within the Base64 alphabet.
      *
      * @param arrayOctect byte array to test
-     * @return true if all bytes are valid characters in the Base64
-     *         alphabet or if the byte array is empty; false, otherwise
+     * @return true if all bytes are valid characters in the Base64         alphabet or if the byte array is empty; false, otherwise
      */
     public static boolean isArrayByteBase64(byte[] arrayOctect) {
 
@@ -223,9 +222,8 @@ public class Base64 implements BinaryEncoder, BinaryDecoder {
      * chunking the output into 76 character blocks.
      *
      * @param binaryData Array containing binary data to encode.
-     * @param isChunked if isChunked is true this encoder will chunk
-     *                  the base64 output into 76 character blocks
-     * @return Base64-encoded data.
+     * @param isChunked  if isChunked is true this encoder will chunk                  the base64 output into 76 character blocks
+     * @return Base64 -encoded data.
      */
     public static byte[] encodeBase64(byte[] binaryData, boolean isChunked) {
         int lengthDataBits = binaryData.length * EIGHTBIT;
@@ -428,12 +426,11 @@ public class Base64 implements BinaryEncoder, BinaryDecoder {
         }
         return decodedData;
     }
-    
+
     /**
      * Discards any whitespace from a base-64 encoded block.
      *
-     * @param data The base-64 encoded data to discard the whitespace
-     * from.
+     * @param data The base-64 encoded data to discard the whitespace from.
      * @return The data, less whitespace (see RFC 2045).
      */
     static byte[] discardWhitespace(byte[] data) {

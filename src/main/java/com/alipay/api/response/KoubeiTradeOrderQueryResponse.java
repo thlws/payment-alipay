@@ -13,13 +13,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.trade.order.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-22 14:49:14
+ * @since 1.0, 2018-01-09 11:11:08
  */
 public class KoubeiTradeOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6226319223387495125L;
+	private static final long serialVersionUID = 4573553914143739287L;
 
 	/** 
 	 * 订单对应活动信息，多个商品情况下可能对应多个活动，故为列表;可根据此活动号查询活动名，以标注该购买的商品隶属于哪个活动。
@@ -139,115 +139,291 @@ refund_reason：退款理由，由消费者选择或填写内容，系统退款�
 	@ApiField("kb_order_voucher_model")
 	private List<KbOrderVoucherModel> vouchers;
 
-	public void setActivityInfos(List<KbOrderActivityModel> activityInfos) {
+    /**
+     * Sets activity infos.
+     *
+     * @param activityInfos the activity infos
+     */
+    public void setActivityInfos(List<KbOrderActivityModel> activityInfos) {
 		this.activityInfos = activityInfos;
 	}
-	public List<KbOrderActivityModel> getActivityInfos( ) {
+
+    /**
+     * Gets activity infos.
+     *
+     * @return the activity infos
+     */
+    public List<KbOrderActivityModel> getActivityInfos( ) {
 		return this.activityInfos;
 	}
 
-	public void setBuyerId(String buyerId) {
+    /**
+     * Sets buyer id.
+     *
+     * @param buyerId the buyer id
+     */
+    public void setBuyerId(String buyerId) {
 		this.buyerId = buyerId;
 	}
-	public String getBuyerId( ) {
+
+    /**
+     * Gets buyer id.
+     *
+     * @return the buyer id
+     */
+    public String getBuyerId( ) {
 		return this.buyerId;
 	}
 
-	public void setContact(String contact) {
+    /**
+     * Sets contact.
+     *
+     * @param contact the contact
+     */
+    public void setContact(String contact) {
 		this.contact = contact;
 	}
-	public String getContact( ) {
+
+    /**
+     * Gets contact.
+     *
+     * @return the contact
+     */
+    public String getContact( ) {
 		return this.contact;
 	}
 
-	public void setFundsVouchers(List<KbOrderFundsVoucherModel> fundsVouchers) {
+    /**
+     * Sets funds vouchers.
+     *
+     * @param fundsVouchers the funds vouchers
+     */
+    public void setFundsVouchers(List<KbOrderFundsVoucherModel> fundsVouchers) {
 		this.fundsVouchers = fundsVouchers;
 	}
-	public List<KbOrderFundsVoucherModel> getFundsVouchers( ) {
+
+    /**
+     * Gets funds vouchers.
+     *
+     * @return the funds vouchers
+     */
+    public List<KbOrderFundsVoucherModel> getFundsVouchers( ) {
 		return this.fundsVouchers;
 	}
 
-	public void setGmtCreate(Date gmtCreate) {
+    /**
+     * Sets gmt create.
+     *
+     * @param gmtCreate the gmt create
+     */
+    public void setGmtCreate(Date gmtCreate) {
 		this.gmtCreate = gmtCreate;
 	}
-	public Date getGmtCreate( ) {
+
+    /**
+     * Gets gmt create.
+     *
+     * @return the gmt create
+     */
+    public Date getGmtCreate( ) {
 		return this.gmtCreate;
 	}
 
-	public void setGmtModified(Date gmtModified) {
+    /**
+     * Sets gmt modified.
+     *
+     * @param gmtModified the gmt modified
+     */
+    public void setGmtModified(Date gmtModified) {
 		this.gmtModified = gmtModified;
 	}
-	public Date getGmtModified( ) {
+
+    /**
+     * Gets gmt modified.
+     *
+     * @return the gmt modified
+     */
+    public Date getGmtModified( ) {
 		return this.gmtModified;
 	}
 
-	public void setOrderNo(String orderNo) {
+    /**
+     * Sets order no.
+     *
+     * @param orderNo the order no
+     */
+    public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
-	public String getOrderNo( ) {
+
+    /**
+     * Gets order no.
+     *
+     * @return the order no
+     */
+    public String getOrderNo( ) {
 		return this.orderNo;
 	}
 
-	public void setOutBizNo(String outBizNo) {
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
-	public String getOutBizNo( ) {
+
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo( ) {
 		return this.outBizNo;
 	}
 
-	public void setPartnerId(String partnerId) {
+    /**
+     * Sets partner id.
+     *
+     * @param partnerId the partner id
+     */
+    public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}
-	public String getPartnerId( ) {
+
+    /**
+     * Gets partner id.
+     *
+     * @return the partner id
+     */
+    public String getPartnerId( ) {
 		return this.partnerId;
 	}
 
-	public void setRealAmount(String realAmount) {
+    /**
+     * Sets real amount.
+     *
+     * @param realAmount the real amount
+     */
+    public void setRealAmount(String realAmount) {
 		this.realAmount = realAmount;
 	}
-	public String getRealAmount( ) {
+
+    /**
+     * Gets real amount.
+     *
+     * @return the real amount
+     */
+    public String getRealAmount( ) {
 		return this.realAmount;
 	}
 
-	public void setSellerId(String sellerId) {
+    /**
+     * Sets seller id.
+     *
+     * @param sellerId the seller id
+     */
+    public void setSellerId(String sellerId) {
 		this.sellerId = sellerId;
 	}
-	public String getSellerId( ) {
+
+    /**
+     * Gets seller id.
+     *
+     * @return the seller id
+     */
+    public String getSellerId( ) {
 		return this.sellerId;
 	}
 
-	public void setShop(KbOrderShopModel shop) {
+    /**
+     * Sets shop.
+     *
+     * @param shop the shop
+     */
+    public void setShop(KbOrderShopModel shop) {
 		this.shop = shop;
 	}
-	public KbOrderShopModel getShop( ) {
+
+    /**
+     * Gets shop.
+     *
+     * @return the shop
+     */
+    public KbOrderShopModel getShop( ) {
 		return this.shop;
 	}
 
-	public void setStatus(String status) {
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
-	public String getStatus( ) {
+
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus( ) {
 		return this.status;
 	}
 
-	public void setTotalAmount(String totalAmount) {
+    /**
+     * Sets total amount.
+     *
+     * @param totalAmount the total amount
+     */
+    public void setTotalAmount(String totalAmount) {
 		this.totalAmount = totalAmount;
 	}
-	public String getTotalAmount( ) {
+
+    /**
+     * Gets total amount.
+     *
+     * @return the total amount
+     */
+    public String getTotalAmount( ) {
 		return this.totalAmount;
 	}
 
-	public void setTransNo(String transNo) {
+    /**
+     * Sets trans no.
+     *
+     * @param transNo the trans no
+     */
+    public void setTransNo(String transNo) {
 		this.transNo = transNo;
 	}
-	public String getTransNo( ) {
+
+    /**
+     * Gets trans no.
+     *
+     * @return the trans no
+     */
+    public String getTransNo( ) {
 		return this.transNo;
 	}
 
-	public void setVouchers(List<KbOrderVoucherModel> vouchers) {
+    /**
+     * Sets vouchers.
+     *
+     * @param vouchers the vouchers
+     */
+    public void setVouchers(List<KbOrderVoucherModel> vouchers) {
 		this.vouchers = vouchers;
 	}
-	public List<KbOrderVoucherModel> getVouchers( ) {
+
+    /**
+     * Gets vouchers.
+     *
+     * @return the vouchers
+     */
+    public List<KbOrderVoucherModel> getVouchers( ) {
 		return this.vouchers;
 	}
 

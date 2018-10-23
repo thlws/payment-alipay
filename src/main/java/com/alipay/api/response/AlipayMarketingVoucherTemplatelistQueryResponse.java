@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.voucher.templatelist.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-19 11:27:56
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayMarketingVoucherTemplatelistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5426964685773973577L;
+	private static final long serialVersionUID = 8854288128764665317L;
 
 	/** 
 	 * 当前页码,页码从1开始
@@ -48,38 +48,93 @@ public class AlipayMarketingVoucherTemplatelistQueryResponse extends AlipayRespo
 	@ApiField("voucher_template_lite_info")
 	private List<VoucherTemplateLiteInfo> voucherTemplates;
 
-	public void setCurrentPage(Long currentPage) {
+    /**
+     * Sets current page.
+     *
+     * @param currentPage the current page
+     */
+    public void setCurrentPage(Long currentPage) {
 		this.currentPage = currentPage;
 	}
-	public Long getCurrentPage( ) {
+
+    /**
+     * Gets current page.
+     *
+     * @return the current page
+     */
+    public Long getCurrentPage( ) {
 		return this.currentPage;
 	}
 
-	public void setItemsPerPage(Long itemsPerPage) {
+    /**
+     * Sets items per page.
+     *
+     * @param itemsPerPage the items per page
+     */
+    public void setItemsPerPage(Long itemsPerPage) {
 		this.itemsPerPage = itemsPerPage;
 	}
-	public Long getItemsPerPage( ) {
+
+    /**
+     * Gets items per page.
+     *
+     * @return the items per page
+     */
+    public Long getItemsPerPage( ) {
 		return this.itemsPerPage;
 	}
 
-	public void setTotalItems(Long totalItems) {
+    /**
+     * Sets total items.
+     *
+     * @param totalItems the total items
+     */
+    public void setTotalItems(Long totalItems) {
 		this.totalItems = totalItems;
 	}
-	public Long getTotalItems( ) {
+
+    /**
+     * Gets total items.
+     *
+     * @return the total items
+     */
+    public Long getTotalItems( ) {
 		return this.totalItems;
 	}
 
-	public void setTotalPages(Long totalPages) {
+    /**
+     * Sets total pages.
+     *
+     * @param totalPages the total pages
+     */
+    public void setTotalPages(Long totalPages) {
 		this.totalPages = totalPages;
 	}
-	public Long getTotalPages( ) {
+
+    /**
+     * Gets total pages.
+     *
+     * @return the total pages
+     */
+    public Long getTotalPages( ) {
 		return this.totalPages;
 	}
 
-	public void setVoucherTemplates(List<VoucherTemplateLiteInfo> voucherTemplates) {
+    /**
+     * Sets voucher templates.
+     *
+     * @param voucherTemplates the voucher templates
+     */
+    public void setVoucherTemplates(List<VoucherTemplateLiteInfo> voucherTemplates) {
 		this.voucherTemplates = voucherTemplates;
 	}
-	public List<VoucherTemplateLiteInfo> getVoucherTemplates( ) {
+
+    /**
+     * Gets voucher templates.
+     *
+     * @return the voucher templates
+     */
+    public List<VoucherTemplateLiteInfo> getVoucherTemplates( ) {
 		return this.voucherTemplates;
 	}
 

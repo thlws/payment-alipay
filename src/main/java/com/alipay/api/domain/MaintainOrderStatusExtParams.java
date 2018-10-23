@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MaintainOrderStatusExtParams extends AlipayObject {
 
-	private static final long serialVersionUID = 4885125437514897966L;
+	private static final long serialVersionUID = 7882799518783682439L;
 
 	/**
 	 * 编码
@@ -49,45 +49,111 @@ public class MaintainOrderStatusExtParams extends AlipayObject {
 	@ApiField("sender_addr")
 	private String senderAddr;
 
-	public String getLogisticsCode() {
+    /**
+     * Gets logistics code.
+     *
+     * @return the logistics code
+     */
+    public String getLogisticsCode() {
 		return this.logisticsCode;
 	}
-	public void setLogisticsCode(String logisticsCode) {
+
+    /**
+     * Sets logistics code.
+     *
+     * @param logisticsCode the logistics code
+     */
+    public void setLogisticsCode(String logisticsCode) {
 		this.logisticsCode = logisticsCode;
 	}
 
-	public String getLogisticsCompany() {
+    /**
+     * Gets logistics company.
+     *
+     * @return the logistics company
+     */
+    public String getLogisticsCompany() {
 		return this.logisticsCompany;
 	}
-	public void setLogisticsCompany(String logisticsCompany) {
+
+    /**
+     * Sets logistics company.
+     *
+     * @param logisticsCompany the logistics company
+     */
+    public void setLogisticsCompany(String logisticsCompany) {
 		this.logisticsCompany = logisticsCompany;
 	}
 
-	public String getLogisticsNo() {
+    /**
+     * Gets logistics no.
+     *
+     * @return the logistics no
+     */
+    public String getLogisticsNo() {
 		return this.logisticsNo;
 	}
-	public void setLogisticsNo(String logisticsNo) {
+
+    /**
+     * Sets logistics no.
+     *
+     * @param logisticsNo the logistics no
+     */
+    public void setLogisticsNo(String logisticsNo) {
 		this.logisticsNo = logisticsNo;
 	}
 
-	public String getOrderStatusTxt() {
+    /**
+     * Gets order status txt.
+     *
+     * @return the order status txt
+     */
+    public String getOrderStatusTxt() {
 		return this.orderStatusTxt;
 	}
-	public void setOrderStatusTxt(String orderStatusTxt) {
+
+    /**
+     * Sets order status txt.
+     *
+     * @param orderStatusTxt the order status txt
+     */
+    public void setOrderStatusTxt(String orderStatusTxt) {
 		this.orderStatusTxt = orderStatusTxt;
 	}
 
-	public String getReceiverAddr() {
+    /**
+     * Gets receiver addr.
+     *
+     * @return the receiver addr
+     */
+    public String getReceiverAddr() {
 		return this.receiverAddr;
 	}
-	public void setReceiverAddr(String receiverAddr) {
+
+    /**
+     * Sets receiver addr.
+     *
+     * @param receiverAddr the receiver addr
+     */
+    public void setReceiverAddr(String receiverAddr) {
 		this.receiverAddr = receiverAddr;
 	}
 
-	public String getSenderAddr() {
+    /**
+     * Gets sender addr.
+     *
+     * @return the sender addr
+     */
+    public String getSenderAddr() {
 		return this.senderAddr;
 	}
-	public void setSenderAddr(String senderAddr) {
+
+    /**
+     * Sets sender addr.
+     *
+     * @param senderAddr the sender addr
+     */
+    public void setSenderAddr(String senderAddr) {
 		this.senderAddr = senderAddr;
 	}
 

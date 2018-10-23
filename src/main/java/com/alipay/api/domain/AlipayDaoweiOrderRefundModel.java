@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单退款接口
  *
  * @author auto create
- * @since 1.0, 2017-03-20 14:02:08
+ * @since 1.0, 2018-03-23 13:22:08
  */
 public class AlipayDaoweiOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7574658466932465868L;
+	private static final long serialVersionUID = 5681428145737526346L;
 
 	/**
 	 * 退款操作备注信息，用于详述退款单原因（使用该接口，必须要详细说明退款的原因），必填，长度不超过2000字符
@@ -47,38 +47,93 @@ public class AlipayDaoweiOrderRefundModel extends AlipayObject {
 	@ApiField("order_refund_info")
 	private List<OrderRefundInfo> refundDetails;
 
-	public String getMemo() {
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo() {
 		return this.memo;
 	}
-	public void setMemo(String memo) {
+
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
-	public String getOrderNo() {
+    /**
+     * Gets order no.
+     *
+     * @return the order no
+     */
+    public String getOrderNo() {
 		return this.orderNo;
 	}
-	public void setOrderNo(String orderNo) {
+
+    /**
+     * Sets order no.
+     *
+     * @param orderNo the order no
+     */
+    public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
 
-	public String getOutRefundId() {
+    /**
+     * Gets out refund id.
+     *
+     * @return the out refund id
+     */
+    public String getOutRefundId() {
 		return this.outRefundId;
 	}
-	public void setOutRefundId(String outRefundId) {
+
+    /**
+     * Sets out refund id.
+     *
+     * @param outRefundId the out refund id
+     */
+    public void setOutRefundId(String outRefundId) {
 		this.outRefundId = outRefundId;
 	}
 
-	public String getRefundAmount() {
+    /**
+     * Gets refund amount.
+     *
+     * @return the refund amount
+     */
+    public String getRefundAmount() {
 		return this.refundAmount;
 	}
-	public void setRefundAmount(String refundAmount) {
+
+    /**
+     * Sets refund amount.
+     *
+     * @param refundAmount the refund amount
+     */
+    public void setRefundAmount(String refundAmount) {
 		this.refundAmount = refundAmount;
 	}
 
-	public List<OrderRefundInfo> getRefundDetails() {
+    /**
+     * Gets refund details.
+     *
+     * @return the refund details
+     */
+    public List<OrderRefundInfo> getRefundDetails() {
 		return this.refundDetails;
 	}
-	public void setRefundDetails(List<OrderRefundInfo> refundDetails) {
+
+    /**
+     * Sets refund details.
+     *
+     * @param refundDetails the refund details
+     */
+    public void setRefundDetails(List<OrderRefundInfo> refundDetails) {
 		this.refundDetails = refundDetails;
 	}
 

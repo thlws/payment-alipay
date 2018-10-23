@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BeaconDeviceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7431392213657965478L;
+	private static final long serialVersionUID = 4384626752345411276L;
 
 	/**
 	 * 设备类型
@@ -49,45 +49,111 @@ public class BeaconDeviceInfo extends AlipayObject {
 	@ApiField("uuid")
 	private String uuid;
 
-	public String getActiontype() {
+    /**
+     * Gets actiontype.
+     *
+     * @return the actiontype
+     */
+    public String getActiontype() {
 		return this.actiontype;
 	}
-	public void setActiontype(String actiontype) {
+
+    /**
+     * Sets actiontype.
+     *
+     * @param actiontype the actiontype
+     */
+    public void setActiontype(String actiontype) {
 		this.actiontype = actiontype;
 	}
 
-	public Boolean getInuse() {
+    /**
+     * Gets inuse.
+     *
+     * @return the inuse
+     */
+    public Boolean getInuse() {
 		return this.inuse;
 	}
-	public void setInuse(Boolean inuse) {
+
+    /**
+     * Sets inuse.
+     *
+     * @param inuse the inuse
+     */
+    public void setInuse(Boolean inuse) {
 		this.inuse = inuse;
 	}
 
-	public String getRemark() {
+    /**
+     * Gets remark.
+     *
+     * @return the remark
+     */
+    public String getRemark() {
 		return this.remark;
 	}
-	public void setRemark(String remark) {
+
+    /**
+     * Sets remark.
+     *
+     * @param remark the remark
+     */
+    public void setRemark(String remark) {
 		this.remark = remark;
 	}
 
-	public String getSn() {
+    /**
+     * Gets sn.
+     *
+     * @return the sn
+     */
+    public String getSn() {
 		return this.sn;
 	}
-	public void setSn(String sn) {
+
+    /**
+     * Sets sn.
+     *
+     * @param sn the sn
+     */
+    public void setSn(String sn) {
 		this.sn = sn;
 	}
 
-	public BeaconTemplate getTemplate() {
+    /**
+     * Gets template.
+     *
+     * @return the template
+     */
+    public BeaconTemplate getTemplate() {
 		return this.template;
 	}
-	public void setTemplate(BeaconTemplate template) {
+
+    /**
+     * Sets template.
+     *
+     * @param template the template
+     */
+    public void setTemplate(BeaconTemplate template) {
 		this.template = template;
 	}
 
-	public String getUuid() {
+    /**
+     * Gets uuid.
+     *
+     * @return the uuid
+     */
+    public String getUuid() {
 		return this.uuid;
 	}
-	public void setUuid(String uuid) {
+
+    /**
+     * Sets uuid.
+     *
+     * @param uuid the uuid
+     */
+    public void setUuid(String uuid) {
 		this.uuid = uuid;
 	}
 

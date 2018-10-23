@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CplifeRoomInfoResp extends AlipayObject {
 
-	private static final long serialVersionUID = 4812174883866771462L;
+	private static final long serialVersionUID = 4255459628179633493L;
 
 	/**
 	 * 商户系统小区房屋唯一ID标示.
@@ -25,17 +25,39 @@ public class CplifeRoomInfoResp extends AlipayObject {
 	@ApiField("room_id")
 	private String roomId;
 
-	public String getOutRoomId() {
+    /**
+     * Gets out room id.
+     *
+     * @return the out room id
+     */
+    public String getOutRoomId() {
 		return this.outRoomId;
 	}
-	public void setOutRoomId(String outRoomId) {
+
+    /**
+     * Sets out room id.
+     *
+     * @param outRoomId the out room id
+     */
+    public void setOutRoomId(String outRoomId) {
 		this.outRoomId = outRoomId;
 	}
 
-	public String getRoomId() {
+    /**
+     * Gets room id.
+     *
+     * @return the room id
+     */
+    public String getRoomId() {
 		return this.roomId;
 	}
-	public void setRoomId(String roomId) {
+
+    /**
+     * Sets room id.
+     *
+     * @param roomId the room id
+     */
+    public void setRoomId(String roomId) {
 		this.roomId = roomId;
 	}
 

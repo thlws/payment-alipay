@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KbadvertSmartPromoRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 7124419812737871328L;
+	private static final long serialVersionUID = 2393678448913686675L;
 
 	/**
 	 * 智能营销分组ID
@@ -25,17 +25,39 @@ public class KbadvertSmartPromoRequest extends AlipayObject {
 	@ApiField("plan_id")
 	private String planId;
 
-	public String getGroupId() {
+    /**
+     * Gets group id.
+     *
+     * @return the group id
+     */
+    public String getGroupId() {
 		return this.groupId;
 	}
-	public void setGroupId(String groupId) {
+
+    /**
+     * Sets group id.
+     *
+     * @param groupId the group id
+     */
+    public void setGroupId(String groupId) {
 		this.groupId = groupId;
 	}
 
-	public String getPlanId() {
+    /**
+     * Gets plan id.
+     *
+     * @return the plan id
+     */
+    public String getPlanId() {
 		return this.planId;
 	}
-	public void setPlanId(String planId) {
+
+    /**
+     * Sets plan id.
+     *
+     * @param planId the plan id
+     */
+    public void setPlanId(String planId) {
 		this.planId = planId;
 	}
 

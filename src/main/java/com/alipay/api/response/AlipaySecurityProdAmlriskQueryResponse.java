@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.security.prod.amlrisk.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-02-02 15:48:33
  */
 public class AlipaySecurityProdAmlriskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8158414773111265437L;
+	private static final long serialVersionUID = 6254453553533556642L;
 
 	/** 
 	 * 事件ID，由入参得来
@@ -42,31 +42,75 @@ public class AlipaySecurityProdAmlriskQueryResponse extends AlipayResponse {
 	@ApiField("merchant_screen_hit")
 	private List<MerchantScreenHit> risks;
 
-	public void setEventId(String eventId) {
+    /**
+     * Sets event id.
+     *
+     * @param eventId the event id
+     */
+    public void setEventId(String eventId) {
 		this.eventId = eventId;
 	}
-	public String getEventId( ) {
+
+    /**
+     * Gets event id.
+     *
+     * @return the event id
+     */
+    public String getEventId( ) {
 		return this.eventId;
 	}
 
-	public void setHasRisk(String hasRisk) {
+    /**
+     * Sets has risk.
+     *
+     * @param hasRisk the has risk
+     */
+    public void setHasRisk(String hasRisk) {
 		this.hasRisk = hasRisk;
 	}
-	public String getHasRisk( ) {
+
+    /**
+     * Gets has risk.
+     *
+     * @return the has risk
+     */
+    public String getHasRisk( ) {
 		return this.hasRisk;
 	}
 
-	public void setMerchantId(String merchantId) {
+    /**
+     * Sets merchant id.
+     *
+     * @param merchantId the merchant id
+     */
+    public void setMerchantId(String merchantId) {
 		this.merchantId = merchantId;
 	}
-	public String getMerchantId( ) {
+
+    /**
+     * Gets merchant id.
+     *
+     * @return the merchant id
+     */
+    public String getMerchantId( ) {
 		return this.merchantId;
 	}
 
-	public void setRisks(List<MerchantScreenHit> risks) {
+    /**
+     * Sets risks.
+     *
+     * @param risks the risks
+     */
+    public void setRisks(List<MerchantScreenHit> risks) {
 		this.risks = risks;
 	}
-	public List<MerchantScreenHit> getRisks( ) {
+
+    /**
+     * Gets risks.
+     *
+     * @return the risks
+     */
+    public List<MerchantScreenHit> getRisks( ) {
 		return this.risks;
 	}
 

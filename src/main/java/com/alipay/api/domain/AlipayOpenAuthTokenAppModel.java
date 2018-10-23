@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用应用授权码（app_auth_code）换取或者刷新应用授权令牌(app_auth_token)
  *
  * @author auto create
- * @since 1.0, 2016-10-27 16:28:06
+ * @since 1.0, 2018-06-29 17:54:42
  */
 public class AlipayOpenAuthTokenAppModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8875966942137876386L;
+	private static final long serialVersionUID = 8653749343179647949L;
 
 	/**
 	 * 授权码，如果grant_type的值为authorization_code。该值必须填写
@@ -32,24 +32,57 @@ refresh_token表示刷新app_auth_token。
 	@ApiField("refresh_token")
 	private String refreshToken;
 
-	public String getCode() {
+    /**
+     * Gets code.
+     *
+     * @return the code
+     */
+    public String getCode() {
 		return this.code;
 	}
-	public void setCode(String code) {
+
+    /**
+     * Sets code.
+     *
+     * @param code the code
+     */
+    public void setCode(String code) {
 		this.code = code;
 	}
 
-	public String getGrantType() {
+    /**
+     * Gets grant type.
+     *
+     * @return the grant type
+     */
+    public String getGrantType() {
 		return this.grantType;
 	}
-	public void setGrantType(String grantType) {
+
+    /**
+     * Sets grant type.
+     *
+     * @param grantType the grant type
+     */
+    public void setGrantType(String grantType) {
 		this.grantType = grantType;
 	}
 
-	public String getRefreshToken() {
+    /**
+     * Gets refresh token.
+     *
+     * @return the refresh token
+     */
+    public String getRefreshToken() {
 		return this.refreshToken;
 	}
-	public void setRefreshToken(String refreshToken) {
+
+    /**
+     * Sets refresh token.
+     *
+     * @param refreshToken the refresh token
+     */
+    public void setRefreshToken(String refreshToken) {
 		this.refreshToken = refreshToken;
 	}
 

@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.cplife.bill.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-02-10 18:52:46
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayEcoCplifeBillBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7112334472843238456L;
+	private static final long serialVersionUID = 7224219511646488216L;
 
 	/** 
 	 * 若查询到符合条件的账单条目，返回结果集
@@ -36,24 +36,57 @@ public class AlipayEcoCplifeBillBatchqueryResponse extends AlipayResponse {
 	@ApiField("total_bill_count")
 	private Long totalBillCount;
 
-	public void setBillResultSet(List<CPBillResultSet> billResultSet) {
+    /**
+     * Sets bill result set.
+     *
+     * @param billResultSet the bill result set
+     */
+    public void setBillResultSet(List<CPBillResultSet> billResultSet) {
 		this.billResultSet = billResultSet;
 	}
-	public List<CPBillResultSet> getBillResultSet( ) {
+
+    /**
+     * Gets bill result set.
+     *
+     * @return the bill result set
+     */
+    public List<CPBillResultSet> getBillResultSet( ) {
 		return this.billResultSet;
 	}
 
-	public void setCurrentPageNum(Long currentPageNum) {
+    /**
+     * Sets current page num.
+     *
+     * @param currentPageNum the current page num
+     */
+    public void setCurrentPageNum(Long currentPageNum) {
 		this.currentPageNum = currentPageNum;
 	}
-	public Long getCurrentPageNum( ) {
+
+    /**
+     * Gets current page num.
+     *
+     * @return the current page num
+     */
+    public Long getCurrentPageNum( ) {
 		return this.currentPageNum;
 	}
 
-	public void setTotalBillCount(Long totalBillCount) {
+    /**
+     * Sets total bill count.
+     *
+     * @param totalBillCount the total bill count
+     */
+    public void setTotalBillCount(Long totalBillCount) {
 		this.totalBillCount = totalBillCount;
 	}
-	public Long getTotalBillCount( ) {
+
+    /**
+     * Gets total bill count.
+     *
+     * @return the total bill count
+     */
+    public Long getTotalBillCount( ) {
 		return this.totalBillCount;
 	}
 

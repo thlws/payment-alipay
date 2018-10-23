@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossCsChannelQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2237735375619375119L;
+	private static final long serialVersionUID = 3368236616748181655L;
 
 	/**
 	 * 平均通话时长的qualifier
@@ -85,87 +85,219 @@ public class AlipayBossCsChannelQueryModel extends AlipayObject {
 	@ApiField("visitorresponsetransfer")
 	private String visitorresponsetransfer;
 
-	public String getAtt() {
+    /**
+     * Gets att.
+     *
+     * @return the att
+     */
+    public String getAtt() {
 		return this.att;
 	}
-	public void setAtt(String att) {
+
+    /**
+     * Sets att.
+     *
+     * @param att the att
+     */
+    public void setAtt(String att) {
 		this.att = att;
 	}
 
-	public String getConnectionrate() {
+    /**
+     * Gets connectionrate.
+     *
+     * @return the connectionrate
+     */
+    public String getConnectionrate() {
 		return this.connectionrate;
 	}
-	public void setConnectionrate(String connectionrate) {
+
+    /**
+     * Sets connectionrate.
+     *
+     * @param connectionrate the connectionrate
+     */
+    public void setConnectionrate(String connectionrate) {
 		this.connectionrate = connectionrate;
 	}
 
-	public String getCurragentsloggedin() {
+    /**
+     * Gets curragentsloggedin.
+     *
+     * @return the curragentsloggedin
+     */
+    public String getCurragentsloggedin() {
 		return this.curragentsloggedin;
 	}
-	public void setCurragentsloggedin(String curragentsloggedin) {
+
+    /**
+     * Sets curragentsloggedin.
+     *
+     * @param curragentsloggedin the curragentsloggedin
+     */
+    public void setCurragentsloggedin(String curragentsloggedin) {
 		this.curragentsloggedin = curragentsloggedin;
 	}
 
-	public String getCurragenttalking() {
+    /**
+     * Gets curragenttalking.
+     *
+     * @return the curragenttalking
+     */
+    public String getCurragenttalking() {
 		return this.curragenttalking;
 	}
-	public void setCurragenttalking(String curragenttalking) {
+
+    /**
+     * Sets curragenttalking.
+     *
+     * @param curragenttalking the curragenttalking
+     */
+    public void setCurragenttalking(String curragenttalking) {
 		this.curragenttalking = curragenttalking;
 	}
 
-	public String getCurrentnotreadyagents() {
+    /**
+     * Gets currentnotreadyagents.
+     *
+     * @return the currentnotreadyagents
+     */
+    public String getCurrentnotreadyagents() {
 		return this.currentnotreadyagents;
 	}
-	public void setCurrentnotreadyagents(String currentnotreadyagents) {
+
+    /**
+     * Sets currentnotreadyagents.
+     *
+     * @param currentnotreadyagents the currentnotreadyagents
+     */
+    public void setCurrentnotreadyagents(String currentnotreadyagents) {
 		this.currentnotreadyagents = currentnotreadyagents;
 	}
 
-	public String getCurrentreadyagents() {
+    /**
+     * Gets currentreadyagents.
+     *
+     * @return the currentreadyagents
+     */
+    public String getCurrentreadyagents() {
 		return this.currentreadyagents;
 	}
-	public void setCurrentreadyagents(String currentreadyagents) {
+
+    /**
+     * Sets currentreadyagents.
+     *
+     * @param currentreadyagents the currentreadyagents
+     */
+    public void setCurrentreadyagents(String currentreadyagents) {
 		this.currentreadyagents = currentreadyagents;
 	}
 
-	public String getCurrnumberwaitingcalls() {
+    /**
+     * Gets currnumberwaitingcalls.
+     *
+     * @return the currnumberwaitingcalls
+     */
+    public String getCurrnumberwaitingcalls() {
 		return this.currnumberwaitingcalls;
 	}
-	public void setCurrnumberwaitingcalls(String currnumberwaitingcalls) {
+
+    /**
+     * Sets currnumberwaitingcalls.
+     *
+     * @param currnumberwaitingcalls the currnumberwaitingcalls
+     */
+    public void setCurrnumberwaitingcalls(String currnumberwaitingcalls) {
 		this.currnumberwaitingcalls = currnumberwaitingcalls;
 	}
 
-	public String getEndkey() {
+    /**
+     * Gets endkey.
+     *
+     * @return the endkey
+     */
+    public String getEndkey() {
 		return this.endkey;
 	}
-	public void setEndkey(String endkey) {
+
+    /**
+     * Sets endkey.
+     *
+     * @param endkey the endkey
+     */
+    public void setEndkey(String endkey) {
 		this.endkey = endkey;
 	}
 
-	public String getStartkey() {
+    /**
+     * Gets startkey.
+     *
+     * @return the startkey
+     */
+    public String getStartkey() {
 		return this.startkey;
 	}
-	public void setStartkey(String startkey) {
+
+    /**
+     * Sets startkey.
+     *
+     * @param startkey the startkey
+     */
+    public void setStartkey(String startkey) {
 		this.startkey = startkey;
 	}
 
-	public String getVisitorinflow() {
+    /**
+     * Gets visitorinflow.
+     *
+     * @return the visitorinflow
+     */
+    public String getVisitorinflow() {
 		return this.visitorinflow;
 	}
-	public void setVisitorinflow(String visitorinflow) {
+
+    /**
+     * Sets visitorinflow.
+     *
+     * @param visitorinflow the visitorinflow
+     */
+    public void setVisitorinflow(String visitorinflow) {
 		this.visitorinflow = visitorinflow;
 	}
 
-	public String getVisitorresponse() {
+    /**
+     * Gets visitorresponse.
+     *
+     * @return the visitorresponse
+     */
+    public String getVisitorresponse() {
 		return this.visitorresponse;
 	}
-	public void setVisitorresponse(String visitorresponse) {
+
+    /**
+     * Sets visitorresponse.
+     *
+     * @param visitorresponse the visitorresponse
+     */
+    public void setVisitorresponse(String visitorresponse) {
 		this.visitorresponse = visitorresponse;
 	}
 
-	public String getVisitorresponsetransfer() {
+    /**
+     * Gets visitorresponsetransfer.
+     *
+     * @return the visitorresponsetransfer
+     */
+    public String getVisitorresponsetransfer() {
 		return this.visitorresponsetransfer;
 	}
-	public void setVisitorresponsetransfer(String visitorresponsetransfer) {
+
+    /**
+     * Sets visitorresponsetransfer.
+     *
+     * @param visitorresponsetransfer the visitorresponsetransfer
+     */
+    public void setVisitorresponsetransfer(String visitorresponsetransfer) {
 		this.visitorresponsetransfer = visitorresponsetransfer;
 	}
 

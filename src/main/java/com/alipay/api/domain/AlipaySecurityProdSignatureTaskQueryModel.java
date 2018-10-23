@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝可信电子签名结果查询
  *
  * @author auto create
- * @since 1.0, 2017-09-20 10:18:37
+ * @since 1.0, 2017-12-20 15:24:43
  */
 public class AlipaySecurityProdSignatureTaskQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4561823477627252517L;
+	private static final long serialVersionUID = 2874238834194482754L;
 
 	/**
 	 * 业务类型唯一标识。调用前联系支付宝服务提供方，由电子签名平台统一分配。
@@ -41,31 +41,75 @@ public class AlipaySecurityProdSignatureTaskQueryModel extends AlipayObject {
 	@ApiField("string")
 	private List<String> taskIdList;
 
-	public String getBizProduct() {
+    /**
+     * Gets biz product.
+     *
+     * @return the biz product
+     */
+    public String getBizProduct() {
 		return this.bizProduct;
 	}
-	public void setBizProduct(String bizProduct) {
+
+    /**
+     * Sets biz product.
+     *
+     * @param bizProduct the biz product
+     */
+    public void setBizProduct(String bizProduct) {
 		this.bizProduct = bizProduct;
 	}
 
-	public String getOrderId() {
+    /**
+     * Gets order id.
+     *
+     * @return the order id
+     */
+    public String getOrderId() {
 		return this.orderId;
 	}
-	public void setOrderId(String orderId) {
+
+    /**
+     * Sets order id.
+     *
+     * @param orderId the order id
+     */
+    public void setOrderId(String orderId) {
 		this.orderId = orderId;
 	}
 
-	public String getServiceVersion() {
+    /**
+     * Gets service version.
+     *
+     * @return the service version
+     */
+    public String getServiceVersion() {
 		return this.serviceVersion;
 	}
-	public void setServiceVersion(String serviceVersion) {
+
+    /**
+     * Sets service version.
+     *
+     * @param serviceVersion the service version
+     */
+    public void setServiceVersion(String serviceVersion) {
 		this.serviceVersion = serviceVersion;
 	}
 
-	public List<String> getTaskIdList() {
+    /**
+     * Gets task id list.
+     *
+     * @return the task id list
+     */
+    public List<String> getTaskIdList() {
 		return this.taskIdList;
 	}
-	public void setTaskIdList(List<String> taskIdList) {
+
+    /**
+     * Sets task id list.
+     *
+     * @param taskIdList the task id list
+     */
+    public void setTaskIdList(List<String> taskIdList) {
 		this.taskIdList = taskIdList;
 	}
 

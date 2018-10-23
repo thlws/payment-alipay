@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.life.label.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-27 17:50:46
+ * @since 1.0, 2018-07-25 13:52:34
  */
 public class AlipayOpenPublicLifeLabelCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4815848872519662629L;
+	private static final long serialVersionUID = 3322223274138199776L;
 
 	/** 
 	 * 标签id
@@ -20,10 +20,21 @@ public class AlipayOpenPublicLifeLabelCreateResponse extends AlipayResponse {
 	@ApiField("label_id")
 	private String labelId;
 
-	public void setLabelId(String labelId) {
+    /**
+     * Sets label id.
+     *
+     * @param labelId the label id
+     */
+    public void setLabelId(String labelId) {
 		this.labelId = labelId;
 	}
-	public String getLabelId( ) {
+
+    /**
+     * Gets label id.
+     *
+     * @return the label id
+     */
+    public String getLabelId( ) {
 		return this.labelId;
 	}
 

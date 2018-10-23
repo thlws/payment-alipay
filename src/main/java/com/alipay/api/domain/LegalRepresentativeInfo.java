@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LegalRepresentativeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7723957346578593298L;
+	private static final long serialVersionUID = 5573531675953744326L;
 
 	/**
 	 * 法人证件有效期，YYYY-MM-DD格式
@@ -49,45 +49,111 @@ public class LegalRepresentativeInfo extends AlipayObject {
 	@ApiField("legal_representative_name")
 	private String legalRepresentativeName;
 
-	public String getLegalRepresentativeCertIndate() {
+    /**
+     * Gets legal representative cert indate.
+     *
+     * @return the legal representative cert indate
+     */
+    public String getLegalRepresentativeCertIndate() {
 		return this.legalRepresentativeCertIndate;
 	}
-	public void setLegalRepresentativeCertIndate(String legalRepresentativeCertIndate) {
+
+    /**
+     * Sets legal representative cert indate.
+     *
+     * @param legalRepresentativeCertIndate the legal representative cert indate
+     */
+    public void setLegalRepresentativeCertIndate(String legalRepresentativeCertIndate) {
 		this.legalRepresentativeCertIndate = legalRepresentativeCertIndate;
 	}
 
-	public String getLegalRepresentativeCertNo() {
+    /**
+     * Gets legal representative cert no.
+     *
+     * @return the legal representative cert no
+     */
+    public String getLegalRepresentativeCertNo() {
 		return this.legalRepresentativeCertNo;
 	}
-	public void setLegalRepresentativeCertNo(String legalRepresentativeCertNo) {
+
+    /**
+     * Sets legal representative cert no.
+     *
+     * @param legalRepresentativeCertNo the legal representative cert no
+     */
+    public void setLegalRepresentativeCertNo(String legalRepresentativeCertNo) {
 		this.legalRepresentativeCertNo = legalRepresentativeCertNo;
 	}
 
-	public String getLegalRepresentativeCertPicBack() {
+    /**
+     * Gets legal representative cert pic back.
+     *
+     * @return the legal representative cert pic back
+     */
+    public String getLegalRepresentativeCertPicBack() {
 		return this.legalRepresentativeCertPicBack;
 	}
-	public void setLegalRepresentativeCertPicBack(String legalRepresentativeCertPicBack) {
+
+    /**
+     * Sets legal representative cert pic back.
+     *
+     * @param legalRepresentativeCertPicBack the legal representative cert pic back
+     */
+    public void setLegalRepresentativeCertPicBack(String legalRepresentativeCertPicBack) {
 		this.legalRepresentativeCertPicBack = legalRepresentativeCertPicBack;
 	}
 
-	public String getLegalRepresentativeCertPicFront() {
+    /**
+     * Gets legal representative cert pic front.
+     *
+     * @return the legal representative cert pic front
+     */
+    public String getLegalRepresentativeCertPicFront() {
 		return this.legalRepresentativeCertPicFront;
 	}
-	public void setLegalRepresentativeCertPicFront(String legalRepresentativeCertPicFront) {
+
+    /**
+     * Sets legal representative cert pic front.
+     *
+     * @param legalRepresentativeCertPicFront the legal representative cert pic front
+     */
+    public void setLegalRepresentativeCertPicFront(String legalRepresentativeCertPicFront) {
 		this.legalRepresentativeCertPicFront = legalRepresentativeCertPicFront;
 	}
 
-	public String getLegalRepresentativeCertType() {
+    /**
+     * Gets legal representative cert type.
+     *
+     * @return the legal representative cert type
+     */
+    public String getLegalRepresentativeCertType() {
 		return this.legalRepresentativeCertType;
 	}
-	public void setLegalRepresentativeCertType(String legalRepresentativeCertType) {
+
+    /**
+     * Sets legal representative cert type.
+     *
+     * @param legalRepresentativeCertType the legal representative cert type
+     */
+    public void setLegalRepresentativeCertType(String legalRepresentativeCertType) {
 		this.legalRepresentativeCertType = legalRepresentativeCertType;
 	}
 
-	public String getLegalRepresentativeName() {
+    /**
+     * Gets legal representative name.
+     *
+     * @return the legal representative name
+     */
+    public String getLegalRepresentativeName() {
 		return this.legalRepresentativeName;
 	}
-	public void setLegalRepresentativeName(String legalRepresentativeName) {
+
+    /**
+     * Sets legal representative name.
+     *
+     * @param legalRepresentativeName the legal representative name
+     */
+    public void setLegalRepresentativeName(String legalRepresentativeName) {
 		this.legalRepresentativeName = legalRepresentativeName;
 	}
 

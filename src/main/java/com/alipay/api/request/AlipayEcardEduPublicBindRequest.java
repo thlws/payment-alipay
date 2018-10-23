@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.ecard.edu.public.bind request
- * 
+ *
  * @author auto create
  * @since 1.0, 2014-06-12 17:16:41
  */
@@ -48,45 +48,111 @@ public class AlipayEcardEduPublicBindRequest implements AlipayRequest<AlipayEcar
 	 */
 	private String publicId;
 
-	public void setAgentCode(String agentCode) {
+    /**
+     * Sets agent code.
+     *
+     * @param agentCode the agent code
+     */
+    public void setAgentCode(String agentCode) {
 		this.agentCode = agentCode;
 	}
-	public String getAgentCode() {
+
+    /**
+     * Gets agent code.
+     *
+     * @return the agent code
+     */
+    public String getAgentCode() {
 		return this.agentCode;
 	}
 
-	public void setAgreementId(String agreementId) {
+    /**
+     * Sets agreement id.
+     *
+     * @param agreementId the agreement id
+     */
+    public void setAgreementId(String agreementId) {
 		this.agreementId = agreementId;
 	}
-	public String getAgreementId() {
+
+    /**
+     * Gets agreement id.
+     *
+     * @return the agreement id
+     */
+    public String getAgreementId() {
 		return this.agreementId;
 	}
 
-	public void setAlipayUserId(String alipayUserId) {
+    /**
+     * Sets alipay user id.
+     *
+     * @param alipayUserId the alipay user id
+     */
+    public void setAlipayUserId(String alipayUserId) {
 		this.alipayUserId = alipayUserId;
 	}
-	public String getAlipayUserId() {
+
+    /**
+     * Gets alipay user id.
+     *
+     * @return the alipay user id
+     */
+    public String getAlipayUserId() {
 		return this.alipayUserId;
 	}
 
-	public void setCardName(String cardName) {
+    /**
+     * Sets card name.
+     *
+     * @param cardName the card name
+     */
+    public void setCardName(String cardName) {
 		this.cardName = cardName;
 	}
-	public String getCardName() {
+
+    /**
+     * Gets card name.
+     *
+     * @return the card name
+     */
+    public String getCardName() {
 		return this.cardName;
 	}
 
-	public void setCardNo(String cardNo) {
+    /**
+     * Sets card no.
+     *
+     * @param cardNo the card no
+     */
+    public void setCardNo(String cardNo) {
 		this.cardNo = cardNo;
 	}
-	public String getCardNo() {
+
+    /**
+     * Gets card no.
+     *
+     * @return the card no
+     */
+    public String getCardNo() {
 		return this.cardNo;
 	}
 
-	public void setPublicId(String publicId) {
+    /**
+     * Sets public id.
+     *
+     * @param publicId the public id
+     */
+    public void setPublicId(String publicId) {
 		this.publicId = publicId;
 	}
-	public String getPublicId() {
+
+    /**
+     * Gets public id.
+     *
+     * @return the public id
+     */
+    public String getPublicId() {
 		return this.publicId;
 	}
 	private String terminalType;
@@ -163,7 +229,13 @@ public class AlipayEcardEduPublicBindRequest implements AlipayRequest<AlipayEcar
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

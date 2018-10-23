@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class InstallmentValue extends AlipayObject {
 
-	private static final long serialVersionUID = 7295646941121868674L;
+	private static final long serialVersionUID = 3481718734168723464L;
 
 	/**
 	 * 分段值
@@ -23,10 +23,21 @@ public class InstallmentValue extends AlipayObject {
 	@ApiField("installment_meta_info")
 	private List<InstallmentMetaInfo> installmentValues;
 
-	public List<InstallmentMetaInfo> getInstallmentValues() {
+    /**
+     * Gets installment values.
+     *
+     * @return the installment values
+     */
+    public List<InstallmentMetaInfo> getInstallmentValues() {
 		return this.installmentValues;
 	}
-	public void setInstallmentValues(List<InstallmentMetaInfo> installmentValues) {
+
+    /**
+     * Sets installment values.
+     *
+     * @param installmentValues the installment values
+     */
+    public void setInstallmentValues(List<InstallmentMetaInfo> installmentValues) {
 		this.installmentValues = installmentValues;
 	}
 

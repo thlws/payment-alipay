@@ -10,13 +10,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.tool.isv.merchant.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-08-04 15:15:46
  */
 public class KoubeiMarketingToolIsvMerchantQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1118691778324123938L;
+	private static final long serialVersionUID = 6725928554723688383L;
 
 	/** 
 	 * 商户信息列表
@@ -38,24 +38,57 @@ public class KoubeiMarketingToolIsvMerchantQueryResponse extends AlipayResponse 
 	@ApiField("shop_summary_info")
 	private List<ShopSummaryInfo> shopSummaryInfos;
 
-	public void setMerchantInfos(List<IsvMerchantInfo> merchantInfos) {
+    /**
+     * Sets merchant infos.
+     *
+     * @param merchantInfos the merchant infos
+     */
+    public void setMerchantInfos(List<IsvMerchantInfo> merchantInfos) {
 		this.merchantInfos = merchantInfos;
 	}
-	public List<IsvMerchantInfo> getMerchantInfos( ) {
+
+    /**
+     * Gets merchant infos.
+     *
+     * @return the merchant infos
+     */
+    public List<IsvMerchantInfo> getMerchantInfos( ) {
 		return this.merchantInfos;
 	}
 
-	public void setShopCount(String shopCount) {
+    /**
+     * Sets shop count.
+     *
+     * @param shopCount the shop count
+     */
+    public void setShopCount(String shopCount) {
 		this.shopCount = shopCount;
 	}
-	public String getShopCount( ) {
+
+    /**
+     * Gets shop count.
+     *
+     * @return the shop count
+     */
+    public String getShopCount( ) {
 		return this.shopCount;
 	}
 
-	public void setShopSummaryInfos(List<ShopSummaryInfo> shopSummaryInfos) {
+    /**
+     * Sets shop summary infos.
+     *
+     * @param shopSummaryInfos the shop summary infos
+     */
+    public void setShopSummaryInfos(List<ShopSummaryInfo> shopSummaryInfos) {
 		this.shopSummaryInfos = shopSummaryInfos;
 	}
-	public List<ShopSummaryInfo> getShopSummaryInfos( ) {
+
+    /**
+     * Gets shop summary infos.
+     *
+     * @return the shop summary infos
+     */
+    public List<ShopSummaryInfo> getShopSummaryInfos( ) {
 		return this.shopSummaryInfos;
 	}
 

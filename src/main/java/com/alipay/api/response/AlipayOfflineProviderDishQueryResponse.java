@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.provider.dish.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-03 14:41:31
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayOfflineProviderDishQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6172769875593241764L;
+	private static final long serialVersionUID = 8332892546215922736L;
 
 	/** 
 	 * 总共有多少条菜品信息。可用于计算分页。
@@ -48,38 +48,93 @@ public class AlipayOfflineProviderDishQueryResponse extends AlipayResponse {
 	@ApiField("pages")
 	private Long pages;
 
-	public void setItems(Long items) {
+    /**
+     * Sets items.
+     *
+     * @param items the items
+     */
+    public void setItems(Long items) {
 		this.items = items;
 	}
-	public Long getItems( ) {
+
+    /**
+     * Gets items.
+     *
+     * @return the items
+     */
+    public Long getItems( ) {
 		return this.items;
 	}
 
-	public void setList(List<IsvShopDishModel> list) {
+    /**
+     * Sets list.
+     *
+     * @param list the list
+     */
+    public void setList(List<IsvShopDishModel> list) {
 		this.list = list;
 	}
-	public List<IsvShopDishModel> getList( ) {
+
+    /**
+     * Gets list.
+     *
+     * @return the list
+     */
+    public List<IsvShopDishModel> getList( ) {
 		return this.list;
 	}
 
-	public void setPage(Long page) {
+    /**
+     * Sets page.
+     *
+     * @param page the page
+     */
+    public void setPage(Long page) {
 		this.page = page;
 	}
-	public Long getPage( ) {
+
+    /**
+     * Gets page.
+     *
+     * @return the page
+     */
+    public Long getPage( ) {
 		return this.page;
 	}
 
-	public void setPageSize(Long pageSize) {
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}
-	public Long getPageSize( ) {
+
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public Long getPageSize( ) {
 		return this.pageSize;
 	}
 
-	public void setPages(Long pages) {
+    /**
+     * Sets pages.
+     *
+     * @param pages the pages
+     */
+    public void setPages(Long pages) {
 		this.pages = pages;
 	}
-	public Long getPages( ) {
+
+    /**
+     * Gets pages.
+     *
+     * @return the pages
+     */
+    public Long getPages( ) {
 		return this.pages;
 	}
 

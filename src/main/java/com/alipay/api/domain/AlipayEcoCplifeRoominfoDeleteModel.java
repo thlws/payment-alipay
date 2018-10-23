@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 删除物业小区房屋信息
  *
  * @author auto create
- * @since 1.0, 2016-11-18 16:08:51
+ * @since 1.0, 2018-06-09 20:18:50
  */
 public class AlipayEcoCplifeRoominfoDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2272292166277137629L;
+	private static final long serialVersionUID = 8144481823656825433L;
 
 	/**
 	 * 请求批次号，由商户自定义，在商户系统内唯一标示一次业务请求。
@@ -35,24 +35,57 @@ public class AlipayEcoCplifeRoominfoDeleteModel extends AlipayObject {
 	@ApiField("string")
 	private List<String> outRoomIdSet;
 
-	public String getBatchId() {
+    /**
+     * Gets batch id.
+     *
+     * @return the batch id
+     */
+    public String getBatchId() {
 		return this.batchId;
 	}
-	public void setBatchId(String batchId) {
+
+    /**
+     * Sets batch id.
+     *
+     * @param batchId the batch id
+     */
+    public void setBatchId(String batchId) {
 		this.batchId = batchId;
 	}
 
-	public String getCommunityId() {
+    /**
+     * Gets community id.
+     *
+     * @return the community id
+     */
+    public String getCommunityId() {
 		return this.communityId;
 	}
-	public void setCommunityId(String communityId) {
+
+    /**
+     * Sets community id.
+     *
+     * @param communityId the community id
+     */
+    public void setCommunityId(String communityId) {
 		this.communityId = communityId;
 	}
 
-	public List<String> getOutRoomIdSet() {
+    /**
+     * Gets out room id set.
+     *
+     * @return the out room id set
+     */
+    public List<String> getOutRoomIdSet() {
 		return this.outRoomIdSet;
 	}
-	public void setOutRoomIdSet(List<String> outRoomIdSet) {
+
+    /**
+     * Sets out room id set.
+     *
+     * @param outRoomIdSet the out room id set
+     */
+    public void setOutRoomIdSet(List<String> outRoomIdSet) {
 		this.outRoomIdSet = outRoomIdSet;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InvestigCategoryData extends AlipayObject {
 
-	private static final long serialVersionUID = 3372361685722747429L;
+	private static final long serialVersionUID = 6262591871513513517L;
 
 	/**
 	 * 数据项
@@ -55,52 +55,129 @@ public class InvestigCategoryData extends AlipayObject {
 	@ApiField("state")
 	private String state;
 
-	public String getCategory() {
+    /**
+     * Gets category.
+     *
+     * @return the category
+     */
+    public String getCategory() {
 		return this.category;
 	}
-	public void setCategory(String category) {
+
+    /**
+     * Sets category.
+     *
+     * @param category the category
+     */
+    public void setCategory(String category) {
 		this.category = category;
 	}
 
-	public String getDataVersion() {
+    /**
+     * Gets data version.
+     *
+     * @return the data version
+     */
+    public String getDataVersion() {
 		return this.dataVersion;
 	}
-	public void setDataVersion(String dataVersion) {
+
+    /**
+     * Sets data version.
+     *
+     * @param dataVersion the data version
+     */
+    public void setDataVersion(String dataVersion) {
 		this.dataVersion = dataVersion;
 	}
 
-	public String getEntityCode() {
+    /**
+     * Gets entity code.
+     *
+     * @return the entity code
+     */
+    public String getEntityCode() {
 		return this.entityCode;
 	}
-	public void setEntityCode(String entityCode) {
+
+    /**
+     * Sets entity code.
+     *
+     * @param entityCode the entity code
+     */
+    public void setEntityCode(String entityCode) {
 		this.entityCode = entityCode;
 	}
 
-	public String getEntityName() {
+    /**
+     * Gets entity name.
+     *
+     * @return the entity name
+     */
+    public String getEntityName() {
 		return this.entityName;
 	}
-	public void setEntityName(String entityName) {
+
+    /**
+     * Sets entity name.
+     *
+     * @param entityName the entity name
+     */
+    public void setEntityName(String entityName) {
 		this.entityName = entityName;
 	}
 
-	public String getEntityType() {
+    /**
+     * Gets entity type.
+     *
+     * @return the entity type
+     */
+    public String getEntityType() {
 		return this.entityType;
 	}
-	public void setEntityType(String entityType) {
+
+    /**
+     * Sets entity type.
+     *
+     * @param entityType the entity type
+     */
+    public void setEntityType(String entityType) {
 		this.entityType = entityType;
 	}
 
-	public String getModelResultObject() {
+    /**
+     * Gets model result object.
+     *
+     * @return the model result object
+     */
+    public String getModelResultObject() {
 		return this.modelResultObject;
 	}
-	public void setModelResultObject(String modelResultObject) {
+
+    /**
+     * Sets model result object.
+     *
+     * @param modelResultObject the model result object
+     */
+    public void setModelResultObject(String modelResultObject) {
 		this.modelResultObject = modelResultObject;
 	}
 
-	public String getState() {
+    /**
+     * Gets state.
+     *
+     * @return the state
+     */
+    public String getState() {
 		return this.state;
 	}
-	public void setState(String state) {
+
+    /**
+     * Sets state.
+     *
+     * @param state the state
+     */
+    public void setState(String state) {
 		this.state = state;
 	}
 

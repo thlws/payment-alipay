@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMarketingToolPointsUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2846518733731453119L;
+	private static final long serialVersionUID = 8181626597639456124L;
 
 	/**
 	 * 活动集点帐户ID, 开发者通过查询集点活动详情获取
@@ -75,66 +75,165 @@ CONSUME, 消费集点
 	@ApiField("user_id")
 	private String userId;
 
-	public String getActivityAccount() {
+    /**
+     * Gets activity account.
+     *
+     * @return the activity account
+     */
+    public String getActivityAccount() {
 		return this.activityAccount;
 	}
-	public void setActivityAccount(String activityAccount) {
+
+    /**
+     * Sets activity account.
+     *
+     * @param activityAccount the activity account
+     */
+    public void setActivityAccount(String activityAccount) {
 		this.activityAccount = activityAccount;
 	}
 
-	public String getBizNo() {
+    /**
+     * Gets biz no.
+     *
+     * @return the biz no
+     */
+    public String getBizNo() {
 		return this.bizNo;
 	}
-	public void setBizNo(String bizNo) {
+
+    /**
+     * Sets biz no.
+     *
+     * @param bizNo the biz no
+     */
+    public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
 	}
 
-	public String getExtInfo() {
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo() {
 		return this.extInfo;
 	}
-	public void setExtInfo(String extInfo) {
+
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
-	public String getMemo() {
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo() {
 		return this.memo;
 	}
-	public void setMemo(String memo) {
+
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
-	public String getReqId() {
+    /**
+     * Gets req id.
+     *
+     * @return the req id
+     */
+    public String getReqId() {
 		return this.reqId;
 	}
-	public void setReqId(String reqId) {
+
+    /**
+     * Sets req id.
+     *
+     * @param reqId the req id
+     */
+    public void setReqId(String reqId) {
 		this.reqId = reqId;
 	}
 
-	public String getShopId() {
+    /**
+     * Gets shop id.
+     *
+     * @return the shop id
+     */
+    public String getShopId() {
 		return this.shopId;
 	}
-	public void setShopId(String shopId) {
+
+    /**
+     * Sets shop id.
+     *
+     * @param shopId the shop id
+     */
+    public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 
-	public String getTransAmount() {
+    /**
+     * Gets trans amount.
+     *
+     * @return the trans amount
+     */
+    public String getTransAmount() {
 		return this.transAmount;
 	}
-	public void setTransAmount(String transAmount) {
+
+    /**
+     * Sets trans amount.
+     *
+     * @param transAmount the trans amount
+     */
+    public void setTransAmount(String transAmount) {
 		this.transAmount = transAmount;
 	}
 
-	public String getTransType() {
+    /**
+     * Gets trans type.
+     *
+     * @return the trans type
+     */
+    public String getTransType() {
 		return this.transType;
 	}
-	public void setTransType(String transType) {
+
+    /**
+     * Sets trans type.
+     *
+     * @param transType the trans type
+     */
+    public void setTransType(String transType) {
 		this.transType = transType;
 	}
 
-	public String getUserId() {
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
-	public void setUserId(String userId) {
+
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ProductProvider extends AlipayObject {
 
-	private static final long serialVersionUID = 6581524149228942792L;
+	private static final long serialVersionUID = 8223598278391929625L;
 
 	/**
 	 * 卡代英文名称 备注:淘宝交易为空
@@ -55,52 +55,129 @@ public class ProductProvider extends AlipayObject {
 	@ApiField("sub_operator_name")
 	private String subOperatorName;
 
-	public String getAgency() {
+    /**
+     * Gets agency.
+     *
+     * @return the agency
+     */
+    public String getAgency() {
 		return this.agency;
 	}
-	public void setAgency(String agency) {
+
+    /**
+     * Sets agency.
+     *
+     * @param agency the agency
+     */
+    public void setAgency(String agency) {
 		this.agency = agency;
 	}
 
-	public String getAgencyName() {
+    /**
+     * Gets agency name.
+     *
+     * @return the agency name
+     */
+    public String getAgencyName() {
 		return this.agencyName;
 	}
-	public void setAgencyName(String agencyName) {
+
+    /**
+     * Sets agency name.
+     *
+     * @param agencyName the agency name
+     */
+    public void setAgencyName(String agencyName) {
 		this.agencyName = agencyName;
 	}
 
-	public String getBizType() {
+    /**
+     * Gets biz type.
+     *
+     * @return the biz type
+     */
+    public String getBizType() {
 		return this.bizType;
 	}
-	public void setBizType(String bizType) {
+
+    /**
+     * Sets biz type.
+     *
+     * @param bizType the biz type
+     */
+    public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
-	public String getId() {
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
+    public String getId() {
 		return this.id;
 	}
-	public void setId(String id) {
+
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
+    public void setId(String id) {
 		this.id = id;
 	}
 
-	public String getSubBizType() {
+    /**
+     * Gets sub biz type.
+     *
+     * @return the sub biz type
+     */
+    public String getSubBizType() {
 		return this.subBizType;
 	}
-	public void setSubBizType(String subBizType) {
+
+    /**
+     * Sets sub biz type.
+     *
+     * @param subBizType the sub biz type
+     */
+    public void setSubBizType(String subBizType) {
 		this.subBizType = subBizType;
 	}
 
-	public String getSubOperator() {
+    /**
+     * Gets sub operator.
+     *
+     * @return the sub operator
+     */
+    public String getSubOperator() {
 		return this.subOperator;
 	}
-	public void setSubOperator(String subOperator) {
+
+    /**
+     * Sets sub operator.
+     *
+     * @param subOperator the sub operator
+     */
+    public void setSubOperator(String subOperator) {
 		this.subOperator = subOperator;
 	}
 
-	public String getSubOperatorName() {
+    /**
+     * Gets sub operator name.
+     *
+     * @return the sub operator name
+     */
+    public String getSubOperatorName() {
 		return this.subOperatorName;
 	}
-	public void setSubOperatorName(String subOperatorName) {
+
+    /**
+     * Sets sub operator name.
+     *
+     * @param subOperatorName the sub operator name
+     */
+    public void setSubOperatorName(String subOperatorName) {
 		this.subOperatorName = subOperatorName;
 	}
 

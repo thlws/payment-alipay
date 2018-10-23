@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class IsvMerchantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7291522351538669433L;
+	private static final long serialVersionUID = 4746194397198299154L;
 
 	/**
 	 * 商户pid
@@ -29,17 +29,39 @@ public class IsvMerchantInfo extends AlipayObject {
 	@ApiField("string")
 	private List<String> shopIds;
 
-	public String getPartnerId() {
+    /**
+     * Gets partner id.
+     *
+     * @return the partner id
+     */
+    public String getPartnerId() {
 		return this.partnerId;
 	}
-	public void setPartnerId(String partnerId) {
+
+    /**
+     * Sets partner id.
+     *
+     * @param partnerId the partner id
+     */
+    public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}
 
-	public List<String> getShopIds() {
+    /**
+     * Gets shop ids.
+     *
+     * @return the shop ids
+     */
+    public List<String> getShopIds() {
 		return this.shopIds;
 	}
-	public void setShopIds(List<String> shopIds) {
+
+    /**
+     * Sets shop ids.
+     *
+     * @param shopIds the shop ids
+     */
+    public void setShopIds(List<String> shopIds) {
 		this.shopIds = shopIds;
 	}
 

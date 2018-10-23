@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicPersonalizedExtensionSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7313453987851652945L;
+	private static final long serialVersionUID = 7758281567249216118L;
 
 	/**
 	 * 扩展区套id，调用创建个性化扩展区接口时返回
@@ -25,17 +25,39 @@ public class AlipayOpenPublicPersonalizedExtensionSetModel extends AlipayObject 
 	@ApiField("status")
 	private String status;
 
-	public String getExtensionKey() {
+    /**
+     * Gets extension key.
+     *
+     * @return the extension key
+     */
+    public String getExtensionKey() {
 		return this.extensionKey;
 	}
-	public void setExtensionKey(String extensionKey) {
+
+    /**
+     * Sets extension key.
+     *
+     * @param extensionKey the extension key
+     */
+    public void setExtensionKey(String extensionKey) {
 		this.extensionKey = extensionKey;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 

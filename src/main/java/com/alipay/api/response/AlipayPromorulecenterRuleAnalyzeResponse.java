@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.promorulecenter.rule.analyze response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-10-09 17:38:20
  */
 public class AlipayPromorulecenterRuleAnalyzeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2682789941579334299L;
+	private static final long serialVersionUID = 4335833682225667497L;
 
 	/** 
 	 * 未通过条件描述信息
@@ -44,38 +44,93 @@ public class AlipayPromorulecenterRuleAnalyzeResponse extends AlipayResponse {
 	@ApiField("triggered")
 	private String triggered;
 
-	public void setFailConditionMsg(String failConditionMsg) {
+    /**
+     * Sets fail condition msg.
+     *
+     * @param failConditionMsg the fail condition msg
+     */
+    public void setFailConditionMsg(String failConditionMsg) {
 		this.failConditionMsg = failConditionMsg;
 	}
-	public String getFailConditionMsg( ) {
+
+    /**
+     * Gets fail condition msg.
+     *
+     * @return the fail condition msg
+     */
+    public String getFailConditionMsg( ) {
 		return this.failConditionMsg;
 	}
 
-	public void setFailConditionName(String failConditionName) {
+    /**
+     * Sets fail condition name.
+     *
+     * @param failConditionName the fail condition name
+     */
+    public void setFailConditionName(String failConditionName) {
 		this.failConditionName = failConditionName;
 	}
-	public String getFailConditionName( ) {
+
+    /**
+     * Gets fail condition name.
+     *
+     * @return the fail condition name
+     */
+    public String getFailConditionName( ) {
 		return this.failConditionName;
 	}
 
-	public void setResultCode(String resultCode) {
+    /**
+     * Sets result code.
+     *
+     * @param resultCode the result code
+     */
+    public void setResultCode(String resultCode) {
 		this.resultCode = resultCode;
 	}
-	public String getResultCode( ) {
+
+    /**
+     * Gets result code.
+     *
+     * @return the result code
+     */
+    public String getResultCode( ) {
 		return this.resultCode;
 	}
 
-	public void setSuccess(String success) {
+    /**
+     * Sets success.
+     *
+     * @param success the success
+     */
+    public void setSuccess(String success) {
 		this.success = success;
 	}
-	public String getSuccess( ) {
+
+    /**
+     * Gets success.
+     *
+     * @return the success
+     */
+    public String getSuccess( ) {
 		return this.success;
 	}
 
-	public void setTriggered(String triggered) {
+    /**
+     * Sets triggered.
+     *
+     * @param triggered the triggered
+     */
+    public void setTriggered(String triggered) {
 		this.triggered = triggered;
 	}
-	public String getTriggered( ) {
+
+    /**
+     * Gets triggered.
+     *
+     * @return the triggered
+     */
+    public String getTriggered( ) {
 		return this.triggered;
 	}
 

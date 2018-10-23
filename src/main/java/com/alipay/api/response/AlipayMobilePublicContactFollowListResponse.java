@@ -8,13 +8,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.public.contact.follow.list response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-12-19 20:51:46
  */
 public class AlipayMobilePublicContactFollowListResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1198983985525826664L;
+	private static final long serialVersionUID = 8694641887871123311L;
 
 	/** 
 	 * 返回结果码，如200，标识成功
@@ -36,10 +36,21 @@ public class AlipayMobilePublicContactFollowListResponse extends AlipayResponse 
 		return this.code;
 	}
 
-	public void setContactFollowList(List<String> contactFollowList) {
+    /**
+     * Sets contact follow list.
+     *
+     * @param contactFollowList the contact follow list
+     */
+    public void setContactFollowList(List<String> contactFollowList) {
 		this.contactFollowList = contactFollowList;
 	}
-	public List<String> getContactFollowList( ) {
+
+    /**
+     * Gets contact follow list.
+     *
+     * @return the contact follow list
+     */
+    public List<String> getContactFollowList( ) {
 		return this.contactFollowList;
 	}
 

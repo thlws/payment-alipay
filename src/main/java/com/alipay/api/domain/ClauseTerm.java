@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ClauseTerm extends AlipayObject {
 
-	private static final long serialVersionUID = 7432561259914489543L;
+	private static final long serialVersionUID = 7763214224564697441L;
 
 	/**
 	 * 说明描述内容
@@ -29,17 +29,39 @@ public class ClauseTerm extends AlipayObject {
 	@ApiField("title")
 	private String title;
 
-	public List<String> getDescriptions() {
+    /**
+     * Gets descriptions.
+     *
+     * @return the descriptions
+     */
+    public List<String> getDescriptions() {
 		return this.descriptions;
 	}
-	public void setDescriptions(List<String> descriptions) {
+
+    /**
+     * Sets descriptions.
+     *
+     * @param descriptions the descriptions
+     */
+    public void setDescriptions(List<String> descriptions) {
 		this.descriptions = descriptions;
 	}
 
-	public String getTitle() {
+    /**
+     * Gets title.
+     *
+     * @return the title
+     */
+    public String getTitle() {
 		return this.title;
 	}
-	public void setTitle(String title) {
+
+    /**
+     * Sets title.
+     *
+     * @param title the title
+     */
+    public void setTitle(String title) {
 		this.title = title;
 	}
 

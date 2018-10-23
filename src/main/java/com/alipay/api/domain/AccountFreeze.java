@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AccountFreeze extends AlipayObject {
 
-	private static final long serialVersionUID = 8499191717283178349L;
+	private static final long serialVersionUID = 4192918645347289844L;
 
 	/**
 	 * 冻结金额
@@ -31,24 +31,57 @@ public class AccountFreeze extends AlipayObject {
 	@ApiField("freeze_type")
 	private String freezeType;
 
-	public String getFreezeAmount() {
+    /**
+     * Gets freeze amount.
+     *
+     * @return the freeze amount
+     */
+    public String getFreezeAmount() {
 		return this.freezeAmount;
 	}
-	public void setFreezeAmount(String freezeAmount) {
+
+    /**
+     * Sets freeze amount.
+     *
+     * @param freezeAmount the freeze amount
+     */
+    public void setFreezeAmount(String freezeAmount) {
 		this.freezeAmount = freezeAmount;
 	}
 
-	public String getFreezeName() {
+    /**
+     * Gets freeze name.
+     *
+     * @return the freeze name
+     */
+    public String getFreezeName() {
 		return this.freezeName;
 	}
-	public void setFreezeName(String freezeName) {
+
+    /**
+     * Sets freeze name.
+     *
+     * @param freezeName the freeze name
+     */
+    public void setFreezeName(String freezeName) {
 		this.freezeName = freezeName;
 	}
 
-	public String getFreezeType() {
+    /**
+     * Gets freeze type.
+     *
+     * @return the freeze type
+     */
+    public String getFreezeType() {
 		return this.freezeType;
 	}
-	public void setFreezeType(String freezeType) {
+
+    /**
+     * Sets freeze type.
+     *
+     * @param freezeType the freeze type
+     */
+    public void setFreezeType(String freezeType) {
 		this.freezeType = freezeType;
 	}
 

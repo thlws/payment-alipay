@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KbAdvertMissionSubject extends AlipayObject {
 
-	private static final long serialVersionUID = 6874972398594641145L;
+	private static final long serialVersionUID = 2464523893238742944L;
 
 	/**
 	 * 分佣条款信息
@@ -36,24 +36,57 @@ voucher-券
 	@ApiField("subject_type")
 	private String subjectType;
 
-	public List<KbAdvertCommissionClause> getCommissionClauseList() {
+    /**
+     * Gets commission clause list.
+     *
+     * @return the commission clause list
+     */
+    public List<KbAdvertCommissionClause> getCommissionClauseList() {
 		return this.commissionClauseList;
 	}
-	public void setCommissionClauseList(List<KbAdvertCommissionClause> commissionClauseList) {
+
+    /**
+     * Sets commission clause list.
+     *
+     * @param commissionClauseList the commission clause list
+     */
+    public void setCommissionClauseList(List<KbAdvertCommissionClause> commissionClauseList) {
 		this.commissionClauseList = commissionClauseList;
 	}
 
-	public String getSubjectBizId() {
+    /**
+     * Gets subject biz id.
+     *
+     * @return the subject biz id
+     */
+    public String getSubjectBizId() {
 		return this.subjectBizId;
 	}
-	public void setSubjectBizId(String subjectBizId) {
+
+    /**
+     * Sets subject biz id.
+     *
+     * @param subjectBizId the subject biz id
+     */
+    public void setSubjectBizId(String subjectBizId) {
 		this.subjectBizId = subjectBizId;
 	}
 
-	public String getSubjectType() {
+    /**
+     * Gets subject type.
+     *
+     * @return the subject type
+     */
+    public String getSubjectType() {
 		return this.subjectType;
 	}
-	public void setSubjectType(String subjectType) {
+
+    /**
+     * Sets subject type.
+     *
+     * @param subjectType the subject type
+     */
+    public void setSubjectType(String subjectType) {
 		this.subjectType = subjectType;
 	}
 

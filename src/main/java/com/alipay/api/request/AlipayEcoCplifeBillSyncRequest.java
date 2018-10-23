@@ -10,9 +10,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.eco.cplife.bill.sync request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-02-10 18:55:14
+ * @since 1.0, 2018-06-09 20:10:28
  */
 public class AlipayEcoCplifeBillSyncRequest implements AlipayRequest<AlipayEcoCplifeBillSyncResponse> {
 
@@ -24,10 +24,21 @@ public class AlipayEcoCplifeBillSyncRequest implements AlipayRequest<AlipayEcoCp
 	 */
 	private String bizContent;
 
-	public void setBizContent(String bizContent) {
+    /**
+     * Sets biz content.
+     *
+     * @param bizContent the biz content
+     */
+    public void setBizContent(String bizContent) {
 		this.bizContent = bizContent;
 	}
-	public String getBizContent() {
+
+    /**
+     * Gets biz content.
+     *
+     * @return the biz content
+     */
+    public String getBizContent() {
 		return this.bizContent;
 	}
 	private String terminalType;
@@ -99,7 +110,13 @@ public class AlipayEcoCplifeBillSyncRequest implements AlipayRequest<AlipayEcoCp
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

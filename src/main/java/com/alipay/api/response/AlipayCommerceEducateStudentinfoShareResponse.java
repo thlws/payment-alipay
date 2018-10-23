@@ -7,13 +7,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.commerce.educate.studentinfo.share response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-07-19 14:49:22
  */
 public class AlipayCommerceEducateStudentinfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5293572394468245197L;
+	private static final long serialVersionUID = 3769741715721743768L;
 
 	/** 
 	 * 学生信息
@@ -21,10 +21,21 @@ public class AlipayCommerceEducateStudentinfoShareResponse extends AlipayRespons
 	@ApiField("student_info_share_result")
 	private EduStudentInfoShareResult studentInfoShareResult;
 
-	public void setStudentInfoShareResult(EduStudentInfoShareResult studentInfoShareResult) {
+    /**
+     * Sets student info share result.
+     *
+     * @param studentInfoShareResult the student info share result
+     */
+    public void setStudentInfoShareResult(EduStudentInfoShareResult studentInfoShareResult) {
 		this.studentInfoShareResult = studentInfoShareResult;
 	}
-	public EduStudentInfoShareResult getStudentInfoShareResult( ) {
+
+    /**
+     * Gets student info share result.
+     *
+     * @return the student info share result
+     */
+    public EduStudentInfoShareResult getStudentInfoShareResult( ) {
 		return this.studentInfoShareResult;
 	}
 

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 默认扩展区创建接口
  *
  * @author auto create
- * @since 1.0, 2017-08-07 18:01:45
+ * @since 1.0, 2018-07-25 13:55:07
  */
 public class AlipayOpenPublicDefaultExtensionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2146943412934834523L;
+	private static final long serialVersionUID = 1366496177757126512L;
 
 	/**
 	 * 默认扩展区列表，最多包含3个扩展区
@@ -23,10 +23,21 @@ public class AlipayOpenPublicDefaultExtensionCreateModel extends AlipayObject {
 	@ApiField("extension_area")
 	private List<ExtensionArea> areas;
 
-	public List<ExtensionArea> getAreas() {
+    /**
+     * Gets areas.
+     *
+     * @return the areas
+     */
+    public List<ExtensionArea> getAreas() {
 		return this.areas;
 	}
-	public void setAreas(List<ExtensionArea> areas) {
+
+    /**
+     * Sets areas.
+     *
+     * @param areas the areas
+     */
+    public void setAreas(List<ExtensionArea> areas) {
 		this.areas = areas;
 	}
 

@@ -10,7 +10,7 @@ import com.alipay.api.internal.util.AlipayUtils;
 
 /**
  * 文件元数据。
- * 
+ *
  * @author carver.gu
  * @since 1.0, Sep 12, 2009
  */
@@ -23,60 +23,77 @@ public class FileItem {
 
     /**
      * 基于本地文件的构造器。
-     * 
+     *
      * @param file 本地文件
      */
-	public FileItem(File file) {
+    public FileItem(File file) {
 		this.file = file;
 	}
 
     /**
      * 基于文件绝对路径的构造器。
-     * 
+     *
      * @param filePath 文件绝对路径
      */
-	public FileItem(String filePath) {
+    public FileItem(String filePath) {
 		this(new File(filePath));
 	}
 
     /**
      * 基于文件名和字节流的构造器。
-     * 
+     *
      * @param fileName 文件名
-     * @param content 文件字节流
+     * @param content  文件字节流
      */
-	public FileItem(String fileName, byte[] content) {
+    public FileItem(String fileName, byte[] content) {
 		this.fileName = fileName;
 		this.content = content;
 	}
 
     /**
      * 基于文件名、字节流和媒体类型的构造器。
-     * 
+     *
      * @param fileName 文件名
-     * @param content 文件字节流
+     * @param content  文件字节流
      * @param mimeType 媒体类型
      */
-	public FileItem(String fileName, byte[] content, String mimeType) {
+    public FileItem(String fileName, byte[] content, String mimeType) {
 		this(fileName, content);
 		this.mimeType = mimeType;
 	}
 
-	public String getFileName() {
+    /**
+     * Gets file name.
+     *
+     * @return the file name
+     */
+    public String getFileName() {
 		if (this.fileName == null && this.file != null && this.file.exists()) {
 			this.fileName = file.getName();
 		}
 		return this.fileName;
 	}
 
-	public String getMimeType() throws IOException {
+    /**
+     * Gets mime type.
+     *
+     * @return the mime type
+     * @throws IOException the io exception
+     */
+    public String getMimeType() throws IOException {
 		if (this.mimeType == null) {
 			this.mimeType = AlipayUtils.getMimeType(getContent());
 		}
 		return this.mimeType;
 	}
 
-	public byte[] getContent() throws IOException {
+    /**
+     * Get content byte [ ].
+     *
+     * @return the byte [ ]
+     * @throws IOException the io exception
+     */
+    public byte[] getContent() throws IOException {
 		if (this.content == null && this.file != null && this.file.exists()) {
 			InputStream in = null;
 			ByteArrayOutputStream out = null;

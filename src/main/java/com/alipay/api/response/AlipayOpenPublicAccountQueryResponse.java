@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.account.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-12-08 11:51:07
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayOpenPublicAccountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3225317786798914126L;
+	private static final long serialVersionUID = 2124772577219448382L;
 
 	/** 
 	 * 绑定账户列表
@@ -24,10 +24,21 @@ public class AlipayOpenPublicAccountQueryResponse extends AlipayResponse {
 	@ApiField("std_public_bind_account")
 	private List<StdPublicBindAccount> publicBindAccounts;
 
-	public void setPublicBindAccounts(List<StdPublicBindAccount> publicBindAccounts) {
+    /**
+     * Sets public bind accounts.
+     *
+     * @param publicBindAccounts the public bind accounts
+     */
+    public void setPublicBindAccounts(List<StdPublicBindAccount> publicBindAccounts) {
 		this.publicBindAccounts = publicBindAccounts;
 	}
-	public List<StdPublicBindAccount> getPublicBindAccounts( ) {
+
+    /**
+     * Gets public bind accounts.
+     *
+     * @return the public bind accounts
+     */
+    public List<StdPublicBindAccount> getPublicBindAccounts( ) {
 		return this.publicBindAccounts;
 	}
 

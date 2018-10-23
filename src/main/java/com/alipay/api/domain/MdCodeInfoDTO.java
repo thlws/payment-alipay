@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MdCodeInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8123592959532838831L;
+	private static final long serialVersionUID = 7521429669792669694L;
 
 	/**
 	 * 本次回传动态码的状态：
@@ -47,31 +47,75 @@ code_status为SUCCESS时必填；
 	@ApiField("time_stamp")
 	private Long timeStamp;
 
-	public String getCodeStatus() {
+    /**
+     * Gets code status.
+     *
+     * @return the code status
+     */
+    public String getCodeStatus() {
 		return this.codeStatus;
 	}
-	public void setCodeStatus(String codeStatus) {
+
+    /**
+     * Sets code status.
+     *
+     * @param codeStatus the code status
+     */
+    public void setCodeStatus(String codeStatus) {
 		this.codeStatus = codeStatus;
 	}
 
-	public String getCodeValue() {
+    /**
+     * Gets code value.
+     *
+     * @return the code value
+     */
+    public String getCodeValue() {
 		return this.codeValue;
 	}
-	public void setCodeValue(String codeValue) {
+
+    /**
+     * Sets code value.
+     *
+     * @param codeValue the code value
+     */
+    public void setCodeValue(String codeValue) {
 		this.codeValue = codeValue;
 	}
 
-	public Date getExpireTime() {
+    /**
+     * Gets expire time.
+     *
+     * @return the expire time
+     */
+    public Date getExpireTime() {
 		return this.expireTime;
 	}
-	public void setExpireTime(Date expireTime) {
+
+    /**
+     * Sets expire time.
+     *
+     * @param expireTime the expire time
+     */
+    public void setExpireTime(Date expireTime) {
 		this.expireTime = expireTime;
 	}
 
-	public Long getTimeStamp() {
+    /**
+     * Gets time stamp.
+     *
+     * @return the time stamp
+     */
+    public Long getTimeStamp() {
 		return this.timeStamp;
 	}
-	public void setTimeStamp(Long timeStamp) {
+
+    /**
+     * Sets time stamp.
+     *
+     * @param timeStamp the time stamp
+     */
+    public void setTimeStamp(Long timeStamp) {
 		this.timeStamp = timeStamp;
 	}
 

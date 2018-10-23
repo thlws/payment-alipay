@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ShopDiscountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1155938964338646744L;
+	private static final long serialVersionUID = 5461468151879876327L;
 
 	/**
 	 * 图片url
@@ -70,66 +70,165 @@ public class ShopDiscountInfo extends AlipayObject {
 	@ApiField("subject")
 	private String subject;
 
-	public String getCover() {
+    /**
+     * Gets cover.
+     *
+     * @return the cover
+     */
+    public String getCover() {
 		return this.cover;
 	}
-	public void setCover(String cover) {
+
+    /**
+     * Sets cover.
+     *
+     * @param cover the cover
+     */
+    public void setCover(String cover) {
 		this.cover = cover;
 	}
 
-	public String getDescription() {
+    /**
+     * Gets description.
+     *
+     * @return the description
+     */
+    public String getDescription() {
 		return this.description;
 	}
-	public void setDescription(String description) {
+
+    /**
+     * Sets description.
+     *
+     * @param description the description
+     */
+    public void setDescription(String description) {
 		this.description = description;
 	}
 
-	public String getIsAll() {
+    /**
+     * Gets is all.
+     *
+     * @return the is all
+     */
+    public String getIsAll() {
 		return this.isAll;
 	}
-	public void setIsAll(String isAll) {
+
+    /**
+     * Sets is all.
+     *
+     * @param isAll the is all
+     */
+    public void setIsAll(String isAll) {
 		this.isAll = isAll;
 	}
 
-	public String getItemId() {
+    /**
+     * Gets item id.
+     *
+     * @return the item id
+     */
+    public String getItemId() {
 		return this.itemId;
 	}
-	public void setItemId(String itemId) {
+
+    /**
+     * Sets item id.
+     *
+     * @param itemId the item id
+     */
+    public void setItemId(String itemId) {
 		this.itemId = itemId;
 	}
 
-	public String getPromoSubType() {
+    /**
+     * Gets promo sub type.
+     *
+     * @return the promo sub type
+     */
+    public String getPromoSubType() {
 		return this.promoSubType;
 	}
-	public void setPromoSubType(String promoSubType) {
+
+    /**
+     * Sets promo sub type.
+     *
+     * @param promoSubType the promo sub type
+     */
+    public void setPromoSubType(String promoSubType) {
 		this.promoSubType = promoSubType;
 	}
 
-	public String getPromotionType() {
+    /**
+     * Gets promotion type.
+     *
+     * @return the promotion type
+     */
+    public String getPromotionType() {
 		return this.promotionType;
 	}
-	public void setPromotionType(String promotionType) {
+
+    /**
+     * Sets promotion type.
+     *
+     * @param promotionType the promotion type
+     */
+    public void setPromotionType(String promotionType) {
 		this.promotionType = promotionType;
 	}
 
-	public String getPurchaseMode() {
+    /**
+     * Gets purchase mode.
+     *
+     * @return the purchase mode
+     */
+    public String getPurchaseMode() {
 		return this.purchaseMode;
 	}
-	public void setPurchaseMode(String purchaseMode) {
+
+    /**
+     * Sets purchase mode.
+     *
+     * @param purchaseMode the purchase mode
+     */
+    public void setPurchaseMode(String purchaseMode) {
 		this.purchaseMode = purchaseMode;
 	}
 
-	public String getSalesQuantity() {
+    /**
+     * Gets sales quantity.
+     *
+     * @return the sales quantity
+     */
+    public String getSalesQuantity() {
 		return this.salesQuantity;
 	}
-	public void setSalesQuantity(String salesQuantity) {
+
+    /**
+     * Sets sales quantity.
+     *
+     * @param salesQuantity the sales quantity
+     */
+    public void setSalesQuantity(String salesQuantity) {
 		this.salesQuantity = salesQuantity;
 	}
 
-	public String getSubject() {
+    /**
+     * Gets subject.
+     *
+     * @return the subject
+     */
+    public String getSubject() {
 		return this.subject;
 	}
-	public void setSubject(String subject) {
+
+    /**
+     * Sets subject.
+     *
+     * @param subject the subject
+     */
+    public void setSubject(String subject) {
 		this.subject = subject;
 	}
 

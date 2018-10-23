@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.user.financeinfo.share response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-03-16 16:54:10
  */
 public class AlipayUserFinanceinfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5875692118239356269L;
+	private static final long serialVersionUID = 8516356185549897583L;
 
 	/** 
 	 * 查询出的信用卡列表，包含0到多张卡，每张卡对应一组信息，包含卡号（已脱敏）和开户行代码
@@ -24,10 +24,21 @@ public class AlipayUserFinanceinfoShareResponse extends AlipayResponse {
 	@ApiField("alipay_user_credit_card")
 	private List<AlipayUserCreditCard> creditCardList;
 
-	public void setCreditCardList(List<AlipayUserCreditCard> creditCardList) {
+    /**
+     * Sets credit card list.
+     *
+     * @param creditCardList the credit card list
+     */
+    public void setCreditCardList(List<AlipayUserCreditCard> creditCardList) {
 		this.creditCardList = creditCardList;
 	}
-	public List<AlipayUserCreditCard> getCreditCardList( ) {
+
+    /**
+     * Gets credit card list.
+     *
+     * @return the credit card list
+     */
+    public List<AlipayUserCreditCard> getCreditCardList( ) {
 		return this.creditCardList;
 	}
 

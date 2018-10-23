@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceLotteryPresentSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6228512766792628615L;
+	private static final long serialVersionUID = 3671182791575762419L;
 
 	/**
 	 * 被赠送彩票的支付宝用户的ID，不支持一次赠送给多个用户
@@ -43,38 +43,93 @@ public class AlipayCommerceLotteryPresentSendModel extends AlipayObject {
 	@ApiField("swety_words")
 	private String swetyWords;
 
-	public String getAlipayUserId() {
+    /**
+     * Gets alipay user id.
+     *
+     * @return the alipay user id
+     */
+    public String getAlipayUserId() {
 		return this.alipayUserId;
 	}
-	public void setAlipayUserId(String alipayUserId) {
+
+    /**
+     * Sets alipay user id.
+     *
+     * @param alipayUserId the alipay user id
+     */
+    public void setAlipayUserId(String alipayUserId) {
 		this.alipayUserId = alipayUserId;
 	}
 
-	public Long getLotteryTypeId() {
+    /**
+     * Gets lottery type id.
+     *
+     * @return the lottery type id
+     */
+    public Long getLotteryTypeId() {
 		return this.lotteryTypeId;
 	}
-	public void setLotteryTypeId(Long lotteryTypeId) {
+
+    /**
+     * Sets lottery type id.
+     *
+     * @param lotteryTypeId the lottery type id
+     */
+    public void setLotteryTypeId(Long lotteryTypeId) {
 		this.lotteryTypeId = lotteryTypeId;
 	}
 
-	public String getOutOrderNo() {
+    /**
+     * Gets out order no.
+     *
+     * @return the out order no
+     */
+    public String getOutOrderNo() {
 		return this.outOrderNo;
 	}
-	public void setOutOrderNo(String outOrderNo) {
+
+    /**
+     * Sets out order no.
+     *
+     * @param outOrderNo the out order no
+     */
+    public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
 	}
 
-	public Long getStakeCount() {
+    /**
+     * Gets stake count.
+     *
+     * @return the stake count
+     */
+    public Long getStakeCount() {
 		return this.stakeCount;
 	}
-	public void setStakeCount(Long stakeCount) {
+
+    /**
+     * Sets stake count.
+     *
+     * @param stakeCount the stake count
+     */
+    public void setStakeCount(Long stakeCount) {
 		this.stakeCount = stakeCount;
 	}
 
-	public String getSwetyWords() {
+    /**
+     * Gets swety words.
+     *
+     * @return the swety words
+     */
+    public String getSwetyWords() {
 		return this.swetyWords;
 	}
-	public void setSwetyWords(String swetyWords) {
+
+    /**
+     * Sets swety words.
+     *
+     * @param swetyWords the swety words
+     */
+    public void setSwetyWords(String swetyWords) {
 		this.swetyWords = swetyWords;
 	}
 

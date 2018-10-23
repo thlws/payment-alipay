@@ -9,9 +9,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.ebpp.pdeduct.sign.add request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-10-10 14:30:21
+ * @since 1.0, 2018-05-16 11:50:00
  */
 public class AlipayEbppPdeductSignAddRequest implements AlipayRequest<AlipayEbppPdeductSignAddResponse> {
 
@@ -40,6 +40,7 @@ JF：缴水、电、燃气、固话宽带、有线电视、交通罚款费用
 WUYE：缴物业费
 HK：信用卡还款
 TX：手机充值
+IND: 保险
 	 */
 	private String bizType;
 
@@ -49,9 +50,27 @@ TX：手机充值
 	private String chargeInst;
 
 	/** 
+	* 代扣产品码, 由技术同学分配。 目前在缴费业务场景中，传入INST_DIRECT_DEDUCT; 在保险业务场景中, 传入INSURANCE_MERCHANT_DEDUCT
+	 */
+	private String deductProdCode;
+
+	/** 
 	* 签约类型可为空
 	 */
 	private String deductType;
+
+	/** 
+	* 外部用户实名认证相关信息, 用于做签约时的实名校验。 
+注： 
+
+name: 姓名
+cert_type: 身份证：IDENTITY_CARD、护照：PASSPORT、军官证：OFFICER_CARD、士兵证：SOLDIER_CARD、户口本：HOKOU等
+cert_no: 证件号码
+need_check_info取值 T/F，只有为T时才做强制校验。
+mobile:手机号，目前暂不使用此字段做校验
+min_age: 允许的最小买家年龄,min_age为整数，必须大于等于0.
+	 */
+	private String extUserInfo;
 
 	/** 
 	* 扩展字段
@@ -104,6 +123,9 @@ TRAFFIC：缴交通罚款
 WUYE：缴物业费
 HK：信用卡还款
 CZ：手机充值
+CAR：车险 
+LIFE：寿险 
+HEALTH：健康险
 	 */
 	private String subBizType;
 
@@ -112,115 +134,327 @@ CZ：手机充值
 	 */
 	private String userId;
 
-	public void setAgentChannel(String agentChannel) {
+    /**
+     * Sets agent channel.
+     *
+     * @param agentChannel the agent channel
+     */
+    public void setAgentChannel(String agentChannel) {
 		this.agentChannel = agentChannel;
 	}
-	public String getAgentChannel() {
+
+    /**
+     * Gets agent channel.
+     *
+     * @return the agent channel
+     */
+    public String getAgentChannel() {
 		return this.agentChannel;
 	}
 
-	public void setAgentCode(String agentCode) {
+    /**
+     * Sets agent code.
+     *
+     * @param agentCode the agent code
+     */
+    public void setAgentCode(String agentCode) {
 		this.agentCode = agentCode;
 	}
-	public String getAgentCode() {
+
+    /**
+     * Gets agent code.
+     *
+     * @return the agent code
+     */
+    public String getAgentCode() {
 		return this.agentCode;
 	}
 
-	public void setBillKey(String billKey) {
+    /**
+     * Sets bill key.
+     *
+     * @param billKey the bill key
+     */
+    public void setBillKey(String billKey) {
 		this.billKey = billKey;
 	}
-	public String getBillKey() {
+
+    /**
+     * Gets bill key.
+     *
+     * @return the bill key
+     */
+    public String getBillKey() {
 		return this.billKey;
 	}
 
-	public void setBizType(String bizType) {
+    /**
+     * Sets biz type.
+     *
+     * @param bizType the biz type
+     */
+    public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
-	public String getBizType() {
+
+    /**
+     * Gets biz type.
+     *
+     * @return the biz type
+     */
+    public String getBizType() {
 		return this.bizType;
 	}
 
-	public void setChargeInst(String chargeInst) {
+    /**
+     * Sets charge inst.
+     *
+     * @param chargeInst the charge inst
+     */
+    public void setChargeInst(String chargeInst) {
 		this.chargeInst = chargeInst;
 	}
-	public String getChargeInst() {
+
+    /**
+     * Gets charge inst.
+     *
+     * @return the charge inst
+     */
+    public String getChargeInst() {
 		return this.chargeInst;
 	}
 
-	public void setDeductType(String deductType) {
+    /**
+     * Sets deduct prod code.
+     *
+     * @param deductProdCode the deduct prod code
+     */
+    public void setDeductProdCode(String deductProdCode) {
+		this.deductProdCode = deductProdCode;
+	}
+
+    /**
+     * Gets deduct prod code.
+     *
+     * @return the deduct prod code
+     */
+    public String getDeductProdCode() {
+		return this.deductProdCode;
+	}
+
+    /**
+     * Sets deduct type.
+     *
+     * @param deductType the deduct type
+     */
+    public void setDeductType(String deductType) {
 		this.deductType = deductType;
 	}
-	public String getDeductType() {
+
+    /**
+     * Gets deduct type.
+     *
+     * @return the deduct type
+     */
+    public String getDeductType() {
 		return this.deductType;
 	}
 
-	public void setExtendField(String extendField) {
+    /**
+     * Sets ext user info.
+     *
+     * @param extUserInfo the ext user info
+     */
+    public void setExtUserInfo(String extUserInfo) {
+		this.extUserInfo = extUserInfo;
+	}
+
+    /**
+     * Gets ext user info.
+     *
+     * @return the ext user info
+     */
+    public String getExtUserInfo() {
+		return this.extUserInfo;
+	}
+
+    /**
+     * Sets extend field.
+     *
+     * @param extendField the extend field
+     */
+    public void setExtendField(String extendField) {
 		this.extendField = extendField;
 	}
-	public String getExtendField() {
+
+    /**
+     * Gets extend field.
+     *
+     * @return the extend field
+     */
+    public String getExtendField() {
 		return this.extendField;
 	}
 
-	public void setNotifyConfig(String notifyConfig) {
+    /**
+     * Sets notify config.
+     *
+     * @param notifyConfig the notify config
+     */
+    public void setNotifyConfig(String notifyConfig) {
 		this.notifyConfig = notifyConfig;
 	}
-	public String getNotifyConfig() {
+
+    /**
+     * Gets notify config.
+     *
+     * @return the notify config
+     */
+    public String getNotifyConfig() {
 		return this.notifyConfig;
 	}
 
-	public void setOutAgreementId(String outAgreementId) {
+    /**
+     * Sets out agreement id.
+     *
+     * @param outAgreementId the out agreement id
+     */
+    public void setOutAgreementId(String outAgreementId) {
 		this.outAgreementId = outAgreementId;
 	}
-	public String getOutAgreementId() {
+
+    /**
+     * Gets out agreement id.
+     *
+     * @return the out agreement id
+     */
+    public String getOutAgreementId() {
 		return this.outAgreementId;
 	}
 
-	public void setOwnerName(String ownerName) {
+    /**
+     * Sets owner name.
+     *
+     * @param ownerName the owner name
+     */
+    public void setOwnerName(String ownerName) {
 		this.ownerName = ownerName;
 	}
-	public String getOwnerName() {
+
+    /**
+     * Gets owner name.
+     *
+     * @return the owner name
+     */
+    public String getOwnerName() {
 		return this.ownerName;
 	}
 
-	public void setPayConfig(String payConfig) {
+    /**
+     * Sets pay config.
+     *
+     * @param payConfig the pay config
+     */
+    public void setPayConfig(String payConfig) {
 		this.payConfig = payConfig;
 	}
-	public String getPayConfig() {
+
+    /**
+     * Gets pay config.
+     *
+     * @return the pay config
+     */
+    public String getPayConfig() {
 		return this.payConfig;
 	}
 
-	public void setPayPasswordToken(String payPasswordToken) {
+    /**
+     * Sets pay password token.
+     *
+     * @param payPasswordToken the pay password token
+     */
+    public void setPayPasswordToken(String payPasswordToken) {
 		this.payPasswordToken = payPasswordToken;
 	}
-	public String getPayPasswordToken() {
+
+    /**
+     * Gets pay password token.
+     *
+     * @return the pay password token
+     */
+    public String getPayPasswordToken() {
 		return this.payPasswordToken;
 	}
 
-	public void setPid(String pid) {
+    /**
+     * Sets pid.
+     *
+     * @param pid the pid
+     */
+    public void setPid(String pid) {
 		this.pid = pid;
 	}
-	public String getPid() {
+
+    /**
+     * Gets pid.
+     *
+     * @return the pid
+     */
+    public String getPid() {
 		return this.pid;
 	}
 
-	public void setSignExpireDate(String signExpireDate) {
+    /**
+     * Sets sign expire date.
+     *
+     * @param signExpireDate the sign expire date
+     */
+    public void setSignExpireDate(String signExpireDate) {
 		this.signExpireDate = signExpireDate;
 	}
-	public String getSignExpireDate() {
+
+    /**
+     * Gets sign expire date.
+     *
+     * @return the sign expire date
+     */
+    public String getSignExpireDate() {
 		return this.signExpireDate;
 	}
 
-	public void setSubBizType(String subBizType) {
+    /**
+     * Sets sub biz type.
+     *
+     * @param subBizType the sub biz type
+     */
+    public void setSubBizType(String subBizType) {
 		this.subBizType = subBizType;
 	}
-	public String getSubBizType() {
+
+    /**
+     * Gets sub biz type.
+     *
+     * @return the sub biz type
+     */
+    public String getSubBizType() {
 		return this.subBizType;
 	}
 
-	public void setUserId(String userId) {
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public String getUserId() {
+
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
 	private String terminalType;
@@ -290,7 +524,9 @@ CZ：手机充值
 		txtParams.put("bill_key", this.billKey);
 		txtParams.put("biz_type", this.bizType);
 		txtParams.put("charge_inst", this.chargeInst);
+		txtParams.put("deduct_prod_code", this.deductProdCode);
 		txtParams.put("deduct_type", this.deductType);
+		txtParams.put("ext_user_info", this.extUserInfo);
 		txtParams.put("extend_field", this.extendField);
 		txtParams.put("notify_config", this.notifyConfig);
 		txtParams.put("out_agreement_id", this.outAgreementId);
@@ -307,7 +543,13 @@ CZ：手机充值
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

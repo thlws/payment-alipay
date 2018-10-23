@@ -8,13 +8,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ebpp.pdeduct.sign.add response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-10-10 14:30:21
+ * @since 1.0, 2018-05-16 11:50:00
  */
 public class AlipayEbppPdeductSignAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4519456363438249282L;
+	private static final long serialVersionUID = 5116888497659993793L;
 
 	/** 
 	 * 支付宝代扣协议ID
@@ -59,52 +59,129 @@ public class AlipayEbppPdeductSignAddResponse extends AlipayResponse {
 	@ApiField("sign_date")
 	private String signDate;
 
-	public void setAgreementId(String agreementId) {
+    /**
+     * Sets agreement id.
+     *
+     * @param agreementId the agreement id
+     */
+    public void setAgreementId(String agreementId) {
 		this.agreementId = agreementId;
 	}
-	public String getAgreementId( ) {
+
+    /**
+     * Gets agreement id.
+     *
+     * @return the agreement id
+     */
+    public String getAgreementId( ) {
 		return this.agreementId;
 	}
 
-	public void setAgreementStatus(String agreementStatus) {
+    /**
+     * Sets agreement status.
+     *
+     * @param agreementStatus the agreement status
+     */
+    public void setAgreementStatus(String agreementStatus) {
 		this.agreementStatus = agreementStatus;
 	}
-	public String getAgreementStatus( ) {
+
+    /**
+     * Gets agreement status.
+     *
+     * @return the agreement status
+     */
+    public String getAgreementStatus( ) {
 		return this.agreementStatus;
 	}
 
-	public void setExtendField(String extendField) {
+    /**
+     * Sets extend field.
+     *
+     * @param extendField the extend field
+     */
+    public void setExtendField(String extendField) {
 		this.extendField = extendField;
 	}
-	public String getExtendField( ) {
+
+    /**
+     * Gets extend field.
+     *
+     * @return the extend field
+     */
+    public String getExtendField( ) {
 		return this.extendField;
 	}
 
-	public void setNotifyConfig(String notifyConfig) {
+    /**
+     * Sets notify config.
+     *
+     * @param notifyConfig the notify config
+     */
+    public void setNotifyConfig(String notifyConfig) {
 		this.notifyConfig = notifyConfig;
 	}
-	public String getNotifyConfig( ) {
+
+    /**
+     * Gets notify config.
+     *
+     * @return the notify config
+     */
+    public String getNotifyConfig( ) {
 		return this.notifyConfig;
 	}
 
-	public void setOutAgreementId(String outAgreementId) {
+    /**
+     * Sets out agreement id.
+     *
+     * @param outAgreementId the out agreement id
+     */
+    public void setOutAgreementId(String outAgreementId) {
 		this.outAgreementId = outAgreementId;
 	}
-	public String getOutAgreementId( ) {
+
+    /**
+     * Gets out agreement id.
+     *
+     * @return the out agreement id
+     */
+    public String getOutAgreementId( ) {
 		return this.outAgreementId;
 	}
 
-	public void setPayConfig(List<String> payConfig) {
+    /**
+     * Sets pay config.
+     *
+     * @param payConfig the pay config
+     */
+    public void setPayConfig(List<String> payConfig) {
 		this.payConfig = payConfig;
 	}
-	public List<String> getPayConfig( ) {
+
+    /**
+     * Gets pay config.
+     *
+     * @return the pay config
+     */
+    public List<String> getPayConfig( ) {
 		return this.payConfig;
 	}
 
-	public void setSignDate(String signDate) {
+    /**
+     * Sets sign date.
+     *
+     * @param signDate the sign date
+     */
+    public void setSignDate(String signDate) {
 		this.signDate = signDate;
 	}
-	public String getSignDate( ) {
+
+    /**
+     * Gets sign date.
+     *
+     * @return the sign date
+     */
+    public String getSignDate( ) {
 		return this.signDate;
 	}
 

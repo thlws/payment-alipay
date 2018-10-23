@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DiagnoseResult extends AlipayObject {
 
-	private static final long serialVersionUID = 6739464491984839491L;
+	private static final long serialVersionUID = 6884497773752292127L;
 
 	/**
 	 * 提示文案业务参数,JSON对象形式返回，JSON的KEY包含tradeCycle，userRate，industryRate，repayRate调用方根据诊断CODE分别给出不同的诊断文案，例如：
@@ -32,17 +32,39 @@ REPAY_RATE	复购率低
 	@ApiField("diagnose_code")
 	private String diagnoseCode;
 
-	public String getBizData() {
+    /**
+     * Gets biz data.
+     *
+     * @return the biz data
+     */
+    public String getBizData() {
 		return this.bizData;
 	}
-	public void setBizData(String bizData) {
+
+    /**
+     * Sets biz data.
+     *
+     * @param bizData the biz data
+     */
+    public void setBizData(String bizData) {
 		this.bizData = bizData;
 	}
 
-	public String getDiagnoseCode() {
+    /**
+     * Gets diagnose code.
+     *
+     * @return the diagnose code
+     */
+    public String getDiagnoseCode() {
 		return this.diagnoseCode;
 	}
-	public void setDiagnoseCode(String diagnoseCode) {
+
+    /**
+     * Sets diagnose code.
+     *
+     * @param diagnoseCode the diagnose code
+     */
+    public void setDiagnoseCode(String diagnoseCode) {
 		this.diagnoseCode = diagnoseCode;
 	}
 

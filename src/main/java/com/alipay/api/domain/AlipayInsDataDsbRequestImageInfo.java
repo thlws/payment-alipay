@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 定损宝车险图像定损请求中的图像信息
  *
  * @author auto create
- * @since 1.0, 2017-08-07 17:31:18
+ * @since 1.0, 2018-09-05 22:21:56
  */
 public class AlipayInsDataDsbRequestImageInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3346948248257749882L;
+	private static final long serialVersionUID = 7577253557435595626L;
 
 	/**
 	 * 图像文件名称
@@ -25,17 +25,39 @@ public class AlipayInsDataDsbRequestImageInfo extends AlipayObject {
 	@ApiField("image_path")
 	private String imagePath;
 
-	public String getImageName() {
+    /**
+     * Gets image name.
+     *
+     * @return the image name
+     */
+    public String getImageName() {
 		return this.imageName;
 	}
-	public void setImageName(String imageName) {
+
+    /**
+     * Sets image name.
+     *
+     * @param imageName the image name
+     */
+    public void setImageName(String imageName) {
 		this.imageName = imageName;
 	}
 
-	public String getImagePath() {
+    /**
+     * Gets image path.
+     *
+     * @return the image path
+     */
+    public String getImagePath() {
 		return this.imagePath;
 	}
-	public void setImagePath(String imagePath) {
+
+    /**
+     * Sets image path.
+     *
+     * @param imagePath the image path
+     */
+    public void setImagePath(String imagePath) {
 		this.imagePath = imagePath;
 	}
 

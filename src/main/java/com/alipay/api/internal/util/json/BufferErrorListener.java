@@ -1,14 +1,28 @@
 package com.alipay.api.internal.util.json;
 
+/**
+ * The type Buffer error listener.
+ */
 public class BufferErrorListener implements JSONErrorListener {
 
+    /**
+     * The Buffer.
+     */
     protected StringBuffer buffer;
     private String input;
-    
+
+    /**
+     * Instantiates a new Buffer error listener.
+     *
+     * @param buffer the buffer
+     */
     public BufferErrorListener(StringBuffer buffer) {
         this.buffer = buffer;
     }
-    
+
+    /**
+     * Instantiates a new Buffer error listener.
+     */
     public BufferErrorListener() {
         this(new StringBuffer());
     }

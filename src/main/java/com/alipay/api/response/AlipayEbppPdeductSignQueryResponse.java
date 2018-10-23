@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ebpp.pdeduct.sign.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-08-04 11:19:46
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayEbppPdeductSignQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6783935177243799795L;
+	private static final long serialVersionUID = 4573638563196591464L;
 
 	/** 
 	 * 协议ID
@@ -50,45 +50,111 @@ public class AlipayEbppPdeductSignQueryResponse extends AlipayResponse {
 	@ApiField("user_id")
 	private String userId;
 
-	public void setAgreementId(String agreementId) {
+    /**
+     * Sets agreement id.
+     *
+     * @param agreementId the agreement id
+     */
+    public void setAgreementId(String agreementId) {
 		this.agreementId = agreementId;
 	}
-	public String getAgreementId( ) {
+
+    /**
+     * Gets agreement id.
+     *
+     * @return the agreement id
+     */
+    public String getAgreementId( ) {
 		return this.agreementId;
 	}
 
-	public void setBillKey(String billKey) {
+    /**
+     * Sets bill key.
+     *
+     * @param billKey the bill key
+     */
+    public void setBillKey(String billKey) {
 		this.billKey = billKey;
 	}
-	public String getBillKey( ) {
+
+    /**
+     * Gets bill key.
+     *
+     * @return the bill key
+     */
+    public String getBillKey( ) {
 		return this.billKey;
 	}
 
-	public void setChargeInst(String chargeInst) {
+    /**
+     * Sets charge inst.
+     *
+     * @param chargeInst the charge inst
+     */
+    public void setChargeInst(String chargeInst) {
 		this.chargeInst = chargeInst;
 	}
-	public String getChargeInst( ) {
+
+    /**
+     * Gets charge inst.
+     *
+     * @return the charge inst
+     */
+    public String getChargeInst( ) {
 		return this.chargeInst;
 	}
 
-	public void setOutAgreementId(String outAgreementId) {
+    /**
+     * Sets out agreement id.
+     *
+     * @param outAgreementId the out agreement id
+     */
+    public void setOutAgreementId(String outAgreementId) {
 		this.outAgreementId = outAgreementId;
 	}
-	public String getOutAgreementId( ) {
+
+    /**
+     * Gets out agreement id.
+     *
+     * @return the out agreement id
+     */
+    public String getOutAgreementId( ) {
 		return this.outAgreementId;
 	}
 
-	public void setSignDate(String signDate) {
+    /**
+     * Sets sign date.
+     *
+     * @param signDate the sign date
+     */
+    public void setSignDate(String signDate) {
 		this.signDate = signDate;
 	}
-	public String getSignDate( ) {
+
+    /**
+     * Gets sign date.
+     *
+     * @return the sign date
+     */
+    public String getSignDate( ) {
 		return this.signDate;
 	}
 
-	public void setUserId(String userId) {
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public String getUserId( ) {
+
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId( ) {
 		return this.userId;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ItemDiagnoseDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4552596871759639463L;
+	private static final long serialVersionUID = 8778968854237797185L;
 
 	/**
 	 * 菜品的热度等级	菜品热度等级（0/0.5/1/1.5/2/2.5/3/3.5/4/4.5/5）该字段是对热度值做离散化，方便用户用图像化表达热度
@@ -121,129 +121,327 @@ public class ItemDiagnoseDetail extends AlipayObject {
 	@ApiField("report_date")
 	private String reportDate;
 
-	public Long getHotGrade() {
+    /**
+     * Gets hot grade.
+     *
+     * @return the hot grade
+     */
+    public Long getHotGrade() {
 		return this.hotGrade;
 	}
-	public void setHotGrade(Long hotGrade) {
+
+    /**
+     * Sets hot grade.
+     *
+     * @param hotGrade the hot grade
+     */
+    public void setHotGrade(Long hotGrade) {
 		this.hotGrade = hotGrade;
 	}
 
-	public Long getHotValue() {
+    /**
+     * Gets hot value.
+     *
+     * @return the hot value
+     */
+    public Long getHotValue() {
 		return this.hotValue;
 	}
-	public void setHotValue(Long hotValue) {
+
+    /**
+     * Sets hot value.
+     *
+     * @param hotValue the hot value
+     */
+    public void setHotValue(Long hotValue) {
 		this.hotValue = hotValue;
 	}
 
-	public String getItemDiagnose() {
+    /**
+     * Gets item diagnose.
+     *
+     * @return the item diagnose
+     */
+    public String getItemDiagnose() {
 		return this.itemDiagnose;
 	}
-	public void setItemDiagnose(String itemDiagnose) {
+
+    /**
+     * Sets item diagnose.
+     *
+     * @param itemDiagnose the item diagnose
+     */
+    public void setItemDiagnose(String itemDiagnose) {
 		this.itemDiagnose = itemDiagnose;
 	}
 
-	public String getItemDiagnoseDesc() {
+    /**
+     * Gets item diagnose desc.
+     *
+     * @return the item diagnose desc
+     */
+    public String getItemDiagnoseDesc() {
 		return this.itemDiagnoseDesc;
 	}
-	public void setItemDiagnoseDesc(String itemDiagnoseDesc) {
+
+    /**
+     * Sets item diagnose desc.
+     *
+     * @param itemDiagnoseDesc the item diagnose desc
+     */
+    public void setItemDiagnoseDesc(String itemDiagnoseDesc) {
 		this.itemDiagnoseDesc = itemDiagnoseDesc;
 	}
 
-	public String getItemId() {
+    /**
+     * Gets item id.
+     *
+     * @return the item id
+     */
+    public String getItemId() {
 		return this.itemId;
 	}
-	public void setItemId(String itemId) {
+
+    /**
+     * Sets item id.
+     *
+     * @param itemId the item id
+     */
+    public void setItemId(String itemId) {
 		this.itemId = itemId;
 	}
 
-	public String getItemName() {
+    /**
+     * Gets item name.
+     *
+     * @return the item name
+     */
+    public String getItemName() {
 		return this.itemName;
 	}
-	public void setItemName(String itemName) {
+
+    /**
+     * Sets item name.
+     *
+     * @param itemName the item name
+     */
+    public void setItemName(String itemName) {
 		this.itemName = itemName;
 	}
 
-	public Long getItemPrice() {
+    /**
+     * Gets item price.
+     *
+     * @return the item price
+     */
+    public Long getItemPrice() {
 		return this.itemPrice;
 	}
-	public void setItemPrice(Long itemPrice) {
+
+    /**
+     * Sets item price.
+     *
+     * @param itemPrice the item price
+     */
+    public void setItemPrice(Long itemPrice) {
 		this.itemPrice = itemPrice;
 	}
 
-	public Long getRecNinetyConsumeUidCnt() {
+    /**
+     * Gets rec ninety consume uid cnt.
+     *
+     * @return the rec ninety consume uid cnt
+     */
+    public Long getRecNinetyConsumeUidCnt() {
 		return this.recNinetyConsumeUidCnt;
 	}
-	public void setRecNinetyConsumeUidCnt(Long recNinetyConsumeUidCnt) {
+
+    /**
+     * Sets rec ninety consume uid cnt.
+     *
+     * @param recNinetyConsumeUidCnt the rec ninety consume uid cnt
+     */
+    public void setRecNinetyConsumeUidCnt(Long recNinetyConsumeUidCnt) {
 		this.recNinetyConsumeUidCnt = recNinetyConsumeUidCnt;
 	}
 
-	public Long getRecNinetyRebuyUidCnt() {
+    /**
+     * Gets rec ninety rebuy uid cnt.
+     *
+     * @return the rec ninety rebuy uid cnt
+     */
+    public Long getRecNinetyRebuyUidCnt() {
 		return this.recNinetyRebuyUidCnt;
 	}
-	public void setRecNinetyRebuyUidCnt(Long recNinetyRebuyUidCnt) {
+
+    /**
+     * Sets rec ninety rebuy uid cnt.
+     *
+     * @param recNinetyRebuyUidCnt the rec ninety rebuy uid cnt
+     */
+    public void setRecNinetyRebuyUidCnt(Long recNinetyRebuyUidCnt) {
 		this.recNinetyRebuyUidCnt = recNinetyRebuyUidCnt;
 	}
 
-	public Long getRecSevenSaleAmt() {
+    /**
+     * Gets rec seven sale amt.
+     *
+     * @return the rec seven sale amt
+     */
+    public Long getRecSevenSaleAmt() {
 		return this.recSevenSaleAmt;
 	}
-	public void setRecSevenSaleAmt(Long recSevenSaleAmt) {
+
+    /**
+     * Sets rec seven sale amt.
+     *
+     * @param recSevenSaleAmt the rec seven sale amt
+     */
+    public void setRecSevenSaleAmt(Long recSevenSaleAmt) {
 		this.recSevenSaleAmt = recSevenSaleAmt;
 	}
 
-	public Long getRecSevenSaleCnt() {
+    /**
+     * Gets rec seven sale cnt.
+     *
+     * @return the rec seven sale cnt
+     */
+    public Long getRecSevenSaleCnt() {
 		return this.recSevenSaleCnt;
 	}
-	public void setRecSevenSaleCnt(Long recSevenSaleCnt) {
+
+    /**
+     * Sets rec seven sale cnt.
+     *
+     * @param recSevenSaleCnt the rec seven sale cnt
+     */
+    public void setRecSevenSaleCnt(Long recSevenSaleCnt) {
 		this.recSevenSaleCnt = recSevenSaleCnt;
 	}
 
-	public Long getRecSixtyConsumeUidCnt() {
+    /**
+     * Gets rec sixty consume uid cnt.
+     *
+     * @return the rec sixty consume uid cnt
+     */
+    public Long getRecSixtyConsumeUidCnt() {
 		return this.recSixtyConsumeUidCnt;
 	}
-	public void setRecSixtyConsumeUidCnt(Long recSixtyConsumeUidCnt) {
+
+    /**
+     * Sets rec sixty consume uid cnt.
+     *
+     * @param recSixtyConsumeUidCnt the rec sixty consume uid cnt
+     */
+    public void setRecSixtyConsumeUidCnt(Long recSixtyConsumeUidCnt) {
 		this.recSixtyConsumeUidCnt = recSixtyConsumeUidCnt;
 	}
 
-	public Long getRecSixtyRebuyUidCnt() {
+    /**
+     * Gets rec sixty rebuy uid cnt.
+     *
+     * @return the rec sixty rebuy uid cnt
+     */
+    public Long getRecSixtyRebuyUidCnt() {
 		return this.recSixtyRebuyUidCnt;
 	}
-	public void setRecSixtyRebuyUidCnt(Long recSixtyRebuyUidCnt) {
+
+    /**
+     * Sets rec sixty rebuy uid cnt.
+     *
+     * @param recSixtyRebuyUidCnt the rec sixty rebuy uid cnt
+     */
+    public void setRecSixtyRebuyUidCnt(Long recSixtyRebuyUidCnt) {
 		this.recSixtyRebuyUidCnt = recSixtyRebuyUidCnt;
 	}
 
-	public String getRecThirtyConsumeUidCnt() {
+    /**
+     * Gets rec thirty consume uid cnt.
+     *
+     * @return the rec thirty consume uid cnt
+     */
+    public String getRecThirtyConsumeUidCnt() {
 		return this.recThirtyConsumeUidCnt;
 	}
-	public void setRecThirtyConsumeUidCnt(String recThirtyConsumeUidCnt) {
+
+    /**
+     * Sets rec thirty consume uid cnt.
+     *
+     * @param recThirtyConsumeUidCnt the rec thirty consume uid cnt
+     */
+    public void setRecThirtyConsumeUidCnt(String recThirtyConsumeUidCnt) {
 		this.recThirtyConsumeUidCnt = recThirtyConsumeUidCnt;
 	}
 
-	public Long getRecThirtyRebuyUidCnt() {
+    /**
+     * Gets rec thirty rebuy uid cnt.
+     *
+     * @return the rec thirty rebuy uid cnt
+     */
+    public Long getRecThirtyRebuyUidCnt() {
 		return this.recThirtyRebuyUidCnt;
 	}
-	public void setRecThirtyRebuyUidCnt(Long recThirtyRebuyUidCnt) {
+
+    /**
+     * Sets rec thirty rebuy uid cnt.
+     *
+     * @param recThirtyRebuyUidCnt the rec thirty rebuy uid cnt
+     */
+    public void setRecThirtyRebuyUidCnt(Long recThirtyRebuyUidCnt) {
 		this.recThirtyRebuyUidCnt = recThirtyRebuyUidCnt;
 	}
 
-	public Long getRecThirtySaleAmt() {
+    /**
+     * Gets rec thirty sale amt.
+     *
+     * @return the rec thirty sale amt
+     */
+    public Long getRecThirtySaleAmt() {
 		return this.recThirtySaleAmt;
 	}
-	public void setRecThirtySaleAmt(Long recThirtySaleAmt) {
+
+    /**
+     * Sets rec thirty sale amt.
+     *
+     * @param recThirtySaleAmt the rec thirty sale amt
+     */
+    public void setRecThirtySaleAmt(Long recThirtySaleAmt) {
 		this.recThirtySaleAmt = recThirtySaleAmt;
 	}
 
-	public Long getRecThirtySaleCnt() {
+    /**
+     * Gets rec thirty sale cnt.
+     *
+     * @return the rec thirty sale cnt
+     */
+    public Long getRecThirtySaleCnt() {
 		return this.recThirtySaleCnt;
 	}
-	public void setRecThirtySaleCnt(Long recThirtySaleCnt) {
+
+    /**
+     * Sets rec thirty sale cnt.
+     *
+     * @param recThirtySaleCnt the rec thirty sale cnt
+     */
+    public void setRecThirtySaleCnt(Long recThirtySaleCnt) {
 		this.recThirtySaleCnt = recThirtySaleCnt;
 	}
 
-	public String getReportDate() {
+    /**
+     * Gets report date.
+     *
+     * @return the report date
+     */
+    public String getReportDate() {
 		return this.reportDate;
 	}
-	public void setReportDate(String reportDate) {
+
+    /**
+     * Sets report date.
+     *
+     * @param reportDate the report date
+     */
+    public void setReportDate(String reportDate) {
 		this.reportDate = reportDate;
 	}
 

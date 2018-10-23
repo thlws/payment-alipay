@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GoodsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3217348477982663395L;
+	private static final long serialVersionUID = 3621271341897111438L;
 
 	/**
 	 * 商品类目
@@ -43,38 +43,93 @@ public class GoodsInfo extends AlipayObject {
 	@ApiField("quantity")
 	private String quantity;
 
-	public String getGoodsCategory() {
+    /**
+     * Gets goods category.
+     *
+     * @return the goods category
+     */
+    public String getGoodsCategory() {
 		return this.goodsCategory;
 	}
-	public void setGoodsCategory(String goodsCategory) {
+
+    /**
+     * Sets goods category.
+     *
+     * @param goodsCategory the goods category
+     */
+    public void setGoodsCategory(String goodsCategory) {
 		this.goodsCategory = goodsCategory;
 	}
 
-	public String getGoodsId() {
+    /**
+     * Gets goods id.
+     *
+     * @return the goods id
+     */
+    public String getGoodsId() {
 		return this.goodsId;
 	}
-	public void setGoodsId(String goodsId) {
+
+    /**
+     * Sets goods id.
+     *
+     * @param goodsId the goods id
+     */
+    public void setGoodsId(String goodsId) {
 		this.goodsId = goodsId;
 	}
 
-	public String getGoodsName() {
+    /**
+     * Gets goods name.
+     *
+     * @return the goods name
+     */
+    public String getGoodsName() {
 		return this.goodsName;
 	}
-	public void setGoodsName(String goodsName) {
+
+    /**
+     * Sets goods name.
+     *
+     * @param goodsName the goods name
+     */
+    public void setGoodsName(String goodsName) {
 		this.goodsName = goodsName;
 	}
 
-	public String getPrice() {
+    /**
+     * Gets price.
+     *
+     * @return the price
+     */
+    public String getPrice() {
 		return this.price;
 	}
-	public void setPrice(String price) {
+
+    /**
+     * Sets price.
+     *
+     * @param price the price
+     */
+    public void setPrice(String price) {
 		this.price = price;
 	}
 
-	public String getQuantity() {
+    /**
+     * Gets quantity.
+     *
+     * @return the quantity
+     */
+    public String getQuantity() {
 		return this.quantity;
 	}
-	public void setQuantity(String quantity) {
+
+    /**
+     * Sets quantity.
+     *
+     * @param quantity the quantity
+     */
+    public void setQuantity(String quantity) {
 		this.quantity = quantity;
 	}
 

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayTradeOrderSettleModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1321656949628646422L;
+	private static final long serialVersionUID = 1567461424173125326L;
 
 	/**
 	 * 操作员id
@@ -41,31 +41,75 @@ public class AlipayTradeOrderSettleModel extends AlipayObject {
 	@ApiField("trade_no")
 	private String tradeNo;
 
-	public String getOperatorId() {
+    /**
+     * Gets operator id.
+     *
+     * @return the operator id
+     */
+    public String getOperatorId() {
 		return this.operatorId;
 	}
-	public void setOperatorId(String operatorId) {
+
+    /**
+     * Sets operator id.
+     *
+     * @param operatorId the operator id
+     */
+    public void setOperatorId(String operatorId) {
 		this.operatorId = operatorId;
 	}
 
-	public String getOutRequestNo() {
+    /**
+     * Gets out request no.
+     *
+     * @return the out request no
+     */
+    public String getOutRequestNo() {
 		return this.outRequestNo;
 	}
-	public void setOutRequestNo(String outRequestNo) {
+
+    /**
+     * Sets out request no.
+     *
+     * @param outRequestNo the out request no
+     */
+    public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
 	}
 
-	public List<OpenApiRoyaltyDetailInfoPojo> getRoyaltyParameters() {
+    /**
+     * Gets royalty parameters.
+     *
+     * @return the royalty parameters
+     */
+    public List<OpenApiRoyaltyDetailInfoPojo> getRoyaltyParameters() {
 		return this.royaltyParameters;
 	}
-	public void setRoyaltyParameters(List<OpenApiRoyaltyDetailInfoPojo> royaltyParameters) {
+
+    /**
+     * Sets royalty parameters.
+     *
+     * @param royaltyParameters the royalty parameters
+     */
+    public void setRoyaltyParameters(List<OpenApiRoyaltyDetailInfoPojo> royaltyParameters) {
 		this.royaltyParameters = royaltyParameters;
 	}
 
-	public String getTradeNo() {
+    /**
+     * Gets trade no.
+     *
+     * @return the trade no
+     */
+    public String getTradeNo() {
 		return this.tradeNo;
 	}
-	public void setTradeNo(String tradeNo) {
+
+    /**
+     * Sets trade no.
+     *
+     * @param tradeNo the trade no
+     */
+    public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
 

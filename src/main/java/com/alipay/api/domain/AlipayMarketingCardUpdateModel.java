@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingCardUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4142417848848878715L;
+	private static final long serialVersionUID = 7225428686258317217L;
 
 	/**
 	 * 需要修改的最新卡信息
@@ -31,7 +31,10 @@ public class AlipayMarketingCardUpdateModel extends AlipayObject {
 
 	/**
 	 * 注意：此字段已废弃，卡面样式以模板中的定义为准。
-	 * */
+会员卡卡面展示样式
+参考：展示位置详情参考"商户会员卡->快速接入文档->第四步" 
+备注：mcard_style_info与card_info下的template_id不能同时更新
+	 */
 	@ApiField("mcard_style_info")
 	private McardStylInfo mcardStyleInfo;
 
@@ -63,52 +66,129 @@ BIZ_CARD：支付宝业务卡号
 	@ApiField("target_card_no_type")
 	private String targetCardNoType;
 
-	public MerchantCard getCardInfo() {
+    /**
+     * Gets card info.
+     *
+     * @return the card info
+     */
+    public MerchantCard getCardInfo() {
 		return this.cardInfo;
 	}
-	public void setCardInfo(MerchantCard cardInfo) {
+
+    /**
+     * Sets card info.
+     *
+     * @param cardInfo the card info
+     */
+    public void setCardInfo(MerchantCard cardInfo) {
 		this.cardInfo = cardInfo;
 	}
 
-	public String getExtInfo() {
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo() {
 		return this.extInfo;
 	}
-	public void setExtInfo(String extInfo) {
+
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
-	public McardStylInfo getMcardStyleInfo() {
+    /**
+     * Gets mcard style info.
+     *
+     * @return the mcard style info
+     */
+    public McardStylInfo getMcardStyleInfo() {
 		return this.mcardStyleInfo;
 	}
-	public void setMcardStyleInfo(McardStylInfo mcardStyleInfo) {
+
+    /**
+     * Sets mcard style info.
+     *
+     * @param mcardStyleInfo the mcard style info
+     */
+    public void setMcardStyleInfo(McardStylInfo mcardStyleInfo) {
 		this.mcardStyleInfo = mcardStyleInfo;
 	}
 
-	public List<McardNotifyMessage> getNotifyMessages() {
+    /**
+     * Gets notify messages.
+     *
+     * @return the notify messages
+     */
+    public List<McardNotifyMessage> getNotifyMessages() {
 		return this.notifyMessages;
 	}
-	public void setNotifyMessages(List<McardNotifyMessage> notifyMessages) {
+
+    /**
+     * Sets notify messages.
+     *
+     * @param notifyMessages the notify messages
+     */
+    public void setNotifyMessages(List<McardNotifyMessage> notifyMessages) {
 		this.notifyMessages = notifyMessages;
 	}
 
-	public Date getOccurTime() {
+    /**
+     * Gets occur time.
+     *
+     * @return the occur time
+     */
+    public Date getOccurTime() {
 		return this.occurTime;
 	}
-	public void setOccurTime(Date occurTime) {
+
+    /**
+     * Sets occur time.
+     *
+     * @param occurTime the occur time
+     */
+    public void setOccurTime(Date occurTime) {
 		this.occurTime = occurTime;
 	}
 
-	public String getTargetCardNo() {
+    /**
+     * Gets target card no.
+     *
+     * @return the target card no
+     */
+    public String getTargetCardNo() {
 		return this.targetCardNo;
 	}
-	public void setTargetCardNo(String targetCardNo) {
+
+    /**
+     * Sets target card no.
+     *
+     * @param targetCardNo the target card no
+     */
+    public void setTargetCardNo(String targetCardNo) {
 		this.targetCardNo = targetCardNo;
 	}
 
-	public String getTargetCardNoType() {
+    /**
+     * Gets target card no type.
+     *
+     * @return the target card no type
+     */
+    public String getTargetCardNoType() {
 		return this.targetCardNoType;
 	}
-	public void setTargetCardNoType(String targetCardNoType) {
+
+    /**
+     * Sets target card no type.
+     *
+     * @param targetCardNoType the target card no type
+     */
+    public void setTargetCardNoType(String targetCardNoType) {
 		this.targetCardNoType = targetCardNoType;
 	}
 

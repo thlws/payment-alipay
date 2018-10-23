@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LendingRecords extends AlipayObject {
 
-	private static final long serialVersionUID = 2249379798631183781L;
+	private static final long serialVersionUID = 1483863287497462153L;
 
 	/**
 	 * 放款时间，精确到天
@@ -33,24 +33,57 @@ public class LendingRecords extends AlipayObject {
 	@ApiField("total_amount")
 	private String totalAmount;
 
-	public Date getDate() {
+    /**
+     * Gets date.
+     *
+     * @return the date
+     */
+    public Date getDate() {
 		return this.date;
 	}
-	public void setDate(Date date) {
+
+    /**
+     * Sets date.
+     *
+     * @param date the date
+     */
+    public void setDate(Date date) {
 		this.date = date;
 	}
 
-	public String getRemark() {
+    /**
+     * Gets remark.
+     *
+     * @return the remark
+     */
+    public String getRemark() {
 		return this.remark;
 	}
-	public void setRemark(String remark) {
+
+    /**
+     * Sets remark.
+     *
+     * @param remark the remark
+     */
+    public void setRemark(String remark) {
 		this.remark = remark;
 	}
 
-	public String getTotalAmount() {
+    /**
+     * Gets total amount.
+     *
+     * @return the total amount
+     */
+    public String getTotalAmount() {
 		return this.totalAmount;
 	}
-	public void setTotalAmount(String totalAmount) {
+
+    /**
+     * Sets total amount.
+     *
+     * @param totalAmount the total amount
+     */
+    public void setTotalAmount(String totalAmount) {
 		this.totalAmount = totalAmount;
 	}
 

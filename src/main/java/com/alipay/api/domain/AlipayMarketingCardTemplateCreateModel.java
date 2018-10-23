@@ -10,19 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 会员卡模板创建
  *
  * @author auto create
- * @since 1.0, 2017-08-24 15:51:46
+ * @since 1.0, 2018-03-14 10:42:35
  */
 public class AlipayMarketingCardTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7447497495638327271L;
+	private static final long serialVersionUID = 2495433996399317387L;
 
 	/**
-	 * 业务卡号前缀，由商户指定 */
+	 * 业务卡号前缀，由商户指定
+支付宝业务卡号生成规则：biz_no_prefix(商户指定)卡号前缀 + biz_no_suffix(实时生成）卡号后缀
+	 */
 	@ApiField("biz_no_prefix")
 	private String bizNoPrefix;
 
 	/**
-	 * 业务卡号后缀的长度
+	 * 业务卡号后缀的长度，取值范围为[8,32]
+支付宝业务卡号生成规则：biz_no_prefix(商户指定)卡号前缀 + biz_no_suffix(实时生成）卡号后缀
+由于业务卡号最长不超过32位，所以biz_no_suffix_len <= 32 - biz_no_prefix的位数
 	 */
 	@ApiField("biz_no_suffix_len")
 	private String bizNoSuffixLen;
@@ -42,6 +46,12 @@ public class AlipayMarketingCardTemplateCreateModel extends AlipayObject {
 	@ApiListField("card_level_conf")
 	@ApiField("template_card_level_conf_d_t_o")
 	private List<TemplateCardLevelConfDTO> cardLevelConf;
+
+	/**
+	 * 卡特定标签，只供特定业务使用，通常接入无需关注
+	 */
+	@ApiField("card_spec_tag")
+	private String cardSpecTag;
 
 	/**
 	 * 卡类型为固定枚举类型，可选类型如下：
@@ -141,115 +151,309 @@ mdbarcode: 商户动态条码，扫码得商户自主传入的码值
 	@ApiField("write_off_type")
 	private String writeOffType;
 
-	public String getBizNoPrefix() {
+    /**
+     * Gets biz no prefix.
+     *
+     * @return the biz no prefix
+     */
+    public String getBizNoPrefix() {
 		return this.bizNoPrefix;
 	}
-	public void setBizNoPrefix(String bizNoPrefix) {
+
+    /**
+     * Sets biz no prefix.
+     *
+     * @param bizNoPrefix the biz no prefix
+     */
+    public void setBizNoPrefix(String bizNoPrefix) {
 		this.bizNoPrefix = bizNoPrefix;
 	}
 
-	public String getBizNoSuffixLen() {
+    /**
+     * Gets biz no suffix len.
+     *
+     * @return the biz no suffix len
+     */
+    public String getBizNoSuffixLen() {
 		return this.bizNoSuffixLen;
 	}
-	public void setBizNoSuffixLen(String bizNoSuffixLen) {
+
+    /**
+     * Sets biz no suffix len.
+     *
+     * @param bizNoSuffixLen the biz no suffix len
+     */
+    public void setBizNoSuffixLen(String bizNoSuffixLen) {
 		this.bizNoSuffixLen = bizNoSuffixLen;
 	}
 
-	public List<TemplateActionInfoDTO> getCardActionList() {
+    /**
+     * Gets card action list.
+     *
+     * @return the card action list
+     */
+    public List<TemplateActionInfoDTO> getCardActionList() {
 		return this.cardActionList;
 	}
-	public void setCardActionList(List<TemplateActionInfoDTO> cardActionList) {
+
+    /**
+     * Sets card action list.
+     *
+     * @param cardActionList the card action list
+     */
+    public void setCardActionList(List<TemplateActionInfoDTO> cardActionList) {
 		this.cardActionList = cardActionList;
 	}
 
-	public List<TemplateCardLevelConfDTO> getCardLevelConf() {
+    /**
+     * Gets card level conf.
+     *
+     * @return the card level conf
+     */
+    public List<TemplateCardLevelConfDTO> getCardLevelConf() {
 		return this.cardLevelConf;
 	}
-	public void setCardLevelConf(List<TemplateCardLevelConfDTO> cardLevelConf) {
+
+    /**
+     * Sets card level conf.
+     *
+     * @param cardLevelConf the card level conf
+     */
+    public void setCardLevelConf(List<TemplateCardLevelConfDTO> cardLevelConf) {
 		this.cardLevelConf = cardLevelConf;
 	}
 
-	public String getCardType() {
+    /**
+     * Gets card spec tag.
+     *
+     * @return the card spec tag
+     */
+    public String getCardSpecTag() {
+		return this.cardSpecTag;
+	}
+
+    /**
+     * Sets card spec tag.
+     *
+     * @param cardSpecTag the card spec tag
+     */
+    public void setCardSpecTag(String cardSpecTag) {
+		this.cardSpecTag = cardSpecTag;
+	}
+
+    /**
+     * Gets card type.
+     *
+     * @return the card type
+     */
+    public String getCardType() {
 		return this.cardType;
 	}
-	public void setCardType(String cardType) {
+
+    /**
+     * Sets card type.
+     *
+     * @param cardType the card type
+     */
+    public void setCardType(String cardType) {
 		this.cardType = cardType;
 	}
 
-	public List<TemplateColumnInfoDTO> getColumnInfoList() {
+    /**
+     * Gets column info list.
+     *
+     * @return the column info list
+     */
+    public List<TemplateColumnInfoDTO> getColumnInfoList() {
 		return this.columnInfoList;
 	}
-	public void setColumnInfoList(List<TemplateColumnInfoDTO> columnInfoList) {
+
+    /**
+     * Sets column info list.
+     *
+     * @param columnInfoList the column info list
+     */
+    public void setColumnInfoList(List<TemplateColumnInfoDTO> columnInfoList) {
 		this.columnInfoList = columnInfoList;
 	}
 
-	public List<TemplateFieldRuleDTO> getFieldRuleList() {
+    /**
+     * Gets field rule list.
+     *
+     * @return the field rule list
+     */
+    public List<TemplateFieldRuleDTO> getFieldRuleList() {
 		return this.fieldRuleList;
 	}
-	public void setFieldRuleList(List<TemplateFieldRuleDTO> fieldRuleList) {
+
+    /**
+     * Sets field rule list.
+     *
+     * @param fieldRuleList the field rule list
+     */
+    public void setFieldRuleList(List<TemplateFieldRuleDTO> fieldRuleList) {
 		this.fieldRuleList = fieldRuleList;
 	}
 
-	public TemplateMdcodeNotifyConfDTO getMdcodeNotifyConf() {
+    /**
+     * Gets mdcode notify conf.
+     *
+     * @return the mdcode notify conf
+     */
+    public TemplateMdcodeNotifyConfDTO getMdcodeNotifyConf() {
 		return this.mdcodeNotifyConf;
 	}
-	public void setMdcodeNotifyConf(TemplateMdcodeNotifyConfDTO mdcodeNotifyConf) {
+
+    /**
+     * Sets mdcode notify conf.
+     *
+     * @param mdcodeNotifyConf the mdcode notify conf
+     */
+    public void setMdcodeNotifyConf(TemplateMdcodeNotifyConfDTO mdcodeNotifyConf) {
 		this.mdcodeNotifyConf = mdcodeNotifyConf;
 	}
 
-	public TemplateOpenCardConfDTO getOpenCardConf() {
+    /**
+     * Gets open card conf.
+     *
+     * @return the open card conf
+     */
+    public TemplateOpenCardConfDTO getOpenCardConf() {
 		return this.openCardConf;
 	}
-	public void setOpenCardConf(TemplateOpenCardConfDTO openCardConf) {
+
+    /**
+     * Sets open card conf.
+     *
+     * @param openCardConf the open card conf
+     */
+    public void setOpenCardConf(TemplateOpenCardConfDTO openCardConf) {
 		this.openCardConf = openCardConf;
 	}
 
-	public List<PubChannelDTO> getPubChannels() {
+    /**
+     * Gets pub channels.
+     *
+     * @return the pub channels
+     */
+    public List<PubChannelDTO> getPubChannels() {
 		return this.pubChannels;
 	}
-	public void setPubChannels(List<PubChannelDTO> pubChannels) {
+
+    /**
+     * Sets pub channels.
+     *
+     * @param pubChannels the pub channels
+     */
+    public void setPubChannels(List<PubChannelDTO> pubChannels) {
 		this.pubChannels = pubChannels;
 	}
 
-	public String getRequestId() {
+    /**
+     * Gets request id.
+     *
+     * @return the request id
+     */
+    public String getRequestId() {
 		return this.requestId;
 	}
-	public void setRequestId(String requestId) {
+
+    /**
+     * Sets request id.
+     *
+     * @param requestId the request id
+     */
+    public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
 
-	public List<String> getServiceLabelList() {
+    /**
+     * Gets service label list.
+     *
+     * @return the service label list
+     */
+    public List<String> getServiceLabelList() {
 		return this.serviceLabelList;
 	}
-	public void setServiceLabelList(List<String> serviceLabelList) {
+
+    /**
+     * Sets service label list.
+     *
+     * @param serviceLabelList the service label list
+     */
+    public void setServiceLabelList(List<String> serviceLabelList) {
 		this.serviceLabelList = serviceLabelList;
 	}
 
-	public List<String> getShopIds() {
+    /**
+     * Gets shop ids.
+     *
+     * @return the shop ids
+     */
+    public List<String> getShopIds() {
 		return this.shopIds;
 	}
-	public void setShopIds(List<String> shopIds) {
+
+    /**
+     * Sets shop ids.
+     *
+     * @param shopIds the shop ids
+     */
+    public void setShopIds(List<String> shopIds) {
 		this.shopIds = shopIds;
 	}
 
-	public List<TemplateBenefitInfoDTO> getTemplateBenefitInfo() {
+    /**
+     * Gets template benefit info.
+     *
+     * @return the template benefit info
+     */
+    public List<TemplateBenefitInfoDTO> getTemplateBenefitInfo() {
 		return this.templateBenefitInfo;
 	}
-	public void setTemplateBenefitInfo(List<TemplateBenefitInfoDTO> templateBenefitInfo) {
+
+    /**
+     * Sets template benefit info.
+     *
+     * @param templateBenefitInfo the template benefit info
+     */
+    public void setTemplateBenefitInfo(List<TemplateBenefitInfoDTO> templateBenefitInfo) {
 		this.templateBenefitInfo = templateBenefitInfo;
 	}
 
-	public TemplateStyleInfoDTO getTemplateStyleInfo() {
+    /**
+     * Gets template style info.
+     *
+     * @return the template style info
+     */
+    public TemplateStyleInfoDTO getTemplateStyleInfo() {
 		return this.templateStyleInfo;
 	}
-	public void setTemplateStyleInfo(TemplateStyleInfoDTO templateStyleInfo) {
+
+    /**
+     * Sets template style info.
+     *
+     * @param templateStyleInfo the template style info
+     */
+    public void setTemplateStyleInfo(TemplateStyleInfoDTO templateStyleInfo) {
 		this.templateStyleInfo = templateStyleInfo;
 	}
 
-	public String getWriteOffType() {
+    /**
+     * Gets write off type.
+     *
+     * @return the write off type
+     */
+    public String getWriteOffType() {
 		return this.writeOffType;
 	}
-	public void setWriteOffType(String writeOffType) {
+
+    /**
+     * Sets write off type.
+     *
+     * @param writeOffType the write off type
+     */
+    public void setWriteOffType(String writeOffType) {
 		this.writeOffType = writeOffType;
 	}
 

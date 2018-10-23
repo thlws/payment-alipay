@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.security.prod.signature.task.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-20 10:18:37
+ * @since 1.0, 2017-12-20 15:24:43
  */
 public class AlipaySecurityProdSignatureTaskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2417996633388297385L;
+	private static final long serialVersionUID = 6387226826323729822L;
 
 	/** 
 	 * 订单业务流水号，与alipay.security.prod.signature.task.apply接口入参biz_id对应。
@@ -48,31 +48,75 @@ f. CANCEL ：签约任务被撤销
 	@ApiField("sign_task_file_result")
 	private List<SignTaskFileResult> taskList;
 
-	public void setBizId(String bizId) {
+    /**
+     * Sets biz id.
+     *
+     * @param bizId the biz id
+     */
+    public void setBizId(String bizId) {
 		this.bizId = bizId;
 	}
-	public String getBizId( ) {
+
+    /**
+     * Gets biz id.
+     *
+     * @return the biz id
+     */
+    public String getBizId( ) {
 		return this.bizId;
 	}
 
-	public void setOrderId(String orderId) {
+    /**
+     * Sets order id.
+     *
+     * @param orderId the order id
+     */
+    public void setOrderId(String orderId) {
 		this.orderId = orderId;
 	}
-	public String getOrderId( ) {
+
+    /**
+     * Gets order id.
+     *
+     * @return the order id
+     */
+    public String getOrderId( ) {
 		return this.orderId;
 	}
 
-	public void setStatus(String status) {
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
-	public String getStatus( ) {
+
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus( ) {
 		return this.status;
 	}
 
-	public void setTaskList(List<SignTaskFileResult> taskList) {
+    /**
+     * Sets task list.
+     *
+     * @param taskList the task list
+     */
+    public void setTaskList(List<SignTaskFileResult> taskList) {
 		this.taskList = taskList;
 	}
-	public List<SignTaskFileResult> getTaskList( ) {
+
+    /**
+     * Gets task list.
+     *
+     * @return the task list
+     */
+    public List<SignTaskFileResult> getTaskList( ) {
 		return this.taskList;
 	}
 

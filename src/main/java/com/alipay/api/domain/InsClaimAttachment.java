@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsClaimAttachment extends AlipayObject {
 
-	private static final long serialVersionUID = 6234744388936213792L;
+	private static final long serialVersionUID = 8146281119158626245L;
 
 	/**
 	 * 材料描述
@@ -49,45 +49,111 @@ public class InsClaimAttachment extends AlipayObject {
 	@ApiField("type")
 	private String type;
 
-	public String getDescription() {
+    /**
+     * Gets description.
+     *
+     * @return the description
+     */
+    public String getDescription() {
 		return this.description;
 	}
-	public void setDescription(String description) {
+
+    /**
+     * Sets description.
+     *
+     * @param description the description
+     */
+    public void setDescription(String description) {
 		this.description = description;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getPath() {
+    /**
+     * Gets path.
+     *
+     * @return the path
+     */
+    public String getPath() {
 		return this.path;
 	}
-	public void setPath(String path) {
+
+    /**
+     * Sets path.
+     *
+     * @param path the path
+     */
+    public void setPath(String path) {
 		this.path = path;
 	}
 
-	public String getReason() {
+    /**
+     * Gets reason.
+     *
+     * @return the reason
+     */
+    public String getReason() {
 		return this.reason;
 	}
-	public void setReason(String reason) {
+
+    /**
+     * Sets reason.
+     *
+     * @param reason the reason
+     */
+    public void setReason(String reason) {
 		this.reason = reason;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 
-	public String getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
-	public void setType(String type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
 

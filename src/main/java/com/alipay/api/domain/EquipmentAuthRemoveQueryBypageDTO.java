@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EquipmentAuthRemoveQueryBypageDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3334314242533496812L;
+	private static final long serialVersionUID = 8699228692332773221L;
 
 	/**
 	 * 机具编号
@@ -25,17 +25,39 @@ public class EquipmentAuthRemoveQueryBypageDTO extends AlipayObject {
 	@ApiField("unbind_time")
 	private String unbindTime;
 
-	public String getDeviceId() {
+    /**
+     * Gets device id.
+     *
+     * @return the device id
+     */
+    public String getDeviceId() {
 		return this.deviceId;
 	}
-	public void setDeviceId(String deviceId) {
+
+    /**
+     * Sets device id.
+     *
+     * @param deviceId the device id
+     */
+    public void setDeviceId(String deviceId) {
 		this.deviceId = deviceId;
 	}
 
-	public String getUnbindTime() {
+    /**
+     * Gets unbind time.
+     *
+     * @return the unbind time
+     */
+    public String getUnbindTime() {
 		return this.unbindTime;
 	}
-	public void setUnbindTime(String unbindTime) {
+
+    /**
+     * Sets unbind time.
+     *
+     * @param unbindTime the unbind time
+     */
+    public void setUnbindTime(String unbindTime) {
 		this.unbindTime = unbindTime;
 	}
 

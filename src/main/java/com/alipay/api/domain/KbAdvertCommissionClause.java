@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KbAdvertCommissionClause extends AlipayObject {
 
-	private static final long serialVersionUID = 5354887861964919153L;
+	private static final long serialVersionUID = 3832486268974631839L;
 
 	/**
 	 * 条款类型（条款类型是什么，下面填的条款就是什么）
@@ -40,31 +40,75 @@ MISSION_CLAIM_CLAUSE:专属认领人条款
 	@ApiField("quota_clause")
 	private KbAdvertQuotaCommissionClause quotaClause;
 
-	public String getClauseType() {
+    /**
+     * Gets clause type.
+     *
+     * @return the clause type
+     */
+    public String getClauseType() {
 		return this.clauseType;
 	}
-	public void setClauseType(String clauseType) {
+
+    /**
+     * Sets clause type.
+     *
+     * @param clauseType the clause type
+     */
+    public void setClauseType(String clauseType) {
 		this.clauseType = clauseType;
 	}
 
-	public KbAdvertPercentageCommissionClause getPercentageClause() {
+    /**
+     * Gets percentage clause.
+     *
+     * @return the percentage clause
+     */
+    public KbAdvertPercentageCommissionClause getPercentageClause() {
 		return this.percentageClause;
 	}
-	public void setPercentageClause(KbAdvertPercentageCommissionClause percentageClause) {
+
+    /**
+     * Sets percentage clause.
+     *
+     * @param percentageClause the percentage clause
+     */
+    public void setPercentageClause(KbAdvertPercentageCommissionClause percentageClause) {
 		this.percentageClause = percentageClause;
 	}
 
-	public KbAdvertPreserveCommissionClause getPreserveClause() {
+    /**
+     * Gets preserve clause.
+     *
+     * @return the preserve clause
+     */
+    public KbAdvertPreserveCommissionClause getPreserveClause() {
 		return this.preserveClause;
 	}
-	public void setPreserveClause(KbAdvertPreserveCommissionClause preserveClause) {
+
+    /**
+     * Sets preserve clause.
+     *
+     * @param preserveClause the preserve clause
+     */
+    public void setPreserveClause(KbAdvertPreserveCommissionClause preserveClause) {
 		this.preserveClause = preserveClause;
 	}
 
-	public KbAdvertQuotaCommissionClause getQuotaClause() {
+    /**
+     * Gets quota clause.
+     *
+     * @return the quota clause
+     */
+    public KbAdvertQuotaCommissionClause getQuotaClause() {
 		return this.quotaClause;
 	}
-	public void setQuotaClause(KbAdvertQuotaCommissionClause quotaClause) {
+
+    /**
+     * Sets quota clause.
+     *
+     * @param quotaClause the quota clause
+     */
+    public void setQuotaClause(KbAdvertQuotaCommissionClause quotaClause) {
 		this.quotaClause = quotaClause;
 	}
 

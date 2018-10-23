@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoMycarMaintainOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1588268437524821134L;
+	private static final long serialVersionUID = 4684411649195416144L;
 
 	/**
 	 * 业务订单状态
@@ -63,59 +63,147 @@ public class AlipayEcoMycarMaintainOrderCreateModel extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
-	public String getBizStatus() {
+    /**
+     * Gets biz status.
+     *
+     * @return the biz status
+     */
+    public String getBizStatus() {
 		return this.bizStatus;
 	}
-	public void setBizStatus(String bizStatus) {
+
+    /**
+     * Sets biz status.
+     *
+     * @param bizStatus the biz status
+     */
+    public void setBizStatus(String bizStatus) {
 		this.bizStatus = bizStatus;
 	}
 
-	public String getBizStatusTxt() {
+    /**
+     * Gets biz status txt.
+     *
+     * @return the biz status txt
+     */
+    public String getBizStatusTxt() {
 		return this.bizStatusTxt;
 	}
-	public void setBizStatusTxt(String bizStatusTxt) {
+
+    /**
+     * Sets biz status txt.
+     *
+     * @param bizStatusTxt the biz status txt
+     */
+    public void setBizStatusTxt(String bizStatusTxt) {
 		this.bizStatusTxt = bizStatusTxt;
 	}
 
-	public String getExtParam() {
+    /**
+     * Gets ext param.
+     *
+     * @return the ext param
+     */
+    public String getExtParam() {
 		return this.extParam;
 	}
-	public void setExtParam(String extParam) {
+
+    /**
+     * Sets ext param.
+     *
+     * @param extParam the ext param
+     */
+    public void setExtParam(String extParam) {
 		this.extParam = extParam;
 	}
 
-	public String getOutOrderNo() {
+    /**
+     * Gets out order no.
+     *
+     * @return the out order no
+     */
+    public String getOutOrderNo() {
 		return this.outOrderNo;
 	}
-	public void setOutOrderNo(String outOrderNo) {
+
+    /**
+     * Sets out order no.
+     *
+     * @param outOrderNo the out order no
+     */
+    public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
 	}
 
-	public String getSubject() {
+    /**
+     * Gets subject.
+     *
+     * @return the subject
+     */
+    public String getSubject() {
 		return this.subject;
 	}
-	public void setSubject(String subject) {
+
+    /**
+     * Sets subject.
+     *
+     * @param subject the subject
+     */
+    public void setSubject(String subject) {
 		this.subject = subject;
 	}
 
-	public String getSummary() {
+    /**
+     * Gets summary.
+     *
+     * @return the summary
+     */
+    public String getSummary() {
 		return this.summary;
 	}
-	public void setSummary(String summary) {
+
+    /**
+     * Sets summary.
+     *
+     * @param summary the summary
+     */
+    public void setSummary(String summary) {
 		this.summary = summary;
 	}
 
-	public String getTotalFee() {
+    /**
+     * Gets total fee.
+     *
+     * @return the total fee
+     */
+    public String getTotalFee() {
 		return this.totalFee;
 	}
-	public void setTotalFee(String totalFee) {
+
+    /**
+     * Sets total fee.
+     *
+     * @param totalFee the total fee
+     */
+    public void setTotalFee(String totalFee) {
 		this.totalFee = totalFee;
 	}
 
-	public String getUserId() {
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
-	public void setUserId(String userId) {
+
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
 

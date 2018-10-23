@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RandomDiscountDstCampPrizeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5654638244357427659L;
+	private static final long serialVersionUID = 8164866267362299813L;
 
 	/**
 	 * 折扣预算ID
@@ -42,31 +42,75 @@ public class RandomDiscountDstCampPrizeModel extends AlipayObject {
 	@ApiField("max_random_discount_rate")
 	private String maxRandomDiscountRate;
 
-	public String getBudgetId() {
+    /**
+     * Gets budget id.
+     *
+     * @return the budget id
+     */
+    public String getBudgetId() {
 		return this.budgetId;
 	}
-	public void setBudgetId(String budgetId) {
+
+    /**
+     * Sets budget id.
+     *
+     * @param budgetId the budget id
+     */
+    public void setBudgetId(String budgetId) {
 		this.budgetId = budgetId;
 	}
 
-	public List<DiscountRandomModel> getDiscountRandomModelList() {
+    /**
+     * Gets discount random model list.
+     *
+     * @return the discount random model list
+     */
+    public List<DiscountRandomModel> getDiscountRandomModelList() {
 		return this.discountRandomModelList;
 	}
-	public void setDiscountRandomModelList(List<DiscountRandomModel> discountRandomModelList) {
+
+    /**
+     * Sets discount random model list.
+     *
+     * @param discountRandomModelList the discount random model list
+     */
+    public void setDiscountRandomModelList(List<DiscountRandomModel> discountRandomModelList) {
 		this.discountRandomModelList = discountRandomModelList;
 	}
 
-	public String getId() {
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
+    public String getId() {
 		return this.id;
 	}
-	public void setId(String id) {
+
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
+    public void setId(String id) {
 		this.id = id;
 	}
 
-	public String getMaxRandomDiscountRate() {
+    /**
+     * Gets max random discount rate.
+     *
+     * @return the max random discount rate
+     */
+    public String getMaxRandomDiscountRate() {
 		return this.maxRandomDiscountRate;
 	}
-	public void setMaxRandomDiscountRate(String maxRandomDiscountRate) {
+
+    /**
+     * Sets max random discount rate.
+     *
+     * @param maxRandomDiscountRate the max random discount rate
+     */
+    public void setMaxRandomDiscountRate(String maxRandomDiscountRate) {
 		this.maxRandomDiscountRate = maxRandomDiscountRate;
 	}
 

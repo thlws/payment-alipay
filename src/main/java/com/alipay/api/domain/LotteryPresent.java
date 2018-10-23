@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LotteryPresent extends AlipayObject {
 
-	private static final long serialVersionUID = 1431596761659345499L;
+	private static final long serialVersionUID = 8644754411893851954L;
 
 	/**
 	 * 用户的支付宝用户ID
@@ -67,66 +67,165 @@ public class LotteryPresent extends AlipayObject {
 	@ApiField("win_fee")
 	private Long winFee;
 
-	public String getAlipayUserId() {
+    /**
+     * Gets alipay user id.
+     *
+     * @return the alipay user id
+     */
+    public String getAlipayUserId() {
 		return this.alipayUserId;
 	}
-	public void setAlipayUserId(String alipayUserId) {
+
+    /**
+     * Sets alipay user id.
+     *
+     * @param alipayUserId the alipay user id
+     */
+    public void setAlipayUserId(String alipayUserId) {
 		this.alipayUserId = alipayUserId;
 	}
 
-	public String getLotteryTypeName() {
+    /**
+     * Gets lottery type name.
+     *
+     * @return the lottery type name
+     */
+    public String getLotteryTypeName() {
 		return this.lotteryTypeName;
 	}
-	public void setLotteryTypeName(String lotteryTypeName) {
+
+    /**
+     * Sets lottery type name.
+     *
+     * @param lotteryTypeName the lottery type name
+     */
+    public void setLotteryTypeName(String lotteryTypeName) {
 		this.lotteryTypeName = lotteryTypeName;
 	}
 
-	public String getPresentDate() {
+    /**
+     * Gets present date.
+     *
+     * @return the present date
+     */
+    public String getPresentDate() {
 		return this.presentDate;
 	}
-	public void setPresentDate(String presentDate) {
+
+    /**
+     * Sets present date.
+     *
+     * @param presentDate the present date
+     */
+    public void setPresentDate(String presentDate) {
 		this.presentDate = presentDate;
 	}
 
-	public Long getPresentId() {
+    /**
+     * Gets present id.
+     *
+     * @return the present id
+     */
+    public Long getPresentId() {
 		return this.presentId;
 	}
-	public void setPresentId(Long presentId) {
+
+    /**
+     * Sets present id.
+     *
+     * @param presentId the present id
+     */
+    public void setPresentId(Long presentId) {
 		this.presentId = presentId;
 	}
 
-	public Long getStakeCount() {
+    /**
+     * Gets stake count.
+     *
+     * @return the stake count
+     */
+    public Long getStakeCount() {
 		return this.stakeCount;
 	}
-	public void setStakeCount(Long stakeCount) {
+
+    /**
+     * Sets stake count.
+     *
+     * @param stakeCount the stake count
+     */
+    public void setStakeCount(Long stakeCount) {
 		this.stakeCount = stakeCount;
 	}
 
-	public Long getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public Long getStatus() {
 		return this.status;
 	}
-	public void setStatus(Long status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(Long status) {
 		this.status = status;
 	}
 
-	public String getStatusDesc() {
+    /**
+     * Gets status desc.
+     *
+     * @return the status desc
+     */
+    public String getStatusDesc() {
 		return this.statusDesc;
 	}
-	public void setStatusDesc(String statusDesc) {
+
+    /**
+     * Sets status desc.
+     *
+     * @param statusDesc the status desc
+     */
+    public void setStatusDesc(String statusDesc) {
 		this.statusDesc = statusDesc;
 	}
 
-	public String getSweetyWords() {
+    /**
+     * Gets sweety words.
+     *
+     * @return the sweety words
+     */
+    public String getSweetyWords() {
 		return this.sweetyWords;
 	}
-	public void setSweetyWords(String sweetyWords) {
+
+    /**
+     * Sets sweety words.
+     *
+     * @param sweetyWords the sweety words
+     */
+    public void setSweetyWords(String sweetyWords) {
 		this.sweetyWords = sweetyWords;
 	}
 
-	public Long getWinFee() {
+    /**
+     * Gets win fee.
+     *
+     * @return the win fee
+     */
+    public Long getWinFee() {
 		return this.winFee;
 	}
-	public void setWinFee(Long winFee) {
+
+    /**
+     * Sets win fee.
+     *
+     * @param winFee the win fee
+     */
+    public void setWinFee(Long winFee) {
 		this.winFee = winFee;
 	}
 

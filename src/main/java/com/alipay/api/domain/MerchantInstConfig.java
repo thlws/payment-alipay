@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MerchantInstConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 8865375819863425212L;
+	private static final long serialVersionUID = 3523981743913114827L;
 
 	/**
 	 * 机构短名称，既是合作机构的英文简称，用来标识该机构的唯一性；
@@ -37,31 +37,75 @@ public class MerchantInstConfig extends AlipayObject {
 	@ApiField("zh_name")
 	private String zhName;
 
-	public String getEnName() {
+    /**
+     * Gets en name.
+     *
+     * @return the en name
+     */
+    public String getEnName() {
 		return this.enName;
 	}
-	public void setEnName(String enName) {
+
+    /**
+     * Sets en name.
+     *
+     * @param enName the en name
+     */
+    public void setEnName(String enName) {
 		this.enName = enName;
 	}
 
-	public String getOrderType() {
+    /**
+     * Gets order type.
+     *
+     * @return the order type
+     */
+    public String getOrderType() {
 		return this.orderType;
 	}
-	public void setOrderType(String orderType) {
+
+    /**
+     * Sets order type.
+     *
+     * @param orderType the order type
+     */
+    public void setOrderType(String orderType) {
 		this.orderType = orderType;
 	}
 
-	public String getScene() {
+    /**
+     * Gets scene.
+     *
+     * @return the scene
+     */
+    public String getScene() {
 		return this.scene;
 	}
-	public void setScene(String scene) {
+
+    /**
+     * Sets scene.
+     *
+     * @param scene the scene
+     */
+    public void setScene(String scene) {
 		this.scene = scene;
 	}
 
-	public String getZhName() {
+    /**
+     * Gets zh name.
+     *
+     * @return the zh name
+     */
+    public String getZhName() {
 		return this.zhName;
 	}
-	public void setZhName(String zhName) {
+
+    /**
+     * Sets zh name.
+     *
+     * @param zhName the zh name
+     */
+    public void setZhName(String zhName) {
 		this.zhName = zhName;
 	}
 

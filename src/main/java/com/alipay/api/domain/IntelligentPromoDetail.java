@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 智能营销活动下属子活动
  *
  * @author auto create
- * @since 1.0, 2017-10-10 18:45:21
+ * @since 1.0, 2018-01-22 16:17:56
  */
 public class IntelligentPromoDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5446132194233175312L;
+	private static final long serialVersionUID = 5269439484753292341L;
 
 	/**
 	 * 活动预算
@@ -33,6 +33,12 @@ public class IntelligentPromoDetail extends AlipayObject {
 	 */
 	@ApiField("constraint")
 	private ConstraintInfo constraint;
+
+	/**
+	 * 圈人限制条件
+	 */
+	@ApiField("crowd_constraint")
+	private CrowdConstraintInfo crowdConstraint;
 
 	/**
 	 * 智能营销活动的子活动
@@ -84,80 +90,219 @@ public class IntelligentPromoDetail extends AlipayObject {
 	@ApiField("template_id")
 	private String templateId;
 
-	public BudgetInfo getBudget() {
+    /**
+     * Gets budget.
+     *
+     * @return the budget
+     */
+    public BudgetInfo getBudget() {
 		return this.budget;
 	}
-	public void setBudget(BudgetInfo budget) {
+
+    /**
+     * Sets budget.
+     *
+     * @param budget the budget
+     */
+    public void setBudget(BudgetInfo budget) {
 		this.budget = budget;
 	}
 
-	public String getCampId() {
+    /**
+     * Gets camp id.
+     *
+     * @return the camp id
+     */
+    public String getCampId() {
 		return this.campId;
 	}
-	public void setCampId(String campId) {
+
+    /**
+     * Sets camp id.
+     *
+     * @param campId the camp id
+     */
+    public void setCampId(String campId) {
 		this.campId = campId;
 	}
 
-	public ConstraintInfo getConstraint() {
+    /**
+     * Gets constraint.
+     *
+     * @return the constraint
+     */
+    public ConstraintInfo getConstraint() {
 		return this.constraint;
 	}
-	public void setConstraint(ConstraintInfo constraint) {
+
+    /**
+     * Sets constraint.
+     *
+     * @param constraint the constraint
+     */
+    public void setConstraint(ConstraintInfo constraint) {
 		this.constraint = constraint;
 	}
 
-	public String getDesc() {
+    /**
+     * Gets crowd constraint.
+     *
+     * @return the crowd constraint
+     */
+    public CrowdConstraintInfo getCrowdConstraint() {
+		return this.crowdConstraint;
+	}
+
+    /**
+     * Sets crowd constraint.
+     *
+     * @param crowdConstraint the crowd constraint
+     */
+    public void setCrowdConstraint(CrowdConstraintInfo crowdConstraint) {
+		this.crowdConstraint = crowdConstraint;
+	}
+
+    /**
+     * Gets desc.
+     *
+     * @return the desc
+     */
+    public String getDesc() {
 		return this.desc;
 	}
-	public void setDesc(String desc) {
+
+    /**
+     * Sets desc.
+     *
+     * @param desc the desc
+     */
+    public void setDesc(String desc) {
 		this.desc = desc;
 	}
 
-	public String getExtInfo() {
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo() {
 		return this.extInfo;
 	}
-	public void setExtInfo(String extInfo) {
+
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
-	public IntelligentPromoEffect getForecastEffect() {
+    /**
+     * Gets forecast effect.
+     *
+     * @return the forecast effect
+     */
+    public IntelligentPromoEffect getForecastEffect() {
 		return this.forecastEffect;
 	}
-	public void setForecastEffect(IntelligentPromoEffect forecastEffect) {
+
+    /**
+     * Sets forecast effect.
+     *
+     * @param forecastEffect the forecast effect
+     */
+    public void setForecastEffect(IntelligentPromoEffect forecastEffect) {
 		this.forecastEffect = forecastEffect;
 	}
 
-	public String getMerchantPromoType() {
+    /**
+     * Gets merchant promo type.
+     *
+     * @return the merchant promo type
+     */
+    public String getMerchantPromoType() {
 		return this.merchantPromoType;
 	}
-	public void setMerchantPromoType(String merchantPromoType) {
+
+    /**
+     * Sets merchant promo type.
+     *
+     * @param merchantPromoType the merchant promo type
+     */
+    public void setMerchantPromoType(String merchantPromoType) {
 		this.merchantPromoType = merchantPromoType;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public List<PromoTool> getPromoTools() {
+    /**
+     * Gets promo tools.
+     *
+     * @return the promo tools
+     */
+    public List<PromoTool> getPromoTools() {
 		return this.promoTools;
 	}
-	public void setPromoTools(List<PromoTool> promoTools) {
+
+    /**
+     * Sets promo tools.
+     *
+     * @param promoTools the promo tools
+     */
+    public void setPromoTools(List<PromoTool> promoTools) {
 		this.promoTools = promoTools;
 	}
 
-	public List<PublishChannel> getPublishChannels() {
+    /**
+     * Gets publish channels.
+     *
+     * @return the publish channels
+     */
+    public List<PublishChannel> getPublishChannels() {
 		return this.publishChannels;
 	}
-	public void setPublishChannels(List<PublishChannel> publishChannels) {
+
+    /**
+     * Sets publish channels.
+     *
+     * @param publishChannels the publish channels
+     */
+    public void setPublishChannels(List<PublishChannel> publishChannels) {
 		this.publishChannels = publishChannels;
 	}
 
-	public String getTemplateId() {
+    /**
+     * Gets template id.
+     *
+     * @return the template id
+     */
+    public String getTemplateId() {
 		return this.templateId;
 	}
-	public void setTemplateId(String templateId) {
+
+    /**
+     * Sets template id.
+     *
+     * @param templateId the template id
+     */
+    public void setTemplateId(String templateId) {
 		this.templateId = templateId;
 	}
 

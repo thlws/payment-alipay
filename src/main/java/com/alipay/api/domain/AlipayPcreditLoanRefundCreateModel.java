@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPcreditLoanRefundCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8691472873874917681L;
+	private static final long serialVersionUID = 5827117447541954132L;
 
 	/**
 	 * 蚂蚁借呗贷款申请编号
@@ -37,31 +37,75 @@ public class AlipayPcreditLoanRefundCreateModel extends AlipayObject {
 	@ApiField("req_id")
 	private String reqId;
 
-	public String getLoanApplyNo() {
+    /**
+     * Gets loan apply no.
+     *
+     * @return the loan apply no
+     */
+    public String getLoanApplyNo() {
 		return this.loanApplyNo;
 	}
-	public void setLoanApplyNo(String loanApplyNo) {
+
+    /**
+     * Sets loan apply no.
+     *
+     * @param loanApplyNo the loan apply no
+     */
+    public void setLoanApplyNo(String loanApplyNo) {
 		this.loanApplyNo = loanApplyNo;
 	}
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
-	public String getRepayAmt() {
+    /**
+     * Gets repay amt.
+     *
+     * @return the repay amt
+     */
+    public String getRepayAmt() {
 		return this.repayAmt;
 	}
-	public void setRepayAmt(String repayAmt) {
+
+    /**
+     * Sets repay amt.
+     *
+     * @param repayAmt the repay amt
+     */
+    public void setRepayAmt(String repayAmt) {
 		this.repayAmt = repayAmt;
 	}
 
-	public String getReqId() {
+    /**
+     * Gets req id.
+     *
+     * @return the req id
+     */
+    public String getReqId() {
 		return this.reqId;
 	}
-	public void setReqId(String reqId) {
+
+    /**
+     * Sets req id.
+     *
+     * @param reqId the req id
+     */
+    public void setReqId(String reqId) {
 		this.reqId = reqId;
 	}
 

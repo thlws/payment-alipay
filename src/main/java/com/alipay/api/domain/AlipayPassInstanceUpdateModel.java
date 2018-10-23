@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝pass更新卡券实例接口
  *
  * @author auto create
- * @since 1.0, 2017-07-24 12:08:25
+ * @since 1.0, 2018-01-09 22:28:38
  */
 public class AlipayPassInstanceUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7768886781872353749L;
+	private static final long serialVersionUID = 5874776317865718296L;
 
 	/**
 	 * 代理商代替商户发放卡券后，再代替商户更新卡券时，此值为商户的pid/appid
@@ -20,7 +20,7 @@ public class AlipayPassInstanceUpdateModel extends AlipayObject {
 	private String channelId;
 
 	/**
-	 * 商户指定卡券唯一值，卡券JSON模板中fileInfo-serialNumber字段对应的值
+	 * 商户指定卡券唯一值，卡券JSON模板中fileInfo->serialNumber字段对应的值
 	 */
 	@ApiField("serial_number")
 	private String serialNumber;
@@ -49,45 +49,111 @@ public class AlipayPassInstanceUpdateModel extends AlipayObject {
 	@ApiField("verify_type")
 	private String verifyType;
 
-	public String getChannelId() {
+    /**
+     * Gets channel id.
+     *
+     * @return the channel id
+     */
+    public String getChannelId() {
 		return this.channelId;
 	}
-	public void setChannelId(String channelId) {
+
+    /**
+     * Sets channel id.
+     *
+     * @param channelId the channel id
+     */
+    public void setChannelId(String channelId) {
 		this.channelId = channelId;
 	}
 
-	public String getSerialNumber() {
+    /**
+     * Gets serial number.
+     *
+     * @return the serial number
+     */
+    public String getSerialNumber() {
 		return this.serialNumber;
 	}
-	public void setSerialNumber(String serialNumber) {
+
+    /**
+     * Sets serial number.
+     *
+     * @param serialNumber the serial number
+     */
+    public void setSerialNumber(String serialNumber) {
 		this.serialNumber = serialNumber;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 
-	public String getTplParams() {
+    /**
+     * Gets tpl params.
+     *
+     * @return the tpl params
+     */
+    public String getTplParams() {
 		return this.tplParams;
 	}
-	public void setTplParams(String tplParams) {
+
+    /**
+     * Sets tpl params.
+     *
+     * @param tplParams the tpl params
+     */
+    public void setTplParams(String tplParams) {
 		this.tplParams = tplParams;
 	}
 
-	public String getVerifyCode() {
+    /**
+     * Gets verify code.
+     *
+     * @return the verify code
+     */
+    public String getVerifyCode() {
 		return this.verifyCode;
 	}
-	public void setVerifyCode(String verifyCode) {
+
+    /**
+     * Sets verify code.
+     *
+     * @param verifyCode the verify code
+     */
+    public void setVerifyCode(String verifyCode) {
 		this.verifyCode = verifyCode;
 	}
 
-	public String getVerifyType() {
+    /**
+     * Gets verify type.
+     *
+     * @return the verify type
+     */
+    public String getVerifyType() {
 		return this.verifyType;
 	}
-	public void setVerifyType(String verifyType) {
+
+    /**
+     * Sets verify type.
+     *
+     * @param verifyType the verify type
+     */
+    public void setVerifyType(String verifyType) {
 		this.verifyType = verifyType;
 	}
 

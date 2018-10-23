@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ContactFollower extends AlipayObject {
 
-	private static final long serialVersionUID = 1421123174123265143L;
+	private static final long serialVersionUID = 7739149185756886485L;
 
 	/**
 	 * 支付宝头像
@@ -37,31 +37,75 @@ public class ContactFollower extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
-	public String getAvatar() {
+    /**
+     * Gets avatar.
+     *
+     * @return the avatar
+     */
+    public String getAvatar() {
 		return this.avatar;
 	}
-	public void setAvatar(String avatar) {
+
+    /**
+     * Sets avatar.
+     *
+     * @param avatar the avatar
+     */
+    public void setAvatar(String avatar) {
 		this.avatar = avatar;
 	}
 
-	public String getDefaultAvatar() {
+    /**
+     * Gets default avatar.
+     *
+     * @return the default avatar
+     */
+    public String getDefaultAvatar() {
 		return this.defaultAvatar;
 	}
-	public void setDefaultAvatar(String defaultAvatar) {
+
+    /**
+     * Sets default avatar.
+     *
+     * @param defaultAvatar the default avatar
+     */
+    public void setDefaultAvatar(String defaultAvatar) {
 		this.defaultAvatar = defaultAvatar;
 	}
 
-	public String getEachRecordFlag() {
+    /**
+     * Gets each record flag.
+     *
+     * @return the each record flag
+     */
+    public String getEachRecordFlag() {
 		return this.eachRecordFlag;
 	}
-	public void setEachRecordFlag(String eachRecordFlag) {
+
+    /**
+     * Sets each record flag.
+     *
+     * @param eachRecordFlag the each record flag
+     */
+    public void setEachRecordFlag(String eachRecordFlag) {
 		this.eachRecordFlag = eachRecordFlag;
 	}
 
-	public String getUserId() {
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
-	public void setUserId(String userId) {
+
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
 

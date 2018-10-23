@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.data.bizadviser.memberprofile.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-10-02 18:21:01
  */
 public class KoubeiMarketingDataBizadviserMemberprofileQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1393915443357934541L;
+	private static final long serialVersionUID = 8637781664412955558L;
 
 	/** 
 	 * result是一个所有结果集合的json串，里面有一下一些信息：
@@ -33,10 +33,21 @@ indicator_key 说明如下：
 	@ApiField("result")
 	private String result;
 
-	public void setResult(String result) {
+    /**
+     * Sets result.
+     *
+     * @param result the result
+     */
+    public void setResult(String result) {
 		this.result = result;
 	}
-	public String getResult( ) {
+
+    /**
+     * Gets result.
+     *
+     * @return the result
+     */
+    public String getResult( ) {
 		return this.result;
 	}
 

@@ -9,9 +9,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.mobile.code.query request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-02-28 11:11:26
+ * @since 1.0, 2018-06-14 11:34:53
  */
 public class AlipayMobileCodeQueryRequest implements AlipayRequest<AlipayMobileCodeQueryResponse> {
 
@@ -23,10 +23,21 @@ public class AlipayMobileCodeQueryRequest implements AlipayRequest<AlipayMobileC
 	 */
 	private String qrToken;
 
-	public void setQrToken(String qrToken) {
+    /**
+     * Sets qr token.
+     *
+     * @param qrToken the qr token
+     */
+    public void setQrToken(String qrToken) {
 		this.qrToken = qrToken;
 	}
-	public String getQrToken() {
+
+    /**
+     * Gets qr token.
+     *
+     * @return the qr token
+     */
+    public String getQrToken() {
 		return this.qrToken;
 	}
 	private String terminalType;
@@ -98,7 +109,13 @@ public class AlipayMobileCodeQueryRequest implements AlipayRequest<AlipayMobileC
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

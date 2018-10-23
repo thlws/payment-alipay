@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.provider.equipment.auth.remove response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-03-29 17:01:40
  */
 public class AlipayOfflineProviderEquipmentAuthRemoveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7634416741473427283L;
+	private static final long serialVersionUID = 2271319711955644763L;
 
 	/** 
 	 * 被解绑的机具编号
@@ -26,17 +26,39 @@ public class AlipayOfflineProviderEquipmentAuthRemoveResponse extends AlipayResp
 	@ApiField("merchant_pid")
 	private String merchantPid;
 
-	public void setDeviceId(String deviceId) {
+    /**
+     * Sets device id.
+     *
+     * @param deviceId the device id
+     */
+    public void setDeviceId(String deviceId) {
 		this.deviceId = deviceId;
 	}
-	public String getDeviceId( ) {
+
+    /**
+     * Gets device id.
+     *
+     * @return the device id
+     */
+    public String getDeviceId( ) {
 		return this.deviceId;
 	}
 
-	public void setMerchantPid(String merchantPid) {
+    /**
+     * Sets merchant pid.
+     *
+     * @param merchantPid the merchant pid
+     */
+    public void setMerchantPid(String merchantPid) {
 		this.merchantPid = merchantPid;
 	}
-	public String getMerchantPid( ) {
+
+    /**
+     * Gets merchant pid.
+     *
+     * @return the merchant pid
+     */
+    public String getMerchantPid( ) {
 		return this.merchantPid;
 	}
 

@@ -7,13 +7,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.beacon.device.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-02-28 11:12:47
  */
 public class AlipayMobileBeaconDeviceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2147277821653243854L;
+	private static final long serialVersionUID = 1661984125525285482L;
 
 	/** 
 	 * 蓝牙设备信息
@@ -33,10 +33,21 @@ public class AlipayMobileBeaconDeviceQueryResponse extends AlipayResponse {
 	@ApiField("msg")
 	private String msg;
 
-	public void setBeaconDeviceInfo(BeaconDeviceInfo beaconDeviceInfo) {
+    /**
+     * Sets beacon device info.
+     *
+     * @param beaconDeviceInfo the beacon device info
+     */
+    public void setBeaconDeviceInfo(BeaconDeviceInfo beaconDeviceInfo) {
 		this.beaconDeviceInfo = beaconDeviceInfo;
 	}
-	public BeaconDeviceInfo getBeaconDeviceInfo( ) {
+
+    /**
+     * Gets beacon device info.
+     *
+     * @return the beacon device info
+     */
+    public BeaconDeviceInfo getBeaconDeviceInfo( ) {
 		return this.beaconDeviceInfo;
 	}
 

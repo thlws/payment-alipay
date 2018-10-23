@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayAssetPointOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7242457216173828594L;
+	private static final long serialVersionUID = 3382334697625675752L;
 
 	/**
 	 * 向用户展示集分宝发放备注
@@ -54,45 +54,111 @@ TAOBAO_NICK:淘宝昵称
 	@ApiField("user_symbol_type")
 	private String userSymbolType;
 
-	public String getMemo() {
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo() {
 		return this.memo;
 	}
-	public void setMemo(String memo) {
+
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
-	public String getMerchantOrderNo() {
+    /**
+     * Gets merchant order no.
+     *
+     * @return the merchant order no
+     */
+    public String getMerchantOrderNo() {
 		return this.merchantOrderNo;
 	}
-	public void setMerchantOrderNo(String merchantOrderNo) {
+
+    /**
+     * Sets merchant order no.
+     *
+     * @param merchantOrderNo the merchant order no
+     */
+    public void setMerchantOrderNo(String merchantOrderNo) {
 		this.merchantOrderNo = merchantOrderNo;
 	}
 
-	public Date getOrderTime() {
+    /**
+     * Gets order time.
+     *
+     * @return the order time
+     */
+    public Date getOrderTime() {
 		return this.orderTime;
 	}
-	public void setOrderTime(Date orderTime) {
+
+    /**
+     * Sets order time.
+     *
+     * @param orderTime the order time
+     */
+    public void setOrderTime(Date orderTime) {
 		this.orderTime = orderTime;
 	}
 
-	public Long getPointCount() {
+    /**
+     * Gets point count.
+     *
+     * @return the point count
+     */
+    public Long getPointCount() {
 		return this.pointCount;
 	}
-	public void setPointCount(Long pointCount) {
+
+    /**
+     * Sets point count.
+     *
+     * @param pointCount the point count
+     */
+    public void setPointCount(Long pointCount) {
 		this.pointCount = pointCount;
 	}
 
-	public String getUserSymbol() {
+    /**
+     * Gets user symbol.
+     *
+     * @return the user symbol
+     */
+    public String getUserSymbol() {
 		return this.userSymbol;
 	}
-	public void setUserSymbol(String userSymbol) {
+
+    /**
+     * Sets user symbol.
+     *
+     * @param userSymbol the user symbol
+     */
+    public void setUserSymbol(String userSymbol) {
 		this.userSymbol = userSymbol;
 	}
 
-	public String getUserSymbolType() {
+    /**
+     * Gets user symbol type.
+     *
+     * @return the user symbol type
+     */
+    public String getUserSymbolType() {
 		return this.userSymbolType;
 	}
-	public void setUserSymbolType(String userSymbolType) {
+
+    /**
+     * Sets user symbol type.
+     *
+     * @param userSymbolType the user symbol type
+     */
+    public void setUserSymbolType(String userSymbolType) {
 		this.userSymbolType = userSymbolType;
 	}
 

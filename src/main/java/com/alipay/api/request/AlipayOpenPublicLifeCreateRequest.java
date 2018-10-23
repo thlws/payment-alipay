@@ -11,9 +11,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.open.public.life.create request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-15 17:39:43
+ * @since 1.0, 2017-12-18 14:57:49
  */
 public class AlipayOpenPublicLifeCreateRequest implements AlipayUploadRequest<AlipayOpenPublicLifeCreateResponse> {
 
@@ -85,94 +85,237 @@ public class AlipayOpenPublicLifeCreateRequest implements AlipayUploadRequest<Al
 	 */
 	private String userId;
 
-	public void setBackground(FileItem background) {
+    /**
+     * Sets background.
+     *
+     * @param background the background
+     */
+    public void setBackground(FileItem background) {
 		this.background = background;
 	}
-	public FileItem getBackground() {
+
+    /**
+     * Gets background.
+     *
+     * @return the background
+     */
+    public FileItem getBackground() {
 		return this.background;
 	}
 
-	public void setContactEmail(String contactEmail) {
+    /**
+     * Sets contact email.
+     *
+     * @param contactEmail the contact email
+     */
+    public void setContactEmail(String contactEmail) {
 		this.contactEmail = contactEmail;
 	}
-	public String getContactEmail() {
+
+    /**
+     * Gets contact email.
+     *
+     * @return the contact email
+     */
+    public String getContactEmail() {
 		return this.contactEmail;
 	}
 
-	public void setContactName(String contactName) {
+    /**
+     * Sets contact name.
+     *
+     * @param contactName the contact name
+     */
+    public void setContactName(String contactName) {
 		this.contactName = contactName;
 	}
-	public String getContactName() {
+
+    /**
+     * Gets contact name.
+     *
+     * @return the contact name
+     */
+    public String getContactName() {
 		return this.contactName;
 	}
 
-	public void setContactTel(String contactTel) {
+    /**
+     * Sets contact tel.
+     *
+     * @param contactTel the contact tel
+     */
+    public void setContactTel(String contactTel) {
 		this.contactTel = contactTel;
 	}
-	public String getContactTel() {
+
+    /**
+     * Gets contact tel.
+     *
+     * @return the contact tel
+     */
+    public String getContactTel() {
 		return this.contactTel;
 	}
 
-	public void setCustomerTel(String customerTel) {
+    /**
+     * Sets customer tel.
+     *
+     * @param customerTel the customer tel
+     */
+    public void setCustomerTel(String customerTel) {
 		this.customerTel = customerTel;
 	}
-	public String getCustomerTel() {
+
+    /**
+     * Gets customer tel.
+     *
+     * @return the customer tel
+     */
+    public String getCustomerTel() {
 		return this.customerTel;
 	}
 
-	public void setDescription(String description) {
+    /**
+     * Sets description.
+     *
+     * @param description the description
+     */
+    public void setDescription(String description) {
 		this.description = description;
 	}
-	public String getDescription() {
+
+    /**
+     * Gets description.
+     *
+     * @return the description
+     */
+    public String getDescription() {
 		return this.description;
 	}
 
-	public void setExtendData(String extendData) {
+    /**
+     * Sets extend data.
+     *
+     * @param extendData the extend data
+     */
+    public void setExtendData(String extendData) {
 		this.extendData = extendData;
 	}
-	public String getExtendData() {
+
+    /**
+     * Gets extend data.
+     *
+     * @return the extend data
+     */
+    public String getExtendData() {
 		return this.extendData;
 	}
 
-	public void setLifeName(String lifeName) {
+    /**
+     * Sets life name.
+     *
+     * @param lifeName the life name
+     */
+    public void setLifeName(String lifeName) {
 		this.lifeName = lifeName;
 	}
-	public String getLifeName() {
+
+    /**
+     * Gets life name.
+     *
+     * @return the life name
+     */
+    public String getLifeName() {
 		return this.lifeName;
 	}
 
-	public void setLogo(FileItem logo) {
+    /**
+     * Sets logo.
+     *
+     * @param logo the logo
+     */
+    public void setLogo(FileItem logo) {
 		this.logo = logo;
 	}
-	public FileItem getLogo() {
+
+    /**
+     * Gets logo.
+     *
+     * @return the logo
+     */
+    public FileItem getLogo() {
 		return this.logo;
 	}
 
-	public void setMccCode(String mccCode) {
+    /**
+     * Sets mcc code.
+     *
+     * @param mccCode the mcc code
+     */
+    public void setMccCode(String mccCode) {
 		this.mccCode = mccCode;
 	}
-	public String getMccCode() {
+
+    /**
+     * Gets mcc code.
+     *
+     * @return the mcc code
+     */
+    public String getMccCode() {
 		return this.mccCode;
 	}
 
-	public void setPublicBizType(String publicBizType) {
+    /**
+     * Sets public biz type.
+     *
+     * @param publicBizType the public biz type
+     */
+    public void setPublicBizType(String publicBizType) {
 		this.publicBizType = publicBizType;
 	}
-	public String getPublicBizType() {
+
+    /**
+     * Gets public biz type.
+     *
+     * @return the public biz type
+     */
+    public String getPublicBizType() {
 		return this.publicBizType;
 	}
 
-	public void setShowStyle(String showStyle) {
+    /**
+     * Sets show style.
+     *
+     * @param showStyle the show style
+     */
+    public void setShowStyle(String showStyle) {
 		this.showStyle = showStyle;
 	}
-	public String getShowStyle() {
+
+    /**
+     * Gets show style.
+     *
+     * @return the show style
+     */
+    public String getShowStyle() {
 		return this.showStyle;
 	}
 
-	public void setUserId(String userId) {
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public String getUserId() {
+
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
 	private String terminalType;
@@ -252,8 +395,14 @@ public class AlipayOpenPublicLifeCreateRequest implements AlipayUploadRequest<Al
 		}
 		return txtParams;
 	}
-	
-	public void putOtherTextParam(String key, String value) {
+
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

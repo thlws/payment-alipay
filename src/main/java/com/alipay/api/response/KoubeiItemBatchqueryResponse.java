@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.item.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-08-31 21:06:54
+ * @since 1.0, 2018-06-15 08:40:00
  */
 public class KoubeiItemBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8288714688773798642L;
+	private static final long serialVersionUID = 3579346719813477224L;
 
 	/** 
 	 * 当前页码
@@ -48,38 +48,93 @@ public class KoubeiItemBatchqueryResponse extends AlipayResponse {
 	@ApiField("total_page_no")
 	private String totalPageNo;
 
-	public void setCurrentPageNo(String currentPageNo) {
+    /**
+     * Sets current page no.
+     *
+     * @param currentPageNo the current page no
+     */
+    public void setCurrentPageNo(String currentPageNo) {
 		this.currentPageNo = currentPageNo;
 	}
-	public String getCurrentPageNo( ) {
+
+    /**
+     * Gets current page no.
+     *
+     * @return the current page no
+     */
+    public String getCurrentPageNo( ) {
 		return this.currentPageNo;
 	}
 
-	public void setItemInfos(List<ItemQueryResponse> itemInfos) {
+    /**
+     * Sets item infos.
+     *
+     * @param itemInfos the item infos
+     */
+    public void setItemInfos(List<ItemQueryResponse> itemInfos) {
 		this.itemInfos = itemInfos;
 	}
-	public List<ItemQueryResponse> getItemInfos( ) {
+
+    /**
+     * Gets item infos.
+     *
+     * @return the item infos
+     */
+    public List<ItemQueryResponse> getItemInfos( ) {
 		return this.itemInfos;
 	}
 
-	public void setPageSize(String pageSize) {
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(String pageSize) {
 		this.pageSize = pageSize;
 	}
-	public String getPageSize( ) {
+
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public String getPageSize( ) {
 		return this.pageSize;
 	}
 
-	public void setTotalItems(String totalItems) {
+    /**
+     * Sets total items.
+     *
+     * @param totalItems the total items
+     */
+    public void setTotalItems(String totalItems) {
 		this.totalItems = totalItems;
 	}
-	public String getTotalItems( ) {
+
+    /**
+     * Gets total items.
+     *
+     * @return the total items
+     */
+    public String getTotalItems( ) {
 		return this.totalItems;
 	}
 
-	public void setTotalPageNo(String totalPageNo) {
+    /**
+     * Sets total page no.
+     *
+     * @param totalPageNo the total page no
+     */
+    public void setTotalPageNo(String totalPageNo) {
 		this.totalPageNo = totalPageNo;
 	}
-	public String getTotalPageNo( ) {
+
+    /**
+     * Gets total page no.
+     *
+     * @return the total page no
+     */
+    public String getTotalPageNo( ) {
 		return this.totalPageNo;
 	}
 

@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.ebpp.bill.search request
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-04-07 17:13:40
  */
@@ -54,52 +54,129 @@ public class AlipayEbppBillSearchRequest implements AlipayRequest<AlipayEbppBill
 	 */
 	private String subOrderType;
 
-	public void setBillKey(String billKey) {
+    /**
+     * Sets bill key.
+     *
+     * @param billKey the bill key
+     */
+    public void setBillKey(String billKey) {
 		this.billKey = billKey;
 	}
-	public String getBillKey() {
+
+    /**
+     * Gets bill key.
+     *
+     * @return the bill key
+     */
+    public String getBillKey() {
 		return this.billKey;
 	}
 
-	public void setChargeInst(String chargeInst) {
+    /**
+     * Sets charge inst.
+     *
+     * @param chargeInst the charge inst
+     */
+    public void setChargeInst(String chargeInst) {
 		this.chargeInst = chargeInst;
 	}
-	public String getChargeInst() {
+
+    /**
+     * Gets charge inst.
+     *
+     * @return the charge inst
+     */
+    public String getChargeInst() {
 		return this.chargeInst;
 	}
 
-	public void setChargeoffInst(String chargeoffInst) {
+    /**
+     * Sets chargeoff inst.
+     *
+     * @param chargeoffInst the chargeoff inst
+     */
+    public void setChargeoffInst(String chargeoffInst) {
 		this.chargeoffInst = chargeoffInst;
 	}
-	public String getChargeoffInst() {
+
+    /**
+     * Gets chargeoff inst.
+     *
+     * @return the chargeoff inst
+     */
+    public String getChargeoffInst() {
 		return this.chargeoffInst;
 	}
 
-	public void setCompanyId(String companyId) {
+    /**
+     * Sets company id.
+     *
+     * @param companyId the company id
+     */
+    public void setCompanyId(String companyId) {
 		this.companyId = companyId;
 	}
-	public String getCompanyId() {
+
+    /**
+     * Gets company id.
+     *
+     * @return the company id
+     */
+    public String getCompanyId() {
 		return this.companyId;
 	}
 
-	public void setExtend(String extend) {
+    /**
+     * Sets extend.
+     *
+     * @param extend the extend
+     */
+    public void setExtend(String extend) {
 		this.extend = extend;
 	}
-	public String getExtend() {
+
+    /**
+     * Gets extend.
+     *
+     * @return the extend
+     */
+    public String getExtend() {
 		return this.extend;
 	}
 
-	public void setOrderType(String orderType) {
+    /**
+     * Sets order type.
+     *
+     * @param orderType the order type
+     */
+    public void setOrderType(String orderType) {
 		this.orderType = orderType;
 	}
-	public String getOrderType() {
+
+    /**
+     * Gets order type.
+     *
+     * @return the order type
+     */
+    public String getOrderType() {
 		return this.orderType;
 	}
 
-	public void setSubOrderType(String subOrderType) {
+    /**
+     * Sets sub order type.
+     *
+     * @param subOrderType the sub order type
+     */
+    public void setSubOrderType(String subOrderType) {
 		this.subOrderType = subOrderType;
 	}
-	public String getSubOrderType() {
+
+    /**
+     * Gets sub order type.
+     *
+     * @return the sub order type
+     */
+    public String getSubOrderType() {
 		return this.subOrderType;
 	}
 	private String terminalType;
@@ -177,7 +254,13 @@ public class AlipayEbppBillSearchRequest implements AlipayRequest<AlipayEbppBill
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.fund.auth.operation.cancel response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-21 19:41:54
+ * @since 1.0, 2018-06-07 14:45:00
  */
 public class AlipayFundAuthOperationCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2123259141658389345L;
+	private static final long serialVersionUID = 6377788953244342435L;
 
 	/** 
 	 * 本次撤销触发的资金动作
@@ -46,38 +46,93 @@ unfreeze：产生了资金解冻
 	@ApiField("out_request_no")
 	private String outRequestNo;
 
-	public void setAction(String action) {
+    /**
+     * Sets action.
+     *
+     * @param action the action
+     */
+    public void setAction(String action) {
 		this.action = action;
 	}
-	public String getAction( ) {
+
+    /**
+     * Gets action.
+     *
+     * @return the action
+     */
+    public String getAction( ) {
 		return this.action;
 	}
 
-	public void setAuthNo(String authNo) {
+    /**
+     * Sets auth no.
+     *
+     * @param authNo the auth no
+     */
+    public void setAuthNo(String authNo) {
 		this.authNo = authNo;
 	}
-	public String getAuthNo( ) {
+
+    /**
+     * Gets auth no.
+     *
+     * @return the auth no
+     */
+    public String getAuthNo( ) {
 		return this.authNo;
 	}
 
-	public void setOperationId(String operationId) {
+    /**
+     * Sets operation id.
+     *
+     * @param operationId the operation id
+     */
+    public void setOperationId(String operationId) {
 		this.operationId = operationId;
 	}
-	public String getOperationId( ) {
+
+    /**
+     * Gets operation id.
+     *
+     * @return the operation id
+     */
+    public String getOperationId( ) {
 		return this.operationId;
 	}
 
-	public void setOutOrderNo(String outOrderNo) {
+    /**
+     * Sets out order no.
+     *
+     * @param outOrderNo the out order no
+     */
+    public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
 	}
-	public String getOutOrderNo( ) {
+
+    /**
+     * Gets out order no.
+     *
+     * @return the out order no
+     */
+    public String getOutOrderNo( ) {
 		return this.outOrderNo;
 	}
 
-	public void setOutRequestNo(String outRequestNo) {
+    /**
+     * Sets out request no.
+     *
+     * @param outRequestNo the out request no
+     */
+    public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
 	}
-	public String getOutRequestNo( ) {
+
+    /**
+     * Gets out request no.
+     *
+     * @return the out request no
+     */
+    public String getOutRequestNo( ) {
 		return this.outRequestNo;
 	}
 

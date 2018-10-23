@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.data.trade.habbit.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-11-25 10:43:58
+ * @since 1.0, 2018-07-26 14:04:58
  */
 public class KoubeiMarketingDataTradeHabbitQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7494859136494935695L;
+	private static final long serialVersionUID = 1734315111449667147L;
 
 	/** 
 	 * biz_date: 业务日期  格式:yyyyMMdd
@@ -31,10 +31,21 @@ public class KoubeiMarketingDataTradeHabbitQueryResponse extends AlipayResponse 
 	@ApiField("trade_habit_info")
 	private String tradeHabitInfo;
 
-	public void setTradeHabitInfo(String tradeHabitInfo) {
+    /**
+     * Sets trade habit info.
+     *
+     * @param tradeHabitInfo the trade habit info
+     */
+    public void setTradeHabitInfo(String tradeHabitInfo) {
 		this.tradeHabitInfo = tradeHabitInfo;
 	}
-	public String getTradeHabitInfo( ) {
+
+    /**
+     * Gets trade habit info.
+     *
+     * @return the trade habit info
+     */
+    public String getTradeHabitInfo( ) {
 		return this.tradeHabitInfo;
 	}
 

@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.campaign.tags.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-26 11:31:35
+ * @since 1.0, 2018-07-26 14:03:55
  */
 public class KoubeiMarketingCampaignTagsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3419921155169823617L;
+	private static final long serialVersionUID = 4884588393768888117L;
 
 	/** 
 	 * 查询成功时返回人群标签信息查询失败时为空
@@ -26,10 +26,21 @@ label:描述信息
 	@ApiField("tags")
 	private String tags;
 
-	public void setTags(String tags) {
+    /**
+     * Sets tags.
+     *
+     * @param tags the tags
+     */
+    public void setTags(String tags) {
 		this.tags = tags;
 	}
-	public String getTags( ) {
+
+    /**
+     * Gets tags.
+     *
+     * @return the tags
+     */
+    public String getTags( ) {
 		return this.tags;
 	}
 

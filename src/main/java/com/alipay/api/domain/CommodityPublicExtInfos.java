@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CommodityPublicExtInfos extends AlipayObject {
 
-	private static final long serialVersionUID = 6162416859654145551L;
+	private static final long serialVersionUID = 4893462696536499315L;
 
 	/**
 	 * 前置url
@@ -91,94 +91,237 @@ public class CommodityPublicExtInfos extends AlipayObject {
 	@ApiField("property_id")
 	private String propertyId;
 
-	public String getActionUrl() {
+    /**
+     * Gets action url.
+     *
+     * @return the action url
+     */
+    public String getActionUrl() {
 		return this.actionUrl;
 	}
-	public void setActionUrl(String actionUrl) {
+
+    /**
+     * Sets action url.
+     *
+     * @param actionUrl the action url
+     */
+    public void setActionUrl(String actionUrl) {
 		this.actionUrl = actionUrl;
 	}
 
-	public String getAppId() {
+    /**
+     * Gets app id.
+     *
+     * @return the app id
+     */
+    public String getAppId() {
 		return this.appId;
 	}
-	public void setAppId(String appId) {
+
+    /**
+     * Sets app id.
+     *
+     * @param appId the app id
+     */
+    public void setAppId(String appId) {
 		this.appId = appId;
 	}
 
-	public String getCategoryName() {
+    /**
+     * Gets category name.
+     *
+     * @return the category name
+     */
+    public String getCategoryName() {
 		return this.categoryName;
 	}
-	public void setCategoryName(String categoryName) {
+
+    /**
+     * Sets category name.
+     *
+     * @param categoryName the category name
+     */
+    public void setCategoryName(String categoryName) {
 		this.categoryName = categoryName;
 	}
 
-	public String getCityName() {
+    /**
+     * Gets city name.
+     *
+     * @return the city name
+     */
+    public String getCityName() {
 		return this.cityName;
 	}
-	public void setCityName(String cityName) {
+
+    /**
+     * Sets city name.
+     *
+     * @param cityName the city name
+     */
+    public void setCityName(String cityName) {
 		this.cityName = cityName;
 	}
 
-	public String getCommodityId() {
+    /**
+     * Gets commodity id.
+     *
+     * @return the commodity id
+     */
+    public String getCommodityId() {
 		return this.commodityId;
 	}
-	public void setCommodityId(String commodityId) {
+
+    /**
+     * Sets commodity id.
+     *
+     * @param commodityId the commodity id
+     */
+    public void setCommodityId(String commodityId) {
 		this.commodityId = commodityId;
 	}
 
-	public String getCreateUserId() {
+    /**
+     * Gets create user id.
+     *
+     * @return the create user id
+     */
+    public String getCreateUserId() {
 		return this.createUserId;
 	}
-	public void setCreateUserId(String createUserId) {
+
+    /**
+     * Sets create user id.
+     *
+     * @param createUserId the create user id
+     */
+    public void setCreateUserId(String createUserId) {
 		this.createUserId = createUserId;
 	}
 
-	public String getDisplayappId() {
+    /**
+     * Gets displayapp id.
+     *
+     * @return the displayapp id
+     */
+    public String getDisplayappId() {
 		return this.displayappId;
 	}
-	public void setDisplayappId(String displayappId) {
+
+    /**
+     * Sets displayapp id.
+     *
+     * @param displayappId the displayapp id
+     */
+    public void setDisplayappId(String displayappId) {
 		this.displayappId = displayappId;
 	}
 
-	public String getDisplayappMemo() {
+    /**
+     * Gets displayapp memo.
+     *
+     * @return the displayapp memo
+     */
+    public String getDisplayappMemo() {
 		return this.displayappMemo;
 	}
-	public void setDisplayappMemo(String displayappMemo) {
+
+    /**
+     * Sets displayapp memo.
+     *
+     * @param displayappMemo the displayapp memo
+     */
+    public void setDisplayappMemo(String displayappMemo) {
 		this.displayappMemo = displayappMemo;
 	}
 
-	public String getDisplayappName() {
+    /**
+     * Gets displayapp name.
+     *
+     * @return the displayapp name
+     */
+    public String getDisplayappName() {
 		return this.displayappName;
 	}
-	public void setDisplayappName(String displayappName) {
+
+    /**
+     * Sets displayapp name.
+     *
+     * @param displayappName the displayapp name
+     */
+    public void setDisplayappName(String displayappName) {
 		this.displayappName = displayappName;
 	}
 
-	public String getDisplayappStatus() {
+    /**
+     * Gets displayapp status.
+     *
+     * @return the displayapp status
+     */
+    public String getDisplayappStatus() {
 		return this.displayappStatus;
 	}
-	public void setDisplayappStatus(String displayappStatus) {
+
+    /**
+     * Sets displayapp status.
+     *
+     * @param displayappStatus the displayapp status
+     */
+    public void setDisplayappStatus(String displayappStatus) {
 		this.displayappStatus = displayappStatus;
 	}
 
-	public String getDisplayappUrl() {
+    /**
+     * Gets displayapp url.
+     *
+     * @return the displayapp url
+     */
+    public String getDisplayappUrl() {
 		return this.displayappUrl;
 	}
-	public void setDisplayappUrl(String displayappUrl) {
+
+    /**
+     * Sets displayapp url.
+     *
+     * @param displayappUrl the displayapp url
+     */
+    public void setDisplayappUrl(String displayappUrl) {
 		this.displayappUrl = displayappUrl;
 	}
 
-	public String getExportUrl() {
+    /**
+     * Gets export url.
+     *
+     * @return the export url
+     */
+    public String getExportUrl() {
 		return this.exportUrl;
 	}
-	public void setExportUrl(String exportUrl) {
+
+    /**
+     * Sets export url.
+     *
+     * @param exportUrl the export url
+     */
+    public void setExportUrl(String exportUrl) {
 		this.exportUrl = exportUrl;
 	}
 
-	public String getPropertyId() {
+    /**
+     * Gets property id.
+     *
+     * @return the property id
+     */
+    public String getPropertyId() {
 		return this.propertyId;
 	}
-	public void setPropertyId(String propertyId) {
+
+    /**
+     * Sets property id.
+     *
+     * @param propertyId the property id
+     */
+    public void setPropertyId(String propertyId) {
 		this.propertyId = propertyId;
 	}
 

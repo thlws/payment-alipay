@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MyBkAccountVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3682772758941116546L;
+	private static final long serialVersionUID = 4381319493299666525L;
 
 	/**
 	 * 账号外标，如支付宝登录号
@@ -79,80 +79,201 @@ public class MyBkAccountVO extends AlipayObject {
 	@ApiField("refuse_code")
 	private String refuseCode;
 
-	public String getAccountExtNo() {
+    /**
+     * Gets account ext no.
+     *
+     * @return the account ext no
+     */
+    public String getAccountExtNo() {
 		return this.accountExtNo;
 	}
-	public void setAccountExtNo(String accountExtNo) {
+
+    /**
+     * Sets account ext no.
+     *
+     * @param accountExtNo the account ext no
+     */
+    public void setAccountExtNo(String accountExtNo) {
 		this.accountExtNo = accountExtNo;
 	}
 
-	public String getAccountFipBranchCode() {
+    /**
+     * Gets account fip branch code.
+     *
+     * @return the account fip branch code
+     */
+    public String getAccountFipBranchCode() {
 		return this.accountFipBranchCode;
 	}
-	public void setAccountFipBranchCode(String accountFipBranchCode) {
+
+    /**
+     * Sets account fip branch code.
+     *
+     * @param accountFipBranchCode the account fip branch code
+     */
+    public void setAccountFipBranchCode(String accountFipBranchCode) {
 		this.accountFipBranchCode = accountFipBranchCode;
 	}
 
-	public String getAccountFipCode() {
+    /**
+     * Gets account fip code.
+     *
+     * @return the account fip code
+     */
+    public String getAccountFipCode() {
 		return this.accountFipCode;
 	}
-	public void setAccountFipCode(String accountFipCode) {
+
+    /**
+     * Sets account fip code.
+     *
+     * @param accountFipCode the account fip code
+     */
+    public void setAccountFipCode(String accountFipCode) {
 		this.accountFipCode = accountFipCode;
 	}
 
-	public String getAccountFipName() {
+    /**
+     * Gets account fip name.
+     *
+     * @return the account fip name
+     */
+    public String getAccountFipName() {
 		return this.accountFipName;
 	}
-	public void setAccountFipName(String accountFipName) {
+
+    /**
+     * Sets account fip name.
+     *
+     * @param accountFipName the account fip name
+     */
+    public void setAccountFipName(String accountFipName) {
 		this.accountFipName = accountFipName;
 	}
 
-	public String getAccountNo() {
+    /**
+     * Gets account no.
+     *
+     * @return the account no
+     */
+    public String getAccountNo() {
 		return this.accountNo;
 	}
-	public void setAccountNo(String accountNo) {
+
+    /**
+     * Sets account no.
+     *
+     * @param accountNo the account no
+     */
+    public void setAccountNo(String accountNo) {
 		this.accountNo = accountNo;
 	}
 
-	public String getAccountType() {
+    /**
+     * Gets account type.
+     *
+     * @return the account type
+     */
+    public String getAccountType() {
 		return this.accountType;
 	}
-	public void setAccountType(String accountType) {
+
+    /**
+     * Sets account type.
+     *
+     * @param accountType the account type
+     */
+    public void setAccountType(String accountType) {
 		this.accountType = accountType;
 	}
 
-	public String getAvailable() {
+    /**
+     * Gets available.
+     *
+     * @return the available
+     */
+    public String getAvailable() {
 		return this.available;
 	}
-	public void setAvailable(String available) {
+
+    /**
+     * Sets available.
+     *
+     * @param available the available
+     */
+    public void setAvailable(String available) {
 		this.available = available;
 	}
 
-	public String getBankCardCategory() {
+    /**
+     * Gets bank card category.
+     *
+     * @return the bank card category
+     */
+    public String getBankCardCategory() {
 		return this.bankCardCategory;
 	}
-	public void setBankCardCategory(String bankCardCategory) {
+
+    /**
+     * Sets bank card category.
+     *
+     * @param bankCardCategory the bank card category
+     */
+    public void setBankCardCategory(String bankCardCategory) {
 		this.bankCardCategory = bankCardCategory;
 	}
 
-	public String getCardHolderName() {
+    /**
+     * Gets card holder name.
+     *
+     * @return the card holder name
+     */
+    public String getCardHolderName() {
 		return this.cardHolderName;
 	}
-	public void setCardHolderName(String cardHolderName) {
+
+    /**
+     * Sets card holder name.
+     *
+     * @param cardHolderName the card holder name
+     */
+    public void setCardHolderName(String cardHolderName) {
 		this.cardHolderName = cardHolderName;
 	}
 
-	public String getGrantChannel() {
+    /**
+     * Gets grant channel.
+     *
+     * @return the grant channel
+     */
+    public String getGrantChannel() {
 		return this.grantChannel;
 	}
-	public void setGrantChannel(String grantChannel) {
+
+    /**
+     * Sets grant channel.
+     *
+     * @param grantChannel the grant channel
+     */
+    public void setGrantChannel(String grantChannel) {
 		this.grantChannel = grantChannel;
 	}
 
-	public String getRefuseCode() {
+    /**
+     * Gets refuse code.
+     *
+     * @return the refuse code
+     */
+    public String getRefuseCode() {
 		return this.refuseCode;
 	}
-	public void setRefuseCode(String refuseCode) {
+
+    /**
+     * Sets refuse code.
+     *
+     * @param refuseCode the refuse code
+     */
+    public void setRefuseCode(String refuseCode) {
 		this.refuseCode = refuseCode;
 	}
 

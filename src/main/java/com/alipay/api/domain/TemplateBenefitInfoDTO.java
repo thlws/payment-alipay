@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class TemplateBenefitInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4419338254259867393L;
+	private static final long serialVersionUID = 5573298911877246356L;
 
 	/**
 	 * 权益描述信息
@@ -42,31 +42,75 @@ public class TemplateBenefitInfoDTO extends AlipayObject {
 	@ApiField("title")
 	private String title;
 
-	public List<String> getBenefitDesc() {
+    /**
+     * Gets benefit desc.
+     *
+     * @return the benefit desc
+     */
+    public List<String> getBenefitDesc() {
 		return this.benefitDesc;
 	}
-	public void setBenefitDesc(List<String> benefitDesc) {
+
+    /**
+     * Sets benefit desc.
+     *
+     * @param benefitDesc the benefit desc
+     */
+    public void setBenefitDesc(List<String> benefitDesc) {
 		this.benefitDesc = benefitDesc;
 	}
 
-	public Date getEndDate() {
+    /**
+     * Gets end date.
+     *
+     * @return the end date
+     */
+    public Date getEndDate() {
 		return this.endDate;
 	}
-	public void setEndDate(Date endDate) {
+
+    /**
+     * Sets end date.
+     *
+     * @param endDate the end date
+     */
+    public void setEndDate(Date endDate) {
 		this.endDate = endDate;
 	}
 
-	public Date getStartDate() {
+    /**
+     * Gets start date.
+     *
+     * @return the start date
+     */
+    public Date getStartDate() {
 		return this.startDate;
 	}
-	public void setStartDate(Date startDate) {
+
+    /**
+     * Sets start date.
+     *
+     * @param startDate the start date
+     */
+    public void setStartDate(Date startDate) {
 		this.startDate = startDate;
 	}
 
-	public String getTitle() {
+    /**
+     * Gets title.
+     *
+     * @return the title
+     */
+    public String getTitle() {
 		return this.title;
 	}
-	public void setTitle(String title) {
+
+    /**
+     * Sets title.
+     *
+     * @param title the title
+     */
+    public void setTitle(String title) {
 		this.title = title;
 	}
 

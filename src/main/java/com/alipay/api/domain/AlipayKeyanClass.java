@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayKeyanClass extends AlipayObject {
 
-	private static final long serialVersionUID = 1266868697951293844L;
+	private static final long serialVersionUID = 4786132611763762645L;
 
 	/**
 	 * 1
@@ -19,10 +19,21 @@ public class AlipayKeyanClass extends AlipayObject {
 	@ApiField("user_name")
 	private String userName;
 
-	public String getUserName() {
+    /**
+     * Gets user name.
+     *
+     * @return the user name
+     */
+    public String getUserName() {
 		return this.userName;
 	}
-	public void setUserName(String userName) {
+
+    /**
+     * Sets user name.
+     *
+     * @param userName the user name
+     */
+    public void setUserName(String userName) {
 		this.userName = userName;
 	}
 

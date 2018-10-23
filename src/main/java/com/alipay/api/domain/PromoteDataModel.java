@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PromoteDataModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3567458745174381472L;
+	private static final long serialVersionUID = 6724545619595416743L;
 
 	/**
 	 * 核销数
@@ -31,24 +31,57 @@ public class PromoteDataModel extends AlipayObject {
 	@ApiField("commission_amount")
 	private String commissionAmount;
 
-	public Long getCheckedVoucherNum() {
+    /**
+     * Gets checked voucher num.
+     *
+     * @return the checked voucher num
+     */
+    public Long getCheckedVoucherNum() {
 		return this.checkedVoucherNum;
 	}
-	public void setCheckedVoucherNum(Long checkedVoucherNum) {
+
+    /**
+     * Sets checked voucher num.
+     *
+     * @param checkedVoucherNum the checked voucher num
+     */
+    public void setCheckedVoucherNum(Long checkedVoucherNum) {
 		this.checkedVoucherNum = checkedVoucherNum;
 	}
 
-	public Long getClaimVoucherNum() {
+    /**
+     * Gets claim voucher num.
+     *
+     * @return the claim voucher num
+     */
+    public Long getClaimVoucherNum() {
 		return this.claimVoucherNum;
 	}
-	public void setClaimVoucherNum(Long claimVoucherNum) {
+
+    /**
+     * Sets claim voucher num.
+     *
+     * @param claimVoucherNum the claim voucher num
+     */
+    public void setClaimVoucherNum(Long claimVoucherNum) {
 		this.claimVoucherNum = claimVoucherNum;
 	}
 
-	public String getCommissionAmount() {
+    /**
+     * Gets commission amount.
+     *
+     * @return the commission amount
+     */
+    public String getCommissionAmount() {
 		return this.commissionAmount;
 	}
-	public void setCommissionAmount(String commissionAmount) {
+
+    /**
+     * Sets commission amount.
+     *
+     * @param commissionAmount the commission amount
+     */
+    public void setCommissionAmount(String commissionAmount) {
 		this.commissionAmount = commissionAmount;
 	}
 

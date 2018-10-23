@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: koubei.marketing.data.smartmanagement.diagnose request
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-07-26 11:31:56
  */
@@ -85,7 +85,13 @@ public class KoubeiMarketingDataSmartmanagementDiagnoseRequest implements Alipay
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

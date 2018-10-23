@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiRetailShopitemUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2761172588871982739L;
+	private static final long serialVersionUID = 3123849928739552444L;
 
 	/**
 	 * 上传的商品集合
@@ -23,10 +23,21 @@ public class KoubeiRetailShopitemUploadModel extends AlipayObject {
 	@ApiField("request_ext_shop_item")
 	private List<RequestExtShopItem> shopItems;
 
-	public List<RequestExtShopItem> getShopItems() {
+    /**
+     * Gets shop items.
+     *
+     * @return the shop items
+     */
+    public List<RequestExtShopItem> getShopItems() {
 		return this.shopItems;
 	}
-	public void setShopItems(List<RequestExtShopItem> shopItems) {
+
+    /**
+     * Sets shop items.
+     *
+     * @param shopItems the shop items
+     */
+    public void setShopItems(List<RequestExtShopItem> shopItems) {
 		this.shopItems = shopItems;
 	}
 

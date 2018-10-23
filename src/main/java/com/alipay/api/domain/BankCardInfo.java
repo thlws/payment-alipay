@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 银行卡信息
  *
  * @author auto create
- * @since 1.0, 2017-06-14 19:53:52
+ * @since 1.0, 2018-05-07 17:46:16
  */
 public class BankCardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8821438857772125987L;
+	private static final long serialVersionUID = 8354464486112186495L;
 
 	/**
 	 * 银行卡持卡人姓名
@@ -25,17 +25,39 @@ public class BankCardInfo extends AlipayObject {
 	@ApiField("card_no")
 	private String cardNo;
 
-	public String getCardName() {
+    /**
+     * Gets card name.
+     *
+     * @return the card name
+     */
+    public String getCardName() {
 		return this.cardName;
 	}
-	public void setCardName(String cardName) {
+
+    /**
+     * Sets card name.
+     *
+     * @param cardName the card name
+     */
+    public void setCardName(String cardName) {
 		this.cardName = cardName;
 	}
 
-	public String getCardNo() {
+    /**
+     * Gets card no.
+     *
+     * @return the card no
+     */
+    public String getCardNo() {
 		return this.cardNo;
 	}
-	public void setCardNo(String cardNo) {
+
+    /**
+     * Sets card no.
+     *
+     * @param cardNo the card no
+     */
+    public void setCardNo(String cardNo) {
 		this.cardNo = cardNo;
 	}
 

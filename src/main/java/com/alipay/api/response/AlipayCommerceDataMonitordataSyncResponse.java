@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.commerce.data.monitordata.sync response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-08-31 17:34:13
+ * @since 1.0, 2018-01-04 10:37:50
  */
 public class AlipayCommerceDataMonitordataSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5838926169656764541L;
+	private static final long serialVersionUID = 4694225934267713428L;
 
 	/** 
 	 * dimTypeCheck: 维度类型校验
@@ -38,10 +38,21 @@ public class AlipayCommerceDataMonitordataSyncResponse extends AlipayResponse {
 	@ApiField("error_detail")
 	private String errorDetail;
 
-	public void setErrorDetail(String errorDetail) {
+    /**
+     * Sets error detail.
+     *
+     * @param errorDetail the error detail
+     */
+    public void setErrorDetail(String errorDetail) {
 		this.errorDetail = errorDetail;
 	}
-	public String getErrorDetail( ) {
+
+    /**
+     * Gets error detail.
+     *
+     * @return the error detail
+     */
+    public String getErrorDetail( ) {
 		return this.errorDetail;
 	}
 

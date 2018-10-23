@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ArrangementInvolvedPartyQuerier extends AlipayObject {
 
-	private static final long serialVersionUID = 8629577574369645684L;
+	private static final long serialVersionUID = 8852376452858927798L;
 
 	/**
 	 * 参与者id
@@ -32,24 +32,57 @@ public class ArrangementInvolvedPartyQuerier extends AlipayObject {
 	@ApiField("ip_type")
 	private String ipType;
 
-	public String getIpId() {
+    /**
+     * Gets ip id.
+     *
+     * @return the ip id
+     */
+    public String getIpId() {
 		return this.ipId;
 	}
-	public void setIpId(String ipId) {
+
+    /**
+     * Sets ip id.
+     *
+     * @param ipId the ip id
+     */
+    public void setIpId(String ipId) {
 		this.ipId = ipId;
 	}
 
-	public String getIpRoleId() {
+    /**
+     * Gets ip role id.
+     *
+     * @return the ip role id
+     */
+    public String getIpRoleId() {
 		return this.ipRoleId;
 	}
-	public void setIpRoleId(String ipRoleId) {
+
+    /**
+     * Sets ip role id.
+     *
+     * @param ipRoleId the ip role id
+     */
+    public void setIpRoleId(String ipRoleId) {
 		this.ipRoleId = ipRoleId;
 	}
 
-	public String getIpType() {
+    /**
+     * Gets ip type.
+     *
+     * @return the ip type
+     */
+    public String getIpType() {
 		return this.ipType;
 	}
-	public void setIpType(String ipType) {
+
+    /**
+     * Sets ip type.
+     *
+     * @param ipType the ip type
+     */
+    public void setIpType(String ipType) {
 		this.ipType = ipType;
 	}
 

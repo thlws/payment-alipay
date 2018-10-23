@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreditResult extends AlipayObject {
 
-	private static final long serialVersionUID = 5859394886499758435L;
+	private static final long serialVersionUID = 8534192632257239265L;
 
 	/**
 	 * 授信金额
@@ -81,80 +81,201 @@ public class CreditResult extends AlipayObject {
 	@ApiField("repayment_mode")
 	private String repaymentMode;
 
-	public String getCreditLine() {
+    /**
+     * Gets credit line.
+     *
+     * @return the credit line
+     */
+    public String getCreditLine() {
 		return this.creditLine;
 	}
-	public void setCreditLine(String creditLine) {
+
+    /**
+     * Sets credit line.
+     *
+     * @param creditLine the credit line
+     */
+    public void setCreditLine(String creditLine) {
 		this.creditLine = creditLine;
 	}
 
-	public String getCreditNo() {
+    /**
+     * Gets credit no.
+     *
+     * @return the credit no
+     */
+    public String getCreditNo() {
 		return this.creditNo;
 	}
-	public void setCreditNo(String creditNo) {
+
+    /**
+     * Sets credit no.
+     *
+     * @param creditNo the credit no
+     */
+    public void setCreditNo(String creditNo) {
 		this.creditNo = creditNo;
 	}
 
-	public Long getCreditTerm() {
+    /**
+     * Gets credit term.
+     *
+     * @return the credit term
+     */
+    public Long getCreditTerm() {
 		return this.creditTerm;
 	}
-	public void setCreditTerm(Long creditTerm) {
+
+    /**
+     * Sets credit term.
+     *
+     * @param creditTerm the credit term
+     */
+    public void setCreditTerm(Long creditTerm) {
 		this.creditTerm = creditTerm;
 	}
 
-	public String getCreditTermUnit() {
+    /**
+     * Gets credit term unit.
+     *
+     * @return the credit term unit
+     */
+    public String getCreditTermUnit() {
 		return this.creditTermUnit;
 	}
-	public void setCreditTermUnit(String creditTermUnit) {
+
+    /**
+     * Sets credit term unit.
+     *
+     * @param creditTermUnit the credit term unit
+     */
+    public void setCreditTermUnit(String creditTermUnit) {
 		this.creditTermUnit = creditTermUnit;
 	}
 
-	public Date getEffectiveDate() {
+    /**
+     * Gets effective date.
+     *
+     * @return the effective date
+     */
+    public Date getEffectiveDate() {
 		return this.effectiveDate;
 	}
-	public void setEffectiveDate(Date effectiveDate) {
+
+    /**
+     * Sets effective date.
+     *
+     * @param effectiveDate the effective date
+     */
+    public void setEffectiveDate(Date effectiveDate) {
 		this.effectiveDate = effectiveDate;
 	}
 
-	public Date getExpireDate() {
+    /**
+     * Gets expire date.
+     *
+     * @return the expire date
+     */
+    public Date getExpireDate() {
 		return this.expireDate;
 	}
-	public void setExpireDate(Date expireDate) {
+
+    /**
+     * Sets expire date.
+     *
+     * @param expireDate the expire date
+     */
+    public void setExpireDate(Date expireDate) {
 		this.expireDate = expireDate;
 	}
 
-	public String getFeeRate() {
+    /**
+     * Gets fee rate.
+     *
+     * @return the fee rate
+     */
+    public String getFeeRate() {
 		return this.feeRate;
 	}
-	public void setFeeRate(String feeRate) {
+
+    /**
+     * Sets fee rate.
+     *
+     * @param feeRate the fee rate
+     */
+    public void setFeeRate(String feeRate) {
 		this.feeRate = feeRate;
 	}
 
-	public String getInterestRate() {
+    /**
+     * Gets interest rate.
+     *
+     * @return the interest rate
+     */
+    public String getInterestRate() {
 		return this.interestRate;
 	}
-	public void setInterestRate(String interestRate) {
+
+    /**
+     * Sets interest rate.
+     *
+     * @param interestRate the interest rate
+     */
+    public void setInterestRate(String interestRate) {
 		this.interestRate = interestRate;
 	}
 
-	public Long getLoanTerm() {
+    /**
+     * Gets loan term.
+     *
+     * @return the loan term
+     */
+    public Long getLoanTerm() {
 		return this.loanTerm;
 	}
-	public void setLoanTerm(Long loanTerm) {
+
+    /**
+     * Sets loan term.
+     *
+     * @param loanTerm the loan term
+     */
+    public void setLoanTerm(Long loanTerm) {
 		this.loanTerm = loanTerm;
 	}
 
-	public String getLoanTermUnit() {
+    /**
+     * Gets loan term unit.
+     *
+     * @return the loan term unit
+     */
+    public String getLoanTermUnit() {
 		return this.loanTermUnit;
 	}
-	public void setLoanTermUnit(String loanTermUnit) {
+
+    /**
+     * Sets loan term unit.
+     *
+     * @param loanTermUnit the loan term unit
+     */
+    public void setLoanTermUnit(String loanTermUnit) {
 		this.loanTermUnit = loanTermUnit;
 	}
 
-	public String getRepaymentMode() {
+    /**
+     * Gets repayment mode.
+     *
+     * @return the repayment mode
+     */
+    public String getRepaymentMode() {
 		return this.repaymentMode;
 	}
-	public void setRepaymentMode(String repaymentMode) {
+
+    /**
+     * Sets repayment mode.
+     *
+     * @param repaymentMode the repayment mode
+     */
+    public void setRepaymentMode(String repaymentMode) {
 		this.repaymentMode = repaymentMode;
 	}
 

@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.template.message.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-12-08 11:44:54
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayOpenPublicTemplateMessageGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4326885346783661465L;
+	private static final long serialVersionUID = 8271149761635881589L;
 
 	/** 
 	 * 消息模板id--商户领取母版后生成的唯一模板id
@@ -26,17 +26,39 @@ public class AlipayOpenPublicTemplateMessageGetResponse extends AlipayResponse {
 	@ApiField("template")
 	private String template;
 
-	public void setMsgTemplateId(String msgTemplateId) {
+    /**
+     * Sets msg template id.
+     *
+     * @param msgTemplateId the msg template id
+     */
+    public void setMsgTemplateId(String msgTemplateId) {
 		this.msgTemplateId = msgTemplateId;
 	}
-	public String getMsgTemplateId( ) {
+
+    /**
+     * Gets msg template id.
+     *
+     * @return the msg template id
+     */
+    public String getMsgTemplateId( ) {
 		return this.msgTemplateId;
 	}
 
-	public void setTemplate(String template) {
+    /**
+     * Sets template.
+     *
+     * @param template the template
+     */
+    public void setTemplate(String template) {
 		this.template = template;
 	}
-	public String getTemplate( ) {
+
+    /**
+     * Gets template.
+     *
+     * @return the template
+     */
+    public String getTemplate( ) {
 		return this.template;
 	}
 

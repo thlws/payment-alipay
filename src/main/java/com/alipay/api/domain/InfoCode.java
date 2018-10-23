@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 风险解释
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:42
+ * @since 1.0, 2017-12-14 11:01:51
  */
 public class InfoCode extends AlipayObject {
 
-	private static final long serialVersionUID = 7344496277988951657L;
+	private static final long serialVersionUID = 8486966849841326362L;
 
 	/**
 	 * 风险描述
@@ -32,36 +32,80 @@ public class InfoCode extends AlipayObject {
 	private String riskFactorName;
 
 	/**
-	 * 风险度量
+	 * 风险度量，子特征风险分，范围 0-10，值越大表示风险越高
 	 */
 	@ApiField("risk_magnitude")
 	private String riskMagnitude;
 
-	public String getRiskDescription() {
+    /**
+     * Gets risk description.
+     *
+     * @return the risk description
+     */
+    public String getRiskDescription() {
 		return this.riskDescription;
 	}
-	public void setRiskDescription(String riskDescription) {
+
+    /**
+     * Sets risk description.
+     *
+     * @param riskDescription the risk description
+     */
+    public void setRiskDescription(String riskDescription) {
 		this.riskDescription = riskDescription;
 	}
 
-	public String getRiskFactorCode() {
+    /**
+     * Gets risk factor code.
+     *
+     * @return the risk factor code
+     */
+    public String getRiskFactorCode() {
 		return this.riskFactorCode;
 	}
-	public void setRiskFactorCode(String riskFactorCode) {
+
+    /**
+     * Sets risk factor code.
+     *
+     * @param riskFactorCode the risk factor code
+     */
+    public void setRiskFactorCode(String riskFactorCode) {
 		this.riskFactorCode = riskFactorCode;
 	}
 
-	public String getRiskFactorName() {
+    /**
+     * Gets risk factor name.
+     *
+     * @return the risk factor name
+     */
+    public String getRiskFactorName() {
 		return this.riskFactorName;
 	}
-	public void setRiskFactorName(String riskFactorName) {
+
+    /**
+     * Sets risk factor name.
+     *
+     * @param riskFactorName the risk factor name
+     */
+    public void setRiskFactorName(String riskFactorName) {
 		this.riskFactorName = riskFactorName;
 	}
 
-	public String getRiskMagnitude() {
+    /**
+     * Gets risk magnitude.
+     *
+     * @return the risk magnitude
+     */
+    public String getRiskMagnitude() {
 		return this.riskMagnitude;
 	}
-	public void setRiskMagnitude(String riskMagnitude) {
+
+    /**
+     * Sets risk magnitude.
+     *
+     * @param riskMagnitude the risk magnitude
+     */
+    public void setRiskMagnitude(String riskMagnitude) {
 		this.riskMagnitude = riskMagnitude;
 	}
 

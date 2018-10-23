@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.cdp.advertise.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-08-18 15:35:43
+ * @since 1.0, 2017-12-29 12:01:26
  */
 public class AlipayMarketingCdpAdvertiseCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5446858625468211988L;
+	private static final long serialVersionUID = 4284536516419768824L;
 
 	/** 
 	 * 创建广告唯一标识
@@ -20,10 +20,21 @@ public class AlipayMarketingCdpAdvertiseCreateResponse extends AlipayResponse {
 	@ApiField("ad_id")
 	private String adId;
 
-	public void setAdId(String adId) {
+    /**
+     * Sets ad id.
+     *
+     * @param adId the ad id
+     */
+    public void setAdId(String adId) {
 		this.adId = adId;
 	}
-	public String getAdId( ) {
+
+    /**
+     * Gets ad id.
+     *
+     * @return the ad id
+     */
+    public String getAdId( ) {
 		return this.adId;
 	}
 

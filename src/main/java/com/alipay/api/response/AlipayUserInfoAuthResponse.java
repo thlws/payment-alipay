@@ -5,13 +5,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.user.info.auth response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-12-13 17:20:12
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayUserInfoAuthResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8318783185919129368L;
+	private static final long serialVersionUID = 5878868426815935884L;
 
 	
 

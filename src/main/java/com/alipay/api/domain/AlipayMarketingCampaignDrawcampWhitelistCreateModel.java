@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCampaignDrawcampWhitelistCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2713643494653531971L;
+	private static final long serialVersionUID = 6132756999993844972L;
 
 	/**
 	 * 活动id
@@ -25,17 +25,39 @@ public class AlipayMarketingCampaignDrawcampWhitelistCreateModel extends AlipayO
 	@ApiField("user_id_list")
 	private String userIdList;
 
-	public String getCampId() {
+    /**
+     * Gets camp id.
+     *
+     * @return the camp id
+     */
+    public String getCampId() {
 		return this.campId;
 	}
-	public void setCampId(String campId) {
+
+    /**
+     * Sets camp id.
+     *
+     * @param campId the camp id
+     */
+    public void setCampId(String campId) {
 		this.campId = campId;
 	}
 
-	public String getUserIdList() {
+    /**
+     * Gets user id list.
+     *
+     * @return the user id list
+     */
+    public String getUserIdList() {
 		return this.userIdList;
 	}
-	public void setUserIdList(String userIdList) {
+
+    /**
+     * Sets user id list.
+     *
+     * @param userIdList the user id list
+     */
+    public void setUserIdList(String userIdList) {
 		this.userIdList = userIdList;
 	}
 

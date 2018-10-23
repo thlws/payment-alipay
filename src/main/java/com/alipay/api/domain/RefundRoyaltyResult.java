@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RefundRoyaltyResult extends AlipayObject {
 
-	private static final long serialVersionUID = 4454858325932226388L;
+	private static final long serialVersionUID = 4142476646327327248L;
 
 	/**
 	 * 退分润金额
@@ -49,45 +49,111 @@ public class RefundRoyaltyResult extends AlipayObject {
 	@ApiField("trans_out_email")
 	private String transOutEmail;
 
-	public String getRefundAmount() {
+    /**
+     * Gets refund amount.
+     *
+     * @return the refund amount
+     */
+    public String getRefundAmount() {
 		return this.refundAmount;
 	}
-	public void setRefundAmount(String refundAmount) {
+
+    /**
+     * Sets refund amount.
+     *
+     * @param refundAmount the refund amount
+     */
+    public void setRefundAmount(String refundAmount) {
 		this.refundAmount = refundAmount;
 	}
 
-	public String getResultCode() {
+    /**
+     * Gets result code.
+     *
+     * @return the result code
+     */
+    public String getResultCode() {
 		return this.resultCode;
 	}
-	public void setResultCode(String resultCode) {
+
+    /**
+     * Sets result code.
+     *
+     * @param resultCode the result code
+     */
+    public void setResultCode(String resultCode) {
 		this.resultCode = resultCode;
 	}
 
-	public String getTransIn() {
+    /**
+     * Gets trans in.
+     *
+     * @return the trans in
+     */
+    public String getTransIn() {
 		return this.transIn;
 	}
-	public void setTransIn(String transIn) {
+
+    /**
+     * Sets trans in.
+     *
+     * @param transIn the trans in
+     */
+    public void setTransIn(String transIn) {
 		this.transIn = transIn;
 	}
 
-	public String getTransInEmail() {
+    /**
+     * Gets trans in email.
+     *
+     * @return the trans in email
+     */
+    public String getTransInEmail() {
 		return this.transInEmail;
 	}
-	public void setTransInEmail(String transInEmail) {
+
+    /**
+     * Sets trans in email.
+     *
+     * @param transInEmail the trans in email
+     */
+    public void setTransInEmail(String transInEmail) {
 		this.transInEmail = transInEmail;
 	}
 
-	public String getTransOut() {
+    /**
+     * Gets trans out.
+     *
+     * @return the trans out
+     */
+    public String getTransOut() {
 		return this.transOut;
 	}
-	public void setTransOut(String transOut) {
+
+    /**
+     * Sets trans out.
+     *
+     * @param transOut the trans out
+     */
+    public void setTransOut(String transOut) {
 		this.transOut = transOut;
 	}
 
-	public String getTransOutEmail() {
+    /**
+     * Gets trans out email.
+     *
+     * @return the trans out email
+     */
+    public String getTransOutEmail() {
 		return this.transOutEmail;
 	}
-	public void setTransOutEmail(String transOutEmail) {
+
+    /**
+     * Sets trans out email.
+     *
+     * @param transOutEmail the trans out email
+     */
+    public void setTransOutEmail(String transOutEmail) {
 		this.transOutEmail = transOutEmail;
 	}
 

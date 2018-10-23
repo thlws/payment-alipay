@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.campaign.discount.whitelist.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-03-03 16:48:04
  */
 public class AlipayMarketingCampaignDiscountWhitelistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2733636878227388171L;
+	private static final long serialVersionUID = 5831561155759797524L;
 
 	/** 
 	 * 活动id
@@ -26,17 +26,39 @@ public class AlipayMarketingCampaignDiscountWhitelistQueryResponse extends Alipa
 	@ApiField("user_white_list")
 	private String userWhiteList;
 
-	public void setCampId(String campId) {
+    /**
+     * Sets camp id.
+     *
+     * @param campId the camp id
+     */
+    public void setCampId(String campId) {
 		this.campId = campId;
 	}
-	public String getCampId( ) {
+
+    /**
+     * Gets camp id.
+     *
+     * @return the camp id
+     */
+    public String getCampId( ) {
 		return this.campId;
 	}
 
-	public void setUserWhiteList(String userWhiteList) {
+    /**
+     * Sets user white list.
+     *
+     * @param userWhiteList the user white list
+     */
+    public void setUserWhiteList(String userWhiteList) {
 		this.userWhiteList = userWhiteList;
 	}
-	public String getUserWhiteList( ) {
+
+    /**
+     * Gets user white list.
+     *
+     * @return the user white list
+     */
+    public String getUserWhiteList( ) {
 		return this.userWhiteList;
 	}
 

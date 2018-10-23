@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 消息模板上下文，即模板中定义的参数及参数值
  *
  * @author auto create
- * @since 1.0, 2016-10-28 16:11:08
+ * @since 1.0, 2018-03-07 10:30:34
  */
 public class Context extends AlipayObject {
 
-	private static final long serialVersionUID = 2175274152932973625L;
+	private static final long serialVersionUID = 6699788371166249418L;
 
 	/**
 	 * 底部链接描述文字，如“查看详情”
@@ -55,52 +55,129 @@ public class Context extends AlipayObject {
 	@ApiField("url")
 	private String url;
 
-	public String getActionName() {
+    /**
+     * Gets action name.
+     *
+     * @return the action name
+     */
+    public String getActionName() {
 		return this.actionName;
 	}
-	public void setActionName(String actionName) {
+
+    /**
+     * Sets action name.
+     *
+     * @param actionName the action name
+     */
+    public void setActionName(String actionName) {
 		this.actionName = actionName;
 	}
 
-	public Keyword getFirst() {
+    /**
+     * Gets first.
+     *
+     * @return the first
+     */
+    public Keyword getFirst() {
 		return this.first;
 	}
-	public void setFirst(Keyword first) {
+
+    /**
+     * Sets first.
+     *
+     * @param first the first
+     */
+    public void setFirst(Keyword first) {
 		this.first = first;
 	}
 
-	public String getHeadColor() {
+    /**
+     * Gets head color.
+     *
+     * @return the head color
+     */
+    public String getHeadColor() {
 		return this.headColor;
 	}
-	public void setHeadColor(String headColor) {
+
+    /**
+     * Sets head color.
+     *
+     * @param headColor the head color
+     */
+    public void setHeadColor(String headColor) {
 		this.headColor = headColor;
 	}
 
-	public Keyword getKeyword1() {
+    /**
+     * Gets keyword 1.
+     *
+     * @return the keyword 1
+     */
+    public Keyword getKeyword1() {
 		return this.keyword1;
 	}
-	public void setKeyword1(Keyword keyword1) {
+
+    /**
+     * Sets keyword 1.
+     *
+     * @param keyword1 the keyword 1
+     */
+    public void setKeyword1(Keyword keyword1) {
 		this.keyword1 = keyword1;
 	}
 
-	public Keyword getKeyword2() {
+    /**
+     * Gets keyword 2.
+     *
+     * @return the keyword 2
+     */
+    public Keyword getKeyword2() {
 		return this.keyword2;
 	}
-	public void setKeyword2(Keyword keyword2) {
+
+    /**
+     * Sets keyword 2.
+     *
+     * @param keyword2 the keyword 2
+     */
+    public void setKeyword2(Keyword keyword2) {
 		this.keyword2 = keyword2;
 	}
 
-	public Keyword getRemark() {
+    /**
+     * Gets remark.
+     *
+     * @return the remark
+     */
+    public Keyword getRemark() {
 		return this.remark;
 	}
-	public void setRemark(Keyword remark) {
+
+    /**
+     * Sets remark.
+     *
+     * @param remark the remark
+     */
+    public void setRemark(Keyword remark) {
 		this.remark = remark;
 	}
 
-	public String getUrl() {
+    /**
+     * Gets url.
+     *
+     * @return the url
+     */
+    public String getUrl() {
 		return this.url;
 	}
-	public void setUrl(String url) {
+
+    /**
+     * Sets url.
+     *
+     * @param url the url
+     */
+    public void setUrl(String url) {
 		this.url = url;
 	}
 

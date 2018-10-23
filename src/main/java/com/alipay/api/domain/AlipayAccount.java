@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayAccount extends AlipayObject {
 
-	private static final long serialVersionUID = 1486181175824599284L;
+	private static final long serialVersionUID = 4611944681975353445L;
 
 	/**
 	 * 支付宝用户ID
@@ -37,31 +37,75 @@ public class AlipayAccount extends AlipayObject {
 	@ApiField("total_amount")
 	private String totalAmount;
 
-	public String getAlipayUserId() {
+    /**
+     * Gets alipay user id.
+     *
+     * @return the alipay user id
+     */
+    public String getAlipayUserId() {
 		return this.alipayUserId;
 	}
-	public void setAlipayUserId(String alipayUserId) {
+
+    /**
+     * Sets alipay user id.
+     *
+     * @param alipayUserId the alipay user id
+     */
+    public void setAlipayUserId(String alipayUserId) {
 		this.alipayUserId = alipayUserId;
 	}
 
-	public String getAvailableAmount() {
+    /**
+     * Gets available amount.
+     *
+     * @return the available amount
+     */
+    public String getAvailableAmount() {
 		return this.availableAmount;
 	}
-	public void setAvailableAmount(String availableAmount) {
+
+    /**
+     * Sets available amount.
+     *
+     * @param availableAmount the available amount
+     */
+    public void setAvailableAmount(String availableAmount) {
 		this.availableAmount = availableAmount;
 	}
 
-	public String getFreezeAmount() {
+    /**
+     * Gets freeze amount.
+     *
+     * @return the freeze amount
+     */
+    public String getFreezeAmount() {
 		return this.freezeAmount;
 	}
-	public void setFreezeAmount(String freezeAmount) {
+
+    /**
+     * Sets freeze amount.
+     *
+     * @param freezeAmount the freeze amount
+     */
+    public void setFreezeAmount(String freezeAmount) {
 		this.freezeAmount = freezeAmount;
 	}
 
-	public String getTotalAmount() {
+    /**
+     * Gets total amount.
+     *
+     * @return the total amount
+     */
+    public String getTotalAmount() {
 		return this.totalAmount;
 	}
-	public void setTotalAmount(String totalAmount) {
+
+    /**
+     * Sets total amount.
+     *
+     * @param totalAmount the total amount
+     */
+    public void setTotalAmount(String totalAmount) {
 		this.totalAmount = totalAmount;
 	}
 

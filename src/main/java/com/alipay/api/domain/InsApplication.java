@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsApplication extends AlipayObject {
 
-	private static final long serialVersionUID = 4197842552851926481L;
+	private static final long serialVersionUID = 6112661775458117227L;
 
 	/**
 	 * 投保参数 ,每个产品特有的投保参数,如航空险的航班信息;标准json格式
@@ -69,66 +69,165 @@ public class InsApplication extends AlipayObject {
 	@ApiField("sum_insured")
 	private Long sumInsured;
 
-	public String getBizData() {
+    /**
+     * Gets biz data.
+     *
+     * @return the biz data
+     */
+    public String getBizData() {
 		return this.bizData;
 	}
-	public void setBizData(String bizData) {
+
+    /**
+     * Sets biz data.
+     *
+     * @param bizData the biz data
+     */
+    public void setBizData(String bizData) {
 		this.bizData = bizData;
 	}
 
-	public Long getCopies() {
+    /**
+     * Gets copies.
+     *
+     * @return the copies
+     */
+    public Long getCopies() {
 		return this.copies;
 	}
-	public void setCopies(Long copies) {
+
+    /**
+     * Sets copies.
+     *
+     * @param copies the copies
+     */
+    public void setCopies(Long copies) {
 		this.copies = copies;
 	}
 
-	public Date getEffectEndTime() {
+    /**
+     * Gets effect end time.
+     *
+     * @return the effect end time
+     */
+    public Date getEffectEndTime() {
 		return this.effectEndTime;
 	}
-	public void setEffectEndTime(Date effectEndTime) {
+
+    /**
+     * Sets effect end time.
+     *
+     * @param effectEndTime the effect end time
+     */
+    public void setEffectEndTime(Date effectEndTime) {
 		this.effectEndTime = effectEndTime;
 	}
 
-	public Date getEffectStartTime() {
+    /**
+     * Gets effect start time.
+     *
+     * @return the effect start time
+     */
+    public Date getEffectStartTime() {
 		return this.effectStartTime;
 	}
-	public void setEffectStartTime(Date effectStartTime) {
+
+    /**
+     * Sets effect start time.
+     *
+     * @param effectStartTime the effect start time
+     */
+    public void setEffectStartTime(Date effectStartTime) {
 		this.effectStartTime = effectStartTime;
 	}
 
-	public InsObject getInsObject() {
+    /**
+     * Gets ins object.
+     *
+     * @return the ins object
+     */
+    public InsObject getInsObject() {
 		return this.insObject;
 	}
-	public void setInsObject(InsObject insObject) {
+
+    /**
+     * Sets ins object.
+     *
+     * @param insObject the ins object
+     */
+    public void setInsObject(InsObject insObject) {
 		this.insObject = insObject;
 	}
 
-	public InsPerson getInsured() {
+    /**
+     * Gets insured.
+     *
+     * @return the insured
+     */
+    public InsPerson getInsured() {
 		return this.insured;
 	}
-	public void setInsured(InsPerson insured) {
+
+    /**
+     * Sets insured.
+     *
+     * @param insured the insured
+     */
+    public void setInsured(InsPerson insured) {
 		this.insured = insured;
 	}
 
-	public String getPeriod() {
+    /**
+     * Gets period.
+     *
+     * @return the period
+     */
+    public String getPeriod() {
 		return this.period;
 	}
-	public void setPeriod(String period) {
+
+    /**
+     * Sets period.
+     *
+     * @param period the period
+     */
+    public void setPeriod(String period) {
 		this.period = period;
 	}
 
-	public Long getPremium() {
+    /**
+     * Gets premium.
+     *
+     * @return the premium
+     */
+    public Long getPremium() {
 		return this.premium;
 	}
-	public void setPremium(Long premium) {
+
+    /**
+     * Sets premium.
+     *
+     * @param premium the premium
+     */
+    public void setPremium(Long premium) {
 		this.premium = premium;
 	}
 
-	public Long getSumInsured() {
+    /**
+     * Gets sum insured.
+     *
+     * @return the sum insured
+     */
+    public Long getSumInsured() {
 		return this.sumInsured;
 	}
-	public void setSumInsured(Long sumInsured) {
+
+    /**
+     * Sets sum insured.
+     *
+     * @param sumInsured the sum insured
+     */
+    public void setSumInsured(Long sumInsured) {
 		this.sumInsured = sumInsured;
 	}
 

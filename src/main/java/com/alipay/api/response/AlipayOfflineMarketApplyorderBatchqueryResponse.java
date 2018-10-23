@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.market.applyorder.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-06 11:11:37
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayOfflineMarketApplyorderBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3613978557344457843L;
+	private static final long serialVersionUID = 7567268213673479262L;
 
 	/** 
 	 * 支付宝操作流水信息列表
@@ -48,38 +48,93 @@ public class AlipayOfflineMarketApplyorderBatchqueryResponse extends AlipayRespo
 	@ApiField("total_page_no")
 	private Long totalPageNo;
 
-	public void setBizOrderInfos(List<BizOrderQueryResponse> bizOrderInfos) {
+    /**
+     * Sets biz order infos.
+     *
+     * @param bizOrderInfos the biz order infos
+     */
+    public void setBizOrderInfos(List<BizOrderQueryResponse> bizOrderInfos) {
 		this.bizOrderInfos = bizOrderInfos;
 	}
-	public List<BizOrderQueryResponse> getBizOrderInfos( ) {
+
+    /**
+     * Gets biz order infos.
+     *
+     * @return the biz order infos
+     */
+    public List<BizOrderQueryResponse> getBizOrderInfos( ) {
 		return this.bizOrderInfos;
 	}
 
-	public void setCurrentPageNo(Long currentPageNo) {
+    /**
+     * Sets current page no.
+     *
+     * @param currentPageNo the current page no
+     */
+    public void setCurrentPageNo(Long currentPageNo) {
 		this.currentPageNo = currentPageNo;
 	}
-	public Long getCurrentPageNo( ) {
+
+    /**
+     * Gets current page no.
+     *
+     * @return the current page no
+     */
+    public Long getCurrentPageNo( ) {
 		return this.currentPageNo;
 	}
 
-	public void setPageSize(Long pageSize) {
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}
-	public Long getPageSize( ) {
+
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public Long getPageSize( ) {
 		return this.pageSize;
 	}
 
-	public void setTotalItems(Long totalItems) {
+    /**
+     * Sets total items.
+     *
+     * @param totalItems the total items
+     */
+    public void setTotalItems(Long totalItems) {
 		this.totalItems = totalItems;
 	}
-	public Long getTotalItems( ) {
+
+    /**
+     * Gets total items.
+     *
+     * @return the total items
+     */
+    public Long getTotalItems( ) {
 		return this.totalItems;
 	}
 
-	public void setTotalPageNo(Long totalPageNo) {
+    /**
+     * Sets total page no.
+     *
+     * @param totalPageNo the total page no
+     */
+    public void setTotalPageNo(Long totalPageNo) {
 		this.totalPageNo = totalPageNo;
 	}
-	public Long getTotalPageNo( ) {
+
+    /**
+     * Gets total page no.
+     *
+     * @return the total page no
+     */
+    public Long getTotalPageNo( ) {
 		return this.totalPageNo;
 	}
 

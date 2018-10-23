@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecruitShopInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6257917813416624477L;
+	private static final long serialVersionUID = 2615322982122975352L;
 
 	/**
 	 * 已确认还是未确认
@@ -37,31 +37,75 @@ public class RecruitShopInfo extends AlipayObject {
 	@ApiField("shop_name")
 	private String shopName;
 
-	public String getConfirmStatus() {
+    /**
+     * Gets confirm status.
+     *
+     * @return the confirm status
+     */
+    public String getConfirmStatus() {
 		return this.confirmStatus;
 	}
-	public void setConfirmStatus(String confirmStatus) {
+
+    /**
+     * Sets confirm status.
+     *
+     * @param confirmStatus the confirm status
+     */
+    public void setConfirmStatus(String confirmStatus) {
 		this.confirmStatus = confirmStatus;
 	}
 
-	public String getShopCategory() {
+    /**
+     * Gets shop category.
+     *
+     * @return the shop category
+     */
+    public String getShopCategory() {
 		return this.shopCategory;
 	}
-	public void setShopCategory(String shopCategory) {
+
+    /**
+     * Sets shop category.
+     *
+     * @param shopCategory the shop category
+     */
+    public void setShopCategory(String shopCategory) {
 		this.shopCategory = shopCategory;
 	}
 
-	public String getShopId() {
+    /**
+     * Gets shop id.
+     *
+     * @return the shop id
+     */
+    public String getShopId() {
 		return this.shopId;
 	}
-	public void setShopId(String shopId) {
+
+    /**
+     * Sets shop id.
+     *
+     * @param shopId the shop id
+     */
+    public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 
-	public String getShopName() {
+    /**
+     * Gets shop name.
+     *
+     * @return the shop name
+     */
+    public String getShopName() {
 		return this.shopName;
 	}
-	public void setShopName(String shopName) {
+
+    /**
+     * Sets shop name.
+     *
+     * @param shopName the shop name
+     */
+    public void setShopName(String shopName) {
 		this.shopName = shopName;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicQrcodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3322597782575477149L;
+	private static final long serialVersionUID = 5638196541757244549L;
 
 	/**
 	 * 服务窗创建带参二维码接口，开发者自定义信息
@@ -40,31 +40,75 @@ PERM：永久的
 	@ApiField("show_logo")
 	private String showLogo;
 
-	public CodeInfo getCodeInfo() {
+    /**
+     * Gets code info.
+     *
+     * @return the code info
+     */
+    public CodeInfo getCodeInfo() {
 		return this.codeInfo;
 	}
-	public void setCodeInfo(CodeInfo codeInfo) {
+
+    /**
+     * Sets code info.
+     *
+     * @param codeInfo the code info
+     */
+    public void setCodeInfo(CodeInfo codeInfo) {
 		this.codeInfo = codeInfo;
 	}
 
-	public String getCodeType() {
+    /**
+     * Gets code type.
+     *
+     * @return the code type
+     */
+    public String getCodeType() {
 		return this.codeType;
 	}
-	public void setCodeType(String codeType) {
+
+    /**
+     * Sets code type.
+     *
+     * @param codeType the code type
+     */
+    public void setCodeType(String codeType) {
 		this.codeType = codeType;
 	}
 
-	public String getExpireSecond() {
+    /**
+     * Gets expire second.
+     *
+     * @return the expire second
+     */
+    public String getExpireSecond() {
 		return this.expireSecond;
 	}
-	public void setExpireSecond(String expireSecond) {
+
+    /**
+     * Sets expire second.
+     *
+     * @param expireSecond the expire second
+     */
+    public void setExpireSecond(String expireSecond) {
 		this.expireSecond = expireSecond;
 	}
 
-	public String getShowLogo() {
+    /**
+     * Gets show logo.
+     *
+     * @return the show logo
+     */
+    public String getShowLogo() {
 		return this.showLogo;
 	}
-	public void setShowLogo(String showLogo) {
+
+    /**
+     * Sets show logo.
+     *
+     * @param showLogo the show logo
+     */
+    public void setShowLogo(String showLogo) {
 		this.showLogo = showLogo;
 	}
 

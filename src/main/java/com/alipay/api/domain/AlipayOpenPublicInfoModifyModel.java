@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenPublicInfoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7715122666635647911L;
+	private static final long serialVersionUID = 3413437413691124976L;
 
 	/**
 	 * 生活号名称，2-20个字之间；不得含有违反法律法规和公序良俗的相关信息；不得侵害他人名誉权、知识产权、商业秘密等合法权利；不得以太过广泛的、或产品、行业词组来命名，如：女装、皮革批发；不得以实名认证的媒体资质账号创建服务窗，或媒体相关名称命名服务窗，如：XX电视台、XX杂志等
@@ -65,59 +65,147 @@ public class AlipayOpenPublicInfoModifyModel extends AlipayObject {
 	@ApiField("string")
 	private List<String> shopPics;
 
-	public String getAppName() {
+    /**
+     * Gets app name.
+     *
+     * @return the app name
+     */
+    public String getAppName() {
 		return this.appName;
 	}
-	public void setAppName(String appName) {
+
+    /**
+     * Sets app name.
+     *
+     * @param appName the app name
+     */
+    public void setAppName(String appName) {
 		this.appName = appName;
 	}
 
-	public String getAuthPic() {
+    /**
+     * Gets auth pic.
+     *
+     * @return the auth pic
+     */
+    public String getAuthPic() {
 		return this.authPic;
 	}
-	public void setAuthPic(String authPic) {
+
+    /**
+     * Sets auth pic.
+     *
+     * @param authPic the auth pic
+     */
+    public void setAuthPic(String authPic) {
 		this.authPic = authPic;
 	}
 
-	public String getBackgroundUrl() {
+    /**
+     * Gets background url.
+     *
+     * @return the background url
+     */
+    public String getBackgroundUrl() {
 		return this.backgroundUrl;
 	}
-	public void setBackgroundUrl(String backgroundUrl) {
+
+    /**
+     * Sets background url.
+     *
+     * @param backgroundUrl the background url
+     */
+    public void setBackgroundUrl(String backgroundUrl) {
 		this.backgroundUrl = backgroundUrl;
 	}
 
-	public String getIntroduction() {
+    /**
+     * Gets introduction.
+     *
+     * @return the introduction
+     */
+    public String getIntroduction() {
 		return this.introduction;
 	}
-	public void setIntroduction(String introduction) {
+
+    /**
+     * Sets introduction.
+     *
+     * @param introduction the introduction
+     */
+    public void setIntroduction(String introduction) {
 		this.introduction = introduction;
 	}
 
-	public String getLicenseUrl() {
+    /**
+     * Gets license url.
+     *
+     * @return the license url
+     */
+    public String getLicenseUrl() {
 		return this.licenseUrl;
 	}
-	public void setLicenseUrl(String licenseUrl) {
+
+    /**
+     * Sets license url.
+     *
+     * @param licenseUrl the license url
+     */
+    public void setLicenseUrl(String licenseUrl) {
 		this.licenseUrl = licenseUrl;
 	}
 
-	public String getLogoUrl() {
+    /**
+     * Gets logo url.
+     *
+     * @return the logo url
+     */
+    public String getLogoUrl() {
 		return this.logoUrl;
 	}
-	public void setLogoUrl(String logoUrl) {
+
+    /**
+     * Sets logo url.
+     *
+     * @param logoUrl the logo url
+     */
+    public void setLogoUrl(String logoUrl) {
 		this.logoUrl = logoUrl;
 	}
 
-	public String getPublicGreeting() {
+    /**
+     * Gets public greeting.
+     *
+     * @return the public greeting
+     */
+    public String getPublicGreeting() {
 		return this.publicGreeting;
 	}
-	public void setPublicGreeting(String publicGreeting) {
+
+    /**
+     * Sets public greeting.
+     *
+     * @param publicGreeting the public greeting
+     */
+    public void setPublicGreeting(String publicGreeting) {
 		this.publicGreeting = publicGreeting;
 	}
 
-	public List<String> getShopPics() {
+    /**
+     * Gets shop pics.
+     *
+     * @return the shop pics
+     */
+    public List<String> getShopPics() {
 		return this.shopPics;
 	}
-	public void setShopPics(List<String> shopPics) {
+
+    /**
+     * Sets shop pics.
+     *
+     * @param shopPics the shop pics
+     */
+    public void setShopPics(List<String> shopPics) {
 		this.shopPics = shopPics;
 	}
 

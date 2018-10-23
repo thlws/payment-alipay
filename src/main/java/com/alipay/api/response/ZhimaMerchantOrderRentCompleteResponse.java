@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: zhima.merchant.order.rent.complete response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-26 12:59:52
+ * @since 1.0, 2018-07-06 15:50:00
  */
 public class ZhimaMerchantOrderRentCompleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8481183882342573412L;
+	private static final long serialVersionUID = 6151325162221355149L;
 
 	/** 
 	 * 资金流水号，用于商户与支付宝进行对账
@@ -32,24 +32,57 @@ public class ZhimaMerchantOrderRentCompleteResponse extends AlipayResponse {
 	@ApiField("user_id")
 	private String userId;
 
-	public void setAlipayFundOrderNo(String alipayFundOrderNo) {
+    /**
+     * Sets alipay fund order no.
+     *
+     * @param alipayFundOrderNo the alipay fund order no
+     */
+    public void setAlipayFundOrderNo(String alipayFundOrderNo) {
 		this.alipayFundOrderNo = alipayFundOrderNo;
 	}
-	public String getAlipayFundOrderNo( ) {
+
+    /**
+     * Gets alipay fund order no.
+     *
+     * @return the alipay fund order no
+     */
+    public String getAlipayFundOrderNo( ) {
 		return this.alipayFundOrderNo;
 	}
 
-	public void setOrderNo(String orderNo) {
+    /**
+     * Sets order no.
+     *
+     * @param orderNo the order no
+     */
+    public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
-	public String getOrderNo( ) {
+
+    /**
+     * Gets order no.
+     *
+     * @return the order no
+     */
+    public String getOrderNo( ) {
 		return this.orderNo;
 	}
 
-	public void setUserId(String userId) {
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public String getUserId( ) {
+
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId( ) {
 		return this.userId;
 	}
 

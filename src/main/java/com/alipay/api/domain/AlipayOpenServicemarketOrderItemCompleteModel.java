@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务商完成订单内单个明细实施操作
  *
  * @author auto create
- * @since 1.0, 2016-08-25 11:11:25
+ * @since 1.0, 2018-07-06 14:52:26
  */
 public class AlipayOpenServicemarketOrderItemCompleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1842476281123247245L;
+	private static final long serialVersionUID = 5159129958638887474L;
 
 	/**
 	 * 订购服务插件订单号
@@ -20,22 +20,68 @@ public class AlipayOpenServicemarketOrderItemCompleteModel extends AlipayObject 
 	private String commodityOrderId;
 
 	/**
-	 * 订购插件选择的某一店铺ID
+	 * 商家订购服务选择的某一小程序的APPID，如果该订单为蚂蚁服务市场发布的小程序插件服务所产生的订单，则此字段必填
+	 */
+	@ApiField("mini_app_id")
+	private String miniAppId;
+
+	/**
+	 * 商家订购服务选择的某一门店的ID，如果该订单为口碑服务市场发布的服务所产生的订单，则此字段必填
 	 */
 	@ApiField("shop_id")
 	private String shopId;
 
-	public String getCommodityOrderId() {
+    /**
+     * Gets commodity order id.
+     *
+     * @return the commodity order id
+     */
+    public String getCommodityOrderId() {
 		return this.commodityOrderId;
 	}
-	public void setCommodityOrderId(String commodityOrderId) {
+
+    /**
+     * Sets commodity order id.
+     *
+     * @param commodityOrderId the commodity order id
+     */
+    public void setCommodityOrderId(String commodityOrderId) {
 		this.commodityOrderId = commodityOrderId;
 	}
 
-	public String getShopId() {
+    /**
+     * Gets mini app id.
+     *
+     * @return the mini app id
+     */
+    public String getMiniAppId() {
+		return this.miniAppId;
+	}
+
+    /**
+     * Sets mini app id.
+     *
+     * @param miniAppId the mini app id
+     */
+    public void setMiniAppId(String miniAppId) {
+		this.miniAppId = miniAppId;
+	}
+
+    /**
+     * Gets shop id.
+     *
+     * @return the shop id
+     */
+    public String getShopId() {
 		return this.shopId;
 	}
-	public void setShopId(String shopId) {
+
+    /**
+     * Sets shop id.
+     *
+     * @param shopId the shop id
+     */
+    public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 

@@ -9,9 +9,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: koubei.marketing.campaign.tags.query request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-26 11:31:35
+ * @since 1.0, 2018-07-26 14:03:55
  */
 public class KoubeiMarketingCampaignTagsQueryRequest implements AlipayRequest<KoubeiMarketingCampaignTagsQueryResponse> {
 
@@ -85,7 +85,13 @@ public class KoubeiMarketingCampaignTagsQueryRequest implements AlipayRequest<Ko
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

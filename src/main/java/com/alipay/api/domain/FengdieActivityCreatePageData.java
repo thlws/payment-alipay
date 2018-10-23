@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FengdieActivityCreatePageData extends AlipayObject {
 
-	private static final long serialVersionUID = 4839243623847893888L;
+	private static final long serialVersionUID = 5751179763214431285L;
 
 	/**
 	 * H5应用中页面名称。指定凤蝶开发工具项目中某个H5应用的页面名称。
@@ -25,17 +25,39 @@ public class FengdieActivityCreatePageData extends AlipayObject {
 	@ApiField("schema_data")
 	private String schemaData;
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getSchemaData() {
+    /**
+     * Gets schema data.
+     *
+     * @return the schema data
+     */
+    public String getSchemaData() {
 		return this.schemaData;
 	}
-	public void setSchemaData(String schemaData) {
+
+    /**
+     * Sets schema data.
+     *
+     * @param schemaData the schema data
+     */
+    public void setSchemaData(String schemaData) {
 		this.schemaData = schemaData;
 	}
 

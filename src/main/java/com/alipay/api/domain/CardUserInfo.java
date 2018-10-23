@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CardUserInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7633767243124174145L;
+	private static final long serialVersionUID = 5355493255389727941L;
 
 	/**
 	 * 用户唯一标识, 根据user_id_type类型来定 （目前暂支持支付宝userId）
@@ -27,17 +27,39 @@ public class CardUserInfo extends AlipayObject {
 	@ApiField("user_uni_id_type")
 	private String userUniIdType;
 
-	public String getUserUniId() {
+    /**
+     * Gets user uni id.
+     *
+     * @return the user uni id
+     */
+    public String getUserUniId() {
 		return this.userUniId;
 	}
-	public void setUserUniId(String userUniId) {
+
+    /**
+     * Sets user uni id.
+     *
+     * @param userUniId the user uni id
+     */
+    public void setUserUniId(String userUniId) {
 		this.userUniId = userUniId;
 	}
 
-	public String getUserUniIdType() {
+    /**
+     * Gets user uni id type.
+     *
+     * @return the user uni id type
+     */
+    public String getUserUniIdType() {
 		return this.userUniIdType;
 	}
-	public void setUserUniIdType(String userUniIdType) {
+
+    /**
+     * Sets user uni id type.
+     *
+     * @param userUniIdType the user uni id type
+     */
+    public void setUserUniIdType(String userUniIdType) {
 		this.userUniIdType = userUniIdType;
 	}
 

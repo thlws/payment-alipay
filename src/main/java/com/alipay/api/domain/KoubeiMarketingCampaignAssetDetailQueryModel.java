@@ -7,35 +7,57 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询资产的详情信息
  *
  * @author auto create
- * @since 1.0, 2017-08-08 19:56:04
+ * @since 1.0, 2018-01-10 14:14:43
  */
 public class KoubeiMarketingCampaignAssetDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1122516316476491829L;
+	private static final long serialVersionUID = 7768787677836183563L;
 
 	/**
-	 * 用户资产id，配合《用户口碑优惠资产查询接口》使用，返回券资产信息列表中的asset_id则为传递的入参值。
+	 * 用户资产id，配合《用户口碑优惠资产查询接口koubei.marketing.campaign.user.asset.query》使用，返回信息列表中的asset_id则为传递的入参值。
 	 */
 	@ApiField("asset_id")
 	private String assetId;
 
 	/**
-	 * 资产类型(VOUCHER:券资产)  配合《用户口碑优惠资产查询接口》使用，返回券资产详情信息，则对应VOUCHER类型
+	 * 配合《用户口碑优惠资产查询接口koubei.marketing.campaign.user.asset.query》查询券列表数据使用，如果获取的是voucher_asset_list数据，则对应的枚举为：VOUCHER；（目前只支持该类型）
 	 */
 	@ApiField("asset_type")
 	private String assetType;
 
-	public String getAssetId() {
+    /**
+     * Gets asset id.
+     *
+     * @return the asset id
+     */
+    public String getAssetId() {
 		return this.assetId;
 	}
-	public void setAssetId(String assetId) {
+
+    /**
+     * Sets asset id.
+     *
+     * @param assetId the asset id
+     */
+    public void setAssetId(String assetId) {
 		this.assetId = assetId;
 	}
 
-	public String getAssetType() {
+    /**
+     * Gets asset type.
+     *
+     * @return the asset type
+     */
+    public String getAssetType() {
 		return this.assetType;
 	}
-	public void setAssetType(String assetType) {
+
+    /**
+     * Sets asset type.
+     *
+     * @param assetType the asset type
+     */
+    public void setAssetType(String assetType) {
 		this.assetType = assetType;
 	}
 

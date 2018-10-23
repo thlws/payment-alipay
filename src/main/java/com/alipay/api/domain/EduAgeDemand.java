@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EduAgeDemand extends AlipayObject {
 
-	private static final long serialVersionUID = 2176656125457159873L;
+	private static final long serialVersionUID = 5273585976312655427L;
 
 	/**
 	 * 结束年龄
@@ -25,17 +25,39 @@ public class EduAgeDemand extends AlipayObject {
 	@ApiField("age_start")
 	private String ageStart;
 
-	public String getAgeEnd() {
+    /**
+     * Gets age end.
+     *
+     * @return the age end
+     */
+    public String getAgeEnd() {
 		return this.ageEnd;
 	}
-	public void setAgeEnd(String ageEnd) {
+
+    /**
+     * Sets age end.
+     *
+     * @param ageEnd the age end
+     */
+    public void setAgeEnd(String ageEnd) {
 		this.ageEnd = ageEnd;
 	}
 
-	public String getAgeStart() {
+    /**
+     * Gets age start.
+     *
+     * @return the age start
+     */
+    public String getAgeStart() {
 		return this.ageStart;
 	}
-	public void setAgeStart(String ageStart) {
+
+    /**
+     * Sets age start.
+     *
+     * @param ageStart the age start
+     */
+    public void setAgeStart(String ageStart) {
 		this.ageStart = ageStart;
 	}
 

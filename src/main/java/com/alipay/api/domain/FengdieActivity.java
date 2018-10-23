@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class FengdieActivity extends AlipayObject {
 
-	private static final long serialVersionUID = 7115332243883277827L;
+	private static final long serialVersionUID = 5284461489424425341L;
 
 	/**
 	 * H5应用的唯一id，调用alipay.marketing.tool.fengdie.activity.create接口时自动生成
@@ -78,73 +78,183 @@ public class FengdieActivity extends AlipayObject {
 	@ApiField("title")
 	private String title;
 
-	public Long getId() {
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
+    public Long getId() {
 		return this.id;
 	}
-	public void setId(Long id) {
+
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
+    public void setId(Long id) {
 		this.id = id;
 	}
 
-	public Boolean getIsOnline() {
+    /**
+     * Gets is online.
+     *
+     * @return the is online
+     */
+    public Boolean getIsOnline() {
 		return this.isOnline;
 	}
-	public void setIsOnline(Boolean isOnline) {
+
+    /**
+     * Sets is online.
+     *
+     * @param isOnline the is online
+     */
+    public void setIsOnline(Boolean isOnline) {
 		this.isOnline = isOnline;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getNickName() {
+    /**
+     * Gets nick name.
+     *
+     * @return the nick name
+     */
+    public String getNickName() {
 		return this.nickName;
 	}
-	public void setNickName(String nickName) {
+
+    /**
+     * Sets nick name.
+     *
+     * @param nickName the nick name
+     */
+    public void setNickName(String nickName) {
 		this.nickName = nickName;
 	}
 
-	public Date getOfflineTime() {
+    /**
+     * Gets offline time.
+     *
+     * @return the offline time
+     */
+    public Date getOfflineTime() {
 		return this.offlineTime;
 	}
-	public void setOfflineTime(Date offlineTime) {
+
+    /**
+     * Sets offline time.
+     *
+     * @param offlineTime the offline time
+     */
+    public void setOfflineTime(Date offlineTime) {
 		this.offlineTime = offlineTime;
 	}
 
-	public List<FengdieActivityPage> getPage() {
+    /**
+     * Gets page.
+     *
+     * @return the page
+     */
+    public List<FengdieActivityPage> getPage() {
 		return this.page;
 	}
-	public void setPage(List<FengdieActivityPage> page) {
+
+    /**
+     * Sets page.
+     *
+     * @param page the page
+     */
+    public void setPage(List<FengdieActivityPage> page) {
 		this.page = page;
 	}
 
-	public Date getPublishTime() {
+    /**
+     * Gets publish time.
+     *
+     * @return the publish time
+     */
+    public Date getPublishTime() {
 		return this.publishTime;
 	}
-	public void setPublishTime(Date publishTime) {
+
+    /**
+     * Sets publish time.
+     *
+     * @param publishTime the publish time
+     */
+    public void setPublishTime(Date publishTime) {
 		this.publishTime = publishTime;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 
-	public Long getTemplateId() {
+    /**
+     * Gets template id.
+     *
+     * @return the template id
+     */
+    public Long getTemplateId() {
 		return this.templateId;
 	}
-	public void setTemplateId(Long templateId) {
+
+    /**
+     * Sets template id.
+     *
+     * @param templateId the template id
+     */
+    public void setTemplateId(Long templateId) {
 		this.templateId = templateId;
 	}
 
-	public String getTitle() {
+    /**
+     * Gets title.
+     *
+     * @return the title
+     */
+    public String getTitle() {
 		return this.title;
 	}
-	public void setTitle(String title) {
+
+    /**
+     * Sets title.
+     *
+     * @param title the title
+     */
+    public void setTitle(String title) {
 		this.title = title;
 	}
 

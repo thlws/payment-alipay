@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询转账订单接口
  *
  * @author auto create
- * @since 1.0, 2017-02-09 15:07:43
+ * @since 1.0, 2017-12-27 15:18:38
  */
 public class AlipayFundTransOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3839221681246428255L;
+	private static final long serialVersionUID = 6642737917782892117L;
 
 	/**
 	 * 支付宝转账单据号：和商户转账唯一订单号不能同时为空。当和商户转账唯一订单号同时提供时，将用本参数进行查询，忽略商户转账唯一订单号。
@@ -26,17 +26,39 @@ public class AlipayFundTransOrderQueryModel extends AlipayObject {
 	@ApiField("out_biz_no")
 	private String outBizNo;
 
-	public String getOrderId() {
+    /**
+     * Gets order id.
+     *
+     * @return the order id
+     */
+    public String getOrderId() {
 		return this.orderId;
 	}
-	public void setOrderId(String orderId) {
+
+    /**
+     * Sets order id.
+     *
+     * @param orderId the order id
+     */
+    public void setOrderId(String orderId) {
 		this.orderId = orderId;
 	}
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 

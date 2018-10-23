@@ -8,14 +8,14 @@ import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 用于在线下场景交易一次创建并支付掉
-修改路由策略到R
+ * 修改路由策略到R
  *
  * @author auto create
- * @since 1.0, 2017-09-29 10:50:10
+ * @since 1.0, 2018-09-11 16:42:52
  */
 public class AlipayTradePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4683166725429795913L;
+	private static final long serialVersionUID = 2751487184996738468L;
 
 	/**
 	 * 代扣业务需要传入协议相关信息
@@ -34,6 +34,13 @@ public class AlipayTradePayModel extends AlipayObject {
 	 */
 	@ApiField("auth_code")
 	private String authCode;
+
+	/**
+	 * 预授权确认模式，授权转交易请求中传入，适用于预授权转交易业务使用，目前只支持PRE_AUTH(预授权产品码)
+COMPLETE：转交易支付完成结束预授权，解冻剩余金额; NOT_COMPLETE：转交易支付完成不结束预授权，不解冻剩余金额
+	 */
+	@ApiField("auth_confirm_mode")
+	private String authConfirmMode;
 
 	/**
 	 * 预授权号，预授权转交易请求中传入，适用于预授权转交易业务使用，目前只支持FUND_TRADE_FAST_PAY（资金订单即时到帐交易）、境外预授权产品（OVERSEAS_AUTH_PAY）两个产品。
@@ -85,7 +92,7 @@ public class AlipayTradePayModel extends AlipayObject {
 	private ExtendParams extendParams;
 
 	/**
-	 * 订单包含的商品列表信息，Json格式，其它说明详见商品明细说明
+	 * 订单包含的商品列表信息，json格式，其它说明详见商品明细说明
 	 */
 	@ApiListField("goods_detail")
 	@ApiField("goods_detail")
@@ -116,7 +123,7 @@ public class AlipayTradePayModel extends AlipayObject {
 	private String productCode;
 
 	/**
-	 * 描述分账信息，Json格式，其它说明详见分账说明
+	 * 描述分账信息，json格式，其它说明详见分账说明
 	 */
 	@ApiField("royalty_info")
 	private RoyaltyInfo royaltyInfo;
@@ -134,6 +141,18 @@ public class AlipayTradePayModel extends AlipayObject {
 	 */
 	@ApiField("seller_id")
 	private String sellerId;
+
+	/**
+	 * 商户指定的结算币种，支持英镑：GBP、港币：HKD、美元：USD、新加坡元：SGD、日元：JPY、加拿大元：CAD、澳元：AUD、欧元：EUR、新西兰元：NZD、韩元：KRW、泰铢：THB、瑞士法郎：CHF、瑞典克朗：SEK、丹麦克朗：DKK、挪威克朗：NOK、马来西亚林吉特：MYR、印尼卢比：IDR、菲律宾比索：PHP、毛里求斯卢比：MUR、以色列新谢克尔：ILS、斯里兰卡卢比：LKR、俄罗斯卢布：RUB、阿联酋迪拉姆：AED、捷克克朗：CZK、南非兰特：ZAR、人民币：CNY
+	 */
+	@ApiField("settle_currency")
+	private String settleCurrency;
+
+	/**
+	 * 描述结算信息，json格式，详见结算参数说明
+	 */
+	@ApiField("settle_info")
+	private SettleInfo settleInfo;
 
 	/**
 	 * 商户门店编号
@@ -160,6 +179,12 @@ public class AlipayTradePayModel extends AlipayObject {
 	private String terminalId;
 
 	/**
+	 * 商户传入终端设备相关信息，具体值要和支付宝约定
+	 */
+	@ApiField("terminal_params")
+	private String terminalParams;
+
+	/**
 	 * 该笔订单允许的最晚付款时间，逾期将关闭交易。取值范围：1m～15d。m-分钟，h-小时，d-天，1c-当天（1c-当天的情况下，无论交易何时创建，都在0点关闭）。 该参数数值不接受小数点， 如 1.5h，可转换为 90m
 	 */
 	@ApiField("timeout_express")
@@ -174,190 +199,572 @@ public class AlipayTradePayModel extends AlipayObject {
 	private String totalAmount;
 
 	/**
+	 * 标价币种,  total_amount 对应的币种单位。支持英镑：GBP、港币：HKD、美元：USD、新加坡元：SGD、日元：JPY、加拿大元：CAD、澳元：AUD、欧元：EUR、新西兰元：NZD、韩元：KRW、泰铢：THB、瑞士法郎：CHF、瑞典克朗：SEK、丹麦克朗：DKK、挪威克朗：NOK、马来西亚林吉特：MYR、印尼卢比：IDR、菲律宾比索：PHP、毛里求斯卢比：MUR、以色列新谢克尔：ILS、斯里兰卡卢比：LKR、俄罗斯卢布：RUB、阿联酋迪拉姆：AED、捷克克朗：CZK、南非兰特：ZAR、人民币：CNY
+	 */
+	@ApiField("trans_currency")
+	private String transCurrency;
+
+	/**
 	 * 不参与优惠计算的金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]。如果该值未传入，但传入了【订单总金额】和【可打折金额】，则该值默认为【订单总金额】-【可打折金额】
 	 */
 	@ApiField("undiscountable_amount")
 	private String undiscountableAmount;
 
-	public AgreementParams getAgreementParams() {
+    /**
+     * Gets agreement params.
+     *
+     * @return the agreement params
+     */
+    public AgreementParams getAgreementParams() {
 		return this.agreementParams;
 	}
-	public void setAgreementParams(AgreementParams agreementParams) {
+
+    /**
+     * Sets agreement params.
+     *
+     * @param agreementParams the agreement params
+     */
+    public void setAgreementParams(AgreementParams agreementParams) {
 		this.agreementParams = agreementParams;
 	}
 
-	public String getAlipayStoreId() {
+    /**
+     * Gets alipay store id.
+     *
+     * @return the alipay store id
+     */
+    public String getAlipayStoreId() {
 		return this.alipayStoreId;
 	}
-	public void setAlipayStoreId(String alipayStoreId) {
+
+    /**
+     * Sets alipay store id.
+     *
+     * @param alipayStoreId the alipay store id
+     */
+    public void setAlipayStoreId(String alipayStoreId) {
 		this.alipayStoreId = alipayStoreId;
 	}
 
-	public String getAuthCode() {
+    /**
+     * Gets auth code.
+     *
+     * @return the auth code
+     */
+    public String getAuthCode() {
 		return this.authCode;
 	}
-	public void setAuthCode(String authCode) {
+
+    /**
+     * Sets auth code.
+     *
+     * @param authCode the auth code
+     */
+    public void setAuthCode(String authCode) {
 		this.authCode = authCode;
 	}
 
-	public String getAuthNo() {
+    /**
+     * Gets auth confirm mode.
+     *
+     * @return the auth confirm mode
+     */
+    public String getAuthConfirmMode() {
+		return this.authConfirmMode;
+	}
+
+    /**
+     * Sets auth confirm mode.
+     *
+     * @param authConfirmMode the auth confirm mode
+     */
+    public void setAuthConfirmMode(String authConfirmMode) {
+		this.authConfirmMode = authConfirmMode;
+	}
+
+    /**
+     * Gets auth no.
+     *
+     * @return the auth no
+     */
+    public String getAuthNo() {
 		return this.authNo;
 	}
-	public void setAuthNo(String authNo) {
+
+    /**
+     * Sets auth no.
+     *
+     * @param authNo the auth no
+     */
+    public void setAuthNo(String authNo) {
 		this.authNo = authNo;
 	}
 
-	public String getBody() {
+    /**
+     * Gets body.
+     *
+     * @return the body
+     */
+    public String getBody() {
 		return this.body;
 	}
-	public void setBody(String body) {
+
+    /**
+     * Sets body.
+     *
+     * @param body the body
+     */
+    public void setBody(String body) {
 		this.body = body;
 	}
 
-	public String getBusinessParams() {
+    /**
+     * Gets business params.
+     *
+     * @return the business params
+     */
+    public String getBusinessParams() {
 		return this.businessParams;
 	}
-	public void setBusinessParams(String businessParams) {
+
+    /**
+     * Sets business params.
+     *
+     * @param businessParams the business params
+     */
+    public void setBusinessParams(String businessParams) {
 		this.businessParams = businessParams;
 	}
 
-	public String getBuyerId() {
+    /**
+     * Gets buyer id.
+     *
+     * @return the buyer id
+     */
+    public String getBuyerId() {
 		return this.buyerId;
 	}
-	public void setBuyerId(String buyerId) {
+
+    /**
+     * Sets buyer id.
+     *
+     * @param buyerId the buyer id
+     */
+    public void setBuyerId(String buyerId) {
 		this.buyerId = buyerId;
 	}
 
-	public String getDisablePayChannels() {
+    /**
+     * Gets disable pay channels.
+     *
+     * @return the disable pay channels
+     */
+    public String getDisablePayChannels() {
 		return this.disablePayChannels;
 	}
-	public void setDisablePayChannels(String disablePayChannels) {
+
+    /**
+     * Sets disable pay channels.
+     *
+     * @param disablePayChannels the disable pay channels
+     */
+    public void setDisablePayChannels(String disablePayChannels) {
 		this.disablePayChannels = disablePayChannels;
 	}
 
-	public String getDiscountableAmount() {
+    /**
+     * Gets discountable amount.
+     *
+     * @return the discountable amount
+     */
+    public String getDiscountableAmount() {
 		return this.discountableAmount;
 	}
-	public void setDiscountableAmount(String discountableAmount) {
+
+    /**
+     * Sets discountable amount.
+     *
+     * @param discountableAmount the discountable amount
+     */
+    public void setDiscountableAmount(String discountableAmount) {
 		this.discountableAmount = discountableAmount;
 	}
 
-	public ExtUserInfo getExtUserInfo() {
+    /**
+     * Gets ext user info.
+     *
+     * @return the ext user info
+     */
+    public ExtUserInfo getExtUserInfo() {
 		return this.extUserInfo;
 	}
-	public void setExtUserInfo(ExtUserInfo extUserInfo) {
+
+    /**
+     * Sets ext user info.
+     *
+     * @param extUserInfo the ext user info
+     */
+    public void setExtUserInfo(ExtUserInfo extUserInfo) {
 		this.extUserInfo = extUserInfo;
 	}
 
-	public ExtendParams getExtendParams() {
+    /**
+     * Gets extend params.
+     *
+     * @return the extend params
+     */
+    public ExtendParams getExtendParams() {
 		return this.extendParams;
 	}
-	public void setExtendParams(ExtendParams extendParams) {
+
+    /**
+     * Sets extend params.
+     *
+     * @param extendParams the extend params
+     */
+    public void setExtendParams(ExtendParams extendParams) {
 		this.extendParams = extendParams;
 	}
 
-	public List<GoodsDetail> getGoodsDetail() {
+    /**
+     * Gets goods detail.
+     *
+     * @return the goods detail
+     */
+    public List<GoodsDetail> getGoodsDetail() {
 		return this.goodsDetail;
 	}
-	public void setGoodsDetail(List<GoodsDetail> goodsDetail) {
+
+    /**
+     * Sets goods detail.
+     *
+     * @param goodsDetail the goods detail
+     */
+    public void setGoodsDetail(List<GoodsDetail> goodsDetail) {
 		this.goodsDetail = goodsDetail;
 	}
 
-	public String getMerchantOrderNo() {
+    /**
+     * Gets merchant order no.
+     *
+     * @return the merchant order no
+     */
+    public String getMerchantOrderNo() {
 		return this.merchantOrderNo;
 	}
-	public void setMerchantOrderNo(String merchantOrderNo) {
+
+    /**
+     * Sets merchant order no.
+     *
+     * @param merchantOrderNo the merchant order no
+     */
+    public void setMerchantOrderNo(String merchantOrderNo) {
 		this.merchantOrderNo = merchantOrderNo;
 	}
 
-	public String getOperatorId() {
+    /**
+     * Gets operator id.
+     *
+     * @return the operator id
+     */
+    public String getOperatorId() {
 		return this.operatorId;
 	}
-	public void setOperatorId(String operatorId) {
+
+    /**
+     * Sets operator id.
+     *
+     * @param operatorId the operator id
+     */
+    public void setOperatorId(String operatorId) {
 		this.operatorId = operatorId;
 	}
 
-	public String getOutTradeNo() {
+    /**
+     * Gets out trade no.
+     *
+     * @return the out trade no
+     */
+    public String getOutTradeNo() {
 		return this.outTradeNo;
 	}
-	public void setOutTradeNo(String outTradeNo) {
+
+    /**
+     * Sets out trade no.
+     *
+     * @param outTradeNo the out trade no
+     */
+    public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
 
-	public String getProductCode() {
+    /**
+     * Gets product code.
+     *
+     * @return the product code
+     */
+    public String getProductCode() {
 		return this.productCode;
 	}
-	public void setProductCode(String productCode) {
+
+    /**
+     * Sets product code.
+     *
+     * @param productCode the product code
+     */
+    public void setProductCode(String productCode) {
 		this.productCode = productCode;
 	}
 
-	public RoyaltyInfo getRoyaltyInfo() {
+    /**
+     * Gets royalty info.
+     *
+     * @return the royalty info
+     */
+    public RoyaltyInfo getRoyaltyInfo() {
 		return this.royaltyInfo;
 	}
-	public void setRoyaltyInfo(RoyaltyInfo royaltyInfo) {
+
+    /**
+     * Sets royalty info.
+     *
+     * @param royaltyInfo the royalty info
+     */
+    public void setRoyaltyInfo(RoyaltyInfo royaltyInfo) {
 		this.royaltyInfo = royaltyInfo;
 	}
 
-	public String getScene() {
+    /**
+     * Gets scene.
+     *
+     * @return the scene
+     */
+    public String getScene() {
 		return this.scene;
 	}
-	public void setScene(String scene) {
+
+    /**
+     * Sets scene.
+     *
+     * @param scene the scene
+     */
+    public void setScene(String scene) {
 		this.scene = scene;
 	}
 
-	public String getSellerId() {
+    /**
+     * Gets seller id.
+     *
+     * @return the seller id
+     */
+    public String getSellerId() {
 		return this.sellerId;
 	}
-	public void setSellerId(String sellerId) {
+
+    /**
+     * Sets seller id.
+     *
+     * @param sellerId the seller id
+     */
+    public void setSellerId(String sellerId) {
 		this.sellerId = sellerId;
 	}
 
-	public String getStoreId() {
+    /**
+     * Gets settle currency.
+     *
+     * @return the settle currency
+     */
+    public String getSettleCurrency() {
+		return this.settleCurrency;
+	}
+
+    /**
+     * Sets settle currency.
+     *
+     * @param settleCurrency the settle currency
+     */
+    public void setSettleCurrency(String settleCurrency) {
+		this.settleCurrency = settleCurrency;
+	}
+
+    /**
+     * Gets settle info.
+     *
+     * @return the settle info
+     */
+    public SettleInfo getSettleInfo() {
+		return this.settleInfo;
+	}
+
+    /**
+     * Sets settle info.
+     *
+     * @param settleInfo the settle info
+     */
+    public void setSettleInfo(SettleInfo settleInfo) {
+		this.settleInfo = settleInfo;
+	}
+
+    /**
+     * Gets store id.
+     *
+     * @return the store id
+     */
+    public String getStoreId() {
 		return this.storeId;
 	}
-	public void setStoreId(String storeId) {
+
+    /**
+     * Sets store id.
+     *
+     * @param storeId the store id
+     */
+    public void setStoreId(String storeId) {
 		this.storeId = storeId;
 	}
 
-	public SubMerchant getSubMerchant() {
+    /**
+     * Gets sub merchant.
+     *
+     * @return the sub merchant
+     */
+    public SubMerchant getSubMerchant() {
 		return this.subMerchant;
 	}
-	public void setSubMerchant(SubMerchant subMerchant) {
+
+    /**
+     * Sets sub merchant.
+     *
+     * @param subMerchant the sub merchant
+     */
+    public void setSubMerchant(SubMerchant subMerchant) {
 		this.subMerchant = subMerchant;
 	}
 
-	public String getSubject() {
+    /**
+     * Gets subject.
+     *
+     * @return the subject
+     */
+    public String getSubject() {
 		return this.subject;
 	}
-	public void setSubject(String subject) {
+
+    /**
+     * Sets subject.
+     *
+     * @param subject the subject
+     */
+    public void setSubject(String subject) {
 		this.subject = subject;
 	}
 
-	public String getTerminalId() {
+    /**
+     * Gets terminal id.
+     *
+     * @return the terminal id
+     */
+    public String getTerminalId() {
 		return this.terminalId;
 	}
-	public void setTerminalId(String terminalId) {
+
+    /**
+     * Sets terminal id.
+     *
+     * @param terminalId the terminal id
+     */
+    public void setTerminalId(String terminalId) {
 		this.terminalId = terminalId;
 	}
 
-	public String getTimeoutExpress() {
+    /**
+     * Gets terminal params.
+     *
+     * @return the terminal params
+     */
+    public String getTerminalParams() {
+		return this.terminalParams;
+	}
+
+    /**
+     * Sets terminal params.
+     *
+     * @param terminalParams the terminal params
+     */
+    public void setTerminalParams(String terminalParams) {
+		this.terminalParams = terminalParams;
+	}
+
+    /**
+     * Gets timeout express.
+     *
+     * @return the timeout express
+     */
+    public String getTimeoutExpress() {
 		return this.timeoutExpress;
 	}
-	public void setTimeoutExpress(String timeoutExpress) {
+
+    /**
+     * Sets timeout express.
+     *
+     * @param timeoutExpress the timeout express
+     */
+    public void setTimeoutExpress(String timeoutExpress) {
 		this.timeoutExpress = timeoutExpress;
 	}
 
-	public String getTotalAmount() {
+    /**
+     * Gets total amount.
+     *
+     * @return the total amount
+     */
+    public String getTotalAmount() {
 		return this.totalAmount;
 	}
-	public void setTotalAmount(String totalAmount) {
+
+    /**
+     * Sets total amount.
+     *
+     * @param totalAmount the total amount
+     */
+    public void setTotalAmount(String totalAmount) {
 		this.totalAmount = totalAmount;
 	}
 
-	public String getUndiscountableAmount() {
+    /**
+     * Gets trans currency.
+     *
+     * @return the trans currency
+     */
+    public String getTransCurrency() {
+		return this.transCurrency;
+	}
+
+    /**
+     * Sets trans currency.
+     *
+     * @param transCurrency the trans currency
+     */
+    public void setTransCurrency(String transCurrency) {
+		this.transCurrency = transCurrency;
+	}
+
+    /**
+     * Gets undiscountable amount.
+     *
+     * @return the undiscountable amount
+     */
+    public String getUndiscountableAmount() {
 		return this.undiscountableAmount;
 	}
-	public void setUndiscountableAmount(String undiscountableAmount) {
+
+    /**
+     * Sets undiscountable amount.
+     *
+     * @param undiscountableAmount the undiscountable amount
+     */
+    public void setUndiscountableAmount(String undiscountableAmount) {
 		this.undiscountableAmount = undiscountableAmount;
 	}
 

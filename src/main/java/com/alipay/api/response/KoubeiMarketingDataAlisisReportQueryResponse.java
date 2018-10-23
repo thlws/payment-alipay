@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.data.alisis.report.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-16 20:33:11
+ * @since 1.0, 2018-05-03 09:41:08
  */
 public class KoubeiMarketingDataAlisisReportQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2232649851231682996L;
+	private static final long serialVersionUID = 5775339322984318861L;
 
 	/** 
 	 * 报表数据
@@ -24,10 +24,21 @@ public class KoubeiMarketingDataAlisisReportQueryResponse extends AlipayResponse
 	@ApiField("alisis_report_row")
 	private List<AlisisReportRow> reportData;
 
-	public void setReportData(List<AlisisReportRow> reportData) {
+    /**
+     * Sets report data.
+     *
+     * @param reportData the report data
+     */
+    public void setReportData(List<AlisisReportRow> reportData) {
 		this.reportData = reportData;
 	}
-	public List<AlisisReportRow> getReportData( ) {
+
+    /**
+     * Gets report data.
+     *
+     * @return the report data
+     */
+    public List<AlisisReportRow> getReportData( ) {
 		return this.reportData;
 	}
 

@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.account.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-04 10:40:27
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayOpenPublicAccountCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7698914952365348568L;
+	private static final long serialVersionUID = 1383228441822691728L;
 
 	/** 
 	 * 协议号，商户会员在支付宝服务窗账号中的唯一标识
@@ -20,10 +20,21 @@ public class AlipayOpenPublicAccountCreateResponse extends AlipayResponse {
 	@ApiField("agreement_id")
 	private String agreementId;
 
-	public void setAgreementId(String agreementId) {
+    /**
+     * Sets agreement id.
+     *
+     * @param agreementId the agreement id
+     */
+    public void setAgreementId(String agreementId) {
 		this.agreementId = agreementId;
 	}
-	public String getAgreementId( ) {
+
+    /**
+     * Gets agreement id.
+     *
+     * @return the agreement id
+     */
+    public String getAgreementId( ) {
 		return this.agreementId;
 	}
 

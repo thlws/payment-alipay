@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenServicemarketOrderRejectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4553234874328187836L;
+	private static final long serialVersionUID = 3126719896749722367L;
 
 	/**
 	 * 订购服务商品订单ID
@@ -25,17 +25,39 @@ public class AlipayOpenServicemarketOrderRejectModel extends AlipayObject {
 	@ApiField("reject_reason")
 	private String rejectReason;
 
-	public String getCommodityOrderId() {
+    /**
+     * Gets commodity order id.
+     *
+     * @return the commodity order id
+     */
+    public String getCommodityOrderId() {
 		return this.commodityOrderId;
 	}
-	public void setCommodityOrderId(String commodityOrderId) {
+
+    /**
+     * Sets commodity order id.
+     *
+     * @param commodityOrderId the commodity order id
+     */
+    public void setCommodityOrderId(String commodityOrderId) {
 		this.commodityOrderId = commodityOrderId;
 	}
 
-	public String getRejectReason() {
+    /**
+     * Gets reject reason.
+     *
+     * @return the reject reason
+     */
+    public String getRejectReason() {
 		return this.rejectReason;
 	}
-	public void setRejectReason(String rejectReason) {
+
+    /**
+     * Sets reject reason.
+     *
+     * @param rejectReason the reject reason
+     */
+    public void setRejectReason(String rejectReason) {
 		this.rejectReason = rejectReason;
 	}
 

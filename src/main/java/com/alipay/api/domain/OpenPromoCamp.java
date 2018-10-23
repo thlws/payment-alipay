@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenPromoCamp extends AlipayObject {
 
-	private static final long serialVersionUID = 3192439438446129366L;
+	private static final long serialVersionUID = 2441891859186486177L;
 
 	/**
 	 * 简短活动名，默认和活动名称相同
@@ -49,45 +49,111 @@ public class OpenPromoCamp extends AlipayObject {
 	@ApiField("camp_type")
 	private String campType;
 
-	public String getCampAlias() {
+    /**
+     * Gets camp alias.
+     *
+     * @return the camp alias
+     */
+    public String getCampAlias() {
 		return this.campAlias;
 	}
-	public void setCampAlias(String campAlias) {
+
+    /**
+     * Sets camp alias.
+     *
+     * @param campAlias the camp alias
+     */
+    public void setCampAlias(String campAlias) {
 		this.campAlias = campAlias;
 	}
 
-	public String getCampDesc() {
+    /**
+     * Gets camp desc.
+     *
+     * @return the camp desc
+     */
+    public String getCampDesc() {
 		return this.campDesc;
 	}
-	public void setCampDesc(String campDesc) {
+
+    /**
+     * Sets camp desc.
+     *
+     * @param campDesc the camp desc
+     */
+    public void setCampDesc(String campDesc) {
 		this.campDesc = campDesc;
 	}
 
-	public String getCampEndTime() {
+    /**
+     * Gets camp end time.
+     *
+     * @return the camp end time
+     */
+    public String getCampEndTime() {
 		return this.campEndTime;
 	}
-	public void setCampEndTime(String campEndTime) {
+
+    /**
+     * Sets camp end time.
+     *
+     * @param campEndTime the camp end time
+     */
+    public void setCampEndTime(String campEndTime) {
 		this.campEndTime = campEndTime;
 	}
 
-	public String getCampName() {
+    /**
+     * Gets camp name.
+     *
+     * @return the camp name
+     */
+    public String getCampName() {
 		return this.campName;
 	}
-	public void setCampName(String campName) {
+
+    /**
+     * Sets camp name.
+     *
+     * @param campName the camp name
+     */
+    public void setCampName(String campName) {
 		this.campName = campName;
 	}
 
-	public String getCampStartTime() {
+    /**
+     * Gets camp start time.
+     *
+     * @return the camp start time
+     */
+    public String getCampStartTime() {
 		return this.campStartTime;
 	}
-	public void setCampStartTime(String campStartTime) {
+
+    /**
+     * Sets camp start time.
+     *
+     * @param campStartTime the camp start time
+     */
+    public void setCampStartTime(String campStartTime) {
 		this.campStartTime = campStartTime;
 	}
 
-	public String getCampType() {
+    /**
+     * Gets camp type.
+     *
+     * @return the camp type
+     */
+    public String getCampType() {
 		return this.campType;
 	}
-	public void setCampType(String campType) {
+
+    /**
+     * Sets camp type.
+     *
+     * @param campType the camp type
+     */
+    public void setCampType(String campType) {
 		this.campType = campType;
 	}
 

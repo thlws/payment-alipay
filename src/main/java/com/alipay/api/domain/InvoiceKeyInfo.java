@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InvoiceKeyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4895877225691596855L;
+	private static final long serialVersionUID = 7661447168767527284L;
 
 	/**
 	 * 开票商户名称：商户品牌简称|商户门店简称
@@ -31,24 +31,57 @@ public class InvoiceKeyInfo extends AlipayObject {
 	@ApiField("tax_num")
 	private String taxNum;
 
-	public String getInvoiceMerchantName() {
+    /**
+     * Gets invoice merchant name.
+     *
+     * @return the invoice merchant name
+     */
+    public String getInvoiceMerchantName() {
 		return this.invoiceMerchantName;
 	}
-	public void setInvoiceMerchantName(String invoiceMerchantName) {
+
+    /**
+     * Sets invoice merchant name.
+     *
+     * @param invoiceMerchantName the invoice merchant name
+     */
+    public void setInvoiceMerchantName(String invoiceMerchantName) {
 		this.invoiceMerchantName = invoiceMerchantName;
 	}
 
-	public Boolean getIsSupportInvoice() {
+    /**
+     * Gets is support invoice.
+     *
+     * @return the is support invoice
+     */
+    public Boolean getIsSupportInvoice() {
 		return this.isSupportInvoice;
 	}
-	public void setIsSupportInvoice(Boolean isSupportInvoice) {
+
+    /**
+     * Sets is support invoice.
+     *
+     * @param isSupportInvoice the is support invoice
+     */
+    public void setIsSupportInvoice(Boolean isSupportInvoice) {
 		this.isSupportInvoice = isSupportInvoice;
 	}
 
-	public String getTaxNum() {
+    /**
+     * Gets tax num.
+     *
+     * @return the tax num
+     */
+    public String getTaxNum() {
 		return this.taxNum;
 	}
-	public void setTaxNum(String taxNum) {
+
+    /**
+     * Sets tax num.
+     *
+     * @param taxNum the tax num
+     */
+    public void setTaxNum(String taxNum) {
 		this.taxNum = taxNum;
 	}
 

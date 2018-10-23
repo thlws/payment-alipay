@@ -17,6 +17,7 @@ import com.alipay.api.internal.util.codec.Base64;
  * 加密工具
  *
  * @author jiehua
+ * @version $Id : AlipayEncrypt.java, v 0.1 2016-3-28 下午5:14:12 jiehua Exp $
  */
 public class AlipayEncrypt {
 
@@ -36,7 +37,7 @@ public class AlipayEncrypt {
      * @param encryptType the encrypt type
      * @param encryptKey  the encrypt key
      * @param charset     the charset
-     * @return string string
+     * @return string
      * @throws AlipayApiException the alipay api exception
      */
     public static String encryptContent(String content, String encryptType, String encryptKey,
@@ -60,7 +61,7 @@ public class AlipayEncrypt {
      * @param encryptType the encrypt type
      * @param encryptKey  the encrypt key
      * @param charset     the charset
-     * @return string string
+     * @return string
      * @throws AlipayApiException the alipay api exception
      */
     public static String decryptContent(String content, String encryptType, String encryptKey,

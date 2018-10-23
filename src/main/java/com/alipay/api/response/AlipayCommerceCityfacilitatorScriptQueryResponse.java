@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.commerce.cityfacilitator.script.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2015-12-09 16:24:55
  */
 public class AlipayCommerceCityfacilitatorScriptQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8123662716278899795L;
+	private static final long serialVersionUID = 5441368494785917268L;
 
 	/** 
 	 * 脚本内容，智能卡中心自定义的脚本格式内容
@@ -26,17 +26,39 @@ public class AlipayCommerceCityfacilitatorScriptQueryResponse extends AlipayResp
 	@ApiField("gmt_modified")
 	private String gmtModified;
 
-	public void setContent(String content) {
+    /**
+     * Sets content.
+     *
+     * @param content the content
+     */
+    public void setContent(String content) {
 		this.content = content;
 	}
-	public String getContent( ) {
+
+    /**
+     * Gets content.
+     *
+     * @return the content
+     */
+    public String getContent( ) {
 		return this.content;
 	}
 
-	public void setGmtModified(String gmtModified) {
+    /**
+     * Sets gmt modified.
+     *
+     * @param gmtModified the gmt modified
+     */
+    public void setGmtModified(String gmtModified) {
 		this.gmtModified = gmtModified;
 	}
-	public String getGmtModified( ) {
+
+    /**
+     * Gets gmt modified.
+     *
+     * @return the gmt modified
+     */
+    public String getGmtModified( ) {
 		return this.gmtModified;
 	}
 

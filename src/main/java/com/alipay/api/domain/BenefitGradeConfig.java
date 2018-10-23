@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BenefitGradeConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 6138612942757288171L;
+	private static final long serialVersionUID = 2361917649117183868L;
 
 	/**
 	 * 权益背景图片地址，若没有，可以先mock一个地址进行填写
@@ -49,45 +49,111 @@ public class BenefitGradeConfig extends AlipayObject {
 	@ApiField("point_discount")
 	private String pointDiscount;
 
-	public String getBackgroundUrl() {
+    /**
+     * Gets background url.
+     *
+     * @return the background url
+     */
+    public String getBackgroundUrl() {
 		return this.backgroundUrl;
 	}
-	public void setBackgroundUrl(String backgroundUrl) {
+
+    /**
+     * Sets background url.
+     *
+     * @param backgroundUrl the background url
+     */
+    public void setBackgroundUrl(String backgroundUrl) {
 		this.backgroundUrl = backgroundUrl;
 	}
 
-	public String getDetail() {
+    /**
+     * Gets detail.
+     *
+     * @return the detail
+     */
+    public String getDetail() {
 		return this.detail;
 	}
-	public void setDetail(String detail) {
+
+    /**
+     * Sets detail.
+     *
+     * @param detail the detail
+     */
+    public void setDetail(String detail) {
 		this.detail = detail;
 	}
 
-	public String getGrade() {
+    /**
+     * Gets grade.
+     *
+     * @return the grade
+     */
+    public String getGrade() {
 		return this.grade;
 	}
-	public void setGrade(String grade) {
+
+    /**
+     * Sets grade.
+     *
+     * @param grade the grade
+     */
+    public void setGrade(String grade) {
 		this.grade = grade;
 	}
 
-	public String getPageUrl() {
+    /**
+     * Gets page url.
+     *
+     * @return the page url
+     */
+    public String getPageUrl() {
 		return this.pageUrl;
 	}
-	public void setPageUrl(String pageUrl) {
+
+    /**
+     * Sets page url.
+     *
+     * @param pageUrl the page url
+     */
+    public void setPageUrl(String pageUrl) {
 		this.pageUrl = pageUrl;
 	}
 
-	public Long getPoint() {
+    /**
+     * Gets point.
+     *
+     * @return the point
+     */
+    public Long getPoint() {
 		return this.point;
 	}
-	public void setPoint(Long point) {
+
+    /**
+     * Sets point.
+     *
+     * @param point the point
+     */
+    public void setPoint(Long point) {
 		this.point = point;
 	}
 
-	public String getPointDiscount() {
+    /**
+     * Gets point discount.
+     *
+     * @return the point discount
+     */
+    public String getPointDiscount() {
 		return this.pointDiscount;
 	}
-	public void setPointDiscount(String pointDiscount) {
+
+    /**
+     * Sets point discount.
+     *
+     * @param pointDiscount the point discount
+     */
+    public void setPointDiscount(String pointDiscount) {
 		this.pointDiscount = pointDiscount;
 	}
 

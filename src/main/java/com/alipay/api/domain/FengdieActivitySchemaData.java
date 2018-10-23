@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FengdieActivitySchemaData extends AlipayObject {
 
-	private static final long serialVersionUID = 6788728491535932113L;
+	private static final long serialVersionUID = 3133166256472369768L;
 
 	/**
 	 * 默认数据的内容，内容格式参考模板开发过程中自动生成的mock数据（与schema文件同名的json文件）。
@@ -25,17 +25,39 @@ public class FengdieActivitySchemaData extends AlipayObject {
 	@ApiField("name")
 	private String name;
 
-	public String getData() {
+    /**
+     * Gets data.
+     *
+     * @return the data
+     */
+    public String getData() {
 		return this.data;
 	}
-	public void setData(String data) {
+
+    /**
+     * Sets data.
+     *
+     * @param data the data
+     */
+    public void setData(String data) {
 		this.data = data;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 

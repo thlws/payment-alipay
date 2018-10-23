@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BusinessBankAccountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8772187844422578284L;
+	private static final long serialVersionUID = 1793524247546952778L;
 
 	/**
 	 * 企业对公账户名称
@@ -37,31 +37,75 @@ public class BusinessBankAccountInfo extends AlipayObject {
 	@ApiField("business_bank_sub")
 	private String businessBankSub;
 
-	public String getBusinessBankAccountName() {
+    /**
+     * Gets business bank account name.
+     *
+     * @return the business bank account name
+     */
+    public String getBusinessBankAccountName() {
 		return this.businessBankAccountName;
 	}
-	public void setBusinessBankAccountName(String businessBankAccountName) {
+
+    /**
+     * Sets business bank account name.
+     *
+     * @param businessBankAccountName the business bank account name
+     */
+    public void setBusinessBankAccountName(String businessBankAccountName) {
 		this.businessBankAccountName = businessBankAccountName;
 	}
 
-	public String getBusinessBankCardNo() {
+    /**
+     * Gets business bank card no.
+     *
+     * @return the business bank card no
+     */
+    public String getBusinessBankCardNo() {
 		return this.businessBankCardNo;
 	}
-	public void setBusinessBankCardNo(String businessBankCardNo) {
+
+    /**
+     * Sets business bank card no.
+     *
+     * @param businessBankCardNo the business bank card no
+     */
+    public void setBusinessBankCardNo(String businessBankCardNo) {
 		this.businessBankCardNo = businessBankCardNo;
 	}
 
-	public String getBusinessBankName() {
+    /**
+     * Gets business bank name.
+     *
+     * @return the business bank name
+     */
+    public String getBusinessBankName() {
 		return this.businessBankName;
 	}
-	public void setBusinessBankName(String businessBankName) {
+
+    /**
+     * Sets business bank name.
+     *
+     * @param businessBankName the business bank name
+     */
+    public void setBusinessBankName(String businessBankName) {
 		this.businessBankName = businessBankName;
 	}
 
-	public String getBusinessBankSub() {
+    /**
+     * Gets business bank sub.
+     *
+     * @return the business bank sub
+     */
+    public String getBusinessBankSub() {
 		return this.businessBankSub;
 	}
-	public void setBusinessBankSub(String businessBankSub) {
+
+    /**
+     * Sets business bank sub.
+     *
+     * @param businessBankSub the business bank sub
+     */
+    public void setBusinessBankSub(String businessBankSub) {
 		this.businessBankSub = businessBankSub;
 	}
 

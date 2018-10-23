@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MedicalSvTpCardHeadInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1847199858265417164L;
+	private static final long serialVersionUID = 4417588218768217836L;
 
 	/**
 	 * 模板头部图标：开发者提供公网图片地址
@@ -26,17 +26,39 @@ public class MedicalSvTpCardHeadInfo extends AlipayObject {
 	@ApiField("header_title")
 	private String headerTitle;
 
-	public String getHeaderIcon() {
+    /**
+     * Gets header icon.
+     *
+     * @return the header icon
+     */
+    public String getHeaderIcon() {
 		return this.headerIcon;
 	}
-	public void setHeaderIcon(String headerIcon) {
+
+    /**
+     * Sets header icon.
+     *
+     * @param headerIcon the header icon
+     */
+    public void setHeaderIcon(String headerIcon) {
 		this.headerIcon = headerIcon;
 	}
 
-	public String getHeaderTitle() {
+    /**
+     * Gets header title.
+     *
+     * @return the header title
+     */
+    public String getHeaderTitle() {
 		return this.headerTitle;
 	}
-	public void setHeaderTitle(String headerTitle) {
+
+    /**
+     * Sets header title.
+     *
+     * @param headerTitle the header title
+     */
+    public void setHeaderTitle(String headerTitle) {
 		this.headerTitle = headerTitle;
 	}
 

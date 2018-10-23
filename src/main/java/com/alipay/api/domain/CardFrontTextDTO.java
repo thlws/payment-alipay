@@ -5,14 +5,14 @@ import com.alipay.api.internal.mapping.ApiField;
 
 /**
  * 卡面文案信息模型，展示在卡面上，形如：
-学校    武汉理工大学
+ * 学校    武汉理工大学
  *
  * @author auto create
  * @since 1.0, 2017-08-11 10:46:16
  */
 public class CardFrontTextDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3151249374681522763L;
+	private static final long serialVersionUID = 8198758682459395918L;
 
 	/**
 	 * 文案标签
@@ -26,17 +26,39 @@ public class CardFrontTextDTO extends AlipayObject {
 	@ApiField("value")
 	private String value;
 
-	public String getLabel() {
+    /**
+     * Gets label.
+     *
+     * @return the label
+     */
+    public String getLabel() {
 		return this.label;
 	}
-	public void setLabel(String label) {
+
+    /**
+     * Sets label.
+     *
+     * @param label the label
+     */
+    public void setLabel(String label) {
 		this.label = label;
 	}
 
-	public String getValue() {
+    /**
+     * Gets value.
+     *
+     * @return the value
+     */
+    public String getValue() {
 		return this.value;
 	}
-	public void setValue(String value) {
+
+    /**
+     * Sets value.
+     *
+     * @param value the value
+     */
+    public void setValue(String value) {
 		this.value = value;
 	}
 

@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: zhima.credit.watchlistii.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-08-04 10:54:31
+ * @since 1.0, 2018-02-05 20:32:44
  */
 public class ZhimaCreditWatchlistiiGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4223382179653725955L;
+	private static final long serialVersionUID = 8789512254762367671L;
 
 	/** 
 	 * 芝麻信用对于每一次请求返回的业务号。后续可以通过此业务号进行对账
@@ -37,24 +37,57 @@ false=未命中
 	@ApiField("is_matched")
 	private Boolean isMatched;
 
-	public void setBizNo(String bizNo) {
+    /**
+     * Sets biz no.
+     *
+     * @param bizNo the biz no
+     */
+    public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
 	}
-	public String getBizNo( ) {
+
+    /**
+     * Gets biz no.
+     *
+     * @return the biz no
+     */
+    public String getBizNo( ) {
 		return this.bizNo;
 	}
 
-	public void setDetails(List<ZmWatchListDetail> details) {
+    /**
+     * Sets details.
+     *
+     * @param details the details
+     */
+    public void setDetails(List<ZmWatchListDetail> details) {
 		this.details = details;
 	}
-	public List<ZmWatchListDetail> getDetails( ) {
+
+    /**
+     * Gets details.
+     *
+     * @return the details
+     */
+    public List<ZmWatchListDetail> getDetails( ) {
 		return this.details;
 	}
 
-	public void setIsMatched(Boolean isMatched) {
+    /**
+     * Sets is matched.
+     *
+     * @param isMatched the is matched
+     */
+    public void setIsMatched(Boolean isMatched) {
 		this.isMatched = isMatched;
 	}
-	public Boolean getIsMatched( ) {
+
+    /**
+     * Gets is matched.
+     *
+     * @return the is matched
+     */
+    public Boolean getIsMatched( ) {
 		return this.isMatched;
 	}
 

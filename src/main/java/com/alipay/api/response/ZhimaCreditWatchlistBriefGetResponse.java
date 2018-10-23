@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: zhima.credit.watchlist.brief.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-06 14:40:56
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class ZhimaCreditWatchlistBriefGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8846879456174796591L;
+	private static final long serialVersionUID = 2481246646375996649L;
 
 	/** 
 	 * 唯一标示每一次接口调用
@@ -31,17 +31,39 @@ N/A 无法评估该用户逾期状况，例如未获得用户授权。
 	@ApiField("level")
 	private String level;
 
-	public void setBizNo(String bizNo) {
+    /**
+     * Sets biz no.
+     *
+     * @param bizNo the biz no
+     */
+    public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
 	}
-	public String getBizNo( ) {
+
+    /**
+     * Gets biz no.
+     *
+     * @return the biz no
+     */
+    public String getBizNo( ) {
 		return this.bizNo;
 	}
 
-	public void setLevel(String level) {
+    /**
+     * Sets level.
+     *
+     * @param level the level
+     */
+    public void setLevel(String level) {
 		this.level = level;
 	}
-	public String getLevel( ) {
+
+    /**
+     * Gets level.
+     *
+     * @return the level
+     */
+    public String getLevel( ) {
 		return this.level;
 	}
 

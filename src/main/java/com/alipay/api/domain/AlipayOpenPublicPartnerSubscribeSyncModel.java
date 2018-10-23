@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicPartnerSubscribeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6645752357819828859L;
+	private static final long serialVersionUID = 8566461212773588452L;
 
 	/**
 	 * 是否接受服务窗消息
@@ -49,45 +49,111 @@ public class AlipayOpenPublicPartnerSubscribeSyncModel extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
-	public String getAcceptMsg() {
+    /**
+     * Gets accept msg.
+     *
+     * @return the accept msg
+     */
+    public String getAcceptMsg() {
 		return this.acceptMsg;
 	}
-	public void setAcceptMsg(String acceptMsg) {
+
+    /**
+     * Sets accept msg.
+     *
+     * @param acceptMsg the accept msg
+     */
+    public void setAcceptMsg(String acceptMsg) {
 		this.acceptMsg = acceptMsg;
 	}
 
-	public String getFollowObjectId() {
+    /**
+     * Gets follow object id.
+     *
+     * @return the follow object id
+     */
+    public String getFollowObjectId() {
 		return this.followObjectId;
 	}
-	public void setFollowObjectId(String followObjectId) {
+
+    /**
+     * Sets follow object id.
+     *
+     * @param followObjectId the follow object id
+     */
+    public void setFollowObjectId(String followObjectId) {
 		this.followObjectId = followObjectId;
 	}
 
-	public String getOperateType() {
+    /**
+     * Gets operate type.
+     *
+     * @return the operate type
+     */
+    public String getOperateType() {
 		return this.operateType;
 	}
-	public void setOperateType(String operateType) {
+
+    /**
+     * Sets operate type.
+     *
+     * @param operateType the operate type
+     */
+    public void setOperateType(String operateType) {
 		this.operateType = operateType;
 	}
 
-	public String getPushSwitch() {
+    /**
+     * Gets push switch.
+     *
+     * @return the push switch
+     */
+    public String getPushSwitch() {
 		return this.pushSwitch;
 	}
-	public void setPushSwitch(String pushSwitch) {
+
+    /**
+     * Sets push switch.
+     *
+     * @param pushSwitch the push switch
+     */
+    public void setPushSwitch(String pushSwitch) {
 		this.pushSwitch = pushSwitch;
 	}
 
-	public String getSourceId() {
+    /**
+     * Gets source id.
+     *
+     * @return the source id
+     */
+    public String getSourceId() {
 		return this.sourceId;
 	}
-	public void setSourceId(String sourceId) {
+
+    /**
+     * Sets source id.
+     *
+     * @param sourceId the source id
+     */
+    public void setSourceId(String sourceId) {
 		this.sourceId = sourceId;
 	}
 
-	public String getUserId() {
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
-	public void setUserId(String userId) {
+
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
 

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ActivityOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3322329229744423169L;
+	private static final long serialVersionUID = 2145893578944478423L;
 
 	/**
 	 * 工单中的审核信息
@@ -47,38 +47,93 @@ public class ActivityOrderDTO extends AlipayObject {
 	@ApiField("order_type")
 	private String orderType;
 
-	public List<ActivityAuditDTO> getActivityAuditList() {
+    /**
+     * Gets activity audit list.
+     *
+     * @return the activity audit list
+     */
+    public List<ActivityAuditDTO> getActivityAuditList() {
 		return this.activityAuditList;
 	}
-	public void setActivityAuditList(List<ActivityAuditDTO> activityAuditList) {
+
+    /**
+     * Sets activity audit list.
+     *
+     * @param activityAuditList the activity audit list
+     */
+    public void setActivityAuditList(List<ActivityAuditDTO> activityAuditList) {
 		this.activityAuditList = activityAuditList;
 	}
 
-	public String getAuditStatus() {
+    /**
+     * Gets audit status.
+     *
+     * @return the audit status
+     */
+    public String getAuditStatus() {
 		return this.auditStatus;
 	}
-	public void setAuditStatus(String auditStatus) {
+
+    /**
+     * Sets audit status.
+     *
+     * @param auditStatus the audit status
+     */
+    public void setAuditStatus(String auditStatus) {
 		this.auditStatus = auditStatus;
 	}
 
-	public String getOrderId() {
+    /**
+     * Gets order id.
+     *
+     * @return the order id
+     */
+    public String getOrderId() {
 		return this.orderId;
 	}
-	public void setOrderId(String orderId) {
+
+    /**
+     * Sets order id.
+     *
+     * @param orderId the order id
+     */
+    public void setOrderId(String orderId) {
 		this.orderId = orderId;
 	}
 
-	public String getOrderStatus() {
+    /**
+     * Gets order status.
+     *
+     * @return the order status
+     */
+    public String getOrderStatus() {
 		return this.orderStatus;
 	}
-	public void setOrderStatus(String orderStatus) {
+
+    /**
+     * Sets order status.
+     *
+     * @param orderStatus the order status
+     */
+    public void setOrderStatus(String orderStatus) {
 		this.orderStatus = orderStatus;
 	}
 
-	public String getOrderType() {
+    /**
+     * Gets order type.
+     *
+     * @return the order type
+     */
+    public String getOrderType() {
 		return this.orderType;
 	}
-	public void setOrderType(String orderType) {
+
+    /**
+     * Sets order type.
+     *
+     * @param orderType the order type
+     */
+    public void setOrderType(String orderType) {
 		this.orderType = orderType;
 	}
 

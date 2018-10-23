@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PidShopInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4175687219133525159L;
+	private static final long serialVersionUID = 6322384997293316747L;
 
 	/**
 	 * 商户pid
@@ -29,17 +29,39 @@ public class PidShopInfo extends AlipayObject {
 	@ApiField("string")
 	private List<String> shopIds;
 
-	public String getPid() {
+    /**
+     * Gets pid.
+     *
+     * @return the pid
+     */
+    public String getPid() {
 		return this.pid;
 	}
-	public void setPid(String pid) {
+
+    /**
+     * Sets pid.
+     *
+     * @param pid the pid
+     */
+    public void setPid(String pid) {
 		this.pid = pid;
 	}
 
-	public List<String> getShopIds() {
+    /**
+     * Gets shop ids.
+     *
+     * @return the shop ids
+     */
+    public List<String> getShopIds() {
 		return this.shopIds;
 	}
-	public void setShopIds(List<String> shopIds) {
+
+    /**
+     * Sets shop ids.
+     *
+     * @param shopIds the shop ids
+     */
+    public void setShopIds(List<String> shopIds) {
 		this.shopIds = shopIds;
 	}
 

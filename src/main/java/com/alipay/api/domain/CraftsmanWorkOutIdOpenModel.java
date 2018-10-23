@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CraftsmanWorkOutIdOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5761424449464766141L;
+	private static final long serialVersionUID = 5386754465658681298L;
 
 	/**
 	 * 外部作品id，isv生成，isv的appId+out_work_id全局唯一
@@ -25,17 +25,39 @@ public class CraftsmanWorkOutIdOpenModel extends AlipayObject {
 	@ApiField("work_id")
 	private String workId;
 
-	public String getOutWorkId() {
+    /**
+     * Gets out work id.
+     *
+     * @return the out work id
+     */
+    public String getOutWorkId() {
 		return this.outWorkId;
 	}
-	public void setOutWorkId(String outWorkId) {
+
+    /**
+     * Sets out work id.
+     *
+     * @param outWorkId the out work id
+     */
+    public void setOutWorkId(String outWorkId) {
 		this.outWorkId = outWorkId;
 	}
 
-	public String getWorkId() {
+    /**
+     * Gets work id.
+     *
+     * @return the work id
+     */
+    public String getWorkId() {
 		return this.workId;
 	}
-	public void setWorkId(String workId) {
+
+    /**
+     * Sets work id.
+     *
+     * @param workId the work id
+     */
+    public void setWorkId(String workId) {
 		this.workId = workId;
 	}
 

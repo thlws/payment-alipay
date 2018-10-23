@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class UseRuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2378137533915376418L;
+	private static final long serialVersionUID = 1286772768864258646L;
 
 	/**
 	 * 适用门店列表
@@ -30,17 +30,39 @@ public class UseRuleInfo extends AlipayObject {
 	@ApiField("string")
 	private List<String> useMode;
 
-	public List<String> getSuitableShops() {
+    /**
+     * Gets suitable shops.
+     *
+     * @return the suitable shops
+     */
+    public List<String> getSuitableShops() {
 		return this.suitableShops;
 	}
-	public void setSuitableShops(List<String> suitableShops) {
+
+    /**
+     * Sets suitable shops.
+     *
+     * @param suitableShops the suitable shops
+     */
+    public void setSuitableShops(List<String> suitableShops) {
 		this.suitableShops = suitableShops;
 	}
 
-	public List<String> getUseMode() {
+    /**
+     * Gets use mode.
+     *
+     * @return the use mode
+     */
+    public List<String> getUseMode() {
 		return this.useMode;
 	}
-	public void setUseMode(List<String> useMode) {
+
+    /**
+     * Sets use mode.
+     *
+     * @param useMode the use mode
+     */
+    public void setUseMode(List<String> useMode) {
 		this.useMode = useMode;
 	}
 

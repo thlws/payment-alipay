@@ -7,13 +7,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.campaign.activity.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-29 18:16:56
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class KoubeiMarketingCampaignActivityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4452555311181891584L;
+	private static final long serialVersionUID = 6428473146829473694L;
 
 	/** 
 	 * 活动详情
@@ -21,10 +21,21 @@ public class KoubeiMarketingCampaignActivityQueryResponse extends AlipayResponse
 	@ApiField("camp_detail")
 	private CampDetail campDetail;
 
-	public void setCampDetail(CampDetail campDetail) {
+    /**
+     * Sets camp detail.
+     *
+     * @param campDetail the camp detail
+     */
+    public void setCampDetail(CampDetail campDetail) {
 		this.campDetail = campDetail;
 	}
-	public CampDetail getCampDetail( ) {
+
+    /**
+     * Gets camp detail.
+     *
+     * @return the camp detail
+     */
+    public CampDetail getCampDetail( ) {
 		return this.campDetail;
 	}
 

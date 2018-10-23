@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DiscountRateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8222693435776353323L;
+	private static final long serialVersionUID = 6798535626494286296L;
 
 	/**
 	 * 折扣方式
@@ -60,52 +60,129 @@ public class DiscountRateModel extends AlipayObject {
 	@ApiField("upper_trade_fee")
 	private String upperTradeFee;
 
-	public DiscountDstCampPrizeModel getDiscountDstCampPrizeModel() {
+    /**
+     * Gets discount dst camp prize model.
+     *
+     * @return the discount dst camp prize model
+     */
+    public DiscountDstCampPrizeModel getDiscountDstCampPrizeModel() {
 		return this.discountDstCampPrizeModel;
 	}
-	public void setDiscountDstCampPrizeModel(DiscountDstCampPrizeModel discountDstCampPrizeModel) {
+
+    /**
+     * Sets discount dst camp prize model.
+     *
+     * @param discountDstCampPrizeModel the discount dst camp prize model
+     */
+    public void setDiscountDstCampPrizeModel(DiscountDstCampPrizeModel discountDstCampPrizeModel) {
 		this.discountDstCampPrizeModel = discountDstCampPrizeModel;
 	}
 
-	public String getLowerTradeFee() {
+    /**
+     * Gets lower trade fee.
+     *
+     * @return the lower trade fee
+     */
+    public String getLowerTradeFee() {
 		return this.lowerTradeFee;
 	}
-	public void setLowerTradeFee(String lowerTradeFee) {
+
+    /**
+     * Sets lower trade fee.
+     *
+     * @param lowerTradeFee the lower trade fee
+     */
+    public void setLowerTradeFee(String lowerTradeFee) {
 		this.lowerTradeFee = lowerTradeFee;
 	}
 
-	public String getPrizeType() {
+    /**
+     * Gets prize type.
+     *
+     * @return the prize type
+     */
+    public String getPrizeType() {
 		return this.prizeType;
 	}
-	public void setPrizeType(String prizeType) {
+
+    /**
+     * Sets prize type.
+     *
+     * @param prizeType the prize type
+     */
+    public void setPrizeType(String prizeType) {
 		this.prizeType = prizeType;
 	}
 
-	public ReduceDstCampPrizeModel getReduceDstCampPrizeModel() {
+    /**
+     * Gets reduce dst camp prize model.
+     *
+     * @return the reduce dst camp prize model
+     */
+    public ReduceDstCampPrizeModel getReduceDstCampPrizeModel() {
 		return this.reduceDstCampPrizeModel;
 	}
-	public void setReduceDstCampPrizeModel(ReduceDstCampPrizeModel reduceDstCampPrizeModel) {
+
+    /**
+     * Sets reduce dst camp prize model.
+     *
+     * @param reduceDstCampPrizeModel the reduce dst camp prize model
+     */
+    public void setReduceDstCampPrizeModel(ReduceDstCampPrizeModel reduceDstCampPrizeModel) {
 		this.reduceDstCampPrizeModel = reduceDstCampPrizeModel;
 	}
 
-	public ReduceToAmtDstCampPrizeModel getReduceToAmtDstCampPrizeModel() {
+    /**
+     * Gets reduce to amt dst camp prize model.
+     *
+     * @return the reduce to amt dst camp prize model
+     */
+    public ReduceToAmtDstCampPrizeModel getReduceToAmtDstCampPrizeModel() {
 		return this.reduceToAmtDstCampPrizeModel;
 	}
-	public void setReduceToAmtDstCampPrizeModel(ReduceToAmtDstCampPrizeModel reduceToAmtDstCampPrizeModel) {
+
+    /**
+     * Sets reduce to amt dst camp prize model.
+     *
+     * @param reduceToAmtDstCampPrizeModel the reduce to amt dst camp prize model
+     */
+    public void setReduceToAmtDstCampPrizeModel(ReduceToAmtDstCampPrizeModel reduceToAmtDstCampPrizeModel) {
 		this.reduceToAmtDstCampPrizeModel = reduceToAmtDstCampPrizeModel;
 	}
 
-	public SingleDstCampPrizeModel getSingleDstCampPrizeModel() {
+    /**
+     * Gets single dst camp prize model.
+     *
+     * @return the single dst camp prize model
+     */
+    public SingleDstCampPrizeModel getSingleDstCampPrizeModel() {
 		return this.singleDstCampPrizeModel;
 	}
-	public void setSingleDstCampPrizeModel(SingleDstCampPrizeModel singleDstCampPrizeModel) {
+
+    /**
+     * Sets single dst camp prize model.
+     *
+     * @param singleDstCampPrizeModel the single dst camp prize model
+     */
+    public void setSingleDstCampPrizeModel(SingleDstCampPrizeModel singleDstCampPrizeModel) {
 		this.singleDstCampPrizeModel = singleDstCampPrizeModel;
 	}
 
-	public String getUpperTradeFee() {
+    /**
+     * Gets upper trade fee.
+     *
+     * @return the upper trade fee
+     */
+    public String getUpperTradeFee() {
 		return this.upperTradeFee;
 	}
-	public void setUpperTradeFee(String upperTradeFee) {
+
+    /**
+     * Sets upper trade fee.
+     *
+     * @param upperTradeFee the upper trade fee
+     */
+    public void setUpperTradeFee(String upperTradeFee) {
 		this.upperTradeFee = upperTradeFee;
 	}
 

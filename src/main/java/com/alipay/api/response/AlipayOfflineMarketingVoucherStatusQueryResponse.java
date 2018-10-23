@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.marketing.voucher.status.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-23 17:38:17
+ * @since 1.0, 2018-08-22 11:31:38
  */
 public class AlipayOfflineMarketingVoucherStatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7413371353963358731L;
+	private static final long serialVersionUID = 3449377296785144312L;
 
 	/** 
 	 * 扩展信息
@@ -32,24 +32,57 @@ public class AlipayOfflineMarketingVoucherStatusQueryResponse extends AlipayResp
 	@ApiField("voucher_status")
 	private String voucherStatus;
 
-	public void setExtInfo(String extInfo) {
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
-	public String getExtInfo( ) {
+
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo( ) {
 		return this.extInfo;
 	}
 
-	public void setVoucherId(String voucherId) {
+    /**
+     * Sets voucher id.
+     *
+     * @param voucherId the voucher id
+     */
+    public void setVoucherId(String voucherId) {
 		this.voucherId = voucherId;
 	}
-	public String getVoucherId( ) {
+
+    /**
+     * Gets voucher id.
+     *
+     * @return the voucher id
+     */
+    public String getVoucherId( ) {
 		return this.voucherId;
 	}
 
-	public void setVoucherStatus(String voucherStatus) {
+    /**
+     * Sets voucher status.
+     *
+     * @param voucherStatus the voucher status
+     */
+    public void setVoucherStatus(String voucherStatus) {
 		this.voucherStatus = voucherStatus;
 	}
-	public String getVoucherStatus( ) {
+
+    /**
+     * Gets voucher status.
+     *
+     * @return the voucher status
+     */
+    public String getVoucherStatus( ) {
 		return this.voucherStatus;
 	}
 

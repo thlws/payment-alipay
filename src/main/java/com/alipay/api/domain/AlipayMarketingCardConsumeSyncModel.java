@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingCardConsumeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7365187142126524747L;
+	private static final long serialVersionUID = 2284119257554914974L;
 
 	/**
 	 * 用户实际付的现金金额
@@ -115,101 +115,255 @@ BIZ_CARD：支付宝业务卡号
 	@ApiField("benefit_info_detail")
 	private List<BenefitInfoDetail> useBenefitList;
 
-	public String getActPayAmount() {
+    /**
+     * Gets act pay amount.
+     *
+     * @return the act pay amount
+     */
+    public String getActPayAmount() {
 		return this.actPayAmount;
 	}
-	public void setActPayAmount(String actPayAmount) {
+
+    /**
+     * Sets act pay amount.
+     *
+     * @param actPayAmount the act pay amount
+     */
+    public void setActPayAmount(String actPayAmount) {
 		this.actPayAmount = actPayAmount;
 	}
 
-	public MerchantCard getCardInfo() {
+    /**
+     * Gets card info.
+     *
+     * @return the card info
+     */
+    public MerchantCard getCardInfo() {
 		return this.cardInfo;
 	}
-	public void setCardInfo(MerchantCard cardInfo) {
+
+    /**
+     * Sets card info.
+     *
+     * @param cardInfo the card info
+     */
+    public void setCardInfo(MerchantCard cardInfo) {
 		this.cardInfo = cardInfo;
 	}
 
-	public List<BenefitInfoDetail> getGainBenefitList() {
+    /**
+     * Gets gain benefit list.
+     *
+     * @return the gain benefit list
+     */
+    public List<BenefitInfoDetail> getGainBenefitList() {
 		return this.gainBenefitList;
 	}
-	public void setGainBenefitList(List<BenefitInfoDetail> gainBenefitList) {
+
+    /**
+     * Sets gain benefit list.
+     *
+     * @param gainBenefitList the gain benefit list
+     */
+    public void setGainBenefitList(List<BenefitInfoDetail> gainBenefitList) {
 		this.gainBenefitList = gainBenefitList;
 	}
 
-	public String getMemo() {
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo() {
 		return this.memo;
 	}
-	public void setMemo(String memo) {
+
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
-	public String getShopCode() {
+    /**
+     * Gets shop code.
+     *
+     * @return the shop code
+     */
+    public String getShopCode() {
 		return this.shopCode;
 	}
-	public void setShopCode(String shopCode) {
+
+    /**
+     * Sets shop code.
+     *
+     * @param shopCode the shop code
+     */
+    public void setShopCode(String shopCode) {
 		this.shopCode = shopCode;
 	}
 
-	public String getSwipeCertType() {
+    /**
+     * Gets swipe cert type.
+     *
+     * @return the swipe cert type
+     */
+    public String getSwipeCertType() {
 		return this.swipeCertType;
 	}
-	public void setSwipeCertType(String swipeCertType) {
+
+    /**
+     * Sets swipe cert type.
+     *
+     * @param swipeCertType the swipe cert type
+     */
+    public void setSwipeCertType(String swipeCertType) {
 		this.swipeCertType = swipeCertType;
 	}
 
-	public String getTargetCardNo() {
+    /**
+     * Gets target card no.
+     *
+     * @return the target card no
+     */
+    public String getTargetCardNo() {
 		return this.targetCardNo;
 	}
-	public void setTargetCardNo(String targetCardNo) {
+
+    /**
+     * Sets target card no.
+     *
+     * @param targetCardNo the target card no
+     */
+    public void setTargetCardNo(String targetCardNo) {
 		this.targetCardNo = targetCardNo;
 	}
 
-	public String getTargetCardNoType() {
+    /**
+     * Gets target card no type.
+     *
+     * @return the target card no type
+     */
+    public String getTargetCardNoType() {
 		return this.targetCardNoType;
 	}
-	public void setTargetCardNoType(String targetCardNoType) {
+
+    /**
+     * Sets target card no type.
+     *
+     * @param targetCardNoType the target card no type
+     */
+    public void setTargetCardNoType(String targetCardNoType) {
 		this.targetCardNoType = targetCardNoType;
 	}
 
-	public String getTradeAmount() {
+    /**
+     * Gets trade amount.
+     *
+     * @return the trade amount
+     */
+    public String getTradeAmount() {
 		return this.tradeAmount;
 	}
-	public void setTradeAmount(String tradeAmount) {
+
+    /**
+     * Sets trade amount.
+     *
+     * @param tradeAmount the trade amount
+     */
+    public void setTradeAmount(String tradeAmount) {
 		this.tradeAmount = tradeAmount;
 	}
 
-	public String getTradeName() {
+    /**
+     * Gets trade name.
+     *
+     * @return the trade name
+     */
+    public String getTradeName() {
 		return this.tradeName;
 	}
-	public void setTradeName(String tradeName) {
+
+    /**
+     * Sets trade name.
+     *
+     * @param tradeName the trade name
+     */
+    public void setTradeName(String tradeName) {
 		this.tradeName = tradeName;
 	}
 
-	public String getTradeNo() {
+    /**
+     * Gets trade no.
+     *
+     * @return the trade no
+     */
+    public String getTradeNo() {
 		return this.tradeNo;
 	}
-	public void setTradeNo(String tradeNo) {
+
+    /**
+     * Sets trade no.
+     *
+     * @param tradeNo the trade no
+     */
+    public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
 
-	public Date getTradeTime() {
+    /**
+     * Gets trade time.
+     *
+     * @return the trade time
+     */
+    public Date getTradeTime() {
 		return this.tradeTime;
 	}
-	public void setTradeTime(Date tradeTime) {
+
+    /**
+     * Sets trade time.
+     *
+     * @param tradeTime the trade time
+     */
+    public void setTradeTime(Date tradeTime) {
 		this.tradeTime = tradeTime;
 	}
 
-	public String getTradeType() {
+    /**
+     * Gets trade type.
+     *
+     * @return the trade type
+     */
+    public String getTradeType() {
 		return this.tradeType;
 	}
-	public void setTradeType(String tradeType) {
+
+    /**
+     * Sets trade type.
+     *
+     * @param tradeType the trade type
+     */
+    public void setTradeType(String tradeType) {
 		this.tradeType = tradeType;
 	}
 
-	public List<BenefitInfoDetail> getUseBenefitList() {
+    /**
+     * Gets use benefit list.
+     *
+     * @return the use benefit list
+     */
+    public List<BenefitInfoDetail> getUseBenefitList() {
 		return this.useBenefitList;
 	}
-	public void setUseBenefitList(List<BenefitInfoDetail> useBenefitList) {
+
+    /**
+     * Sets use benefit list.
+     *
+     * @param useBenefitList the use benefit list
+     */
+    public void setUseBenefitList(List<BenefitInfoDetail> useBenefitList) {
 		this.useBenefitList = useBenefitList;
 	}
 

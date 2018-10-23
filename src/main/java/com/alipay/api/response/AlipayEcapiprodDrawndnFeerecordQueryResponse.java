@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ecapiprod.drawndn.feerecord.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-03-29 11:34:27
  */
 public class AlipayEcapiprodDrawndnFeerecordQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6141986647331879669L;
+	private static final long serialVersionUID = 4694222278658696784L;
 
 	/** 
 	 * 费用交易流水
@@ -30,17 +30,39 @@ public class AlipayEcapiprodDrawndnFeerecordQueryResponse extends AlipayResponse
 	@ApiField("request_id")
 	private String requestId;
 
-	public void setFeeRecords(List<FeeRecords> feeRecords) {
+    /**
+     * Sets fee records.
+     *
+     * @param feeRecords the fee records
+     */
+    public void setFeeRecords(List<FeeRecords> feeRecords) {
 		this.feeRecords = feeRecords;
 	}
-	public List<FeeRecords> getFeeRecords( ) {
+
+    /**
+     * Gets fee records.
+     *
+     * @return the fee records
+     */
+    public List<FeeRecords> getFeeRecords( ) {
 		return this.feeRecords;
 	}
 
-	public void setRequestId(String requestId) {
+    /**
+     * Sets request id.
+     *
+     * @param requestId the request id
+     */
+    public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
-	public String getRequestId( ) {
+
+    /**
+     * Gets request id.
+     *
+     * @return the request id
+     */
+    public String getRequestId( ) {
 		return this.requestId;
 	}
 

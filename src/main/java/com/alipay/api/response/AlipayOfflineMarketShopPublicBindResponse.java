@@ -8,13 +8,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.market.shop.public.bind response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-07-29 19:57:30
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayOfflineMarketShopPublicBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5544717897156711226L;
+	private static final long serialVersionUID = 1197198421257678527L;
 
 	/** 
 	 * 绑定失败的店铺ID列表
@@ -35,24 +35,57 @@ public class AlipayOfflineMarketShopPublicBindResponse extends AlipayResponse {
 	@ApiField("total_success")
 	private Long totalSuccess;
 
-	public void setErrorBindingShopIds(List<String> errorBindingShopIds) {
+    /**
+     * Sets error binding shop ids.
+     *
+     * @param errorBindingShopIds the error binding shop ids
+     */
+    public void setErrorBindingShopIds(List<String> errorBindingShopIds) {
 		this.errorBindingShopIds = errorBindingShopIds;
 	}
-	public List<String> getErrorBindingShopIds( ) {
+
+    /**
+     * Gets error binding shop ids.
+     *
+     * @return the error binding shop ids
+     */
+    public List<String> getErrorBindingShopIds( ) {
 		return this.errorBindingShopIds;
 	}
 
-	public void setTotalError(Long totalError) {
+    /**
+     * Sets total error.
+     *
+     * @param totalError the total error
+     */
+    public void setTotalError(Long totalError) {
 		this.totalError = totalError;
 	}
-	public Long getTotalError( ) {
+
+    /**
+     * Gets total error.
+     *
+     * @return the total error
+     */
+    public Long getTotalError( ) {
 		return this.totalError;
 	}
 
-	public void setTotalSuccess(Long totalSuccess) {
+    /**
+     * Sets total success.
+     *
+     * @param totalSuccess the total success
+     */
+    public void setTotalSuccess(Long totalSuccess) {
 		this.totalSuccess = totalSuccess;
 	}
-	public Long getTotalSuccess( ) {
+
+    /**
+     * Gets total success.
+     *
+     * @return the total success
+     */
+    public Long getTotalSuccess( ) {
 		return this.totalSuccess;
 	}
 

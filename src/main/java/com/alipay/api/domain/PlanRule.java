@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PlanRule extends AlipayObject {
 
-	private static final long serialVersionUID = 7192515256689693975L;
+	private static final long serialVersionUID = 6335978538949564844L;
 
 	/**
 	 * 当rule_type=FIXED 时,固定值有效
@@ -49,45 +49,111 @@ public class PlanRule extends AlipayObject {
 	@ApiField("rule_type")
 	private String ruleType;
 
-	public String getFixedValue() {
+    /**
+     * Gets fixed value.
+     *
+     * @return the fixed value
+     */
+    public String getFixedValue() {
 		return this.fixedValue;
 	}
-	public void setFixedValue(String fixedValue) {
+
+    /**
+     * Sets fixed value.
+     *
+     * @param fixedValue the fixed value
+     */
+    public void setFixedValue(String fixedValue) {
 		this.fixedValue = fixedValue;
 	}
 
-	public String getRangeEndValue() {
+    /**
+     * Gets range end value.
+     *
+     * @return the range end value
+     */
+    public String getRangeEndValue() {
 		return this.rangeEndValue;
 	}
-	public void setRangeEndValue(String rangeEndValue) {
+
+    /**
+     * Sets range end value.
+     *
+     * @param rangeEndValue the range end value
+     */
+    public void setRangeEndValue(String rangeEndValue) {
 		this.rangeEndValue = rangeEndValue;
 	}
 
-	public String getRangeStartValue() {
+    /**
+     * Gets range start value.
+     *
+     * @return the range start value
+     */
+    public String getRangeStartValue() {
 		return this.rangeStartValue;
 	}
-	public void setRangeStartValue(String rangeStartValue) {
+
+    /**
+     * Sets range start value.
+     *
+     * @param rangeStartValue the range start value
+     */
+    public void setRangeStartValue(String rangeStartValue) {
 		this.rangeStartValue = rangeStartValue;
 	}
 
-	public String getRuleDesc() {
+    /**
+     * Gets rule desc.
+     *
+     * @return the rule desc
+     */
+    public String getRuleDesc() {
 		return this.ruleDesc;
 	}
-	public void setRuleDesc(String ruleDesc) {
+
+    /**
+     * Sets rule desc.
+     *
+     * @param ruleDesc the rule desc
+     */
+    public void setRuleDesc(String ruleDesc) {
 		this.ruleDesc = ruleDesc;
 	}
 
-	public String getRuleName() {
+    /**
+     * Gets rule name.
+     *
+     * @return the rule name
+     */
+    public String getRuleName() {
 		return this.ruleName;
 	}
-	public void setRuleName(String ruleName) {
+
+    /**
+     * Sets rule name.
+     *
+     * @param ruleName the rule name
+     */
+    public void setRuleName(String ruleName) {
 		this.ruleName = ruleName;
 	}
 
-	public String getRuleType() {
+    /**
+     * Gets rule type.
+     *
+     * @return the rule type
+     */
+    public String getRuleType() {
 		return this.ruleType;
 	}
-	public void setRuleType(String ruleType) {
+
+    /**
+     * Sets rule type.
+     *
+     * @param ruleType the rule type
+     */
+    public void setRuleType(String ruleType) {
 		this.ruleType = ruleType;
 	}
 

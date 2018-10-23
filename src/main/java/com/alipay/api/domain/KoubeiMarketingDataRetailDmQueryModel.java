@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiMarketingDataRetailDmQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7213438377925617822L;
+	private static final long serialVersionUID = 6416519755599779346L;
 
 	/**
 	 * 内容ID，调用koubei.marketing.campaign.retail.dm.create创建内容时返回的内容ID
@@ -29,17 +29,39 @@ public class KoubeiMarketingDataRetailDmQueryModel extends AlipayObject {
 	@ApiField("string")
 	private List<String> shopIds;
 
-	public String getContentId() {
+    /**
+     * Gets content id.
+     *
+     * @return the content id
+     */
+    public String getContentId() {
 		return this.contentId;
 	}
-	public void setContentId(String contentId) {
+
+    /**
+     * Sets content id.
+     *
+     * @param contentId the content id
+     */
+    public void setContentId(String contentId) {
 		this.contentId = contentId;
 	}
 
-	public List<String> getShopIds() {
+    /**
+     * Gets shop ids.
+     *
+     * @return the shop ids
+     */
+    public List<String> getShopIds() {
 		return this.shopIds;
 	}
-	public void setShopIds(List<String> shopIds) {
+
+    /**
+     * Sets shop ids.
+     *
+     * @param shopIds the shop ids
+     */
+    public void setShopIds(List<String> shopIds) {
 		this.shopIds = shopIds;
 	}
 

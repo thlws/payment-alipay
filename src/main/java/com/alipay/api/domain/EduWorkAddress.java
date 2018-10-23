@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EduWorkAddress extends AlipayObject {
 
-	private static final long serialVersionUID = 8763655454599648829L;
+	private static final long serialVersionUID = 1877768662274117785L;
 
 	/**
 	 * 地址
@@ -43,38 +43,93 @@ public class EduWorkAddress extends AlipayObject {
 	@ApiField("street_name")
 	private String streetName;
 
-	public String getAddress() {
+    /**
+     * Gets address.
+     *
+     * @return the address
+     */
+    public String getAddress() {
 		return this.address;
 	}
-	public void setAddress(String address) {
+
+    /**
+     * Sets address.
+     *
+     * @param address the address
+     */
+    public void setAddress(String address) {
 		this.address = address;
 	}
 
-	public String getCity() {
+    /**
+     * Gets city.
+     *
+     * @return the city
+     */
+    public String getCity() {
 		return this.city;
 	}
-	public void setCity(String city) {
+
+    /**
+     * Sets city.
+     *
+     * @param city the city
+     */
+    public void setCity(String city) {
 		this.city = city;
 	}
 
-	public String getDistrictName() {
+    /**
+     * Gets district name.
+     *
+     * @return the district name
+     */
+    public String getDistrictName() {
 		return this.districtName;
 	}
-	public void setDistrictName(String districtName) {
+
+    /**
+     * Sets district name.
+     *
+     * @param districtName the district name
+     */
+    public void setDistrictName(String districtName) {
 		this.districtName = districtName;
 	}
 
-	public String getProvince() {
+    /**
+     * Gets province.
+     *
+     * @return the province
+     */
+    public String getProvince() {
 		return this.province;
 	}
-	public void setProvince(String province) {
+
+    /**
+     * Sets province.
+     *
+     * @param province the province
+     */
+    public void setProvince(String province) {
 		this.province = province;
 	}
 
-	public String getStreetName() {
+    /**
+     * Gets street name.
+     *
+     * @return the street name
+     */
+    public String getStreetName() {
 		return this.streetName;
 	}
-	public void setStreetName(String streetName) {
+
+    /**
+     * Sets street name.
+     *
+     * @param streetName the street name
+     */
+    public void setStreetName(String streetName) {
 		this.streetName = streetName;
 	}
 

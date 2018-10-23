@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: ant.merchant.expand.mapplyorder.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-07-28 23:35:07
  */
 public class AntMerchantExpandMapplyorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4636277885421782945L;
+	private static final long serialVersionUID = 5167923756191228927L;
 
 	/** 
 	 * 支付宝端商户入驻申请单据号
@@ -42,31 +42,75 @@ public class AntMerchantExpandMapplyorderQueryResponse extends AlipayResponse {
 	@ApiField("merchant_apply_result_record")
 	private List<MerchantApplyResultRecord> resultInfo;
 
-	public void setOrderNo(String orderNo) {
+    /**
+     * Sets order no.
+     *
+     * @param orderNo the order no
+     */
+    public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
-	public String getOrderNo( ) {
+
+    /**
+     * Gets order no.
+     *
+     * @return the order no
+     */
+    public String getOrderNo( ) {
 		return this.orderNo;
 	}
 
-	public void setOrderStatus(String orderStatus) {
+    /**
+     * Sets order status.
+     *
+     * @param orderStatus the order status
+     */
+    public void setOrderStatus(String orderStatus) {
 		this.orderStatus = orderStatus;
 	}
-	public String getOrderStatus( ) {
+
+    /**
+     * Gets order status.
+     *
+     * @return the order status
+     */
+    public String getOrderStatus( ) {
 		return this.orderStatus;
 	}
 
-	public void setOutBizNo(String outBizNo) {
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
-	public String getOutBizNo( ) {
+
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo( ) {
 		return this.outBizNo;
 	}
 
-	public void setResultInfo(List<MerchantApplyResultRecord> resultInfo) {
+    /**
+     * Sets result info.
+     *
+     * @param resultInfo the result info
+     */
+    public void setResultInfo(List<MerchantApplyResultRecord> resultInfo) {
 		this.resultInfo = resultInfo;
 	}
-	public List<MerchantApplyResultRecord> getResultInfo( ) {
+
+    /**
+     * Gets result info.
+     *
+     * @return the result info
+     */
+    public List<MerchantApplyResultRecord> getResultInfo( ) {
 		return this.resultInfo;
 	}
 

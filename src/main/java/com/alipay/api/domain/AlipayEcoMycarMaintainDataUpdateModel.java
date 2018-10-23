@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoMycarMaintainDataUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8123549197226223998L;
+	private static final long serialVersionUID = 4483768447631464191L;
 
 	/**
 	 * 门店或者服务的编码
@@ -37,31 +37,75 @@ public class AlipayEcoMycarMaintainDataUpdateModel extends AlipayObject {
 	@ApiField("type_id")
 	private String typeId;
 
-	public String getBizId() {
+    /**
+     * Gets biz id.
+     *
+     * @return the biz id
+     */
+    public String getBizId() {
 		return this.bizId;
 	}
-	public void setBizId(String bizId) {
+
+    /**
+     * Sets biz id.
+     *
+     * @param bizId the biz id
+     */
+    public void setBizId(String bizId) {
 		this.bizId = bizId;
 	}
 
-	public Long getEventId() {
+    /**
+     * Gets event id.
+     *
+     * @return the event id
+     */
+    public Long getEventId() {
 		return this.eventId;
 	}
-	public void setEventId(Long eventId) {
+
+    /**
+     * Sets event id.
+     *
+     * @param eventId the event id
+     */
+    public void setEventId(Long eventId) {
 		this.eventId = eventId;
 	}
 
-	public String getSource() {
+    /**
+     * Gets source.
+     *
+     * @return the source
+     */
+    public String getSource() {
 		return this.source;
 	}
-	public void setSource(String source) {
+
+    /**
+     * Sets source.
+     *
+     * @param source the source
+     */
+    public void setSource(String source) {
 		this.source = source;
 	}
 
-	public String getTypeId() {
+    /**
+     * Gets type id.
+     *
+     * @return the type id
+     */
+    public String getTypeId() {
 		return this.typeId;
 	}
-	public void setTypeId(String typeId) {
+
+    /**
+     * Sets type id.
+     *
+     * @param typeId the type id
+     */
+    public void setTypeId(String typeId) {
 		this.typeId = typeId;
 	}
 

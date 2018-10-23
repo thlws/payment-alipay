@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.exsc.user.firstsign.get request
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-03-29 17:13:27
  */
@@ -23,10 +23,21 @@ public class AlipayExscUserFirstsignGetRequest implements AlipayRequest<AlipayEx
 	 */
 	private String alipayId;
 
-	public void setAlipayId(String alipayId) {
+    /**
+     * Sets alipay id.
+     *
+     * @param alipayId the alipay id
+     */
+    public void setAlipayId(String alipayId) {
 		this.alipayId = alipayId;
 	}
-	public String getAlipayId() {
+
+    /**
+     * Gets alipay id.
+     *
+     * @return the alipay id
+     */
+    public String getAlipayId() {
 		return this.alipayId;
 	}
 	private String terminalType;
@@ -98,7 +109,13 @@ public class AlipayExscUserFirstsignGetRequest implements AlipayRequest<AlipayEx
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

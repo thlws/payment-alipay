@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.campaign.user.asset.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-08-08 19:56:13
+ * @since 1.0, 2018-03-21 15:19:49
  */
 public class KoubeiMarketingCampaignUserAssetQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1685765317232148586L;
+	private static final long serialVersionUID = 6234362376274481523L;
 
 	/** 
 	 * 券资产详情信息
@@ -30,17 +30,39 @@ public class KoubeiMarketingCampaignUserAssetQueryResponse extends AlipayRespons
 	@ApiField("voucher_asset_num")
 	private Long voucherAssetNum;
 
-	public void setVoucherAssetList(List<VoucherDetailInfo> voucherAssetList) {
+    /**
+     * Sets voucher asset list.
+     *
+     * @param voucherAssetList the voucher asset list
+     */
+    public void setVoucherAssetList(List<VoucherDetailInfo> voucherAssetList) {
 		this.voucherAssetList = voucherAssetList;
 	}
-	public List<VoucherDetailInfo> getVoucherAssetList( ) {
+
+    /**
+     * Gets voucher asset list.
+     *
+     * @return the voucher asset list
+     */
+    public List<VoucherDetailInfo> getVoucherAssetList( ) {
 		return this.voucherAssetList;
 	}
 
-	public void setVoucherAssetNum(Long voucherAssetNum) {
+    /**
+     * Sets voucher asset num.
+     *
+     * @param voucherAssetNum the voucher asset num
+     */
+    public void setVoucherAssetNum(Long voucherAssetNum) {
 		this.voucherAssetNum = voucherAssetNum;
 	}
-	public Long getVoucherAssetNum( ) {
+
+    /**
+     * Gets voucher asset num.
+     *
+     * @return the voucher asset num
+     */
+    public Long getVoucherAssetNum( ) {
 		return this.voucherAssetNum;
 	}
 

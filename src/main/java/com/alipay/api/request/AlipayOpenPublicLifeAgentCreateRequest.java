@@ -11,9 +11,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.open.public.life.agent.create request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-22 17:53:27
+ * @since 1.0, 2017-11-02 20:21:32
  */
 public class AlipayOpenPublicLifeAgentCreateRequest implements AlipayUploadRequest<AlipayOpenPublicLifeAgentCreateResponse> {
 
@@ -36,7 +36,7 @@ public class AlipayOpenPublicLifeAgentCreateRequest implements AlipayUploadReque
 	private FileItem businessLicenseAuthPic;
 
 	/** 
-	* 营业执照号码。该字段目前已无效
+	* 营业执照号码。被代创建商户运营主体为个人账户必填，企业账户无需填写
 	 */
 	private String businessLicenseNo;
 
@@ -56,7 +56,7 @@ public class AlipayOpenPublicLifeAgentCreateRequest implements AlipayUploadReque
 	private String contactMobile;
 
 	/** 
-	* 企业联系人名称
+	* 联系人名称
 	 */
 	private String contactName;
 
@@ -106,122 +106,309 @@ public class AlipayOpenPublicLifeAgentCreateRequest implements AlipayUploadReque
 	 */
 	private FileItem specialLicensePic;
 
-	public void setAccount(String account) {
+    /**
+     * Sets account.
+     *
+     * @param account the account
+     */
+    public void setAccount(String account) {
 		this.account = account;
 	}
-	public String getAccount() {
+
+    /**
+     * Gets account.
+     *
+     * @return the account
+     */
+    public String getAccount() {
 		return this.account;
 	}
 
-	public void setBackgroundPic(FileItem backgroundPic) {
+    /**
+     * Sets background pic.
+     *
+     * @param backgroundPic the background pic
+     */
+    public void setBackgroundPic(FileItem backgroundPic) {
 		this.backgroundPic = backgroundPic;
 	}
-	public FileItem getBackgroundPic() {
+
+    /**
+     * Gets background pic.
+     *
+     * @return the background pic
+     */
+    public FileItem getBackgroundPic() {
 		return this.backgroundPic;
 	}
 
-	public void setBusinessLicenseAuthPic(FileItem businessLicenseAuthPic) {
+    /**
+     * Sets business license auth pic.
+     *
+     * @param businessLicenseAuthPic the business license auth pic
+     */
+    public void setBusinessLicenseAuthPic(FileItem businessLicenseAuthPic) {
 		this.businessLicenseAuthPic = businessLicenseAuthPic;
 	}
-	public FileItem getBusinessLicenseAuthPic() {
+
+    /**
+     * Gets business license auth pic.
+     *
+     * @return the business license auth pic
+     */
+    public FileItem getBusinessLicenseAuthPic() {
 		return this.businessLicenseAuthPic;
 	}
 
-	public void setBusinessLicenseNo(String businessLicenseNo) {
+    /**
+     * Sets business license no.
+     *
+     * @param businessLicenseNo the business license no
+     */
+    public void setBusinessLicenseNo(String businessLicenseNo) {
 		this.businessLicenseNo = businessLicenseNo;
 	}
-	public String getBusinessLicenseNo() {
+
+    /**
+     * Gets business license no.
+     *
+     * @return the business license no
+     */
+    public String getBusinessLicenseNo() {
 		return this.businessLicenseNo;
 	}
 
-	public void setBusinessLicensePic(FileItem businessLicensePic) {
+    /**
+     * Sets business license pic.
+     *
+     * @param businessLicensePic the business license pic
+     */
+    public void setBusinessLicensePic(FileItem businessLicensePic) {
 		this.businessLicensePic = businessLicensePic;
 	}
-	public FileItem getBusinessLicensePic() {
+
+    /**
+     * Gets business license pic.
+     *
+     * @return the business license pic
+     */
+    public FileItem getBusinessLicensePic() {
 		return this.businessLicensePic;
 	}
 
-	public void setContactEmail(String contactEmail) {
+    /**
+     * Sets contact email.
+     *
+     * @param contactEmail the contact email
+     */
+    public void setContactEmail(String contactEmail) {
 		this.contactEmail = contactEmail;
 	}
-	public String getContactEmail() {
+
+    /**
+     * Gets contact email.
+     *
+     * @return the contact email
+     */
+    public String getContactEmail() {
 		return this.contactEmail;
 	}
 
-	public void setContactMobile(String contactMobile) {
+    /**
+     * Sets contact mobile.
+     *
+     * @param contactMobile the contact mobile
+     */
+    public void setContactMobile(String contactMobile) {
 		this.contactMobile = contactMobile;
 	}
-	public String getContactMobile() {
+
+    /**
+     * Gets contact mobile.
+     *
+     * @return the contact mobile
+     */
+    public String getContactMobile() {
 		return this.contactMobile;
 	}
 
-	public void setContactName(String contactName) {
+    /**
+     * Sets contact name.
+     *
+     * @param contactName the contact name
+     */
+    public void setContactName(String contactName) {
 		this.contactName = contactName;
 	}
-	public String getContactName() {
+
+    /**
+     * Gets contact name.
+     *
+     * @return the contact name
+     */
+    public String getContactName() {
 		return this.contactName;
 	}
 
-	public void setLogoPic(FileItem logoPic) {
+    /**
+     * Sets logo pic.
+     *
+     * @param logoPic the logo pic
+     */
+    public void setLogoPic(FileItem logoPic) {
 		this.logoPic = logoPic;
 	}
-	public FileItem getLogoPic() {
+
+    /**
+     * Gets logo pic.
+     *
+     * @return the logo pic
+     */
+    public FileItem getLogoPic() {
 		return this.logoPic;
 	}
 
-	public void setMccCode(String mccCode) {
+    /**
+     * Sets mcc code.
+     *
+     * @param mccCode the mcc code
+     */
+    public void setMccCode(String mccCode) {
 		this.mccCode = mccCode;
 	}
-	public String getMccCode() {
+
+    /**
+     * Gets mcc code.
+     *
+     * @return the mcc code
+     */
+    public String getMccCode() {
 		return this.mccCode;
 	}
 
-	public void setOutBizNo(String outBizNo) {
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
-	public String getOutBizNo() {
+
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
 
-	public void setOwnIntellectualPic(FileItem ownIntellectualPic) {
+    /**
+     * Sets own intellectual pic.
+     *
+     * @param ownIntellectualPic the own intellectual pic
+     */
+    public void setOwnIntellectualPic(FileItem ownIntellectualPic) {
 		this.ownIntellectualPic = ownIntellectualPic;
 	}
-	public FileItem getOwnIntellectualPic() {
+
+    /**
+     * Gets own intellectual pic.
+     *
+     * @return the own intellectual pic
+     */
+    public FileItem getOwnIntellectualPic() {
 		return this.ownIntellectualPic;
 	}
 
-	public void setPublicDesc(String publicDesc) {
+    /**
+     * Sets public desc.
+     *
+     * @param publicDesc the public desc
+     */
+    public void setPublicDesc(String publicDesc) {
 		this.publicDesc = publicDesc;
 	}
-	public String getPublicDesc() {
+
+    /**
+     * Gets public desc.
+     *
+     * @return the public desc
+     */
+    public String getPublicDesc() {
 		return this.publicDesc;
 	}
 
-	public void setPublicName(String publicName) {
+    /**
+     * Sets public name.
+     *
+     * @param publicName the public name
+     */
+    public void setPublicName(String publicName) {
 		this.publicName = publicName;
 	}
-	public String getPublicName() {
+
+    /**
+     * Gets public name.
+     *
+     * @return the public name
+     */
+    public String getPublicName() {
 		return this.publicName;
 	}
 
-	public void setShopScenePic(FileItem shopScenePic) {
+    /**
+     * Sets shop scene pic.
+     *
+     * @param shopScenePic the shop scene pic
+     */
+    public void setShopScenePic(FileItem shopScenePic) {
 		this.shopScenePic = shopScenePic;
 	}
-	public FileItem getShopScenePic() {
+
+    /**
+     * Gets shop scene pic.
+     *
+     * @return the shop scene pic
+     */
+    public FileItem getShopScenePic() {
 		return this.shopScenePic;
 	}
 
-	public void setShopSignBoardPic(FileItem shopSignBoardPic) {
+    /**
+     * Sets shop sign board pic.
+     *
+     * @param shopSignBoardPic the shop sign board pic
+     */
+    public void setShopSignBoardPic(FileItem shopSignBoardPic) {
 		this.shopSignBoardPic = shopSignBoardPic;
 	}
-	public FileItem getShopSignBoardPic() {
+
+    /**
+     * Gets shop sign board pic.
+     *
+     * @return the shop sign board pic
+     */
+    public FileItem getShopSignBoardPic() {
 		return this.shopSignBoardPic;
 	}
 
-	public void setSpecialLicensePic(FileItem specialLicensePic) {
+    /**
+     * Sets special license pic.
+     *
+     * @param specialLicensePic the special license pic
+     */
+    public void setSpecialLicensePic(FileItem specialLicensePic) {
 		this.specialLicensePic = specialLicensePic;
 	}
-	public FileItem getSpecialLicensePic() {
+
+    /**
+     * Gets special license pic.
+     *
+     * @return the special license pic
+     */
+    public FileItem getSpecialLicensePic() {
 		return this.specialLicensePic;
 	}
 	private String terminalType;
@@ -299,8 +486,14 @@ public class AlipayOpenPublicLifeAgentCreateRequest implements AlipayUploadReque
 		}
 		return txtParams;
 	}
-	
-	public void putOtherTextParam(String key, String value) {
+
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

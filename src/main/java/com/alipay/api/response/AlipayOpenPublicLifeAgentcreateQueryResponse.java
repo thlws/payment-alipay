@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.life.agentcreate.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-10-10 11:16:11
  */
 public class AlipayOpenPublicLifeAgentcreateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1824486124321995794L;
+	private static final long serialVersionUID = 5559334385177941846L;
 
 	/** 
 	 * 只有审核通过，且商户在支付宝发送的授权邮件中确认授权，此时生活号才会正式创建，查询才会返回该值
@@ -44,38 +44,93 @@ public class AlipayOpenPublicLifeAgentcreateQueryResponse extends AlipayResponse
 	@ApiField("refused_reason")
 	private String refusedReason;
 
-	public void setLifeAppId(String lifeAppId) {
+    /**
+     * Sets life app id.
+     *
+     * @param lifeAppId the life app id
+     */
+    public void setLifeAppId(String lifeAppId) {
 		this.lifeAppId = lifeAppId;
 	}
-	public String getLifeAppId( ) {
+
+    /**
+     * Gets life app id.
+     *
+     * @return the life app id
+     */
+    public String getLifeAppId( ) {
 		return this.lifeAppId;
 	}
 
-	public void setMerchantPid(String merchantPid) {
+    /**
+     * Sets merchant pid.
+     *
+     * @param merchantPid the merchant pid
+     */
+    public void setMerchantPid(String merchantPid) {
 		this.merchantPid = merchantPid;
 	}
-	public String getMerchantPid( ) {
+
+    /**
+     * Gets merchant pid.
+     *
+     * @return the merchant pid
+     */
+    public String getMerchantPid( ) {
 		return this.merchantPid;
 	}
 
-	public void setOrderStatusBizDesc(String orderStatusBizDesc) {
+    /**
+     * Sets order status biz desc.
+     *
+     * @param orderStatusBizDesc the order status biz desc
+     */
+    public void setOrderStatusBizDesc(String orderStatusBizDesc) {
 		this.orderStatusBizDesc = orderStatusBizDesc;
 	}
-	public String getOrderStatusBizDesc( ) {
+
+    /**
+     * Gets order status biz desc.
+     *
+     * @return the order status biz desc
+     */
+    public String getOrderStatusBizDesc( ) {
 		return this.orderStatusBizDesc;
 	}
 
-	public void setOutBizNo(String outBizNo) {
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
-	public String getOutBizNo( ) {
+
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo( ) {
 		return this.outBizNo;
 	}
 
-	public void setRefusedReason(String refusedReason) {
+    /**
+     * Sets refused reason.
+     *
+     * @param refusedReason the refused reason
+     */
+    public void setRefusedReason(String refusedReason) {
 		this.refusedReason = refusedReason;
 	}
-	public String getRefusedReason( ) {
+
+    /**
+     * Gets refused reason.
+     *
+     * @return the refused reason
+     */
+    public String getRefusedReason( ) {
 		return this.refusedReason;
 	}
 

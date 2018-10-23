@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.marketing.voucher.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-23 17:38:07
+ * @since 1.0, 2018-08-22 11:32:24
  */
 public class AlipayOfflineMarketingVoucherCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6699135584638861472L;
+	private static final long serialVersionUID = 3321132974354117869L;
 
 	/** 
 	 * 活动id，过渡方案的兼容字段
@@ -26,17 +26,39 @@ public class AlipayOfflineMarketingVoucherCreateResponse extends AlipayResponse 
 	@ApiField("voucher_id")
 	private String voucherId;
 
-	public void setActivityId(String activityId) {
+    /**
+     * Sets activity id.
+     *
+     * @param activityId the activity id
+     */
+    public void setActivityId(String activityId) {
 		this.activityId = activityId;
 	}
-	public String getActivityId( ) {
+
+    /**
+     * Gets activity id.
+     *
+     * @return the activity id
+     */
+    public String getActivityId( ) {
 		return this.activityId;
 	}
 
-	public void setVoucherId(String voucherId) {
+    /**
+     * Sets voucher id.
+     *
+     * @param voucherId the voucher id
+     */
+    public void setVoucherId(String voucherId) {
 		this.voucherId = voucherId;
 	}
-	public String getVoucherId( ) {
+
+    /**
+     * Gets voucher id.
+     *
+     * @return the voucher id
+     */
+    public String getVoucherId( ) {
 		return this.voucherId;
 	}
 

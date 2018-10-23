@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物业社区业主信息
  *
  * @author auto create
- * @since 1.0, 2016-11-24 16:15:02
+ * @since 1.0, 2018-06-09 20:19:02
  */
 public class CplifeResidentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7625144913581467832L;
+	private static final long serialVersionUID = 8453445729767262495L;
 
 	/**
 	 * 业主关联的房产在支付宝平台中的唯一标识。(该属性和property_entity_id两个至少需要填写一项，如果两项都填写则以entity_id为准.)
@@ -49,45 +49,111 @@ public class CplifeResidentInfo extends AlipayObject {
 	@ApiField("type")
 	private String type;
 
-	public String getEntityId() {
+    /**
+     * Gets entity id.
+     *
+     * @return the entity id
+     */
+    public String getEntityId() {
 		return this.entityId;
 	}
-	public void setEntityId(String entityId) {
+
+    /**
+     * Sets entity id.
+     *
+     * @param entityId the entity id
+     */
+    public void setEntityId(String entityId) {
 		this.entityId = entityId;
 	}
 
-	public String getIdcardNo() {
+    /**
+     * Gets idcard no.
+     *
+     * @return the idcard no
+     */
+    public String getIdcardNo() {
 		return this.idcardNo;
 	}
-	public void setIdcardNo(String idcardNo) {
+
+    /**
+     * Sets idcard no.
+     *
+     * @param idcardNo the idcard no
+     */
+    public void setIdcardNo(String idcardNo) {
 		this.idcardNo = idcardNo;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getOutEntityId() {
+    /**
+     * Gets out entity id.
+     *
+     * @return the out entity id
+     */
+    public String getOutEntityId() {
 		return this.outEntityId;
 	}
-	public void setOutEntityId(String outEntityId) {
+
+    /**
+     * Sets out entity id.
+     *
+     * @param outEntityId the out entity id
+     */
+    public void setOutEntityId(String outEntityId) {
 		this.outEntityId = outEntityId;
 	}
 
-	public String getOutResidentId() {
+    /**
+     * Gets out resident id.
+     *
+     * @return the out resident id
+     */
+    public String getOutResidentId() {
 		return this.outResidentId;
 	}
-	public void setOutResidentId(String outResidentId) {
+
+    /**
+     * Sets out resident id.
+     *
+     * @param outResidentId the out resident id
+     */
+    public void setOutResidentId(String outResidentId) {
 		this.outResidentId = outResidentId;
 	}
 
-	public String getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
-	public void setType(String type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
 

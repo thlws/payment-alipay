@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券可用时间
  *
  * @author auto create
- * @since 1.0, 2017-09-25 22:50:25
+ * @since 1.0, 2018-01-15 17:47:56
  */
 public class UseTime extends AlipayObject {
 
-	private static final long serialVersionUID = 4365361531996537597L;
+	private static final long serialVersionUID = 7883186771788254835L;
 
 	/**
 	 * 券可用时段时间维度，目前支持周(W)
@@ -36,24 +36,57 @@ public class UseTime extends AlipayObject {
 	@ApiField("values")
 	private String values;
 
-	public String getDimension() {
+    /**
+     * Gets dimension.
+     *
+     * @return the dimension
+     */
+    public String getDimension() {
 		return this.dimension;
 	}
-	public void setDimension(String dimension) {
+
+    /**
+     * Sets dimension.
+     *
+     * @param dimension the dimension
+     */
+    public void setDimension(String dimension) {
 		this.dimension = dimension;
 	}
 
-	public String getTimes() {
+    /**
+     * Gets times.
+     *
+     * @return the times
+     */
+    public String getTimes() {
 		return this.times;
 	}
-	public void setTimes(String times) {
+
+    /**
+     * Sets times.
+     *
+     * @param times the times
+     */
+    public void setTimes(String times) {
 		this.times = times;
 	}
 
-	public String getValues() {
+    /**
+     * Gets values.
+     *
+     * @return the values
+     */
+    public String getValues() {
 		return this.values;
 	}
-	public void setValues(String values) {
+
+    /**
+     * Sets values.
+     *
+     * @param values the values
+     */
+    public void setValues(String values) {
 		this.values = values;
 	}
 

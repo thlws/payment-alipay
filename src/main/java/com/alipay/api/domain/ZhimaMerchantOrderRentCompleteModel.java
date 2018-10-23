@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用借还订单归还
  *
  * @author auto create
- * @since 1.0, 2017-09-26 12:59:52
+ * @since 1.0, 2018-07-06 15:45:18
  */
 public class ZhimaMerchantOrderRentCompleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2334541255893387397L;
+	private static final long serialVersionUID = 7582572234512773287L;
+
+	/**
+	 * 扩展信息。商户发起借用服务时的扩展信息字段，格式：json，注意，如果字符串对应的json对象包含中文字符，需要对包含中文的字段进行编码
+	 */
+	@ApiField("extend_info")
+	private String extendInfo;
 
 	/**
 	 * 信用借还订单号
@@ -46,50 +52,134 @@ DAMAGE:赔偿金
 	private String restoreShopName;
 
 	/**
-	 * 物品归还时间
+	 * 物品实际归还时间，borrow_time<restore_time<当前时间+24小时，即该时间不能早于借还订单创建时的borrow_time，且最晚不能晚于当前时间后24小时。
 	 */
 	@ApiField("restore_time")
 	private String restoreTime;
 
-	public String getOrderNo() {
+    /**
+     * Gets extend info.
+     *
+     * @return the extend info
+     */
+    public String getExtendInfo() {
+		return this.extendInfo;
+	}
+
+    /**
+     * Sets extend info.
+     *
+     * @param extendInfo the extend info
+     */
+    public void setExtendInfo(String extendInfo) {
+		this.extendInfo = extendInfo;
+	}
+
+    /**
+     * Gets order no.
+     *
+     * @return the order no
+     */
+    public String getOrderNo() {
 		return this.orderNo;
 	}
-	public void setOrderNo(String orderNo) {
+
+    /**
+     * Sets order no.
+     *
+     * @param orderNo the order no
+     */
+    public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
 
-	public String getPayAmount() {
+    /**
+     * Gets pay amount.
+     *
+     * @return the pay amount
+     */
+    public String getPayAmount() {
 		return this.payAmount;
 	}
-	public void setPayAmount(String payAmount) {
+
+    /**
+     * Sets pay amount.
+     *
+     * @param payAmount the pay amount
+     */
+    public void setPayAmount(String payAmount) {
 		this.payAmount = payAmount;
 	}
 
-	public String getPayAmountType() {
+    /**
+     * Gets pay amount type.
+     *
+     * @return the pay amount type
+     */
+    public String getPayAmountType() {
 		return this.payAmountType;
 	}
-	public void setPayAmountType(String payAmountType) {
+
+    /**
+     * Sets pay amount type.
+     *
+     * @param payAmountType the pay amount type
+     */
+    public void setPayAmountType(String payAmountType) {
 		this.payAmountType = payAmountType;
 	}
 
-	public String getProductCode() {
+    /**
+     * Gets product code.
+     *
+     * @return the product code
+     */
+    public String getProductCode() {
 		return this.productCode;
 	}
-	public void setProductCode(String productCode) {
+
+    /**
+     * Sets product code.
+     *
+     * @param productCode the product code
+     */
+    public void setProductCode(String productCode) {
 		this.productCode = productCode;
 	}
 
-	public String getRestoreShopName() {
+    /**
+     * Gets restore shop name.
+     *
+     * @return the restore shop name
+     */
+    public String getRestoreShopName() {
 		return this.restoreShopName;
 	}
-	public void setRestoreShopName(String restoreShopName) {
+
+    /**
+     * Sets restore shop name.
+     *
+     * @param restoreShopName the restore shop name
+     */
+    public void setRestoreShopName(String restoreShopName) {
 		this.restoreShopName = restoreShopName;
 	}
 
-	public String getRestoreTime() {
+    /**
+     * Gets restore time.
+     *
+     * @return the restore time
+     */
+    public String getRestoreTime() {
 		return this.restoreTime;
 	}
-	public void setRestoreTime(String restoreTime) {
+
+    /**
+     * Sets restore time.
+     *
+     * @param restoreTime the restore time
+     */
+    public void setRestoreTime(String restoreTime) {
 		this.restoreTime = restoreTime;
 	}
 

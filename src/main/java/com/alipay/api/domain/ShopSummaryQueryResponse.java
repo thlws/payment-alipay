@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ShopSummaryQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 6615316796522875595L;
+	private static final long serialVersionUID = 8248181466211695639L;
 
 	/**
 	 * 门店地址
@@ -131,136 +131,345 @@ public class ShopSummaryQueryResponse extends AlipayObject {
 	@ApiField("status")
 	private String status;
 
-	public String getAddress() {
+    /**
+     * Gets address.
+     *
+     * @return the address
+     */
+    public String getAddress() {
 		return this.address;
 	}
-	public void setAddress(String address) {
+
+    /**
+     * Sets address.
+     *
+     * @param address the address
+     */
+    public void setAddress(String address) {
 		this.address = address;
 	}
 
-	public String getBranchShopName() {
+    /**
+     * Gets branch shop name.
+     *
+     * @return the branch shop name
+     */
+    public String getBranchShopName() {
 		return this.branchShopName;
 	}
-	public void setBranchShopName(String branchShopName) {
+
+    /**
+     * Sets branch shop name.
+     *
+     * @param branchShopName the branch shop name
+     */
+    public void setBranchShopName(String branchShopName) {
 		this.branchShopName = branchShopName;
 	}
 
-	public String getBrandName() {
+    /**
+     * Gets brand name.
+     *
+     * @return the brand name
+     */
+    public String getBrandName() {
 		return this.brandName;
 	}
-	public void setBrandName(String brandName) {
+
+    /**
+     * Sets brand name.
+     *
+     * @param brandName the brand name
+     */
+    public void setBrandName(String brandName) {
 		this.brandName = brandName;
 	}
 
-	public String getBusinessTime() {
+    /**
+     * Gets business time.
+     *
+     * @return the business time
+     */
+    public String getBusinessTime() {
 		return this.businessTime;
 	}
-	public void setBusinessTime(String businessTime) {
+
+    /**
+     * Sets business time.
+     *
+     * @param businessTime the business time
+     */
+    public void setBusinessTime(String businessTime) {
 		this.businessTime = businessTime;
 	}
 
-	public List<ShopCategoryInfo> getCategoryInfos() {
+    /**
+     * Gets category infos.
+     *
+     * @return the category infos
+     */
+    public List<ShopCategoryInfo> getCategoryInfos() {
 		return this.categoryInfos;
 	}
-	public void setCategoryInfos(List<ShopCategoryInfo> categoryInfos) {
+
+    /**
+     * Sets category infos.
+     *
+     * @param categoryInfos the category infos
+     */
+    public void setCategoryInfos(List<ShopCategoryInfo> categoryInfos) {
 		this.categoryInfos = categoryInfos;
 	}
 
-	public String getCityCode() {
+    /**
+     * Gets city code.
+     *
+     * @return the city code
+     */
+    public String getCityCode() {
 		return this.cityCode;
 	}
-	public void setCityCode(String cityCode) {
+
+    /**
+     * Sets city code.
+     *
+     * @param cityCode the city code
+     */
+    public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
 	}
 
-	public String getDistrictCode() {
+    /**
+     * Gets district code.
+     *
+     * @return the district code
+     */
+    public String getDistrictCode() {
 		return this.districtCode;
 	}
-	public void setDistrictCode(String districtCode) {
+
+    /**
+     * Sets district code.
+     *
+     * @param districtCode the district code
+     */
+    public void setDistrictCode(String districtCode) {
 		this.districtCode = districtCode;
 	}
 
-	public String getGmtCreate() {
+    /**
+     * Gets gmt create.
+     *
+     * @return the gmt create
+     */
+    public String getGmtCreate() {
 		return this.gmtCreate;
 	}
-	public void setGmtCreate(String gmtCreate) {
+
+    /**
+     * Sets gmt create.
+     *
+     * @param gmtCreate the gmt create
+     */
+    public void setGmtCreate(String gmtCreate) {
 		this.gmtCreate = gmtCreate;
 	}
 
-	public String getIsShow() {
+    /**
+     * Gets is show.
+     *
+     * @return the is show
+     */
+    public String getIsShow() {
 		return this.isShow;
 	}
-	public void setIsShow(String isShow) {
+
+    /**
+     * Sets is show.
+     *
+     * @param isShow the is show
+     */
+    public void setIsShow(String isShow) {
 		this.isShow = isShow;
 	}
 
-	public String getLatitude() {
+    /**
+     * Gets latitude.
+     *
+     * @return the latitude
+     */
+    public String getLatitude() {
 		return this.latitude;
 	}
-	public void setLatitude(String latitude) {
+
+    /**
+     * Sets latitude.
+     *
+     * @param latitude the latitude
+     */
+    public void setLatitude(String latitude) {
 		this.latitude = latitude;
 	}
 
-	public String getLongitude() {
+    /**
+     * Gets longitude.
+     *
+     * @return the longitude
+     */
+    public String getLongitude() {
 		return this.longitude;
 	}
-	public void setLongitude(String longitude) {
+
+    /**
+     * Sets longitude.
+     *
+     * @param longitude the longitude
+     */
+    public void setLongitude(String longitude) {
 		this.longitude = longitude;
 	}
 
-	public String getMainImage() {
+    /**
+     * Gets main image.
+     *
+     * @return the main image
+     */
+    public String getMainImage() {
 		return this.mainImage;
 	}
-	public void setMainImage(String mainImage) {
+
+    /**
+     * Sets main image.
+     *
+     * @param mainImage the main image
+     */
+    public void setMainImage(String mainImage) {
 		this.mainImage = mainImage;
 	}
 
-	public String getMainShopName() {
+    /**
+     * Gets main shop name.
+     *
+     * @return the main shop name
+     */
+    public String getMainShopName() {
 		return this.mainShopName;
 	}
-	public void setMainShopName(String mainShopName) {
+
+    /**
+     * Sets main shop name.
+     *
+     * @param mainShopName the main shop name
+     */
+    public void setMainShopName(String mainShopName) {
 		this.mainShopName = mainShopName;
 	}
 
-	public String getPicColl() {
+    /**
+     * Gets pic coll.
+     *
+     * @return the pic coll
+     */
+    public String getPicColl() {
 		return this.picColl;
 	}
-	public void setPicColl(String picColl) {
+
+    /**
+     * Sets pic coll.
+     *
+     * @param picColl the pic coll
+     */
+    public void setPicColl(String picColl) {
 		this.picColl = picColl;
 	}
 
-	public String getProvinceCode() {
+    /**
+     * Gets province code.
+     *
+     * @return the province code
+     */
+    public String getProvinceCode() {
 		return this.provinceCode;
 	}
-	public void setProvinceCode(String provinceCode) {
+
+    /**
+     * Sets province code.
+     *
+     * @param provinceCode the province code
+     */
+    public void setProvinceCode(String provinceCode) {
 		this.provinceCode = provinceCode;
 	}
 
-	public ShopCommentInfo getShopCommentInfo() {
+    /**
+     * Gets shop comment info.
+     *
+     * @return the shop comment info
+     */
+    public ShopCommentInfo getShopCommentInfo() {
 		return this.shopCommentInfo;
 	}
-	public void setShopCommentInfo(ShopCommentInfo shopCommentInfo) {
+
+    /**
+     * Sets shop comment info.
+     *
+     * @param shopCommentInfo the shop comment info
+     */
+    public void setShopCommentInfo(ShopCommentInfo shopCommentInfo) {
 		this.shopCommentInfo = shopCommentInfo;
 	}
 
-	public String getShopId() {
+    /**
+     * Gets shop id.
+     *
+     * @return the shop id
+     */
+    public String getShopId() {
 		return this.shopId;
 	}
-	public void setShopId(String shopId) {
+
+    /**
+     * Sets shop id.
+     *
+     * @param shopId the shop id
+     */
+    public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 
-	public String getShopType() {
+    /**
+     * Gets shop type.
+     *
+     * @return the shop type
+     */
+    public String getShopType() {
 		return this.shopType;
 	}
-	public void setShopType(String shopType) {
+
+    /**
+     * Sets shop type.
+     *
+     * @param shopType the shop type
+     */
+    public void setShopType(String shopType) {
 		this.shopType = shopType;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 

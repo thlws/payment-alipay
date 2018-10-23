@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AgreementSignParams extends AlipayObject {
 
-	private static final long serialVersionUID = 8671388714554357823L;
+	private static final long serialVersionUID = 7144758367612481237L;
 
 	/**
 	 * 商户在芝麻端申请的appId
@@ -79,66 +79,165 @@ public class AgreementSignParams extends AlipayObject {
 	@ApiField("third_party_type")
 	private String thirdPartyType;
 
-	public String getBuckleAppId() {
+    /**
+     * Gets buckle app id.
+     *
+     * @return the buckle app id
+     */
+    public String getBuckleAppId() {
 		return this.buckleAppId;
 	}
-	public void setBuckleAppId(String buckleAppId) {
+
+    /**
+     * Sets buckle app id.
+     *
+     * @param buckleAppId the buckle app id
+     */
+    public void setBuckleAppId(String buckleAppId) {
 		this.buckleAppId = buckleAppId;
 	}
 
-	public String getBuckleMerchantId() {
+    /**
+     * Gets buckle merchant id.
+     *
+     * @return the buckle merchant id
+     */
+    public String getBuckleMerchantId() {
 		return this.buckleMerchantId;
 	}
-	public void setBuckleMerchantId(String buckleMerchantId) {
+
+    /**
+     * Sets buckle merchant id.
+     *
+     * @param buckleMerchantId the buckle merchant id
+     */
+    public void setBuckleMerchantId(String buckleMerchantId) {
 		this.buckleMerchantId = buckleMerchantId;
 	}
 
-	public String getExternalAgreementNo() {
+    /**
+     * Gets external agreement no.
+     *
+     * @return the external agreement no
+     */
+    public String getExternalAgreementNo() {
 		return this.externalAgreementNo;
 	}
-	public void setExternalAgreementNo(String externalAgreementNo) {
+
+    /**
+     * Sets external agreement no.
+     *
+     * @param externalAgreementNo the external agreement no
+     */
+    public void setExternalAgreementNo(String externalAgreementNo) {
 		this.externalAgreementNo = externalAgreementNo;
 	}
 
-	public String getExternalLogonId() {
+    /**
+     * Gets external logon id.
+     *
+     * @return the external logon id
+     */
+    public String getExternalLogonId() {
 		return this.externalLogonId;
 	}
-	public void setExternalLogonId(String externalLogonId) {
+
+    /**
+     * Sets external logon id.
+     *
+     * @param externalLogonId the external logon id
+     */
+    public void setExternalLogonId(String externalLogonId) {
 		this.externalLogonId = externalLogonId;
 	}
 
-	public String getPersonalProductCode() {
+    /**
+     * Gets personal product code.
+     *
+     * @return the personal product code
+     */
+    public String getPersonalProductCode() {
 		return this.personalProductCode;
 	}
-	public void setPersonalProductCode(String personalProductCode) {
+
+    /**
+     * Sets personal product code.
+     *
+     * @param personalProductCode the personal product code
+     */
+    public void setPersonalProductCode(String personalProductCode) {
 		this.personalProductCode = personalProductCode;
 	}
 
-	public String getPromoParams() {
+    /**
+     * Gets promo params.
+     *
+     * @return the promo params
+     */
+    public String getPromoParams() {
 		return this.promoParams;
 	}
-	public void setPromoParams(String promoParams) {
+
+    /**
+     * Sets promo params.
+     *
+     * @param promoParams the promo params
+     */
+    public void setPromoParams(String promoParams) {
 		this.promoParams = promoParams;
 	}
 
-	public String getSignScene() {
+    /**
+     * Gets sign scene.
+     *
+     * @return the sign scene
+     */
+    public String getSignScene() {
 		return this.signScene;
 	}
-	public void setSignScene(String signScene) {
+
+    /**
+     * Sets sign scene.
+     *
+     * @param signScene the sign scene
+     */
+    public void setSignScene(String signScene) {
 		this.signScene = signScene;
 	}
 
-	public String getSignValidityPeriod() {
+    /**
+     * Gets sign validity period.
+     *
+     * @return the sign validity period
+     */
+    public String getSignValidityPeriod() {
 		return this.signValidityPeriod;
 	}
-	public void setSignValidityPeriod(String signValidityPeriod) {
+
+    /**
+     * Sets sign validity period.
+     *
+     * @param signValidityPeriod the sign validity period
+     */
+    public void setSignValidityPeriod(String signValidityPeriod) {
 		this.signValidityPeriod = signValidityPeriod;
 	}
 
-	public String getThirdPartyType() {
+    /**
+     * Gets third party type.
+     *
+     * @return the third party type
+     */
+    public String getThirdPartyType() {
 		return this.thirdPartyType;
 	}
-	public void setThirdPartyType(String thirdPartyType) {
+
+    /**
+     * Sets third party type.
+     *
+     * @param thirdPartyType the third party type
+     */
+    public void setThirdPartyType(String thirdPartyType) {
 		this.thirdPartyType = thirdPartyType;
 	}
 

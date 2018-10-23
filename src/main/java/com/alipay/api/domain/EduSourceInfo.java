@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EduSourceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4642444122668881822L;
+	private static final long serialVersionUID = 4794993744416385456L;
 
 	/**
 	 * 供应商的LOGO
@@ -31,24 +31,57 @@ public class EduSourceInfo extends AlipayObject {
 	@ApiField("name")
 	private String name;
 
-	public String getLogo() {
+    /**
+     * Gets logo.
+     *
+     * @return the logo
+     */
+    public String getLogo() {
 		return this.logo;
 	}
-	public void setLogo(String logo) {
+
+    /**
+     * Sets logo.
+     *
+     * @param logo the logo
+     */
+    public void setLogo(String logo) {
 		this.logo = logo;
 	}
 
-	public String getMobile() {
+    /**
+     * Gets mobile.
+     *
+     * @return the mobile
+     */
+    public String getMobile() {
 		return this.mobile;
 	}
-	public void setMobile(String mobile) {
+
+    /**
+     * Sets mobile.
+     *
+     * @param mobile the mobile
+     */
+    public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账单明细信息，可以同步多笔账单，json数组
  *
  * @author auto create
- * @since 1.0, 2017-08-04 14:14:22
+ * @since 1.0, 2017-11-08 10:54:24
  */
 public class AlipayEcoRenthouseBill extends AlipayObject {
 
-	private static final long serialVersionUID = 1812551167261791276L;
+	private static final long serialVersionUID = 3641838594492386118L;
 
 	/**
 	 * 账单金额
@@ -64,6 +64,12 @@ public class AlipayEcoRenthouseBill extends AlipayObject {
 	private String deadlineDate;
 
 	/**
+	 * 定金抵扣金额
+	 */
+	@ApiField("deduction_amount")
+	private String deductionAmount;
+
+	/**
 	 * 优惠金额
 	 */
 	@ApiField("discount_amount")
@@ -87,6 +93,12 @@ public class AlipayEcoRenthouseBill extends AlipayObject {
 	 */
 	@ApiField("memo")
 	private String memo;
+
+	/**
+	 * 最低支付金额
+	 */
+	@ApiField("min_pay_amount")
+	private String minPayAmount;
 
 	/**
 	 * 已支付金额
@@ -127,122 +139,345 @@ public class AlipayEcoRenthouseBill extends AlipayObject {
 	@ApiField("start_date")
 	private String startDate;
 
-	public String getBillAmount() {
+    /**
+     * Gets bill amount.
+     *
+     * @return the bill amount
+     */
+    public String getBillAmount() {
 		return this.billAmount;
 	}
-	public void setBillAmount(String billAmount) {
+
+    /**
+     * Sets bill amount.
+     *
+     * @param billAmount the bill amount
+     */
+    public void setBillAmount(String billAmount) {
 		this.billAmount = billAmount;
 	}
 
-	public Date getBillCreateTime() {
+    /**
+     * Gets bill create time.
+     *
+     * @return the bill create time
+     */
+    public Date getBillCreateTime() {
 		return this.billCreateTime;
 	}
-	public void setBillCreateTime(Date billCreateTime) {
+
+    /**
+     * Sets bill create time.
+     *
+     * @param billCreateTime the bill create time
+     */
+    public void setBillCreateTime(Date billCreateTime) {
 		this.billCreateTime = billCreateTime;
 	}
 
-	public String getBillDesc() {
+    /**
+     * Gets bill desc.
+     *
+     * @return the bill desc
+     */
+    public String getBillDesc() {
 		return this.billDesc;
 	}
-	public void setBillDesc(String billDesc) {
+
+    /**
+     * Sets bill desc.
+     *
+     * @param billDesc the bill desc
+     */
+    public void setBillDesc(String billDesc) {
 		this.billDesc = billDesc;
 	}
 
-	public String getBillNo() {
+    /**
+     * Gets bill no.
+     *
+     * @return the bill no
+     */
+    public String getBillNo() {
 		return this.billNo;
 	}
-	public void setBillNo(String billNo) {
+
+    /**
+     * Sets bill no.
+     *
+     * @param billNo the bill no
+     */
+    public void setBillNo(String billNo) {
 		this.billNo = billNo;
 	}
 
-	public Long getBillStatus() {
+    /**
+     * Gets bill status.
+     *
+     * @return the bill status
+     */
+    public Long getBillStatus() {
 		return this.billStatus;
 	}
-	public void setBillStatus(Long billStatus) {
+
+    /**
+     * Sets bill status.
+     *
+     * @param billStatus the bill status
+     */
+    public void setBillStatus(Long billStatus) {
 		this.billStatus = billStatus;
 	}
 
-	public String getBillType() {
+    /**
+     * Gets bill type.
+     *
+     * @return the bill type
+     */
+    public String getBillType() {
 		return this.billType;
 	}
-	public void setBillType(String billType) {
+
+    /**
+     * Sets bill type.
+     *
+     * @param billType the bill type
+     */
+    public void setBillType(String billType) {
 		this.billType = billType;
 	}
 
-	public String getDeadlineDate() {
+    /**
+     * Gets deadline date.
+     *
+     * @return the deadline date
+     */
+    public String getDeadlineDate() {
 		return this.deadlineDate;
 	}
-	public void setDeadlineDate(String deadlineDate) {
+
+    /**
+     * Sets deadline date.
+     *
+     * @param deadlineDate the deadline date
+     */
+    public void setDeadlineDate(String deadlineDate) {
 		this.deadlineDate = deadlineDate;
 	}
 
-	public String getDiscountAmount() {
+    /**
+     * Gets deduction amount.
+     *
+     * @return the deduction amount
+     */
+    public String getDeductionAmount() {
+		return this.deductionAmount;
+	}
+
+    /**
+     * Sets deduction amount.
+     *
+     * @param deductionAmount the deduction amount
+     */
+    public void setDeductionAmount(String deductionAmount) {
+		this.deductionAmount = deductionAmount;
+	}
+
+    /**
+     * Gets discount amount.
+     *
+     * @return the discount amount
+     */
+    public String getDiscountAmount() {
 		return this.discountAmount;
 	}
-	public void setDiscountAmount(String discountAmount) {
+
+    /**
+     * Sets discount amount.
+     *
+     * @param discountAmount the discount amount
+     */
+    public void setDiscountAmount(String discountAmount) {
 		this.discountAmount = discountAmount;
 	}
 
-	public String getEndDate() {
+    /**
+     * Gets end date.
+     *
+     * @return the end date
+     */
+    public String getEndDate() {
 		return this.endDate;
 	}
-	public void setEndDate(String endDate) {
+
+    /**
+     * Sets end date.
+     *
+     * @param endDate the end date
+     */
+    public void setEndDate(String endDate) {
 		this.endDate = endDate;
 	}
 
-	public String getLeaseNo() {
+    /**
+     * Gets lease no.
+     *
+     * @return the lease no
+     */
+    public String getLeaseNo() {
 		return this.leaseNo;
 	}
-	public void setLeaseNo(String leaseNo) {
+
+    /**
+     * Sets lease no.
+     *
+     * @param leaseNo the lease no
+     */
+    public void setLeaseNo(String leaseNo) {
 		this.leaseNo = leaseNo;
 	}
 
-	public String getMemo() {
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo() {
 		return this.memo;
 	}
-	public void setMemo(String memo) {
+
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
-	public String getPaidAmount() {
+    /**
+     * Gets min pay amount.
+     *
+     * @return the min pay amount
+     */
+    public String getMinPayAmount() {
+		return this.minPayAmount;
+	}
+
+    /**
+     * Sets min pay amount.
+     *
+     * @param minPayAmount the min pay amount
+     */
+    public void setMinPayAmount(String minPayAmount) {
+		this.minPayAmount = minPayAmount;
+	}
+
+    /**
+     * Gets paid amount.
+     *
+     * @return the paid amount
+     */
+    public String getPaidAmount() {
 		return this.paidAmount;
 	}
-	public void setPaidAmount(String paidAmount) {
+
+    /**
+     * Sets paid amount.
+     *
+     * @param paidAmount the paid amount
+     */
+    public void setPaidAmount(String paidAmount) {
 		this.paidAmount = paidAmount;
 	}
 
-	public Long getPayLock() {
+    /**
+     * Gets pay lock.
+     *
+     * @return the pay lock
+     */
+    public Long getPayLock() {
 		return this.payLock;
 	}
-	public void setPayLock(Long payLock) {
+
+    /**
+     * Sets pay lock.
+     *
+     * @param payLock the pay lock
+     */
+    public void setPayLock(Long payLock) {
 		this.payLock = payLock;
 	}
 
-	public String getPayLockMemo() {
+    /**
+     * Gets pay lock memo.
+     *
+     * @return the pay lock memo
+     */
+    public String getPayLockMemo() {
 		return this.payLockMemo;
 	}
-	public void setPayLockMemo(String payLockMemo) {
+
+    /**
+     * Sets pay lock memo.
+     *
+     * @param payLockMemo the pay lock memo
+     */
+    public void setPayLockMemo(String payLockMemo) {
 		this.payLockMemo = payLockMemo;
 	}
 
-	public Long getPayStatus() {
+    /**
+     * Gets pay status.
+     *
+     * @return the pay status
+     */
+    public Long getPayStatus() {
 		return this.payStatus;
 	}
-	public void setPayStatus(Long payStatus) {
+
+    /**
+     * Sets pay status.
+     *
+     * @param payStatus the pay status
+     */
+    public void setPayStatus(Long payStatus) {
 		this.payStatus = payStatus;
 	}
 
-	public Date getPayTime() {
+    /**
+     * Gets pay time.
+     *
+     * @return the pay time
+     */
+    public Date getPayTime() {
 		return this.payTime;
 	}
-	public void setPayTime(Date payTime) {
+
+    /**
+     * Sets pay time.
+     *
+     * @param payTime the pay time
+     */
+    public void setPayTime(Date payTime) {
 		this.payTime = payTime;
 	}
 
-	public String getStartDate() {
+    /**
+     * Gets start date.
+     *
+     * @return the start date
+     */
+    public String getStartDate() {
 		return this.startDate;
 	}
-	public void setStartDate(String startDate) {
+
+    /**
+     * Sets start date.
+     *
+     * @param startDate the start date
+     */
+    public void setStartDate(String startDate) {
 		this.startDate = startDate;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class Picture extends AlipayObject {
 
-	private static final long serialVersionUID = 6417617699353974983L;
+	private static final long serialVersionUID = 8395451191298399944L;
 
 	/**
 	 * 调用alipay.offline.material.image.upload接口将图片上传到素材中心后，生成的ID
@@ -25,17 +25,39 @@ public class Picture extends AlipayObject {
 	@ApiField("name")
 	private String name;
 
-	public String getLocation() {
+    /**
+     * Gets location.
+     *
+     * @return the location
+     */
+    public String getLocation() {
 		return this.location;
 	}
-	public void setLocation(String location) {
+
+    /**
+     * Sets location.
+     *
+     * @param location the location
+     */
+    public void setLocation(String location) {
 		this.location = location;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 

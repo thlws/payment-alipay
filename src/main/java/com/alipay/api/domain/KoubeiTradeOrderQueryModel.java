@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiTradeOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5743392624466954242L;
+	private static final long serialVersionUID = 6326215114591485373L;
 
 	/**
 	 * 口碑订单号
@@ -19,10 +19,21 @@ public class KoubeiTradeOrderQueryModel extends AlipayObject {
 	@ApiField("order_no")
 	private String orderNo;
 
-	public String getOrderNo() {
+    /**
+     * Gets order no.
+     *
+     * @return the order no
+     */
+    public String getOrderNo() {
 		return this.orderNo;
 	}
-	public void setOrderNo(String orderNo) {
+
+    /**
+     * Sets order no.
+     *
+     * @param orderNo the order no
+     */
+    public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
 

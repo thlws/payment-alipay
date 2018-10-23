@@ -9,9 +9,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.trust.user.report.get request
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-03-04 11:36:24
+ * @since 1.0, 2018-02-02 17:40:14
  */
 public class AlipayTrustUserReportGetRequest implements AlipayRequest<AlipayTrustUserReportGetResponse> {
 
@@ -28,17 +28,39 @@ public class AlipayTrustUserReportGetRequest implements AlipayRequest<AlipayTrus
 	 */
 	private String type;
 
-	public void setScene(String scene) {
+    /**
+     * Sets scene.
+     *
+     * @param scene the scene
+     */
+    public void setScene(String scene) {
 		this.scene = scene;
 	}
-	public String getScene() {
+
+    /**
+     * Gets scene.
+     *
+     * @return the scene
+     */
+    public String getScene() {
 		return this.scene;
 	}
 
-	public void setType(String type) {
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
-	public String getType() {
+
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
 	private String terminalType;
@@ -111,7 +133,13 @@ public class AlipayTrustUserReportGetRequest implements AlipayRequest<AlipayTrus
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

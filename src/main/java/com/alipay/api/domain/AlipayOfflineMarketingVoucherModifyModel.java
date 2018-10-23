@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券修改
  *
  * @author auto create
- * @since 1.0, 2016-06-23 17:38:12
+ * @since 1.0, 2018-08-22 11:32:33
  */
 public class AlipayOfflineMarketingVoucherModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2726572139353288581L;
+	private static final long serialVersionUID = 5853714863575828443L;
 
 	/**
 	 * 预算信息
@@ -43,38 +43,93 @@ public class AlipayOfflineMarketingVoucherModifyModel extends AlipayObject {
 	@ApiField("voucher_info")
 	private VoucherModifyInfo voucherInfo;
 
-	public BudgetInfo getBudgetInfo() {
+    /**
+     * Gets budget info.
+     *
+     * @return the budget info
+     */
+    public BudgetInfo getBudgetInfo() {
 		return this.budgetInfo;
 	}
-	public void setBudgetInfo(BudgetInfo budgetInfo) {
+
+    /**
+     * Sets budget info.
+     *
+     * @param budgetInfo the budget info
+     */
+    public void setBudgetInfo(BudgetInfo budgetInfo) {
 		this.budgetInfo = budgetInfo;
 	}
 
-	public String getExtInfo() {
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo() {
 		return this.extInfo;
 	}
-	public void setExtInfo(String extInfo) {
+
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
-	public PeriodInfo getGetCountLimit() {
+    /**
+     * Gets get count limit.
+     *
+     * @return the get count limit
+     */
+    public PeriodInfo getGetCountLimit() {
 		return this.getCountLimit;
 	}
-	public void setGetCountLimit(PeriodInfo getCountLimit) {
+
+    /**
+     * Sets get count limit.
+     *
+     * @param getCountLimit the get count limit
+     */
+    public void setGetCountLimit(PeriodInfo getCountLimit) {
 		this.getCountLimit = getCountLimit;
 	}
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
-	public VoucherModifyInfo getVoucherInfo() {
+    /**
+     * Gets voucher info.
+     *
+     * @return the voucher info
+     */
+    public VoucherModifyInfo getVoucherInfo() {
 		return this.voucherInfo;
 	}
-	public void setVoucherInfo(VoucherModifyInfo voucherInfo) {
+
+    /**
+     * Sets voucher info.
+     *
+     * @param voucherInfo the voucher info
+     */
+    public void setVoucherInfo(VoucherModifyInfo voucherInfo) {
 		this.voucherInfo = voucherInfo;
 	}
 

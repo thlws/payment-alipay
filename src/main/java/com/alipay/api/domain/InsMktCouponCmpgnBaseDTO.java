@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsMktCouponCmpgnBaseDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8632734449489479996L;
+	private static final long serialVersionUID = 2461817547756721868L;
 
 	/**
 	 * 活动id
@@ -37,31 +37,75 @@ public class InsMktCouponCmpgnBaseDTO extends AlipayObject {
 	@ApiField("coupon_value")
 	private String couponValue;
 
-	public String getCampaignId() {
+    /**
+     * Gets campaign id.
+     *
+     * @return the campaign id
+     */
+    public String getCampaignId() {
 		return this.campaignId;
 	}
-	public void setCampaignId(String campaignId) {
+
+    /**
+     * Sets campaign id.
+     *
+     * @param campaignId the campaign id
+     */
+    public void setCampaignId(String campaignId) {
 		this.campaignId = campaignId;
 	}
 
-	public String getCouponType() {
+    /**
+     * Gets coupon type.
+     *
+     * @return the coupon type
+     */
+    public String getCouponType() {
 		return this.couponType;
 	}
-	public void setCouponType(String couponType) {
+
+    /**
+     * Sets coupon type.
+     *
+     * @param couponType the coupon type
+     */
+    public void setCouponType(String couponType) {
 		this.couponType = couponType;
 	}
 
-	public String getCouponUpperValue() {
+    /**
+     * Gets coupon upper value.
+     *
+     * @return the coupon upper value
+     */
+    public String getCouponUpperValue() {
 		return this.couponUpperValue;
 	}
-	public void setCouponUpperValue(String couponUpperValue) {
+
+    /**
+     * Sets coupon upper value.
+     *
+     * @param couponUpperValue the coupon upper value
+     */
+    public void setCouponUpperValue(String couponUpperValue) {
 		this.couponUpperValue = couponUpperValue;
 	}
 
-	public String getCouponValue() {
+    /**
+     * Gets coupon value.
+     *
+     * @return the coupon value
+     */
+    public String getCouponValue() {
 		return this.couponValue;
 	}
-	public void setCouponValue(String couponValue) {
+
+    /**
+     * Sets coupon value.
+     *
+     * @param couponValue the coupon value
+     */
+    public void setCouponValue(String couponValue) {
 		this.couponValue = couponValue;
 	}
 

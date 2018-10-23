@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改小区物业基础服务信息
  *
  * @author auto create
- * @since 1.0, 2017-01-13 17:32:01
+ * @since 1.0, 2018-06-09 20:19:45
  */
 public class AlipayEcoCplifeBasicserviceModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8771447947311217838L;
+	private static final long serialVersionUID = 6517548649424215553L;
 
 	/**
 	 * 若服务类型为物业缴费账单模式，每个小区默认的收款帐号为授权物业的支付宝账号，默认不用传该参数。
@@ -69,52 +69,129 @@ OFFLINE - 下线
 	@ApiField("status")
 	private String status;
 
-	public String getAccount() {
+    /**
+     * Gets account.
+     *
+     * @return the account
+     */
+    public String getAccount() {
 		return this.account;
 	}
-	public void setAccount(String account) {
+
+    /**
+     * Sets account.
+     *
+     * @param account the account
+     */
+    public void setAccount(String account) {
 		this.account = account;
 	}
 
-	public String getAccountType() {
+    /**
+     * Gets account type.
+     *
+     * @return the account type
+     */
+    public String getAccountType() {
 		return this.accountType;
 	}
-	public void setAccountType(String accountType) {
+
+    /**
+     * Sets account type.
+     *
+     * @param accountType the account type
+     */
+    public void setAccountType(String accountType) {
 		this.accountType = accountType;
 	}
 
-	public String getCommunityId() {
+    /**
+     * Gets community id.
+     *
+     * @return the community id
+     */
+    public String getCommunityId() {
 		return this.communityId;
 	}
-	public void setCommunityId(String communityId) {
+
+    /**
+     * Sets community id.
+     *
+     * @param communityId the community id
+     */
+    public void setCommunityId(String communityId) {
 		this.communityId = communityId;
 	}
 
-	public String getExternalInvokeAddress() {
+    /**
+     * Gets external invoke address.
+     *
+     * @return the external invoke address
+     */
+    public String getExternalInvokeAddress() {
 		return this.externalInvokeAddress;
 	}
-	public void setExternalInvokeAddress(String externalInvokeAddress) {
+
+    /**
+     * Sets external invoke address.
+     *
+     * @param externalInvokeAddress the external invoke address
+     */
+    public void setExternalInvokeAddress(String externalInvokeAddress) {
 		this.externalInvokeAddress = externalInvokeAddress;
 	}
 
-	public Date getServiceExpires() {
+    /**
+     * Gets service expires.
+     *
+     * @return the service expires
+     */
+    public Date getServiceExpires() {
 		return this.serviceExpires;
 	}
-	public void setServiceExpires(Date serviceExpires) {
+
+    /**
+     * Sets service expires.
+     *
+     * @param serviceExpires the service expires
+     */
+    public void setServiceExpires(Date serviceExpires) {
 		this.serviceExpires = serviceExpires;
 	}
 
-	public String getServiceType() {
+    /**
+     * Gets service type.
+     *
+     * @return the service type
+     */
+    public String getServiceType() {
 		return this.serviceType;
 	}
-	public void setServiceType(String serviceType) {
+
+    /**
+     * Sets service type.
+     *
+     * @param serviceType the service type
+     */
+    public void setServiceType(String serviceType) {
 		this.serviceType = serviceType;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 

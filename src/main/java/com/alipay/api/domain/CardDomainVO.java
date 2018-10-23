@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CardDomainVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4651891811358491476L;
+	private static final long serialVersionUID = 2756745664414734289L;
 
 	/**
 	 * 值域域名的描述值，固定为”金融”
@@ -25,17 +25,39 @@ public class CardDomainVO extends AlipayObject {
 	@ApiField("domain_name")
 	private String domainName;
 
-	public String getDescription() {
+    /**
+     * Gets description.
+     *
+     * @return the description
+     */
+    public String getDescription() {
 		return this.description;
 	}
-	public void setDescription(String description) {
+
+    /**
+     * Sets description.
+     *
+     * @param description the description
+     */
+    public void setDescription(String description) {
 		this.description = description;
 	}
 
-	public String getDomainName() {
+    /**
+     * Gets domain name.
+     *
+     * @return the domain name
+     */
+    public String getDomainName() {
 		return this.domainName;
 	}
-	public void setDomainName(String domainName) {
+
+    /**
+     * Sets domain name.
+     *
+     * @param domainName the domain name
+     */
+    public void setDomainName(String domainName) {
 		this.domainName = domainName;
 	}
 

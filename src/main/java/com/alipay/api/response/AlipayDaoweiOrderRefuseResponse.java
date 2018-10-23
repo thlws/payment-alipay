@@ -5,13 +5,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.daowei.order.refuse response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-01-16 11:30:46
+ * @since 1.0, 2018-03-23 13:24:12
  */
 public class AlipayDaoweiOrderRefuseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4553161182627586799L;
+	private static final long serialVersionUID = 4416477561133865767L;
 
 	
 

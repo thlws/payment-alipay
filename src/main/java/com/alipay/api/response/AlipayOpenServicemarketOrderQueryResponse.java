@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.servicemarket.order.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-31 17:29:32
+ * @since 1.0, 2018-07-09 11:10:00
  */
 public class AlipayOpenServicemarketOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6567852917452118163L;
+	private static final long serialVersionUID = 1177578431286217549L;
 
 	/** 
 	 * 订购服务商品ID
@@ -54,45 +54,111 @@ public class AlipayOpenServicemarketOrderQueryResponse extends AlipayResponse {
 	@ApiField("total_size")
 	private Long totalSize;
 
-	public void setCommodityId(String commodityId) {
+    /**
+     * Sets commodity id.
+     *
+     * @param commodityId the commodity id
+     */
+    public void setCommodityId(String commodityId) {
 		this.commodityId = commodityId;
 	}
-	public String getCommodityId( ) {
+
+    /**
+     * Gets commodity id.
+     *
+     * @return the commodity id
+     */
+    public String getCommodityId( ) {
 		return this.commodityId;
 	}
 
-	public void setCurrentPage(Long currentPage) {
+    /**
+     * Sets current page.
+     *
+     * @param currentPage the current page
+     */
+    public void setCurrentPage(Long currentPage) {
 		this.currentPage = currentPage;
 	}
-	public Long getCurrentPage( ) {
+
+    /**
+     * Gets current page.
+     *
+     * @return the current page
+     */
+    public Long getCurrentPage( ) {
 		return this.currentPage;
 	}
 
-	public void setOrderItems(List<OrderItem> orderItems) {
+    /**
+     * Sets order items.
+     *
+     * @param orderItems the order items
+     */
+    public void setOrderItems(List<OrderItem> orderItems) {
 		this.orderItems = orderItems;
 	}
-	public List<OrderItem> getOrderItems( ) {
+
+    /**
+     * Gets order items.
+     *
+     * @return the order items
+     */
+    public List<OrderItem> getOrderItems( ) {
 		return this.orderItems;
 	}
 
-	public void setSpecifications(String specifications) {
+    /**
+     * Sets specifications.
+     *
+     * @param specifications the specifications
+     */
+    public void setSpecifications(String specifications) {
 		this.specifications = specifications;
 	}
-	public String getSpecifications( ) {
+
+    /**
+     * Gets specifications.
+     *
+     * @return the specifications
+     */
+    public String getSpecifications( ) {
 		return this.specifications;
 	}
 
-	public void setStatus(String status) {
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
-	public String getStatus( ) {
+
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus( ) {
 		return this.status;
 	}
 
-	public void setTotalSize(Long totalSize) {
+    /**
+     * Sets total size.
+     *
+     * @param totalSize the total size
+     */
+    public void setTotalSize(Long totalSize) {
 		this.totalSize = totalSize;
 	}
-	public Long getTotalSize( ) {
+
+    /**
+     * Gets total size.
+     *
+     * @return the total size
+     */
+    public Long getTotalSize( ) {
 		return this.totalSize;
 	}
 

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FundItemAOPModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7877929819398259415L;
+	private static final long serialVersionUID = 5152731272155436527L;
 
 	/**
 	 * 财务外部单据号
@@ -291,325 +291,831 @@ public class FundItemAOPModel extends AlipayObject {
 	@ApiField("uid")
 	private String uid;
 
-	public String getAcctransOutBizNo() {
+    /**
+     * Gets acctrans out biz no.
+     *
+     * @return the acctrans out biz no
+     */
+    public String getAcctransOutBizNo() {
 		return this.acctransOutBizNo;
 	}
-	public void setAcctransOutBizNo(String acctransOutBizNo) {
+
+    /**
+     * Sets acctrans out biz no.
+     *
+     * @param acctransOutBizNo the acctrans out biz no
+     */
+    public void setAcctransOutBizNo(String acctransOutBizNo) {
 		this.acctransOutBizNo = acctransOutBizNo;
 	}
 
-	public String getAmount() {
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public String getAmount() {
 		return this.amount;
 	}
-	public void setAmount(String amount) {
+
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
-	public String getAssertTypeCode() {
+    /**
+     * Gets assert type code.
+     *
+     * @return the assert type code
+     */
+    public String getAssertTypeCode() {
 		return this.assertTypeCode;
 	}
-	public void setAssertTypeCode(String assertTypeCode) {
+
+    /**
+     * Sets assert type code.
+     *
+     * @param assertTypeCode the assert type code
+     */
+    public void setAssertTypeCode(String assertTypeCode) {
 		this.assertTypeCode = assertTypeCode;
 	}
 
-	public String getBankCardPayType() {
+    /**
+     * Gets bank card pay type.
+     *
+     * @return the bank card pay type
+     */
+    public String getBankCardPayType() {
 		return this.bankCardPayType;
 	}
-	public void setBankCardPayType(String bankCardPayType) {
+
+    /**
+     * Sets bank card pay type.
+     *
+     * @param bankCardPayType the bank card pay type
+     */
+    public void setBankCardPayType(String bankCardPayType) {
 		this.bankCardPayType = bankCardPayType;
 	}
 
-	public String getBankCardType() {
+    /**
+     * Gets bank card type.
+     *
+     * @return the bank card type
+     */
+    public String getBankCardType() {
 		return this.bankCardType;
 	}
-	public void setBankCardType(String bankCardType) {
+
+    /**
+     * Sets bank card type.
+     *
+     * @param bankCardType the bank card type
+     */
+    public void setBankCardType(String bankCardType) {
 		this.bankCardType = bankCardType;
 	}
 
-	public String getBizId() {
+    /**
+     * Gets biz id.
+     *
+     * @return the biz id
+     */
+    public String getBizId() {
 		return this.bizId;
 	}
-	public void setBizId(String bizId) {
+
+    /**
+     * Sets biz id.
+     *
+     * @param bizId the biz id
+     */
+    public void setBizId(String bizId) {
 		this.bizId = bizId;
 	}
 
-	public String getBizInNo() {
+    /**
+     * Gets biz in no.
+     *
+     * @return the biz in no
+     */
+    public String getBizInNo() {
 		return this.bizInNo;
 	}
-	public void setBizInNo(String bizInNo) {
+
+    /**
+     * Sets biz in no.
+     *
+     * @param bizInNo the biz in no
+     */
+    public void setBizInNo(String bizInNo) {
 		this.bizInNo = bizInNo;
 	}
 
-	public String getBizOutNo() {
+    /**
+     * Gets biz out no.
+     *
+     * @return the biz out no
+     */
+    public String getBizOutNo() {
 		return this.bizOutNo;
 	}
-	public void setBizOutNo(String bizOutNo) {
+
+    /**
+     * Sets biz out no.
+     *
+     * @param bizOutNo the biz out no
+     */
+    public void setBizOutNo(String bizOutNo) {
 		this.bizOutNo = bizOutNo;
 	}
 
-	public String getBizType() {
+    /**
+     * Gets biz type.
+     *
+     * @return the biz type
+     */
+    public String getBizType() {
 		return this.bizType;
 	}
-	public void setBizType(String bizType) {
+
+    /**
+     * Sets biz type.
+     *
+     * @param bizType the biz type
+     */
+    public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
-	public String getCurrency() {
+    /**
+     * Gets currency.
+     *
+     * @return the currency
+     */
+    public String getCurrency() {
 		return this.currency;
 	}
-	public void setCurrency(String currency) {
+
+    /**
+     * Sets currency.
+     *
+     * @param currency the currency
+     */
+    public void setCurrency(String currency) {
 		this.currency = currency;
 	}
 
-	public String getDbackAmount() {
+    /**
+     * Gets dback amount.
+     *
+     * @return the dback amount
+     */
+    public String getDbackAmount() {
 		return this.dbackAmount;
 	}
-	public void setDbackAmount(String dbackAmount) {
+
+    /**
+     * Sets dback amount.
+     *
+     * @param dbackAmount the dback amount
+     */
+    public void setDbackAmount(String dbackAmount) {
 		this.dbackAmount = dbackAmount;
 	}
 
-	public Date getDbackGmtCreate() {
+    /**
+     * Gets dback gmt create.
+     *
+     * @return the dback gmt create
+     */
+    public Date getDbackGmtCreate() {
 		return this.dbackGmtCreate;
 	}
-	public void setDbackGmtCreate(Date dbackGmtCreate) {
+
+    /**
+     * Sets dback gmt create.
+     *
+     * @param dbackGmtCreate the dback gmt create
+     */
+    public void setDbackGmtCreate(Date dbackGmtCreate) {
 		this.dbackGmtCreate = dbackGmtCreate;
 	}
 
-	public Date getDbackGmtEstBkAck() {
+    /**
+     * Gets dback gmt est bk ack.
+     *
+     * @return the dback gmt est bk ack
+     */
+    public Date getDbackGmtEstBkAck() {
 		return this.dbackGmtEstBkAck;
 	}
-	public void setDbackGmtEstBkAck(Date dbackGmtEstBkAck) {
+
+    /**
+     * Sets dback gmt est bk ack.
+     *
+     * @param dbackGmtEstBkAck the dback gmt est bk ack
+     */
+    public void setDbackGmtEstBkAck(Date dbackGmtEstBkAck) {
 		this.dbackGmtEstBkAck = dbackGmtEstBkAck;
 	}
 
-	public Date getDbackGmtEstBkInto() {
+    /**
+     * Gets dback gmt est bk into.
+     *
+     * @return the dback gmt est bk into
+     */
+    public Date getDbackGmtEstBkInto() {
 		return this.dbackGmtEstBkInto;
 	}
-	public void setDbackGmtEstBkInto(Date dbackGmtEstBkInto) {
+
+    /**
+     * Sets dback gmt est bk into.
+     *
+     * @param dbackGmtEstBkInto the dback gmt est bk into
+     */
+    public void setDbackGmtEstBkInto(Date dbackGmtEstBkInto) {
 		this.dbackGmtEstBkInto = dbackGmtEstBkInto;
 	}
 
-	public String getDbackInstAccountName() {
+    /**
+     * Gets dback inst account name.
+     *
+     * @return the dback inst account name
+     */
+    public String getDbackInstAccountName() {
 		return this.dbackInstAccountName;
 	}
-	public void setDbackInstAccountName(String dbackInstAccountName) {
+
+    /**
+     * Sets dback inst account name.
+     *
+     * @param dbackInstAccountName the dback inst account name
+     */
+    public void setDbackInstAccountName(String dbackInstAccountName) {
 		this.dbackInstAccountName = dbackInstAccountName;
 	}
 
-	public String getDbackInstAccountNo() {
+    /**
+     * Gets dback inst account no.
+     *
+     * @return the dback inst account no
+     */
+    public String getDbackInstAccountNo() {
 		return this.dbackInstAccountNo;
 	}
-	public void setDbackInstAccountNo(String dbackInstAccountNo) {
+
+    /**
+     * Sets dback inst account no.
+     *
+     * @param dbackInstAccountNo the dback inst account no
+     */
+    public void setDbackInstAccountNo(String dbackInstAccountNo) {
 		this.dbackInstAccountNo = dbackInstAccountNo;
 	}
 
-	public String getDbackInstId() {
+    /**
+     * Gets dback inst id.
+     *
+     * @return the dback inst id
+     */
+    public String getDbackInstId() {
 		return this.dbackInstId;
 	}
-	public void setDbackInstId(String dbackInstId) {
+
+    /**
+     * Sets dback inst id.
+     *
+     * @param dbackInstId the dback inst id
+     */
+    public void setDbackInstId(String dbackInstId) {
 		this.dbackInstId = dbackInstId;
 	}
 
-	public String getDbackInstName() {
+    /**
+     * Gets dback inst name.
+     *
+     * @return the dback inst name
+     */
+    public String getDbackInstName() {
 		return this.dbackInstName;
 	}
-	public void setDbackInstName(String dbackInstName) {
+
+    /**
+     * Sets dback inst name.
+     *
+     * @param dbackInstName the dback inst name
+     */
+    public void setDbackInstName(String dbackInstName) {
 		this.dbackInstName = dbackInstName;
 	}
 
-	public String getFid() {
+    /**
+     * Gets fid.
+     *
+     * @return the fid
+     */
+    public String getFid() {
 		return this.fid;
 	}
-	public void setFid(String fid) {
+
+    /**
+     * Sets fid.
+     *
+     * @param fid the fid
+     */
+    public void setFid(String fid) {
 		this.fid = fid;
 	}
 
-	public Long getFundAccessType() {
+    /**
+     * Gets fund access type.
+     *
+     * @return the fund access type
+     */
+    public Long getFundAccessType() {
 		return this.fundAccessType;
 	}
-	public void setFundAccessType(Long fundAccessType) {
+
+    /**
+     * Sets fund access type.
+     *
+     * @param fundAccessType the fund access type
+     */
+    public void setFundAccessType(Long fundAccessType) {
 		this.fundAccessType = fundAccessType;
 	}
 
-	public String getFundAccountNo() {
+    /**
+     * Gets fund account no.
+     *
+     * @return the fund account no
+     */
+    public String getFundAccountNo() {
 		return this.fundAccountNo;
 	}
-	public void setFundAccountNo(String fundAccountNo) {
+
+    /**
+     * Sets fund account no.
+     *
+     * @param fundAccountNo the fund account no
+     */
+    public void setFundAccountNo(String fundAccountNo) {
 		this.fundAccountNo = fundAccountNo;
 	}
 
-	public Long getFundBizType() {
+    /**
+     * Gets fund biz type.
+     *
+     * @return the fund biz type
+     */
+    public Long getFundBizType() {
 		return this.fundBizType;
 	}
-	public void setFundBizType(Long fundBizType) {
+
+    /**
+     * Sets fund biz type.
+     *
+     * @param fundBizType the fund biz type
+     */
+    public void setFundBizType(Long fundBizType) {
 		this.fundBizType = fundBizType;
 	}
 
-	public Date getFundCreateTime() {
+    /**
+     * Gets fund create time.
+     *
+     * @return the fund create time
+     */
+    public Date getFundCreateTime() {
 		return this.fundCreateTime;
 	}
-	public void setFundCreateTime(Date fundCreateTime) {
+
+    /**
+     * Sets fund create time.
+     *
+     * @param fundCreateTime the fund create time
+     */
+    public void setFundCreateTime(Date fundCreateTime) {
 		this.fundCreateTime = fundCreateTime;
 	}
 
-	public Date getFundFinishTime() {
+    /**
+     * Gets fund finish time.
+     *
+     * @return the fund finish time
+     */
+    public Date getFundFinishTime() {
 		return this.fundFinishTime;
 	}
-	public void setFundFinishTime(Date fundFinishTime) {
+
+    /**
+     * Sets fund finish time.
+     *
+     * @param fundFinishTime the fund finish time
+     */
+    public void setFundFinishTime(Date fundFinishTime) {
 		this.fundFinishTime = fundFinishTime;
 	}
 
-	public Long getFundInOut() {
+    /**
+     * Gets fund in out.
+     *
+     * @return the fund in out
+     */
+    public Long getFundInOut() {
 		return this.fundInOut;
 	}
-	public void setFundInOut(Long fundInOut) {
+
+    /**
+     * Sets fund in out.
+     *
+     * @param fundInOut the fund in out
+     */
+    public void setFundInOut(Long fundInOut) {
 		this.fundInOut = fundInOut;
 	}
 
-	public String getFundInstId() {
+    /**
+     * Gets fund inst id.
+     *
+     * @return the fund inst id
+     */
+    public String getFundInstId() {
 		return this.fundInstId;
 	}
-	public void setFundInstId(String fundInstId) {
+
+    /**
+     * Sets fund inst id.
+     *
+     * @param fundInstId the fund inst id
+     */
+    public void setFundInstId(String fundInstId) {
 		this.fundInstId = fundInstId;
 	}
 
-	public Date getFundModifyTime() {
+    /**
+     * Gets fund modify time.
+     *
+     * @return the fund modify time
+     */
+    public Date getFundModifyTime() {
 		return this.fundModifyTime;
 	}
-	public void setFundModifyTime(Date fundModifyTime) {
+
+    /**
+     * Sets fund modify time.
+     *
+     * @param fundModifyTime the fund modify time
+     */
+    public void setFundModifyTime(Date fundModifyTime) {
 		this.fundModifyTime = fundModifyTime;
 	}
 
-	public String getFundStatus() {
+    /**
+     * Gets fund status.
+     *
+     * @return the fund status
+     */
+    public String getFundStatus() {
 		return this.fundStatus;
 	}
-	public void setFundStatus(String fundStatus) {
+
+    /**
+     * Sets fund status.
+     *
+     * @param fundStatus the fund status
+     */
+    public void setFundStatus(String fundStatus) {
 		this.fundStatus = fundStatus;
 	}
 
-	public Boolean getFundToolBelongToCrowner() {
+    /**
+     * Gets fund tool belong to crowner.
+     *
+     * @return the fund tool belong to crowner
+     */
+    public Boolean getFundToolBelongToCrowner() {
 		return this.fundToolBelongToCrowner;
 	}
-	public void setFundToolBelongToCrowner(Boolean fundToolBelongToCrowner) {
+
+    /**
+     * Sets fund tool belong to crowner.
+     *
+     * @param fundToolBelongToCrowner the fund tool belong to crowner
+     */
+    public void setFundToolBelongToCrowner(Boolean fundToolBelongToCrowner) {
 		this.fundToolBelongToCrowner = fundToolBelongToCrowner;
 	}
 
-	public String getFundToolOwnerCardNo() {
+    /**
+     * Gets fund tool owner card no.
+     *
+     * @return the fund tool owner card no
+     */
+    public String getFundToolOwnerCardNo() {
 		return this.fundToolOwnerCardNo;
 	}
-	public void setFundToolOwnerCardNo(String fundToolOwnerCardNo) {
+
+    /**
+     * Sets fund tool owner card no.
+     *
+     * @param fundToolOwnerCardNo the fund tool owner card no
+     */
+    public void setFundToolOwnerCardNo(String fundToolOwnerCardNo) {
 		this.fundToolOwnerCardNo = fundToolOwnerCardNo;
 	}
 
-	public String getFundToolTypeForCrowner() {
+    /**
+     * Gets fund tool type for crowner.
+     *
+     * @return the fund tool type for crowner
+     */
+    public String getFundToolTypeForCrowner() {
 		return this.fundToolTypeForCrowner;
 	}
-	public void setFundToolTypeForCrowner(String fundToolTypeForCrowner) {
+
+    /**
+     * Sets fund tool type for crowner.
+     *
+     * @param fundToolTypeForCrowner the fund tool type for crowner
+     */
+    public void setFundToolTypeForCrowner(String fundToolTypeForCrowner) {
 		this.fundToolTypeForCrowner = fundToolTypeForCrowner;
 	}
 
-	public String getFundToolTypeForSystem() {
+    /**
+     * Gets fund tool type for system.
+     *
+     * @return the fund tool type for system
+     */
+    public String getFundToolTypeForSystem() {
 		return this.fundToolTypeForSystem;
 	}
-	public void setFundToolTypeForSystem(String fundToolTypeForSystem) {
+
+    /**
+     * Sets fund tool type for system.
+     *
+     * @param fundToolTypeForSystem the fund tool type for system
+     */
+    public void setFundToolTypeForSystem(String fundToolTypeForSystem) {
 		this.fundToolTypeForSystem = fundToolTypeForSystem;
 	}
 
-	public String getFundToolTypeName() {
+    /**
+     * Gets fund tool type name.
+     *
+     * @return the fund tool type name
+     */
+    public String getFundToolTypeName() {
 		return this.fundToolTypeName;
 	}
-	public void setFundToolTypeName(String fundToolTypeName) {
+
+    /**
+     * Sets fund tool type name.
+     *
+     * @param fundToolTypeName the fund tool type name
+     */
+    public void setFundToolTypeName(String fundToolTypeName) {
 		this.fundToolTypeName = fundToolTypeName;
 	}
 
-	public Date getGmtBizCreate() {
+    /**
+     * Gets gmt biz create.
+     *
+     * @return the gmt biz create
+     */
+    public Date getGmtBizCreate() {
 		return this.gmtBizCreate;
 	}
-	public void setGmtBizCreate(Date gmtBizCreate) {
+
+    /**
+     * Sets gmt biz create.
+     *
+     * @param gmtBizCreate the gmt biz create
+     */
+    public void setGmtBizCreate(Date gmtBizCreate) {
 		this.gmtBizCreate = gmtBizCreate;
 	}
 
-	public String getOpenSelfSlipType() {
+    /**
+     * Gets open self slip type.
+     *
+     * @return the open self slip type
+     */
+    public String getOpenSelfSlipType() {
 		return this.openSelfSlipType;
 	}
-	public void setOpenSelfSlipType(String openSelfSlipType) {
+
+    /**
+     * Sets open self slip type.
+     *
+     * @param openSelfSlipType the open self slip type
+     */
+    public void setOpenSelfSlipType(String openSelfSlipType) {
 		this.openSelfSlipType = openSelfSlipType;
 	}
 
-	public String getOppositeBizCardAlias() {
+    /**
+     * Gets opposite biz card alias.
+     *
+     * @return the opposite biz card alias
+     */
+    public String getOppositeBizCardAlias() {
 		return this.oppositeBizCardAlias;
 	}
-	public void setOppositeBizCardAlias(String oppositeBizCardAlias) {
+
+    /**
+     * Sets opposite biz card alias.
+     *
+     * @param oppositeBizCardAlias the opposite biz card alias
+     */
+    public void setOppositeBizCardAlias(String oppositeBizCardAlias) {
 		this.oppositeBizCardAlias = oppositeBizCardAlias;
 	}
 
-	public String getOppositeBizCardNo() {
+    /**
+     * Gets opposite biz card no.
+     *
+     * @return the opposite biz card no
+     */
+    public String getOppositeBizCardNo() {
 		return this.oppositeBizCardNo;
 	}
-	public void setOppositeBizCardNo(String oppositeBizCardNo) {
+
+    /**
+     * Sets opposite biz card no.
+     *
+     * @param oppositeBizCardNo the opposite biz card no
+     */
+    public void setOppositeBizCardNo(String oppositeBizCardNo) {
 		this.oppositeBizCardNo = oppositeBizCardNo;
 	}
 
-	public String getOppositeFundCardNo() {
+    /**
+     * Gets opposite fund card no.
+     *
+     * @return the opposite fund card no
+     */
+    public String getOppositeFundCardNo() {
 		return this.oppositeFundCardNo;
 	}
-	public void setOppositeFundCardNo(String oppositeFundCardNo) {
+
+    /**
+     * Sets opposite fund card no.
+     *
+     * @param oppositeFundCardNo the opposite fund card no
+     */
+    public void setOppositeFundCardNo(String oppositeFundCardNo) {
 		this.oppositeFundCardNo = oppositeFundCardNo;
 	}
 
-	public String getOutRequestNo() {
+    /**
+     * Gets out request no.
+     *
+     * @return the out request no
+     */
+    public String getOutRequestNo() {
 		return this.outRequestNo;
 	}
-	public void setOutRequestNo(String outRequestNo) {
+
+    /**
+     * Sets out request no.
+     *
+     * @param outRequestNo the out request no
+     */
+    public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
 	}
 
-	public String getOwnerCardNo() {
+    /**
+     * Gets owner card no.
+     *
+     * @return the owner card no
+     */
+    public String getOwnerCardNo() {
 		return this.ownerCardNo;
 	}
-	public void setOwnerCardNo(String ownerCardNo) {
+
+    /**
+     * Sets owner card no.
+     *
+     * @param ownerCardNo the owner card no
+     */
+    public void setOwnerCardNo(String ownerCardNo) {
 		this.ownerCardNo = ownerCardNo;
 	}
 
-	public String getRefundBankStatus() {
+    /**
+     * Gets refund bank status.
+     *
+     * @return the refund bank status
+     */
+    public String getRefundBankStatus() {
 		return this.refundBankStatus;
 	}
-	public void setRefundBankStatus(String refundBankStatus) {
+
+    /**
+     * Sets refund bank status.
+     *
+     * @param refundBankStatus the refund bank status
+     */
+    public void setRefundBankStatus(String refundBankStatus) {
 		this.refundBankStatus = refundBankStatus;
 	}
 
-	public String getSlipAmount() {
+    /**
+     * Gets slip amount.
+     *
+     * @return the slip amount
+     */
+    public String getSlipAmount() {
 		return this.slipAmount;
 	}
-	public void setSlipAmount(String slipAmount) {
+
+    /**
+     * Sets slip amount.
+     *
+     * @param slipAmount the slip amount
+     */
+    public void setSlipAmount(String slipAmount) {
 		this.slipAmount = slipAmount;
 	}
 
-	public String getSlipId() {
+    /**
+     * Gets slip id.
+     *
+     * @return the slip id
+     */
+    public String getSlipId() {
 		return this.slipId;
 	}
-	public void setSlipId(String slipId) {
+
+    /**
+     * Sets slip id.
+     *
+     * @param slipId the slip id
+     */
+    public void setSlipId(String slipId) {
 		this.slipId = slipId;
 	}
 
-	public String getSlipStatus() {
+    /**
+     * Gets slip status.
+     *
+     * @return the slip status
+     */
+    public String getSlipStatus() {
 		return this.slipStatus;
 	}
-	public void setSlipStatus(String slipStatus) {
+
+    /**
+     * Sets slip status.
+     *
+     * @param slipStatus the slip status
+     */
+    public void setSlipStatus(String slipStatus) {
 		this.slipStatus = slipStatus;
 	}
 
-	public String getSubPrepaidCardType() {
+    /**
+     * Gets sub prepaid card type.
+     *
+     * @return the sub prepaid card type
+     */
+    public String getSubPrepaidCardType() {
 		return this.subPrepaidCardType;
 	}
-	public void setSubPrepaidCardType(String subPrepaidCardType) {
+
+    /**
+     * Sets sub prepaid card type.
+     *
+     * @param subPrepaidCardType the sub prepaid card type
+     */
+    public void setSubPrepaidCardType(String subPrepaidCardType) {
 		this.subPrepaidCardType = subPrepaidCardType;
 	}
 
-	public String getUid() {
+    /**
+     * Gets uid.
+     *
+     * @return the uid
+     */
+    public String getUid() {
 		return this.uid;
 	}
-	public void setUid(String uid) {
+
+    /**
+     * Sets uid.
+     *
+     * @param uid the uid
+     */
+    public void setUid(String uid) {
 		this.uid = uid;
 	}
 

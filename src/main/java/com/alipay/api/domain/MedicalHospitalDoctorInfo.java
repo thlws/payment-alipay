@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MedicalHospitalDoctorInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3875195276886672192L;
+	private static final long serialVersionUID = 6491971748446155243L;
 
 	/**
 	 * 医生唯一标识，编码开发者生成并保证唯一
@@ -34,24 +34,57 @@ public class MedicalHospitalDoctorInfo extends AlipayObject {
 	@ApiField("sex")
 	private String sex;
 
-	public String getCode() {
+    /**
+     * Gets code.
+     *
+     * @return the code
+     */
+    public String getCode() {
 		return this.code;
 	}
-	public void setCode(String code) {
+
+    /**
+     * Sets code.
+     *
+     * @param code the code
+     */
+    public void setCode(String code) {
 		this.code = code;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getSex() {
+    /**
+     * Gets sex.
+     *
+     * @return the sex
+     */
+    public String getSex() {
 		return this.sex;
 	}
-	public void setSex(String sex) {
+
+    /**
+     * Sets sex.
+     *
+     * @param sex the sex
+     */
+    public void setSex(String sex) {
 		this.sex = sex;
 	}
 

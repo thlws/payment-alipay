@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 活动限制信息
  *
  * @author auto create
- * @since 1.0, 2017-09-28 10:51:01
+ * @since 1.0, 2018-02-08 21:53:19
  */
 public class ConstraintInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2792876185455474383L;
+	private static final long serialVersionUID = 7768486462526728958L;
 
 	/**
 	 * 资金池ID
@@ -35,6 +35,12 @@ public class ConstraintInfo extends AlipayObject {
 	 */
 	@ApiField("crowd_restriction")
 	private String crowdRestriction;
+
+	/**
+	 * 根据crowd_restriction的值不同，设置相应的值，如果crowd_restriction是“MEMBER_CARD”，crowd_restriction_value就是关联会员卡模版ID集合，用逗号拼接
+	 */
+	@ApiField("crowd_restriction_value")
+	private String crowdRestrictionValue;
 
 	/**
 	 * 单品码列表
@@ -84,66 +90,183 @@ public class ConstraintInfo extends AlipayObject {
 	@ApiField("user_win_frequency")
 	private String userWinFrequency;
 
-	public String getCashPoolId() {
+    /**
+     * Gets cash pool id.
+     *
+     * @return the cash pool id
+     */
+    public String getCashPoolId() {
 		return this.cashPoolId;
 	}
-	public void setCashPoolId(String cashPoolId) {
+
+    /**
+     * Sets cash pool id.
+     *
+     * @param cashPoolId the cash pool id
+     */
+    public void setCashPoolId(String cashPoolId) {
 		this.cashPoolId = cashPoolId;
 	}
 
-	public String getCrowdGroupId() {
+    /**
+     * Gets crowd group id.
+     *
+     * @return the crowd group id
+     */
+    public String getCrowdGroupId() {
 		return this.crowdGroupId;
 	}
-	public void setCrowdGroupId(String crowdGroupId) {
+
+    /**
+     * Sets crowd group id.
+     *
+     * @param crowdGroupId the crowd group id
+     */
+    public void setCrowdGroupId(String crowdGroupId) {
 		this.crowdGroupId = crowdGroupId;
 	}
 
-	public String getCrowdRestriction() {
+    /**
+     * Gets crowd restriction.
+     *
+     * @return the crowd restriction
+     */
+    public String getCrowdRestriction() {
 		return this.crowdRestriction;
 	}
-	public void setCrowdRestriction(String crowdRestriction) {
+
+    /**
+     * Sets crowd restriction.
+     *
+     * @param crowdRestriction the crowd restriction
+     */
+    public void setCrowdRestriction(String crowdRestriction) {
 		this.crowdRestriction = crowdRestriction;
 	}
 
-	public List<String> getItemIds() {
+    /**
+     * Gets crowd restriction value.
+     *
+     * @return the crowd restriction value
+     */
+    public String getCrowdRestrictionValue() {
+		return this.crowdRestrictionValue;
+	}
+
+    /**
+     * Sets crowd restriction value.
+     *
+     * @param crowdRestrictionValue the crowd restriction value
+     */
+    public void setCrowdRestrictionValue(String crowdRestrictionValue) {
+		this.crowdRestrictionValue = crowdRestrictionValue;
+	}
+
+    /**
+     * Gets item ids.
+     *
+     * @return the item ids
+     */
+    public List<String> getItemIds() {
 		return this.itemIds;
 	}
-	public void setItemIds(List<String> itemIds) {
+
+    /**
+     * Sets item ids.
+     *
+     * @param itemIds the item ids
+     */
+    public void setItemIds(List<String> itemIds) {
 		this.itemIds = itemIds;
 	}
 
-	public String getMinCost() {
+    /**
+     * Gets min cost.
+     *
+     * @return the min cost
+     */
+    public String getMinCost() {
 		return this.minCost;
 	}
-	public void setMinCost(String minCost) {
+
+    /**
+     * Sets min cost.
+     *
+     * @param minCost the min cost
+     */
+    public void setMinCost(String minCost) {
 		this.minCost = minCost;
 	}
 
-	public String getSubsidyPercent() {
+    /**
+     * Gets subsidy percent.
+     *
+     * @return the subsidy percent
+     */
+    public String getSubsidyPercent() {
 		return this.subsidyPercent;
 	}
-	public void setSubsidyPercent(String subsidyPercent) {
+
+    /**
+     * Sets subsidy percent.
+     *
+     * @param subsidyPercent the subsidy percent
+     */
+    public void setSubsidyPercent(String subsidyPercent) {
 		this.subsidyPercent = subsidyPercent;
 	}
 
-	public List<String> getSuitShops() {
+    /**
+     * Gets suit shops.
+     *
+     * @return the suit shops
+     */
+    public List<String> getSuitShops() {
 		return this.suitShops;
 	}
-	public void setSuitShops(List<String> suitShops) {
+
+    /**
+     * Sets suit shops.
+     *
+     * @param suitShops the suit shops
+     */
+    public void setSuitShops(List<String> suitShops) {
 		this.suitShops = suitShops;
 	}
 
-	public String getUserWinCount() {
+    /**
+     * Gets user win count.
+     *
+     * @return the user win count
+     */
+    public String getUserWinCount() {
 		return this.userWinCount;
 	}
-	public void setUserWinCount(String userWinCount) {
+
+    /**
+     * Sets user win count.
+     *
+     * @param userWinCount the user win count
+     */
+    public void setUserWinCount(String userWinCount) {
 		this.userWinCount = userWinCount;
 	}
 
-	public String getUserWinFrequency() {
+    /**
+     * Gets user win frequency.
+     *
+     * @return the user win frequency
+     */
+    public String getUserWinFrequency() {
 		return this.userWinFrequency;
 	}
-	public void setUserWinFrequency(String userWinFrequency) {
+
+    /**
+     * Sets user win frequency.
+     *
+     * @param userWinFrequency the user win frequency
+     */
+    public void setUserWinFrequency(String userWinFrequency) {
 		this.userWinFrequency = userWinFrequency;
 	}
 

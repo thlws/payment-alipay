@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.mycar.parking.orderstatus.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-08-25 17:10:33
  */
 public class AlipayEcoMycarParkingOrderstatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4117485451586984224L;
+	private static final long serialVersionUID = 1422921659271957133L;
 
 	/** 
 	 * 支付宝交易流水号订单
@@ -62,59 +62,147 @@ public class AlipayEcoMycarParkingOrderstatusQueryResponse extends AlipayRespons
 	@ApiField("status")
 	private String status;
 
-	public void setAlipayOrderId(String alipayOrderId) {
+    /**
+     * Sets alipay order id.
+     *
+     * @param alipayOrderId the alipay order id
+     */
+    public void setAlipayOrderId(String alipayOrderId) {
 		this.alipayOrderId = alipayOrderId;
 	}
-	public String getAlipayOrderId( ) {
+
+    /**
+     * Gets alipay order id.
+     *
+     * @return the alipay order id
+     */
+    public String getAlipayOrderId( ) {
 		return this.alipayOrderId;
 	}
 
-	public void setCarOrderId(String carOrderId) {
+    /**
+     * Sets car order id.
+     *
+     * @param carOrderId the car order id
+     */
+    public void setCarOrderId(String carOrderId) {
 		this.carOrderId = carOrderId;
 	}
-	public String getCarOrderId( ) {
+
+    /**
+     * Gets car order id.
+     *
+     * @return the car order id
+     */
+    public String getCarOrderId( ) {
 		return this.carOrderId;
 	}
 
-	public void setEquipmentOrderId(String equipmentOrderId) {
+    /**
+     * Sets equipment order id.
+     *
+     * @param equipmentOrderId the equipment order id
+     */
+    public void setEquipmentOrderId(String equipmentOrderId) {
 		this.equipmentOrderId = equipmentOrderId;
 	}
-	public String getEquipmentOrderId( ) {
+
+    /**
+     * Gets equipment order id.
+     *
+     * @return the equipment order id
+     */
+    public String getEquipmentOrderId( ) {
 		return this.equipmentOrderId;
 	}
 
-	public void setPayMoney(String payMoney) {
+    /**
+     * Sets pay money.
+     *
+     * @param payMoney the pay money
+     */
+    public void setPayMoney(String payMoney) {
 		this.payMoney = payMoney;
 	}
-	public String getPayMoney( ) {
+
+    /**
+     * Gets pay money.
+     *
+     * @return the pay money
+     */
+    public String getPayMoney( ) {
 		return this.payMoney;
 	}
 
-	public void setPayStatus(String payStatus) {
+    /**
+     * Sets pay status.
+     *
+     * @param payStatus the pay status
+     */
+    public void setPayStatus(String payStatus) {
 		this.payStatus = payStatus;
 	}
-	public String getPayStatus( ) {
+
+    /**
+     * Gets pay status.
+     *
+     * @return the pay status
+     */
+    public String getPayStatus( ) {
 		return this.payStatus;
 	}
 
-	public void setPayTime(String payTime) {
+    /**
+     * Sets pay time.
+     *
+     * @param payTime the pay time
+     */
+    public void setPayTime(String payTime) {
 		this.payTime = payTime;
 	}
-	public String getPayTime( ) {
+
+    /**
+     * Gets pay time.
+     *
+     * @return the pay time
+     */
+    public String getPayTime( ) {
 		return this.payTime;
 	}
 
-	public void setPayType(String payType) {
+    /**
+     * Sets pay type.
+     *
+     * @param payType the pay type
+     */
+    public void setPayType(String payType) {
 		this.payType = payType;
 	}
-	public String getPayType( ) {
+
+    /**
+     * Gets pay type.
+     *
+     * @return the pay type
+     */
+    public String getPayType( ) {
 		return this.payType;
 	}
 
-	public void setStatus(String status) {
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
-	public String getStatus( ) {
+
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus( ) {
 		return this.status;
 	}
 

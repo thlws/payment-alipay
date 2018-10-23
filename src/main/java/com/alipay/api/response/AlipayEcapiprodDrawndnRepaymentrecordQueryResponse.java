@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ecapiprod.drawndn.repaymentrecord.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-03-29 11:34:40
  */
 public class AlipayEcapiprodDrawndnRepaymentrecordQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4441446247841241491L;
+	private static final long serialVersionUID = 3159524998445465683L;
 
 	/** 
 	 * 还款流水
@@ -30,17 +30,39 @@ public class AlipayEcapiprodDrawndnRepaymentrecordQueryResponse extends AlipayRe
 	@ApiField("request_id")
 	private String requestId;
 
-	public void setRepaymentRecords(List<RepaymentRecords> repaymentRecords) {
+    /**
+     * Sets repayment records.
+     *
+     * @param repaymentRecords the repayment records
+     */
+    public void setRepaymentRecords(List<RepaymentRecords> repaymentRecords) {
 		this.repaymentRecords = repaymentRecords;
 	}
-	public List<RepaymentRecords> getRepaymentRecords( ) {
+
+    /**
+     * Gets repayment records.
+     *
+     * @return the repayment records
+     */
+    public List<RepaymentRecords> getRepaymentRecords( ) {
 		return this.repaymentRecords;
 	}
 
-	public void setRequestId(String requestId) {
+    /**
+     * Sets request id.
+     *
+     * @param requestId the request id
+     */
+    public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
-	public String getRequestId( ) {
+
+    /**
+     * Gets request id.
+     *
+     * @return the request id
+     */
+    public String getRequestId( ) {
 		return this.requestId;
 	}
 

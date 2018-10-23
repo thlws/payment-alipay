@@ -5,13 +5,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.app.lingjiuyiwu.batchquery response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-09-15 01:02:23
  */
 public class AlipayOpenAppLingjiuyiwuBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7639262358923459653L;
+	private static final long serialVersionUID = 8423646146628237557L;
 
 	
 

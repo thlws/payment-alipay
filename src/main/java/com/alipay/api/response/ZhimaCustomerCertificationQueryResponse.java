@@ -6,50 +6,131 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: zhima.customer.certification.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-07 14:25:49
+ * @since 1.0, 2018-08-29 14:41:48
  */
 public class ZhimaCustomerCertificationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1342786375499824185L;
+	private static final long serialVersionUID = 6738178544444493949L;
 
 	/** 
-	 * 认证过程成认证过的各渠道的状态,中间材料等数据
+	 * 认证的主体属性信息，一般的认证场景都是返回空
+	 */
+	@ApiField("attribute_info")
+	private String attributeInfo;
+
+	/** 
+	 * 包含了认证过程中的认证材料和过程记录
 	 */
 	@ApiField("channel_statuses")
 	private String channelStatuses;
 
 	/** 
-	 * 如果认证没有通过会显示失败原因,更详细的情况在channel_statuses参数里面
+	 * 认证不通过的原因
 	 */
 	@ApiField("failed_reason")
 	private String failedReason;
 
 	/** 
-	 * 认证是否通过,通过为true,不通过为false
+	 * 认证的主体信息，一般的认证场景返回为空
+	 */
+	@ApiField("identity_info")
+	private String identityInfo;
+
+	/** 
+	 * 认证是否通过,通过为true，不通过为false
 	 */
 	@ApiField("passed")
 	private String passed;
 
-	public void setChannelStatuses(String channelStatuses) {
+    /**
+     * Sets attribute info.
+     *
+     * @param attributeInfo the attribute info
+     */
+    public void setAttributeInfo(String attributeInfo) {
+		this.attributeInfo = attributeInfo;
+	}
+
+    /**
+     * Gets attribute info.
+     *
+     * @return the attribute info
+     */
+    public String getAttributeInfo( ) {
+		return this.attributeInfo;
+	}
+
+    /**
+     * Sets channel statuses.
+     *
+     * @param channelStatuses the channel statuses
+     */
+    public void setChannelStatuses(String channelStatuses) {
 		this.channelStatuses = channelStatuses;
 	}
-	public String getChannelStatuses( ) {
+
+    /**
+     * Gets channel statuses.
+     *
+     * @return the channel statuses
+     */
+    public String getChannelStatuses( ) {
 		return this.channelStatuses;
 	}
 
-	public void setFailedReason(String failedReason) {
+    /**
+     * Sets failed reason.
+     *
+     * @param failedReason the failed reason
+     */
+    public void setFailedReason(String failedReason) {
 		this.failedReason = failedReason;
 	}
-	public String getFailedReason( ) {
+
+    /**
+     * Gets failed reason.
+     *
+     * @return the failed reason
+     */
+    public String getFailedReason( ) {
 		return this.failedReason;
 	}
 
-	public void setPassed(String passed) {
+    /**
+     * Sets identity info.
+     *
+     * @param identityInfo the identity info
+     */
+    public void setIdentityInfo(String identityInfo) {
+		this.identityInfo = identityInfo;
+	}
+
+    /**
+     * Gets identity info.
+     *
+     * @return the identity info
+     */
+    public String getIdentityInfo( ) {
+		return this.identityInfo;
+	}
+
+    /**
+     * Sets passed.
+     *
+     * @param passed the passed
+     */
+    public void setPassed(String passed) {
 		this.passed = passed;
 	}
-	public String getPassed( ) {
+
+    /**
+     * Gets passed.
+     *
+     * @return the passed
+     */
+    public String getPassed( ) {
 		return this.passed;
 	}
 

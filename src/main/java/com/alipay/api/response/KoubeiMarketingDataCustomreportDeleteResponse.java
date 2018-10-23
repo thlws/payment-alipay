@@ -5,13 +5,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.data.customreport.delete response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-26 11:32:10
+ * @since 1.0, 2018-07-26 14:04:25
  */
 public class KoubeiMarketingDataCustomreportDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8837155372412847849L;
+	private static final long serialVersionUID = 2514673482434394773L;
 
 	
 

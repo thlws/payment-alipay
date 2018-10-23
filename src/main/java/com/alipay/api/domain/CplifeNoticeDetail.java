@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 物业社区通知通告详细信息.
  *
  * @author auto create
- * @since 1.0, 2016-11-24 16:14:39
+ * @since 1.0, 2018-06-09 20:18:37
  */
 public class CplifeNoticeDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7447898839164273134L;
+	private static final long serialVersionUID = 1517713544234571488L;
 
 	/**
 	 * 通告公告的具体内容
@@ -60,52 +60,129 @@ public class CplifeNoticeDetail extends AlipayObject {
 	@ApiField("type")
 	private String type;
 
-	public String getContent() {
+    /**
+     * Gets content.
+     *
+     * @return the content
+     */
+    public String getContent() {
 		return this.content;
 	}
-	public void setContent(String content) {
+
+    /**
+     * Sets content.
+     *
+     * @param content the content
+     */
+    public void setContent(String content) {
 		this.content = content;
 	}
 
-	public Date getEndTime() {
+    /**
+     * Gets end time.
+     *
+     * @return the end time
+     */
+    public Date getEndTime() {
 		return this.endTime;
 	}
-	public void setEndTime(Date endTime) {
+
+    /**
+     * Sets end time.
+     *
+     * @param endTime the end time
+     */
+    public void setEndTime(Date endTime) {
 		this.endTime = endTime;
 	}
 
-	public List<CplifeNoticeImg> getImageList() {
+    /**
+     * Gets image list.
+     *
+     * @return the image list
+     */
+    public List<CplifeNoticeImg> getImageList() {
 		return this.imageList;
 	}
-	public void setImageList(List<CplifeNoticeImg> imageList) {
+
+    /**
+     * Sets image list.
+     *
+     * @param imageList the image list
+     */
+    public void setImageList(List<CplifeNoticeImg> imageList) {
 		this.imageList = imageList;
 	}
 
-	public Date getStartTime() {
+    /**
+     * Gets start time.
+     *
+     * @return the start time
+     */
+    public Date getStartTime() {
 		return this.startTime;
 	}
-	public void setStartTime(Date startTime) {
+
+    /**
+     * Sets start time.
+     *
+     * @param startTime the start time
+     */
+    public void setStartTime(Date startTime) {
 		this.startTime = startTime;
 	}
 
-	public Boolean getStickied() {
+    /**
+     * Gets stickied.
+     *
+     * @return the stickied
+     */
+    public Boolean getStickied() {
 		return this.stickied;
 	}
-	public void setStickied(Boolean stickied) {
+
+    /**
+     * Sets stickied.
+     *
+     * @param stickied the stickied
+     */
+    public void setStickied(Boolean stickied) {
 		this.stickied = stickied;
 	}
 
-	public String getTitle() {
+    /**
+     * Gets title.
+     *
+     * @return the title
+     */
+    public String getTitle() {
 		return this.title;
 	}
-	public void setTitle(String title) {
+
+    /**
+     * Sets title.
+     *
+     * @param title the title
+     */
+    public void setTitle(String title) {
 		this.title = title;
 	}
 
-	public String getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
-	public void setType(String type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
 

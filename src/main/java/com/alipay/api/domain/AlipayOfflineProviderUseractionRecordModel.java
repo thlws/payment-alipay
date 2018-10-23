@@ -7,14 +7,15 @@ import com.alipay.api.internal.mapping.ApiField;
  * isv 回传的用户操作行为信息调用接口
  *
  * @author auto create
- * @since 1.0, 2017-10-10 10:59:49
+ * @since 1.0, 2017-10-12 19:19:31
  */
 public class AlipayOfflineProviderUseractionRecordModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1845212117491636421L;
+	private static final long serialVersionUID = 7714442148813957824L;
 
 	/**
-	 * 详情设置会根据action_type字段类型不同而格式不同，请详细查看开放平台文案，会详细说明如何设置，整体是json结构。
+	 * 详情设置会根据action_type字段类型不同而格式不同，请详细查看开放平台文案，会详细说明如何设置，整体是json结构。订单数据回流详细说明见链接：https://docs.open.alipay.com/206/106810/#s0
+（注：action_type为order_dishes时，action_detail有source字段，是必填字段）
 	 */
 	@ApiField("action_detail")
 	private String actionDetail;
@@ -99,106 +100,260 @@ public class AlipayOfflineProviderUseractionRecordModel extends AlipayObject {
 	private String source;
 
 	/**
-	 * 支付宝账户ID，如果获取不到支付宝账户ID，一定不能设置。如何获取支付宝账户ID
+	 * 支付宝账户ID，如果获取不到支付宝账户ID，一定不能设置。如何获取支付宝账户ID,获取用户uid的接口调用文档：https://doc.open.alipay.com/docs/doc.htm?spm=a219a.7629140.0.0.jokL1V&treeId=193&articleId=105656&docType=1#s3
 	 */
 	@ApiField("user_id")
 	private String userId;
 
-	public String getActionDetail() {
+    /**
+     * Gets action detail.
+     *
+     * @return the action detail
+     */
+    public String getActionDetail() {
 		return this.actionDetail;
 	}
-	public void setActionDetail(String actionDetail) {
+
+    /**
+     * Sets action detail.
+     *
+     * @param actionDetail the action detail
+     */
+    public void setActionDetail(String actionDetail) {
 		this.actionDetail = actionDetail;
 	}
 
-	public String getActionOuterId() {
+    /**
+     * Gets action outer id.
+     *
+     * @return the action outer id
+     */
+    public String getActionOuterId() {
 		return this.actionOuterId;
 	}
-	public void setActionOuterId(String actionOuterId) {
+
+    /**
+     * Sets action outer id.
+     *
+     * @param actionOuterId the action outer id
+     */
+    public void setActionOuterId(String actionOuterId) {
 		this.actionOuterId = actionOuterId;
 	}
 
-	public String getActionType() {
+    /**
+     * Gets action type.
+     *
+     * @return the action type
+     */
+    public String getActionType() {
 		return this.actionType;
 	}
-	public void setActionType(String actionType) {
+
+    /**
+     * Sets action type.
+     *
+     * @param actionType the action type
+     */
+    public void setActionType(String actionType) {
 		this.actionType = actionType;
 	}
 
-	public String getAlipayAppId() {
+    /**
+     * Gets alipay app id.
+     *
+     * @return the alipay app id
+     */
+    public String getAlipayAppId() {
 		return this.alipayAppId;
 	}
-	public void setAlipayAppId(String alipayAppId) {
+
+    /**
+     * Sets alipay app id.
+     *
+     * @param alipayAppId the alipay app id
+     */
+    public void setAlipayAppId(String alipayAppId) {
 		this.alipayAppId = alipayAppId;
 	}
 
-	public String getDateTime() {
+    /**
+     * Gets date time.
+     *
+     * @return the date time
+     */
+    public String getDateTime() {
 		return this.dateTime;
 	}
-	public void setDateTime(String dateTime) {
+
+    /**
+     * Sets date time.
+     *
+     * @param dateTime the date time
+     */
+    public void setDateTime(String dateTime) {
 		this.dateTime = dateTime;
 	}
 
-	public String getEntity() {
+    /**
+     * Gets entity.
+     *
+     * @return the entity
+     */
+    public String getEntity() {
 		return this.entity;
 	}
-	public void setEntity(String entity) {
+
+    /**
+     * Sets entity.
+     *
+     * @param entity the entity
+     */
+    public void setEntity(String entity) {
 		this.entity = entity;
 	}
 
-	public String getIndustry() {
+    /**
+     * Gets industry.
+     *
+     * @return the industry
+     */
+    public String getIndustry() {
 		return this.industry;
 	}
-	public void setIndustry(String industry) {
+
+    /**
+     * Sets industry.
+     *
+     * @param industry the industry
+     */
+    public void setIndustry(String industry) {
 		this.industry = industry;
 	}
 
-	public String getMobile() {
+    /**
+     * Gets mobile.
+     *
+     * @return the mobile
+     */
+    public String getMobile() {
 		return this.mobile;
 	}
-	public void setMobile(String mobile) {
+
+    /**
+     * Sets mobile.
+     *
+     * @param mobile the mobile
+     */
+    public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
 
-	public String getOrderChannel() {
+    /**
+     * Gets order channel.
+     *
+     * @return the order channel
+     */
+    public String getOrderChannel() {
 		return this.orderChannel;
 	}
-	public void setOrderChannel(String orderChannel) {
+
+    /**
+     * Sets order channel.
+     *
+     * @param orderChannel the order channel
+     */
+    public void setOrderChannel(String orderChannel) {
 		this.orderChannel = orderChannel;
 	}
 
-	public String getOrderType() {
+    /**
+     * Gets order type.
+     *
+     * @return the order type
+     */
+    public String getOrderType() {
 		return this.orderType;
 	}
-	public void setOrderType(String orderType) {
+
+    /**
+     * Sets order type.
+     *
+     * @param orderType the order type
+     */
+    public void setOrderType(String orderType) {
 		this.orderType = orderType;
 	}
 
-	public OuterShopDO getOuterShopDo() {
+    /**
+     * Gets outer shop do.
+     *
+     * @return the outer shop do
+     */
+    public OuterShopDO getOuterShopDo() {
 		return this.outerShopDo;
 	}
-	public void setOuterShopDo(OuterShopDO outerShopDo) {
+
+    /**
+     * Sets outer shop do.
+     *
+     * @param outerShopDo the outer shop do
+     */
+    public void setOuterShopDo(OuterShopDO outerShopDo) {
 		this.outerShopDo = outerShopDo;
 	}
 
-	public String getPlatformUserId() {
+    /**
+     * Gets platform user id.
+     *
+     * @return the platform user id
+     */
+    public String getPlatformUserId() {
 		return this.platformUserId;
 	}
-	public void setPlatformUserId(String platformUserId) {
+
+    /**
+     * Sets platform user id.
+     *
+     * @param platformUserId the platform user id
+     */
+    public void setPlatformUserId(String platformUserId) {
 		this.platformUserId = platformUserId;
 	}
 
-	public String getSource() {
+    /**
+     * Gets source.
+     *
+     * @return the source
+     */
+    public String getSource() {
 		return this.source;
 	}
-	public void setSource(String source) {
+
+    /**
+     * Sets source.
+     *
+     * @param source the source
+     */
+    public void setSource(String source) {
 		this.source = source;
 	}
 
-	public String getUserId() {
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
-	public void setUserId(String userId) {
+
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
 

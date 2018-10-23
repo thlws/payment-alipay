@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicShortlinkCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7279981176199511369L;
+	private static final long serialVersionUID = 7198427867179343728L;
 
 	/**
 	 * 对于场景ID的描述，商户自己定义
@@ -25,17 +25,39 @@ public class AlipayOpenPublicShortlinkCreateModel extends AlipayObject {
 	@ApiField("scene_id")
 	private String sceneId;
 
-	public String getRemark() {
+    /**
+     * Gets remark.
+     *
+     * @return the remark
+     */
+    public String getRemark() {
 		return this.remark;
 	}
-	public void setRemark(String remark) {
+
+    /**
+     * Sets remark.
+     *
+     * @param remark the remark
+     */
+    public void setRemark(String remark) {
 		this.remark = remark;
 	}
 
-	public String getSceneId() {
+    /**
+     * Gets scene id.
+     *
+     * @return the scene id
+     */
+    public String getSceneId() {
 		return this.sceneId;
 	}
-	public void setSceneId(String sceneId) {
+
+    /**
+     * Sets scene id.
+     *
+     * @param sceneId the scene id
+     */
+    public void setSceneId(String sceneId) {
 		this.sceneId = sceneId;
 	}
 

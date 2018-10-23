@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.cplife.basicservice.initialize response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-24 11:43:21
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayEcoCplifeBasicserviceInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8186264885919259213L;
+	private static final long serialVersionUID = 4341989121145988793L;
 
 	/** 
 	 * 若初始化的服务类型为物业缴费账单上传模式，并且对应的物业账号事前未完成对支付宝平台代创建缴费交易的授权，接口除了返回对应错误码，会通过本参数返回授权URL。请开发者发给物业人员用对应的物业支付宝账号登录完成第三方授权。
@@ -43,24 +43,57 @@ WAIT_AUDITING - 等待审核
 	@ApiField("status")
 	private String status;
 
-	public void setBillPayAuthUrl(String billPayAuthUrl) {
+    /**
+     * Sets bill pay auth url.
+     *
+     * @param billPayAuthUrl the bill pay auth url
+     */
+    public void setBillPayAuthUrl(String billPayAuthUrl) {
 		this.billPayAuthUrl = billPayAuthUrl;
 	}
-	public String getBillPayAuthUrl( ) {
+
+    /**
+     * Gets bill pay auth url.
+     *
+     * @return the bill pay auth url
+     */
+    public String getBillPayAuthUrl( ) {
 		return this.billPayAuthUrl;
 	}
 
-	public void setNextAction(String nextAction) {
+    /**
+     * Sets next action.
+     *
+     * @param nextAction the next action
+     */
+    public void setNextAction(String nextAction) {
 		this.nextAction = nextAction;
 	}
-	public String getNextAction( ) {
+
+    /**
+     * Gets next action.
+     *
+     * @return the next action
+     */
+    public String getNextAction( ) {
 		return this.nextAction;
 	}
 
-	public void setStatus(String status) {
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
-	public String getStatus( ) {
+
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus( ) {
 		return this.status;
 	}
 

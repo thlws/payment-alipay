@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class Matcher extends AlipayObject {
 
-	private static final long serialVersionUID = 6747115494177255168L;
+	private static final long serialVersionUID = 3899276828992881178L;
 
 	/**
 	 * 身份证号码，与user_id、mobile_no不能同时为空
@@ -31,24 +31,57 @@ public class Matcher extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
-	public String getIdentityCard() {
+    /**
+     * Gets identity card.
+     *
+     * @return the identity card
+     */
+    public String getIdentityCard() {
 		return this.identityCard;
 	}
-	public void setIdentityCard(String identityCard) {
+
+    /**
+     * Sets identity card.
+     *
+     * @param identityCard the identity card
+     */
+    public void setIdentityCard(String identityCard) {
 		this.identityCard = identityCard;
 	}
 
-	public String getMobileNo() {
+    /**
+     * Gets mobile no.
+     *
+     * @return the mobile no
+     */
+    public String getMobileNo() {
 		return this.mobileNo;
 	}
-	public void setMobileNo(String mobileNo) {
+
+    /**
+     * Sets mobile no.
+     *
+     * @param mobileNo the mobile no
+     */
+    public void setMobileNo(String mobileNo) {
 		this.mobileNo = mobileNo;
 	}
 
-	public String getUserId() {
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
-	public void setUserId(String userId) {
+
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
 

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BenefitInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4683446684253818914L;
+	private static final long serialVersionUID = 7769822125372783829L;
 
 	/**
 	 * 权益信息id
@@ -66,59 +66,147 @@ public class BenefitInfo extends AlipayObject {
 	@ApiField("status")
 	private String status;
 
-	public String getBenefitInfoId() {
+    /**
+     * Gets benefit info id.
+     *
+     * @return the benefit info id
+     */
+    public String getBenefitInfoId() {
 		return this.benefitInfoId;
 	}
-	public void setBenefitInfoId(String benefitInfoId) {
+
+    /**
+     * Sets benefit info id.
+     *
+     * @param benefitInfoId the benefit info id
+     */
+    public void setBenefitInfoId(String benefitInfoId) {
 		this.benefitInfoId = benefitInfoId;
 	}
 
-	public String getBenefitName() {
+    /**
+     * Gets benefit name.
+     *
+     * @return the benefit name
+     */
+    public String getBenefitName() {
 		return this.benefitName;
 	}
-	public void setBenefitName(String benefitName) {
+
+    /**
+     * Sets benefit name.
+     *
+     * @param benefitName the benefit name
+     */
+    public void setBenefitName(String benefitName) {
 		this.benefitName = benefitName;
 	}
 
-	public String getBenefitNameCn() {
+    /**
+     * Gets benefit name cn.
+     *
+     * @return the benefit name cn
+     */
+    public String getBenefitNameCn() {
 		return this.benefitNameCn;
 	}
-	public void setBenefitNameCn(String benefitNameCn) {
+
+    /**
+     * Sets benefit name cn.
+     *
+     * @param benefitNameCn the benefit name cn
+     */
+    public void setBenefitNameCn(String benefitNameCn) {
 		this.benefitNameCn = benefitNameCn;
 	}
 
-	public String getBenefitType() {
+    /**
+     * Gets benefit type.
+     *
+     * @return the benefit type
+     */
+    public String getBenefitType() {
 		return this.benefitType;
 	}
-	public void setBenefitType(String benefitType) {
+
+    /**
+     * Sets benefit type.
+     *
+     * @param benefitType the benefit type
+     */
+    public void setBenefitType(String benefitType) {
 		this.benefitType = benefitType;
 	}
 
-	public Date getDispatchDt() {
+    /**
+     * Gets dispatch dt.
+     *
+     * @return the dispatch dt
+     */
+    public Date getDispatchDt() {
 		return this.dispatchDt;
 	}
-	public void setDispatchDt(Date dispatchDt) {
+
+    /**
+     * Sets dispatch dt.
+     *
+     * @param dispatchDt the dispatch dt
+     */
+    public void setDispatchDt(Date dispatchDt) {
 		this.dispatchDt = dispatchDt;
 	}
 
-	public Date getEndDt() {
+    /**
+     * Gets end dt.
+     *
+     * @return the end dt
+     */
+    public Date getEndDt() {
 		return this.endDt;
 	}
-	public void setEndDt(Date endDt) {
+
+    /**
+     * Sets end dt.
+     *
+     * @param endDt the end dt
+     */
+    public void setEndDt(Date endDt) {
 		this.endDt = endDt;
 	}
 
-	public Date getStartDt() {
+    /**
+     * Gets start dt.
+     *
+     * @return the start dt
+     */
+    public Date getStartDt() {
 		return this.startDt;
 	}
-	public void setStartDt(Date startDt) {
+
+    /**
+     * Sets start dt.
+     *
+     * @param startDt the start dt
+     */
+    public void setStartDt(Date startDt) {
 		this.startDt = startDt;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 

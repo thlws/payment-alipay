@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.cdp.recommend.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-08-18 15:36:04
  */
 public class AlipayMarketingCdpRecommendQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5292744325948475398L;
+	private static final long serialVersionUID = 4791282852614513612L;
 
 	/** 
 	 * 当前推荐的唯一标识,用于不同方案的效果跟踪
@@ -26,17 +26,39 @@ public class AlipayMarketingCdpRecommendQueryResponse extends AlipayResponse {
 	@ApiField("shop_info")
 	private String shopInfo;
 
-	public void setRecommendId(String recommendId) {
+    /**
+     * Sets recommend id.
+     *
+     * @param recommendId the recommend id
+     */
+    public void setRecommendId(String recommendId) {
 		this.recommendId = recommendId;
 	}
-	public String getRecommendId( ) {
+
+    /**
+     * Gets recommend id.
+     *
+     * @return the recommend id
+     */
+    public String getRecommendId( ) {
 		return this.recommendId;
 	}
 
-	public void setShopInfo(String shopInfo) {
+    /**
+     * Sets shop info.
+     *
+     * @param shopInfo the shop info
+     */
+    public void setShopInfo(String shopInfo) {
 		this.shopInfo = shopInfo;
 	}
-	public String getShopInfo( ) {
+
+    /**
+     * Gets shop info.
+     *
+     * @return the shop info
+     */
+    public String getShopInfo( ) {
 		return this.shopInfo;
 	}
 

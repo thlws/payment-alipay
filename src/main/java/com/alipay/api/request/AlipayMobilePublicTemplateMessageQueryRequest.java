@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.mobile.public.template.message.query request
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-08-02 17:35:28
  */
@@ -28,17 +28,39 @@ public class AlipayMobilePublicTemplateMessageQueryRequest implements AlipayRequ
 	 */
 	private String templateId;
 
-	public void setTemplate(String template) {
+    /**
+     * Sets template.
+     *
+     * @param template the template
+     */
+    public void setTemplate(String template) {
 		this.template = template;
 	}
-	public String getTemplate() {
+
+    /**
+     * Gets template.
+     *
+     * @return the template
+     */
+    public String getTemplate() {
 		return this.template;
 	}
 
-	public void setTemplateId(String templateId) {
+    /**
+     * Sets template id.
+     *
+     * @param templateId the template id
+     */
+    public void setTemplateId(String templateId) {
 		this.templateId = templateId;
 	}
-	public String getTemplateId() {
+
+    /**
+     * Gets template id.
+     *
+     * @return the template id
+     */
+    public String getTemplateId() {
 		return this.templateId;
 	}
 	private String terminalType;
@@ -111,7 +133,13 @@ public class AlipayMobilePublicTemplateMessageQueryRequest implements AlipayRequ
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RecruitTool extends AlipayObject {
 
-	private static final long serialVersionUID = 7118915395834764737L;
+	private static final long serialVersionUID = 2158798139816766762L;
 
 	/**
 	 * 招商结束时间
@@ -42,31 +42,75 @@ public class RecruitTool extends AlipayObject {
 	@ApiField("start_time")
 	private Date startTime;
 
-	public Date getEndTime() {
+    /**
+     * Gets end time.
+     *
+     * @return the end time
+     */
+    public Date getEndTime() {
 		return this.endTime;
 	}
-	public void setEndTime(Date endTime) {
+
+    /**
+     * Sets end time.
+     *
+     * @param endTime the end time
+     */
+    public void setEndTime(Date endTime) {
 		this.endTime = endTime;
 	}
 
-	public Boolean getExcludeConstraintShops() {
+    /**
+     * Gets exclude constraint shops.
+     *
+     * @return the exclude constraint shops
+     */
+    public Boolean getExcludeConstraintShops() {
 		return this.excludeConstraintShops;
 	}
-	public void setExcludeConstraintShops(Boolean excludeConstraintShops) {
+
+    /**
+     * Sets exclude constraint shops.
+     *
+     * @param excludeConstraintShops the exclude constraint shops
+     */
+    public void setExcludeConstraintShops(Boolean excludeConstraintShops) {
 		this.excludeConstraintShops = excludeConstraintShops;
 	}
 
-	public List<PidShopInfo> getPidShops() {
+    /**
+     * Gets pid shops.
+     *
+     * @return the pid shops
+     */
+    public List<PidShopInfo> getPidShops() {
 		return this.pidShops;
 	}
-	public void setPidShops(List<PidShopInfo> pidShops) {
+
+    /**
+     * Sets pid shops.
+     *
+     * @param pidShops the pid shops
+     */
+    public void setPidShops(List<PidShopInfo> pidShops) {
 		this.pidShops = pidShops;
 	}
 
-	public Date getStartTime() {
+    /**
+     * Gets start time.
+     *
+     * @return the start time
+     */
+    public Date getStartTime() {
 		return this.startTime;
 	}
-	public void setStartTime(Date startTime) {
+
+    /**
+     * Sets start time.
+     *
+     * @param startTime the start time
+     */
+    public void setStartTime(Date startTime) {
 		this.startTime = startTime;
 	}
 

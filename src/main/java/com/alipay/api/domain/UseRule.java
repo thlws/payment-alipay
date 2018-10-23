@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class UseRule extends AlipayObject {
 
-	private static final long serialVersionUID = 4387835535911786352L;
+	private static final long serialVersionUID = 4841981482176324788L;
 
 	/**
 	 * 扩展属性，无需设置
@@ -72,52 +72,129 @@ HANNEL;
 	@ApiField("use_time")
 	private List<UseTime> useTime;
 
-	public String getExtInfo() {
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo() {
 		return this.extInfo;
 	}
-	public void setExtInfo(String extInfo) {
+
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
-	public ForbbidenTime getForbiddenTime() {
+    /**
+     * Gets forbidden time.
+     *
+     * @return the forbidden time
+     */
+    public ForbbidenTime getForbiddenTime() {
 		return this.forbiddenTime;
 	}
-	public void setForbiddenTime(ForbbidenTime forbiddenTime) {
+
+    /**
+     * Sets forbidden time.
+     *
+     * @param forbiddenTime the forbidden time
+     */
+    public void setForbiddenTime(ForbbidenTime forbiddenTime) {
 		this.forbiddenTime = forbiddenTime;
 	}
 
-	public String getLimitRule() {
+    /**
+     * Gets limit rule.
+     *
+     * @return the limit rule
+     */
+    public String getLimitRule() {
 		return this.limitRule;
 	}
-	public void setLimitRule(String limitRule) {
+
+    /**
+     * Sets limit rule.
+     *
+     * @param limitRule the limit rule
+     */
+    public void setLimitRule(String limitRule) {
 		this.limitRule = limitRule;
 	}
 
-	public String getMinConsume() {
+    /**
+     * Gets min consume.
+     *
+     * @return the min consume
+     */
+    public String getMinConsume() {
 		return this.minConsume;
 	}
-	public void setMinConsume(String minConsume) {
+
+    /**
+     * Sets min consume.
+     *
+     * @param minConsume the min consume
+     */
+    public void setMinConsume(String minConsume) {
 		this.minConsume = minConsume;
 	}
 
-	public String getPayRedirectUrl() {
+    /**
+     * Gets pay redirect url.
+     *
+     * @return the pay redirect url
+     */
+    public String getPayRedirectUrl() {
 		return this.payRedirectUrl;
 	}
-	public void setPayRedirectUrl(String payRedirectUrl) {
+
+    /**
+     * Sets pay redirect url.
+     *
+     * @param payRedirectUrl the pay redirect url
+     */
+    public void setPayRedirectUrl(String payRedirectUrl) {
 		this.payRedirectUrl = payRedirectUrl;
 	}
 
-	public List<String> getSuitShops() {
+    /**
+     * Gets suit shops.
+     *
+     * @return the suit shops
+     */
+    public List<String> getSuitShops() {
 		return this.suitShops;
 	}
-	public void setSuitShops(List<String> suitShops) {
+
+    /**
+     * Sets suit shops.
+     *
+     * @param suitShops the suit shops
+     */
+    public void setSuitShops(List<String> suitShops) {
 		this.suitShops = suitShops;
 	}
 
-	public List<UseTime> getUseTime() {
+    /**
+     * Gets use time.
+     *
+     * @return the use time
+     */
+    public List<UseTime> getUseTime() {
 		return this.useTime;
 	}
-	public void setUseTime(List<UseTime> useTime) {
+
+    /**
+     * Sets use time.
+     *
+     * @param useTime the use time
+     */
+    public void setUseTime(List<UseTime> useTime) {
 		this.useTime = useTime;
 	}
 

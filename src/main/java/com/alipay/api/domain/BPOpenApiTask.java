@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BPOpenApiTask extends AlipayObject {
 
-	private static final long serialVersionUID = 4572823776928617145L;
+	private static final long serialVersionUID = 1841397895131167236L;
 
 	/**
 	 * 处理地址
@@ -91,94 +91,237 @@ public class BPOpenApiTask extends AlipayObject {
 	@ApiField("type")
 	private String type;
 
-	public String getDealUrl() {
+    /**
+     * Gets deal url.
+     *
+     * @return the deal url
+     */
+    public String getDealUrl() {
 		return this.dealUrl;
 	}
-	public void setDealUrl(String dealUrl) {
+
+    /**
+     * Sets deal url.
+     *
+     * @param dealUrl the deal url
+     */
+    public void setDealUrl(String dealUrl) {
 		this.dealUrl = dealUrl;
 	}
 
-	public String getDetailUrl() {
+    /**
+     * Gets detail url.
+     *
+     * @return the detail url
+     */
+    public String getDetailUrl() {
 		return this.detailUrl;
 	}
-	public void setDetailUrl(String detailUrl) {
+
+    /**
+     * Sets detail url.
+     *
+     * @param detailUrl the detail url
+     */
+    public void setDetailUrl(String detailUrl) {
 		this.detailUrl = detailUrl;
 	}
 
-	public String getDisplayName() {
+    /**
+     * Gets display name.
+     *
+     * @return the display name
+     */
+    public String getDisplayName() {
 		return this.displayName;
 	}
-	public void setDisplayName(String displayName) {
+
+    /**
+     * Sets display name.
+     *
+     * @param displayName the display name
+     */
+    public void setDisplayName(String displayName) {
 		this.displayName = displayName;
 	}
 
-	public String getGmtOperate() {
+    /**
+     * Gets gmt operate.
+     *
+     * @return the gmt operate
+     */
+    public String getGmtOperate() {
 		return this.gmtOperate;
 	}
-	public void setGmtOperate(String gmtOperate) {
+
+    /**
+     * Sets gmt operate.
+     *
+     * @param gmtOperate the gmt operate
+     */
+    public void setGmtOperate(String gmtOperate) {
 		this.gmtOperate = gmtOperate;
 	}
 
-	public String getMemo() {
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo() {
 		return this.memo;
 	}
-	public void setMemo(String memo) {
+
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getOperate() {
+    /**
+     * Gets operate.
+     *
+     * @return the operate
+     */
+    public String getOperate() {
 		return this.operate;
 	}
-	public void setOperate(String operate) {
+
+    /**
+     * Sets operate.
+     *
+     * @param operate the operate
+     */
+    public void setOperate(String operate) {
 		this.operate = operate;
 	}
 
-	public String getOperateTransition() {
+    /**
+     * Gets operate transition.
+     *
+     * @return the operate transition
+     */
+    public String getOperateTransition() {
 		return this.operateTransition;
 	}
-	public void setOperateTransition(String operateTransition) {
+
+    /**
+     * Sets operate transition.
+     *
+     * @param operateTransition the operate transition
+     */
+    public void setOperateTransition(String operateTransition) {
 		this.operateTransition = operateTransition;
 	}
 
-	public String getOperator() {
+    /**
+     * Gets operator.
+     *
+     * @return the operator
+     */
+    public String getOperator() {
 		return this.operator;
 	}
-	public void setOperator(String operator) {
+
+    /**
+     * Sets operator.
+     *
+     * @param operator the operator
+     */
+    public void setOperator(String operator) {
 		this.operator = operator;
 	}
 
-	public String getOperatorName() {
+    /**
+     * Gets operator name.
+     *
+     * @return the operator name
+     */
+    public String getOperatorName() {
 		return this.operatorName;
 	}
-	public void setOperatorName(String operatorName) {
+
+    /**
+     * Sets operator name.
+     *
+     * @param operatorName the operator name
+     */
+    public void setOperatorName(String operatorName) {
 		this.operatorName = operatorName;
 	}
 
-	public String getSignType() {
+    /**
+     * Gets sign type.
+     *
+     * @return the sign type
+     */
+    public String getSignType() {
 		return this.signType;
 	}
-	public void setSignType(String signType) {
+
+    /**
+     * Sets sign type.
+     *
+     * @param signType the sign type
+     */
+    public void setSignType(String signType) {
 		this.signType = signType;
 	}
 
-	public String getState() {
+    /**
+     * Gets state.
+     *
+     * @return the state
+     */
+    public String getState() {
 		return this.state;
 	}
-	public void setState(String state) {
+
+    /**
+     * Sets state.
+     *
+     * @param state the state
+     */
+    public void setState(String state) {
 		this.state = state;
 	}
 
-	public String getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
-	public void setType(String type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
 

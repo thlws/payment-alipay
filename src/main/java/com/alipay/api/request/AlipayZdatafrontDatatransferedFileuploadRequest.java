@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.zdatafront.datatransfered.fileupload request
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-05-02 14:41:11
  */
@@ -60,59 +60,147 @@ public class AlipayZdatafrontDatatransferedFileuploadRequest implements AlipayUp
 	 */
 	private String typeId;
 
-	public void setColumns(String columns) {
+    /**
+     * Sets columns.
+     *
+     * @param columns the columns
+     */
+    public void setColumns(String columns) {
 		this.columns = columns;
 	}
-	public String getColumns() {
+
+    /**
+     * Gets columns.
+     *
+     * @return the columns
+     */
+    public String getColumns() {
 		return this.columns;
 	}
 
-	public void setFile(FileItem file) {
+    /**
+     * Sets file.
+     *
+     * @param file the file
+     */
+    public void setFile(FileItem file) {
 		this.file = file;
 	}
-	public FileItem getFile() {
+
+    /**
+     * Gets file.
+     *
+     * @return the file
+     */
+    public FileItem getFile() {
 		return this.file;
 	}
 
-	public void setFileDescription(String fileDescription) {
+    /**
+     * Sets file description.
+     *
+     * @param fileDescription the file description
+     */
+    public void setFileDescription(String fileDescription) {
 		this.fileDescription = fileDescription;
 	}
-	public String getFileDescription() {
+
+    /**
+     * Gets file description.
+     *
+     * @return the file description
+     */
+    public String getFileDescription() {
 		return this.fileDescription;
 	}
 
-	public void setFileDigest(String fileDigest) {
+    /**
+     * Sets file digest.
+     *
+     * @param fileDigest the file digest
+     */
+    public void setFileDigest(String fileDigest) {
 		this.fileDigest = fileDigest;
 	}
-	public String getFileDigest() {
+
+    /**
+     * Gets file digest.
+     *
+     * @return the file digest
+     */
+    public String getFileDigest() {
 		return this.fileDigest;
 	}
 
-	public void setFileType(String fileType) {
+    /**
+     * Sets file type.
+     *
+     * @param fileType the file type
+     */
+    public void setFileType(String fileType) {
 		this.fileType = fileType;
 	}
-	public String getFileType() {
+
+    /**
+     * Gets file type.
+     *
+     * @return the file type
+     */
+    public String getFileType() {
 		return this.fileType;
 	}
 
-	public void setPrimaryKey(String primaryKey) {
+    /**
+     * Sets primary key.
+     *
+     * @param primaryKey the primary key
+     */
+    public void setPrimaryKey(String primaryKey) {
 		this.primaryKey = primaryKey;
 	}
-	public String getPrimaryKey() {
+
+    /**
+     * Gets primary key.
+     *
+     * @return the primary key
+     */
+    public String getPrimaryKey() {
 		return this.primaryKey;
 	}
 
-	public void setRecords(Long records) {
+    /**
+     * Sets records.
+     *
+     * @param records the records
+     */
+    public void setRecords(Long records) {
 		this.records = records;
 	}
-	public Long getRecords() {
+
+    /**
+     * Gets records.
+     *
+     * @return the records
+     */
+    public Long getRecords() {
 		return this.records;
 	}
 
-	public void setTypeId(String typeId) {
+    /**
+     * Sets type id.
+     *
+     * @param typeId the type id
+     */
+    public void setTypeId(String typeId) {
 		this.typeId = typeId;
 	}
-	public String getTypeId() {
+
+    /**
+     * Gets type id.
+     *
+     * @return the type id
+     */
+    public String getTypeId() {
 		return this.typeId;
 	}
 	private String terminalType;
@@ -188,8 +276,14 @@ public class AlipayZdatafrontDatatransferedFileuploadRequest implements AlipayUp
 		}
 		return txtParams;
 	}
-	
-	public void putOtherTextParam(String key, String value) {
+
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

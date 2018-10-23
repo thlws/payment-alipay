@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ReportCondition extends AlipayObject {
 
-	private static final long serialVersionUID = 5195216716726813946L;
+	private static final long serialVersionUID = 7585562989829347184L;
 
 	/**
 	 * 字段名称
@@ -25,17 +25,39 @@ public class ReportCondition extends AlipayObject {
 	@ApiField("operate")
 	private String operate;
 
-	public String getKey() {
+    /**
+     * Gets key.
+     *
+     * @return the key
+     */
+    public String getKey() {
 		return this.key;
 	}
-	public void setKey(String key) {
+
+    /**
+     * Sets key.
+     *
+     * @param key the key
+     */
+    public void setKey(String key) {
 		this.key = key;
 	}
 
-	public String getOperate() {
+    /**
+     * Gets operate.
+     *
+     * @return the operate
+     */
+    public String getOperate() {
 		return this.operate;
 	}
-	public void setOperate(String operate) {
+
+    /**
+     * Sets operate.
+     *
+     * @param operate the operate
+     */
+    public void setOperate(String operate) {
 		this.operate = operate;
 	}
 

@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ecapiprod.data.put response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2015-04-02 16:45:23
  */
 public class AlipayEcapiprodDataPutResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5244822756368997773L;
+	private static final long serialVersionUID = 4522768452825928886L;
 
 	/** 
 	 * 数据版本
@@ -20,10 +20,21 @@ public class AlipayEcapiprodDataPutResponse extends AlipayResponse {
 	@ApiField("data_version")
 	private String dataVersion;
 
-	public void setDataVersion(String dataVersion) {
+    /**
+     * Sets data version.
+     *
+     * @param dataVersion the data version
+     */
+    public void setDataVersion(String dataVersion) {
 		this.dataVersion = dataVersion;
 	}
-	public String getDataVersion( ) {
+
+    /**
+     * Gets data version.
+     *
+     * @return the data version
+     */
+    public String getDataVersion( ) {
 		return this.dataVersion;
 	}
 

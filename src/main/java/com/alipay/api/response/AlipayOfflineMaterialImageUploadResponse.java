@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.material.image.upload response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-06 12:01:21
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayOfflineMaterialImageUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1894645956395614327L;
+	private static final long serialVersionUID = 3815237765564264859L;
 
 	/** 
 	 * 图片/视频在商家中心的唯一标识
@@ -26,17 +26,39 @@ public class AlipayOfflineMaterialImageUploadResponse extends AlipayResponse {
 	@ApiField("image_url")
 	private String imageUrl;
 
-	public void setImageId(String imageId) {
+    /**
+     * Sets image id.
+     *
+     * @param imageId the image id
+     */
+    public void setImageId(String imageId) {
 		this.imageId = imageId;
 	}
-	public String getImageId( ) {
+
+    /**
+     * Gets image id.
+     *
+     * @return the image id
+     */
+    public String getImageId( ) {
 		return this.imageId;
 	}
 
-	public void setImageUrl(String imageUrl) {
+    /**
+     * Sets image url.
+     *
+     * @param imageUrl the image url
+     */
+    public void setImageUrl(String imageUrl) {
 		this.imageUrl = imageUrl;
 	}
-	public String getImageUrl( ) {
+
+    /**
+     * Gets image url.
+     *
+     * @return the image url
+     */
+    public String getImageUrl( ) {
 		return this.imageUrl;
 	}
 

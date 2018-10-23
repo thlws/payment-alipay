@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiTradeItemBuyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1899756997862595582L;
+	private static final long serialVersionUID = 8371913896145433794L;
 
 	/**
 	 * 预定用户的联系号码。要求合法的手机号码或者座机；该字段仅用于商品预定，商品预定场景为必填字段。如：0579-XXXXXXX；1526XXXXXXX
@@ -39,8 +39,8 @@ public class KoubeiTradeItemBuyModel extends AlipayObject {
 	private String currentPrice;
 
 	/**
-	 * 额外描述信息，比如预定时间信息
-	  */
+	 * 额外描述信息，比如预定时间信息，需要以“字段1：描述1；字段2：描述2；....“方式传入。标点符号限制集如下,不能传下列标点之外的标点符号：..！.{},:()"[]，。!！,/>"{},:"，?？。!！\[\]]=+_@#$%*
+	 */
 	@ApiField("ext_info")
 	private String extInfo;
 
@@ -89,99 +89,242 @@ public class KoubeiTradeItemBuyModel extends AlipayObject {
 	private String reserveStartTime;
 
 	/**
-	 * 店铺ID，用于后续统计商家各门店的售卖，需传入口碑店铺id，取值规则见FAQ常见问题。
+	 * 店铺ID，用于后续统计商家各门店的售卖，需传入口碑店铺id，取值规则见FAQ常见问题。https://doc.open.alipay.com/docs/doc.htm?&docType=1&articleId=105746
 	 */
 	@ApiField("shop_id")
 	private String shopId;
 
-	public String getBuyerPhoneNumber() {
+    /**
+     * Gets buyer phone number.
+     *
+     * @return the buyer phone number
+     */
+    public String getBuyerPhoneNumber() {
 		return this.buyerPhoneNumber;
 	}
-	public void setBuyerPhoneNumber(String buyerPhoneNumber) {
+
+    /**
+     * Sets buyer phone number.
+     *
+     * @param buyerPhoneNumber the buyer phone number
+     */
+    public void setBuyerPhoneNumber(String buyerPhoneNumber) {
 		this.buyerPhoneNumber = buyerPhoneNumber;
 	}
 
-	public String getBuyerUserName() {
+    /**
+     * Gets buyer user name.
+     *
+     * @return the buyer user name
+     */
+    public String getBuyerUserName() {
 		return this.buyerUserName;
 	}
-	public void setBuyerUserName(String buyerUserName) {
+
+    /**
+     * Sets buyer user name.
+     *
+     * @param buyerUserName the buyer user name
+     */
+    public void setBuyerUserName(String buyerUserName) {
 		this.buyerUserName = buyerUserName;
 	}
 
-	public String getCraftsmanId() {
+    /**
+     * Gets craftsman id.
+     *
+     * @return the craftsman id
+     */
+    public String getCraftsmanId() {
 		return this.craftsmanId;
 	}
-	public void setCraftsmanId(String craftsmanId) {
+
+    /**
+     * Sets craftsman id.
+     *
+     * @param craftsmanId the craftsman id
+     */
+    public void setCraftsmanId(String craftsmanId) {
 		this.craftsmanId = craftsmanId;
 	}
 
-	public String getCurrentPrice() {
+    /**
+     * Gets current price.
+     *
+     * @return the current price
+     */
+    public String getCurrentPrice() {
 		return this.currentPrice;
 	}
-	public void setCurrentPrice(String currentPrice) {
+
+    /**
+     * Sets current price.
+     *
+     * @param currentPrice the current price
+     */
+    public void setCurrentPrice(String currentPrice) {
 		this.currentPrice = currentPrice;
 	}
 
-	public String getExtInfo() {
+    /**
+     * Gets ext info.
+     *
+     * @return the ext info
+     */
+    public String getExtInfo() {
 		return this.extInfo;
 	}
-	public void setExtInfo(String extInfo) {
+
+    /**
+     * Sets ext info.
+     *
+     * @param extInfo the ext info
+     */
+    public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
-	public String getItemId() {
+    /**
+     * Gets item id.
+     *
+     * @return the item id
+     */
+    public String getItemId() {
 		return this.itemId;
 	}
-	public void setItemId(String itemId) {
+
+    /**
+     * Sets item id.
+     *
+     * @param itemId the item id
+     */
+    public void setItemId(String itemId) {
 		this.itemId = itemId;
 	}
 
-	public String getOriginalPrice() {
+    /**
+     * Gets original price.
+     *
+     * @return the original price
+     */
+    public String getOriginalPrice() {
 		return this.originalPrice;
 	}
-	public void setOriginalPrice(String originalPrice) {
+
+    /**
+     * Sets original price.
+     *
+     * @param originalPrice the original price
+     */
+    public void setOriginalPrice(String originalPrice) {
 		this.originalPrice = originalPrice;
 	}
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
-	public String getPartnerId() {
+    /**
+     * Gets partner id.
+     *
+     * @return the partner id
+     */
+    public String getPartnerId() {
 		return this.partnerId;
 	}
-	public void setPartnerId(String partnerId) {
+
+    /**
+     * Sets partner id.
+     *
+     * @param partnerId the partner id
+     */
+    public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}
 
-	public Long getQuantity() {
+    /**
+     * Gets quantity.
+     *
+     * @return the quantity
+     */
+    public Long getQuantity() {
 		return this.quantity;
 	}
-	public void setQuantity(Long quantity) {
+
+    /**
+     * Sets quantity.
+     *
+     * @param quantity the quantity
+     */
+    public void setQuantity(Long quantity) {
 		this.quantity = quantity;
 	}
 
-	public String getReserveEndTime() {
+    /**
+     * Gets reserve end time.
+     *
+     * @return the reserve end time
+     */
+    public String getReserveEndTime() {
 		return this.reserveEndTime;
 	}
-	public void setReserveEndTime(String reserveEndTime) {
+
+    /**
+     * Sets reserve end time.
+     *
+     * @param reserveEndTime the reserve end time
+     */
+    public void setReserveEndTime(String reserveEndTime) {
 		this.reserveEndTime = reserveEndTime;
 	}
 
-	public String getReserveStartTime() {
+    /**
+     * Gets reserve start time.
+     *
+     * @return the reserve start time
+     */
+    public String getReserveStartTime() {
 		return this.reserveStartTime;
 	}
-	public void setReserveStartTime(String reserveStartTime) {
+
+    /**
+     * Sets reserve start time.
+     *
+     * @param reserveStartTime the reserve start time
+     */
+    public void setReserveStartTime(String reserveStartTime) {
 		this.reserveStartTime = reserveStartTime;
 	}
 
-	public String getShopId() {
+    /**
+     * Gets shop id.
+     *
+     * @return the shop id
+     */
+    public String getShopId() {
 		return this.shopId;
 	}
-	public void setShopId(String shopId) {
+
+    /**
+     * Sets shop id.
+     *
+     * @param shopId the shop id
+     */
+    public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 

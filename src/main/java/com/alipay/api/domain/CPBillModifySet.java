@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 社区物业平台待修改的物业费账单数据集合
  *
  * @author auto create
- * @since 1.0, 2017-01-18 16:45:48
+ * @since 1.0, 2018-06-09 20:15:11
  */
 public class CPBillModifySet extends AlipayObject {
 
-	private static final long serialVersionUID = 5342392191924112838L;
+	private static final long serialVersionUID = 7483269439718162852L;
 
 	/**
 	 * 若账期需修改，则传入。账期用于缴费明细页归类和展示，可以使用不超过16个字符的有业务含义的字符串。
@@ -55,52 +55,129 @@ public class CPBillModifySet extends AlipayObject {
 	@ApiField("room_address")
 	private String roomAddress;
 
-	public String getAcctPeriod() {
+    /**
+     * Gets acct period.
+     *
+     * @return the acct period
+     */
+    public String getAcctPeriod() {
 		return this.acctPeriod;
 	}
-	public void setAcctPeriod(String acctPeriod) {
+
+    /**
+     * Sets acct period.
+     *
+     * @param acctPeriod the acct period
+     */
+    public void setAcctPeriod(String acctPeriod) {
 		this.acctPeriod = acctPeriod;
 	}
 
-	public String getBillEntryAmount() {
+    /**
+     * Gets bill entry amount.
+     *
+     * @return the bill entry amount
+     */
+    public String getBillEntryAmount() {
 		return this.billEntryAmount;
 	}
-	public void setBillEntryAmount(String billEntryAmount) {
+
+    /**
+     * Sets bill entry amount.
+     *
+     * @param billEntryAmount the bill entry amount
+     */
+    public void setBillEntryAmount(String billEntryAmount) {
 		this.billEntryAmount = billEntryAmount;
 	}
 
-	public String getBillEntryId() {
+    /**
+     * Gets bill entry id.
+     *
+     * @return the bill entry id
+     */
+    public String getBillEntryId() {
 		return this.billEntryId;
 	}
-	public void setBillEntryId(String billEntryId) {
+
+    /**
+     * Sets bill entry id.
+     *
+     * @param billEntryId the bill entry id
+     */
+    public void setBillEntryId(String billEntryId) {
 		this.billEntryId = billEntryId;
 	}
 
-	public String getCostType() {
+    /**
+     * Gets cost type.
+     *
+     * @return the cost type
+     */
+    public String getCostType() {
 		return this.costType;
 	}
-	public void setCostType(String costType) {
+
+    /**
+     * Sets cost type.
+     *
+     * @param costType the cost type
+     */
+    public void setCostType(String costType) {
 		this.costType = costType;
 	}
 
-	public String getDeadline() {
+    /**
+     * Gets deadline.
+     *
+     * @return the deadline
+     */
+    public String getDeadline() {
 		return this.deadline;
 	}
-	public void setDeadline(String deadline) {
+
+    /**
+     * Sets deadline.
+     *
+     * @param deadline the deadline
+     */
+    public void setDeadline(String deadline) {
 		this.deadline = deadline;
 	}
 
-	public String getReleaseDay() {
+    /**
+     * Gets release day.
+     *
+     * @return the release day
+     */
+    public String getReleaseDay() {
 		return this.releaseDay;
 	}
-	public void setReleaseDay(String releaseDay) {
+
+    /**
+     * Sets release day.
+     *
+     * @param releaseDay the release day
+     */
+    public void setReleaseDay(String releaseDay) {
 		this.releaseDay = releaseDay;
 	}
 
-	public String getRoomAddress() {
+    /**
+     * Gets room address.
+     *
+     * @return the room address
+     */
+    public String getRoomAddress() {
 		return this.roomAddress;
 	}
-	public void setRoomAddress(String roomAddress) {
+
+    /**
+     * Sets room address.
+     *
+     * @param roomAddress the room address
+     */
+    public void setRoomAddress(String roomAddress) {
 		this.roomAddress = roomAddress;
 	}
 

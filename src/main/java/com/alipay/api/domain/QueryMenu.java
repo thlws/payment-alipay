@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class QueryMenu extends AlipayObject {
 
-	private static final long serialVersionUID = 8671747622416133926L;
+	private static final long serialVersionUID = 1322643932385237357L;
 
 	/**
 	 * 一级菜单列表
@@ -42,31 +42,75 @@ public class QueryMenu extends AlipayObject {
 	@ApiField("type")
 	private String type;
 
-	public List<ButtonObject> getButton() {
+    /**
+     * Gets button.
+     *
+     * @return the button
+     */
+    public List<ButtonObject> getButton() {
 		return this.button;
 	}
-	public void setButton(List<ButtonObject> button) {
+
+    /**
+     * Sets button.
+     *
+     * @param button the button
+     */
+    public void setButton(List<ButtonObject> button) {
 		this.button = button;
 	}
 
-	public List<QueryLabelRule> getLabelRule() {
+    /**
+     * Gets label rule.
+     *
+     * @return the label rule
+     */
+    public List<QueryLabelRule> getLabelRule() {
 		return this.labelRule;
 	}
-	public void setLabelRule(List<QueryLabelRule> labelRule) {
+
+    /**
+     * Sets label rule.
+     *
+     * @param labelRule the label rule
+     */
+    public void setLabelRule(List<QueryLabelRule> labelRule) {
 		this.labelRule = labelRule;
 	}
 
-	public String getMenuKey() {
+    /**
+     * Gets menu key.
+     *
+     * @return the menu key
+     */
+    public String getMenuKey() {
 		return this.menuKey;
 	}
-	public void setMenuKey(String menuKey) {
+
+    /**
+     * Sets menu key.
+     *
+     * @param menuKey the menu key
+     */
+    public void setMenuKey(String menuKey) {
 		this.menuKey = menuKey;
 	}
 
-	public String getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
-	public void setType(String type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
 

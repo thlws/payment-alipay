@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AccessParams extends AlipayObject {
 
-	private static final long serialVersionUID = 2439248487854133334L;
+	private static final long serialVersionUID = 7451448797165713221L;
 
 	/**
 	 * 目前支持以下值：
@@ -22,10 +22,21 @@ public class AccessParams extends AlipayObject {
 	@ApiField("channel")
 	private String channel;
 
-	public String getChannel() {
+    /**
+     * Gets channel.
+     *
+     * @return the channel
+     */
+    public String getChannel() {
 		return this.channel;
 	}
-	public void setChannel(String channel) {
+
+    /**
+     * Sets channel.
+     *
+     * @param channel the channel
+     */
+    public void setChannel(String channel) {
 		this.channel = channel;
 	}
 

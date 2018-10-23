@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.data.alisis.report.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-16 20:33:21
+ * @since 1.0, 2018-05-03 09:40:58
  */
 public class KoubeiMarketingDataAlisisReportBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5412992987613445646L;
+	private static final long serialVersionUID = 3398678747299298977L;
 
 	/** 
 	 * 报表列表信息
@@ -30,17 +30,39 @@ public class KoubeiMarketingDataAlisisReportBatchqueryResponse extends AlipayRes
 	@ApiField("total_count")
 	private String totalCount;
 
-	public void setReportList(List<AlisisReport> reportList) {
+    /**
+     * Sets report list.
+     *
+     * @param reportList the report list
+     */
+    public void setReportList(List<AlisisReport> reportList) {
 		this.reportList = reportList;
 	}
-	public List<AlisisReport> getReportList( ) {
+
+    /**
+     * Gets report list.
+     *
+     * @return the report list
+     */
+    public List<AlisisReport> getReportList( ) {
 		return this.reportList;
 	}
 
-	public void setTotalCount(String totalCount) {
+    /**
+     * Sets total count.
+     *
+     * @param totalCount the total count
+     */
+    public void setTotalCount(String totalCount) {
 		this.totalCount = totalCount;
 	}
-	public String getTotalCount( ) {
+
+    /**
+     * Gets total count.
+     *
+     * @return the total count
+     */
+    public String getTotalCount( ) {
 		return this.totalCount;
 	}
 

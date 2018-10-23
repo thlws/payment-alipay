@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KbAdvertSubjectVoucherResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 1463769653552495945L;
+	private static final long serialVersionUID = 4234375967143636815L;
 
 	/**
 	 * 品牌名称
@@ -137,136 +137,345 @@ NO_LIMIT_CASH-全场代金券
 	@ApiField("voucher_value")
 	private String voucherValue;
 
-	public String getBrandName() {
+    /**
+     * Gets brand name.
+     *
+     * @return the brand name
+     */
+    public String getBrandName() {
 		return this.brandName;
 	}
-	public void setBrandName(String brandName) {
+
+    /**
+     * Sets brand name.
+     *
+     * @param brandName the brand name
+     */
+    public void setBrandName(String brandName) {
 		this.brandName = brandName;
 	}
 
-	public List<String> getCityIds() {
+    /**
+     * Gets city ids.
+     *
+     * @return the city ids
+     */
+    public List<String> getCityIds() {
 		return this.cityIds;
 	}
-	public void setCityIds(List<String> cityIds) {
+
+    /**
+     * Sets city ids.
+     *
+     * @param cityIds the city ids
+     */
+    public void setCityIds(List<String> cityIds) {
 		this.cityIds = cityIds;
 	}
 
-	public String getCover() {
+    /**
+     * Gets cover.
+     *
+     * @return the cover
+     */
+    public String getCover() {
 		return this.cover;
 	}
-	public void setCover(String cover) {
+
+    /**
+     * Sets cover.
+     *
+     * @param cover the cover
+     */
+    public void setCover(String cover) {
 		this.cover = cover;
 	}
 
-	public String getDailyInventory() {
+    /**
+     * Gets daily inventory.
+     *
+     * @return the daily inventory
+     */
+    public String getDailyInventory() {
 		return this.dailyInventory;
 	}
-	public void setDailyInventory(String dailyInventory) {
+
+    /**
+     * Sets daily inventory.
+     *
+     * @param dailyInventory the daily inventory
+     */
+    public void setDailyInventory(String dailyInventory) {
 		this.dailyInventory = dailyInventory;
 	}
 
-	public String getGmtEnd() {
+    /**
+     * Gets gmt end.
+     *
+     * @return the gmt end
+     */
+    public String getGmtEnd() {
 		return this.gmtEnd;
 	}
-	public void setGmtEnd(String gmtEnd) {
+
+    /**
+     * Sets gmt end.
+     *
+     * @param gmtEnd the gmt end
+     */
+    public void setGmtEnd(String gmtEnd) {
 		this.gmtEnd = gmtEnd;
 	}
 
-	public String getGmtStart() {
+    /**
+     * Gets gmt start.
+     *
+     * @return the gmt start
+     */
+    public String getGmtStart() {
 		return this.gmtStart;
 	}
-	public void setGmtStart(String gmtStart) {
+
+    /**
+     * Sets gmt start.
+     *
+     * @param gmtStart the gmt start
+     */
+    public void setGmtStart(String gmtStart) {
 		this.gmtStart = gmtStart;
 	}
 
-	public String getLogo() {
+    /**
+     * Gets logo.
+     *
+     * @return the logo
+     */
+    public String getLogo() {
 		return this.logo;
 	}
-	public void setLogo(String logo) {
+
+    /**
+     * Sets logo.
+     *
+     * @param logo the logo
+     */
+    public void setLogo(String logo) {
 		this.logo = logo;
 	}
 
-	public List<KbadvertVoucherManual> getManuals() {
+    /**
+     * Gets manuals.
+     *
+     * @return the manuals
+     */
+    public List<KbadvertVoucherManual> getManuals() {
 		return this.manuals;
 	}
-	public void setManuals(List<KbadvertVoucherManual> manuals) {
+
+    /**
+     * Sets manuals.
+     *
+     * @param manuals the manuals
+     */
+    public void setManuals(List<KbadvertVoucherManual> manuals) {
 		this.manuals = manuals;
 	}
 
-	public String getMerchantName() {
+    /**
+     * Gets merchant name.
+     *
+     * @return the merchant name
+     */
+    public String getMerchantName() {
 		return this.merchantName;
 	}
-	public void setMerchantName(String merchantName) {
+
+    /**
+     * Sets merchant name.
+     *
+     * @param merchantName the merchant name
+     */
+    public void setMerchantName(String merchantName) {
 		this.merchantName = merchantName;
 	}
 
-	public String getPartnerId() {
+    /**
+     * Gets partner id.
+     *
+     * @return the partner id
+     */
+    public String getPartnerId() {
 		return this.partnerId;
 	}
-	public void setPartnerId(String partnerId) {
+
+    /**
+     * Sets partner id.
+     *
+     * @param partnerId the partner id
+     */
+    public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}
 
-	public String getPurchaseMode() {
+    /**
+     * Gets purchase mode.
+     *
+     * @return the purchase mode
+     */
+    public String getPurchaseMode() {
 		return this.purchaseMode;
 	}
-	public void setPurchaseMode(String purchaseMode) {
+
+    /**
+     * Sets purchase mode.
+     *
+     * @param purchaseMode the purchase mode
+     */
+    public void setPurchaseMode(String purchaseMode) {
 		this.purchaseMode = purchaseMode;
 	}
 
-	public List<String> getShopIds() {
+    /**
+     * Gets shop ids.
+     *
+     * @return the shop ids
+     */
+    public List<String> getShopIds() {
 		return this.shopIds;
 	}
-	public void setShopIds(List<String> shopIds) {
+
+    /**
+     * Sets shop ids.
+     *
+     * @param shopIds the shop ids
+     */
+    public void setShopIds(List<String> shopIds) {
 		this.shopIds = shopIds;
 	}
 
-	public String getThresholdAmount() {
+    /**
+     * Gets threshold amount.
+     *
+     * @return the threshold amount
+     */
+    public String getThresholdAmount() {
 		return this.thresholdAmount;
 	}
-	public void setThresholdAmount(String thresholdAmount) {
+
+    /**
+     * Sets threshold amount.
+     *
+     * @param thresholdAmount the threshold amount
+     */
+    public void setThresholdAmount(String thresholdAmount) {
 		this.thresholdAmount = thresholdAmount;
 	}
 
-	public String getTotalInventory() {
+    /**
+     * Gets total inventory.
+     *
+     * @return the total inventory
+     */
+    public String getTotalInventory() {
 		return this.totalInventory;
 	}
-	public void setTotalInventory(String totalInventory) {
+
+    /**
+     * Sets total inventory.
+     *
+     * @param totalInventory the total inventory
+     */
+    public void setTotalInventory(String totalInventory) {
 		this.totalInventory = totalInventory;
 	}
 
-	public String getVoucherId() {
+    /**
+     * Gets voucher id.
+     *
+     * @return the voucher id
+     */
+    public String getVoucherId() {
 		return this.voucherId;
 	}
-	public void setVoucherId(String voucherId) {
+
+    /**
+     * Sets voucher id.
+     *
+     * @param voucherId the voucher id
+     */
+    public void setVoucherId(String voucherId) {
 		this.voucherId = voucherId;
 	}
 
-	public String getVoucherName() {
+    /**
+     * Gets voucher name.
+     *
+     * @return the voucher name
+     */
+    public String getVoucherName() {
 		return this.voucherName;
 	}
-	public void setVoucherName(String voucherName) {
+
+    /**
+     * Sets voucher name.
+     *
+     * @param voucherName the voucher name
+     */
+    public void setVoucherName(String voucherName) {
 		this.voucherName = voucherName;
 	}
 
-	public String getVoucherOrgValue() {
+    /**
+     * Gets voucher org value.
+     *
+     * @return the voucher org value
+     */
+    public String getVoucherOrgValue() {
 		return this.voucherOrgValue;
 	}
-	public void setVoucherOrgValue(String voucherOrgValue) {
+
+    /**
+     * Sets voucher org value.
+     *
+     * @param voucherOrgValue the voucher org value
+     */
+    public void setVoucherOrgValue(String voucherOrgValue) {
 		this.voucherOrgValue = voucherOrgValue;
 	}
 
-	public String getVoucherType() {
+    /**
+     * Gets voucher type.
+     *
+     * @return the voucher type
+     */
+    public String getVoucherType() {
 		return this.voucherType;
 	}
-	public void setVoucherType(String voucherType) {
+
+    /**
+     * Sets voucher type.
+     *
+     * @param voucherType the voucher type
+     */
+    public void setVoucherType(String voucherType) {
 		this.voucherType = voucherType;
 	}
 
-	public String getVoucherValue() {
+    /**
+     * Gets voucher value.
+     *
+     * @return the voucher value
+     */
+    public String getVoucherValue() {
 		return this.voucherValue;
 	}
-	public void setVoucherValue(String voucherValue) {
+
+    /**
+     * Sets voucher value.
+     *
+     * @param voucherValue the voucher value
+     */
+    public void setVoucherValue(String voucherValue) {
 		this.voucherValue = voucherValue;
 	}
 

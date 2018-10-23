@@ -7,13 +7,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.catering.tablelist.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-06-26 14:14:12
  */
 public class KoubeiCateringTablelistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7341672164957918479L;
+	private static final long serialVersionUID = 4266997562444881266L;
 
 	/** 
 	 * 返回tablelistresult列表
@@ -21,10 +21,21 @@ public class KoubeiCateringTablelistQueryResponse extends AlipayResponse {
 	@ApiField("tableinfo_result")
 	private TableInfoResult tableinfoResult;
 
-	public void setTableinfoResult(TableInfoResult tableinfoResult) {
+    /**
+     * Sets tableinfo result.
+     *
+     * @param tableinfoResult the tableinfo result
+     */
+    public void setTableinfoResult(TableInfoResult tableinfoResult) {
 		this.tableinfoResult = tableinfoResult;
 	}
-	public TableInfoResult getTableinfoResult( ) {
+
+    /**
+     * Gets tableinfo result.
+     *
+     * @return the tableinfo result
+     */
+    public TableInfoResult getTableinfoResult( ) {
 		return this.tableinfoResult;
 	}
 

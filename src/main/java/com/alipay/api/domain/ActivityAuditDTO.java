@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ActivityAuditDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4517682415845479627L;
+	private static final long serialVersionUID = 7289914328912338657L;
 
 	/**
 	 * 审核id
@@ -51,45 +51,111 @@ public class ActivityAuditDTO extends AlipayObject {
 	@ApiField("reason")
 	private String reason;
 
-	public String getAuditId() {
+    /**
+     * Gets audit id.
+     *
+     * @return the audit id
+     */
+    public String getAuditId() {
 		return this.auditId;
 	}
-	public void setAuditId(String auditId) {
+
+    /**
+     * Sets audit id.
+     *
+     * @param auditId the audit id
+     */
+    public void setAuditId(String auditId) {
 		this.auditId = auditId;
 	}
 
-	public String getAuditStatus() {
+    /**
+     * Gets audit status.
+     *
+     * @return the audit status
+     */
+    public String getAuditStatus() {
 		return this.auditStatus;
 	}
-	public void setAuditStatus(String auditStatus) {
+
+    /**
+     * Sets audit status.
+     *
+     * @param auditStatus the audit status
+     */
+    public void setAuditStatus(String auditStatus) {
 		this.auditStatus = auditStatus;
 	}
 
-	public String getCreatorId() {
+    /**
+     * Gets creator id.
+     *
+     * @return the creator id
+     */
+    public String getCreatorId() {
 		return this.creatorId;
 	}
-	public void setCreatorId(String creatorId) {
+
+    /**
+     * Sets creator id.
+     *
+     * @param creatorId the creator id
+     */
+    public void setCreatorId(String creatorId) {
 		this.creatorId = creatorId;
 	}
 
-	public String getCreatorType() {
+    /**
+     * Gets creator type.
+     *
+     * @return the creator type
+     */
+    public String getCreatorType() {
 		return this.creatorType;
 	}
-	public void setCreatorType(String creatorType) {
+
+    /**
+     * Sets creator type.
+     *
+     * @param creatorType the creator type
+     */
+    public void setCreatorType(String creatorType) {
 		this.creatorType = creatorType;
 	}
 
-	public Date getOperationTime() {
+    /**
+     * Gets operation time.
+     *
+     * @return the operation time
+     */
+    public Date getOperationTime() {
 		return this.operationTime;
 	}
-	public void setOperationTime(Date operationTime) {
+
+    /**
+     * Sets operation time.
+     *
+     * @param operationTime the operation time
+     */
+    public void setOperationTime(Date operationTime) {
 		this.operationTime = operationTime;
 	}
 
-	public String getReason() {
+    /**
+     * Gets reason.
+     *
+     * @return the reason
+     */
+    public String getReason() {
 		return this.reason;
 	}
-	public void setReason(String reason) {
+
+    /**
+     * Sets reason.
+     *
+     * @param reason the reason
+     */
+    public void setReason(String reason) {
 		this.reason = reason;
 	}
 

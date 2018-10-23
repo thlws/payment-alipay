@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 指纹注册初始化
  *
  * @author auto create
- * @since 1.0, 2017-08-02 14:25:02
+ * @since 1.0, 2018-08-17 16:53:52
  */
 public class AlipaySecurityProdFingerprintApplyInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3894149289592522379L;
+	private static final long serialVersionUID = 1123345111928237242L;
 
 	/**
 	 * IFAA标准中的校验类型，目前1为指纹
@@ -31,24 +31,57 @@ public class AlipaySecurityProdFingerprintApplyInitializeModel extends AlipayObj
 	@ApiField("sec_data")
 	private String secData;
 
-	public String getAuthType() {
+    /**
+     * Gets auth type.
+     *
+     * @return the auth type
+     */
+    public String getAuthType() {
 		return this.authType;
 	}
-	public void setAuthType(String authType) {
+
+    /**
+     * Sets auth type.
+     *
+     * @param authType the auth type
+     */
+    public void setAuthType(String authType) {
 		this.authType = authType;
 	}
 
-	public String getIfaaVersion() {
+    /**
+     * Gets ifaa version.
+     *
+     * @return the ifaa version
+     */
+    public String getIfaaVersion() {
 		return this.ifaaVersion;
 	}
-	public void setIfaaVersion(String ifaaVersion) {
+
+    /**
+     * Sets ifaa version.
+     *
+     * @param ifaaVersion the ifaa version
+     */
+    public void setIfaaVersion(String ifaaVersion) {
 		this.ifaaVersion = ifaaVersion;
 	}
 
-	public String getSecData() {
+    /**
+     * Gets sec data.
+     *
+     * @return the sec data
+     */
+    public String getSecData() {
 		return this.secData;
 	}
-	public void setSecData(String secData) {
+
+    /**
+     * Sets sec data.
+     *
+     * @param secData the sec data
+     */
+    public void setSecData(String secData) {
 		this.secData = secData;
 	}
 

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 物业费账单数据批量上传
  *
  * @author auto create
- * @since 1.0, 2017-01-14 11:37:38
+ * @since 1.0, 2018-06-09 20:14:19
  */
 public class AlipayEcoCplifeBillBatchUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4361918871778112766L;
+	private static final long serialVersionUID = 8436398763244325288L;
 
 	/**
 	 * 每次上传物业费账单，都需要提供一个批次号。对于每一个合作伙伴，传递的每一个批次号都必须保证唯一性，同时对于批次号内的账单明细数据必须保证唯一性；
@@ -36,24 +36,57 @@ public class AlipayEcoCplifeBillBatchUploadModel extends AlipayObject {
 	@ApiField("community_id")
 	private String communityId;
 
-	public String getBatchId() {
+    /**
+     * Gets batch id.
+     *
+     * @return the batch id
+     */
+    public String getBatchId() {
 		return this.batchId;
 	}
-	public void setBatchId(String batchId) {
+
+    /**
+     * Sets batch id.
+     *
+     * @param batchId the batch id
+     */
+    public void setBatchId(String batchId) {
 		this.batchId = batchId;
 	}
 
-	public List<CPBillSet> getBillSet() {
+    /**
+     * Gets bill set.
+     *
+     * @return the bill set
+     */
+    public List<CPBillSet> getBillSet() {
 		return this.billSet;
 	}
-	public void setBillSet(List<CPBillSet> billSet) {
+
+    /**
+     * Sets bill set.
+     *
+     * @param billSet the bill set
+     */
+    public void setBillSet(List<CPBillSet> billSet) {
 		this.billSet = billSet;
 	}
 
-	public String getCommunityId() {
+    /**
+     * Gets community id.
+     *
+     * @return the community id
+     */
+    public String getCommunityId() {
 		return this.communityId;
 	}
-	public void setCommunityId(String communityId) {
+
+    /**
+     * Sets community id.
+     *
+     * @param communityId the community id
+     */
+    public void setCommunityId(String communityId) {
 		this.communityId = communityId;
 	}
 

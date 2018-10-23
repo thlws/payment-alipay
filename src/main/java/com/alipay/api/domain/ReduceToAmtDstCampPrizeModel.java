@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ReduceToAmtDstCampPrizeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4211924682783927574L;
+	private static final long serialVersionUID = 7149893591123998798L;
 
 	/**
 	 * 优惠后价格
@@ -19,10 +19,21 @@ public class ReduceToAmtDstCampPrizeModel extends AlipayObject {
 	@ApiField("reduct_to_amt")
 	private String reductToAmt;
 
-	public String getReductToAmt() {
+    /**
+     * Gets reduct to amt.
+     *
+     * @return the reduct to amt
+     */
+    public String getReductToAmt() {
 		return this.reductToAmt;
 	}
-	public void setReductToAmt(String reductToAmt) {
+
+    /**
+     * Sets reduct to amt.
+     *
+     * @param reductToAmt the reduct to amt
+     */
+    public void setReductToAmt(String reductToAmt) {
 		this.reductToAmt = reductToAmt;
 	}
 

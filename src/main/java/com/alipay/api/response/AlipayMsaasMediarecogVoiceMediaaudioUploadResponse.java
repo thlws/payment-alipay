@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.msaas.mediarecog.voice.mediaaudio.upload response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-05-28 22:41:09
  */
 public class AlipayMsaasMediarecogVoiceMediaaudioUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8737156577416919199L;
+	private static final long serialVersionUID = 5825453233441691256L;
 
 	/** 
 	 * 扩展字段
@@ -38,31 +38,75 @@ public class AlipayMsaasMediarecogVoiceMediaaudioUploadResponse extends AlipayRe
 	@ApiField("result_status")
 	private String resultStatus;
 
-	public void setExtinfoA(String extinfoA) {
+    /**
+     * Sets extinfo a.
+     *
+     * @param extinfoA the extinfo a
+     */
+    public void setExtinfoA(String extinfoA) {
 		this.extinfoA = extinfoA;
 	}
-	public String getExtinfoA( ) {
+
+    /**
+     * Gets extinfo a.
+     *
+     * @return the extinfo a
+     */
+    public String getExtinfoA( ) {
 		return this.extinfoA;
 	}
 
-	public void setExtinfoB(String extinfoB) {
+    /**
+     * Sets extinfo b.
+     *
+     * @param extinfoB the extinfo b
+     */
+    public void setExtinfoB(String extinfoB) {
 		this.extinfoB = extinfoB;
 	}
-	public String getExtinfoB( ) {
+
+    /**
+     * Gets extinfo b.
+     *
+     * @return the extinfo b
+     */
+    public String getExtinfoB( ) {
 		return this.extinfoB;
 	}
 
-	public void setResultMemo(String resultMemo) {
+    /**
+     * Sets result memo.
+     *
+     * @param resultMemo the result memo
+     */
+    public void setResultMemo(String resultMemo) {
 		this.resultMemo = resultMemo;
 	}
-	public String getResultMemo( ) {
+
+    /**
+     * Gets result memo.
+     *
+     * @return the result memo
+     */
+    public String getResultMemo( ) {
 		return this.resultMemo;
 	}
 
-	public void setResultStatus(String resultStatus) {
+    /**
+     * Sets result status.
+     *
+     * @param resultStatus the result status
+     */
+    public void setResultStatus(String resultStatus) {
 		this.resultStatus = resultStatus;
 	}
-	public String getResultStatus( ) {
+
+    /**
+     * Gets result status.
+     *
+     * @return the result status
+     */
+    public String getResultStatus( ) {
 		return this.resultStatus;
 	}
 

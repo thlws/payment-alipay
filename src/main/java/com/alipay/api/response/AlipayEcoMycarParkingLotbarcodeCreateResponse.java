@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.mycar.parking.lotbarcode.create response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-08-25 17:10:44
  */
 public class AlipayEcoMycarParkingLotbarcodeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1774449717178258136L;
+	private static final long serialVersionUID = 1299967646621778219L;
 
 	/** 
 	 * 返回二维码链接地址
@@ -26,17 +26,39 @@ public class AlipayEcoMycarParkingLotbarcodeCreateResponse extends AlipayRespons
 	@ApiField("status")
 	private String status;
 
-	public void setQrcodeUrl(String qrcodeUrl) {
+    /**
+     * Sets qrcode url.
+     *
+     * @param qrcodeUrl the qrcode url
+     */
+    public void setQrcodeUrl(String qrcodeUrl) {
 		this.qrcodeUrl = qrcodeUrl;
 	}
-	public String getQrcodeUrl( ) {
+
+    /**
+     * Gets qrcode url.
+     *
+     * @return the qrcode url
+     */
+    public String getQrcodeUrl( ) {
 		return this.qrcodeUrl;
 	}
 
-	public void setStatus(String status) {
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
-	public String getStatus( ) {
+
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus( ) {
 		return this.status;
 	}
 

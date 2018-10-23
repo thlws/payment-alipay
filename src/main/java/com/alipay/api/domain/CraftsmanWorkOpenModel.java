@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CraftsmanWorkOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3262618264496164325L;
+	private static final long serialVersionUID = 1766924115553515649L;
 
 	/**
 	 * 口碑手艺人id。是创建手艺人接口koubei.craftsman.data.provider.create返回的craftsman_id，或通过查询手艺人信息接口koubei.craftsman.data.provider查询craftsman_id
@@ -55,52 +55,129 @@ public class CraftsmanWorkOpenModel extends AlipayObject {
 	@ApiField("work_id")
 	private String workId;
 
-	public String getCraftsmanId() {
+    /**
+     * Gets craftsman id.
+     *
+     * @return the craftsman id
+     */
+    public String getCraftsmanId() {
 		return this.craftsmanId;
 	}
-	public void setCraftsmanId(String craftsmanId) {
+
+    /**
+     * Sets craftsman id.
+     *
+     * @param craftsmanId the craftsman id
+     */
+    public void setCraftsmanId(String craftsmanId) {
 		this.craftsmanId = craftsmanId;
 	}
 
-	public Long getDuration() {
+    /**
+     * Gets duration.
+     *
+     * @return the duration
+     */
+    public Long getDuration() {
 		return this.duration;
 	}
-	public void setDuration(Long duration) {
+
+    /**
+     * Sets duration.
+     *
+     * @param duration the duration
+     */
+    public void setDuration(Long duration) {
 		this.duration = duration;
 	}
 
-	public String getMediaId() {
+    /**
+     * Gets media id.
+     *
+     * @return the media id
+     */
+    public String getMediaId() {
 		return this.mediaId;
 	}
-	public void setMediaId(String mediaId) {
+
+    /**
+     * Sets media id.
+     *
+     * @param mediaId the media id
+     */
+    public void setMediaId(String mediaId) {
 		this.mediaId = mediaId;
 	}
 
-	public String getMediaType() {
+    /**
+     * Gets media type.
+     *
+     * @return the media type
+     */
+    public String getMediaType() {
 		return this.mediaType;
 	}
-	public void setMediaType(String mediaType) {
+
+    /**
+     * Sets media type.
+     *
+     * @param mediaType the media type
+     */
+    public void setMediaType(String mediaType) {
 		this.mediaType = mediaType;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 
-	public String getTitle() {
+    /**
+     * Gets title.
+     *
+     * @return the title
+     */
+    public String getTitle() {
 		return this.title;
 	}
-	public void setTitle(String title) {
+
+    /**
+     * Sets title.
+     *
+     * @param title the title
+     */
+    public void setTitle(String title) {
 		this.title = title;
 	}
 
-	public String getWorkId() {
+    /**
+     * Gets work id.
+     *
+     * @return the work id
+     */
+    public String getWorkId() {
 		return this.workId;
 	}
-	public void setWorkId(String workId) {
+
+    /**
+     * Sets work id.
+     *
+     * @param workId the work id
+     */
+    public void setWorkId(String workId) {
 		this.workId = workId;
 	}
 

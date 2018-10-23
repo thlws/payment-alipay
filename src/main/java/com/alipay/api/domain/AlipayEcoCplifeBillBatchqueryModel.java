@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物业费账单数据批量查询
  *
  * @author auto create
- * @since 1.0, 2017-01-18 16:46:05
+ * @since 1.0, 2018-06-09 20:13:42
  */
 public class AlipayEcoCplifeBillBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5471496828647232368L;
+	private static final long serialVersionUID = 5899246146795437966L;
 
 	/**
 	 * 查询过滤条件之一：
@@ -80,66 +80,165 @@ OUT_OF_DATE - 未支付且已过缴费截止日期
 	@ApiField("release_day")
 	private String releaseDay;
 
-	public String getAcctPeriod() {
+    /**
+     * Gets acct period.
+     *
+     * @return the acct period
+     */
+    public String getAcctPeriod() {
 		return this.acctPeriod;
 	}
-	public void setAcctPeriod(String acctPeriod) {
+
+    /**
+     * Sets acct period.
+     *
+     * @param acctPeriod the acct period
+     */
+    public void setAcctPeriod(String acctPeriod) {
 		this.acctPeriod = acctPeriod;
 	}
 
-	public String getBatchId() {
+    /**
+     * Gets batch id.
+     *
+     * @return the batch id
+     */
+    public String getBatchId() {
 		return this.batchId;
 	}
-	public void setBatchId(String batchId) {
+
+    /**
+     * Sets batch id.
+     *
+     * @param batchId the batch id
+     */
+    public void setBatchId(String batchId) {
 		this.batchId = batchId;
 	}
 
-	public String getBillStatus() {
+    /**
+     * Gets bill status.
+     *
+     * @return the bill status
+     */
+    public String getBillStatus() {
 		return this.billStatus;
 	}
-	public void setBillStatus(String billStatus) {
+
+    /**
+     * Sets bill status.
+     *
+     * @param billStatus the bill status
+     */
+    public void setBillStatus(String billStatus) {
 		this.billStatus = billStatus;
 	}
 
-	public String getCommunityId() {
+    /**
+     * Gets community id.
+     *
+     * @return the community id
+     */
+    public String getCommunityId() {
 		return this.communityId;
 	}
-	public void setCommunityId(String communityId) {
+
+    /**
+     * Sets community id.
+     *
+     * @param communityId the community id
+     */
+    public void setCommunityId(String communityId) {
 		this.communityId = communityId;
 	}
 
-	public String getCostType() {
+    /**
+     * Gets cost type.
+     *
+     * @return the cost type
+     */
+    public String getCostType() {
 		return this.costType;
 	}
-	public void setCostType(String costType) {
+
+    /**
+     * Sets cost type.
+     *
+     * @param costType the cost type
+     */
+    public void setCostType(String costType) {
 		this.costType = costType;
 	}
 
-	public String getOutRoomId() {
+    /**
+     * Gets out room id.
+     *
+     * @return the out room id
+     */
+    public String getOutRoomId() {
 		return this.outRoomId;
 	}
-	public void setOutRoomId(String outRoomId) {
+
+    /**
+     * Sets out room id.
+     *
+     * @param outRoomId the out room id
+     */
+    public void setOutRoomId(String outRoomId) {
 		this.outRoomId = outRoomId;
 	}
 
-	public Long getPageNum() {
+    /**
+     * Gets page num.
+     *
+     * @return the page num
+     */
+    public Long getPageNum() {
 		return this.pageNum;
 	}
-	public void setPageNum(Long pageNum) {
+
+    /**
+     * Sets page num.
+     *
+     * @param pageNum the page num
+     */
+    public void setPageNum(Long pageNum) {
 		this.pageNum = pageNum;
 	}
 
-	public Long getPageSize() {
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public Long getPageSize() {
 		return this.pageSize;
 	}
-	public void setPageSize(Long pageSize) {
+
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}
 
-	public String getReleaseDay() {
+    /**
+     * Gets release day.
+     *
+     * @return the release day
+     */
+    public String getReleaseDay() {
 		return this.releaseDay;
 	}
-	public void setReleaseDay(String releaseDay) {
+
+    /**
+     * Sets release day.
+     *
+     * @param releaseDay the release day
+     */
+    public void setReleaseDay(String releaseDay) {
 		this.releaseDay = releaseDay;
 	}
 

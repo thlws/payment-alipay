@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoMycarViolationCityPushModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6894412917573739864L;
+	private static final long serialVersionUID = 7894838924886373732L;
 
 	/**
 	 * 城市编码
@@ -31,24 +31,57 @@ public class AlipayEcoMycarViolationCityPushModel extends AlipayObject {
 	@ApiField("service_status")
 	private String serviceStatus;
 
-	public String getCityCode() {
+    /**
+     * Gets city code.
+     *
+     * @return the city code
+     */
+    public String getCityCode() {
 		return this.cityCode;
 	}
-	public void setCityCode(String cityCode) {
+
+    /**
+     * Sets city code.
+     *
+     * @param cityCode the city code
+     */
+    public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
 	}
 
-	public String getPushType() {
+    /**
+     * Gets push type.
+     *
+     * @return the push type
+     */
+    public String getPushType() {
 		return this.pushType;
 	}
-	public void setPushType(String pushType) {
+
+    /**
+     * Sets push type.
+     *
+     * @param pushType the push type
+     */
+    public void setPushType(String pushType) {
 		this.pushType = pushType;
 	}
 
-	public String getServiceStatus() {
+    /**
+     * Gets service status.
+     *
+     * @return the service status
+     */
+    public String getServiceStatus() {
 		return this.serviceStatus;
 	}
-	public void setServiceStatus(String serviceStatus) {
+
+    /**
+     * Sets service status.
+     *
+     * @param serviceStatus the service status
+     */
+    public void setServiceStatus(String serviceStatus) {
 		this.serviceStatus = serviceStatus;
 	}
 

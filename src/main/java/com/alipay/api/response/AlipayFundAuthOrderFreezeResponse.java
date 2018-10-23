@@ -7,13 +7,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.fund.auth.order.freeze response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-09-21 19:43:02
+ * @since 1.0, 2018-07-25 14:50:00
  */
 public class AlipayFundAuthOrderFreezeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3713473233199892528L;
+	private static final long serialVersionUID = 3487639966437737474L;
 
 	/** 
 	 * 本次操作冻结的金额，单位为：元（人民币），精确到小数点后两位
@@ -26,6 +26,18 @@ public class AlipayFundAuthOrderFreezeResponse extends AlipayResponse {
 	 */
 	@ApiField("auth_no")
 	private String authNo;
+
+	/** 
+	 * 本次冻结操作中信用冻结金额，单位为：元（人民币），精确到小数点后两位
+	 */
+	@ApiField("credit_amount")
+	private String creditAmount;
+
+	/** 
+	 * 本次冻结操作中自有资金冻结金额，单位为：元（人民币），精确到小数点后两位
+	 */
+	@ApiField("fund_amount")
+	private String fundAmount;
 
 	/** 
 	 * 资金授权成功时间
@@ -53,7 +65,7 @@ public class AlipayFundAuthOrderFreezeResponse extends AlipayResponse {
 	private String outRequestNo;
 
 	/** 
-	 * 收款方支付宝账号（Email或手机号）
+	 * 付款方支付宝账号（Email或手机号）
 	 */
 	@ApiField("payer_logon_id")
 	private String payerLogonId;
@@ -65,75 +77,260 @@ public class AlipayFundAuthOrderFreezeResponse extends AlipayResponse {
 	private String payerUserId;
 
 	/** 
+	 * 预授权类型，目前支持 CREDIT_AUTH(信用预授权);
+商户可根据该标识来判断该笔预授权的类型，当返回值为"CREDIT_AUTH"表明该笔预授权为信用预授权，没有真实冻结资金；当返回值为空或者不为"CREDIT_AUTH"则表明该笔预授权为普通资金预授权，会冻结用户资金。
+	 */
+	@ApiField("pre_auth_type")
+	private String preAuthType;
+
+	/** 
 	 * 资金预授权明细的状态
-目前支持：  INIT：初始
+目前支持：  
+INIT：初始
 SUCCESS: 成功
 CLOSED：关闭
 	 */
 	@ApiField("status")
 	private String status;
 
-	public void setAmount(String amount) {
+	/** 
+	 * 标价币种,  amount 对应的币种单位。支持澳元：AUD, 新西兰元：NZD, 台币：TWD, 美元：USD, 欧元：EUR, 英镑：GBP
+	 */
+	@ApiField("trans_currency")
+	private String transCurrency;
+
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(String amount) {
 		this.amount = amount;
 	}
-	public String getAmount( ) {
+
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public String getAmount( ) {
 		return this.amount;
 	}
 
-	public void setAuthNo(String authNo) {
+    /**
+     * Sets auth no.
+     *
+     * @param authNo the auth no
+     */
+    public void setAuthNo(String authNo) {
 		this.authNo = authNo;
 	}
-	public String getAuthNo( ) {
+
+    /**
+     * Gets auth no.
+     *
+     * @return the auth no
+     */
+    public String getAuthNo( ) {
 		return this.authNo;
 	}
 
-	public void setGmtTrans(Date gmtTrans) {
+    /**
+     * Sets credit amount.
+     *
+     * @param creditAmount the credit amount
+     */
+    public void setCreditAmount(String creditAmount) {
+		this.creditAmount = creditAmount;
+	}
+
+    /**
+     * Gets credit amount.
+     *
+     * @return the credit amount
+     */
+    public String getCreditAmount( ) {
+		return this.creditAmount;
+	}
+
+    /**
+     * Sets fund amount.
+     *
+     * @param fundAmount the fund amount
+     */
+    public void setFundAmount(String fundAmount) {
+		this.fundAmount = fundAmount;
+	}
+
+    /**
+     * Gets fund amount.
+     *
+     * @return the fund amount
+     */
+    public String getFundAmount( ) {
+		return this.fundAmount;
+	}
+
+    /**
+     * Sets gmt trans.
+     *
+     * @param gmtTrans the gmt trans
+     */
+    public void setGmtTrans(Date gmtTrans) {
 		this.gmtTrans = gmtTrans;
 	}
-	public Date getGmtTrans( ) {
+
+    /**
+     * Gets gmt trans.
+     *
+     * @return the gmt trans
+     */
+    public Date getGmtTrans( ) {
 		return this.gmtTrans;
 	}
 
-	public void setOperationId(String operationId) {
+    /**
+     * Sets operation id.
+     *
+     * @param operationId the operation id
+     */
+    public void setOperationId(String operationId) {
 		this.operationId = operationId;
 	}
-	public String getOperationId( ) {
+
+    /**
+     * Gets operation id.
+     *
+     * @return the operation id
+     */
+    public String getOperationId( ) {
 		return this.operationId;
 	}
 
-	public void setOutOrderNo(String outOrderNo) {
+    /**
+     * Sets out order no.
+     *
+     * @param outOrderNo the out order no
+     */
+    public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
 	}
-	public String getOutOrderNo( ) {
+
+    /**
+     * Gets out order no.
+     *
+     * @return the out order no
+     */
+    public String getOutOrderNo( ) {
 		return this.outOrderNo;
 	}
 
-	public void setOutRequestNo(String outRequestNo) {
+    /**
+     * Sets out request no.
+     *
+     * @param outRequestNo the out request no
+     */
+    public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
 	}
-	public String getOutRequestNo( ) {
+
+    /**
+     * Gets out request no.
+     *
+     * @return the out request no
+     */
+    public String getOutRequestNo( ) {
 		return this.outRequestNo;
 	}
 
-	public void setPayerLogonId(String payerLogonId) {
+    /**
+     * Sets payer logon id.
+     *
+     * @param payerLogonId the payer logon id
+     */
+    public void setPayerLogonId(String payerLogonId) {
 		this.payerLogonId = payerLogonId;
 	}
-	public String getPayerLogonId( ) {
+
+    /**
+     * Gets payer logon id.
+     *
+     * @return the payer logon id
+     */
+    public String getPayerLogonId( ) {
 		return this.payerLogonId;
 	}
 
-	public void setPayerUserId(String payerUserId) {
+    /**
+     * Sets payer user id.
+     *
+     * @param payerUserId the payer user id
+     */
+    public void setPayerUserId(String payerUserId) {
 		this.payerUserId = payerUserId;
 	}
-	public String getPayerUserId( ) {
+
+    /**
+     * Gets payer user id.
+     *
+     * @return the payer user id
+     */
+    public String getPayerUserId( ) {
 		return this.payerUserId;
 	}
 
-	public void setStatus(String status) {
+    /**
+     * Sets pre auth type.
+     *
+     * @param preAuthType the pre auth type
+     */
+    public void setPreAuthType(String preAuthType) {
+		this.preAuthType = preAuthType;
+	}
+
+    /**
+     * Gets pre auth type.
+     *
+     * @return the pre auth type
+     */
+    public String getPreAuthType( ) {
+		return this.preAuthType;
+	}
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
-	public String getStatus( ) {
+
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus( ) {
 		return this.status;
+	}
+
+    /**
+     * Sets trans currency.
+     *
+     * @param transCurrency the trans currency
+     */
+    public void setTransCurrency(String transCurrency) {
+		this.transCurrency = transCurrency;
+	}
+
+    /**
+     * Gets trans currency.
+     *
+     * @return the trans currency
+     */
+    public String getTransCurrency( ) {
+		return this.transCurrency;
 	}
 
 }

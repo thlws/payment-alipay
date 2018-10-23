@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NewsfeedMediaGiftInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4728488941336898986L;
+	private static final long serialVersionUID = 5834119852534975864L;
 
 	/**
 	 * 地址
@@ -67,66 +67,165 @@ public class NewsfeedMediaGiftInfo extends AlipayObject {
 	@ApiField("type")
 	private String type;
 
-	public String getAction() {
+    /**
+     * Gets action.
+     *
+     * @return the action
+     */
+    public String getAction() {
 		return this.action;
 	}
-	public void setAction(String action) {
+
+    /**
+     * Sets action.
+     *
+     * @param action the action
+     */
+    public void setAction(String action) {
 		this.action = action;
 	}
 
-	public String getAdrHeight() {
+    /**
+     * Gets adr height.
+     *
+     * @return the adr height
+     */
+    public String getAdrHeight() {
 		return this.adrHeight;
 	}
-	public void setAdrHeight(String adrHeight) {
+
+    /**
+     * Sets adr height.
+     *
+     * @param adrHeight the adr height
+     */
+    public void setAdrHeight(String adrHeight) {
 		this.adrHeight = adrHeight;
 	}
 
-	public String getAdrThumb() {
+    /**
+     * Gets adr thumb.
+     *
+     * @return the adr thumb
+     */
+    public String getAdrThumb() {
 		return this.adrThumb;
 	}
-	public void setAdrThumb(String adrThumb) {
+
+    /**
+     * Sets adr thumb.
+     *
+     * @param adrThumb the adr thumb
+     */
+    public void setAdrThumb(String adrThumb) {
 		this.adrThumb = adrThumb;
 	}
 
-	public String getAdrWidth() {
+    /**
+     * Gets adr width.
+     *
+     * @return the adr width
+     */
+    public String getAdrWidth() {
 		return this.adrWidth;
 	}
-	public void setAdrWidth(String adrWidth) {
+
+    /**
+     * Sets adr width.
+     *
+     * @param adrWidth the adr width
+     */
+    public void setAdrWidth(String adrWidth) {
 		this.adrWidth = adrWidth;
 	}
 
-	public String getIosHeight() {
+    /**
+     * Gets ios height.
+     *
+     * @return the ios height
+     */
+    public String getIosHeight() {
 		return this.iosHeight;
 	}
-	public void setIosHeight(String iosHeight) {
+
+    /**
+     * Sets ios height.
+     *
+     * @param iosHeight the ios height
+     */
+    public void setIosHeight(String iosHeight) {
 		this.iosHeight = iosHeight;
 	}
 
-	public String getIosThumb() {
+    /**
+     * Gets ios thumb.
+     *
+     * @return the ios thumb
+     */
+    public String getIosThumb() {
 		return this.iosThumb;
 	}
-	public void setIosThumb(String iosThumb) {
+
+    /**
+     * Sets ios thumb.
+     *
+     * @param iosThumb the ios thumb
+     */
+    public void setIosThumb(String iosThumb) {
 		this.iosThumb = iosThumb;
 	}
 
-	public String getIosWidth() {
+    /**
+     * Gets ios width.
+     *
+     * @return the ios width
+     */
+    public String getIosWidth() {
 		return this.iosWidth;
 	}
-	public void setIosWidth(String iosWidth) {
+
+    /**
+     * Sets ios width.
+     *
+     * @param iosWidth the ios width
+     */
+    public void setIosWidth(String iosWidth) {
 		this.iosWidth = iosWidth;
 	}
 
-	public String getTheme() {
+    /**
+     * Gets theme.
+     *
+     * @return the theme
+     */
+    public String getTheme() {
 		return this.theme;
 	}
-	public void setTheme(String theme) {
+
+    /**
+     * Sets theme.
+     *
+     * @param theme the theme
+     */
+    public void setTheme(String theme) {
 		this.theme = theme;
 	}
 
-	public String getType() {
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
-	public void setType(String type) {
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
 

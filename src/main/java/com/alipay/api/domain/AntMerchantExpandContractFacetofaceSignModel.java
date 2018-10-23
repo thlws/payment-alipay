@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntMerchantExpandContractFacetofaceSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8671462174847662314L;
+	private static final long serialVersionUID = 8727787816369382989L;
 
 	/**
 	 * 营业执照授权函图片，个体工商户如果使用总公司或其他公司的营业执照认证需上传该授权函图片，通过ant.merchant.expand.image.upload接口上传营业执照授权函图片
@@ -50,7 +50,9 @@ public class AntMerchantExpandContractFacetofaceSignModel extends AlipayObject {
 	private String contactName;
 
 	/**
-	 * 所属MCCCode
+	 * 所属MCCCode，详情可参考
+<a href="https://doc.open.alipay.com/doc2/detail.htm?spm=a219a.7629140.0.0.59bgD2&treeId=222&articleId=105364&docType=1#s1
+">商家经营类目</a> 中的“经营类目编码”
 	 */
 	@ApiField("mcc_code")
 	private String mccCode;
@@ -74,85 +76,209 @@ public class AntMerchantExpandContractFacetofaceSignModel extends AlipayObject {
 	private String shopSignBoardPic;
 
 	/**
-	 * 企业特殊资质图片
+	 * 企业特殊资质图片，可参考
+<a href="https://doc.open.alipay.com/doc2/detail.htm?spm=a219a.7629140.0.0.59bgD2&treeId=222&articleId=105364&docType=1#s1
+">商家经营类目</a> 中的“需要的特殊资质证书” 
+通过ant.merchant.expand.image.upload接口上传企业特殊资质图片
 	 */
 	@ApiField("special_license_pic")
 	private String specialLicensePic;
 
-	public String getBusinessLicenseAuthPic() {
+    /**
+     * Gets business license auth pic.
+     *
+     * @return the business license auth pic
+     */
+    public String getBusinessLicenseAuthPic() {
 		return this.businessLicenseAuthPic;
 	}
-	public void setBusinessLicenseAuthPic(String businessLicenseAuthPic) {
+
+    /**
+     * Sets business license auth pic.
+     *
+     * @param businessLicenseAuthPic the business license auth pic
+     */
+    public void setBusinessLicenseAuthPic(String businessLicenseAuthPic) {
 		this.businessLicenseAuthPic = businessLicenseAuthPic;
 	}
 
-	public String getBusinessLicenseNo() {
+    /**
+     * Gets business license no.
+     *
+     * @return the business license no
+     */
+    public String getBusinessLicenseNo() {
 		return this.businessLicenseNo;
 	}
-	public void setBusinessLicenseNo(String businessLicenseNo) {
+
+    /**
+     * Sets business license no.
+     *
+     * @param businessLicenseNo the business license no
+     */
+    public void setBusinessLicenseNo(String businessLicenseNo) {
 		this.businessLicenseNo = businessLicenseNo;
 	}
 
-	public String getBusinessLicensePic() {
+    /**
+     * Gets business license pic.
+     *
+     * @return the business license pic
+     */
+    public String getBusinessLicensePic() {
 		return this.businessLicensePic;
 	}
-	public void setBusinessLicensePic(String businessLicensePic) {
+
+    /**
+     * Sets business license pic.
+     *
+     * @param businessLicensePic the business license pic
+     */
+    public void setBusinessLicensePic(String businessLicensePic) {
 		this.businessLicensePic = businessLicensePic;
 	}
 
-	public String getContactEmail() {
+    /**
+     * Gets contact email.
+     *
+     * @return the contact email
+     */
+    public String getContactEmail() {
 		return this.contactEmail;
 	}
-	public void setContactEmail(String contactEmail) {
+
+    /**
+     * Sets contact email.
+     *
+     * @param contactEmail the contact email
+     */
+    public void setContactEmail(String contactEmail) {
 		this.contactEmail = contactEmail;
 	}
 
-	public String getContactMobile() {
+    /**
+     * Gets contact mobile.
+     *
+     * @return the contact mobile
+     */
+    public String getContactMobile() {
 		return this.contactMobile;
 	}
-	public void setContactMobile(String contactMobile) {
+
+    /**
+     * Sets contact mobile.
+     *
+     * @param contactMobile the contact mobile
+     */
+    public void setContactMobile(String contactMobile) {
 		this.contactMobile = contactMobile;
 	}
 
-	public String getContactName() {
+    /**
+     * Gets contact name.
+     *
+     * @return the contact name
+     */
+    public String getContactName() {
 		return this.contactName;
 	}
-	public void setContactName(String contactName) {
+
+    /**
+     * Sets contact name.
+     *
+     * @param contactName the contact name
+     */
+    public void setContactName(String contactName) {
 		this.contactName = contactName;
 	}
 
-	public String getMccCode() {
+    /**
+     * Gets mcc code.
+     *
+     * @return the mcc code
+     */
+    public String getMccCode() {
 		return this.mccCode;
 	}
-	public void setMccCode(String mccCode) {
+
+    /**
+     * Sets mcc code.
+     *
+     * @param mccCode the mcc code
+     */
+    public void setMccCode(String mccCode) {
 		this.mccCode = mccCode;
 	}
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
-	public String getShopScenePic() {
+    /**
+     * Gets shop scene pic.
+     *
+     * @return the shop scene pic
+     */
+    public String getShopScenePic() {
 		return this.shopScenePic;
 	}
-	public void setShopScenePic(String shopScenePic) {
+
+    /**
+     * Sets shop scene pic.
+     *
+     * @param shopScenePic the shop scene pic
+     */
+    public void setShopScenePic(String shopScenePic) {
 		this.shopScenePic = shopScenePic;
 	}
 
-	public String getShopSignBoardPic() {
+    /**
+     * Gets shop sign board pic.
+     *
+     * @return the shop sign board pic
+     */
+    public String getShopSignBoardPic() {
 		return this.shopSignBoardPic;
 	}
-	public void setShopSignBoardPic(String shopSignBoardPic) {
+
+    /**
+     * Sets shop sign board pic.
+     *
+     * @param shopSignBoardPic the shop sign board pic
+     */
+    public void setShopSignBoardPic(String shopSignBoardPic) {
 		this.shopSignBoardPic = shopSignBoardPic;
 	}
 
-	public String getSpecialLicensePic() {
+    /**
+     * Gets special license pic.
+     *
+     * @return the special license pic
+     */
+    public String getSpecialLicensePic() {
 		return this.specialLicensePic;
 	}
-	public void setSpecialLicensePic(String specialLicensePic) {
+
+    /**
+     * Sets special license pic.
+     *
+     * @param specialLicensePic the special license pic
+     */
+    public void setSpecialLicensePic(String specialLicensePic) {
 		this.specialLicensePic = specialLicensePic;
 	}
 

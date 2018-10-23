@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户通过该接口进行交易的创建下单
  *
  * @author auto create
- * @since 1.0, 2017-06-14 15:07:45
+ * @since 1.0, 2018-09-11 16:43:18
  */
 public class AlipayTradeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2681561922637978567L;
+	private static final long serialVersionUID = 6853832658241559845L;
 
 	/**
 	 * 支付宝的店铺编号
@@ -29,7 +29,13 @@ public class AlipayTradeCreateModel extends AlipayObject {
 	private String body;
 
 	/**
-	 * 买家的支付宝唯一用户号（2088开头的16位纯数字）,和buyer_logon_id不能同时为空
+	 * 商户传入业务信息，具体值要和支付宝约定，应用于安全，营销等参数直传场景，格式为json格式
+	 */
+	@ApiField("business_params")
+	private String businessParams;
+
+	/**
+	 * 买家的支付宝唯一用户号（2088开头的16位纯数字）
 	 */
 	@ApiField("buyer_id")
 	private String buyerId;
@@ -41,8 +47,9 @@ public class AlipayTradeCreateModel extends AlipayObject {
 	private String buyerLogonId;
 
 	/**
-	 * 禁用渠道,用户不可用指定渠道支付
+	 * 禁用渠道,用户不可用指定渠道支付，多个渠道以逗号分割
 注，与enable_pay_channels互斥
+<a href="https://docs.open.alipay.com/common/wifww7">渠道列表</a>
 	 */
 	@ApiField("disable_pay_channels")
 	private String disablePayChannels;
@@ -56,11 +63,18 @@ public class AlipayTradeCreateModel extends AlipayObject {
 	private String discountableAmount;
 
 	/**
-	 * 可用渠道,用户只能在指定渠道范围内支付
+	 * 可用渠道,用户只能在指定渠道范围内支付，多个渠道以逗号分割
 注，与disable_pay_channels互斥
+渠道列表：https://docs.open.alipay.com/common/wifww7
 	 */
 	@ApiField("enable_pay_channels")
 	private String enablePayChannels;
+
+	/**
+	 * 外部指定买家
+	 */
+	@ApiField("ext_user_info")
+	private ExtUserInfo extUserInfo;
 
 	/**
 	 * 业务扩展参数
@@ -69,12 +83,17 @@ public class AlipayTradeCreateModel extends AlipayObject {
 	private ExtendParams extendParams;
 
 	/**
-	 * 订单包含的商品列表信息.Json格式.
-其它说明详见：“商品明细说明”
+	 * 订单包含的商品列表信息，json格式，其它说明详见：“商品明细说明”
 	 */
 	@ApiListField("goods_detail")
 	@ApiField("goods_detail")
 	private List<GoodsDetail> goodsDetail;
+
+	/**
+	 * 物流信息
+	 */
+	@ApiField("logistics_detail")
+	private LogisticsDetail logisticsDetail;
 
 	/**
 	 * 商户原始订单号，最大长度限制32位
@@ -95,6 +114,12 @@ public class AlipayTradeCreateModel extends AlipayObject {
 	private String outTradeNo;
 
 	/**
+	 * 收货人及地址信息
+	 */
+	@ApiField("receiver_address_info")
+	private ReceiverAddressInfo receiverAddressInfo;
+
+	/**
 	 * 描述分账信息，json格式。
 	 */
 	@ApiField("royalty_info")
@@ -106,6 +131,12 @@ public class AlipayTradeCreateModel extends AlipayObject {
 	 */
 	@ApiField("seller_id")
 	private String sellerId;
+
+	/**
+	 * 描述结算信息，json格式，详见结算参数说明
+	 */
+	@ApiField("settle_info")
+	private SettleInfo settleInfo;
 
 	/**
 	 * 商户门店编号
@@ -152,150 +183,471 @@ public class AlipayTradeCreateModel extends AlipayObject {
 	@ApiField("undiscountable_amount")
 	private String undiscountableAmount;
 
-	public String getAlipayStoreId() {
+    /**
+     * Gets alipay store id.
+     *
+     * @return the alipay store id
+     */
+    public String getAlipayStoreId() {
 		return this.alipayStoreId;
 	}
-	public void setAlipayStoreId(String alipayStoreId) {
+
+    /**
+     * Sets alipay store id.
+     *
+     * @param alipayStoreId the alipay store id
+     */
+    public void setAlipayStoreId(String alipayStoreId) {
 		this.alipayStoreId = alipayStoreId;
 	}
 
-	public String getBody() {
+    /**
+     * Gets body.
+     *
+     * @return the body
+     */
+    public String getBody() {
 		return this.body;
 	}
-	public void setBody(String body) {
+
+    /**
+     * Sets body.
+     *
+     * @param body the body
+     */
+    public void setBody(String body) {
 		this.body = body;
 	}
 
-	public String getBuyerId() {
+    /**
+     * Gets business params.
+     *
+     * @return the business params
+     */
+    public String getBusinessParams() {
+		return this.businessParams;
+	}
+
+    /**
+     * Sets business params.
+     *
+     * @param businessParams the business params
+     */
+    public void setBusinessParams(String businessParams) {
+		this.businessParams = businessParams;
+	}
+
+    /**
+     * Gets buyer id.
+     *
+     * @return the buyer id
+     */
+    public String getBuyerId() {
 		return this.buyerId;
 	}
-	public void setBuyerId(String buyerId) {
+
+    /**
+     * Sets buyer id.
+     *
+     * @param buyerId the buyer id
+     */
+    public void setBuyerId(String buyerId) {
 		this.buyerId = buyerId;
 	}
 
-	public String getBuyerLogonId() {
+    /**
+     * Gets buyer logon id.
+     *
+     * @return the buyer logon id
+     */
+    public String getBuyerLogonId() {
 		return this.buyerLogonId;
 	}
-	public void setBuyerLogonId(String buyerLogonId) {
+
+    /**
+     * Sets buyer logon id.
+     *
+     * @param buyerLogonId the buyer logon id
+     */
+    public void setBuyerLogonId(String buyerLogonId) {
 		this.buyerLogonId = buyerLogonId;
 	}
 
-	public String getDisablePayChannels() {
+    /**
+     * Gets disable pay channels.
+     *
+     * @return the disable pay channels
+     */
+    public String getDisablePayChannels() {
 		return this.disablePayChannels;
 	}
-	public void setDisablePayChannels(String disablePayChannels) {
+
+    /**
+     * Sets disable pay channels.
+     *
+     * @param disablePayChannels the disable pay channels
+     */
+    public void setDisablePayChannels(String disablePayChannels) {
 		this.disablePayChannels = disablePayChannels;
 	}
 
-	public String getDiscountableAmount() {
+    /**
+     * Gets discountable amount.
+     *
+     * @return the discountable amount
+     */
+    public String getDiscountableAmount() {
 		return this.discountableAmount;
 	}
-	public void setDiscountableAmount(String discountableAmount) {
+
+    /**
+     * Sets discountable amount.
+     *
+     * @param discountableAmount the discountable amount
+     */
+    public void setDiscountableAmount(String discountableAmount) {
 		this.discountableAmount = discountableAmount;
 	}
 
-	public String getEnablePayChannels() {
+    /**
+     * Gets enable pay channels.
+     *
+     * @return the enable pay channels
+     */
+    public String getEnablePayChannels() {
 		return this.enablePayChannels;
 	}
-	public void setEnablePayChannels(String enablePayChannels) {
+
+    /**
+     * Sets enable pay channels.
+     *
+     * @param enablePayChannels the enable pay channels
+     */
+    public void setEnablePayChannels(String enablePayChannels) {
 		this.enablePayChannels = enablePayChannels;
 	}
 
-	public ExtendParams getExtendParams() {
+    /**
+     * Gets ext user info.
+     *
+     * @return the ext user info
+     */
+    public ExtUserInfo getExtUserInfo() {
+		return this.extUserInfo;
+	}
+
+    /**
+     * Sets ext user info.
+     *
+     * @param extUserInfo the ext user info
+     */
+    public void setExtUserInfo(ExtUserInfo extUserInfo) {
+		this.extUserInfo = extUserInfo;
+	}
+
+    /**
+     * Gets extend params.
+     *
+     * @return the extend params
+     */
+    public ExtendParams getExtendParams() {
 		return this.extendParams;
 	}
-	public void setExtendParams(ExtendParams extendParams) {
+
+    /**
+     * Sets extend params.
+     *
+     * @param extendParams the extend params
+     */
+    public void setExtendParams(ExtendParams extendParams) {
 		this.extendParams = extendParams;
 	}
 
-	public List<GoodsDetail> getGoodsDetail() {
+    /**
+     * Gets goods detail.
+     *
+     * @return the goods detail
+     */
+    public List<GoodsDetail> getGoodsDetail() {
 		return this.goodsDetail;
 	}
-	public void setGoodsDetail(List<GoodsDetail> goodsDetail) {
+
+    /**
+     * Sets goods detail.
+     *
+     * @param goodsDetail the goods detail
+     */
+    public void setGoodsDetail(List<GoodsDetail> goodsDetail) {
 		this.goodsDetail = goodsDetail;
 	}
 
-	public String getMerchantOrderNo() {
+    /**
+     * Gets logistics detail.
+     *
+     * @return the logistics detail
+     */
+    public LogisticsDetail getLogisticsDetail() {
+		return this.logisticsDetail;
+	}
+
+    /**
+     * Sets logistics detail.
+     *
+     * @param logisticsDetail the logistics detail
+     */
+    public void setLogisticsDetail(LogisticsDetail logisticsDetail) {
+		this.logisticsDetail = logisticsDetail;
+	}
+
+    /**
+     * Gets merchant order no.
+     *
+     * @return the merchant order no
+     */
+    public String getMerchantOrderNo() {
 		return this.merchantOrderNo;
 	}
-	public void setMerchantOrderNo(String merchantOrderNo) {
+
+    /**
+     * Sets merchant order no.
+     *
+     * @param merchantOrderNo the merchant order no
+     */
+    public void setMerchantOrderNo(String merchantOrderNo) {
 		this.merchantOrderNo = merchantOrderNo;
 	}
 
-	public String getOperatorId() {
+    /**
+     * Gets operator id.
+     *
+     * @return the operator id
+     */
+    public String getOperatorId() {
 		return this.operatorId;
 	}
-	public void setOperatorId(String operatorId) {
+
+    /**
+     * Sets operator id.
+     *
+     * @param operatorId the operator id
+     */
+    public void setOperatorId(String operatorId) {
 		this.operatorId = operatorId;
 	}
 
-	public String getOutTradeNo() {
+    /**
+     * Gets out trade no.
+     *
+     * @return the out trade no
+     */
+    public String getOutTradeNo() {
 		return this.outTradeNo;
 	}
-	public void setOutTradeNo(String outTradeNo) {
+
+    /**
+     * Sets out trade no.
+     *
+     * @param outTradeNo the out trade no
+     */
+    public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
 
-	public RoyaltyInfo getRoyaltyInfo() {
+    /**
+     * Gets receiver address info.
+     *
+     * @return the receiver address info
+     */
+    public ReceiverAddressInfo getReceiverAddressInfo() {
+		return this.receiverAddressInfo;
+	}
+
+    /**
+     * Sets receiver address info.
+     *
+     * @param receiverAddressInfo the receiver address info
+     */
+    public void setReceiverAddressInfo(ReceiverAddressInfo receiverAddressInfo) {
+		this.receiverAddressInfo = receiverAddressInfo;
+	}
+
+    /**
+     * Gets royalty info.
+     *
+     * @return the royalty info
+     */
+    public RoyaltyInfo getRoyaltyInfo() {
 		return this.royaltyInfo;
 	}
-	public void setRoyaltyInfo(RoyaltyInfo royaltyInfo) {
+
+    /**
+     * Sets royalty info.
+     *
+     * @param royaltyInfo the royalty info
+     */
+    public void setRoyaltyInfo(RoyaltyInfo royaltyInfo) {
 		this.royaltyInfo = royaltyInfo;
 	}
 
-	public String getSellerId() {
+    /**
+     * Gets seller id.
+     *
+     * @return the seller id
+     */
+    public String getSellerId() {
 		return this.sellerId;
 	}
-	public void setSellerId(String sellerId) {
+
+    /**
+     * Sets seller id.
+     *
+     * @param sellerId the seller id
+     */
+    public void setSellerId(String sellerId) {
 		this.sellerId = sellerId;
 	}
 
-	public String getStoreId() {
+    /**
+     * Gets settle info.
+     *
+     * @return the settle info
+     */
+    public SettleInfo getSettleInfo() {
+		return this.settleInfo;
+	}
+
+    /**
+     * Sets settle info.
+     *
+     * @param settleInfo the settle info
+     */
+    public void setSettleInfo(SettleInfo settleInfo) {
+		this.settleInfo = settleInfo;
+	}
+
+    /**
+     * Gets store id.
+     *
+     * @return the store id
+     */
+    public String getStoreId() {
 		return this.storeId;
 	}
-	public void setStoreId(String storeId) {
+
+    /**
+     * Sets store id.
+     *
+     * @param storeId the store id
+     */
+    public void setStoreId(String storeId) {
 		this.storeId = storeId;
 	}
 
-	public SubMerchant getSubMerchant() {
+    /**
+     * Gets sub merchant.
+     *
+     * @return the sub merchant
+     */
+    public SubMerchant getSubMerchant() {
 		return this.subMerchant;
 	}
-	public void setSubMerchant(SubMerchant subMerchant) {
+
+    /**
+     * Sets sub merchant.
+     *
+     * @param subMerchant the sub merchant
+     */
+    public void setSubMerchant(SubMerchant subMerchant) {
 		this.subMerchant = subMerchant;
 	}
 
-	public String getSubject() {
+    /**
+     * Gets subject.
+     *
+     * @return the subject
+     */
+    public String getSubject() {
 		return this.subject;
 	}
-	public void setSubject(String subject) {
+
+    /**
+     * Sets subject.
+     *
+     * @param subject the subject
+     */
+    public void setSubject(String subject) {
 		this.subject = subject;
 	}
 
-	public String getTerminalId() {
+    /**
+     * Gets terminal id.
+     *
+     * @return the terminal id
+     */
+    public String getTerminalId() {
 		return this.terminalId;
 	}
-	public void setTerminalId(String terminalId) {
+
+    /**
+     * Sets terminal id.
+     *
+     * @param terminalId the terminal id
+     */
+    public void setTerminalId(String terminalId) {
 		this.terminalId = terminalId;
 	}
 
-	public String getTimeoutExpress() {
+    /**
+     * Gets timeout express.
+     *
+     * @return the timeout express
+     */
+    public String getTimeoutExpress() {
 		return this.timeoutExpress;
 	}
-	public void setTimeoutExpress(String timeoutExpress) {
+
+    /**
+     * Sets timeout express.
+     *
+     * @param timeoutExpress the timeout express
+     */
+    public void setTimeoutExpress(String timeoutExpress) {
 		this.timeoutExpress = timeoutExpress;
 	}
 
-	public String getTotalAmount() {
+    /**
+     * Gets total amount.
+     *
+     * @return the total amount
+     */
+    public String getTotalAmount() {
 		return this.totalAmount;
 	}
-	public void setTotalAmount(String totalAmount) {
+
+    /**
+     * Sets total amount.
+     *
+     * @param totalAmount the total amount
+     */
+    public void setTotalAmount(String totalAmount) {
 		this.totalAmount = totalAmount;
 	}
 
-	public String getUndiscountableAmount() {
+    /**
+     * Gets undiscountable amount.
+     *
+     * @return the undiscountable amount
+     */
+    public String getUndiscountableAmount() {
 		return this.undiscountableAmount;
 	}
-	public void setUndiscountableAmount(String undiscountableAmount) {
+
+    /**
+     * Sets undiscountable amount.
+     *
+     * @param undiscountableAmount the undiscountable amount
+     */
+    public void setUndiscountableAmount(String undiscountableAmount) {
 		this.undiscountableAmount = undiscountableAmount;
 	}
 

@@ -9,9 +9,9 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.operator.mobile.bind request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-05-03 16:48:39
+ * @since 1.0, 2018-09-13 13:55:27
  */
 public class AlipayOperatorMobileBindRequest implements AlipayRequest<AlipayOperatorMobileBindResponse> {
 
@@ -52,45 +52,111 @@ public class AlipayOperatorMobileBindRequest implements AlipayRequest<AlipayOper
 	 */
 	private String sReturnUrl;
 
-	public void setCheckSigncard(String checkSigncard) {
+    /**
+     * Sets check signcard.
+     *
+     * @param checkSigncard the check signcard
+     */
+    public void setCheckSigncard(String checkSigncard) {
 		this.checkSigncard = checkSigncard;
 	}
-	public String getCheckSigncard() {
+
+    /**
+     * Gets check signcard.
+     *
+     * @return the check signcard
+     */
+    public String getCheckSigncard() {
 		return this.checkSigncard;
 	}
 
-	public void setfReturnUrl(String fReturnUrl) {
+    /**
+     * Sets return url.
+     *
+     * @param fReturnUrl the f return url
+     */
+    public void setfReturnUrl(String fReturnUrl) {
 		this.fReturnUrl = fReturnUrl;
 	}
-	public String getfReturnUrl() {
+
+    /**
+     * Gets return url.
+     *
+     * @return the return url
+     */
+    public String getfReturnUrl() {
 		return this.fReturnUrl;
 	}
 
-	public void setHasSpi(String hasSpi) {
+    /**
+     * Sets has spi.
+     *
+     * @param hasSpi the has spi
+     */
+    public void setHasSpi(String hasSpi) {
 		this.hasSpi = hasSpi;
 	}
-	public String getHasSpi() {
+
+    /**
+     * Gets has spi.
+     *
+     * @return the has spi
+     */
+    public String getHasSpi() {
 		return this.hasSpi;
 	}
 
-	public void setOperatorName(String operatorName) {
+    /**
+     * Sets operator name.
+     *
+     * @param operatorName the operator name
+     */
+    public void setOperatorName(String operatorName) {
 		this.operatorName = operatorName;
 	}
-	public String getOperatorName() {
+
+    /**
+     * Gets operator name.
+     *
+     * @return the operator name
+     */
+    public String getOperatorName() {
 		return this.operatorName;
 	}
 
-	public void setProvinceName(String provinceName) {
+    /**
+     * Sets province name.
+     *
+     * @param provinceName the province name
+     */
+    public void setProvinceName(String provinceName) {
 		this.provinceName = provinceName;
 	}
-	public String getProvinceName() {
+
+    /**
+     * Gets province name.
+     *
+     * @return the province name
+     */
+    public String getProvinceName() {
 		return this.provinceName;
 	}
 
-	public void setsReturnUrl(String sReturnUrl) {
+    /**
+     * Sets return url.
+     *
+     * @param sReturnUrl the s return url
+     */
+    public void setsReturnUrl(String sReturnUrl) {
 		this.sReturnUrl = sReturnUrl;
 	}
-	public String getsReturnUrl() {
+
+    /**
+     * Gets return url.
+     *
+     * @return the return url
+     */
+    public String getsReturnUrl() {
 		return this.sReturnUrl;
 	}
 	private String terminalType;
@@ -167,7 +233,13 @@ public class AlipayOperatorMobileBindRequest implements AlipayRequest<AlipayOper
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

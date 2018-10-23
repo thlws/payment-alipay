@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CPAliveBillEntrySet extends AlipayObject {
 
-	private static final long serialVersionUID = 6474373771689777496L;
+	private static final long serialVersionUID = 7136982653267485677L;
 
 	/**
 	 * 物业费账单应收明细条目ID
@@ -27,17 +27,39 @@ UNDER_PAYMENT - 账单锁定待用户完成支付
 	@ApiField("status")
 	private String status;
 
-	public String getBillEntryId() {
+    /**
+     * Gets bill entry id.
+     *
+     * @return the bill entry id
+     */
+    public String getBillEntryId() {
 		return this.billEntryId;
 	}
-	public void setBillEntryId(String billEntryId) {
+
+    /**
+     * Sets bill entry id.
+     *
+     * @param billEntryId the bill entry id
+     */
+    public void setBillEntryId(String billEntryId) {
 		this.billEntryId = billEntryId;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 

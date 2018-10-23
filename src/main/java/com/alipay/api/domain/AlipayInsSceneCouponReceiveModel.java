@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayInsSceneCouponReceiveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8652539782231124651L;
+	private static final long serialVersionUID = 2381197258334511345L;
 
 	/**
 	 * 投保人
@@ -68,66 +68,165 @@ propertyPaySuccess:蚂蚁物业支付成功页面
 	@ApiField("service_scenario")
 	private String serviceScenario;
 
-	public InsPerson getApplicant() {
+    /**
+     * Gets applicant.
+     *
+     * @return the applicant
+     */
+    public InsPerson getApplicant() {
 		return this.applicant;
 	}
-	public void setApplicant(InsPerson applicant) {
+
+    /**
+     * Sets applicant.
+     *
+     * @param applicant the applicant
+     */
+    public void setApplicant(InsPerson applicant) {
 		this.applicant = applicant;
 	}
 
-	public InsCertificate getCertificate() {
+    /**
+     * Gets certificate.
+     *
+     * @return the certificate
+     */
+    public InsCertificate getCertificate() {
 		return this.certificate;
 	}
-	public void setCertificate(InsCertificate certificate) {
+
+    /**
+     * Sets certificate.
+     *
+     * @param certificate the certificate
+     */
+    public void setCertificate(InsCertificate certificate) {
 		this.certificate = certificate;
 	}
 
-	public InsPerson getInsured() {
+    /**
+     * Gets insured.
+     *
+     * @return the insured
+     */
+    public InsPerson getInsured() {
 		return this.insured;
 	}
-	public void setInsured(InsPerson insured) {
+
+    /**
+     * Sets insured.
+     *
+     * @param insured the insured
+     */
+    public void setInsured(InsPerson insured) {
 		this.insured = insured;
 	}
 
-	public String getMarketType() {
+    /**
+     * Gets market type.
+     *
+     * @return the market type
+     */
+    public String getMarketType() {
 		return this.marketType;
 	}
-	public void setMarketType(String marketType) {
+
+    /**
+     * Sets market type.
+     *
+     * @param marketType the market type
+     */
+    public void setMarketType(String marketType) {
 		this.marketType = marketType;
 	}
 
-	public String getOutBizNo() {
+    /**
+     * Gets out biz no.
+     *
+     * @return the out biz no
+     */
+    public String getOutBizNo() {
 		return this.outBizNo;
 	}
-	public void setOutBizNo(String outBizNo) {
+
+    /**
+     * Sets out biz no.
+     *
+     * @param outBizNo the out biz no
+     */
+    public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
-	public String getPartnerId() {
+    /**
+     * Gets partner id.
+     *
+     * @return the partner id
+     */
+    public String getPartnerId() {
 		return this.partnerId;
 	}
-	public void setPartnerId(String partnerId) {
+
+    /**
+     * Sets partner id.
+     *
+     * @param partnerId the partner id
+     */
+    public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}
 
-	public String getProdCode() {
+    /**
+     * Gets prod code.
+     *
+     * @return the prod code
+     */
+    public String getProdCode() {
 		return this.prodCode;
 	}
-	public void setProdCode(String prodCode) {
+
+    /**
+     * Sets prod code.
+     *
+     * @param prodCode the prod code
+     */
+    public void setProdCode(String prodCode) {
 		this.prodCode = prodCode;
 	}
 
-	public String getProdVersion() {
+    /**
+     * Gets prod version.
+     *
+     * @return the prod version
+     */
+    public String getProdVersion() {
 		return this.prodVersion;
 	}
-	public void setProdVersion(String prodVersion) {
+
+    /**
+     * Sets prod version.
+     *
+     * @param prodVersion the prod version
+     */
+    public void setProdVersion(String prodVersion) {
 		this.prodVersion = prodVersion;
 	}
 
-	public String getServiceScenario() {
+    /**
+     * Gets service scenario.
+     *
+     * @return the service scenario
+     */
+    public String getServiceScenario() {
 		return this.serviceScenario;
 	}
-	public void setServiceScenario(String serviceScenario) {
+
+    /**
+     * Sets service scenario.
+     *
+     * @param serviceScenario the service scenario
+     */
+    public void setServiceScenario(String serviceScenario) {
 		this.serviceScenario = serviceScenario;
 	}
 

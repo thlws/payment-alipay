@@ -7,13 +7,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: zhima.merchant.test.practice response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-03-30 10:16:33
  */
 public class ZhimaMerchantTestPracticeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2215757766379499869L;
+	private static final long serialVersionUID = 2748578268153265641L;
 
 	/** 
 	 * xxxx
@@ -27,17 +27,39 @@ public class ZhimaMerchantTestPracticeResponse extends AlipayResponse {
 	@ApiField("sss")
 	private String sss;
 
-	public void setDddd(XXXXsdasdasd dddd) {
+    /**
+     * Sets dddd.
+     *
+     * @param dddd the dddd
+     */
+    public void setDddd(XXXXsdasdasd dddd) {
 		this.dddd = dddd;
 	}
-	public XXXXsdasdasd getDddd( ) {
+
+    /**
+     * Gets dddd.
+     *
+     * @return the dddd
+     */
+    public XXXXsdasdasd getDddd( ) {
 		return this.dddd;
 	}
 
-	public void setSss(String sss) {
+    /**
+     * Sets sss.
+     *
+     * @param sss the sss
+     */
+    public void setSss(String sss) {
 		this.sss = sss;
 	}
-	public String getSss( ) {
+
+    /**
+     * Gets sss.
+     *
+     * @return the sss
+     */
+    public String getSss( ) {
 		return this.sss;
 	}
 

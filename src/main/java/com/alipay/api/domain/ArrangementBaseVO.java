@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ArrangementBaseVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4723222872174497461L;
+	private static final long serialVersionUID = 3115659651289571124L;
 
 	/**
 	 * 应用id
@@ -183,199 +183,507 @@ public class ArrangementBaseVO extends AlipayObject {
 	@ApiField("template_prod_version")
 	private String templateProdVersion;
 
-	public String getAppId() {
+    /**
+     * Gets app id.
+     *
+     * @return the app id
+     */
+    public String getAppId() {
 		return this.appId;
 	}
-	public void setAppId(String appId) {
+
+    /**
+     * Sets app id.
+     *
+     * @param appId the app id
+     */
+    public void setAppId(String appId) {
 		this.appId = appId;
 	}
 
-	public String getArrangementInstitutionCode() {
+    /**
+     * Gets arrangement institution code.
+     *
+     * @return the arrangement institution code
+     */
+    public String getArrangementInstitutionCode() {
 		return this.arrangementInstitutionCode;
 	}
-	public void setArrangementInstitutionCode(String arrangementInstitutionCode) {
+
+    /**
+     * Sets arrangement institution code.
+     *
+     * @param arrangementInstitutionCode the arrangement institution code
+     */
+    public void setArrangementInstitutionCode(String arrangementInstitutionCode) {
 		this.arrangementInstitutionCode = arrangementInstitutionCode;
 	}
 
-	public String getArrangementName() {
+    /**
+     * Gets arrangement name.
+     *
+     * @return the arrangement name
+     */
+    public String getArrangementName() {
 		return this.arrangementName;
 	}
-	public void setArrangementName(String arrangementName) {
+
+    /**
+     * Sets arrangement name.
+     *
+     * @param arrangementName the arrangement name
+     */
+    public void setArrangementName(String arrangementName) {
 		this.arrangementName = arrangementName;
 	}
 
-	public String getArrangementNo() {
+    /**
+     * Gets arrangement no.
+     *
+     * @return the arrangement no
+     */
+    public String getArrangementNo() {
 		return this.arrangementNo;
 	}
-	public void setArrangementNo(String arrangementNo) {
+
+    /**
+     * Sets arrangement no.
+     *
+     * @param arrangementNo the arrangement no
+     */
+    public void setArrangementNo(String arrangementNo) {
 		this.arrangementNo = arrangementNo;
 	}
 
-	public String getArrangementType() {
+    /**
+     * Gets arrangement type.
+     *
+     * @return the arrangement type
+     */
+    public String getArrangementType() {
 		return this.arrangementType;
 	}
-	public void setArrangementType(String arrangementType) {
+
+    /**
+     * Sets arrangement type.
+     *
+     * @param arrangementType the arrangement type
+     */
+    public void setArrangementType(String arrangementType) {
 		this.arrangementType = arrangementType;
 	}
 
-	public String getArrangementVersion() {
+    /**
+     * Gets arrangement version.
+     *
+     * @return the arrangement version
+     */
+    public String getArrangementVersion() {
 		return this.arrangementVersion;
 	}
-	public void setArrangementVersion(String arrangementVersion) {
+
+    /**
+     * Sets arrangement version.
+     *
+     * @param arrangementVersion the arrangement version
+     */
+    public void setArrangementVersion(String arrangementVersion) {
 		this.arrangementVersion = arrangementVersion;
 	}
 
-	public String getChannelCode() {
+    /**
+     * Gets channel code.
+     *
+     * @return the channel code
+     */
+    public String getChannelCode() {
 		return this.channelCode;
 	}
-	public void setChannelCode(String channelCode) {
+
+    /**
+     * Sets channel code.
+     *
+     * @param channelCode the channel code
+     */
+    public void setChannelCode(String channelCode) {
 		this.channelCode = channelCode;
 	}
 
-	public String getGmtEnd() {
+    /**
+     * Gets gmt end.
+     *
+     * @return the gmt end
+     */
+    public String getGmtEnd() {
 		return this.gmtEnd;
 	}
-	public void setGmtEnd(String gmtEnd) {
+
+    /**
+     * Sets gmt end.
+     *
+     * @param gmtEnd the gmt end
+     */
+    public void setGmtEnd(String gmtEnd) {
 		this.gmtEnd = gmtEnd;
 	}
 
-	public Date getGmtExpired() {
+    /**
+     * Gets gmt expired.
+     *
+     * @return the gmt expired
+     */
+    public Date getGmtExpired() {
 		return this.gmtExpired;
 	}
-	public void setGmtExpired(Date gmtExpired) {
+
+    /**
+     * Sets gmt expired.
+     *
+     * @param gmtExpired the gmt expired
+     */
+    public void setGmtExpired(Date gmtExpired) {
 		this.gmtExpired = gmtExpired;
 	}
 
-	public String getGmtInvalidDue() {
+    /**
+     * Gets gmt invalid due.
+     *
+     * @return the gmt invalid due
+     */
+    public String getGmtInvalidDue() {
 		return this.gmtInvalidDue;
 	}
-	public void setGmtInvalidDue(String gmtInvalidDue) {
+
+    /**
+     * Sets gmt invalid due.
+     *
+     * @param gmtInvalidDue the gmt invalid due
+     */
+    public void setGmtInvalidDue(String gmtInvalidDue) {
 		this.gmtInvalidDue = gmtInvalidDue;
 	}
 
-	public Date getGmtSign() {
+    /**
+     * Gets gmt sign.
+     *
+     * @return the gmt sign
+     */
+    public Date getGmtSign() {
 		return this.gmtSign;
 	}
-	public void setGmtSign(Date gmtSign) {
+
+    /**
+     * Sets gmt sign.
+     *
+     * @param gmtSign the gmt sign
+     */
+    public void setGmtSign(Date gmtSign) {
 		this.gmtSign = gmtSign;
 	}
 
-	public String getGmtValdDue() {
+    /**
+     * Gets gmt vald due.
+     *
+     * @return the gmt vald due
+     */
+    public String getGmtValdDue() {
 		return this.gmtValdDue;
 	}
-	public void setGmtValdDue(String gmtValdDue) {
+
+    /**
+     * Sets gmt vald due.
+     *
+     * @param gmtValdDue the gmt vald due
+     */
+    public void setGmtValdDue(String gmtValdDue) {
 		this.gmtValdDue = gmtValdDue;
 	}
 
-	public Date getGmtVrsn() {
+    /**
+     * Gets gmt vrsn.
+     *
+     * @return the gmt vrsn
+     */
+    public Date getGmtVrsn() {
 		return this.gmtVrsn;
 	}
-	public void setGmtVrsn(Date gmtVrsn) {
+
+    /**
+     * Sets gmt vrsn.
+     *
+     * @param gmtVrsn the gmt vrsn
+     */
+    public void setGmtVrsn(Date gmtVrsn) {
 		this.gmtVrsn = gmtVrsn;
 	}
 
-	public String getIpRoleId() {
+    /**
+     * Gets ip role id.
+     *
+     * @return the ip role id
+     */
+    public String getIpRoleId() {
 		return this.ipRoleId;
 	}
-	public void setIpRoleId(String ipRoleId) {
+
+    /**
+     * Sets ip role id.
+     *
+     * @param ipRoleId the ip role id
+     */
+    public void setIpRoleId(String ipRoleId) {
 		this.ipRoleId = ipRoleId;
 	}
 
-	public String getLastModer() {
+    /**
+     * Gets last moder.
+     *
+     * @return the last moder
+     */
+    public String getLastModer() {
 		return this.lastModer;
 	}
-	public void setLastModer(String lastModer) {
+
+    /**
+     * Sets last moder.
+     *
+     * @param lastModer the last moder
+     */
+    public void setLastModer(String lastModer) {
 		this.lastModer = lastModer;
 	}
 
-	public String getMarkType() {
+    /**
+     * Gets mark type.
+     *
+     * @return the mark type
+     */
+    public String getMarkType() {
 		return this.markType;
 	}
-	public void setMarkType(String markType) {
+
+    /**
+     * Sets mark type.
+     *
+     * @param markType the mark type
+     */
+    public void setMarkType(String markType) {
 		this.markType = markType;
 	}
 
-	public String getMemo() {
+    /**
+     * Gets memo.
+     *
+     * @return the memo
+     */
+    public String getMemo() {
 		return this.memo;
 	}
-	public void setMemo(String memo) {
+
+    /**
+     * Sets memo.
+     *
+     * @param memo the memo
+     */
+    public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
-	public String getModerType() {
+    /**
+     * Gets moder type.
+     *
+     * @return the moder type
+     */
+    public String getModerType() {
 		return this.moderType;
 	}
-	public void setModerType(String moderType) {
+
+    /**
+     * Sets moder type.
+     *
+     * @param moderType the moder type
+     */
+    public void setModerType(String moderType) {
 		this.moderType = moderType;
 	}
 
-	public String getPdMark() {
+    /**
+     * Gets pd mark.
+     *
+     * @return the pd mark
+     */
+    public String getPdMark() {
 		return this.pdMark;
 	}
-	public void setPdMark(String pdMark) {
+
+    /**
+     * Sets pd mark.
+     *
+     * @param pdMark the pd mark
+     */
+    public void setPdMark(String pdMark) {
 		this.pdMark = pdMark;
 	}
 
-	public String getProdCode() {
+    /**
+     * Gets prod code.
+     *
+     * @return the prod code
+     */
+    public String getProdCode() {
 		return this.prodCode;
 	}
-	public void setProdCode(String prodCode) {
+
+    /**
+     * Sets prod code.
+     *
+     * @param prodCode the prod code
+     */
+    public void setProdCode(String prodCode) {
 		this.prodCode = prodCode;
 	}
 
-	public String getProdName() {
+    /**
+     * Gets prod name.
+     *
+     * @return the prod name
+     */
+    public String getProdName() {
 		return this.prodName;
 	}
-	public void setProdName(String prodName) {
+
+    /**
+     * Sets prod name.
+     *
+     * @param prodName the prod name
+     */
+    public void setProdName(String prodName) {
 		this.prodName = prodName;
 	}
 
-	public String getProdVersion() {
+    /**
+     * Gets prod version.
+     *
+     * @return the prod version
+     */
+    public String getProdVersion() {
 		return this.prodVersion;
 	}
-	public void setProdVersion(String prodVersion) {
+
+    /**
+     * Sets prod version.
+     *
+     * @param prodVersion the prod version
+     */
+    public void setProdVersion(String prodVersion) {
 		this.prodVersion = prodVersion;
 	}
 
-	public String getPsCode() {
+    /**
+     * Gets ps code.
+     *
+     * @return the ps code
+     */
+    public String getPsCode() {
 		return this.psCode;
 	}
-	public void setPsCode(String psCode) {
+
+    /**
+     * Sets ps code.
+     *
+     * @param psCode the ps code
+     */
+    public void setPsCode(String psCode) {
 		this.psCode = psCode;
 	}
 
-	public String getPsId() {
+    /**
+     * Gets ps id.
+     *
+     * @return the ps id
+     */
+    public String getPsId() {
 		return this.psId;
 	}
-	public void setPsId(String psId) {
+
+    /**
+     * Sets ps id.
+     *
+     * @param psId the ps id
+     */
+    public void setPsId(String psId) {
 		this.psId = psId;
 	}
 
-	public String getPsName() {
+    /**
+     * Gets ps name.
+     *
+     * @return the ps name
+     */
+    public String getPsName() {
 		return this.psName;
 	}
-	public void setPsName(String psName) {
+
+    /**
+     * Sets ps name.
+     *
+     * @param psName the ps name
+     */
+    public void setPsName(String psName) {
 		this.psName = psName;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 
-	public String getTemplateProdCode() {
+    /**
+     * Gets template prod code.
+     *
+     * @return the template prod code
+     */
+    public String getTemplateProdCode() {
 		return this.templateProdCode;
 	}
-	public void setTemplateProdCode(String templateProdCode) {
+
+    /**
+     * Sets template prod code.
+     *
+     * @param templateProdCode the template prod code
+     */
+    public void setTemplateProdCode(String templateProdCode) {
 		this.templateProdCode = templateProdCode;
 	}
 
-	public String getTemplateProdVersion() {
+    /**
+     * Gets template prod version.
+     *
+     * @return the template prod version
+     */
+    public String getTemplateProdVersion() {
 		return this.templateProdVersion;
 	}
-	public void setTemplateProdVersion(String templateProdVersion) {
+
+    /**
+     * Sets template prod version.
+     *
+     * @param templateProdVersion the template prod version
+     */
+    public void setTemplateProdVersion(String templateProdVersion) {
 		this.templateProdVersion = templateProdVersion;
 	}
 

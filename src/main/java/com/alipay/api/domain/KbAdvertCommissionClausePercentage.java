@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KbAdvertCommissionClausePercentage extends AlipayObject {
 
-	private static final long serialVersionUID = 3239876226472817773L;
+	private static final long serialVersionUID = 1485542321711679471L;
 
 	/**
 	 * 分佣比例结束范围(100以内精度2位的非负小数)
@@ -37,31 +37,75 @@ public class KbAdvertCommissionClausePercentage extends AlipayObject {
 	@ApiField("max_limit_start")
 	private String maxLimitStart;
 
-	public String getCommissionRateEnd() {
+    /**
+     * Gets commission rate end.
+     *
+     * @return the commission rate end
+     */
+    public String getCommissionRateEnd() {
 		return this.commissionRateEnd;
 	}
-	public void setCommissionRateEnd(String commissionRateEnd) {
+
+    /**
+     * Sets commission rate end.
+     *
+     * @param commissionRateEnd the commission rate end
+     */
+    public void setCommissionRateEnd(String commissionRateEnd) {
 		this.commissionRateEnd = commissionRateEnd;
 	}
 
-	public String getCommissionRateStart() {
+    /**
+     * Gets commission rate start.
+     *
+     * @return the commission rate start
+     */
+    public String getCommissionRateStart() {
 		return this.commissionRateStart;
 	}
-	public void setCommissionRateStart(String commissionRateStart) {
+
+    /**
+     * Sets commission rate start.
+     *
+     * @param commissionRateStart the commission rate start
+     */
+    public void setCommissionRateStart(String commissionRateStart) {
 		this.commissionRateStart = commissionRateStart;
 	}
 
-	public String getMaxLimitEnd() {
+    /**
+     * Gets max limit end.
+     *
+     * @return the max limit end
+     */
+    public String getMaxLimitEnd() {
 		return this.maxLimitEnd;
 	}
-	public void setMaxLimitEnd(String maxLimitEnd) {
+
+    /**
+     * Sets max limit end.
+     *
+     * @param maxLimitEnd the max limit end
+     */
+    public void setMaxLimitEnd(String maxLimitEnd) {
 		this.maxLimitEnd = maxLimitEnd;
 	}
 
-	public String getMaxLimitStart() {
+    /**
+     * Gets max limit start.
+     *
+     * @return the max limit start
+     */
+    public String getMaxLimitStart() {
 		return this.maxLimitStart;
 	}
-	public void setMaxLimitStart(String maxLimitStart) {
+
+    /**
+     * Sets max limit start.
+     *
+     * @param maxLimitStart the max limit start
+     */
+    public void setMaxLimitStart(String maxLimitStart) {
 		this.maxLimitStart = maxLimitStart;
 	}
 

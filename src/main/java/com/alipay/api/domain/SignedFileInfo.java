@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SignedFileInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5294653259728532753L;
+	private static final long serialVersionUID = 5762375515764491761L;
 
 	/**
 	 * 文档过期时间戳
@@ -73,66 +73,165 @@ FILE  //文件OSS索引
 	@ApiField("source_type")
 	private String sourceType;
 
-	public Date getExpiredTime() {
+    /**
+     * Gets expired time.
+     *
+     * @return the expired time
+     */
+    public Date getExpiredTime() {
 		return this.expiredTime;
 	}
-	public void setExpiredTime(Date expiredTime) {
+
+    /**
+     * Sets expired time.
+     *
+     * @param expiredTime the expired time
+     */
+    public void setExpiredTime(Date expiredTime) {
 		this.expiredTime = expiredTime;
 	}
 
-	public String getFileName() {
+    /**
+     * Gets file name.
+     *
+     * @return the file name
+     */
+    public String getFileName() {
 		return this.fileName;
 	}
-	public void setFileName(String fileName) {
+
+    /**
+     * Sets file name.
+     *
+     * @param fileName the file name
+     */
+    public void setFileName(String fileName) {
 		this.fileName = fileName;
 	}
 
-	public String getFileType() {
+    /**
+     * Gets file type.
+     *
+     * @return the file type
+     */
+    public String getFileType() {
 		return this.fileType;
 	}
-	public void setFileType(String fileType) {
+
+    /**
+     * Sets file type.
+     *
+     * @param fileType the file type
+     */
+    public void setFileType(String fileType) {
 		this.fileType = fileType;
 	}
 
-	public String getFileUrl() {
+    /**
+     * Gets file url.
+     *
+     * @return the file url
+     */
+    public String getFileUrl() {
 		return this.fileUrl;
 	}
-	public void setFileUrl(String fileUrl) {
+
+    /**
+     * Sets file url.
+     *
+     * @param fileUrl the file url
+     */
+    public void setFileUrl(String fileUrl) {
 		this.fileUrl = fileUrl;
 	}
 
-	public Date getGmtTime() {
+    /**
+     * Gets gmt time.
+     *
+     * @return the gmt time
+     */
+    public Date getGmtTime() {
 		return this.gmtTime;
 	}
-	public void setGmtTime(Date gmtTime) {
+
+    /**
+     * Sets gmt time.
+     *
+     * @param gmtTime the gmt time
+     */
+    public void setGmtTime(Date gmtTime) {
 		this.gmtTime = gmtTime;
 	}
 
-	public String getInnerDataId() {
+    /**
+     * Gets inner data id.
+     *
+     * @return the inner data id
+     */
+    public String getInnerDataId() {
 		return this.innerDataId;
 	}
-	public void setInnerDataId(String innerDataId) {
+
+    /**
+     * Sets inner data id.
+     *
+     * @param innerDataId the inner data id
+     */
+    public void setInnerDataId(String innerDataId) {
 		this.innerDataId = innerDataId;
 	}
 
-	public String getOutDataId() {
+    /**
+     * Gets out data id.
+     *
+     * @return the out data id
+     */
+    public String getOutDataId() {
 		return this.outDataId;
 	}
-	public void setOutDataId(String outDataId) {
+
+    /**
+     * Sets out data id.
+     *
+     * @param outDataId the out data id
+     */
+    public void setOutDataId(String outDataId) {
 		this.outDataId = outDataId;
 	}
 
-	public String getSignedData() {
+    /**
+     * Gets signed data.
+     *
+     * @return the signed data
+     */
+    public String getSignedData() {
 		return this.signedData;
 	}
-	public void setSignedData(String signedData) {
+
+    /**
+     * Sets signed data.
+     *
+     * @param signedData the signed data
+     */
+    public void setSignedData(String signedData) {
 		this.signedData = signedData;
 	}
 
-	public String getSourceType() {
+    /**
+     * Gets source type.
+     *
+     * @return the source type
+     */
+    public String getSourceType() {
 		return this.sourceType;
 	}
-	public void setSourceType(String sourceType) {
+
+    /**
+     * Sets source type.
+     *
+     * @param sourceType the source type
+     */
+    public void setSourceType(String sourceType) {
 		this.sourceType = sourceType;
 	}
 

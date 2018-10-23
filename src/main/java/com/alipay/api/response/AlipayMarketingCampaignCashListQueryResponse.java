@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.campaign.cash.list.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-14 11:53:33
+ * @since 1.0, 2018-07-19 14:27:01
  */
 public class AlipayMarketingCampaignCashListQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5814417659176678742L;
+	private static final long serialVersionUID = 8671984273977443815L;
 
 	/** 
 	 * 活动列表
@@ -42,31 +42,75 @@ public class AlipayMarketingCampaignCashListQueryResponse extends AlipayResponse
 	@ApiField("total_size")
 	private String totalSize;
 
-	public void setCampList(List<CashCampaignInfo> campList) {
+    /**
+     * Sets camp list.
+     *
+     * @param campList the camp list
+     */
+    public void setCampList(List<CashCampaignInfo> campList) {
 		this.campList = campList;
 	}
-	public List<CashCampaignInfo> getCampList( ) {
+
+    /**
+     * Gets camp list.
+     *
+     * @return the camp list
+     */
+    public List<CashCampaignInfo> getCampList( ) {
 		return this.campList;
 	}
 
-	public void setPageIndex(String pageIndex) {
+    /**
+     * Sets page index.
+     *
+     * @param pageIndex the page index
+     */
+    public void setPageIndex(String pageIndex) {
 		this.pageIndex = pageIndex;
 	}
-	public String getPageIndex( ) {
+
+    /**
+     * Gets page index.
+     *
+     * @return the page index
+     */
+    public String getPageIndex( ) {
 		return this.pageIndex;
 	}
 
-	public void setPageSize(String pageSize) {
+    /**
+     * Sets page size.
+     *
+     * @param pageSize the page size
+     */
+    public void setPageSize(String pageSize) {
 		this.pageSize = pageSize;
 	}
-	public String getPageSize( ) {
+
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public String getPageSize( ) {
 		return this.pageSize;
 	}
 
-	public void setTotalSize(String totalSize) {
+    /**
+     * Sets total size.
+     *
+     * @param totalSize the total size
+     */
+    public void setTotalSize(String totalSize) {
 		this.totalSize = totalSize;
 	}
-	public String getTotalSize( ) {
+
+    /**
+     * Gets total size.
+     *
+     * @return the total size
+     */
+    public String getTotalSize( ) {
 		return this.totalSize;
 	}
 

@@ -9,13 +9,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.item.extitem.category.query response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-07-06 10:47:52
  */
 public class KoubeiItemExtitemCategoryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7416265834549225232L;
+	private static final long serialVersionUID = 6824113953911745446L;
 
 	/** 
 	 * 品类信息列表
@@ -24,10 +24,21 @@ public class KoubeiItemExtitemCategoryQueryResponse extends AlipayResponse {
 	@ApiField("ext_category")
 	private List<ExtCategory> categoryList;
 
-	public void setCategoryList(List<ExtCategory> categoryList) {
+    /**
+     * Sets category list.
+     *
+     * @param categoryList the category list
+     */
+    public void setCategoryList(List<ExtCategory> categoryList) {
 		this.categoryList = categoryList;
 	}
-	public List<ExtCategory> getCategoryList( ) {
+
+    /**
+     * Gets category list.
+     *
+     * @return the category list
+     */
+    public List<ExtCategory> getCategoryList( ) {
 		return this.categoryList;
 	}
 

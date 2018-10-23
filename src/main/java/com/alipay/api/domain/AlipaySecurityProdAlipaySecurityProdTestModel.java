@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipaySecurityProdAlipaySecurityProdTestModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8741169651142426571L;
+	private static final long serialVersionUID = 7693475314985434958L;
 
 	/**
 	 * ddd
@@ -29,17 +29,39 @@ public class AlipaySecurityProdAlipaySecurityProdTestModel extends AlipayObject 
 	@ApiField("ddd")
 	private String ddd;
 
-	public List<String> getCds() {
+    /**
+     * Gets cds.
+     *
+     * @return the cds
+     */
+    public List<String> getCds() {
 		return this.cds;
 	}
-	public void setCds(List<String> cds) {
+
+    /**
+     * Sets cds.
+     *
+     * @param cds the cds
+     */
+    public void setCds(List<String> cds) {
 		this.cds = cds;
 	}
 
-	public String getDdd() {
+    /**
+     * Gets ddd.
+     *
+     * @return the ddd
+     */
+    public String getDdd() {
 		return this.ddd;
 	}
-	public void setDdd(String ddd) {
+
+    /**
+     * Sets ddd.
+     *
+     * @param ddd the ddd
+     */
+    public void setDdd(String ddd) {
 		this.ddd = ddd;
 	}
 

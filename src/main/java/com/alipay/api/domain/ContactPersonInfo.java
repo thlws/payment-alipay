@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ContactPersonInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1873265238214933749L;
+	private static final long serialVersionUID = 3869181145868661671L;
 
 	/**
 	 * 联系人邮箱地址，入驻申请审核结果会发送至该邮箱
@@ -37,31 +37,75 @@ public class ContactPersonInfo extends AlipayObject {
 	@ApiField("contact_type")
 	private String contactType;
 
-	public String getContactEmail() {
+    /**
+     * Gets contact email.
+     *
+     * @return the contact email
+     */
+    public String getContactEmail() {
 		return this.contactEmail;
 	}
-	public void setContactEmail(String contactEmail) {
+
+    /**
+     * Sets contact email.
+     *
+     * @param contactEmail the contact email
+     */
+    public void setContactEmail(String contactEmail) {
 		this.contactEmail = contactEmail;
 	}
 
-	public String getContactMobile() {
+    /**
+     * Gets contact mobile.
+     *
+     * @return the contact mobile
+     */
+    public String getContactMobile() {
 		return this.contactMobile;
 	}
-	public void setContactMobile(String contactMobile) {
+
+    /**
+     * Sets contact mobile.
+     *
+     * @param contactMobile the contact mobile
+     */
+    public void setContactMobile(String contactMobile) {
 		this.contactMobile = contactMobile;
 	}
 
-	public String getContactName() {
+    /**
+     * Gets contact name.
+     *
+     * @return the contact name
+     */
+    public String getContactName() {
 		return this.contactName;
 	}
-	public void setContactName(String contactName) {
+
+    /**
+     * Sets contact name.
+     *
+     * @param contactName the contact name
+     */
+    public void setContactName(String contactName) {
 		this.contactName = contactName;
 	}
 
-	public String getContactType() {
+    /**
+     * Gets contact type.
+     *
+     * @return the contact type
+     */
+    public String getContactType() {
 		return this.contactType;
 	}
-	public void setContactType(String contactType) {
+
+    /**
+     * Sets contact type.
+     *
+     * @param contactType the contact type
+     */
+    public void setContactType(String contactType) {
 		this.contactType = contactType;
 	}
 

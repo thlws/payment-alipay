@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MerchantCard extends AlipayObject {
 
-	private static final long serialVersionUID = 5639797624379887247L;
+	private static final long serialVersionUID = 8253255818476454593L;
 
 	/**
 	 * 资金卡余额，单位：元，精确到小数点后两位。
@@ -97,80 +97,201 @@ public class MerchantCard extends AlipayObject {
 	@ApiField("valid_date")
 	private String validDate;
 
-	public String getBalance() {
+    /**
+     * Gets balance.
+     *
+     * @return the balance
+     */
+    public String getBalance() {
 		return this.balance;
 	}
-	public void setBalance(String balance) {
+
+    /**
+     * Sets balance.
+     *
+     * @param balance the balance
+     */
+    public void setBalance(String balance) {
 		this.balance = balance;
 	}
 
-	public String getBizCardNo() {
+    /**
+     * Gets biz card no.
+     *
+     * @return the biz card no
+     */
+    public String getBizCardNo() {
 		return this.bizCardNo;
 	}
-	public void setBizCardNo(String bizCardNo) {
+
+    /**
+     * Sets biz card no.
+     *
+     * @param bizCardNo the biz card no
+     */
+    public void setBizCardNo(String bizCardNo) {
 		this.bizCardNo = bizCardNo;
 	}
 
-	public String getExternalCardNo() {
+    /**
+     * Gets external card no.
+     *
+     * @return the external card no
+     */
+    public String getExternalCardNo() {
 		return this.externalCardNo;
 	}
-	public void setExternalCardNo(String externalCardNo) {
+
+    /**
+     * Sets external card no.
+     *
+     * @param externalCardNo the external card no
+     */
+    public void setExternalCardNo(String externalCardNo) {
 		this.externalCardNo = externalCardNo;
 	}
 
-	public String getFrontImageId() {
+    /**
+     * Gets front image id.
+     *
+     * @return the front image id
+     */
+    public String getFrontImageId() {
 		return this.frontImageId;
 	}
-	public void setFrontImageId(String frontImageId) {
+
+    /**
+     * Sets front image id.
+     *
+     * @param frontImageId the front image id
+     */
+    public void setFrontImageId(String frontImageId) {
 		this.frontImageId = frontImageId;
 	}
 
-	public List<CardFrontTextDTO> getFrontTextList() {
+    /**
+     * Gets front text list.
+     *
+     * @return the front text list
+     */
+    public List<CardFrontTextDTO> getFrontTextList() {
 		return this.frontTextList;
 	}
-	public void setFrontTextList(List<CardFrontTextDTO> frontTextList) {
+
+    /**
+     * Sets front text list.
+     *
+     * @param frontTextList the front text list
+     */
+    public void setFrontTextList(List<CardFrontTextDTO> frontTextList) {
 		this.frontTextList = frontTextList;
 	}
 
-	public String getLevel() {
+    /**
+     * Gets level.
+     *
+     * @return the level
+     */
+    public String getLevel() {
 		return this.level;
 	}
-	public void setLevel(String level) {
+
+    /**
+     * Sets level.
+     *
+     * @param level the level
+     */
+    public void setLevel(String level) {
 		this.level = level;
 	}
 
-	public MdCodeInfoDTO getMdcodeInfo() {
+    /**
+     * Gets mdcode info.
+     *
+     * @return the mdcode info
+     */
+    public MdCodeInfoDTO getMdcodeInfo() {
 		return this.mdcodeInfo;
 	}
-	public void setMdcodeInfo(MdCodeInfoDTO mdcodeInfo) {
+
+    /**
+     * Sets mdcode info.
+     *
+     * @param mdcodeInfo the mdcode info
+     */
+    public void setMdcodeInfo(MdCodeInfoDTO mdcodeInfo) {
 		this.mdcodeInfo = mdcodeInfo;
 	}
 
-	public Date getOpenDate() {
+    /**
+     * Gets open date.
+     *
+     * @return the open date
+     */
+    public Date getOpenDate() {
 		return this.openDate;
 	}
-	public void setOpenDate(Date openDate) {
+
+    /**
+     * Sets open date.
+     *
+     * @param openDate the open date
+     */
+    public void setOpenDate(Date openDate) {
 		this.openDate = openDate;
 	}
 
-	public String getPoint() {
+    /**
+     * Gets point.
+     *
+     * @return the point
+     */
+    public String getPoint() {
 		return this.point;
 	}
-	public void setPoint(String point) {
+
+    /**
+     * Sets point.
+     *
+     * @param point the point
+     */
+    public void setPoint(String point) {
 		this.point = point;
 	}
 
-	public String getTemplateId() {
+    /**
+     * Gets template id.
+     *
+     * @return the template id
+     */
+    public String getTemplateId() {
 		return this.templateId;
 	}
-	public void setTemplateId(String templateId) {
+
+    /**
+     * Sets template id.
+     *
+     * @param templateId the template id
+     */
+    public void setTemplateId(String templateId) {
 		this.templateId = templateId;
 	}
 
-	public String getValidDate() {
+    /**
+     * Gets valid date.
+     *
+     * @return the valid date
+     */
+    public String getValidDate() {
 		return this.validDate;
 	}
-	public void setValidDate(String validDate) {
+
+    /**
+     * Sets valid date.
+     *
+     * @param validDate the valid date
+     */
+    public void setValidDate(String validDate) {
 		this.validDate = validDate;
 	}
 

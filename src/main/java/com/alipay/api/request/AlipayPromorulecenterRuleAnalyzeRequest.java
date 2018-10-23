@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.promorulecenter.rule.analyze request
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-10-09 17:38:20
  */
@@ -33,24 +33,57 @@ public class AlipayPromorulecenterRuleAnalyzeRequest implements AlipayRequest<Al
 	 */
 	private String userId;
 
-	public void setBizId(String bizId) {
+    /**
+     * Sets biz id.
+     *
+     * @param bizId the biz id
+     */
+    public void setBizId(String bizId) {
 		this.bizId = bizId;
 	}
-	public String getBizId() {
+
+    /**
+     * Gets biz id.
+     *
+     * @return the biz id
+     */
+    public String getBizId() {
 		return this.bizId;
 	}
 
-	public void setRuleUuid(String ruleUuid) {
+    /**
+     * Sets rule uuid.
+     *
+     * @param ruleUuid the rule uuid
+     */
+    public void setRuleUuid(String ruleUuid) {
 		this.ruleUuid = ruleUuid;
 	}
-	public String getRuleUuid() {
+
+    /**
+     * Gets rule uuid.
+     *
+     * @return the rule uuid
+     */
+    public String getRuleUuid() {
 		return this.ruleUuid;
 	}
 
-	public void setUserId(String userId) {
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public String getUserId() {
+
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
 	private String terminalType;
@@ -124,7 +157,13 @@ public class AlipayPromorulecenterRuleAnalyzeRequest implements AlipayRequest<Al
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

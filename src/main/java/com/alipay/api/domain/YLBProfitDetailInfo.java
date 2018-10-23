@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class YLBProfitDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6262767414138925871L;
+	private static final long serialVersionUID = 3753823338143666722L;
 
 	/**
 	 * 近1日收益，单位为元
@@ -37,31 +37,75 @@ public class YLBProfitDetailInfo extends AlipayObject {
 	@ApiField("week_profit")
 	private String weekProfit;
 
-	public String getDayProfit() {
+    /**
+     * Gets day profit.
+     *
+     * @return the day profit
+     */
+    public String getDayProfit() {
 		return this.dayProfit;
 	}
-	public void setDayProfit(String dayProfit) {
+
+    /**
+     * Sets day profit.
+     *
+     * @param dayProfit the day profit
+     */
+    public void setDayProfit(String dayProfit) {
 		this.dayProfit = dayProfit;
 	}
 
-	public String getMonthProfit() {
+    /**
+     * Gets month profit.
+     *
+     * @return the month profit
+     */
+    public String getMonthProfit() {
 		return this.monthProfit;
 	}
-	public void setMonthProfit(String monthProfit) {
+
+    /**
+     * Sets month profit.
+     *
+     * @param monthProfit the month profit
+     */
+    public void setMonthProfit(String monthProfit) {
 		this.monthProfit = monthProfit;
 	}
 
-	public String getTotalProfit() {
+    /**
+     * Gets total profit.
+     *
+     * @return the total profit
+     */
+    public String getTotalProfit() {
 		return this.totalProfit;
 	}
-	public void setTotalProfit(String totalProfit) {
+
+    /**
+     * Sets total profit.
+     *
+     * @param totalProfit the total profit
+     */
+    public void setTotalProfit(String totalProfit) {
 		this.totalProfit = totalProfit;
 	}
 
-	public String getWeekProfit() {
+    /**
+     * Gets week profit.
+     *
+     * @return the week profit
+     */
+    public String getWeekProfit() {
 		return this.weekProfit;
 	}
-	public void setWeekProfit(String weekProfit) {
+
+    /**
+     * Sets week profit.
+     *
+     * @param weekProfit the week profit
+     */
+    public void setWeekProfit(String weekProfit) {
 		this.weekProfit = weekProfit;
 	}
 

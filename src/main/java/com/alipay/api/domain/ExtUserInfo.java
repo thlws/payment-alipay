@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ExtUserInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1529472856244232521L;
+	private static final long serialVersionUID = 7367664851333849361L;
 
 	/**
 	 * 证件号
@@ -67,52 +67,129 @@ T:强制校验，F：不强制
 	@ApiField("need_check_info")
 	private String needCheckInfo;
 
-	public String getCertNo() {
+    /**
+     * Gets cert no.
+     *
+     * @return the cert no
+     */
+    public String getCertNo() {
 		return this.certNo;
 	}
-	public void setCertNo(String certNo) {
+
+    /**
+     * Sets cert no.
+     *
+     * @param certNo the cert no
+     */
+    public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}
 
-	public String getCertType() {
+    /**
+     * Gets cert type.
+     *
+     * @return the cert type
+     */
+    public String getCertType() {
 		return this.certType;
 	}
-	public void setCertType(String certType) {
+
+    /**
+     * Sets cert type.
+     *
+     * @param certType the cert type
+     */
+    public void setCertType(String certType) {
 		this.certType = certType;
 	}
 
-	public String getFixBuyer() {
+    /**
+     * Gets fix buyer.
+     *
+     * @return the fix buyer
+     */
+    public String getFixBuyer() {
 		return this.fixBuyer;
 	}
-	public void setFixBuyer(String fixBuyer) {
+
+    /**
+     * Sets fix buyer.
+     *
+     * @param fixBuyer the fix buyer
+     */
+    public void setFixBuyer(String fixBuyer) {
 		this.fixBuyer = fixBuyer;
 	}
 
-	public String getMinAge() {
+    /**
+     * Gets min age.
+     *
+     * @return the min age
+     */
+    public String getMinAge() {
 		return this.minAge;
 	}
-	public void setMinAge(String minAge) {
+
+    /**
+     * Sets min age.
+     *
+     * @param minAge the min age
+     */
+    public void setMinAge(String minAge) {
 		this.minAge = minAge;
 	}
 
-	public String getMobile() {
+    /**
+     * Gets mobile.
+     *
+     * @return the mobile
+     */
+    public String getMobile() {
 		return this.mobile;
 	}
-	public void setMobile(String mobile) {
+
+    /**
+     * Sets mobile.
+     *
+     * @param mobile the mobile
+     */
+    public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getNeedCheckInfo() {
+    /**
+     * Gets need check info.
+     *
+     * @return the need check info
+     */
+    public String getNeedCheckInfo() {
 		return this.needCheckInfo;
 	}
-	public void setNeedCheckInfo(String needCheckInfo) {
+
+    /**
+     * Sets need check info.
+     *
+     * @param needCheckInfo the need check info
+     */
+    public void setNeedCheckInfo(String needCheckInfo) {
 		this.needCheckInfo = needCheckInfo;
 	}
 

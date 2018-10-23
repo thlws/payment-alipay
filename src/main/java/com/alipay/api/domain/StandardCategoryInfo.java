@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class StandardCategoryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1423398559883118936L;
+	private static final long serialVersionUID = 6273224278164725484L;
 
 	/**
 	 * 后台类目ID，类目信息的主键；商品类目ID，发布/修改商品的时候，需要填写商品所属的类目ID
@@ -49,45 +49,111 @@ public class StandardCategoryInfo extends AlipayObject {
 	@ApiField("root_id")
 	private String rootId;
 
-	public String getCategoryId() {
+    /**
+     * Gets category id.
+     *
+     * @return the category id
+     */
+    public String getCategoryId() {
 		return this.categoryId;
 	}
-	public void setCategoryId(String categoryId) {
+
+    /**
+     * Sets category id.
+     *
+     * @param categoryId the category id
+     */
+    public void setCategoryId(String categoryId) {
 		this.categoryId = categoryId;
 	}
 
-	public String getIsLeaf() {
+    /**
+     * Gets is leaf.
+     *
+     * @return the is leaf
+     */
+    public String getIsLeaf() {
 		return this.isLeaf;
 	}
-	public void setIsLeaf(String isLeaf) {
+
+    /**
+     * Sets is leaf.
+     *
+     * @param isLeaf the is leaf
+     */
+    public void setIsLeaf(String isLeaf) {
 		this.isLeaf = isLeaf;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getParentId() {
+    /**
+     * Gets parent id.
+     *
+     * @return the parent id
+     */
+    public String getParentId() {
 		return this.parentId;
 	}
-	public void setParentId(String parentId) {
+
+    /**
+     * Sets parent id.
+     *
+     * @param parentId the parent id
+     */
+    public void setParentId(String parentId) {
 		this.parentId = parentId;
 	}
 
-	public String getPath() {
+    /**
+     * Gets path.
+     *
+     * @return the path
+     */
+    public String getPath() {
 		return this.path;
 	}
-	public void setPath(String path) {
+
+    /**
+     * Sets path.
+     *
+     * @param path the path
+     */
+    public void setPath(String path) {
 		this.path = path;
 	}
 
-	public String getRootId() {
+    /**
+     * Gets root id.
+     *
+     * @return the root id
+     */
+    public String getRootId() {
 		return this.rootId;
 	}
-	public void setRootId(String rootId) {
+
+    /**
+     * Sets root id.
+     *
+     * @param rootId the root id
+     */
+    public void setRootId(String rootId) {
 		this.rootId = rootId;
 	}
 

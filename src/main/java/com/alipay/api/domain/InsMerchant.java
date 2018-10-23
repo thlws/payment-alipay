@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsMerchant extends AlipayObject {
 
-	private static final long serialVersionUID = 1164695294659447473L;
+	private static final long serialVersionUID = 8452731962521292918L;
 
 	/**
 	 * 机构全称
@@ -31,24 +31,57 @@ public class InsMerchant extends AlipayObject {
 	@ApiField("short_name")
 	private String shortName;
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getServicePhone() {
+    /**
+     * Gets service phone.
+     *
+     * @return the service phone
+     */
+    public String getServicePhone() {
 		return this.servicePhone;
 	}
-	public void setServicePhone(String servicePhone) {
+
+    /**
+     * Sets service phone.
+     *
+     * @param servicePhone the service phone
+     */
+    public void setServicePhone(String servicePhone) {
 		this.servicePhone = servicePhone;
 	}
 
-	public String getShortName() {
+    /**
+     * Gets short name.
+     *
+     * @return the short name
+     */
+    public String getShortName() {
 		return this.shortName;
 	}
-	public void setShortName(String shortName) {
+
+    /**
+     * Sets short name.
+     *
+     * @param shortName the short name
+     */
+    public void setShortName(String shortName) {
 		this.shortName = shortName;
 	}
 

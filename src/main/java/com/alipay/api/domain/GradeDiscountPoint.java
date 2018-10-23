@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GradeDiscountPoint extends AlipayObject {
 
-	private static final long serialVersionUID = 3652135789964836242L;
+	private static final long serialVersionUID = 5675146263365116883L;
 
 	/**
 	 * 蚂蚁会员权益配置的ID
@@ -31,24 +31,57 @@ public class GradeDiscountPoint extends AlipayObject {
 	@ApiField("grade")
 	private String grade;
 
-	public Long getBenefitId() {
+    /**
+     * Gets benefit id.
+     *
+     * @return the benefit id
+     */
+    public Long getBenefitId() {
 		return this.benefitId;
 	}
-	public void setBenefitId(Long benefitId) {
+
+    /**
+     * Sets benefit id.
+     *
+     * @param benefitId the benefit id
+     */
+    public void setBenefitId(Long benefitId) {
 		this.benefitId = benefitId;
 	}
 
-	public String getDiscountPoint() {
+    /**
+     * Gets discount point.
+     *
+     * @return the discount point
+     */
+    public String getDiscountPoint() {
 		return this.discountPoint;
 	}
-	public void setDiscountPoint(String discountPoint) {
+
+    /**
+     * Sets discount point.
+     *
+     * @param discountPoint the discount point
+     */
+    public void setDiscountPoint(String discountPoint) {
 		this.discountPoint = discountPoint;
 	}
 
-	public String getGrade() {
+    /**
+     * Gets grade.
+     *
+     * @return the grade
+     */
+    public String getGrade() {
 		return this.grade;
 	}
-	public void setGrade(String grade) {
+
+    /**
+     * Sets grade.
+     *
+     * @param grade the grade
+     */
+    public void setGrade(String grade) {
 		this.grade = grade;
 	}
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCampaignDiscountWhitelistUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2632652531818193179L;
+	private static final long serialVersionUID = 7128897891652492458L;
 
 	/**
 	 * 活动id
@@ -25,17 +25,39 @@ public class AlipayMarketingCampaignDiscountWhitelistUpdateModel extends AlipayO
 	@ApiField("user_white_list")
 	private String userWhiteList;
 
-	public String getCampId() {
+    /**
+     * Gets camp id.
+     *
+     * @return the camp id
+     */
+    public String getCampId() {
 		return this.campId;
 	}
-	public void setCampId(String campId) {
+
+    /**
+     * Sets camp id.
+     *
+     * @param campId the camp id
+     */
+    public void setCampId(String campId) {
 		this.campId = campId;
 	}
 
-	public String getUserWhiteList() {
+    /**
+     * Gets user white list.
+     *
+     * @return the user white list
+     */
+    public String getUserWhiteList() {
 		return this.userWhiteList;
 	}
-	public void setUserWhiteList(String userWhiteList) {
+
+    /**
+     * Sets user white list.
+     *
+     * @param userWhiteList the user white list
+     */
+    public void setUserWhiteList(String userWhiteList) {
 		this.userWhiteList = userWhiteList;
 	}
 

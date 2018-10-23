@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用借还创建订单
  *
  * @author auto create
- * @since 1.0, 2017-09-26 12:58:09
+ * @since 1.0, 2018-08-22 11:32:24
  */
 public class ZhimaMerchantOrderRentCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2787785879598737493L;
+	private static final long serialVersionUID = 4853293444156446741L;
 
 	/**
 	 * 借用用户的收货地址，可选字段。推荐商户传入此值，会将此手机号码与用户身份信息进行匹配验证，防范欺诈风险。
@@ -54,6 +54,12 @@ DAY:天
 	private String certNo;
 
 	/**
+	 * 信用业务服务，默认为空，商户入驻信用借还时，特定场景下由芝麻信用借还分配后传入即可，商户自助接入流程里不需要传入该字段，否则会对该字段进行合法性校验
+	 */
+	@ApiField("credit_biz")
+	private String creditBiz;
+
+	/**
 	 * 押金，金额单位：元。
 注：不允许免押金的用户按此金额支付押金；当物品丢失时，赔偿金额不得高于该金额。
 	 */
@@ -70,10 +76,16 @@ N:不支持
 	private String depositState;
 
 	/**
-	 * 到期时间，是指最晚归还时间，表示借用用户如果超过此时间还未完结订单（未归还物品或者未支付租金）将会进入逾期状态，芝麻会给借用用户发送催收提醒。如果此时间不传入或传空，将视为无限期借用
+	 * 到期时间，请根据实际业务合理设置该值，不允许为空，格式：YYYY-MM-DD HH:MM:SS，是指最晚归还时间，表示借用用户如果超过此时间还未完结订单（未归还物品或者未支付租金）将会进入逾期状态，芝麻会给借用用户发送催收提醒；需要晚于borrow_time。
 	 */
 	@ApiField("expiry_time")
 	private String expiryTime;
+
+	/**
+	 * 扩展信息。商户发起借用服务时的扩展信息字段，格式：json，注意，如果字符串对应的json对象包含中文字符，需要对包含中文的字段进行编码
+	 */
+	@ApiField("extend_info")
+	private String extendInfo;
 
 	/**
 	 * 物品名称,最长不能超过14个汉字
@@ -132,7 +144,10 @@ WINDOWS：支付宝服务窗。
 	private String productCode;
 
 	/**
-	 * 租金
+	 * 租金，租金+租金单位组合才具备实际的租金意义。
+>0.00元，代表有租金
+=0.00元，代表无租金，免费借用
+注：参数传值必须>=0，传入其他值会报错参数非法
 	 */
 	@ApiField("rent_amount")
 	private String rentAmount;
@@ -162,157 +177,435 @@ YUAN_ONCE: 元/次
 	@ApiField("rent_unit")
 	private String rentUnit;
 
-	public String getAddress() {
+    /**
+     * Gets address.
+     *
+     * @return the address
+     */
+    public String getAddress() {
 		return this.address;
 	}
-	public void setAddress(String address) {
+
+    /**
+     * Sets address.
+     *
+     * @param address the address
+     */
+    public void setAddress(String address) {
 		this.address = address;
 	}
 
-	public String getBorrowCycle() {
+    /**
+     * Gets borrow cycle.
+     *
+     * @return the borrow cycle
+     */
+    public String getBorrowCycle() {
 		return this.borrowCycle;
 	}
-	public void setBorrowCycle(String borrowCycle) {
+
+    /**
+     * Sets borrow cycle.
+     *
+     * @param borrowCycle the borrow cycle
+     */
+    public void setBorrowCycle(String borrowCycle) {
 		this.borrowCycle = borrowCycle;
 	}
 
-	public String getBorrowCycleUnit() {
+    /**
+     * Gets borrow cycle unit.
+     *
+     * @return the borrow cycle unit
+     */
+    public String getBorrowCycleUnit() {
 		return this.borrowCycleUnit;
 	}
-	public void setBorrowCycleUnit(String borrowCycleUnit) {
+
+    /**
+     * Sets borrow cycle unit.
+     *
+     * @param borrowCycleUnit the borrow cycle unit
+     */
+    public void setBorrowCycleUnit(String borrowCycleUnit) {
 		this.borrowCycleUnit = borrowCycleUnit;
 	}
 
-	public String getBorrowShopName() {
+    /**
+     * Gets borrow shop name.
+     *
+     * @return the borrow shop name
+     */
+    public String getBorrowShopName() {
 		return this.borrowShopName;
 	}
-	public void setBorrowShopName(String borrowShopName) {
+
+    /**
+     * Sets borrow shop name.
+     *
+     * @param borrowShopName the borrow shop name
+     */
+    public void setBorrowShopName(String borrowShopName) {
 		this.borrowShopName = borrowShopName;
 	}
 
-	public String getBorrowTime() {
+    /**
+     * Gets borrow time.
+     *
+     * @return the borrow time
+     */
+    public String getBorrowTime() {
 		return this.borrowTime;
 	}
-	public void setBorrowTime(String borrowTime) {
+
+    /**
+     * Sets borrow time.
+     *
+     * @param borrowTime the borrow time
+     */
+    public void setBorrowTime(String borrowTime) {
 		this.borrowTime = borrowTime;
 	}
 
-	public String getCertNo() {
+    /**
+     * Gets cert no.
+     *
+     * @return the cert no
+     */
+    public String getCertNo() {
 		return this.certNo;
 	}
-	public void setCertNo(String certNo) {
+
+    /**
+     * Sets cert no.
+     *
+     * @param certNo the cert no
+     */
+    public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}
 
-	public String getDepositAmount() {
+    /**
+     * Gets credit biz.
+     *
+     * @return the credit biz
+     */
+    public String getCreditBiz() {
+		return this.creditBiz;
+	}
+
+    /**
+     * Sets credit biz.
+     *
+     * @param creditBiz the credit biz
+     */
+    public void setCreditBiz(String creditBiz) {
+		this.creditBiz = creditBiz;
+	}
+
+    /**
+     * Gets deposit amount.
+     *
+     * @return the deposit amount
+     */
+    public String getDepositAmount() {
 		return this.depositAmount;
 	}
-	public void setDepositAmount(String depositAmount) {
+
+    /**
+     * Sets deposit amount.
+     *
+     * @param depositAmount the deposit amount
+     */
+    public void setDepositAmount(String depositAmount) {
 		this.depositAmount = depositAmount;
 	}
 
-	public String getDepositState() {
+    /**
+     * Gets deposit state.
+     *
+     * @return the deposit state
+     */
+    public String getDepositState() {
 		return this.depositState;
 	}
-	public void setDepositState(String depositState) {
+
+    /**
+     * Sets deposit state.
+     *
+     * @param depositState the deposit state
+     */
+    public void setDepositState(String depositState) {
 		this.depositState = depositState;
 	}
 
-	public String getExpiryTime() {
+    /**
+     * Gets expiry time.
+     *
+     * @return the expiry time
+     */
+    public String getExpiryTime() {
 		return this.expiryTime;
 	}
-	public void setExpiryTime(String expiryTime) {
+
+    /**
+     * Sets expiry time.
+     *
+     * @param expiryTime the expiry time
+     */
+    public void setExpiryTime(String expiryTime) {
 		this.expiryTime = expiryTime;
 	}
 
-	public String getGoodsName() {
+    /**
+     * Gets extend info.
+     *
+     * @return the extend info
+     */
+    public String getExtendInfo() {
+		return this.extendInfo;
+	}
+
+    /**
+     * Sets extend info.
+     *
+     * @param extendInfo the extend info
+     */
+    public void setExtendInfo(String extendInfo) {
+		this.extendInfo = extendInfo;
+	}
+
+    /**
+     * Gets goods name.
+     *
+     * @return the goods name
+     */
+    public String getGoodsName() {
 		return this.goodsName;
 	}
-	public void setGoodsName(String goodsName) {
+
+    /**
+     * Sets goods name.
+     *
+     * @param goodsName the goods name
+     */
+    public void setGoodsName(String goodsName) {
 		this.goodsName = goodsName;
 	}
 
-	public String getInvokeReturnUrl() {
+    /**
+     * Gets invoke return url.
+     *
+     * @return the invoke return url
+     */
+    public String getInvokeReturnUrl() {
 		return this.invokeReturnUrl;
 	}
-	public void setInvokeReturnUrl(String invokeReturnUrl) {
+
+    /**
+     * Sets invoke return url.
+     *
+     * @param invokeReturnUrl the invoke return url
+     */
+    public void setInvokeReturnUrl(String invokeReturnUrl) {
 		this.invokeReturnUrl = invokeReturnUrl;
 	}
 
-	public String getInvokeState() {
+    /**
+     * Gets invoke state.
+     *
+     * @return the invoke state
+     */
+    public String getInvokeState() {
 		return this.invokeState;
 	}
-	public void setInvokeState(String invokeState) {
+
+    /**
+     * Sets invoke state.
+     *
+     * @param invokeState the invoke state
+     */
+    public void setInvokeState(String invokeState) {
 		this.invokeState = invokeState;
 	}
 
-	public String getInvokeType() {
+    /**
+     * Gets invoke type.
+     *
+     * @return the invoke type
+     */
+    public String getInvokeType() {
 		return this.invokeType;
 	}
-	public void setInvokeType(String invokeType) {
+
+    /**
+     * Sets invoke type.
+     *
+     * @param invokeType the invoke type
+     */
+    public void setInvokeType(String invokeType) {
 		this.invokeType = invokeType;
 	}
 
-	public String getMobileNo() {
+    /**
+     * Gets mobile no.
+     *
+     * @return the mobile no
+     */
+    public String getMobileNo() {
 		return this.mobileNo;
 	}
-	public void setMobileNo(String mobileNo) {
+
+    /**
+     * Sets mobile no.
+     *
+     * @param mobileNo the mobile no
+     */
+    public void setMobileNo(String mobileNo) {
 		this.mobileNo = mobileNo;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getNotifyUrl() {
+    /**
+     * Gets notify url.
+     *
+     * @return the notify url
+     */
+    public String getNotifyUrl() {
 		return this.notifyUrl;
 	}
-	public void setNotifyUrl(String notifyUrl) {
+
+    /**
+     * Sets notify url.
+     *
+     * @param notifyUrl the notify url
+     */
+    public void setNotifyUrl(String notifyUrl) {
 		this.notifyUrl = notifyUrl;
 	}
 
-	public String getOutOrderNo() {
+    /**
+     * Gets out order no.
+     *
+     * @return the out order no
+     */
+    public String getOutOrderNo() {
 		return this.outOrderNo;
 	}
-	public void setOutOrderNo(String outOrderNo) {
+
+    /**
+     * Sets out order no.
+     *
+     * @param outOrderNo the out order no
+     */
+    public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
 	}
 
-	public String getProductCode() {
+    /**
+     * Gets product code.
+     *
+     * @return the product code
+     */
+    public String getProductCode() {
 		return this.productCode;
 	}
-	public void setProductCode(String productCode) {
+
+    /**
+     * Sets product code.
+     *
+     * @param productCode the product code
+     */
+    public void setProductCode(String productCode) {
 		this.productCode = productCode;
 	}
 
-	public String getRentAmount() {
+    /**
+     * Gets rent amount.
+     *
+     * @return the rent amount
+     */
+    public String getRentAmount() {
 		return this.rentAmount;
 	}
-	public void setRentAmount(String rentAmount) {
+
+    /**
+     * Sets rent amount.
+     *
+     * @param rentAmount the rent amount
+     */
+    public void setRentAmount(String rentAmount) {
 		this.rentAmount = rentAmount;
 	}
 
-	public String getRentInfo() {
+    /**
+     * Gets rent info.
+     *
+     * @return the rent info
+     */
+    public String getRentInfo() {
 		return this.rentInfo;
 	}
-	public void setRentInfo(String rentInfo) {
+
+    /**
+     * Sets rent info.
+     *
+     * @param rentInfo the rent info
+     */
+    public void setRentInfo(String rentInfo) {
 		this.rentInfo = rentInfo;
 	}
 
-	public String getRentSettleType() {
+    /**
+     * Gets rent settle type.
+     *
+     * @return the rent settle type
+     */
+    public String getRentSettleType() {
 		return this.rentSettleType;
 	}
-	public void setRentSettleType(String rentSettleType) {
+
+    /**
+     * Sets rent settle type.
+     *
+     * @param rentSettleType the rent settle type
+     */
+    public void setRentSettleType(String rentSettleType) {
 		this.rentSettleType = rentSettleType;
 	}
 
-	public String getRentUnit() {
+    /**
+     * Gets rent unit.
+     *
+     * @return the rent unit
+     */
+    public String getRentUnit() {
 		return this.rentUnit;
 	}
-	public void setRentUnit(String rentUnit) {
+
+    /**
+     * Sets rent unit.
+     *
+     * @param rentUnit the rent unit
+     */
+    public void setRentUnit(String rentUnit) {
 		this.rentUnit = rentUnit;
 	}
 

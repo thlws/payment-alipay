@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.data.enterprise.staffinfo.upload response.
- * 
+ *
  * @author auto create
  * @since 1.0, 2017-07-25 15:32:34
  */
 public class KoubeiMarketingDataEnterpriseStaffinfoUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5464174919613817936L;
+	private static final long serialVersionUID = 8299128347292832592L;
 
 	/** 
 	 * 人群ID
@@ -20,10 +20,21 @@ public class KoubeiMarketingDataEnterpriseStaffinfoUploadResponse extends Alipay
 	@ApiField("crowd_id")
 	private String crowdId;
 
-	public void setCrowdId(String crowdId) {
+    /**
+     * Sets crowd id.
+     *
+     * @param crowdId the crowd id
+     */
+    public void setCrowdId(String crowdId) {
 		this.crowdId = crowdId;
 	}
-	public String getCrowdId( ) {
+
+    /**
+     * Gets crowd id.
+     *
+     * @return the crowd id
+     */
+    public String getCrowdId( ) {
 		return this.crowdId;
 	}
 

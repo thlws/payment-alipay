@@ -7,13 +7,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.zmscore.zrank.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-02 14:27:12
+ * @since 1.0, 2018-01-22 10:27:38
  */
 public class AlipayZmscoreZrankGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7253298494357521883L;
+	private static final long serialVersionUID = 7641773426183153867L;
 
 	/** 
 	 * 芝麻分分段
@@ -21,10 +21,21 @@ public class AlipayZmscoreZrankGetResponse extends AlipayResponse {
 	@ApiField("zm_score_zrank")
 	private AlipayZmScoreZrankResult zmScoreZrank;
 
-	public void setZmScoreZrank(AlipayZmScoreZrankResult zmScoreZrank) {
+    /**
+     * Sets zm score zrank.
+     *
+     * @param zmScoreZrank the zm score zrank
+     */
+    public void setZmScoreZrank(AlipayZmScoreZrankResult zmScoreZrank) {
 		this.zmScoreZrank = zmScoreZrank;
 	}
-	public AlipayZmScoreZrankResult getZmScoreZrank( ) {
+
+    /**
+     * Gets zm score zrank.
+     *
+     * @return the zm score zrank
+     */
+    public AlipayZmScoreZrankResult getZmScoreZrank( ) {
 		return this.zmScoreZrank;
 	}
 

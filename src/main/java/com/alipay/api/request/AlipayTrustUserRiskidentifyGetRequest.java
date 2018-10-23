@@ -9,7 +9,7 @@ import com.alipay.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.trust.user.riskidentify.get request
- * 
+ *
  * @author auto create
  * @since 1.0, 2016-01-04 10:16:04
  */
@@ -23,10 +23,21 @@ public class AlipayTrustUserRiskidentifyGetRequest implements AlipayRequest<Alip
 	 */
 	private String type;
 
-	public void setType(String type) {
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
 		this.type = type;
 	}
-	public String getType() {
+
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
 		return this.type;
 	}
 	private String terminalType;
@@ -98,7 +109,13 @@ public class AlipayTrustUserRiskidentifyGetRequest implements AlipayRequest<Alip
 		return txtParams;
 	}
 
-	public void putOtherTextParam(String key, String value) {
+    /**
+     * Put other text param.
+     *
+     * @param key   the key
+     * @param value the value
+     */
+    public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
 		}

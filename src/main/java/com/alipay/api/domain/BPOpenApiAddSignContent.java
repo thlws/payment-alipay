@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class BPOpenApiAddSignContent extends AlipayObject {
 
-	private static final long serialVersionUID = 5425146845427648515L;
+	private static final long serialVersionUID = 5879434562489555766L;
 
 	/**
 	 * 自定义的条件跳转。JSON格式
@@ -53,45 +53,111 @@ public class BPOpenApiAddSignContent extends AlipayObject {
 	@ApiField("display_name")
 	private String displayName;
 
-	public List<String> getAdditionalLines() {
+    /**
+     * Gets additional lines.
+     *
+     * @return the additional lines
+     */
+    public List<String> getAdditionalLines() {
 		return this.additionalLines;
 	}
-	public void setAdditionalLines(List<String> additionalLines) {
+
+    /**
+     * Sets additional lines.
+     *
+     * @param additionalLines the additional lines
+     */
+    public void setAdditionalLines(List<String> additionalLines) {
 		this.additionalLines = additionalLines;
 	}
 
-	public String getAssignee() {
+    /**
+     * Gets assignee.
+     *
+     * @return the assignee
+     */
+    public String getAssignee() {
 		return this.assignee;
 	}
-	public void setAssignee(String assignee) {
+
+    /**
+     * Sets assignee.
+     *
+     * @param assignee the assignee
+     */
+    public void setAssignee(String assignee) {
 		this.assignee = assignee;
 	}
 
-	public String getDealActions() {
+    /**
+     * Gets deal actions.
+     *
+     * @return the deal actions
+     */
+    public String getDealActions() {
 		return this.dealActions;
 	}
-	public void setDealActions(String dealActions) {
+
+    /**
+     * Sets deal actions.
+     *
+     * @param dealActions the deal actions
+     */
+    public void setDealActions(String dealActions) {
 		this.dealActions = dealActions;
 	}
 
-	public String getDealUrl() {
+    /**
+     * Gets deal url.
+     *
+     * @return the deal url
+     */
+    public String getDealUrl() {
 		return this.dealUrl;
 	}
-	public void setDealUrl(String dealUrl) {
+
+    /**
+     * Sets deal url.
+     *
+     * @param dealUrl the deal url
+     */
+    public void setDealUrl(String dealUrl) {
 		this.dealUrl = dealUrl;
 	}
 
-	public String getDetailUrl() {
+    /**
+     * Gets detail url.
+     *
+     * @return the detail url
+     */
+    public String getDetailUrl() {
 		return this.detailUrl;
 	}
-	public void setDetailUrl(String detailUrl) {
+
+    /**
+     * Sets detail url.
+     *
+     * @param detailUrl the detail url
+     */
+    public void setDetailUrl(String detailUrl) {
 		this.detailUrl = detailUrl;
 	}
 
-	public String getDisplayName() {
+    /**
+     * Gets display name.
+     *
+     * @return the display name
+     */
+    public String getDisplayName() {
 		return this.displayName;
 	}
-	public void setDisplayName(String displayName) {
+
+    /**
+     * Sets display name.
+     *
+     * @param displayName the display name
+     */
+    public void setDisplayName(String displayName) {
 		this.displayName = displayName;
 	}
 

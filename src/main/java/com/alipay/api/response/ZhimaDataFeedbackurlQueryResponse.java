@@ -6,13 +6,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: zhima.data.feedbackurl.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-02-16 15:46:19
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class ZhimaDataFeedbackurlQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7764382718197318466L;
+	private static final long serialVersionUID = 1434453865751362824L;
 
 	/** 
 	 * 反馈模板地址
@@ -20,10 +20,21 @@ public class ZhimaDataFeedbackurlQueryResponse extends AlipayResponse {
 	@ApiField("feedback_url")
 	private String feedbackUrl;
 
-	public void setFeedbackUrl(String feedbackUrl) {
+    /**
+     * Sets feedback url.
+     *
+     * @param feedbackUrl the feedback url
+     */
+    public void setFeedbackUrl(String feedbackUrl) {
 		this.feedbackUrl = feedbackUrl;
 	}
-	public String getFeedbackUrl( ) {
+
+    /**
+     * Gets feedback url.
+     *
+     * @return the feedback url
+     */
+    public String getFeedbackUrl( ) {
 		return this.feedbackUrl;
 	}
 

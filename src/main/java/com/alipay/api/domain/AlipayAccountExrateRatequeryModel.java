@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayAccountExrateRatequeryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7835191813171523438L;
+	private static final long serialVersionUID = 2394469948154553961L;
 
 	/**
 	 * 需要查询汇率的货币对，如果为空则返回当前支持的所有货币对的汇率
@@ -19,10 +19,21 @@ public class AlipayAccountExrateRatequeryModel extends AlipayObject {
 	@ApiField("currency_pair")
 	private String currencyPair;
 
-	public String getCurrencyPair() {
+    /**
+     * Gets currency pair.
+     *
+     * @return the currency pair
+     */
+    public String getCurrencyPair() {
 		return this.currencyPair;
 	}
-	public void setCurrencyPair(String currencyPair) {
+
+    /**
+     * Sets currency pair.
+     *
+     * @param currencyPair the currency pair
+     */
+    public void setCurrencyPair(String currencyPair) {
 		this.currencyPair = currencyPair;
 	}
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物业费账单数据同步
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:19
+ * @since 1.0, 2018-06-09 20:10:28
  */
 public class AlipayEcoCplifeBillSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5516558815935675979L;
+	private static final long serialVersionUID = 5133825678563288374L;
 
 	/**
 	 * 待同步的物业费账单应收明细条目ID
@@ -49,38 +49,93 @@ update：更改
 	@ApiField("operate_type")
 	private String operateType;
 
-	public String getBillEntryId() {
+    /**
+     * Gets bill entry id.
+     *
+     * @return the bill entry id
+     */
+    public String getBillEntryId() {
 		return this.billEntryId;
 	}
-	public void setBillEntryId(String billEntryId) {
+
+    /**
+     * Sets bill entry id.
+     *
+     * @param billEntryId the bill entry id
+     */
+    public void setBillEntryId(String billEntryId) {
 		this.billEntryId = billEntryId;
 	}
 
-	public String getCommunityId() {
+    /**
+     * Gets community id.
+     *
+     * @return the community id
+     */
+    public String getCommunityId() {
 		return this.communityId;
 	}
-	public void setCommunityId(String communityId) {
+
+    /**
+     * Sets community id.
+     *
+     * @param communityId the community id
+     */
+    public void setCommunityId(String communityId) {
 		this.communityId = communityId;
 	}
 
-	public String getNewDeadline() {
+    /**
+     * Gets new deadline.
+     *
+     * @return the new deadline
+     */
+    public String getNewDeadline() {
 		return this.newDeadline;
 	}
-	public void setNewDeadline(String newDeadline) {
+
+    /**
+     * Sets new deadline.
+     *
+     * @param newDeadline the new deadline
+     */
+    public void setNewDeadline(String newDeadline) {
 		this.newDeadline = newDeadline;
 	}
 
-	public String getNewEntryAmount() {
+    /**
+     * Gets new entry amount.
+     *
+     * @return the new entry amount
+     */
+    public String getNewEntryAmount() {
 		return this.newEntryAmount;
 	}
-	public void setNewEntryAmount(String newEntryAmount) {
+
+    /**
+     * Sets new entry amount.
+     *
+     * @param newEntryAmount the new entry amount
+     */
+    public void setNewEntryAmount(String newEntryAmount) {
 		this.newEntryAmount = newEntryAmount;
 	}
 
-	public String getOperateType() {
+    /**
+     * Gets operate type.
+     *
+     * @return the operate type
+     */
+    public String getOperateType() {
 		return this.operateType;
 	}
-	public void setOperateType(String operateType) {
+
+    /**
+     * Sets operate type.
+     *
+     * @param operateType the operate type
+     */
+    public void setOperateType(String operateType) {
 		this.operateType = operateType;
 	}
 

@@ -7,13 +7,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.voucher.templatedetail.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-19 11:27:10
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayMarketingVoucherTemplatedetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8611725134326637968L;
+	private static final long serialVersionUID = 8758893865265834626L;
 
 	/** 
 	 * 面额。每张代金券可以抵扣的金额。币种为人民币，单位为元。该数值不小于0，小数点以后最多两位。
@@ -117,122 +117,309 @@ public class AlipayMarketingVoucherTemplatedetailQueryResponse extends AlipayRes
 	@ApiField("voucher_valid_period")
 	private String voucherValidPeriod;
 
-	public void setAmount(String amount) {
+    /**
+     * Sets amount.
+     *
+     * @param amount the amount
+     */
+    public void setAmount(String amount) {
 		this.amount = amount;
 	}
-	public String getAmount( ) {
+
+    /**
+     * Gets amount.
+     *
+     * @return the amount
+     */
+    public String getAmount( ) {
 		return this.amount;
 	}
 
-	public void setFloorAmount(String floorAmount) {
+    /**
+     * Sets floor amount.
+     *
+     * @param floorAmount the floor amount
+     */
+    public void setFloorAmount(String floorAmount) {
 		this.floorAmount = floorAmount;
 	}
-	public String getFloorAmount( ) {
+
+    /**
+     * Gets floor amount.
+     *
+     * @return the floor amount
+     */
+    public String getFloorAmount( ) {
 		return this.floorAmount;
 	}
 
-	public void setPublishAmount(String publishAmount) {
+    /**
+     * Sets publish amount.
+     *
+     * @param publishAmount the publish amount
+     */
+    public void setPublishAmount(String publishAmount) {
 		this.publishAmount = publishAmount;
 	}
-	public String getPublishAmount( ) {
+
+    /**
+     * Gets publish amount.
+     *
+     * @return the publish amount
+     */
+    public String getPublishAmount( ) {
 		return this.publishAmount;
 	}
 
-	public void setPublishCount(Long publishCount) {
+    /**
+     * Sets publish count.
+     *
+     * @param publishCount the publish count
+     */
+    public void setPublishCount(Long publishCount) {
 		this.publishCount = publishCount;
 	}
-	public Long getPublishCount( ) {
+
+    /**
+     * Gets publish count.
+     *
+     * @return the publish count
+     */
+    public Long getPublishCount( ) {
 		return this.publishCount;
 	}
 
-	public void setPublishEndTime(Date publishEndTime) {
+    /**
+     * Sets publish end time.
+     *
+     * @param publishEndTime the publish end time
+     */
+    public void setPublishEndTime(Date publishEndTime) {
 		this.publishEndTime = publishEndTime;
 	}
-	public Date getPublishEndTime( ) {
+
+    /**
+     * Gets publish end time.
+     *
+     * @return the publish end time
+     */
+    public Date getPublishEndTime( ) {
 		return this.publishEndTime;
 	}
 
-	public void setPublishStartTime(Date publishStartTime) {
+    /**
+     * Sets publish start time.
+     *
+     * @param publishStartTime the publish start time
+     */
+    public void setPublishStartTime(Date publishStartTime) {
 		this.publishStartTime = publishStartTime;
 	}
-	public Date getPublishStartTime( ) {
+
+    /**
+     * Gets publish start time.
+     *
+     * @return the publish start time
+     */
+    public Date getPublishStartTime( ) {
 		return this.publishStartTime;
 	}
 
-	public void setRecycleAmount(String recycleAmount) {
+    /**
+     * Sets recycle amount.
+     *
+     * @param recycleAmount the recycle amount
+     */
+    public void setRecycleAmount(String recycleAmount) {
 		this.recycleAmount = recycleAmount;
 	}
-	public String getRecycleAmount( ) {
+
+    /**
+     * Gets recycle amount.
+     *
+     * @return the recycle amount
+     */
+    public String getRecycleAmount( ) {
 		return this.recycleAmount;
 	}
 
-	public void setStatus(String status) {
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
-	public String getStatus( ) {
+
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus( ) {
 		return this.status;
 	}
 
-	public void setTemplateId(String templateId) {
+    /**
+     * Sets template id.
+     *
+     * @param templateId the template id
+     */
+    public void setTemplateId(String templateId) {
 		this.templateId = templateId;
 	}
-	public String getTemplateId( ) {
+
+    /**
+     * Gets template id.
+     *
+     * @return the template id
+     */
+    public String getTemplateId( ) {
 		return this.templateId;
 	}
 
-	public void setTotalAmount(String totalAmount) {
+    /**
+     * Sets total amount.
+     *
+     * @param totalAmount the total amount
+     */
+    public void setTotalAmount(String totalAmount) {
 		this.totalAmount = totalAmount;
 	}
-	public String getTotalAmount( ) {
+
+    /**
+     * Gets total amount.
+     *
+     * @return the total amount
+     */
+    public String getTotalAmount( ) {
 		return this.totalAmount;
 	}
 
-	public void setUsedAmount(String usedAmount) {
+    /**
+     * Sets used amount.
+     *
+     * @param usedAmount the used amount
+     */
+    public void setUsedAmount(String usedAmount) {
 		this.usedAmount = usedAmount;
 	}
-	public String getUsedAmount( ) {
+
+    /**
+     * Gets used amount.
+     *
+     * @return the used amount
+     */
+    public String getUsedAmount( ) {
 		return this.usedAmount;
 	}
 
-	public void setUsedCount(Long usedCount) {
+    /**
+     * Sets used count.
+     *
+     * @param usedCount the used count
+     */
+    public void setUsedCount(Long usedCount) {
 		this.usedCount = usedCount;
 	}
-	public Long getUsedCount( ) {
+
+    /**
+     * Gets used count.
+     *
+     * @return the used count
+     */
+    public Long getUsedCount( ) {
 		return this.usedCount;
 	}
 
-	public void setVoucherDescription(String voucherDescription) {
+    /**
+     * Sets voucher description.
+     *
+     * @param voucherDescription the voucher description
+     */
+    public void setVoucherDescription(String voucherDescription) {
 		this.voucherDescription = voucherDescription;
 	}
-	public String getVoucherDescription( ) {
+
+    /**
+     * Gets voucher description.
+     *
+     * @return the voucher description
+     */
+    public String getVoucherDescription( ) {
 		return this.voucherDescription;
 	}
 
-	public void setVoucherName(String voucherName) {
+    /**
+     * Sets voucher name.
+     *
+     * @param voucherName the voucher name
+     */
+    public void setVoucherName(String voucherName) {
 		this.voucherName = voucherName;
 	}
-	public String getVoucherName( ) {
+
+    /**
+     * Gets voucher name.
+     *
+     * @return the voucher name
+     */
+    public String getVoucherName( ) {
 		return this.voucherName;
 	}
 
-	public void setVoucherQuantity(Long voucherQuantity) {
+    /**
+     * Sets voucher quantity.
+     *
+     * @param voucherQuantity the voucher quantity
+     */
+    public void setVoucherQuantity(Long voucherQuantity) {
 		this.voucherQuantity = voucherQuantity;
 	}
-	public Long getVoucherQuantity( ) {
+
+    /**
+     * Gets voucher quantity.
+     *
+     * @return the voucher quantity
+     */
+    public Long getVoucherQuantity( ) {
 		return this.voucherQuantity;
 	}
 
-	public void setVoucherType(String voucherType) {
+    /**
+     * Sets voucher type.
+     *
+     * @param voucherType the voucher type
+     */
+    public void setVoucherType(String voucherType) {
 		this.voucherType = voucherType;
 	}
-	public String getVoucherType( ) {
+
+    /**
+     * Gets voucher type.
+     *
+     * @return the voucher type
+     */
+    public String getVoucherType( ) {
 		return this.voucherType;
 	}
 
-	public void setVoucherValidPeriod(String voucherValidPeriod) {
+    /**
+     * Sets voucher valid period.
+     *
+     * @param voucherValidPeriod the voucher valid period
+     */
+    public void setVoucherValidPeriod(String voucherValidPeriod) {
 		this.voucherValidPeriod = voucherValidPeriod;
 	}
-	public String getVoucherValidPeriod( ) {
+
+    /**
+     * Gets voucher valid period.
+     *
+     * @return the voucher valid period
+     */
+    public String getVoucherValidPeriod( ) {
 		return this.voucherValidPeriod;
 	}
 

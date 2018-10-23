@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 家庭成员信息
  *
  * @author auto create
- * @since 1.0, 2016-12-28 17:54:37
+ * @since 1.0, 2017-12-20 15:50:54
  */
 public class UserDetails extends AlipayObject {
 
-	private static final long serialVersionUID = 1357995314759892242L;
+	private static final long serialVersionUID = 4329549453212152962L;
 
 	/**
 	 * 用户变更手机号，替换旧的手机号
@@ -37,31 +37,75 @@ public class UserDetails extends AlipayObject {
 	@ApiField("user_relation")
 	private String userRelation;
 
-	public String getUserChangeMobile() {
+    /**
+     * Gets user change mobile.
+     *
+     * @return the user change mobile
+     */
+    public String getUserChangeMobile() {
 		return this.userChangeMobile;
 	}
-	public void setUserChangeMobile(String userChangeMobile) {
+
+    /**
+     * Sets user change mobile.
+     *
+     * @param userChangeMobile the user change mobile
+     */
+    public void setUserChangeMobile(String userChangeMobile) {
 		this.userChangeMobile = userChangeMobile;
 	}
 
-	public String getUserMobile() {
+    /**
+     * Gets user mobile.
+     *
+     * @return the user mobile
+     */
+    public String getUserMobile() {
 		return this.userMobile;
 	}
-	public void setUserMobile(String userMobile) {
+
+    /**
+     * Sets user mobile.
+     *
+     * @param userMobile the user mobile
+     */
+    public void setUserMobile(String userMobile) {
 		this.userMobile = userMobile;
 	}
 
-	public String getUserName() {
+    /**
+     * Gets user name.
+     *
+     * @return the user name
+     */
+    public String getUserName() {
 		return this.userName;
 	}
-	public void setUserName(String userName) {
+
+    /**
+     * Sets user name.
+     *
+     * @param userName the user name
+     */
+    public void setUserName(String userName) {
 		this.userName = userName;
 	}
 
-	public String getUserRelation() {
+    /**
+     * Gets user relation.
+     *
+     * @return the user relation
+     */
+    public String getUserRelation() {
 		return this.userRelation;
 	}
-	public void setUserRelation(String userRelation) {
+
+    /**
+     * Sets user relation.
+     *
+     * @param userRelation the user relation
+     */
+    public void setUserRelation(String userRelation) {
 		this.userRelation = userRelation;
 	}
 

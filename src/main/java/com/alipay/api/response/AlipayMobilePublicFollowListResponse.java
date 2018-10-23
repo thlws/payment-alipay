@@ -7,13 +7,13 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.public.follow.list response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-07-29 19:58:03
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayMobilePublicFollowListResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4858283374958926133L;
+	private static final long serialVersionUID = 2678379179499478665L;
 
 	/** 
 	 * 返回结果码，如200，标识成功
@@ -52,31 +52,75 @@ public class AlipayMobilePublicFollowListResponse extends AlipayResponse {
 		return this.code;
 	}
 
-	public void setCount(String count) {
+    /**
+     * Sets count.
+     *
+     * @param count the count
+     */
+    public void setCount(String count) {
 		this.count = count;
 	}
-	public String getCount( ) {
+
+    /**
+     * Gets count.
+     *
+     * @return the count
+     */
+    public String getCount( ) {
 		return this.count;
 	}
 
-	public void setData(Data data) {
+    /**
+     * Sets data.
+     *
+     * @param data the data
+     */
+    public void setData(Data data) {
 		this.data = data;
 	}
-	public Data getData( ) {
+
+    /**
+     * Gets data.
+     *
+     * @return the data
+     */
+    public Data getData( ) {
 		return this.data;
 	}
 
-	public void setNextAlipayUserId(String nextAlipayUserId) {
+    /**
+     * Sets next alipay user id.
+     *
+     * @param nextAlipayUserId the next alipay user id
+     */
+    public void setNextAlipayUserId(String nextAlipayUserId) {
 		this.nextAlipayUserId = nextAlipayUserId;
 	}
-	public String getNextAlipayUserId( ) {
+
+    /**
+     * Gets next alipay user id.
+     *
+     * @return the next alipay user id
+     */
+    public String getNextAlipayUserId( ) {
 		return this.nextAlipayUserId;
 	}
 
-	public void setNextUserId(String nextUserId) {
+    /**
+     * Sets next user id.
+     *
+     * @param nextUserId the next user id
+     */
+    public void setNextUserId(String nextUserId) {
 		this.nextUserId = nextUserId;
 	}
-	public String getNextUserId( ) {
+
+    /**
+     * Gets next user id.
+     *
+     * @return the next user id
+     */
+    public String getNextUserId( ) {
 		return this.nextUserId;
 	}
 

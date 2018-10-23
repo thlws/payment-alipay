@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户分组创建接口
  *
  * @author auto create
- * @since 1.0, 2017-07-14 15:10:36
+ * @since 1.0, 2018-07-25 13:55:36
  */
 public class AlipayOpenPublicGroupCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1546985868311331668L;
+	private static final long serialVersionUID = 1695422775276654816L;
 
 	/**
 	 * 标签规则，满足该规则的粉丝将被圈定，标签id不能重复
@@ -29,17 +29,39 @@ public class AlipayOpenPublicGroupCreateModel extends AlipayObject {
 	@ApiField("name")
 	private String name;
 
-	public List<ComplexLabelRule> getLabelRule() {
+    /**
+     * Gets label rule.
+     *
+     * @return the label rule
+     */
+    public List<ComplexLabelRule> getLabelRule() {
 		return this.labelRule;
 	}
-	public void setLabelRule(List<ComplexLabelRule> labelRule) {
+
+    /**
+     * Sets label rule.
+     *
+     * @param labelRule the label rule
+     */
+    public void setLabelRule(List<ComplexLabelRule> labelRule) {
 		this.labelRule = labelRule;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 

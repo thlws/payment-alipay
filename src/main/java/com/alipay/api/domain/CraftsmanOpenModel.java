@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 手艺人信息
  *
  * @author auto create
- * @since 1.0, 2017-01-13 16:27:52
+ * @since 1.0, 2017-10-13 17:14:09
  */
 public class CraftsmanOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1642689593138429856L;
+	private static final long serialVersionUID = 3898717381833532544L;
 
 	/**
 	 * 手艺人账户名，仅支持小写字母和数字。上限12个小写字母或者数字。举例，若商户在口碑商家的登录账号为 testaop01@alipay.com,手艺人账号名为zhangsan，则手艺人登录口碑商家的账号名为 testaop01@alipay.com#zhangsan，获取登录密码需要扫商户app的员工激活码。从口碑商家app的员工管理进入员工详情页获取登录密码。
@@ -128,129 +128,327 @@ public class CraftsmanOpenModel extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
-	public String getAccount() {
+    /**
+     * Gets account.
+     *
+     * @return the account
+     */
+    public String getAccount() {
 		return this.account;
 	}
-	public void setAccount(String account) {
+
+    /**
+     * Sets account.
+     *
+     * @param account the account
+     */
+    public void setAccount(String account) {
 		this.account = account;
 	}
 
-	public CraftsmanAssessment getAssessment() {
+    /**
+     * Gets assessment.
+     *
+     * @return the assessment
+     */
+    public CraftsmanAssessment getAssessment() {
 		return this.assessment;
 	}
-	public void setAssessment(CraftsmanAssessment assessment) {
+
+    /**
+     * Sets assessment.
+     *
+     * @param assessment the assessment
+     */
+    public void setAssessment(CraftsmanAssessment assessment) {
 		this.assessment = assessment;
 	}
 
-	public String getAvatar() {
+    /**
+     * Gets avatar.
+     *
+     * @return the avatar
+     */
+    public String getAvatar() {
 		return this.avatar;
 	}
-	public void setAvatar(String avatar) {
+
+    /**
+     * Sets avatar.
+     *
+     * @param avatar the avatar
+     */
+    public void setAvatar(String avatar) {
 		this.avatar = avatar;
 	}
 
-	public Date getCareerBegin() {
+    /**
+     * Gets career begin.
+     *
+     * @return the career begin
+     */
+    public Date getCareerBegin() {
 		return this.careerBegin;
 	}
-	public void setCareerBegin(Date careerBegin) {
+
+    /**
+     * Sets career begin.
+     *
+     * @param careerBegin the career begin
+     */
+    public void setCareerBegin(Date careerBegin) {
 		this.careerBegin = careerBegin;
 	}
 
-	public List<String> getCareers() {
+    /**
+     * Gets careers.
+     *
+     * @return the careers
+     */
+    public List<String> getCareers() {
 		return this.careers;
 	}
-	public void setCareers(List<String> careers) {
+
+    /**
+     * Sets careers.
+     *
+     * @param careers the careers
+     */
+    public void setCareers(List<String> careers) {
 		this.careers = careers;
 	}
 
-	public String getCraftsmanId() {
+    /**
+     * Gets craftsman id.
+     *
+     * @return the craftsman id
+     */
+    public String getCraftsmanId() {
 		return this.craftsmanId;
 	}
-	public void setCraftsmanId(String craftsmanId) {
+
+    /**
+     * Sets craftsman id.
+     *
+     * @param craftsmanId the craftsman id
+     */
+    public void setCraftsmanId(String craftsmanId) {
 		this.craftsmanId = craftsmanId;
 	}
 
-	public String getIntroduction() {
+    /**
+     * Gets introduction.
+     *
+     * @return the introduction
+     */
+    public String getIntroduction() {
 		return this.introduction;
 	}
-	public void setIntroduction(String introduction) {
+
+    /**
+     * Sets introduction.
+     *
+     * @param introduction the introduction
+     */
+    public void setIntroduction(String introduction) {
 		this.introduction = introduction;
 	}
 
-	public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getNickName() {
+    /**
+     * Gets nick name.
+     *
+     * @return the nick name
+     */
+    public String getNickName() {
 		return this.nickName;
 	}
-	public void setNickName(String nickName) {
+
+    /**
+     * Sets nick name.
+     *
+     * @param nickName the nick name
+     */
+    public void setNickName(String nickName) {
 		this.nickName = nickName;
 	}
 
-	public String getOperatorId() {
+    /**
+     * Gets operator id.
+     *
+     * @return the operator id
+     */
+    public String getOperatorId() {
 		return this.operatorId;
 	}
-	public void setOperatorId(String operatorId) {
+
+    /**
+     * Sets operator id.
+     *
+     * @param operatorId the operator id
+     */
+    public void setOperatorId(String operatorId) {
 		this.operatorId = operatorId;
 	}
 
-	public String getOutCraftsmanId() {
+    /**
+     * Gets out craftsman id.
+     *
+     * @return the out craftsman id
+     */
+    public String getOutCraftsmanId() {
 		return this.outCraftsmanId;
 	}
-	public void setOutCraftsmanId(String outCraftsmanId) {
+
+    /**
+     * Sets out craftsman id.
+     *
+     * @param outCraftsmanId the out craftsman id
+     */
+    public void setOutCraftsmanId(String outCraftsmanId) {
 		this.outCraftsmanId = outCraftsmanId;
 	}
 
-	public String getQrCode() {
+    /**
+     * Gets qr code.
+     *
+     * @return the qr code
+     */
+    public String getQrCode() {
 		return this.qrCode;
 	}
-	public void setQrCode(String qrCode) {
+
+    /**
+     * Sets qr code.
+     *
+     * @param qrCode the qr code
+     */
+    public void setQrCode(String qrCode) {
 		this.qrCode = qrCode;
 	}
 
-	public List<CraftsmanShopRelationOpenModel> getShopRelations() {
+    /**
+     * Gets shop relations.
+     *
+     * @return the shop relations
+     */
+    public List<CraftsmanShopRelationOpenModel> getShopRelations() {
 		return this.shopRelations;
 	}
-	public void setShopRelations(List<CraftsmanShopRelationOpenModel> shopRelations) {
+
+    /**
+     * Sets shop relations.
+     *
+     * @param shopRelations the shop relations
+     */
+    public void setShopRelations(List<CraftsmanShopRelationOpenModel> shopRelations) {
 		this.shopRelations = shopRelations;
 	}
 
-	public List<String> getSpecialities() {
+    /**
+     * Gets specialities.
+     *
+     * @return the specialities
+     */
+    public List<String> getSpecialities() {
 		return this.specialities;
 	}
-	public void setSpecialities(List<String> specialities) {
+
+    /**
+     * Sets specialities.
+     *
+     * @param specialities the specialities
+     */
+    public void setSpecialities(List<String> specialities) {
 		this.specialities = specialities;
 	}
 
-	public String getStatus() {
+    /**
+     * Gets status.
+     *
+     * @return the status
+     */
+    public String getStatus() {
 		return this.status;
 	}
-	public void setStatus(String status) {
+
+    /**
+     * Sets status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status) {
 		this.status = status;
 	}
 
-	public String getTelNum() {
+    /**
+     * Gets tel num.
+     *
+     * @return the tel num
+     */
+    public String getTelNum() {
 		return this.telNum;
 	}
-	public void setTelNum(String telNum) {
+
+    /**
+     * Sets tel num.
+     *
+     * @param telNum the tel num
+     */
+    public void setTelNum(String telNum) {
 		this.telNum = telNum;
 	}
 
-	public String getTitle() {
+    /**
+     * Gets title.
+     *
+     * @return the title
+     */
+    public String getTitle() {
 		return this.title;
 	}
-	public void setTitle(String title) {
+
+    /**
+     * Sets title.
+     *
+     * @param title the title
+     */
+    public void setTitle(String title) {
 		this.title = title;
 	}
 
-	public String getUserId() {
+    /**
+     * Gets user id.
+     *
+     * @return the user id
+     */
+    public String getUserId() {
 		return this.userId;
 	}
-	public void setUserId(String userId) {
+
+    /**
+     * Sets user id.
+     *
+     * @param userId the user id
+     */
+    public void setUserId(String userId) {
 		this.userId = userId;
 	}
 
