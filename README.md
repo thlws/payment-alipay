@@ -55,6 +55,9 @@ compile 'org.thlws:payment-alipay:1.0.4'
 ### 如何使用
 
 ```
+  //第0步.初始化 AlipayCore
+  //根据项目实际情况选择上面支付安装方式引入支付依赖.
+
   //第一步.初始化 AlipayCore
   AlipayCore.ClientBuilder clientBuilder = new AlipayCore.ClientBuilder();
   //sign_type=rsa时，可不传 支付宝公钥 alipay_public_key
