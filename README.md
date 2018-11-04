@@ -40,20 +40,6 @@
 ```
 compile 'org.thlws:payment-alipay:1.0.4'
 ```
-- 普通项目
-    
-        下载全部的jar并加入您的项目
-    
-    - [payment-alipay-1.0.4.jar](https://search.maven.org/remotecontent?filepath=org/thlws/payment-alipay/1.0.4/payment-alipay-1.0.4.jar)
-    - [commons-lang-2.6.jar](http://central.maven.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.jar)
-    - [commons-beanutils-1.8.3.jar](http://central.maven.org/maven2/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.jar)
-    - [gson-2.3.1.jar](http://central.maven.org/maven2/com/google/code/gson/gson/2.3.1/gson-2.3.1.jar)
-    - [zxing-core-2.2.jar](http://central.maven.org/maven2/com/google/zxing/core/2.2/core-2.2.jar)
-    - [zxing-javase-2.2.jar](http://central.maven.org/maven2/com/google/zxing/javase/2.2/javase-2.2.jar)
-    - [commons-logging-1.1.1.jar](http://central.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar)
-    - [hamcrest-core-1.3.jar](http://central.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar)
-
-
 
 ### 如何使用
 
