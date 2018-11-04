@@ -223,13 +223,17 @@ public class AlipayTest {
 
         try {
             AlipayH5Input input = new AlipayH5Input();
+            input.setNotify_url("异步通知地址,支付宝通知支付结果");
+            input.setReturn_url("同步返回地址,完成支付后自动转向的地址");
             AlipayH5Input.BizContent bizContent = new AlipayH5Input.BizContent();
             bizContent.setTotal_amount("0.01");
             bizContent.setSubject("测试H5(手机网页)支付");
             //bizContent.setSeller_id(partner_id);
             bizContent.setProduct_code("p0001");
             bizContent.setOut_trade_no(System.currentTimeMillis()+"");
+            input.setBizContent(bizContent);
             String html = alipayCore.pay_in_h5(input);
+            System.out.println("html="+html);
             assertNotNull(html);
             //html结果直接显示在页面即可
         } catch (Exception e) {

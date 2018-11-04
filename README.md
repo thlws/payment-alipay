@@ -1,6 +1,7 @@
 支付宝支付
 ============
 [![](https://img.shields.io/badge/release-v1.0.4-blue.svg)](https://github.com/thlws/payment-alipay)   [![](https://img.shields.io/badge/license-Apache--2-yellowgreen.svg)](https://www.apache.org/licenses/LICENSE-2.0.html) [![](https://img.shields.io/badge/maven%20central-v1.0.4-brightgreen.svg)](https://search.maven.org/artifact/org.thlws/payment-alipay/1.0.4/jar) 
+[![](https://img.shields.io/badge/jdk-1.7%2B-red.svg)](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
 > 基于支付宝官方Java SDK,封装支付相关接口, 整合多种支付场景于一体。
 
