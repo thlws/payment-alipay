@@ -1,4 +1,4 @@
-package org.thlws.payment.alipay.model;
+package org.thlws.payment.alipay.entity.request;
 
 import com.alipay.trade.model.GoodsDetail;
 import org.thlws.payment.alipay.utils.JsonUtil;
@@ -6,9 +6,10 @@ import org.thlws.payment.alipay.utils.JsonUtil;
 import java.util.List;
 
 /**
+ * 支付宝当面付
  * Created by HanleyTang on 2017/3/4.
  */
-public class AlipayTradeInput {
+public class AlipayTradeRequest {
 
     private String outTradeNo;//(必填) 商户网站订单系统中唯一订单号，64个字符以内，只能包含字母、数字、下划线
     private String subject;// (必填) 订单标题，粗略描述用户的支付目的。如“xxx品牌xxx门店消费”

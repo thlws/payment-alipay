@@ -74,18 +74,18 @@ public class AlipaySecurityProdFingerprintRiskcontrolQueryModel extends AlipayOb
 	}
 
     /**
-     * Gets build model.
+     * Gets build entity.
      *
-     * @return the build model
+     * @return the build entity
      */
     public String getBuildModel() {
 		return this.buildModel;
 	}
 
     /**
-     * Sets build model.
+     * Sets build entity.
      *
-     * @param buildModel the build model
+     * @param buildModel the build entity
      */
     public void setBuildModel(String buildModel) {
 		this.buildModel = buildModel;

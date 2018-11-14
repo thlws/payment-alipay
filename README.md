@@ -16,6 +16,7 @@
 - v1.0.2 新增RSA2签名方式（RSA2时，支付宝公钥为必须参数）;
 - v1.0.3 返回参数新增code & msg;
 - v1.0.4 升级支付宝依赖至201809版本
+- v1.0.5 项目重构,对外提供统一支付入口 `org.thlws.payment.alipay.client.AlipayClient`
 
 ### 在线文档
 - [API 文档](https://apidoc.gitee.com/thlws/payment-alipay)
@@ -33,12 +34,12 @@
 <dependency>
     <groupId>org.thlws</groupId>
     <artifactId>payment-alipay</artifactId>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
 </dependency>
 ```
 - Gradle
 ```
-compile 'org.thlws:payment-alipay:1.0.4'
+compile 'org.thlws:payment-alipay:1.0.5'
 ```
 
 ### 如何使用
@@ -59,19 +60,19 @@ compile 'org.thlws:payment-alipay:1.0.4'
 //第二步.调用支付
  public void test_pay(){
      try {
-         AlipayTradeInput input = new AlipayTradeInput();
-
-         //必须参数
-         input.setTotalAmount("0.01");
-         input.setStoreId("00001025104487");
-         input.setOperatorId("hanley001");
-         input.setAuthCode("289055913572087398");
-         input.setOutTradeNo(System.currentTimeMillis()+"");
-         input.setSubject("测试买单");
+     
+         AlipayTradeRequest request = new AlipayTradeRequest();
+        //必须参数
+        request.setTotalAmount("0.01");
+        request.setStoreId("00001025104487");
+        request.setOperatorId("hanley001");
+        request.setAuthCode("288609492126942746");
+        request.setOutTradeNo(System.currentTimeMillis()+"");
+        request.setSubject("CI测试买单001");
          
-         AlipayTradeOutput output = alipayCore.pay(input);
+        AlipayTradeResponse response = AlipayClient.pay(request,alipayCore);
          assertTrue(output.isSuccess());
-         //output就是支付结果,具体请参考相关属性说明
+         //response就是支付结果,具体请参考相关属性说明
      } catch (Exception e) {
          e.printStackTrace();
      }
@@ -82,16 +83,13 @@ compile 'org.thlws:payment-alipay:1.0.4'
  public void  test_refund(){
     
      try {
-         AlipayRefundInput input = new AlipayRefundInput();
-         //input.setOutTradeNo("1508487673867");
-         input.setTradeNo("2018050721001004510538867002");
-         input.setRefundAmount("0.01");
-         input.setRefundReason("测试退款");
-         input.setStoreId("00001025104487");
-         input.setTerminalId("10007");
-         AlipayRefundOutput output = alipayCore.refund(input);
-         System.out.println("output="+JsonUtil.format(output));
-         assertTrue(output.isSuccess());
+        AlipayRefundRequest request = new AlipayRefundRequest();
+        request.setTradeNo("2018102322001444515405783599");
+        request.setRefundAmount("0.01");
+        request.setRefundReason("测试退款");
+        AlipayRefundResponse response = AlipayClient.refund(request,alipayCore);
+        System.out.println("response="+JsonUtil.format(response));
+        assertTrue(response.isSuccess());
      } catch (Exception e) {
          e.printStackTrace();
      }

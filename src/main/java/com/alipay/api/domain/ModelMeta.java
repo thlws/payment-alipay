@@ -42,54 +42,54 @@ public class ModelMeta extends AlipayObject {
 	private List<String> queryKey;
 
     /**
-     * Gets model desc.
+     * Gets entity desc.
      *
-     * @return the model desc
+     * @return the entity desc
      */
     public String getModelDesc() {
 		return this.modelDesc;
 	}
 
     /**
-     * Sets model desc.
+     * Sets entity desc.
      *
-     * @param modelDesc the model desc
+     * @param modelDesc the entity desc
      */
     public void setModelDesc(String modelDesc) {
 		this.modelDesc = modelDesc;
 	}
 
     /**
-     * Gets model name.
+     * Gets entity name.
      *
-     * @return the model name
+     * @return the entity name
      */
     public String getModelName() {
 		return this.modelName;
 	}
 
     /**
-     * Sets model name.
+     * Sets entity name.
      *
-     * @param modelName the model name
+     * @param modelName the entity name
      */
     public void setModelName(String modelName) {
 		this.modelName = modelName;
 	}
 
     /**
-     * Gets model uk.
+     * Gets entity uk.
      *
-     * @return the model uk
+     * @return the entity uk
      */
     public String getModelUk() {
 		return this.modelUk;
 	}
 
     /**
-     * Sets model uk.
+     * Sets entity uk.
      *
-     * @param modelUk the model uk
+     * @param modelUk the entity uk
      */
     public void setModelUk(String modelUk) {
 		this.modelUk = modelUk;

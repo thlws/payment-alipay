@@ -75,18 +75,18 @@ public class AlipayEcoMycarCarmodelCreateResponse extends AlipayResponse {
 	}
 
     /**
-     * Sets model id.
+     * Sets entity id.
      *
-     * @param modelId the model id
+     * @param modelId the entity id
      */
     public void setModelId(String modelId) {
 		this.modelId = modelId;
 	}
 
     /**
-     * Gets model id.
+     * Gets entity id.
      *
-     * @return the model id
+     * @return the entity id
      */
     public String getModelId( ) {
 		return this.modelId;

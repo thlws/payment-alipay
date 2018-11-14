@@ -40,7 +40,7 @@ public class AlipayUserCertDocVehicleLicense extends AlipayObject {
 	/**
 	 * 品牌型号
 	 */
-	@ApiField("model")
+	@ApiField("entity")
 	private String model;
 
 	/**
@@ -140,18 +140,18 @@ public class AlipayUserCertDocVehicleLicense extends AlipayObject {
 	}
 
     /**
-     * Gets model.
+     * Gets entity.
      *
-     * @return the model
+     * @return the entity
      */
     public String getModel() {
 		return this.model;
 	}
 
     /**
-     * Sets model.
+     * Sets entity.
      *
-     * @param model the model
+     * @param model the entity
      */
     public void setModel(String model) {
 		this.model = model;

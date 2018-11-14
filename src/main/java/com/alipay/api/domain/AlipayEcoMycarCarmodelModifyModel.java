@@ -74,7 +74,7 @@ public class AlipayEcoMycarCarmodelModifyModel extends AlipayObject {
 	private String modelName;
 
 	/**
-	 * 修改类型，接口通过此参数判断本次请求是修改品牌信息还是车型信息等，brand（品牌），company（厂商），serie（车系），model（车型）
+	 * 修改类型，接口通过此参数判断本次请求是修改品牌信息还是车型信息等，brand（品牌），company（厂商），serie（车系），entity（车型）
 	 */
 	@ApiField("modify_type")
 	private String modifyType;
@@ -260,36 +260,36 @@ public class AlipayEcoMycarCarmodelModifyModel extends AlipayObject {
 	}
 
     /**
-     * Gets model id.
+     * Gets entity id.
      *
-     * @return the model id
+     * @return the entity id
      */
     public String getModelId() {
 		return this.modelId;
 	}
 
     /**
-     * Sets model id.
+     * Sets entity id.
      *
-     * @param modelId the model id
+     * @param modelId the entity id
      */
     public void setModelId(String modelId) {
 		this.modelId = modelId;
 	}
 
     /**
-     * Gets model name.
+     * Gets entity name.
      *
-     * @return the model name
+     * @return the entity name
      */
     public String getModelName() {
 		return this.modelName;
 	}
 
     /**
-     * Sets model name.
+     * Sets entity name.
      *
-     * @param modelName the model name
+     * @param modelName the entity name
      */
     public void setModelName(String modelName) {
 		this.modelName = modelName;

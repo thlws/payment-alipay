@@ -1,4 +1,4 @@
-package org.thlws.payment.alipay.model;
+package org.thlws.payment.alipay.entity.response;
 
 import org.thlws.payment.alipay.utils.JsonUtil;
 
@@ -9,7 +9,7 @@ import java.io.Serializable;
  * @author Hanley Tang
  * @version 1.0
  */
-public class AlipayQrcodeOutput implements Serializable{
+public class AlipayQrcodeResponse implements Serializable{
 
 	private String outTradeNo;
 	private String qrCode;

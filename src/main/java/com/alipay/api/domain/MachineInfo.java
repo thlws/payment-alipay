@@ -50,18 +50,18 @@ public class MachineInfo extends AlipayObject {
 	}
 
     /**
-     * Gets machine model.
+     * Gets machine entity.
      *
-     * @return the machine model
+     * @return the machine entity
      */
     public String getMachineModel() {
 		return this.machineModel;
 	}
 
     /**
-     * Sets machine model.
+     * Sets machine entity.
      *
-     * @param machineModel the machine model
+     * @param machineModel the machine entity
      */
     public void setMachineModel(String machineModel) {
 		this.machineModel = machineModel;

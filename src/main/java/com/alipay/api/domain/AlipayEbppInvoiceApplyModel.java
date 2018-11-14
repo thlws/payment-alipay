@@ -93,18 +93,18 @@ PAYEE:销售方;PAYER:购买方
 	}
 
     /**
-     * Gets invoice apply model.
+     * Gets invoice apply entity.
      *
-     * @return the invoice apply model
+     * @return the invoice apply entity
      */
     public InvoiceApplyOpenModel getInvoiceApplyModel() {
 		return this.invoiceApplyModel;
 	}
 
     /**
-     * Sets invoice apply model.
+     * Sets invoice apply entity.
      *
-     * @param invoiceApplyModel the invoice apply model
+     * @param invoiceApplyModel the invoice apply entity
      */
     public void setInvoiceApplyModel(InvoiceApplyOpenModel invoiceApplyModel) {
 		this.invoiceApplyModel = invoiceApplyModel;

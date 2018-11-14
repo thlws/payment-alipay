@@ -43,18 +43,18 @@ public class KoubeiItemExtitemBatchqueryResponse extends AlipayResponse {
 	private String totalSize;
 
     /**
-     * Sets model list.
+     * Sets entity list.
      *
-     * @param modelList the model list
+     * @param modelList the entity list
      */
     public void setModelList(List<ExtItem> modelList) {
 		this.modelList = modelList;
 	}
 
     /**
-     * Gets model list.
+     * Gets entity list.
      *
-     * @return the model list
+     * @return the entity list
      */
     public List<ExtItem> getModelList( ) {
 		return this.modelList;

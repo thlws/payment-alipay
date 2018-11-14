@@ -1,11 +1,12 @@
-package org.thlws.payment.alipay.model;
+package org.thlws.payment.alipay.entity.request;
 
 import org.thlws.payment.alipay.utils.JsonUtil;
 
 /**
+ * 支付宝退款
  * Created by HanleyTang on 2017/3/4.
  */
-public class AlipayRefundInput {
+public class AlipayRefundRequest {
 
     private String tradeNo;//支付宝交易号,tradeNo| outTradeNo二选一
     private String outTradeNo;//(特殊 tradeNo| outTradeNo二选一) 商户网站订单系统中唯一订单号，64个字符以内，只能包含字母、数字、下划线

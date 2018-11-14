@@ -9,7 +9,7 @@ import com.alipay.api.response.AlipayMarketingDataModelQueryResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: alipay.marketing.data.model.query request
+ * ALIPAY API: alipay.marketing.data.entity.query request
  *
  * @author auto create
  * @since 1.0, 2017-04-27 14:36:26
@@ -98,7 +98,7 @@ public class AlipayMarketingDataModelQueryRequest implements AlipayRequest<Alipa
 	}
 
 	public String getApiMethodName() {
-		return "alipay.marketing.data.model.query";
+		return "alipay.marketing.data.entity.query";
 	}
 
 	public Map<String, String> getTextParams() {		

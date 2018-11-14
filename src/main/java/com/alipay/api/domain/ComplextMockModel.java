@@ -32,18 +32,18 @@ public class ComplextMockModel extends AlipayObject {
 	private String bizType;
 
     /**
-     * Gets biz model.
+     * Gets biz entity.
      *
-     * @return the biz model
+     * @return the biz entity
      */
     public SimpleMockModel getBizModel() {
 		return this.bizModel;
 	}
 
     /**
-     * Sets biz model.
+     * Sets biz entity.
      *
-     * @param bizModel the biz model
+     * @param bizModel the biz entity
      */
     public void setBizModel(SimpleMockModel bizModel) {
 		this.bizModel = bizModel;

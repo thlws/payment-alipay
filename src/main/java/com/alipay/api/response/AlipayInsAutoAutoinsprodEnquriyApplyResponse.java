@@ -37,18 +37,18 @@ public class AlipayInsAutoAutoinsprodEnquriyApplyResponse extends AlipayResponse
 	private String outBizNo;
 
     /**
-     * Sets car model.
+     * Sets car entity.
      *
-     * @param carModel the car model
+     * @param carModel the car entity
      */
     public void setCarModel(List<CarModel> carModel) {
 		this.carModel = carModel;
 	}
 
     /**
-     * Gets car model.
+     * Gets car entity.
      *
-     * @return the car model
+     * @return the car entity
      */
     public List<CarModel> getCarModel( ) {
 		return this.carModel;

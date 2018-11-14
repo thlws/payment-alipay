@@ -93,18 +93,18 @@ public class AlipayCommerceIotMdeviceprodAssetQueryResponse extends AlipayRespon
 	}
 
     /**
-     * Sets model number.
+     * Sets entity number.
      *
-     * @param modelNumber the model number
+     * @param modelNumber the entity number
      */
     public void setModelNumber(String modelNumber) {
 		this.modelNumber = modelNumber;
 	}
 
     /**
-     * Gets model number.
+     * Gets entity number.
      *
-     * @return the model number
+     * @return the entity number
      */
     public String getModelNumber( ) {
 		return this.modelNumber;

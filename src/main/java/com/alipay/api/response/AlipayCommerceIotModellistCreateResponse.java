@@ -24,18 +24,18 @@ public class AlipayCommerceIotModellistCreateResponse extends AlipayResponse {
 	private List<String> duplicatedModelIds;
 
     /**
-     * Sets duplicated model ids.
+     * Sets duplicated entity ids.
      *
-     * @param duplicatedModelIds the duplicated model ids
+     * @param duplicatedModelIds the duplicated entity ids
      */
     public void setDuplicatedModelIds(List<String> duplicatedModelIds) {
 		this.duplicatedModelIds = duplicatedModelIds;
 	}
 
     /**
-     * Gets duplicated model ids.
+     * Gets duplicated entity ids.
      *
-     * @return the duplicated model ids
+     * @return the duplicated entity ids
      */
     public List<String> getDuplicatedModelIds( ) {
 		return this.duplicatedModelIds;

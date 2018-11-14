@@ -8,7 +8,7 @@ import com.alipay.api.domain.ModelMeta;
 import com.alipay.api.AlipayResponse;
 
 /**
- * ALIPAY API: alipay.marketing.data.model.batchquery response.
+ * ALIPAY API: alipay.marketing.data.entity.batchquery response.
  *
  * @author auto create
  * @since 1.0, 2017-04-27 14:36:19
@@ -35,18 +35,18 @@ query_key:查询参数。此为查询外部用户身份信息类型
 	private String totalPageCount;
 
     /**
-     * Sets model meta.
+     * Sets entity meta.
      *
-     * @param modelMeta the model meta
+     * @param modelMeta the entity meta
      */
     public void setModelMeta(List<ModelMeta> modelMeta) {
 		this.modelMeta = modelMeta;
 	}
 
     /**
-     * Gets model meta.
+     * Gets entity meta.
      *
-     * @return the model meta
+     * @return the entity meta
      */
     public List<ModelMeta> getModelMeta( ) {
 		return this.modelMeta;

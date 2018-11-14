@@ -8,7 +8,7 @@ import com.alipay.api.domain.ModelColumn;
 import com.alipay.api.AlipayResponse;
 
 /**
- * ALIPAY API: alipay.marketing.data.model.query response.
+ * ALIPAY API: alipay.marketing.data.entity.query response.
  *
  * @author auto create
  * @since 1.0, 2017-04-27 14:36:26
@@ -27,18 +27,18 @@ data:列值。此为模型数值
 	private List<ModelColumn> modelColumn;
 
     /**
-     * Sets model column.
+     * Sets entity column.
      *
-     * @param modelColumn the model column
+     * @param modelColumn the entity column
      */
     public void setModelColumn(List<ModelColumn> modelColumn) {
 		this.modelColumn = modelColumn;
 	}
 
     /**
-     * Gets model column.
+     * Gets entity column.
      *
-     * @return the model column
+     * @return the entity column
      */
     public List<ModelColumn> getModelColumn( ) {
 		return this.modelColumn;

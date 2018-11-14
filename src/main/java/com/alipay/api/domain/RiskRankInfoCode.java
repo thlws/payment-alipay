@@ -92,18 +92,18 @@ public class RiskRankInfoCode extends AlipayObject {
 	}
 
     /**
-     * Gets model name.
+     * Gets entity name.
      *
-     * @return the model name
+     * @return the entity name
      */
     public String getModelName() {
 		return this.modelName;
 	}
 
     /**
-     * Sets model name.
+     * Sets entity name.
      *
-     * @param modelName the model name
+     * @param modelName the entity name
      */
     public void setModelName(String modelName) {
 		this.modelName = modelName;

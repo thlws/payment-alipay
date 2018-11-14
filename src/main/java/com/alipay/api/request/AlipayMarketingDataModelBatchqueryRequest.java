@@ -9,7 +9,7 @@ import com.alipay.api.response.AlipayMarketingDataModelBatchqueryResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: alipay.marketing.data.model.batchquery request
+ * ALIPAY API: alipay.marketing.data.entity.batchquery request
  *
  * @author auto create
  * @since 1.0, 2017-04-27 14:36:19
@@ -98,7 +98,7 @@ public class AlipayMarketingDataModelBatchqueryRequest implements AlipayRequest<
 	}
 
 	public String getApiMethodName() {
-		return "alipay.marketing.data.model.batchquery";
+		return "alipay.marketing.data.entity.batchquery";
 	}
 
 	public Map<String, String> getTextParams() {		

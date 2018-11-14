@@ -13,7 +13,8 @@ import com.alipay.trade.service.impl.AlipayTradeServiceImpl;
 import org.apache.commons.beanutils.BeanUtilsBean;
 import org.apache.commons.lang.StringUtils;
 
-import org.thlws.payment.alipay.model.*;
+import org.thlws.payment.alipay.entity.request.*;
+import org.thlws.payment.alipay.entity.response.*;
 import org.thlws.payment.alipay.utils.JsonUtil;
 
 /**
@@ -24,10 +25,10 @@ import org.thlws.payment.alipay.utils.JsonUtil;
  * <pre>
  *  AlipayCore.ClientBuilder clientBuilder = new AlipayCore.ClientBuilder();
  *  AlipayCore alipayCore = clientBuilder.setAlipay_public_key("xxx").setApp_id("xxx").setPrivate_key("xxx").build();
- *  alipayCore.pay_in_h5(input);
- *  alipayCore.pay(input);
+ *  alipayCore.pay_in_h5(request);
+ *  alipayCore.pay(request);
  *  alipayCore.query(outTradeNo);
- *  alipayCore.refund(input);
+ *  alipayCore.refund(request);
  * </pre>
  * Created by HanleyTang on 2017/3/3.
  */
@@ -87,8 +88,7 @@ public class AlipayCore {
          */
         public AlipayCore build() {
 
-//            if (StringUtils.isEmpty(alipay_public_key))
-//                throw new NullPointerException("please set alipay_public_key first!");
+
 
             if (StringUtils.isEmpty(app_id))
                 throw new NullPointerException("please set appid first!");
@@ -102,6 +102,8 @@ public class AlipayCore {
                 }
             }
 
+            if (StringUtils.isEmpty(alipay_public_key) && sign_type.equalsIgnoreCase(AlipayConstants.SIGN_TYPE_RSA2))
+                throw new NullPointerException("please set alipay_public_key first,when you using RSA2");
 
 
             return new AlipayCore(this);
@@ -193,31 +195,31 @@ public class AlipayCore {
      * 支付宝手机网页支付,支付宝新接口,在手机上可直接调用支付宝APP完成支付宝(有安装支付宝APP情况)<br>
      * @see <a href="https://docs.open.alipay.com/203/105285">https://docs.open.alipay.com/203/105285</a>
      * @see <a href="https://docs.open.alipay.com/203/105286">https://docs.open.alipay.com/203/105286</a>
-     * @param input the input 新版网页支付参数
+     * @param request the request 新版网页支付参数
      * @return string 支付宝产生用于网页支付的html.
      * @throws Exception the exception
      */
-    public String pay_in_h5(AlipayH5Input input) throws Exception{
+    public String pay_in_h5(AlipayH5Request request) throws Exception{
 
-        System.out.println("pay_in_h5 input=\n" + input.toString());
+        System.out.println("pay_in_h5 request=\n" + request.toString());
         String form = "<font style='color: red'>请求支付宝超时,请稍后再试!</font>";
 
         try {
             if (null == builder)
                 throw new Exception("Please set AlipayCore.ClientBuider first.");
-            String biz_content = JsonUtil.beanToJsontring(input.getBizContent());
+            String biz_content = JsonUtil.beanToJsontring(request.getBizContent());
             AlipayClient alipayClient = new DefaultAlipayClient("https://openapi.alipay.com/gateway.do",
                     builder.getApp_id(), builder.getPrivate_key(), "json", "utf-8", builder.getAlipay_public_key());
             AlipayTradeWapPayRequest alipayRequest = new AlipayTradeWapPayRequest();// 创建API对应的request
-            alipayRequest.setReturnUrl(input.getReturn_url());
-            alipayRequest.setNotifyUrl(input.getNotify_url());// 在公共参数中设置回跳和通知地址
+            alipayRequest.setReturnUrl(request.getReturn_url());
+            alipayRequest.setNotifyUrl(request.getNotify_url());// 在公共参数中设置回跳和通知地址
             alipayRequest.setBizContent(biz_content);// 填充业务参数
             form = alipayClient.pageExecute(alipayRequest).getBody(); // 调用SDK生成表单
         } catch (Exception e) {
             System.err.println("支付宝网页支付数据产生失败:" + e.getMessage());
-            throw  new Exception("支付宝网页支付数据产生失败:" + e.getMessage());
+            throw e;
         } finally {
-            System.out.println("pay_in_h5 output=\n" + form);
+            System.out.println("pay_in_h5 response=\n" + form);
         }
 
         return form;
@@ -225,31 +227,31 @@ public class AlipayCore {
 
     /***
      * 支付宝电脑网站支付，该操作会跳转到支付宝的支付页面中完成支付动作，以 异步/同步 的形式告知支付结果
-     * @param input 支付参数对象
+     * @param request 支付参数对象
      * @return 返回支付宝页面,直接输出在页面中
      * @throws Exception 程序异常
      */
-    public String pay_in_pc(AlipayPcInput input) throws Exception{
+    public String pay_in_pc(AlipayWebRequest request) throws Exception{
 
-        System.out.println("pay_in_pc input=\n" + input.toString());
+        System.out.println("pay_in_pc request=\n" + request.toString());
         String form = "<font style='color: red'>请求支付宝超时,请稍后再试!</font>";
 
         try {
             if (null == builder)
                 throw new Exception("Please set AlipayCore.ClientBuider first.");
-            String biz_content = JsonUtil.beanToJsontring(input.getBizContent());
+            String biz_content = JsonUtil.beanToJsontring(request.getBizContent());
             AlipayClient alipayClient = new DefaultAlipayClient("https://openapi.alipay.com/gateway.do",
                     builder.getApp_id(), builder.getPrivate_key(), "json", "utf-8", builder.getAlipay_public_key());
             AlipayTradePagePayRequest alipayRequest = new AlipayTradePagePayRequest();// 创建API对应的request
-            alipayRequest.setReturnUrl(input.getReturn_url());
-            alipayRequest.setNotifyUrl(input.getNotify_url());// 在公共参数中设置回跳和通知地址
+            alipayRequest.setReturnUrl(request.getReturn_url());
+            alipayRequest.setNotifyUrl(request.getNotify_url());// 在公共参数中设置回跳和通知地址
             alipayRequest.setBizContent(biz_content);// 填充业务参数
             form = alipayClient.pageExecute(alipayRequest).getBody(); // 调用SDK生成表单
         } catch (Exception e) {
             System.err.println("支付宝网站支付数据产生失败:" + e.getMessage());
-            throw  new Exception("支付完整页支付数据产生失败:" + e.getMessage());
+            throw e;
         } finally {
-            System.out.println("pay_in_pc output=\n" + form);
+            System.out.println("pay_in_pc response=\n" + form);
         }
 
         return form;
@@ -262,14 +264,14 @@ public class AlipayCore {
      *
      * @see <a href="https://docs.open.alipay.com/194/105170">https://docs.open.alipay.com/194/105170</a>
      *
-     * @param input the input 扫码支付所需参数
-     * @return the alipay qrcode output 扫码支付结果
+     * @param request the request 扫码支付所需参数
+     * @return the alipay qrcode response 扫码支付结果
      * @throws Exception the exception
      */
-    public AlipayQrcodeOutput precreate(AlipayQrcodeInput input) throws Exception{
+    public AlipayQrcodeResponse precreate(AlipayQrcodeRequest request) throws Exception{
 
-        System.out.println("precreate input=\n" + input.toString());
-        AlipayQrcodeOutput output = new AlipayQrcodeOutput();
+        System.out.println("precreate request=\n" + request.toString());
+        AlipayQrcodeResponse response = new AlipayQrcodeResponse();
 
         try {
             if (null == tradeService)
@@ -281,69 +283,69 @@ public class AlipayCore {
 
             // 创建扫码支付请求builder，设置请求参数
             AlipayTradePrecreateRequestBuilder builder = new AlipayTradePrecreateRequestBuilder()
-                    .setSubject(input.getSubject())
-                    .setTotalAmount(input.getTotalAmount())
-                    .setOutTradeNo(input.getOutTradeNo())
-                    .setUndiscountableAmount(input.getUndiscountableAmount())
-                    .setSellerId(input.getSellerId())
-                    .setBody(input.getBody())
-                    .setOperatorId(input.getOperatorId())
-                    .setStoreId(input.getStoreId())
+                    .setSubject(request.getSubject())
+                    .setTotalAmount(request.getTotalAmount())
+                    .setOutTradeNo(request.getOutTradeNo())
+                    .setUndiscountableAmount(request.getUndiscountableAmount())
+                    .setSellerId(request.getSellerId())
+                    .setBody(request.getBody())
+                    .setOperatorId(request.getOperatorId())
+                    .setStoreId(request.getStoreId())
                     .setExtendParams(extendParams);
 
             AlipayF2FPrecreateResult result = tradeService.tradePrecreate(builder);
-            output.setSuccess(result.isTradeSuccess());
+            response.setSuccess(result.isTradeSuccess());
 
             switch (result.getTradeStatus()) {
                 case SUCCESS:
-                    output.setDesc("支付宝预下单成功");
-                    output.setOutTradeNo(result.getResponse().getOutTradeNo());
-                    output.setQrCode(result.getResponse().getQrCode());
-                    output.setCode(result.getResponse().getCode());
-                    output.setMsg(result.getResponse().getMsg());
+                    response.setDesc("支付宝预下单成功");
+                    response.setOutTradeNo(result.getResponse().getOutTradeNo());
+                    response.setQrCode(result.getResponse().getQrCode());
+                    response.setCode(result.getResponse().getCode());
+                    response.setMsg(result.getResponse().getMsg());
                     break;
                 case FAILED:
-                    output.setDesc("支付宝预下单失败!");
-                    output.setSubCode(result.getResponse().getSubCode());
-                    output.setSubMsg(result.getResponse().getSubMsg());
-                    output.setCode(result.getResponse().getCode());
-                    output.setMsg(result.getResponse().getMsg());
+                    response.setDesc("支付宝预下单失败!");
+                    response.setSubCode(result.getResponse().getSubCode());
+                    response.setSubMsg(result.getResponse().getSubMsg());
+                    response.setCode(result.getResponse().getCode());
+                    response.setMsg(result.getResponse().getMsg());
                     break;
                 case UNKNOWN:
-                    output.setDesc("系统异常，预下单状态未知!");
-                    output.setSubCode(result.getResponse().getSubCode());
-                    output.setSubMsg(result.getResponse().getSubMsg());
-                    output.setCode(result.getResponse().getCode());
-                    output.setMsg(result.getResponse().getMsg());
+                   response.setDesc("系统异常，预下单状态未知!");
+                   response.setSubCode(result.getResponse().getSubCode());
+                   response.setSubMsg(result.getResponse().getSubMsg());
+                   response.setCode(result.getResponse().getCode());
+                   response.setMsg(result.getResponse().getMsg());
                     break;
                 default:
-                    output.setDesc("不支持的交易状态，交易返回异常!");
-                    output.setSubCode(result.getResponse().getSubCode());
-                    output.setSubMsg(result.getResponse().getSubMsg());
-                    output.setCode(result.getResponse().getCode());
-                    output.setMsg(result.getResponse().getMsg());
+                    response.setDesc("不支持的交易状态，交易返回异常!");
+                    response.setSubCode(result.getResponse().getSubCode());
+                    response.setSubMsg(result.getResponse().getSubMsg());
+                    response.setCode(result.getResponse().getCode());
+                    response.setMsg(result.getResponse().getMsg());
                     break;
             }
         } catch (Exception e) {
             System.err.println("当面付.扫码支付 调用预订单API失败:" + e.getMessage());
-            throw new Exception("当面付.扫码支付 调用预订单API失败:" + e.getMessage());
+            throw e;
         } finally {
-            System.out.println("precreate output=\n" + output.toString());
+            System.out.println("precreate response=\n" + response.toString());
         }
-        return output;
+        return response;
     }
 
     /***
      * 当面付.条码支付,是支付宝给到线下传统行业的一种收款方式。商户使用扫码枪等条码识别设备扫描用户支付宝钱包上的条码/二维码，完成收款。用户仅需出示付款码，所有操作由商户端完成。
      * @see <a href="https://docs.open.alipay.com/194/105170">https://docs.open.alipay.com/194/105170</a>
-     * @param input the input 条码支付 所需参数
-     * @return alipay trade output 条码支付所需参数
+     * @param request the request 条码支付 所需参数
+     * @return alipay trade response 条码支付所需参数
      * @throws Exception the exception
      */
-    public AlipayTradeOutput pay(AlipayTradeInput input) throws Exception{
+    public AlipayTradeResponse pay(AlipayTradeRequest request) throws Exception{
 
-        System.out.println("pay input=\n" + input.toString());
-        AlipayTradeOutput output = new AlipayTradeOutput();
+        System.out.println("pay request=\n" + request.toString());
+        AlipayTradeResponse response = new AlipayTradeResponse();
 
         try {
 
@@ -357,54 +359,54 @@ public class AlipayCore {
 
             AlipayTradePayRequestBuilder builder = new AlipayTradePayRequestBuilder()
                     //            .setAppAuthToken(appAuthToken)
-                    .setOutTradeNo(input.getOutTradeNo()).setSubject(input.getSubject()).setAuthCode(input.getAuthCode())
-                    .setTotalAmount(input.getTotalAmount()).setStoreId(input.getStoreId())
-                    .setUndiscountableAmount(input.getUndiscountableAmount()).setBody(input.getBody()).setOperatorId(input.getOperatorId())
-                    .setExtendParams(extendParams).setSellerId(input.getSellerId())
-                    .setGoodsDetailList(input.getGoodsDetailList());
+                    .setOutTradeNo(request.getOutTradeNo()).setSubject(request.getSubject()).setAuthCode(request.getAuthCode())
+                    .setTotalAmount(request.getTotalAmount()).setStoreId(request.getStoreId())
+                    .setUndiscountableAmount(request.getUndiscountableAmount()).setBody(request.getBody()).setOperatorId(request.getOperatorId())
+                    .setExtendParams(extendParams).setSellerId(request.getSellerId())
+                    .setGoodsDetailList(request.getGoodsDetailList());
 
             AlipayF2FPayResult result = tradeService.tradePay(builder);
 
-            output.setSuccess(result.isTradeSuccess());
+            response.setSuccess(result.isTradeSuccess());
 
             switch (result.getTradeStatus()) {
                 case SUCCESS:
                     BeanUtilsBean copyBean = BeanUtilsBean.getInstance();
-                    copyBean.copyProperties(output, result.getResponse());
-                    output.setDesc("支付宝支付成功");
-                    output.setCode(result.getResponse().getCode());
-                    output.setMsg(result.getResponse().getMsg());
+                    copyBean.copyProperties(response, result.getResponse());
+                    response.setDesc("支付宝支付成功");
+                    response.setCode(result.getResponse().getCode());
+                    response.setMsg(result.getResponse().getMsg());
                     break;
                 case FAILED:
-                    output.setDesc("支付宝支付失败");
-                    output.setSubCode(result.getResponse().getSubCode());
-                    output.setSubMsg(result.getResponse().getSubMsg());
-                    output.setCode(result.getResponse().getCode());
-                    output.setMsg(result.getResponse().getMsg());
+                    response.setDesc("支付宝支付失败");
+                    response.setSubCode(result.getResponse().getSubCode());
+                    response.setSubMsg(result.getResponse().getSubMsg());
+                    response.setCode(result.getResponse().getCode());
+                    response.setMsg(result.getResponse().getMsg());
                     break;
                 case UNKNOWN:
-                    output.setDesc("系统异常，订单状态未知!");
-                    output.setSubCode(result.getResponse().getSubCode());
-                    output.setSubMsg(result.getResponse().getSubMsg());
-                    output.setCode(result.getResponse().getCode());
-                    output.setMsg(result.getResponse().getMsg());
+                    response.setDesc("系统异常，订单状态未知!");
+                    response.setSubCode(result.getResponse().getSubCode());
+                    response.setSubMsg(result.getResponse().getSubMsg());
+                    response.setCode(result.getResponse().getCode());
+                    response.setMsg(result.getResponse().getMsg());
                     break;
                 default:
-                    output.setDesc("不支持的交易状态，交易返回异常!");
-                    output.setSubCode(result.getResponse().getSubCode());
-                    output.setSubMsg(result.getResponse().getSubMsg());
-                    output.setCode(result.getResponse().getCode());
-                    output.setMsg(result.getResponse().getMsg());
+                    response.setDesc("不支持的交易状态，交易返回异常!");
+                    response.setSubCode(result.getResponse().getSubCode());
+                    response.setSubMsg(result.getResponse().getSubMsg());
+                    response.setCode(result.getResponse().getCode());
+                    response.setMsg(result.getResponse().getMsg());
                     break;
             }
 
         } catch (Exception e) {
             System.err.println("当面付.条码支付 失败:" + e.getMessage());
-            throw new Exception("当面付.条码支付 失败:" + e.getMessage());
+            throw e;
         } finally {
-            System.out.println("pay output=\n" + output.toString());
+            System.out.println("pay response=\n" + response.toString());
         }
-        return output;
+        return response;
     }
 
 
@@ -412,13 +414,13 @@ public class AlipayCore {
      * 查询支付订单.
      *
      * @param outTradeNo the out trade no
-     * @return the alipay query output
+     * @return the alipay query response
      * @throws Exception the exception
      */
-    public AlipayQueryOutput query(String outTradeNo) throws Exception {
+    public AlipayQueryResponse query(String outTradeNo) throws Exception {
 
         System.out.println("query outTradeNo=" + outTradeNo);
-        AlipayQueryOutput output = new AlipayQueryOutput();
+        AlipayQueryResponse response = new AlipayQueryResponse();
 
         try {
             if (null == tradeService)
@@ -427,48 +429,48 @@ public class AlipayCore {
             AlipayTradeQueryRequestBuilder builder = new AlipayTradeQueryRequestBuilder()
                     .setOutTradeNo(outTradeNo);
             AlipayF2FQueryResult result = tradeService.queryTradeResult(builder);
-            output.setSuccess(result.isTradeSuccess());
+            response.setSuccess(result.isTradeSuccess());
 
             if (null != result.getResponse()) {
                 BeanUtilsBean copyBean = BeanUtilsBean.getInstance();
-                copyBean.copyProperties(output, result.getResponse());
+                copyBean.copyProperties(response, result.getResponse());
             }
 
             switch (result.getTradeStatus()) {
                 case SUCCESS:
-                    output.setDesc("查询返回该订单支付成功");
-                    output.setCode(result.getResponse().getCode());
-                    output.setMsg(result.getResponse().getMsg());
+                    response.setDesc("查询返回该订单支付成功");
+                    response.setCode(result.getResponse().getCode());
+                    response.setMsg(result.getResponse().getMsg());
                     break;
                 case FAILED:
-                    output.setDesc("查询返回该订单支付失败或被关闭!");
-                    output.setSubCode(result.getResponse().getSubCode());
-                    output.setSubMsg(result.getResponse().getSubMsg());
-                    output.setCode(result.getResponse().getCode());
-                    output.setMsg(result.getResponse().getMsg());
+                    response.setDesc("查询返回该订单支付失败或被关闭!");
+                    response.setSubCode(result.getResponse().getSubCode());
+                    response.setSubMsg(result.getResponse().getSubMsg());
+                    response.setCode(result.getResponse().getCode());
+                    response.setMsg(result.getResponse().getMsg());
                     break;
                 case UNKNOWN:
-                    output.setDesc("系统异常，订单支付状态未知!");
-                    output.setSubCode(result.getResponse().getSubCode());
-                    output.setSubMsg(result.getResponse().getSubMsg());
-                    output.setCode(result.getResponse().getCode());
-                    output.setMsg(result.getResponse().getMsg());
+                    response.setDesc("系统异常，订单支付状态未知!");
+                    response.setSubCode(result.getResponse().getSubCode());
+                    response.setSubMsg(result.getResponse().getSubMsg());
+                    response.setCode(result.getResponse().getCode());
+                    response.setMsg(result.getResponse().getMsg());
                     break;
                 default:
-                    output.setDesc("不支持的交易状态，交易返回异常!");
-                    output.setSubCode(result.getResponse().getSubCode());
-                    output.setSubMsg(result.getResponse().getSubMsg());
-                    output.setCode(result.getResponse().getCode());
-                    output.setMsg(result.getResponse().getMsg());
+                    response.setDesc("不支持的交易状态，交易返回异常!");
+                    response.setSubCode(result.getResponse().getSubCode());
+                    response.setSubMsg(result.getResponse().getSubMsg());
+                    response.setCode(result.getResponse().getCode());
+                    response.setMsg(result.getResponse().getMsg());
                     break;
             }
         } catch (Exception e) {
             System.err.println("查询订单失败:" + e.getMessage());
-            throw new Exception("查询订单失败:" + e.getMessage());
+            throw e;
         } finally {
-            System.out.println("query output=\n" + output.toString());
+            System.out.println("query response=\n" + response.toString());
         }
-        return output;
+        return response;
     }
 
 
@@ -477,15 +479,15 @@ public class AlipayCore {
      * 退款接口会根据外部请求号out_request_no幂等返回，因此同一笔需要多次部分退款时，必须使用不同的out_request_no
      * @see <a href="https://docs.open.alipay.com/api_1/alipay.trade.refund">https://docs.open.alipay.com/api_1/alipay.trade.refund</a>
      *
-     * @param input the input 退款参数
-     * @return 退款结果 alipay refund output
+     * @param request the request 退款参数
+     * @return 退款结果 alipay refund response
      * @throws Exception the exception
      */
-    public AlipayRefundOutput refund(AlipayRefundInput input) throws Exception{
+    public AlipayRefundResponse refund(AlipayRefundRequest request) throws Exception{
 
-        System.out.println("refund input=\n" + input.toString());
+        System.out.println("refund request=\n" + request.toString());
 
-        AlipayRefundOutput output = new AlipayRefundOutput();
+        AlipayRefundResponse response = new AlipayRefundResponse();
 
         try {
             if (null == tradeService)
@@ -493,21 +495,21 @@ public class AlipayCore {
 
             AlipayTradeRefundRequestBuilder builder = new AlipayTradeRefundRequestBuilder();
 
-            if (StringUtils.isBlank(input.getOutTradeNo()) && StringUtils.isBlank(input.getTradeNo()))
+            if (StringUtils.isBlank(request.getOutTradeNo()) && StringUtils.isBlank(request.getTradeNo()))
                 throw new Exception("trade_no , out_trade_no 不能同时为空");
-            if(StringUtils.isBlank(input.getRefundAmount()))
+            if(StringUtils.isBlank(request.getRefundAmount()))
                 throw new Exception("refundAmount 不能为空");
 
-            if (StringUtils.isNotBlank(input.getOutTradeNo()))
-                builder.setOutTradeNo(input.getOutTradeNo());
-            if (StringUtils.isNotBlank(input.getTradeNo()))
-                builder.setTradeNo(input.getTradeNo());
-            if (StringUtils.isNotBlank(input.getRefundReason()))
-                builder.setRefundReason(input.getRefundReason());
-            if (StringUtils.isNotBlank(input.getStoreId()))
-                builder.setStoreId(input.getStoreId());
-            if (StringUtils.isNotBlank(input.getOutRequestNo()))
-                builder.setOutRequestNo(input.getOutRequestNo());
+            if (StringUtils.isNotBlank(request.getOutTradeNo()))
+                builder.setOutTradeNo(request.getOutTradeNo());
+            if (StringUtils.isNotBlank(request.getTradeNo()))
+                builder.setTradeNo(request.getTradeNo());
+            if (StringUtils.isNotBlank(request.getRefundReason()))
+                builder.setRefundReason(request.getRefundReason());
+            if (StringUtils.isNotBlank(request.getStoreId()))
+                builder.setStoreId(request.getStoreId());
+            if (StringUtils.isNotBlank(request.getOutRequestNo()))
+                builder.setOutRequestNo(request.getOutRequestNo());
 
 
             //trade_no , out_trade_no 不能同时存在,否则支付宝会报错ACQ.TRADE_STATUS_ERROR.交易状态不合法
@@ -515,109 +517,105 @@ public class AlipayCore {
                 builder.setTradeNo(null);
             }
 
-            builder.setRefundAmount(input.getRefundAmount());
+            builder.setRefundAmount(request.getRefundAmount());
 
             AlipayF2FRefundResult result = tradeService.tradeRefund(builder);
-            output.setSuccess(result.isTradeSuccess());
+            response.setSuccess(result.isTradeSuccess());
             switch (result.getTradeStatus()) {
                 case SUCCESS:
                     BeanUtilsBean copyBean = BeanUtilsBean.getInstance();
-                    copyBean.copyProperties(output, result.getResponse());
-                    output.setDesc("支付宝退款成功");
-                    output.setCode(result.getResponse().getCode());
-                    output.setMsg(result.getResponse().getMsg());
+                    copyBean.copyProperties(response, result.getResponse());
+                   response.setDesc("支付宝退款成功");
+                   response.setCode(result.getResponse().getCode());
+                   response.setMsg(result.getResponse().getMsg());
                     break;
                 case FAILED:
-                    output.setDesc("支付宝退款失败");
-                    output.setSubCode(result.getResponse().getSubCode());
-                    output.setSubMsg(result.getResponse().getSubMsg());
-                    output.setCode(result.getResponse().getCode());
-                    output.setMsg(result.getResponse().getMsg());
+                    response.setDesc("支付宝退款失败");
+                    response.setSubCode(result.getResponse().getSubCode());
+                    response.setSubMsg(result.getResponse().getSubMsg());
+                    response.setCode(result.getResponse().getCode());
+                    response.setMsg(result.getResponse().getMsg());
                     break;
                 case UNKNOWN:
-                    output.setDesc("系统异常，订单退款状态未知!");
-                    output.setSubCode(result.getResponse().getSubCode());
-                    output.setSubMsg(result.getResponse().getSubMsg());
-                    output.setCode(result.getResponse().getCode());
-                    output.setMsg(result.getResponse().getMsg());
+                    response.setDesc("系统异常，订单退款状态未知!");
+                    response.setSubCode(result.getResponse().getSubCode());
+                    response.setSubMsg(result.getResponse().getSubMsg());
+                    response.setCode(result.getResponse().getCode());
+                    response.setMsg(result.getResponse().getMsg());
                     break;
                 default:
-                    output.setDesc("不支持的交易状态，交易返回异常!");
-                    output.setSubCode(result.getResponse().getSubCode());
-                    output.setSubMsg(result.getResponse().getSubMsg());
-                    output.setCode(result.getResponse().getCode());
-                    output.setMsg(result.getResponse().getMsg());
+                    response.setDesc("不支持的交易状态，交易返回异常!");
+                    response.setSubCode(result.getResponse().getSubCode());
+                    response.setSubMsg(result.getResponse().getSubMsg());
+                    response.setCode(result.getResponse().getCode());
+                    response.setMsg(result.getResponse().getMsg());
                     break;
             }
         } catch (Exception e) {
             System.err.println("支付宝退款失败:" + e.getMessage());
-            throw new Exception("支付宝退款失败:" + e.getMessage());
+            throw e;
         } finally {
-            System.out.println("refund output=\n" + output.toString());
+            System.out.println("refund response=\n" + response.toString());
         }
 
-        return output;
+        return response;
     }
 
     /**
      * 撤销订单
      *
      * @param outTradeNo the out trade no
-     * @return the alipay cancel output
+     * @return the alipay cancel response
      * @throws Exception the exception
      */
-    public AlipayCancelOutput cancel(String outTradeNo) throws Exception {
-        AlipayCancelOutput output = new AlipayCancelOutput();
+    public AlipayCancelResponse cancel(String outTradeNo) throws Exception {
+        AlipayCancelResponse response = new AlipayCancelResponse();
 
         try {
             AlipayTradeCancelRequestBuilder builder = new AlipayTradeCancelRequestBuilder();
             builder.setOutTradeNo(outTradeNo);
 
             AlipayF2FCancelResult result = tradeService.tradeCancel_II(builder);
-            output.setSuccess(result.isTradeSuccess());
+            response.setSuccess(result.isTradeSuccess());
             switch (result.getTradeStatus()) {
                 case SUCCESS:
                     BeanUtilsBean copyBean = BeanUtilsBean.getInstance();
-                    copyBean.copyProperties(output, result.getResponse());
-                    output.setDesc("支付宝撤销成功");
-                    output.setCode(result.getResponse().getCode());
-                    output.setMsg(result.getResponse().getMsg());
+                    copyBean.copyProperties(response, result.getResponse());
+                    response.setDesc("支付宝撤销成功");
+                    response.setCode(result.getResponse().getCode());
+                    response.setMsg(result.getResponse().getMsg());
                     break;
                 case FAILED:
-                    output.setDesc("支付宝撤销失败");
-                    output.setSubCode(result.getResponse().getSubCode());
-                    output.setSubMsg(result.getResponse().getSubMsg());
-                    output.setCode(result.getResponse().getCode());
-                    output.setMsg(result.getResponse().getMsg());
+                    response.setDesc("支付宝撤销失败");
+                    response.setSubCode(result.getResponse().getSubCode());
+                    response.setSubMsg(result.getResponse().getSubMsg());
+                    response.setCode(result.getResponse().getCode());
+                    response.setMsg(result.getResponse().getMsg());
                     break;
                 case UNKNOWN:
-                    output.setDesc("系统异常，订单撤销状态未知!");
-                    output.setSubCode(result.getResponse().getSubCode());
-                    output.setSubMsg(result.getResponse().getSubMsg());
-                    output.setCode(result.getResponse().getCode());
-                    output.setMsg(result.getResponse().getMsg());
+                    response.setDesc("系统异常，订单撤销状态未知!");
+                    response.setSubCode(result.getResponse().getSubCode());
+                    response.setSubMsg(result.getResponse().getSubMsg());
+                    response.setCode(result.getResponse().getCode());
+                    response.setMsg(result.getResponse().getMsg());
                     break;
                 default:
-                    output.setDesc("不支持的交易状态，交易返回异常!");
-                    output.setSubCode(result.getResponse().getSubCode());
-                    output.setSubMsg(result.getResponse().getSubMsg());
-                    output.setCode(result.getResponse().getCode());
-                    output.setMsg(result.getResponse().getMsg());
+                    response.setDesc("不支持的交易状态，交易返回异常!");
+                    response.setSubCode(result.getResponse().getSubCode());
+                    response.setSubMsg(result.getResponse().getSubMsg());
+                    response.setCode(result.getResponse().getCode());
+                    response.setMsg(result.getResponse().getMsg());
                     break;
             }
         } catch (Exception e) {
             System.err.println("支付宝撤销订单失败,outTradeNo="+outTradeNo);
-            throw new Exception("支付宝撤销订单失败,outTradeNo="+outTradeNo);
+            throw e;
         }finally {
-            System.out.println("cancel output=\n"+output.toString());
+            System.out.println("cancel response=\n"+response.toString());
         }
 
-        return output;
+        return response;
 
     }
-
-
-
-
 
 }

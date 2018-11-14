@@ -146,18 +146,18 @@ public class InvestigCategoryData extends AlipayObject {
 	}
 
     /**
-     * Gets model result object.
+     * Gets entity result object.
      *
-     * @return the model result object
+     * @return the entity result object
      */
     public String getModelResultObject() {
 		return this.modelResultObject;
 	}
 
     /**
-     * Sets model result object.
+     * Sets entity result object.
      *
-     * @param modelResultObject the model result object
+     * @param modelResultObject the entity result object
      */
     public void setModelResultObject(String modelResultObject) {
 		this.modelResultObject = modelResultObject;

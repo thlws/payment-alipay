@@ -1,4 +1,4 @@
-package org.thlws.payment.alipay.model;
+package org.thlws.payment.alipay.entity.response;
 
 import com.alipay.api.domain.TradeFundBill;
 import com.alipay.api.domain.VoucherDetail;
@@ -8,17 +8,17 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Created by HanleyTang on 2017/3/5.
+ * Created by HanleyTang on 2017/3/4.
  */
-public class AlipayQueryOutput {
+public class AlipayTradeResponse {
 
     private boolean isSuccess;
     private String desc;
 
-    private String              subCode;
-    private String              subMsg;
     private String              code;
     private String              msg;
+    private String              subCode;
+    private String              subMsg;
 
     public String getCode() {
         return code;
@@ -37,18 +37,12 @@ public class AlipayQueryOutput {
     }
 
     /**
-
-     * 支付宝店铺编号
-     */
-    private String alipayStoreId;
-
-    /**
      * 买家支付宝账号
      */
     private String buyerLogonId;
 
     /**
-     * 买家实付金额，单位为元，两位小数。该金额代表该笔交易买家实际支付的金额，不包含商户折扣等金额
+     * 买家付款的金额
      */
     private String buyerPayAmount;
 
@@ -56,6 +50,11 @@ public class AlipayQueryOutput {
      * 买家在支付宝的用户id
      */
     private String buyerUserId;
+
+    /**
+     * 支付宝卡余额
+     */
+    private String cardBalance;
 
     /**
      * 本次交易支付所使用的单品券优惠的商品优惠信息
@@ -68,57 +67,42 @@ public class AlipayQueryOutput {
     private List<TradeFundBill> fundBillList;
 
     /**
-     * 行业特殊信息（例如在医保卡支付业务中，向用户返回医疗信息）。
+     * 交易支付时间
      */
-    private String industrySepcDetail;
+    private Date gmtPayment;
 
     /**
-     * 交易中用户支付的可开具发票的金额，单位为元，两位小数。该金额代表该笔交易中可以给用户开具发票的金额
+     * 交易中可给用户开具发票的金额
      */
     private String invoiceAmount;
 
     /**
-     * 买家支付宝用户号，该字段将废弃，不要使用
+     * 买家支付宝用户号,该参数已废弃，请不要使用。
      */
     private String openId;
 
     /**
-     * 商家订单号
+     * 商户订单号
      */
     private String outTradeNo;
 
     /**
-     * 积分支付的金额，单位为元，两位小数。该金额代表该笔交易中用户使用积分支付的金额，比如集分宝或者支付宝实时优惠等
+     * 使用积分宝付款的金额
      */
     private String pointAmount;
 
     /**
-     * 实收金额，单位为元，两位小数。该金额为本笔交易，商户账户能够实际收到的金额
+     * 实收金额
      */
     private String receiptAmount;
 
     /**
-     * 本次交易打款给卖家的时间
-     */
-    private Date sendPayDate;
-
-    /**
-     * 商户门店编号
-     */
-    private String storeId;
-
-    /**
-     * 请求交易支付中的商户店铺的名称
+     * 发生支付交易的商户门店名称
      */
     private String storeName;
 
     /**
-     * 商户机具终端编号
-     */
-    private String terminalId;
-
-    /**
-     * 交易的订单金额，单位为元，两位小数。该参数的值为支付时传入的total_amount
+     * 交易金额
      */
     private String totalAmount;
 
@@ -128,38 +112,9 @@ public class AlipayQueryOutput {
     private String tradeNo;
 
     /**
-     * 交易状态：WAIT_BUYER_PAY（交易创建，等待买家付款）、TRADE_CLOSED（未付款交易超时关闭，或支付完成后全额退款）、TRADE_SUCCESS（交易支付成功）、TRADE_FINISHED（交易结束，不可退款）
-     */
-    private String tradeStatus;
-
-    /**
      * 本交易支付时使用的所有优惠券信息
      */
     private List<VoucherDetail> voucherDetailList;
-
-    public boolean isSuccess() {
-        return isSuccess;
-    }
-
-    public void setSuccess(boolean success) {
-        isSuccess = success;
-    }
-
-    public String getDesc() {
-        return desc;
-    }
-
-    public void setDesc(String desc) {
-        this.desc = desc;
-    }
-
-    public String getAlipayStoreId() {
-        return alipayStoreId;
-    }
-
-    public void setAlipayStoreId(String alipayStoreId) {
-        this.alipayStoreId = alipayStoreId;
-    }
 
     public String getBuyerLogonId() {
         return buyerLogonId;
@@ -185,6 +140,14 @@ public class AlipayQueryOutput {
         this.buyerUserId = buyerUserId;
     }
 
+    public String getCardBalance() {
+        return cardBalance;
+    }
+
+    public void setCardBalance(String cardBalance) {
+        this.cardBalance = cardBalance;
+    }
+
     public String getDiscountGoodsDetail() {
         return discountGoodsDetail;
     }
@@ -201,12 +164,12 @@ public class AlipayQueryOutput {
         this.fundBillList = fundBillList;
     }
 
-    public String getIndustrySepcDetail() {
-        return industrySepcDetail;
+    public Date getGmtPayment() {
+        return gmtPayment;
     }
 
-    public void setIndustrySepcDetail(String industrySepcDetail) {
-        this.industrySepcDetail = industrySepcDetail;
+    public void setGmtPayment(Date gmtPayment) {
+        this.gmtPayment = gmtPayment;
     }
 
     public String getInvoiceAmount() {
@@ -249,36 +212,12 @@ public class AlipayQueryOutput {
         this.receiptAmount = receiptAmount;
     }
 
-    public Date getSendPayDate() {
-        return sendPayDate;
-    }
-
-    public void setSendPayDate(Date sendPayDate) {
-        this.sendPayDate = sendPayDate;
-    }
-
-    public String getStoreId() {
-        return storeId;
-    }
-
-    public void setStoreId(String storeId) {
-        this.storeId = storeId;
-    }
-
     public String getStoreName() {
         return storeName;
     }
 
     public void setStoreName(String storeName) {
         this.storeName = storeName;
-    }
-
-    public String getTerminalId() {
-        return terminalId;
-    }
-
-    public void setTerminalId(String terminalId) {
-        this.terminalId = terminalId;
     }
 
     public String getTotalAmount() {
@@ -295,14 +234,6 @@ public class AlipayQueryOutput {
 
     public void setTradeNo(String tradeNo) {
         this.tradeNo = tradeNo;
-    }
-
-    public String getTradeStatus() {
-        return tradeStatus;
-    }
-
-    public void setTradeStatus(String tradeStatus) {
-        this.tradeStatus = tradeStatus;
     }
 
     public List<VoucherDetail> getVoucherDetailList() {
@@ -327,6 +258,22 @@ public class AlipayQueryOutput {
 
     public void setSubMsg(String subMsg) {
         this.subMsg = subMsg;
+    }
+
+    public boolean isSuccess() {
+        return isSuccess;
+    }
+
+    public void setSuccess(boolean success) {
+        isSuccess = success;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
     }
 
     @Override

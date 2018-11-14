@@ -16,7 +16,7 @@ public class AlipayCommerceIotModelModifyModel extends AlipayObject {
 	/**
 	 * 型号对象+不唯一+用于更新已存在的设备型号记录+由协议服务商指定+设备型号对象整体都需传入，而不能仅传入部分发生变更的属性
 	 */
-	@ApiField("model")
+	@ApiField("entity")
 	private IotDeviceModel model;
 
 	/**
@@ -26,18 +26,18 @@ public class AlipayCommerceIotModelModifyModel extends AlipayObject {
 	private String protocolSupplierId;
 
     /**
-     * Gets model.
+     * Gets entity.
      *
-     * @return the model
+     * @return the entity
      */
     public IotDeviceModel getModel() {
 		return this.model;
 	}
 
     /**
-     * Sets model.
+     * Sets entity.
      *
-     * @param model the model
+     * @param model the entity
      */
     public void setModel(IotDeviceModel model) {
 		this.model = model;

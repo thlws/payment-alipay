@@ -135,16 +135,16 @@ public interface AlipayRequest<T extends AlipayResponse> {
     public void setNeedEncrypt(boolean needEncrypt);
 
     /**
-     * Gets biz model.
+     * Gets biz entity.
      *
-     * @return the biz model
+     * @return the biz entity
      */
     public AlipayObject getBizModel();
 
     /**
      * 设置业务实体，如需使用此方法，请勿直接设置biz_content
      *
-     * @param bizModel the biz model
+     * @param bizModel the biz entity
      */
     public void setBizModel(AlipayObject bizModel);
 

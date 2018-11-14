@@ -30,18 +30,18 @@ public class AlipayCommerceIotModellistCreateModel extends AlipayObject {
 	private String protocolSupplierId;
 
     /**
-     * Gets model list.
+     * Gets entity list.
      *
-     * @return the model list
+     * @return the entity list
      */
     public List<IotDeviceModel> getModelList() {
 		return this.modelList;
 	}
 
     /**
-     * Sets model list.
+     * Sets entity list.
      *
-     * @param modelList the model list
+     * @param modelList the entity list
      */
     public void setModelList(List<IotDeviceModel> modelList) {
 		this.modelList = modelList;

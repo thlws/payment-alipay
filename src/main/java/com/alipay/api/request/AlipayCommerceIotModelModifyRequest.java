@@ -9,7 +9,7 @@ import com.alipay.api.response.AlipayCommerceIotModelModifyResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: alipay.commerce.iot.model.modify request
+ * ALIPAY API: alipay.commerce.iot.entity.modify request
  *
  * @author auto create
  * @since 1.0, 2017-09-14 22:22:37
@@ -98,7 +98,7 @@ public class AlipayCommerceIotModelModifyRequest implements AlipayRequest<Alipay
 	}
 
 	public String getApiMethodName() {
-		return "alipay.commerce.iot.model.modify";
+		return "alipay.commerce.iot.entity.modify";
 	}
 
 	public Map<String, String> getTextParams() {		

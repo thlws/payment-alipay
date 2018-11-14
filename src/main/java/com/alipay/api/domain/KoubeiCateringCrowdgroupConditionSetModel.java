@@ -60,18 +60,18 @@ public class KoubeiCateringCrowdgroupConditionSetModel extends AlipayObject {
 	private String shopId;
 
     /**
-     * Gets condition model list.
+     * Gets condition entity list.
      *
-     * @return the condition model list
+     * @return the condition entity list
      */
     public List<ConditionItemPattern> getConditionModelList() {
 		return this.conditionModelList;
 	}
 
     /**
-     * Sets condition model list.
+     * Sets condition entity list.
      *
-     * @param conditionModelList the condition model list
+     * @param conditionModelList the condition entity list
      */
     public void setConditionModelList(List<ConditionItemPattern> conditionModelList) {
 		this.conditionModelList = conditionModelList;

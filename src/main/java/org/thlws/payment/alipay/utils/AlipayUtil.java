@@ -1,6 +1,6 @@
-package org.thlws.payment.alipay.core;
+package org.thlws.payment.alipay.utils;
 
-import org.thlws.payment.alipay.model.AlipayNotifyOutput;
+import org.thlws.payment.alipay.entity.response.AlipayNotifyResponse;
 import org.thlws.payment.alipay.sign.RSA;
 import org.thlws.payment.alipay.utils.VeryfyUtil;
 
@@ -17,15 +17,15 @@ import java.util.Map;
 /***
  * 支付宝通知处理类,处理支付宝各接口通知返回
  */
-public class AlipayNotify {
+public class AlipayUtil {
 
     /**
      * 支付宝消息验证地址
      */
     private static final String HTTPS_VERIFY_URL = "https://mapi.alipay.com/gateway.do?service=notify_verify&";
 
-    public AlipayNotifyOutput verify(HttpServletRequest alipayRequest, String partner, String alipay_public_key){
-        AlipayNotifyOutput output = new AlipayNotifyOutput();
+    public AlipayNotifyResponse verify(HttpServletRequest alipayRequest, String partner, String alipay_public_key){
+        AlipayNotifyResponse output = new AlipayNotifyResponse();
         try {
             //获取支付宝POST过来反馈信息
             Map<String,String> params = new HashMap<String,String>();

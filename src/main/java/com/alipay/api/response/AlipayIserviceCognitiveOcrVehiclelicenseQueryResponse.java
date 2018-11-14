@@ -35,7 +35,7 @@ public class AlipayIserviceCognitiveOcrVehiclelicenseQueryResponse extends Alipa
 	/** 
 	 * 品牌型号
 	 */
-	@ApiField("model")
+	@ApiField("entity")
 	private String model;
 
 	/** 
@@ -148,18 +148,18 @@ false:识别失败
 	}
 
     /**
-     * Sets model.
+     * Sets entity.
      *
-     * @param model the model
+     * @param model the entity
      */
     public void setModel(String model) {
 		this.model = model;
 	}
 
     /**
-     * Gets model.
+     * Gets entity.
      *
-     * @return the model
+     * @return the entity
      */
     public String getModel( ) {
 		return this.model;

@@ -30,18 +30,18 @@ public class SingleFundDetailItemAOPModel extends AlipayObject {
 	private ConsumeRecordAOPModel consumeRecord;
 
     /**
-     * Gets batch fund item model list.
+     * Gets batch fund item entity list.
      *
-     * @return the batch fund item model list
+     * @return the batch fund item entity list
      */
     public List<BatchFundItemAOPModel> getBatchFundItemModelList() {
 		return this.batchFundItemModelList;
 	}
 
     /**
-     * Sets batch fund item model list.
+     * Sets batch fund item entity list.
      *
-     * @param batchFundItemModelList the batch fund item model list
+     * @param batchFundItemModelList the batch fund item entity list
      */
     public void setBatchFundItemModelList(List<BatchFundItemAOPModel> batchFundItemModelList) {
 		this.batchFundItemModelList = batchFundItemModelList;

@@ -22,18 +22,18 @@ public class AlipayEbppInvoiceInfoGetResponse extends AlipayResponse {
 	private InvoiceModelContent invoiceModel;
 
     /**
-     * Sets invoice model.
+     * Sets invoice entity.
      *
-     * @param invoiceModel the invoice model
+     * @param invoiceModel the invoice entity
      */
     public void setInvoiceModel(InvoiceModelContent invoiceModel) {
 		this.invoiceModel = invoiceModel;
 	}
 
     /**
-     * Gets invoice model.
+     * Gets invoice entity.
      *
-     * @return the invoice model
+     * @return the invoice entity
      */
     public InvoiceModelContent getInvoiceModel( ) {
 		return this.invoiceModel;

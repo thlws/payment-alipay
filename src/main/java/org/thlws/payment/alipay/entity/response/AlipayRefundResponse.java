@@ -1,4 +1,4 @@
-package org.thlws.payment.alipay.model;
+package org.thlws.payment.alipay.entity.response;
 
 import com.alipay.api.domain.TradeFundBill;
 import org.thlws.payment.alipay.utils.JsonUtil;
@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * Created by HanleyTang on 2017/3/5.
  */
-public class AlipayRefundOutput {
+public class AlipayRefundResponse {
 
     private boolean isSuccess;
     private String desc;

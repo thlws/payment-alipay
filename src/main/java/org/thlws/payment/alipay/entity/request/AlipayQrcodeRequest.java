@@ -1,4 +1,4 @@
-package org.thlws.payment.alipay.model;
+package org.thlws.payment.alipay.entity.request;
 
 import java.io.Serializable;
 import java.util.List;
@@ -7,13 +7,13 @@ import com.alipay.trade.model.GoodsDetail;
 import org.thlws.payment.alipay.utils.JsonUtil;
 
 /**
- * 支付宝扫码支付Bean,用户打开支付宝APP扫描Qrcode
+ * 支付宝扫码支付,用户打开支付宝APP扫描Qrcode
  * @author Hanley Tang
  * @version 1.0
  */
-public class AlipayQrcodeInput implements Serializable{
+public class AlipayQrcodeRequest implements Serializable{
 
-	/**long AlipayQrcodeInput.java**/
+	/**long AlipayQrcodeRequest.java**/
 	private static final long serialVersionUID = 7943982676695868533L;
 	
 	private String outTradeNo; // (必填) 商户网站订单系统中唯一订单号，64个字符以内

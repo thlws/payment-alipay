@@ -4,7 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
-import org.thlws.payment.alipay.model.AlipayH5Input;
+import org.thlws.payment.alipay.entity.request.AlipayH5Request;
 
 /**
  * Created by HanleyTang on 2017/3/6.
@@ -37,8 +37,8 @@ public class JsonUtil {
 
 
     public static void main(String[] args) {
-        AlipayH5Input input = new AlipayH5Input();
-        AlipayH5Input.BizContent bizContent = new AlipayH5Input.BizContent();
+        AlipayH5Request input = new AlipayH5Request();
+        AlipayH5Request.BizContent bizContent = new AlipayH5Request.BizContent();
         input.setNotify_url("www.iquickgo.com/notify.html");
         input.setReturn_url("www.iquickgo.com/return.html");
         bizContent.setOut_trade_no("11129399403");

@@ -14,7 +14,7 @@ public class AlipayEcoMycarCarmodelCreateModel extends AlipayObject {
 	private static final long serialVersionUID = 1898555652487769323L;
 
 	/**
-	 * 新增车型数据类型，接口通过此参数判断本次请求是增加品牌信息还是车型信息等，brand（品牌），company（厂商），serie（车系），model（车型）
+	 * 新增车型数据类型，接口通过此参数判断本次请求是增加品牌信息还是车型信息等，brand（品牌），company（厂商），serie（车系），entity（车型）
 	 */
 	@ApiField("add_type")
 	private String addType;
@@ -273,18 +273,18 @@ public class AlipayEcoMycarCarmodelCreateModel extends AlipayObject {
 	}
 
     /**
-     * Gets model name.
+     * Gets entity name.
      *
-     * @return the model name
+     * @return the entity name
      */
     public String getModelName() {
 		return this.modelName;
 	}
 
     /**
-     * Sets model name.
+     * Sets entity name.
      *
-     * @param modelName the model name
+     * @param modelName the entity name
      */
     public void setModelName(String modelName) {
 		this.modelName = modelName;

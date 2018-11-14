@@ -33,36 +33,36 @@ value:查询参数值。此为查询值
 	private String modelUk;
 
     /**
-     * Gets model query param.
+     * Gets entity query param.
      *
-     * @return the model query param
+     * @return the entity query param
      */
     public List<ModelQueryParam> getModelQueryParam() {
 		return this.modelQueryParam;
 	}
 
     /**
-     * Sets model query param.
+     * Sets entity query param.
      *
-     * @param modelQueryParam the model query param
+     * @param modelQueryParam the entity query param
      */
     public void setModelQueryParam(List<ModelQueryParam> modelQueryParam) {
 		this.modelQueryParam = modelQueryParam;
 	}
 
     /**
-     * Gets model uk.
+     * Gets entity uk.
      *
-     * @return the model uk
+     * @return the entity uk
      */
     public String getModelUk() {
 		return this.modelUk;
 	}
 
     /**
-     * Sets model uk.
+     * Sets entity uk.
      *
-     * @param modelUk the model uk
+     * @param modelUk the entity uk
      */
     public void setModelUk(String modelUk) {
 		this.modelUk = modelUk;

@@ -1,15 +1,13 @@
 package org.thlws.payment.alipay;
 
 import com.alipay.api.AlipayConstants;
-import com.alipay.trade.model.GoodsDetail;
 import org.junit.Before;
 import org.junit.Test;
+import org.thlws.payment.alipay.client.AlipayClient;
 import org.thlws.payment.alipay.core.AlipayCore;
-import org.thlws.payment.alipay.model.*;
+import org.thlws.payment.alipay.entity.request.*;
+import org.thlws.payment.alipay.entity.response.*;
 import org.thlws.payment.alipay.utils.JsonUtil;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -19,7 +17,7 @@ import static org.junit.Assert.assertTrue;
  * 支付宝接口测试
  * Created by HanleyTang on 2017/3/6.
  */
-public class AlipayTest {
+public class AlipayPayClientTest {
 
     /**
      * Alipay 支付相关接口.
@@ -103,29 +101,29 @@ public class AlipayTest {
 
         try {
 
-            AlipayTradeInput input = new AlipayTradeInput();
+            AlipayTradeRequest request = new AlipayTradeRequest();
 
             //必须参数
-            input.setTotalAmount("0.01");
-            input.setStoreId("00001025104487");
-            input.setOperatorId("hanley001");
-            input.setAuthCode("288609492126942746");
-            input.setOutTradeNo(System.currentTimeMillis()+"");
-            input.setSubject("CI测试买单001");
+            request.setTotalAmount("0.01");
+            request.setStoreId("00001025104487");
+            request.setOperatorId("hanley001");
+            request.setAuthCode("288609492126942746");
+            request.setOutTradeNo(System.currentTimeMillis()+"");
+            request.setSubject("CI测试买单001");
 
-//            如下为可选参数，全部参数请查看 AlipayTradeInput
-//            input.setBody("测试支付");
-//            input.setDiscountableAmount("0");
-//            input.setUndiscountableAmount("0");
-//            input.setSellerId(partner_id_0);
+//            如下为可选参数，全部参数请查看 AlipayTradeRequest
+//            request.setBody("测试支付");
+//            request.setDiscountableAmount("0");
+//            request.setUndiscountableAmount("0");
+//            request.setSellerId(partner_id_0);
 //            List<GoodsDetail> list = new ArrayList<GoodsDetail>();
 //            list.add(GoodsDetail.newInstance("g01","name1",10,1));
 //            list.add(GoodsDetail.newInstance("g02","name2",12,3));
-//            input.setGoodsDetailList(list);
+//            request.setGoodsDetailList(list);
 
-            AlipayTradeOutput output = alipayCore.pay(input);
-            assertTrue(output.isSuccess());
-            //output就是支付结果,具体请参考相关属性说明
+            AlipayTradeResponse response = AlipayClient.pay(request,alipayCore);
+//            assertTrue(response.isSuccess());
+            //response就是支付结果,具体请参考相关属性说明
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -137,13 +135,13 @@ public class AlipayTest {
     @Test
     public void test_refund(){
         try {
-            AlipayRefundInput input = new AlipayRefundInput();
-            input.setTradeNo("2018102322001444515405783599");
-            input.setRefundAmount("0.01");
-            input.setRefundReason("测试退款");
-            AlipayRefundOutput output = alipayCore.refund(input);
-            System.out.println("output="+JsonUtil.format(output));
-            assertTrue(output.isSuccess());
+            AlipayRefundRequest request = new AlipayRefundRequest();
+            request.setTradeNo("2018102322001444515405783599");
+            request.setRefundAmount("0.01");
+            request.setRefundReason("测试退款");
+            AlipayRefundResponse response = AlipayClient.refund(request,alipayCore);
+            System.out.println("response="+JsonUtil.format(response));
+            assertTrue(response.isSuccess());
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -157,18 +155,18 @@ public class AlipayTest {
     public void  test_part_refund(){
 
         try {
-            AlipayRefundInput input = new AlipayRefundInput();
-            //input.setOutTradeNo("1508487673867");
-            input.setTradeNo("2018062821001004510561182960");
-            input.setRefundAmount("0.05");
-            input.setRefundReason("测试部分退款");
-            input.setStoreId("00001025104487");
-            input.setTerminalId("10007");
-            input.setOutRequestNo(System.currentTimeMillis()+"");
-            AlipayRefundOutput output = alipayCore.refund(input);
-            System.out.println("output="+JsonUtil.format(output));
-            assertTrue(output.isSuccess());
-            //output 就是退款结果
+            AlipayRefundRequest request = new AlipayRefundRequest();
+            //request.setOutTradeNo("1508487673867");
+            request.setTradeNo("2018062821001004510561182960");
+            request.setRefundAmount("0.05");
+            request.setRefundReason("测试部分退款");
+            request.setStoreId("00001025104487");
+            request.setTerminalId("10007");
+            request.setOutRequestNo(System.currentTimeMillis()+"");
+            AlipayRefundResponse response = AlipayClient.refund(request,alipayCore);
+            System.out.println("response="+JsonUtil.format(response));
+            assertTrue(response.isSuccess());
+            //response 就是退款结果
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -181,9 +179,9 @@ public class AlipayTest {
     @Test
     public void test_query(){
         try {
-            AlipayQueryOutput output = alipayCore.query("1540262464959");
-            System.out.println("output="+JsonUtil.format(output));
-            assertTrue(output.isSuccess());
+            AlipayQueryResponse response = AlipayClient.query("1540262464959",alipayCore);
+            System.out.println("response="+JsonUtil.format(response));
+            assertTrue(response.isSuccess());
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -198,17 +196,18 @@ public class AlipayTest {
     public void test_precreate(){
 
         try {
-            AlipayQrcodeInput input = new AlipayQrcodeInput();
-            input.setSubject("购买商品");
-            input.setOutTradeNo(System.currentTimeMillis()+"");
-            input.setBody("测试下单");
-            input.setOperatorId("990001");
-            input.setStoreId("0001025104489");
-            input.setTotalAmount("0.01");
-            //input.setSellerId(partner_id);
-            AlipayQrcodeOutput output = alipayCore.precreate(input);
-            System.out.println("output="+JsonUtil.format(output));
-            assertTrue(output.isSuccess());
+            AlipayQrcodeRequest request = new AlipayQrcodeRequest();
+            request.setSubject("购买商品");
+            request.setOutTradeNo(System.currentTimeMillis()+"");
+            request.setBody("测试下单");
+            request.setOperatorId("990001");
+            request.setStoreId("0001025104489");
+            request.setTotalAmount("0.01");
+            //request.setSellerId(partner_id);
+
+            AlipayQrcodeResponse response = AlipayClient.precreate(request,alipayCore);
+            System.out.println("response="+JsonUtil.format(response));
+            assertTrue(response.isSuccess());
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -222,17 +221,17 @@ public class AlipayTest {
     public void test_pay_in_h5(){
 
         try {
-            AlipayH5Input input = new AlipayH5Input();
-            input.setNotify_url("异步通知地址,支付宝通知支付结果");
-            input.setReturn_url("同步返回地址,完成支付后自动转向的地址");
-            AlipayH5Input.BizContent bizContent = new AlipayH5Input.BizContent();
+            AlipayH5Request request = new AlipayH5Request();
+            request.setNotify_url("异步通知地址,支付宝通知支付结果");
+            request.setReturn_url("同步返回地址,完成支付后自动转向的地址");
+            AlipayH5Request.BizContent bizContent = new AlipayH5Request.BizContent();
             bizContent.setTotal_amount("0.01");
             bizContent.setSubject("测试H5(手机网页)支付");
             //bizContent.setSeller_id(partner_id);
             bizContent.setProduct_code("p0001");
             bizContent.setOut_trade_no(System.currentTimeMillis()+"");
-            input.setBizContent(bizContent);
-            String html = alipayCore.pay_in_h5(input);
+            request.setBizContent(bizContent);
+            String html = AlipayClient.pay_in_h5(request,alipayCore);
             System.out.println("html="+html);
             assertNotNull(html);
             //html结果直接显示在页面即可
@@ -249,16 +248,16 @@ public class AlipayTest {
     public void test_pay_in_pc(){
 
         try {
-            AlipayPcInput input = new AlipayPcInput();
-            input.setNotify_url("异步通知地址,支付宝通知支付结果");
-            input.setReturn_url("同步返回地址,完成支付后自动转向的地址");
-            AlipayPcInput.BizContent bizContent = new AlipayPcInput.BizContent();
+            AlipayWebRequest request = new AlipayWebRequest();
+            request.setNotify_url("异步通知地址,支付宝通知支付结果");
+            request.setReturn_url("同步返回地址,完成支付后自动转向的地址");
+            AlipayWebRequest.BizContent bizContent = new AlipayWebRequest.BizContent();
             bizContent.setTotal_amount("0.01");
             bizContent.setSubject("测试电脑网站支付");
             bizContent.setBody("测试");
             bizContent.setProduct_code("p0001");
             bizContent.setOut_trade_no(System.currentTimeMillis()+"");
-            String html = alipayCore.pay_in_pc(input);
+            String html = AlipayClient.pay_in_pc(request,alipayCore);
             assertNotNull(html);
             //html结果直接显示在页面即可
         } catch (Exception e) {
@@ -274,9 +273,9 @@ public class AlipayTest {
     @Test
     public void test_cancel(){
         try {
-            AlipayCancelOutput output = alipayCore.cancel("1488867095321");
-            System.out.println("output="+JsonUtil.format(output));
-            assertTrue(output.isSuccess());
+            AlipayCancelResponse response = AlipayClient.cancel("1488867095321",alipayCore);
+            System.out.println("response="+JsonUtil.format(response));
+            assertTrue(response.isSuccess());
         } catch (Exception e) {
             e.printStackTrace();
         }

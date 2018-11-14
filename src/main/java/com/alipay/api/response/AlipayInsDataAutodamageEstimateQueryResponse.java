@@ -205,18 +205,18 @@ public class AlipayInsDataAutodamageEstimateQueryResponse extends AlipayResponse
 	}
 
     /**
-     * Sets model brand.
+     * Sets entity brand.
      *
-     * @param modelBrand the model brand
+     * @param modelBrand the entity brand
      */
     public void setModelBrand(String modelBrand) {
 		this.modelBrand = modelBrand;
 	}
 
     /**
-     * Gets model brand.
+     * Gets entity brand.
      *
-     * @return the model brand
+     * @return the entity brand
      */
     public String getModelBrand( ) {
 		return this.modelBrand;

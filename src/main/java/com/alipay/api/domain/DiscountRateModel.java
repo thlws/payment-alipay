@@ -61,18 +61,18 @@ public class DiscountRateModel extends AlipayObject {
 	private String upperTradeFee;
 
     /**
-     * Gets discount dst camp prize model.
+     * Gets discount dst camp prize entity.
      *
-     * @return the discount dst camp prize model
+     * @return the discount dst camp prize entity
      */
     public DiscountDstCampPrizeModel getDiscountDstCampPrizeModel() {
 		return this.discountDstCampPrizeModel;
 	}
 
     /**
-     * Sets discount dst camp prize model.
+     * Sets discount dst camp prize entity.
      *
-     * @param discountDstCampPrizeModel the discount dst camp prize model
+     * @param discountDstCampPrizeModel the discount dst camp prize entity
      */
     public void setDiscountDstCampPrizeModel(DiscountDstCampPrizeModel discountDstCampPrizeModel) {
 		this.discountDstCampPrizeModel = discountDstCampPrizeModel;
@@ -115,54 +115,54 @@ public class DiscountRateModel extends AlipayObject {
 	}
 
     /**
-     * Gets reduce dst camp prize model.
+     * Gets reduce dst camp prize entity.
      *
-     * @return the reduce dst camp prize model
+     * @return the reduce dst camp prize entity
      */
     public ReduceDstCampPrizeModel getReduceDstCampPrizeModel() {
 		return this.reduceDstCampPrizeModel;
 	}
 
     /**
-     * Sets reduce dst camp prize model.
+     * Sets reduce dst camp prize entity.
      *
-     * @param reduceDstCampPrizeModel the reduce dst camp prize model
+     * @param reduceDstCampPrizeModel the reduce dst camp prize entity
      */
     public void setReduceDstCampPrizeModel(ReduceDstCampPrizeModel reduceDstCampPrizeModel) {
 		this.reduceDstCampPrizeModel = reduceDstCampPrizeModel;
 	}
 
     /**
-     * Gets reduce to amt dst camp prize model.
+     * Gets reduce to amt dst camp prize entity.
      *
-     * @return the reduce to amt dst camp prize model
+     * @return the reduce to amt dst camp prize entity
      */
     public ReduceToAmtDstCampPrizeModel getReduceToAmtDstCampPrizeModel() {
 		return this.reduceToAmtDstCampPrizeModel;
 	}
 
     /**
-     * Sets reduce to amt dst camp prize model.
+     * Sets reduce to amt dst camp prize entity.
      *
-     * @param reduceToAmtDstCampPrizeModel the reduce to amt dst camp prize model
+     * @param reduceToAmtDstCampPrizeModel the reduce to amt dst camp prize entity
      */
     public void setReduceToAmtDstCampPrizeModel(ReduceToAmtDstCampPrizeModel reduceToAmtDstCampPrizeModel) {
 		this.reduceToAmtDstCampPrizeModel = reduceToAmtDstCampPrizeModel;
 	}
 
     /**
-     * Gets single dst camp prize model.
+     * Gets single dst camp prize entity.
      *
-     * @return the single dst camp prize model
+     * @return the single dst camp prize entity
      */
     public SingleDstCampPrizeModel getSingleDstCampPrizeModel() {
 		return this.singleDstCampPrizeModel;
 	}
 
     /**
-     * Sets single dst camp prize model.
+     * Sets single dst camp prize entity.
      *
-     * @param singleDstCampPrizeModel the single dst camp prize model
+     * @param singleDstCampPrizeModel the single dst camp prize entity
      */
     public void setSingleDstCampPrizeModel(SingleDstCampPrizeModel singleDstCampPrizeModel) {
 		this.singleDstCampPrizeModel = singleDstCampPrizeModel;

@@ -108,18 +108,18 @@ public class AlipayAssetCardNewtemplateCreateModel extends AlipayObject {
 	private String settleUserId;
 
     /**
-     * Gets account model.
+     * Gets account entity.
      *
-     * @return the account model
+     * @return the account entity
      */
     public String getAccountModel() {
 		return this.accountModel;
 	}
 
     /**
-     * Sets account model.
+     * Sets account entity.
      *
-     * @param accountModel the account model
+     * @param accountModel the account entity
      */
     public void setAccountModel(String accountModel) {
 		this.accountModel = accountModel;
@@ -180,18 +180,18 @@ public class AlipayAssetCardNewtemplateCreateModel extends AlipayObject {
 	}
 
     /**
-     * Gets card model.
+     * Gets card entity.
      *
-     * @return the card model
+     * @return the card entity
      */
     public String getCardModel() {
 		return this.cardModel;
 	}
 
     /**
-     * Sets card model.
+     * Sets card entity.
      *
-     * @param cardModel the card model
+     * @param cardModel the card entity
      */
     public void setCardModel(String cardModel) {
 		this.cardModel = cardModel;

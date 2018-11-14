@@ -60,18 +60,18 @@ public class StagedDiscountDstCampPrizeModel extends AlipayObject {
 	}
 
     /**
-     * Gets discount rate model list.
+     * Gets discount rate entity list.
      *
-     * @return the discount rate model list
+     * @return the discount rate entity list
      */
     public List<DiscountRateModel> getDiscountRateModelList() {
 		return this.discountRateModelList;
 	}
 
     /**
-     * Sets discount rate model list.
+     * Sets discount rate entity list.
      *
-     * @param discountRateModelList the discount rate model list
+     * @param discountRateModelList the discount rate entity list
      */
     public void setDiscountRateModelList(List<DiscountRateModel> discountRateModelList) {
 		this.discountRateModelList = discountRateModelList;

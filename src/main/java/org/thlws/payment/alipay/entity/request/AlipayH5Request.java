@@ -1,11 +1,12 @@
-package org.thlws.payment.alipay.model;
+package org.thlws.payment.alipay.entity.request;
 
 import org.thlws.payment.alipay.utils.JsonUtil;
 
-/***
- * 支付宝网站支付参数对象
+/**
+ * 支付宝H5网页支付
+ * Created by HanleyTang on 2017/3/5.
  */
-public class AlipayPcInput {
+public class AlipayH5Request {
 
     private BizContent bizContent   ;//业务数据填充,json格式
     private String return_url       ;//同步处理地址
@@ -40,7 +41,7 @@ public class AlipayPcInput {
         private String out_trade_no  ;
         private String total_amount  ;
         private String subject       ;
-        private String body          ;
+        private String seller_id     ;
         private String product_code  ;
 
         public String getOut_trade_no() {
@@ -67,12 +68,12 @@ public class AlipayPcInput {
             this.subject = subject;
         }
 
-        public String getBody() {
-            return body;
+        public String getSeller_id() {
+            return seller_id;
         }
 
-        public void setBody(String body) {
-            this.body = body;
+        public void setSeller_id(String seller_id) {
+            this.seller_id = seller_id;
         }
 
         public String getProduct_code() {

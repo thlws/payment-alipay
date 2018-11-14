@@ -68,18 +68,18 @@ public class OldComplextMockModel extends AlipayObject {
 	}
 
     /**
-     * Gets simple mock model.
+     * Gets simple mock entity.
      *
-     * @return the simple mock model
+     * @return the simple mock entity
      */
     public SimpleMockModel getSimpleMockModel() {
 		return this.simpleMockModel;
 	}
 
     /**
-     * Sets simple mock model.
+     * Sets simple mock entity.
      *
-     * @param simpleMockModel the simple mock model
+     * @param simpleMockModel the simple mock entity
      */
     public void setSimpleMockModel(SimpleMockModel simpleMockModel) {
 		this.simpleMockModel = simpleMockModel;

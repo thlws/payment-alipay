@@ -212,18 +212,18 @@ public class MaintainVehicleInfo extends AlipayObject {
 	}
 
     /**
-     * Gets model id.
+     * Gets entity id.
      *
-     * @return the model id
+     * @return the entity id
      */
     public String getModelId() {
 		return this.modelId;
 	}
 
     /**
-     * Sets model id.
+     * Sets entity id.
      *
-     * @param modelId the model id
+     * @param modelId the entity id
      */
     public void setModelId(String modelId) {
 		this.modelId = modelId;
@@ -374,18 +374,18 @@ public class MaintainVehicleInfo extends AlipayObject {
 	}
 
     /**
-     * Gets vi model name.
+     * Gets vi entity name.
      *
-     * @return the vi model name
+     * @return the vi entity name
      */
     public String getViModelName() {
 		return this.viModelName;
 	}
 
     /**
-     * Sets vi model name.
+     * Sets vi entity name.
      *
-     * @param viModelName the vi model name
+     * @param viModelName the vi entity name
      */
     public void setViModelName(String viModelName) {
 		this.viModelName = viModelName;

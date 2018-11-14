@@ -226,18 +226,18 @@ IDENTITY_CARD-身份证
 	}
 
     /**
-     * Sets car model id.
+     * Sets car entity id.
      *
-     * @param carModelId the car model id
+     * @param carModelId the car entity id
      */
     public void setCarModelId(String carModelId) {
 		this.carModelId = carModelId;
 	}
 
     /**
-     * Gets car model id.
+     * Gets car entity id.
      *
-     * @return the car model id
+     * @return the car entity id
      */
     public String getCarModelId( ) {
 		return this.carModelId;

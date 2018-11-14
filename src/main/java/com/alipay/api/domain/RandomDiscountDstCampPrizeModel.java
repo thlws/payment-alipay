@@ -61,18 +61,18 @@ public class RandomDiscountDstCampPrizeModel extends AlipayObject {
 	}
 
     /**
-     * Gets discount random model list.
+     * Gets discount random entity list.
      *
-     * @return the discount random model list
+     * @return the discount random entity list
      */
     public List<DiscountRandomModel> getDiscountRandomModelList() {
 		return this.discountRandomModelList;
 	}
 
     /**
-     * Sets discount random model list.
+     * Sets discount random entity list.
      *
-     * @param discountRandomModelList the discount random model list
+     * @param discountRandomModelList the discount random entity list
      */
     public void setDiscountRandomModelList(List<DiscountRandomModel> discountRandomModelList) {
 		this.discountRandomModelList = discountRandomModelList;

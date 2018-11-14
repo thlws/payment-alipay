@@ -217,36 +217,36 @@ public class AlipayPcreditLoanCollateralCarModifyModel extends AlipayObject {
 	}
 
     /**
-     * Gets car model id.
+     * Gets car entity id.
      *
-     * @return the car model id
+     * @return the car entity id
      */
     public String getCarModelId() {
 		return this.carModelId;
 	}
 
     /**
-     * Sets car model id.
+     * Sets car entity id.
      *
-     * @param carModelId the car model id
+     * @param carModelId the car entity id
      */
     public void setCarModelId(String carModelId) {
 		this.carModelId = carModelId;
 	}
 
     /**
-     * Gets car model name.
+     * Gets car entity name.
      *
-     * @return the car model name
+     * @return the car entity name
      */
     public String getCarModelName() {
 		return this.carModelName;
 	}
 
     /**
-     * Sets car model name.
+     * Sets car entity name.
      *
-     * @param carModelName the car model name
+     * @param carModelName the car entity name
      */
     public void setCarModelName(String carModelName) {
 		this.carModelName = carModelName;

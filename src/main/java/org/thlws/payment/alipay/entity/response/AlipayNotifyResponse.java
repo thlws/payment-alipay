@@ -1,10 +1,10 @@
-package org.thlws.payment.alipay.model;
+package org.thlws.payment.alipay.entity.response;
 
 /**
  * 支付异步通知,核心返回参数
  * Created by HanleyTang on 2017/3/10.
  */
-public class AlipayNotifyOutput {
+public class AlipayNotifyResponse {
 
 
     private boolean verify_flg;//验证是否成功 true 成功,false 失败

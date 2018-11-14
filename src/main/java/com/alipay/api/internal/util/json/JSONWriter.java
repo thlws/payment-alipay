@@ -74,7 +74,7 @@ public class JSONWriter {
      * Write string.
      *
      * @param object     the object
-     * @param isApiModel the is api model
+     * @param isApiModel the is api entity
      * @return the string
      */
     public String write(Object object, boolean isApiModel) {

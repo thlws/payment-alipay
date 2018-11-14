@@ -225,18 +225,18 @@ public class AlipayEcoMycarDialogonlineVehicleQueryResponse extends AlipayRespon
 	}
 
     /**
-     * Sets vi model.
+     * Sets vi entity.
      *
-     * @param viModel the vi model
+     * @param viModel the vi entity
      */
     public void setViModel(String viModel) {
 		this.viModel = viModel;
 	}
 
     /**
-     * Gets vi model.
+     * Gets vi entity.
      *
-     * @return the vi model
+     * @return the vi entity
      */
     public String getViModel( ) {
 		return this.viModel;

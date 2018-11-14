@@ -120,18 +120,18 @@ public class Car extends AlipayObject {
 	}
 
     /**
-     * Gets car model code.
+     * Gets car entity code.
      *
-     * @return the car model code
+     * @return the car entity code
      */
     public String getCarModelCode() {
 		return this.carModelCode;
 	}
 
     /**
-     * Sets car model code.
+     * Sets car entity code.
      *
-     * @param carModelCode the car model code
+     * @param carModelCode the car entity code
      */
     public void setCarModelCode(String carModelCode) {
 		this.carModelCode = carModelCode;
