@@ -8,7 +8,6 @@ import java.util.*;
  */
 public class VeryfyUtil {
 
-    String a  = "/sbin/ifconfig |grep -B1 \"inet addr\" |awk '{ if ( $1 == \"inet\" ) { print $2 } else if ( $2 == \"Link\" ) { printf \"%s:\" ,$1 } }' |awk -F: '{ print $1 \": \" $3 }'";
 
     /**
      * 除去数组中的空值和签名参数
@@ -51,8 +50,8 @@ public class VeryfyUtil {
         for (int i = 0; i < keys.size(); i++) {
             String key = keys.get(i);
             String value = params.get(key);
-
-            if (i == keys.size() - 1) {//拼接时，不包括最后一个&字符
+            //拼接时，不包括最后一个&字符
+            if (i == keys.size() - 1) {
                 prestr = prestr + key + "=" + value;
             } else {
                 prestr = prestr + key + "=" + value + "&";

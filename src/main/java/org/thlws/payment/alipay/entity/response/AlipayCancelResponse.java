@@ -1,6 +1,6 @@
 package org.thlws.payment.alipay.entity.response;
 
-import org.thlws.payment.alipay.utils.JsonUtil;
+import org.thlws.utils.JsonUtil;
 
 /**
  * Created by HanleyTang on 2017/3/8.

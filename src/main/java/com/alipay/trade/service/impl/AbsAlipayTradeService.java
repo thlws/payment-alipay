@@ -10,7 +10,7 @@ import com.alipay.trade.model.result.*;
 import com.alipay.trade.service.AlipayTradeService;
 import com.alipay.trade.utils.Utils;
 import com.alipay.trade.config.Constants;
-import org.thlws.payment.alipay.utils.JsonUtil;
+import org.thlws.utils.JsonUtil;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -394,23 +394,22 @@ abstract class AbsAlipayTradeService extends AbsAlipayService implements AlipayT
 
     /**
      * Cancel success boolean.
-     *
+     * 撤销返回“撤销成功”
      * @param response the response
      * @return the boolean
      */
-// 撤销返回“撤销成功”
     protected boolean cancelSuccess(AlipayTradeCancelResponse response) {
         return response != null &&
                 Constants.SUCCESS.equals(response.getCode());
     }
 
     /**
+     * 交易异常，或发生系统错误
      * Trade error boolean.
      *
      * @param response the response
      * @return the boolean
      */
-// 交易异常，或发生系统错误
     protected boolean tradeError(AlipayResponse response) {
         return response == null ||
                 Constants.ERROR.equals(response.getCode());

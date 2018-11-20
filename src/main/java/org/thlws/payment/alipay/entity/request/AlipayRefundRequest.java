@@ -1,19 +1,31 @@
 package org.thlws.payment.alipay.entity.request;
 
-import org.thlws.payment.alipay.utils.JsonUtil;
+import org.thlws.utils.JsonUtil;
 
 /**
  * 支付宝退款
- * Created by HanleyTang on 2017/3/4.
+ * @author hanley@thlws.com
+ * @date 2018/11/16
  */
 public class AlipayRefundRequest {
 
-    private String tradeNo;//支付宝交易号,tradeNo| outTradeNo二选一
-    private String outTradeNo;//(特殊 tradeNo| outTradeNo二选一) 商户网站订单系统中唯一订单号，64个字符以内，只能包含字母、数字、下划线
-    private String refundAmount;// (必填)
-    private String storeId;// (选填) 商户门店编号，通过门店号和商家后台可以配置精准到门店的折扣信息，详询支付宝技术支持
-    private String refundReason;//(选填)
-    private String outRequestNo;//可选,部分退款时 必须
+    /**支付宝交易号,tradeNo| outTradeNo二选一*/
+    private String tradeNo;
+
+    /**(特殊 tradeNo| outTradeNo二选一) 商户网站订单系统中唯一订单号，64个字符以内，只能包含字母、数字、下划线*/
+    private String outTradeNo;
+
+    /**(必填)退款金额*/
+    private String refundAmount;
+
+    /**(选填) 商户门店编号，通过门店号和商家后台可以配置精准到门店的折扣信息，详询支付宝技术支持*/
+    private String storeId;
+
+    /**(选填) 退款理由*/
+    private String refundReason;
+
+    /**可选,部分退款时 必须*/
+    private String outRequestNo;
 
     public String getOutRequestNo() {
         return outRequestNo;

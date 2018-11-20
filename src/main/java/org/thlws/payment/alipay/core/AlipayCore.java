@@ -1,8 +1,11 @@
 package org.thlws.payment.alipay.core;
 
+import cn.hutool.log.Log;
+import cn.hutool.log.LogFactory;
 import com.alipay.api.AlipayClient;
 import com.alipay.api.AlipayConstants;
 import com.alipay.api.DefaultAlipayClient;
+//import com.alipay.api.domain.ExtendParams;
 import com.alipay.api.request.AlipayTradePagePayRequest;
 import com.alipay.api.request.AlipayTradeWapPayRequest;
 import com.alipay.trade.model.ExtendParams;
@@ -15,7 +18,7 @@ import org.apache.commons.lang.StringUtils;
 
 import org.thlws.payment.alipay.entity.request.*;
 import org.thlws.payment.alipay.entity.response.*;
-import org.thlws.payment.alipay.utils.JsonUtil;
+import org.thlws.utils.JsonUtil;
 
 /**
  * 支付宝支付核心处理入口,封装支付常用API，包括当面付、新版网页支付、退款操作、订单查询;
@@ -23,16 +26,20 @@ import org.thlws.payment.alipay.utils.JsonUtil;
  * https://docs.open.alipay.com/api
  *
  * <pre>
- *  AlipayCore.ClientBuilder clientBuilder = new AlipayCore.ClientBuilder();
- *  AlipayCore alipayCore = clientBuilder.setAlipay_public_key("xxx").setApp_id("xxx").setPrivate_key("xxx").build();
- *  alipayCore.pay_in_h5(request);
- *  alipayCore.pay(request);
- *  alipayCore.query(outTradeNo);
- *  alipayCore.refund(request);
+ *  AlipayCore.ClientBuilder clientBuilderclientBuilder = new AlipayCore.ClientBuilder();
+ *  AlipayCore alipayCore = .setAlipayPublicKey("xxx").setAppId("xxx").setPrivateKey("xxx").build();
+ *  AlipayClient.pay(request,alipayCore);
+ *  AlipayClient.refund(request,alipayCore);
+ *  AlipayClient.preCreate(request,alipayCore);
+ *  AlipayClient.query("out_trade_no",alipayCore);
+ *  AlipayClient.payInMobileSite(request,alipayCore);
  * </pre>
- * Created by HanleyTang on 2017/3/3.
+ * @author hanley@thlws.com
+ * @date 2018/11/16
  */
 public class AlipayCore {
+
+    private static final Log log = LogFactory.get();
 
     /**
      * 支付交易核心服务,调用API前,调用前API前先行初始化
@@ -44,31 +51,28 @@ public class AlipayCore {
      */
     private ClientBuilder builder;
 
-    /**
-     * Instantiates a new Alipay core.
-     */
-    public AlipayCore() {
-    }
 
     /***
      * 参数构件第三步,初始化 tradeService,builder
      * @param builder the builder
      */
-    public AlipayCore(ClientBuilder builder) {
+    private AlipayCore(ClientBuilder builder) {
 
-        if (StringUtils.isEmpty(builder.getApp_id()))
+        if (StringUtils.isEmpty(builder.getAppId())){
             throw new NullPointerException("appid should not be NULL!");
-        if (StringUtils.isEmpty(builder.getPrivate_key()))
+        }
+        if (StringUtils.isEmpty(builder.getPrivateKey())){
             throw new NullPointerException("private should not be NULL!");
+        }
         this.builder = builder;
         AlipayTradeServiceImpl.ClientBuilder alipayTradebuilder = new AlipayTradeServiceImpl.ClientBuilder();
-        alipayTradebuilder.setAlipayPublicKey(builder.getAlipay_public_key());
-        alipayTradebuilder.setAppid(builder.getApp_id());
+        alipayTradebuilder.setAlipayPublicKey(builder.getAlipayPublicKey());
+        alipayTradebuilder.setAppid(builder.getAppId());
         alipayTradebuilder.setCharset("utf-8");
         alipayTradebuilder.setFormat("json");
         alipayTradebuilder.setGatewayUrl("https://openapi.alipay.com/gateway.do");
-        alipayTradebuilder.setPrivateKey(builder.getPrivate_key());
-        alipayTradebuilder.setSignType(builder.getSign_type());
+        alipayTradebuilder.setPrivateKey(builder.getPrivateKey());
+        alipayTradebuilder.setSignType(builder.getSignType());
         tradeService = alipayTradebuilder.build();
     }
 
@@ -76,116 +80,73 @@ public class AlipayCore {
      * 参数构件Class,参数构件第一步,请完成所有参数设置后调用build 方法.
      */
     public static class ClientBuilder {
-        private String private_key;//商户私钥
-        private String alipay_public_key;//支付宝公钥
-        private String app_id;//支付宝应用ID
-        private String sign_type;
+
+        private String privateKey;
+        private String alipayPublicKey;
+        private String appId;
+        private String signType;
 
         /***
          * 参数构件第二步,构件supper class instance.
          * Modified by Hanley
-         * @return alipay core
          */
         public AlipayCore build() {
 
-
-
-            if (StringUtils.isEmpty(app_id))
+            if (StringUtils.isEmpty(appId)){
                 throw new NullPointerException("please set appid first!");
-            if (StringUtils.isEmpty(private_key))
+            }
+            if (StringUtils.isEmpty(privateKey)){
                 throw new NullPointerException("please set private_key first!");
-            if (StringUtils.isEmpty(sign_type)){
+            }
+            if (StringUtils.isEmpty(signType)){
                 throw new NullPointerException("please set sign_type first!");
             }else{
-                if(sign_type.equalsIgnoreCase(AlipayConstants.SIGN_TYPE_RSA2) && StringUtils.isEmpty(alipay_public_key)){
+                if(signType.equalsIgnoreCase(AlipayConstants.SIGN_TYPE_RSA2) && StringUtils.isEmpty(alipayPublicKey)){
                     throw new NullPointerException("please set alipay_public_key first,when the sign_type is RSA2!");
                 }
             }
 
-            if (StringUtils.isEmpty(alipay_public_key) && sign_type.equalsIgnoreCase(AlipayConstants.SIGN_TYPE_RSA2))
+            if (StringUtils.isEmpty(alipayPublicKey) && signType.equalsIgnoreCase(AlipayConstants.SIGN_TYPE_RSA2)){
                 throw new NullPointerException("please set alipay_public_key first,when you using RSA2");
+            }
 
 
             return new AlipayCore(this);
         }
 
-        /**
-         * Sets private key.
-         *
-         * @param private_key the private key
-         * @return the private key
-         */
-        public ClientBuilder setPrivate_key(String private_key) {
-            this.private_key = private_key;
+        private String getPrivateKey() {
+            return privateKey;
+        }
+
+        public ClientBuilder setPrivateKey(String privateKey) {
+            this.privateKey = privateKey;
             return this;
         }
 
-        /**
-         * Sets alipay public key.
-         *
-         * @param alipay_public_key the alipay public key
-         * @return the alipay public key
-         */
-        public ClientBuilder setAlipay_public_key(String alipay_public_key) {
-            this.alipay_public_key = alipay_public_key;
+        private String getAlipayPublicKey() {
+            return alipayPublicKey;
+        }
+
+        public ClientBuilder setAlipayPublicKey(String alipayPublicKey) {
+            this.alipayPublicKey = alipayPublicKey;
             return this;
         }
 
-        /**
-         * Sets app id.
-         *
-         * @param app_id the app id
-         * @return the app id
-         */
-        public ClientBuilder setApp_id(String app_id) {
-            this.app_id = app_id;
+        public String getAppId() {
+            return appId;
+        }
+
+        public ClientBuilder setAppId(String appId) {
+            this.appId = appId;
             return this;
         }
 
-        /**
-         * Gets private key.
-         *
-         * @return the private key
-         */
-        public String getPrivate_key() {
-            return private_key;
+        public String getSignType() {
+            return signType;
         }
 
-        /**
-         * Gets alipay public key.
-         *
-         * @return the alipay public key
-         */
-        public String getAlipay_public_key() {
-            return alipay_public_key;
-        }
-
-        /**
-         * Gets app id.
-         *
-         * @return the app id
-         */
-        public String getApp_id() {
-            return app_id;
-        }
-
-        /**
-         * Gets sign type.
-         *
-         * @return the sign type
-         */
-        public String getSign_type() {
-            return sign_type;
-        }
-
-        /**
-         * Sets sign type.
-         *
-         * @param sign_type the sign type
-         * @return the sign type
-         */
-        public ClientBuilder setSign_type(String sign_type) {
-            this.sign_type = sign_type;
+        public ClientBuilder setSignType(String signType) {
+            this.signType = signType;
             return this;
         }
     }
@@ -199,27 +160,28 @@ public class AlipayCore {
      * @return string 支付宝产生用于网页支付的html.
      * @throws Exception the exception
      */
-    public String pay_in_h5(AlipayH5Request request) throws Exception{
+    public String payInMobileSite(AlipayMobileSiteRequest request) throws Exception{
 
-        System.out.println("pay_in_h5 request=\n" + request.toString());
+       log.debug("payInMobileSite request=\n" + request.toString());
         String form = "<font style='color: red'>请求支付宝超时,请稍后再试!</font>";
 
         try {
-            if (null == builder)
+            if (null == builder){
                 throw new Exception("Please set AlipayCore.ClientBuider first.");
-            String biz_content = JsonUtil.beanToJsontring(request.getBizContent());
+            }
+            String bizContent = JsonUtil.beanToJsontring(request.getBizContent());
             AlipayClient alipayClient = new DefaultAlipayClient("https://openapi.alipay.com/gateway.do",
-                    builder.getApp_id(), builder.getPrivate_key(), "json", "utf-8", builder.getAlipay_public_key());
-            AlipayTradeWapPayRequest alipayRequest = new AlipayTradeWapPayRequest();// 创建API对应的request
-            alipayRequest.setReturnUrl(request.getReturn_url());
-            alipayRequest.setNotifyUrl(request.getNotify_url());// 在公共参数中设置回跳和通知地址
-            alipayRequest.setBizContent(biz_content);// 填充业务参数
-            form = alipayClient.pageExecute(alipayRequest).getBody(); // 调用SDK生成表单
+                    builder.getAppId(), builder.getPrivateKey(), "json", "utf-8", builder.getAlipayPublicKey());
+            AlipayTradeWapPayRequest alipayRequest = new AlipayTradeWapPayRequest();
+            alipayRequest.setReturnUrl(request.getReturnUrl());
+            alipayRequest.setNotifyUrl(request.getNotifyUrl());
+            alipayRequest.setBizContent(bizContent);
+            form = alipayClient.pageExecute(alipayRequest).getBody();
         } catch (Exception e) {
-            System.err.println("支付宝网页支付数据产生失败:" + e.getMessage());
-            throw e;
+           log.error(e);
+           throw e;
         } finally {
-            System.out.println("pay_in_h5 response=\n" + form);
+           log.debug("payInMobileSite response={}" , form);
         }
 
         return form;
@@ -231,27 +193,28 @@ public class AlipayCore {
      * @return 返回支付宝页面,直接输出在页面中
      * @throws Exception 程序异常
      */
-    public String pay_in_pc(AlipayWebRequest request) throws Exception{
+    public String payInWebSite(AlipayWebSiteRequest request) throws Exception{
 
-        System.out.println("pay_in_pc request=\n" + request.toString());
+       log.debug("payInWebSite request=\n" + request.toString());
         String form = "<font style='color: red'>请求支付宝超时,请稍后再试!</font>";
 
         try {
-            if (null == builder)
+            if (null == builder){
                 throw new Exception("Please set AlipayCore.ClientBuider first.");
-            String biz_content = JsonUtil.beanToJsontring(request.getBizContent());
+            }
+            String bizContent = JsonUtil.beanToJsontring(request.getBizContent());
             AlipayClient alipayClient = new DefaultAlipayClient("https://openapi.alipay.com/gateway.do",
-                    builder.getApp_id(), builder.getPrivate_key(), "json", "utf-8", builder.getAlipay_public_key());
-            AlipayTradePagePayRequest alipayRequest = new AlipayTradePagePayRequest();// 创建API对应的request
-            alipayRequest.setReturnUrl(request.getReturn_url());
-            alipayRequest.setNotifyUrl(request.getNotify_url());// 在公共参数中设置回跳和通知地址
-            alipayRequest.setBizContent(biz_content);// 填充业务参数
-            form = alipayClient.pageExecute(alipayRequest).getBody(); // 调用SDK生成表单
+                    builder.getAppId(), builder.getPrivateKey(), "json", "utf-8", builder.getAlipayPublicKey());
+            AlipayTradePagePayRequest alipayRequest = new AlipayTradePagePayRequest();
+            alipayRequest.setReturnUrl(request.getReturnUrl());
+            alipayRequest.setNotifyUrl(request.getNotifyUrl());
+            alipayRequest.setBizContent(bizContent);
+            form = alipayClient.pageExecute(alipayRequest).getBody();
         } catch (Exception e) {
-            System.err.println("支付宝网站支付数据产生失败:" + e.getMessage());
+            log.error(e);
             throw e;
         } finally {
-            System.out.println("pay_in_pc response=\n" + form);
+           log.debug("payInWebSite response=\n" + form);
         }
 
         return form;
@@ -268,20 +231,19 @@ public class AlipayCore {
      * @return the alipay qrcode response 扫码支付结果
      * @throws Exception the exception
      */
-    public AlipayQrcodeResponse precreate(AlipayQrcodeRequest request) throws Exception{
+    public AlipayQrcodeResponse preCreate(AlipayQrcodeRequest request) throws Exception{
 
-        System.out.println("precreate request=\n" + request.toString());
+        log.debug("preCreate request=\n" + request.toString());
         AlipayQrcodeResponse response = new AlipayQrcodeResponse();
 
         try {
-            if (null == tradeService)
+            if (null == tradeService){
                 throw new Exception("Please set AlipayCore.ClientBuider first and call build().");
+            }
 
             // 业务扩展参数，目前可添加由支付宝分配的系统商编号(通过setSysServiceProviderId方法)，详情请咨询支付宝技术支持
             ExtendParams extendParams = new ExtendParams();
-            extendParams.setSysServiceProviderId("2088100200300400500");
 
-            // 创建扫码支付请求builder，设置请求参数
             AlipayTradePrecreateRequestBuilder builder = new AlipayTradePrecreateRequestBuilder()
                     .setSubject(request.getSubject())
                     .setTotalAmount(request.getTotalAmount())
@@ -295,42 +257,32 @@ public class AlipayCore {
 
             AlipayF2FPrecreateResult result = tradeService.tradePrecreate(builder);
             response.setSuccess(result.isTradeSuccess());
+            response.setSubCode(result.getResponse().getSubCode());
+            response.setSubMsg(result.getResponse().getSubMsg());
+            response.setCode(result.getResponse().getCode());
+            response.setMsg(result.getResponse().getMsg());
 
             switch (result.getTradeStatus()) {
                 case SUCCESS:
                     response.setDesc("支付宝预下单成功");
                     response.setOutTradeNo(result.getResponse().getOutTradeNo());
                     response.setQrCode(result.getResponse().getQrCode());
-                    response.setCode(result.getResponse().getCode());
-                    response.setMsg(result.getResponse().getMsg());
                     break;
                 case FAILED:
                     response.setDesc("支付宝预下单失败!");
-                    response.setSubCode(result.getResponse().getSubCode());
-                    response.setSubMsg(result.getResponse().getSubMsg());
-                    response.setCode(result.getResponse().getCode());
-                    response.setMsg(result.getResponse().getMsg());
                     break;
                 case UNKNOWN:
                    response.setDesc("系统异常，预下单状态未知!");
-                   response.setSubCode(result.getResponse().getSubCode());
-                   response.setSubMsg(result.getResponse().getSubMsg());
-                   response.setCode(result.getResponse().getCode());
-                   response.setMsg(result.getResponse().getMsg());
                     break;
                 default:
                     response.setDesc("不支持的交易状态，交易返回异常!");
-                    response.setSubCode(result.getResponse().getSubCode());
-                    response.setSubMsg(result.getResponse().getSubMsg());
-                    response.setCode(result.getResponse().getCode());
-                    response.setMsg(result.getResponse().getMsg());
                     break;
             }
         } catch (Exception e) {
-            System.err.println("当面付.扫码支付 调用预订单API失败:" + e.getMessage());
+            log.error(e);
             throw e;
         } finally {
-            System.out.println("precreate response=\n" + response.toString());
+           log.debug("precreate response=\n" + response.toString());
         }
         return response;
     }
@@ -344,13 +296,14 @@ public class AlipayCore {
      */
     public AlipayTradeResponse pay(AlipayTradeRequest request) throws Exception{
 
-        System.out.println("pay request=\n" + request.toString());
+        log.debug("pay request=\n" + request.toString());
         AlipayTradeResponse response = new AlipayTradeResponse();
 
         try {
 
-            if (null == tradeService)
+            if (null == tradeService){
                 throw new Exception("Please set AlipayCore.ClientBuider first and call build().");
+            }
 
             // 业务扩展参数，目前可添加由支付宝分配的系统商编号(通过setSysServiceProviderId方法)，详情请咨询支付宝技术支持
             String providerId = "2088100200300400500";
@@ -368,43 +321,33 @@ public class AlipayCore {
             AlipayF2FPayResult result = tradeService.tradePay(builder);
 
             response.setSuccess(result.isTradeSuccess());
+            response.setSubCode(result.getResponse().getSubCode());
+            response.setSubMsg(result.getResponse().getSubMsg());
+            response.setCode(result.getResponse().getCode());
+            response.setMsg(result.getResponse().getMsg());
 
             switch (result.getTradeStatus()) {
                 case SUCCESS:
                     BeanUtilsBean copyBean = BeanUtilsBean.getInstance();
                     copyBean.copyProperties(response, result.getResponse());
                     response.setDesc("支付宝支付成功");
-                    response.setCode(result.getResponse().getCode());
-                    response.setMsg(result.getResponse().getMsg());
                     break;
                 case FAILED:
                     response.setDesc("支付宝支付失败");
-                    response.setSubCode(result.getResponse().getSubCode());
-                    response.setSubMsg(result.getResponse().getSubMsg());
-                    response.setCode(result.getResponse().getCode());
-                    response.setMsg(result.getResponse().getMsg());
                     break;
                 case UNKNOWN:
                     response.setDesc("系统异常，订单状态未知!");
-                    response.setSubCode(result.getResponse().getSubCode());
-                    response.setSubMsg(result.getResponse().getSubMsg());
-                    response.setCode(result.getResponse().getCode());
-                    response.setMsg(result.getResponse().getMsg());
                     break;
                 default:
                     response.setDesc("不支持的交易状态，交易返回异常!");
-                    response.setSubCode(result.getResponse().getSubCode());
-                    response.setSubMsg(result.getResponse().getSubMsg());
-                    response.setCode(result.getResponse().getCode());
-                    response.setMsg(result.getResponse().getMsg());
                     break;
             }
 
         } catch (Exception e) {
-            System.err.println("当面付.条码支付 失败:" + e.getMessage());
+            log.error(e);
             throw e;
         } finally {
-            System.out.println("pay response=\n" + response.toString());
+            log.debug("pay response=\n" + response.toString());
         }
         return response;
     }
@@ -419,56 +362,47 @@ public class AlipayCore {
      */
     public AlipayQueryResponse query(String outTradeNo) throws Exception {
 
-        System.out.println("query outTradeNo=" + outTradeNo);
+       log.debug("query outTradeNo=" + outTradeNo);
         AlipayQueryResponse response = new AlipayQueryResponse();
 
         try {
-            if (null == tradeService)
+            if (null == tradeService){
                 throw new Exception("Please set AlipayCore.ClientBuider first and call build().");
+            }
 
             AlipayTradeQueryRequestBuilder builder = new AlipayTradeQueryRequestBuilder()
                     .setOutTradeNo(outTradeNo);
             AlipayF2FQueryResult result = tradeService.queryTradeResult(builder);
             response.setSuccess(result.isTradeSuccess());
 
-            if (null != result.getResponse()) {
-                BeanUtilsBean copyBean = BeanUtilsBean.getInstance();
-                copyBean.copyProperties(response, result.getResponse());
-            }
+            response.setSubCode(result.getResponse().getSubCode());
+            response.setSubMsg(result.getResponse().getSubMsg());
+            response.setCode(result.getResponse().getCode());
+            response.setMsg(result.getResponse().getMsg());
 
             switch (result.getTradeStatus()) {
                 case SUCCESS:
-                    response.setDesc("查询返回该订单支付成功");
+                    BeanUtilsBean copyBean = BeanUtilsBean.getInstance();
+                    copyBean.copyProperties(response, result.getResponse());
+                    response.setDesc("查询返回该订单信息成功");
                     response.setCode(result.getResponse().getCode());
                     response.setMsg(result.getResponse().getMsg());
                     break;
                 case FAILED:
                     response.setDesc("查询返回该订单支付失败或被关闭!");
-                    response.setSubCode(result.getResponse().getSubCode());
-                    response.setSubMsg(result.getResponse().getSubMsg());
-                    response.setCode(result.getResponse().getCode());
-                    response.setMsg(result.getResponse().getMsg());
                     break;
                 case UNKNOWN:
                     response.setDesc("系统异常，订单支付状态未知!");
-                    response.setSubCode(result.getResponse().getSubCode());
-                    response.setSubMsg(result.getResponse().getSubMsg());
-                    response.setCode(result.getResponse().getCode());
-                    response.setMsg(result.getResponse().getMsg());
                     break;
                 default:
                     response.setDesc("不支持的交易状态，交易返回异常!");
-                    response.setSubCode(result.getResponse().getSubCode());
-                    response.setSubMsg(result.getResponse().getSubMsg());
-                    response.setCode(result.getResponse().getCode());
-                    response.setMsg(result.getResponse().getMsg());
                     break;
             }
         } catch (Exception e) {
-            System.err.println("查询订单失败:" + e.getMessage());
+            log.error(e);
             throw e;
         } finally {
-            System.out.println("query response=\n" + response.toString());
+           log.debug("query response=\n" + response.toString());
         }
         return response;
     }
@@ -485,32 +419,38 @@ public class AlipayCore {
      */
     public AlipayRefundResponse refund(AlipayRefundRequest request) throws Exception{
 
-        System.out.println("refund request=\n" + request.toString());
+       log.debug("refund request=\n" + request.toString());
 
         AlipayRefundResponse response = new AlipayRefundResponse();
 
         try {
-            if (null == tradeService)
+            if (null == tradeService){
                 throw new Exception("Please set AlipayCore.ClientBuider first and call build().");
+            }
 
             AlipayTradeRefundRequestBuilder builder = new AlipayTradeRefundRequestBuilder();
 
-            if (StringUtils.isBlank(request.getOutTradeNo()) && StringUtils.isBlank(request.getTradeNo()))
+            if (StringUtils.isBlank(request.getOutTradeNo()) && StringUtils.isBlank(request.getTradeNo())){
                 throw new Exception("trade_no , out_trade_no 不能同时为空");
-            if(StringUtils.isBlank(request.getRefundAmount()))
+            }
+            if(StringUtils.isBlank(request.getRefundAmount())){
                 throw new Exception("refundAmount 不能为空");
-
-            if (StringUtils.isNotBlank(request.getOutTradeNo()))
+            }
+            if (StringUtils.isNotBlank(request.getOutTradeNo())){
                 builder.setOutTradeNo(request.getOutTradeNo());
-            if (StringUtils.isNotBlank(request.getTradeNo()))
+            }
+            if (StringUtils.isNotBlank(request.getTradeNo())){
                 builder.setTradeNo(request.getTradeNo());
-            if (StringUtils.isNotBlank(request.getRefundReason()))
+            }
+            if (StringUtils.isNotBlank(request.getRefundReason())){
                 builder.setRefundReason(request.getRefundReason());
-            if (StringUtils.isNotBlank(request.getStoreId()))
+            }
+            if (StringUtils.isNotBlank(request.getStoreId())){
                 builder.setStoreId(request.getStoreId());
-            if (StringUtils.isNotBlank(request.getOutRequestNo()))
+            }
+            if (StringUtils.isNotBlank(request.getOutRequestNo())){
                 builder.setOutRequestNo(request.getOutRequestNo());
-
+            }
 
             //trade_no , out_trade_no 不能同时存在,否则支付宝会报错ACQ.TRADE_STATUS_ERROR.交易状态不合法
             if (StringUtils.isNotBlank(builder.getOutTradeNo()) && StringUtils.isNotBlank(builder.getTradeNo())){
@@ -518,44 +458,34 @@ public class AlipayCore {
             }
 
             builder.setRefundAmount(request.getRefundAmount());
-
             AlipayF2FRefundResult result = tradeService.tradeRefund(builder);
             response.setSuccess(result.isTradeSuccess());
+            response.setSubCode(result.getResponse().getSubCode());
+            response.setSubMsg(result.getResponse().getSubMsg());
+            response.setCode(result.getResponse().getCode());
+            response.setMsg(result.getResponse().getMsg());
+
             switch (result.getTradeStatus()) {
                 case SUCCESS:
                     BeanUtilsBean copyBean = BeanUtilsBean.getInstance();
                     copyBean.copyProperties(response, result.getResponse());
-                   response.setDesc("支付宝退款成功");
-                   response.setCode(result.getResponse().getCode());
-                   response.setMsg(result.getResponse().getMsg());
+                    response.setDesc("支付宝退款成功");
                     break;
                 case FAILED:
                     response.setDesc("支付宝退款失败");
-                    response.setSubCode(result.getResponse().getSubCode());
-                    response.setSubMsg(result.getResponse().getSubMsg());
-                    response.setCode(result.getResponse().getCode());
-                    response.setMsg(result.getResponse().getMsg());
                     break;
                 case UNKNOWN:
                     response.setDesc("系统异常，订单退款状态未知!");
-                    response.setSubCode(result.getResponse().getSubCode());
-                    response.setSubMsg(result.getResponse().getSubMsg());
-                    response.setCode(result.getResponse().getCode());
-                    response.setMsg(result.getResponse().getMsg());
                     break;
                 default:
                     response.setDesc("不支持的交易状态，交易返回异常!");
-                    response.setSubCode(result.getResponse().getSubCode());
-                    response.setSubMsg(result.getResponse().getSubMsg());
-                    response.setCode(result.getResponse().getCode());
-                    response.setMsg(result.getResponse().getMsg());
                     break;
             }
         } catch (Exception e) {
-            System.err.println("支付宝退款失败:" + e.getMessage());
+            log.error(e);
             throw e;
         } finally {
-            System.out.println("refund response=\n" + response.toString());
+           log.debug("refund response={}" , response.toString());
         }
 
         return response;
@@ -608,10 +538,10 @@ public class AlipayCore {
                     break;
             }
         } catch (Exception e) {
-            System.err.println("支付宝撤销订单失败,outTradeNo="+outTradeNo);
+            log.error(e);
             throw e;
         }finally {
-            System.out.println("cancel response=\n"+response.toString());
+           log.debug("cancel response=\n"+response.toString());
         }
 
         return response;

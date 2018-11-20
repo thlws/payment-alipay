@@ -2,13 +2,15 @@ package org.thlws.payment.alipay.entity.response;
 
 import com.alipay.api.domain.TradeFundBill;
 import com.alipay.api.domain.VoucherDetail;
-import org.thlws.payment.alipay.utils.JsonUtil;
+import org.thlws.utils.JsonUtil;
 
 import java.util.Date;
 import java.util.List;
 
 /**
- * Created by HanleyTang on 2017/3/5.
+ * 支付宝订单查询
+ * @author hanley@thlws.com
+ * @date 2018/11/16
  */
 public class AlipayQueryResponse {
 
