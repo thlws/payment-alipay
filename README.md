@@ -5,7 +5,7 @@
 
 > 基于支付宝官方Java SDK,封装支付相关接口, 整合多种支付场景于一体。
 
-#### <span style="color:red">正在憋招，耐心等待...</span>
+#### <span style="color:red">功能已整合到payment-thl中，此项目不再维护，新用户请直接使用 payment-thl</span>
 【微信、支付宝、翼支付 三合一】 [https://gitee.com/thlws/payment-thl](https://gitee.com/thlws/payment-thl)
 
 ### 功能说明
